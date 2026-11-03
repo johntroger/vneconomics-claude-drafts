@@ -1,0 +1,42 @@
+{
+  "key": 655,
+  "repo": "pmndrs/jotai",
+  "repoId": "286867459",
+  "url": "https://github.com/pmndrs/jotai",
+  "stars": 21304,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-23T00:08:54Z",
+  "createdAt": "2020-08-11T23:15:36Z",
+  "defaultBranch": "main",
+  "description": "👻 Primitive and flexible state management for React",
+  "homepage": "https://jotai.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pmndrs/jotai/main/README.md",
+    "sha256": "ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347",
+    "bytes": 5543,
+    "sectionsRead": [
+      "First, create a primitive atom",
+      "Use the atom in your components",
+      "Create derived atoms with computed values",
+      "Async actions"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu jotai.org.",
+    "Chưa thử.",
+    "Chưa so sánh với thư viện khác."
+  ],
+  "runtimeValidated": false
+}

@@ -181,3 +181,4 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - 2026-11-03, batch 103 (key 630–636, Jupyter và giảng dạy trực tuyến): 7 bài; quét cụm từ cấm chỉ gặp câu phủ định; 7 README HTTP 200; không chép lệnh cài; catalog 536 bài, 84 lộ trình.
 - 2026-11-03, batch 104 (key 637–644, Phần cứng nhúng và máy in 3D): 8 bài; quét cụm từ cấm chỉ gặp câu phủ định; 8 README HTTP 200; không chép lệnh cài hay lệnh nạp firmware; có cảnh báo an toàn vật lý; catalog 544 bài, 85 lộ trình.
 - 2026-11-03, batch 105 (key 645–652, Framework máy chủ và API): 8 bài; quét cụm từ cấm chỉ gặp câu phủ định (đã sửa một chỗ 'đã kiểm thử' trong bài tRPC thành mô tả của tác giả); 8 README HTTP 200; không chép lệnh cài; catalog 552 bài, 86 lộ trình.
+- 2026-11-03, batch 106 (key 653–660, Giao diện, trạng thái và hoạt ảnh): 8 bài; quét cụm từ cấm chỉ gặp câu phủ định; 8 README HTTP 200; không chép lệnh cài hay lệnh cài kỹ năng AI của Motion; catalog 560 bài, 87 lộ trình.

@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-giao-dien",
+  "batch": 106,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 653,
+      "batch": 106,
+      "slug": "motion",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Motion: thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue, động cơ lai dùng JavaScript kết hợp API trình duyệt gốc, cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng theo cuộn; có gói Motion+ trả phí và công cụ AI, giấy phép MIT",
+        "excerpt": "Hiểu Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue: API đơn giản, động cơ lai kết hợp JavaScript với API trình duyệt gốc, có cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng liên kết cuộn, dòng thời gian; README cũng giới thiệu gói trả phí Motion+, trình soạn Motion Studio và cách dùng với tác tử AI.",
+        "content": "<p>README tả Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue. Lý do chọn theo README: API đơn giản với gói riêng cho React, JavaScript và Vue; động cơ lai kết hợp sức mạnh JavaScript với API trình duyệt gốc cho hoạt ảnh 120 khung hình mỗi giây tăng tốc bằng GPU (tuyên bố của tác giả, bài chưa kiểm chứng); sẵn sàng sản xuất với TypeScript, bộ kiểm thử rộng, có thể loại mã không dùng và kích thước nhỏ; tích hợp cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng liên kết với cuộn, dòng thời gian. README có mục các nền tảng, hơn 110 ví dụ có hướng dẫn từng bước, và mục dùng Motion với AI: một kỹ năng tác tử miễn phí giấy phép MIT cài qua một lệnh và thiết lập máy chủ MCP cho nhiều công cụ AI lập trình (bài không chép lệnh), một máy chủ MCP tìm tài liệu, và tệp llms.txt. README cũng quảng bá Motion Studio (trình soạn hoạt ảnh trực quan có tác tử AI) và Motion+ (gói trả phí một lần hoặc hằng năm với 450 ví dụ, API cao cấp, trình soạn chuyển tiếp, bộ công cụ AI, Discord riêng); bài không đánh giá phần trả phí. Phần License nêu Motion theo MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn nút bấm nảy nhẹ, thẻ trượt vào mượt hay phần tử đổi chỗ có chuyển động tự nhiên? Motion cho bạn mô tả chuyển động bằng vài thuộc tính thay vì tự tính từng khung hình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem các ví dụ miễn phí trên motion.dev và nhờ AI giải thích khác biệt giữa hoạt ảnh lò xo và hoạt ảnh theo thời gian; chưa nhúng vào trang. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Dùng thư viện cơ bản khá dễ nếu biết React hoặc JavaScript; bố cục và cử chỉ nâng cao khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hoạt ảnh quá nhiều làm khó chịu và gây hại cho người nhạy cảm với chuyển động: cần tôn trọng tùy chọn giảm chuyển động của hệ điều hành. Phần Motion+, Studio, AI Kit là sản phẩm trả phí: không bắt buộc. Lệnh cài kỹ năng AI tải gói từ mạng: chỉ chạy sau khi đã hiểu nó làm gì.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>animation (hoạt ảnh)</strong>: chuyển động của phần tử trên trang; README nêu.</li><li><strong>spring (lò xo)</strong>: kiểu chuyển động có đà và nảy; README nêu.</li><li><strong>layout transition (chuyển tiếp bố cục)</strong>: chuyển động khi phần tử đổi vị trí hoặc kích thước; README nêu.</li><li><strong>scroll-linked (liên kết với cuộn)</strong>: hiệu ứng thay đổi theo vị trí cuộn; README nêu.</li><li><strong>MCP server</strong>: cầu nối để AI dùng công cụ hoặc đọc tài liệu; README nêu có máy chủ MCP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài gói cho React, JavaScript và Vue; bài không chép lệnh. Cần JavaScript hoặc React hoặc Vue. Miễn phí theo MIT (README nêu); Motion+, Studio và công cụ AI trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why Motion? và Platforms.</li><li>Xem ví dụ miễn phí trên motion.dev.</li><li>Thử một hoạt ảnh nhỏ và kiểm tra tùy chọn giảm chuyển động.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm giao diện web và muốn thêm hoạt ảnh. Hãy đọc README của Motion (https://github.com/motiondivision/motion) và giải thích bằng tiếng Việt: Motion làm gì, hoạt ảnh lò xo là gì, phần nào miễn phí và phần nào trả phí, và vì sao cần quan tâm giảm chuyển động cho người dùng nhạy cảm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,5 KB, bài chưa đọc tài liệu motion.dev. Tuyên bố 120 khung hình chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>motiondivision</strong> có <strong>34.837 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/motiondivision/motion/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/motiondivision/motion\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 653. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34837; repo_id 157846876; README SHA256 08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/motiondivision/motion",
+          "repo_id": "157846876",
+          "source_path": "",
+          "source_revision": "README-SHA256:08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/motiondivision/motion",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn cài gói cho React, JavaScript và Vue; bài không chép lệnh. Cần JavaScript hoặc React hoặc Vue. Miễn phí theo MIT (README nêu); Motion+, Studio và công cụ AI trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "motiondivision/motion",
+        "stars": 34837,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/motiondivision/motion/main/README.md",
+        "readmeSha256": "08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 654,
+      "batch": 106,
+      "slug": "react-hook-form",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "React Hook Form: thư viện xử lý biểu mẫu cho React tập trung vào hiệu năng, trải nghiệm và dễ dùng, tận dụng kiểm tra hợp lệ HTML gốc, không phụ thuộc, tích hợp Yup, Zod, AJV, Superstruct; giấy phép MIT",
+        "excerpt": "Hiểu React Hook Form là thư viện xử lý biểu mẫu cho React, README nêu xây dựng chú trọng hiệu năng, trải nghiệm người dùng và nhà phát triển, dùng kiểm tra hợp lệ HTML gốc, kích thước nhỏ không phụ thuộc, tích hợp sẵn với thư viện giao diện và thư viện kiểm tra dữ liệu như Yup, Zod, AJV, Superstruct.",
+        "content": "<p>README tả React Hook Form là thư viện biểu mẫu cho React với tính năng được nêu: xây dựng chú trọng hiệu năng, trải nghiệm người dùng và trải nghiệm nhà phát triển, tận dụng kiểm tra hợp lệ HTML gốc, tích hợp sẵn với thư viện giao diện, kích thước nhỏ và không phụ thuộc, hỗ trợ Yup, Zod, AJV, Superstruct và các thư viện kiểm tra khác qua bộ phân giải chuẩn. Các nhận định này là cách tự mô tả của dự án, bài chưa kiểm chứng. README có mục cài đặt, ví dụ nhanh dùng useForm (đăng ký ô, xử lý gửi, lỗi; bài không chép mã), nhà tài trợ, người ủng hộ và người đóng góp. README có huy hiệu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Biểu mẫu đăng ký có nhiều ô, kiểm tra từng ô và hiển thị lỗi rất dễ rối. Thư viện này gom việc đó vào một hook, giảm số lần vẽ lại để biểu mẫu mượt hơn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích cách đăng ký một ô và hiển thị lỗi của nó, đối chiếu với tài liệu react-hook-form.com; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React, hook và kiến thức cơ bản về biểu mẫu HTML. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Kiểm tra hợp lệ phía trình duyệt không thay cho kiểm tra phía máy chủ: luôn kiểm tra lại dữ liệu ở máy chủ. Không lưu mật khẩu hay dữ liệu nhạy cảm trong trạng thái biểu mẫu dài hơn cần thiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>form (biểu mẫu)</strong>: nhóm ô nhập để người dùng gửi dữ liệu; README nêu.</li><li><strong>hook</strong>: hàm đặc biệt của React để dùng trạng thái; README nêu useForm.</li><li><strong>validation (kiểm tra hợp lệ)</strong>: kiểm tra dữ liệu nhập đúng quy tắc; README nêu.</li><li><strong>schema validator</strong>: thư viện mô tả quy tắc dữ liệu như Zod, Yup; README nêu hỗ trợ.</li><li><strong>re-render (vẽ lại)</strong>: React dựng lại giao diện khi dữ liệu đổi; README nêu chú trọng hiệu năng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install và Quickstart; bài không chép lệnh hay mã. Cần React. Miễn phí theo MIT (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc Quickstart.</li><li>Thử một biểu mẫu nhỏ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm biểu mẫu trong React. Hãy đọc README của React Hook Form (https://github.com/react-hook-form/react-hook-form) và giải thích bằng tiếng Việt: thư viện giải quyết vấn đề gì, vì sao nói giảm vẽ lại, và vì sao vẫn phải kiểm tra dữ liệu ở máy chủ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8,3 KB, bài chưa đọc tài liệu react-hook-form.com. Tuyên bố hiệu năng chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>react-hook-form</strong> có <strong>44.898 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/react-hook-form/react-hook-form/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/react-hook-form/react-hook-form\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 654. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44898; repo_id 174038031; README SHA256 3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/react-hook-form/react-hook-form",
+          "repo_id": "174038031",
+          "source_path": "",
+          "source_revision": "README-SHA256:3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/react-hook-form/react-hook-form",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install và Quickstart; bài không chép lệnh hay mã. Cần React. Miễn phí theo MIT (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/react-hook-form/react-hook-form/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/react-hook-form/react-hook-form/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "react-hook-form/react-hook-form",
+        "stars": 44898,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/README.md",
+        "readmeSha256": "3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 655,
+      "batch": 106,
+      "slug": "jotai",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Jotai: thư viện quản lý trạng thái nguyên tử cho React, lõi tối thiểu 2 KB, mở rộng từ thay thế useState đến ứng dụng TypeScript lớn, không dùng khóa chuỗi (so với Recoil), atom dẫn xuất và bất đồng bộ",
+        "excerpt": "Hiểu Jotai là thư viện quản lý trạng thái cho React theo mô hình atom, README nêu lõi tối thiểu (2 KB), mở rộng từ thay thế useState đến ứng dụng TypeScript cấp doanh nghiệp, không dùng khóa chuỗi so với Recoil, có atom dẫn xuất, atom bất đồng bộ và hành động bất đồng bộ.",
+        "content": "<p>README tả Jotai co giãn từ thay thế đơn giản cho useState đến ứng dụng TypeScript cấp doanh nghiệp: lõi API tối thiểu (2 KB), nhiều tiện ích và phần mở rộng, không dùng khóa chuỗi (so với Recoil). README hướng dẫn tạo atom nguyên thủy (mỗi atom là một mảnh trạng thái với giá trị ban đầu như chuỗi, số, đối tượng, mảng), dùng atom trong thành phần giống React.useState, tạo atom dẫn xuất tính từ atom khác, atom từ nhiều atom, atom dẫn xuất bất đồng bộ, atom dẫn xuất có thể ghi, atom chỉ ghi và hành động bất đồng bộ. README có ghi chú về lập trình hàm và các liên kết. Bài không chép mã. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì một kho trạng thái lớn, Jotai cho bạn nhiều mảnh nhỏ gọi là atom, thành phần nào cần mảnh nào thì dùng mảnh đó, nên ít vẽ lại thừa.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích atom nguyên thủy và atom dẫn xuất bằng ví dụ giỏ hàng nhỏ; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React và hook; khái niệm atom đơn giản nhưng quản lý trạng thái lớn cần kinh nghiệm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ứng dụng nhỏ có thể chỉ cần useState có sẵn. Bài chưa so sánh Jotai với Redux hay Zustand. Atom bất đồng bộ cần xử lý lỗi và trạng thái tải.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>state management (quản lý trạng thái)</strong>: cách ứng dụng giữ và chia sẻ dữ liệu giữa thành phần; README nêu.</li><li><strong>atom</strong>: một mảnh trạng thái nhỏ trong Jotai; README nêu.</li><li><strong>derived atom (atom dẫn xuất)</strong>: atom tính từ atom khác; README nêu.</li><li><strong>useState</strong>: hook trạng thái có sẵn của React; README so sánh.</li><li><strong>Recoil</strong>: thư viện trạng thái khác; README nêu Jotai không dùng khóa chuỗi so với Recoil.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới jotai.org và nêu cài từ npm; bài không chép lệnh hay mã. Cần React. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và tạo atom nguyên thủy.</li><li>Đọc phần atom dẫn xuất.</li><li>Thử với một ví dụ nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng React và muốn quản lý trạng thái đơn giản. Hãy đọc README của Jotai (https://github.com/pmndrs/jotai) và giải thích bằng tiếng Việt: atom là gì, atom dẫn xuất là gì, và khi nào chưa cần Jotai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,5 KB, bài chưa đọc tài liệu jotai.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pmndrs</strong> có <strong>21.304 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-23. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pmndrs/jotai/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pmndrs/jotai\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 655. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21304; repo_id 286867459; README SHA256 ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pmndrs/jotai",
+          "repo_id": "286867459",
+          "source_path": "",
+          "source_revision": "README-SHA256:ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/jotai",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới jotai.org và nêu cài từ npm; bài không chép lệnh hay mã. Cần React. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/jotai/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pmndrs/jotai/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pmndrs/jotai",
+        "stars": 21304,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pmndrs/jotai/main/README.md",
+        "readmeSha256": "ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 656,
+      "batch": 106,
+      "slug": "mobx",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MobX: thư viện quản lý trạng thái đơn giản và co giãn dựa trên tín hiệu, áp dụng lập trình phản ứng hàm minh bạch, mọi thứ có thể dẫn xuất từ trạng thái thì tự động dẫn xuất; README nhiều phần tài trợ",
+        "excerpt": "Hiểu MobX là thư viện quản lý trạng thái dựa trên tín hiệu (signal) áp dụng lập trình phản ứng hàm một cách minh bạch: bạn sửa dữ liệu bằng phép gán JavaScript thông thường và hệ phản ứng tự theo dõi, phát tán thay đổi tới nơi dùng; README nêu độc lập với framework giao diện, và có nhiều phần tài trợ.",
+        "content": "<p>README tả MobX là quản lý trạng thái đơn giản và co giãn. Triết lý: bất cứ gì có thể dẫn xuất từ trạng thái ứng dụng thì nên được dẫn xuất tự động. MobX là thư viện dựa trên tín hiệu, đã được thử thách theo cách mô tả của README, áp dụng lập trình phản ứng hàm một cách minh bạch. Cập nhật bản ghi chỉ cần phép gán JavaScript thường, hệ phản ứng tự phát hiện mọi thay đổi và truyền tới nơi dùng; mọi thay đổi và nơi dùng dữ liệu được theo dõi lúc chạy để dựng cây phụ thuộc, nên các tính toán phụ thuộc trạng thái như thành phần React chỉ chạy khi thật sự cần, không phải tối ưu bằng ghi nhớ hay bộ chọn dễ sai. MobX không quy định cách làm và quản lý trạng thái được ngoài mọi framework giao diện, nên mã tách rời, dễ chuyển và dễ kiểm thử. README có ví dụ nhanh, hướng dẫn bắt đầu, tài liệu tại mobx.js.org, sách MobX, video và phần tài trợ dài; bài không chép mã và không đánh giá phần tài trợ. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với MobX bạn chỉ việc đổi dữ liệu như bình thường, các phần giao diện dùng dữ liệu đó tự cập nhật, giống ô công thức trong bảng tính tự tính lại khi ô nguồn đổi.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'dẫn xuất tự động' bằng ví dụ giỏ hàng tính tổng tiền; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần JavaScript, React và khái niệm lập trình phản ứng; phép màu tự theo dõi có thể khó gỡ lỗi. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cơ chế tự theo dõi 'minh bạch' dễ gây bất ngờ khi gỡ lỗi nếu chưa hiểu: đọc tài liệu về quan sát được. Bài chưa so sánh MobX với Redux hay Jotai. Phần tài trợ trong README là quảng bá, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>state management (quản lý trạng thái)</strong>: cách ứng dụng giữ dữ liệu dùng chung; README nêu.</li><li><strong>signal (tín hiệu)</strong>: giá trị tự thông báo khi đổi; README nêu MobX dựa trên tín hiệu.</li><li><strong>functional reactive programming</strong>: lập trình phản ứng hàm; README nêu.</li><li><strong>derivation (dẫn xuất)</strong>: giá trị tính tự động từ trạng thái; README nêu.</li><li><strong>memoization (ghi nhớ)</strong>: lưu kết quả tính để khỏi tính lại; README nêu không cần làm tay.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu mobx.js.org; bài không chép lệnh hay mã. Cần JavaScript. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction.</li><li>Đọc A quick example.</li><li>Đọc tài liệu mobx.js.org.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút React và muốn hiểu lập trình phản ứng. Hãy đọc README của MobX (https://github.com/mobxjs/mobx) và giải thích bằng tiếng Việt: tín hiệu và dẫn xuất tự động là gì, vì sao nói không cần ghi nhớ thủ công, và vì sao cơ chế tự theo dõi có thể khó gỡ lỗi. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13,2 KB, phần lớn là tài trợ và giới thiệu, bài chưa đọc tài liệu mobx.js.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mobxjs</strong> có <strong>28.220 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mobxjs/mobx/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mobxjs/mobx\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 656. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28220; repo_id 32215970; README SHA256 cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mobxjs/mobx",
+          "repo_id": "32215970",
+          "source_path": "",
+          "source_revision": "README-SHA256:cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mobxjs/mobx",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu mobx.js.org; bài không chép lệnh hay mã. Cần JavaScript. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mobxjs/mobx/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mobxjs/mobx/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mobxjs/mobx",
+        "stars": 28220,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mobxjs/mobx/main/README.md",
+        "readmeSha256": "cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 657,
+      "batch": 106,
+      "slug": "pinia",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Pinia: kho trạng thái trực quan, an toàn kiểu và linh hoạt cho Vue, hỗ trợ devtools, mở rộng được, mô-đun hóa, rất nhẹ, có mô-đun Nuxt; README nêu là kế thừa của Vuex, giấy phép MIT",
+        "excerpt": "Hiểu Pinia là kho trạng thái trực quan, an toàn kiểu và linh hoạt cho Vue với hỗ trợ devtools, có thể mở rộng, mô-đun hóa, rất nhẹ và có mô-đun Nuxt; README nêu Pinia là kế thừa của Vuex, bản mới nhất chạy với Vue 3 còn nhánh v2 dành cho Vue 2.",
+        "content": "<p>README tả Pinia là kho trạng thái trực quan, an toàn kiểu và linh hoạt cho Vue, với các điểm: hỗ trợ devtools, mở rộng được, thiết kế mô-đun, rất nhẹ, có mô-đun Nuxt. Phiên bản mới nhất làm việc với Vue 3; nhánh v2 dành cho bản chạy với Vue 2. README giải thích cái tên Pinia (gần cách đọc tiếng Anh của từ dứa trong tiếng Tây Ban Nha) và có demo trên StackBlitz cho Vue 3 và Nuxt 3. README có phần kêu gọi tài trợ và quyên góp, và phần FAQ, trong đó trả lời Pinia là kế thừa của Vuex (theo liên kết tới hướng dẫn chính thức của Vue). README có mục cài đặt, cách dùng (cài plugin, tạo kho); bài không chép lệnh hay mã. Phần License nêu MIT. Lời kêu gọi quyên góp là quảng bá, bài không đánh giá.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trong ứng dụng Vue, nhiều trang cần dùng chung dữ liệu như giỏ hàng hay thông tin đăng nhập. Pinia là nơi chứa các dữ liệu đó, gọn và dễ kiểm thử.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở demo StackBlitz của Pinia để xem một kho nhỏ; chưa dựng ứng dụng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Vue 3 cơ bản và khái niệm trạng thái dùng chung. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ứng dụng nhỏ có thể không cần kho trạng thái chung. Chọn đúng nhánh theo phiên bản Vue (Vue 3 hay Vue 2). Bài chưa so sánh Pinia với Vuex trong thực tế.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>store (kho trạng thái)</strong>: nơi chứa dữ liệu dùng chung; README nêu.</li><li><strong>type safe (an toàn kiểu)</strong>: kiểu dữ liệu được kiểm tra khi viết mã; README nêu.</li><li><strong>devtools</strong>: công cụ gỡ lỗi trong trình duyệt; README nêu hỗ trợ.</li><li><strong>Vuex</strong>: thư viện trạng thái cũ của Vue; README nêu Pinia là kế thừa.</li><li><strong>Nuxt</strong>: framework dựng trên Vue; README nêu có mô-đun.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và Usage; bài không chép lệnh hay mã. Cần Vue 3 (nhánh v2 cho Vue 2). Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và FAQ.</li><li>Mở demo trên StackBlitz.</li><li>Đọc mục Usage và thử một kho nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Vue và muốn quản lý trạng thái dùng chung. Hãy đọc README của Pinia (https://github.com/vuejs/pinia) và giải thích bằng tiếng Việt: Pinia là gì, khác Vuex ở đâu theo README, và nhánh v2 dùng khi nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,7 KB, bài chưa đọc tài liệu pinia.vuejs.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vuejs</strong> có <strong>14.759 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vuejs/pinia/blob/v4/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vuejs/pinia\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 657. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14759; repo_id 222544417; README SHA256 39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vuejs/pinia",
+          "repo_id": "222544417",
+          "source_path": "",
+          "source_revision": "README-SHA256:39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/pinia",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và Usage; bài không chép lệnh hay mã. Cần Vue 3 (nhánh v2 cho Vue 2). Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/pinia/blob/v4/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vuejs/pinia/blob/v4/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vuejs/pinia",
+        "stars": 14759,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vuejs/pinia/v4/README.md",
+        "readmeSha256": "39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 658,
+      "batch": 106,
+      "slug": "stimulus",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Stimulus: framework JavaScript khiêm tốn cho phần HTML bạn đã có, không lo kết xuất HTML mà thêm hành vi qua thuộc tính controller, target, action; của Basecamp, giấy phép MIT",
+        "excerpt": "Hiểu Stimulus là framework JavaScript có tham vọng khiêm tốn: không muốn chiếm toàn bộ phần giao diện, không lo kết xuất HTML, mà thêm hành vi cho HTML bạn đã có qua các thuộc tính controller, target và action; của Basecamp, giấy phép MIT, liên quan đến Turbo.",
+        "content": "<p>README tả Stimulus là framework JavaScript với tham vọng khiêm tốn: không cố chiếm cả phần giao diện, không quan tâm kết xuất HTML mà tăng cường HTML bạn đã có bằng hành vi vừa đủ. Cách hoạt động theo README: rắc thuộc tính controller, target, action lên HTML, rồi viết một lớp điều khiển tương ứng, Stimulus tự làm cho nó chạy. Stimulus theo dõi liên tục trang và kích hoạt khi thuộc tính xuất hiện hoặc biến mất, hoạt động với mọi cập nhật DOM dù đến từ tải trang đầy đủ, từ Turbo hay từ thư viện khác. README gợi ý viết bộ điều khiển đầu tiên trong năm phút theo sổ tay, và nói thêm về lý do tạo framework. README có mục cài đặt, nhận trợ giúp, đóng góp, phát triển và lời cảm ơn. Mục giới thiệu nêu Stimulus là phần mềm mã nguồn mở theo MIT của Basecamp. Bài không chép mã hay lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có trang HTML do máy chủ dựng sẵn và chỉ muốn thêm vài tương tác nhỏ như ẩn hiện một khối, sao chép liên kết. Stimulus cho bạn gắn hành vi đó mà không phải viết lại cả trang bằng framework lớn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích controller, target, action bằng ví dụ nút chào trong README; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần HTML và JavaScript cơ bản; hợp với trang dựng phía máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Stimulus không phải lựa chọn để dựng ứng dụng một trang phức tạp như React hay Vue; bài chưa so sánh. Dữ liệu người dùng nhập vào thuộc tính HTML cần được thoát ký tự để tránh lỗi bảo mật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>controller (bộ điều khiển)</strong>: lớp JavaScript gắn với một phần HTML; README nêu.</li><li><strong>target (đích)</strong>: phần tử bên trong bộ điều khiển; README nêu.</li><li><strong>action (hành động)</strong>: sự kiện gọi một phương thức; README nêu.</li><li><strong>DOM</strong>: cây phần tử của trang web; README nêu.</li><li><strong>Turbo</strong>: thư viện cập nhật trang nhanh của Hotwire; README nêu Stimulus làm việc cùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới sổ tay stimulus.hotwired.dev; bài không chép lệnh hay mã. Cần HTML và JavaScript. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc sổ tay Stimulus Handbook.</li><li>Viết bộ điều khiển đầu tiên với ví dụ nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có trang HTML dựng phía máy chủ và muốn thêm tương tác nhỏ. Hãy đọc README của Stimulus (https://github.com/hotwired/stimulus) và giải thích bằng tiếng Việt: controller, target, action là gì, Stimulus khác React ở đâu, và khi nào nên dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 3,2 KB, bài chưa đọc sổ tay stimulus.hotwired.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>hotwired</strong> có <strong>13.102 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/hotwired/stimulus/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/hotwired/stimulus\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 658. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13102; repo_id 76694515; README SHA256 02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/hotwired/stimulus",
+          "repo_id": "76694515",
+          "source_path": "",
+          "source_revision": "README-SHA256:02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hotwired/stimulus",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới sổ tay stimulus.hotwired.dev; bài không chép lệnh hay mã. Cần HTML và JavaScript. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hotwired/stimulus/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/hotwired/stimulus/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "hotwired/stimulus",
+        "stars": 13102,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/hotwired/stimulus/main/README.md",
+        "readmeSha256": "02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 659,
+      "batch": 106,
+      "slug": "rolldown",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Rolldown: công cụ đóng gói JavaScript và TypeScript viết bằng Rust, dự định làm công cụ đóng gói tương lai của Vite, tương thích API và plugin của Rollup nhưng nhanh hơn, của VoidZero, giấy phép MIT",
+        "excerpt": "Hiểu Rolldown là công cụ đóng gói (bundler) JavaScript và TypeScript viết bằng Rust, dự định làm công cụ đóng gói được dùng trong Vite sau này, cung cấp API và giao diện plugin tương thích Rollup; README nêu dự án của VoidZero, lấy cảm hứng từ Rollup và esbuild, giấy phép MIT.",
+        "content": "<p>README tả Rolldown là công cụ đóng gói JavaScript và TypeScript viết bằng Rust, dự định làm công cụ đóng gói tương lai của Vite, có API và giao diện plugin tương thích Rollup (README nói nhanh hơn; đây là tuyên bố của dự án, bài chưa kiểm chứng), kèm liên kết tới tài liệu rolldown.rs. Rolldown là dự án của VoidZero Inc., README mời liên hệ nếu có nhu cầu công cụ JavaScript quy mô lớn; đây là lời mời thương mại, bài không đánh giá. README mời đóng góp, ghi nguồn cảm hứng là Rollup và esbuild, được hỗ trợ bởi napi-rs và oxc. Mục Licenses nêu MIT và liệt kê mã lấy từ Rollup và esbuild (đều MIT) trong THIRD-PARTY-LICENSE. README phần đã đọc có huy hiệu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi ghép hàng trăm tệp JavaScript thành vài tệp để tải nhanh, công cụ đóng gói làm việc đó. Rolldown muốn làm nhanh hơn bằng cách viết bằng Rust.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'đóng gói' bằng ví dụ ba tệp thành một và vì sao cần nó; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu mô-đun JavaScript và công cụ đóng gói như Vite hoặc Rollup. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dự án còn phát triển mạnh và README ghi dự định làm công cụ đóng gói cho Vite: cần kiểm tra mức ổn định trước khi dùng cho sản phẩm thật. Bài chưa so sánh với esbuild hay Rollup.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>bundler (công cụ đóng gói)</strong>: ghép nhiều tệp mã thành ít tệp; README nêu.</li><li><strong>Rust</strong>: ngôn ngữ lập trình hệ thống; README nêu Rolldown viết bằng Rust.</li><li><strong>Vite</strong>: công cụ dựng giao diện web; README nêu Rolldown dự định thay thế bộ đóng gói của nó.</li><li><strong>Rollup</strong>: công cụ đóng gói JavaScript khác; README nêu tương thích API và plugin.</li><li><strong>plugin</strong>: phần mở rộng tính năng; README nêu giao diện plugin tương thích Rollup.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu rolldown.rs; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc hướng dẫn tại rolldown.rs.</li><li>Chỉ thử với dự án nhỏ không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Vite và muốn hiểu công cụ đóng gói mới. Hãy đọc README của Rolldown (https://github.com/rolldown/rolldown) và giải thích bằng tiếng Việt: công cụ đóng gói là gì, vì sao Rolldown viết bằng Rust, và vì sao cần kiểm tra mức ổn định. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), bài chưa đọc tài liệu rolldown.rs. Tuyên bố tốc độ chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>rolldown</strong> có <strong>13.994 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/rolldown/rolldown/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/rolldown/rolldown\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 659. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13994; repo_id 693187866; README SHA256 bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/rolldown/rolldown",
+          "repo_id": "693187866",
+          "source_path": "",
+          "source_revision": "README-SHA256:bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rolldown/rolldown",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu rolldown.rs; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rolldown/rolldown/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/rolldown/rolldown/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "rolldown/rolldown",
+        "stars": 13994,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/rolldown/rolldown/main/README.md",
+        "readmeSha256": "bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 660,
+      "batch": 106,
+      "slug": "floating-ui",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Floating UI: thư viện nhỏ giúp tạo phần tử nổi như tooltip, popover, dropdown với hai tính năng neo vị trí và tương tác người dùng cho React; trước đây là Popper, giấy phép MIT",
+        "excerpt": "Hiểu Floating UI là thư viện nhỏ giúp tạo các phần tử nổi như tooltip, popover, dropdown: neo vị trí (giữ phần tử nổi dính vào phần tử khác và tránh va chạm để nằm trong tầm nhìn) và tương tác người dùng cho React (hook và thành phần giúp dựng thành phần nổi dễ truy cập); README nêu Popper nay là Floating UI.",
+        "content": "<p>README ghi chú Popper nay là Floating UI (Popper v2 ở nhánh riêng, có hướng dẫn di chuyển). Floating UI là thư viện nhỏ giúp tạo phần tử nổi như tooltip, popover, dropdown, với hai tính năng chính: neo vị trí (neo phần tử nổi như tooltip vào phần tử khác như nút bấm đồng thời giữ cho nó nằm trong tầm nhìn tốt nhất có thể bằng cách tránh va chạm, dùng được trên mọi nền tảng) và tương tác người dùng cho React (hook và thành phần để ghép tương tác dựng thành phần nổi dễ truy cập). Phần Why giải thích phần tử nổi định vị tuyệt đối, neo vào phần tử khác khó trong các bố cục như khung cuộn. README có mục cài đặt cho JavaScript thuần, React, React DOM, React Native, Vue (bài không chép lệnh), và phần tài trợ qua Open Collective. README phần đã đọc có mục License. Bài chưa kiểm chứng tuyên bố của README về khả năng tránh va chạm.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi di chuột vào một nút và hiện lời chú thích, lời chú thích đó phải nằm đúng chỗ và không bị cắt khi sát mép màn hình. Floating UI tính vị trí đúng cho bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'tránh va chạm' bằng ví dụ tooltip sát mép màn hình; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần HTML, CSS và JavaScript, hoặc React để dùng phần tương tác. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần tử nổi cần truy cập được bằng bàn phím và trình đọc màn hình: README nói phần tương tác React giúp dựng thành phần dễ truy cập, bài chưa kiểm tra. Có thư viện giao diện đã gói sẵn tooltip; người mới có thể dùng chúng thay vì dùng trực tiếp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>floating element (phần tử nổi)</strong>: phần tử như tooltip, popover đặt trên giao diện; README nêu.</li><li><strong>anchor positioning (neo vị trí)</strong>: đặt phần tử này cạnh phần tử kia; README nêu.</li><li><strong>collision (va chạm)</strong>: phần tử bị cắt hoặc tràn khỏi tầm nhìn; README nêu tránh.</li><li><strong>popover/dropdown</strong>: hộp nổi và danh sách thả xuống; README nêu.</li><li><strong>Popper</strong>: tên cũ của thư viện; README nêu nay là Floating UI.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install cho JavaScript thuần, React, React Native, Vue; bài không chép lệnh. Miễn phí theo MIT; giấy phép lấy theo GitHub (MIT), README có mục License.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Why.</li><li>Đọc mục Install theo nền tảng của bạn.</li><li>Thử một tooltip nhỏ và kiểm tra bằng bàn phím.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm giao diện web có tooltip và dropdown. Hãy đọc README của Floating UI (https://github.com/floating-ui/floating-ui) và giải thích bằng tiếng Việt: Floating UI giải quyết vấn đề gì, neo vị trí và tránh va chạm nghĩa là gì, và vì sao cần quan tâm khả năng truy cập. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 4,9 KB, bài chưa đọc tài liệu floating-ui.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>floating-ui</strong> có <strong>32.789 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-27. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có mục License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/floating-ui/floating-ui/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/floating-ui/floating-ui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 660. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32789; repo_id 54994103; README SHA256 b352baf175998877bad6168b0e55cf887690ede7a85acdfea344de996744d123.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/floating-ui/floating-ui",
+          "repo_id": "54994103",
+          "source_path": "",
+          "source_revision": "README-SHA256:b352baf175998877bad6168b0e55cf887690ede7a85acdfea344de996744d123",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/floating-ui/floating-ui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install cho JavaScript thuần, React, React Native, Vue; bài không chép lệnh. Miễn phí theo MIT; giấy phép lấy theo GitHub (MIT), README có mục License.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/floating-ui/floating-ui/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/floating-ui/floating-ui/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "floating-ui/floating-ui",
+        "stars": 32789,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/floating-ui/floating-ui/master/README.md",
+        "readmeSha256": "b352baf175998877bad6168b0e55cf887690ede7a85acdfea344de996744d123",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

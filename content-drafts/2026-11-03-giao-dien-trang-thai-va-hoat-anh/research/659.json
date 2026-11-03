@@ -1,0 +1,42 @@
+{
+  "key": 659,
+  "repo": "rolldown/rolldown",
+  "repoId": "693187866",
+  "url": "https://github.com/rolldown/rolldown",
+  "stars": 13994,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:19:04Z",
+  "createdAt": "2023-09-18T14:20:28Z",
+  "defaultBranch": "main",
+  "description": "Fast Rust bundler for JavaScript/TypeScript with Rollup-compatible API.",
+  "homepage": "https://rolldown.rs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/rolldown/rolldown/main/README.md",
+    "sha256": "bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89",
+    "bytes": 4995,
+    "sectionsRead": [
+      "VoidZero Inc.",
+      "Contributing",
+      "Credits",
+      "Licenses"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu rolldown.rs.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố tốc độ."
+  ],
+  "runtimeValidated": false
+}

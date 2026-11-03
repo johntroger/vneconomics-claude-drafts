@@ -7464,12 +7464,12 @@
   ]
  },
  {
-  "key": 496,
+  "key": 653,
   "slug": "motion",
-  "group": "2026-11-03-ban-do-bieu-do-bang",
-  "title": "Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Motion: thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue, động cơ lai dùng JavaScript kết hợp API trình duyệt gốc, cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng theo cuộn; có gói Motion+ trả phí và công cụ AI, giấy phép MIT",
   "repo": "motiondivision/motion",
-  "stars": 34831,
+  "stars": 34837,
   "license": {
    "key": "mit",
    "name": "MIT License",
@@ -7477,12 +7477,14 @@
    "url": "https://api.github.com/licenses/mit",
    "node_id": "MDc6TGljZW5zZTEz"
   },
-  "level_text": "Trung bình",
-  "tier": "co-ban",
-  "category": "Dữ liệu và giao diện ứng dụng",
-  "need": "Trình bày dữ liệu",
-  "pushed": "2026-11-02",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
   "related": [
+   "pinia",
+   "react-hook-form",
    "tanstack-table",
    "univer"
   ]
@@ -11186,6 +11188,172 @@
   "pushed": "2026-11-03",
   "related": [
    "graphql-js"
+  ]
+ },
+ {
+  "key": 654,
+  "slug": "react-hook-form",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "React Hook Form: thư viện xử lý biểu mẫu cho React tập trung vào hiệu năng, trải nghiệm và dễ dùng, tận dụng kiểm tra hợp lệ HTML gốc, không phụ thuộc, tích hợp Yup, Zod, AJV, Superstruct; giấy phép MIT",
+  "repo": "react-hook-form/react-hook-form",
+  "stars": 44898,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "floating-ui",
+   "motion"
+  ]
+ },
+ {
+  "key": 655,
+  "slug": "jotai",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Jotai: thư viện quản lý trạng thái nguyên tử cho React, lõi tối thiểu 2 KB, mở rộng từ thay thế useState đến ứng dụng TypeScript lớn, không dùng khóa chuỗi (so với Recoil), atom dẫn xuất và bất đồng bộ",
+  "repo": "pmndrs/jotai",
+  "stars": 21304,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-23",
+  "related": [
+   "floating-ui",
+   "mobx"
+  ]
+ },
+ {
+  "key": 656,
+  "slug": "mobx",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "MobX: thư viện quản lý trạng thái đơn giản và co giãn dựa trên tín hiệu, áp dụng lập trình phản ứng hàm minh bạch, mọi thứ có thể dẫn xuất từ trạng thái thì tự động dẫn xuất; README nhiều phần tài trợ",
+  "repo": "mobxjs/mobx",
+  "stars": 28220,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-01",
+  "related": [
+   "jotai",
+   "rolldown"
+  ]
+ },
+ {
+  "key": 657,
+  "slug": "pinia",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Pinia: kho trạng thái trực quan, an toàn kiểu và linh hoạt cho Vue, hỗ trợ devtools, mở rộng được, mô-đun hóa, rất nhẹ, có mô-đun Nuxt; README nêu là kế thừa của Vuex, giấy phép MIT",
+  "repo": "vuejs/pinia",
+  "stars": 14759,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "motion",
+   "stimulus"
+  ]
+ },
+ {
+  "key": 658,
+  "slug": "stimulus",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Stimulus: framework JavaScript khiêm tốn cho phần HTML bạn đã có, không lo kết xuất HTML mà thêm hành vi qua thuộc tính controller, target, action; của Basecamp, giấy phép MIT",
+  "repo": "hotwired/stimulus",
+  "stars": 13102,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-29",
+  "related": [
+   "pinia"
+  ]
+ },
+ {
+  "key": 659,
+  "slug": "rolldown",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Rolldown: công cụ đóng gói JavaScript và TypeScript viết bằng Rust, dự định làm công cụ đóng gói tương lai của Vite, tương thích API và plugin của Rollup nhưng nhanh hơn, của VoidZero, giấy phép MIT",
+  "repo": "rolldown/rolldown",
+  "stars": 13994,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "mobx"
+  ]
+ },
+ {
+  "key": 660,
+  "slug": "floating-ui",
+  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
+  "title": "Floating UI: thư viện nhỏ giúp tạo phần tử nổi như tooltip, popover, dropdown với hai tính năng neo vị trí và tương tác người dùng cho React; trước đây là Popper, giấy phép MIT",
+  "repo": "floating-ui/floating-ui",
+  "stars": 32789,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-27",
+  "related": [
+   "jotai",
+   "react-hook-form"
   ]
  }
 ]
