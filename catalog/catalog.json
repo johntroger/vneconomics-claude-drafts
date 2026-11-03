@@ -1038,5 +1038,111 @@
   "related": [
    "tldr-pages"
   ]
+ },
+ {
+  "key": 160,
+  "slug": "pandas",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "pandas: thư viện Python xử lý bảng dữ liệu, nền của hầu hết mã phân tích do AI viết",
+  "repo": "pandas-dev/pandas",
+  "stars": 50302,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "jupyterlab",
+   "polars"
+  ]
+ },
+ {
+  "key": 161,
+  "slug": "polars",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "Polars: công cụ xử lý bảng dữ liệu nhanh, kể cả dữ liệu lớn hơn bộ nhớ",
+  "repo": "pola-rs/polars",
+  "stars": 40254,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "altair",
+   "pandas"
+  ]
+ },
+ {
+  "key": 162,
+  "slug": "jupyterlab",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "JupyterLab: môi trường notebook để viết mã, xem kết quả và ghi chú cùng một chỗ",
+  "repo": "jupyterlab/jupyterlab",
+  "stars": 15385,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "pandas"
+  ]
+ },
+ {
+  "key": 163,
+  "slug": "marimo",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "marimo: notebook Python 'phản ứng' tự cập nhật kết quả và triển khai thành ứng dụng",
+  "repo": "marimo-team/marimo",
+  "stars": 23411,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "altair",
+   "plotly-dash"
+  ]
+ },
+ {
+  "key": 164,
+  "slug": "plotly-dash",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "Dash: dựng bảng điều khiển dữ liệu bằng Python, không cần viết JavaScript",
+  "repo": "plotly/dash",
+  "stars": 24478,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "marimo"
+  ]
+ },
+ {
+  "key": 165,
+  "slug": "altair",
+  "group": "2026-11-03-du-lieu-cho-nguoi-moi",
+  "title": "Vega-Altair: vẽ biểu đồ bằng cách mô tả bạn muốn thấy gì thay vì chỉ cách vẽ",
+  "repo": "vega/altair",
+  "stars": 10510,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "marimo",
+   "polars"
+  ]
  }
 ]

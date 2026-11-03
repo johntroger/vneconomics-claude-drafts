@@ -1,0 +1,36 @@
+{
+  "key": 160,
+  "repo": "pandas-dev/pandas",
+  "repoId": "858127",
+  "url": "https://github.com/pandas-dev/pandas",
+  "stars": 50302,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:10:44Z",
+  "createdAt": "2010-08-24T01:37:33Z",
+  "defaultBranch": "main",
+  "description": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more",
+  "homepage": "https://pandas.pydata.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/README.md",
+    "sha256": "8faf25852daa0363f7052e072e51ac8b6f80829d77cf2c8c28aaea0015895e79",
+    "bytes": 10191,
+    "sectionsRead": [
+      "What is it?",
+      "Main Features",
+      "Dependencies",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa so sánh hiệu năng với công cụ khác.",
+    "Phiên bản hiện hành và thay đổi lớn chưa tìm hiểu."
+  ],
+  "runtimeValidated": false
+}

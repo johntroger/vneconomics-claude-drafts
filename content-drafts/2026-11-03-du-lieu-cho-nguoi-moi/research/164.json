@@ -1,0 +1,35 @@
+{
+  "key": 164,
+  "repo": "plotly/dash",
+  "repoId": "33702544",
+  "url": "https://github.com/plotly/dash",
+  "stars": 24478,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:56:57Z",
+  "createdAt": "2015-04-10T01:53:08Z",
+  "defaultBranch": "dev",
+  "description": "Data Apps & Dashboards for Python. No JavaScript Required.",
+  "homepage": "https://plotly.com/dash",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/plotly/dash/dev/README.md",
+    "sha256": "345705c050a8faf3d183b169efb391d23fcdcad8a562b730249bd158883d0497",
+    "bytes": 6490,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Dash App Examples",
+      "Dash OSS & Dash Enterprise"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giá Dash Enterprise chưa kiểm tra.",
+    "Chưa đọc tài liệu getting started.",
+    "Chưa so sánh với Streamlit."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,37 @@
+{
+  "key": 161,
+  "repo": "pola-rs/polars",
+  "repoId": "263727855",
+  "url": "https://github.com/pola-rs/polars",
+  "stars": 40254,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:41:32Z",
+  "createdAt": "2020-05-13T19:45:33Z",
+  "defaultBranch": "main",
+  "description": "Extremely fast Query Engine for DataFrames, written in Rust",
+  "homepage": "https://docs.pola.rs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pola-rs/polars/main/README.md",
+    "sha256": "34ae7397cdce21d11b86261faa8c792b4ab502afaff817f1af26a6c22baa1f9f",
+    "bytes": 6414,
+    "sectionsRead": [
+      "Polars (mô tả)",
+      "Polars in action",
+      "Performance",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Số liệu hiệu năng do tác giả công bố.",
+    "Chưa so sánh thực tế với pandas.",
+    "Chưa đọc User Guide."
+  ],
+  "runtimeValidated": false
+}

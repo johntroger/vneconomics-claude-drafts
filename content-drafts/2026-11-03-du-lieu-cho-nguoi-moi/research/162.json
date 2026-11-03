@@ -1,0 +1,36 @@
+{
+  "key": 162,
+  "repo": "jupyterlab/jupyterlab",
+  "repoId": "60374819",
+  "url": "https://github.com/jupyterlab/jupyterlab",
+  "stars": 15385,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:33:20Z",
+  "createdAt": "2016-06-03T20:09:17Z",
+  "defaultBranch": "main",
+  "description": "JupyterLab computational environment.",
+  "homepage": "https://jupyterlab.readthedocs.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyterlab/jupyterlab/main/README.md",
+    "sha256": "f2a9d4e09ca81a79ffe7f21ca31cbb51d8e04cf0a801d638ae3f32c3317b67d3",
+    "bytes": 10884,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Cảnh báo JupyterLab 3",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần mở rộng và cấu hình.",
+    "Chưa thử trên nhiều hệ điều hành.",
+    "Chưa so sánh với notebook khác."
+  ],
+  "runtimeValidated": false
+}

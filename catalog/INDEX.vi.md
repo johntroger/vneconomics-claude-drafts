@@ -8,6 +8,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 3 — Từ ý tưởng đến website chạy thật](learning-paths/03-tu-y-tuong-den-website-chay-that.vi.md) — Cho người đã có bản mẫu và muốn thêm đăng nhập, dữ liệu và đưa lên mạng.
 - [Lộ trình 7 — Đọc hiểu mã web do AI dựng](learning-paths/07-doc-hieu-ma-web-do-ai-dung.vi.md) — Giải mã các tên công nghệ thường xuất hiện trong dự án web do AI tạo: để biết mình đang nhìn thấy gì.
 - [Lộ trình 8 — Làm quen terminal và môi trường làm việc](learning-paths/08-lam-quen-terminal-va-moi-truong.vi.md) — Cho người dùng coding agent cần thoải mái hơn với dòng lệnh, git và công cụ phát triển.
+- [Lộ trình 9 — Làm việc với dữ liệu khi có AI hỗ trợ](learning-paths/09-du-lieu-cho-nguoi-moi.vi.md) — Từ bảng dữ liệu đến biểu đồ và trang tương tác; luôn kiểm tra kết quả AI tính.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -37,7 +38,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 154 | Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft | [microsoft/vscode](https://github.com/microsoft/vscode) | MIT | 194514 | cong-cu-dong-lenh |
 | 159 | Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows | [microsoft/terminal](https://github.com/microsoft/terminal) | MIT | 105315 | cong-cu-dong-lenh |
 
-### Cơ bản (26 bài)
+### Cơ bản (31 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -67,8 +68,13 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 156 | lazygit: giao diện trong terminal giúp thao tác git bằng phím thay vì nhớ lệnh | [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) | MIT | 83617 | cong-cu-dong-lenh |
 | 157 | uv: công cụ quản lý Python và thư viện Python nhanh, thay cho nhiều công cụ rời rạc | [astral-sh/uv](https://github.com/astral-sh/uv) | Apache-2.0 | 91485 | cong-cu-dong-lenh |
 | 158 | nvm: chuyển đổi giữa các phiên bản Node.js, và điều người dùng Windows cần biết | [nvm-sh/nvm](https://github.com/nvm-sh/nvm) | MIT | 95740 | cong-cu-dong-lenh |
+| 160 | pandas: thư viện Python xử lý bảng dữ liệu, nền của hầu hết mã phân tích do AI viết | [pandas-dev/pandas](https://github.com/pandas-dev/pandas) | BSD-3-Clause | 50302 | du-lieu-cho-nguoi-moi |
+| 162 | JupyterLab: môi trường notebook để viết mã, xem kết quả và ghi chú cùng một chỗ | [jupyterlab/jupyterlab](https://github.com/jupyterlab/jupyterlab) | BSD-3-Clause | 15385 | du-lieu-cho-nguoi-moi |
+| 163 | marimo: notebook Python 'phản ứng' tự cập nhật kết quả và triển khai thành ứng dụng | [marimo-team/marimo](https://github.com/marimo-team/marimo) | Apache-2.0 | 23411 | du-lieu-cho-nguoi-moi |
+| 164 | Dash: dựng bảng điều khiển dữ liệu bằng Python, không cần viết JavaScript | [plotly/dash](https://github.com/plotly/dash) | MIT | 24478 | du-lieu-cho-nguoi-moi |
+| 165 | Vega-Altair: vẽ biểu đồ bằng cách mô tả bạn muốn thấy gì thay vì chỉ cách vẽ | [vega/altair](https://github.com/vega/altair) | BSD-3-Clause | 10510 | du-lieu-cho-nguoi-moi |
 
-### Khá khó (cần nền kỹ thuật) (11 bài)
+### Khá khó (cần nền kỹ thuật) (12 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -83,6 +89,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 137 | TruffleHog: tìm khóa rò rỉ và kiểm tra khóa nào còn dùng được | [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | AGPL-3.0 | 28822 | bao-mat-co-ban |
 | 143 | Infisical: nền tảng mã nguồn mở để quản lý bí mật, chứng chỉ và quyền truy cập | [Infisical/infisical](https://github.com/Infisical/infisical) | NOASSERTION | 30227 | bao-mat-co-ban |
 | 151 | Drizzle ORM: nói chuyện với cơ sở dữ liệu bằng TypeScript theo kiểu gần với SQL | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | Apache-2.0 | 36207 | cong-nghe-web-ai-hay-dung |
+| 161 | Polars: công cụ xử lý bảng dữ liệu nhanh, kể cả dữ liệu lớn hơn bộ nhớ | [pola-rs/polars](https://github.com/pola-rs/polars) | MIT | 40254 | du-lieu-cho-nguoi-moi |
 
 ### Nâng cao (4 bài)
 

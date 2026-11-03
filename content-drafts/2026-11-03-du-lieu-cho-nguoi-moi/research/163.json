@@ -1,0 +1,35 @@
+{
+  "key": 163,
+  "repo": "marimo-team/marimo",
+  "repoId": "678526156",
+  "url": "https://github.com/marimo-team/marimo",
+  "stars": 23411,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:04:35Z",
+  "createdAt": "2023-08-14T18:56:20Z",
+  "defaultBranch": "main",
+  "description": "A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.",
+  "homepage": "https://marimo.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/marimo-team/marimo/main/README.md",
+    "sha256": "d017b1b939242ce844b38a20e9d53b7af277c48743cce6bcfca815634e760eca",
+    "bytes": 16847,
+    "sectionsRead": [
+      "Giới thiệu và điểm nổi bật",
+      "A reactive programming environment",
+      "Quickstart"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc mục notebook tốn kém và triển khai.",
+    "Chưa kiểm tra molab.",
+    "Độ trưởng thành chưa đánh giá."
+  ],
+  "runtimeValidated": false
+}
