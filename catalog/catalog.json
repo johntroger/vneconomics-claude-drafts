@@ -569,6 +569,7 @@
   "need": "Thiết kế nội dung trực quan",
   "pushed": "2026-10-28",
   "related": [
+   "diffusers",
    "shadcn-ui",
    "supabase"
   ]
@@ -2464,6 +2465,95 @@
   "related": [
    "frigate",
    "tailscale"
+  ]
+ },
+ {
+  "key": 239,
+  "slug": "diffusers",
+  "group": "2026-11-03-video-am-thanh-va-anh-ai",
+  "title": "Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python",
+  "repo": "huggingface/diffusers",
+  "stars": 34854,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "awesome-design-md",
+   "sherpa-onnx"
+  ]
+ },
+ {
+  "key": 240,
+  "slug": "sherpa-onnx",
+  "group": "2026-11-03-video-am-thanh-va-anh-ai",
+  "title": "sherpa-onnx: nhận dạng và tổng hợp giọng nói chạy ngoại tuyến trên nhiều thiết bị và ngôn ngữ lập trình",
+  "repo": "k2-fsa/sherpa-onnx",
+  "stars": 15694,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-10-29",
+  "related": [
+   "diffusers",
+   "kdenlive"
+  ]
+ },
+ {
+  "key": 241,
+  "slug": "obs-studio",
+  "group": "2026-11-03-video-am-thanh-va-anh-ai",
+  "title": "OBS Studio: phần mềm miễn phí để quay màn hình và phát trực tiếp, nền tảng của nhiều video bài giảng",
+  "repo": "obsproject/obs-studio",
+  "stars": 78853,
+  "license": "GPL-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "losslesscut"
+  ]
+ },
+ {
+  "key": 242,
+  "slug": "losslesscut",
+  "group": "2026-11-03-video-am-thanh-va-anh-ai",
+  "title": "LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp",
+  "repo": "mifi/lossless-cut",
+  "stars": 45636,
+  "license": "GPL-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-03",
+  "related": [
+   "kdenlive",
+   "obs-studio"
+  ]
+ },
+ {
+  "key": 243,
+  "slug": "kdenlive",
+  "group": "2026-11-03-video-am-thanh-va-anh-ai",
+  "title": "Kdenlive: phần mềm dựng video miễn phí, mã nguồn mở của cộng đồng KDE",
+  "repo": "KDE/kdenlive",
+  "stars": 6039,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-03",
+  "related": [
+   "losslesscut",
+   "sherpa-onnx"
   ]
  }
 ]

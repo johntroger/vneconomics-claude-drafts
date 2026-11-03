@@ -1,0 +1,523 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-video-am-thanh",
+  "batch": 41,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 239,
+      "batch": 41,
+      "slug": "diffusers",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python",
+        "excerpt": "Hiểu Diffusers giúp chạy và ghép các mô hình khuếch tán (tạo ảnh, âm thanh) chỉ vài dòng mã Python. Cần máy đủ mạnh và chú ý giấy phép từng mô hình.",
+        "content": "<p>Diffusers là thư viện cho các mô hình khuếch tán (diffusion) được huấn luyện sẵn để tạo ảnh, âm thanh và cả cấu trúc 3D của phân tử, dùng cho suy luận đơn giản hoặc tự huấn luyện. README nêu ba thành phần: các pipeline suy luận hiện đại chạy chỉ vài dòng mã, các bộ lập lịch nhiễu thay thế được (scheduler) cho tốc độ và chất lượng khác nhau, và các mô hình huấn luyện sẵn dùng làm khối xây dựng. Khuyên cài trong môi trường ảo qua PyPI hoặc Conda, hướng dẫn riêng cho Apple Silicon. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Các công cụ tạo ảnh bằng AI thường là ứng dụng đã đóng gói. Diffusers giống bộ linh kiện: bạn lấy một mô hình (bộ não), một bộ lập lịch (cách vẽ nhanh hay kỹ) và ghép thành máy vẽ riêng. Hợp người muốn hiểu bên trong hoặc tự tùy biến.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người biết Python muốn thử một mô hình tạo ảnh mã mở và đọc xem pipeline gồm những thành phần nào. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng Python quan tâm tạo ảnh bằng AI; người muốn hiểu và tùy biến thay vì dùng giao diện đóng gói.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần Python, môi trường ảo và thường cần GPU; mô hình lớn tải về tốn dung lượng. README ngắn nên chi tiết ở tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn giao diện kéo thả, các ứng dụng như ComfyUI hay InvokeAI (đợt cũ) dễ hơn. Nếu máy không có GPU, tốc độ sẽ rất chậm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>diffusion model (mô hình khuếch tán)</strong>: loại mô hình AI tạo ảnh bằng cách khử nhiễu dần từ ảnh nhiễu.</li><li><strong>pipeline</strong>: chuỗi các bước đã ghép sẵn từ nhập đề bài đến xuất ảnh.</li><li><strong>scheduler (bộ lập lịch)</strong>: quyết định cách khử nhiễu, ảnh hưởng tốc độ và chất lượng.</li><li><strong>GPU</strong>: card đồ họa, giúp chạy mô hình AI nhanh hơn nhiều.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng pip hoặc conda trong môi trường ảo và cần PyTorch; có hướng dẫn riêng cho Apple Silicon; bài không chép lệnh. Thư viện Apache-2.0 nhưng mỗi mô hình tải từ Hugging Face có giấy phép riêng, nhiều mô hình có điều khoản về sử dụng; bài chưa kiểm tra từng mô hình.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ba thành phần chính.</li><li>Đọc Quickstart và hướng dẫn cài đặt trong README.</li><li>Thử với mô hình nhỏ, kiểm tra giấy phép của mô hình trước khi dùng cho mục đích thương mại.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tìm hiểu cách tạo ảnh bằng AI bằng Python. Hãy đọc README của Diffusers (https://github.com/huggingface/diffusers) và giải thích bằng tiếng Việt: mô hình khuếch tán là gì, pipeline và scheduler làm gì, cần phần cứng gì, và giấy phép mô hình khác giấy phép thư viện thế nào. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giấy phép thư viện không đồng nghĩa giấy phép mô hình. Cần phần cứng mạnh và dung lượng đĩa. Nội dung do AI tạo có thể gây hiểu lầm hoặc vi phạm bản quyền; bài không tư vấn pháp lý.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi xử lý ảnh, giọng nói, video có người thật, hãy xin phép người có mặt trong nội dung, kiểm tra giấy phép của mô hình và tài nguyên, và không tạo nội dung giả mạo hay gây hiểu lầm về người thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>34.854 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0 cho thư viện; mô hình trên Hub có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/diffusers/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/diffusers\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm video âm thanh và ảnh AI, key 239. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34854; repo_id 498011141; README SHA256 7983ae4d23ec43664c587027d7462ba8a742ddff784430dfb7fd3cea8ba5523c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/diffusers",
+          "repo_id": "498011141",
+          "source_path": "",
+          "source_revision": "README-SHA256:7983ae4d23ec43664c587027d7462ba8a742ddff784430dfb7fd3cea8ba5523c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/diffusers",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng pip hoặc conda trong môi trường ảo và cần PyTorch; có hướng dẫn riêng cho Apple Silicon; bài không chép lệnh. Thư viện Apache-2.0 nhưng mỗi mô hình tải từ Hugging Face có giấy phép riêng, nhiều mô hình có điều khoản về sử dụng; bài chưa kiểm tra từng mô hình.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/diffusers/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/diffusers/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/diffusers",
+        "stars": 34854,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/diffusers/main/README.md",
+        "readmeSha256": "7983ae4d23ec43664c587027d7462ba8a742ddff784430dfb7fd3cea8ba5523c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 240,
+      "batch": 41,
+      "slug": "sherpa-onnx",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "sherpa-onnx: nhận dạng và tổng hợp giọng nói chạy ngoại tuyến trên nhiều thiết bị và ngôn ngữ lập trình",
+        "excerpt": "Hiểu sherpa-onnx gom nhận dạng giọng nói, đọc văn bản thành tiếng, tách nguồn âm và nhiều chức năng khác, chạy cục bộ trên máy tính, điện thoại và nhiều nền tảng.",
+        "content": "<p>sherpa-onnx là bộ công cụ xử lý giọng nói. README liệt kê chức năng: nhận dạng giọng nói, tổng hợp giọng nói (TTS), tách nguồn âm, nhận diện người nói, phân đoạn người nói (diarization), xác minh người nói, nhận diện ngôn ngữ nói, gắn nhãn âm thanh, phát hiện hoạt động giọng nói, phát hiện từ khóa, thêm dấu câu và tăng cường giọng nói. Hỗ trợ nhiều nền tảng: Android, iOS, Windows, macOS, Linux, HarmonyOS với nhiều kiến trúc, và nhiều ngôn ngữ lập trình (C++, C, Python, JavaScript và còn nữa). README dẫn tới các không gian Hugging Face để thử mà không cần cài, và danh sách mô hình tiền huấn luyện. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy nghĩ tới một bộ 'tai và miệng' nhỏ cho ứng dụng: tai để nghe và chép chữ, miệng để đọc chữ thành tiếng, còn có thể nhận ra ai đang nói. Điểm hay theo cách thiết kế là chạy được ngay trên thiết bị của bạn, nên có thể không cần gửi giọng nói lên dịch vụ ngoài (bài chưa kiểm chứng dữ liệu có rời máy hay không trong từng cách dùng).</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên muốn chép lời bài giảng trên máy cá nhân mà không gửi ghi âm lên đám mây; xem sherpa-onnx như một lựa chọn kỹ thuật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng giọng nói; người cần xử lý ghi âm cục bộ vì lý do riêng tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần chọn mô hình phù hợp ngôn ngữ, cài đặt theo nền tảng và dùng qua mã. README dài (gần 59 KB) và nhiều mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần công cụ chép lời có sẵn giao diện, các bài về Whisper trong đợt cũ hoặc Subtitle Edit có thể dễ hơn. README không nêu rõ mức hỗ trợ tiếng Việt trong phần đã đọc.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>ASR (nhận dạng giọng nói)</strong>: chuyển lời nói thành chữ.</li><li><strong>TTS (tổng hợp giọng nói)</strong>: đọc chữ thành tiếng.</li><li><strong>diarization</strong>: xác định ai nói đoạn nào trong ghi âm có nhiều người.</li><li><strong>VAD</strong>: phát hiện lúc nào có người nói trong âm thanh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt, mô hình tiền huấn luyện và không gian Hugging Face để thử; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0; mô hình có giấy phép riêng. Mức hỗ trợ tiếng Việt chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử các không gian Hugging Face mà README liệt kê.</li><li>Đọc danh sách chức năng và nền tảng.</li><li>Chọn một mô hình và ngôn ngữ cần dùng, kiểm tra giấy phép mô hình.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần nhận dạng giọng nói ngoại tuyến cho ghi âm tiếng Việt. Hãy đọc README của sherpa-onnx (https://github.com/k2-fsa/sherpa-onnx) và giải thích bằng tiếng Việt: các chức năng chính, tiếng Việt có được hỗ trợ không, và vì sao chạy cục bộ tốt cho quyền riêng tư. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài và nhiều mô hình; chất lượng phụ thuộc mô hình và ngôn ngữ. Chúng tôi chưa kiểm tra hỗ trợ tiếng Việt. Ghi âm có người nên cần xin phép và tuân thủ quy định riêng tư.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi xử lý ảnh, giọng nói, video có người thật, hãy xin phép người có mặt trong nội dung, kiểm tra giấy phép của mô hình và tài nguyên, và không tạo nội dung giả mạo hay gây hiểu lầm về người thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>k2-fsa</strong> có <strong>15.694 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; mô hình có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/k2-fsa/sherpa-onnx\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm video âm thanh và ảnh AI, key 240. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15694; repo_id 531380835; README SHA256 1c584fdee35aa93a1ff9508209412528edc4a666d0b55d366c13bdf3523491ca.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/k2-fsa/sherpa-onnx",
+          "repo_id": "531380835",
+          "source_path": "",
+          "source_revision": "README-SHA256:1c584fdee35aa93a1ff9508209412528edc4a666d0b55d366c13bdf3523491ca",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/k2-fsa/sherpa-onnx",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt, mô hình tiền huấn luyện và không gian Hugging Face để thử; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0; mô hình có giấy phép riêng. Mức hỗ trợ tiếng Việt chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "k2-fsa/sherpa-onnx",
+        "stars": 15694,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/master/README.md",
+        "readmeSha256": "1c584fdee35aa93a1ff9508209412528edc4a666d0b55d366c13bdf3523491ca",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 241,
+      "batch": 41,
+      "slug": "obs-studio",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OBS Studio: phần mềm miễn phí để quay màn hình và phát trực tiếp, nền tảng của nhiều video bài giảng",
+        "excerpt": "Hiểu OBS Studio là công cụ thu, ghép cảnh, mã hóa, ghi và phát trực tiếp video. Hợp người làm video bài giảng, hướng dẫn phần mềm và phát trực tiếp.",
+        "content": "<p>OBS Studio là phần mềm để thu, ghép cảnh, mã hóa, ghi và phát trực tiếp nội dung video một cách hiệu quả, theo README. README ghi giấy phép GNU GPL v2 trở lên và liệt kê liên kết nhanh: trang web, wiki hướng dẫn, diễn đàn, hướng dẫn biên dịch, tài liệu nhà phát triển, đóng góp và theo dõi lỗi. Dự án có bản dịch cộng đồng qua Crowdin.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn quay một bài giảng có cả màn hình, khuôn mặt và slide, bạn cần một 'phòng điều khiển' trộn các nguồn hình lại. OBS giống phòng điều khiển truyền hình thu nhỏ trên máy tính: bạn xếp các nguồn thành cảnh, rồi quay lại hoặc phát trực tiếp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên quay bài giảng gồm màn hình slide và webcam để đăng cho sinh viên. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Giảng viên, người làm video hướng dẫn, người phát trực tiếp; người cần quay màn hình chuyên nghiệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài như phần mềm thường, nhưng cấu hình cảnh, nguồn và mã hóa có nhiều tùy chọn; wiki hướng dẫn nhiều. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần cắt ghép video đã quay, dùng trình dựng như Kdenlive hay LosslessCut (cùng nhóm). OBS tập trung thu và phát.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>scene (cảnh)</strong>: một bố cục gồm nhiều nguồn hình và âm thanh, như màn hình và webcam.</li><li><strong>encoding (mã hóa)</strong>: nén video để lưu hoặc phát nhẹ hơn.</li><li><strong>streaming (phát trực tiếp)</strong>: gửi video lên mạng theo thời gian thực.</li><li><strong>GPL v2</strong>: giấy phép mã nguồn mở chia sẻ tương tự.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn biên dịch và wiki; bản cài dựng sẵn ở trang obsproject.com; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép GPL v2 trở lên; README nhận đóng góp và tài trợ.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và liên kết wiki.</li><li>Tải từ trang chính thức obsproject.com.</li><li>Làm cảnh đơn giản (màn hình và micro) và quay thử ngắn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quay bài giảng có màn hình và webcam. Hãy đọc README của OBS Studio (https://github.com/obsproject/obs-studio) và giải thích bằng tiếng Việt: cảnh và nguồn là gì, nên tải từ đâu cho an toàn, và những lưu ý về quyền riêng tư khi quay màn hình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn, chi tiết ở wiki chưa đọc. Quay màn hình có thể lộ thông tin cá nhân (thông báo, tài khoản); cần kiểm tra trước khi đăng. Phát trực tiếp cần tài khoản dịch vụ khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trước khi quay hoặc phát trực tiếp, tắt thông báo và đóng các cửa sổ có thông tin cá nhân hay khóa bí mật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>obsproject</strong> có <strong>78.853 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0; README ghi GPL v2 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/obsproject/obs-studio/blob/master/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/obsproject/obs-studio\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm video âm thanh và ảnh AI, key 241. Chưa cài/chạy thử; không tạo validation. Snapshot sao 78853; repo_id 13233158; README SHA256 be2dff0124620dcd9d8d83ef9084b12d1e61e896d3295232501cb3ebd3f6a318.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/obsproject/obs-studio",
+          "repo_id": "13233158",
+          "source_path": "",
+          "source_revision": "README-SHA256:be2dff0124620dcd9d8d83ef9084b12d1e61e896d3295232501cb3ebd3f6a318",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/obsproject/obs-studio",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn biên dịch và wiki; bản cài dựng sẵn ở trang obsproject.com; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép GPL v2 trở lên; README nhận đóng góp và tài trợ.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/obsproject/obs-studio/blob/master/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/obsproject/obs-studio/blob/master/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "obsproject/obs-studio",
+        "stars": 78853,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/obsproject/obs-studio/master/README.rst",
+        "readmeSha256": "be2dff0124620dcd9d8d83ef9084b12d1e61e896d3295232501cb3ebd3f6a318",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 242,
+      "batch": 41,
+      "slug": "losslesscut",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp",
+        "excerpt": "Hiểu LosslessCut là giao diện cho FFmpeg giúp cắt và ghép video không mã hóa lại, giữ nguyên chất lượng và tiết kiệm thời gian. Hợp việc gọt phần thừa của video lớn.",
+        "content": "<p>LosslessCut được README mô tả là công cụ 'dao đa năng' để chỉnh video và âm thanh không mất chất lượng, và hướng tới trở thành giao diện FFmpeg đa nền tảng cho các thao tác cực nhanh. Tính năng chính: cắt và xén video, âm thanh trong vài giây không cần mã hóa lại, ghép các đoạn đã cắt hoặc ghép cả tệp có cùng codec, thêm bớt hoặc trích xuất các rãnh (âm thanh, phụ đề), đổi định dạng (remux) mà không mã hóa lại, đánh dấu đoạn và thẻ, phát hiện cảnh, khung đen và im lặng, sửa siêu dữ liệu và xoay, chụp khung hình, phím tắt, CLI và HTTP API. README nói đây là dự án do một người duy trì, luôn miễn phí và mã nguồn mở, kèm kênh quyên góp; chỉ có một số nguồn tải chính thức (có Mac App Store và Microsoft Store).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cắt video thường phải 'nấu lại' toàn bộ (mã hóa lại) nên chậm và giảm chất lượng. LosslessCut giống dùng kéo cắt cuộn phim: cắt đúng chỗ, giữ nguyên phần còn lại nên rất nhanh và không làm mờ hình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên cắt bỏ phần đầu và cuối thừa của video bài giảng dài để đăng nhanh. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người có video lớn cần gọt phần thừa; giảng viên, người làm podcast hay video hướng dẫn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Giao diện kiểu cắt, đánh dấu và xuất khá trực quan; một số tính năng cần hiểu codec và định dạng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần hiệu ứng, chuyển cảnh, chỉnh màu hay ghép nhiều lớp, dùng trình dựng đầy đủ như Kdenlive. Cắt không mất chất lượng có thể không chính xác tuyệt đối từng khung hình do cấu trúc video (nhận định chung, bài chưa kiểm chứng).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>lossless (không mất chất lượng)</strong>: cắt hoặc ghép mà không nén lại video, giữ nguyên chất lượng gốc.</li><li><strong>FFmpeg</strong>: bộ công cụ xử lý video và âm thanh nền của rất nhiều phần mềm; LosslessCut là giao diện cho nó theo README.</li><li><strong>remux</strong>: đổi 'vỏ' tệp (như MKV sang MP4) mà không mã hóa lại.</li><li><strong>codec</strong>: cách nén và giải nén video hoặc âm thanh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê các nguồn tải chính thức và nhấn mạnh chỉ những nguồn đó là chính thức; có bản trên Mac App Store và Microsoft Store (có thể kèm phí, bài chưa kiểm tra). Miễn phí và mã nguồn mở theo giấy phép GPL-2.0 theo GitHub. Có CLI và HTTP API.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và định dạng được hỗ trợ.</li><li>Tải từ nguồn chính thức mà README nêu.</li><li>Thử cắt một video ngắn và so sánh chất lượng với bản gốc.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có video bài giảng dài cần cắt phần thừa. Hãy đọc README của LosslessCut (https://github.com/mifi/lossless-cut) và giải thích bằng tiếng Việt: cắt không mất chất lượng nghĩa là gì, khác dựng video thường ra sao, và nên tải từ đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nhấn mạnh chỉ có vài nguồn tải chính thức; tải từ nơi khác có thể không an toàn. Công cụ cắt không giữ mọi định dạng hoàn hảo; bài chưa thử. Do một người duy trì nên mức hỗ trợ phụ thuộc người đó.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ tải từ nguồn chính thức mà README liệt kê và kiểm tra tên nhà phát hành trên cửa hàng ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mifi</strong> có <strong>45.636 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mifi/lossless-cut/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mifi/lossless-cut\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm video âm thanh và ảnh AI, key 242. Chưa cài/chạy thử; không tạo validation. Snapshot sao 45636; repo_id 72343657; README SHA256 82bd6e32584f6ec3e64f3480064daad8d3387be8acd106bb7c1ea98fbe231f9e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mifi/lossless-cut",
+          "repo_id": "72343657",
+          "source_path": "",
+          "source_revision": "README-SHA256:82bd6e32584f6ec3e64f3480064daad8d3387be8acd106bb7c1ea98fbe231f9e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mifi/lossless-cut",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê các nguồn tải chính thức và nhấn mạnh chỉ những nguồn đó là chính thức; có bản trên Mac App Store và Microsoft Store (có thể kèm phí, bài chưa kiểm tra). Miễn phí và mã nguồn mở theo giấy phép GPL-2.0 theo GitHub. Có CLI và HTTP API.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mifi/lossless-cut/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mifi/lossless-cut/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mifi/lossless-cut",
+        "stars": 45636,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mifi/lossless-cut/master/README.md",
+        "readmeSha256": "82bd6e32584f6ec3e64f3480064daad8d3387be8acd106bb7c1ea98fbe231f9e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 243,
+      "batch": 41,
+      "slug": "kdenlive",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Kdenlive: phần mềm dựng video miễn phí, mã nguồn mở của cộng đồng KDE",
+        "excerpt": "Hiểu Kdenlive là trình dựng video đầy đủ tính năng dựa trên MLT, cho cả video gia đình lẫn dự án phức tạp. Hợp người cần dựng phim, bài giảng mà không muốn trả phí.",
+        "content": "<p>Kdenlive là trình dựng video miễn phí, mã nguồn mở mạnh mẽ, theo README mang khả năng dựng chuyên nghiệp tới mọi người, từ video gia đình đến dự án phức tạp. README dẫn tới trang chính thức để tải bản ổn định và bản dựng hằng ngày thử nghiệm, tài liệu hướng dẫn và cộng đồng. Phần đóng góp mời dịch giao diện, báo và phân loại lỗi, viết tài liệu, làm hướng dẫn, giúp người dùng khác. Thông tin kỹ thuật: viết bằng C++, dùng khung MLT cho chức năng dựng video, Qt và KDE Frameworks 6 cho giao diện, frei0r cho hiệu ứng hình và LADSPA cho hiệu ứng âm thanh. Giấy phép GPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu LosslessCut là kéo cắt cuộn phim, Kdenlive là bàn dựng phim đầy đủ: nhiều lớp hình và tiếng, chuyển cảnh, chữ, hiệu ứng. Bạn kéo thả các đoạn lên dòng thời gian rồi ghép thành một bộ phim hoàn chỉnh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một video hướng dẫn ngắn có phụ đề và nhạc nền từ các đoạn đã quay. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm video bài giảng, phim ngắn; người muốn trình dựng miễn phí đa nền tảng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Giao diện dựng theo dòng thời gian cần thời gian làm quen; có tài liệu và hướng dẫn cộng đồng. README này chỉ giới thiệu ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần cắt đơn giản, LosslessCut nhanh hơn. Dựng video nặng cần máy mạnh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>timeline (dòng thời gian)</strong>: khu vực xếp các đoạn hình, tiếng, chữ theo thứ tự thời gian.</li><li><strong>MLT</strong>: khung đa phương tiện mà README nói Kdenlive dùng cho chức năng dựng.</li><li><strong>frei0r / LADSPA</strong>: bộ hiệu ứng hình ảnh và âm thanh mà README nhắc.</li><li><strong>daily builds (bản dựng hằng ngày)</strong>: bản thử nghiệm cập nhật mỗi ngày, README nêu có trên trang chính thức.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang tải ở kdenlive.org cho bản ổn định và bản thử; phần developer yêu cầu C++, Qt, KDE Frameworks 6 và MLT. Bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép GPL-3.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và tải bản ổn định từ trang chính thức.</li><li>Làm theo một hướng dẫn dựng cơ bản của cộng đồng.</li><li>Dựng một video ngắn và xuất thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng video bài giảng bằng phần mềm miễn phí. Hãy đọc README của Kdenlive (https://github.com/KDE/kdenlive) và giải thích bằng tiếng Việt: dòng thời gian là gì, cần máy thế nào, và khi nào dùng LosslessCut thay thế. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn nên chưa nêu yêu cầu phần cứng hay hướng dẫn dùng chi tiết. Bản dựng hằng ngày là thử nghiệm, có thể không ổn định. Dựng video tốn tài nguyên.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi xử lý ảnh, giọng nói, video có người thật, hãy xin phép người có mặt trong nội dung, kiểm tra giấy phép của mô hình và tài nguyên, và không tạo nội dung giả mạo hay gây hiểu lầm về người thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>KDE</strong> có <strong>6.039 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/KDE/kdenlive/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/KDE/kdenlive\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm video âm thanh và ảnh AI, key 243. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6039; repo_id 42723268; README SHA256 86f55bc195dc5ff81d82f52d1c4b10a17c411e6fc43a629be0c2a74708084f36.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/KDE/kdenlive",
+          "repo_id": "42723268",
+          "source_path": "",
+          "source_revision": "README-SHA256:86f55bc195dc5ff81d82f52d1c4b10a17c411e6fc43a629be0c2a74708084f36",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KDE/kdenlive",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang tải ở kdenlive.org cho bản ổn định và bản thử; phần developer yêu cầu C++, Qt, KDE Frameworks 6 và MLT. Bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép GPL-3.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KDE/kdenlive/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/KDE/kdenlive/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "KDE/kdenlive",
+        "stars": 6039,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/KDE/kdenlive/master/README.md",
+        "readmeSha256": "86f55bc195dc5ff81d82f52d1c4b10a17c411e6fc43a629be0c2a74708084f36",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

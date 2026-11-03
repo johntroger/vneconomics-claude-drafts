@@ -1,0 +1,36 @@
+{
+  "key": 240,
+  "repo": "k2-fsa/sherpa-onnx",
+  "repoId": "531380835",
+  "url": "https://github.com/k2-fsa/sherpa-onnx",
+  "stars": 15694,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-29T12:00:57Z",
+  "createdAt": "2022-09-01T05:47:33Z",
+  "defaultBranch": "master",
+  "description": "Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD using next-gen Kaldi with onnxruntime without Internet connection. Support embedded systems, Android, iOS, HarmonyOS, Raspberry Pi, RISC-V, RK NPU, Axera NPU, Ascend NPU, x86_64 servers, websocket server/client, support 12 programming languages",
+  "homepage": "https://k2-fsa.github.io/sherpa/onnx/index.html",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/k2-fsa/sherpa-onnx/master/README.md",
+    "sha256": "1c584fdee35aa93a1ff9508209412528edc4a666d0b55d366c13bdf3523491ca",
+    "bytes": 58701,
+    "sectionsRead": [
+      "Supported functions",
+      "Supported platforms",
+      "Supported programming languages",
+      "Hugging Face spaces"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa kiểm tra hỗ trợ tiếng Việt.",
+    "README dài, chưa đọc hết danh sách mô hình.",
+    "Chưa so sánh với Whisper."
+  ],
+  "runtimeValidated": false
+}

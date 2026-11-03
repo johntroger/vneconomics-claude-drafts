@@ -1,0 +1,36 @@
+{
+  "key": 239,
+  "repo": "huggingface/diffusers",
+  "repoId": "498011141",
+  "url": "https://github.com/huggingface/diffusers",
+  "stars": 34854,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T06:04:58Z",
+  "createdAt": "2022-05-30T16:04:02Z",
+  "defaultBranch": "main",
+  "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch.",
+  "homepage": "https://huggingface.co/docs/diffusers",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/huggingface/diffusers/main/README.md",
+    "sha256": "7983ae4d23ec43664c587027d7462ba8a742ddff784430dfb7fd3cea8ba5523c",
+    "bytes": 14610,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Quickstart",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Giấy phép từng mô hình chưa kiểm tra.",
+    "Yêu cầu GPU cụ thể chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

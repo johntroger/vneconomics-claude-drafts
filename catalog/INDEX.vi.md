@@ -21,13 +21,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 19 — Game và đồ họa cho người mới](learning-paths/19-game-va-do-hoa.vi.md) — Từ vẽ vài hình bằng mã đến làm game và cảnh 3D; chọn theo trình độ.
 - [Lộ trình 20 — Quy trình tự động và phát hành an toàn](learning-paths/20-ci-cd-va-quy-trinh-phat-hanh.vi.md) — Từ chạy thử quy trình cục bộ đến phát hành có kiểm soát, thông báo và kiểm tra liên kết.
 - [Lộ trình 21 — Nhà thông minh tự chủ, từng bước](learning-paths/21-nha-thong-minh.vi.md) — Từ gom thiết bị về một nơi đến camera cục bộ; mỗi bước đều có rủi ro riêng về điện, riêng tư và bảo mật.
+- [Lộ trình 22 — Làm video, âm thanh và ảnh bằng công cụ mở](learning-paths/22-video-am-thanh-va-anh.vi.md) — Quay, cắt, dựng và tạo nội dung đa phương tiện; luôn kiểm tra giấy phép và quyền riêng tư.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (29 bài)
+### Bắt đầu (30 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -60,8 +61,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 220 | Flask: framework Python nhỏ gọn để dựng website hoặc API, tự chọn thư viện kèm theo | [pallets/flask](https://github.com/pallets/flask) | BSD-3-Clause | 74943 | backend-va-api |
 | 225 | p5.js: thư viện JavaScript cho lập trình sáng tạo, dễ tiếp cận cho người mới và nghệ sĩ | [processing/p5.js](https://github.com/processing/p5.js) | LGPL-2.1 | 24291 | game-va-do-hoa |
 | 231 | ntfy: gửi thông báo tới điện thoại hoặc máy tính từ script bằng một lệnh HTTP | [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) | Apache-2.0 | 35254 | ci-cd-va-tu-dong-hoa-git |
+| 242 | LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 45636 | video-am-thanh-va-anh-ai |
 
-### Cơ bản (71 bài)
+### Cơ bản (73 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -136,8 +138,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 229 | git-cliff: tự tạo nhật ký thay đổi (changelog) từ lịch sử Git | [orhun/git-cliff](https://github.com/orhun/git-cliff) | Apache-2.0 | 12354 | ci-cd-va-tu-dong-hoa-git |
 | 233 | lychee: quét liên kết hỏng trong website và tài liệu Markdown rất nhanh | [lycheeverse/lychee](https://github.com/lycheeverse/lychee) | Apache-2.0 | 4085 | ci-cd-va-tu-dong-hoa-git |
 | 234 | Home Assistant: điều khiển nhà thông minh tại chỗ, ưu tiên quyền riêng tư và chạy trên Raspberry Pi | [home-assistant/core](https://github.com/home-assistant/core) | Apache-2.0 | 91923 | nha-thong-minh |
+| 241 | OBS Studio: phần mềm miễn phí để quay màn hình và phát trực tiếp, nền tảng của nhiều video bài giảng | [obsproject/obs-studio](https://github.com/obsproject/obs-studio) | GPL-2.0 | 78853 | video-am-thanh-va-anh-ai |
+| 243 | Kdenlive: phần mềm dựng video miễn phí, mã nguồn mở của cộng đồng KDE | [KDE/kdenlive](https://github.com/KDE/kdenlive) | GPL-3.0 | 6039 | video-am-thanh-va-anh-ai |
 
-### Khá khó (cần nền kỹ thuật) (22 bài)
+### Khá khó (cần nền kỹ thuật) (23 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -163,8 +167,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 210 | Flutter: SDK của Google để làm ứng dụng di động, web và máy tính từ một mã nguồn | [flutter/flutter](https://github.com/flutter/flutter) | BSD-3-Clause | 181015 | ung-dung-di-dong-da-nen-tang |
 | 212 | Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust | [tauri-apps/tauri](https://github.com/tauri-apps/tauri) | Apache-2.0 | 112448 | ung-dung-di-dong-da-nen-tang |
 | 232 | zizmor: soát lỗi bảo mật trong quy trình GitHub Actions trước khi bị khai thác | [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) | MIT | 6861 | ci-cd-va-tu-dong-hoa-git |
+| 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
 
-### Nâng cao (16 bài)
+### Nâng cao (17 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -184,6 +189,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 236 | Tasmota: phần mềm thay thế cho ổ cắm và thiết bị ESP, kèm cảnh báo nguy hiểm điện giật | [arendst/Tasmota](https://github.com/arendst/Tasmota) | GPL-3.0 | 24961 | nha-thong-minh |
 | 237 | Frigate: đầu ghi camera chạy tại nhà, nhận diện vật thể thời gian thực bằng AI cục bộ | [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) | MIT | 37165 | nha-thong-minh |
 | 238 | Valetudo: cho robot hút bụi chạy cục bộ không cần đám mây, và lưu ý về mô hình phát triển | [Hypfer/Valetudo](https://github.com/Hypfer/Valetudo) | Apache-2.0 | 9898 | nha-thong-minh |
+| 240 | sherpa-onnx: nhận dạng và tổng hợp giọng nói chạy ngoại tuyến trên nhiều thiết bị và ngôn ngữ lập trình | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Apache-2.0 | 15694 | video-am-thanh-va-anh-ai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

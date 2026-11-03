@@ -1,0 +1,35 @@
+{
+  "key": 243,
+  "repo": "KDE/kdenlive",
+  "repoId": "42723268",
+  "url": "https://github.com/KDE/kdenlive",
+  "stars": 6039,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:45:28Z",
+  "createdAt": "2015-09-18T13:16:08Z",
+  "defaultBranch": "master",
+  "description": "Free and open source video editor, based on MLT Framework and KDE Frameworks",
+  "homepage": "https://invent.kde.org/multimedia/kdenlive",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/KDE/kdenlive/master/README.md",
+    "sha256": "86f55bc195dc5ff81d82f52d1c4b10a17c411e6fc43a629be0c2a74708084f36",
+    "bytes": 2720,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Contributing",
+      "Technology Stack"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu người dùng.",
+    "Yêu cầu phần cứng chưa kiểm tra.",
+    "Chưa so sánh với OpenShot và Shotcut."
+  ],
+  "runtimeValidated": false
+}
