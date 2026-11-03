@@ -108,3 +108,11 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 277 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (277 tệp): cả 277 đều trả mã 200.
 - Đã gỡ khỏi bài OpenTelemetry Collector các khái niệm (receiver, processor, exporter) mà README không nêu.
+
+## Bổ sung rà soát (nhóm 48, key 378–385; tổng 285 bài)
+
+- Danh mục 285 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Kiểm tra toàn bộ 285 đường dẫn README thô trong các tệp nghiên cứu: cả 285 đều trả mã 200.
+- Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" xuất hiện 29 lần, đều trong câu phủ định.
+- Đã gỡ khỏi bài PHP các chi tiết lấy từ kiến thức chung (WordPress, hệ quản trị nội dung) vì README không nêu; bài giờ chỉ dựa trên câu "từ blog tới các trang web nổi tiếng nhất" của README.
+- Quy ước loại trừ áp dụng thêm: kho GitHub chỉ là bản sao của kho gốc ở nơi khác (Go, Lua).

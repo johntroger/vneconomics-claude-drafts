@@ -4919,5 +4919,147 @@
   "related": [
    "clickhouse"
   ]
+ },
+ {
+  "key": 378,
+  "slug": "rust",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Rust: ngôn ngữ lập trình nhấn mạnh hiệu năng, an toàn bộ nhớ và công cụ đi kèm như Cargo, rustfmt, Clippy",
+  "repo": "rust-lang/rust",
+  "stars": 121006,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "crystal",
+   "swift"
+  ]
+ },
+ {
+  "key": 379,
+  "slug": "gleam",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Gleam: ngôn ngữ thân thiện để xây hệ thống an toàn kiểu có thể mở rộng, không thuộc về một tập đoàn nào",
+  "repo": "gleam-lang/gleam",
+  "stars": 22018,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "julia"
+  ]
+ },
+ {
+  "key": 380,
+  "slug": "elixir",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Elixir: ngôn ngữ lập trình để xây ứng dụng mở rộng và dễ bảo trì, README nhấn mạnh chính sách xử lý issue",
+  "repo": "elixir-lang/elixir",
+  "stars": 26701,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "crystal",
+   "julia"
+  ]
+ },
+ {
+  "key": 381,
+  "slug": "julia",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Julia: ngôn ngữ động hiệu năng cao cho tính toán kỹ thuật, README có hướng dẫn cài và dựng từ mã nguồn",
+  "repo": "JuliaLang/julia",
+  "stars": 49236,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "elixir",
+   "gleam"
+  ]
+ },
+ {
+  "key": 382,
+  "slug": "crystal",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Crystal: ngôn ngữ cú pháp gần Ruby, kiểm tra kiểu tĩnh mà không phải ghi kiểu khắp nơi, biên dịch ra mã gốc",
+  "repo": "crystal-lang/crystal",
+  "stars": 20481,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "elixir",
+   "rust"
+  ]
+ },
+ {
+  "key": 383,
+  "slug": "dart",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Dart: ngôn ngữ dễ tiếp cận, di động và năng suất cho ứng dụng chất lượng cao, biên dịch ra mã gốc hoặc JavaScript và WebAssembly",
+  "repo": "dart-lang/sdk",
+  "stars": 11331,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "php",
+   "swift"
+  ]
+ },
+ {
+  "key": 384,
+  "slug": "php",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "PHP: ngôn ngữ kịch bản phổ biến cho phát triển web, kho php-src là trình thông dịch với hướng dẫn dựng và kiểm thử",
+  "repo": "php/php-src",
+  "stars": 41758,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "dart"
+  ]
+ },
+ {
+  "key": 385,
+  "slug": "swift",
+  "group": "2026-11-03-ngon-ngu-lap-trinh",
+  "title": "Swift: ngôn ngữ lập trình hệ thống hiệu năng cao với cú pháp hiện đại và an toàn bộ nhớ theo mặc định, README dành cho người dựng",
+  "repo": "swiftlang/swift",
+  "stars": 70525,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "dart",
+   "rust"
+  ]
  }
 ]

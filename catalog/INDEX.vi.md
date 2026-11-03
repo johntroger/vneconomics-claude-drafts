@@ -46,6 +46,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 44 — Agent lập trình và công cụ AI trên dòng lệnh](learning-paths/44-agent-lap-trinh-va-cli-ai.vi.md) — Từ agent trong trình soạn mã đến AI trong terminal, khám phá dữ liệu và chép lời trên máy; luôn duyệt từng thay đổi và giữ khóa API an toàn.
 - [Lộ trình 45 — Kiểm thử API, tải và giả lập](learning-paths/45-kiem-thu-api-va-hieu-nang.vi.md) — Từ API giả để làm giao diện trước, đến kiểm thử bằng tệp chữ hay kịch bản, và thử tải; chỉ thử trên hệ thống của bạn.
 - [Lộ trình 46 — Dữ liệu, thông điệp và quan sát ở quy mô lớn](learning-paths/46-du-lieu-thoi-gian-thuc-va-hang-doi.vi.md) — Lập lịch trong cơ sở dữ liệu, PostgreSQL trọn gói, thông điệp, luồng sự kiện, phân tích và thu thập dữ liệu quan sát; đây là chủ đề khó, dành cho khi dự án đã đủ lớn.
+- [Lộ trình 47 — Làm quen các ngôn ngữ lập trình thường gặp](learning-paths/47-ngon-ngu-lap-trinh.vi.md) — Hiểu một số ngôn ngữ để đọc mã do AI viết; README nhiều kho dành cho người dựng ngôn ngữ nên cần tài liệu chính thức để học.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -101,7 +102,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (118 bài)
+### Cơ bản (120 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -223,8 +224,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 361 | Cline: agent lập trình mã nguồn mở trong IDE, terminal và ứng dụng desktop, mỗi lần sửa tệp hay chạy lệnh đều chờ bạn duyệt | [cline/cline](https://github.com/cline/cline) | Apache-2.0 | 71243 | agent-lap-trinh-va-cli-ai |
 | 362 | LLM: công cụ dòng lệnh và thư viện Python gọi nhiều mô hình ngôn ngữ, lưu lời nhắc và câu trả lời vào SQLite | [simonw/llm](https://github.com/simonw/llm) | Apache-2.0 | 12696 | agent-lap-trinh-va-cli-ai |
 | 363 | Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu | [simonw/datasette](https://github.com/simonw/datasette) | Apache-2.0 | 11537 | agent-lap-trinh-va-cli-ai |
+| 383 | Dart: ngôn ngữ dễ tiếp cận, di động và năng suất cho ứng dụng chất lượng cao, biên dịch ra mã gốc hoặc JavaScript và WebAssembly | [dart-lang/sdk](https://github.com/dart-lang/sdk) | BSD-3-Clause | 11331 | ngon-ngu-lap-trinh |
+| 384 | PHP: ngôn ngữ kịch bản phổ biến cho phát triển web, kho php-src là trình thông dịch với hướng dẫn dựng và kiểm thử | [php/php-src](https://github.com/php/php-src) | BSD-3-Clause | 41758 | ngon-ngu-lap-trinh |
 
-### Khá khó (cần nền kỹ thuật) (32 bài)
+### Khá khó (cần nền kỹ thuật) (33 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -260,8 +263,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 360 | Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Apache-2.0 | 95791 | api-anh-pdf-va-ocr |
 | 367 | Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán | [locustio/locust](https://github.com/locustio/locust) | MIT | 28260 | kiem-thu-api-va-hieu-nang |
 | 368 | Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh | [Orange-OpenSource/hurl](https://github.com/Orange-OpenSource/hurl) | Apache-2.0 | 19295 | kiem-thu-api-va-hieu-nang |
+| 382 | Crystal: ngôn ngữ cú pháp gần Ruby, kiểm tra kiểu tĩnh mà không phải ghi kiểu khắp nơi, biên dịch ra mã gốc | [crystal-lang/crystal](https://github.com/crystal-lang/crystal) | Apache-2.0 | 20481 | ngon-ngu-lap-trinh |
 
-### Nâng cao (83 bài)
+### Nâng cao (88 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -348,6 +352,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 375 | Apache Kafka: nền tảng truyền luồng sự kiện phân tán mã nguồn mở, README của kho dành cho người dựng từ mã nguồn | [apache/kafka](https://github.com/apache/kafka) | Apache-2.0 | 34118 | du-lieu-thoi-gian-thuc-va-hang-doi |
 | 376 | ClickHouse: cơ sở dữ liệu phân tích thời gian thực, README có lệnh cài kiểu tải script rồi chạy cần thận trọng | [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | Apache-2.0 | 50724 | du-lieu-thoi-gian-thuc-va-hang-doi |
 | 377 | OpenTelemetry Collector: thành phần nhận, xử lý và xuất dữ liệu quan sát độc lập nhà cung cấp, thay cho nhiều agent riêng | [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector) | Apache-2.0 | 7728 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 378 | Rust: ngôn ngữ lập trình nhấn mạnh hiệu năng, an toàn bộ nhớ và công cụ đi kèm như Cargo, rustfmt, Clippy | [rust-lang/rust](https://github.com/rust-lang/rust) | Apache-2.0 | 121006 | ngon-ngu-lap-trinh |
+| 379 | Gleam: ngôn ngữ thân thiện để xây hệ thống an toàn kiểu có thể mở rộng, không thuộc về một tập đoàn nào | [gleam-lang/gleam](https://github.com/gleam-lang/gleam) | Apache-2.0 | 22018 | ngon-ngu-lap-trinh |
+| 380 | Elixir: ngôn ngữ lập trình để xây ứng dụng mở rộng và dễ bảo trì, README nhấn mạnh chính sách xử lý issue | [elixir-lang/elixir](https://github.com/elixir-lang/elixir) | Apache-2.0 | 26701 | ngon-ngu-lap-trinh |
+| 381 | Julia: ngôn ngữ động hiệu năng cao cho tính toán kỹ thuật, README có hướng dẫn cài và dựng từ mã nguồn | [JuliaLang/julia](https://github.com/JuliaLang/julia) | MIT | 49236 | ngon-ngu-lap-trinh |
+| 385 | Swift: ngôn ngữ lập trình hệ thống hiệu năng cao với cú pháp hiện đại và an toàn bộ nhớ theo mặc định, README dành cho người dựng | [swiftlang/swift](https://github.com/swiftlang/swift) | Apache-2.0 | 70525 | ngon-ngu-lap-trinh |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

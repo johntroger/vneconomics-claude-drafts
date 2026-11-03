@@ -1,0 +1,36 @@
+{
+  "key": 383,
+  "repo": "dart-lang/sdk",
+  "repoId": "35726310",
+  "url": "https://github.com/dart-lang/sdk",
+  "stars": 11331,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:08:22Z",
+  "createdAt": "2015-05-16T14:14:58Z",
+  "defaultBranch": "main",
+  "description": "The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.",
+  "homepage": "https://dart.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dart-lang/sdk/main/README.md",
+    "sha256": "e3832ceba71b779e562c86417659f72633bb4784aedda43caabf4828f1e59171",
+    "bytes": 2946,
+    "sectionsRead": [
+      "Giới thiệu",
+      "License & patents",
+      "Using Dart",
+      "Roadmap"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc dart.dev.",
+    "Chưa thử.",
+    "Chưa so sánh với TypeScript hay Kotlin."
+  ],
+  "runtimeValidated": false
+}

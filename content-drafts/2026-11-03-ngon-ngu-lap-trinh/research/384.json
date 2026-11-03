@@ -1,0 +1,36 @@
+{
+  "key": 384,
+  "repo": "php/php-src",
+  "repoId": "1903522",
+  "url": "https://github.com/php/php-src",
+  "stars": 41758,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:49:58Z",
+  "createdAt": "2011-06-16T01:52:25Z",
+  "defaultBranch": "master",
+  "description": "The PHP Interpreter",
+  "homepage": "https://www.php.net",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/php/php-src/master/README.md",
+    "sha256": "71ba0c02f73f4288e25df82f51d065f1966b1d9ffe13a406bb48f1e848a21a49",
+    "bytes": 5416,
+    "sectionsRead": [
+      "The PHP Interpreter",
+      "Documentation",
+      "Installation",
+      "PHP extensions"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc php.net.",
+    "Chưa thử.",
+    "Chưa so sánh với ngôn ngữ khác."
+  ],
+  "runtimeValidated": false
+}
