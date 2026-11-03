@@ -1,0 +1,44 @@
+{
+  "key": 685,
+  "repo": "alacritty/alacritty",
+  "repoId": "51980455",
+  "url": "https://github.com/alacritty/alacritty",
+  "stars": 66109,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T05:42:37Z",
+  "createdAt": "2016-02-18T05:02:30Z",
+  "defaultBranch": "master",
+  "description": "A cross-platform, OpenGL terminal emulator.",
+  "homepage": "https://alacritty.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/alacritty/alacritty/master/README.md",
+    "sha256": "0dd7c6ea42dc74f2d1949ec0217e15ecf348d6194757bf3d97af22834aeea1ae",
+    "bytes": 4365,
+    "sectionsRead": [
+      "About",
+      "Features",
+      "Installation",
+      "Configuration",
+      "FAQ",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc docs/features.md.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố hiệu năng."
+  ],
+  "runtimeValidated": false
+}

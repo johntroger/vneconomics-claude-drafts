@@ -1,0 +1,41 @@
+{
+  "key": 689,
+  "repo": "renovatebot/renovate",
+  "repoId": "76734068",
+  "url": "https://github.com/renovatebot/renovate",
+  "stars": 23000,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T12:12:17Z",
+  "createdAt": "2016-12-17T16:21:21Z",
+  "defaultBranch": "main",
+  "description": "Home of the Renovate CLI: Cross-platform Dependency Automation by Mend.io",
+  "homepage": "https://mend.io/renovate",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/renovatebot/renovate/main/readme.md",
+    "sha256": "1a79d53cfd7a0abb332c21798258e25248762e25414d939a76871f46ef58367c",
+    "bytes": 7281,
+    "sectionsRead": [
+      "Features",
+      "Ways to run Renovate",
+      "Docs"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.renovatebot.com.",
+    "Chưa thử.",
+    "Chưa so sánh với Dependabot."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,43 @@
+{
+  "key": 684,
+  "repo": "zellij-org/zellij",
+  "repoId": "292014229",
+  "url": "https://github.com/zellij-org/zellij",
+  "stars": 35925,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:54:54Z",
+  "createdAt": "2020-09-01T14:04:28Z",
+  "defaultBranch": "main",
+  "description": "A terminal workspace with batteries included",
+  "homepage": "https://zellij.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/zellij-org/zellij/main/README.md",
+    "sha256": "b069efb98ef8cec100cc5b32debc1dc4a912f9d57ef11279a261a8a3c9548583",
+    "bytes": 6724,
+    "sectionsRead": [
+      "What is this?",
+      "How do I install it?",
+      "Configuration",
+      "Roadmap",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu zellij.dev.",
+    "Chưa thử.",
+    "Chưa so sánh với tmux."
+  ],
+  "runtimeValidated": false
+}

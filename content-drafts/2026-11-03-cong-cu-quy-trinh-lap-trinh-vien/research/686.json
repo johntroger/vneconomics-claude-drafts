@@ -1,0 +1,44 @@
+{
+  "key": 686,
+  "repo": "jetify-com/devbox",
+  "repoId": "526363266",
+  "url": "https://github.com/jetify-com/devbox",
+  "stars": 12443,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T21:42:32Z",
+  "createdAt": "2022-08-18T20:27:16Z",
+  "defaultBranch": "main",
+  "description": "Instant, easy, and predictable development environments",
+  "homepage": "https://www.jetify.com/devbox/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jetify-com/devbox/main/README.md",
+    "sha256": "1ae50412792511a73f75db4a8f99b522a1996ad94cca39b0e852bbb5068a297c",
+    "bytes": 6491,
+    "sectionsRead": [
+      "What is it?",
+      "Demo",
+      "Installing Devbox",
+      "Benefits",
+      "Quickstart",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu jetify.com/devbox.",
+    "Chưa thử.",
+    "Chưa so sánh với container, Pixi."
+  ],
+  "runtimeValidated": false
+}

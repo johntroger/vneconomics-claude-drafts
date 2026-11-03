@@ -1,0 +1,42 @@
+{
+  "key": 687,
+  "repo": "tilt-dev/tilt",
+  "repoId": "143896900",
+  "url": "https://github.com/tilt-dev/tilt",
+  "stars": 10119,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-26T02:21:58Z",
+  "createdAt": "2018-08-07T16:00:26Z",
+  "defaultBranch": "master",
+  "description": "Define your dev environment as code. For microservice apps on Kubernetes.",
+  "homepage": "https://tilt.dev/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/tilt-dev/tilt/master/README.md",
+    "sha256": "30e42a2da76bcf0c29c4c5198f0cfade8d5e6fdbe127d0784c4259489e6688c0",
+    "bytes": 3616,
+    "sectionsRead": [
+      "Watch: Tilt in Two Minutes",
+      "Install Tilt",
+      "Run Tilt",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.tilt.dev.",
+    "Chưa thử.",
+    "Chưa so sánh với Skaffold."
+  ],
+  "runtimeValidated": false
+}

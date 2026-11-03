@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-quy-trinh",
+  "batch": 110,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 682,
+      "batch": 110,
+      "slug": "difftastic",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Difftastic: công cụ so sánh theo cấu trúc, so sánh tệp dựa trên cú pháp thay vì từng dòng, hỗ trợ hơn 30 ngôn ngữ lập trình, dùng được với git; README nêu rõ vấn đề đã biết về hiệu năng và độ vững",
+        "excerpt": "Hiểu Difftastic là công cụ so sánh theo cấu trúc (structural diff) so sánh tệp dựa trên cú pháp: nó hiểu phần cú pháp nào thật sự đổi, khi nào khoảng trắng quan trọng, và không bị đánh lừa khi bạn định dạng lại mã trải ra nhiều dòng; README nêu hỗ trợ hơn 30 ngôn ngữ, dùng được với git, và trình bày thẳng các vấn đề đã biết và mục tiêu không làm.",
+        "content": "<p>README tả Difftastic là công cụ so sánh theo cấu trúc, so sánh tệp dựa trên cú pháp của chúng; phần cài đặt trỏ tới sổ tay difftastic.wilfred.me.uk. Các ví dụ cho thấy công cụ hiểu đúng phần cú pháp nào đã đổi và nêu trong ngữ cảnh, hiểu khi nào khoảng trắng quan trọng và khi nào chỉ là đổi thụt lề, không hướng theo dòng nên nếu bạn định dạng lại mã trải ra nhiều dòng nó vẫn chỉ ra điều thật sự đổi. Difftastic tương thích git (có hướng dẫn cấu hình) và nhiều hệ kiểm soát phiên bản khác. Hỗ trợ hơn 30 ngôn ngữ; với tệp có đuôi lạ thì dùng so sánh theo dòng có tô từ. Mục Known Issues nêu thẳng: hiệu năng kém khi tệp có rất nhiều thay đổi và có thể dùng nhiều bộ nhớ, hiển thị song song đôi khi gây rối, độ vững (thường xuyên có bản vá lỗi sập). Mục Non-goals: không tạo bản vá áp dụng được vì đầu ra dành cho người đọc. Mục FAQ trả lời các câu về git, tích hợp công cụ, lỗi phân tích, xung đột gộp, bỏ qua thay đổi thứ tự, màu sắc và cách hoạt động. Phần License nêu MIT, riêng thư mục vendored_parsers có hỗn hợp giấy phép. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi AI sửa mã và bạn muốn xem đã sửa gì, so sánh theo dòng thường rối vì đổi định dạng cũng bị đánh dấu. Difftastic chỉ ra điều thật sự đổi về cấu trúc.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khác biệt giữa so sánh theo dòng và theo cú pháp bằng ví dụ định dạng lại một hàm; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần dòng lệnh và git cơ bản; cấu hình tích hợp git cần làm theo sổ tay. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nêu hiệu năng kém với tệp nhiều thay đổi, có thể dùng nhiều bộ nhớ và đôi khi sập; đầu ra chỉ dành cho người đọc, không dùng để tạo bản vá áp dụng. Bài chưa so sánh với công cụ khác như delta.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>structural diff (so sánh theo cấu trúc)</strong>: so sánh dựa trên cấu trúc cú pháp thay vì dòng; README nêu.</li><li><strong>syntax (cú pháp)</strong>: quy tắc cấu trúc của ngôn ngữ lập trình; README nêu.</li><li><strong>diff</strong>: phần thay đổi giữa hai bản; README nêu.</li><li><strong>patch (bản vá)</strong>: tệp mô tả thay đổi để áp dụng; README nêu không tạo.</li><li><strong>parser (bộ phân tích cú pháp)</strong>: phần hiểu cấu trúc mã; README nêu thư mục vendored_parsers.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới sổ tay difftastic.wilfred.me.uk cho cài đặt và cấu hình git; bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Examples và Known Issues.</li><li>Đọc FAQ về git.</li><li>Thử so sánh hai tệp nhỏ của chính bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thường xem AI sửa mã. Hãy đọc README của Difftastic (https://github.com/Wilfred/difftastic) và giải thích bằng tiếng Việt: so sánh theo cấu trúc khác theo dòng ở đâu, README nêu những vấn đề đã biết nào, và vì sao đầu ra không dùng để tạo bản vá. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7 KB, bài chưa đọc sổ tay difftastic.wilfred.me.uk. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Wilfred</strong> có <strong>26.142 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT (thư mục vendored_parsers có hỗn hợp giấy phép); GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Wilfred/difftastic/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Wilfred/difftastic\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 682. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26142; repo_id 162276894; README SHA256 395325cdaeef69a79d2d39befd278cf24a062f1e4a91848482dcb9613bf20c8f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Wilfred/difftastic",
+          "repo_id": "162276894",
+          "source_path": "",
+          "source_revision": "README-SHA256:395325cdaeef69a79d2d39befd278cf24a062f1e4a91848482dcb9613bf20c8f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Wilfred/difftastic",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới sổ tay difftastic.wilfred.me.uk cho cài đặt và cấu hình git; bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Wilfred/difftastic/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Wilfred/difftastic/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Wilfred/difftastic",
+        "stars": 26142,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Wilfred/difftastic/master/README.md",
+        "readmeSha256": "395325cdaeef69a79d2d39befd278cf24a062f1e4a91848482dcb9613bf20c8f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 683,
+      "batch": 110,
+      "slug": "jujutsu",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Jujutsu (jj): hệ kiểm soát phiên bản mạnh, dễ dùng, dùng kho Git làm lớp lưu trữ nên tương thích công cụ Git, bản sao làm việc tự động được commit, xung đột có thể ghi trong commit, tự động rebase; README nêu còn thiếu tính năng như submodule",
+        "excerpt": "Hiểu Jujutsu là hệ kiểm soát phiên bản thiết kế dễ dùng cho cả người mới lẫn người có kinh nghiệm: giao diện và thuật toán tách khỏi nơi lưu trữ, hiện dùng kho Git làm lớp lưu trữ nên tương thích nhiều công cụ Git; bản sao làm việc tự động được commit, xung đột được ghi trong commit, tự động rebase, hỗ trợ viết lại lịch sử; README nêu thẳng còn thiếu tính năng như submodule và vấn đề hiệu năng.",
+        "content": "<p>README tả Jujutsu là hệ kiểm soát phiên bản mạnh cho dự án phần mềm, thiết kế từ đầu để dễ dùng, cho người mới lẫn người có kinh nghiệm, từ dự án một người đến dự án lớn lịch sử dài. Điểm khác: bên trong, Jujutsu tách giao diện và thuật toán khỏi hệ lưu trữ nên có thể có nhiều nền lưu trữ (như Mercurial, Breezy hoặc thiết kế đám mây của Google); hiện dùng kho Git để lưu nội dung nên tương thích nhiều công cụ dựa trên Git; chỉ commit và tệp lưu trong Git, còn nhánh (bookmark) và siêu dữ liệu cấp cao lưu ở nơi tùy biến riêng. Các tính năng nêu: tương thích Git, bản sao làm việc tự động commit, kho là nguồn sự thật duy nhất, toàn bộ kho nằm dưới kiểm soát phiên bản, xung đột có thể ghi trong commit, tự động rebase, hỗ trợ viết lại lịch sử toàn diện. Mục Status nói công cụ khá đầy đủ tính năng nhưng một số tính năng quan trọng như hỗ trợ submodule của Git chưa xong, còn lỗi hiệu năng, và quy trình khác với nhóm phát triển chính có thể chưa được hỗ trợ tốt, ví dụ không hỗ trợ gốc quy trình qua email. README có tin tức, tài liệu liên quan, mục bắt đầu, đóng góp. Mục License nêu Apache 2.0. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Git quen thuộc nhưng nhiều người thấy khó nhớ lệnh. Jujutsu là hệ khác dùng kho Git bên dưới, cố làm các việc như sửa lịch sử và xử lý xung đột ít đau đầu hơn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Features để hiểu 'bản sao làm việc tự động commit' khác Git thế nào; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần hiểu Git trước; dùng song song với Git có thể gây bối rối cho người mới. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nêu còn thiếu submodule và có lỗi hiệu năng. Viết lại lịch sử tiện lợi nhưng có thể làm mất thay đổi nếu thao tác sai: thử trên kho sao lưu. Người mới học Git nên học Git trước; bài chưa so sánh thực tế.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>VCS (hệ kiểm soát phiên bản)</strong>: hệ theo dõi thay đổi của mã nguồn; README nêu.</li><li><strong>backend (nền lưu trữ)</strong>: nơi thật sự lưu dữ liệu; README nêu hiện dùng Git.</li><li><strong>bookmark</strong>: tên trỏ vào commit, tương tự nhánh; README nêu.</li><li><strong>rebase</strong>: đặt lại các commit lên nền mới; README nêu tự động.</li><li><strong>submodule</strong>: kho Git lồng trong kho khác; README nêu chưa hỗ trợ xong.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Installation và Getting Started trong tài liệu; bài không chép lệnh. Cần Git và dòng lệnh. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction và Features.</li><li>Đọc Status để biết hạn chế.</li><li>Thử trên kho sao lưu hoặc kho thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút Git và nghe nói Jujutsu. Hãy đọc README của Jujutsu (https://github.com/jj-vcs/jj) và giải thích bằng tiếng Việt: jj khác Git ở đâu, vì sao nói tương thích Git, và README nêu những hạn chế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 17,9 KB, bài chưa đọc tài liệu jj-vcs.github.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jj-vcs</strong> có <strong>32.349 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jj-vcs/jj/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jj-vcs/jj\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 683. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32349; repo_id 322484700; README SHA256 90ed7bbc9815b029dbbb1138509d0adb4272c382dd208b9d5a4ee5d242886c15.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jj-vcs/jj",
+          "repo_id": "322484700",
+          "source_path": "",
+          "source_revision": "README-SHA256:90ed7bbc9815b029dbbb1138509d0adb4272c382dd208b9d5a4ee5d242886c15",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jj-vcs/jj",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Installation và Getting Started trong tài liệu; bài không chép lệnh. Cần Git và dòng lệnh. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jj-vcs/jj/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jj-vcs/jj/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jj-vcs/jj",
+        "stars": 32349,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jj-vcs/jj/main/README.md",
+        "readmeSha256": "90ed7bbc9815b029dbbb1138509d0adb4272c382dd208b9d5a4ee5d242886c15",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 684,
+      "batch": 110,
+      "slug": "zellij",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Zellij: không gian làm việc cho nhà phát triển và người yêu terminal, thuộc loại chương trình ghép kênh terminal (terminal multiplexer), mặc định dễ dùng, bố cục tự động hóa, đa người dùng, có web-client tích hợp; giấy phép MIT",
+        "excerpt": "Hiểu Zellij là không gian làm việc cho nhà phát triển, người vận hành và ai yêu terminal, thuộc loại chương trình ghép kênh terminal: chia một cửa sổ terminal thành nhiều ô và tab, giữ phiên làm việc; README nêu triết lý không hy sinh sự đơn giản vì sức mạnh, tùy biến sâu, bố cục tự động hóa, đa người dùng thật sự và web-client tích hợp để terminal là tùy chọn.",
+        "content": "<p>README tả Zellij là không gian làm việc hướng tới nhà phát triển, người làm vận hành và ai yêu thích terminal; loại chương trình tương tự đôi khi gọi là bộ ghép kênh terminal. Triết lý: không hy sinh sự đơn giản cho sức mạnh, tự hào về trải nghiệm tốt ngay khi dùng và tính năng nâng cao có sẵn; hướng tới cả người mới và người dùng nâng cao, cho tùy biến sâu, tự động hóa cá nhân qua bố cục (layouts), đa người dùng thật. Zellij có web-client tích hợp nên terminal là tùy chọn. README có mục cài đặt (gói theo hệ điều hành, tệp nhị phân dựng sẵn, hoặc biên dịch; bài không chép lệnh), thử Zellij mà không cài, cài từ nhánh main, môi trường phát triển, cấu hình, lưu ý về vấn đề trong kho, lộ trình, nguồn gốc cái tên, giấy phép MIT và nhà tài trợ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn làm việc nhiều trong cửa sổ dòng lệnh, Zellij cho bạn chia nó thành nhiều khung, mỗi khung chạy một việc, và giữ nguyên khi bạn đóng cửa sổ rồi quay lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'bộ ghép kênh terminal' bằng ví dụ vừa chạy máy chủ vừa xem log; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần quen dòng lệnh; học phím tắt cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Web-client tích hợp mở một cổng truy cập terminal qua trình duyệt: nếu bật phải có xác thực và không phơi ra Internet. Bài chưa so sánh với tmux. Nội dung README 'trải nghiệm tốt ngay khi dùng' là tuyên bố của dự án, bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>terminal multiplexer (bộ ghép kênh terminal)</strong>: chương trình chia một terminal thành nhiều phần và giữ phiên; README nêu.</li><li><strong>layout (bố cục)</strong>: cấu hình sẵn các khung và lệnh để mở phiên; README nêu.</li><li><strong>session (phiên)</strong>: không gian làm việc có thể rời và quay lại; bài chú thích biên tập.</li><li><strong>web client</strong>: truy cập terminal qua trình duyệt; README nêu tích hợp sẵn.</li><li><strong>multiplayer (đa người dùng)</strong>: nhiều người cùng dùng một phiên; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục How do I install it? và thử không cần cài; bài không chép lệnh. Cần terminal. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is this?</li><li>Xem Screencasts & Tutorials.</li><li>Chỉ bật web-client khi đã hiểu rủi ro.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm việc nhiều trong terminal. Hãy đọc README của Zellij (https://github.com/zellij-org/zellij) và giải thích bằng tiếng Việt: bộ ghép kênh terminal là gì, bố cục dùng để làm gì, và web-client có rủi ro gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,7 KB, bài chưa đọc tài liệu zellij.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>zellij-org</strong> có <strong>35.925 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/zellij-org/zellij/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/zellij-org/zellij\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 684. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35925; repo_id 292014229; README SHA256 b069efb98ef8cec100cc5b32debc1dc4a912f9d57ef11279a261a8a3c9548583.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/zellij-org/zellij",
+          "repo_id": "292014229",
+          "source_path": "",
+          "source_revision": "README-SHA256:b069efb98ef8cec100cc5b32debc1dc4a912f9d57ef11279a261a8a3c9548583",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zellij-org/zellij",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục How do I install it? và thử không cần cài; bài không chép lệnh. Cần terminal. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zellij-org/zellij/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/zellij-org/zellij/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "zellij-org/zellij",
+        "stars": 35925,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/zellij-org/zellij/main/README.md",
+        "readmeSha256": "b069efb98ef8cec100cc5b32debc1dc4a912f9d57ef11279a261a8a3c9548583",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 685,
+      "batch": 110,
+      "slug": "alacritty",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Alacritty: trình giả lập terminal hiện đại có mặc định hợp lý nhưng cấu hình sâu, tích hợp với ứng dụng khác thay vì làm lại chức năng, chạy trên BSD, Linux, macOS, Windows; README nêu ở mức beta, giấy phép Apache 2.0",
+        "excerpt": "Hiểu Alacritty là trình giả lập terminal hiện đại có mặc định hợp lý nhưng cho cấu hình sâu; thay vì làm lại chức năng của chương trình khác, nó tích hợp với ứng dụng khác để có hiệu năng cao; chạy trên BSD, Linux, macOS và Windows; README nêu phần mềm ở mức beta nhưng nhiều người dùng hằng ngày.",
+        "content": "<p>README tả Alacritty là trình giả lập terminal hiện đại có mặc định hợp lý nhưng cho phép cấu hình rộng. Bằng cách tích hợp với ứng dụng khác thay vì cài lại chức năng của chúng, nó mang lại bộ tính năng linh hoạt với hiệu năng cao. Nền tảng hỗ trợ: BSD, Linux, macOS, Windows. README nêu phần mềm được xem ở mức beta: còn thiếu tính năng và có lỗi cần sửa nhưng nhiều người đã dùng hằng ngày. Có bản dựng sẵn trên trang phát hành, kênh trò chuyện, mục tính năng, các bài viết (kể cả giới thiệu terminal tăng tốc bằng GPU và công bố đo hiệu năng của chính tác giả; bài chưa kiểm chứng), mục cài đặt qua trình quản lý gói hoặc tải tệp nhị phân, yêu cầu, cấu hình, đóng góp và hỏi đáp. Phần License nêu Apache License 2.0. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Terminal là cửa sổ gõ lệnh. Alacritty là một phần mềm cửa sổ như vậy, tập trung vào tốc độ và để các việc khác như chia tab cho chương trình khác lo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc FAQ và mục tính năng để hiểu vì sao Alacritty không tự có tab; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần quen dòng lệnh và sửa tệp cấu hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nêu phần mềm ở mức beta. Alacritty cố ý không có tab hay chia khung, cần kết hợp với công cụ khác như Zellij hoặc tmux. Tuyên bố hiệu năng của tác giả bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>terminal emulator (trình giả lập terminal)</strong>: phần mềm cửa sổ dòng lệnh; README nêu.</li><li><strong>GPU-accelerated (tăng tốc bằng GPU)</strong>: dùng card đồ họa để vẽ nhanh; README dẫn bài viết.</li><li><strong>beta</strong>: giai đoạn thử, còn thiếu tính năng và lỗi; README nêu.</li><li><strong>configuration (cấu hình)</strong>: tệp thiết lập hành vi; README có mục.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài phần mềm; README nêu cách cài.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (trình quản lý gói hoặc tệp nhị phân) và Configuration; bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Features.</li><li>Đọc mục Installation và FAQ.</li><li>Thử với cấu hình mặc định trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình chọn terminal cho máy mình. Hãy đọc README của Alacritty (https://github.com/alacritty/alacritty) và giải thích bằng tiếng Việt: Alacritty khác các terminal khác ở đâu, vì sao README nói ở mức beta, và nó cần kết hợp với công cụ nào để có tab. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,4 KB), bài chưa đọc docs/features.md. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>alacritty</strong> có <strong>66.109 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/alacritty/alacritty/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/alacritty/alacritty\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 685. Chưa cài/chạy thử; không tạo validation. Snapshot sao 66109; repo_id 51980455; README SHA256 0dd7c6ea42dc74f2d1949ec0217e15ecf348d6194757bf3d97af22834aeea1ae.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/alacritty/alacritty",
+          "repo_id": "51980455",
+          "source_path": "",
+          "source_revision": "README-SHA256:0dd7c6ea42dc74f2d1949ec0217e15ecf348d6194757bf3d97af22834aeea1ae",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/alacritty/alacritty",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (trình quản lý gói hoặc tệp nhị phân) và Configuration; bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/alacritty/alacritty/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/alacritty/alacritty/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "alacritty/alacritty",
+        "stars": 66109,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/alacritty/alacritty/master/README.md",
+        "readmeSha256": "0dd7c6ea42dc74f2d1949ec0217e15ecf348d6194757bf3d97af22834aeea1ae",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 686,
+      "batch": 110,
+      "slug": "devbox",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Devbox: công cụ dòng lệnh tạo shell cô lập cho phát triển, khai báo danh sách gói và Devbox dựng môi trường riêng cho ứng dụng, dùng Nix bên dưới, hơn 400.000 phiên bản gói từ Nix Package Registry; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Devbox là công cụ dòng lệnh giúp tạo shell cô lập cho phát triển: bạn khai báo danh sách gói cần, Devbox dựng môi trường riêng cho ứng dụng, hoạt động như trình quản lý gói nhưng ở cấp hệ điều hành, dùng Nix bên dưới; README nêu hơn 400.000 phiên bản gói và lợi ích như môi trường nhất quán trong nhóm, thử công cụ không làm bẩn máy, đỡ xung đột phiên bản.",
+        "content": "<p>README tả Devbox là công cụ dòng lệnh cho phép tạo shell cô lập cho phát triển một cách dễ dàng: bạn bắt đầu bằng danh sách gói cần cho môi trường, Devbox dựa vào đó tạo môi trường riêng cho ứng dụng. Về thực tế giống trình quản lý gói như yarn, nhưng các gói là cấp hệ điều hành (thứ thường cài bằng brew hay apt). Devbox cho cài hơn 400.000 phiên bản gói từ Nix Package Registry; do Jetify phát triển và chạy bên trong bằng nix. README có ví dụ tạo môi trường có python 3.10 và go 1.18 dù máy chưa cài, mục cài đặt, và các lợi ích: shell nhất quán cho cả nhóm, thử công cụ mới không làm bẩn máy, không hy sinh tốc độ, tạm biệt xung đột phiên bản, mang môi trường đi theo. Có mục Quickstart tạo shell nhanh và có thể xác định. Mục License nêu Apache 2.0. Các lợi ích là mô tả của dự án, bài chưa kiểm chứng. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án cần phiên bản công cụ khác nhau, cài chung vào máy sẽ xung đột. Devbox cho mỗi dự án một 'phòng riêng' chứa đúng công cụ cần, rời khỏi phòng là máy sạch như cũ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích shell cô lập và vì sao nó giúp cả nhóm cùng môi trường; chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần dòng lệnh và khái niệm gói, môi trường; Nix bên dưới có đường cong học riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Devbox dựa trên Nix nên khi lỗi có thể cần hiểu Nix; bài chưa kiểm tra. Cài gói từ nguồn bên ngoài cần đọc kỹ. Bài chưa so sánh với container hay Pixi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>isolated shell (shell cô lập)</strong>: cửa sổ dòng lệnh có môi trường riêng; README nêu.</li><li><strong>Nix</strong>: hệ quản lý gói khai báo; README nêu Devbox chạy bên trong bằng Nix.</li><li><strong>package registry (kho gói)</strong>: nơi chứa các gói; README nêu Nix Package Registry.</li><li><strong>deterministic (xác định)</strong>: cùng khai báo cho cùng môi trường; README nêu trong quickstart.</li><li><strong>OS-level package (gói cấp hệ điều hành)</strong>: phần mềm cài vào hệ như brew hay apt; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installing Devbox và Quickstart; bài không chép lệnh. Cần Nix hoặc để Devbox cài giúp theo hướng dẫn. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is it? và Benefits.</li><li>Đọc Quickstart.</li><li>Thử với dự án nhỏ trên máy thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình bị xung đột phiên bản công cụ giữa các dự án. Hãy đọc README của Devbox (https://github.com/jetify-com/devbox) và giải thích bằng tiếng Việt: shell cô lập là gì, Devbox liên quan Nix thế nào, và các lợi ích README nêu là của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,5 KB, bài chưa đọc tài liệu jetify.com/devbox. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jetify-com</strong> có <strong>12.443 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jetify-com/devbox/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jetify-com/devbox\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 686. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12443; repo_id 526363266; README SHA256 1ae50412792511a73f75db4a8f99b522a1996ad94cca39b0e852bbb5068a297c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jetify-com/devbox",
+          "repo_id": "526363266",
+          "source_path": "",
+          "source_revision": "README-SHA256:1ae50412792511a73f75db4a8f99b522a1996ad94cca39b0e852bbb5068a297c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jetify-com/devbox",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installing Devbox và Quickstart; bài không chép lệnh. Cần Nix hoặc để Devbox cài giúp theo hướng dẫn. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jetify-com/devbox/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jetify-com/devbox/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jetify-com/devbox",
+        "stars": 12443,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jetify-com/devbox/main/README.md",
+        "readmeSha256": "1ae50412792511a73f75db4a8f99b522a1996ad94cca39b0e852bbb5068a297c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 687,
+      "batch": 110,
+      "slug": "tilt",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Tilt: công cụ phát triển vi dịch vụ, tự động hóa từ thay đổi mã đến tiến trình mới (theo dõi tệp, dựng ảnh container, cập nhật môi trường), giống docker build và kubectl apply hay docker-compose up; README có lệnh cài tải tập lệnh từ mạng",
+        "excerpt": "Hiểu Tilt là công cụ giúp phát triển vi dịch vụ: tự động hóa mọi bước từ thay đổi mã đến tiến trình mới (theo dõi tệp, dựng ảnh container, cập nhật môi trường) giống docker build và kubectl apply hoặc docker-compose up; README mô tả bằng câu 'Kubernetes cho sản xuất, Tilt cho phát triển' và có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README tả Tilt bằng khẩu hiệu 'Kubernetes cho sản xuất, Tilt cho phát triển': ứng dụng hiện đại gồm quá nhiều dịch vụ giao tiếp liên tục; Tilt hỗ trợ phát triển vi dịch vụ và đảm bảo chúng hoạt động đúng. Chạy lệnh up để làm việc trong môi trường phát triển hoàn chỉnh đã cấu hình cho nhóm. Tilt tự động hóa các bước từ thay đổi mã đến tiến trình mới: theo dõi tệp, dựng ảnh container và cập nhật môi trường, giống docker build rồi kubectl apply hoặc docker-compose up. README có video hai phút, mục cài đặt cho macOS và Linux (một lệnh tải tập lệnh từ mạng rồi chạy ngay) và cho Windows, mục chạy Tilt, cộng đồng, báo lỗi bảo mật và giấy phép Apache 2.0. Bài không chép lệnh và khuyên đọc tập lệnh trước.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Phát triển một ứng dụng gồm nhiều dịch vụ nhỏ, mỗi lần sửa mã lại phải dựng lại và triển khai lại thủ công rất mệt. Tilt tự làm các bước đó mỗi khi bạn lưu tệp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem video hai phút trong README để hình dung quy trình; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Docker, Kubernetes hoặc docker-compose và hiểu vi dịch vụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh. Bạn chỉ có ứng dụng nhỏ một dịch vụ thì chưa cần. Tilt kết nối tới cụm Kubernetes: cẩn thận không trỏ vào cụm sản xuất.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>microservice (vi dịch vụ)</strong>: dịch vụ nhỏ làm một việc; README nêu.</li><li><strong>container image (ảnh container)</strong>: gói đóng sẵn ứng dụng; README nêu.</li><li><strong>Kubernetes</strong>: hệ quản lý container quy mô lớn; README nêu.</li><li><strong>docker-compose</strong>: công cụ chạy nhiều container cục bộ; README nêu.</li><li><strong>live update (cập nhật trực tiếp)</strong>: cập nhật mã chạy mà không dựng lại toàn bộ; bài chú thích biên tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install Tilt dùng tập lệnh tải từ mạng cho macOS và Linux và cách cho Windows; bài không chép lệnh. Cần Docker và môi trường Kubernetes hoặc docker-compose. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Xem video hai phút.</li><li>Chỉ thử với cụm thử, không trỏ vào sản xuất.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình phát triển ứng dụng nhiều dịch vụ. Hãy đọc README của Tilt (https://github.com/tilt-dev/tilt) và giải thích bằng tiếng Việt: Tilt tự động hóa những bước nào, khác docker-compose ở đâu, và rủi ro khi trỏ nó vào cụm Kubernetes thật. Chưa cài gì và không chạy lệnh tải tập lệnh từ mạng.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,6 KB), bài chưa đọc tài liệu docs.tilt.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tilt-dev</strong> có <strong>10.119 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tilt-dev/tilt/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tilt-dev/tilt\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 687. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10119; repo_id 143896900; README SHA256 30e42a2da76bcf0c29c4c5198f0cfade8d5e6fdbe127d0784c4259489e6688c0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tilt-dev/tilt",
+          "repo_id": "143896900",
+          "source_path": "",
+          "source_revision": "README-SHA256:30e42a2da76bcf0c29c4c5198f0cfade8d5e6fdbe127d0784c4259489e6688c0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tilt-dev/tilt",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install Tilt dùng tập lệnh tải từ mạng cho macOS và Linux và cách cho Windows; bài không chép lệnh. Cần Docker và môi trường Kubernetes hoặc docker-compose. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tilt-dev/tilt/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tilt-dev/tilt/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tilt-dev/tilt",
+        "stars": 10119,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tilt-dev/tilt/master/README.md",
+        "readmeSha256": "30e42a2da76bcf0c29c4c5198f0cfade8d5e6fdbe127d0784c4259489e6688c0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 688,
+      "batch": 110,
+      "slug": "release-please",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Release Please: tự động hóa tạo CHANGELOG, tạo bản phát hành GitHub và nâng phiên bản bằng cách phân tích lịch sử git theo Conventional Commits và tạo Release PR; không lo xuất bản lên trình quản lý gói; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Release Please là công cụ tự động hóa việc tạo CHANGELOG, bản phát hành trên GitHub và nâng số phiên bản: nó phân tích lịch sử git tìm thông điệp theo chuẩn Conventional Commits và duy trì một yêu cầu gộp phát hành (Release PR); khi bạn gộp PR đó, nó cập nhật changelog, gắn thẻ phiên bản và tạo bản phát hành; README nêu rõ nó không lo xuất bản lên trình quản lý gói.",
+        "content": "<p>README tả Release Please tự động hóa việc tạo CHANGELOG, tạo bản phát hành GitHub và nâng phiên bản cho dự án bằng cách phân tích lịch sử git tìm thông điệp theo Conventional Commits và tạo Release PR. README nói nó không lo xuất bản lên trình quản lý gói và không xử lý quản lý nhánh phức tạp. Thay vì phát hành liên tục mọi thứ lên nhánh mặc định, Release Please duy trì một Release PR được cập nhật khi có thêm việc gộp vào; khi bạn sẵn sàng gắn thẻ, chỉ cần gộp PR đó (gộp squash hoặc gộp thường đều được). Khi PR được gộp: cập nhật tệp changelog cùng các tệp theo ngôn ngữ (như package.json), gắn thẻ commit bằng số phiên bản, tạo bản phát hành GitHub dựa trên thẻ. README có các mục cách viết thông điệp commit, lịch sử git tuyến tính (nên dùng gộp squash), PR chứa nhiều sửa lỗi hoặc tính năng, đổi số phiên bản, sửa ghi chú phát hành, xử lý khi bot không tạo Release PR, các loại chiến lược theo ngôn ngữ. README phần đã đọc chỉ trỏ tới tệp LICENSE; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi lần phát hành phải viết changelog và tăng số phiên bản. Release Please đọc các thông điệp commit đã viết đúng chuẩn và tự dựng sẵn bản phát hành, bạn chỉ việc duyệt và bấm gộp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích Conventional Commits và vì sao thông điệp commit phải theo khuôn; chưa cấu hình gì. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Git, GitHub, GitHub Actions và quy ước thông điệp commit. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Công cụ chỉ hoạt động tốt khi cả nhóm viết thông điệp commit đúng chuẩn; README khuyên dùng gộp squash. Bot tạo thẻ và bản phát hành công khai: kiểm tra Release PR kỹ trước khi gộp, đặc biệt nếu dự án công khai. Bài chưa so sánh với semantic-release.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>changelog</strong>: tệp ghi các thay đổi theo phiên bản; README nêu.</li><li><strong>Conventional Commits</strong>: quy ước viết thông điệp commit có cấu trúc; README nêu.</li><li><strong>Release PR</strong>: yêu cầu gộp do bot duy trì để phát hành; README nêu.</li><li><strong>semantic versioning</strong>: quy ước đánh số phiên bản theo mức thay đổi; bài chú thích biên tập vì README nhắc đổi số phiên bản.</li><li><strong>squash-merge (gộp squash)</strong>: gộp nhiều commit thành một; README khuyên dùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu và các mục cấu hình theo ngôn ngữ; bài không chép lệnh. Cần Git, GitHub và thông điệp commit theo chuẩn. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README chỉ trỏ tệp LICENSE.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và What's a Release PR?</li><li>Đọc How should I write my commits?</li><li>Thử trên kho thử trước kho thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự động hóa việc phát hành. Hãy đọc README của Release Please (https://github.com/googleapis/release-please) và giải thích bằng tiếng Việt: Release PR là gì, Conventional Commits để làm gì, và vì sao nên xem kỹ Release PR trước khi gộp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13 KB, bài chưa đọc tài liệu trong kho. README chỉ trỏ tệp LICENSE (giấy phép lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>googleapis</strong> có <strong>7.725 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README chỉ trỏ tệp LICENSE. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/googleapis/release-please/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/googleapis/release-please\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 688. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7725; repo_id 183499464; README SHA256 c34ef8994841f29ab0ebe12780ec2e35b6e3c478664654003769f680e327f19d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/googleapis/release-please",
+          "repo_id": "183499464",
+          "source_path": "",
+          "source_revision": "README-SHA256:c34ef8994841f29ab0ebe12780ec2e35b6e3c478664654003769f680e327f19d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/googleapis/release-please",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu và các mục cấu hình theo ngôn ngữ; bài không chép lệnh. Cần Git, GitHub và thông điệp commit theo chuẩn. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README chỉ trỏ tệp LICENSE.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/googleapis/release-please/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/googleapis/release-please/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "googleapis/release-please",
+        "stars": 7725,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/googleapis/release-please/main/README.md",
+        "readmeSha256": "c34ef8994841f29ab0ebe12780ec2e35b6e3c478664654003769f680e327f19d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 689,
+      "batch": 110,
+      "slug": "renovate",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Renovate (Mend Renovate CLI): công cụ cập nhật phụ thuộc tự động, quét tệp gói và tạo yêu cầu gộp khi có phiên bản mới, hơn 90 trình quản lý gói, nhiều nền tảng; có bản đám mây cộng đồng và tự host; giấy phép AGPL-3.0-only",
+        "excerpt": "Hiểu Renovate là công cụ cập nhật phụ thuộc tự động: khi chạy trên kho mã, nó tìm các tham chiếu tới phụ thuộc (công khai và riêng tư) và nếu có phiên bản mới thì tạo yêu cầu gộp để cập nhật, kèm thông tin hỗ trợ quyết định (tuổi, mức dùng, tỷ lệ qua kiểm thử, độ tin cậy gộp); README nêu hơn 90 trình quản lý gói, nhiều nền tảng, các cách chạy và giấy phép AGPL-3.0-only.",
+        "content": "<p>README tả Renovate là công cụ tự động cập nhật phụ thuộc, giúp cập nhật phụ thuộc mà không cần làm tay: khi chạy trên kho, nó tìm tham chiếu tới phụ thuộc (công khai và riêng tư) và nếu có phiên bản mới, tạo yêu cầu gộp để cập nhật. Tính năng nêu: gửi PR cập nhật thẳng vào kho (tự tìm tệp gói, tự tạo PR); cung cấp thông tin giúp quyết định chấp nhận (tuổi, mức dùng, tỷ lệ qua kiểm thử, độ tin cậy gộp); cấu hình linh hoạt; bộ sưu tập ngôn ngữ và nền tảng lớn nhất theo tuyên bố của README (hơn 90 trình quản lý gói; tuyên bố của dự án, bài chưa kiểm chứng); kết nối kho và registry riêng. Nền tảng: GitHub, GitLab, Bitbucket, Azure DevOps, AWS CodeCommit (thử nghiệm), Gitea, Forgejo, Gerrit (thử nghiệm) và các nền tảng khác. README nêu các cách chạy: Mend Renovate Community đám mây, Mend Renovate Community tự host, chạy trong pipeline, chạy bằng dòng lệnh; phần đám mây và dịch vụ Mend là sản phẩm của công ty, bài không đánh giá. Huy hiệu nêu giấy phép AGPL-3.0-only.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thư viện bạn dùng ra bản mới liên tục, trong đó có bản vá bảo mật. Renovate tự mở yêu cầu cập nhật khi có bản mới để bạn xem xét, thay vì phải nhớ kiểm tra tay.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'yêu cầu cập nhật phụ thuộc' và vì sao nên xem kết quả kiểm thử trước khi gộp; chưa cấu hình gì. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần mềm nhờ AI viết mã, muốn hiểu công cụ giúp quy trình làm việc gọn và an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Git, GitHub hoặc nền tảng tương đương và khái niệm phụ thuộc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cập nhật tự động có thể mang lỗi hoặc gói độc hại: xem lại từng PR, bảo đảm có kiểm thử, không gộp tự động khi chưa hiểu. Bot cần quyền ghi vào kho: cấp quyền tối thiểu. Giấy phép AGPL-3.0 có điều khoản riêng khi cung cấp dịch vụ qua mạng; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dependency (phụ thuộc)</strong>: thư viện bên ngoài dự án dùng; README nêu.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài thư viện; README nêu hơn 90.</li><li><strong>pull request (yêu cầu gộp)</strong>: đề nghị thêm thay đổi vào kho; README nêu.</li><li><strong>registry (kho gói)</strong>: nơi chứa gói; README nêu kết nối registry riêng.</li><li><strong>AGPL-3.0</strong>: giấy phép mã nguồn mở copyleft có điều khoản cho dịch vụ qua mạng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Ways to run Renovate (đám mây cộng đồng, tự host, pipeline, dòng lệnh); bài không chép lệnh. Cần kho mã trên nền tảng được hỗ trợ. Miễn phí theo AGPL-3.0-only (README có huy hiệu); dịch vụ của Mend có thể có gói trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và Ways to run Renovate.</li><li>Đọc tài liệu docs.renovatebot.com.</li><li>Thử trên kho thử và xem từng PR.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cập nhật thư viện tự động. Hãy đọc README của Renovate (https://github.com/renovatebot/renovate) và giải thích bằng tiếng Việt: Renovate làm gì, các cách chạy khác nhau thế nào, và rủi ro khi gộp cập nhật tự động. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,3 KB, bài chưa đọc tài liệu docs.renovatebot.com. Tuyên bố 90 trình quản lý gói chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quy trình làm việc của lập trình viên có thể sửa mã, tự tạo yêu cầu gộp, cập nhật phụ thuộc hoặc chạy lệnh thay bạn: xem lại mọi thay đổi trước khi gộp, cấp cho bot quyền tối thiểu trên kho mã, không để lộ mã thông báo truy cập, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, và thử trên kho thử trước khi dùng cho dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>renovatebot</strong> có <strong>23.000 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu AGPL-3.0-only; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/renovatebot/renovate/blob/main/readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/renovatebot/renovate\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 689. Chưa cài/chạy thử; không tạo validation. Snapshot sao 23000; repo_id 76734068; README SHA256 1a79d53cfd7a0abb332c21798258e25248762e25414d939a76871f46ef58367c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/renovatebot/renovate",
+          "repo_id": "76734068",
+          "source_path": "",
+          "source_revision": "README-SHA256:1a79d53cfd7a0abb332c21798258e25248762e25414d939a76871f46ef58367c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/renovatebot/renovate",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Ways to run Renovate (đám mây cộng đồng, tự host, pipeline, dòng lệnh); bài không chép lệnh. Cần kho mã trên nền tảng được hỗ trợ. Miễn phí theo AGPL-3.0-only (README có huy hiệu); dịch vụ của Mend có thể có gói trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/renovatebot/renovate/blob/main/readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/renovatebot/renovate/blob/main/readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "renovatebot/renovate",
+        "stars": 23000,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/renovatebot/renovate/main/readme.md",
+        "readmeSha256": "1a79d53cfd7a0abb332c21798258e25248762e25414d939a76871f46ef58367c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

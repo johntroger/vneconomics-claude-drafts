@@ -11875,5 +11875,195 @@
    "apache-beam",
    "pydantic-ai"
   ]
+ },
+ {
+  "key": 682,
+  "slug": "difftastic",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Difftastic: công cụ so sánh theo cấu trúc, so sánh tệp dựa trên cú pháp thay vì từng dòng, hỗ trợ hơn 30 ngôn ngữ lập trình, dùng được với git; README nêu rõ vấn đề đã biết về hiệu năng và độ vững",
+  "repo": "Wilfred/difftastic",
+  "stars": 26142,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "alacritty"
+  ]
+ },
+ {
+  "key": 683,
+  "slug": "jujutsu",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Jujutsu (jj): hệ kiểm soát phiên bản mạnh, dễ dùng, dùng kho Git làm lớp lưu trữ nên tương thích công cụ Git, bản sao làm việc tự động được commit, xung đột có thể ghi trong commit, tự động rebase; README nêu còn thiếu tính năng như submodule",
+  "repo": "jj-vcs/jj",
+  "stars": 32349,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "devbox",
+   "renovate"
+  ]
+ },
+ {
+  "key": 684,
+  "slug": "zellij",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Zellij: không gian làm việc cho nhà phát triển và người yêu terminal, thuộc loại chương trình ghép kênh terminal (terminal multiplexer), mặc định dễ dùng, bố cục tự động hóa, đa người dùng, có web-client tích hợp; giấy phép MIT",
+  "repo": "zellij-org/zellij",
+  "stars": 35925,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "alacritty",
+   "release-please"
+  ]
+ },
+ {
+  "key": 685,
+  "slug": "alacritty",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Alacritty: trình giả lập terminal hiện đại có mặc định hợp lý nhưng cấu hình sâu, tích hợp với ứng dụng khác thay vì làm lại chức năng, chạy trên BSD, Linux, macOS, Windows; README nêu ở mức beta, giấy phép Apache 2.0",
+  "repo": "alacritty/alacritty",
+  "stars": 66109,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "difftastic",
+   "zellij"
+  ]
+ },
+ {
+  "key": 686,
+  "slug": "devbox",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Devbox: công cụ dòng lệnh tạo shell cô lập cho phát triển, khai báo danh sách gói và Devbox dựng môi trường riêng cho ứng dụng, dùng Nix bên dưới, hơn 400.000 phiên bản gói từ Nix Package Registry; giấy phép Apache 2.0",
+  "repo": "jetify-com/devbox",
+  "stars": 12443,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "jujutsu",
+   "tilt"
+  ]
+ },
+ {
+  "key": 687,
+  "slug": "tilt",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Tilt: công cụ phát triển vi dịch vụ, tự động hóa từ thay đổi mã đến tiến trình mới (theo dõi tệp, dựng ảnh container, cập nhật môi trường), giống docker build và kubectl apply hay docker-compose up; README có lệnh cài tải tập lệnh từ mạng",
+  "repo": "tilt-dev/tilt",
+  "stars": 10119,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-26",
+  "related": [
+   "devbox"
+  ]
+ },
+ {
+  "key": 688,
+  "slug": "release-please",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Release Please: tự động hóa tạo CHANGELOG, tạo bản phát hành GitHub và nâng phiên bản bằng cách phân tích lịch sử git theo Conventional Commits và tạo Release PR; không lo xuất bản lên trình quản lý gói; giấy phép Apache 2.0",
+  "repo": "googleapis/release-please",
+  "stars": 7725,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "renovate",
+   "zellij"
+  ]
+ },
+ {
+  "key": 689,
+  "slug": "renovate",
+  "group": "2026-11-03-cong-cu-quy-trinh-lap-trinh-vien",
+  "title": "Renovate (Mend Renovate CLI): công cụ cập nhật phụ thuộc tự động, quét tệp gói và tạo yêu cầu gộp khi có phiên bản mới, hơn 90 trình quản lý gói, nhiều nền tảng; có bản đám mây cộng đồng và tự host; giấy phép AGPL-3.0-only",
+  "repo": "renovatebot/renovate",
+  "stars": 23000,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "jujutsu",
+   "release-please"
+  ]
  }
 ]

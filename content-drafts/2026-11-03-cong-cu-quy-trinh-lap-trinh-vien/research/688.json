@@ -1,0 +1,42 @@
+{
+  "key": 688,
+  "repo": "googleapis/release-please",
+  "repoId": "183499464",
+  "url": "https://github.com/googleapis/release-please",
+  "stars": 7725,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:43:20Z",
+  "createdAt": "2019-04-25T19:44:03Z",
+  "defaultBranch": "main",
+  "description": "generate release PRs based on the conventionalcommits.org spec",
+  "homepage": "https://www.conventionalcommits.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/googleapis/release-please/main/README.md",
+    "sha256": "c34ef8994841f29ab0ebe12780ec2e35b6e3c478664654003769f680e327f19d",
+    "bytes": 13015,
+    "sectionsRead": [
+      "What's a Release PR?",
+      "How should I write my commits?",
+      "How do I change the version number?",
+      "Strategy (Language) types supported"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu trong kho.",
+    "Chưa thử.",
+    "Chưa so sánh với semantic-release."
+  ],
+  "runtimeValidated": false
+}
