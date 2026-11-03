@@ -3753,5 +3753,129 @@
    "authelia",
    "pyodide"
   ]
+ },
+ {
+  "key": 312,
+  "slug": "vue",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Vue: framework JavaScript dựng giao diện web, README chỉ dẫn tới tài liệu vuejs.org",
+  "repo": "vuejs/core",
+  "stars": 54819,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "alpine-js",
+   "svelte"
+  ]
+ },
+ {
+  "key": 313,
+  "slug": "svelte",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Svelte: trình biên dịch biến thành phần khai báo thành JavaScript cập nhật trang web hiệu quả",
+  "repo": "sveltejs/svelte",
+  "stars": 88538,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "preact",
+   "vue"
+  ]
+ },
+ {
+  "key": 314,
+  "slug": "solid",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Solid: thư viện giao diện khai báo biên dịch thành DOM thật và cập nhật bằng phản ứng chi tiết",
+  "repo": "solidjs/solid",
+  "stars": 36211,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "tanstack-query"
+  ]
+ },
+ {
+  "key": 315,
+  "slug": "preact",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Preact: thư viện giao diện nhẹ, API giống React, dùng Virtual DOM không cồng kềnh",
+  "repo": "preactjs/preact",
+  "stars": 38974,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "svelte",
+   "zustand"
+  ]
+ },
+ {
+  "key": 316,
+  "slug": "alpine-js",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp",
+  "repo": "alpinejs/alpine",
+  "stars": 32002,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-25",
+  "related": [
+   "vue"
+  ]
+ },
+ {
+  "key": 317,
+  "slug": "tanstack-query",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "TanStack Query: quản lý dữ liệu lấy từ máy chủ trong ứng dụng web, bao gồm lưu đệm, tải lại và cập nhật nền",
+  "repo": "TanStack/query",
+  "stars": 50520,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "solid",
+   "zustand"
+  ]
+ },
+ {
+  "key": 318,
+  "slug": "zustand",
+  "group": "2026-11-03-javascript-giao-dien-cho-nguoi-moi",
+  "title": "Zustand: thư viện quản lý trạng thái nhỏ gọn cho React, không cần provider",
+  "repo": "pmndrs/zustand",
+  "stars": 58893,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "preact",
+   "tanstack-query"
+  ]
  }
 ]

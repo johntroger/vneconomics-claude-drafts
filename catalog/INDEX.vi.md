@@ -35,13 +35,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 33 — Thư viện Python thường gặp khi AI viết mã](learning-paths/33-thu-vien-python-cho-nguoi-moi.vi.md) — Gọi API, kiểm tra dữ liệu, viết công cụ dòng lệnh và kiểm thử: những thư viện hay xuất hiện trong mã do AI sinh.
 - [Lộ trình 34 — Công cụ lập trình, xử lý văn bản và email thử nghiệm](learning-paths/34-cong-cu-lap-trinh-va-email-thu-nghiem.vi.md) — Trình soạn mã, thư viện xử lý văn bản và công cụ thử email; đọc kỹ cảnh báo của từng README.
 - [Lộ trình 35 — Chép lời, Python trong trình duyệt, đăng nhập chung và sách tính toán](learning-paths/35-giong-noi-trinh-duyet-xac-thuc-va-sach.vi.md) — Bốn công cụ cho giảng viên và người tự host: chép lời giọng nói, bài giảng chạy mã, cổng đăng nhập chung và giáo trình có mã.
+- [Lộ trình 36 — Thư viện JavaScript dựng giao diện và quản lý dữ liệu](learning-paths/36-javascript-giao-dien-cho-nguoi-moi.vi.md) — Từ thêm tương tác vào HTML đến khung giao diện và quản lý dữ liệu; chọn một hướng rồi đọc tài liệu chính thức.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (40 bài)
+### Bắt đầu (41 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -85,8 +86,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 294 | fd: tìm tên tệp trong terminal bằng cú pháp đơn giản, thay lệnh find khó nhớ | [sharkdp/fd](https://github.com/sharkdp/fd) | Apache-2.0 | 44933 | cong-cu-terminal-va-tai-lieu |
 | 297 | requests: thư viện Python gọi API và tải trang web chỉ bằng vài dòng, quen thuộc với mọi người học Python | [psf/requests](https://github.com/psf/requests) | Apache-2.0 | 54594 | thu-vien-python-cho-nguoi-moi |
 | 304 | VSCodium: bản dựng cộng đồng của VS Code theo giấy phép tự do, tắt telemetry, nhưng không dùng được mọi tiện ích | [VSCodium/vscodium](https://github.com/VSCodium/vscodium) | MIT | 33926 | cong-cu-lap-trinh-va-email-thu-nghiem |
+| 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 
-### Cơ bản (101 bài)
+### Cơ bản (105 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -191,6 +193,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 301 | Pydantic: kiểm tra và làm sạch dữ liệu trong Python bằng chú thích kiểu, nền tảng của nhiều ứng dụng AI và API | [pydantic/pydantic](https://github.com/pydantic/pydantic) | MIT | 29276 | thu-vien-python-cho-nguoi-moi |
 | 302 | pytest: viết kiểm thử Python ngắn gọn bằng câu lệnh assert thường, khi AI viết mã thì kiểm thử giúp bạn tin được mã | [pytest-dev/pytest](https://github.com/pytest-dev/pytest) | MIT | 14662 | thu-vien-python-cho-nguoi-moi |
 | 307 | Mailpit: bắt và xem thư điện tử thử nghiệm khi lập trình, nhờ vậy ứng dụng của bạn không gửi nhầm thư thật | [axllent/mailpit](https://github.com/axllent/mailpit) | MIT | 10816 | cong-cu-lap-trinh-va-email-thu-nghiem |
+| 312 | Vue: framework JavaScript dựng giao diện web, README chỉ dẫn tới tài liệu vuejs.org | [vuejs/core](https://github.com/vuejs/core) | MIT | 54819 | javascript-giao-dien-cho-nguoi-moi |
+| 313 | Svelte: trình biên dịch biến thành phần khai báo thành JavaScript cập nhật trang web hiệu quả | [sveltejs/svelte](https://github.com/sveltejs/svelte) | MIT | 88538 | javascript-giao-dien-cho-nguoi-moi |
+| 315 | Preact: thư viện giao diện nhẹ, API giống React, dùng Virtual DOM không cồng kềnh | [preactjs/preact](https://github.com/preactjs/preact) | MIT | 38974 | javascript-giao-dien-cho-nguoi-moi |
+| 318 | Zustand: thư viện quản lý trạng thái nhỏ gọn cho React, không cần provider | [pmndrs/zustand](https://github.com/pmndrs/zustand) | MIT | 58893 | javascript-giao-dien-cho-nguoi-moi |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 
@@ -224,7 +230,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (43 bài)
+### Nâng cao (45 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -271,6 +277,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 309 | Whisper: mô hình nhận dạng giọng nói của OpenAI, chép lời nhiều ngôn ngữ, mã và trọng số theo giấy phép MIT | [openai/whisper](https://github.com/openai/whisper) | MIT | 111833 | giong-noi-trinh-duyet-xac-thuc-va-sach |
 | 310 | Pyodide: chạy Python ngay trong trình duyệt nhờ WebAssembly, không cần cài gì cho người dùng | [pyodide/pyodide](https://github.com/pyodide/pyodide) | MPL-2.0 | 14922 | giong-noi-trinh-duyet-xac-thuc-va-sach |
 | 311 | Jupyter Book: dựng sách và tài liệu có mã chạy được từ Markdown và notebook, xuất web và PDF | [jupyter-book/jupyter-book](https://github.com/jupyter-book/jupyter-book) | BSD-3-Clause | 4289 | giong-noi-trinh-duyet-xac-thuc-va-sach |
+| 314 | Solid: thư viện giao diện khai báo biên dịch thành DOM thật và cập nhật bằng phản ứng chi tiết | [solidjs/solid](https://github.com/solidjs/solid) | MIT | 36211 | javascript-giao-dien-cho-nguoi-moi |
+| 317 | TanStack Query: quản lý dữ liệu lấy từ máy chủ trong ứng dụng web, bao gồm lưu đệm, tải lại và cập nhật nền | [TanStack/query](https://github.com/TanStack/query) | MIT | 50520 | javascript-giao-dien-cho-nguoi-moi |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

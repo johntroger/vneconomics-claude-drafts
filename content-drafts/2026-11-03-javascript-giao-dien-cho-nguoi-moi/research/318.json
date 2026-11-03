@@ -1,0 +1,36 @@
+{
+  "key": 318,
+  "repo": "pmndrs/zustand",
+  "repoId": "180328715",
+  "url": "https://github.com/pmndrs/zustand",
+  "stars": 58893,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:35:59Z",
+  "createdAt": "2019-04-09T09:10:06Z",
+  "defaultBranch": "main",
+  "description": "🐻 Bear necessities for state management in React",
+  "homepage": "https://zustand-demo.pmnd.rs/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pmndrs/zustand/main/README.md",
+    "sha256": "3a53f23dae9f33f7b951cfc6eac1dbdb7def9c722d8f32a70d85190f47d11d5b",
+    "bytes": 17827,
+    "sectionsRead": [
+      "Giới thiệu",
+      "First create a store",
+      "Then bind your components",
+      "TypeScript Usage"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần TypeScript và middleware.",
+    "Chưa thử.",
+    "Chưa so sánh với Redux hay Context."
+  ],
+  "runtimeValidated": false
+}

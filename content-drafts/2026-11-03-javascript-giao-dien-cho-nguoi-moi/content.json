@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-js-giao-dien",
+  "batch": 55,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 312,
+      "batch": 55,
+      "slug": "vue",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vue: framework JavaScript dựng giao diện web, README chỉ dẫn tới tài liệu vuejs.org",
+        "excerpt": "Hiểu Vue là framework JavaScript để dựng giao diện web, thuộc kho vuejs/core. README rất ngắn: hướng dẫn xem tài liệu chính thức, nơi hỏi đáp và quy định báo lỗi.",
+        "content": "<p>README của kho vuejs/core rất ngắn: phần Getting Started chỉ nói hãy làm theo tài liệu tại vuejs.org. README mô tả Vue.js là dự án mã nguồn mở giấy phép MIT, phát triển nhờ sự ủng hộ của các nhà tài trợ. Hỏi đáp và hỗ trợ đi qua diễn đàn chính thức và kênh chat cộng đồng; danh sách issue của kho chỉ dành cho báo lỗi và yêu cầu tính năng, có công cụ trợ giúp tạo issue theo quy định. README có liên kết mạng xã hội, blog, bảng việc làm, cửa hàng vật phẩm và hướng dẫn đóng góp. Bản quyền của Yuxi (Evan) You. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dựng giao diện web giống xây nhà bằng khối lắp ghép: mỗi nút, thẻ, menu là một khối. Vue là bộ khung giúp bạn ghép các khối đó và cập nhật trang khi dữ liệu thay đổi. README không giải thích kỹ thuật; mọi hướng dẫn nằm ở trang tài liệu chính thức.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng trang web có danh sách tương tác bằng Vue. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần HTML, CSS, JavaScript cơ bản và Node.js; README không nêu cách cài nên phải đọc tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần trang tĩnh, chưa cần framework. Nếu dự án của bạn đã dùng React hay Svelte, đổi sang Vue chưa chắc cần thiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung giúp dựng ứng dụng theo cấu trúc chung.</li><li><strong>component (thành phần)</strong>: một khối giao diện dùng lại.</li><li><strong>npm</strong>: kho gói JavaScript; badge trong README trỏ tới gói vue.</li><li><strong>MIT</strong>: giấy phép tự do rộng rãi; README ghi dự án theo MIT.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Cần Node.js và quen JavaScript. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc tài liệu tại vuejs.org.</li><li>Dựng dự án thử theo hướng dẫn chính thức.</li><li>Thử một component nhỏ có danh sách và nút bấm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học Vue để dựng giao diện web. Hãy đọc README của vuejs/core (https://github.com/vuejs/core) và trang vuejs.org rồi giải thích bằng tiếng Việt: Vue làm gì, component là gì, và cần chuẩn bị gì trước. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn nên bài không mô tả tính năng, hiệu năng hay so sánh với framework khác. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vuejs</strong> có <strong>54.819 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT, bản quyền Yuxi (Evan) You. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vuejs/core/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vuejs/core\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 312. Chưa cài/chạy thử; không tạo validation. Snapshot sao 54819; repo_id 137078487; README SHA256 ee86575a4126eb9e9e40f94679f85b9b2f090230924cf984153e1a15563e7ffd.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vuejs/core",
+          "repo_id": "137078487",
+          "source_path": "",
+          "source_revision": "README-SHA256:ee86575a4126eb9e9e40f94679f85b9b2f090230924cf984153e1a15563e7ffd",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/core",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Cần Node.js và quen JavaScript. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/core/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vuejs/core/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vuejs/core",
+        "stars": 54819,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vuejs/core/main/README.md",
+        "readmeSha256": "ee86575a4126eb9e9e40f94679f85b9b2f090230924cf984153e1a15563e7ffd",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 313,
+      "batch": 55,
+      "slug": "svelte",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Svelte: trình biên dịch biến thành phần khai báo thành JavaScript cập nhật trang web hiệu quả",
+        "excerpt": "Hiểu Svelte là cách dựng ứng dụng web bằng trình biên dịch: thành phần viết khai báo được chuyển thành JavaScript cập nhật DOM trực tiếp. README ngắn, dẫn tới svelte.dev.",
+        "content": "<p>README tả Svelte là cách mới để xây ứng dụng web: một trình biên dịch lấy các thành phần khai báo của bạn và chuyển thành JavaScript hiệu quả, cập nhật DOM một cách 'phẫu thuật' (theo mô tả của README). README dẫn tới trang svelte.dev và phòng chat Discord, kêu gọi ủng hộ qua Open Collective (khoản quyên góp dùng cho chi phí như lưu trữ), có lộ trình công khai, hướng dẫn đóng góp, và một mục vui hỏi 'svelte.dev có sập không?' với gợi ý kiểm tra trường hợp không vào được các trang đuôi .dev. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hầu hết framework gửi cho trình duyệt cả bộ máy để chạy ứng dụng. Svelte làm khác: nó 'dịch' sẵn thành mã gọn từ lúc dựng, nên trình duyệt chạy ít việc hơn. Giống nấu sẵn thay vì bắt khách tự nấu tại bàn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng một ứng dụng web nhỏ bằng Svelte và đọc mã sinh ra. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần HTML, CSS, JavaScript và Node.js; README ngắn, cách cài nằm ở tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần hệ sinh thái thư viện rất lớn, hãy tự kiểm tra; bài không so sánh. Nếu chỉ cần trang tĩnh, chưa cần Svelte.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>compiler (trình biên dịch)</strong>: chương trình biến mã nguồn của bạn thành dạng khác trước khi chạy; README nói Svelte là trình biên dịch.</li><li><strong>DOM</strong>: cấu trúc trang web trong trình duyệt mà JavaScript cập nhật.</li><li><strong>declarative (khai báo)</strong>: mô tả điều muốn thấy thay vì từng bước làm.</li><li><strong>Open Collective</strong>: nền tảng quyên góp cho dự án mã nguồn mở; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Cần Node.js. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử hướng dẫn trên svelte.dev.</li><li>Dựng dự án thử.</li><li>Đọc mã JavaScript sinh ra từ một thành phần nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu Svelte khác React và Vue ở đâu. Hãy đọc README của Svelte (https://github.com/sveltejs/svelte) và svelte.dev rồi giải thích bằng tiếng Việt: trình biên dịch ở đây làm gì và khi nào nên chọn Svelte. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn nên bài không khẳng định hiệu năng hay so sánh. 'Cập nhật hiệu quả' là mô tả của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sveltejs</strong> có <strong>88.538 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sveltejs/svelte/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sveltejs/svelte\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 313. Chưa cài/chạy thử; không tạo validation. Snapshot sao 88538; repo_id 74293321; README SHA256 f58cdd71cf9dfac9397cc683e5116cd100e685c329db534cca6781ff16894b73.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sveltejs/svelte",
+          "repo_id": "74293321",
+          "source_path": "",
+          "source_revision": "README-SHA256:f58cdd71cf9dfac9397cc683e5116cd100e685c329db534cca6781ff16894b73",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sveltejs/svelte",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Cần Node.js. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sveltejs/svelte/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sveltejs/svelte/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sveltejs/svelte",
+        "stars": 88538,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sveltejs/svelte/main/README.md",
+        "readmeSha256": "f58cdd71cf9dfac9397cc683e5116cd100e685c329db534cca6781ff16894b73",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 314,
+      "batch": 55,
+      "slug": "solid",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Solid: thư viện giao diện khai báo biên dịch thành DOM thật và cập nhật bằng phản ứng chi tiết",
+        "excerpt": "Hiểu Solid là thư viện JavaScript dựng giao diện không dùng Virtual DOM: biên dịch template thành DOM thật và cập nhật bằng các phản ứng chi tiết. README có ví dụ đếm số bằng createSignal.",
+        "content": "<p>README tả Solid là thư viện JavaScript khai báo để tạo giao diện người dùng; thay vì dùng Virtual DOM, nó biên dịch template thành các nút DOM thật và cập nhật bằng các phản ứng chi tiết (fine-grained reactions). README có mục At a Glance với ví dụ bộ đếm dùng createSignal (một mảnh trạng thái phản ứng) và chú thích rằng thân hàm thành phần chỉ chạy một lần. README nói thành phần chỉ là hàm trả về nút DOM, dựa trên JSX, TypeScript và hệ sinh thái Vite, và cam kết hỗ trợ các trình duyệt hiện đại trong hai năm gần nhất. Có trang web, tài liệu API, hướng dẫn và sân chơi. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhiều thư viện giao diện so sánh 'bản nháp' với 'bản thật' của trang rồi sửa chỗ khác nhau. Solid đi đường khác: nó nối trực tiếp dữ liệu với đúng chỗ cần đổi, nên khi một số thay đổi thì chỉ đúng ô đó cập nhật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bộ đếm đơn giản trong sân chơi trực tuyến để hiểu khác biệt so với React. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần JavaScript, JSX và khái niệm trạng thái phản ứng; README dài và nhiều phần kỹ thuật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn mới học làm web, hãy bắt đầu với HTML, CSS, JavaScript cơ bản trước. Bài không so sánh hiệu năng với framework khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Virtual DOM</strong>: bản sao trang web trong bộ nhớ để so sánh trước khi cập nhật; README nói Solid không dùng.</li><li><strong>signal</strong>: mảnh dữ liệu mà giao diện tự cập nhật khi nó đổi; README dùng createSignal.</li><li><strong>JSX</strong>: cú pháp trộn HTML vào JavaScript; README nêu.</li><li><strong>fine-grained reactivity (phản ứng chi tiết)</strong>: chỉ cập nhật đúng phần phụ thuộc vào dữ liệu thay đổi.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu API, hướng dẫn và sân chơi; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js khi dựng dự án. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử sân chơi trực tuyến với ví dụ bộ đếm.</li><li>Đọc Features Tutorial.</li><li>Dựng dự án thử theo tài liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu cách Solid cập nhật giao diện. Hãy đọc README của Solid (https://github.com/solidjs/solid) và giải thích bằng tiếng Việt: Virtual DOM là gì, createSignal làm gì trong ví dụ, và vì sao thân hàm chỉ chạy một lần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README mô tả triết lý và ví dụ, bài không kiểm chứng hiệu năng. Phiên bản và cách dùng có thể đổi; hãy theo tài liệu hiện hành. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>solidjs</strong> có <strong>36.211 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/solidjs/solid/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/solidjs/solid\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 314. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36211; repo_id 130884470; README SHA256 9bd2db801fad6c7872ec70a3b0277ca6803186031c2d14f963eb9182d1974f9d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/solidjs/solid",
+          "repo_id": "130884470",
+          "source_path": "",
+          "source_revision": "README-SHA256:9bd2db801fad6c7872ec70a3b0277ca6803186031c2d14f963eb9182d1974f9d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/solidjs/solid",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu API, hướng dẫn và sân chơi; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js khi dựng dự án. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/solidjs/solid/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/solidjs/solid/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "solidjs/solid",
+        "stars": 36211,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/solidjs/solid/main/README.md",
+        "readmeSha256": "9bd2db801fad6c7872ec70a3b0277ca6803186031c2d14f963eb9182d1974f9d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 315,
+      "batch": 55,
+      "slug": "preact",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Preact: thư viện giao diện nhẹ, API giống React, dùng Virtual DOM không cồng kềnh",
+        "excerpt": "Hiểu Preact là thư viện giao diện nhỏ gọn có API và mẫu mã giống React, tương thích rộng qua preact/compat. README có hướng dẫn nhập môn với hàm render.",
+        "content": "<p>README mở đầu: 'toàn bộ sức mạnh của thành phần Virtual DOM mà không nặng nề'. Điểm nêu: API quen thuộc kiểu React (lớp ES6, hooks, hàm), tương thích React rộng qua bí danh preact/compat, có đủ JSX, VDOM, DevTools, HMR, SSR, thuật toán so sánh được tối ưu và hydrate liền mạch với kết xuất phía máy chủ, hỗ trợ các trình duyệt hiện đại, kết xuất bất đồng bộ trong suốt với bộ lập lịch có thể thay thế. README có phần Getting Started: dựng giao diện bằng cây thành phần, bắt đầu từ hàm render nhận mô tả cây và gắn vào phần tử cha, kèm ví dụ dùng h và render. README có mục giấy phép MIT. Có trang web preactjs.com và danh sách awesome-preact.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>React là hãng xe lớn nhiều phụ tùng. Preact giống xe nhỏ dùng chung nhiều phụ tùng và cách lái với React nhưng nhẹ hơn nhiều. Bạn viết gần như cùng kiểu, và có lớp tương thích để dùng thư viện React.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng widget nhỏ cho trang web cần tải nhanh bằng Preact. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript; quen React thì dễ chuyển. README có ví dụ và tutorial ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa biết React, không cần học Preact trước. Một số thư viện React có thể không chạy hoàn toàn dù có lớp tương thích (README nói 'rộng', không phải toàn bộ).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Virtual DOM</strong>: bản sao trang trong bộ nhớ để so sánh trước khi cập nhật.</li><li><strong>hooks</strong>: cách dùng trạng thái và hiệu ứng trong thành phần hàm; README nêu hỗ trợ.</li><li><strong>SSR / hydration</strong>: kết xuất trang ở máy chủ rồi gắn tương tác ở trình duyệt; README nêu.</li><li><strong>HMR</strong>: nạp lại nóng khi sửa mã; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần Getting Started và dẫn tới preactjs.com; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js khi dựng dự án. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting Started và ví dụ render.</li><li>Thử dựng dự án nhỏ theo tài liệu.</li><li>Thử dùng preact/compat với một thư viện React nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết sơ React và muốn thử Preact. Hãy đọc README của Preact (https://github.com/preactjs/preact) và giải thích bằng tiếng Việt: Preact giống và khác React ở đâu, preact/compat để làm gì, và hạn chế khi dùng thư viện React. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói tương thích React 'rộng', không phải toàn bộ; bài chưa kiểm chứng thư viện cụ thể. 'Nhẹ' và 'tối ưu' là mô tả của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>preactjs</strong> có <strong>38.974 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/preactjs/preact/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/preactjs/preact\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 315. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38974; repo_id 42283287; README SHA256 8be4fc1cf9a5a072332248bd24134a0637d461f9ad83e896e847226a6c4a85c7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/preactjs/preact",
+          "repo_id": "42283287",
+          "source_path": "",
+          "source_revision": "README-SHA256:8be4fc1cf9a5a072332248bd24134a0637d461f9ad83e896e847226a6c4a85c7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/preactjs/preact",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần Getting Started và dẫn tới preactjs.com; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js khi dựng dự án. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/preactjs/preact/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/preactjs/preact/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "preactjs/preact",
+        "stars": 38974,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/preactjs/preact/main/README.md",
+        "readmeSha256": "8be4fc1cf9a5a072332248bd24134a0637d461f9ad83e896e847226a6c4a85c7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 316,
+      "batch": 55,
+      "slug": "alpine-js",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp",
+        "excerpt": "Hiểu Alpine.js là thư viện JavaScript nhẹ để thêm tương tác ngay trong HTML. README của kho chủ yếu hướng dẫn đóng góp và liệt kê các gói plugin; cách dùng nằm ở alpinejs.dev.",
+        "content": "<p>README nói hãy vào tài liệu Alpine ở alpinejs.dev cho hầu hết mọi thứ; tài liệu nằm trong thư mục packages/docs của kho và README chỉ dành cho thông tin đóng góp. README lưu ý tài liệu bản V2 ở một nhánh riêng. Phần đóng góp mô tả: kho là monorepo dùng npm workspaces; clone kho, cài phụ thuộc và dựng bằng npm, rồi nhúng tệp cdn.js trong thư mục dist bằng thẻ script (đây là hướng dẫn cho người đóng góp, bài không chép lệnh). Bảng gói trong README: alpinejs (lõi), collapse (thu gọn có hiệu ứng), csp (bản an toàn theo CSP), docs, focus (quản lý tiêu điểm), history (gắn dữ liệu với tham số truy vấn qua history API, tên có thể đổi), intersect (kích hoạt biểu thức khi phần tử vào khung nhìn), mask (định dạng ô nhập khi gõ), morph (biến đổi HTML thông minh) và các gói khác. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhiều thư viện giao diện đòi bạn dựng cả dự án. Alpine nhẹ hơn: bạn thêm vài thuộc tính vào thẻ HTML thường là trang có hành vi như bật tắt menu, tab. README này nói thêm: phần cách dùng nằm ở trang tài liệu, README chỉ nói chuyện đóng góp mã.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thêm menu bật tắt hoặc tab cho trang HTML tĩnh mà không dựng cả framework. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> HTML cơ bản là đủ để bắt đầu thử; cần đọc tài liệu ngoài vì README không hướng dẫn dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README này hướng dẫn đóng góp chứ không phải hướng dẫn dùng; đừng làm theo phần dựng từ mã nguồn nếu bạn chỉ muốn dùng. Nếu cần ứng dụng lớn có nhiều trạng thái, framework đầy đủ hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>monorepo</strong>: nhiều gói trong một kho mã; README nói Alpine tổ chức như vậy.</li><li><strong>CDN</strong>: tệp thư viện nhúng từ mạng bằng thẻ script; README nhắc tệp cdn.js.</li><li><strong>plugin</strong>: gói thêm tính năng cho lõi; README liệt kê collapse, focus, mask, morph...</li><li><strong>CSP</strong>: chính sách bảo mật nội dung của trang; README có gói 'CSP safe'.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không phải hướng dẫn dùng; cách dùng ở alpinejs.dev (bài chưa đọc nên không nêu cách nhúng). Phần dựng từ mã nguồn trong README cần Node.js và dành cho người đóng góp. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Vào alpinejs.dev đọc phần bắt đầu.</li><li>Thử thêm một thuộc tính tương tác vào trang HTML thử.</li><li>Chỉ đọc phần đóng góp nếu bạn muốn sửa chính Alpine.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có trang HTML tĩnh và muốn thêm tương tác nhỏ. Hãy đọc README của Alpine.js (https://github.com/alpinejs/alpine) và trang alpinejs.dev rồi giải thích bằng tiếng Việt: Alpine làm gì, các plugin để làm gì, và vì sao README kho này không phải hướng dẫn dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README này dành cho người đóng góp, không mô tả cách dùng hay tính năng cho người dùng cuối; bài lấy thông tin về cách dùng từ chỉ dẫn trong README tới tài liệu, chưa đọc tài liệu đó. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>alpinejs</strong> có <strong>32.002 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-25. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README không nêu rõ giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/alpinejs/alpine/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/alpinejs/alpine\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 316. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32002; repo_id 224663696; README SHA256 0933ff55aa460f9e33a2103c9d35678d6de63126604fa0d161374ef6ec9b915e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/alpinejs/alpine",
+          "repo_id": "224663696",
+          "source_path": "",
+          "source_revision": "README-SHA256:0933ff55aa460f9e33a2103c9d35678d6de63126604fa0d161374ef6ec9b915e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/alpinejs/alpine",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không phải hướng dẫn dùng; cách dùng ở alpinejs.dev (bài chưa đọc nên không nêu cách nhúng). Phần dựng từ mã nguồn trong README cần Node.js và dành cho người đóng góp. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/alpinejs/alpine/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/alpinejs/alpine/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "alpinejs/alpine",
+        "stars": 32002,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/alpinejs/alpine/main/README.md",
+        "readmeSha256": "0933ff55aa460f9e33a2103c9d35678d6de63126604fa0d161374ef6ec9b915e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 317,
+      "batch": 55,
+      "slug": "tanstack-query",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "TanStack Query: quản lý dữ liệu lấy từ máy chủ trong ứng dụng web, bao gồm lưu đệm, tải lại và cập nhật nền",
+        "excerpt": "Hiểu TanStack Query là thư viện bất đồng bộ để lấy, lưu đệm, đồng bộ và cập nhật trạng thái từ máy chủ. README ngắn, liệt kê tính năng và dẫn tới tanstack.com/query.",
+        "content": "<p>README tả TanStack Query là thư viện quản lý trạng thái bất đồng bộ giúp đơn giản hóa việc lấy, lưu đệm, đồng bộ và cập nhật 'trạng thái máy chủ'. Điểm nêu: lấy dữ liệu không phụ thuộc giao thức (REST, GraphQL, promise...), lưu đệm, tải lại, phân trang và cuộn vô hạn, thao tác thay đổi dữ liệu (mutation), truy vấn phụ thuộc, cập nhật nền, tải trước, hủy và hỗ trợ React Suspense. README dẫn tới tài liệu, kêu gọi tài trợ và đối tác, và liệt kê hệ sinh thái TanStack (ví dụ Ranger cho thanh trượt). Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ứng dụng web hay hỏi máy chủ cùng một dữ liệu nhiều lần, rồi quên bắt đầu khi chuyển trang. TanStack Query giống bộ nhớ đệm có trí nhớ: nó lấy dữ liệu, nhớ lại, báo khi dữ liệu cũ và tự cập nhật nền.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: ứng dụng React hiển thị danh sách lấy từ API và muốn lưu đệm, tải lại khi cần. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần React hoặc khung giao diện tương ứng, hiểu API và lập trình bất đồng bộ; README ngắn và không có ví dụ mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng chỉ gọi API một lần hoặc không có khung giao diện, chưa cần. Bài chưa kiểm chứng việc hỗ trợ từng khung giao diện cụ thể ngoài React (README nhắc React Suspense).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>server state (trạng thái máy chủ)</strong>: dữ liệu sống ở máy chủ mà giao diện chỉ giữ bản sao; README dùng cụm này.</li><li><strong>cache (lưu đệm)</strong>: giữ bản sao dữ liệu để khỏi hỏi lại.</li><li><strong>mutation</strong>: thao tác thay đổi dữ liệu trên máy chủ; README nêu.</li><li><strong>pagination / infinite scroll</strong>: chia trang và cuộn vô hạn; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu tại tanstack.com/query; bài chưa đọc nên không nêu lệnh. Cần Node.js và khung giao diện (React theo ví dụ README). Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần tính năng và tài liệu chính thức.</li><li>Thử với một API công khai trong dự án thử.</li><li>Thử lưu đệm và tải lại.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dựng ứng dụng React lấy dữ liệu từ API. Hãy đọc README của TanStack Query (https://github.com/TanStack/query) và giải thích bằng tiếng Việt: 'trạng thái máy chủ' là gì, lưu đệm giúp gì, và khi nào chưa cần thư viện này. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, không có ví dụ mã hay mô tả giới hạn nên bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>TanStack</strong> có <strong>50.520 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/TanStack/query/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/TanStack/query\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 317. Chưa cài/chạy thử; không tạo validation. Snapshot sao 50520; repo_id 207645083; README SHA256 8b48efd96b0760eb8001b16ae4cbabd812ee050b22d13e3eca3a42daaf28a03b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/TanStack/query",
+          "repo_id": "207645083",
+          "source_path": "",
+          "source_revision": "README-SHA256:8b48efd96b0760eb8001b16ae4cbabd812ee050b22d13e3eca3a42daaf28a03b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TanStack/query",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu tại tanstack.com/query; bài chưa đọc nên không nêu lệnh. Cần Node.js và khung giao diện (React theo ví dụ README). Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TanStack/query/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/TanStack/query/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "TanStack/query",
+        "stars": 50520,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/TanStack/query/main/README.md",
+        "readmeSha256": "8b48efd96b0760eb8001b16ae4cbabd812ee050b22d13e3eca3a42daaf28a03b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 318,
+      "batch": 55,
+      "slug": "zustand",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Zustand: thư viện quản lý trạng thái nhỏ gọn cho React, không cần provider",
+        "excerpt": "Hiểu Zustand là giải pháp quản lý trạng thái nhỏ, nhanh, dựa trên hooks, không rườm rà. README có ví dụ kho gấu và lưu ý dành riêng cho người dùng TypeScript.",
+        "content": "<p>README tả Zustand là giải pháp quản lý trạng thái 'nhỏ, nhanh và mở rộng được' dựa trên nguyên tắc flux đơn giản, có API kiểu hooks dễ chịu, không rườm rà và không áp đặt. README nói đừng coi thường vì nó dễ thương; nhiều công sức đã dành xử lý các cạm bẫy phổ biến như vấn đề 'zombie child', xử lý đồng thời React... (README liệt kê, bài không diễn giải sâu). Có bản demo trực tiếp và tài liệu; cài bằng npm (bài không chép lệnh). README lưu ý nội dung viết cho người dùng JavaScript, người dùng TypeScript cần xem phần riêng. Ví dụ: tạo kho (store) là một hook chứa số gấu và hai hàm cập nhật; dùng hook ở bất kỳ đâu, không cần provider, chọn phần trạng thái cần và thành phần chỉ cập nhật khi phần đó đổi. README nói trạng thái phải cập nhật bất biến và hàm set gộp trạng thái. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trong ứng dụng, nhiều phần cần dùng chung một số liệu (giỏ hàng, giao diện sáng tối). Zustand giống bảng thông báo chung: mọi nơi đọc từ đó, ai sửa thì nơi khác thấy, và bạn chỉ cần vài dòng để dựng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng một kho chung cho giỏ hàng trong ứng dụng React. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React và khái niệm hooks, trạng thái bất biến; README có ví dụ ngắn và phần TypeScript. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng chỉ có vài trạng thái cục bộ, state của React là đủ. Nếu bạn đang dùng khung khác ngoài React, README viết cho React.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>state management (quản lý trạng thái)</strong>: cách giữ và chia sẻ dữ liệu giữa các phần của ứng dụng.</li><li><strong>store (kho)</strong>: nơi chứa trạng thái; README nói kho là một hook.</li><li><strong>immutable (bất biến)</strong>: cập nhật bằng cách tạo bản mới thay vì sửa tại chỗ; README nêu.</li><li><strong>provider</strong>: thành phần bao bọc để chia sẻ dữ liệu; README nói Zustand không cần.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm (bài không chép lệnh), cần React; có bản demo trực tiếp và tài liệu. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử demo trực tiếp.</li><li>Đọc ví dụ kho gấu.</li><li>Thử trong dự án React nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học React và cần chia sẻ trạng thái giữa nhiều thành phần. Hãy đọc README của Zustand (https://github.com/pmndrs/zustand) và giải thích bằng tiếng Việt: kho là gì, vì sao không cần provider, và vì sao trạng thái phải cập nhật bất biến. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài, bài chỉ lấy các phần chính; 'nhỏ, nhanh' và nhận định rằng nó có thể là thư viện duy nhất xử lý đúng các cạm bẫy như zombie child và mất ngữ cảnh là mô tả của dự án, bài không kiểm chứng. README viết cho JavaScript và có phần TypeScript riêng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện JavaScript chạy trong trình duyệt của người xem: đừng nhúng khóa bí mật vào mã giao diện, chỉ cài gói từ nguồn chính thức (npm của dự án) và dùng dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pmndrs</strong> có <strong>58.893 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pmndrs/zustand/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pmndrs/zustand\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 318. Chưa cài/chạy thử; không tạo validation. Snapshot sao 58893; repo_id 180328715; README SHA256 3a53f23dae9f33f7b951cfc6eac1dbdb7def9c722d8f32a70d85190f47d11d5b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pmndrs/zustand",
+          "repo_id": "180328715",
+          "source_path": "",
+          "source_revision": "README-SHA256:3a53f23dae9f33f7b951cfc6eac1dbdb7def9c722d8f32a70d85190f47d11d5b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/zustand",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm (bài không chép lệnh), cần React; có bản demo trực tiếp và tài liệu. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/zustand/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pmndrs/zustand/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pmndrs/zustand",
+        "stars": 58893,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pmndrs/zustand/main/README.md",
+        "readmeSha256": "3a53f23dae9f33f7b951cfc6eac1dbdb7def9c722d8f32a70d85190f47d11d5b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
