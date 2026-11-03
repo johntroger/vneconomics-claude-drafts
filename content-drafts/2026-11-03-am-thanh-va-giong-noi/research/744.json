@@ -1,0 +1,41 @@
+{
+  "key": 744,
+  "repo": "pyannote/pyannote-audio",
+  "repoId": "53344691",
+  "url": "https://github.com/pyannote/pyannote-audio",
+  "stars": 10755,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:10:51Z",
+  "createdAt": "2016-03-07T17:26:15Z",
+  "defaultBranch": "main",
+  "description": "Neural building blocks for speaker diarization: speech activity detection, speaker change detection, overlapped speech detection, speaker embedding ",
+  "homepage": "https://www.pyannote.ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pyannote/pyannote-audio/main/README.md",
+    "sha256": "558718cfb4b044f9329320b362f6a70687cf9c3519a970778da2c483bbc11c4d",
+    "bytes": 12898,
+    "sectionsRead": [
+      "Highlights",
+      "community-1",
+      "precision-2"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc thẻ mô hình trên Hugging Face.",
+    "Chưa thử.",
+    "Chưa kiểm tra điều kiện sử dụng mô hình."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,40 @@
+{
+  "key": 739,
+  "repo": "beetbox/beets",
+  "repoId": "827590",
+  "url": "https://github.com/beetbox/beets",
+  "stars": 15889,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:34:53Z",
+  "createdAt": "2010-08-09T23:17:20Z",
+  "defaultBranch": "master",
+  "description": "music library manager and MusicBrainz tagger",
+  "homepage": "http://beets.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/beetbox/beets/master/README.rst",
+    "sha256": "282ade74d245edf7c545392d439ce7939229c17a848acfcccf924f733af56d92",
+    "bytes": 5316,
+    "sectionsRead": [
+      "Install",
+      "Contribute"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu beets.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa kiểm tra nguồn dữ liệu tra cứu."
+  ],
+  "runtimeValidated": false
+}

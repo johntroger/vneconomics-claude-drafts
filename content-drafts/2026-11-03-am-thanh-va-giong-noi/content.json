@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-am-thanh",
+  "batch": 119,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 739,
+      "batch": 119,
+      "slug": "beets",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "beets: hệ thống quản lý thư viện nhạc cho người mê nhạc kỹ tính, lập danh mục bộ sưu tập, tự cải thiện siêu dữ liệu khi nhập và cung cấp bộ công cụ thao tác thư viện; mã nguồn mở, giấy phép MIT theo GitHub",
+        "excerpt": "Hiểu beets là hệ thống quản lý thư viện nhạc cho người mê nhạc kỹ tính: lập danh mục bộ sưu tập, tự động cải thiện siêu dữ liệu (thẻ nhạc) khi nhập và cung cấp bộ công cụ để thao tác, truy cập thư viện; README minh họa bộ sửa thẻ nhạc so khớp tên bài với nguồn dữ liệu và nêu độ giống; có mục cài đặt, đóng góp và liên hệ.",
+        "content": "<p>README tả beets là hệ thống quản lý thư viện nhạc cho người mê nhạc kỹ tính, mục đích là làm đúng bộ sưu tập nhạc một lần cho mãi mãi: lập danh mục bộ sưu tập, tự động cải thiện siêu dữ liệu và cung cấp bộ công cụ để thao tác và truy cập. README có ví dụ nhập một thư mục nhạc: beets so khớp tên bài hát với dữ liệu công khai, hiển thị độ giống (ví dụ khoảng 98%) và sửa tên bài; bài không chép lệnh hay đầu ra. Mục Install nói cài bằng pip hoặc từ GitHub, có trong kho phần mềm của nhiều bản phân phối, và trỏ hướng dẫn Getting Started. Mục Contribute mời đóng góp, kể cả không lập trình. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub (MIT). Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhạc tải về thường có tên bài, ca sĩ, album bị sai hoặc thiếu. beets đọc từng bài, so với cơ sở dữ liệu nhạc công khai rồi sửa thẻ và sắp xếp thư mục giúp bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'thẻ nhạc' (tag) và vì sao tên bài sai làm lộn xộn thư viện; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần dòng lệnh và Python cơ bản; cấu hình cho thư viện lớn cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> beets sửa thẻ và có thể di chuyển, đổi tên tệp: sao lưu thư viện trước khi chạy hàng loạt. Chỉ quản lý nhạc bạn có quyền dùng. Dữ liệu tra cứu lấy từ dịch vụ bên ngoài: README phần đã đọc không nêu chi tiết, bài chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>metadata (siêu dữ liệu)</strong>: thông tin mô tả bài hát như tên, ca sĩ, album; README nêu.</li><li><strong>tag (thẻ nhạc)</strong>: siêu dữ liệu gắn vào tệp nhạc; README nêu bộ sửa thẻ.</li><li><strong>music library (thư viện nhạc)</strong>: bộ sưu tập tệp nhạc; README nêu.</li><li><strong>similarity (độ giống)</strong>: mức khớp với dữ liệu nguồn; README có ví dụ.</li><li><strong>plugin</strong>: phần mở rộng tính năng; bài chú thích biên tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install bằng pip hoặc từ GitHub; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ví dụ nhập nhạc.</li><li>Đọc Getting Started trên beets.readthedocs.io.</li><li>Thử với một thư mục nhỏ đã sao lưu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có thư viện nhạc lộn xộn thẻ. Hãy đọc README của beets (https://github.com/beetbox/beets) và giải thích bằng tiếng Việt: beets làm gì khi nhập nhạc, độ giống nghĩa là gì, và vì sao phải sao lưu trước khi sửa hàng loạt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,3 KB, bài chưa đọc tài liệu beets.readthedocs.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>beetbox</strong> có <strong>15.889 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/beetbox/beets/blob/master/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/beetbox/beets\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 739. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15889; repo_id 827590; README SHA256 282ade74d245edf7c545392d439ce7939229c17a848acfcccf924f733af56d92.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/beetbox/beets",
+          "repo_id": "827590",
+          "source_path": "",
+          "source_revision": "README-SHA256:282ade74d245edf7c545392d439ce7939229c17a848acfcccf924f733af56d92",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/beetbox/beets",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install bằng pip hoặc từ GitHub; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/beetbox/beets/blob/master/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/beetbox/beets/blob/master/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "beetbox/beets",
+        "stars": 15889,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/beetbox/beets/master/README.rst",
+        "readmeSha256": "282ade74d245edf7c545392d439ce7939229c17a848acfcccf924f733af56d92",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 740,
+      "batch": 119,
+      "slug": "navidrome",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Navidrome: máy chủ và bộ phát nhạc mã nguồn mở trên web, nghe bộ sưu tập nhạc từ trình duyệt hoặc thiết bị di động như Spotify cá nhân; hỗ trợ bộ sưu tập rất lớn, nhiều người dùng, tương thích máy khách Subsonic; README ghi nhánh master có thể không ổn định",
+        "excerpt": "Hiểu Navidrome là máy chủ và bộ phát nhạc mã nguồn mở trên web: nghe bộ sưu tập nhạc của bạn từ trình duyệt hoặc thiết bị di động, giống Spotify cá nhân; hỗ trợ bộ sưu tập rất lớn, mọi định dạng âm thanh, nhiều người dùng, tương thích máy khách Subsonic, chuyển mã tức thời; README khuyên dùng bản phát hành thay vì nhánh master vì master có thể không ổn định.",
+        "content": "<p>README tả Navidrome là máy chủ bộ sưu tập nhạc và bộ phát nhạc mã nguồn mở trên web, cho phép nghe nhạc của bạn từ mọi trình duyệt hoặc thiết bị di động, 'giống Spotify cá nhân'. Ghi chú: nhánh master có thể không ổn định hoặc hỏng trong lúc phát triển, nên dùng các bản phát hành. README có bản demo trực tuyến, mời góp ý và đóng góp, mục cài đặt (trỏ website dự án), mục lưu trữ đám mây (các nhà cung cấp hợp tác cung cấp dịch vụ lưu trữ chính thức; đây là quảng bá, bài không đánh giá), mục tính năng: xử lý bộ sưu tập rất lớn, phát hầu hết định dạng âm thanh, đọc và dùng siêu dữ liệu, hỗ trợ tuyển tập nhiều nghệ sĩ và bộ nhiều đĩa, nhiều người dùng (đếm lượt nghe, danh sách phát, yêu thích riêng), dùng ít tài nguyên, đa nền tảng (macOS, Linux, Windows, ảnh Docker, bản cho Raspberry Pi), tự theo dõi thư viện, hỗ trợ lời bài hát, giao diện web hiện đại tùy biến, tương thích máy khách Subsonic, Madsonic, Airsonic, chuyển mã tức thời kể cả Opus. Có mục bản dịch, tài liệu và ảnh chụp màn hình. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (GPL-3.0). Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có sẵn kho nhạc trên ổ cứng và muốn nghe ở mọi nơi? Navidrome dựng một trang nghe nhạc riêng của bạn, cùng nhiều ứng dụng Subsonic trên điện thoại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo công khai và đọc phần tính năng; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Docker hoặc cài đặt máy chủ cơ bản và thư mục nhạc có tổ chức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chỉ phục vụ nhạc bạn có quyền dùng; chia sẻ ra Internet có thể liên quan bản quyền: bài không phải tư vấn pháp lý. Dùng bản phát hành thay vì nhánh master theo README. Mở máy chủ ra mạng cần xác thực, HTTPS và quản lý tài khoản. Phần lưu trữ đám mây là dịch vụ trả phí của bên khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>streaming server (máy chủ phát nhạc)</strong>: dịch vụ phát nhạc qua mạng; README nêu.</li><li><strong>Subsonic</strong>: giao thức phát nhạc mà nhiều ứng dụng hỗ trợ; README nêu tương thích.</li><li><strong>transcoding (chuyển mã)</strong>: đổi định dạng âm thanh khi phát; README nêu.</li><li><strong>multi-user (nhiều người dùng)</strong>: mỗi người có tài khoản riêng; README nêu.</li><li><strong>Docker</strong>: cách đóng gói và chạy ứng dụng; README nêu có ảnh Docker.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn cài đặt trên navidrome.org; bài không chép lệnh. Cần thư mục nhạc và máy chủ. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo.</li><li>Đọc mục Features và Installation.</li><li>Dùng bản phát hành, không dùng nhánh master.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn nghe nhạc từ kho nhạc của mình ở mọi nơi. Hãy đọc README của Navidrome (https://github.com/navidrome/navidrome) và giải thích bằng tiếng Việt: Navidrome làm gì, Subsonic là gì, và vì sao README khuyên dùng bản phát hành thay vì nhánh master. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,6 KB, bài chưa đọc tài liệu navidrome.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>navidrome</strong> có <strong>24.503 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/navidrome/navidrome/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/navidrome/navidrome\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 740. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24503; repo_id 52481933; README SHA256 37ac0e6cca7ace6fc158c6aebed13c927ae966a2bbccf5cf3749e94d6e5d541a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/navidrome/navidrome",
+          "repo_id": "52481933",
+          "source_path": "",
+          "source_revision": "README-SHA256:37ac0e6cca7ace6fc158c6aebed13c927ae966a2bbccf5cf3749e94d6e5d541a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/navidrome/navidrome",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn cài đặt trên navidrome.org; bài không chép lệnh. Cần thư mục nhạc và máy chủ. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/navidrome/navidrome/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/navidrome/navidrome/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "navidrome/navidrome",
+        "stars": 24503,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/navidrome/navidrome/master/README.md",
+        "readmeSha256": "37ac0e6cca7ace6fc158c6aebed13c927ae966a2bbccf5cf3749e94d6e5d541a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 741,
+      "batch": 119,
+      "slug": "librosa",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "librosa: thư viện Python xử lý tín hiệu âm thanh và âm nhạc, cung cấp các thuật toán và công cụ nền tảng để dựng hệ thống truy xuất thông tin âm nhạc (MIR); có tài liệu, hướng dẫn, nhật ký thay đổi; giấy phép ISC theo huy hiệu",
+        "excerpt": "Hiểu librosa là thư viện Python cho xử lý tín hiệu âm thanh và âm nhạc, cung cấp các thuật toán và công cụ nền tảng để xây hệ thống truy xuất thông tin âm nhạc (MIR); README nêu tài liệu đầy đủ, hướng dẫn cho người mới, cách cài từ PyPI hoặc conda-forge, và cách trích dẫn khi dùng trong nghiên cứu.",
+        "content": "<p>README tả librosa là thư viện Python cho xử lý tín hiệu âm thanh và âm nhạc, cung cấp các thuật toán và công cụ nền tảng để xây hệ thống truy xuất thông tin âm nhạc. Mục Documentation trỏ tới librosa.org/doc, khuyên người mới bắt đầu từ các hướng dẫn, người cần chi tiết API xem tham chiếu API, và có nhật ký thay đổi. Mục Installation: cài từ PyPI hoặc từ conda-forge; bài không chép lệnh. Mục Citing hướng dẫn trích dẫn khi dùng trong công trình và trích dẫn khi nói về thiết kế. README có huy hiệu giấy phép (bài lấy giấy phép ISC theo GitHub).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn máy 'nghe' bài hát để tìm nhịp, giai điệu, quang phổ? librosa cho bạn các phép tính cơ bản như vậy từ tệp âm thanh, nền tảng của nhiều nghiên cứu và ứng dụng âm nhạc.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'quang phổ' và 'nhịp' bằng ví dụ một đoạn nhạc ngắn bạn có quyền dùng; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, NumPy cơ bản và chút kiến thức xử lý tín hiệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chỉ phân tích nhạc bạn có quyền dùng. Kết quả phân tích tự động (nhịp, cao độ) có thể sai: cần kiểm tra bằng tai. Bài chưa so sánh librosa với các thư viện âm thanh khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>MIR (truy xuất thông tin âm nhạc)</strong>: ngành nghiên cứu trích đặc trưng và phân tích nhạc bằng máy; README nêu.</li><li><strong>signal processing (xử lý tín hiệu)</strong>: tính toán trên tín hiệu như âm thanh; README nêu.</li><li><strong>spectrogram (quang phổ đồ)</strong>: biểu diễn tần số theo thời gian; bài chú thích biên tập.</li><li><strong>tempo (nhịp độ)</strong>: tốc độ của bản nhạc; bài chú thích biên tập.</li><li><strong>conda-forge</strong>: kênh gói conda cộng đồng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation bằng PyPI hoặc conda-forge; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (ISC), README có huy hiệu giấy phép.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Documentation.</li><li>Làm theo hướng dẫn trên librosa.org.</li><li>Thử với tệp âm thanh ngắn bạn có quyền dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn phân tích âm nhạc bằng Python. Hãy đọc README của librosa (https://github.com/librosa/librosa) và giải thích bằng tiếng Việt: librosa làm gì, MIR là gì, và vì sao kết quả phân tích tự động cần kiểm tra. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,9 KB), bài chưa đọc tài liệu librosa.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>librosa</strong> có <strong>8.766 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-06. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện ISC; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/librosa/librosa/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/librosa/librosa\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 741. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8766; repo_id 6309729; README SHA256 5887811bcf8720e315cebfcc7ebe62637cc284bf005077dc1a0340a8b97e3b36.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/librosa/librosa",
+          "repo_id": "6309729",
+          "source_path": "",
+          "source_revision": "README-SHA256:5887811bcf8720e315cebfcc7ebe62637cc284bf005077dc1a0340a8b97e3b36",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "isc",
+                "name": "ISC License",
+                "spdx_id": "ISC",
+                "url": "https://api.github.com/licenses/isc",
+                "node_id": "MDc6TGljZW5zZTEw"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/librosa/librosa",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation bằng PyPI hoặc conda-forge; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (ISC), README có huy hiệu giấy phép.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/librosa/librosa/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/librosa/librosa/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "librosa/librosa",
+        "stars": 8766,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/librosa/librosa/main/README.md",
+        "readmeSha256": "5887811bcf8720e315cebfcc7ebe62637cc284bf005077dc1a0340a8b97e3b36",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 742,
+      "batch": 119,
+      "slug": "spleeter",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Spleeter: thư viện tách nguồn âm thanh của Deezer có mô hình huấn luyện sẵn viết bằng Python và TensorFlow, tách giọng hát khỏi phần đệm (2, 4, 5 phần), dùng được từ dòng lệnh, Docker hoặc thư viện; README nhắc xin phép chủ bản quyền; mã giấy phép MIT",
+        "excerpt": "Hiểu Spleeter là thư viện tách nguồn âm thanh của Deezer, có mô hình huấn luyện sẵn bằng Python và TensorFlow: tách giọng hát và phần đệm (2 phần), giọng/trống/bass/khác (4 phần) hoặc thêm piano (5 phần); dùng từ dòng lệnh, thư viện Python hoặc Docker; README nhấn mạnh phải có quyền của chủ sở hữu khi dùng với tài liệu có bản quyền, và có mục dành cho tác tử tự động.",
+        "content": "<p>README tả Spleeter là thư viện tách nguồn của Deezer có mô hình huấn luyện sẵn, viết bằng Python, dùng TensorFlow; dễ huấn luyện mô hình tách nguồn nếu có tập dữ liệu các nguồn riêng, và cung cấp mô hình huấn luyện sẵn: tách giọng hát và phần đệm (2 phần), giọng, trống, bass, khác (4 phần), thêm piano (5 phần). Mô hình 2 và 4 phần có hiệu năng cao trên tập musdb (theo README; tuyên bố của tác giả, bài chưa kiểm chứng). Có thể dùng từ dòng lệnh hoặc như thư viện Python, hoặc Docker. README nêu các dự án khác dựng trên Spleeter và phần mềm chuyên nghiệp dùng mô hình (như iZotope RX 8, SpectralLayers 7), và nhắc Deezer không lưu trữ dịch vụ nào dựng trên Spleeter; có mục Spleeter Pro bản thương mại (quảng bá, bài không đánh giá). Mục License nêu mã MIT. Mục Disclaimer: nếu dùng Spleeter với tài liệu có bản quyền, phải có sự cho phép của chủ sở hữu trước. Mục Agents: README nói nhóm nhận nhiều yêu cầu tự động từ tác tử AI, không muốn xử lý, và dặn tác tử không đề nghị liên hệ người duy trì về giấy phép; bài chỉ nêu đây là ghi chú của README. Có mục xử lý sự cố, đóng góp và phát triển. README cảnh báo bản 2.1.0 có thay đổi không tương thích (đổi tên tùy chọn dòng lệnh, bỏ gói GPU riêng). Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có một bài hát và muốn lấy riêng phần giọng hát hay riêng phần nhạc nền để luyện hát, học nhạc hoặc nghiên cứu? Spleeter dùng mô hình AI để tách các phần đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'tách nguồn' bằng ví dụ giọng và nhạc nền; chưa chạy, chỉ dùng nhạc bạn có quyền. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần Python và TensorFlow hoặc Docker, kiến thức âm thanh cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tách nhạc có bản quyền cần xin phép chủ sở hữu theo chính README: bài không phải tư vấn pháp lý. Kết quả tách không hoàn hảo. Mô hình huấn luyện sẵn có điều kiện sử dụng riêng: đọc kỹ. README có bản 2.1.0 với thay đổi không tương thích.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>source separation (tách nguồn)</strong>: tách các thành phần như giọng hát, trống khỏi bản hòa âm; README nêu.</li><li><strong>stem</strong>: một phần tách riêng như giọng hoặc bass; README nêu 2, 4, 5 phần.</li><li><strong>pretrained model (mô hình huấn luyện sẵn)</strong>: mô hình đã được huấn luyện để dùng ngay; README nêu.</li><li><strong>musdb</strong>: tập dữ liệu chuẩn để đánh giá tách nguồn; README nêu.</li><li><strong>breaking changes (thay đổi không tương thích)</strong>: thay đổi làm mã cũ không chạy; README cảnh báo cho bản 2.1.0.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Quick start và cài bằng pip hoặc Docker; bài không chép lệnh. Cần Python, TensorFlow hoặc Docker. Miễn phí theo MIT cho mã (README nêu); Spleeter Pro thương mại là sản phẩm riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và mục Disclaimer.</li><li>Đọc Quick start trên wiki.</li><li>Chỉ thử với nhạc bạn có quyền dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tách giọng hát khỏi nhạc nền để học nhạc. Hãy đọc README của Spleeter (https://github.com/deezer/spleeter) và giải thích bằng tiếng Việt: các mức tách 2, 4, 5 phần là gì, vì sao README nhắc xin phép chủ bản quyền, và bản 2.1.0 đổi gì không tương thích. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,3 KB, bài chưa đọc wiki của Spleeter. Tuyên bố hiệu năng chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>deezer</strong> có <strong>28.516 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu mã MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/deezer/spleeter/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/deezer/spleeter\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 742. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28516; repo_id 211124697; README SHA256 0283b255ce929e79ee0c819f9cc495d84c864007629e4d156da7ed61d3bb2fd7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/deezer/spleeter",
+          "repo_id": "211124697",
+          "source_path": "",
+          "source_revision": "README-SHA256:0283b255ce929e79ee0c819f9cc495d84c864007629e4d156da7ed61d3bb2fd7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/deezer/spleeter",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Quick start và cài bằng pip hoặc Docker; bài không chép lệnh. Cần Python, TensorFlow hoặc Docker. Miễn phí theo MIT cho mã (README nêu); Spleeter Pro thương mại là sản phẩm riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/deezer/spleeter/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/deezer/spleeter/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "deezer/spleeter",
+        "stars": 28516,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/deezer/spleeter/master/README.md",
+        "readmeSha256": "0283b255ce929e79ee0c819f9cc495d84c864007629e4d156da7ed61d3bb2fd7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 743,
+      "batch": 119,
+      "slug": "silero-vad",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Silero VAD: bộ phát hiện hoạt động giọng nói huấn luyện sẵn cấp doanh nghiệp theo mô tả, chạy trên PyTorch và ONNX, yêu cầu hệ thống nhẹ, README tuyên bố không có telemetry, không cần khóa, không đăng ký; giấy phép MIT",
+        "excerpt": "Hiểu Silero VAD là bộ phát hiện hoạt động giọng nói (VAD) huấn luyện sẵn: xác định khúc nào trong âm thanh có người nói; chạy trên PyTorch và ONNX ở nhiều nơi, yêu cầu hệ thống nhẹ (Python 3.8+, 1 GB RAM, CPU hiện đại); README tuyên bố không telemetry, không khóa, không đăng ký, giấy phép MIT.",
+        "content": "<p>README tả Silero VAD là bộ phát hiện hoạt động giọng nói huấn luyện sẵn cấp doanh nghiệp (cách tự mô tả của dự án), kèm liên kết các mô hình nhận dạng giọng nói của cùng nhóm. Yêu cầu hệ thống để chạy ví dụ Python trên x86-64: Python 3.8+, từ 1 GB RAM, CPU có tập lệnh AVX, AVX2, AVX-512 hoặc AMX; bắt buộc torch từ 1.12.0; mọi thứ khác tùy chọn qua các gói bổ sung (torchaudio hoặc torchcodec để đọc ghi âm thanh, onnxruntime cho ONNX và mô hình chuỗi, onnxruntime-gpu cho GPU). Mục điểm nổi bật nói chạy được ở mọi nơi có PyTorch hoặc ONNX và mục 'No Strings Attached': phát hành theo giấy phép MIT, không telemetry, không khóa, không đăng ký, không hết hạn, không khóa nhà cung cấp; đây là tuyên bố của dự án, bài chưa kiểm chứng. README có video demo (chỉ tải khi đăng nhập GitHub) và các mục khác. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>VAD là bước 'đây có phải tiếng người nói không?' trước khi nhận dạng giọng nói hoặc ghi âm: cắt bỏ khoảng lặng, tiếng ồn để tiết kiệm xử lý và tránh nhận dạng nhầm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao cần cắt khoảng lặng trước khi nhận dạng giọng nói; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, PyTorch hoặc ONNX và khái niệm xử lý âm thanh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ghi âm giọng người khác cần sự đồng ý và tuân thủ quy định bảo vệ dữ liệu cá nhân: bài không phải tư vấn pháp lý. Tuyên bố 'không telemetry' bài chưa kiểm chứng. Độ chính xác với tiếng Việt và môi trường ồn chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>VAD (phát hiện hoạt động giọng nói)</strong>: phát hiện khúc có tiếng nói trong âm thanh; README nêu.</li><li><strong>ONNX</strong>: định dạng mô hình chạy trên nhiều nền tảng; README nêu.</li><li><strong>PyTorch</strong>: khung học máy; README nêu là yêu cầu bắt buộc.</li><li><strong>telemetry</strong>: gửi thống kê sử dụng; README tuyên bố không có.</li><li><strong>CPU instruction sets (tập lệnh CPU)</strong>: AVX, AVX2, AVX-512, AMX giúp tính nhanh; README nêu yêu cầu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục yêu cầu hệ thống và các gói bổ sung; bài không chép lệnh. Cần Python 3.8+ và torch từ 1.12.0. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và yêu cầu hệ thống.</li><li>Đọc mục No Strings Attached.</li><li>Thử với âm thanh bạn có quyền dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng giọng nói. Hãy đọc README của Silero VAD (https://github.com/snakers4/silero-vad) và giải thích bằng tiếng Việt: VAD là gì, cần cài thêm gì, và tuyên bố không telemetry là của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,7 KB, bài chưa đọc wiki của Silero VAD. Tuyên bố không telemetry chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>snakers4</strong> có <strong>10.587 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-22. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/snakers4/silero-vad/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/snakers4/silero-vad\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 743. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10587; repo_id 315270108; README SHA256 cd0ee56c91b8042e62a714c0c94bc8b74dbea127a483e390f8033bb8ec8cec78.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/snakers4/silero-vad",
+          "repo_id": "315270108",
+          "source_path": "",
+          "source_revision": "README-SHA256:cd0ee56c91b8042e62a714c0c94bc8b74dbea127a483e390f8033bb8ec8cec78",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/snakers4/silero-vad",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục yêu cầu hệ thống và các gói bổ sung; bài không chép lệnh. Cần Python 3.8+ và torch từ 1.12.0. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/snakers4/silero-vad/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/snakers4/silero-vad/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "snakers4/silero-vad",
+        "stars": 10587,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/snakers4/silero-vad/master/README.md",
+        "readmeSha256": "cd0ee56c91b8042e62a714c0c94bc8b74dbea127a483e390f8033bb8ec8cec78",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 744,
+      "batch": 119,
+      "slug": "pyannote-audio",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "pyannote.audio: bộ công cụ mã nguồn mở bằng Python cho phân tách người nói (speaker diarization), xây trên PyTorch, có pipeline huấn luyện sẵn trên Hugging Face, hỗ trợ dịch vụ trả phí pyannoteAI; yêu cầu chấp nhận điều kiện mô hình và mã thông báo Hugging Face; giấy phép MIT theo GitHub",
+        "excerpt": "Hiểu pyannote.audio là bộ công cụ mã nguồn mở bằng Python cho phân tách người nói (speaker diarization: xác định ai nói khi nào trong bản ghi) xây trên PyTorch, có pipeline huấn luyện sẵn trên Hugging Face, hỗ trợ huấn luyện nhiều GPU; README nêu pipeline mã nguồn mở community-1 và dịch vụ trả phí precision-2 qua pyannoteAI, yêu cầu ffmpeg, chấp nhận điều kiện sử dụng mô hình và tạo mã thông báo Hugging Face.",
+        "content": "<p>README tả pyannote.audio là bộ công cụ mã nguồn mở bằng Python cho phân tách người nói, dựa trên PyTorch, có các pipeline huấn luyện sẵn hiện đại. Điểm nổi bật: hiệu năng hiện đại (có mục benchmark), pipeline và mô hình huấn luyện sẵn trên Hugging Face, hỗ trợ dịch vụ phân tách người nói cao cấp pyannoteAI (trả phí; bài không đánh giá), API ưu tiên Python, huấn luyện nhiều GPU bằng pytorch-lightning. Mục community-1: cần ffmpeg, cài bằng uv hoặc pip, chấp nhận điều kiện sử dụng của mô hình speaker-diarization-community-1, tạo mã thông báo Hugging Face, rồi chạy pipeline và in kết quả dạng đoạn thời gian theo người nói; bài không chép lệnh hay mã. Mục precision-2: tạo khóa API pyannoteAI, có tín dụng miễn phí, rồi dùng pipeline trả phí bằng khóa; đây là dịch vụ riêng của công ty. README có mục phát triển (cài móc kiểm tra mã). README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trong một buổi họp ghi âm, ai nói đoạn nào, từ giây nào đến giây nào? Phân tách người nói trả lời câu đó, để sau đó bạn ghi biên bản theo từng người.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'phân tách người nói' khác 'nhận dạng giọng nói' (chuyển lời thành chữ); chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, PyTorch, tài khoản Hugging Face và khái niệm xử lý âm thanh; có thể cần GPU. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phân tách và nhận diện giọng nói là dữ liệu cá nhân nhạy cảm: cần sự đồng ý của người được ghi âm và tuân thủ quy định bảo vệ dữ liệu; bài không phải tư vấn pháp lý. Mã thông báo Hugging Face và khóa pyannoteAI là bí mật: không dán vào khung chat hay mã công khai. Mô hình có điều kiện sử dụng riêng cần chấp nhận trên Hugging Face. Dịch vụ precision-2 là trả phí và gửi âm thanh tới bên cung cấp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>speaker diarization (phân tách người nói)</strong>: xác định ai nói khi nào trong bản ghi; README nêu.</li><li><strong>pipeline</strong>: chuỗi các bước xử lý đã huấn luyện sẵn; README nêu.</li><li><strong>Hugging Face token (mã thông báo)</strong>: khóa truy cập tài khoản Hugging Face; README yêu cầu tạo.</li><li><strong>ffmpeg</strong>: công cụ xử lý âm thanh và video; README nêu là yêu cầu.</li><li><strong>pyannoteAI</strong>: dịch vụ phân tách người nói cao cấp của công ty; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài bằng uv hoặc pip và ví dụ mã; bài không chép lệnh hay mã. Cần Python, ffmpeg, mã thông báo Hugging Face. Miễn phí cho pipeline community-1; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu; precision-2 trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Highlights và community-1.</li><li>Đọc điều kiện sử dụng của mô hình trước khi chấp nhận.</li><li>Thử với bản ghi bạn có quyền dùng và người nói đã đồng ý.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn biết ai nói khi nào trong bản ghi họp. Hãy đọc README của pyannote.audio (https://github.com/pyannote/pyannote-audio) và giải thích bằng tiếng Việt: phân tách người nói là gì, mô hình community-1 khác precision-2 thế nào, và rủi ro dữ liệu giọng nói. Chưa cài gì và không dán mã thông báo vào đây.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12,9 KB, bài chưa đọc tài liệu pyannote.audio và thẻ mô hình. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pyannote</strong> có <strong>10.755 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pyannote/pyannote-audio/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pyannote/pyannote-audio\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 744. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10755; repo_id 53344691; README SHA256 558718cfb4b044f9329320b362f6a70687cf9c3519a970778da2c483bbc11c4d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pyannote/pyannote-audio",
+          "repo_id": "53344691",
+          "source_path": "",
+          "source_revision": "README-SHA256:558718cfb4b044f9329320b362f6a70687cf9c3519a970778da2c483bbc11c4d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pyannote/pyannote-audio",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn cài bằng uv hoặc pip và ví dụ mã; bài không chép lệnh hay mã. Cần Python, ffmpeg, mã thông báo Hugging Face. Miễn phí cho pipeline community-1; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu; precision-2 trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pyannote/pyannote-audio/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pyannote/pyannote-audio",
+        "stars": 10755,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pyannote/pyannote-audio/main/README.md",
+        "readmeSha256": "558718cfb4b044f9329320b362f6a70687cf9c3519a970778da2c483bbc11c4d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 745,
+      "batch": 119,
+      "slug": "supercollider",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SuperCollider: nền tảng tổng hợp âm thanh và sáng tác thuật toán cho nhạc sĩ, nghệ sĩ và nhà nghiên cứu, gồm máy chủ âm thanh thời gian thực scsynth, supernova, ngôn ngữ sclang và môi trường scide; mã C++17, giấy phép GPL v3",
+        "excerpt": "Hiểu SuperCollider là nền tảng tổng hợp âm thanh và sáng tác thuật toán cho nhạc sĩ, nghệ sĩ và nhà nghiên cứu: gồm máy chủ âm thanh thời gian thực scsynth với hàng trăm đơn vị phát (UGen), máy chủ thay thế supernova chạy song song đa lõi, ngôn ngữ thông dịch sclang điều khiển hai máy chủ và môi trường soạn thảo scide; README nêu hỗ trợ nhiều nền tảng và giấy phép GPL v3.",
+        "content": "<p>README tả SuperCollider là nền tảng tổng hợp âm thanh và sáng tác thuật toán dùng bởi nhạc sĩ, nghệ sĩ và nhà nghiên cứu làm việc với âm thanh. Gồm: scsynth (máy chủ âm thanh thời gian thực với hàng trăm đơn vị phát cho phân tích, tổng hợp và xử lý), supernova (máy chủ thay thế hỗ trợ xử lý song song trên bộ xử lý đa lõi), sclang (ngôn ngữ thông dịch điều khiển các máy chủ) và scide (môi trường soạn thảo có trợ giúp tích hợp). sclang có trình quản lý gói riêng là Quarks; scsynth và supernova hỗ trợ plugin bên thứ ba qua API C và C++. SuperCollider viết bằng C++17 dùng nhiều thư viện bên thứ ba gồm Qt và Boost, chạy trên Windows, macOS, nhiều bản Linux và BSD, Raspberry Pi và các nền tảng khác. Tài liệu bản phát triển ở dev.docs.supercollider.online. Mục Install nói bản dựng macOS và Windows cho bản ổn định ở trang tải; Linux cần tự dựng hoặc dùng Flatpak; có README riêng cho Raspberry Pi, Bela, WebAssembly (bài không chép lệnh). Mục License nêu GNU General Public License phiên bản 3, cùng quy tắc ứng xử, hướng dẫn đóng góp và việc dễ cho người mới.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>SuperCollider là xưởng âm thanh bằng mã: bạn viết chương trình để tạo âm thanh, tiếng nhạc, hiệu ứng, và biểu diễn nhạc bằng máy tính theo thời gian thực.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần các thành phần để hiểu vai trò máy chủ và ngôn ngữ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung âm thanh, nghiên cứu hoặc ứng dụng giọng nói, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm âm thanh số và lập trình; ngôn ngữ riêng cần thời gian học. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Âm thanh thời gian thực có thể rất to hoặc có tiếng nổ do lỗi mã: giảm âm lượng khi thử, đặc biệt với tai nghe. Bản Linux cần tự dựng hoặc dùng Flatpak. Plugin bên thứ ba chạy mã trên máy bạn: cài từ nguồn tin cậy.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>audio synthesis (tổng hợp âm thanh)</strong>: tạo âm thanh bằng tính toán; README nêu.</li><li><strong>UGen (đơn vị phát)</strong>: khối nhỏ tạo hoặc xử lý âm thanh; README nêu hàng trăm.</li><li><strong>scsynth/supernova</strong>: hai máy chủ âm thanh; README nêu.</li><li><strong>sclang</strong>: ngôn ngữ lập trình điều khiển máy chủ; README nêu.</li><li><strong>Quarks</strong>: trình quản lý gói của sclang; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install và README riêng theo nền tảng; bài không chép lệnh. Cần hệ điều hành được hỗ trợ và thiết bị âm thanh. Miễn phí theo GPL v3 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và các thành phần.</li><li>Đọc tài liệu dev.docs.supercollider.online.</li><li>Thử với âm lượng nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quan tâm sáng tác nhạc bằng mã. Hãy đọc README của SuperCollider (https://github.com/supercollider/supercollider) và giải thích bằng tiếng Việt: scsynth, supernova, sclang và scide mỗi thứ làm gì, và vì sao nên giảm âm lượng khi thử. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,4 KB, bài chưa đọc tài liệu dev.docs.supercollider.online. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý âm thanh và giọng nói thường làm việc với bản quyền và dữ liệu giọng nói cá nhân: chỉ xử lý nội dung bạn có quyền dùng, xin phép chủ sở hữu trước khi tách hoặc phát lại tác phẩm có bản quyền, không ghi âm hay nhận diện giọng của người khác khi chưa được đồng ý, giữ mã thông báo truy cập ở nơi an toàn, và đọc điều kiện sử dụng của mô hình huấn luyện sẵn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>supercollider</strong> có <strong>6.813 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GNU GPL phiên bản 3; GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/supercollider/supercollider/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/supercollider/supercollider\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 745. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6813; repo_id 4228314; README SHA256 bf177ee3ef7ef93259aee736cc8115ba6a84b1c958210d1750ceb40eef5210ac.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/supercollider/supercollider",
+          "repo_id": "4228314",
+          "source_path": "",
+          "source_revision": "README-SHA256:bf177ee3ef7ef93259aee736cc8115ba6a84b1c958210d1750ceb40eef5210ac",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supercollider/supercollider",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install và README riêng theo nền tảng; bài không chép lệnh. Cần hệ điều hành được hỗ trợ và thiết bị âm thanh. Miễn phí theo GPL v3 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supercollider/supercollider/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/supercollider/supercollider/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "supercollider/supercollider",
+        "stars": 6813,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/supercollider/supercollider/develop/README.md",
+        "readmeSha256": "bf177ee3ef7ef93259aee736cc8115ba6a84b1c958210d1750ceb40eef5210ac",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

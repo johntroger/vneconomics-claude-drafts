@@ -1,0 +1,43 @@
+{
+  "key": 742,
+  "repo": "deezer/spleeter",
+  "repoId": "211124697",
+  "url": "https://github.com/deezer/spleeter",
+  "stars": 28516,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T15:05:22Z",
+  "createdAt": "2019-09-26T15:40:46Z",
+  "defaultBranch": "master",
+  "description": "Deezer source separation library including pretrained models.",
+  "homepage": "https://research.deezer.com/projects/spleeter.html",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/deezer/spleeter/master/README.md",
+    "sha256": "0283b255ce929e79ee0c819f9cc495d84c864007629e4d156da7ed61d3bb2fd7",
+    "bytes": 9332,
+    "sectionsRead": [
+      "About",
+      "Quick start",
+      "License",
+      "Disclaimer",
+      "Agents"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc wiki của Spleeter.",
+    "Chưa thử.",
+    "Chưa kiểm tra điều kiện sử dụng của mô hình."
+  ],
+  "runtimeValidated": false
+}

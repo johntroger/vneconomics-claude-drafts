@@ -1,0 +1,41 @@
+{
+  "key": 745,
+  "repo": "supercollider/supercollider",
+  "repoId": "4228314",
+  "url": "https://github.com/supercollider/supercollider",
+  "stars": 6813,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:53:10Z",
+  "createdAt": "2012-05-04T19:24:51Z",
+  "defaultBranch": "develop",
+  "description": "An audio server, programming language, and IDE for sound synthesis and algorithmic composition.",
+  "homepage": "http://supercollider.github.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/supercollider/supercollider/develop/README.md",
+    "sha256": "bf177ee3ef7ef93259aee736cc8115ba6a84b1c958210d1750ceb40eef5210ac",
+    "bytes": 5400,
+    "sectionsRead": [
+      "Install",
+      "Platform support",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu dev.docs.supercollider.online.",
+    "Chưa thử.",
+    "Chưa kiểm tra hỗ trợ từng nền tảng."
+  ],
+  "runtimeValidated": false
+}
