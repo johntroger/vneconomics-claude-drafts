@@ -128,3 +128,9 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 299 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (299 tệp): cả 299 đều trả mã 200.
 - Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" chỉ xuất hiện trong câu phủ định.
+
+## Bổ sung rà soát (nhóm 51, key 400–405; tổng 305 bài)
+
+- Danh mục 305 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (305 tệp): cả 305 đều trả mã 200.
+- Đã sửa trong bài WSTG: README chỉ có huy hiệu Creative Commons trỏ tới CC BY-SA 4.0; bài không còn trích cụm "Attribution-ShareAlike" như thể README viết.

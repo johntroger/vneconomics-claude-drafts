@@ -1,0 +1,35 @@
+{
+  "key": 405,
+  "repo": "OWASP/wstg",
+  "repoId": "91277330",
+  "url": "https://github.com/OWASP/wstg",
+  "stars": 10179,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "CC-BY-SA-4.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T15:21:35Z",
+  "createdAt": "2017-05-14T23:20:40Z",
+  "defaultBranch": "master",
+  "description": "The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web applications and web services.",
+  "homepage": "https://owasp.org/www-project-web-security-testing-guide/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/OWASP/wstg/master/README.md",
+    "sha256": "ef46d32b9a5637f65439c8170477b70dbb094608fd2fc369e82ecce9685ad71c",
+    "bytes": 5175,
+    "sectionsRead": [
+      "Giới thiệu",
+      "How To Reference WSTG Scenarios",
+      "Contributions, Feature Requests, and Feedback"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc nội dung các kịch bản.",
+    "Chưa so sánh với Cheat Sheet Series (bài trong kho).",
+    "Bản 5.0 chưa ổn định."
+  ],
+  "runtimeValidated": false
+}

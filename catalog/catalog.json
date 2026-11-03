@@ -5309,5 +5309,111 @@
    "sequelize",
    "storybook"
   ]
+ },
+ {
+  "key": 400,
+  "slug": "helmet",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "Helmet: middleware giúp bảo mật ứng dụng Node/Express bằng cách đặt các tiêu đề phản hồi HTTP như CSP và HSTS",
+  "repo": "helmetjs/helmet",
+  "stars": 10744,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "owasp-wstg"
+  ]
+ },
+ {
+  "key": 401,
+  "slug": "zaproxy",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "ZAP (Zed Attack Proxy): công cụ quét bảo mật ứng dụng web miễn phí, chỉ quét hệ thống của chính bạn",
+  "repo": "zaproxy/zaproxy",
+  "stars": 16096,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "jose",
+   "owasp-wstg"
+  ]
+ },
+ {
+  "key": 402,
+  "slug": "jose",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "jose: mô-đun JavaScript cho JWT, JWS, JWE và JWK, không phụ thuộc gói khác, chạy trên nhiều môi trường",
+  "repo": "panva/jose",
+  "stars": 7863,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "better-auth",
+   "zaproxy"
+  ]
+ },
+ {
+  "key": 403,
+  "slug": "better-auth",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "Better Auth: khung xác thực và phân quyền cho TypeScript, không gắn với một framework, có hệ plugin",
+  "repo": "better-auth/better-auth",
+  "stars": 30558,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "jose",
+   "keycloak"
+  ]
+ },
+ {
+  "key": 404,
+  "slug": "keycloak",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "Keycloak: hệ thống quản lý danh tính và truy cập mã nguồn mở, thêm đăng nhập cho ứng dụng mà không tự lưu người dùng",
+  "repo": "keycloak/keycloak",
+  "stars": 37666,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "better-auth"
+  ]
+ },
+ {
+  "key": 405,
+  "slug": "owasp-wstg",
+  "group": "2026-11-03-bao-mat-web-va-dang-nhap",
+  "title": "OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0",
+  "repo": "OWASP/wstg",
+  "stars": 10179,
+  "license": "CC-BY-SA-4.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "helmet",
+   "zaproxy"
+  ]
  }
 ]

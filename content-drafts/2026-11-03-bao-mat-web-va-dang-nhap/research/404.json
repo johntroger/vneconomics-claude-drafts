@@ -1,0 +1,36 @@
+{
+  "key": 404,
+  "repo": "keycloak/keycloak",
+  "repoId": "11125589",
+  "url": "https://github.com/keycloak/keycloak",
+  "stars": 37666,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:07:43Z",
+  "createdAt": "2013-07-02T13:38:51Z",
+  "defaultBranch": "main",
+  "description": "Open Source Identity and Access Management For Modern Applications and Services",
+  "homepage": "https://www.keycloak.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/keycloak/keycloak/main/README.md",
+    "sha256": "5a5b61cb4caa1e113cc53fd07794fc8b78cafce254761ab6c690dcfb7355879c",
+    "bytes": 4414,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Help and Documentation",
+      "Getting started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu triển khai sản xuất.",
+    "Chưa thử.",
+    "Chưa so sánh với Authelia (bài trong kho)."
+  ],
+  "runtimeValidated": false
+}

@@ -49,6 +49,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 47 — Làm quen các ngôn ngữ lập trình thường gặp](learning-paths/47-ngon-ngu-lap-trinh.vi.md) — Hiểu một số ngôn ngữ để đọc mã do AI viết; README nhiều kho dành cho người dựng ngôn ngữ nên cần tài liệu chính thức để học.
 - [Lộ trình 48 — Framework web phía máy chủ](learning-paths/48-framework-web-may-chu.vi.md) — Từ framework trọn gói đến framework nhẹ cho API; README nhiều dự án rất ngắn nên cần đọc tài liệu chính thức.
 - [Lộ trình 49 — ORM, thư viện giao diện React và công cụ thử giao diện](learning-paths/49-orm-va-thu-vien-giao-dien.vi.md) — Lưu dữ liệu bằng ORM, dựng giao diện bằng thư viện thành phần, thử thành phần và giả lập API; chú ý phiên bản và tình trạng bảo trì.
+- [Lộ trình 50 — Bảo mật web và đăng nhập](learning-paths/50-bao-mat-web-va-dang-nhap.vi.md) — Tăng bảo mật bằng tiêu đề HTTP, kiểm tra bằng công cụ quét và hướng dẫn chuẩn, xử lý token và đăng nhập; chỉ thử trên hệ thống của bạn.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -104,7 +105,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (128 bài)
+### Cơ bản (129 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -236,8 +237,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 395 | Chakra UI: hệ thống thành phần React dễ tiếp cận để dựng sản phẩm nhanh, README nêu các phiên bản tài liệu v0 đến mới nhất | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | MIT | 40711 | orm-va-thu-vien-giao-dien |
 | 396 | Material UI (MUI): thư viện thành phần React theo Material Design, được mở rộng bởi gói MUI X cho thành phần phức tạp | [mui/material-ui](https://github.com/mui/material-ui) | MIT | 99297 | orm-va-thu-vien-giao-dien |
 | 397 | Ant Design: ngôn ngữ thiết kế cấp doanh nghiệp và thư viện thành phần React, viết bằng TypeScript, hỗ trợ nhiều ngôn ngữ | [ant-design/ant-design](https://github.com/ant-design/ant-design) | MIT | 100052 | orm-va-thu-vien-giao-dien |
+| 400 | Helmet: middleware giúp bảo mật ứng dụng Node/Express bằng cách đặt các tiêu đề phản hồi HTTP như CSP và HSTS | [helmetjs/helmet](https://github.com/helmetjs/helmet) | MIT | 10744 | bao-mat-web-va-dang-nhap |
 
-### Khá khó (cần nền kỹ thuật) (36 bài)
+### Khá khó (cần nền kỹ thuật) (37 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -277,8 +279,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 393 | Sequelize: ORM Node.js dựa trên promise cho nhiều cơ sở dữ liệu, README đang tìm người bảo trì mới cho bản chính tiếp theo | [sequelize/sequelize](https://github.com/sequelize/sequelize) | MIT | 30341 | orm-va-thu-vien-giao-dien |
 | 398 | Storybook: xưởng giao diện để dựng, thử và ghi chép thành phần UI tách biệt khỏi ứng dụng | [storybookjs/storybook](https://github.com/storybookjs/storybook) | MIT | 91432 | orm-va-thu-vien-giao-dien |
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
+| 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (91 bài)
+### Nâng cao (95 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -373,6 +376,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 388 | Spring Boot: dựng ứng dụng Spring sẵn sàng sản xuất với rất ít cấu hình, chạy như ứng dụng Java độc lập hay WAR | [spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) | Apache-2.0 | 81734 | framework-web-may-chu |
 | 389 | Phoenix: framework web của Elixir, 'yên tâm từ nguyên mẫu đến sản xuất', README có cách tạo dự án từ bản chưa phát hành | [phoenixframework/phoenix](https://github.com/phoenixframework/phoenix) | MIT | 23212 | framework-web-may-chu |
 | 392 | TypeORM: ORM cho TypeScript và JavaScript, hỗ trợ cả Active Record lẫn Data Mapper và nhiều loại cơ sở dữ liệu | [typeorm/typeorm](https://github.com/typeorm/typeorm) | MIT | 36662 | orm-va-thu-vien-giao-dien |
+| 401 | ZAP (Zed Attack Proxy): công cụ quét bảo mật ứng dụng web miễn phí, chỉ quét hệ thống của chính bạn | [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy) | Apache-2.0 | 16096 | bao-mat-web-va-dang-nhap |
+| 402 | jose: mô-đun JavaScript cho JWT, JWS, JWE và JWK, không phụ thuộc gói khác, chạy trên nhiều môi trường | [panva/jose](https://github.com/panva/jose) | MIT | 7863 | bao-mat-web-va-dang-nhap |
+| 403 | Better Auth: khung xác thực và phân quyền cho TypeScript, không gắn với một framework, có hệ plugin | [better-auth/better-auth](https://github.com/better-auth/better-auth) | MIT | 30558 | bao-mat-web-va-dang-nhap |
+| 404 | Keycloak: hệ thống quản lý danh tính và truy cập mã nguồn mở, thêm đăng nhập cho ứng dụng mà không tự lưu người dùng | [keycloak/keycloak](https://github.com/keycloak/keycloak) | Apache-2.0 | 37666 | bao-mat-web-va-dang-nhap |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
