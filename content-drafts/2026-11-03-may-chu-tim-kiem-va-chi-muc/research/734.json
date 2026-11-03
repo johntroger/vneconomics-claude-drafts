@@ -1,0 +1,43 @@
+{
+  "key": 734,
+  "repo": "valeriansaliou/sonic",
+  "repoId": "172714919",
+  "url": "https://github.com/valeriansaliou/sonic",
+  "stars": 21375,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mpl-2.0",
+    "name": "Mozilla Public License 2.0",
+    "spdx_id": "MPL-2.0",
+    "url": "https://api.github.com/licenses/mpl-2.0",
+    "node_id": "MDc6TGljZW5zZTE0"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T18:22:51Z",
+  "createdAt": "2019-02-26T13:16:58Z",
+  "defaultBranch": "master",
+  "description": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM.",
+  "homepage": "https://crates.io/crates/sonic-server",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/valeriansaliou/sonic/master/README.md",
+    "sha256": "742a04b7dae10d38e52ed45ac9b2a69cc65daf3772f9205158dc3fc3155dbb03",
+    "bytes": 23005,
+    "sectionsRead": [
+      "Who uses it?",
+      "Demo",
+      "Features",
+      "How to use it?",
+      "Limitations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc cấu hình chi tiết.",
+    "Chưa thử.",
+    "Chưa kiểm chứng số liệu hiệu năng."
+  ],
+  "runtimeValidated": false
+}

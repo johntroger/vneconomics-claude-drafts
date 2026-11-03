@@ -13107,5 +13107,123 @@
   "related": [
    "vespa"
   ]
+ },
+ {
+  "key": 734,
+  "slug": "sonic",
+  "group": "2026-11-03-may-chu-tim-kiem-va-chi-muc",
+  "title": "Sonic: máy chủ hậu cảnh tìm kiếm nhanh, nhẹ, không lược đồ, nhận văn bản tìm kiếm và cặp mã định danh rồi truy vấn trong chớp mắt, thay thế đơn giản cho Elasticsearch trong một số trường hợp; README ghi dự án đang viết lại lớn ở nhánh v2",
+  "repo": "valeriansaliou/sonic",
+  "stars": 21375,
+  "license": {
+   "key": "mpl-2.0",
+   "name": "Mozilla Public License 2.0",
+   "spdx_id": "MPL-2.0",
+   "url": "https://api.github.com/licenses/mpl-2.0",
+   "node_id": "MDc6TGljZW5zZTE0"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "solr",
+   "usearch"
+  ]
+ },
+ {
+  "key": 735,
+  "slug": "lucene",
+  "group": "2026-11-03-may-chu-tim-kiem-va-chi-muc",
+  "title": "Apache Lucene: thư viện công cụ tìm kiếm văn bản hiệu năng cao, đầy đủ tính năng viết bằng Java, nền của nhiều hệ tìm kiếm khác; README chỉ có hướng dẫn thiết lập cơ bản, tài liệu đầy đủ ở trang dự án; giấy phép Apache 2.0",
+  "repo": "apache/lucene",
+  "stars": 3605,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "solr"
+  ]
+ },
+ {
+  "key": 736,
+  "slug": "solr",
+  "group": "2026-11-03-may-chu-tim-kiem-va-chi-muc",
+  "title": "Apache Solr: nền tảng tìm kiếm đa phương thức mã nguồn mở xây trên Apache Lucene, tuyên bố cực nhanh; README có hướng dẫn tải, chạy trên máy, Docker, Kubernetes, cách dùng, hỗ trợ và nhà phát triển; giấy phép Apache 2.0",
+  "repo": "apache/solr",
+  "stars": 1696,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "lucene",
+   "sonic"
+  ]
+ },
+ {
+  "key": 737,
+  "slug": "paradedb",
+  "group": "2026-11-03-may-chu-tim-kiem-va-chi-muc",
+  "title": "ParadeDB: nâng cấp Postgres bằng chỉ mục riêng cho tìm kiếm toàn văn và vector, điểm BM25, bộ lọc, aggregation và join, xây như phần mở rộng Postgres trên Tantivy và DataFusion; bản Community AGPL-3.0, bản Enterprise bán riêng; README có lệnh cài tải tập lệnh từ mạng",
+  "repo": "paradedb/paradedb",
+  "stars": 9473,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "usearch"
+  ]
+ },
+ {
+  "key": 738,
+  "slug": "usearch",
+  "group": "2026-11-03-may-chu-tim-kiem-va-chi-muc",
+  "title": "USearch: công cụ tìm kiếm tương tự và phân cụm một tệp, nhỏ gọn, tự nhận nhanh hơn FAISS 10 lần cho HNSW, thư viện một tiêu đề C++11, tối ưu SIMD, hỗ trợ số liệu tùy biến, xem chỉ mục lớn từ đĩa; README rất dài",
+  "repo": "unum-cloud/usearch",
+  "stars": 4368,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-31",
+  "related": [
+   "paradedb",
+   "sonic"
+  ]
  }
 ]

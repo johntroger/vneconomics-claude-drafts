@@ -1,0 +1,42 @@
+{
+  "key": 735,
+  "repo": "apache/lucene",
+  "repoId": "341631350",
+  "url": "https://github.com/apache/lucene",
+  "stars": 3605,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:49:02Z",
+  "createdAt": "2021-02-23T17:16:56Z",
+  "defaultBranch": "main",
+  "description": "Apache Lucene open-source search software",
+  "homepage": "https://lucene.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/lucene/main/README.md",
+    "sha256": "9e8f7abf522dabd500e11069a55145cd480aff884b83195defac3a6638de42e1",
+    "bytes": 3054,
+    "sectionsRead": [
+      "Online Documentation",
+      "Building",
+      "Contributing",
+      "Discussion and Support"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu lucene.apache.org.",
+    "Chưa thử.",
+    "Chưa kiểm tra hỗ trợ tiếng Việt."
+  ],
+  "runtimeValidated": false
+}

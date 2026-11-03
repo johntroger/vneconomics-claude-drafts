@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-may-chu-tim-kiem",
+  "batch": 118,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 734,
+      "batch": 118,
+      "slug": "sonic",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Sonic: máy chủ hậu cảnh tìm kiếm nhanh, nhẹ, không lược đồ, nhận văn bản tìm kiếm và cặp mã định danh rồi truy vấn trong chớp mắt, thay thế đơn giản cho Elasticsearch trong một số trường hợp; README ghi dự án đang viết lại lớn ở nhánh v2",
+        "excerpt": "Hiểu Sonic là máy chủ hậu cảnh tìm kiếm nhanh, nhẹ và không cần lược đồ: nhận văn bản và cặp mã định danh rồi truy vấn trong khoảng thời gian cực ngắn, trả về mã định danh chứ không trả tài liệu, sửa lỗi gõ, gợi ý tự hoàn thành; README nêu ở nhánh master chỉ nhận sửa lỗi vì dự án đang viết lại lớn ở nhánh v2, và liệt kê giới hạn rõ ràng.",
+        "content": "<p>README mở đầu bằng thông báo quan trọng: Sonic đang được viết lại lớn, nhánh master chỉ nhận sửa lỗi, mọi nỗ lực dồn cho nhánh v2, và khuyên chưa nên đào vào mã nguồn hiện tại vì phần lớn sẽ khác trong v2. Sonic được tả là hậu cảnh tìm kiếm nhanh, nhẹ, không lược đồ, nhận văn bản tìm kiếm và cặp mã định danh rồi truy vấn trong vài micro giây (tuyên bố của tác giả, bài chưa kiểm chứng), có thể là lựa chọn đơn giản thay các hậu cảnh tìm kiếm nặng như Elasticsearch trong một số trường hợp. Mục Demo nêu Sonic được tác giả dùng để lập chỉ mục nửa tỷ đối tượng trên một máy 1 vCPU giá vài đô mỗi tháng (tuyên bố của tác giả). Mục Features: từ khóa tìm kiếm lưu trong bộ sưu tập, chia theo thùng; kết quả trả mã định danh để tra từ cơ sở dữ liệu ngoài; sửa lỗi gõ khi không đủ kết quả khớp chính xác; thêm xóa mục trong chỉ mục khi máy chủ đang chạy; gợi ý tự hoàn thành; giao thức đơn giản Sonic Channel. Mục Limitations nêu thẳng: giới hạn dữ liệu lập chỉ mục, giới hạn truy vấn (NLP không ở mức câu), giới hạn thời gian thực (cấu trúc FST phải dựng lại khi thêm hoặc xóa từ), giới hạn tương tác (chỉ qua giao thức Sonic Channel), giới hạn phần cứng (tìm kiếm trên hệ tệp, không nạp chỉ mục vào RAM). README có thư viện kênh chính thức và cộng đồng, các ngôn ngữ hỗ trợ, cách cài và cấu hình, mục báo lỗ hổng (cần mã hóa email bằng khóa GPG). Bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MPL-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn cần ô tìm kiếm cho vài chục nghìn bài viết mà không muốn dựng cả Elasticsearch, Sonic là một máy chủ nhỏ gọn chỉ lo việc tìm chữ rồi trả về mã bài viết.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục Limitations để hiểu Sonic không làm được gì; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng tìm kiếm hoặc hỏi đáp trên tài liệu riêng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm chỉ mục tìm kiếm, giao thức riêng và vận hành máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi nhánh master chỉ nhận sửa lỗi, nhánh v2 đang viết lại: cần kiểm tra bản nào ổn định trước khi dùng. Sonic không lưu tài liệu, chỉ trả mã định danh. Chỉ giao tiếp qua Sonic Channel nên phải bảo vệ cổng, đặt mật khẩu và không mở ra mạng. Các số liệu hiệu năng chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>search backend (hậu cảnh tìm kiếm)</strong>: phần lập chỉ mục và tìm kiếm phía sau ứng dụng; README nêu.</li><li><strong>schema-less (không lược đồ)</strong>: không cần khai báo cấu trúc trước; README nêu.</li><li><strong>bucket (thùng)</strong>: nhóm chỉ mục nhỏ trong một bộ sưu tập; README nêu.</li><li><strong>FST</strong>: cấu trúc dữ liệu dùng để tra từ nhanh; README nêu giới hạn thời gian thực.</li><li><strong>Sonic Channel</strong>: giao thức duy nhất để đọc ghi chỉ mục; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục How to use it? (cài đặt, cấu hình, chạy); bài không chép lệnh. Cần Rust hoặc bản dựng sẵn. Miễn phí; giấy phép lấy theo GitHub (MPL-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc thông báo đầu README và mục Limitations.</li><li>Đọc mục Features.</li><li>Thử với dữ liệu giả trên máy thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần tìm kiếm nhẹ cho website nhỏ. Hãy đọc README của Sonic (https://github.com/valeriansaliou/sonic) và giải thích bằng tiếng Việt: Sonic khác Elasticsearch ở đâu, vì sao chỉ trả mã định danh, và vì sao README ghi nhánh v2 đang viết lại. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 23 KB, bài đọc phần đầu, tính năng, giới hạn, chưa đọc cấu hình chi tiết. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Số liệu hiệu năng chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ tìm kiếm và cơ sở dữ liệu vector lập chỉ mục tài liệu của bạn, có thể gồm thông tin nhạy cảm: đặt xác thực và phân quyền trước khi mở cổng ra mạng, không đưa tài liệu bí mật vào dịch vụ đám mây khi chưa hiểu điều khoản, đổi mật khẩu mặc định, sao lưu chỉ mục, và nhớ rằng kết quả tìm kiếm và mô hình nhúng có thể sai hoặc thiên lệch nên cần kiểm tra trước khi tin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>valeriansaliou</strong> có <strong>21.375 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MPL-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/valeriansaliou/sonic/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/valeriansaliou/sonic\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 734. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21375; repo_id 172714919; README SHA256 742a04b7dae10d38e52ed45ac9b2a69cc65daf3772f9205158dc3fc3155dbb03.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/valeriansaliou/sonic",
+          "repo_id": "172714919",
+          "source_path": "",
+          "source_revision": "README-SHA256:742a04b7dae10d38e52ed45ac9b2a69cc65daf3772f9205158dc3fc3155dbb03",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mpl-2.0",
+                "name": "Mozilla Public License 2.0",
+                "spdx_id": "MPL-2.0",
+                "url": "https://api.github.com/licenses/mpl-2.0",
+                "node_id": "MDc6TGljZW5zZTE0"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/valeriansaliou/sonic",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục How to use it? (cài đặt, cấu hình, chạy); bài không chép lệnh. Cần Rust hoặc bản dựng sẵn. Miễn phí; giấy phép lấy theo GitHub (MPL-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/valeriansaliou/sonic/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/valeriansaliou/sonic/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "valeriansaliou/sonic",
+        "stars": 21375,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/valeriansaliou/sonic/master/README.md",
+        "readmeSha256": "742a04b7dae10d38e52ed45ac9b2a69cc65daf3772f9205158dc3fc3155dbb03",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 735,
+      "batch": 118,
+      "slug": "lucene",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Lucene: thư viện công cụ tìm kiếm văn bản hiệu năng cao, đầy đủ tính năng viết bằng Java, nền của nhiều hệ tìm kiếm khác; README chỉ có hướng dẫn thiết lập cơ bản, tài liệu đầy đủ ở trang dự án; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Apache Lucene là thư viện công cụ tìm kiếm văn bản hiệu năng cao, đầy đủ tính năng viết bằng Java; README nói chỉ chứa hướng dẫn thiết lập cơ bản (tài liệu đầy đủ ở trang dự án và Javadoc bản dựng hằng đêm), có hướng dẫn xây, đóng góp, hướng dẫn di chuyển và kênh hỗ trợ; phần đầu README là thông báo giấy phép Apache 2.0.",
+        "content": "<p>README tả Apache Lucene là thư viện công cụ tìm kiếm văn bản hiệu năng cao, đầy đủ tính năng, viết bằng Java. Phần đầu là thông báo giấy phép của Apache Software Foundation theo Apache License 2.0. README có các huy hiệu dựng và Develocity. Mục Online Documentation nói README chỉ có hướng dẫn thiết lập cơ bản; tài liệu toàn diện ở lucene.apache.org/core/documentation.html, Javadoc bản hằng đêm, hướng dẫn đóng góp, tài liệu hệ dựng trong thư mục help, hướng dẫn di chuyển trong lucene/MIGRATE.md. Mục Building có các bước cơ bản; mục Contributing và mục Discussion and Support. README không có ví dụ mã; bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lucene là bộ máy bên trong của nhiều hệ tìm kiếm quen thuộc như Solr và Elasticsearch. Bạn nhúng nó vào ứng dụng Java để tìm văn bản theo từ khóa và xếp hạng kết quả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích Lucene khác Solr ở điểm nào (thư viện và máy chủ); chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng tìm kiếm hoặc hỏi đáp trên tài liệu riêng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Java và khái niệm chỉ mục, tách từ, xếp hạng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lucene là thư viện: bạn tự lo máy chủ, bảo mật, sao lưu. README ngắn, chỉ dành cho người dựng và đóng góp: người dùng cần đọc tài liệu trên trang dự án. Hỗ trợ tách từ tiếng Việt không được nêu trong README: cần kiểm tra riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>search engine library (thư viện công cụ tìm kiếm)</strong>: thư viện cung cấp lập chỉ mục và tìm kiếm; README nêu.</li><li><strong>inverted index (chỉ mục đảo)</strong>: bảng từ trỏ tới tài liệu chứa từ; bài chú thích biên tập.</li><li><strong>Javadoc</strong>: tài liệu API của Java; README nêu bản hằng đêm.</li><li><strong>migration guide (hướng dẫn di chuyển)</strong>: hướng dẫn nâng cấp phiên bản; README nêu MIGRATE.md.</li><li><strong>Gradle</strong>: công cụ dựng; README nêu Develocity cho Gradle.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Building với các bước cơ bản; bài không chép lệnh. Cần Java. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu lucene.apache.org.</li><li>Đọc hướng dẫn di chuyển trước khi nâng cấp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tìm hiểu nền tảng của các hệ tìm kiếm. Hãy đọc README của Apache Lucene (https://github.com/apache/lucene) và giải thích bằng tiếng Việt: Lucene làm gì, khác Solr và Elasticsearch ở đâu, và vì sao README chỉ có hướng dẫn thiết lập cơ bản. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3 KB), bài chưa đọc tài liệu lucene.apache.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ tìm kiếm và cơ sở dữ liệu vector lập chỉ mục tài liệu của bạn, có thể gồm thông tin nhạy cảm: đặt xác thực và phân quyền trước khi mở cổng ra mạng, không đưa tài liệu bí mật vào dịch vụ đám mây khi chưa hiểu điều khoản, đổi mật khẩu mặc định, sao lưu chỉ mục, và nhớ rằng kết quả tìm kiếm và mô hình nhúng có thể sai hoặc thiên lệch nên cần kiểm tra trước khi tin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>3.605 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu thông báo Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/lucene/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/lucene\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 735. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3605; repo_id 341631350; README SHA256 9e8f7abf522dabd500e11069a55145cd480aff884b83195defac3a6638de42e1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/lucene",
+          "repo_id": "341631350",
+          "source_path": "",
+          "source_revision": "README-SHA256:9e8f7abf522dabd500e11069a55145cd480aff884b83195defac3a6638de42e1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/lucene",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Building với các bước cơ bản; bài không chép lệnh. Cần Java. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/lucene/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/lucene/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/lucene",
+        "stars": 3605,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/lucene/main/README.md",
+        "readmeSha256": "9e8f7abf522dabd500e11069a55145cd480aff884b83195defac3a6638de42e1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 736,
+      "batch": 118,
+      "slug": "solr",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Solr: nền tảng tìm kiếm đa phương thức mã nguồn mở xây trên Apache Lucene, tuyên bố cực nhanh; README có hướng dẫn tải, chạy trên máy, Docker, Kubernetes, cách dùng, hỗ trợ và nhà phát triển; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Apache Solr là nền tảng tìm kiếm đa phương thức mã nguồn mở xây trên Apache Lucene, README tuyên bố cực nhanh: có mục tải, cài Solr, chạy trong Docker và trên Kubernetes (qua Solr Operator), cách dùng, hỗ trợ, tài liệu cho nhà phát triển và cách tham gia; phần đầu README là thông báo giấy phép Apache 2.0.",
+        "content": "<p>README tả Solr là nền tảng tìm kiếm đa phương thức mã nguồn mở cực nhanh (tuyên bố của dự án, bài chưa kiểm chứng) xây trên Apache Lucene, trỏ tới trang solr.apache.org để xem mô tả dự án, đội ngũ và kho mã. Mục Download trỏ tới trang tải xuống. Mục Running Solr: cài đặt (Reference Guide có cả Deployment Guide hướng dẫn từ yêu cầu hệ thống), chạy trong Docker bằng ảnh chính thức, chạy trên Kubernetes với hỗ trợ chính thức trong ảnh Docker chính thức và Solr Operator. Mục How to Use hướng dẫn cách dùng; mục Support, mục Developer Documentation (kể cả Quickstart cho nhà phát triển), mục Get Involved. Phần đầu README là thông báo giấy phép Apache License 2.0. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Solr là máy chủ tìm kiếm hoàn chỉnh dựng trên Lucene: bạn gửi tài liệu vào, hỏi bằng từ khóa hoặc bộ lọc, nhận kết quả xếp hạng. Nó già dặn hơn nhiều hệ tìm kiếm mới.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc Reference Guide phần tổng quan để hiểu lõi, lược đồ và truy vấn; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng tìm kiếm hoặc hỏi đáp trên tài liệu riêng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Java, hiểu chỉ mục và cấu hình; vận hành cụm cần thêm kiến thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Máy chủ tìm kiếm mở cổng HTTP: cần xác thực, không phơi ra Internet khi chưa bảo vệ. Tuyên bố 'cực nhanh' bài chưa kiểm chứng. Bài chưa so sánh với Elasticsearch hay Meilisearch.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>search platform (nền tảng tìm kiếm)</strong>: hệ lập chỉ mục và tìm kiếm trọn gói; README nêu.</li><li><strong>multi-modal (đa phương thức)</strong>: xử lý nhiều loại dữ liệu; README nêu.</li><li><strong>Solr Operator</strong>: công cụ chạy Solr trên Kubernetes; README nêu.</li><li><strong>Reference Guide (sách tham chiếu)</strong>: tài liệu chính thức; README nêu.</li><li><strong>Lucene</strong>: thư viện tìm kiếm nền của Solr; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Running Solr với Docker và Kubernetes; bài không chép lệnh. Cần Java hoặc Docker. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Running Solr.</li><li>Đọc Reference Guide trên solr.apache.org.</li><li>Thử trên máy thử với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần máy chủ tìm kiếm cho tài liệu. Hãy đọc README của Apache Solr (https://github.com/apache/solr) và giải thích bằng tiếng Việt: Solr khác Lucene ở đâu, các cách chạy Solr, và vì sao cần bảo vệ cổng khi tự chạy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 4,7 KB, bài chưa đọc Reference Guide. Tuyên bố 'cực nhanh' chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ tìm kiếm và cơ sở dữ liệu vector lập chỉ mục tài liệu của bạn, có thể gồm thông tin nhạy cảm: đặt xác thực và phân quyền trước khi mở cổng ra mạng, không đưa tài liệu bí mật vào dịch vụ đám mây khi chưa hiểu điều khoản, đổi mật khẩu mặc định, sao lưu chỉ mục, và nhớ rằng kết quả tìm kiếm và mô hình nhúng có thể sai hoặc thiên lệch nên cần kiểm tra trước khi tin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>1.696 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu thông báo Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/solr/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/solr\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 736. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1696; repo_id 341374920; README SHA256 c9e80db4eaeece55d51e690a0529fd99a528612afdbf09c20d13e0c128cd5c1a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/solr",
+          "repo_id": "341374920",
+          "source_path": "",
+          "source_revision": "README-SHA256:c9e80db4eaeece55d51e690a0529fd99a528612afdbf09c20d13e0c128cd5c1a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/solr",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Running Solr với Docker và Kubernetes; bài không chép lệnh. Cần Java hoặc Docker. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/solr/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/solr/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/solr",
+        "stars": 1696,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/solr/main/README.md",
+        "readmeSha256": "c9e80db4eaeece55d51e690a0529fd99a528612afdbf09c20d13e0c128cd5c1a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 737,
+      "batch": 118,
+      "slug": "paradedb",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ParadeDB: nâng cấp Postgres bằng chỉ mục riêng cho tìm kiếm toàn văn và vector, điểm BM25, bộ lọc, aggregation và join, xây như phần mở rộng Postgres trên Tantivy và DataFusion; bản Community AGPL-3.0, bản Enterprise bán riêng; README có lệnh cài tải tập lệnh từ mạng",
+        "excerpt": "Hiểu ParadeDB là một Postgres cho cả dữ liệu ứng dụng, tìm kiếm toàn văn, truy xuất vector và tổng hợp: nâng cấp Postgres bằng chỉ mục riêng cho tìm toàn văn và vector, điểm BM25, bộ lọc, facet, aggregation và join, xây như phần mở rộng Postgres trên pgrx, Tantivy và Apache DataFusion; bản Community theo AGPL-3.0, bản Enterprise bán riêng, README có lệnh cài tải tập lệnh từ mạng và mục tích hợp cho tác tử AI.",
+        "content": "<p>README tả ParadeDB là một Postgres cho dữ liệu ứng dụng, tìm kiếm toàn văn, truy xuất vector và tổng hợp. Mục Installation: chạy ParadeDB tại máy bằng Docker và mở phiên psql qua một lệnh tải tập lệnh từ mạng; bài không chép lệnh và khuyên đọc tập lệnh trước; khi sẵn sàng triển khai có ParadeDB Cloud (dịch vụ trả phí, bài không đánh giá) hoặc tự host. Mục What is ParadeDB?: nâng cấp Postgres bằng chỉ mục riêng cho tìm toàn văn và vector nhanh, điểm BM25, bộ lọc, facet, aggregation, join; xây như phần mở rộng Postgres; danh sách tính năng tìm toàn văn (BM25, top K, tô sáng, bộ tách từ) và tìm vector. Mục How It Works: dựa trên pgrx (cầu nối Postgres và Rust), Tantivy (tìm toàn văn và vector) và Apache DataFusion (xử lý OLAP). Mục tích hợp liệt kê ORM, khung ứng dụng, tác tử AI, nhà cung cấp PaaS (bài không cài). Mục License: ParadeDB Community theo GNU AGPL v3.0, ParadeDB Enterprise có giấy phép thương mại và đi kèm ParadeDB Cloud.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu ứng dụng của bạn đã dùng Postgres, ParadeDB thêm cho nó khả năng tìm kiếm kiểu Elasticsearch ngay trong cơ sở dữ liệu cũ, khỏi phải chạy thêm một hệ tìm kiếm riêng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'phần mở rộng Postgres' và lợi ích của việc gộp tìm kiếm vào cơ sở dữ liệu; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng tìm kiếm hoặc hỏi đáp trên tài liệu riêng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Postgres, SQL và khái niệm tìm kiếm; cài phần mở rộng cần quyền quản trị cơ sở dữ liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản Enterprise và đám mây là sản phẩm trả phí; bản Community theo AGPL-3.0 có điều khoản riêng khi cung cấp dịch vụ qua mạng: bài không phải tư vấn pháp lý. Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh. Thêm phần mở rộng vào cơ sở dữ liệu thật cần sao lưu trước. Bài chưa so sánh với pgvector hay Elasticsearch.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Postgres extension (phần mở rộng Postgres)</strong>: gói thêm tính năng vào Postgres; README nêu.</li><li><strong>BM25</strong>: công thức xếp hạng độ liên quan; README nêu.</li><li><strong>faceted search (tìm theo facet)</strong>: lọc kết quả theo nhóm thuộc tính; README nêu.</li><li><strong>OLAP</strong>: xử lý phân tích dữ liệu lớn; README nêu DataFusion lo.</li><li><strong>AGPL-3.0</strong>: giấy phép mã nguồn mở copyleft có điều khoản cho dịch vụ qua mạng; README nêu cho bản Community.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation dùng Docker và tập lệnh tải từ mạng; bài không chép lệnh. Cần Docker hoặc Postgres. Miễn phí theo AGPL-3.0 cho bản Community (README nêu); bản Enterprise và đám mây trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is ParadeDB? và How It Works.</li><li>Đọc mục License.</li><li>Thử bằng cơ sở dữ liệu thử, không phải dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Postgres và muốn thêm tìm kiếm toàn văn. Hãy đọc README của ParadeDB (https://github.com/paradedb/paradedb) và giải thích bằng tiếng Việt: ParadeDB làm gì, bản Community khác Enterprise ở đâu, giấy phép AGPL có điều khoản gì cần lưu ý, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,4 KB, bài chưa đọc tài liệu paradedb.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ tìm kiếm và cơ sở dữ liệu vector lập chỉ mục tài liệu của bạn, có thể gồm thông tin nhạy cảm: đặt xác thực và phân quyền trước khi mở cổng ra mạng, không đưa tài liệu bí mật vào dịch vụ đám mây khi chưa hiểu điều khoản, đổi mật khẩu mặc định, sao lưu chỉ mục, và nhớ rằng kết quả tìm kiếm và mô hình nhúng có thể sai hoặc thiên lệch nên cần kiểm tra trước khi tin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>paradedb</strong> có <strong>9.473 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL-3.0 cho Community và giấy phép thương mại cho Enterprise; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/paradedb/paradedb/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/paradedb/paradedb\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 737. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9473; repo_id 660776503; README SHA256 cb43a254d049c9dcef20592ccf87134b7554421b5a5d9067d6be6bb036c2e6c0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/paradedb/paradedb",
+          "repo_id": "660776503",
+          "source_path": "",
+          "source_revision": "README-SHA256:cb43a254d049c9dcef20592ccf87134b7554421b5a5d9067d6be6bb036c2e6c0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/paradedb/paradedb",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation dùng Docker và tập lệnh tải từ mạng; bài không chép lệnh. Cần Docker hoặc Postgres. Miễn phí theo AGPL-3.0 cho bản Community (README nêu); bản Enterprise và đám mây trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/paradedb/paradedb/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/paradedb/paradedb/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "paradedb/paradedb",
+        "stars": 9473,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/paradedb/paradedb/main/README.md",
+        "readmeSha256": "cb43a254d049c9dcef20592ccf87134b7554421b5a5d9067d6be6bb036c2e6c0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 738,
+      "batch": 118,
+      "slug": "usearch",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "USearch: công cụ tìm kiếm tương tự và phân cụm một tệp, nhỏ gọn, tự nhận nhanh hơn FAISS 10 lần cho HNSW, thư viện một tiêu đề C++11, tối ưu SIMD, hỗ trợ số liệu tùy biến, xem chỉ mục lớn từ đĩa; README rất dài",
+        "excerpt": "Hiểu USearch là công cụ tìm kiếm tương tự và phân cụm cho vector (và văn bản sắp tới) thiết kế nhỏ gọn: một tiêu đề C++11, cài đặt HNSW, tối ưu SIMD, số liệu do người dùng định nghĩa, hỗ trợ độ chính xác bf16, e5m2, i8, xem chỉ mục lớn từ đĩa mà không nạp vào RAM; README tuyên bố nhanh hơn FAISS 10 lần và có mục so sánh với FAISS (tuyên bố của tác giả, bài chưa kiểm chứng).",
+        "content": "<p>README tả USearch là công cụ tìm kiếm tương tự và phân cụm một tệp, nhỏ hơn và nhanh hơn, cho vector và văn bản sắp tới, chạy trên Linux, macOS, Windows, iOS, Android và WebAssembly. Tuyên bố: cài đặt HNSW nhanh hơn FAISS 10 lần; thư viện một tiêu đề C++11 đơn giản và mở rộng được; được tin dùng bởi các hãng lớn và cơ sở dữ liệu như ClickHouse và DuckDB; tối ưu SIMD và số liệu do người dùng định nghĩa biên dịch tức thời; hỗ trợ bf16, e5m2, i8; xem chỉ mục lớn từ đĩa; tra cứu không đồng nhất, đổi nhãn, xóa tức thời; các tuyên bố này là của tác giả, bài chưa kiểm chứng. Mục Comparison with FAISS nói cả hai dùng cùng thuật toán HNSW nhưng khác nguyên tắc thiết kế: USearch gọn, tương thích rộng, tập trung vào số liệu tùy biến và ít phụ thuộc, kèm bảng so sánh (số liệu do tác giả). README rất dài (khoảng 34 KB) với các mục cài đặt bằng pip (bài không chép lệnh), lưu và phục vụ chỉ mục từ đĩa, tìm chính xác và gần đúng, số liệu tùy biến, lọc, tiết kiệm bộ nhớ và lượng tử hóa, nhiều chỉ mục, phân cụm. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Faiss là bộ công cụ tìm vector lớn, USearch là bản gọn một tệp, dễ nhúng vào ứng dụng điện thoại hay trình duyệt, và cho bạn tự đặt cách đo độ gần.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'lượng tử hóa' và vì sao nén vector giúp tiết kiệm bộ nhớ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng tìm kiếm hoặc hỏi đáp trên tài liệu riêng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm vector, nhúng, C++ hoặc Python. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'nhanh hơn FAISS 10 lần' và bảng so sánh là của tác giả, bài chưa kiểm chứng: cần đo trên dữ liệu của bạn. Lượng tử hóa làm mất một phần độ chính xác. Thư viện chỉ lo chỉ mục, không phải cơ sở dữ liệu đầy đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>similarity search (tìm kiếm tương tự)</strong>: tìm đối tượng giống nhất với mẫu; README nêu.</li><li><strong>HNSW</strong>: thuật toán đồ thị để tìm gần đúng; README nêu cài đặt.</li><li><strong>SIMD</strong>: xử lý nhiều dữ liệu cùng một lệnh để nhanh hơn; README nêu.</li><li><strong>quantization (lượng tử hóa)</strong>: nén vector bằng ít bit hơn; README nêu.</li><li><strong>user-defined metric (số liệu tùy biến)</strong>: cách đo độ gần do người dùng viết; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục cài đặt bằng pip và nhiều ví dụ; bài không chép lệnh hay mã. Cần C++ hoặc Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Comparison with FAISS.</li><li>Đọc mục Serialization & Serving Index from Disk.</li><li>Tự đo trên dữ liệu của bạn trước khi tin các con số.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học tìm kiếm vector. Hãy đọc README của USearch (https://github.com/unum-cloud/usearch) và giải thích bằng tiếng Việt: USearch khác Faiss ở đâu, lượng tử hóa làm gì, và vì sao tuyên bố nhanh hơn 10 lần là của tác giả và chưa kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 34 KB), bài đọc phần đầu, so sánh và các mục chính, chưa đọc toàn bộ. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Tuyên bố tốc độ chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ tìm kiếm và cơ sở dữ liệu vector lập chỉ mục tài liệu của bạn, có thể gồm thông tin nhạy cảm: đặt xác thực và phân quyền trước khi mở cổng ra mạng, không đưa tài liệu bí mật vào dịch vụ đám mây khi chưa hiểu điều khoản, đổi mật khẩu mặc định, sao lưu chỉ mục, và nhớ rằng kết quả tìm kiếm và mô hình nhúng có thể sai hoặc thiên lệch nên cần kiểm tra trước khi tin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>unum-cloud</strong> có <strong>4.368 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/unum-cloud/usearch/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/unum-cloud/usearch\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 738. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4368; repo_id 605020435; README SHA256 6979314581176d18016cd93ae80feb5c4e5298ee16886012de0b678148a9931c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/unum-cloud/usearch",
+          "repo_id": "605020435",
+          "source_path": "",
+          "source_revision": "README-SHA256:6979314581176d18016cd93ae80feb5c4e5298ee16886012de0b678148a9931c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/unum-cloud/usearch",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục cài đặt bằng pip và nhiều ví dụ; bài không chép lệnh hay mã. Cần C++ hoặc Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/unum-cloud/usearch/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/unum-cloud/usearch/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "unum-cloud/usearch",
+        "stars": 4368,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/unum-cloud/usearch/main/README.md",
+        "readmeSha256": "6979314581176d18016cd93ae80feb5c4e5298ee16886012de0b678148a9931c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

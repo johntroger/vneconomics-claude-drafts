@@ -1,0 +1,42 @@
+{
+  "key": 737,
+  "repo": "paradedb/paradedb",
+  "repoId": "660776503",
+  "url": "https://github.com/paradedb/paradedb",
+  "stars": 9473,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:11:44Z",
+  "createdAt": "2023-06-30T20:21:47Z",
+  "defaultBranch": "main",
+  "description": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
+  "homepage": "https://paradedb.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/paradedb/paradedb/main/README.md",
+    "sha256": "cb43a254d049c9dcef20592ccf87134b7554421b5a5d9067d6be6bb036c2e6c0",
+    "bytes": 6390,
+    "sectionsRead": [
+      "Installation",
+      "What is ParadeDB?",
+      "How It Works",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu paradedb.com.",
+    "Chưa thử.",
+    "Chưa so sánh với pgvector và Elasticsearch."
+  ],
+  "runtimeValidated": false
+}

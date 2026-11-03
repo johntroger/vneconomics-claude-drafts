@@ -1,0 +1,43 @@
+{
+  "key": 738,
+  "repo": "unum-cloud/usearch",
+  "repoId": "605020435",
+  "url": "https://github.com/unum-cloud/usearch",
+  "stars": 4368,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-31T23:33:56Z",
+  "createdAt": "2023-02-22T09:20:20Z",
+  "defaultBranch": "main",
+  "description": "Fast Open-Source Search & Clustering engine × for Vectors & Arbitrary Objects × in C++, C, Python, JavaScript, Rust, Java, Objective-C, Swift, C#, GoLang, and Wolfram 🔍",
+  "homepage": "https://unum.cloud/usearch",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/unum-cloud/usearch/main/README.md",
+    "sha256": "6979314581176d18016cd93ae80feb5c4e5298ee16886012de0b678148a9931c",
+    "bytes": 34197,
+    "sectionsRead": [
+      "Comparison with FAISS",
+      "Serialization",
+      "Exact vs. Approximate Search",
+      "User-Defined Metrics",
+      "Clustering"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README dài.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố tốc độ."
+  ],
+  "runtimeValidated": false
+}

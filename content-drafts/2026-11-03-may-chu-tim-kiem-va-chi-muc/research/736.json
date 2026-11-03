@@ -1,0 +1,43 @@
+{
+  "key": 736,
+  "repo": "apache/solr",
+  "repoId": "341374920",
+  "url": "https://github.com/apache/solr",
+  "stars": 1696,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:00:04Z",
+  "createdAt": "2021-02-23T00:12:42Z",
+  "defaultBranch": "main",
+  "description": "Apache Solr open-source search software",
+  "homepage": "https://solr.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/solr/main/README.md",
+    "sha256": "c9e80db4eaeece55d51e690a0529fd99a528612afdbf09c20d13e0c128cd5c1a",
+    "bytes": 4728,
+    "sectionsRead": [
+      "Download",
+      "Running Solr",
+      "How to Use",
+      "Support",
+      "Developer Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc Reference Guide.",
+    "Chưa thử.",
+    "Chưa so sánh với Elasticsearch và Meilisearch."
+  ],
+  "runtimeValidated": false
+}
