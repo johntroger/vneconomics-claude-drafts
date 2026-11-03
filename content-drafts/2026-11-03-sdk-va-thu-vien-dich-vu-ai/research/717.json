@@ -1,0 +1,44 @@
+{
+  "key": 717,
+  "repo": "ollama/ollama-python",
+  "repoId": "729453988",
+  "url": "https://github.com/ollama/ollama-python",
+  "stars": 10664,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-16T19:45:46Z",
+  "createdAt": "2023-12-09T09:27:18Z",
+  "defaultBranch": "main",
+  "description": "Ollama Python library",
+  "homepage": "https://ollama.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ollama/ollama-python/main/README.md",
+    "sha256": "e6ed5b415b3c76bff544e1053e973aee77097b95c98ec2be3d96b0d3f7634d66",
+    "bytes": 7665,
+    "sectionsRead": [
+      "Prerequisites",
+      "Install",
+      "Streaming responses",
+      "Cloud Models",
+      "Custom client",
+      "Async client"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu của Ollama.",
+    "Chưa thử.",
+    "Chưa kiểm tra yêu cầu phần cứng."
+  ],
+  "runtimeValidated": false
+}

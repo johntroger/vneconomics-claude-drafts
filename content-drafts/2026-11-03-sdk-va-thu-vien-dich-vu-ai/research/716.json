@@ -1,0 +1,43 @@
+{
+  "key": 716,
+  "repo": "googleapis/python-genai",
+  "repoId": "899744518",
+  "url": "https://github.com/googleapis/python-genai",
+  "stars": 4054,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:52:28Z",
+  "createdAt": "2024-12-06T23:16:52Z",
+  "defaultBranch": "main",
+  "description": "Google Gen AI Python SDK provides an interface for developers to integrate Google's generative models into their Python applications.",
+  "homepage": "https://googleapis.github.io/python-genai/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/googleapis/python-genai/main/README.md",
+    "sha256": "0b149de4933b6bfa721677461bbff27de27fdb1f431460ce3843fe6b3bccb7f6",
+    "bytes": 57661,
+    "sectionsRead": [
+      "Agent Skills",
+      "Installation",
+      "Create a client",
+      "API Selection",
+      "Generate Content"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu googleapis.github.io/python-genai.",
+    "Chưa thử.",
+    "Chưa so sánh với SDK khác."
+  ],
+  "runtimeValidated": false
+}

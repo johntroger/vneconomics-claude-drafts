@@ -1,0 +1,41 @@
+{
+  "key": 719,
+  "repo": "huggingface/huggingface_hub",
+  "repoId": "323591830",
+  "url": "https://github.com/huggingface/huggingface_hub",
+  "stars": 4030,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:02:24Z",
+  "createdAt": "2020-12-22T10:20:28Z",
+  "defaultBranch": "main",
+  "description": "The official CLI and Python client for the Hugging Face Hub.",
+  "homepage": "https://huggingface.co/docs/huggingface_hub",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/huggingface/huggingface_hub/main/README.md",
+    "sha256": "ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a",
+    "bytes": 9571,
+    "sectionsRead": [
+      "Quick start",
+      "What is",
+      "Built for humans and AI agents"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu huggingface.co/docs/huggingface_hub.",
+    "Chưa thử.",
+    "Chưa kiểm tra giấy phép các mô hình phổ biến."
+  ],
+  "runtimeValidated": false
+}

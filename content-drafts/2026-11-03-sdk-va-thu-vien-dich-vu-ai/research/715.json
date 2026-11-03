@@ -1,0 +1,43 @@
+{
+  "key": 715,
+  "repo": "openai/openai-node",
+  "repoId": "438419937",
+  "url": "https://github.com/openai/openai-node",
+  "stars": 11247,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:12:44Z",
+  "createdAt": "2021-12-14T22:32:58Z",
+  "defaultBranch": "main",
+  "description": "Official JavaScript / TypeScript library for the OpenAI API",
+  "homepage": "https://www.npmjs.com/package/openai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+    "sha256": "8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303",
+    "bytes": 33002,
+    "sectionsRead": [
+      "Installation",
+      "Usage",
+      "Streaming responses",
+      "Webhook Verification",
+      "Handling errors"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc thư mục ví dụ.",
+    "Chưa thử.",
+    "Chưa so sánh với SDK khác."
+  ],
+  "runtimeValidated": false
+}

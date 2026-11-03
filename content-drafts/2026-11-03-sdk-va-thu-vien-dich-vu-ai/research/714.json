@@ -1,0 +1,43 @@
+{
+  "key": 714,
+  "repo": "openai/openai-python",
+  "repoId": "307213173",
+  "url": "https://github.com/openai/openai-python",
+  "stars": 32028,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:08:55Z",
+  "createdAt": "2020-10-25T23:23:54Z",
+  "defaultBranch": "main",
+  "description": "The official Python library for the OpenAI API",
+  "homepage": "https://pypi.org/project/openai/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/openai/openai-python/main/README.md",
+    "sha256": "ab56b5251f4de836518c8f175dbd6c6a4dbc7eb809b3abe96a8e019233533dea",
+    "bytes": 43144,
+    "sectionsRead": [
+      "Installation",
+      "Usage",
+      "Async usage",
+      "Streaming responses",
+      "Realtime API"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc api.md.",
+    "Chưa thử.",
+    "Chưa so sánh với SDK khác."
+  ],
+  "runtimeValidated": false
+}

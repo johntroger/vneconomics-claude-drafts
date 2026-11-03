@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-sdk-ai",
+  "batch": 115,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 714,
+      "batch": 115,
+      "slug": "openai-python",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Thư viện OpenAI cho Python: truy cập thuận tiện API REST của OpenAI từ ứng dụng Python 3.10+, có kiểu cho mọi tham số, máy khách đồng bộ và bất đồng bộ, sinh từ đặc tả OpenAPI; README rất dài và có nhiều cách xác thực",
+        "excerpt": "Hiểu thư viện OpenAI cho Python là bộ SDK chính thức để gọi API REST của OpenAI từ ứng dụng Python 3.10 trở lên: có định nghĩa kiểu cho mọi tham số và trường phản hồi, máy khách đồng bộ và bất đồng bộ, sinh tự động từ đặc tả OpenAPI; README rất dài, nêu API Responses làm API chính, nhiều cách xác thực, luồng phản hồi, API thời gian thực, phân trang.",
+        "content": "<p>README tả thư viện OpenAI Python cung cấp truy cập thuận tiện tới API REST của OpenAI từ mọi ứng dụng Python 3.10 trở lên, gồm định nghĩa kiểu cho mọi tham số và trường phản hồi, máy khách đồng bộ và bất đồng bộ dựa trên HTTPX2, và được sinh từ đặc tả OpenAPI. README trỏ tới tài liệu REST API trên platform.openai.com và tệp api.md. Mục Usage nói API chính để tương tác với mô hình OpenAI là Responses API. README rất dài (khoảng 43 KB) với các mục: xác thực bằng danh tính khối lượng công việc (Kubernetes, Azure, Google Cloud, nhà cung cấp mã thông báo tùy chỉnh, X.509), thị giác, dùng bất đồng bộ (kể cả với aiohttp), di chuyển sang HTTPX2, luồng phản hồi, API thời gian thực và xử lý lỗi, dùng kiểu, phân trang và nhiều mục khác. README có lệnh cài từ PyPI và ví dụ mã; bài không chép. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì tự viết yêu cầu HTTP tới OpenAI, bạn dùng thư viện này: khai báo mô hình và nội dung, nhận kết quả có kiểu rõ ràng, dễ kiểm tra trong trình soạn thảo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'máy khách đồng bộ' khác 'bất đồng bộ' bằng ví dụ gọi một lần và gọi nhiều lần; chưa gọi API thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, khái niệm API và khóa API; phần xác thực khối lượng công việc dành cho người vận hành. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mỗi lệnh gọi tốn phí theo tài khoản của bạn và khóa API là bí mật: đặt hạn mức, dùng biến môi trường, không để khóa trong mã đưa lên kho công khai. Dữ liệu gửi tới API có thể chứa thông tin riêng tư: đọc điều khoản dữ liệu của nhà cung cấp. Bài chưa so sánh với SDK của nhà cung cấp khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>SDK</strong>: bộ công cụ phát triển để gọi một dịch vụ; README nêu.</li><li><strong>REST API</strong>: giao diện gọi dịch vụ qua HTTP; README nêu.</li><li><strong>Responses API</strong>: API chính của OpenAI theo README để tạo văn bản từ mô hình; README nêu.</li><li><strong>OpenAPI</strong>: chuẩn mô tả API; README nêu thư viện sinh từ đặc tả.</li><li><strong>workload identity (danh tính khối lượng công việc)</strong>: xác thực không cần khóa lâu dài trong môi trường đám mây; README có mục.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation từ PyPI và ví dụ mã; bài không chép lệnh hay mã. Cần Python 3.10 trở lên và khóa API của OpenAI (chi phí do OpenAI tính). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Usage.</li><li>Đọc tài liệu trên platform.openai.com.</li><li>Thử với khóa có hạn mức thấp và dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gọi API OpenAI từ Python. Hãy đọc README của thư viện OpenAI Python (https://github.com/openai/openai-python) và giải thích bằng tiếng Việt: Responses API là gì, máy khách đồng bộ và bất đồng bộ khác nhau thế nào, và vì sao phải giữ bí mật khóa API. Chưa cài gì và không dán khóa vào đây.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 43 KB), bài đọc phần đầu, cách dùng và các mục xác thực, chưa đọc api.md. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openai</strong> có <strong>32.028 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openai/openai-python/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openai/openai-python\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 714. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32028; repo_id 307213173; README SHA256 ab56b5251f4de836518c8f175dbd6c6a4dbc7eb809b3abe96a8e019233533dea.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openai/openai-python",
+          "repo_id": "307213173",
+          "source_path": "",
+          "source_revision": "README-SHA256:ab56b5251f4de836518c8f175dbd6c6a4dbc7eb809b3abe96a8e019233533dea",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-python",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation từ PyPI và ví dụ mã; bài không chép lệnh hay mã. Cần Python 3.10 trở lên và khóa API của OpenAI (chi phí do OpenAI tính). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-python/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openai/openai-python/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openai/openai-python",
+        "stars": 32028,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openai/openai-python/main/README.md",
+        "readmeSha256": "ab56b5251f4de836518c8f175dbd6c6a4dbc7eb809b3abe96a8e019233533dea",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 715,
+      "batch": 115,
+      "slug": "openai-node",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Thư viện OpenAI cho TypeScript và JavaScript: truy cập thuận tiện API REST của OpenAI, sinh từ đặc tả OpenAPI, README có mục cài với Deno, Responses API, nhiều cách xác thực, xác minh webhook, xử lý lỗi, thử lại, hết thời gian",
+        "excerpt": "Hiểu thư viện OpenAI cho TypeScript và JavaScript là SDK chính thức gọi API REST của OpenAI, sinh từ đặc tả OpenAPI; README nêu Responses API làm API chính, hội thoại nhiều lượt, thị giác, nhiều cách xác thực, luồng phản hồi, tải tệp, xác minh webhook, xử lý lỗi, thử lại, thời gian chờ, hủy bỏ và mã yêu cầu.",
+        "content": "<p>README tả thư viện cung cấp truy cập thuận tiện tới API REST của OpenAI từ TypeScript hoặc JavaScript, sinh từ đặc tả OpenAPI; trỏ tới tài liệu tham chiếu API. Có mục cài đặt, cài với Deno qua npm, mục Usage nói API chính là Responses API, hội thoại nhiều lượt, thị giác, xác thực bằng danh tính khối lượng công việc (Kubernetes, Azure, GCP, nhà cung cấp mã thông báo tùy chỉnh, chứng chỉ X.509), luồng phản hồi, tải tệp lên, xác minh webhook (phân tích nội dung webhook và xác minh trực tiếp bằng bí mật webhook đọc từ biến môi trường), xử lý lỗi, thử lại, thời gian chờ, hủy, mã yêu cầu. README rất dài (khoảng 33 KB), bài đọc phần đầu và các mục chính, không chép lệnh hay mã. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cũng như phiên bản Python, thư viện này cho bạn gọi API OpenAI từ ứng dụng Node.js hoặc web bằng mã TypeScript có kiểu rõ ràng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích webhook và vì sao phải xác minh chữ ký; chưa gọi API thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript hoặc TypeScript, Node.js và khái niệm API. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Khóa API tuyệt đối không đặt trong mã chạy ở trình duyệt vì ai cũng đọc được: gọi API từ máy chủ của bạn. Mỗi lệnh gọi tốn phí. Webhook cần xác minh chữ ký để tránh yêu cầu giả mạo. Dữ liệu gửi đi có thể riêng tư.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>webhook</strong>: cách dịch vụ gọi ngược về ứng dụng của bạn khi có sự kiện; README có mục.</li><li><strong>retry (thử lại)</strong>: tự gửi lại khi lỗi tạm thời; README nêu.</li><li><strong>timeout (thời gian chờ)</strong>: giới hạn chờ phản hồi; README nêu.</li><li><strong>streaming (luồng)</strong>: nhận kết quả từng phần; README nêu.</li><li><strong>Deno</strong>: môi trường chạy JavaScript khác Node.js; README nêu cài qua npm.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (npm, Deno) và ví dụ mã; bài không chép lệnh hay mã. Cần Node.js hoặc Deno và khóa API. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Usage.</li><li>Đọc mục Webhook Verification.</li><li>Gọi API từ máy chủ, không từ trình duyệt.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng Node.js gọi API OpenAI. Hãy đọc README của openai-node (https://github.com/openai/openai-node) và giải thích bằng tiếng Việt: vì sao không đặt khóa API trong mã trình duyệt, webhook cần xác minh thế nào, và thử lại và thời gian chờ để làm gì. Chưa cài gì và không dán khóa vào đây.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 33 KB), bài đọc phần đầu và các mục chính, chưa đọc thư mục ví dụ. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openai</strong> có <strong>11.247 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openai/openai-node/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openai/openai-node\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 715. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11247; repo_id 438419937; README SHA256 8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openai/openai-node",
+          "repo_id": "438419937",
+          "source_path": "",
+          "source_revision": "README-SHA256:8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-node",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (npm, Deno) và ví dụ mã; bài không chép lệnh hay mã. Cần Node.js hoặc Deno và khóa API. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-node/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openai/openai-node/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openai/openai-node",
+        "stars": 11247,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+        "readmeSha256": "8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 716,
+      "batch": 115,
+      "slug": "google-genai",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Google Gen AI SDK cho Python: giao diện để tích hợp mô hình sinh của Google vào ứng dụng Python, hỗ trợ API Gemini Developer và nền tảng tác tử doanh nghiệp Gemini; README rất dài, cảnh báo thay đổi gọi hàm tự động và có mục Agent Skills cho trợ lý AI",
+        "excerpt": "Hiểu Google Gen AI SDK cho Python là SDK để tích hợp mô hình sinh của Google vào ứng dụng Python, hỗ trợ cả API Gemini Developer và nền tảng Gemini Enterprise Agent Platform (trước là Vertex AI); README rất dài, cảnh báo sắp đổi hành vi gọi hàm tự động (AFC) ở bản chính kế tiếp và có mục Agent Skills khuyên nạp kỹ năng cho trợ lý AI lập trình.",
+        "content": "<p>README tả Google Gen AI Python SDK là giao diện để nhà phát triển tích hợp các mô hình sinh của Google vào ứng dụng Python, hỗ trợ API Gemini Developer và các API của Gemini Enterprise Agent Platform. Một cảnh báo ở đầu: hành vi gọi hàm tự động (AFC) sẽ đổi ở phiên bản chính kế tiếp; người dùng không còn gọi AFC từ các lời gọi trực tiếp tới generate_content mà phải gọi từ mô-đun Chats. Mục Agent Skills (dành cho trợ lý AI lập trình) nói mô hình AI thường được huấn luyện trên dữ liệu tĩnh nên có thể gợi ý thư viện cũ, và khuyến nghị nạp bộ kỹ năng Gemini API cho trợ lý (kho riêng cho Gemini Developer API và cho nền tảng doanh nghiệp). Bài chỉ nêu đây như ghi chú của README và không cài. Các mục còn lại: cài đặt, nhập, tạo máy khách (hai khối riêng cho hai nền tảng), dùng kiểu, đóng máy khách, trình quản lý ngữ cảnh, chọn API, tùy chọn máy khách HTTP httpx2 hoặc aiohttp, proxy, URL gốc tùy chỉnh, mô hình, tạo nội dung với văn bản đầu vào và đầu ra văn bản hoặc ảnh. README rất dài (khoảng 58 KB); bài đọc phần đầu và các mục chính, không chép lệnh hay mã. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn dùng mô hình Gemini của Google trong ứng dụng Python, SDK này là cầu nối chính thức tới cả dịch vụ cho nhà phát triển lẫn nền tảng doanh nghiệp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khác biệt giữa hai nền tảng API trong README và vì sao có hai khối tạo máy khách; chưa gọi API thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần Python, khái niệm API, tài khoản và khóa; phần nền tảng doanh nghiệp cần kiến thức đám mây. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo sắp đổi hành vi gọi hàm tự động: cần đọc trước khi nâng cấp. Gọi hàm tự động cho mô hình thực thi hàm của bạn: giới hạn quyền của hàm. Khóa API, hóa đơn và dữ liệu gửi đi cần quản lý như các SDK khác. Mục Agent Skills là gợi ý nạp kỹ năng cho tác tử: đọc nội dung trước khi nạp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>SDK</strong>: bộ công cụ phát triển; README nêu.</li><li><strong>AFC (gọi hàm tự động)</strong>: mô hình tự gọi hàm bạn khai báo; README cảnh báo sắp đổi.</li><li><strong>Gemini Developer API</strong>: API Gemini cho nhà phát triển; README nêu.</li><li><strong>Agent Skills (kỹ năng cho tác tử)</strong>: gói hướng dẫn cho trợ lý AI lập trình; README nêu.</li><li><strong>client (máy khách)</strong>: đối tượng gọi API; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và hai khối tạo máy khách; bài không chép lệnh hay mã. Cần Python và khóa hoặc thông tin xác thực tương ứng. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và cảnh báo AFC.</li><li>Đọc mục API Selection.</li><li>Đọc tài liệu googleapis.github.io/python-genai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gọi mô hình Gemini từ Python. Hãy đọc README của Google Gen AI SDK (https://github.com/googleapis/python-genai) và giải thích bằng tiếng Việt: hai nền tảng API khác nhau thế nào, cảnh báo về gọi hàm tự động nói gì, và mục Agent Skills khuyên điều gì. Chưa cài gì và không dán khóa vào đây.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 58 KB), bài đọc phần đầu và các mục chính, chưa đọc tài liệu googleapis.github.io/python-genai. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>googleapis</strong> có <strong>4.054 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/googleapis/python-genai/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/googleapis/python-genai\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 716. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4054; repo_id 899744518; README SHA256 0b149de4933b6bfa721677461bbff27de27fdb1f431460ce3843fe6b3bccb7f6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/googleapis/python-genai",
+          "repo_id": "899744518",
+          "source_path": "",
+          "source_revision": "README-SHA256:0b149de4933b6bfa721677461bbff27de27fdb1f431460ce3843fe6b3bccb7f6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/googleapis/python-genai",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và hai khối tạo máy khách; bài không chép lệnh hay mã. Cần Python và khóa hoặc thông tin xác thực tương ứng. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/googleapis/python-genai/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/googleapis/python-genai/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "googleapis/python-genai",
+        "stars": 4054,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/googleapis/python-genai/main/README.md",
+        "readmeSha256": "0b149de4933b6bfa721677461bbff27de27fdb1f431460ce3843fe6b3bccb7f6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 717,
+      "batch": 115,
+      "slug": "ollama-python",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Thư viện Ollama cho Python: cách dễ nhất để tích hợp dự án Python 3.8+ với Ollama, cần Ollama đã cài và đang chạy, có trò chuyện, luồng, mô hình đám mây, máy khách tùy chỉnh và bất đồng bộ; giấy phép MIT",
+        "excerpt": "Hiểu thư viện Ollama cho Python là cách dễ nhất để tích hợp dự án Python 3.8+ với Ollama (công cụ chạy mô hình AI trên máy mình): cần Ollama đã cài và đang chạy cùng một mô hình đã tải; README có trò chuyện, luồng phản hồi, mô hình đám mây (chạy qua Ollama cục bộ hoặc API đám mây ollama.com), máy khách tùy chỉnh, bất đồng bộ và các hàm API.",
+        "content": "<p>README tả thư viện Ollama Python cung cấp cách dễ nhất để tích hợp dự án Python 3.8+ với Ollama. Điều kiện: Ollama phải được cài và đang chạy; tải sẵn một mô hình (README ví dụ bằng lệnh kéo mô hình; bài không chép lệnh). Thư viện cài bằng pip và có ví dụ trò chuyện. README có các mục: luồng phản hồi, mô hình đám mây (chạy các mô hình lớn bằng cách giao cho đám mây của Ollama trong khi giữ quy trình cục bộ, kèm danh sách mô hình hỗ trợ; có hai cách: qua Ollama cục bộ hoặc gọi API đám mây ollama.com), máy khách tùy chỉnh, máy khách bất đồng bộ và các hàm API (trò chuyện, tạo, liệt kê, xem, tạo mô hình, sao chép, xóa, kéo, đẩy, nhúng). README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ollama cho bạn chạy mô hình AI ngay trên máy mình. Thư viện này để chương trình Python gọi mô hình đó, giống gọi một dịch vụ nhưng dữ liệu không rời máy bạn (khi chạy cục bộ).</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích sự khác nhau giữa chạy mô hình cục bộ và dùng mô hình đám mây; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python cơ bản và cài Ollama; máy yếu có thể không chạy được mô hình lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mô hình đám mây của Ollama gửi dữ liệu ra ngoài máy bạn: chỉ dùng khi hiểu điều khoản và dữ liệu không nhạy cảm; mô hình cục bộ giữ dữ liệu trong máy nhưng cần phần cứng đủ mạnh. Kết quả mô hình có thể sai. Hàm xóa và đẩy mô hình thay đổi kho mô hình của bạn: cẩn thận.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>local model (mô hình cục bộ)</strong>: mô hình chạy trên máy bạn; README nêu qua Ollama.</li><li><strong>cloud model (mô hình đám mây)</strong>: mô hình chạy trên máy chủ của Ollama; README nêu.</li><li><strong>streaming (luồng)</strong>: nhận kết quả từng phần; README nêu.</li><li><strong>embedding (nhúng)</strong>: biến văn bản thành vector số; README nêu hàm embed.</li><li><strong>async client (máy khách bất đồng bộ)</strong>: gọi không chặn; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Prerequisites và Install; bài không chép lệnh hay mã. Cần Ollama đã cài, mô hình đã tải và Python 3.8+. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Prerequisites.</li><li>Đọc mục Cloud Models.</li><li>Thử mô hình nhỏ cục bộ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chạy mô hình AI trên máy mình bằng Python. Hãy đọc README của ollama-python (https://github.com/ollama/ollama-python) và giải thích bằng tiếng Việt: cần chuẩn bị gì, mô hình cục bộ khác mô hình đám mây thế nào, và rủi ro dữ liệu của mỗi cách. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,7 KB, bài chưa đọc tài liệu của Ollama. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ollama</strong> có <strong>10.664 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-16. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ollama/ollama-python/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ollama/ollama-python\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 717. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10664; repo_id 729453988; README SHA256 e6ed5b415b3c76bff544e1053e973aee77097b95c98ec2be3d96b0d3f7634d66.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ollama/ollama-python",
+          "repo_id": "729453988",
+          "source_path": "",
+          "source_revision": "README-SHA256:e6ed5b415b3c76bff544e1053e973aee77097b95c98ec2be3d96b0d3f7634d66",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama-python",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Prerequisites và Install; bài không chép lệnh hay mã. Cần Ollama đã cài, mô hình đã tải và Python 3.8+. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama-python/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ollama/ollama-python/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ollama/ollama-python",
+        "stars": 10664,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ollama/ollama-python/main/README.md",
+        "readmeSha256": "e6ed5b415b3c76bff544e1053e973aee77097b95c98ec2be3d96b0d3f7634d66",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 718,
+      "batch": 115,
+      "slug": "ollama-js",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Thư viện Ollama cho JavaScript: cách dễ nhất để tích hợp dự án JavaScript với Ollama, có trò chuyện, luồng, dùng trong trình duyệt, mô hình đám mây và các hàm API; giấy phép MIT",
+        "excerpt": "Hiểu thư viện Ollama cho JavaScript là cách dễ nhất để tích hợp dự án JavaScript với Ollama: README có bắt đầu, ví dụ trò chuyện, dùng trong trình duyệt, luồng phản hồi, mô hình đám mây (qua Ollama cục bộ hoặc API ollama.com) và các hàm API (trò chuyện, tạo, kéo...).",
+        "content": "<p>README tả thư viện Ollama JavaScript cung cấp cách dễ nhất để tích hợp dự án JavaScript với Ollama; mục Getting Started có lệnh cài bằng npm và ví dụ trò chuyện (bài không chép). README có mục dùng trong trình duyệt, luồng phản hồi, mô hình đám mây (hai cách: qua Ollama cục bộ và gọi API đám mây ollama.com) và các hàm API (trò chuyện, tạo, kéo và nhiều hàm khác với các tùy chọn). README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Phiên bản JavaScript của thư viện trên cho chương trình Node.js hay trang web gọi mô hình AI chạy bằng Ollama.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'dùng trong trình duyệt' có nghĩa gì với một mô hình chạy ở máy cục bộ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần JavaScript cơ bản và cài Ollama. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Khi dùng trong trình duyệt, trang web sẽ gọi tới máy chủ Ollama: nếu mở cổng ra mạng cần bảo vệ, tránh để người lạ dùng mô hình của bạn. Mô hình đám mây gửi dữ liệu ra ngoài. Kết quả mô hình có thể sai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Ollama</strong>: công cụ chạy mô hình AI trên máy; README nêu.</li><li><strong>browser usage (dùng trong trình duyệt)</strong>: gọi từ mã chạy trên trang web; README có mục.</li><li><strong>cloud API (API đám mây)</strong>: gọi mô hình ở máy chủ của Ollama; README nêu.</li><li><strong>streaming (luồng)</strong>: nhận kết quả từng phần; README nêu.</li><li><strong>model (mô hình)</strong>: bộ trọng số AI dùng để trả lời; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Getting Started với npm; bài không chép lệnh hay mã. Cần Node.js và Ollama đã cài. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Getting Started và Usage.</li><li>Đọc mục Browser Usage.</li><li>Thử mô hình nhỏ cục bộ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng web gọi mô hình AI cục bộ. Hãy đọc README của ollama-js (https://github.com/ollama/ollama-js) và giải thích bằng tiếng Việt: dùng trong trình duyệt khác dùng ở máy chủ thế nào, mô hình đám mây gửi dữ liệu đi đâu, và rủi ro khi mở cổng Ollama ra mạng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 14,2 KB, bài chưa đọc tài liệu của Ollama. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ollama</strong> có <strong>4.406 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-16. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ollama/ollama-js/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ollama/ollama-js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 718. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4406; repo_id 691303110; README SHA256 ce66a805bf199a639e9b4c84ee254bf8398269858ab536271bd5d05e56ffe642.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ollama/ollama-js",
+          "repo_id": "691303110",
+          "source_path": "",
+          "source_revision": "README-SHA256:ce66a805bf199a639e9b4c84ee254bf8398269858ab536271bd5d05e56ffe642",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama-js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Getting Started với npm; bài không chép lệnh hay mã. Cần Node.js và Ollama đã cài. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama-js/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ollama/ollama-js/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ollama/ollama-js",
+        "stars": 4406,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ollama/ollama-js/main/README.md",
+        "readmeSha256": "ce66a805bf199a639e9b4c84ee254bf8398269858ab536271bd5d05e56ffe642",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 719,
+      "batch": 115,
+      "slug": "huggingface-hub",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "huggingface_hub: thư viện tương tác với Hugging Face Hub (nền tảng mô hình và tập dữ liệu mã nguồn mở): tải và tải lên tệp, quản lý kho, chạy suy luận, chạy công việc trên hạ tầng của Hugging Face, tìm kiếm, thẻ mô hình, cộng đồng, có CLI hf dành cho người và tác tử AI",
+        "excerpt": "Hiểu huggingface_hub là thư viện tương tác với Hugging Face Hub (nền tảng mô hình và tập dữ liệu mã nguồn mở): tải và tải lên tệp, quản lý kho, chạy suy luận, chạy công việc trên hạ tầng Hugging Face, tìm kiếm, chia sẻ thẻ mô hình, tương tác cộng đồng, làm tất cả từ terminal bằng CLI hf; README có lệnh cài tải tập lệnh từ mạng và mục dành cho tác tử AI.",
+        "content": "<p>README mở đầu bằng mục Quick start: cài CLI hf bằng trình cài đặt độc lập (lệnh tải tập lệnh từ mạng cho macOS và Linux, lệnh tương tự cho Windows; bài không chép), rồi các ví dụ đăng nhập (README nhắc dùng mã thông báo trong môi trường không tương tác), tìm mô hình do nhà cung cấp suy luận phục vụ, tải mô hình, tải tệp lên kho của bạn, đồng bộ thư mục cục bộ lên kho lưu trữ, chạy công việc trên hạ tầng Hugging Face. Mục What is huggingface_hub? nói thư viện cho phép tương tác với Hugging Face Hub, nền tảng dân chủ hóa học máy mã nguồn mở: tải tệp, tải tệp lên, quản lý kho, chạy suy luận, chạy công việc, tìm kiếm mô hình, tập dữ liệu và Spaces, chia sẻ thẻ mô hình, tham gia cộng đồng, làm từ terminal bằng hf. Mục Built for humans and AI agents nói CLI hf thiết kế cho cả người và tác tử lập trình, các lệnh tự điều chỉnh đầu ra khi tác tử chạy, và khuyên cài kỹ năng hf CLI cho Claude Code, Codex, Cursor và các tác tử khác bằng một lệnh; bài chỉ nêu đây là ghi chú của README và không cài. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hugging Face Hub là kho mô hình AI và dữ liệu lớn nhất. Thư viện này cho bạn tải mô hình, đưa mô hình của mình lên, tìm kiếm và chạy việc bằng vài dòng lệnh hoặc mã Python.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'kho mô hình', thẻ mô hình và vì sao cần đọc giấy phép của mô hình trước khi dùng; chưa tải gì. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python hoặc dòng lệnh, tài khoản Hugging Face nếu muốn tải lên. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mã thông báo truy cập là bí mật: không dán vào khung chat hay mã công khai, dùng mã có quyền tối thiểu. Tải mô hình về cần đọc giấy phép và điều khoản của từng mô hình; tải lên có thể làm lộ dữ liệu nếu kho để công khai. Lệnh cài tải tập lệnh từ mạng: chỉ chạy sau khi đã đọc. Chạy công việc trên hạ tầng Hugging Face có thể tốn phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Hub</strong>: nền tảng chứa mô hình, tập dữ liệu, Spaces; README nêu.</li><li><strong>repository (kho)</strong>: nơi chứa tệp của mô hình hay tập dữ liệu; README nêu.</li><li><strong>inference (suy luận)</strong>: dùng mô hình đã huấn luyện để đoán; README nêu chạy suy luận.</li><li><strong>model card (thẻ mô hình)</strong>: tài liệu mô tả mô hình; README nêu.</li><li><strong>token (mã thông báo)</strong>: khóa truy cập tài khoản; README nhắc dùng khi không tương tác.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick start với lệnh cài tải tập lệnh từ mạng và ví dụ lệnh; bài không chép lệnh. Cần tài khoản Hugging Face cho các thao tác ghi. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; một số dịch vụ của Hugging Face có thể tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quick start (không chạy lệnh cài khi chưa đọc tập lệnh).</li><li>Đọc What is huggingface_hub?</li><li>Đọc điều khoản và giấy phép từng mô hình trước khi dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tải mô hình AI từ Hugging Face. Hãy đọc README của huggingface_hub (https://github.com/huggingface/huggingface_hub) và giải thích bằng tiếng Việt: thư viện làm được gì, vì sao phải cẩn thận với mã thông báo và giấy phép mô hình, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,6 KB, bài chưa đọc tài liệu huggingface.co/docs/huggingface_hub. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>4.030 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/huggingface_hub/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/huggingface_hub\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 719. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4030; repo_id 323591830; README SHA256 ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/huggingface_hub",
+          "repo_id": "323591830",
+          "source_path": "",
+          "source_revision": "README-SHA256:ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/huggingface_hub",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick start với lệnh cài tải tập lệnh từ mạng và ví dụ lệnh; bài không chép lệnh. Cần tài khoản Hugging Face cho các thao tác ghi. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; một số dịch vụ của Hugging Face có thể tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/huggingface_hub/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/huggingface_hub/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/huggingface_hub",
+        "stars": 4030,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/huggingface_hub/main/README.md",
+        "readmeSha256": "ef11081839bdea72c6ae7be4832e4d4c94ef76e5888b0ddd935850c675e7d91a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 720,
+      "batch": 115,
+      "slug": "dspy",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "DSPy: khung lập trình thay vì viết lời nhắc cho mô hình nền tảng, xây hệ thống AI dạng mô-đun và cung cấp thuật toán tối ưu lời nhắc và trọng số; tên là Declarative Self-improving Python; README ngắn trỏ tới tài liệu dspy.ai, giấy phép MIT",
+        "excerpt": "Hiểu DSPy là khung để lập trình thay vì viết lời nhắc cho mô hình ngôn ngữ: cho phép lặp nhanh khi xây hệ thống AI dạng mô-đun và cung cấp thuật toán tối ưu lời nhắc và trọng số của chúng; tên viết tắt từ Declarative Self-improving Python; README ngắn, trỏ tới tài liệu dspy.ai, nêu cách cài và phần trích dẫn.",
+        "content": "<p>README tả DSPy là khung để lập trình chứ không phải viết lời nhắc cho các mô hình nền tảng. DSPy cho phép lặp nhanh khi xây hệ thống AI dạng mô-đun và cung cấp thuật toán tối ưu lời nhắc và trọng số của hệ thống; đây là cách tự mô tả của dự án, bài chưa kiểm chứng. DSPy là viết tắt của Declarative Self-improving Python: thay vì lời nhắc dễ vỡ, bạn viết mã Python có cấu trúc và dùng DSPy để dạy mô hình đưa ra kết quả chất lượng cao. README trỏ tới tài liệu dspy.ai, có mục cài đặt (cài từ PyPI hoặc cài bản mới nhất từ nhánh main; bài không chép lệnh), mục trích dẫn và đọc thêm. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Viết lời nhắc cho AI giống dặn dò bằng lời: dễ sai và khó tối ưu. DSPy cho bạn mô tả việc cần làm bằng mã, rồi tự thử và cải thiện lời nhắc cho bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khác biệt giữa viết lời nhắc tay và 'lập trình mô hình' bằng ví dụ phân loại văn bản; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng dùng mô hình AI qua API hoặc chạy mô hình cục bộ, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, khái niệm mô hình ngôn ngữ, đánh giá và tối ưu; tài liệu nằm ngoài README. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tối ưu lời nhắc tự động gọi mô hình nhiều lần nên có thể tốn phí lớn: đặt hạn mức. Dữ liệu dùng để tối ưu có thể nhạy cảm. Tuyên bố 'tối ưu' bài chưa kiểm chứng; cần đo bằng dữ liệu kiểm tra riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>prompt (lời nhắc)</strong>: văn bản đưa cho mô hình ngôn ngữ; README nêu.</li><li><strong>declarative (khai báo)</strong>: mô tả việc cần làm thay vì cách làm; README nêu trong tên Declarative Self-improving Python.</li><li><strong>optimizer (thuật toán tối ưu)</strong>: phần tự cải thiện lời nhắc hoặc trọng số; README nêu thuật toán tối ưu.</li><li><strong>modular AI system (hệ thống AI dạng mô-đun)</strong>: hệ thống ghép từ nhiều bước nhỏ; README nêu.</li><li><strong>Foundation Model (mô hình nền tảng)</strong>: mô hình lớn huấn luyện sẵn; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và trỏ tới tài liệu dspy.ai; bài không chép lệnh. Cần Python và khóa API hoặc mô hình cục bộ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu dspy.ai.</li><li>Thử với bài toán nhỏ và mô hình cục bộ nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu 'lập trình mô hình thay vì viết lời nhắc'. Hãy đọc README của DSPy (https://github.com/stanfordnlp/dspy) và giải thích bằng tiếng Việt: DSPy là gì, thuật toán tối ưu làm gì, và vì sao tối ưu tự động có thể tốn phí. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), bài chưa đọc tài liệu dspy.ai. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Tuyên bố của tác giả chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>SDK và thư viện gọi dịch vụ AI dùng khóa API gắn với tài khoản và hóa đơn của bạn: không đưa khóa vào mã đưa lên kho công khai, không đặt khóa trong mã chạy ở trình duyệt, không dán khóa vào khung chat, đặt hạn mức chi tiêu và quyền tối thiểu, dùng biến môi trường hoặc kho bí mật, không gửi dữ liệu cá nhân hay bí mật tới dịch vụ khi chưa hiểu điều khoản lưu trữ, và kiểm tra đầu ra của mô hình trước khi dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>stanfordnlp</strong> có <strong>38.903 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/stanfordnlp/dspy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/stanfordnlp/dspy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 720. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38903; repo_id 587050620; README SHA256 4bee0c96a98daa5521ef4dc9ead9640fdaafd75fe8d5c8896db383838d5fd76f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/stanfordnlp/dspy",
+          "repo_id": "587050620",
+          "source_path": "",
+          "source_revision": "README-SHA256:4bee0c96a98daa5521ef4dc9ead9640fdaafd75fe8d5c8896db383838d5fd76f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stanfordnlp/dspy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và trỏ tới tài liệu dspy.ai; bài không chép lệnh. Cần Python và khóa API hoặc mô hình cục bộ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stanfordnlp/dspy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/stanfordnlp/dspy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "stanfordnlp/dspy",
+        "stars": 38903,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/stanfordnlp/dspy/main/README.md",
+        "readmeSha256": "4bee0c96a98daa5521ef4dc9ead9640fdaafd75fe8d5c8896db383838d5fd76f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

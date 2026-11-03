@@ -1,0 +1,42 @@
+{
+  "key": 718,
+  "repo": "ollama/ollama-js",
+  "repoId": "691303110",
+  "url": "https://github.com/ollama/ollama-js",
+  "stars": 4406,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-16T19:51:24Z",
+  "createdAt": "2023-09-13T22:58:51Z",
+  "defaultBranch": "main",
+  "description": "Ollama JavaScript library",
+  "homepage": "https://ollama.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ollama/ollama-js/main/README.md",
+    "sha256": "ce66a805bf199a639e9b4c84ee254bf8398269858ab536271bd5d05e56ffe642",
+    "bytes": 14189,
+    "sectionsRead": [
+      "Getting Started",
+      "Browser Usage",
+      "Streaming responses",
+      "Cloud Models"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu của Ollama.",
+    "Chưa thử.",
+    "Chưa kiểm tra bảo mật cổng Ollama."
+  ],
+  "runtimeValidated": false
+}
