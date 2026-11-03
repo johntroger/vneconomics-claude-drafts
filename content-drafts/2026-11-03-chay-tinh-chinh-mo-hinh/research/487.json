@@ -1,0 +1,41 @@
+{
+  "key": 487,
+  "repo": "vllm-project/vllm",
+  "repoId": "599547518",
+  "url": "https://github.com/vllm-project/vllm",
+  "stars": 96189,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:26:18Z",
+  "createdAt": "2023-02-09T11:23:20Z",
+  "defaultBranch": "main",
+  "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+  "homepage": "https://vllm.ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vllm-project/vllm/main/README.md",
+    "sha256": "4dc7399323b9660117f8cc1226afb7a81cdbb912dbb4ae74b66d89052417d11c",
+    "bytes": 5772,
+    "sectionsRead": [
+      "About",
+      "Getting Started",
+      "Contact Us"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.vllm.ai.",
+    "Chưa thử.",
+    "Chi phí phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

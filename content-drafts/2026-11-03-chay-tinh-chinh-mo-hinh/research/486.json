@@ -1,0 +1,41 @@
+{
+  "key": 486,
+  "repo": "ml-explore/mlx-lm",
+  "repoId": "946767878",
+  "url": "https://github.com/ml-explore/mlx-lm",
+  "stars": 7538,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T09:28:48Z",
+  "createdAt": "2025-03-11T16:38:30Z",
+  "defaultBranch": "main",
+  "description": "Run LLMs with MLX",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/main/README.md",
+    "sha256": "fc4dc67d70ca364ef8c2f94e84d170072d3c5f4fdfd2aa7a7be7a38a6b3d0008",
+    "bytes": 8569,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quick Start",
+      "Python API"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu LORA.md.",
+    "Chưa thử.",
+    "Yêu cầu bộ nhớ chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

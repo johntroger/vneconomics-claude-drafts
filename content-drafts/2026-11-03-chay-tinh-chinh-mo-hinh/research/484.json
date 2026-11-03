@@ -1,0 +1,43 @@
+{
+  "key": 484,
+  "repo": "mudler/LocalAI",
+  "repoId": "615869301",
+  "url": "https://github.com/mudler/LocalAI",
+  "stars": 50149,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:30:10Z",
+  "createdAt": "2023-03-18T22:58:02Z",
+  "defaultBranch": "master",
+  "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+  "homepage": "https://localai.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mudler/LocalAI/master/README.md",
+    "sha256": "b9853e3fe854c90cd9044b37134a4d5527f3df5bb4f0152a113cda64eb7ad944",
+    "bytes": 26006,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quickstart",
+      "Features",
+      "Supported Backends & Acceleration",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Hiệu năng thực tế chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

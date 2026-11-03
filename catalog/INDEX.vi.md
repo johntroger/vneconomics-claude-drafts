@@ -63,6 +63,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 61 — Mạng riêng và truyền thông riêng tư](learning-paths/61-mang-rieng-tu.vi.md) — Từ chặn quảng cáo cho cả nhà, VPN tự dựng đến mạng xã hội và nhắn tin liên thông; chú ý cổng quản trị mở ra Internet, lệnh cài tải từ mạng, luật về mã hóa và trách nhiệm khi tự vận hành.
 - [Lộ trình 62 — Môi trường nhất quán và chất lượng mã](learning-paths/62-moi-truong-chat-luong-ma.vi.md) — Từ biến môi trường theo thư mục và quản lý phiên bản công cụ đến Git hook, quy ước commit, phát hành và công cụ kiểm tra mã nhanh; chú ý chỉ cho chạy cấu hình từ kho đáng tin và sao lưu cấu hình shell.
 - [Lộ trình 63 — Ngôn ngữ và nền tảng chạy mã](learning-paths/63-ngon-ngu-runtime.vi.md) — Ba kho mã của ngôn ngữ và nền tảng: Go, .NET runtime và Odin; README đều ngắn hoặc dành cho người đóng góp, nên đây chỉ là điểm xuất phát để tìm nơi tải chính thức và tài liệu học.
+- [Lộ trình 64 — Chạy và tinh chỉnh mô hình AI](learning-paths/64-chay-tinh-chinh-mo-hinh.vi.md) — Từ chạy mô hình trên Mac hay máy cá nhân đến phục vụ ở quy mô máy chủ và tinh chỉnh; chú ý yêu cầu phần cứng, giấy phép của mô hình, telemetry, quyền ứng dụng xin và các tuyên bố hiệu năng của hãng.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -118,7 +119,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (169 bài)
+### Cơ bản (170 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -291,6 +292,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 479 | commitlint: kiểm tra thông điệp commit theo chuẩn Conventional Commits, cấu hình chia sẻ qua npm; README nêu yêu cầu Node.js 22.12+ và không hứa vá bản cũ | [conventional-changelog/commitlint](https://github.com/conventional-changelog/commitlint) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18798 | moi-truong-chat-luong-ma |
 | 480 | Oxc (Oxidation Compiler): bộ công cụ JavaScript và TypeScript viết bằng Rust hiệu năng cao gồm trình kiểm tra Oxlint, định dạng Oxfmt, parser, transformer, minifier, resolver | [oxc-project/oxc](https://github.com/oxc-project/oxc) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 23310 | moi-truong-chat-luong-ma |
 | 481 | Go: ngôn ngữ lập trình mã nguồn mở giúp xây phần mềm đơn giản, đáng tin cậy và hiệu quả; kho GitHub chỉ là bản sao của kho chính | [golang/go](https://github.com/golang/go) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 139542 | ngon-ngu-runtime |
+| 486 | MLX LM: gói Python tạo văn bản và tinh chỉnh mô hình ngôn ngữ lớn trên chip Apple silicon bằng MLX, tích hợp Hugging Face Hub | [ml-explore/mlx-lm](https://github.com/ml-explore/mlx-lm) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7538 | chay-tinh-chinh-mo-hinh |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -334,7 +336,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (133 bài)
+### Nâng cao (139 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -471,6 +473,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 478 | Changesets: công cụ quản lý phiên bản và nhật ký thay đổi cho kho nhiều gói (monorepo); README nói nhánh main là bản phát triển cho v3 | [changesets/changesets](https://github.com/changesets/changesets) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12555 | moi-truong-chat-luong-ma |
 | 482 | dotnet/runtime: kho mã nguồn của .NET runtime, thư viện và trình cài đặt dotnet; README chủ yếu dành cho người đóng góp và trỏ tới tài liệu Microsoft Learn | [dotnet/runtime](https://github.com/dotnet/runtime) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18404 | ngon-ngu-runtime |
 | 483 | Odin: ngôn ngữ lập trình đa dụng 'thay thế C' theo hướng dữ liệu, README có ví dụ mã và liên kết học, cài đặt, bản nightly | [odin-lang/Odin](https://github.com/odin-lang/Odin) | {'key': 'zlib', 'name': 'zlib License', 'spdx_id': 'Zlib', 'url': 'https://api.github.com/licenses/zlib', 'node_id': 'MDc6TGljZW5zZTI3'} | 12256 | ngon-ngu-runtime |
+| 484 | LocalAI: engine AI mã nguồn mở chạy mọi loại mô hình (văn bản, ảnh, giọng nói, video) trên nhiều phần cứng, tương thích API OpenAI và Anthropic, không bắt buộc có GPU | [mudler/LocalAI](https://github.com/mudler/LocalAI) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 50149 | chay-tinh-chinh-mo-hinh |
+| 485 | exo: nối nhiều thiết bị (Mac, Linux) thành một cụm AI để chạy mô hình lớn hơn bộ nhớ một máy; README nêu yêu cầu macOS và tuyên bố benchmark | [exo-explore/exo](https://github.com/exo-explore/exo) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 48158 | chay-tinh-chinh-mo-hinh |
+| 487 | vLLM: thư viện suy luận và phục vụ LLM nhanh, dễ dùng, từ Sky Computing Lab (UC Berkeley), có máy chủ API tương thích OpenAI và Anthropic | [vllm-project/vllm](https://github.com/vllm-project/vllm) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 96189 | chay-tinh-chinh-mo-hinh |
+| 488 | SGLang: framework suy luận mã nguồn mở cho mô hình ngôn ngữ, thị giác-ngôn ngữ và khuếch tán, tối ưu cho agent và phục vụ quy mô lớn | [sgl-project/sglang](https://github.com/sgl-project/sglang) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 38393 | chay-tinh-chinh-mo-hinh |
+| 489 | Unsloth: ứng dụng desktop để chạy và huấn luyện mô hình AI, tinh chỉnh nhanh gấp đôi và ít VRAM hơn 70% theo tuyên bố của hãng; giấy phép kép Apache 2.0 và AGPL-3.0 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 78991 | chay-tinh-chinh-mo-hinh |
+| 490 | Axolotl: công cụ tinh chỉnh mô hình AI bằng tệp cấu hình, hỗ trợ nhiều phương pháp (LoRA, DPO, GRPO) và mô hình; README có telemetry bật sẵn, tắt bằng biến môi trường | [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 12658 | chay-tinh-chinh-mo-hinh |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

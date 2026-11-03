@@ -1,0 +1,43 @@
+{
+  "key": 485,
+  "repo": "exo-explore/exo",
+  "repoId": "819554665",
+  "url": "https://github.com/exo-explore/exo",
+  "stars": 48158,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:10:55Z",
+  "createdAt": "2024-06-24T18:36:22Z",
+  "defaultBranch": "main",
+  "description": "Run frontier AI locally.",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/exo-explore/exo/main/README.md",
+    "sha256": "4235f672b25854339f69dab07f41a28940e36e989b8aeed3116578b5efa0f3aa",
+    "bytes": 28036,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Dashboard",
+      "Benchmarks",
+      "Quick Start"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cài trên Linux và biến môi trường.",
+    "Chưa thử.",
+    "Số liệu benchmark chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

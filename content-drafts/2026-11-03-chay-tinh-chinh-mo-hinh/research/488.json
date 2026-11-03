@@ -1,0 +1,43 @@
+{
+  "key": 488,
+  "repo": "sgl-project/sglang",
+  "repoId": "740303686",
+  "url": "https://github.com/sgl-project/sglang",
+  "stars": 38393,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:18:45Z",
+  "createdAt": "2024-01-08T04:15:52Z",
+  "defaultBranch": "main",
+  "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+  "homepage": "https://sglang.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/main/README.md",
+    "sha256": "a7654a48a8cd08c824e4445cb906405704148a3c55fb84362c7071d27397303c",
+    "bytes": 9472,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Get Started",
+      "Supported Hardware",
+      "SGL Ecosystem",
+      "Development and Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa so sánh với vLLM bằng thực tế."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,44 @@
+{
+  "key": 489,
+  "repo": "unslothai/unsloth",
+  "repoId": "725205304",
+  "url": "https://github.com/unslothai/unsloth",
+  "stars": 78991,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:16:40Z",
+  "createdAt": "2023-11-29T16:50:09Z",
+  "defaultBranch": "main",
+  "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+  "homepage": "https://unsloth.ai/docs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/unslothai/unsloth/main/README.md",
+    "sha256": "878500534845dfa63eddd9ef7bd08192a69f870821375d34d9fd148c8ad7884a",
+    "bytes": 23809,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Get started",
+      "Features",
+      "Unsloth Start",
+      "Install",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Tuyên bố hiệu năng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

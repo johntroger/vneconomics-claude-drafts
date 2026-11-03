@@ -7177,5 +7177,171 @@
   "related": [
    "dotnet-runtime"
   ]
+ },
+ {
+  "key": 484,
+  "slug": "localai",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "LocalAI: engine AI mã nguồn mở chạy mọi loại mô hình (văn bản, ảnh, giọng nói, video) trên nhiều phần cứng, tương thích API OpenAI và Anthropic, không bắt buộc có GPU",
+  "repo": "mudler/LocalAI",
+  "stars": 50149,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "mlx-lm",
+   "unsloth"
+  ]
+ },
+ {
+  "key": 485,
+  "slug": "exo",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "exo: nối nhiều thiết bị (Mac, Linux) thành một cụm AI để chạy mô hình lớn hơn bộ nhớ một máy; README nêu yêu cầu macOS và tuyên bố benchmark",
+  "repo": "exo-explore/exo",
+  "stars": 48158,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "axolotl",
+   "vllm"
+  ]
+ },
+ {
+  "key": 486,
+  "slug": "mlx-lm",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "MLX LM: gói Python tạo văn bản và tinh chỉnh mô hình ngôn ngữ lớn trên chip Apple silicon bằng MLX, tích hợp Hugging Face Hub",
+  "repo": "ml-explore/mlx-lm",
+  "stars": 7538,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "localai"
+  ]
+ },
+ {
+  "key": 487,
+  "slug": "vllm",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "vLLM: thư viện suy luận và phục vụ LLM nhanh, dễ dùng, từ Sky Computing Lab (UC Berkeley), có máy chủ API tương thích OpenAI và Anthropic",
+  "repo": "vllm-project/vllm",
+  "stars": 96189,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "exo",
+   "sglang"
+  ]
+ },
+ {
+  "key": 488,
+  "slug": "sglang",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "SGLang: framework suy luận mã nguồn mở cho mô hình ngôn ngữ, thị giác-ngôn ngữ và khuếch tán, tối ưu cho agent và phục vụ quy mô lớn",
+  "repo": "sgl-project/sglang",
+  "stars": 38393,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "vllm"
+  ]
+ },
+ {
+  "key": 489,
+  "slug": "unsloth",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "Unsloth: ứng dụng desktop để chạy và huấn luyện mô hình AI, tinh chỉnh nhanh gấp đôi và ít VRAM hơn 70% theo tuyên bố của hãng; giấy phép kép Apache 2.0 và AGPL-3.0",
+  "repo": "unslothai/unsloth",
+  "stars": 78991,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "axolotl",
+   "localai"
+  ]
+ },
+ {
+  "key": 490,
+  "slug": "axolotl",
+  "group": "2026-11-03-chay-tinh-chinh-mo-hinh",
+  "title": "Axolotl: công cụ tinh chỉnh mô hình AI bằng tệp cấu hình, hỗ trợ nhiều phương pháp (LoRA, DPO, GRPO) và mô hình; README có telemetry bật sẵn, tắt bằng biến môi trường",
+  "repo": "axolotl-ai-cloud/axolotl",
+  "stars": 12658,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "exo",
+   "unsloth"
+  ]
  }
 ]
