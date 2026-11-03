@@ -1,0 +1,43 @@
+{
+  "key": 469,
+  "repo": "juanfont/headscale",
+  "repoId": "273871859",
+  "url": "https://github.com/juanfont/headscale",
+  "stars": 45312,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:45:46Z",
+  "createdAt": "2020-06-21T09:21:05Z",
+  "defaultBranch": "main",
+  "description": "An open source, self-hosted implementation of the Tailscale control server",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/juanfont/headscale/main/README.md",
+    "sha256": "475a4074034044c0cdf991cab5ba4eef8954f05474bd711f07b91805635d9d7d",
+    "bytes": 6508,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What is Tailscale",
+      "Design goal",
+      "Running headscale",
+      "Builds from main"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu headscale.net.",
+    "Chưa thử.",
+    "Chưa so sánh với dịch vụ Tailscale chính thức."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,43 @@
+{
+  "key": 471,
+  "repo": "AdguardTeam/AdGuardHome",
+  "repoId": "62712899",
+  "url": "https://github.com/AdguardTeam/AdGuardHome",
+  "stars": 38082,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:38:53Z",
+  "createdAt": "2016-07-06T10:31:47Z",
+  "defaultBranch": "master",
+  "description": "Network-wide ads & trackers blocking DNS server",
+  "homepage": "https://adguard.com/adguard-home/overview.html",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/README.md",
+    "sha256": "380a60a15069611a45a97f770c1441de8db71446cdb85f17bdd8c56df3dcb10a",
+    "bytes": 22751,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting Started",
+      "Comparing AdGuard Home to other solutions",
+      "Known limitations",
+      "Privacy"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa kiểm chứng so sánh với Pi-hole."
+  ],
+  "runtimeValidated": false
+}

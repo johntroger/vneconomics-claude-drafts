@@ -1,0 +1,42 @@
+{
+  "key": 470,
+  "repo": "wg-easy/wg-easy",
+  "repoId": "369764441",
+  "url": "https://github.com/wg-easy/wg-easy",
+  "stars": 27380,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T14:48:27Z",
+  "createdAt": "2021-05-22T09:12:05Z",
+  "defaultBranch": "master",
+  "description": "The easiest way to run WireGuard VPN + Web-based Admin UI.",
+  "homepage": "https://wg-easy.github.io/wg-easy/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wg-easy/wg-easy/master/README.md",
+    "sha256": "91a8bfb4397dd96ecfa1599a7eeb02fb8183208900caecc418a5a867e8db2564",
+    "bytes": 4964,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc trang tài liệu riêng.",
+    "Chưa thử.",
+    "Chưa kiểm tra cấu hình bảo mật chi tiết."
+  ],
+  "runtimeValidated": false
+}

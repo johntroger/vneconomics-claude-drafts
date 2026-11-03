@@ -1,0 +1,42 @@
+{
+  "key": 473,
+  "repo": "element-hq/synapse",
+  "repoId": "731190011",
+  "url": "https://github.com/element-hq/synapse",
+  "stars": 4755,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:47:00Z",
+  "createdAt": "2023-12-13T14:40:43Z",
+  "defaultBranch": "develop",
+  "description": "Synapse: Matrix homeserver written in Python/Twisted + Rust",
+  "homepage": "https://element-hq.github.io/synapse",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/element-hq/synapse/develop/README.rst",
+    "sha256": "fc5c10cae0cd87bd3466ee84f676c520125d74cc12e169f55935ee156346bf42",
+    "bytes": 6691,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting started",
+      "Standalone installation and configuration",
+      "Troubleshooting and support"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu element-hq.github.io/synapse.",
+    "Chưa thử.",
+    "Giá ESS Pro chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

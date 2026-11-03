@@ -6823,5 +6823,147 @@
   "related": [
    "continue"
   ]
+ },
+ {
+  "key": 469,
+  "slug": "headscale",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "Headscale: máy chủ điều khiển Tailscale mã nguồn mở tự host cho một mạng riêng (tailnet) dùng cá nhân hoặc tổ chức nhỏ",
+  "repo": "juanfont/headscale",
+  "stars": 45312,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "signal-android",
+   "wg-easy"
+  ]
+ },
+ {
+  "key": 470,
+  "slug": "wg-easy",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "wg-easy: cài và quản lý WireGuard trên máy Linux bằng giao diện web, tạo mã QR cho từng máy khách",
+  "repo": "wg-easy/wg-easy",
+  "stars": 27380,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "adguardhome",
+   "headscale"
+  ]
+ },
+ {
+  "key": 471,
+  "slug": "adguardhome",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "AdGuard Home: máy chủ DNS chặn quảng cáo và theo dõi cho cả mạng gia đình; README nêu rõ giới hạn của chặn ở mức DNS",
+  "repo": "AdguardTeam/AdGuardHome",
+  "stars": 38082,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "wg-easy"
+  ]
+ },
+ {
+  "key": 472,
+  "slug": "mastodon",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "Mastodon: máy chủ mạng xã hội mã nguồn mở theo ActivityPub, thuộc Fediverse; README nêu yêu cầu Ruby, PostgreSQL, Redis, Node.js, FFmpeg",
+  "repo": "mastodon/mastodon",
+  "stars": 50467,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "signal-android",
+   "synapse"
+  ]
+ },
+ {
+  "key": 473,
+  "slug": "synapse",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "Synapse: máy chủ Matrix mã nguồn mở của Element, README nói không có hỗ trợ trừ khi có thuê bao Element và có giấy phép thương mại thay thế",
+  "repo": "element-hq/synapse",
+  "stars": 4755,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "mastodon"
+  ]
+ },
+ {
+  "key": 474,
+  "slug": "signal-android",
+  "group": "2026-11-03-mang-rieng-tu",
+  "title": "Signal Android: mã nguồn ứng dụng nhắn tin Signal cho Android, README nêu thông báo về mật mã học và quy định xuất khẩu",
+  "repo": "signalapp/Signal-Android",
+  "stars": 29569,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "headscale",
+   "mastodon"
+  ]
  }
 ]
