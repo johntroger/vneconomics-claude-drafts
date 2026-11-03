@@ -1,0 +1,42 @@
+{
+  "key": 726,
+  "repo": "erlang/otp",
+  "repoId": "374927",
+  "url": "https://github.com/erlang/otp",
+  "stars": 12353,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T12:02:44Z",
+  "createdAt": "2009-11-16T17:17:57Z",
+  "defaultBranch": "master",
+  "description": "Erlang/OTP",
+  "homepage": "http://erlang.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/erlang/otp/master/README.md",
+    "sha256": "6be87ac999e8853c5af0eb96e8c229094c2709ed16a545deee0412248f007536",
+    "bytes": 4321,
+    "sectionsRead": [
+      "Examples",
+      "Installation",
+      "Bug Reports",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu erlang.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Elixir."
+  ],
+  "runtimeValidated": false
+}

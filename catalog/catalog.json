@@ -12799,5 +12799,147 @@
   "related": [
    "google-genai"
   ]
+ },
+ {
+  "key": 721,
+  "slug": "vlang",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Ngôn ngữ V: ngôn ngữ lập trình đơn giản học được trong một cuối tuần, biên dịch nhanh, hiệu năng như C (backend chính biên dịch ra mã C dễ đọc), an toàn (không null, không biến toàn cục), dịch C sang V, tải lại mã nóng; README ghi sẽ còn thay đổi trước bản 1.0",
+  "repo": "vlang/v",
+  "stars": 38088,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "luau",
+   "roc"
+  ]
+ },
+ {
+  "key": 722,
+  "slug": "luau",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Luau: ngôn ngữ kịch bản nhúng nhanh, nhỏ, an toàn, có kiểu dần dần, dẫn xuất từ Lua, tương thích Lua 5.1, được Roblox dùng; kèm công cụ dòng lệnh luau (REPL) và luau-analyze (kiểm tra kiểu và lint), giấy phép MIT",
+  "repo": "luau-lang/luau",
+  "stars": 6052,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "vlang"
+  ]
+ },
+ {
+  "key": 723,
+  "slug": "wasmer",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Wasmer: chạy ứng dụng trong hộp cát nhanh, an toàn, nhẹ, tại máy, trên đám mây hoặc trong trình duyệt; kiểm soát quyền tệp, mạng, môi trường, chạy Python, JavaScript, Bash từ kho gói, có Wasmer SDK nhúng; README có lệnh cài tải tập lệnh từ mạng",
+  "repo": "wasmerio/wasmer",
+  "stars": 21221,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "wasmtime"
+  ]
+ },
+ {
+  "key": 724,
+  "slug": "wasmtime",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Wasmtime: môi trường chạy WebAssembly nhanh, an toàn của Bytecode Alliance xây trên bộ sinh mã Cranelift, tập trung vào đúng đắn và bảo mật, kiểm thử fuzz 24/7, hỗ trợ nhiều ngôn ngữ nhúng; README có lệnh cài tải tập lệnh từ mạng",
+  "repo": "bytecodealliance/wasmtime",
+  "stars": 18823,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "erlang-otp",
+   "wasmer"
+  ]
+ },
+ {
+  "key": 725,
+  "slug": "roc",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Roc: ngôn ngữ lập trình hàm đang trong giai đoạn đang làm dở (README ghi chưa sẵn sàng cho bản 0.1) với hướng dẫn cài, bài hướng dẫn, tài liệu thư viện chuẩn, ví dụ, hỏi đáp và nhóm trò chuyện; giấy phép UPL-1.0 theo GitHub",
+  "repo": "roc-lang/roc",
+  "stars": 6184,
+  "license": {
+   "key": "upl-1.0",
+   "name": "Universal Permissive License v1.0",
+   "spdx_id": "UPL-1.0",
+   "url": "https://api.github.com/licenses/upl-1.0",
+   "node_id": "MDc6TGljZW5zZTMz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "erlang-otp",
+   "vlang"
+  ]
+ },
+ {
+  "key": 726,
+  "slug": "erlang-otp",
+  "group": "2026-11-03-ngon-ngu-lap-trinh-va-moi-truong-chay",
+  "title": "Erlang/OTP: ngôn ngữ Erlang và hệ thống chạy để xây hệ thống thời gian thực mềm có khả năng mở rộng lớn và tính sẵn sàng cao, cùng thư viện OTP; README có ví dụ Hello World, cài đặt, báo lỗi, đóng góp; giấy phép Apache 2.0",
+  "repo": "erlang/otp",
+  "stars": 12353,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "roc",
+   "wasmtime"
+  ]
  }
 ]

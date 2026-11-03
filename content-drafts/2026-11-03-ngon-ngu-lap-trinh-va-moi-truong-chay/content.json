@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ngon-ngu-lap-trinh",
+  "batch": 116,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 721,
+      "batch": 116,
+      "slug": "vlang",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ngôn ngữ V: ngôn ngữ lập trình đơn giản học được trong một cuối tuần, biên dịch nhanh, hiệu năng như C (backend chính biên dịch ra mã C dễ đọc), an toàn (không null, không biến toàn cục), dịch C sang V, tải lại mã nóng; README ghi sẽ còn thay đổi trước bản 1.0",
+        "excerpt": "Hiểu V là ngôn ngữ lập trình tuyên bố đơn giản (học trong một cuối tuần), biên dịch nhanh, hiệu năng như C, an toàn (không null, không biến toàn cục, mặc định bất biến), có dịch mã C sang V và tải lại mã nóng, quản lý bộ nhớ linh hoạt; README nói V tương đối ổn định nhưng sẽ còn thay đổi trước bản 1.0 và cách cài chủ yếu là từ mã nguồn.",
+        "content": "<p>README mở đầu với các liên kết tài liệu, nhật ký thay đổi, tốc độ, đóng góp và thiết kế trình biên dịch. Mục Key Features of V nêu: đơn giản (học trong một cuối tuần), biên dịch nhanh (khoảng 110 nghìn dòng mỗi giây với backend Clang và khoảng 500 nghìn dòng mỗi giây với backend gốc và tcc, đo trên máy cụ thể của tác giả), dễ phát triển (V tự biên dịch trong chưa đến một giây), hiệu năng nhanh như C (backend chính sinh mã C dễ đọc), an toàn (không null, không biến toàn cục, không hành vi không xác định đang hoàn thiện, bất biến theo mặc định), dịch C sang V, tải lại mã nóng, quản lý bộ nhớ linh hoạt (bộ gom rác theo mặc định, thủ công hoặc tự giải phóng bằng cờ). Các tuyên bố tốc độ và an toàn là của chính tác giả, bài chưa kiểm chứng. Mục Stability nói V hiện tương đối ổn định nhưng sẽ còn thay đổi cú pháp và API lõi (như mô-đun os) trước bản 1.0, sau 1.0 sẽ đóng băng tính năng giống Go. Mục cài từ mã nguồn trên nhiều hệ điều hành (Linux, macOS, Windows, BSD, Solaris, WSL, Void Linux, Docker, Alpine, FreeBSD, OpenBSD, Termux/Android), yêu cầu trình biên dịch C, tạo liên kết tượng trưng; bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>V là ngôn ngữ lập trình nhỏ gọn, cố gắng đơn giản như Go và nhanh như C. Bạn viết mã gọn, V dịch ra chương trình chạy nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'không null' và 'bất biến theo mặc định' giúp tránh lỗi nào; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm lập trình và trình biên dịch C; hệ sinh thái nhỏ hơn các ngôn ngữ lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói còn thay đổi trước bản 1.0 nên mã có thể phải sửa; hệ sinh thái thư viện còn nhỏ. Các tuyên bố tốc độ, 'an toàn' và 'như C' bài chưa kiểm chứng. Cài từ mã nguồn cần trình biên dịch C: dùng máy thử.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>compiler (trình biên dịch)</strong>: chương trình dịch mã sang chương trình chạy được; README nêu.</li><li><strong>garbage collector (bộ gom rác)</strong>: cơ chế tự giải phóng bộ nhớ; README nêu mặc định.</li><li><strong>hot code reloading (tải lại mã nóng)</strong>: đổi mã khi chương trình đang chạy; README nêu.</li><li><strong>immutability (bất biến)</strong>: giá trị không thể sửa sau khi tạo; README nêu mặc định.</li><li><strong>feature freeze (đóng băng tính năng)</strong>: không thêm thay đổi phá vỡ; README nêu sau bản 1.0.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installing V from source trên nhiều hệ điều hành và Docker; bài không chép lệnh. Cần trình biên dịch C. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Key Features of V.</li><li>Đọc mục Stability và cân nhắc việc ngôn ngữ còn thay đổi.</li><li>Chỉ cài từ mã nguồn trên máy thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tò mò ngôn ngữ lập trình mới. Hãy đọc README của V (https://github.com/vlang/v) và giải thích bằng tiếng Việt: các điểm mạnh README nêu, vì sao 'còn thay đổi trước 1.0' ảnh hưởng đến việc dùng cho dự án thật, và các tuyên bố nào chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 25 KB), phần lớn là hướng dẫn cài, bài chưa đọc tài liệu docs.md. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Tuyên bố tốc độ và an toàn chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vlang</strong> có <strong>38.088 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vlang/v/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vlang/v\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 721. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38088; repo_id 169677297; README SHA256 a1a082117c16682a90383a4710c988a320c68bcd888a159e0917d7a5535890d2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vlang/v",
+          "repo_id": "169677297",
+          "source_path": "",
+          "source_revision": "README-SHA256:a1a082117c16682a90383a4710c988a320c68bcd888a159e0917d7a5535890d2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vlang/v",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installing V from source trên nhiều hệ điều hành và Docker; bài không chép lệnh. Cần trình biên dịch C. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vlang/v/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vlang/v/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vlang/v",
+        "stars": 38088,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vlang/v/master/README.md",
+        "readmeSha256": "a1a082117c16682a90383a4710c988a320c68bcd888a159e0917d7a5535890d2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 722,
+      "batch": 116,
+      "slug": "luau",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Luau: ngôn ngữ kịch bản nhúng nhanh, nhỏ, an toàn, có kiểu dần dần, dẫn xuất từ Lua, tương thích Lua 5.1, được Roblox dùng; kèm công cụ dòng lệnh luau (REPL) và luau-analyze (kiểm tra kiểu và lint), giấy phép MIT",
+        "excerpt": "Hiểu Luau là ngôn ngữ kịch bản nhúng, nhanh, nhỏ, an toàn và có kiểu dần dần, dẫn xuất từ Lua; thiết kế tương thích ngược với Lua 5.1 và thêm tính năng; Roblox dùng cho mã trò chơi và phần lớn mã ứng dụng, trình soạn; kho chứa cài đặt ngôn ngữ và công cụ dòng lệnh luau (REPL, chạy tệp trong môi trường cô lập) và luau-analyze (kiểm tra kiểu và lint).",
+        "content": "<p>README tả Luau (đọc là lu-aw) là ngôn ngữ kịch bản nhúng nhanh, nhỏ, an toàn, có kiểu dần dần, dẫn xuất từ Lua. Luau thiết kế tương thích ngược với Lua 5.1, kèm một số tính năng của các bản Lua mới và nhiều tính năng mở rộng. Roblox dùng Luau để viết mã trò chơi, cùng một phần lớn mã ứng dụng và trình soạn Roblox Studio. Kho chứa mã cài đặt ngôn ngữ và công cụ đi kèm; tài liệu ở luau.org. Mục Usage: Luau là ngôn ngữ nhúng nhưng cũng có hai công cụ dòng lệnh mặc định: luau (REPL và chạy tệp, REPL chạy trong môi trường cô lập không truy cập hệ tệp ngoài một số khả năng) và luau-analyze (kiểm tra kiểu và lint theo cấu hình tệp). Mục Installation: tải tệp nhị phân từ bản phát hành, hoặc dùng gói do bên khác duy trì (không do nhóm Luau duy trì) qua các trình quản lý gói; bài không chép lệnh. Mục Building, Testing, Dependencies và License nêu giấy phép MIT và đề nghị ghi nguồn khi tích hợp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn thêm khả năng viết kịch bản vào ứng dụng hay trò chơi, bạn cần một ngôn ngữ nhỏ, an toàn để chạy mã người dùng. Luau là ngôn ngữ như vậy, phát triển từ Lua và có kiểm tra kiểu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'ngôn ngữ nhúng' và 'kiểu dần dần'; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm lập trình; muốn nhúng vào ứng dụng cần C++ hoặc cầu nối. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> REPL cô lập là mặc định, nhưng khi nhúng vào ứng dụng bạn phải tự quyết định quyền cho mã chạy: không cấp quyền rộng cho mã không tin cậy. Gói phân phối do bên khác duy trì không do nhóm Luau duy trì. Bài chưa so sánh với Lua gốc.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>embeddable (nhúng được)</strong>: có thể gắn vào ứng dụng khác; README nêu.</li><li><strong>gradually typed (kiểu dần dần)</strong>: cho phép thêm kiểu từng phần; README nêu.</li><li><strong>REPL</strong>: cửa sổ gõ và chạy mã từng dòng; README nêu.</li><li><strong>linter</strong>: công cụ soát lỗi và quy ước; README nêu luau-analyze làm cả lint.</li><li><strong>sandbox (môi trường cô lập)</strong>: nơi chạy mã bị hạn chế quyền; README nêu REPL chạy trong đó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (tệp nhị phân và gói bên khác) và Building; bài không chép lệnh. Cần trình biên dịch C++ nếu tự xây. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Usage.</li><li>Đọc trang getting-started trên luau.org.</li><li>Thử REPL với mã đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm kịch bản vào ứng dụng. Hãy đọc README của Luau (https://github.com/luau-lang/luau) và giải thích bằng tiếng Việt: Luau khác Lua ở đâu, kiểu dần dần nghĩa là gì, và hai công cụ luau và luau-analyze dùng để làm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,3 KB, bài chưa đọc tài liệu luau.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>luau-lang</strong> có <strong>6.052 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/luau-lang/luau/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/luau-lang/luau\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 722. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6052; repo_id 148821256; README SHA256 12643b91979101103346ef110cb5759bc89a0135afe6f9fb6c7e63080f54b20a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/luau-lang/luau",
+          "repo_id": "148821256",
+          "source_path": "",
+          "source_revision": "README-SHA256:12643b91979101103346ef110cb5759bc89a0135afe6f9fb6c7e63080f54b20a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/luau-lang/luau",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (tệp nhị phân và gói bên khác) và Building; bài không chép lệnh. Cần trình biên dịch C++ nếu tự xây. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/luau-lang/luau/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/luau-lang/luau/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "luau-lang/luau",
+        "stars": 6052,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/luau-lang/luau/master/README.md",
+        "readmeSha256": "12643b91979101103346ef110cb5759bc89a0135afe6f9fb6c7e63080f54b20a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 723,
+      "batch": 116,
+      "slug": "wasmer",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Wasmer: chạy ứng dụng trong hộp cát nhanh, an toàn, nhẹ, tại máy, trên đám mây hoặc trong trình duyệt; kiểm soát quyền tệp, mạng, môi trường, chạy Python, JavaScript, Bash từ kho gói, có Wasmer SDK nhúng; README có lệnh cài tải tập lệnh từ mạng",
+        "excerpt": "Hiểu Wasmer là môi trường chạy ứng dụng trong hộp cát (sandbox) nhanh, an toàn, nhẹ: kiểm soát quyền truy cập tệp, mạng, biến môi trường, có thể chạy Python, JavaScript, Bash từ kho gói, nhúng vào ứng dụng bằng Wasmer SDK; README có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README tả Wasmer chạy ứng dụng của bạn trong các hộp cát nhanh, an toàn và nhẹ: tại máy, trên đám mây hoặc trong trình duyệt. Điểm nêu: an toàn theo mặc định (bạn kiểm soát quyền tệp, mạng, môi trường), nhẹ (khởi động nhanh, bộ nhớ nhỏ), sẵn sàng chạy (Python, JavaScript, Bash và nhiều thứ khác từ kho gói), nhúng được (thêm hộp cát vào ứng dụng bằng Wasmer SDK); đây là cách tự mô tả của dự án, bài chưa kiểm chứng. Mục Run your first sandbox có lệnh cài CLI tải tập lệnh từ mạng cho macOS và Linux, lệnh PowerShell cho Windows và cài qua Homebrew; bài không chép lệnh và khuyên đọc tập lệnh trước. Mục Wasmer SDK nói tạo hộp cát, chọn công cụ và chạy mã ngay trong ứng dụng; có phần cài SDK, chạy mã trong hộp cát, đi tiếp. Mục Software you can run liệt kê phần mềm chạy được từ kho (Python, ứng dụng tương thích Node.js). Có mục phát triển và đóng góp, cộng đồng. Mục License nêu Wasmer theo MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn chạy mã không tin cậy, ví dụ mã do người dùng gửi lên hay mã do AI viết, mà không sợ nó phá máy? Hộp cát như Wasmer chạy mã trong một căn phòng kín, chỉ cho phép những gì bạn cho phép.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'hộp cát' và 'WebAssembly' bằng ví dụ chạy một đoạn Python nhỏ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm WebAssembly, hộp cát và dòng lệnh; nhúng SDK cần lập trình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hộp cát chỉ an toàn khi bạn cấu hình đúng quyền: không cấp quyền tệp và mạng rộng. README nói 'an toàn theo mặc định': tuyên bố của dự án, bài chưa kiểm chứng. Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh. Gói trong kho là phần mềm của bên khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>sandbox (hộp cát)</strong>: môi trường chạy mã bị hạn chế quyền; README nêu.</li><li><strong>WebAssembly</strong>: định dạng mã chạy an toàn và nhanh ở nhiều nơi; bài chú thích biên tập vì Wasmer dựa trên nó.</li><li><strong>runtime (môi trường chạy)</strong>: phần mềm chạy chương trình; bài chú thích biên tập.</li><li><strong>SDK</strong>: bộ công cụ nhúng vào ứng dụng; README nêu Wasmer SDK.</li><li><strong>registry (kho gói)</strong>: nơi chứa các gói phần mềm chạy được; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục cài CLI (tập lệnh tải từ mạng, PowerShell, Homebrew) và cài SDK; bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Software you can run.</li><li>Đọc mục Wasmer SDK.</li><li>Chọn cách cài sau khi đã đọc tập lệnh.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chạy mã không tin cậy trong hộp cát. Hãy đọc README của Wasmer (https://github.com/wasmerio/wasmer) và giải thích bằng tiếng Việt: hộp cát làm gì, quyền tệp và mạng được kiểm soát thế nào, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 10,4 KB, bài chưa đọc tài liệu docs.wasmer.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wasmerio</strong> có <strong>21.221 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wasmerio/wasmer/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wasmerio/wasmer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 723. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21221; repo_id 152572186; README SHA256 5ba150fa9b15ea3dbe37fc0da02722a4b41067f762982b8e5a6747b53eb1d198.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wasmerio/wasmer",
+          "repo_id": "152572186",
+          "source_path": "",
+          "source_revision": "README-SHA256:5ba150fa9b15ea3dbe37fc0da02722a4b41067f762982b8e5a6747b53eb1d198",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wasmerio/wasmer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục cài CLI (tập lệnh tải từ mạng, PowerShell, Homebrew) và cài SDK; bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wasmerio/wasmer/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wasmerio/wasmer/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wasmerio/wasmer",
+        "stars": 21221,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wasmerio/wasmer/main/README.md",
+        "readmeSha256": "5ba150fa9b15ea3dbe37fc0da02722a4b41067f762982b8e5a6747b53eb1d198",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 724,
+      "batch": 116,
+      "slug": "wasmtime",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Wasmtime: môi trường chạy WebAssembly nhanh, an toàn của Bytecode Alliance xây trên bộ sinh mã Cranelift, tập trung vào đúng đắn và bảo mật, kiểm thử fuzz 24/7, hỗ trợ nhiều ngôn ngữ nhúng; README có lệnh cài tải tập lệnh từ mạng",
+        "excerpt": "Hiểu Wasmtime là môi trường chạy WebAssembly (và WASI) nhanh và an toàn do Bytecode Alliance phát triển: xây trên bộ sinh mã Cranelift, tập trung vào đúng đắn và bảo mật qua quy trình RFC và kiểm thử fuzz liên tục, có thể nhúng vào nhiều ngôn ngữ; README có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README có mục Installation: CLI Wasmtime cài được trên Linux và macOS bằng một tập lệnh tải từ mạng (bài không chép lệnh và khuyên đọc tập lệnh trước), đặt vào thư mục của biến môi trường WASMTIME_HOME; Windows hoặc người muốn thêm lựa chọn tải trình cài đặt từ trang phát hành và xem sách trực tuyến. Mục Example: nếu có trình biên dịch Rust bạn có thể biên dịch một chương trình nhỏ ra WebAssembly và chạy. Mục Features: nhanh (xây trên trình sinh mã Cranelift, sinh mã chất lượng cao lúc chạy hoặc trước), an toàn (phát triển tập trung vào đúng đắn và bảo mật, tận dụng bảo đảm an toàn bộ nhớ của Rust, mỗi tính năng qua quy trình RFC, được kiểm thử fuzz 24/7 nhờ OSS Fuzz của Google, có chính sách bảo mật rõ ràng, có biện pháp giảm nhẹ cho các lỗ hổng như Spectre); các mô tả này là của chính dự án, bài chưa kiểm chứng. Mục Language Support nói cách nhúng Wasmtime vào ngôn ngữ khác, và mục tài liệu. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>WebAssembly cho phép chạy cùng một chương trình ở nhiều nơi trong hộp cát an toàn. Wasmtime là công cụ chạy chương trình đó trên máy chủ, ứng dụng hay dòng lệnh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích WASI và vì sao cần quyền rõ ràng cho chương trình WebAssembly; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm WebAssembly, WASI và thường có Rust để biên dịch ví dụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hộp cát chỉ an toàn khi cấu hình đúng quyền; các mô tả 'nhanh' và 'an toàn' là của dự án, bài chưa kiểm chứng. Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>WebAssembly</strong>: định dạng mã chạy an toàn và nhanh ở nhiều nơi; README nêu.</li><li><strong>Cranelift</strong>: bộ sinh mã máy; README nêu Wasmtime xây trên nó.</li><li><strong>fuzzing (kiểm thử fuzz)</strong>: thử bằng đầu vào ngẫu nhiên để tìm lỗi; README nêu kiểm thử 24/7.</li><li><strong>embedder (bên nhúng)</strong>: ứng dụng gắn Wasmtime vào; README nêu.</li><li><strong>RFC</strong>: quy trình đề xuất và thảo luận tính năng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (tập lệnh tải từ mạng và trang phát hành); bài không chép lệnh. Cần Rust nếu muốn biên dịch ví dụ. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và Language Support.</li><li>Đọc sách docs.wasmtime.dev.</li><li>Chọn cách cài sau khi đọc tập lệnh hoặc dùng trang phát hành.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tìm hiểu WebAssembly. Hãy đọc README của Wasmtime (https://github.com/bytecodealliance/wasmtime) và giải thích bằng tiếng Việt: Wasmtime là gì, Cranelift và kiểm thử fuzz dùng để làm gì, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,7 KB, bài chưa đọc sách docs.wasmtime.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>bytecodealliance</strong> có <strong>18.823 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/bytecodealliance/wasmtime/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/bytecodealliance/wasmtime\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 724. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18823; repo_id 101767772; README SHA256 61b003ff4ddfbe6123ae3a1123e39e379f1559edc44634e6c14ba3f2671f9fd8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/bytecodealliance/wasmtime",
+          "repo_id": "101767772",
+          "source_path": "",
+          "source_revision": "README-SHA256:61b003ff4ddfbe6123ae3a1123e39e379f1559edc44634e6c14ba3f2671f9fd8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bytecodealliance/wasmtime",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (tập lệnh tải từ mạng và trang phát hành); bài không chép lệnh. Cần Rust nếu muốn biên dịch ví dụ. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bytecodealliance/wasmtime/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/bytecodealliance/wasmtime/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "bytecodealliance/wasmtime",
+        "stars": 18823,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/bytecodealliance/wasmtime/main/README.md",
+        "readmeSha256": "61b003ff4ddfbe6123ae3a1123e39e379f1559edc44634e6c14ba3f2671f9fd8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 725,
+      "batch": 116,
+      "slug": "roc",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Roc: ngôn ngữ lập trình hàm đang trong giai đoạn đang làm dở (README ghi chưa sẵn sàng cho bản 0.1) với hướng dẫn cài, bài hướng dẫn, tài liệu thư viện chuẩn, ví dụ, hỏi đáp và nhóm trò chuyện; giấy phép UPL-1.0 theo GitHub",
+        "excerpt": "Hiểu Roc là ngôn ngữ lập trình hàm hiện còn đang làm dở: README ghi rõ chưa sẵn sàng cho bản 0.1 nhưng có hướng dẫn cài, bài hướng dẫn, tài liệu thư viện chuẩn, ví dụ, hỏi đáp và nhóm trò chuyện; có kêu gọi tài trợ và đóng góp.",
+        "content": "<p>README mở đầu bằng tiêu đề 'Work in progress!' nói Roc chưa sẵn sàng cho bản 0.1 nhưng đã có: hướng dẫn cài đặt, bài hướng dẫn, tài liệu thư viện chuẩn, ví dụ, trang hỏi đáp và nhóm trò chuyện trên Zulip để hỏi đáp. Có lời mời đóng góp kèm liên kết bắt đầu và mục Sponsors liệt kê các kênh tài trợ và nhà tài trợ doanh nghiệp (bài không đánh giá phần này). README rất ngắn, không có ví dụ mã, không có cách cài, không nêu giấy phép bằng văn bản; bài lấy giấy phép UPL-1.0 theo GitHub. Bài chưa đọc trang roc-lang.org.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Roc là một ngôn ngữ mới thiên về lập trình hàm, đang được phát triển. Phù hợp để tìm hiểu ý tưởng ngôn ngữ, chưa phải lựa chọn cho dự án cần sự ổn định.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc trang hỏi đáp và bài hướng dẫn trên roc-lang.org để hiểu mục tiêu ngôn ngữ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm lập trình hàm; tài liệu còn đang hình thành. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi chưa sẵn sàng cho bản 0.1: ngôn ngữ và công cụ có thể thay đổi, không dùng cho sản phẩm cần ổn định. Hệ sinh thái còn nhỏ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>functional programming (lập trình hàm)</strong>: lối lập trình xây từ các hàm; bài chú thích biên tập vì Roc là ngôn ngữ hàm.</li><li><strong>work in progress (đang làm dở)</strong>: chưa hoàn thiện; README ghi ở đầu.</li><li><strong>standard library (thư viện chuẩn)</strong>: bộ hàm đi kèm ngôn ngữ; README trỏ tới tài liệu.</li><li><strong>Zulip</strong>: nền tảng trò chuyện nhóm; README nêu là nhóm trò chuyện.</li><li><strong>UPL-1.0</strong>: Universal Permissive License, giấy phép mã nguồn mở rộng; GitHub nhận diện.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn cài tại roc-lang.org; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (UPL-1.0), README không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc dòng 'Work in progress!'.</li><li>Đọc bài hướng dẫn trong kho.</li><li>Chỉ thử với mục đích tìm hiểu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tò mò ngôn ngữ lập trình hàm mới. Hãy đọc README của Roc (https://github.com/roc-lang/roc) và giải thích bằng tiếng Việt: vì sao README ghi 'Work in progress', nên dùng Roc để làm gì và chưa nên dùng để làm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,2 KB), bài chưa đọc trang roc-lang.org. README không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>roc-lang</strong> có <strong>6.184 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện UPL-1.0; README không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/roc-lang/roc/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/roc-lang/roc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 725. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6184; repo_id 166616185; README SHA256 91a42c50c585539c359e23cd545a1aab736a5bfb304d977ae182a4cda7b82de7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/roc-lang/roc",
+          "repo_id": "166616185",
+          "source_path": "",
+          "source_revision": "README-SHA256:91a42c50c585539c359e23cd545a1aab736a5bfb304d977ae182a4cda7b82de7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "upl-1.0",
+                "name": "Universal Permissive License v1.0",
+                "spdx_id": "UPL-1.0",
+                "url": "https://api.github.com/licenses/upl-1.0",
+                "node_id": "MDc6TGljZW5zZTMz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roc-lang/roc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn cài tại roc-lang.org; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (UPL-1.0), README không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roc-lang/roc/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/roc-lang/roc/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "roc-lang/roc",
+        "stars": 6184,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/roc-lang/roc/main/README.md",
+        "readmeSha256": "91a42c50c585539c359e23cd545a1aab736a5bfb304d977ae182a4cda7b82de7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 726,
+      "batch": 116,
+      "slug": "erlang-otp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Erlang/OTP: ngôn ngữ Erlang và hệ thống chạy để xây hệ thống thời gian thực mềm có khả năng mở rộng lớn và tính sẵn sàng cao, cùng thư viện OTP; README có ví dụ Hello World, cài đặt, báo lỗi, đóng góp; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Erlang/OTP là ngôn ngữ Erlang và hệ thống chạy cho các hệ thống thời gian thực mềm cần khả năng mở rộng lớn và tính sẵn sàng cao; OTP là bộ thư viện gồm hệ chạy, các thành phần dựng sẵn viết chủ yếu bằng Erlang và nguyên tắc thiết kế; README có ví dụ nhỏ, cài đặt (bản nhị phân hoặc biên dịch từ mã nguồn), báo lỗi, ghi chú bảo mật, đóng góp, danh sách Awesome-Erlang và giấy phép Apache 2.0.",
+        "content": "<p>README tả Erlang là ngôn ngữ lập trình và hệ thống chạy để xây các hệ thống thời gian thực mềm có khả năng mở rộng lớn và yêu cầu sẵn sàng cao; OTP là bộ thư viện Erlang gồm hệ chạy Erlang, một số thành phần dựng sẵn chủ yếu viết bằng Erlang và các nguyên tắc thiết kế cho chương trình Erlang. README trỏ tới tài liệu học Erlang, ví dụ trên trang chủ và có ví dụ nhỏ định nghĩa một hàm in chuỗi chào (bài không chép mã). Mục Installation có bản phân phối nhị phân và biên dịch từ mã nguồn; bài không chép lệnh. README có mục báo lỗi, công bố vấn đề bảo mật, đóng góp (hướng dẫn, việc cần giúp), Awesome-Erlang, và License: Erlang/OTP phát hành theo Apache License 2.0, mọi thắc mắc giấy phép gửi tới Ericsson. Bài chưa đọc tài liệu erlang.org.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hệ thống như tổng đài điện thoại hay ứng dụng nhắn tin phải chạy liên tục dù một phần hỏng. Erlang được thiết kế cho điều đó: nhiều tiến trình nhỏ độc lập và có thể khôi phục.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'sẵn sàng cao' và 'tiến trình nhẹ' bằng ví dụ ứng dụng nhắn tin; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình hoặc làm dự án nhờ AI viết mã, muốn hiểu thêm ngôn ngữ và môi trường chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm lập trình hàm, đồng thời và hệ phân tán. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Erlang có cách tư duy khác nhiều ngôn ngữ phổ biến nên cần thời gian học; hệ sinh thái nhỏ hơn. Cài từ mã nguồn cần trình biên dịch C và nhiều thư viện hệ thống: dùng máy thử. Bài chưa so sánh với Elixir (trên cùng máy ảo).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>real-time system (hệ thống thời gian thực)</strong>: hệ thống phản hồi trong thời hạn nhất định; README nêu thời gian thực mềm.</li><li><strong>high availability (sẵn sàng cao)</strong>: hệ thống vẫn chạy khi một phần hỏng; README nêu.</li><li><strong>OTP</strong>: bộ thư viện và nguyên tắc thiết kế đi kèm Erlang; README nêu.</li><li><strong>runtime system (hệ chạy)</strong>: phần chạy chương trình Erlang; README nêu.</li><li><strong>process (tiến trình)</strong>: đơn vị chạy nhẹ trong Erlang; bài chú thích biên tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (bản nhị phân, biên dịch từ mã nguồn); bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Examples.</li><li>Đọc mục License và Contributing.</li><li>Học qua tài liệu erlang.org trước khi cài.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tò mò Erlang. Hãy đọc README của Erlang/OTP (https://github.com/erlang/otp) và giải thích bằng tiếng Việt: Erlang và OTP khác nhau thế nào, vì sao hợp cho hệ thống phải chạy liên tục, và học Erlang khó ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 4,3 KB, bài chưa đọc tài liệu erlang.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trình biên dịch, máy ảo và môi trường chạy mã chạy chương trình thật trên máy bạn: chỉ chạy mã từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường cô lập hoặc máy thử khi chạy mã lạ hay mã do AI sinh, không cấp quyền tệp và mạng rộng cho mã được cô lập, cập nhật bản vá, và chọn ngôn ngữ còn được duy trì và có tài liệu rõ ràng khi làm dự án thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>erlang</strong> có <strong>12.353 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/erlang/otp/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/erlang/otp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 726. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12353; repo_id 374927; README SHA256 6be87ac999e8853c5af0eb96e8c229094c2709ed16a545deee0412248f007536.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/erlang/otp",
+          "repo_id": "374927",
+          "source_path": "",
+          "source_revision": "README-SHA256:6be87ac999e8853c5af0eb96e8c229094c2709ed16a545deee0412248f007536",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/erlang/otp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (bản nhị phân, biên dịch từ mã nguồn); bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/erlang/otp/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/erlang/otp/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "erlang/otp",
+        "stars": 12353,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/erlang/otp/master/README.md",
+        "readmeSha256": "6be87ac999e8853c5af0eb96e8c229094c2709ed16a545deee0412248f007536",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

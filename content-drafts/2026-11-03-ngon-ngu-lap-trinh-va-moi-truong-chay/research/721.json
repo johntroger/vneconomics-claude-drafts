@@ -1,0 +1,41 @@
+{
+  "key": 721,
+  "repo": "vlang/v",
+  "repoId": "169677297",
+  "url": "https://github.com/vlang/v",
+  "stars": 38088,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T12:20:26Z",
+  "createdAt": "2019-02-08T02:57:06Z",
+  "defaultBranch": "master",
+  "description": "Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vlang/v/master/README.md",
+    "sha256": "a1a082117c16682a90383a4710c988a320c68bcd888a159e0917d7a5535890d2",
+    "bytes": 25354,
+    "sectionsRead": [
+      "Key Features of V",
+      "Stability, future changes, post 1.0 freeze",
+      "Installing V from source"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc docs.md.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố tốc độ và an toàn."
+  ],
+  "runtimeValidated": false
+}

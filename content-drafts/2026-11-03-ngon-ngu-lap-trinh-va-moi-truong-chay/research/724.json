@@ -1,0 +1,42 @@
+{
+  "key": 724,
+  "repo": "bytecodealliance/wasmtime",
+  "repoId": "101767772",
+  "url": "https://github.com/bytecodealliance/wasmtime",
+  "stars": 18823,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:23:57Z",
+  "createdAt": "2017-08-29T14:01:55Z",
+  "defaultBranch": "main",
+  "description": "A lightweight WebAssembly runtime that is fast, secure, and standards-compliant",
+  "homepage": "https://wasmtime.dev/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/bytecodealliance/wasmtime/main/README.md",
+    "sha256": "61b003ff4ddfbe6123ae3a1123e39e379f1559edc44634e6c14ba3f2671f9fd8",
+    "bytes": 7674,
+    "sectionsRead": [
+      "Installation",
+      "Example",
+      "Features",
+      "Language Support"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc sách docs.wasmtime.dev.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố an toàn và tốc độ."
+  ],
+  "runtimeValidated": false
+}

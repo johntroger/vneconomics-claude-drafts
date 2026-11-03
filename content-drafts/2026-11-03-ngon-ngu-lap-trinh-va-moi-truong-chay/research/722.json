@@ -1,0 +1,42 @@
+{
+  "key": 722,
+  "repo": "luau-lang/luau",
+  "repoId": "148821256",
+  "url": "https://github.com/luau-lang/luau",
+  "stars": 6052,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:05:57Z",
+  "createdAt": "2018-09-14T17:29:29Z",
+  "defaultBranch": "master",
+  "description": "A small, fast, and embeddable programming language based on Lua with a gradual type system.",
+  "homepage": "https://luau.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/luau-lang/luau/master/README.md",
+    "sha256": "12643b91979101103346ef110cb5759bc89a0135afe6f9fb6c7e63080f54b20a",
+    "bytes": 7329,
+    "sectionsRead": [
+      "Usage",
+      "Installation",
+      "Building",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu luau.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Lua gốc."
+  ],
+  "runtimeValidated": false
+}
