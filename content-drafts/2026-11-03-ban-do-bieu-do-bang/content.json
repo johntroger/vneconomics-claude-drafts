@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ban-do-bieu-do",
+  "batch": 84,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 491,
+      "batch": 84,
+      "slug": "leaflet",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Leaflet: thư viện JavaScript mã nguồn mở nhẹ (khoảng 40 kB nén) để dựng bản đồ tương tác, nhiều plugin; README mở đầu bằng thông điệp của người duy trì về cuộc chiến ở Ukraine",
+        "excerpt": "Hiểu Leaflet là thư viện JavaScript mã nguồn mở, nhẹ (README nói khoảng 40 kB JS nén cộng 2,4 kB CSS nén), để dựng bản đồ tương tác trên máy tính và di động, mở rộng bằng nhiều plugin. README mở đầu bằng thông điệp của người duy trì về cuộc chiến ở Ukraine và lời kêu gọi quyên góp; bài nêu để bạn biết, không bàn chính trị.",
+        "content": "<p>README mở đầu bằng thông điệp từ những người duy trì: Leaflet được Volodymyr Agafonkin tạo năm 2010, một công dân Ukraine sống ở Kyiv; thông điệp nói về cuộc xâm lược quy mô lớn của Nga vào Ukraine từ tháng 2 năm 2022, nêu rằng Leaflet được dùng để ghi lại tội ác chiến tranh, theo dõi tuyến đầu và tìm viện trợ nhân đạo, kêu gọi quyên góp cho các tổ chức từ thiện được nêu và đề nghị người đọc đừng im lặng. Bài chỉ nêu sự kiện này như thông tin về README, không bình luận. Phần giới thiệu: Leaflet là thư viện JavaScript mã nguồn mở hàng đầu để dựng bản đồ tương tác mạnh (cách nói của README), nặng khoảng 40 kB JS nén cộng 2,4 kB CSS nén, có đủ tính năng bản đồ mà đa số nhà phát triển cần. Thiết kế nhằm sự đơn giản, hiệu năng và dễ dùng, chạy hiệu quả trên mọi nền tảng máy tính và di động chính, mở rộng bằng rất nhiều plugin, có API được viết tài liệu tốt và mã nguồn đơn giản dễ đọc. README trỏ tới trang chính thức, trang cài đặt (tải bản dựng sẵn) và hướng dẫn đóng góp. README phần đã đọc không nêu giấy phép; GitHub nhận diện BSD-2-Clause.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu website của bạn cần hiện địa điểm cửa hàng, tuyến đường hay dữ liệu theo vị trí trên bản đồ, Leaflet là thư viện nhẹ, đơn giản và phổ biến cho việc đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng một bản đồ có vài điểm đánh dấu từ danh sách địa chỉ mẫu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Cần biết HTML và JavaScript cơ bản; hướng dẫn bắt đầu ở trang chính thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản đồ cần nguồn ảnh nền (tile) từ nhà cung cấp riêng, có điều khoản và đôi khi tính phí; README phần đã đọc không bàn về điều này. Ghi nguồn bản đồ theo yêu cầu của nhà cung cấp. 'Hàng đầu' và 'đủ tính năng' là cách nói của README. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>tile (ô bản đồ)</strong>: các ảnh nhỏ ghép thành bản đồ nền, do nhà cung cấp bản đồ cung cấp.</li><li><strong>plugin</strong>: phần mở rộng thêm tính năng; README nêu có rất nhiều.</li><li><strong>gzipped (nén gzip)</strong>: kích thước sau khi nén khi tải về trình duyệt; README nêu 40 kB và 2,4 kB.</li><li><strong>marker (điểm đánh dấu)</strong>: ghim vị trí trên bản đồ.</li><li><strong>JavaScript library (thư viện JavaScript)</strong>: mã dùng lại để thêm tính năng cho trang web; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang cài đặt ở leafletjs.com; bài chưa đọc nên không nêu lệnh. Cần trang web và nguồn ảnh bản đồ. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Xem trang cài đặt và hướng dẫn chính thức.</li><li>Chọn nhà cung cấp ảnh bản đồ và kiểm tra điều khoản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm bản đồ vào website. Hãy đọc README của Leaflet (https://github.com/Leaflet/Leaflet) và giải thích bằng tiếng Việt: Leaflet làm gì, nhẹ ở mức nào, vì sao cần nguồn ảnh bản đồ riêng, và README mở đầu bằng thông điệp gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu leafletjs.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chỉ nêu thông điệp mở đầu như thông tin. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Leaflet</strong> có <strong>45.815 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Leaflet/Leaflet/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Leaflet/Leaflet\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 491. Chưa cài/chạy thử; không tạo validation. Snapshot sao 45815; repo_id 931135; README SHA256 9692d2768e83e720410a8d80134b6bb6c8a8601cefe5a81ae9b246cf3fec2252.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Leaflet/Leaflet",
+          "repo_id": "931135",
+          "source_path": "",
+          "source_revision": "README-SHA256:9692d2768e83e720410a8d80134b6bb6c8a8601cefe5a81ae9b246cf3fec2252",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-2-clause",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "spdx_id": "BSD-2-Clause",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "node_id": "MDc6TGljZW5zZTQ="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Leaflet/Leaflet",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang cài đặt ở leafletjs.com; bài chưa đọc nên không nêu lệnh. Cần trang web và nguồn ảnh bản đồ. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Leaflet/Leaflet/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Leaflet/Leaflet",
+        "stars": 45815,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Leaflet/Leaflet/main/README.md",
+        "readmeSha256": "9692d2768e83e720410a8d80134b6bb6c8a8601cefe5a81ae9b246cf3fec2252",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 492,
+      "batch": 84,
+      "slug": "openlayers",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenLayers: thư viện hiệu năng cao, nhiều tính năng để dựng bản đồ tương tác trên web, hiển thị ảnh bản đồ, dữ liệu vector và điểm đánh dấu từ mọi nguồn",
+        "excerpt": "Hiểu OpenLayers là thư viện bản đồ web hiệu năng cao, nhiều tính năng, hiển thị ô bản đồ, dữ liệu vector và điểm đánh dấu từ nguồn bất kỳ. README có ví dụ mã nhỏ dùng nguồn ảnh OpenStreetMap, hướng dẫn gói với Vite, Rollup, webpack, Parcel, và khuyên nhập từng phần cần thiết.",
+        "content": "<p>README tả OpenLayers là thư viện hiệu năng cao, nhiều tính năng để dựng bản đồ tương tác trên web, hiển thị ô bản đồ, dữ liệu vector và điểm đánh dấu tải từ nguồn bất kỳ trên trang web bất kỳ. Getting Started: cài gói ol bằng npm (bài không chép lệnh), nhập chỉ phần cần dùng. Ví dụ mã tạo một bản đồ với lớp ô dùng nguồn XYZ trỏ tới máy chủ ô OpenStreetMap, góc nhìn đặt giữa và mức phóng 2. README trỏ ví dụ gói với Vite, Rollup, webpack, Parcel và cách thử nhanh không cần Node.js qua Skypack. README phần đã đọc không nêu giấy phép; GitHub nhận diện BSD-2-Clause.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>OpenLayers nặng hơn Leaflet nhưng có nhiều tính năng GIS (hệ thống thông tin địa lý) hơn, hợp khi bạn cần hiển thị nhiều loại dữ liệu địa lý và phép chiếu khác nhau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng bản đồ từ ví dụ trong README và đổi nguồn ảnh bản đồ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript và một công cụ đóng gói như Vite; khái niệm lớp, nguồn, góc nhìn cần làm quen. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ví dụ trong README dùng máy chủ ô của OpenStreetMap: dùng cho sản xuất cần đọc điều khoản sử dụng ô của dịch vụ (nguyên tắc chung, README phần đã đọc không bàn). 'Hiệu năng cao, nhiều tính năng' là cách nói của README. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>layer (lớp)</strong>: một tầng dữ liệu trên bản đồ như ảnh nền hay điểm; README nêu.</li><li><strong>source (nguồn dữ liệu)</strong>: nơi lấy dữ liệu cho lớp, như máy chủ ô; README nêu XYZ.</li><li><strong>view (góc nhìn)</strong>: vị trí trung tâm và mức phóng; README nêu.</li><li><strong>vector data (dữ liệu vector)</strong>: điểm, đường, vùng vẽ bằng tọa độ; README nêu.</li><li><strong>bundler (công cụ đóng gói)</strong>: công cụ gom mã thành tệp dùng được trên web như Vite; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói ol bằng npm và nhập phần cần dùng (bài không chép lệnh); có ví dụ với Vite, Rollup, webpack, Parcel. Cần Node nếu dùng npm. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Getting Started.</li><li>Chạy ví dụ trong README bằng Vite.</li><li>Đổi nguồn ảnh bản đồ phù hợp dự án.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần bản đồ có nhiều lớp dữ liệu. Hãy đọc README của OpenLayers (https://github.com/openlayers/openlayers) và giải thích bằng tiếng Việt: lớp, nguồn, góc nhìn là gì, và lưu ý khi dùng máy chủ ô OpenStreetMap. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu openlayers.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openlayers</strong> có <strong>12.640 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openlayers/openlayers/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openlayers/openlayers\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 492. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12640; repo_id 4723248; README SHA256 a1618cf39bebce388f4a9c4ff2b0b16db49c552a23362951f2380dead8108d19.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openlayers/openlayers",
+          "repo_id": "4723248",
+          "source_path": "",
+          "source_revision": "README-SHA256:a1618cf39bebce388f4a9c4ff2b0b16db49c552a23362951f2380dead8108d19",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-2-clause",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "spdx_id": "BSD-2-Clause",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "node_id": "MDc6TGljZW5zZTQ="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openlayers/openlayers",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói ol bằng npm và nhập phần cần dùng (bài không chép lệnh); có ví dụ với Vite, Rollup, webpack, Parcel. Cần Node nếu dùng npm. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openlayers/openlayers/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openlayers/openlayers/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openlayers/openlayers",
+        "stars": 12640,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openlayers/openlayers/main/README.md",
+        "readmeSha256": "a1618cf39bebce388f4a9c4ff2b0b16db49c552a23362951f2380dead8108d19",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 493,
+      "batch": 84,
+      "slug": "deck-gl",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "deck.gl: khung trực quan hóa dữ liệu lớn bằng WebGL2/WebGPU, ghép các lớp (icon, đa giác, chữ) trên nhiều loại góc nhìn; có bản JavaScript, React và Python (pydeck)",
+        "excerpt": "Hiểu deck.gl là khung trực quan hóa dữ liệu lớn hiệu năng cao dựa trên WebGL2 và WebGPU: ánh xạ dữ liệu (thường là mảng đối tượng JSON) thành chồng các lớp trực quan và xem qua các góc nhìn như bản đồ. README nêu ba cách dùng: thẻ script, gói npm (JS thuần hoặc React) và Python qua pydeck.",
+        "content": "<p>README tả deck.gl nhằm đơn giản hóa trực quan hóa tập dữ liệu lớn hiệu năng cao bằng WebGL2 hoặc WebGPU: bạn nhận kết quả ấn tượng nhanh bằng cách ghép các lớp có sẵn, hoặc mở rộng cho trường hợp riêng. deck.gl ánh xạ dữ liệu (thường là mảng đối tượng JSON) thành chồng các lớp trực quan như icon, đa giác, chữ, và xem bằng các góc nhìn như bản đồ, góc nhìn thứ nhất, chiếu trực giao. Sẵn có: hiển thị và cập nhật hiệu quả dữ liệu lớn, xử lý sự kiện tương tác (chọn, tô sáng, lọc), phép chiếu bản đồ và tích hợp nhà cung cấp bản đồ nền chính, danh mục lớp đã kiểm chứng. Rất tùy biến: các lớp có API linh hoạt, lớp lõi mở rộng được. Các hình thức dùng (Flavors): thẻ script, mô-đun npm (JS thuần hoặc React) và Python với pydeck (bài không chép lệnh); kèm ví dụ đầy đủ và các gói bên thứ ba cho TypeScript, R và Vega. Phần cuối nêu nhà tài trợ và đối tác (Foursquare, CARTO, Mapbox, Uber...). README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi dữ liệu có hàng triệu điểm mà Leaflet vẽ không nổi, deck.gl dùng card đồ họa để vẽ nhanh. Hợp cho trực quan hóa dữ liệu lớn, như chuyến đi hay mật độ dân cư.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng một lớp điểm từ tệp CSV mẫu bằng deck.gl trên bản đồ nền. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần JavaScript, khái niệm lớp và góc nhìn, và hiểu bản đồ nền. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản đồ nền cần nhà cung cấp riêng (như Mapbox) có thể cần khóa và tính phí; README phần đã đọc chỉ nêu tích hợp, không bàn giá. Dữ liệu lớn nặng cho trình duyệt: cần thử trên thiết bị yếu. 'Hiệu năng cao' là cách nói của README. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>WebGL / WebGPU</strong>: công nghệ cho trình duyệt dùng card đồ họa để vẽ; README nêu.</li><li><strong>layer (lớp)</strong>: một tầng hiển thị như điểm, đa giác, chữ; README nêu.</li><li><strong>view (góc nhìn)</strong>: cách nhìn dữ liệu như bản đồ hay chiếu trực giao; README nêu.</li><li><strong>picking (chọn đối tượng)</strong>: bấm vào đối tượng để biết nó là gì; README nêu.</li><li><strong>pydeck</strong>: gói Python để dùng deck.gl; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng qua thẻ script, gói npm (JS thuần hoặc React) hoặc pydeck (Python) (bài không chép lệnh). Cần trình duyệt hỗ trợ WebGL. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và các Flavors.</li><li>Chạy một ví dụ gần nhất với nhu cầu.</li><li>Thử với dữ liệu mẫu trước khi dùng dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có dữ liệu địa lý lớn cần trực quan hóa. Hãy đọc README của deck.gl (https://github.com/visgl/deck.gl) và giải thích bằng tiếng Việt: lớp và góc nhìn là gì, ba cách dùng, và khi nào dùng deck.gl thay vì Leaflet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu deck.gl. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>visgl</strong> có <strong>14.728 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/visgl/deck.gl/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/visgl/deck.gl\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 493. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14728; repo_id 48030204; README SHA256 4d392d6787f920f1181751dba014f520f021e4da40b0eb325d8f00a4c78524df.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/visgl/deck.gl",
+          "repo_id": "48030204",
+          "source_path": "",
+          "source_revision": "README-SHA256:4d392d6787f920f1181751dba014f520f021e4da40b0eb325d8f00a4c78524df",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/visgl/deck.gl",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng qua thẻ script, gói npm (JS thuần hoặc React) hoặc pydeck (Python) (bài không chép lệnh). Cần trình duyệt hỗ trợ WebGL. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/visgl/deck.gl/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/visgl/deck.gl/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "visgl/deck.gl",
+        "stars": 14728,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/visgl/deck.gl/master/README.md",
+        "readmeSha256": "4d392d6787f920f1181751dba014f520f021e4da40b0eb325d8f00a4c78524df",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 494,
+      "batch": 84,
+      "slug": "recharts",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Recharts: thư viện biểu đồ xây bằng React và D3, thành phần khai báo, hỗ trợ SVG bản địa, tối thiểu phụ thuộc",
+        "excerpt": "Hiểu Recharts là thư viện biểu đồ cho ứng dụng React xây trên D3, dùng các thành phần khai báo tách biệt (trục, chú giải, đường, lưới) ghép lại thành biểu đồ. README nêu nguyên tắc: triển khai đơn giản bằng thành phần React, hỗ trợ SVG bản địa nhẹ, khai báo.",
+        "content": "<p>README tả Recharts là thư viện biểu đồ 'được định nghĩa lại' xây bằng React và D3, nhằm giúp viết biểu đồ trong ứng dụng React không vất vả. Ba nguyên tắc: triển khai đơn giản bằng thành phần React, hỗ trợ SVG bản địa nhẹ với phụ thuộc tối thiểu, thành phần khai báo. Có tài liệu, storybook và wiki. README ghi mọi phát triển ở nhánh main, nhưng bản phát hành mới nhất và tài liệu storybook phản ánh nhánh release. Ví dụ biểu đồ đường gồm các thành phần độc lập như trục x, tooltip, lưới, đường; README nhấn mạnh việc tách biệt và ghép thành phần là một nguyên tắc. Cài đặt: qua npm (cùng gói react-is phải khớp phiên bản React), Deno hoặc bản UMD từ unpkg (bài không chép lệnh). Có mục đóng góp. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn dựng ứng dụng bằng React và cần biểu đồ cột, đường, tròn, Recharts cho bạn ghép biểu đồ từ các thành phần quen thuộc thay vì vẽ bằng tay.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng một biểu đồ đường từ dữ liệu bán hàng mẫu bằng Recharts. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React cơ bản; thành phần khai báo dễ đọc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chỉ dùng cho React; gói react-is phải cùng phiên bản với React theo README. Tài liệu phản ánh nhánh release, không phải main. Biểu đồ SVG có thể chậm với hàng chục nghìn điểm (nhận định chung, README không bàn). 'Đơn giản, nhẹ' là cách nói của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>React component (thành phần React)</strong>: khối giao diện dùng lại trong React; README nêu.</li><li><strong>declarative (khai báo)</strong>: mô tả điều muốn thấy thay vì từng bước vẽ; README nêu.</li><li><strong>SVG</strong>: định dạng ảnh vector vẽ bằng mã; README nêu hỗ trợ bản địa.</li><li><strong>D3</strong>: thư viện trực quan hóa dữ liệu nền; README nêu Recharts xây trên đó.</li><li><strong>tooltip</strong>: khung nhỏ hiện giá trị khi di chuột; README nêu là thành phần độc lập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm kèm react-is khớp phiên bản React, hoặc Deno, hoặc UMD (bài không chép lệnh). Cần dự án React. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction và nguyên tắc.</li><li>Dựng thử LineChart từ ví dụ.</li><li>Đọc tài liệu về từng thành phần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng React và cần biểu đồ. Hãy đọc README của Recharts (https://github.com/recharts/recharts) và giải thích bằng tiếng Việt: các thành phần ghép nhau thế nào, vì sao cần react-is, và nhánh main khác release ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu recharts.github.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>recharts</strong> có <strong>27.683 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT và mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/recharts/recharts/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/recharts/recharts\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 494. Chưa cài/chạy thử; không tạo validation. Snapshot sao 27683; repo_id 40345658; README SHA256 f855882c0ab7bfe083228cd0ae2b7dd73a20eb827fee21bebb5fbb4ef297b93a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/recharts/recharts",
+          "repo_id": "40345658",
+          "source_path": "",
+          "source_revision": "README-SHA256:f855882c0ab7bfe083228cd0ae2b7dd73a20eb827fee21bebb5fbb4ef297b93a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/recharts/recharts",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm kèm react-is khớp phiên bản React, hoặc Deno, hoặc UMD (bài không chép lệnh). Cần dự án React. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/recharts/recharts/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/recharts/recharts/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "recharts/recharts",
+        "stars": 27683,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/recharts/recharts/main/README.md",
+        "readmeSha256": "f855882c0ab7bfe083228cd0ae2b7dd73a20eb827fee21bebb5fbb4ef297b93a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 495,
+      "batch": 84,
+      "slug": "tanstack-table",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "TanStack Table: thư viện bảng dữ liệu 'headless' (không có giao diện sẵn), kiểm soát toàn bộ HTML và kiểu dáng; có bản cho React, Vue, Solid, Svelte, Angular và nhiều framework",
+        "excerpt": "Hiểu TanStack Table là thư viện bảng dữ liệu 'headless': lo logic sắp xếp, lọc, nhóm, tổng hợp, chọn hàng nhưng không kèm giao diện, bạn tự quyết định HTML và kiểu dáng. README nêu lõi không phụ thuộc framework kèm gắn kết cho nhiều framework và hướng dẫn dùng với coding agent.",
+        "content": "<p>README tả TanStack Table là thư viện bảng 'headless' để xây bảng dữ liệu mạnh với toàn quyền kiểm soát HTML, kiểu dáng và hành vi. Ghi chú: bạn có thể biết thư viện này qua tên các bản gắn kết như React Table, Vue Table, Angular Table, Solid Table, Svelte Table, Lit Table, Preact Table, Alpine Table, Ember Table. Điểm nêu: lõi không phụ thuộc framework kèm gắn kết cho React, Preact, Octane, Vue, Solid, Svelte, Angular, Ember, Lit, Alpine; tùy biến 100% (mang giao diện của bạn); sắp xếp, lọc, nhóm, tổng hợp, chọn hàng; nhẹ, có thể ảo hóa, thân thiện phía máy chủ. Mục Using an AI Coding Agent: TanStack Table đóng gói kỹ năng TanStack Intent trong mỗi gói gắn kết; sau khi cài, có một lệnh để dùng (bài không chép lệnh). Có liên kết tới tài liệu. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bảng dữ liệu có sắp xếp, lọc, phân trang cần nhiều logic. TanStack Table lo toàn bộ logic đó, còn hình thức bảng bạn tự thiết kế bằng giao diện của mình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI dựng bảng có sắp xếp và lọc từ danh sách khách hàng mẫu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Headless nghĩa là bạn tự dựng giao diện; cần hiểu framework và quản lý trạng thái. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Vì không có giao diện sẵn, bạn phải tự xử lý khả năng truy cập và kiểu dáng. README phần đã đọc không giải thích chi tiết cách dùng, bài chưa đọc tài liệu. Bảng lớn cần ảo hóa và phân trang phía máy chủ. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>headless</strong>: chỉ có logic, không kèm giao diện; README nêu.</li><li><strong>datagrid (bảng dữ liệu)</strong>: bảng có sắp xếp, lọc, nhóm; README nêu.</li><li><strong>virtualization (ảo hóa)</strong>: chỉ vẽ các hàng đang thấy để bảng lớn vẫn mượt; README nêu virtualizable.</li><li><strong>adapter (gắn kết)</strong>: lớp nối lõi với từng framework; README liệt kê.</li><li><strong>aggregation (tổng hợp)</strong>: tính tổng, trung bình theo nhóm; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu tanstack.com/table; bài chưa đọc nên không nêu lệnh. Cần một framework được hỗ trợ. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và danh sách gắn kết.</li><li>Chọn gắn kết đúng framework của bạn.</li><li>Đọc tài liệu và ví dụ trước khi dựng giao diện.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần bảng dữ liệu có sắp xếp và lọc. Hãy đọc README của TanStack Table (https://github.com/TanStack/table) và giải thích bằng tiếng Việt: headless nghĩa là gì, những gì thư viện lo và những gì bạn phải tự làm, và lưu ý với bảng lớn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>TanStack</strong> có <strong>28.540 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/TanStack/table/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/TanStack/table\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 495. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28540; repo_id 71487058; README SHA256 913bdc81d1d575246a519cd84ef3c31b12298fa768dcfb98e9bd254085119daa.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/TanStack/table",
+          "repo_id": "71487058",
+          "source_path": "",
+          "source_revision": "README-SHA256:913bdc81d1d575246a519cd84ef3c31b12298fa768dcfb98e9bd254085119daa",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TanStack/table",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu tanstack.com/table; bài chưa đọc nên không nêu lệnh. Cần một framework được hỗ trợ. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TanStack/table/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/TanStack/table/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "TanStack/table",
+        "stars": 28540,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/TanStack/table/main/README.md",
+        "readmeSha256": "913bdc81d1d575246a519cd84ef3c31b12298fa768dcfb98e9bd254085119daa",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 496,
+      "batch": 84,
+      "slug": "motion",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio",
+        "excerpt": "Hiểu Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README ghi Framer Motion nay là Motion, import từ motion/react. Có engine lai kết hợp JavaScript với API trình duyệt, cử chỉ, lò xo, chuyển cảnh bố cục, hiệu ứng theo cuộn. README quảng bá Motion+ trả phí và Motion Studio.",
+        "content": "<p>README tả Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue. Cài qua npm (bản React hoặc JS) và motion-v cho Vue (bài không chép lệnh). Mục Why Motion?: API đơn giản, engine lai kết hợp sức mạnh JavaScript với API trình duyệt bản địa cho hoạt ảnh 120 fps tăng tốc GPU (tuyên bố của README), sẵn sàng sản xuất (TypeScript, bộ kiểm thử lớn, tree-shaking, nhỏ gọn), đủ đồ nghề (cử chỉ, lò xo, chuyển cảnh bố cục, hiệu ứng theo cuộn, dòng thời gian). Ghi chú: Framer Motion nay là Motion; import từ motion/react thay cho framer-motion. Có ví dụ React với thành phần motion.div animate x bằng 100. Mục Motion Studio: trình sửa hoạt ảnh trực quan (chỉnh keyframe, đường cong easing, lò xo trên dòng thời gian, hoặc mô tả thay đổi cho agent Ultramotion rồi áp dụng vào mã bằng Cursor, Codex hay Claude). Mục Using Motion with AI: kỹ năng agent MIT miễn phí cài bằng một lệnh và thiết lập máy chủ MCP cho Claude Code, Cursor, Amp, OpenCode, Gemini CLI, Copilot. Mục Motion+: giấy phép cá nhân một lần kèm cập nhật trọn đời hoặc gói doanh nghiệp theo năm cho mỗi ghế, gồm trên 450 ví dụ, trên 110 hướng dẫn, API cao cấp, trình sửa chuyển cảnh, AI Kit, Discord riêng (trả phí). Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn nút bấm, danh sách hay trang chuyển cảnh mượt như ứng dụng hiện đại, Motion giúp thêm hoạt ảnh bằng vài thuộc tính. Thư viện lõi miễn phí; có thêm gói trả phí cho tài nguyên và công cụ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI thêm hiệu ứng xuất hiện cho một thẻ nội dung bằng thành phần motion. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React hoặc JavaScript cơ bản; hoạt ảnh nhẹ thì dễ, bố cục và cuộn thì khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố '120fps, tăng tốc GPU' là của README. Motion+ và Motion Studio là sản phẩm trả phí, bài chưa kiểm tra giá. Hoạt ảnh quá nhiều có thể gây khó chịu hoặc hại người nhạy cảm chuyển động: nên tôn trọng cài đặt giảm chuyển động của người dùng (nhận định chung). Kỹ năng agent và máy chủ MCP cài thêm thành phần vào công cụ AI của bạn: chỉ cài khi hiểu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>animation library (thư viện hoạt ảnh)</strong>: mã dùng lại để tạo chuyển động trên giao diện; README nêu.</li><li><strong>spring (lò xo)</strong>: kiểu chuyển động mô phỏng lò xo cho cảm giác tự nhiên; README nêu.</li><li><strong>layout transition (chuyển cảnh bố cục)</strong>: phần tử tự di chuyển mượt khi bố cục đổi; README nêu.</li><li><strong>keyframe</strong>: mốc trạng thái trên dòng thời gian của hoạt ảnh; README nêu.</li><li><strong>MCP</strong>: giao thức nối công cụ cho AI; README nêu thiết lập máy chủ MCP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm (bản motion cho React hoặc JS, motion-v cho Vue); import từ motion/react (bài không chép lệnh). Cần React hoặc JavaScript. Thư viện lõi miễn phí theo giấy phép MIT; Motion+ và Studio trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Why Motion?.</li><li>Thử một hoạt ảnh đơn giản bằng thành phần motion.</li><li>Cân nhắc Motion+ chỉ khi cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm hoạt ảnh cho website. Hãy đọc README của Motion (https://github.com/motiondivision/motion) và giải thích bằng tiếng Việt: Motion khác Framer Motion thế nào, phần nào miễn phí và phần nào trả phí, và lưu ý về hoạt ảnh cho người nhạy cảm chuyển động. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn, bài chưa đọc tài liệu motion.dev. Tuyên bố hiệu năng và giá Motion+ chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>motiondivision</strong> có <strong>34.831 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi Motion theo MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/motiondivision/motion/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/motiondivision/motion\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 496. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34831; repo_id 157846876; README SHA256 08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/motiondivision/motion",
+          "repo_id": "157846876",
+          "source_path": "",
+          "source_revision": "README-SHA256:08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/motiondivision/motion",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm (bản motion cho React hoặc JS, motion-v cho Vue); import từ motion/react (bài không chép lệnh). Cần React hoặc JavaScript. Thư viện lõi miễn phí theo giấy phép MIT; Motion+ và Studio trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "motiondivision/motion",
+        "stars": 34831,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/motiondivision/motion/main/README.md",
+        "readmeSha256": "08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 497,
+      "batch": 84,
+      "slug": "univer",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Univer: SDK văn phòng mã nguồn mở (bảng tính, tài liệu, trình chiếu) nhúng vào sản phẩm của bạn; README tách rõ phần mã nguồn mở và phần Pro thương mại",
+        "excerpt": "Hiểu Univer là SDK mã nguồn mở để dựng ứng dụng văn phòng (bảng tính, tài liệu, trình chiếu) bên trong sản phẩm của bạn, với kiến trúc plugin, kết xuất Canvas, engine công thức và Facade API chạy cả trình duyệt lẫn Node.js. README có bảng nói rõ tính năng nào là mã nguồn mở và tính năng nào thuộc Univer Pro thương mại.",
+        "content": "<p>README định vị Univer là bộ máy văn phòng cho AI agent: SDK Office hiệu năng cao, tùy biến hoàn toàn để xây trải nghiệm năng suất nhúng được, với kiến trúc plugin, kết xuất Canvas, engine công thức và một Facade API chạy trên trình duyệt và Node.js. Univer là SDK mã nguồn mở để tạo ứng dụng văn phòng ngay trong sản phẩm của bạn, không ép dùng ứng dụng lưu trữ hay giao diện cố định. Dùng khi cần: nhúng chỉnh sửa bảng tính hay tài liệu vào SaaS, công cụ nội bộ, quy trình BI hoặc ứng dụng AI; xử lý sổ tính và tài liệu phía máy chủ cùng kiến trúc; chọn tính năng qua plugin hoặc dùng preset. README nói Univer không chỉ là trình xem tệp bảng tính mà là khung xây bề mặt năng suất riêng. Có Univer Workspace là không gian làm việc mã nguồn mở có thể tự host. Mục AI: agent có thể tạo ứng dụng nhỏ dựa trên bảng tính như bảng điều khiển; một số khả năng (chỉnh sửa trực tiếp, bản sửa chia sẻ) cần Web SDK và phần cộng tác tương ứng. Quick Start, chế độ Preset, Plugin và Headless, tương thích (trình duyệt Chrome 88 trở lên, React 18 và 19, Node.js 18.17 trở lên cho headless, và 22.18 trở lên để phát triển). Mục Open Source and Pro: kho này chứa lõi mã nguồn mở và plugin OSS; Univer Pro là lớp mở rộng thương mại phát triển riêng cho cộng tác, tính năng máy chủ, nhập xuất, in, biểu đồ, bảng pivot và tích hợp doanh nghiệp (README liệt kê theo từng loại). README ghi rõ nguyên tắc ranh giới: gói OSS dùng được độc lập theo Apache-2.0, Pro là tùy chọn. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn người dùng chỉnh sửa bảng tính kiểu Excel ngay trong ứng dụng web của mình, Univer cung cấp các khối dựng sẵn. Nhưng nhiều tính năng văn phòng thường dùng (nhập xuất, biểu đồ, cộng tác) nằm trong bản Pro trả phí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc bảng so sánh OSS và Pro để biết tính năng bạn cần có miễn phí hay không trước khi quyết định. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc ứng dụng có bản đồ, biểu đồ, bảng dữ liệu hoặc hiệu ứng, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> SDK lớn với plugin, preset, headless; cần JavaScript, React và hiểu kiến trúc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói rõ nhiều tính năng văn phòng quan trọng (cộng tác, nhập xuất, in, biểu đồ, bảng pivot) thuộc Univer Pro thương mại, bài chưa kiểm tra giá. Đừng đọc phần OSS như đã có đủ tính năng; hãy đối chiếu bảng. README dài, bài không đọc hết các mục quick start. Tuyên bố 'hiệu năng cao' là của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>SDK</strong>: bộ công cụ để nhúng tính năng vào sản phẩm; README nêu.</li><li><strong>plugin architecture (kiến trúc plugin)</strong>: chọn tính năng bằng cách thêm hay bớt phần mở rộng; README nêu.</li><li><strong>Canvas rendering (kết xuất Canvas)</strong>: vẽ giao diện bằng thẻ canvas; README nêu.</li><li><strong>headless</strong>: chạy xử lý không có giao diện, như trên máy chủ; README nêu.</li><li><strong>Facade API</strong>: giao diện lập trình đơn giản bọc phần phức tạp bên trong; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng preset, plugin hoặc headless theo Quick Start (bài chưa đọc chi tiết nên không nêu lệnh). Cần dự án web (React 18 hoặc 19) hoặc Node.js. Phần OSS miễn phí theo Apache-2.0; Univer Pro thương mại.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục What is Univer? và bảng Open Source and Pro.</li><li>Chọn chế độ Preset, Plugin hoặc Headless.</li><li>Chỉ dùng tính năng OSS nếu không muốn trả phí.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn nhúng bảng tính vào ứng dụng web. Hãy đọc README của Univer (https://github.com/dream-num/univer) và giải thích bằng tiếng Việt: Univer làm gì, tính năng nào miễn phí và tính năng nào thuộc bản Pro, và ba chế độ Preset, Plugin, Headless khác nhau thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 27 KB), bài không đọc mục Quick Start chi tiết và tài liệu docs.univer.ai. Giá Univer Pro chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện chạy trong trình duyệt của người dùng: chọn phiên bản được duy trì, kiểm tra giấy phép và nguồn dữ liệu bản đồ hay biểu đồ bạn dùng, ghi nguồn khi cần, và đừng tải dữ liệu cá nhân nhạy cảm lên bản đồ hay bảng công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dream-num</strong> có <strong>22.861 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục License ghi Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dream-num/univer/blob/dev/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dream-num/univer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 497. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22861; repo_id 543101941; README SHA256 d3d012e7f2a17dd2ca93d033eaa435c2fb8d04a16139c783cad7fe378c5f0d19.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dream-num/univer",
+          "repo_id": "543101941",
+          "source_path": "",
+          "source_revision": "README-SHA256:d3d012e7f2a17dd2ca93d033eaa435c2fb8d04a16139c783cad7fe378c5f0d19",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dream-num/univer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng preset, plugin hoặc headless theo Quick Start (bài chưa đọc chi tiết nên không nêu lệnh). Cần dự án web (React 18 hoặc 19) hoặc Node.js. Phần OSS miễn phí theo Apache-2.0; Univer Pro thương mại.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dream-num/univer/blob/dev/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dream-num/univer/blob/dev/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dream-num/univer",
+        "stars": 22861,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dream-num/univer/dev/README.md",
+        "readmeSha256": "d3d012e7f2a17dd2ca93d033eaa435c2fb8d04a16139c783cad7fe378c5f0d19",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

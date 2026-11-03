@@ -7343,5 +7343,171 @@
    "exo",
    "unsloth"
   ]
+ },
+ {
+  "key": 491,
+  "slug": "leaflet",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "Leaflet: thư viện JavaScript mã nguồn mở nhẹ (khoảng 40 kB nén) để dựng bản đồ tương tác, nhiều plugin; README mở đầu bằng thông điệp của người duy trì về cuộc chiến ở Ukraine",
+  "repo": "Leaflet/Leaflet",
+  "stars": 45815,
+  "license": {
+   "key": "bsd-2-clause",
+   "name": "BSD 2-Clause \"Simplified\" License",
+   "spdx_id": "BSD-2-Clause",
+   "url": "https://api.github.com/licenses/bsd-2-clause",
+   "node_id": "MDc6TGljZW5zZTQ="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "openlayers",
+   "recharts"
+  ]
+ },
+ {
+  "key": 492,
+  "slug": "openlayers",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "OpenLayers: thư viện hiệu năng cao, nhiều tính năng để dựng bản đồ tương tác trên web, hiển thị ảnh bản đồ, dữ liệu vector và điểm đánh dấu từ mọi nguồn",
+  "repo": "openlayers/openlayers",
+  "stars": 12640,
+  "license": {
+   "key": "bsd-2-clause",
+   "name": "BSD 2-Clause \"Simplified\" License",
+   "spdx_id": "BSD-2-Clause",
+   "url": "https://api.github.com/licenses/bsd-2-clause",
+   "node_id": "MDc6TGljZW5zZTQ="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "deck-gl",
+   "leaflet"
+  ]
+ },
+ {
+  "key": 493,
+  "slug": "deck-gl",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "deck.gl: khung trực quan hóa dữ liệu lớn bằng WebGL2/WebGPU, ghép các lớp (icon, đa giác, chữ) trên nhiều loại góc nhìn; có bản JavaScript, React và Python (pydeck)",
+  "repo": "visgl/deck.gl",
+  "stars": 14728,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "openlayers",
+   "tanstack-table"
+  ]
+ },
+ {
+  "key": 494,
+  "slug": "recharts",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "Recharts: thư viện biểu đồ xây bằng React và D3, thành phần khai báo, hỗ trợ SVG bản địa, tối thiểu phụ thuộc",
+  "repo": "recharts/recharts",
+  "stars": 27683,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "leaflet"
+  ]
+ },
+ {
+  "key": 495,
+  "slug": "tanstack-table",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "TanStack Table: thư viện bảng dữ liệu 'headless' (không có giao diện sẵn), kiểm soát toàn bộ HTML và kiểu dáng; có bản cho React, Vue, Solid, Svelte, Angular và nhiều framework",
+  "repo": "TanStack/table",
+  "stars": 28540,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "deck-gl",
+   "motion"
+  ]
+ },
+ {
+  "key": 496,
+  "slug": "motion",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio",
+  "repo": "motiondivision/motion",
+  "stars": 34831,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "tanstack-table",
+   "univer"
+  ]
+ },
+ {
+  "key": 497,
+  "slug": "univer",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "Univer: SDK văn phòng mã nguồn mở (bảng tính, tài liệu, trình chiếu) nhúng vào sản phẩm của bạn; README tách rõ phần mã nguồn mở và phần Pro thương mại",
+  "repo": "dream-num/univer",
+  "stars": 22861,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "motion"
+  ]
  }
 ]

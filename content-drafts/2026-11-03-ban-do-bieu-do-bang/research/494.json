@@ -1,0 +1,43 @@
+{
+  "key": 494,
+  "repo": "recharts/recharts",
+  "repoId": "40345658",
+  "url": "https://github.com/recharts/recharts",
+  "stars": 27683,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:22:45Z",
+  "createdAt": "2015-08-07T06:50:27Z",
+  "defaultBranch": "main",
+  "description": "Redefined chart library built with React and D3",
+  "homepage": "https://recharts.github.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/recharts/recharts/main/README.md",
+    "sha256": "f855882c0ab7bfe083228cd0ae2b7dd73a20eb827fee21bebb5fbb4ef297b93a",
+    "bytes": 4284,
+    "sectionsRead": [
+      "Introduction",
+      "Examples",
+      "Installation",
+      "Contributing",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Hiệu năng với dữ liệu lớn chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

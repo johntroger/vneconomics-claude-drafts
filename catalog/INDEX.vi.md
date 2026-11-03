@@ -64,6 +64,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 62 — Môi trường nhất quán và chất lượng mã](learning-paths/62-moi-truong-chat-luong-ma.vi.md) — Từ biến môi trường theo thư mục và quản lý phiên bản công cụ đến Git hook, quy ước commit, phát hành và công cụ kiểm tra mã nhanh; chú ý chỉ cho chạy cấu hình từ kho đáng tin và sao lưu cấu hình shell.
 - [Lộ trình 63 — Ngôn ngữ và nền tảng chạy mã](learning-paths/63-ngon-ngu-runtime.vi.md) — Ba kho mã của ngôn ngữ và nền tảng: Go, .NET runtime và Odin; README đều ngắn hoặc dành cho người đóng góp, nên đây chỉ là điểm xuất phát để tìm nơi tải chính thức và tài liệu học.
 - [Lộ trình 64 — Chạy và tinh chỉnh mô hình AI](learning-paths/64-chay-tinh-chinh-mo-hinh.vi.md) — Từ chạy mô hình trên Mac hay máy cá nhân đến phục vụ ở quy mô máy chủ và tinh chỉnh; chú ý yêu cầu phần cứng, giấy phép của mô hình, telemetry, quyền ứng dụng xin và các tuyên bố hiệu năng của hãng.
+- [Lộ trình 65 — Bản đồ, biểu đồ, bảng dữ liệu, hoạt ảnh và bảng tính](learning-paths/65-ban-do-bieu-do-bang.vi.md) — Từ biểu đồ và bản đồ nhẹ đến trực quan hóa dữ liệu lớn, bảng dữ liệu, hoạt ảnh và SDK bảng tính nhúng; chú ý nguồn ảnh bản đồ, phần miễn phí và phần trả phí, giấy phép và hoạt ảnh cho người nhạy cảm chuyển động.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -119,7 +120,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (170 bài)
+### Cơ bản (174 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -293,6 +294,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 480 | Oxc (Oxidation Compiler): bộ công cụ JavaScript và TypeScript viết bằng Rust hiệu năng cao gồm trình kiểm tra Oxlint, định dạng Oxfmt, parser, transformer, minifier, resolver | [oxc-project/oxc](https://github.com/oxc-project/oxc) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 23310 | moi-truong-chat-luong-ma |
 | 481 | Go: ngôn ngữ lập trình mã nguồn mở giúp xây phần mềm đơn giản, đáng tin cậy và hiệu quả; kho GitHub chỉ là bản sao của kho chính | [golang/go](https://github.com/golang/go) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 139542 | ngon-ngu-runtime |
 | 486 | MLX LM: gói Python tạo văn bản và tinh chỉnh mô hình ngôn ngữ lớn trên chip Apple silicon bằng MLX, tích hợp Hugging Face Hub | [ml-explore/mlx-lm](https://github.com/ml-explore/mlx-lm) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7538 | chay-tinh-chinh-mo-hinh |
+| 491 | Leaflet: thư viện JavaScript mã nguồn mở nhẹ (khoảng 40 kB nén) để dựng bản đồ tương tác, nhiều plugin; README mở đầu bằng thông điệp của người duy trì về cuộc chiến ở Ukraine | [Leaflet/Leaflet](https://github.com/Leaflet/Leaflet) | {'key': 'bsd-2-clause', 'name': 'BSD 2-Clause "Simplified" License', 'spdx_id': 'BSD-2-Clause', 'url': 'https://api.github.com/licenses/bsd-2-clause', 'node_id': 'MDc6TGljZW5zZTQ='} | 45815 | ban-do-bieu-do-bang |
+| 492 | OpenLayers: thư viện hiệu năng cao, nhiều tính năng để dựng bản đồ tương tác trên web, hiển thị ảnh bản đồ, dữ liệu vector và điểm đánh dấu từ mọi nguồn | [openlayers/openlayers](https://github.com/openlayers/openlayers) | {'key': 'bsd-2-clause', 'name': 'BSD 2-Clause "Simplified" License', 'spdx_id': 'BSD-2-Clause', 'url': 'https://api.github.com/licenses/bsd-2-clause', 'node_id': 'MDc6TGljZW5zZTQ='} | 12640 | ban-do-bieu-do-bang |
+| 494 | Recharts: thư viện biểu đồ xây bằng React và D3, thành phần khai báo, hỗ trợ SVG bản địa, tối thiểu phụ thuộc | [recharts/recharts](https://github.com/recharts/recharts) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 27683 | ban-do-bieu-do-bang |
+| 496 | Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio | [motiondivision/motion](https://github.com/motiondivision/motion) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 34831 | ban-do-bieu-do-bang |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -336,7 +341,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (139 bài)
+### Nâng cao (142 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -479,6 +484,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 488 | SGLang: framework suy luận mã nguồn mở cho mô hình ngôn ngữ, thị giác-ngôn ngữ và khuếch tán, tối ưu cho agent và phục vụ quy mô lớn | [sgl-project/sglang](https://github.com/sgl-project/sglang) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 38393 | chay-tinh-chinh-mo-hinh |
 | 489 | Unsloth: ứng dụng desktop để chạy và huấn luyện mô hình AI, tinh chỉnh nhanh gấp đôi và ít VRAM hơn 70% theo tuyên bố của hãng; giấy phép kép Apache 2.0 và AGPL-3.0 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 78991 | chay-tinh-chinh-mo-hinh |
 | 490 | Axolotl: công cụ tinh chỉnh mô hình AI bằng tệp cấu hình, hỗ trợ nhiều phương pháp (LoRA, DPO, GRPO) và mô hình; README có telemetry bật sẵn, tắt bằng biến môi trường | [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 12658 | chay-tinh-chinh-mo-hinh |
+| 493 | deck.gl: khung trực quan hóa dữ liệu lớn bằng WebGL2/WebGPU, ghép các lớp (icon, đa giác, chữ) trên nhiều loại góc nhìn; có bản JavaScript, React và Python (pydeck) | [visgl/deck.gl](https://github.com/visgl/deck.gl) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 14728 | ban-do-bieu-do-bang |
+| 495 | TanStack Table: thư viện bảng dữ liệu 'headless' (không có giao diện sẵn), kiểm soát toàn bộ HTML và kiểu dáng; có bản cho React, Vue, Solid, Svelte, Angular và nhiều framework | [TanStack/table](https://github.com/TanStack/table) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 28540 | ban-do-bieu-do-bang |
+| 497 | Univer: SDK văn phòng mã nguồn mở (bảng tính, tài liệu, trình chiếu) nhúng vào sản phẩm của bạn; README tách rõ phần mã nguồn mở và phần Pro thương mại | [dream-num/univer](https://github.com/dream-num/univer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 22861 | ban-do-bieu-do-bang |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
