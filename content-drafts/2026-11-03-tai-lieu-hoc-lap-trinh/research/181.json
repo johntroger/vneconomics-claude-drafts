@@ -1,0 +1,36 @@
+{
+  "key": 181,
+  "repo": "github/gitignore",
+  "repoId": "1062897",
+  "url": "https://github.com/github/gitignore",
+  "stars": 176134,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "CC0-1.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T23:37:54Z",
+  "createdAt": "2010-11-08T20:17:14Z",
+  "defaultBranch": "main",
+  "description": "A collection of useful .gitignore templates",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/github/gitignore/main/README.md",
+    "sha256": "b4777fe65003e4b43fd2ceaface229dce48e506bc0082b5356f14d3b72c5d16f",
+    "bytes": 5847,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Folder structure",
+      "What makes a good template?",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hết từng mẫu.",
+    "Chưa kiểm tra mẫu cho từng ngôn ngữ cụ thể.",
+    "Chưa thử trên dự án thật."
+  ],
+  "runtimeValidated": false
+}

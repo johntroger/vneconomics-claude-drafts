@@ -384,7 +384,7 @@
   "pushed": "2026-11-03",
   "related": [
    "ai-agents-for-beginners",
-   "free-programming-books",
+   "github-gitignore",
    "mattpocock-skills"
   ]
  },
@@ -472,7 +472,7 @@
   "need": "Chọn skills và quy trình",
   "pushed": "2026-11-01",
   "related": [
-   "dyad",
+   "project-based-learning",
    "web-dev-for-beginners"
   ]
  },
@@ -1346,6 +1346,90 @@
   "related": [
    "astro",
    "ghost"
+  ]
+ },
+ {
+  "key": 177,
+  "slug": "project-based-learning",
+  "group": "2026-11-03-tai-lieu-hoc-lap-trinh",
+  "title": "Project Based Learning: danh sách hướng dẫn học lập trình bằng cách xây ứng dụng từ đầu",
+  "repo": "practical-tutorials/project-based-learning",
+  "stars": 288829,
+  "license": "MIT",
+  "level_text": "Dễ để chọn, trung bình để làm theo",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "first-contributions",
+   "free-programming-books"
+  ]
+ },
+ {
+  "key": 178,
+  "slug": "data-science-for-beginners",
+  "group": "2026-11-03-tai-lieu-hoc-lap-trinh",
+  "title": "Data Science for Beginners: giáo trình 10 tuần về khoa học dữ liệu, có đạo đức dữ liệu",
+  "repo": "microsoft/Data-Science-For-Beginners",
+  "stars": 37910,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-21",
+  "related": []
+ },
+ {
+  "key": 179,
+  "slug": "thealgorithms-python",
+  "group": "2026-11-03-tai-lieu-hoc-lap-trinh",
+  "title": "The Algorithms (Python): kho cài đặt thuật toán bằng Python để học, không để dùng thay thư viện",
+  "repo": "TheAlgorithms/Python",
+  "stars": 225794,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": []
+ },
+ {
+  "key": 180,
+  "slug": "first-contributions",
+  "group": "2026-11-03-tai-lieu-hoc-lap-trinh",
+  "title": "First Contributions: tập đóng góp đầu tiên cho dự án mã nguồn mở bằng Git và GitHub",
+  "repo": "firstcontributions/first-contributions",
+  "stars": 56677,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "github-gitignore",
+   "project-based-learning"
+  ]
+ },
+ {
+  "key": 181,
+  "slug": "github-gitignore",
+  "group": "2026-11-03-tai-lieu-hoc-lap-trinh",
+  "title": "github/gitignore: mẫu tệp .gitignore để không đưa tệp bí mật và tệp rác lên Git",
+  "repo": "github/gitignore",
+  "stars": 176134,
+  "license": "CC0-1.0",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "dyad",
+   "first-contributions"
   ]
  }
 ]

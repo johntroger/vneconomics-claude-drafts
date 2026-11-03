@@ -24,3 +24,4 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 | `content-drafts/2026-11-03-du-lieu-cho-nguoi-moi/` | 6 bài nháp nhóm "Dữ liệu cho người mới" (key 160–165) |
 | `content-drafts/2026-11-03-hieu-ai-llm/` | 6 bài nháp nhóm "Hiểu AI và mô hình ngôn ngữ" (key 166–171) |
 | `content-drafts/2026-11-03-cms-va-website-noi-dung/` | 5 bài nháp nhóm "CMS và website nội dung" (key 172–176) |
+| `content-drafts/2026-11-03-tai-lieu-hoc-lap-trinh/` | 5 bài nháp nhóm "Tài liệu học lập trình nổi tiếng" (key 177–181) |

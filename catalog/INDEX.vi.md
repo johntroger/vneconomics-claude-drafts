@@ -17,7 +17,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (19 bài)
+### Bắt đầu (22 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -40,8 +40,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 154 | Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft | [microsoft/vscode](https://github.com/microsoft/vscode) | MIT | 194514 | cong-cu-dong-lenh |
 | 159 | Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows | [microsoft/terminal](https://github.com/microsoft/terminal) | MIT | 105315 | cong-cu-dong-lenh |
 | 167 | Prompt Engineering Guide: tổng hợp kỹ thuật viết câu lệnh cho AI, kèm bài báo và công cụ | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | MIT | 79763 | hieu-ai-llm |
+| 177 | Project Based Learning: danh sách hướng dẫn học lập trình bằng cách xây ứng dụng từ đầu | [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning) | MIT | 288829 | tai-lieu-hoc-lap-trinh |
+| 180 | First Contributions: tập đóng góp đầu tiên cho dự án mã nguồn mở bằng Git và GitHub | [firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions) | MIT | 56677 | tai-lieu-hoc-lap-trinh |
+| 181 | github/gitignore: mẫu tệp .gitignore để không đưa tệp bí mật và tệp rác lên Git | [github/gitignore](https://github.com/github/gitignore) | CC0-1.0 | 176134 | tai-lieu-hoc-lap-trinh |
 
-### Cơ bản (36 bài)
+### Cơ bản (38 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -81,6 +84,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 172 | Hugo: tạo website tĩnh nhanh từ các tệp nội dung, không cần cơ sở dữ liệu | [gohugoio/hugo](https://github.com/gohugoio/hugo) | Apache-2.0 | 90327 | cms-va-website-noi-dung |
 | 173 | Ghost: nền tảng xuất bản và bản tin có thành viên, mã nguồn mở và có dịch vụ host sẵn | [TryGhost/Ghost](https://github.com/TryGhost/Ghost) | MIT | 55658 | cms-va-website-noi-dung |
 | 176 | Decap CMS: trang soạn nội dung cho website tĩnh, lưu thẳng vào Git | [decaporg/decap-cms](https://github.com/decaporg/decap-cms) | MIT | 19460 | cms-va-website-noi-dung |
+| 178 | Data Science for Beginners: giáo trình 10 tuần về khoa học dữ liệu, có đạo đức dữ liệu | [microsoft/Data-Science-For-Beginners](https://github.com/microsoft/Data-Science-For-Beginners) | MIT | 37910 | tai-lieu-hoc-lap-trinh |
+| 179 | The Algorithms (Python): kho cài đặt thuật toán bằng Python để học, không để dùng thay thư viện | [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python) | MIT | 225794 | tai-lieu-hoc-lap-trinh |
 
 ### Khá khó (cần nền kỹ thuật) (15 bài)
 

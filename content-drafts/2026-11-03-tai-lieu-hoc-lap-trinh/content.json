@@ -1,0 +1,523 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-tai-lieu-hoc",
+  "batch": 30,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 177,
+      "batch": 30,
+      "slug": "project-based-learning",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Project Based Learning: danh sách hướng dẫn học lập trình bằng cách xây ứng dụng từ đầu",
+        "excerpt": "Danh mục các bài hướng dẫn 'làm một ứng dụng thật từ con số 0' chia theo ngôn ngữ lập trình. Hợp người học bằng thực hành; cần tự kiểm tra chất lượng từng liên kết.",
+        "content": "<p>Project Based Learning là danh sách các hướng dẫn lập trình, trong đó người học xây một ứng dụng từ đầu. README nói các hướng dẫn được chia theo ngôn ngữ chính (C#, C/C++, Go, HTML và CSS, Java, JavaScript, Kotlin, PHP, Python, R, Ruby, Rust, Swift và nhiều ngôn ngữ khác), có thể dùng nhiều công nghệ. Để bắt đầu, README bảo fork repo; hướng dẫn đóng góp nằm trong tệp CONTRIBUTING. Mỗi mục là liên kết tới bài hướng dẫn ở nơi khác.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Học bơi bằng cách xuống nước mới nhanh. Danh sách này là tấm biển chỉ các 'hồ bơi tập' khác nhau: mỗi hồ là một dự án nhỏ (làm trò chơi, ứng dụng ghi chú, trình tải dữ liệu) có người dẫn từng bước. Bạn chọn hồ hợp ngôn ngữ mình muốn học.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chọn một ngôn ngữ bạn muốn học, chọn một dự án nhỏ trong danh sách và nhờ AI giải thích những đoạn mã chưa hiểu trong hướng dẫn. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người học lập trình theo kiểu 'làm ra sản phẩm'; người đã học cú pháp cơ bản và cần dự án thực hành.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ để chọn, trung bình để làm theo.</strong> Danh sách dễ duyệt. Mức khó của từng hướng dẫn rất khác nhau và README không phân loại theo độ khó. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa biết bắt đầu từ đâu về nền tảng, hãy học các khóa có lộ trình như freeCodeCamp trước rồi quay lại làm dự án.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>fork</strong>: sao chép một repo GitHub về tài khoản của bạn để chỉnh sửa; README dùng từ này để chỉ cách bắt đầu.</li><li><strong>tutorial (hướng dẫn)</strong>: bài viết hoặc video dẫn dắt từng bước.</li><li><strong>curated list (danh sách tuyển chọn)</strong>: danh sách do người duy trì chọn lọc, nhưng chất lượng từng mục vẫn cần kiểm tra.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì để đọc. Mỗi hướng dẫn nằm ở trang riêng với yêu cầu và chi phí riêng (có thể cần tài khoản, công cụ hay khóa học trả phí). Danh sách theo giấy phép MIT; nội dung các hướng dẫn được liên kết có giấy phép riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Chọn một ngôn ngữ trong mục lục.</li><li>Mở hướng dẫn, đọc phần giới thiệu và yêu cầu trước khi làm theo.</li><li>Ghi lại dự án đã làm và thử sửa nó theo ý riêng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học lập trình bằng cách làm dự án. Hãy đọc danh sách tại https://github.com/practical-tutorials/project-based-learning và đề xuất bằng tiếng Việt cách chọn một hướng dẫn phù hợp với người mới ở một ngôn ngữ cụ thể, kèm tiêu chí kiểm tra một hướng dẫn có đáng làm không (ngày cập nhật, ngôn ngữ, yêu cầu). Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không cho biết hướng dẫn nào còn cập nhật; nhiều liên kết có thể đã cũ hoặc hỏng. Không có đánh giá chất lượng hay độ khó. Dự án thuộc danh sách nên chúng tôi chưa mở và kiểm tra từng hướng dẫn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi làm theo hướng dẫn hay chạy mã mẫu từ nguồn bên ngoài, hãy đọc qua mã trước, dùng dữ liệu giả và không dán mật khẩu hay khóa API vào mã đưa lên GitHub.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>practical-tutorials</strong> có <strong>288.829 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT cho danh sách; tài liệu được liên kết có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/practical-tutorials/project-based-learning/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/practical-tutorials/project-based-learning\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm tài liệu học lập trình, key 177. Chưa cài/chạy thử; không tạo validation. Snapshot sao 288829; repo_id 88011908; README SHA256 540e81c1f5062f0ed2b5b318593a6de7bc8cff6d240b825ce045c68183da1512.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/practical-tutorials/project-based-learning",
+          "repo_id": "88011908",
+          "source_path": "",
+          "source_revision": "README-SHA256:540e81c1f5062f0ed2b5b318593a6de7bc8cff6d240b825ce045c68183da1512",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/practical-tutorials/project-based-learning",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì để đọc. Mỗi hướng dẫn nằm ở trang riêng với yêu cầu và chi phí riêng (có thể cần tài khoản, công cụ hay khóa học trả phí). Danh sách theo giấy phép MIT; nội dung các hướng dẫn được liên kết có giấy phép riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/practical-tutorials/project-based-learning/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/practical-tutorials/project-based-learning/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "practical-tutorials/project-based-learning",
+        "stars": 288829,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/practical-tutorials/project-based-learning/master/README.md",
+        "readmeSha256": "540e81c1f5062f0ed2b5b318593a6de7bc8cff6d240b825ce045c68183da1512",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 178,
+      "batch": 30,
+      "slug": "data-science-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Data Science for Beginners: giáo trình 10 tuần về khoa học dữ liệu, có đạo đức dữ liệu",
+        "excerpt": "Giáo trình của Microsoft gồm 20 bài, có quiz trước và sau bài, bắt đầu từ khái niệm dữ liệu và đạo đức dữ liệu. Hợp người muốn hiểu dữ liệu trước khi nhờ AI phân tích.",
+        "content": "<p>Data Science for Beginners là giáo trình 10 tuần, 20 bài của Azure Cloud Advocates tại Microsoft về khoa học dữ liệu. README nói mỗi bài có quiz trước và sau bài, hướng dẫn viết, lời giải và bài tập; cách dạy dựa trên dự án với quiz thường xuyên. Bảng bài học bắt đầu từ định nghĩa khoa học dữ liệu, đạo đức dữ liệu, định nghĩa dữ liệu và nguồn dữ liệu. Repo có nhiều bản dịch ngôn ngữ do GitHub Action tạo và cộng đồng học trên Discord.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trước khi nhờ AI 'phân tích số liệu', bạn cần biết dữ liệu là gì, đến từ đâu và có công bằng hay không. Giáo trình này giống một lớp nhập môn xếp theo thứ tự: bài đầu hỏi 'dữ liệu là gì và có nên dùng nó không', các bài sau mới đến làm sạch, vẽ biểu đồ và phân tích.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc bài về đạo đức dữ liệu trước khi nhờ AI phân tích một bảng khách hàng, để biết những loại dữ liệu cá nhân nào cần thận trọng. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người mới muốn có nền tảng khoa học dữ liệu; giảng viên cần giáo trình có sẵn quiz.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Giáo trình viết cho người mới, nhưng các bài sau dùng mã (Python hoặc các công cụ khác) và cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần vài thủ thuật làm biểu đồ nhanh, các bài về pandas hay Altair có thể đủ. Nếu bạn muốn học AI tạo sinh, giáo trình này không tập trung vào đó.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>data science (khoa học dữ liệu)</strong>: lĩnh vực dùng dữ liệu để trả lời câu hỏi và hỗ trợ quyết định.</li><li><strong>đạo đức dữ liệu</strong>: những nguyên tắc về công bằng, riêng tư và trách nhiệm khi thu thập và dùng dữ liệu.</li><li><strong>quiz trước và sau bài</strong>: cách dạy trong README: quiz trước bài để định hướng, quiz sau bài để ghi nhớ.</li><li><strong>sketchnote</strong>: tranh tóm tắt bài học bằng nét vẽ tay mà giáo trình dùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn fork repo và học theo thứ tự, có quiz trên web riêng. Có nhiều bản dịch (liên kết trong README); chúng tôi chưa xác nhận có bản tiếng Việt. Miễn phí theo giấy phép MIT. Chi phí công cụ đi kèm (nếu có) chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và bảng bài học.</li><li>Bắt đầu từ bài 01 và 02 (định nghĩa và đạo đức dữ liệu).</li><li>Làm quiz trước và sau mỗi bài rồi nhờ AI giải thích chỗ chưa hiểu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu khoa học dữ liệu trước khi nhờ AI phân tích số liệu. Hãy đọc README của Data-Science-For-Beginners (https://github.com/microsoft/Data-Science-For-Beginners) và đề xuất bằng tiếng Việt 5 bài đầu nên học, kèm giải thích ngắn mỗi bài dạy gì và vì sao đạo đức dữ liệu quan trọng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giáo trình này tập trung nền tảng, không phải hướng dẫn công cụ AI mới. Một số bài dùng dịch vụ của Microsoft nên cần xem điều kiện tài khoản. Chất lượng bản dịch chưa đánh giá.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi làm theo hướng dẫn hay chạy mã mẫu từ nguồn bên ngoài, hãy đọc qua mã trước, dùng dữ liệu giả và không dán mật khẩu hay khóa API vào mã đưa lên GitHub.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>37.910 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-21. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/Data-Science-For-Beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/Data-Science-For-Beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm tài liệu học lập trình, key 178. Chưa cài/chạy thử; không tạo validation. Snapshot sao 37910; repo_id 344191198; README SHA256 6e3c6a7fdde0c3c6312e29601aa1e2c5d1f6c536150da84a2ba3f86fc790f9ba.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/Data-Science-For-Beginners",
+          "repo_id": "344191198",
+          "source_path": "",
+          "source_revision": "README-SHA256:6e3c6a7fdde0c3c6312e29601aa1e2c5d1f6c536150da84a2ba3f86fc790f9ba",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/Data-Science-For-Beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn fork repo và học theo thứ tự, có quiz trên web riêng. Có nhiều bản dịch (liên kết trong README); chúng tôi chưa xác nhận có bản tiếng Việt. Miễn phí theo giấy phép MIT. Chi phí công cụ đi kèm (nếu có) chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/Data-Science-For-Beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/Data-Science-For-Beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/Data-Science-For-Beginners",
+        "stars": 37910,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/Data-Science-For-Beginners/main/README.md",
+        "readmeSha256": "6e3c6a7fdde0c3c6312e29601aa1e2c5d1f6c536150da84a2ba3f86fc790f9ba",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 179,
+      "batch": 30,
+      "slug": "thealgorithms-python",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "The Algorithms (Python): kho cài đặt thuật toán bằng Python để học, không để dùng thay thư viện",
+        "excerpt": "Hiểu kho mã minh họa hàng trăm thuật toán bằng Python và lời cảnh báo của chính tác giả rằng đây chỉ là để học. Hợp người muốn hiểu thuật toán sắp xếp, tìm kiếm.",
+        "content": "<p>The Algorithms - Python là kho các thuật toán cài đặt bằng Python. README rất ngắn nhưng nêu rõ một điều quan trọng: các cài đặt chỉ dành cho mục đích học tập, có thể kém hiệu quả hơn bản trong thư viện chuẩn của Python và bạn dùng theo cân nhắc của mình. README dẫn tới hướng dẫn đóng góp, kênh Discord của cộng đồng và tệp DIRECTORY liệt kê toàn bộ thuật toán để dễ tìm.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bảo tàng cơ khí trưng bày cách bánh răng, ròng rọc hoạt động: giúp bạn hiểu nguyên lý, nhưng khi cần xây cầu thật bạn dùng vật liệu và máy móc đã được kiểm định, không đem bánh răng bảo tàng ra lắp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi AI viết hàm sắp xếp hay tìm kiếm, mở cài đặt tương ứng trong kho để hiểu ý tưởng, rồi dùng hàm có sẵn trong thư viện chuẩn cho sản phẩm thật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Sinh viên và người tự học muốn hiểu thuật toán; người muốn đọc mã Python gọn có chú thích.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản và tư duy thuật toán. README không có hướng dẫn học từng bước, chỉ dẫn tới danh mục. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng dùng mã trong kho cho sản phẩm thật khi đã có thư viện chuẩn. Nếu bạn chưa biết Python, hãy học nền tảng trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>algorithm (thuật toán)</strong>: dãy bước rõ ràng để giải một bài toán, như sắp xếp một danh sách.</li><li><strong>standard library (thư viện chuẩn)</strong>: bộ hàm có sẵn của ngôn ngữ, đã được kiểm thử nhiều.</li><li><strong>DIRECTORY</strong>: tệp liệt kê toàn bộ thuật toán trong repo để dễ tìm, theo README.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì để đọc trên GitHub; chạy mã cần Python. README ngắn không nêu yêu cầu phiên bản. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo 'chỉ để học' trong README.</li><li>Mở DIRECTORY và chọn một thuật toán quen thuộc như sắp xếp.</li><li>Đọc mã, chạy thử ví dụ nhỏ và so sánh với hàm có sẵn của Python.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu thuật toán sắp xếp bằng Python. Hãy đọc README của TheAlgorithms/Python (https://github.com/TheAlgorithms/Python) và giải thích bằng tiếng Việt vì sao tác giả cảnh báo chỉ dùng để học, và hướng dẫn cách đọc một cài đặt để hiểu ý tưởng. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README gần như chỉ là trang chỉ đường; chất lượng từng cài đặt khác nhau và không được bảo đảm. Mã không tối ưu cho sản phẩm thật theo chính tác giả.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi làm theo hướng dẫn hay chạy mã mẫu từ nguồn bên ngoài, hãy đọc qua mã trước, dùng dữ liệu giả và không dán mật khẩu hay khóa API vào mã đưa lên GitHub.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>TheAlgorithms</strong> có <strong>225.794 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/TheAlgorithms/Python/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/TheAlgorithms/Python\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm tài liệu học lập trình, key 179. Chưa cài/chạy thử; không tạo validation. Snapshot sao 225794; repo_id 63476337; README SHA256 fe208b1887737f0f067057d33baf66ac4195279c791a26293ddff7f11409d75d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/TheAlgorithms/Python",
+          "repo_id": "63476337",
+          "source_path": "",
+          "source_revision": "README-SHA256:fe208b1887737f0f067057d33baf66ac4195279c791a26293ddff7f11409d75d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TheAlgorithms/Python",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì để đọc trên GitHub; chạy mã cần Python. README ngắn không nêu yêu cầu phiên bản. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TheAlgorithms/Python/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/TheAlgorithms/Python/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "TheAlgorithms/Python",
+        "stars": 225794,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/TheAlgorithms/Python/master/README.md",
+        "readmeSha256": "fe208b1887737f0f067057d33baf66ac4195279c791a26293ddff7f11409d75d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 180,
+      "batch": 30,
+      "slug": "first-contributions",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "First Contributions: tập đóng góp đầu tiên cho dự án mã nguồn mở bằng Git và GitHub",
+        "excerpt": "Hướng dẫn từng bước (fork, clone, tạo nhánh, commit, pull request) trên một repo tập luyện an toàn. Rất hợp để làm quen quy trình mà coding agent hay dùng.",
+        "content": "<p>First Contributions là dự án giúp người mới thực hiện đóng góp đầu tiên. README hướng dẫn từng bước: cài Git, fork repo, clone về máy, tạo nhánh bằng lệnh git switch, thực hiện thay đổi, commit và gửi pull request. README nói nếu bạn không quen dòng lệnh thì có hướng dẫn dùng công cụ đồ họa, và có bản dịch sang nhiều ngôn ngữ. Đây là repo tập luyện: bạn thêm tên mình vào một tệp để thực hành quy trình.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bãi tập lái xe có đường vạch sẵn: bạn học quy trình xuất phát, quẹo, đỗ mà không sợ va chạm với xe thật. Ở đây 'xe' là quy trình Git và GitHub mà hầu hết dự án và cả coding agent đều dùng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: trước khi cho agent AI tạo pull request trên dự án thật, bạn tự làm một lần quy trình này để hiểu nó đã làm những bước gì. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người chưa từng dùng Git và GitHub; người muốn hiểu pull request, nhánh, fork.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Hướng dẫn rất từng bước, nhưng Git có nhiều khái niệm mới (nhánh, commit, remote). Có đường dùng công cụ đồ họa cho người ngại dòng lệnh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn đã quen quy trình Git và pull request, không cần. Nếu bạn muốn tìm dự án thực để đóng góp, repo này chỉ để tập.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>fork</strong>: bản sao repo của người khác trong tài khoản của bạn.</li><li><strong>clone</strong>: tải bản sao repo về máy.</li><li><strong>branch (nhánh)</strong>: đường làm việc riêng để thử thay đổi mà không đụng bản chính.</li><li><strong>pull request</strong>: đề nghị đưa thay đổi của bạn vào repo gốc để người duy trì xem.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Cần tài khoản GitHub và Git trên máy (README liên kết hướng dẫn cài của GitHub). README mô tả cách đăng nhập SSH khi clone. Bài không chép lệnh. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc từ đầu đến phần tạo pull request, đừng nhảy cóc.</li><li>Làm đúng thứ tự: fork, clone, nhánh, sửa, commit, gửi.</li><li>Nếu ngại dòng lệnh, đọc mục hướng dẫn dùng công cụ đồ họa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình chưa từng dùng Git. Hãy đọc README của first-contributions (https://github.com/firstcontributions/first-contributions) và giải thích bằng tiếng Việt fork, clone, branch, commit, pull request bằng ví dụ đời thường, và nêu 3 lỗi người mới hay gặp. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README có hướng dẫn đăng nhập SSH và dùng khóa; cần cẩn thận không để lộ khóa riêng. Repo tập luyện có thể nhận rất nhiều thay đổi nhỏ nên không phải nơi đóng góp thực sự cho một sản phẩm.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không đưa khóa riêng SSH hay token vào kho hay chat. Với pull request thật, đọc kỹ thay đổi trước khi gửi.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>firstcontributions</strong> có <strong>56.677 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/firstcontributions/first-contributions/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/firstcontributions/first-contributions\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm tài liệu học lập trình, key 180. Chưa cài/chạy thử; không tạo validation. Snapshot sao 56677; repo_id 68720867; README SHA256 6f85aea283906a31b454aba7fa34336b4eab54344c07a16e522ab1289ee45156.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/firstcontributions/first-contributions",
+          "repo_id": "68720867",
+          "source_path": "",
+          "source_revision": "README-SHA256:6f85aea283906a31b454aba7fa34336b4eab54344c07a16e522ab1289ee45156",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firstcontributions/first-contributions",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Cần tài khoản GitHub và Git trên máy (README liên kết hướng dẫn cài của GitHub). README mô tả cách đăng nhập SSH khi clone. Bài không chép lệnh. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firstcontributions/first-contributions/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/firstcontributions/first-contributions/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "firstcontributions/first-contributions",
+        "stars": 56677,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/firstcontributions/first-contributions/main/README.md",
+        "readmeSha256": "6f85aea283906a31b454aba7fa34336b4eab54344c07a16e522ab1289ee45156",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 181,
+      "batch": 30,
+      "slug": "github-gitignore",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "github/gitignore: mẫu tệp .gitignore để không đưa tệp bí mật và tệp rác lên Git",
+        "excerpt": "Hiểu .gitignore là gì và kho mẫu của GitHub giúp bạn khai báo tệp không nên lưu vào Git. Một bước nhỏ nhưng quan trọng để tránh lộ khóa API.",
+        "content": "<p>github/gitignore là bộ mẫu tệp .gitignore do GitHub duy trì. README nói bộ mẫu này dùng để điền danh sách chọn mẫu .gitignore khi tạo repo mới hoặc tạo tệp trên GitHub.com. Cấu trúc: thư mục gốc chứa các mẫu phổ biến cho ngôn ngữ và công nghệ để tránh đưa tệp không quan trọng vào repo; thư mục Global chứa mẫu cho trình soạn, công cụ và hệ điều hành, nên thêm vào cấu hình toàn cục; thư mục community chứa mẫu cho công cụ chuyên biệt. README dẫn tới sách Pro Git và tài liệu GitHub về việc bỏ qua tệp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi dọn nhà để đem đi chụp ảnh đăng báo, bạn cất đồ riêng tư vào tủ có khóa. .gitignore là danh sách 'đồ không được đưa vào ảnh': tệp chứa mật khẩu, thư mục thư viện cài sẵn, tệp tạm của máy. Mẫu của GitHub là danh sách soạn sẵn cho từng loại dự án.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: trước khi đưa dự án do AI tạo lên GitHub, kiểm tra tệp .gitignore đã loại trừ tệp .env và thư mục thư viện chưa, dùng mẫu của GitHub làm tham chiếu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Mọi người dùng Git, đặc biệt người vibe code hay có tệp .env chứa khóa API.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> Chỉ là các tệp văn bản mẫu; điều khó là nhớ kiểm tra trước khi commit. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lưu ý: .gitignore chỉ ngăn tệp chưa từng được theo dõi, không xóa tệp đã lỡ commit; nếu khóa đã lên GitHub thì phải thu hồi khóa.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>.gitignore</strong>: tệp nói với Git những tệp nào đừng theo dõi và đừng đưa lên kho.</li><li><strong>template (mẫu)</strong>: tệp .gitignore soạn sẵn cho một loại dự án.</li><li><strong>global gitignore</strong>: danh sách bỏ qua áp dụng cho mọi repo trên máy bạn; README gợi ý dùng cho mẫu của trình soạn và hệ điều hành.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì. Chọn mẫu phù hợp với ngôn ngữ hoặc công nghệ, và tự bổ sung các tệp riêng của bạn như .env. Mẫu theo giấy phép CC0-1.0 (miễn phí dùng không điều kiện theo README).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Folder structure để hiểu ba loại mẫu.</li><li>Chọn mẫu theo ngôn ngữ của dự án và kiểm tra có dòng loại trừ .env chưa; nếu chưa, tự thêm.</li><li>Chạy lệnh kiểm tra trạng thái Git để xem tệp nào sẽ bị theo dõi trước khi commit.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án AI tạo cho mình có tệp .env chứa khóa API. Hãy đọc README của github/gitignore (https://github.com/github/gitignore) và giải thích bằng tiếng Việt: .gitignore làm gì, vì sao tệp đã commit rồi thì thêm vào .gitignore cũng không xóa được, và cách xử lý nếu khóa đã lỡ lên GitHub. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mẫu là điểm khởi đầu, không bảo đảm đủ cho dự án của bạn; không biết tệp bí mật riêng của bạn. .gitignore không xóa tệp đã nằm trong lịch sử Git.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Nếu khóa API từng bị commit, hãy thu hồi và tạo khóa mới; xem thêm bài Gitleaks trong nhóm bảo mật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>github</strong> có <strong>176.134 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện CC0-1.0; README ghi CC0-1.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/github/gitignore/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/github/gitignore\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm tài liệu học lập trình, key 181. Chưa cài/chạy thử; không tạo validation. Snapshot sao 176134; repo_id 1062897; README SHA256 b4777fe65003e4b43fd2ceaface229dce48e506bc0082b5356f14d3b72c5d16f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/github/gitignore",
+          "repo_id": "1062897",
+          "source_path": "",
+          "source_revision": "README-SHA256:b4777fe65003e4b43fd2ceaface229dce48e506bc0082b5356f14d3b72c5d16f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "CC0-1.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/gitignore",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì. Chọn mẫu phù hợp với ngôn ngữ hoặc công nghệ, và tự bổ sung các tệp riêng của bạn như .env. Mẫu theo giấy phép CC0-1.0 (miễn phí dùng không điều kiện theo README).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/gitignore/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/github/gitignore/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "github/gitignore",
+        "stars": 176134,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/github/gitignore/main/README.md",
+        "readmeSha256": "b4777fe65003e4b43fd2ceaface229dce48e506bc0082b5356f14d3b72c5d16f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
