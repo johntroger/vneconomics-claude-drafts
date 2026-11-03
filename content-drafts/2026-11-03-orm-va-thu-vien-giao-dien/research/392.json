@@ -1,0 +1,35 @@
+{
+  "key": 392,
+  "repo": "typeorm/typeorm",
+  "repoId": "52773157",
+  "url": "https://github.com/typeorm/typeorm",
+  "stars": 36662,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-29T06:46:16Z",
+  "createdAt": "2016-02-29T07:41:14Z",
+  "defaultBranch": "master",
+  "description": "TypeScript & JavaScript ORM for Node.js — supports PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, and more.",
+  "homepage": "http://typeorm.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/typeorm/typeorm/master/README.md",
+    "sha256": "1c9c2dfed647055aab51300dea232a44aa04977f8352ae382330c659fe194daf",
+    "bytes": 10601,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu đầy đủ.",
+    "Chưa thử.",
+    "Chưa so sánh với Drizzle (bài trong kho) hay Sequelize (cùng nhóm).",
+    "Danh sách cơ sở dữ liệu hỗ trợ chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

@@ -5167,5 +5167,147 @@
    "fastify",
    "phoenix"
   ]
+ },
+ {
+  "key": 392,
+  "slug": "typeorm",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "TypeORM: ORM cho TypeScript và JavaScript, hỗ trợ cả Active Record lẫn Data Mapper và nhiều loại cơ sở dữ liệu",
+  "repo": "typeorm/typeorm",
+  "stars": 36662,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-29",
+  "related": [
+   "sequelize"
+  ]
+ },
+ {
+  "key": 393,
+  "slug": "sequelize",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Sequelize: ORM Node.js dựa trên promise cho nhiều cơ sở dữ liệu, README đang tìm người bảo trì mới cho bản chính tiếp theo",
+  "repo": "sequelize/sequelize",
+  "stars": 30341,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "msw",
+   "typeorm"
+  ]
+ },
+ {
+  "key": 394,
+  "slug": "mantine",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Mantine: bộ thư viện React gồm hơn 100 thành phần, hơn 80 hook, form, biểu đồ, thông báo và bảng điều khiển lệnh",
+  "repo": "mantinedev/mantine",
+  "stars": 31897,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "chakra-ui",
+   "material-ui"
+  ]
+ },
+ {
+  "key": 395,
+  "slug": "chakra-ui",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Chakra UI: hệ thống thành phần React dễ tiếp cận để dựng sản phẩm nhanh, README nêu các phiên bản tài liệu v0 đến mới nhất",
+  "repo": "chakra-ui/chakra-ui",
+  "stars": 40711,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "mantine"
+  ]
+ },
+ {
+  "key": 396,
+  "slug": "material-ui",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Material UI (MUI): thư viện thành phần React theo Material Design, được mở rộng bởi gói MUI X cho thành phần phức tạp",
+  "repo": "mui/material-ui",
+  "stars": 99297,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "ant-design",
+   "mantine"
+  ]
+ },
+ {
+  "key": 397,
+  "slug": "ant-design",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Ant Design: ngôn ngữ thiết kế cấp doanh nghiệp và thư viện thành phần React, viết bằng TypeScript, hỗ trợ nhiều ngôn ngữ",
+  "repo": "ant-design/ant-design",
+  "stars": 100052,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "material-ui",
+   "storybook"
+  ]
+ },
+ {
+  "key": 398,
+  "slug": "storybook",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "Storybook: xưởng giao diện để dựng, thử và ghi chép thành phần UI tách biệt khỏi ứng dụng",
+  "repo": "storybookjs/storybook",
+  "stars": 91432,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "ant-design",
+   "msw"
+  ]
+ },
+ {
+  "key": 399,
+  "slug": "msw",
+  "group": "2026-11-03-orm-va-thu-vien-giao-dien",
+  "title": "MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập",
+  "repo": "mswjs/msw",
+  "stars": 18330,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-17",
+  "related": [
+   "sequelize",
+   "storybook"
+  ]
  }
 ]

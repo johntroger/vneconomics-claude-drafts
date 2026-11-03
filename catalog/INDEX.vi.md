@@ -48,6 +48,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 46 — Dữ liệu, thông điệp và quan sát ở quy mô lớn](learning-paths/46-du-lieu-thoi-gian-thuc-va-hang-doi.vi.md) — Lập lịch trong cơ sở dữ liệu, PostgreSQL trọn gói, thông điệp, luồng sự kiện, phân tích và thu thập dữ liệu quan sát; đây là chủ đề khó, dành cho khi dự án đã đủ lớn.
 - [Lộ trình 47 — Làm quen các ngôn ngữ lập trình thường gặp](learning-paths/47-ngon-ngu-lap-trinh.vi.md) — Hiểu một số ngôn ngữ để đọc mã do AI viết; README nhiều kho dành cho người dựng ngôn ngữ nên cần tài liệu chính thức để học.
 - [Lộ trình 48 — Framework web phía máy chủ](learning-paths/48-framework-web-may-chu.vi.md) — Từ framework trọn gói đến framework nhẹ cho API; README nhiều dự án rất ngắn nên cần đọc tài liệu chính thức.
+- [Lộ trình 49 — ORM, thư viện giao diện React và công cụ thử giao diện](learning-paths/49-orm-va-thu-vien-giao-dien.vi.md) — Lưu dữ liệu bằng ORM, dựng giao diện bằng thư viện thành phần, thử thành phần và giả lập API; chú ý phiên bản và tình trạng bảo trì.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -103,7 +104,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (124 bài)
+### Cơ bản (128 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -231,8 +232,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 387 | Laravel: framework web PHP với cú pháp biểu cảm, định tuyến, hàng đợi và phát sóng sự kiện; kho này chỉ chứa lõi framework | [laravel/framework](https://github.com/laravel/framework) | MIT | 34987 | framework-web-may-chu |
 | 390 | Fastify: framework web Node.js tập trung vào hiệu quả, mở rộng bằng hook, plugin và decorator, khuyến khích kiểm tra bằng JSON Schema | [fastify/fastify](https://github.com/fastify/fastify) | MIT | 37336 | framework-web-may-chu |
 | 391 | Gin: framework web Go hiệu năng cao với API kiểu Martini, README nêu yêu cầu phiên bản Go và con số hiệu năng của tác giả | [gin-gonic/gin](https://github.com/gin-gonic/gin) | MIT | 89472 | framework-web-may-chu |
+| 394 | Mantine: bộ thư viện React gồm hơn 100 thành phần, hơn 80 hook, form, biểu đồ, thông báo và bảng điều khiển lệnh | [mantinedev/mantine](https://github.com/mantinedev/mantine) | MIT | 31897 | orm-va-thu-vien-giao-dien |
+| 395 | Chakra UI: hệ thống thành phần React dễ tiếp cận để dựng sản phẩm nhanh, README nêu các phiên bản tài liệu v0 đến mới nhất | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | MIT | 40711 | orm-va-thu-vien-giao-dien |
+| 396 | Material UI (MUI): thư viện thành phần React theo Material Design, được mở rộng bởi gói MUI X cho thành phần phức tạp | [mui/material-ui](https://github.com/mui/material-ui) | MIT | 99297 | orm-va-thu-vien-giao-dien |
+| 397 | Ant Design: ngôn ngữ thiết kế cấp doanh nghiệp và thư viện thành phần React, viết bằng TypeScript, hỗ trợ nhiều ngôn ngữ | [ant-design/ant-design](https://github.com/ant-design/ant-design) | MIT | 100052 | orm-va-thu-vien-giao-dien |
 
-### Khá khó (cần nền kỹ thuật) (33 bài)
+### Khá khó (cần nền kỹ thuật) (36 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -269,8 +274,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 367 | Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán | [locustio/locust](https://github.com/locustio/locust) | MIT | 28260 | kiem-thu-api-va-hieu-nang |
 | 368 | Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh | [Orange-OpenSource/hurl](https://github.com/Orange-OpenSource/hurl) | Apache-2.0 | 19295 | kiem-thu-api-va-hieu-nang |
 | 382 | Crystal: ngôn ngữ cú pháp gần Ruby, kiểm tra kiểu tĩnh mà không phải ghi kiểu khắp nơi, biên dịch ra mã gốc | [crystal-lang/crystal](https://github.com/crystal-lang/crystal) | Apache-2.0 | 20481 | ngon-ngu-lap-trinh |
+| 393 | Sequelize: ORM Node.js dựa trên promise cho nhiều cơ sở dữ liệu, README đang tìm người bảo trì mới cho bản chính tiếp theo | [sequelize/sequelize](https://github.com/sequelize/sequelize) | MIT | 30341 | orm-va-thu-vien-giao-dien |
+| 398 | Storybook: xưởng giao diện để dựng, thử và ghi chép thành phần UI tách biệt khỏi ứng dụng | [storybookjs/storybook](https://github.com/storybookjs/storybook) | MIT | 91432 | orm-va-thu-vien-giao-dien |
+| 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 
-### Nâng cao (90 bài)
+### Nâng cao (91 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -364,6 +372,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 385 | Swift: ngôn ngữ lập trình hệ thống hiệu năng cao với cú pháp hiện đại và an toàn bộ nhớ theo mặc định, README dành cho người dựng | [swiftlang/swift](https://github.com/swiftlang/swift) | Apache-2.0 | 70525 | ngon-ngu-lap-trinh |
 | 388 | Spring Boot: dựng ứng dụng Spring sẵn sàng sản xuất với rất ít cấu hình, chạy như ứng dụng Java độc lập hay WAR | [spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) | Apache-2.0 | 81734 | framework-web-may-chu |
 | 389 | Phoenix: framework web của Elixir, 'yên tâm từ nguyên mẫu đến sản xuất', README có cách tạo dự án từ bản chưa phát hành | [phoenixframework/phoenix](https://github.com/phoenixframework/phoenix) | MIT | 23212 | framework-web-may-chu |
+| 392 | TypeORM: ORM cho TypeScript và JavaScript, hỗ trợ cả Active Record lẫn Data Mapper và nhiều loại cơ sở dữ liệu | [typeorm/typeorm](https://github.com/typeorm/typeorm) | MIT | 36662 | orm-va-thu-vien-giao-dien |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

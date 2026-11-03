@@ -1,0 +1,832 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-orm-giao-dien",
+  "batch": 68,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 392,
+      "batch": 68,
+      "slug": "typeorm",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "TypeORM: ORM cho TypeScript và JavaScript, hỗ trợ cả Active Record lẫn Data Mapper và nhiều loại cơ sở dữ liệu",
+        "excerpt": "Hiểu TypeORM là ORM chạy trên Node.js, trình duyệt và nhiều nền tảng khác, ánh xạ bảng cơ sở dữ liệu thành lớp trong TypeScript. README nói nó hỗ trợ nhiều cơ sở dữ liệu hơn mọi ORM JS/TS khác; đây là tuyên bố của dự án.",
+        "content": "<p>README tả TypeORM là ORM chạy được trên Node.js, trình duyệt, Cordova, Ionic, React Native, NativeScript, Expo và Electron, dùng với TypeScript và JavaScript. README nói TypeORM hỗ trợ nhiều cơ sở dữ liệu hơn mọi ORM JS/TS khác (liệt kê Google Spanner, Microsoft SQL Server, MySQL/MariaDB... đây là tuyên bố của README), hỗ trợ cả hai mẫu Active Record và Data Mapper, chịu ảnh hưởng của Hibernate, Doctrine và Entity Framework. Mục Features nêu: thực thể và cột, kiểu cột riêng cho từng cơ sở dữ liệu, quản lý thực thể, kho (repository), quan hệ (liên kết một chiều, hai chiều, tự tham chiếu, tải sớm và tải lười), nhiều mẫu kế thừa và nhiều tính năng khác. Giấy phép MIT theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Viết SQL thủ công cho từng thao tác rất dài. TypeORM giống người phiên dịch: bạn mô tả bảng bằng các lớp TypeScript, và nó lo chuyển thành câu lệnh cho cơ sở dữ liệu. Phải học thêm khái niệm thực thể, quan hệ và kho.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: định nghĩa bảng người dùng và bài viết bằng lớp TypeScript rồi truy vấn bằng đối tượng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần TypeScript, hiểu cơ sở dữ liệu quan hệ và khái niệm ORM; README dài và nhiều tính năng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa biết SQL cơ bản, nên học SQL trước. Tuyên bố hỗ trợ nhiều cơ sở dữ liệu nhất là của README; bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>ORM</strong>: công cụ ánh xạ bảng cơ sở dữ liệu thành đối tượng trong mã.</li><li><strong>Active Record / Data Mapper</strong>: hai mẫu thiết kế lưu dữ liệu; README nói TypeORM hỗ trợ cả hai.</li><li><strong>entity (thực thể)</strong>: lớp đại diện một bảng; README nêu.</li><li><strong>repository (kho)</strong>: đối tượng truy cập dữ liệu của một thực thể; README nêu.</li><li><strong>eager / lazy relations</strong>: tải dữ liệu liên quan ngay hay khi cần; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu trong thư mục docs; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js và một cơ sở dữ liệu. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc tài liệu cài đặt và ví dụ đầu.</li><li>Thử với cơ sở dữ liệu nhỏ không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng TypeScript và cần lưu dữ liệu. Hãy đọc README của TypeORM (https://github.com/typeorm/typeorm) và giải thích bằng tiếng Việt: ORM là gì, Active Record khác Data Mapper thế nào, và khi nào chưa cần ORM. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hỗ trợ nhiều cơ sở dữ liệu hơn mọi ORM khác' là tuyên bố của README. README dài, bài chỉ lấy các phần chính. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>typeorm</strong> có <strong>36.662 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/typeorm/typeorm/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/typeorm/typeorm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 392. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36662; repo_id 52773157; README SHA256 1c9c2dfed647055aab51300dea232a44aa04977f8352ae382330c659fe194daf.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/typeorm/typeorm",
+          "repo_id": "52773157",
+          "source_path": "",
+          "source_revision": "README-SHA256:1c9c2dfed647055aab51300dea232a44aa04977f8352ae382330c659fe194daf",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/typeorm/typeorm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu trong thư mục docs; bài chưa đọc chi tiết nên không nêu lệnh. Cần Node.js và một cơ sở dữ liệu. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/typeorm/typeorm/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/typeorm/typeorm/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "typeorm/typeorm",
+        "stars": 36662,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/typeorm/typeorm/master/README.md",
+        "readmeSha256": "1c9c2dfed647055aab51300dea232a44aa04977f8352ae382330c659fe194daf",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 393,
+      "batch": 68,
+      "slug": "sequelize",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Sequelize: ORM Node.js dựa trên promise cho nhiều cơ sở dữ liệu, README đang tìm người bảo trì mới cho bản chính tiếp theo",
+        "excerpt": "Hiểu Sequelize là ORM Node.js dễ dùng dựa trên promise cho Postgres, MySQL, MariaDB, SQLite và SQL Server. README nói dự án đang tìm người bảo trì mới và có ngân sách 2.500 đô la mỗi quý để chia cho người bảo trì.",
+        "content": "<p>README tả Sequelize là công cụ ORM Node.js dễ dùng, dựa trên promise cho Postgres và các cơ sở dữ liệu SQL khác. Mục nổi bật 'Seeking New Maintainers' nói dự án đang tìm người bảo trì mới để hoàn thiện và phát hành bản chính tiếp theo; có kinh phí 2.500 đô la mỗi quý chia cho người bảo trì và thêm quỹ cho đóng góp toàn thời gian; công việc gồm hoàn thiện bản chính tiếp theo, cải thiện hỗ trợ TypeScript và tích hợp cơ sở dữ liệu, sửa lỗi nghiêm trọng; liên hệ qua Slack. Getting Started dẫn tới sequelize.org. Giấy phép MIT theo huy hiệu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống TypeORM về vai trò nhưng lâu đời hơn trong thế giới Node.js. Điểm cần biết: README nói dự án đang cần thêm người bảo trì, nên khi chọn cho dự án lâu dài hãy theo dõi tình trạng bảo trì.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc tài liệu sequelize.org và thử mô hình hóa một bảng đơn giản. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần JavaScript, SQL cơ bản và khái niệm ORM. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Với dự án mới lâu dài, hãy cân nhắc tình trạng bảo trì mà README nêu và so sánh các ORM khác. Bài không khẳng định về chất lượng bản kế tiếp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>ORM</strong>: công cụ ánh xạ bảng thành đối tượng.</li><li><strong>promise</strong>: cơ chế JavaScript cho việc chờ kết quả; README nói Sequelize dựa trên promise.</li><li><strong>maintainer (người bảo trì)</strong>: người duy trì dự án; README đang tìm thêm.</li><li><strong>major version (bản chính)</strong>: phiên bản lớn có thể thay đổi nhiều; README nhắc bản chính tiếp theo.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu sequelize.org; bài chưa đọc nên không nêu lệnh. Cần Node.js và một cơ sở dữ liệu. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Seeking New Maintainers.</li><li>Đọc Getting Started trên sequelize.org.</li><li>Thử với cơ sở dữ liệu thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang chọn ORM cho Node.js. Hãy đọc README của Sequelize (https://github.com/sequelize/sequelize) và giải thích bằng tiếng Việt: Sequelize là gì, vì sao README tìm người bảo trì, và nên kiểm tra gì trước khi chọn cho dự án lâu dài. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu chi tiết tính năng hay hiệu năng. Việc tìm người bảo trì ảnh hưởng tới dự án lâu dài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sequelize</strong> có <strong>30.341 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu License: MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sequelize/sequelize/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sequelize/sequelize\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 393. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30341; repo_id 790359; README SHA256 e6b4f21a4f86a6033f77c3e3e3d19d12ca3144a2304644516b493aa8596df206.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sequelize/sequelize",
+          "repo_id": "790359",
+          "source_path": "",
+          "source_revision": "README-SHA256:e6b4f21a4f86a6033f77c3e3e3d19d12ca3144a2304644516b493aa8596df206",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sequelize/sequelize",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu sequelize.org; bài chưa đọc nên không nêu lệnh. Cần Node.js và một cơ sở dữ liệu. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sequelize/sequelize/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sequelize/sequelize/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sequelize/sequelize",
+        "stars": 30341,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sequelize/sequelize/main/README.md",
+        "readmeSha256": "e6b4f21a4f86a6033f77c3e3e3d19d12ca3144a2304644516b493aa8596df206",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 394,
+      "batch": 68,
+      "slug": "mantine",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Mantine: bộ thư viện React gồm hơn 100 thành phần, hơn 80 hook, form, biểu đồ, thông báo và bảng điều khiển lệnh",
+        "excerpt": "Hiểu Mantine là bộ thư viện React gồm thành phần giao diện (core, hơn 100 thành phần), hook, form, biểu đồ, thông báo, spotlight... README liệt kê các gói; giấy phép MIT.",
+        "content": "<p>README của Mantine ngắn: liệt kê liên kết (tài liệu, đóng góp, hỏi đáp, nhật ký thay đổi, X, Discord) và các gói: @mantine/hooks (hơn 80 hook quản lý trạng thái và giao diện), @mantine/core (thư viện thành phần cốt lõi, hơn 100 thành phần), @mantine/form (quản lý form), @mantine/charts (thư viện biểu đồ dựa trên recharts), @mantine/notifications (hệ thống thông báo đầy đủ), @mantine/spotlight (trung tâm lệnh Ctrl + K), @mantine/code-highlight (tô màu mã dựa trên highlight.js) và các gói khác. README nói Mantine là dự án mã nguồn mở theo giấy phép MIT, phát triển nhờ sự ủng hộ của các nhà tài trợ. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dựng giao diện từ số không là xây từng viên gạch. Mantine giống kho vật liệu có sẵn cho React: nút, ô nhập, form, biểu đồ, thông báo; và các hook (đoạn mã dùng lại) để quản lý trạng thái.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng trang quản trị với form và biểu đồ bằng các gói Mantine. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React và Node.js; README chỉ liệt kê gói. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng React, chưa cần. Số lượng thành phần và hook là từ README, bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>React component (thành phần React)</strong>: khối giao diện dùng lại; README nói core gồm hơn 100 thành phần.</li><li><strong>hook</strong>: hàm dùng lại logic trạng thái trong React; README nói gói hooks có hơn 80.</li><li><strong>recharts</strong>: thư viện biểu đồ mà README nói gói charts dựa trên.</li><li><strong>spotlight</strong>: hộp tìm lệnh mở bằng Ctrl + K; README nêu.</li><li><strong>MIT</strong>: giấy phép tự do; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu tại mantine.dev; bài chưa đọc nên không nêu lệnh. Cần React và Node.js. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách gói trong README.</li><li>Làm theo hướng dẫn bắt đầu trên mantine.dev.</li><li>Thử vài thành phần trong dự án React thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dựng giao diện React và cần bộ thành phần. Hãy đọc README của Mantine (https://github.com/mantinedev/mantine) và giải thích bằng tiếng Việt: các gói core, hooks, form, charts làm gì và nên bắt đầu từ đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, không mô tả tính năng chi tiết hay so sánh với thư viện khác. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mantinedev</strong> có <strong>31.897 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mantinedev/mantine/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mantinedev/mantine\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 394. Chưa cài/chạy thử; không tạo validation. Snapshot sao 31897; repo_id 327628682; README SHA256 ed3f723d83c74199aca418eb2a277f2e5ad3d34442a69fb2e9690cce3572f15e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mantinedev/mantine",
+          "repo_id": "327628682",
+          "source_path": "",
+          "source_revision": "README-SHA256:ed3f723d83c74199aca418eb2a277f2e5ad3d34442a69fb2e9690cce3572f15e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mantinedev/mantine",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu tại mantine.dev; bài chưa đọc nên không nêu lệnh. Cần React và Node.js. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mantinedev/mantine/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mantinedev/mantine/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mantinedev/mantine",
+        "stars": 31897,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mantinedev/mantine/master/README.md",
+        "readmeSha256": "ed3f723d83c74199aca418eb2a277f2e5ad3d34442a69fb2e9690cce3572f15e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 395,
+      "batch": 68,
+      "slug": "chakra-ui",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Chakra UI: hệ thống thành phần React dễ tiếp cận để dựng sản phẩm nhanh, README nêu các phiên bản tài liệu v0 đến mới nhất",
+        "excerpt": "Hiểu Chakra UI là hệ thống thành phần React dễ tiếp cận để dựng ứng dụng web và hệ thống thiết kế. README nêu hỗ trợ Next.js RSC, có tài liệu cho bản mới nhất, v2, v1 và v0.",
+        "content": "<p>README tả Chakra UI là hệ thống thành phần để dựng sản phẩm nhanh: các thành phần React dễ tiếp cận để dựng ứng dụng web chất lượng cao và hệ thống thiết kế, chạy được với Next.js RSC. Tài liệu: bản mới nhất ở chakra-ui.com, v2 ở v2.chakra-ui.com, v1 ở v1.chakra-ui.com, v0 ở v0.chakra-ui.com. Phần cài đặt nói dùng thành phần Chakra UI chỉ cần cài gói @chakra-ui/react và các phụ thuộc đồng hành (bài không chép lệnh). README có mục giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Tương tự Mantine: bộ thành phần React dựng sẵn. Điểm Chakra nhấn mạnh là 'dễ tiếp cận' (accessible), tức người dùng bàn phím hay trình đọc màn hình cũng dùng được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một biểu mẫu đăng ký với thành phần Chakra, kiểm tra điều hướng bằng bàn phím. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React và Node.js; chọn đúng phiên bản tài liệu rất quan trọng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói có nhiều phiên bản tài liệu (v0 tới mới nhất); khi gặp mã cũ hãy xác định phiên bản trước khi đọc tài liệu. Bài không đánh giá mức hỗ trợ trình đọc màn hình.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>accessible (dễ tiếp cận)</strong>: thiết kế để mọi người, kể cả người dùng công nghệ hỗ trợ, đều dùng được; README nêu.</li><li><strong>RSC</strong>: React Server Components; README nói Chakra chạy được với Next.js RSC.</li><li><strong>peer dependencies (phụ thuộc đồng hành)</strong>: gói cần cài kèm; README nhắc cài @emotion/react.</li><li><strong>design system (hệ thống thiết kế)</strong>: bộ quy tắc và thành phần giao diện thống nhất; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói @chakra-ui/react cùng phụ thuộc đồng hành bằng trình quản lý gói (bài không chép lệnh); cần React và Node.js. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Documentation để chọn đúng phiên bản.</li><li>Cài theo mục Installation.</li><li>Thử vài thành phần và kiểm tra điều hướng bàn phím.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dựng giao diện React. Hãy đọc README của Chakra UI (https://github.com/chakra-ui/chakra-ui) và giải thích bằng tiếng Việt: hệ thống thành phần là gì, vì sao phải chọn đúng phiên bản tài liệu, và 'dễ tiếp cận' nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Dựng nhanh', 'dễ tiếp cận' là cách nói của dự án; bài không kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>chakra-ui</strong> có <strong>40.711 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu và mục giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/chakra-ui/chakra-ui/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/chakra-ui/chakra-ui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 395. Chưa cài/chạy thử; không tạo validation. Snapshot sao 40711; repo_id 202890778; README SHA256 144a281b39d5fa14f44633c232b86ef9b03004ebb57f1f94249e27904abe889e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/chakra-ui/chakra-ui",
+          "repo_id": "202890778",
+          "source_path": "",
+          "source_revision": "README-SHA256:144a281b39d5fa14f44633c232b86ef9b03004ebb57f1f94249e27904abe889e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chakra-ui/chakra-ui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói @chakra-ui/react cùng phụ thuộc đồng hành bằng trình quản lý gói (bài không chép lệnh); cần React và Node.js. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/chakra-ui/chakra-ui/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "chakra-ui/chakra-ui",
+        "stars": 40711,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/README.md",
+        "readmeSha256": "144a281b39d5fa14f44633c232b86ef9b03004ebb57f1f94249e27904abe889e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 396,
+      "batch": 68,
+      "slug": "material-ui",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Material UI (MUI): thư viện thành phần React theo Material Design, được mở rộng bởi gói MUI X cho thành phần phức tạp",
+        "excerpt": "Hiểu Material UI là thư viện thành phần React với bản triển khai độc lập của Material Design (Google). README nêu bản MUI X cho thành phần phức tạp, danh sách phiên bản và tài liệu; con số 'hơn một thập kỷ' là tuyên bố của README.",
+        "content": "<p>README tả Material UI là thư viện thành phần React toàn diện với bản triển khai độc lập của Material Design của Google; README nói được nhiều nhóm sản phẩm hàng đầu tin dùng vì được thử thách hơn một thập kỷ phát triển bởi hàng nghìn người đóng góp (đây là tuyên bố của README). Chức năng lõi được mở rộng bởi MUI X, bộ thành phần phức tạp cho trường hợp nâng cao. README dẫn tới tài liệu và liệt kê tài liệu các phiên bản cũ (v5.x, v4.x, v3.x, v0.x) kèm hướng dẫn nâng cấp; ghi chú: @next trỏ tới bản phát hành thử, dùng @latest cho bản ổn định. Có mục nhà tài trợ, chính sách bảo mật (phiên bản được hỗ trợ và liên hệ). Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Material Design là phong cách giao diện quen thuộc của Google. Material UI cho bạn các thành phần React theo phong cách đó sẵn có. Điểm cần chú ý: có nhiều phiên bản chính, tài liệu mỗi bản khác nhau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng giao diện quản trị theo phong cách Material bằng các thành phần sẵn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React; thư viện rất lớn với nhiều phiên bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng nhầm tài liệu giữa các phiên bản; README nêu rõ @next là bản thử. Một số thành phần phức tạp thuộc MUI X, bài chưa kiểm tra cái nào miễn phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Material Design</strong>: ngôn ngữ thiết kế của Google; README nói Material UI là bản triển khai độc lập.</li><li><strong>MUI X</strong>: bộ thành phần phức tạp mở rộng; README nêu.</li><li><strong>@next / @latest</strong>: nhãn phiên bản thử và ổn định trên npm; README giải thích.</li><li><strong>migration (nâng cấp phiên bản)</strong>: hướng dẫn chuyển giữa các bản chính; README liệt kê.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu bắt đầu trên next.mui.com; bài chưa đọc nên không nêu lệnh. Cần React. Miễn phí theo giấy phép MIT; chưa kiểm tra gói MUI X trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Documentation.</li><li>Chọn đúng phiên bản tài liệu.</li><li>Thử vài thành phần trong dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dựng giao diện React theo Material Design. Hãy đọc README của Material UI (https://github.com/mui/material-ui) và giải thích bằng tiếng Việt: MUI X là gì, vì sao phải chú ý phiên bản, và @next khác @latest ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Được thử thách hơn một thập kỷ', 'được các nhóm hàng đầu tin dùng' là tuyên bố của README. Bài chưa kiểm tra giá MUI X. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mui</strong> có <strong>99.297 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT license. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mui/material-ui/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mui/material-ui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 396. Chưa cài/chạy thử; không tạo validation. Snapshot sao 99297; repo_id 23083156; README SHA256 e367c6fb14b5fbaa4f0361be487efa0cb67a3b45f54e878d3b2ce774faedb420.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mui/material-ui",
+          "repo_id": "23083156",
+          "source_path": "",
+          "source_revision": "README-SHA256:e367c6fb14b5fbaa4f0361be487efa0cb67a3b45f54e878d3b2ce774faedb420",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mui/material-ui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu bắt đầu trên next.mui.com; bài chưa đọc nên không nêu lệnh. Cần React. Miễn phí theo giấy phép MIT; chưa kiểm tra gói MUI X trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mui/material-ui/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mui/material-ui/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mui/material-ui",
+        "stars": 99297,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mui/material-ui/master/README.md",
+        "readmeSha256": "e367c6fb14b5fbaa4f0361be487efa0cb67a3b45f54e878d3b2ce774faedb420",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 397,
+      "batch": 68,
+      "slug": "ant-design",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ant Design: ngôn ngữ thiết kế cấp doanh nghiệp và thư viện thành phần React, viết bằng TypeScript, hỗ trợ nhiều ngôn ngữ",
+        "excerpt": "Hiểu Ant Design là ngôn ngữ thiết kế cấp doanh nghiệp kèm thư viện React sẵn có, viết bằng TypeScript, hỗ trợ quốc tế hóa và tùy biến chủ đề bằng CSS-in-JS. README có nhiều nhà tài trợ và mục hỗ trợ môi trường.",
+        "content": "<p>README tả Ant Design là ngôn ngữ thiết kế cấp doanh nghiệp và thư viện giao diện React. Tính năng nêu: giao diện cấp doanh nghiệp cho ứng dụng web, bộ thành phần React chất lượng cao dùng ngay, viết bằng TypeScript với kiểu tĩnh dự đoán được, bộ tài nguyên thiết kế và công cụ phát triển, hỗ trợ quốc tế hóa hàng chục ngôn ngữ, tùy biến chủ đề mạnh dựa trên CSS-in-JS. README có mục Environment Support (trình duyệt hiện đại...), danh sách nhà tài trợ trên Open Collective, nhật ký thay đổi (kèm bản tiếng Trung), báo lỗi và yêu cầu tính năng. Phần giấy phép: README nêu theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Mantine, Chakra hướng tới thông dụng, Ant Design hướng tới ứng dụng quản trị cho doanh nghiệp với phong cách rõ ràng: bảng, form, biểu mẫu nhiều bước. Có nguồn gốc cộng đồng nói tiếng Trung, tài liệu có cả bản tiếng Anh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng trang quản trị với bảng và form theo bộ thành phần Ant Design. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React và TypeScript để dùng tốt; thư viện lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phong cách riêng, tùy biến sâu có thể tốn công. README liệt kê tính năng nhưng bài không kiểm chứng hiệu năng hay kích thước gói.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>design language (ngôn ngữ thiết kế)</strong>: bộ nguyên tắc và mẫu thiết kế thống nhất; README gọi Ant Design như vậy.</li><li><strong>CSS-in-JS</strong>: viết kiểu giao diện trong mã JavaScript; README nêu tùy biến chủ đề dựa trên đó.</li><li><strong>internationalization (quốc tế hóa)</strong>: hỗ trợ nhiều ngôn ngữ; README nêu hàng chục ngôn ngữ.</li><li><strong>enterprise-class (cấp doanh nghiệp)</strong>: hướng tới ứng dụng doanh nghiệp; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu trên trang chính thức; bài chưa đọc nên không nêu lệnh. Cần React. Miễn phí, giấy phép MIT theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc tài liệu và ví dụ trên trang chính thức.</li><li>Thử bảng và form trong dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dựng trang quản trị bằng React. Hãy đọc README của Ant Design (https://github.com/ant-design/ant-design) và giải thích bằng tiếng Việt: ngôn ngữ thiết kế là gì, khác Material UI ở đâu, và những tính năng chính. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). 'Cấp doanh nghiệp' là cách nói của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ant-design</strong> có <strong>100.052 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ant-design/ant-design/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ant-design/ant-design\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 397. Chưa cài/chạy thử; không tạo validation. Snapshot sao 100052; repo_id 34526884; README SHA256 e3be56edb49529206cef141065f03b3a54dd4f482141001b9984a89b3a4c61bf.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ant-design/ant-design",
+          "repo_id": "34526884",
+          "source_path": "",
+          "source_revision": "README-SHA256:e3be56edb49529206cef141065f03b3a54dd4f482141001b9984a89b3a4c61bf",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ant-design/ant-design",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu trên trang chính thức; bài chưa đọc nên không nêu lệnh. Cần React. Miễn phí, giấy phép MIT theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ant-design/ant-design/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ant-design/ant-design/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ant-design/ant-design",
+        "stars": 100052,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ant-design/ant-design/master/README.md",
+        "readmeSha256": "e3be56edb49529206cef141065f03b3a54dd4f482141001b9984a89b3a4c61bf",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 398,
+      "batch": 68,
+      "slug": "storybook",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Storybook: xưởng giao diện để dựng, thử và ghi chép thành phần UI tách biệt khỏi ứng dụng",
+        "excerpt": "Hiểu Storybook là 'xưởng giao diện' để dựng thành phần và trang UI một cách tách biệt, dùng cho phát triển, kiểm thử và tài liệu. README có mục dự án, khung hỗ trợ, addon và hướng dẫn đóng góp.",
+        "content": "<p>README tả Storybook là xưởng giao diện để dựng các thành phần và trang UI một cách tách biệt; hàng nghìn nhóm dùng nó để phát triển UI, kiểm thử và làm tài liệu (theo README). README có mục lục: bắt đầu, dự án, khung và ví dụ được hỗ trợ, addon, huy hiệu và tài liệu thuyết trình, cộng đồng, đóng góp (kèm các lệnh phát triển, nhà tài trợ, người ủng hộ) và giấy phép. Kho dùng nhánh next làm nhánh mặc định. Có huy hiệu OpenSSF Scorecard. Giấy phép MIT theo huy hiệu giấy phép trỏ tới tệp LICENSE của kho.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dựng nút bấm trong cả ứng dụng thì khó thử riêng từng trạng thái. Storybook giống phòng trưng bày thành phần: mỗi thành phần được đặt riêng, bạn thấy mọi trạng thái, thử và ghi chú cách dùng mà không cần chạy cả ứng dụng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đặt một thành phần nút vào Storybook để xem các trạng thái và viết tài liệu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần dự án giao diện có sẵn và hiểu thành phần; README dài (hơn 20 KB). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa có dự án giao diện thì chưa cần. Nhánh mặc định là next; cẩn thận khi đọc hướng dẫn đóng góp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>component (thành phần)</strong>: khối giao diện dùng lại; README nói Storybook dựng thành phần tách biệt.</li><li><strong>in isolation (tách biệt)</strong>: chạy riêng ngoài ứng dụng; README nêu.</li><li><strong>addon</strong>: phần mở rộng cho Storybook; README có mục Addons.</li><li><strong>OpenSSF Scorecard</strong>: điểm đánh giá thực hành bảo mật của dự án; README có huy hiệu.</li><li><strong>framework (khung)</strong>: React, Vue... mà Storybook hỗ trợ; README có mục Supported Frameworks.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Getting Started; bài chưa đọc chi tiết nên không nêu lệnh. Cần dự án giao diện và Node.js. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting Started trong README.</li><li>Chọn khung phù hợp trong danh sách hỗ trợ.</li><li>Thêm một thành phần vào Storybook thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có dự án React và muốn dựng thành phần riêng. Hãy đọc README của Storybook (https://github.com/storybookjs/storybook) và giải thích bằng tiếng Việt: Storybook làm gì, addon là gì, và cách thêm một thành phần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hàng nghìn nhóm dùng' là tuyên bố của README. README dài, bài chỉ lấy các phần chính. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>storybookjs</strong> có <strong>91.432 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép trỏ tới LICENSE của kho storybookjs/storybook. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/storybookjs/storybook/blob/next/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/storybookjs/storybook\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 398. Chưa cài/chạy thử; không tạo validation. Snapshot sao 91432; repo_id 54173593; README SHA256 7769fb3535eb24b394f295dd7f38ae34ec80de2b5b18d983eb035d1be00ddf0d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/storybookjs/storybook",
+          "repo_id": "54173593",
+          "source_path": "",
+          "source_revision": "README-SHA256:7769fb3535eb24b394f295dd7f38ae34ec80de2b5b18d983eb035d1be00ddf0d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/storybookjs/storybook",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Getting Started; bài chưa đọc chi tiết nên không nêu lệnh. Cần dự án giao diện và Node.js. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/storybookjs/storybook/blob/next/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/storybookjs/storybook/blob/next/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "storybookjs/storybook",
+        "stars": 91432,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/storybookjs/storybook/next/README.md",
+        "readmeSha256": "7769fb3535eb24b394f295dd7f38ae34ec80de2b5b18d983eb035d1be00ddf0d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 399,
+      "batch": 68,
+      "slug": "msw",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập",
+        "excerpt": "Hiểu MSW là thư viện giả lập API bằng cách chặn yêu cầu ở một tầng riêng, để mã của bạn không phải đổi. README mô tả cú pháp định tuyến kiểu Express và có trích lời một người dùng; các lời khen là của người trích dẫn.",
+        "content": "<p>README mở đầu bằng mục Features: liền mạch (một tầng chặn yêu cầu riêng, giữ mã ứng dụng và kiểm thử không biết có bị giả lập hay không), không lệch khỏi sản xuất (yêu cầu cùng tài nguyên sản xuất và kiểm thử hành vi thật của ứng dụng; bổ sung API sẵn có hoặc thiết kế khi chưa có), quen thuộc và mạnh (dùng cú pháp định tuyến giống Express để chặn yêu cầu, dùng tham số, ký tự đại diện và biểu thức chính quy để khớp, rồi trả lời bằng nhiều kiểu). README trích lời một người dùng nói thích việc phản hồi giả vẫn thấy trong DevTools và mock có thể sống cạnh phần mã còn lại (đây là lời của người trích dẫn). README dẫn tới tài liệu, quick start, FAQ và ví dụ tại mswjs.io. Phần README đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Mockoon hay WireMock ở mục đích (API giả), nhưng MSW chặn yêu cầu ngay trong trình duyệt hay trong kiểm thử, nên ứng dụng của bạn vẫn gọi đúng địa chỉ như thật; chỉ khác là có một lớp bắt giữa đường và trả lời giả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giả lập API sản phẩm trong lúc làm giao diện và trong kiểm thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm website; người nhờ AI dựng giao diện hay phần dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần JavaScript và hiểu cách trình duyệt gửi yêu cầu mạng; README dài (hơn 12 KB). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng JavaScript hay TypeScript, các công cụ độc lập như Mockoon hay WireMock (cùng kho) có thể hợp hơn. Lời khen của người dùng trong README là của người đó, không phải kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>request interception (chặn yêu cầu)</strong>: bắt yêu cầu mạng giữa đường để trả lời giả; README nêu là tính năng chính.</li><li><strong>Service Worker</strong>: tập lệnh nền của trình duyệt; tên MSW viết tắt Mock Service Worker.</li><li><strong>mocking (giả lập)</strong>: trả lời giả thay API thật.</li><li><strong>routing syntax (cú pháp định tuyến)</strong>: cách khớp đường dẫn; README nói giống Express.</li><li><strong>DevTools</strong>: công cụ dành cho nhà phát triển của trình duyệt; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu và quick start tại mswjs.io; bài chưa đọc nên không nêu lệnh. Cần JavaScript hoặc TypeScript. Miễn phí, giấy phép MIT theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Làm theo Quick start.</li><li>Giả lập một API đơn giản và xem nó trong DevTools.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần giả lập API khi làm giao diện và kiểm thử. Hãy đọc README của MSW (https://github.com/mswjs/msw) và giải thích bằng tiếng Việt: chặn yêu cầu mạng là gì, khác Mockoon ở đâu, và cách giữ mã không đổi. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không có mô tả định nghĩa ở đầu và không nêu giấy phép; giấy phép lấy theo GitHub. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện chạy trong ứng dụng của bạn: chỉ cài từ npm của dự án chính thức, đừng đưa khóa hay mật khẩu vào mã công khai, và thử trong dự án thử khi học.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mswjs</strong> có <strong>18.330 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-17. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mswjs/msw/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mswjs/msw\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 399. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18330; repo_id 157397583; README SHA256 061d5c796e8b611faa32381b37038670c5e007e2ad1dc8bcbb5c66c7a608a646.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mswjs/msw",
+          "repo_id": "157397583",
+          "source_path": "",
+          "source_revision": "README-SHA256:061d5c796e8b611faa32381b37038670c5e007e2ad1dc8bcbb5c66c7a608a646",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mswjs/msw",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu và quick start tại mswjs.io; bài chưa đọc nên không nêu lệnh. Cần JavaScript hoặc TypeScript. Miễn phí, giấy phép MIT theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mswjs/msw/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mswjs/msw/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mswjs/msw",
+        "stars": 18330,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mswjs/msw/main/README.md",
+        "readmeSha256": "061d5c796e8b611faa32381b37038670c5e007e2ad1dc8bcbb5c66c7a608a646",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -122,3 +122,9 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 291 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (291 tệp): cả 291 đều trả mã 200.
 - Bài Spring Boot dùng README.adoc (README.md không tồn tại ở kho này); đã kiểm tra đường dẫn đúng tên tệp.
+
+## Bổ sung rà soát (nhóm 50, key 392–399; tổng 299 bài)
+
+- Danh mục 299 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (299 tệp): cả 299 đều trả mã 200.
+- Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" chỉ xuất hiện trong câu phủ định.
