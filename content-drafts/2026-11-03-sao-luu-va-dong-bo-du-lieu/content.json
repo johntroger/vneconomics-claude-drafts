@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-sao-luu-dong-bo",
+  "batch": 50,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 287,
+      "batch": 50,
+      "slug": "restic",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu",
+        "excerpt": "Hiểu restic là công cụ sao lưu dòng lệnh cho Linux, macOS, Windows: sao lưu theo bản chụp, mã hóa, loại trùng lặp, nhiều loại nơi lưu. README nhấn mạnh mất mật khẩu thì không khôi phục được.",
+        "content": "<p>README tả restic là chương trình sao lưu nhanh, hiệu quả và an toàn, chạy trên Linux, macOS, Windows và vài hệ khác (FreeBSD, OpenBSD). Có phần Quick start: tạo kho (repository) bằng một lệnh khởi tạo, đặt mật khẩu; thêm dữ liệu bằng lệnh backup (bài không chép lệnh); xem lại hoặc khôi phục file từ các bản chụp, kể cả gắn kho như một ổ để duyệt. README ghi cảnh báo trong ví dụ: biết mật khẩu là điều kiện để mở kho, mất mật khẩu nghĩa là dữ liệu mất vĩnh viễn. README nói lưu sao lưu cùng một máy chưa phải chiến lược sao lưu thực sự, và liệt kê các nơi lưu hỗ trợ sẵn: thư mục cục bộ, SFTP, máy chủ REST, Amazon S3 và dịch vụ tương thích, OpenStack Swift, Backblaze B2, Azure Blob, Google Cloud Storage, và nhiều dịch vụ khác qua rclone. Nguyên tắc thiết kế: dễ, nhanh, kiểm chứng được, an toàn (mã hóa; coi nơi lưu là không đáng tin), hiệu quả (chỉ lưu phần tăng thêm, loại dữ liệu trùng). Bản phát hành từ 0.6.1 có thể dựng lại giống hệt (reproducible). Giấy phép BSD 2-Clause.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chép tệp sang ổ cứng ngoài thì mỗi lần chép lại cả đống. restic giống thủ kho thông minh: nó chụp lại trạng thái dữ liệu theo từng thời điểm, chỉ cất phần mới thay đổi, khóa kỹ bằng mật khẩu, và bạn lấy lại được tệp của ngày nào cũng được. Nhưng chìa khóa chỉ có một: mất mật khẩu là mất hết.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên sao lưu thư mục tài liệu và luận văn lên ổ ngoài và một kho đám mây. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng laptop cần sao lưu dữ liệu quan trọng; quản trị viên máy chủ nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Công cụ dòng lệnh, cần quen terminal và hiểu khái niệm kho, bản chụp; README dẫn sang tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa quen terminal, công cụ có giao diện đồ họa như Kopia có thể dễ hơn. Đừng dùng restic như nơi lưu duy nhất: README tự nói sao lưu cùng máy chưa là chiến lược thực sự.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>repository (kho sao lưu)</strong>: nơi chứa các bản sao lưu đã mã hóa của restic.</li><li><strong>snapshot (bản chụp)</strong>: trạng thái dữ liệu tại một thời điểm; README nói có thể khôi phục từ đó.</li><li><strong>deduplication (loại trùng)</strong>: chỉ lưu một lần phần dữ liệu giống nhau; README nêu là nguyên tắc hiệu quả.</li><li><strong>backend (nơi lưu)</strong>: nơi cất kho sao lưu như ổ cục bộ, SFTP, S3; README liệt kê.</li><li><strong>reproducible build</strong>: dựng lại ra tệp giống hệt từ mã nguồn để kiểm chứng; README nói áp dụng từ bản 0.6.1.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt tại restic.readthedocs.io; bài chưa đọc nên không nêu lệnh cài. Quick start trong README tạo kho và sao lưu một thư mục, cần đặt mật khẩu. Miễn phí theo giấy phép BSD 2-Clause; chi phí là dung lượng lưu ở nơi bạn chọn.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Quick start và đoạn cảnh báo về mật khẩu.</li><li>Thử với một thư mục dữ liệu thử và ổ cục bộ.</li><li>Thử khôi phục một tệp để chắc chắn quy trình hoạt động.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn sao lưu dữ liệu quan trọng. Hãy đọc README của restic (https://github.com/restic/restic) và giải thích bằng tiếng Việt: kho và bản chụp là gì, vì sao mất mật khẩu thì mất dữ liệu, và vì sao cần nhiều nơi lưu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất rõ: mất mật khẩu thì dữ liệu không thể khôi phục. Bài chưa kiểm chứng tốc độ hay độ an toàn mã hóa. Việc có khôi phục được hay không chỉ biết khi bạn thử khôi phục.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với sao lưu: mất mật khẩu hay khóa mã hóa đồng nghĩa mất dữ liệu; hãy thử khôi phục thật trên dữ liệu thử trước khi tin tưởng, giữ ít nhất một bản ở nơi khác và không thử nghiệm lần đầu trên dữ liệu duy nhất.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>restic</strong> có <strong>36.964 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README ghi BSD 2-Clause License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/restic/restic/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/restic/restic\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 287. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36964; repo_id 19205896; README SHA256 4684f85db668903f6b0e66c3c677efa62fb291e9fe56f2e909b57e84d5740587.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/restic/restic",
+          "repo_id": "19205896",
+          "source_path": "",
+          "source_revision": "README-SHA256:4684f85db668903f6b0e66c3c677efa62fb291e9fe56f2e909b57e84d5740587",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-2-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/restic/restic",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt tại restic.readthedocs.io; bài chưa đọc nên không nêu lệnh cài. Quick start trong README tạo kho và sao lưu một thư mục, cần đặt mật khẩu. Miễn phí theo giấy phép BSD 2-Clause; chi phí là dung lượng lưu ở nơi bạn chọn.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/restic/restic/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/restic/restic/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "restic/restic",
+        "stars": 36964,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/restic/restic/master/README.md",
+        "readmeSha256": "4684f85db668903f6b0e66c3c677efa62fb291e9fe56f2e909b57e84d5740587",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 288,
+      "batch": 50,
+      "slug": "rclone",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "rclone: 'rsync cho đám mây', đồng bộ và sao chép tệp giữa máy bạn và hàng chục dịch vụ lưu trữ",
+        "excerpt": "Hiểu rclone là công cụ dòng lệnh đồng bộ tệp tới và từ nhiều dịch vụ lưu trữ đám mây. Chế độ sync làm thư mục đích giống hệt nguồn nên cần dùng cẩn thận.",
+        "content": "<p>README tả rclone ('rsync cho lưu trữ đám mây') là chương trình dòng lệnh để đồng bộ tệp và thư mục tới và từ nhiều nhà cung cấp lưu trữ đám mây. Danh sách nhà cung cấp trong README rất dài, gồm Amazon S3, Backblaze B2, Box, Cloudflare R2, Dropbox, FTP, Google Cloud Storage, Google Drive, Google Photos và nhiều dịch vụ khác. Tính năng: kiểm tra toàn vẹn bằng MD5 hoặc SHA-1, giữ dấu thời gian, đồng bộ từng phần theo tệp, chế độ copy (chỉ chép tệp mới hoặc đã đổi), chế độ sync một chiều (làm thư mục đích giống hệt nguồn), bisync hai chiều, chế độ check so sánh hash, đồng bộ giữa hai tài khoản đám mây, tùy chọn chia nhỏ tệp lớn, nén trong suốt, mã hóa (Crypt), gắn như ổ đĩa qua FUSE, và phục vụ tệp qua HTTP, WebDAV, FTP, SFTP, DLNA. README dẫn tới trang cài đặt và tài liệu. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dịch vụ lưu trữ có cách nói chuyện riêng. rclone là phiên dịch viên và người vận chuyển: bạn nói 'chép thư mục này lên kia', nó lo phần còn lại với hàng chục dịch vụ. Nhưng lệnh sync có thể xóa tệp ở đích để cho giống nguồn: nhầm chiều là mất dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chép thư mục tài liệu lên ổ đám mây thứ hai hoặc chuyển dữ liệu giữa hai dịch vụ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng nhiều dịch vụ lưu trữ; người cần chuyển hoặc sao lưu dữ liệu tới đám mây bằng dòng lệnh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần quen terminal, hiểu khác biệt copy, sync và bisync; cấu hình từng dịch vụ có bước riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng chạy sync trên dữ liệu duy nhất khi chưa thử với thư mục thử; bài chưa khẳng định hành vi xóa chi tiết (README chỉ nói sync làm đích giống hệt nguồn). Nếu cần sao lưu có lịch sử phiên bản, xem restic hoặc Kopia.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>sync (đồng bộ một chiều)</strong>: làm thư mục đích giống hệt thư mục nguồn; README mô tả như vậy.</li><li><strong>copy</strong>: chỉ chép tệp mới hoặc đã đổi; README nêu là chế độ riêng.</li><li><strong>bisync</strong>: đồng bộ hai chiều giữa hai thư mục; README nêu.</li><li><strong>Crypt</strong>: tùy chọn mã hóa của rclone; README nêu.</li><li><strong>FUSE mount</strong>: gắn kho lưu trữ như ổ đĩa trong máy; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt và tài liệu tại rclone.org; bài không nêu lệnh. Mỗi nhà cung cấp cần cấu hình tài khoản riêng. Miễn phí theo giấy phép MIT; dịch vụ lưu trữ bạn dùng có thể tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features để hiểu copy, sync và bisync.</li><li>Thử với hai thư mục thử trước khi dùng với dữ liệu thật.</li><li>Dùng chế độ so sánh hoặc chạy thử trước khi bấm đồng bộ thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần chép dữ liệu giữa các dịch vụ lưu trữ. Hãy đọc README của rclone (https://github.com/rclone/rclone) và giải thích bằng tiếng Việt: copy, sync và bisync khác nhau thế nào, vì sao sync có thể gây mất dữ liệu nếu nhầm chiều, và cách thử an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README liệt kê rất nhiều nhà cung cấp nhưng không nói chất lượng hỗ trợ từng nhà; bài không khẳng định. Chế độ sync làm đích giống nguồn nên có thể xóa. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với sao lưu: mất mật khẩu hay khóa mã hóa đồng nghĩa mất dữ liệu; hãy thử khôi phục thật trên dữ liệu thử trước khi tin tưởng, giữ ít nhất một bản ở nơi khác và không thử nghiệm lần đầu trên dữ liệu duy nhất. Cẩn thận với lệnh sync: chạy thử trên thư mục thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>rclone</strong> có <strong>60.756 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/rclone/rclone/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/rclone/rclone\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 288. Chưa cài/chạy thử; không tạo validation. Snapshot sao 60756; repo_id 17803236; README SHA256 52301fc4e292e9fd2b3b2b28170547dc3af65b8fed05acad4846882a55498812.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/rclone/rclone",
+          "repo_id": "17803236",
+          "source_path": "",
+          "source_revision": "README-SHA256:52301fc4e292e9fd2b3b2b28170547dc3af65b8fed05acad4846882a55498812",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rclone/rclone",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt và tài liệu tại rclone.org; bài không nêu lệnh. Mỗi nhà cung cấp cần cấu hình tài khoản riêng. Miễn phí theo giấy phép MIT; dịch vụ lưu trữ bạn dùng có thể tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rclone/rclone/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/rclone/rclone/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "rclone/rclone",
+        "stars": 60756,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/rclone/rclone/master/README.md",
+        "readmeSha256": "52301fc4e292e9fd2b3b2b28170547dc3af65b8fed05acad4846882a55498812",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 289,
+      "batch": 50,
+      "slug": "syncthing",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Syncthing: đồng bộ tệp liên tục giữa các máy của bạn, đặt an toàn dữ liệu lên hàng đầu; đồng bộ không phải sao lưu",
+        "excerpt": "Hiểu Syncthing là chương trình đồng bộ tệp liên tục giữa hai hoặc nhiều máy. Mục tiêu nêu trong README ưu tiên an toàn dữ liệu và bảo mật. Đồng bộ khác với sao lưu: xóa ở một nơi có thể lan sang nơi khác.",
+        "content": "<p>README tả Syncthing là chương trình đồng bộ tệp liên tục giữa hai hoặc nhiều máy tính. Các mục tiêu xếp theo thứ tự quan trọng: an toàn trước mất dữ liệu, an toàn trước kẻ tấn công, dễ dùng, tự động, có mặt khắp nơi, dành cho cá nhân, và những thứ khác. README dẫn tới hướng dẫn bắt đầu, ví dụ để chạy nền, nhiều giao diện đồ họa cho Windows, Mac, Linux, hướng dẫn chạy bằng Docker, diễn đàn, báo lỗi và cách báo lỗ hổng bảo mật qua email riêng. Có hướng dẫn biên dịch từ mã nguồn bằng Go. Giấy phép MPLv2.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có laptop, máy bàn và điện thoại và muốn cùng một thư mục ở cả ba. Syncthing giống đường ống nối các máy trực tiếp với nhau: sửa ở đâu thì chỗ khác cập nhật. Nhưng đường ống này cũng chuyển cả việc lỡ xóa, nên nó không thay được sao lưu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đồng bộ thư mục tài liệu giữa laptop và máy bàn không qua dịch vụ đám mây trung gian. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng nhiều máy muốn đồng bộ tệp trực tiếp; người quan tâm quyền riêng tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> README dẫn tới hướng dẫn bắt đầu; ghép đôi thiết bị cần hiểu khái niệm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng dùng Syncthing thay sao lưu: đồng bộ chuyển cả thay đổi và xóa (bài giải thích theo bản chất đồng bộ, README không viết điều này). Nếu cần lịch sử phiên bản, kết hợp thêm công cụ sao lưu như restic.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>continuous synchronization (đồng bộ liên tục)</strong>: tệp được cập nhật giữa các máy ngay khi có thay đổi; README mô tả là mục tiêu chính.</li><li><strong>Docker</strong>: cách chạy ứng dụng đóng gói sẵn; README có hướng dẫn riêng.</li><li><strong>GUI</strong>: giao diện đồ họa; README nói có nhiều bản cho Windows, Mac, Linux.</li><li><strong>Go</strong>: ngôn ngữ lập trình dùng để biên dịch Syncthing; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới getting started guide, ví dụ chạy nền, các giao diện đồ họa và hướng dẫn Docker; bài chưa đọc nên không nêu lệnh. Muốn biên dịch từ mã nguồn cần Go. Miễn phí theo giấy phép MPLv2.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Goals để hiểu ưu tiên của dự án.</li><li>Đọc getting started guide.</li><li>Thử đồng bộ một thư mục thử giữa hai máy.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn đồng bộ thư mục giữa nhiều máy. Hãy đọc README của Syncthing (https://github.com/syncthing/syncthing) và giải thích bằng tiếng Việt: các mục tiêu của dự án, đồng bộ khác sao lưu thế nào, và vì sao vẫn cần sao lưu riêng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nêu mục tiêu 'an toàn trước mất dữ liệu' nhưng mục tiêu không phải bảo đảm; bài chưa kiểm chứng. Đồng bộ không phải sao lưu. Bài chưa đọc hướng dẫn chi tiết và chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với sao lưu: mất mật khẩu hay khóa mã hóa đồng nghĩa mất dữ liệu; hãy thử khôi phục thật trên dữ liệu thử trước khi tin tưởng, giữ ít nhất một bản ở nơi khác và không thử nghiệm lần đầu trên dữ liệu duy nhất. Đồng bộ chuyển cả việc xóa: luôn có sao lưu riêng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>syncthing</strong> có <strong>90.025 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MPL-2.0; README ghi MPLv2. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/syncthing/syncthing/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/syncthing/syncthing\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 289. Chưa cài/chạy thử; không tạo validation. Snapshot sao 90025; repo_id 14712850; README SHA256 42b3725bed4bbefe15dc3284f3246333a721818722752fe69f61478b3b8eba15.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/syncthing/syncthing",
+          "repo_id": "14712850",
+          "source_path": "",
+          "source_revision": "README-SHA256:42b3725bed4bbefe15dc3284f3246333a721818722752fe69f61478b3b8eba15",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/syncthing/syncthing",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới getting started guide, ví dụ chạy nền, các giao diện đồ họa và hướng dẫn Docker; bài chưa đọc nên không nêu lệnh. Muốn biên dịch từ mã nguồn cần Go. Miễn phí theo giấy phép MPLv2.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/syncthing/syncthing/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/syncthing/syncthing/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "syncthing/syncthing",
+        "stars": 90025,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/syncthing/syncthing/main/README.md",
+        "readmeSha256": "42b3725bed4bbefe15dc3284f3246333a721818722752fe69f61478b3b8eba15",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 290,
+      "batch": 50,
+      "slug": "kopia",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Kopia: công cụ sao lưu mã hóa có cả dòng lệnh lẫn giao diện đồ họa, lưu lên đám mây hoặc máy của bạn",
+        "excerpt": "Hiểu Kopia tạo bản chụp mã hóa và nén, lưu tới nhiều loại nơi chứa, có CLI và GUI. README nói bạn phải tự chuẩn bị và trả phí nơi lưu; hỗ trợ Rclone còn là thử nghiệm.",
+        "content": "<p>README tả Kopia là công cụ sao lưu và khôi phục nhanh, an toàn, mã nguồn mở, tạo bản chụp mã hóa của dữ liệu và lưu tới kho từ xa hoặc đám mây, có cả CLI và GUI. Nơi lưu hỗ trợ: Amazon S3 và dịch vụ tương thích, Azure Blob, Backblaze B2, Google Cloud Storage, máy chủ hoặc dịch vụ hỗ trợ WebDAV hoặc SFTP, một số dịch vụ qua Rclone (hỗ trợ Rclone là thử nghiệm: README nói đã thử với Dropbox, OneDrive, Google Drive), ổ cục bộ, NAS hoặc máy chủ, hoặc máy chủ Kopia Repository Server riêng. Kopia loại dữ liệu trùng để tiết kiệm chi phí. README nói bạn tự chọn và tự chuẩn bị, tự trả phí nơi lưu. README dẫn tới trang cài đặt và Getting Started Guide. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>restic là thủ kho dòng lệnh; Kopia là thủ kho có cả quầy giao dịch đồ họa: bạn chọn nơi cất, nó nén, mã hóa và chụp lại trạng thái dữ liệu. Nơi cất do bạn chọn và trả tiền, Kopia chỉ quản lý.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng giao diện đồ họa để sao lưu thư mục tài liệu lên ổ ngoài và một dịch vụ lưu trữ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người cần sao lưu và thích có giao diện đồ họa; người đã dùng CLI cũng dùng được.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Có GUI nên dễ bắt đầu hơn công cụ chỉ dòng lệnh; vẫn cần hiểu kho, bản chụp, mật khẩu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dựa vào Rclone cho dịch vụ lưu trữ, README nói hỗ trợ đó còn thử nghiệm. Đừng coi đây là nơi lưu duy nhất của dữ liệu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>snapshot (bản chụp)</strong>: trạng thái dữ liệu tại một thời điểm; README nêu Kopia tạo bản chụp mã hóa.</li><li><strong>CLI / GUI</strong>: giao diện dòng lệnh và giao diện đồ họa; README nói Kopia có cả hai.</li><li><strong>WebDAV / SFTP</strong>: giao thức truy cập kho từ xa; README nêu hỗ trợ.</li><li><strong>Repository Server</strong>: máy chủ Kopia tự dựng để làm nơi lưu; README nêu.</li><li><strong>end-to-end encryption</strong>: mã hóa do người dùng kiểm soát; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt tại kopia.io/docs/installation và Getting Started Guide; bài chưa đọc nên không nêu lệnh. README nói bạn phải tự chuẩn bị và trả phí nơi lưu bạn chọn. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần nơi lưu hỗ trợ.</li><li>Làm theo Getting Started Guide với dữ liệu thử.</li><li>Thử khôi phục một tệp trước khi tin tưởng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn sao lưu có giao diện đồ họa. Hãy đọc README của Kopia (https://github.com/kopia/kopia) và giải thích bằng tiếng Việt: Kopia lưu được ở đâu, chi phí nơi lưu ai trả, và vì sao hỗ trợ Rclone còn thử nghiệm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói hỗ trợ Rclone là thử nghiệm và chỉ thử với một số dịch vụ. 'Nhanh và an toàn' là tuyên bố của dự án, bài không kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với sao lưu: mất mật khẩu hay khóa mã hóa đồng nghĩa mất dữ liệu; hãy thử khôi phục thật trên dữ liệu thử trước khi tin tưởng, giữ ít nhất một bản ở nơi khác và không thử nghiệm lần đầu trên dữ liệu duy nhất.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>kopia</strong> có <strong>14.564 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/kopia/kopia/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/kopia/kopia\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 290. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14564; repo_id 48299818; README SHA256 4fe999e29004700104fd36655e263feae6b74c149e4e6d183b5e1a48f9319218.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/kopia/kopia",
+          "repo_id": "48299818",
+          "source_path": "",
+          "source_revision": "README-SHA256:4fe999e29004700104fd36655e263feae6b74c149e4e6d183b5e1a48f9319218",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/kopia/kopia",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt tại kopia.io/docs/installation và Getting Started Guide; bài chưa đọc nên không nêu lệnh. README nói bạn phải tự chuẩn bị và trả phí nơi lưu bạn chọn. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/kopia/kopia/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/kopia/kopia/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "kopia/kopia",
+        "stars": 14564,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/kopia/kopia/master/README.md",
+        "readmeSha256": "4fe999e29004700104fd36655e263feae6b74c149e4e6d183b5e1a48f9319218",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

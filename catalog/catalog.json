@@ -3313,5 +3313,75 @@
   "related": [
    "firefly-iii"
   ]
+ },
+ {
+  "key": 287,
+  "slug": "restic",
+  "group": "2026-11-03-sao-luu-va-dong-bo-du-lieu",
+  "title": "restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu",
+  "repo": "restic/restic",
+  "stars": 36964,
+  "license": "BSD-2-Clause",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "kopia",
+   "rclone"
+  ]
+ },
+ {
+  "key": 288,
+  "slug": "rclone",
+  "group": "2026-11-03-sao-luu-va-dong-bo-du-lieu",
+  "title": "rclone: 'rsync cho đám mây', đồng bộ và sao chép tệp giữa máy bạn và hàng chục dịch vụ lưu trữ",
+  "repo": "rclone/rclone",
+  "stars": 60756,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "restic"
+  ]
+ },
+ {
+  "key": 289,
+  "slug": "syncthing",
+  "group": "2026-11-03-sao-luu-va-dong-bo-du-lieu",
+  "title": "Syncthing: đồng bộ tệp liên tục giữa các máy của bạn, đặt an toàn dữ liệu lên hàng đầu; đồng bộ không phải sao lưu",
+  "repo": "syncthing/syncthing",
+  "stars": 90025,
+  "license": "MPL-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "kopia"
+  ]
+ },
+ {
+  "key": 290,
+  "slug": "kopia",
+  "group": "2026-11-03-sao-luu-va-dong-bo-du-lieu",
+  "title": "Kopia: công cụ sao lưu mã hóa có cả dòng lệnh lẫn giao diện đồ họa, lưu lên đám mây hoặc máy của bạn",
+  "repo": "kopia/kopia",
+  "stars": 14564,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "restic",
+   "syncthing"
+  ]
  }
 ]

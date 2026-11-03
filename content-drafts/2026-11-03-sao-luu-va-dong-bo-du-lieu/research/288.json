@@ -1,0 +1,37 @@
+{
+  "key": 288,
+  "repo": "rclone/rclone",
+  "repoId": "17803236",
+  "url": "https://github.com/rclone/rclone",
+  "stars": 60756,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:40:44Z",
+  "createdAt": "2014-03-16T16:19:57Z",
+  "defaultBranch": "master",
+  "description": "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files",
+  "homepage": "https://rclone.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/rclone/rclone/master/README.md",
+    "sha256": "52301fc4e292e9fd2b3b2b28170547dc3af65b8fed05acad4846882a55498812",
+    "bytes": 11995,
+    "sectionsRead": [
+      "Rclone",
+      "Storage providers",
+      "Features",
+      "Installation & documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình từng dịch vụ.",
+    "Chưa thử các chế độ đồng bộ.",
+    "Danh sách nhà cung cấp rất dài, bài chỉ nêu vài ví dụ."
+  ],
+  "runtimeValidated": false
+}

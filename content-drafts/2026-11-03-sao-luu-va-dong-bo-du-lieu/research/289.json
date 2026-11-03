@@ -1,0 +1,37 @@
+{
+  "key": 289,
+  "repo": "syncthing/syncthing",
+  "repoId": "14712850",
+  "url": "https://github.com/syncthing/syncthing",
+  "stars": 90025,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MPL-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:03:32Z",
+  "createdAt": "2013-11-26T09:48:21Z",
+  "defaultBranch": "main",
+  "description": "Open Source Continuous File Synchronization",
+  "homepage": "https://syncthing.net/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/syncthing/syncthing/main/README.md",
+    "sha256": "42b3725bed4bbefe15dc3284f3246333a721818722752fe69f61478b3b8eba15",
+    "bytes": 3999,
+    "sectionsRead": [
+      "Goals",
+      "Getting Started",
+      "Docker",
+      "Getting in Touch",
+      "Building"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc getting started guide.",
+    "Chưa thử ghép đôi thiết bị.",
+    "Chưa so sánh với dịch vụ đám mây."
+  ],
+  "runtimeValidated": false
+}

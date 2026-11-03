@@ -1,0 +1,36 @@
+{
+  "key": 290,
+  "repo": "kopia/kopia",
+  "repoId": "48299818",
+  "url": "https://github.com/kopia/kopia",
+  "stars": 14564,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:32:30Z",
+  "createdAt": "2015-12-19T22:47:14Z",
+  "defaultBranch": "master",
+  "description": "Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included.",
+  "homepage": "https://kopia.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/kopia/kopia/master/README.md",
+    "sha256": "4fe999e29004700104fd36655e263feae6b74c149e4e6d183b5e1a48f9319218",
+    "bytes": 6334,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Pick the Cloud Storage Provider",
+      "Getting Started",
+      "Licensing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử GUI hay khôi phục.",
+    "Chưa so sánh hiệu năng với restic."
+  ],
+  "runtimeValidated": false
+}

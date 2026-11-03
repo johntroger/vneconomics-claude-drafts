@@ -30,6 +30,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 28 — Ứng dụng dữ liệu và biểu đồ](learning-paths/28-ung-dung-du-lieu-va-bieu-do.vi.md) — Từ ứng dụng Python nhanh đến thư viện biểu đồ JavaScript; luôn cân nhắc dữ liệu có được chia sẻ ra ngoài không.
 - [Lộ trình 29 — Ghi chú liên kết, lưu trữ tự chủ và đồ họa dữ liệu](learning-paths/29-tri-thuc-luu-tru-va-do-hoa.vi.md) — Ghi chú theo khối, kho tệp và ảnh tự host, cuối cùng là đồ họa dữ liệu cấp thấp; luôn có kế hoạch sao lưu.
 - [Lộ trình 30 — Tự host cho gia đình và nhóm nhỏ](learning-paths/30-tu-host-cho-gia-dinh-va-nhom-nho.vi.md) — Từ dịch vụ ít rủi ro đến dịch vụ chứa dữ liệu nhạy cảm; càng về cuối càng cần bảo mật và sao lưu.
+- [Lộ trình 31 — Sao lưu và đồng bộ dữ liệu](learning-paths/31-sao-luu-va-dong-bo-du-lieu.vi.md) — Hiểu khác biệt giữa sao lưu và đồng bộ, rồi chọn công cụ; luôn thử khôi phục trước khi tin tưởng.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -77,7 +78,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 269 | Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Apache-2.0 | 46220 | ung-dung-du-lieu-va-bieu-do |
 | 283 | Actual Budget: quản lý chi tiêu cá nhân kiểu phong bì, dữ liệu lưu cục bộ trước, có đồng bộ giữa thiết bị | [actualbudget/actual](https://github.com/actualbudget/actual) | MIT | 29930 | tu-host-cho-gia-dinh-va-nhom-nho |
 
-### Cơ bản (90 bài)
+### Cơ bản (92 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -171,8 +172,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 276 | AppFlowy: không gian làm việc kiểu Notion mã nguồn mở, có AI và tự host được | [AppFlowy-IO/AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | AGPL-3.0 | 78131 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 | 281 | Uptime Kuma: tự theo dõi website và dịch vụ còn sống hay không, báo qua Telegram, Discord, email | [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) | MIT | 93200 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 285 | Mealie: sổ công thức nấu ăn, lập thực đơn tuần và danh sách đi chợ tự host cho cả gia đình | [mealie-recipes/mealie](https://github.com/mealie-recipes/mealie) | AGPL-3.0 | 13784 | tu-host-cho-gia-dinh-va-nhom-nho |
+| 289 | Syncthing: đồng bộ tệp liên tục giữa các máy của bạn, đặt an toàn dữ liệu lên hàng đầu; đồng bộ không phải sao lưu | [syncthing/syncthing](https://github.com/syncthing/syncthing) | MPL-2.0 | 90025 | sao-luu-va-dong-bo-du-lieu |
+| 290 | Kopia: công cụ sao lưu mã hóa có cả dòng lệnh lẫn giao diện đồ họa, lưu lên đám mây hoặc máy của bạn | [kopia/kopia](https://github.com/kopia/kopia) | Apache-2.0 | 14564 | sao-luu-va-dong-bo-du-lieu |
 
-### Khá khó (cần nền kỹ thuật) (26 bài)
+### Khá khó (cần nền kỹ thuật) (27 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -202,8 +205,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
 | 277 | SiYuan: ghi chú theo khối có tham chiếu hai chiều, lưu ý không đồng bộ qua ổ đĩa đồng bộ của bên thứ ba | [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) | AGPL-3.0 | 47045 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
+| 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (34 bài)
+### Nâng cao (35 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -241,6 +245,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 280 | D3: thư viện JavaScript cấp thấp để dựng đồ họa dữ liệu tùy biến hoàn toàn, rất mạnh nhưng không dành cho người mới | [d3/d3](https://github.com/d3/d3) | ISC | 113861 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 | 282 | Homepage: trang chủ tùy biến cho mọi dịch vụ tự host của bạn, kèm cảnh báo bảo mật quan trọng | [gethomepage/homepage](https://github.com/gethomepage/homepage) | GPL-3.0 | 33491 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 284 | Firefly III: sổ cái tài chính cá nhân tự host, không AI, không đám mây theo tuyên bố của tác giả | [firefly-iii/firefly-iii](https://github.com/firefly-iii/firefly-iii) | AGPL-3.0 | 25064 | tu-host-cho-gia-dinh-va-nhom-nho |
+| 288 | rclone: 'rsync cho đám mây', đồng bộ và sao chép tệp giữa máy bạn và hàng chục dịch vụ lưu trữ | [rclone/rclone](https://github.com/rclone/rclone) | MIT | 60756 | sao-luu-va-dong-bo-du-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

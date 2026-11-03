@@ -1,0 +1,37 @@
+{
+  "key": 287,
+  "repo": "restic/restic",
+  "repoId": "19205896",
+  "url": "https://github.com/restic/restic",
+  "stars": 36964,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-2-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T01:42:59Z",
+  "createdAt": "2014-04-27T14:07:58Z",
+  "defaultBranch": "master",
+  "description": "Fast, secure, efficient backup program",
+  "homepage": "https://restic.net",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/restic/restic/master/README.md",
+    "sha256": "4684f85db668903f6b0e66c3c677efa62fb291e9fe56f2e909b57e84d5740587",
+    "bytes": 5670,
+    "sectionsRead": [
+      "Introduction",
+      "Quick start",
+      "Backends",
+      "Design Principles",
+      "Reproducible Builds"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử sao lưu hay khôi phục.",
+    "Chưa so sánh với Kopia (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}
