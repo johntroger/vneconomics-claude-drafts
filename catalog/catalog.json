@@ -4689,5 +4689,129 @@
   "related": [
    "datasette"
   ]
+ },
+ {
+  "key": 365,
+  "slug": "selenium",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "Selenium: bộ công cụ tự động hóa trình duyệt theo chuẩn W3C WebDriver, README của kho dành cho người đóng góp",
+  "repo": "SeleniumHQ/selenium",
+  "stars": 34585,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "k6"
+  ]
+ },
+ {
+  "key": 366,
+  "slug": "k6",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "k6: công cụ kiểm thử tải hiện đại viết kịch bản bằng JavaScript và chạy bằng Go, kiểm thử như mã",
+  "repo": "grafana/k6",
+  "stars": 32110,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "locust",
+   "selenium"
+  ]
+ },
+ {
+  "key": 367,
+  "slug": "locust",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán",
+  "repo": "locustio/locust",
+  "stars": 28260,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "k6",
+   "wiremock"
+  ]
+ },
+ {
+  "key": 368,
+  "slug": "hurl",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh",
+  "repo": "Orange-OpenSource/hurl",
+  "stars": 19295,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "mockoon",
+   "prism"
+  ]
+ },
+ {
+  "key": 369,
+  "slug": "mockoon",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh",
+  "repo": "mockoon/mockoon",
+  "stars": 8468,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "hurl"
+  ]
+ },
+ {
+  "key": 370,
+  "slug": "wiremock",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "WireMock: công cụ giả lập API HTTP phổ biến, chạy như thư viện hoặc máy chủ độc lập, dựng môi trường kiểm thử ổn định",
+  "repo": "wiremock/wiremock",
+  "stars": 7416,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "locust",
+   "prism"
+  ]
+ },
+ {
+  "key": 371,
+  "slug": "prism",
+  "group": "2026-11-03-kiem-thu-api-va-hieu-nang",
+  "title": "Prism: dựng máy chủ giả và proxy kiểm tra hợp đồng từ tệp OpenAPI hoặc Postman Collection",
+  "repo": "stoplightio/prism",
+  "stars": 5065,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-31",
+  "related": [
+   "hurl",
+   "wiremock"
+  ]
  }
 ]

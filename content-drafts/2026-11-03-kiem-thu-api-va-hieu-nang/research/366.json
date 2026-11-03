@@ -1,0 +1,35 @@
+{
+  "key": 366,
+  "repo": "grafana/k6",
+  "repoId": "54400687",
+  "url": "https://github.com/grafana/k6",
+  "stars": 32110,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:44:46Z",
+  "createdAt": "2016-03-21T15:30:24Z",
+  "defaultBranch": "master",
+  "description": "A modern load testing tool, using Go and JavaScript",
+  "homepage": "https://grafana.com/oss/k6/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/grafana/k6/master/README.md",
+    "sha256": "54f111f450700924b62026e08797e5ee386879d5304219c55a1df34cd94321ce",
+    "bytes": 7313,
+    "sectionsRead": [
+      "Core features",
+      "Example script",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá Grafana Cloud chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

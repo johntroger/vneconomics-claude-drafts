@@ -44,13 +44,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 42 — CI/CD, lưu mã tự host và nhật ký](learning-paths/42-ci-cd-va-nhat-ky.vi.md) — Tự động hóa kiểm thử và triển khai, lưu mã tự host, thu thập nhật ký và cảnh báo; luôn giữ bí mật ngoài kho mã.
 - [Lộ trình 43 — Công cụ API, ảnh, PDF và OCR cho người làm web](learning-paths/43-api-anh-pdf-va-ocr.vi.md) — Thử API, xử lý ảnh, tạo PDF, nhận dạng chữ và điều khiển trình duyệt; thử trên bản sao tệp và không mở dịch vụ ra mạng khi chưa bảo vệ.
 - [Lộ trình 44 — Agent lập trình và công cụ AI trên dòng lệnh](learning-paths/44-agent-lap-trinh-va-cli-ai.vi.md) — Từ agent trong trình soạn mã đến AI trong terminal, khám phá dữ liệu và chép lời trên máy; luôn duyệt từng thay đổi và giữ khóa API an toàn.
+- [Lộ trình 45 — Kiểm thử API, tải và giả lập](learning-paths/45-kiem-thu-api-va-hieu-nang.vi.md) — Từ API giả để làm giao diện trước, đến kiểm thử bằng tệp chữ hay kịch bản, và thử tải; chỉ thử trên hệ thống của bạn.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (43 bài)
+### Bắt đầu (44 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -97,6 +98,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
+| 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
 ### Cơ bản (118 bài)
 
@@ -221,7 +223,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 362 | LLM: công cụ dòng lệnh và thư viện Python gọi nhiều mô hình ngôn ngữ, lưu lời nhắc và câu trả lời vào SQLite | [simonw/llm](https://github.com/simonw/llm) | Apache-2.0 | 12696 | agent-lap-trinh-va-cli-ai |
 | 363 | Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu | [simonw/datasette](https://github.com/simonw/datasette) | Apache-2.0 | 11537 | agent-lap-trinh-va-cli-ai |
 
-### Khá khó (cần nền kỹ thuật) (30 bài)
+### Khá khó (cần nền kỹ thuật) (32 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -255,8 +257,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 336 | Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu | [getredash/redash](https://github.com/getredash/redash) | BSD-2-Clause | 28862 | du-lieu-ha-tang-va-giam-sat |
 | 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
 | 360 | Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Apache-2.0 | 95791 | api-anh-pdf-va-ocr |
+| 367 | Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán | [locustio/locust](https://github.com/locustio/locust) | MIT | 28260 | kiem-thu-api-va-hieu-nang |
+| 368 | Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh | [Orange-OpenSource/hurl](https://github.com/Orange-OpenSource/hurl) | Apache-2.0 | 19295 | kiem-thu-api-va-hieu-nang |
 
-### Nâng cao (73 bài)
+### Nâng cao (77 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -333,6 +337,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 358 | OCRmyPDF: thêm lớp chữ tìm kiếm được vào PDF quét, giữ nguyên ảnh gốc, dùng Tesseract nhận dạng hơn 100 ngôn ngữ | [ocrmypdf/OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | MPL-2.0 | 35220 | api-anh-pdf-va-ocr |
 | 359 | Tesseract: động cơ nhận dạng chữ OCR mã nguồn mở hỗ trợ hơn 100 ngôn ngữ, không có giao diện đồ họa | [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | Apache-2.0 | 77308 | api-anh-pdf-va-ocr |
 | 364 | whisper.cpp: bản C/C++ của mô hình nhận dạng giọng nói Whisper, chạy được trên máy yếu, điện thoại và trình duyệt | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | MIT | 54875 | agent-lap-trinh-va-cli-ai |
+| 365 | Selenium: bộ công cụ tự động hóa trình duyệt theo chuẩn W3C WebDriver, README của kho dành cho người đóng góp | [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | Apache-2.0 | 34585 | kiem-thu-api-va-hieu-nang |
+| 366 | k6: công cụ kiểm thử tải hiện đại viết kịch bản bằng JavaScript và chạy bằng Go, kiểm thử như mã | [grafana/k6](https://github.com/grafana/k6) | AGPL-3.0 | 32110 | kiem-thu-api-va-hieu-nang |
+| 370 | WireMock: công cụ giả lập API HTTP phổ biến, chạy như thư viện hoặc máy chủ độc lập, dựng môi trường kiểm thử ổn định | [wiremock/wiremock](https://github.com/wiremock/wiremock) | Apache-2.0 | 7416 | kiem-thu-api-va-hieu-nang |
+| 371 | Prism: dựng máy chủ giả và proxy kiểm tra hợp đồng từ tệp OpenAPI hoặc Postman Collection | [stoplightio/prism](https://github.com/stoplightio/prism) | Apache-2.0 | 5065 | kiem-thu-api-va-hieu-nang |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

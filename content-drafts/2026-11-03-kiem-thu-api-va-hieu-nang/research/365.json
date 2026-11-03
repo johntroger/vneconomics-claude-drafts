@@ -1,0 +1,35 @@
+{
+  "key": 365,
+  "repo": "SeleniumHQ/selenium",
+  "repoId": "7613257",
+  "url": "https://github.com/SeleniumHQ/selenium",
+  "stars": 34585,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:36:59Z",
+  "createdAt": "2013-01-14T21:40:56Z",
+  "defaultBranch": "trunk",
+  "description": "A browser automation framework and ecosystem.",
+  "homepage": "https://selenium.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/README.md",
+    "sha256": "13af5408c19c3aea1391174836e6eca7231deb27aa7ce151d6a44e3799b07fc8",
+    "bytes": 18479,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Contributing",
+      "Installing (phần đầu)"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc User Manual.",
+    "Chưa thử.",
+    "Chưa so sánh với Playwright (bài khác) và Puppeteer (cùng kho)."
+  ],
+  "runtimeValidated": false
+}

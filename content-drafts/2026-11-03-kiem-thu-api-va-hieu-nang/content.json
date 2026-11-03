@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-kiem-thu-api",
+  "batch": 64,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 365,
+      "batch": 64,
+      "slug": "selenium",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Selenium: bộ công cụ tự động hóa trình duyệt theo chuẩn W3C WebDriver, README của kho dành cho người đóng góp",
+        "excerpt": "Hiểu Selenium là dự án ô gồm nhiều công cụ và thư viện tự động hóa trình duyệt, cung cấp hạ tầng cho đặc tả W3C WebDriver. README kho này dành cho người đóng góp; người dùng nên đọc tài liệu selenium.dev.",
+        "content": "<p>README tả Selenium là dự án ô gồm nhiều công cụ và thư viện cho tự động hóa trình duyệt web, cung cấp hạ tầng cho đặc tả W3C WebDriver, một giao diện lập trình trung lập về nền tảng và ngôn ngữ, tương thích với mọi trình duyệt lớn. README nói dự án nhờ các tình nguyện viên đóng góp hàng nghìn giờ phát triển và duy trì. README này dành cho nhà phát triển muốn đóng góp; ai muốn bắt đầu dùng Selenium nên đọc User Manual tại selenium.dev/documentation, và có nhiều cách nhờ trợ giúp. README còn có mục Contributing dẫn tới CONTRIBUTING.md và phần Installing cho người đóng góp (README dài khoảng 18 KB, bài chỉ đọc các mục đầu). Giấy phép Apache-2.0 theo GitHub; README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn máy tự mở trình duyệt, bấm nút, điền biểu mẫu để kiểm thử trang web thì cần một 'bộ điều khiển từ xa'. Selenium là bộ điều khiển lâu đời nhất, chạy với mọi trình duyệt lớn qua chuẩn WebDriver. README của kho này chủ yếu cho người sửa mã của chính Selenium.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết kiểm thử tự động cho một biểu mẫu đăng nhập trên trang web thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần biết một ngôn ngữ lập trình và cách trình duyệt hoạt động; README kho không hướng dẫn dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng làm theo phần cài đặt trong README nếu bạn chỉ muốn dùng; đó là dành cho người đóng góp. Tự động hóa trên trang không phải của bạn có thể vi phạm điều khoản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>WebDriver</strong>: chuẩn W3C để điều khiển trình duyệt bằng mã; README nêu.</li><li><strong>umbrella project (dự án ô)</strong>: dự án gồm nhiều công cụ con; README mô tả Selenium như vậy.</li><li><strong>browser automation (tự động hóa trình duyệt)</strong>: điều khiển trình duyệt bằng chương trình.</li><li><strong>contributor (người đóng góp)</strong>: người sửa mã dự án; README này dành cho họ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README này không hướng dẫn dùng; cách dùng ở selenium.dev/documentation (bài chưa đọc nên không nêu lệnh). Phần Installing trong README dành cho người đóng góp. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc User Manual tại selenium.dev/documentation.</li><li>Chọn ngôn ngữ bạn biết và làm theo ví dụ đầu.</li><li>Thử trên một trang web thử của chính bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự động hóa kiểm thử trang web. Hãy đọc README của Selenium (https://github.com/SeleniumHQ/selenium) và tài liệu selenium.dev rồi giải thích bằng tiếng Việt: WebDriver là gì, Selenium khác Puppeteer và Playwright thế nào, và vì sao README kho không phải hướng dẫn dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README này dành cho người đóng góp, không mô tả cách dùng hay tính năng cho người dùng cuối; bài chưa đọc tài liệu đó. README phần đã đọc không nêu giấy phép. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>SeleniumHQ</strong> có <strong>34.585 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/SeleniumHQ/selenium/blob/trunk/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/SeleniumHQ/selenium\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 365. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34585; repo_id 7613257; README SHA256 13af5408c19c3aea1391174836e6eca7231deb27aa7ce151d6a44e3799b07fc8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/SeleniumHQ/selenium",
+          "repo_id": "7613257",
+          "source_path": "",
+          "source_revision": "README-SHA256:13af5408c19c3aea1391174836e6eca7231deb27aa7ce151d6a44e3799b07fc8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SeleniumHQ/selenium",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README này không hướng dẫn dùng; cách dùng ở selenium.dev/documentation (bài chưa đọc nên không nêu lệnh). Phần Installing trong README dành cho người đóng góp. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SeleniumHQ/selenium/blob/trunk/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/SeleniumHQ/selenium/blob/trunk/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "SeleniumHQ/selenium",
+        "stars": 34585,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/README.md",
+        "readmeSha256": "13af5408c19c3aea1391174836e6eca7231deb27aa7ce151d6a44e3799b07fc8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 366,
+      "batch": 64,
+      "slug": "k6",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "k6: công cụ kiểm thử tải hiện đại viết kịch bản bằng JavaScript và chạy bằng Go, kiểm thử như mã",
+        "excerpt": "Hiểu k6 là công cụ kiểm thử tải: viết kịch bản bằng JavaScript, đặt ngưỡng đo (ví dụ 99% yêu cầu dưới 3 giây) và tăng giảm số người dùng ảo. Chỉ chạy trên hệ thống của bạn; README ghi giấy phép AGPL-3.0.",
+        "content": "<p>README tả k6 là công cụ kiểm thử tải hiện đại, xây trên nhiều năm kinh nghiệm của nhóm; mục tiêu thiết kế chính là trải nghiệm lập trình tốt nhất (theo README). Tính năng cốt lõi: tạo tải cấu hình được (máy yếu vẫn mô phỏng được nhiều lưu lượng), kiểm thử như mã (dùng lại kịch bản, tách mô-đun, quản lý phiên bản, tích hợp CI), API kịch bản đầy đủ, động cơ JavaScript nhúng (hiệu năng Go, quen thuộc JavaScript), hỗ trợ nhiều giao thức (HTTP, WebSockets, gRPC, trình duyệt...), hệ sinh thái tiện ích mở rộng, lưu và hiển thị số đo linh hoạt, tích hợp với Grafana Cloud (dịch vụ SaaS). README có kịch bản ví dụ: nhập mô-đun http, đặt ngưỡng 99% yêu cầu hoàn thành dưới 3000 ms, tăng giảm số người dùng ảo theo giai đoạn (bài không chép mã). Giấy phép AGPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trang web chạy ổn với 5 người nhưng sập lúc 5.000 người cùng vào thì đã muộn. k6 giống đội khách giả: bạn viết kịch bản họ cư xử thế nào, k6 đưa hàng nghìn khách giả vào và đo xem hệ thống chịu được không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử xem một API của dự án thử chịu được bao nhiêu người dùng cùng lúc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần JavaScript, hiểu số đo hiệu năng và hạ tầng; README có ví dụ ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chỉ kiểm thử tải trên hệ thống của bạn hoặc được phép; kiểm thử tải lên dịch vụ của người khác có thể bị coi là tấn công từ chối dịch vụ. Dịch vụ Grafana Cloud là bản trả phí riêng, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>load testing (kiểm thử tải)</strong>: mô phỏng nhiều người dùng để xem hệ thống chịu được không.</li><li><strong>virtual user (người dùng ảo)</strong>: người dùng giả do công cụ tạo ra; README nêu tăng giảm theo giai đoạn.</li><li><strong>threshold (ngưỡng)</strong>: điều kiện đạt hay không đạt của số đo; README ví dụ 99% dưới 3000 ms.</li><li><strong>tests as code (kiểm thử như mã)</strong>: viết kiểm thử bằng mã để quản lý phiên bản; README nêu.</li><li><strong>gRPC / WebSockets</strong>: giao thức giao tiếp ngoài HTTP; README nêu hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài đặt và ví dụ chạy kịch bản; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép AGPL-3.0; Grafana Cloud là dịch vụ riêng trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần core features.</li><li>Cài theo tài liệu chính thức.</li><li>Chạy một kịch bản ngắn trên hệ thống thử của chính bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử tải cho API của mình. Hãy đọc README của k6 (https://github.com/grafana/k6) và giải thích bằng tiếng Việt: người dùng ảo và ngưỡng là gì, vì sao chỉ thử trên hệ thống của mình, và AGPL có ý nghĩa gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Trải nghiệm lập trình tốt nhất' là tuyên bố của dự án. Giá Grafana Cloud bài chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grafana</strong> có <strong>32.110 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grafana/k6/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grafana/k6\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 366. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32110; repo_id 54400687; README SHA256 54f111f450700924b62026e08797e5ee386879d5304219c55a1df34cd94321ce.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grafana/k6",
+          "repo_id": "54400687",
+          "source_path": "",
+          "source_revision": "README-SHA256:54f111f450700924b62026e08797e5ee386879d5304219c55a1df34cd94321ce",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/k6",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn cài đặt và ví dụ chạy kịch bản; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép AGPL-3.0; Grafana Cloud là dịch vụ riêng trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/k6/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grafana/k6/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grafana/k6",
+        "stars": 32110,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grafana/k6/master/README.md",
+        "readmeSha256": "54f111f450700924b62026e08797e5ee386879d5304219c55a1df34cd94321ce",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 367,
+      "batch": 64,
+      "slug": "locust",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán",
+        "excerpt": "Hiểu Locust là công cụ kiểm thử hiệu năng mã nguồn mở cho HTTP và giao thức khác, kịch bản viết bằng Python thường. README có ví dụ người dùng đăng nhập rồi duyệt; chỉ chạy trên hệ thống của bạn.",
+        "content": "<p>README tả Locust là công cụ kiểm thử hiệu năng và tải mã nguồn mở cho HTTP và các giao thức khác, cách làm thân thiện với lập trình viên: bạn định nghĩa kiểm thử bằng mã Python thường. Có thể chạy từ dòng lệnh hoặc giao diện web; thông lượng, thời gian phản hồi và lỗi xem được thời gian thực hoặc xuất để phân tích sau. Bạn có thể nhập thư viện Python thường vào kiểm thử, kiến trúc cắm thêm giúp mở rộng vô hạn và thiết kế kiểm thử không bị giới hạn bởi giao diện đồ họa hay ngôn ngữ riêng. README có ví dụ lớp người dùng đăng nhập khi bắt đầu rồi lặp lại nhiều tác vụ có trọng số (bài không chép mã). Tính năng: viết kịch bản người dùng bằng Python (mỗi người dùng chạy trong greenlet riêng), phân tán và mở rộng (hỗ trợ hàng trăm nghìn người dùng theo README). Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống k6 ở mục đích, khác ở ngôn ngữ: nếu bạn biết Python thì Locust cho bạn viết cách 'khách giả' cư xử bằng chính Python, rồi xem biểu đồ trực tiếp trên trang web khi tải tăng lên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết kịch bản khách giả đăng nhập và xem sản phẩm để thử tải một ứng dụng thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần Python và hiểu số đo hiệu năng; README có ví dụ ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chỉ thử tải trên hệ thống của bạn hoặc được phép. Con số 'hàng trăm nghìn người dùng' là mô tả của README, bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>greenlet</strong>: luồng nhẹ của Python mà README nói mỗi người dùng chạy trong đó.</li><li><strong>task (tác vụ)</strong>: hành động mà người dùng ảo lặp lại; README ví dụ có trọng số.</li><li><strong>distributed (phân tán)</strong>: chạy tải từ nhiều máy cùng lúc; README nêu.</li><li><strong>web UI (giao diện web)</strong>: trang xem số đo trực tiếp; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt tại docs.locust.io; bài chưa đọc nên không nêu lệnh. Cần Python. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ví dụ trong README.</li><li>Cài theo tài liệu trong môi trường ảo.</li><li>Chạy tải nhỏ trên ứng dụng thử của chính bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết Python và muốn thử tải API. Hãy đọc README của Locust (https://github.com/locustio/locust) và giải thích bằng tiếng Việt: ví dụ người dùng ảo làm gì, Locust khác k6 thế nào, và vì sao chỉ thử trên hệ thống của mình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tuyên bố hỗ trợ hàng trăm nghìn người dùng là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>locustio</strong> có <strong>28.260 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/locustio/locust/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/locustio/locust\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 367. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28260; repo_id 1377867; README SHA256 96b40d7ad1e168afc750cf820c5d2136202856e403af5214ce1f017eeebdd6bc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/locustio/locust",
+          "repo_id": "1377867",
+          "source_path": "",
+          "source_revision": "README-SHA256:96b40d7ad1e168afc750cf820c5d2136202856e403af5214ce1f017eeebdd6bc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/locustio/locust",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt tại docs.locust.io; bài chưa đọc nên không nêu lệnh. Cần Python. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/locustio/locust/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/locustio/locust/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "locustio/locust",
+        "stars": 28260,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/locustio/locust/master/README.md",
+        "readmeSha256": "96b40d7ad1e168afc750cf820c5d2136202856e403af5214ce1f017eeebdd6bc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 368,
+      "batch": 64,
+      "slug": "hurl",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh",
+        "excerpt": "Hiểu Hurl là công cụ dòng lệnh chạy các yêu cầu HTTP định nghĩa trong tệp chữ đơn giản, nối yêu cầu, lấy giá trị và kiểm tra phản hồi. README rất dài (gần 90 KB) vì có cả tài liệu tùy chọn.",
+        "content": "<p>README tả Hurl là công cụ dòng lệnh chạy các yêu cầu HTTP định nghĩa trong định dạng chữ đơn giản. Nó nối được nhiều yêu cầu, bắt giá trị và đánh giá truy vấn trên tiêu đề và thân phản hồi; dùng được cả để lấy dữ liệu lẫn kiểm thử phiên HTTP. Hurl làm việc dễ với nội dung HTML, API REST, SOAP, GraphQL hay API XML và JSON khác. README có ví dụ: vào trang chủ và bắt mã thông báo, rồi đăng nhập với biểu mẫu dùng giá trị đã bắt và kiểm tra mã trả về (bài không chép mã); và ví dụ nối nhiều yêu cầu. README dài gần 90 KB, gồm cả nhiều mục tài liệu và danh sách tùy chọn dòng lệnh (bài chỉ đọc phần đầu). README dẫn tới trang giấy phép riêng; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Bruno ở mục đích nhưng trong terminal: bạn viết các yêu cầu API vào tệp chữ gần như như đọc, Hurl chạy lần lượt và kiểm tra kết quả. Hợp để chạy tự động trong CI.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết một tệp kiểm tra API đăng nhập rồi chạy mỗi lần đẩy mã. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần terminal và hiểu HTTP; cú pháp tệp Hurl cần học theo tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần giao diện bấm chuột để thử API, Bruno hay Hoppscotch (cùng kho) hợp hơn. Đừng đưa mật khẩu thật vào tệp Hurl đẩy lên kho công khai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>HTTP request (yêu cầu HTTP)</strong>: thông điệp gửi tới máy chủ để lấy hay gửi dữ liệu.</li><li><strong>capture (bắt giá trị)</strong>: lấy một giá trị từ phản hồi để dùng tiếp; README nêu.</li><li><strong>assert (kiểm tra)</strong>: điều kiện phản hồi phải thỏa; README nêu truy vấn trên tiêu đề và thân.</li><li><strong>REST / SOAP / GraphQL</strong>: các kiểu API; README nêu Hurl làm việc được.</li><li><strong>XPath</strong>: cách truy vấn nội dung HTML hay XML; README ví dụ dùng để bắt mã.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt và hướng dẫn trong tài liệu hurl.dev (bài chưa đọc nên không nêu lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ví dụ đăng nhập.</li><li>Cài theo tài liệu.</li><li>Viết một tệp thử gọi API công khai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn kiểm thử API bằng tệp chữ. Hãy đọc README của Hurl (https://github.com/Orange-OpenSource/hurl) và giải thích bằng tiếng Việt: Hurl làm gì, bắt giá trị và nối yêu cầu nghĩa là gì, và khác Bruno ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (gần 90 KB), bài chỉ lấy phần đầu; giấy phép lấy theo GitHub vì README chỉ dẫn tới trang giấy phép riêng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Orange-OpenSource</strong> có <strong>19.295 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README chỉ dẫn tới trang giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Orange-OpenSource/hurl/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Orange-OpenSource/hurl\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 368. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19295; repo_id 290243101; README SHA256 3ebf6f4f515483ef73fc6d10a8c7e4dff9df770d32c580b099e090ddd38ef11c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Orange-OpenSource/hurl",
+          "repo_id": "290243101",
+          "source_path": "",
+          "source_revision": "README-SHA256:3ebf6f4f515483ef73fc6d10a8c7e4dff9df770d32c580b099e090ddd38ef11c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Orange-OpenSource/hurl",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt và hướng dẫn trong tài liệu hurl.dev (bài chưa đọc nên không nêu lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Orange-OpenSource/hurl/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Orange-OpenSource/hurl/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Orange-OpenSource/hurl",
+        "stars": 19295,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Orange-OpenSource/hurl/master/README.md",
+        "readmeSha256": "3ebf6f4f515483ef73fc6d10a8c7e4dff9df770d32c580b099e090ddd38ef11c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 369,
+      "batch": 64,
+      "slug": "mockoon",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh",
+        "excerpt": "Hiểu Mockoon là cách nhanh để dựng API giả: ứng dụng desktop thiết kế và chạy máy chủ giả cục bộ, kèm CLI để tự host. README nêu gói Mockoon Pro trả phí và gói serverless cũ đã bị loại bỏ.",
+        "content": "<p>README tả Mockoon là cách dễ nhất, nhanh nhất để thiết kế và chạy API giả (mock): không cần triển khai từ xa, không cần tài khoản, miễn phí và mã nguồn mở. Nó kết hợp ứng dụng desktop để thiết kế và chạy máy chủ giả cục bộ với CLI để tự host API giả; gói Mockoon Pro bổ sung thêm tính năng trả phí. README nêu lợi ích của giả lập API: tăng tốc phát triển và tích hợp API bên thứ ba bằng cách giảm phụ thuộc vào dịch vụ ngoài và các giới hạn như hạn mức, chi phí, độ sẵn sàng; thử ứng dụng trong môi trường kiểm soát với phản hồi, mã trạng thái, độ trễ dự đoán được, mô phỏng tình huống lỗi; và giúp thành viên mới vào nhanh hơn. Tính năng: số lượng máy chủ và route giả cục bộ không giới hạn, CLI chạy trong môi trường không giao diện và CI, kiểm soát tuyến đầy đủ (phương thức, mã trạng thái, đường dẫn regex, phục vụ tệp, tiêu đề tùy chỉnh), tương thích OpenAPI, ghi nhật ký yêu cầu đến và chuyển tiếp, mẫu JSON, chế độ proxy, hỗ trợ HTTPS. README ghi chú: gói @mockoon/serverless cũ đã bị loại bỏ, xem tài liệu gói serverless để chuyển đổi. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn dựng ứng dụng cần gọi một API chưa xong hoặc tốn tiền. Mockoon giống bộ phim trường: bạn tự dựng 'API giả' trả lời đúng như kịch bản, nên ứng dụng của bạn tập luyện được dù API thật chưa có.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng API giả trả về danh sách sản phẩm để làm giao diện trước khi có máy chủ thật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Ứng dụng desktop có giao diện; dùng CLI trong CI cần kiến thức thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng gói @mockoon/serverless cũ, README nói đã bị loại bỏ. Một số tính năng thuộc Mockoon Pro trả phí (bài chưa kiểm tra giá).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>mock API (API giả)</strong>: API mô phỏng trả lời theo kịch bản bạn đặt; README nêu là mục đích chính.</li><li><strong>route (tuyến)</strong>: một đường dẫn API và cách nó phản hồi; README nêu kiểm soát đầy đủ.</li><li><strong>proxy forwarding</strong>: chuyển tiếp yêu cầu tới máy chủ thật; README nêu chế độ này.</li><li><strong>OpenAPI</strong>: chuẩn mô tả API; README nói Mockoon tương thích.</li><li><strong>serverless package</strong>: gói chạy mock trên nền tảng serverless; README nói bản cũ đã bị loại bỏ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải ứng dụng desktop hoặc dùng CLI (bài không chép lệnh). Miễn phí, mã nguồn mở; Mockoon Pro trả phí (bài chưa kiểm tra giá). Giấy phép MIT theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Tải ứng dụng và tạo một máy chủ giả thử.</li><li>Cho ứng dụng của bạn gọi vào địa chỉ cục bộ của máy chủ giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần API giả để làm giao diện trước. Hãy đọc README của Mockoon (https://github.com/mockoon/mockoon) và giải thích bằng tiếng Việt: API giả dùng để làm gì, ứng dụng desktop khác CLI thế nào, và gói serverless cũ nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nêu 'dễ nhất, nhanh nhất' là tuyên bố của dự án. Giá Mockoon Pro bài chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mockoon</strong> có <strong>8.468 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mockoon/mockoon/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mockoon/mockoon\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 369. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8468; repo_id 97478419; README SHA256 5d4766b57e3aa32fe3daccb194680559debb7889faf5579aa35ae4b089657df0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mockoon/mockoon",
+          "repo_id": "97478419",
+          "source_path": "",
+          "source_revision": "README-SHA256:5d4766b57e3aa32fe3daccb194680559debb7889faf5579aa35ae4b089657df0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mockoon/mockoon",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải ứng dụng desktop hoặc dùng CLI (bài không chép lệnh). Miễn phí, mã nguồn mở; Mockoon Pro trả phí (bài chưa kiểm tra giá). Giấy phép MIT theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mockoon/mockoon/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mockoon/mockoon/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mockoon/mockoon",
+        "stars": 8468,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mockoon/mockoon/main/README.md",
+        "readmeSha256": "5d4766b57e3aa32fe3daccb194680559debb7889faf5579aa35ae4b089657df0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 370,
+      "batch": 64,
+      "slug": "wiremock",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WireMock: công cụ giả lập API HTTP phổ biến, chạy như thư viện hoặc máy chủ độc lập, dựng môi trường kiểm thử ổn định",
+        "excerpt": "Hiểu WireMock là công cụ giả lập API mã nguồn mở bắt đầu năm 2011 như thư viện Java, nay dùng được nhiều ngôn ngữ, như thư viện hoặc máy chủ độc lập. README nói hơn 6 triệu lượt tải mỗi tháng (tuyên bố của dự án).",
+        "content": "<p>README tả WireMock là công cụ giả lập API mã nguồn mở phổ biến (README nói hơn 6 triệu lượt tải mỗi tháng; đây là tuyên bố của dự án) và là nền cho dịch vụ WireMock Cloud. WireMock giúp tạo môi trường kiểm thử và phát triển ổn định, tách bạn khỏi các dịch vụ bên thứ ba hay lỗi, và mô phỏng API chưa tồn tại. Bắt đầu năm 2011 như một thư viện Java do Tom Akehurst viết, nay WireMock hỗ trợ nhiều ngôn ngữ và công nghệ; chạy như thư viện hay lớp bọc cho máy khách trong nhiều ngôn ngữ, hoặc như máy chủ độc lập. Cách tạo API giả: bằng mã, qua REST API, bằng tệp JSON, và bằng ghi lại lưu lượng HTTP qua proxy. Có hệ thống khớp yêu cầu phong phú (bất kỳ phần nào của yêu cầu đến), phản hồi sinh động bằng mẫu Handlebars, nhiều điểm mở rộng và API toàn diện. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Mockoon: dựng API giả cho kiểm thử. WireMock xuất phát từ thế giới Java nên hợp khi bạn kiểm thử mã Java hay cần mô phỏng phức tạp; cũng chạy được như một máy chủ giả độc lập cho mọi ngôn ngữ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giả lập một API thanh toán bên thứ ba để kiểm thử mã mà không gọi dịch vụ thật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu cách khớp yêu cầu và mẫu phản hồi; thường dùng trong dự án có kiểm thử tự động. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần API giả đơn giản với giao diện bấm chuột, Mockoon dễ hơn. WireMock Cloud là dịch vụ trả phí riêng (bài chưa kiểm tra giá).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API mocking (giả lập API)</strong>: mô phỏng API để kiểm thử mà không gọi dịch vụ thật; README nêu.</li><li><strong>stub / matching (khớp yêu cầu)</strong>: quy tắc nhận ra yêu cầu nào trả lời gì; README nói hệ thống khớp phong phú.</li><li><strong>Handlebars</strong>: ngôn ngữ mẫu để sinh phản hồi động; README nêu.</li><li><strong>record (ghi lại)</strong>: ghi lưu lượng HTTP qua proxy để tạo API giả; README nêu.</li><li><strong>standalone server (máy chủ độc lập)</strong>: chạy WireMock như một chương trình riêng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu; bài chưa đọc chi tiết nên không nêu lệnh. README phần đã đọc không nêu yêu cầu hệ thống cụ thể; cần xem tài liệu. Miễn phí theo giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Chạy WireMock độc lập theo tài liệu.</li><li>Tạo một route giả và gọi thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần giả lập API bên thứ ba khi kiểm thử. Hãy đọc README của WireMock (https://github.com/wiremock/wiremock) và giải thích bằng tiếng Việt: giả lập API dùng để làm gì, các cách tạo API giả, và WireMock khác Mockoon thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Con số hơn 6 triệu lượt tải mỗi tháng là tuyên bố của README. README không nêu yêu cầu hệ thống trong phần đã đọc. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wiremock</strong> có <strong>7.416 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wiremock/wiremock/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wiremock/wiremock\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 370. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7416; repo_id 2544305; README SHA256 cc7bc3fbb92ea27dd438dcf0ba0bc9ead7b291704c8018b80201e6884c2b94a1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wiremock/wiremock",
+          "repo_id": "2544305",
+          "source_path": "",
+          "source_revision": "README-SHA256:cc7bc3fbb92ea27dd438dcf0ba0bc9ead7b291704c8018b80201e6884c2b94a1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wiremock/wiremock",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu; bài chưa đọc chi tiết nên không nêu lệnh. README phần đã đọc không nêu yêu cầu hệ thống cụ thể; cần xem tài liệu. Miễn phí theo giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wiremock/wiremock/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wiremock/wiremock/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wiremock/wiremock",
+        "stars": 7416,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wiremock/wiremock/master/README.md",
+        "readmeSha256": "cc7bc3fbb92ea27dd438dcf0ba0bc9ead7b291704c8018b80201e6884c2b94a1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 371,
+      "batch": 64,
+      "slug": "prism",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Prism: dựng máy chủ giả và proxy kiểm tra hợp đồng từ tệp OpenAPI hoặc Postman Collection",
+        "excerpt": "Hiểu Prism là bộ gói để giả lập API và kiểm thử hợp đồng với OpenAPI v2 và v3.x: tạo máy chủ giả từ đặc tả và proxy kiểm tra yêu cầu, phản hồi. README có phần máy chủ giả được lưu trữ sẵn của Stoplight.",
+        "content": "<p>README tả Prism là bộ gói để giả lập API và kiểm thử hợp đồng với OpenAPI v2 (trước đây gọi là Swagger) và OpenAPI v3.x. Prism cung cấp: máy chủ giả giống thật từ bất kỳ tài liệu đặc tả API nào, proxy kiểm tra (kiểm thử hợp đồng cho bên dùng API và bên làm API), và hỗ trợ đặc tả toàn diện (OpenAPI 3.1, 3.0, 2.0 và Postman Collections). Cách dùng: máy chủ giả được lưu trữ sẵn do Stoplight cung cấp (qua Stoplight Platform hay Stoplight Studio), hoặc tự host: Prism là máy chủ HTTP mã nguồn mở chạy từ dòng lệnh, cung cấp giả lập, kiểm tra yêu cầu và thương lượng nội dung; dùng riêng hoặc trong tích hợp liên tục. README có mục Installation and Usage. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn có bản mô tả API (OpenAPI) mà chưa có máy chủ thật, Prism đọc bản mô tả và dựng ngay một máy chủ giả trả lời theo mô tả. Ở chế độ proxy, nó còn kiểm tra xem yêu cầu và phản hồi thật có đúng với bản mô tả không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng máy chủ giả từ tệp OpenAPI để nhóm làm giao diện song song với nhóm làm máy chủ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website, API và kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu OpenAPI và dòng lệnh; README chỉ giới thiệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa có tệp đặc tả OpenAPI thì dùng Mockoon dễ hơn. Máy chủ giả được lưu trữ sẵn của Stoplight là dịch vụ bên ngoài, bài chưa kiểm tra điều khoản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>OpenAPI (Swagger)</strong>: chuẩn mô tả API; README nêu hỗ trợ v2 và v3.x.</li><li><strong>contract testing (kiểm thử hợp đồng)</strong>: kiểm tra bên dùng và bên cung cấp API tuân theo cùng mô tả; README nêu.</li><li><strong>validation proxy</strong>: proxy kiểm tra yêu cầu và phản hồi theo đặc tả; README nêu.</li><li><strong>Postman Collection</strong>: tệp bộ sưu tập yêu cầu của Postman; README nói Prism hỗ trợ.</li><li><strong>content negotiation (thương lượng nội dung)</strong>: chọn định dạng phản hồi theo yêu cầu của máy khách; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation and Usage; bài chưa đọc chi tiết nên không nêu lệnh. README phần đã đọc không nêu yêu cầu hệ thống cụ thể; cần xem tài liệu. Miễn phí theo giấy phép Apache-2.0 (theo GitHub); dịch vụ lưu trữ của Stoplight có điều khoản riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Prism provides.</li><li>Chuẩn bị một tệp OpenAPI nhỏ.</li><li>Chạy Prism độc lập và thử gọi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có tệp OpenAPI và muốn máy chủ giả. Hãy đọc README của Prism (https://github.com/stoplightio/prism) và giải thích bằng tiếng Việt: máy chủ giả và proxy kiểm tra khác nhau thế nào, kiểm thử hợp đồng là gì, và khi nào nên dùng Mockoon thay thế. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu yêu cầu hệ thống cụ thể; bài không khẳng định. Dịch vụ lưu trữ của Stoplight là dịch vụ ngoài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử gửi yêu cầu thật tới hệ thống: chỉ thử trên hệ thống của bạn hoặc môi trường thử được phép, đừng chạy kiểm thử tải trên dịch vụ của người khác, và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>stoplightio</strong> có <strong>5.065 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/stoplightio/prism/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/stoplightio/prism\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 371. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5065; repo_id 54172257; README SHA256 aa9cfcfa39b278116bd157ea7a7048d703678c3279a5ca8311f3f3ded49cecaf.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/stoplightio/prism",
+          "repo_id": "54172257",
+          "source_path": "",
+          "source_revision": "README-SHA256:aa9cfcfa39b278116bd157ea7a7048d703678c3279a5ca8311f3f3ded49cecaf",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stoplightio/prism",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation and Usage; bài chưa đọc chi tiết nên không nêu lệnh. README phần đã đọc không nêu yêu cầu hệ thống cụ thể; cần xem tài liệu. Miễn phí theo giấy phép Apache-2.0 (theo GitHub); dịch vụ lưu trữ của Stoplight có điều khoản riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stoplightio/prism/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/stoplightio/prism/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "stoplightio/prism",
+        "stars": 5065,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/stoplightio/prism/main/README.md",
+        "readmeSha256": "aa9cfcfa39b278116bd157ea7a7048d703678c3279a5ca8311f3f3ded49cecaf",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

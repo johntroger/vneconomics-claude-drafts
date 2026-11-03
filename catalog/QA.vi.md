@@ -95,3 +95,10 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 264 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Kiểm tra toàn bộ 264 đường dẫn README thô trong các tệp nghiên cứu: cả 264 đều trả mã 200.
 - Quy ước loại trừ đã áp dụng thêm: repo ngừng bảo trì và chỉ đọc theo chính README (Continue), commit quá cũ (Aider), giấy phép `NOASSERTION` (HandBrake).
+
+## Bổ sung rà soát (nhóm 46, key 365–371; tổng 271 bài)
+
+- Danh mục 271 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Kiểm tra toàn bộ 271 đường dẫn README thô trong các tệp nghiên cứu: cả 271 đều trả mã 200.
+- Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" xuất hiện 29 lần, đều trong câu phủ định.
+- Đã gỡ khỏi hai bài (WireMock, Prism) các câu về yêu cầu hệ thống (Java, Node.js) vì README phần đã đọc không nêu; và sửa danh sách mục README đã đọc cho khớp với tiêu đề thật.
