@@ -1,0 +1,42 @@
+{
+  "key": 447,
+  "repo": "knadh/listmonk",
+  "repoId": "193833307",
+  "url": "https://github.com/knadh/listmonk",
+  "stars": 24128,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T02:16:09Z",
+  "createdAt": "2019-06-26T05:08:39Z",
+  "defaultBranch": "master",
+  "description": "High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app.",
+  "homepage": "https://listmonk.app",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/knadh/listmonk/master/README.md",
+    "sha256": "e3592dcea72705901f2cfba4f674de81e96dc7aaded2343246cca9312a092cee",
+    "bytes": 2138,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Developers",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu listmonk.app.",
+    "Chưa thử.",
+    "SMTP và giới hạn gửi thư chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

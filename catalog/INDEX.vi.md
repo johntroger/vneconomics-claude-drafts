@@ -56,6 +56,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 54 — Công cụ terminal hiện đại](learning-paths/54-terminal-hien-dai.vi.md) — Từ lệnh nhảy thư mục và dấu nhắc đẹp đến theo dõi tài nguyên, xem diff, quản lý tệp và lịch sử lệnh; chú ý sao lưu cấu hình shell và các cảnh báo về đồng bộ và beta.
 - [Lộ trình 55 — Ảnh, video và AI tạo ảnh](learning-paths/55-anh-video-ai.vi.md) — Từ ứng dụng có giao diện đến công cụ dòng lệnh và engine AI tạo ảnh; chú ý bản quyền, giấy phép của mô hình, yêu cầu GPU và bản tải chính thức.
 - [Lộ trình 56 — Khóa học AI và học tập](learning-paths/56-khoa-hoc-ai.vi.md) — Từ bài tra cứu ngắn đến khóa AI tạo sinh, nền tảng AI, agent và học tăng cường; chú ý chi phí dịch vụ, nội dung có thể lỗi thời và phạm vi giấy phép.
+- [Lộ trình 57 — Website, SEO và phân tích](learning-paths/57-website-seo-phan-tich.vi.md) — Từ đo tốc độ trang đến phân tích lượt truy cập, gửi bản tin và thương mại điện tử; chú ý quyền riêng tư, luật gửi thư, mật khẩu mặc định và phần nào chỉ dành cho nhà phát triển.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -111,7 +112,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (150 bài)
+### Cơ bản (153 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -265,6 +266,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 438 | AI for Beginners: giáo trình 12 tuần, 24 bài của Microsoft về AI, mạng nơ-ron, TensorFlow và PyTorch; không bao gồm AI cho kinh doanh hay ML cổ điển | [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 70518 | khoa-hoc-ai |
 | 439 | Hugging Face Agents Course: khóa học miễn phí 4 đơn vị về agent AI, từ nền tảng đến dự án cuối kỳ có đánh giá tự động | [huggingface/agents-course](https://github.com/huggingface/agents-course) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 34390 | khoa-hoc-ai |
 | 441 | 30 Seconds of Code: kho bài viết và đoạn mã ngắn để nâng kỹ năng lập trình, đoạn mã theo CC-BY-4.0 còn nội dung khác không được dùng khi chưa có phép | [Chalarangelo/30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code) | {'key': 'cc-by-4.0', 'name': 'Creative Commons Attribution 4.0 International', 'spdx_id': 'CC-BY-4.0', 'url': 'https://api.github.com/licenses/cc-by-4.0', 'node_id': 'MDc6TGljZW5zZTI1'} | 129390 | khoa-hoc-ai |
+| 442 | Lighthouse: công cụ kiểm tra hiệu năng và thực hành tốt của trang web, chạy trong Chrome DevTools, tiện ích mở rộng hoặc dòng lệnh Node; README nói kết quả không gửi lên máy chủ từ xa | [GoogleChrome/lighthouse](https://github.com/GoogleChrome/lighthouse) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 31005 | website-seo-phan-tich |
+| 445 | Plausible Analytics: phân tích web nhẹ, không cookie, có bản đám mây trả phí và bản Community Edition tự host theo AGPLv3 phát hành 2 lần mỗi năm | [plausible/analytics](https://github.com/plausible/analytics) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 29753 | website-seo-phan-tich |
+| 446 | Matomo: nền tảng phân tích web mã nguồn mở viết bằng PHP và MySQL, thay thế Google Analytics, có dịch vụ Matomo Cloud dùng thử 21 ngày | [matomo-org/matomo](https://github.com/matomo-org/matomo) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 22003 | website-seo-phan-tich |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -308,7 +312,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (110 bài)
+### Nâng cao (115 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -422,6 +426,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 431 | ComfyUI: engine tạo ảnh, video, âm thanh, 3D bằng AI với giao diện đồ thị nút; README nêu thông số tối thiểu 4GB VRAM và gói cloud trả phí | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 144734 | anh-video-ai |
 | 436 | InvokeAI: bộ công cụ tạo ảnh bằng AI chạy cục bộ với giao diện web, Unified Canvas và quy trình dạng nút; README có danh sách mô hình hỗ trợ dài | [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 28968 | anh-video-ai |
 | 440 | Hugging Face Deep Reinforcement Learning Course: khóa học học tăng cường sâu, README nói đang ở trạng thái bảo trì thấp, một số phần không còn hoạt động | [huggingface/deep-rl-class](https://github.com/huggingface/deep-rl-class) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 5086 | khoa-hoc-ai |
+| 443 | sitespeed.io: công cụ mã nguồn mở đo hiệu năng web bằng trình duyệt thật, cho báo cáo Core Web Vitals, video tải trang và HAR waterfall | [sitespeedio/sitespeed.io](https://github.com/sitespeedio/sitespeed.io) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 5047 | website-seo-phan-tich |
+| 444 | Umami: nền tảng phân tích web ưu tiên riêng tư, không cookie, tự host hoặc dùng đám mây; README nhắc tài khoản mặc định admin/umami | [umami-software/umami](https://github.com/umami-software/umami) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 39880 | website-seo-phan-tich |
+| 447 | listmonk: trình quản lý thư tin và danh sách gửi mail tự host, một tệp nhị phân Go dùng PostgreSQL, giấy phép AGPLv3 | [knadh/listmonk](https://github.com/knadh/listmonk) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 24128 | website-seo-phan-tich |
+| 448 | Saleor: nền tảng thương mại điện tử headless chỉ có GraphQL API, README nói nhánh main là bản phát triển có thể không ổn định | [saleor/saleor](https://github.com/saleor/saleor) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 23505 | website-seo-phan-tich |
+| 449 | WooCommerce (kho mã): monorepo dành cho nhà phát triển plugin WooCommerce, README nói kho này không hỗ trợ người dùng | [woocommerce/woocommerce](https://github.com/woocommerce/woocommerce) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 10576 | website-seo-phan-tich |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

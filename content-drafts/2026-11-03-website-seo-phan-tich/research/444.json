@@ -1,0 +1,42 @@
+{
+  "key": 444,
+  "repo": "umami-software/umami",
+  "repoId": "280363952",
+  "url": "https://github.com/umami-software/umami",
+  "stars": 39880,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:21:55Z",
+  "createdAt": "2020-07-17T07:59:00Z",
+  "defaultBranch": "master",
+  "description": "Umami is a privacy-first web and product analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place. No cookies, no surveillance, self-hosted or in the cloud.",
+  "homepage": "https://umami.is",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/umami-software/umami/master/README.md",
+    "sha256": "b992ed9a3196d612ef962bd2b5fefd3dcffa9aadf2c6accfd1eceeba8d80ac70",
+    "bytes": 5219,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting Started",
+      "Installing from Source",
+      "Installing with Docker"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá bản đám mây chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

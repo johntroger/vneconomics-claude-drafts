@@ -1,0 +1,43 @@
+{
+  "key": 449,
+  "repo": "woocommerce/woocommerce",
+  "repoId": "2179920",
+  "url": "https://github.com/woocommerce/woocommerce",
+  "stars": 10576,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-2.0",
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0",
+    "url": "https://api.github.com/licenses/gpl-2.0",
+    "node_id": "MDc6TGljZW5zZTg="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:40:10Z",
+  "createdAt": "2011-08-09T15:12:11Z",
+  "defaultBranch": "trunk",
+  "description": "A customizable, open-source ecommerce platform built on WordPress. Build any commerce solution you can imagine.",
+  "homepage": "https://woocommerce.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/README.md",
+    "sha256": "a6c0c966aa1c13e3861c462876d64f762a6bac31724ef4022377172495769a77",
+    "bytes": 5436,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting Started",
+      "Repository Structure",
+      "Support",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu developer.woocommerce.com.",
+    "Chưa thử.",
+    "Chưa kiểm tra tiện ích mở rộng trả phí."
+  ],
+  "runtimeValidated": false
+}

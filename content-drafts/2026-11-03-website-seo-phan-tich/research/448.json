@@ -1,0 +1,44 @@
+{
+  "key": 448,
+  "repo": "saleor/saleor",
+  "repoId": "8162715",
+  "url": "https://github.com/saleor/saleor",
+  "stars": 23505,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:55:46Z",
+  "createdAt": "2013-02-12T16:46:39Z",
+  "defaultBranch": "main",
+  "description": "Saleor Core: the high performance, composable, headless commerce API.",
+  "homepage": "https://saleor.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/saleor/saleor/main/README.md",
+    "sha256": "6b285440fe799c8620470efc081157777636d822be759aa8bd812a9855548944",
+    "bytes": 9508,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What makes Saleor special?",
+      "Why API-only Architecture?",
+      "Features",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.saleor.io.",
+    "Chưa thử.",
+    "Chi phí dịch vụ đám mây chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

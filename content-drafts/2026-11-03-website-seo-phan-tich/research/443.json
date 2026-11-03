@@ -1,0 +1,42 @@
+{
+  "key": 443,
+  "repo": "sitespeedio/sitespeed.io",
+  "repoId": "4890177",
+  "url": "https://github.com/sitespeedio/sitespeed.io",
+  "stars": 5047,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T06:10:34Z",
+  "createdAt": "2012-07-04T19:17:10Z",
+  "defaultBranch": "main",
+  "description": "sitespeed.io is an open-source tool for comprehensive web performance analysis, enabling you to test, monitor, and optimize your website’s speed using real browsers in various environments.",
+  "homepage": "https://www.sitespeed.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/sitespeedio/sitespeed.io/main/README.md",
+    "sha256": "c21e6fc062df1a06e926763e2ef241a62f779dfdb5140276cf9cc54ef1e928e8",
+    "bytes": 8483,
+    "sectionsRead": [
+      "What is sitespeed.io?",
+      "Installation",
+      "Usage",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa so sánh với Lighthouse bằng đo thực tế."
+  ],
+  "runtimeValidated": false
+}

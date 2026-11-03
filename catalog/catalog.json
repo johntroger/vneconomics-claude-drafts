@@ -6183,5 +6183,195 @@
   "related": [
    "generative-ai-for-beginners"
   ]
+ },
+ {
+  "key": 442,
+  "slug": "lighthouse",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "Lighthouse: công cụ kiểm tra hiệu năng và thực hành tốt của trang web, chạy trong Chrome DevTools, tiện ích mở rộng hoặc dòng lệnh Node; README nói kết quả không gửi lên máy chủ từ xa",
+  "repo": "GoogleChrome/lighthouse",
+  "stars": 31005,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "sitespeed-io"
+  ]
+ },
+ {
+  "key": 443,
+  "slug": "sitespeed-io",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "sitespeed.io: công cụ mã nguồn mở đo hiệu năng web bằng trình duyệt thật, cho báo cáo Core Web Vitals, video tải trang và HAR waterfall",
+  "repo": "sitespeedio/sitespeed.io",
+  "stars": 5047,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "lighthouse",
+   "matomo"
+  ]
+ },
+ {
+  "key": 444,
+  "slug": "umami",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "Umami: nền tảng phân tích web ưu tiên riêng tư, không cookie, tự host hoặc dùng đám mây; README nhắc tài khoản mặc định admin/umami",
+  "repo": "umami-software/umami",
+  "stars": 39880,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "listmonk",
+   "plausible"
+  ]
+ },
+ {
+  "key": 445,
+  "slug": "plausible",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "Plausible Analytics: phân tích web nhẹ, không cookie, có bản đám mây trả phí và bản Community Edition tự host theo AGPLv3 phát hành 2 lần mỗi năm",
+  "repo": "plausible/analytics",
+  "stars": 29753,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "matomo",
+   "umami"
+  ]
+ },
+ {
+  "key": 446,
+  "slug": "matomo",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "Matomo: nền tảng phân tích web mã nguồn mở viết bằng PHP và MySQL, thay thế Google Analytics, có dịch vụ Matomo Cloud dùng thử 21 ngày",
+  "repo": "matomo-org/matomo",
+  "stars": 22003,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "plausible",
+   "sitespeed-io"
+  ]
+ },
+ {
+  "key": 447,
+  "slug": "listmonk",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "listmonk: trình quản lý thư tin và danh sách gửi mail tự host, một tệp nhị phân Go dùng PostgreSQL, giấy phép AGPLv3",
+  "repo": "knadh/listmonk",
+  "stars": 24128,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "umami",
+   "woocommerce"
+  ]
+ },
+ {
+  "key": 448,
+  "slug": "saleor",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "Saleor: nền tảng thương mại điện tử headless chỉ có GraphQL API, README nói nhánh main là bản phát triển có thể không ổn định",
+  "repo": "saleor/saleor",
+  "stars": 23505,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "woocommerce"
+  ]
+ },
+ {
+  "key": 449,
+  "slug": "woocommerce",
+  "group": "2026-11-03-website-seo-phan-tich",
+  "title": "WooCommerce (kho mã): monorepo dành cho nhà phát triển plugin WooCommerce, README nói kho này không hỗ trợ người dùng",
+  "repo": "woocommerce/woocommerce",
+  "stars": 10576,
+  "license": {
+   "key": "gpl-2.0",
+   "name": "GNU General Public License v2.0",
+   "spdx_id": "GPL-2.0",
+   "url": "https://api.github.com/licenses/gpl-2.0",
+   "node_id": "MDc6TGljZW5zZTg="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "listmonk",
+   "saleor"
+  ]
  }
 ]
