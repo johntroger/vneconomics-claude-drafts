@@ -7,7 +7,7 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 
 ## Bắt đầu từ đâu
 - `catalog/INDEX.vi.md`: mục lục tổng theo độ khó và theo lộ trình học.
-- `catalog/learning-paths/`: 82 lộ trình học (bắt đầu, vibe code có kỷ luật, đưa website chạy thật, đọc hiểu mã web AI dựng, làm quen terminal, dữ liệu có AI hỗ trợ, hiểu AI và LLM, tạo website nội dung, bảo mật tối thiểu, cho AI đọc web, tự động hóa).
+- `catalog/learning-paths/`: 83 lộ trình học (bắt đầu, vibe code có kỷ luật, đưa website chạy thật, đọc hiểu mã web AI dựng, làm quen terminal, dữ liệu có AI hỗ trợ, hiểu AI và LLM, tạo website nội dung, bảo mật tối thiểu, cho AI đọc web, tự động hóa).
 - `catalog/catalog.json`: dữ liệu máy đọc được (độ khó, bài liên quan).
 
 ## Các nhóm bài nháp
@@ -96,3 +96,4 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 | `content-drafts/2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh/` | 8 bài nháp nhóm "Bảo mật chuỗi cung ứng và định danh" (key 601–608) |
 | `content-drafts/2026-11-03-ban-do-va-du-lieu-dia-ly/` | 7 bài nháp nhóm "Bản đồ và dữ liệu địa lý" (key 609–615) |
 | `content-drafts/2026-11-03-do-hoa-3d-va-vat-ly-web/` | 8 bài nháp nhóm "Đồ họa 3D và vật lý trên web" (key 616–623) |
+| `content-drafts/2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong/` | 6 bài nháp nhóm "Tài chính định lượng và dữ liệu thị trường" (key 624–629) |

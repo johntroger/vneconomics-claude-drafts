@@ -10499,5 +10499,147 @@
    "melonjs",
    "model-viewer"
   ]
+ },
+ {
+  "key": 624,
+  "slug": "yfinance",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "yfinance: công cụ Python lấy dữ liệu tài chính và thị trường từ API công khai của Yahoo Finance, dành cho nghiên cứu và giáo dục, không liên kết với Yahoo; README nhắc đọc điều khoản của Yahoo và API chỉ cho dùng cá nhân",
+  "repo": "ranaroussi/yfinance",
+  "stars": 25805,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "qlib"
+  ]
+ },
+ {
+  "key": 625,
+  "slug": "qlib",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "Qlib: nền tảng đầu tư định lượng hướng AI của Microsoft, quy trình học máy đầy đủ từ xử lý dữ liệu, huấn luyện đến kiểm thử lại; README cảnh báo thay đổi phá vỡ về nạp artifact chưa phát hành và nêu RD-Agent",
+  "repo": "microsoft/qlib",
+  "stars": 49957,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "xrpl-rippled",
+   "yfinance"
+  ]
+ },
+ {
+  "key": 626,
+  "slug": "freqtrade",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "Freqtrade: bot giao dịch tiền mã hóa mã nguồn mở viết bằng Python, điều khiển qua Telegram hoặc giao diện web, có chế độ chạy giả lập, kiểm thử lại, tối ưu bằng học máy; README cảnh báo chỉ dùng cho giáo dục và có thể mất tiền",
+  "repo": "freqtrade/freqtrade",
+  "stars": 56368,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "ccxt",
+   "hummingbot"
+  ]
+ },
+ {
+  "key": 627,
+  "slug": "ccxt",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "CCXT: thư viện giao diện thống nhất để kết nối và giao dịch với hơn 100 sàn tiền mã hóa và thị trường dự đoán, nhiều ngôn ngữ, README rất dài và có mục Disclaimer về phần mềm không lưu ký tiền",
+  "repo": "ccxt/ccxt",
+  "stars": 44693,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "freqtrade",
+   "xrpl-rippled"
+  ]
+ },
+ {
+  "key": 628,
+  "slug": "hummingbot",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "Hummingbot: khung mã nguồn mở thiết kế và triển khai chiến lược giao dịch tự động (bot) trên nhiều sàn tập trung và phi tập trung, chiến lược kịch bản, bộ điều khiển, bộ thực thi, dòng lệnh hbot và Condor (khung AI), Apache 2.0",
+  "repo": "hummingbot/hummingbot",
+  "stars": 20918,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-20",
+  "related": [
+   "freqtrade"
+  ]
+ },
+ {
+  "key": 629,
+  "slug": "xrpl-rippled",
+  "group": "2026-11-03-tai-chinh-dinh-luong-va-du-lieu-thi-truong",
+  "title": "XRP Ledger (xrpld/rippled): sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, phần mềm máy chủ xrpld theo giấy phép ISC, README nêu đặc tính như đồng thuận 4 đến 5 giây; bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư",
+  "repo": "XRPLF/rippled",
+  "stars": 5243,
+  "license": {
+   "key": "isc",
+   "name": "ISC License",
+   "spdx_id": "ISC",
+   "url": "https://api.github.com/licenses/isc",
+   "node_id": "MDc6TGljZW5zZTEw"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "ccxt",
+   "qlib"
+  ]
  }
 ]

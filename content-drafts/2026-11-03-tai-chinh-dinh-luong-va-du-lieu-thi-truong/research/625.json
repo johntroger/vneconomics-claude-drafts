@@ -1,0 +1,43 @@
+{
+  "key": 625,
+  "repo": "microsoft/qlib",
+  "repoId": "287463830",
+  "url": "https://github.com/microsoft/qlib",
+  "stars": 49957,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T05:12:38Z",
+  "createdAt": "2020-08-14T06:46:00Z",
+  "defaultBranch": "main",
+  "description": "Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped with https://github.com/microsoft/RD-Agent to automate R&D process.",
+  "homepage": "https://qlib.readthedocs.io/en/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/qlib/main/README.md",
+    "sha256": "e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037",
+    "bytes": 44277,
+    "sectionsRead": [
+      "What's NEW!",
+      "Framework of Qlib",
+      "Quick Start",
+      "Data Preparation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu qlib.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa kiểm chứng hiệu năng."
+  ],
+  "runtimeValidated": false
+}

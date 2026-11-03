@@ -177,3 +177,4 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - 2026-11-03, batch 99 (key 601–608, Bảo mật chuỗi cung ứng và định danh): 8 bài; quét cụm từ cấm chỉ gặp câu phủ định; 8 README HTTP 200; không chép lệnh cài, lệnh tải tập lệnh từ mạng hay tài khoản mặc định dạng lệnh; catalog 508 bài, 80 lộ trình.
 - 2026-11-03, batch 100 (key 609–615, Bản đồ và dữ liệu địa lý): 7 bài; quét cụm từ cấm chỉ gặp câu phủ định; 7 README HTTP 200; không chép lệnh cài; catalog 515 bài, 81 lộ trình.
 - 2026-11-03, batch 101 (key 616–623, Đồ họa 3D và vật lý trên web): 8 bài; quét cụm từ cấm chỉ gặp câu phủ định; 8 README HTTP 200; không chép lệnh cài; catalog 523 bài, 82 lộ trình.
+- 2026-11-03, batch 102 (key 624–629, Tài chính định lượng và dữ liệu thị trường): 6 bài; quét cụm từ cấm chỉ gặp câu phủ định; 6 README HTTP 200; không chép lệnh cài; mọi bài có cảnh báo không phải lời khuyên đầu tư; catalog 529 bài, 83 lộ trình.

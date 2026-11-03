@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-tai-chinh",
+  "batch": 102,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 624,
+      "batch": 102,
+      "slug": "yfinance",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "yfinance: công cụ Python lấy dữ liệu tài chính và thị trường từ API công khai của Yahoo Finance, dành cho nghiên cứu và giáo dục, không liên kết với Yahoo; README nhắc đọc điều khoản của Yahoo và API chỉ cho dùng cá nhân",
+        "excerpt": "Hiểu yfinance là công cụ Python lấy dữ liệu tài chính và thị trường từ API công khai của Yahoo Finance, dành cho nghiên cứu và giáo dục; README nhấn mạnh không liên kết hay được Yahoo xác nhận, bắt buộc tham khảo điều khoản của Yahoo, và API chỉ dành cho dùng cá nhân.",
+        "content": "<p>README tả yfinance là cách viết kiểu Python để lấy dữ liệu tài chính và thị trường từ Yahoo Finance. Cảnh báo quan trọng đầu README: Yahoo, Y!Finance là nhãn hiệu của Yahoo, yfinance không liên kết, không được Yahoo xác nhận hay kiểm duyệt, chỉ là công cụ mã nguồn mở dùng API công khai của Yahoo cho mục đích nghiên cứu và giáo dục; bạn phải đọc điều khoản sử dụng của Yahoo; README nhắc API của Yahoo chỉ dành cho dùng cá nhân. Thành phần chính: Ticker (dữ liệu một mã), Tickers (nhiều mã), download (tải dữ liệu nhiều mã), Market, WebSocket và AsyncWebSocket (dữ liệu trực tiếp), Search, Sector và Industry, EquityQuery và Screener. Giá mặc định được điều chỉnh theo cổ tức. Có trang tài liệu mới tại ranaroussi.github.io/yfinance. README có cách cài từ PyPI bằng pip (bài không chép lệnh). Phần giấy phép nêu Apache Software License.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn dạy hoặc học tài chính và cần chuỗi giá cổ phiếu để làm bài tập? yfinance cho bạn kéo bảng giá lịch sử về Python để phân tích, thay vì gõ tay.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm giá điều chỉnh theo cổ tức và vì sao nên dùng dữ liệu cho mục đích giáo dục; chưa tải dữ liệu thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python và pandas cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu lấy từ nguồn không chính thức: README không bảo đảm độ chính xác hay tính liên tục, và Yahoo có thể đổi hoặc chặn; chưa dùng để ra quyết định đầu tư. Đọc điều khoản của Yahoo trước khi dùng, nhất là cho mục đích thương mại; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ticker (mã chứng khoán)</strong>: ký hiệu của cổ phiếu hay quỹ; README nêu thành phần Ticker.</li><li><strong>adjusted price (giá điều chỉnh)</strong>: giá đã trừ ảnh hưởng của cổ tức hoặc chia tách cổ phiếu; README nêu mặc định auto_adjust.</li><li><strong>screener (bộ lọc thị trường)</strong>: công cụ lọc cổ phiếu theo điều kiện; README nêu EquityQuery và Screener.</li><li><strong>WebSocket</strong>: kết nối nhận dữ liệu trực tiếp; README nêu hỗ trợ.</li><li><strong>terms of use (điều khoản sử dụng)</strong>: quy định của dịch vụ dữ liệu; README yêu cầu đọc của Yahoo.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation cài từ PyPI; bài không chép lệnh. Cần Python và kết nối mạng tới Yahoo. Miễn phí theo Apache Software License (README nêu); điều khoản dữ liệu của Yahoo áp dụng riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo ở đầu README và điều khoản của Yahoo.</li><li>Đọc tài liệu ranaroussi.github.io/yfinance.</li><li>Tải thử dữ liệu một mã cho bài tập giáo dục.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dạy tài chính và cần dữ liệu giá cho bài tập. Hãy đọc README của yfinance (https://github.com/ranaroussi/yfinance) và giải thích bằng tiếng Việt: yfinance lấy dữ liệu từ đâu, vì sao README nhấn mạnh không liên kết với Yahoo và chỉ dùng cá nhân, và giá điều chỉnh nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,4 KB), bài chưa đọc tài liệu và điều khoản của Yahoo. Độ chính xác và tính liên tục của dữ liệu chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ranaroussi</strong> có <strong>25.805 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache Software License; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ranaroussi/yfinance/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ranaroussi/yfinance\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 624. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25805; repo_id 91948540; README SHA256 8909d505039b5bfb7667d05031ec82baa8b938eb0ec98073ead04c96e2cdf864.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ranaroussi/yfinance",
+          "repo_id": "91948540",
+          "source_path": "",
+          "source_revision": "README-SHA256:8909d505039b5bfb7667d05031ec82baa8b938eb0ec98073ead04c96e2cdf864",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ranaroussi/yfinance",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation cài từ PyPI; bài không chép lệnh. Cần Python và kết nối mạng tới Yahoo. Miễn phí theo Apache Software License (README nêu); điều khoản dữ liệu của Yahoo áp dụng riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ranaroussi/yfinance/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ranaroussi/yfinance",
+        "stars": 25805,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ranaroussi/yfinance/main/README.md",
+        "readmeSha256": "8909d505039b5bfb7667d05031ec82baa8b938eb0ec98073ead04c96e2cdf864",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 625,
+      "batch": 102,
+      "slug": "qlib",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Qlib: nền tảng đầu tư định lượng hướng AI của Microsoft, quy trình học máy đầy đủ từ xử lý dữ liệu, huấn luyện đến kiểm thử lại; README cảnh báo thay đổi phá vỡ về nạp artifact chưa phát hành và nêu RD-Agent",
+        "excerpt": "Hiểu Qlib là nền tảng đầu tư định lượng hướng AI mã nguồn mở của Microsoft, có quy trình học máy trọn vẹn (xử lý dữ liệu, huấn luyện, kiểm thử lại trên dữ liệu cũ, quy trình nghiên cứu tự động); README mở đầu bằng cảnh báo thay đổi phá vỡ về cách nạp artifact và nêu RD-Agent, công cụ tác tử dùng LLM.",
+        "content": "<p>README mở đầu bằng thông báo thay đổi phá vỡ chưa phát hành: bản dựng mới từ mã nguồn đưa vào mặc định an toàn là hạn chế việc nạp artifact đã lưu (mô hình, tập dữ liệu, huấn luyện tiếp, DDG-DA); muốn nạp lại phải kiểm tra người ghi và quyền lưu trữ rồi mới chọn tin cậy bằng cờ trusted; có hướng dẫn di chuyển cấu hình. Thay đổi này chưa phát hành cho đến bản gắn thẻ đầu tiên chứa nó, nên bản cài từ mã nguồn và bản PyPI có thể khác nhau. README giới thiệu RD-Agent (tác tử tiến hóa tự động dùng LLM khai thác nhân tố và tối ưu mô hình trong nghiên cứu đầu tư định lượng) kèm video demo. README nói Qlib chứa quy trình học máy đầy đủ (xử lý dữ liệu, huấn luyện mô hình, kiểm thử lại) và bao quát cả chuỗi đầu tư định lượng (tìm alpha, mô hình rủi ro, tối ưu danh mục, thực thi lệnh). Có các mục khung Qlib, bắt đầu nhanh, chuẩn bị dữ liệu, ảnh Docker, quy trình nghiên cứu tự động, bộ dữ liệu mẫu, kết quả hiệu năng máy chủ dữ liệu (tuyên bố của tác giả, bài chưa kiểm chứng). README có huy hiệu giấy phép và phần License chỉ nêu thỏa thuận đóng góp (CLA); giấy phép phần mềm bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Đầu tư định lượng dùng dữ liệu và mô hình để tìm quy luật giá. Qlib là xưởng làm việc đó: nạp dữ liệu thị trường, xây mô hình, thử trên quá khứ và xem rủi ro, tất cả trong một khung.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc phần Framework of Qlib và Quant Dataset Zoo để hiểu một quy trình nghiên cứu gồm những bước nào; chưa huấn luyện gì, không giao dịch. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Python, học máy, kiến thức tài chính và hiểu rủi ro quá khớp khi kiểm thử lại. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Không phải lời khuyên đầu tư. Kết quả kiểm thử lại trên dữ liệu cũ không đảm bảo kết quả thực; mô hình dễ quá khớp. README cảnh báo nạp artifact không tin cậy có rủi ro: chỉ nạp tệp do chính bạn tạo.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>quantitative investment (đầu tư định lượng)</strong>: đầu tư dựa trên dữ liệu và mô hình; README nêu.</li><li><strong>alpha</strong>: phần lợi nhuận vượt thị trường mà mô hình tìm cách bắt; README nêu tìm alpha.</li><li><strong>backtesting (kiểm thử lại)</strong>: thử chiến lược trên dữ liệu quá khứ; README nêu.</li><li><strong>artifact</strong>: mô hình hay tập dữ liệu đã lưu; README cảnh báo khi nạp lại.</li><li><strong>RD-Agent</strong>: tác tử dùng LLM tự khai thác nhân tố và tối ưu mô hình; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và chuẩn bị dữ liệu; bài không chép lệnh. Cần Python và dữ liệu thị trường. Miễn phí; giấy phép lấy theo GitHub (MIT), README chỉ có huy hiệu và CLA.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo thay đổi phá vỡ ở đầu README.</li><li>Đọc Framework of Qlib.</li><li>Chỉ thử ở chế độ nghiên cứu với dữ liệu mẫu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học đầu tư định lượng ở mức nghiên cứu. Hãy đọc README của Qlib (https://github.com/microsoft/qlib) và giải thích bằng tiếng Việt: Qlib gồm những bước nào, vì sao README cảnh báo nạp artifact, và vì sao kiểm thử lại trên dữ liệu cũ không đảm bảo kết quả thực. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 44 KB), bài đọc phần đầu, khung, cài đặt và giấy phép, chưa đọc tài liệu qlib.readthedocs.io. Tuyên bố hiệu năng chưa kiểm chứng. README chỉ có huy hiệu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>49.957 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chỉ có huy hiệu giấy phép và thỏa thuận đóng góp. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/qlib/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/qlib\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 625. Chưa cài/chạy thử; không tạo validation. Snapshot sao 49957; repo_id 287463830; README SHA256 e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/qlib",
+          "repo_id": "287463830",
+          "source_path": "",
+          "source_revision": "README-SHA256:e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/qlib",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và chuẩn bị dữ liệu; bài không chép lệnh. Cần Python và dữ liệu thị trường. Miễn phí; giấy phép lấy theo GitHub (MIT), README chỉ có huy hiệu và CLA.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/qlib/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/qlib/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/qlib",
+        "stars": 49957,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/qlib/main/README.md",
+        "readmeSha256": "e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 626,
+      "batch": 102,
+      "slug": "freqtrade",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Freqtrade: bot giao dịch tiền mã hóa mã nguồn mở viết bằng Python, điều khiển qua Telegram hoặc giao diện web, có chế độ chạy giả lập, kiểm thử lại, tối ưu bằng học máy; README cảnh báo chỉ dùng cho giáo dục và có thể mất tiền",
+        "excerpt": "Hiểu Freqtrade là bot giao dịch tiền mã hóa mã nguồn mở viết bằng Python, hỗ trợ nhiều sàn, điều khiển qua Telegram hoặc giao diện web, có chế độ chạy giả lập (dry-run), kiểm thử lại và công cụ quản lý vốn; README cảnh báo rõ chỉ dùng cho giáo dục, đừng mạo hiểm số tiền bạn sợ mất, và luôn bắt đầu bằng chế độ giả lập.",
+        "content": "<p>README tả Freqtrade là bot giao dịch tiền mã hóa mã nguồn mở viết bằng Python, hỗ trợ các sàn lớn, điều khiển qua Telegram hoặc giao diện web, có công cụ kiểm thử lại, vẽ biểu đồ và quản lý vốn. Mục Disclaimer của README nói phần mềm chỉ để giáo dục, đừng mạo hiểm số tiền bạn sợ mất, dùng tự chịu rủi ro, tác giả và các bên liên quan không chịu trách nhiệm về kết quả giao dịch, luôn bắt đầu bằng chế độ giả lập và đừng dùng tiền khi chưa hiểu bot hoạt động và mức lãi lỗ kỳ vọng, rất nên biết lập trình và Python và đọc mã nguồn. README liệt kê các sàn giao ngay và hợp đồng tương lai được hỗ trợ và nói sàn khác không đảm bảo hoạt động; một số liên kết sàn có thể là liên kết giới thiệu. Tính năng: dựa trên Python 3.12 trở lên, lưu bằng sqlite, chạy giả lập, kiểm thử lại, tối ưu tham số chiến lược bằng học máy, mô hình dự đoán thích ứng FreqAI, danh sách trắng và đen tiền mã hóa, giao diện web, điều khiển qua Telegram, hiển thị lãi lỗ theo tiền pháp định. README trỏ tới Docker Quickstart và tài liệu freqtrade.io, bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bot là chương trình tự đặt lệnh mua bán theo luật bạn viết. Freqtrade cho bạn thử luật đó với tiền giả trước khi nghĩ đến tiền thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc mục Disclaimer và Features và tìm hiểu chế độ dry-run là gì; không nối sàn, không đưa khóa API, không dùng tiền thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Python, hiểu giao dịch, API sàn và rủi ro tài chính. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Không phải lời khuyên đầu tư. Giao dịch tự động có thể mất toàn bộ tiền; kiểm thử lại không đảm bảo kết quả thực. Khóa API có quyền giao dịch phải giữ bí mật, đặt quyền tối thiểu và không bật quyền rút tiền; không đưa khóa vào khung chat với AI. Tiền mã hóa và sàn có thể bị quy định pháp lý khác nhau theo quốc gia; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>trading bot (bot giao dịch)</strong>: chương trình tự đặt lệnh mua bán; README nêu.</li><li><strong>dry-run (chạy giả lập)</strong>: chạy bot không dùng tiền thật; README nêu.</li><li><strong>backtesting (kiểm thử lại)</strong>: thử chiến lược trên dữ liệu quá khứ; README nêu.</li><li><strong>FreqAI</strong>: phần học máy thích ứng của Freqtrade; README nêu.</li><li><strong>whitelist/blacklist</strong>: danh sách tiền được hoặc không được giao dịch; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Docker Quickstart và hướng dẫn cài đặt tại freqtrade.io; bài không chép lệnh. Cần Python 3.12 trở lên theo README, tài khoản sàn nếu chạy thật. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu; phí giao dịch của sàn do bạn chịu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Disclaimer.</li><li>Đọc phần Features và chế độ dry-run.</li><li>Chỉ thử với chế độ giả lập, không dùng tiền thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quan tâm bot giao dịch ở mức học thuật. Hãy đọc README của Freqtrade (https://github.com/freqtrade/freqtrade) và giải thích bằng tiếng Việt: dry-run là gì, mục Disclaimer cảnh báo điều gì, và vì sao kiểm thử lại không đảm bảo kết quả thực. Chưa cài gì và không nối tài khoản sàn.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12,8 KB, bài chưa đọc tài liệu freqtrade.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>freqtrade</strong> có <strong>56.368 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/freqtrade/freqtrade/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/freqtrade/freqtrade\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 626. Chưa cài/chạy thử; không tạo validation. Snapshot sao 56368; repo_id 91629816; README SHA256 119d586166ae397b05f9763caf7f90e2d27792f90c8455c04ac3455e14a40d89.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/freqtrade/freqtrade",
+          "repo_id": "91629816",
+          "source_path": "",
+          "source_revision": "README-SHA256:119d586166ae397b05f9763caf7f90e2d27792f90c8455c04ac3455e14a40d89",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/freqtrade/freqtrade",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Docker Quickstart và hướng dẫn cài đặt tại freqtrade.io; bài không chép lệnh. Cần Python 3.12 trở lên theo README, tài khoản sàn nếu chạy thật. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu; phí giao dịch của sàn do bạn chịu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/freqtrade/freqtrade/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/freqtrade/freqtrade/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "freqtrade/freqtrade",
+        "stars": 56368,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/freqtrade/freqtrade/develop/README.md",
+        "readmeSha256": "119d586166ae397b05f9763caf7f90e2d27792f90c8455c04ac3455e14a40d89",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 627,
+      "batch": 102,
+      "slug": "ccxt",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "CCXT: thư viện giao diện thống nhất để kết nối và giao dịch với hơn 100 sàn tiền mã hóa và thị trường dự đoán, nhiều ngôn ngữ, README rất dài và có mục Disclaimer về phần mềm không lưu ký tiền",
+        "excerpt": "Hiểu CCXT là thư viện giao diện thống nhất kết nối hơn 100 sàn tiền mã hóa và thị trường dự đoán bằng nhiều ngôn ngữ (JavaScript, TypeScript, Python, C#, PHP, Go, Java, Rust); README nói CCXT không lưu giữ tiền, giấy phép MIT dùng tự chịu rủi ro, và được tài trợ qua chương trình API broker của sàn.",
+        "content": "<p>README tả CCXT là thư viện giao diện thống nhất để kết nối và giao dịch với hơn 100 sàn tiền mã hóa và thị trường dự đoán (như Polymarket, Kalshi, Hyperliquid), bằng JavaScript, TypeScript, Python, C#, PHP, Go, Java, Rust. README nói thư viện dành cho lập trình viên, nhà giao dịch có kỹ thuật, nhà khoa học dữ liệu và nhà phân tích tài chính để xây thuật toán giao dịch, lấy dữ liệu để lưu trữ, phân tích, trực quan hóa, có API công khai và riêng tư qua REST và WebSocket. README cũng nói CCXT lý tưởng cho tác tử AI, LLM và vibe coding; đây là cách tự mô tả của dự án. README rất dài (hơn 150 KB) với bảng sàn được chứng nhận, danh sách sàn, sàn thị trường dự đoán, sàn mã builder, hướng dẫn cài (bài không chép lệnh), cách dùng và hỗ trợ trợ lý AI. Mục Disclaimer nói CCXT là phần mềm API broker không lưu ký, miễn phí, mã nguồn mở theo MIT, dùng tự chịu rủi ro không bảo hành, được tài trợ bằng khoản hoàn từ chương trình API broker của các sàn và có thể dùng mã giới thiệu (README nêu có giảm phí cho người dùng qua chương trình Builder Codes của Hyperliquid). README có phần quảng bá CCXT Terminal và các bot khác; bài không đánh giá. Bài chỉ đọc phần đầu và Disclaimer.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi sàn có cách gọi API riêng. CCXT là bộ chuyển đổi chung: viết một lần, nói chuyện được với nhiều sàn, nhưng quyết định giao dịch vẫn là của bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ dùng chức năng lấy giá công khai không cần khóa để làm bài tập về dữ liệu; không giao dịch. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần lập trình, hiểu API sàn và rủi ro tài chính. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Không phải lời khuyên đầu tư. Thị trường dự đoán và giao dịch tiền mã hóa có thể bị hạn chế hoặc cấm ở một số nơi; bài không phải tư vấn pháp lý. Khóa API có quyền giao dịch phải giữ bí mật, đặt quyền tối thiểu và không bật quyền rút tiền; không đưa vào khung chat với AI. Một số sàn trong README có khoản hoàn hoặc mã giới thiệu: bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>unified API (giao diện thống nhất)</strong>: một cách gọi chung cho nhiều sàn; README nêu.</li><li><strong>non-custodial (không lưu ký)</strong>: CCXT không giữ tiền của bạn; README nêu.</li><li><strong>API broker</strong>: đơn vị nhận khoản hoàn từ sàn khi giới thiệu; README nêu.</li><li><strong>prediction market (thị trường dự đoán)</strong>: nơi đặt cược vào kết quả sự kiện; README nêu Polymarket, Kalshi.</li><li><strong>WebSocket</strong>: kết nối nhận dữ liệu trực tiếp; README nêu hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install cho nhiều ngôn ngữ; bài không chép lệnh. Cần ngôn ngữ lập trình được hỗ trợ và khóa API của sàn nếu dùng API riêng tư. Miễn phí theo MIT (README nêu); phí giao dịch do sàn tính.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và mục Disclaimer.</li><li>Thử lấy dữ liệu giá công khai không cần khóa.</li><li>Không dùng khóa có quyền giao dịch khi mới học.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn lấy dữ liệu giá từ nhiều sàn cho bài tập. Hãy đọc README của CCXT (https://github.com/ccxt/ccxt) và giải thích bằng tiếng Việt: CCXT làm gì, không lưu ký nghĩa là gì, và vì sao README có khoản hoàn từ sàn. Chưa cài gì và không dùng khóa giao dịch.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 154 KB), bài chỉ đọc phần đầu và Disclaimer, chưa đọc wiki. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ccxt</strong> có <strong>44.693 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ccxt/ccxt/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ccxt/ccxt\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 627. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44693; repo_id 91253698; README SHA256 f6a0bd4424afa8da8ea0dfe0dc92a6a0d7cce794fb2a2f5c7e8d5c08819bfbd7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ccxt/ccxt",
+          "repo_id": "91253698",
+          "source_path": "",
+          "source_revision": "README-SHA256:f6a0bd4424afa8da8ea0dfe0dc92a6a0d7cce794fb2a2f5c7e8d5c08819bfbd7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ccxt/ccxt",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install cho nhiều ngôn ngữ; bài không chép lệnh. Cần ngôn ngữ lập trình được hỗ trợ và khóa API của sàn nếu dùng API riêng tư. Miễn phí theo MIT (README nêu); phí giao dịch do sàn tính.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ccxt/ccxt/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ccxt/ccxt/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ccxt/ccxt",
+        "stars": 44693,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ccxt/ccxt/master/README.md",
+        "readmeSha256": "f6a0bd4424afa8da8ea0dfe0dc92a6a0d7cce794fb2a2f5c7e8d5c08819bfbd7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 628,
+      "batch": 102,
+      "slug": "hummingbot",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hummingbot: khung mã nguồn mở thiết kế và triển khai chiến lược giao dịch tự động (bot) trên nhiều sàn tập trung và phi tập trung, chiến lược kịch bản, bộ điều khiển, bộ thực thi, dòng lệnh hbot và Condor (khung AI), Apache 2.0",
+        "excerpt": "Hiểu Hummingbot là khung mã nguồn mở để thiết kế và triển khai chiến lược giao dịch tự động trên nhiều sàn, gồm kịch bản một tệp, bộ điều khiển, bộ thực thi, chiến lược V1 cũ và Condor (khung AI nối quyết định của LLM với việc đặt lệnh); README có lệnh cài từ mã nguồn bằng cách sao chép kho, bài không chép.",
+        "content": "<p>README tả Hummingbot là khung mã nguồn mở giúp thiết kế và triển khai chiến lược giao dịch tự động (bot) chạy trên nhiều sàn tập trung và phi tập trung. Mã theo Apache 2.0, sứ mệnh nêu là dân chủ hóa giao dịch tần suất cao bằng cộng đồng nhà giao dịch thuật toán; đây là cách tự mô tả của dự án. README giới thiệu Condor (khung AI để xây và chạy chiến lược dạng tác tử, nối quyết định do LLM đưa ra với việc thực thi lệnh), giao diện dòng lệnh hbot cài từ mã nguồn (cần Anaconda hoặc Miniconda) để chạy, điều khiển và theo dõi bot, và các khung chiến lược (kịch bản một tệp, bộ điều khiển V2 có thể kiểm thử lại, bộ thực thi cho vị thế, DCA, lưới, chênh lệch giá, TWAP, LP, chiến lược V1 cũ). README liệt kê kết nối sàn, các kho liên quan, cách nhận trợ giúp, đóng góp, và phần Legal nêu giấy phép Apache 2.0 và thu thập dữ liệu ẩn danh có báo cáo; bài chưa đọc trang báo cáo. README có các liên kết bản tin, thống kê khối lượng giao dịch báo cáo, quảng bá; bài không đánh giá. Bài không chép lệnh cài.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hummingbot cho bạn viết chiến lược mua bán thành kịch bản, rồi để bot tự chạy và theo dõi. Mức độ rủi ro tài chính thật nằm ở chỗ nó có thể đặt lệnh bằng tiền thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc phần Strategies để hiểu các loại bộ thực thi như lưới và DCA là gì; không nối sàn, không dùng tiền thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Python, hiểu giao dịch, API sàn, quản lý rủi ro và vận hành bot. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Không phải lời khuyên đầu tư. Bot có thể mất toàn bộ tiền; chiến lược tần suất cao cần hạ tầng và kiến thức chuyên sâu. README nêu có thu thập dữ liệu ẩn danh: cần đọc trang báo cáo trước khi bật. Khóa API có quyền giao dịch phải giữ bí mật, không bật quyền rút tiền, không đưa vào khung chat với AI. Condor nối quyết định của LLM với việc đặt lệnh: rủi ro cao hơn nữa. Bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>market making</strong>: đặt lệnh mua bán hai phía để kiếm chênh lệch; README nêu chiến lược Pure Market Making.</li><li><strong>DCA</strong>: mua dần theo từng mốc; README nêu là một bộ thực thi.</li><li><strong>arbitrage (chênh lệch giá)</strong>: mua rẻ bán đắt giữa hai nơi; README nêu là một bộ thực thi.</li><li><strong>executor (bộ thực thi)</strong>: khối quản lý vòng đời một lệnh; README nêu.</li><li><strong>LLM agent (tác tử LLM)</strong>: AI tự ra quyết định theo mô hình ngôn ngữ; README nêu Condor nối với thực thi lệnh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Anaconda hoặc Miniconda và cài hbot từ mã nguồn; bài không chép lệnh. Cần tài khoản sàn nếu chạy thật. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Strategies.</li><li>Đọc Legal và trang báo cáo dữ liệu.</li><li>Chỉ thử với dữ liệu giả hoặc không nối sàn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về giao dịch thuật toán ở mức học thuật. Hãy đọc README của Hummingbot (https://github.com/hummingbot/hummingbot) và giải thích bằng tiếng Việt: các loại chiến lược và bộ thực thi là gì, Condor khác một bot thường ở đâu, và rủi ro khi để LLM quyết định đặt lệnh. Chưa cài gì và không nối sàn.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 17 KB), bài đọc phần đầu, chiến lược và Legal, chưa đọc tài liệu hummingbot.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>hummingbot</strong> có <strong>20.918 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-20. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/hummingbot/hummingbot/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/hummingbot/hummingbot\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 628. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20918; repo_id 179163124; README SHA256 179e404ee85129a0b714d234246b0b9c13345f1ce19f50dd065e8c83af28c1c7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/hummingbot/hummingbot",
+          "repo_id": "179163124",
+          "source_path": "",
+          "source_revision": "README-SHA256:179e404ee85129a0b714d234246b0b9c13345f1ce19f50dd065e8c83af28c1c7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hummingbot/hummingbot",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Anaconda hoặc Miniconda và cài hbot từ mã nguồn; bài không chép lệnh. Cần tài khoản sàn nếu chạy thật. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hummingbot/hummingbot/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/hummingbot/hummingbot/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "hummingbot/hummingbot",
+        "stars": 20918,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/hummingbot/hummingbot/master/README.md",
+        "readmeSha256": "179e404ee85129a0b714d234246b0b9c13345f1ce19f50dd065e8c83af28c1c7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 629,
+      "batch": 102,
+      "slug": "xrpl-rippled",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "XRP Ledger (xrpld/rippled): sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, phần mềm máy chủ xrpld theo giấy phép ISC, README nêu đặc tính như đồng thuận 4 đến 5 giây; bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư",
+        "excerpt": "Hiểu XRP Ledger là sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, phần mềm máy chủ tên xrpld theo giấy phép ISC; README nêu đồng thuận chịu lỗi Byzantine, tốc độ xử lý và các tính năng như Escrow, Checks, Payment Channels, sàn giao dịch trên sổ cái; bài chỉ là giới thiệu kỹ thuật, không phải lời khuyên đầu tư.",
+        "content": "<p>README tả XRP Ledger là sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, dùng thuật toán đồng thuận chịu lỗi Byzantine mới để thanh toán và sắp xếp giao dịch. README nêu XRP là tài sản mã hóa công khai gốc của sổ cái, thiết kế làm token tiện ích cho dịch vụ mạng và cầu nối giữa các loại tiền; README nói XRP được giao dịch trên nhiều sàn; bài không đánh giá. Phần mềm máy chủ tên xrpld nằm trong kho này theo giấy phép ISC, viết chủ yếu bằng C++; README trỏ Clio cho máy chủ API và hướng dẫn xây từ mã nguồn trong BUILD.md. Các đặc điểm theo tuyên bố của README: xử lý giao dịch chống kiểm duyệt, đồng thuận thanh toán trong 4 đến 5 giây với thông lượng đến 1500 giao dịch mỗi giây, nguồn cung XRP hữu hạn 100 tỷ, quản trị phần mềm có trách nhiệm, mật mã chuẩn công nghiệp, tính năng hiện đại (Escrow, Checks, Payment Channels), sàn giao dịch phi tập trung trên sổ cái; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README có mục mã nguồn, nội dung kho và tài liệu bổ sung.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một cuốn sổ cái chung mà nhiều máy cùng giữ và đối chiếu, nên không một bên nào sửa được lén. xrpld là phần mềm chạy một máy trong mạng đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc phần Key Features để hiểu khái niệm sổ cái và đồng thuận; không giao dịch, không tạo ví thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu tài chính hoặc kinh tế bằng Python, thường nhờ AI viết mã; không dành cho đầu tư thực.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu mật mã, mạng ngang hàng và C++ nếu muốn xây; hiểu khái niệm thì mức vừa. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không khuyến nghị mua hay giữ XRP và không phải lời khuyên đầu tư hay pháp lý. Giao dịch trên sổ cái không đảo ngược được theo mô tả README. Chạy máy chủ cần hiểu bảo mật; mất khóa riêng là mất tài sản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ledger (sổ cái)</strong>: bản ghi giao dịch chung; README nêu.</li><li><strong>consensus (đồng thuận)</strong>: cách các nút thống nhất kết quả; README nêu thuật toán chịu lỗi Byzantine.</li><li><strong>Byzantine fault tolerant</strong>: chịu được một số nút hành xử sai; README nêu.</li><li><strong>XRP</strong>: tài sản mã hóa gốc của sổ cái; README nêu.</li><li><strong>Clio</strong>: máy chủ API lịch sử đầy đủ; README nêu thay chế độ báo cáo của xrpld.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới BUILD.md để xây từ mã nguồn bằng C++; bài không chép lệnh. Miễn phí theo ISC (README nêu). Chưa kiểm tra yêu cầu phần cứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Key Features.</li><li>Đọc tài liệu tại xrpl.org.</li><li>Không tạo ví hay giao dịch khi mới học.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về sổ cái phân tán ở mức kỹ thuật. Hãy đọc README của XRP Ledger (https://github.com/XRPLF/rippled) và giải thích bằng tiếng Việt: sổ cái phi tập trung là gì, đồng thuận chịu lỗi Byzantine nghĩa là gì, và các con số của README là tuyên bố của ai. Đây không phải để đầu tư. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,3 KB, bài chưa đọc tài liệu xrpl.org và BUILD.md. Các con số hiệu năng và nguồn cung là tuyên bố của README, chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư, tài chính hay pháp lý. Giao dịch bằng phần mềm tự động có thể mất toàn bộ tiền và không đảo ngược được: chỉ thử ở chế độ mô phỏng hoặc tài khoản thử với số tiền bạn sẵn sàng mất, không để lộ khóa API, đặt hạn mức chi và quyền hạn tối thiểu, và hiểu rằng kết quả kiểm thử lại dữ liệu cũ không đảm bảo kết quả tương lai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>XRPLF</strong> có <strong>5.243 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu giấy phép ISC; GitHub nhận diện ISC. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/XRPLF/rippled/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/XRPLF/rippled\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 629. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5243; repo_id 2724167; README SHA256 fbc2c7d89e29821519b373bc6e7a3b8a5da6034a9e8a12e56e7d93cd6bf49416.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/XRPLF/rippled",
+          "repo_id": "2724167",
+          "source_path": "",
+          "source_revision": "README-SHA256:fbc2c7d89e29821519b373bc6e7a3b8a5da6034a9e8a12e56e7d93cd6bf49416",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "isc",
+                "name": "ISC License",
+                "spdx_id": "ISC",
+                "url": "https://api.github.com/licenses/isc",
+                "node_id": "MDc6TGljZW5zZTEw"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/XRPLF/rippled",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới BUILD.md để xây từ mã nguồn bằng C++; bài không chép lệnh. Miễn phí theo ISC (README nêu). Chưa kiểm tra yêu cầu phần cứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/XRPLF/rippled/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/XRPLF/rippled/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "XRPLF/rippled",
+        "stars": 5243,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/XRPLF/rippled/develop/README.md",
+        "readmeSha256": "fbc2c7d89e29821519b373bc6e7a3b8a5da6034a9e8a12e56e7d93cd6bf49416",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

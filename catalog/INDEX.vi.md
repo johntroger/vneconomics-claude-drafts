@@ -82,13 +82,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 80 — Bảo mật chuỗi cung ứng và định danh](learning-paths/80-bao-mat-chuoi-cung-ung-va-dinh-danh.vi.md) — Từ đánh giá thực hành bảo mật của thư viện, tạo SBOM, quét lỗ hổng, ký ảnh container, quét hạ tầng dưới dạng mã đến phát hiện hành vi bất thường và quản lý đăng nhập; chú ý tài khoản mặc định, lệnh cài tải tập lệnh từ mạng, bảng so sánh của tác giả và giới hạn của mọi công cụ quét.
 - [Lộ trình 81 — Bản đồ và dữ liệu địa lý](learning-paths/81-ban-do-va-du-lieu-dia-ly.vi.md) — Từ vẽ bản đồ nhanh, hình học và dữ liệu địa lý bằng Python, phần mềm GIS đến chỉ mục lục giác và tìm đường; chú ý hệ tọa độ, quyền riêng tư của dữ liệu vị trí và điều khoản dữ liệu OpenStreetMap.
 - [Lộ trình 82 — Đồ họa 3D và vật lý trên web](learning-paths/82-do-hoa-3d-va-vat-ly-web.vi.md) — Từ vật lý 2D và động cơ trò chơi HTML5, hiển thị mô hình 3D, kết hợp React với three.js đến truy vấn không gian và động cơ vật lý Rust; chú ý ghép đúng phiên bản React, tuyên bố hiệu năng của tác giả, giấy phép mô hình và tài sản, và hiệu năng trên máy yếu.
+- [Lộ trình 83 — Tài chính định lượng và dữ liệu thị trường (chỉ để học)](learning-paths/83-tai-chinh-dinh-luong-va-du-lieu-thi-truong.vi.md) — Từ lấy dữ liệu thị trường cho bài tập, nền tảng nghiên cứu định lượng, đến các bot giao dịch, thư viện kết nối sàn và sổ cái phân tán; chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư; chú ý điều khoản dữ liệu, rủi ro mất tiền, khóa API và kết quả kiểm thử lại không đảm bảo tương lai.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (47 bài)
+### Bắt đầu (48 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -139,6 +140,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 573 | seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ | [mwaskom/seaborn](https://github.com/mwaskom/seaborn) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 14099 | khoa-hoc-du-lieu |
 | 613 | leafmap: gói Python phân tích địa không gian và vẽ bản đồ tương tác trong Jupyter với ít mã, chuyển đổi giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), giấy phép MIT | [opengeos/leafmap](https://github.com/opengeos/leafmap) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3796 | ban-do-va-du-lieu-dia-ly |
 | 623 | glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường | [KhronosGroup/glTF-Sample-Viewer](https://github.com/KhronosGroup/glTF-Sample-Viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 1484 | do-hoa-3d-va-vat-ly-web |
+| 624 | yfinance: công cụ Python lấy dữ liệu tài chính và thị trường từ API công khai của Yahoo Finance, dành cho nghiên cứu và giáo dục, không liên kết với Yahoo; README nhắc đọc điều khoản của Yahoo và API chỉ cho dùng cá nhân | [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 25805 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
 
 ### Cơ bản (214 bài)
 
@@ -401,7 +403,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (225 bài)
+### Nâng cao (230 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -630,6 +632,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 617 | drei: bộ sưu tập ngày càng lớn các tiện ích và thành phần dựng sẵn cho react-three-fiber (camera, điều khiển, gizmo...), dùng three-stdlib; tài liệu đã chuyển sang trang riêng | [pmndrs/drei](https://github.com/pmndrs/drei) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 10116 | do-hoa-3d-va-vat-ly-web |
 | 619 | Rapier: bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và người máy, có liên kết cho C, Python, JavaScript và plugin Bevy; README có mục chính sách dùng AI viết mã | [dimforge/rapier](https://github.com/dimforge/rapier) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6020 | do-hoa-3d-va-vat-ly-web |
 | 622 | three-mesh-bvh: cài đặt cấu trúc cây bao thể tích (BVH) để tăng tốc bắn tia và truy vấn không gian trên lưới three.js, tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung mỗi giây | [gkjohnson/three-mesh-bvh](https://github.com/gkjohnson/three-mesh-bvh) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3550 | do-hoa-3d-va-vat-ly-web |
+| 625 | Qlib: nền tảng đầu tư định lượng hướng AI của Microsoft, quy trình học máy đầy đủ từ xử lý dữ liệu, huấn luyện đến kiểm thử lại; README cảnh báo thay đổi phá vỡ về nạp artifact chưa phát hành và nêu RD-Agent | [microsoft/qlib](https://github.com/microsoft/qlib) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 49957 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 626 | Freqtrade: bot giao dịch tiền mã hóa mã nguồn mở viết bằng Python, điều khiển qua Telegram hoặc giao diện web, có chế độ chạy giả lập, kiểm thử lại, tối ưu bằng học máy; README cảnh báo chỉ dùng cho giáo dục và có thể mất tiền | [freqtrade/freqtrade](https://github.com/freqtrade/freqtrade) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 56368 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 627 | CCXT: thư viện giao diện thống nhất để kết nối và giao dịch với hơn 100 sàn tiền mã hóa và thị trường dự đoán, nhiều ngôn ngữ, README rất dài và có mục Disclaimer về phần mềm không lưu ký tiền | [ccxt/ccxt](https://github.com/ccxt/ccxt) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 44693 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 628 | Hummingbot: khung mã nguồn mở thiết kế và triển khai chiến lược giao dịch tự động (bot) trên nhiều sàn tập trung và phi tập trung, chiến lược kịch bản, bộ điều khiển, bộ thực thi, dòng lệnh hbot và Condor (khung AI), Apache 2.0 | [hummingbot/hummingbot](https://github.com/hummingbot/hummingbot) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 20918 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 629 | XRP Ledger (xrpld/rippled): sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, phần mềm máy chủ xrpld theo giấy phép ISC, README nêu đặc tính như đồng thuận 4 đến 5 giây; bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư | [XRPLF/rippled](https://github.com/XRPLF/rippled) | {'key': 'isc', 'name': 'ISC License', 'spdx_id': 'ISC', 'url': 'https://api.github.com/licenses/isc', 'node_id': 'MDc6TGljZW5zZTEw'} | 5243 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

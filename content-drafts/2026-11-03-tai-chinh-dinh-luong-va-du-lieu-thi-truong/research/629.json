@@ -1,0 +1,42 @@
+{
+  "key": 629,
+  "repo": "XRPLF/rippled",
+  "repoId": "2724167",
+  "url": "https://github.com/XRPLF/rippled",
+  "stars": 5243,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "isc",
+    "name": "ISC License",
+    "spdx_id": "ISC",
+    "url": "https://api.github.com/licenses/isc",
+    "node_id": "MDc6TGljZW5zZTEw"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:36:56Z",
+  "createdAt": "2011-11-07T04:40:15Z",
+  "defaultBranch": "develop",
+  "description": "Decentralized cryptocurrency blockchain daemon implementing the XRP Ledger protocol in C++",
+  "homepage": "https://xrpl.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/XRPLF/rippled/develop/README.md",
+    "sha256": "fbc2c7d89e29821519b373bc6e7a3b8a5da6034a9e8a12e56e7d93cd6bf49416",
+    "bytes": 6252,
+    "sectionsRead": [
+      "XRP",
+      "xrpld",
+      "Key Features of the XRP Ledger",
+      "Source Code"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu xrpl.org và BUILD.md.",
+    "Chưa thử.",
+    "Chưa kiểm chứng các con số."
+  ],
+  "runtimeValidated": false
+}
