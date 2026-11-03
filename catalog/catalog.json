@@ -8671,5 +8671,219 @@
   "related": [
    "pulumi"
   ]
+ },
+ {
+  "key": 547,
+  "slug": "mcp-python-sdk",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "MCP Python SDK: bộ công cụ chính thức bằng Python để dựng máy chủ và máy khách theo Model Context Protocol, nối ứng dụng LLM với dữ liệu và chức năng; README nêu Python 3.11+ và bản v2",
+  "repo": "modelcontextprotocol/python-sdk",
+  "stars": 24744,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "fastmcp"
+  ]
+ },
+ {
+  "key": 548,
+  "slug": "fastmcp",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "FastMCP: khung ứng dụng MCP đầy đủ bằng Python cho máy chủ, máy khách và ứng dụng tương tác, do Prefect duy trì; README quảng bá FastMCP Gateway trả phí cho doanh nghiệp",
+  "repo": "PrefectHQ/fastmcp",
+  "stars": 28286,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "markitdown",
+   "mcp-python-sdk"
+  ]
+ },
+ {
+  "key": 549,
+  "slug": "github-mcp-server",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "GitHub MCP Server: máy chủ MCP chính thức của GitHub cho AI đọc kho, quản lý issue và PR, theo dõi Actions, phân tích mã; README hướng dẫn giữ mã truy cập cá nhân (PAT) an toàn",
+  "repo": "github/github-mcp-server",
+  "stars": 34180,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "playwright-mcp",
+   "spec-kit"
+  ]
+ },
+ {
+  "key": 550,
+  "slug": "playwright-mcp",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "Playwright MCP: máy chủ MCP cho AI điều khiển trình duyệt qua cây khả năng truy cập (accessibility tree) của Playwright, không cần mô hình thị giác; README so sánh với Playwright CLI cho coding agent",
+  "repo": "microsoft/playwright-mcp",
+  "stars": 39107,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "chrome-devtools-mcp",
+   "github-mcp-server"
+  ]
+ },
+ {
+  "key": 551,
+  "slug": "chrome-devtools-mcp",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "Chrome DevTools cho agent (chrome-devtools-mcp): cho coding agent điều khiển và kiểm tra Chrome thật qua MCP hoặc CLI; README nêu Google thu thống kê sử dụng mặc định và cách tắt",
+  "repo": "ChromeDevTools/chrome-devtools-mcp",
+  "stars": 54704,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "playwright-mcp",
+   "stagehand"
+  ]
+ },
+ {
+  "key": 552,
+  "slug": "stagehand",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "Stagehand: khung tự động hóa trình duyệt bằng AI của Browserbase với act, observe, extract; chạy cục bộ hoặc trên nền tảng đám mây Browserbase trả phí; README có cảnh báo về khóa và mô hình",
+  "repo": "browserbase/stagehand",
+  "stars": 25917,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "chrome-devtools-mcp"
+  ]
+ },
+ {
+  "key": 553,
+  "slug": "markitdown",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "MarkItDown: tiện ích Python chuyển PDF, PowerPoint, Word, Excel, ảnh, âm thanh, HTML, ZIP, YouTube... sang Markdown cho LLM; README cảnh báo thực hiện I/O với quyền tiến trình và dặn làm sạch đầu vào",
+  "repo": "microsoft/markitdown",
+  "stars": 193648,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-28",
+  "related": [
+   "fastmcp",
+   "repomix"
+  ]
+ },
+ {
+  "key": 554,
+  "slug": "spec-kit",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "Spec Kit: bộ công cụ mã nguồn mở của GitHub cho coding agent có quy trình có cấu trúc (phát triển dựa trên đặc tả, sửa lỗi, đánh giá ý tưởng), mẫu và kết quả được ghi lại",
+  "repo": "github/spec-kit",
+  "stars": 145997,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "github-mcp-server",
+   "repomix"
+  ]
+ },
+ {
+  "key": 555,
+  "slug": "repomix",
+  "group": "2026-11-03-mcp-cong-cu-agent",
+  "title": "Repomix: đóng gói cả kho mã thành một tệp thân thiện với AI để đưa cho LLM, có đếm token, tôn trọng .gitignore và dùng Secretlint để loại tệp có khóa; README có cảnh báo về cấu hình từ kho từ xa",
+  "repo": "yamadashy/repomix",
+  "stars": 29129,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "markitdown",
+   "spec-kit"
+  ]
  }
 ]

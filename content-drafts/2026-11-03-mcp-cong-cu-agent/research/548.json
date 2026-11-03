@@ -1,0 +1,42 @@
+{
+  "key": 548,
+  "repo": "PrefectHQ/fastmcp",
+  "repoId": "896296825",
+  "url": "https://github.com/PrefectHQ/fastmcp",
+  "stars": 28286,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:42:45Z",
+  "createdAt": "2024-11-30T01:47:40Z",
+  "defaultBranch": "main",
+  "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+  "homepage": "https://gofastmcp.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/README.md",
+    "sha256": "8028da944d332c96c903639500c259d0d2154ad9a2b866cf7d76f740258a96af",
+    "bytes": 7776,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Why FastMCP",
+      "Scale MCP with FastMCP Gateway",
+      "Installation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu gofastmcp.com.",
+    "Chưa thử.",
+    "Giá FastMCP Gateway chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

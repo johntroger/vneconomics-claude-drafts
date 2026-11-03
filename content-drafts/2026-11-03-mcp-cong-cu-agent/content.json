@@ -1,0 +1,989 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-mcp",
+  "batch": 92,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 547,
+      "batch": 92,
+      "slug": "mcp-python-sdk",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MCP Python SDK: bộ công cụ chính thức bằng Python để dựng máy chủ và máy khách theo Model Context Protocol, nối ứng dụng LLM với dữ liệu và chức năng; README nêu Python 3.11+ và bản v2",
+        "excerpt": "Hiểu MCP Python SDK là bộ công cụ Python chính thức để dựng máy chủ và máy khách theo Model Context Protocol (MCP), giao thức chuẩn để các ứng dụng LLM truy cập dữ liệu và chức năng một cách an toàn, thống nhất. README có ví dụ máy chủ 15 dòng, yêu cầu Python 3.11 trở lên, nói hỗ trợ các kiểu truyền stdio, Streamable HTTP và SSE, và trỏ tài liệu, hướng dẫn chuyển sang v2.",
+        "content": "<p>README tả MCP Python SDK với tài liệu ở py.sdk.modelcontextprotocol.io gồm hướng dẫn bắt đầu, điểm mới của v2, tham chiếu API và hướng dẫn di chuyển. What is MCP?: Model Context Protocol cho phép dựng máy chủ đưa dữ liệu và chức năng cho ứng dụng LLM một cách an toàn, chuẩn hóa; README ví như API web nhưng thiết kế cho tương tác LLM. Với SDK: dựng máy chủ MCP đưa công cụ, tài nguyên và prompt tới mọi host MCP; dựng máy khách MCP kết nối bất kỳ máy chủ nào; hỗ trợ mọi kiểu truyền chuẩn: stdio, Streamable HTTP, SSE. Yêu cầu Python 3.11 trở lên. Cài đặt: thêm gói mcp kèm phần mở rộng cli bằng uv hoặc pip; phần cli thêm lệnh mcp để phát triển, chạy và cài đặt (bài không chép lệnh). Ví dụ 'máy chủ trong 15 dòng': tạo tệp server.py, khai báo một công cụ cộng hai số và một tài nguyên chào theo tên bằng decorator. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>AI cần đọc lịch, tệp hay cơ sở dữ liệu của bạn thì cần một 'cổng' chuẩn. MCP là chuẩn đó, và SDK này cho phép bạn viết cổng bằng Python, chỉ vài dòng cho mỗi công cụ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy ví dụ máy chủ 15 dòng và thử công cụ cộng trong công cụ phát triển MCP. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python và hiểu khái niệm công cụ, tài nguyên, prompt; README ghi có bản v2 với thay đổi. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Máy chủ MCP cho AI quyền chạy hàm: mỗi công cụ bạn đưa ra có thể bị gọi bởi AI, hãy giới hạn quyền và kiểm tra đầu vào (nguyên tắc chung, README mô tả 'an toàn' như mục tiêu của giao thức). README nhắc phiên bản v2 khác phiên bản cũ: kiểm tra hướng dẫn chuyển. Chỉ cài máy chủ MCP từ nguồn bạn tin.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>MCP (Model Context Protocol)</strong>: giao thức chuẩn nối ứng dụng LLM với dữ liệu và công cụ; README nêu.</li><li><strong>MCP server / client</strong>: bên đưa công cụ ra / bên gọi công cụ; README nêu.</li><li><strong>tool / resource / prompt</strong>: ba loại thứ máy chủ MCP cung cấp; README nêu.</li><li><strong>stdio / Streamable HTTP / SSE</strong>: các kiểu truyền thông điệp; README nêu.</li><li><strong>decorator</strong>: cú pháp Python gắn chức năng cho hàm; README dùng trong ví dụ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói mcp bằng uv hoặc pip, tùy chọn cli (bài không chép lệnh). Cần Python 3.11 trở lên. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is MCP?.</li><li>Chạy ví dụ máy chủ 15 dòng.</li><li>Đọc hướng dẫn chuyển sang v2 nếu có mã cũ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tạo công cụ cho AI qua MCP bằng Python. Hãy đọc README của MCP Python SDK (https://github.com/modelcontextprotocol/python-sdk) và giải thích bằng tiếng Việt: MCP là gì, máy chủ và máy khách khác nhau thế nào, và rủi ro khi đưa công cụ cho AI. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,6 KB), bài chưa đọc tài liệu py.sdk.modelcontextprotocol.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>modelcontextprotocol</strong> có <strong>24.744 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/modelcontextprotocol/python-sdk\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 547. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24744; repo_id 862584018; README SHA256 51552fa66eee9852eb40f5bad68319df90800e88c399c4f404562c570216c05b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/modelcontextprotocol/python-sdk",
+          "repo_id": "862584018",
+          "source_path": "",
+          "source_revision": "README-SHA256:51552fa66eee9852eb40f5bad68319df90800e88c399c4f404562c570216c05b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/modelcontextprotocol/python-sdk",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói mcp bằng uv hoặc pip, tùy chọn cli (bài không chép lệnh). Cần Python 3.11 trở lên. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "modelcontextprotocol/python-sdk",
+        "stars": 24744,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/modelcontextprotocol/python-sdk/main/README.md",
+        "readmeSha256": "51552fa66eee9852eb40f5bad68319df90800e88c399c4f404562c570216c05b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 548,
+      "batch": 92,
+      "slug": "fastmcp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "FastMCP: khung ứng dụng MCP đầy đủ bằng Python cho máy chủ, máy khách và ứng dụng tương tác, do Prefect duy trì; README quảng bá FastMCP Gateway trả phí cho doanh nghiệp",
+        "excerpt": "Hiểu FastMCP là khung ứng dụng MCP đầy đủ bằng Python gồm máy chủ (bọc hàm Python thành công cụ, tài nguyên, prompt), máy khách và ứng dụng tương tác. README nói FastMCP 1.0 đã được đưa vào SDK Python chính thức năm 2024 và dự án độc lập hiện được duy trì tích cực; README quảng bá FastMCP Gateway cho doanh nghiệp (trả phí).",
+        "content": "<p>README tả MCP kết nối LLM với công cụ và dữ liệu; FastMCP là khung ứng dụng MCP đầy đủ cho máy chủ, máy khách và ứng dụng tương tác; một máy chủ bắt đầu bằng Python thông thường (ví dụ khai báo công cụ cộng hai số bằng decorator và chạy). Why FastMCP: dựng ứng dụng MCP hiệu quả khó hơn tưởng; FastMCP xử lý hết (khai báo công cụ bằng hàm Python thì lược đồ, kiểm tra và tài liệu tự sinh; kết nối máy chủ bằng URL...). README tuyên bố FastMCP là khung tiêu chuẩn để làm việc với MCP: FastMCP 1.0 được đưa vào SDK Python MCP chính thức năm 2024, dự án độc lập hiện được tải một triệu lần mỗi ngày (tuyên bố của README). Ba trụ cột: Servers, Clients, Apps; có bản TypeScript riêng. Mục Scale MCP with FastMCP Gateway: cổng MCP doanh nghiệp để mở rộng máy chủ và công cụ, triển khai từ GitHub với xem trước nhánh và hoàn tác tức thì, đăng ký riêng, SSO và phân quyền theo công cụ, nhật ký kiểm toán (trả phí, README không nêu giá). Cài bằng uv (bài không chép lệnh). Giấy phép lấy theo GitHub (Apache-2.0); README có huy hiệu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu SDK chính thức là bộ khung, FastMCP là lớp tiện ích để viết máy chủ MCP nhanh hơn bằng cách chỉ cần viết hàm Python. Phổ biến, nhưng README cũng quảng bá sản phẩm trả phí cho doanh nghiệp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết một công cụ nhỏ bằng FastMCP và kết nối từ một ứng dụng MCP thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python và hiểu MCP; việc khai báo công cụ khá ngắn gọn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'khung tiêu chuẩn' và 'tải một triệu lần mỗi ngày' là của README. FastMCP Gateway là sản phẩm thương mại, bài chưa kiểm tra giá. Mỗi công cụ MCP cho AI quyền thực thi: giới hạn quyền và kiểm tra đầu vào (nguyên tắc chung). Có hai kho TypeScript và Python riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>MCP</strong>: giao thức nối AI với công cụ và dữ liệu; README nêu.</li><li><strong>decorator</strong>: cú pháp Python gắn chức năng cho hàm; README dùng trong ví dụ.</li><li><strong>schema (lược đồ)</strong>: mô tả kiểu dữ liệu vào ra của công cụ; README nêu tự sinh.</li><li><strong>gateway (cổng)</strong>: lớp quản lý nhiều máy chủ MCP; README nêu FastMCP Gateway.</li><li><strong>RBAC</strong>: phân quyền theo vai trò; README nêu phân quyền theo công cụ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng uv (khuyến nghị) rồi theo quickstart (bài không chép lệnh). Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0); FastMCP Gateway trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why FastMCP.</li><li>Làm quickstart.</li><li>Cân nhắc Gateway chỉ khi cần cho doanh nghiệp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn viết máy chủ MCP nhanh bằng Python. Hãy đọc README của FastMCP (https://github.com/PrefectHQ/fastmcp) và giải thích bằng tiếng Việt: FastMCP khác SDK chính thức thế nào, ba trụ cột là gì, và FastMCP Gateway là sản phẩm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn (khoảng 7,8 KB), bài chưa đọc tài liệu gofastmcp.com. Các số liệu tải là tuyên bố của README. README chỉ có huy hiệu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>PrefectHQ</strong> có <strong>28.286 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README chỉ có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/PrefectHQ/fastmcp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/PrefectHQ/fastmcp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 548. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28286; repo_id 896296825; README SHA256 8028da944d332c96c903639500c259d0d2154ad9a2b866cf7d76f740258a96af.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/PrefectHQ/fastmcp",
+          "repo_id": "896296825",
+          "source_path": "",
+          "source_revision": "README-SHA256:8028da944d332c96c903639500c259d0d2154ad9a2b866cf7d76f740258a96af",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/PrefectHQ/fastmcp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng uv (khuyến nghị) rồi theo quickstart (bài không chép lệnh). Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0); FastMCP Gateway trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/PrefectHQ/fastmcp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/PrefectHQ/fastmcp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "PrefectHQ/fastmcp",
+        "stars": 28286,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/README.md",
+        "readmeSha256": "8028da944d332c96c903639500c259d0d2154ad9a2b866cf7d76f740258a96af",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 549,
+      "batch": 92,
+      "slug": "github-mcp-server",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "GitHub MCP Server: máy chủ MCP chính thức của GitHub cho AI đọc kho, quản lý issue và PR, theo dõi Actions, phân tích mã; README hướng dẫn giữ mã truy cập cá nhân (PAT) an toàn",
+        "excerpt": "Hiểu GitHub MCP Server là máy chủ MCP do GitHub cung cấp, nối công cụ AI với nền tảng GitHub để đọc kho và tệp mã, quản lý issue và pull request, theo dõi GitHub Actions, phân tích bảo mật và cộng tác nhóm. Có bản máy chủ từ xa do GitHub chạy và bản chạy cục bộ. README hướng dẫn lưu mã truy cập cá nhân (PAT) trong biến môi trường, không commit.",
+        "content": "<p>README tả GitHub MCP Server kết nối công cụ AI trực tiếp với nền tảng GitHub, cho agent, trợ lý, chatbot khả năng đọc kho và tệp mã, quản lý issue và PR, phân tích mã, tự động quy trình. Tình huống dùng: quản lý kho (duyệt, tìm, phân tích commit, hiểu cấu trúc dự án), tự động hóa issue và PR, thông tin CI/CD (theo dõi chạy Actions, phân tích lỗi build, quản lý phát hành), phân tích mã (kết quả bảo mật, cảnh báo Dependabot), cộng tác nhóm (thảo luận, thông báo). Mục Go module: README ghi đường dẫn mô-đun Go và chú ý thẻ phiên bản v2.0.0 cũ không dùng được làm mô-đun; sẽ có phát hành mới. Mục Remote GitHub MCP Server: do GitHub lưu trữ, cách dễ nhất để bắt đầu; điều kiện tiên quyết, cài vào VS Code và các host MCP khác, cấu hình bộ công cụ (toolset), chế độ Insiders, GitHub Enterprise (Cloud với dữ liệu tại ghe.com và Server). Mục Local GitHub MCP Server: chạy trên máy bạn (README dùng ảnh Docker; bài không chép lệnh). Về mã truy cập: README khuyên lưu PAT trong biến môi trường hoặc tệp .env, thêm .env vào .gitignore, tham chiếu qua biến trong cấu hình; mục ghi chú nêu 'không bao giờ commit' mã truy cập; một số ứng dụng như Windsurf đòi mã nằm cứng trong tệp cấu hình. README rất dài (khoảng 120 KB) với danh sách bộ công cụ chi tiết. Giấy phép MIT theo GitHub; README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với máy chủ này, AI có thể đọc kho mã, đọc và tạo issue, xem lỗi CI thay bạn. Rất tiện, nhưng cũng nghĩa là AI cầm một mã truy cập GitHub của bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo mã truy cập cá nhân chỉ đọc cho một kho thử và nhờ AI tóm tắt các issue. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần tài khoản GitHub, mã truy cập có phạm vi và một host MCP. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> AI cầm mã truy cập GitHub của bạn có thể đọc, ghi, xóa tùy phạm vi: tạo mã có phạm vi hẹp, chỉ đọc khi có thể, hết hạn ngắn; không commit mã vào kho (README nhấn mạnh). README ghi một số host như Windsurf đòi mã nằm cứng trong tệp cấu hình: rủi ro rò rỉ. Dữ liệu kho riêng tư có thể đi qua nhà cung cấp mô hình AI: cân nhắc. Mô-đun Go v2.0.0 cũ không dùng được (README ghi). README rất dài, bài chỉ đọc các mục chính.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>MCP server</strong>: máy chủ đưa công cụ cho AI theo giao thức MCP; README nêu.</li><li><strong>PAT (personal access token)</strong>: mã truy cập cá nhân thay mật khẩu khi AI gọi GitHub; README nêu.</li><li><strong>toolset (bộ công cụ)</strong>: nhóm công cụ bật tắt theo nhu cầu; README nêu cấu hình.</li><li><strong>Dependabot</strong>: dịch vụ cảnh báo thư viện lỗi thời của GitHub; README nêu.</li><li><strong>GitHub Actions</strong>: dịch vụ chạy quy trình tự động của GitHub; README nêu theo dõi.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng máy chủ từ xa do GitHub chạy (cài vào VS Code hoặc host MCP khác) hoặc chạy cục bộ; cần mã truy cập cá nhân (bài không chép lệnh). Miễn phí phần mềm; giấy phép lấy theo GitHub (MIT); điều kiện dùng GitHub Enterprise tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Use Cases và hướng dẫn bảo mật PAT.</li><li>Tạo PAT chỉ đọc cho một kho thử.</li><li>Thử bằng máy chủ từ xa trước khi chạy cục bộ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cho AI đọc kho GitHub. Hãy đọc README của GitHub MCP Server (https://github.com/github/github-mcp-server) và giải thích bằng tiếng Việt: máy chủ từ xa khác cục bộ thế nào, vì sao cần giữ mã truy cập cá nhân an toàn, và nên chọn phạm vi quyền nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 120 KB), bài chỉ đọc các mục chính và hướng dẫn mã truy cập. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>github</strong> có <strong>34.180 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/github/github-mcp-server/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/github/github-mcp-server\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 549. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34180; repo_id 942771284; README SHA256 371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/github/github-mcp-server",
+          "repo_id": "942771284",
+          "source_path": "",
+          "source_revision": "README-SHA256:371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/github-mcp-server",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng máy chủ từ xa do GitHub chạy (cài vào VS Code hoặc host MCP khác) hoặc chạy cục bộ; cần mã truy cập cá nhân (bài không chép lệnh). Miễn phí phần mềm; giấy phép lấy theo GitHub (MIT); điều kiện dùng GitHub Enterprise tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/github-mcp-server/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/github/github-mcp-server/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "github/github-mcp-server",
+        "stars": 34180,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+        "readmeSha256": "371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 550,
+      "batch": 92,
+      "slug": "playwright-mcp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Playwright MCP: máy chủ MCP cho AI điều khiển trình duyệt qua cây khả năng truy cập (accessibility tree) của Playwright, không cần mô hình thị giác; README so sánh với Playwright CLI cho coding agent",
+        "excerpt": "Hiểu Playwright MCP là máy chủ MCP cung cấp khả năng tự động hóa trình duyệt bằng Playwright: AI tương tác với trang web qua ảnh chụp có cấu trúc (cây khả năng truy cập), không cần ảnh màn hình hay mô hình thị giác. README nói với coding agent có thể dùng Playwright CLI cùng kỹ năng sẽ tiết kiệm token hơn; yêu cầu Node.js 18 trở lên.",
+        "content": "<p>README tả Playwright MCP là máy chủ MCP cung cấp tự động hóa trình duyệt bằng Playwright, cho phép LLM tương tác với trang web qua ảnh chụp có cấu trúc dựa trên cây khả năng truy cập, tránh dùng ảnh chụp màn hình hay mô hình thị giác. Mục Playwright MCP vs Playwright CLI: gói này là giao diện MCP vào Playwright; nếu dùng coding agent, có thể hợp hơn khi dùng CLI kèm SKILL: CLI tiết kiệm token vì không phải nạp lược đồ công cụ lớn và cây khả năng truy cập dài vào ngữ cảnh mô hình; MCP vẫn hợp cho vòng lặp agent chuyên biệt cần trạng thái bền, thông tin sâu và suy luận lặp trên cấu trúc trang như tự động hóa khám phá, kiểm thử tự chữa, tự động hóa chạy lâu. Tính năng chính: nhanh và nhẹ (dùng cây khả năng truy cập, không dùng điểm ảnh), thân thiện LLM (không cần mô hình thị giác), áp dụng công cụ xác định (tránh mơ hồ của cách dùng ảnh chụp). Yêu cầu: Node.js 18 trở lên; VS Code, Cursor, Windsurf, Claude Desktop, Goose, Grok, Junie hoặc bất kỳ máy khách MCP nào. Hướng dẫn cài vào từng máy khách (cấu hình chuẩn và cài thủ công; bài không chép). README rất dài. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì AI nhìn ảnh chụp màn hình trang web, Playwright MCP đưa cho AI một 'bản đồ cấu trúc' của trang để bấm và gõ chính xác hơn. Hữu ích để AI tự kiểm thử website.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cho AI mở một trang demo công khai và điền một form thử qua Playwright MCP. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Node.js, một máy khách MCP và hiểu tự động hóa trình duyệt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> AI điều khiển trình duyệt có thể bấm, gõ và gửi biểu mẫu thật: dùng tài khoản thử, trang thử, không đăng nhập tài khoản quan trọng (nhận định chung). Phiên đăng nhập và cookie trong trình duyệt có thể bị AI truy cập. Nội dung trang web có thể chứa chỉ dẫn độc hại nhắm vào AI (prompt injection): nhận định chung, README phần đã đọc không bàn. README rất dài (khoảng 69 KB). README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP server</strong>: máy chủ đưa công cụ cho AI theo giao thức MCP; README nêu.</li><li><strong>accessibility tree (cây khả năng truy cập)</strong>: cấu trúc trang web mà trình đọc màn hình dùng, gọn hơn ảnh chụp; README nêu.</li><li><strong>token</strong>: đơn vị văn bản mô hình đọc và tính phí; README nêu CLI tiết kiệm token.</li><li><strong>Playwright CLI</strong>: công cụ dòng lệnh của Playwright cho coding agent; README nêu.</li><li><strong>SKILL</strong>: gói chỉ dẫn cho agent; README nêu kết hợp CLI và SKILL.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài vào máy khách MCP bằng cấu hình chuẩn (bài không chép cấu hình). Cần Node.js 18 trở lên. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần So sánh MCP và CLI.</li><li>Cài vào một máy khách MCP.</li><li>Thử trên trang demo công khai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn AI tự kiểm thử website. Hãy đọc README của Playwright MCP (https://github.com/microsoft/playwright-mcp) và giải thích bằng tiếng Việt: cây khả năng truy cập là gì, khi nào dùng MCP và khi nào dùng CLI, và rủi ro khi để AI điều khiển trình duyệt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 69 KB), bài chỉ đọc các mục chính. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>39.107 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/playwright-mcp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/playwright-mcp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 550. Chưa cài/chạy thử; không tạo validation. Snapshot sao 39107; repo_id 952688112; README SHA256 b3a0d1f804f4db560344ae3ef98e8e8497d9c41d2fc433a95d4060c40a401d4b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/playwright-mcp",
+          "repo_id": "952688112",
+          "source_path": "",
+          "source_revision": "README-SHA256:b3a0d1f804f4db560344ae3ef98e8e8497d9c41d2fc433a95d4060c40a401d4b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/playwright-mcp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài vào máy khách MCP bằng cấu hình chuẩn (bài không chép cấu hình). Cần Node.js 18 trở lên. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/playwright-mcp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/playwright-mcp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/playwright-mcp",
+        "stars": 39107,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/playwright-mcp/main/README.md",
+        "readmeSha256": "b3a0d1f804f4db560344ae3ef98e8e8497d9c41d2fc433a95d4060c40a401d4b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 551,
+      "batch": 92,
+      "slug": "chrome-devtools-mcp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Chrome DevTools cho agent (chrome-devtools-mcp): cho coding agent điều khiển và kiểm tra Chrome thật qua MCP hoặc CLI; README nêu Google thu thống kê sử dụng mặc định và cách tắt",
+        "excerpt": "Hiểu chrome-devtools-mcp là máy chủ MCP và CLI cho coding agent điều khiển và kiểm tra trình duyệt Chrome đang chạy với đầy đủ sức mạnh của Chrome DevTools: ghi vết hiệu năng, phân tích yêu cầu mạng, xem nhật ký console, chụp màn hình, tự động hóa bằng puppeteer. README ghi rõ nó để lộ nội dung trình duyệt cho máy khách MCP, và Google thu thống kê sử dụng bật mặc định.",
+        "content": "<p>README tả Chrome DevTools cho agent cho phép coding agent (Antigravity, Claude, Cursor, Copilot...) điều khiển và kiểm tra Chrome thật, có dạng máy chủ MCP và CLI, cho trợ lý AI toàn bộ sức mạnh của Chrome DevTools để tự động hóa đáng tin, gỡ lỗi sâu và phân tích hiệu năng. Tính năng: thông tin hiệu năng (ghi vết, rút ra gợi ý hành động), gỡ lỗi trình duyệt nâng cao (phân tích yêu cầu mạng, chụp ảnh màn hình, đọc thông báo console kèm dấu vết ngăn xếp ánh xạ nguồn), tự động hóa đáng tin bằng puppeteer. Mục Disclaimers (cảnh báo): công cụ để lộ nội dung phiên bản trình duyệt cho máy khách MCP, cho phép xem, gỡ lỗi và sửa mọi dữ liệu trong trình duyệt hoặc DevTools; tránh chia sẻ thông tin nhạy cảm hoặc cá nhân; chính thức chỉ hỗ trợ Google Chrome và Chrome for Testing; công cụ hiệu năng có thể gửi URL vết tới API CrUX của Google để lấy dữ liệu trải nghiệm người dùng thật, tắt bằng một cờ. Mục Usage statistics: Google thu thập thống kê sử dụng (tỷ lệ thành công gọi công cụ, độ trễ, thông tin môi trường); thu thập bật mặc định, có thể tắt bằng một cờ; việc này độc lập với thống kê của trình duyệt Chrome; tắt khi có biến môi trường tương ứng hoặc CI. Mục kiểm tra cập nhật: định kỳ kiểm tra npm, tắt bằng biến môi trường. Có phần yêu cầu, bắt đầu, cấu hình máy khách, prompt đầu tiên, CLI, kỹ năng. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Công cụ này cho AI 'ngồi vào' Chrome của bạn để xem mạng, console và hiệu năng của trang. Rất mạnh để tìm lỗi, nhưng README cảnh báo AI thấy được mọi thứ trong trình duyệt đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng một hồ sơ Chrome riêng, trống (không đăng nhập) để AI phân tích hiệu năng một trang demo. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Node.js, Chrome và một máy khách MCP; hiểu DevTools giúp đọc kết quả. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo máy chủ để lộ nội dung trình duyệt cho AI: đừng dùng hồ sơ Chrome có đăng nhập tài khoản quan trọng. Google thu thống kê sử dụng bật mặc định (README nêu cờ tắt và biến môi trường), công cụ hiệu năng có thể gửi URL tới API CrUX (có cờ tắt): đọc và cân nhắc trước khi dùng. Chỉ chính thức hỗ trợ Chrome và Chrome for Testing. Cờ cụ thể được ghi trong README, bài không chép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>MCP server</strong>: máy chủ đưa công cụ cho AI theo giao thức MCP; README nêu.</li><li><strong>Chrome DevTools</strong>: bộ công cụ nhà phát triển trong Chrome; README nêu.</li><li><strong>trace (vết hiệu năng)</strong>: bản ghi hoạt động của trang để phân tích tốc độ; README nêu.</li><li><strong>CrUX</strong>: báo cáo trải nghiệm người dùng thật của Chrome do Google thu thập; README nêu.</li><li><strong>usage statistics (thống kê sử dụng)</strong>: dữ liệu về cách dùng công cụ gửi về nhà phát triển; README nêu bật mặc định.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài vào máy khách MCP bằng cấu hình (bài không chép cấu hình). Cần Node.js và Chrome. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Disclaimers và Usage statistics.</li><li>Dùng hồ sơ Chrome trống.</li><li>Cân nhắc tắt thống kê và kiểm tra cập nhật nếu cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cho AI gỡ lỗi trang web qua Chrome. Hãy đọc README của chrome-devtools-mcp (https://github.com/ChromeDevTools/chrome-devtools-mcp) và giải thích bằng tiếng Việt: công cụ làm gì, vì sao README cảnh báo về nội dung trình duyệt, và Google thu thống kê gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 9,5 KB), bài chưa đọc tài liệu công cụ chi tiết. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ChromeDevTools</strong> có <strong>54.704 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ChromeDevTools/chrome-devtools-mcp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 551. Chưa cài/chạy thử; không tạo validation. Snapshot sao 54704; repo_id 1054793726; README SHA256 4a22b624199834be81356782ef36f99258f4aa1b3ff6e85dd615a1e669e6c3e5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "repo_id": "1054793726",
+          "source_path": "",
+          "source_revision": "README-SHA256:4a22b624199834be81356782ef36f99258f4aa1b3ff6e85dd615a1e669e6c3e5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài vào máy khách MCP bằng cấu hình (bài không chép cấu hình). Cần Node.js và Chrome. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": 54704,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ChromeDevTools/chrome-devtools-mcp/main/README.md",
+        "readmeSha256": "4a22b624199834be81356782ef36f99258f4aa1b3ff6e85dd615a1e669e6c3e5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 552,
+      "batch": 92,
+      "slug": "stagehand",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Stagehand: khung tự động hóa trình duyệt bằng AI của Browserbase với act, observe, extract; chạy cục bộ hoặc trên nền tảng đám mây Browserbase trả phí; README có cảnh báo về khóa và mô hình",
+        "excerpt": "Hiểu Stagehand là khung của Browserbase để AI dùng trình duyệt như người: dùng các lệnh act (hành động), observe (quan sát, trả về bộ chọn thật để mật khẩu không đến mô hình) và extract (trích dữ liệu theo lược đồ kiểm chứng), tự chữa khi giao diện trang đổi. Có thể chạy trình duyệt cục bộ hoặc trên nền tảng Browserbase (dịch vụ đám mây, trả phí).",
+        "content": "<p>README mở đầu 'AI dùng trình duyệt như con người': ví dụ TypeScript đăng nhập một lần, giữ phiên và lấy dữ liệu có cấu trúc: mở trình duyệt cục bộ có thư mục dữ liệu người dùng để cookie lưu giữ cho lần chạy sau, tạo Stagehand với tên mô hình và khóa API lấy từ biến môi trường, tìm ô nhập email và mật khẩu bằng observe (README nói observe trả bộ chọn thật nên thông tin đăng nhập không đến mô hình), điền bằng biến môi trường, dùng act để bấm đăng nhập và mở trang thanh toán (act tự chữa khi trang đổi biểu mẫu), extract trả dữ liệu theo lược đồ đã kiểm chứng (bài không chép mã). Mục Install, Why Stagehand (tuyên bố của README), Run it on Browserbase (chạy trên nền tảng đám mây Browserbase: cổng mô hình chọn mô hình rẻ nhất cho mỗi hành động, cache để lệnh giống nhau không tốn token; dịch vụ trả phí, README không nêu giá trong phần đã đọc), Give your coding agent a browser, Search and fetch without a browser, tài liệu, cộng đồng, đóng góp, ghi nhận. Giấy phép MIT, bản quyền 2026 Browserbase; 'Stagehand' là nhãn hiệu của Browserbase.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Stagehand cho AI thao tác trình duyệt bằng lệnh tiếng người như 'bấm đăng nhập', rồi lấy dữ liệu có cấu trúc. Nhưng AI điều khiển trình duyệt cần cẩn thận về tài khoản và dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy cục bộ trên một trang demo công khai, không đăng nhập tài khoản thật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần TypeScript, khóa API mô hình và hiểu tự động hóa trình duyệt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> AI điều khiển trình duyệt có thể thao tác tài khoản thật: dùng tài khoản thử. Khóa API mô hình và thông tin đăng nhập qua biến môi trường: không đưa vào kho mã; README nói observe giữ thông tin đăng nhập khỏi mô hình, bài không kiểm chứng. Browserbase là dịch vụ đám mây trả phí, bài chưa kiểm tra giá. Tự động hóa đăng nhập vào dịch vụ của bên thứ ba có thể vi phạm điều khoản của họ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>act / observe / extract</strong>: ba lệnh chính: làm, nhìn, lấy dữ liệu; README nêu.</li><li><strong>self-healing (tự chữa)</strong>: tự thích nghi khi giao diện trang đổi; README nêu.</li><li><strong>schema (lược đồ)</strong>: mô tả cấu trúc dữ liệu cần lấy; README nêu kiểm chứng.</li><li><strong>Browserbase</strong>: dịch vụ đám mây chạy trình duyệt cho AI; README nêu.</li><li><strong>model gateway (cổng mô hình)</strong>: lớp chọn mô hình cho mỗi hành động; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói và cấu hình mô hình bằng khóa API trong biến môi trường (bài không chép lệnh). Cần Node.js. Miễn phí phần khung theo giấy phép MIT; Browserbase và mô hình tính phí riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ví dụ đăng nhập và quan sát trong README.</li><li>Thử trên trang demo công khai.</li><li>Chỉ dùng tài khoản thử khi cần đăng nhập.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn AI thao tác trình duyệt. Hãy đọc README của Stagehand (https://github.com/browserbase/stagehand) và giải thích bằng tiếng Việt: act, observe, extract làm gì, vì sao observe giúp giữ mật khẩu khỏi mô hình, và rủi ro khi tự động hóa đăng nhập. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 17,6 KB), bài không đọc từng mục. Giá Browserbase chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>browserbase</strong> có <strong>25.917 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT, bản quyền Browserbase. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/browserbase/stagehand/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/browserbase/stagehand\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 552. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25917; repo_id 776908852; README SHA256 e95982d4ad892ce0eea0ca80c8f98533424745bef2ddd9fb5094c8e0aba6ca7b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/browserbase/stagehand",
+          "repo_id": "776908852",
+          "source_path": "",
+          "source_revision": "README-SHA256:e95982d4ad892ce0eea0ca80c8f98533424745bef2ddd9fb5094c8e0aba6ca7b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/browserbase/stagehand",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói và cấu hình mô hình bằng khóa API trong biến môi trường (bài không chép lệnh). Cần Node.js. Miễn phí phần khung theo giấy phép MIT; Browserbase và mô hình tính phí riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/browserbase/stagehand/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/browserbase/stagehand/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "browserbase/stagehand",
+        "stars": 25917,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/browserbase/stagehand/main/README.md",
+        "readmeSha256": "e95982d4ad892ce0eea0ca80c8f98533424745bef2ddd9fb5094c8e0aba6ca7b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 553,
+      "batch": 92,
+      "slug": "markitdown",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MarkItDown: tiện ích Python chuyển PDF, PowerPoint, Word, Excel, ảnh, âm thanh, HTML, ZIP, YouTube... sang Markdown cho LLM; README cảnh báo thực hiện I/O với quyền tiến trình và dặn làm sạch đầu vào",
+        "excerpt": "Hiểu MarkItDown là tiện ích Python gọn để chuyển nhiều loại tệp sang Markdown dùng cho LLM và phân tích văn bản: PDF, PowerPoint, Word, Excel, ảnh (siêu dữ liệu EXIF và OCR), âm thanh (EXIF và phiên âm giọng nói), HTML, CSV, JSON, XML, ZIP, URL YouTube, EPUB. README có cảnh báo quan trọng ở đầu: công cụ thực hiện I/O với quyền của tiến trình hiện tại, cần làm sạch đầu vào trong môi trường không tin cậy.",
+        "content": "<p>README mở đầu bằng cảnh báo quan trọng: MarkItDown thực hiện I/O với quyền của tiến trình hiện tại, giống open() hay requests.get() sẽ truy cập mọi tài nguyên mà tiến trình truy cập được; cần làm sạch đầu vào trong môi trường không tin cậy và gọi hàm convert_* hẹp nhất. MarkItDown là tiện ích Python nhẹ chuyển nhiều loại tệp sang Markdown cho LLM và quy trình phân tích văn bản, so sánh được với textract nhưng chú trọng giữ cấu trúc tài liệu quan trọng (tiêu đề, danh sách, bảng, liên kết). Hỗ trợ chuyển từ PDF, PowerPoint, Word, Excel, ảnh (EXIF và OCR), âm thanh (EXIF và phiên âm), HTML, định dạng văn bản (CSV, JSON, XML), ZIP (duyệt nội dung), URL YouTube, EPUB và nhiều thứ khác. Why Markdown?: Markdown rất gần văn bản thuần nhưng giữ cấu trúc, các LLM phổ biến như GPT-4o 'nói' Markdown tự nhiên, và định dạng tiết kiệm token. Điều kiện: Python 3.10 đến 3.14, khuyến nghị dùng môi trường ảo (bài không chép lệnh). Có phần dùng nâng cao (như tích hợp Azure Document Intelligence với khóa API và tùy chọn), đóng góp (CLA của Microsoft), mục Security Considerations nhắc làm sạch đầu vào và dùng hàm convert phù hợp nhất (ví dụ convert_local nếu chỉ đọc tệp cục bộ vì convert() cho phép cả URI từ xa), và nhãn hiệu. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>AI hiểu Markdown tốt hơn tệp Word hay PDF. MarkItDown chuyển tài liệu của bạn sang Markdown để đưa cho AI, ví dụ để hỏi đáp trên bộ tài liệu của trường.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chuyển một tài liệu Word mẫu không nhạy cảm sang Markdown và so sánh với bản gốc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản; dùng thì đơn giản, an toàn đầu vào cần chú ý. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo MarkItDown truy cập mọi thứ mà tiến trình truy cập được (tệp cục bộ, URL): không đưa đầu vào từ người lạ hay nguồn không tin cậy trực tiếp; dùng hàm hẹp nhất (convert_local nếu chỉ đọc tệp cục bộ). Chuyển ảnh, âm thanh qua dịch vụ ngoài có thể gửi dữ liệu ra ngoài: đọc phần cấu hình. Tài liệu có bản quyền hay riêng tư khi đưa cho AI cần cân nhắc. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>Markdown</strong>: cú pháp định dạng văn bản đơn giản; README nêu là định dạng đầu ra.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn; README nêu là đối tượng dùng.</li><li><strong>OCR</strong>: nhận dạng chữ trong ảnh; README nêu hỗ trợ.</li><li><strong>token</strong>: đơn vị văn bản mô hình tính phí; README nêu Markdown tiết kiệm token.</li><li><strong>virtual environment (môi trường ảo)</strong>: vùng cài đặt Python tách biệt; README khuyến nghị.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài trong môi trường ảo Python 3.10–3.14 (bài không chép lệnh). Một số định dạng cần phụ thuộc hoặc dịch vụ thêm. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo đầu README.</li><li>Chuyển một tệp mẫu không nhạy cảm.</li><li>Dùng hàm chuyển hẹp nhất cho ứng dụng của bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chuyển tài liệu sang Markdown cho AI đọc. Hãy đọc README của MarkItDown (https://github.com/microsoft/markitdown) và giải thích bằng tiếng Việt: công cụ chuyển được gì, vì sao Markdown tốt cho LLM, và vì sao README cảnh báo về quyền I/O. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 21 KB), bài chưa đọc phần plugin chi tiết. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>193.648 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/markitdown/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/markitdown\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 553. Chưa cài/chạy thử; không tạo validation. Snapshot sao 193648; repo_id 888092115; README SHA256 cd5ba48d320fedd4f5f2845a97968491b557d39d8afe264eb423d5c6906adf09.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/markitdown",
+          "repo_id": "888092115",
+          "source_path": "",
+          "source_revision": "README-SHA256:cd5ba48d320fedd4f5f2845a97968491b557d39d8afe264eb423d5c6906adf09",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/markitdown",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài trong môi trường ảo Python 3.10–3.14 (bài không chép lệnh). Một số định dạng cần phụ thuộc hoặc dịch vụ thêm. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/markitdown/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/markitdown/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/markitdown",
+        "stars": 193648,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/markitdown/main/README.md",
+        "readmeSha256": "cd5ba48d320fedd4f5f2845a97968491b557d39d8afe264eb423d5c6906adf09",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 554,
+      "batch": 92,
+      "slug": "spec-kit",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Spec Kit: bộ công cụ mã nguồn mở của GitHub cho coding agent có quy trình có cấu trúc (phát triển dựa trên đặc tả, sửa lỗi, đánh giá ý tưởng), mẫu và kết quả được ghi lại",
+        "excerpt": "Hiểu Spec Kit là bộ công cụ mã nguồn mở của GitHub trao cho coding agent AI các quy trình có cấu trúc, mẫu tái sử dụng và kết quả được ghi lại. README nêu các quy trình: phát triển dựa trên đặc tả (đặc tả đi qua lập kế hoạch, triển khai, hội tụ), sửa lỗi, đánh giá ý tưởng, và cho phép tự tạo quy trình; tích hợp nhiều coding agent qua tiện ích mở rộng.",
+        "content": "<p>README tả Spec Kit là bộ công cụ mã nguồn mở cho coding agent AI những quy trình có cấu trúc, mẫu tái sử dụng và kết quả được ghi lại: bắt đầu từ quy trình dựng sẵn, tùy biến hoặc dùng quy trình riêng. Mục Choose your process: dựng tính năng hoặc ứng dụng bằng Spec-Driven Development (đặc tả đi qua lập kế hoạch, triển khai, hội tụ); chẩn đoán và sửa hành vi hỏng bằng Bug fixing (nguyên nhân đã đánh giá, sửa có phạm vi, xác minh được ghi lại); quyết định ý tưởng có đáng đầu tư không bằng Idea assessment (quyết định tiếp tục, làm rõ hay dừng dựa trên bằng chứng); hoặc tự dựng quy trình. README nói đây là các điểm vào độc lập, không phải giai đoạn bắt buộc; SDD đi kèm lõi, sửa lỗi và đánh giá là tiện ích cài khi cần. Mục Capabilities: bảng cơ chế gồm Integration (kết nối hoặc chuyển đổi giữa các coding agent), Extension (thêm lệnh, cổng chất lượng hay quy trình, kết nối công cụ ngoài), runtime event và hook của tiện ích, Preset (điều chỉnh mẫu, thuật ngữ, phương pháp, áp dụng tiêu chuẩn tổ chức hay quy định), project-local override, Workflow (tự động hóa prompt, lệnh, cổng, tác vụ shell), overlay, step, Bundle (bộ cài đặt theo vai trò hoặc nhóm), Catalog (tìm thành phần cộng đồng). Có phần Get started, ví dụ lệnh slash cho từng quy trình (như lệnh đánh giá lỗi cho một ví dụ lỗi đăng nhập; bài không chép), tài liệu, tin tức, hỗ trợ và đóng góp. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi nhờ AI viết cả tính năng, kết quả thường lộn xộn nếu không có kế hoạch. Spec Kit bắt AI đi theo quy trình: viết đặc tả trước, lập kế hoạch, rồi mới viết mã, và ghi lại kết quả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử quy trình Spec-Driven Development với một tính năng nhỏ trong dự án thử và đọc tài liệu tạo ra. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm đặc tả trước mã dễ hiểu; cài đặt và dùng với agent cần làm quen. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tiện ích mở rộng và hook chạy lệnh shell và prompt tự động: chỉ cài tiện ích từ nguồn tin cậy, xem lại trước khi cho agent chạy (nhận định chung, README nêu có hook và workflow chạy lệnh shell). Một số thành phần cộng đồng trong Catalog có chất lượng khác nhau. Bài chưa kiểm tra hiệu quả của quy trình.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Spec-Driven Development (phát triển dựa trên đặc tả)</strong>: viết đặc tả trước rồi lập kế hoạch và triển khai; README nêu.</li><li><strong>extension (tiện ích mở rộng)</strong>: phần thêm lệnh hay quy trình cho Spec Kit; README nêu.</li><li><strong>preset</strong>: bộ điều chỉnh mẫu và phương pháp theo tổ chức; README nêu.</li><li><strong>hook</strong>: điểm chèn lệnh trước hay sau lệnh khác; README nêu.</li><li><strong>catalog (danh mục)</strong>: nơi tìm thành phần do cộng đồng làm; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: có mục Get started cài và dùng với coding agent (bài chưa đọc chi tiết nên không nêu lệnh). Cần một coding agent được hỗ trợ. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Choose your process.</li><li>Chọn một quy trình và đọc phần tương ứng.</li><li>Thử trên dự án nhỏ trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn AI viết tính năng theo quy trình rõ ràng. Hãy đọc README của Spec Kit (https://github.com/github/spec-kit) và giải thích bằng tiếng Việt: phát triển dựa trên đặc tả là gì, ba quy trình sẵn có, và rủi ro khi cài tiện ích mở rộng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 13,5 KB), bài chưa đọc tài liệu github.github.io/spec-kit. Bài chưa thử và chưa đánh giá hiệu quả quy trình.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>github</strong> có <strong>145.997 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/github/spec-kit/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/github/spec-kit\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 554. Chưa cài/chạy thử; không tạo validation. Snapshot sao 145997; repo_id 1042367133; README SHA256 3baa99368443f26244b3a021b40eaf6f167ee591f5759c91315ad50d0a204592.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/github/spec-kit",
+          "repo_id": "1042367133",
+          "source_path": "",
+          "source_revision": "README-SHA256:3baa99368443f26244b3a021b40eaf6f167ee591f5759c91315ad50d0a204592",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/spec-kit",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: có mục Get started cài và dùng với coding agent (bài chưa đọc chi tiết nên không nêu lệnh). Cần một coding agent được hỗ trợ. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/github/spec-kit/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/github/spec-kit/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "github/spec-kit",
+        "stars": 145997,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/github/spec-kit/main/README.md",
+        "readmeSha256": "3baa99368443f26244b3a021b40eaf6f167ee591f5759c91315ad50d0a204592",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 555,
+      "batch": 92,
+      "slug": "repomix",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Repomix: đóng gói cả kho mã thành một tệp thân thiện với AI để đưa cho LLM, có đếm token, tôn trọng .gitignore và dùng Secretlint để loại tệp có khóa; README có cảnh báo về cấu hình từ kho từ xa",
+        "excerpt": "Hiểu Repomix là công cụ đóng gói toàn bộ kho mã thành một tệp thân thiện với AI để đưa cho LLM hoặc công cụ AI như Claude, ChatGPT, Gemini. README nêu tối ưu cho AI, đếm token theo từng tệp và toàn kho, tôn trọng .gitignore, dùng Secretlint để phát hiện tệp khớp định dạng khóa và loại khỏi đầu ra; cấu hình trong kho từ xa mặc định không được nạp vì lý do bảo mật.",
+        "content": "<p>README tả Repomix là công cụ mạnh đóng gói toàn bộ kho mã thành một tệp thân thiện với AI, hợp khi cần đưa codebase cho LLM hoặc công cụ AI như Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok. README đầu có phần tài trợ (Warp, CodeRabbit), đề cử giải thưởng mã nguồn mở và nhắc có trang web repomix.com cùng cộng đồng Discord. Tính năng: tối ưu cho AI (định dạng dễ hiểu), đếm token cho từng tệp và cả kho (hữu ích với giới hạn ngữ cảnh LLM), đơn giản (một lệnh), tùy biến (chọn bao gồm hay loại), nhận biết Git (tôn trọng .gitignore, .ignore, .repomixignore), và bảo mật tập trung: dùng Secretlint để phát hiện tệp khớp định dạng thông tin xác thực đã biết và để ra ngoài đầu ra. Quick Start: dùng công cụ dòng lệnh (cài bằng npm, yarn, bun hoặc Homebrew rồi chạy trong thư mục dự án; bài không chép lệnh) hoặc dùng trang web. Mục tùy chọn nêu: cờ --no-security-check bỏ qua quét dữ liệu nhạy cảm như khóa API và mật khẩu; cờ --remote-trust-config để tin và nạp tệp cấu hình từ kho từ xa, tắt mặc định vì bảo mật, và README nói tệp cấu hình repomix.config.* trong kho từ xa mặc định không được nạp để tránh kho không tin cậy chạy mã qua tệp cấu hình. Có cả chế độ máy chủ MCP trong tùy chọn công cụ (README phần đã đọc nêu từ chối nội dung khớp định dạng khóa như biện pháp bảo vệ bổ sung). README rất dài (khoảng 87 KB). README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi muốn AI hiểu cả dự án, bạn cần đưa cả kho mã vào một cuộc hội thoại. Repomix gom thành một tệp và cho biết nó tốn bao nhiêu token, đồng thời cố loại các tệp có khóa bí mật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy Repomix trên một dự án mẫu không có thông tin nhạy cảm và xem tổng số token. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã và tự động hóa, muốn nối AI với công cụ ngoài một cách an toàn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Node hoặc Homebrew và terminal; dùng cơ bản dễ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dù có Secretlint, README gọi đó là heuristic bảo vệ, không đảm bảo loại hết bí mật: đừng đóng gói và gửi kho có khóa, mật khẩu hay dữ liệu khách hàng cho dịch vụ AI bên ngoài. Cờ bỏ qua kiểm tra bảo mật làm tăng rủi ro. README nói cấu hình từ kho từ xa mặc định không nạp, đừng bật cờ tin cậy cho kho lạ. Đóng gói toàn kho gửi cho dịch vụ AI chuyển mã nguồn có thể có giấy phép hay bí mật kinh doanh ra ngoài. Phần tài trợ trong README là quảng cáo, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn; README nêu là đối tượng nhận tệp.</li><li><strong>token</strong>: đơn vị văn bản mô hình đọc và tính phí; README nêu đếm token.</li><li><strong>Secretlint</strong>: công cụ phát hiện khóa bí mật trong tệp; README nêu.</li><li><strong>gitignore</strong>: tệp liệt kê những gì Git bỏ qua; README nêu tôn trọng.</li><li><strong>remote config (cấu hình từ xa)</strong>: tệp cấu hình nằm trong kho tải về; README nêu mặc định không nạp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm, yarn, bun hoặc Homebrew, chạy trong thư mục dự án; hoặc dùng trang web repomix.com (bài không chép lệnh). Cần Node hoặc Homebrew. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và các tùy chọn bảo mật.</li><li>Chạy trên một dự án không nhạy cảm.</li><li>Kiểm tra đầu ra có khóa bí mật không trước khi gửi cho AI.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn đưa cả dự án cho AI đọc. Hãy đọc README của Repomix (https://github.com/yamadashy/repomix) và giải thích bằng tiếng Việt: Repomix làm gì, Secretlint bảo vệ được đến đâu, và vì sao không bật tin cậy cấu hình từ kho lạ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 87 KB), bài chỉ đọc mục đầu, tính năng, Quick Start và các cờ bảo mật chính. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ nối AI với trình duyệt, GitHub, tệp và dữ liệu cho AI quyền hành động thật: cấp quyền tối thiểu, dùng mã truy cập có phạm vi hẹp, giữ khóa và mã truy cập ngoài kho mã, không để AI đọc dữ liệu nhạy cảm, đọc kỹ tùy chọn thu thập thống kê, và thử với dữ liệu giả hoặc tài khoản thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>yamadashy</strong> có <strong>29.129 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/yamadashy/repomix/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/yamadashy/repomix\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 555. Chưa cài/chạy thử; không tạo validation. Snapshot sao 29129; repo_id 828119367; README SHA256 c8306b49f0930d13227335c211727ef934b7918445989a7150df9ec149d520e1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/yamadashy/repomix",
+          "repo_id": "828119367",
+          "source_path": "",
+          "source_revision": "README-SHA256:c8306b49f0930d13227335c211727ef934b7918445989a7150df9ec149d520e1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/yamadashy/repomix",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm, yarn, bun hoặc Homebrew, chạy trong thư mục dự án; hoặc dùng trang web repomix.com (bài không chép lệnh). Cần Node hoặc Homebrew. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/yamadashy/repomix/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/yamadashy/repomix/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "yamadashy/repomix",
+        "stars": 29129,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/yamadashy/repomix/main/README.md",
+        "readmeSha256": "c8306b49f0930d13227335c211727ef934b7918445989a7150df9ec149d520e1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

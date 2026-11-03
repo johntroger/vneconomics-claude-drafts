@@ -1,0 +1,43 @@
+{
+  "key": 550,
+  "repo": "microsoft/playwright-mcp",
+  "repoId": "952688112",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "stars": 39107,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T23:12:55Z",
+  "createdAt": "2025-03-21T17:48:36Z",
+  "defaultBranch": "main",
+  "description": "Playwright MCP server",
+  "homepage": "https://www.npmjs.com/package/@playwright/mcp",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/playwright-mcp/main/README.md",
+    "sha256": "b3a0d1f804f4db560344ae3ef98e8e8497d9c41d2fc433a95d4060c40a401d4b",
+    "bytes": 69048,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Playwright MCP vs Playwright CLI",
+      "Key Features",
+      "Requirements",
+      "Getting started"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cấu hình từng máy khách.",
+    "Chưa thử.",
+    "Nguy cơ prompt injection chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

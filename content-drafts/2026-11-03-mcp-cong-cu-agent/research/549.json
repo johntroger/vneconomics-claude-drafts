@@ -1,0 +1,43 @@
+{
+  "key": 549,
+  "repo": "github/github-mcp-server",
+  "repoId": "942771284",
+  "url": "https://github.com/github/github-mcp-server",
+  "stars": 34180,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:19:47Z",
+  "createdAt": "2025-03-04T16:42:04Z",
+  "defaultBranch": "main",
+  "description": "GitHub's official MCP Server",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+    "sha256": "371e8c991df6e5e61ca6a864d692141dbf1a728ae0790d376b54c96b91e4ff13",
+    "bytes": 120055,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Use Cases",
+      "Remote GitHub MCP Server",
+      "Local GitHub MCP Server",
+      "Bảo mật PAT"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc danh sách bộ công cụ chi tiết.",
+    "Chưa thử.",
+    "Quyền tối thiểu cho từng việc chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

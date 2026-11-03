@@ -1,0 +1,43 @@
+{
+  "key": 555,
+  "repo": "yamadashy/repomix",
+  "repoId": "828119367",
+  "url": "https://github.com/yamadashy/repomix",
+  "stars": 29129,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:25:03Z",
+  "createdAt": "2024-07-13T07:11:32Z",
+  "defaultBranch": "main",
+  "description": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+  "homepage": "https://repomix.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/yamadashy/repomix/main/README.md",
+    "sha256": "c8306b49f0930d13227335c211727ef934b7918445989a7150df9ec149d520e1",
+    "bytes": 86534,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Quick Start",
+      "Security Options",
+      "Remote repository config"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hết README.",
+    "Chưa thử.",
+    "Mức độ hiệu quả của Secretlint chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

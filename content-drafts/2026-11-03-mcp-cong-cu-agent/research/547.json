@@ -1,0 +1,44 @@
+{
+  "key": 547,
+  "repo": "modelcontextprotocol/python-sdk",
+  "repoId": "862584018",
+  "url": "https://github.com/modelcontextprotocol/python-sdk",
+  "stars": 24744,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T16:26:38Z",
+  "createdAt": "2024-09-24T21:01:35Z",
+  "defaultBranch": "main",
+  "description": "The official Python SDK for Model Context Protocol servers and clients",
+  "homepage": "https://py.sdk.modelcontextprotocol.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/modelcontextprotocol/python-sdk/main/README.md",
+    "sha256": "51552fa66eee9852eb40f5bad68319df90800e88c399c4f404562c570216c05b",
+    "bytes": 4561,
+    "sectionsRead": [
+      "Documentation",
+      "What is MCP?",
+      "Requirements",
+      "Installation",
+      "A server in 15 lines",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu SDK.",
+    "Chưa thử.",
+    "Khác biệt giữa v1 và v2 chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

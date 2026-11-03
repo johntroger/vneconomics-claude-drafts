@@ -1,0 +1,43 @@
+{
+  "key": 553,
+  "repo": "microsoft/markitdown",
+  "repoId": "888092115",
+  "url": "https://github.com/microsoft/markitdown",
+  "stars": 193648,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T15:33:14Z",
+  "createdAt": "2024-11-13T19:56:40Z",
+  "defaultBranch": "main",
+  "description": "Python tool for converting files and office documents to Markdown.",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/markitdown/main/README.md",
+    "sha256": "cd5ba48d320fedd4f5f2845a97968491b557d39d8afe264eb423d5c6906adf09",
+    "bytes": 21078,
+    "sectionsRead": [
+      "Cảnh báo đầu README",
+      "Giới thiệu",
+      "Why Markdown?",
+      "Prerequisites",
+      "Security Considerations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần plugin và tích hợp Azure.",
+    "Chưa thử.",
+    "Giá dịch vụ đám mây tùy chọn chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
