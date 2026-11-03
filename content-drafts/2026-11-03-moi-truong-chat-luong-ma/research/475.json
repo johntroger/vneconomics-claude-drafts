@@ -1,0 +1,43 @@
+{
+  "key": 475,
+  "repo": "jdx/mise",
+  "repoId": "586920414",
+  "url": "https://github.com/jdx/mise",
+  "stars": 35705,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:10:51Z",
+  "createdAt": "2023-01-09T14:44:21Z",
+  "defaultBranch": "main",
+  "description": "dev tools, env vars, task runner",
+  "homepage": "https://mise.jdx.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jdx/mise/main/README.md",
+    "sha256": "3db1580f8541396116e3a33210def2996379b895bc814cba22df9bf9b437f7f9",
+    "bytes": 13789,
+    "sectionsRead": [
+      "What is mise?",
+      "Quickstart",
+      "Everyday commands",
+      "Set up a machine with mise bootstrap",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa so sánh với nvm, asdf, direnv bằng thực tế."
+  ],
+  "runtimeValidated": false
+}

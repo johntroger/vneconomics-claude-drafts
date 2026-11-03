@@ -1,0 +1,42 @@
+{
+  "key": 477,
+  "repo": "evilmartians/lefthook",
+  "repoId": "169250119",
+  "url": "https://github.com/evilmartians/lefthook",
+  "stars": 8984,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T06:04:28Z",
+  "createdAt": "2019-02-05T14:00:56Z",
+  "defaultBranch": "master",
+  "description": "Fast and powerful Git hooks manager for any type of projects.",
+  "homepage": "http://lefthook.dev/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/evilmartians/lefthook/master/README.md",
+    "sha256": "37704471dbc1f876f4a31a2dfc5513375f51e36400faca331228c0d4ab29ba65",
+    "bytes": 8582,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Install",
+      "Usage",
+      "Why Lefthook"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình.",
+    "Chưa thử.",
+    "Chưa so sánh với các công cụ hook khác."
+  ],
+  "runtimeValidated": false
+}

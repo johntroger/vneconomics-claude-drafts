@@ -1,0 +1,43 @@
+{
+  "key": 479,
+  "repo": "conventional-changelog/commitlint",
+  "repoId": "51575745",
+  "url": "https://github.com/conventional-changelog/commitlint",
+  "stars": 18798,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:28:24Z",
+  "createdAt": "2016-02-12T08:37:56Z",
+  "defaultBranch": "master",
+  "description": "📓 Lint commit messages",
+  "homepage": "https://commitlint.js.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/conventional-changelog/commitlint/master/README.md",
+    "sha256": "b4d053700537430593d69e8bcfd493077e44044a71459637a92e9e1d5b835647",
+    "bytes": 7597,
+    "sectionsRead": [
+      "What is commitlint",
+      "Getting started",
+      "Version Support and Releases",
+      "Related projects",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa kiểm tra tương thích với các hook cụ thể."
+  ],
+  "runtimeValidated": false
+}

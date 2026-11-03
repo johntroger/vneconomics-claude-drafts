@@ -6965,5 +6965,147 @@
    "headscale",
    "mastodon"
   ]
+ },
+ {
+  "key": 475,
+  "slug": "mise",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "mise: quản lý công cụ phát triển, biến môi trường và tác vụ của dự án trong một tệp mise.toml, thay thế nhiều công cụ như nvm, asdf, direnv",
+  "repo": "jdx/mise",
+  "stars": 35705,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "direnv",
+   "lefthook"
+  ]
+ },
+ {
+  "key": 476,
+  "slug": "direnv",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "direnv: tiện ích cho shell tự nạp và gỡ biến môi trường theo thư mục hiện tại qua tệp .envrc, có cơ chế bắt buộc cho phép trước khi chạy",
+  "repo": "direnv/direnv",
+  "stars": 15533,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-26",
+  "related": [
+   "mise"
+  ]
+ },
+ {
+  "key": 477,
+  "slug": "lefthook",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "Lefthook: trình quản lý Git hook nhanh, một tệp nhị phân không phụ thuộc, chạy lệnh song song, cấu hình bằng lefthook.yml",
+  "repo": "evilmartians/lefthook",
+  "stars": 8984,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "commitlint",
+   "mise"
+  ]
+ },
+ {
+  "key": 478,
+  "slug": "changesets",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "Changesets: công cụ quản lý phiên bản và nhật ký thay đổi cho kho nhiều gói (monorepo); README nói nhánh main là bản phát triển cho v3",
+  "repo": "changesets/changesets",
+  "stars": 12555,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-01",
+  "related": [
+   "oxc"
+  ]
+ },
+ {
+  "key": 479,
+  "slug": "commitlint",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "commitlint: kiểm tra thông điệp commit theo chuẩn Conventional Commits, cấu hình chia sẻ qua npm; README nêu yêu cầu Node.js 22.12+ và không hứa vá bản cũ",
+  "repo": "conventional-changelog/commitlint",
+  "stars": 18798,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "lefthook",
+   "oxc"
+  ]
+ },
+ {
+  "key": 480,
+  "slug": "oxc",
+  "group": "2026-11-03-moi-truong-chat-luong-ma",
+  "title": "Oxc (Oxidation Compiler): bộ công cụ JavaScript và TypeScript viết bằng Rust hiệu năng cao gồm trình kiểm tra Oxlint, định dạng Oxfmt, parser, transformer, minifier, resolver",
+  "repo": "oxc-project/oxc",
+  "stars": 23310,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "changesets",
+   "commitlint"
+  ]
  }
 ]

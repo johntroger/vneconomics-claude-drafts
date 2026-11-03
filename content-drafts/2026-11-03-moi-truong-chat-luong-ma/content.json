@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-moi-truong",
+  "batch": 81,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 475,
+      "batch": 81,
+      "slug": "mise",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "mise: quản lý công cụ phát triển, biến môi trường và tác vụ của dự án trong một tệp mise.toml, thay thế nhiều công cụ như nvm, asdf, direnv",
+        "excerpt": "Hiểu mise (đọc là 'meez') là công cụ quản lý công cụ phát triển (Node, Python, Go, Rust...), biến môi trường và tác vụ của dự án từ một tệp mise.toml dùng được trong shell, trình soạn thảo và CI. README nói có registry hơn 1.000 công cụ, đọc được tệp phiên bản cũ như .nvmrc và .tool-versions, và cho phép bắt đầu bằng một công cụ.",
+        "content": "<p>README tả mise (viết tắt từ mise-en-place) quản lý công cụ phát triển, biến môi trường và tác vụ của dự án từ một tệp mise.toml chạy trên shell, trình soạn thảo và CI. Ví dụ trong README khai báo phiên bản Node, Python, Rust, các công cụ từ Cargo, GitHub, npm, biến môi trường và tác vụ build, test có phụ thuộc. Ba nhóm việc: cài công cụ phát triển từ registry hơn 1.000 công cụ hoặc từ các nguồn như GitHub releases, Aqua, Cargo, npm, PyPI với phiên bản riêng cho từng dự án; nạp biến môi trường, tệp .env, PATH, virtualenv và bí mật tự động khi vào thư mục; chạy tác vụ khai báo trong mise.toml với phụ thuộc, chạy song song, theo dõi tệp. Ngoài ra có lệnh mise bootstrap và mise dot apply để cài gói hệ thống, dotfile, kho Git, thiết lập macOS và dịch vụ nền. README khuyên dùng từng phần cần thiết, bắt đầu từ một công cụ hoặc tác vụ và giữ nguyên tệp .tool-versions hiện có; mise còn đọc .nvmrc, .python-version và các tệp phiên bản khác khi bật. Quickstart: cài mise (README đưa lệnh tải từ mạng cho macOS và Linux, winget cho Windows và các trình quản lý gói khác; bài không chép lệnh), chạy một công cụ không đổi shell, cấu hình dự án, kích hoạt trong shell (tùy chọn). Có phần lệnh hằng ngày, tài liệu, nhận trợ giúp và liên hệ báo cáo bảo mật. Giấy phép lấy theo GitHub (MIT); README chỉ có huy hiệu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án cần một phiên bản Node hay Python khác nhau, và AI cài công cụ lung tung dễ làm hỏng môi trường. mise ghi phiên bản cần dùng vào một tệp trong dự án để ai mở cũng có môi trường như nhau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử chạy một công cụ không đổi shell, rồi thêm một tệp mise.toml nhỏ cho một dự án thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm đơn giản nhưng cần quen terminal, shell và quản lý phiên bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> mise có thể tải và chạy công cụ từ nhiều nguồn (GitHub, npm, PyPI, Cargo): chỉ dùng công cụ đáng tin. README đưa lệnh cài tải script từ mạng: đọc trước khi chạy. Tệp mise.toml có thể chạy tác vụ và nạp biến môi trường (kể cả bí mật): không chạy trong kho bạn chưa tin. mise bootstrap thay đổi hệ thống (gói, dotfile, mặc định macOS): thử trên máy thử, sao lưu trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>version manager (quản lý phiên bản)</strong>: công cụ chọn phiên bản Node, Python... cho từng dự án; README nêu.</li><li><strong>mise.toml</strong>: tệp cấu hình công cụ, biến môi trường và tác vụ của dự án; README nêu.</li><li><strong>registry</strong>: danh mục công cụ mà mise biết cài; README nêu hơn 1.000.</li><li><strong>dotfiles</strong>: tệp cấu hình cá nhân như .zshrc; README nêu mise dot apply.</li><li><strong>CI</strong>: quy trình tự động kiểm tra và đưa mã lên; README nêu mise dùng được trong CI.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng lệnh tải từ mạng (macOS, Linux), winget (Windows) hoặc các trình quản lý gói như Homebrew, apt, dnf, Scoop (bài không chép lệnh). Cần terminal. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục What is mise?.</li><li>Chạy một công cụ không đổi shell.</li><li>Thêm mise.toml cho một dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay gặp lỗi phiên bản Node và Python khác nhau giữa các dự án. Hãy đọc README của mise (https://github.com/jdx/mise) và giải thích bằng tiếng Việt: mise.toml làm gì, chạy thử mà không đổi shell nghĩa là gì, và rủi ro khi chạy tác vụ trong kho lạ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 14 KB), bài chưa đọc tài liệu mise.jdx.dev. README chỉ có huy hiệu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jdx</strong> có <strong>35.705 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chỉ có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jdx/mise/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jdx/mise\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 475. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35705; repo_id 586920414; README SHA256 3db1580f8541396116e3a33210def2996379b895bc814cba22df9bf9b437f7f9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jdx/mise",
+          "repo_id": "586920414",
+          "source_path": "",
+          "source_revision": "README-SHA256:3db1580f8541396116e3a33210def2996379b895bc814cba22df9bf9b437f7f9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jdx/mise",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng lệnh tải từ mạng (macOS, Linux), winget (Windows) hoặc các trình quản lý gói như Homebrew, apt, dnf, Scoop (bài không chép lệnh). Cần terminal. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jdx/mise/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jdx/mise/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jdx/mise",
+        "stars": 35705,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jdx/mise/main/README.md",
+        "readmeSha256": "3db1580f8541396116e3a33210def2996379b895bc814cba22df9bf9b437f7f9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 476,
+      "batch": 81,
+      "slug": "direnv",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "direnv: tiện ích cho shell tự nạp và gỡ biến môi trường theo thư mục hiện tại qua tệp .envrc, có cơ chế bắt buộc cho phép trước khi chạy",
+        "excerpt": "Hiểu direnv là phần mở rộng cho shell tự nạp và gỡ biến môi trường theo thư mục hiện tại: trước mỗi dòng nhắc, nó tìm tệp .envrc (và tùy chọn .env) ở thư mục hiện tại và thư mục cha. README nêu cơ chế bảo mật: tệp .envrc chưa được cho phép sẽ không chạy cho tới khi bạn chạy lệnh cho phép.",
+        "content": "<p>README mở đầu: direnv là phần mở rộng cho shell, thêm khả năng nạp và gỡ biến môi trường tùy thư mục hiện tại. Dùng cho: nạp biến môi trường của ứng dụng 12factor, tạo môi trường phát triển cô lập theo dự án, nạp bí mật để triển khai. Cách hoạt động: trước mỗi dòng nhắc, direnv kiểm tra tệp .envrc (và tùy chọn .env) ở thư mục hiện tại và thư mục cha; nếu tệp tồn tại và đã được cho phép, nó được nạp vào một shell con bash và các biến xuất ra được direnv nắm lại rồi cung cấp cho shell hiện tại. Hỗ trợ bash, zsh, tcsh, fish và các shell khác; là một tệp thực thi tĩnh nên đủ nhanh để không nhận ra; không phụ thuộc ngôn ngữ nên dùng để dựng giải pháp tương tự rbenv, pyenv. Điều kiện: hệ điều hành kiểu Unix (macOS, Linux), một shell được hỗ trợ. Cài đặt cơ bản: cài qua gói của bản phân phối, rồi gắn hook vào shell, rồi khởi động lại shell. Demo trong README cho thấy tệp .envrc mới bị từ chối ('is not allowed') cho tới khi bạn chạy lệnh cho phép: đây là cơ chế bảo mật để không tự chạy mã lạ. README nhắc các công cụ liên quan như quickenv và mise. Có hỗ trợ thương mại từ Numtide. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn vào thư mục dự án thì các biến môi trường của dự án tự bật, ra khỏi thì tự tắt. Hữu ích khi mỗi dự án cần khóa hay cấu hình riêng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo thư mục thử với một .envrc đơn giản, thử cho phép và quan sát biến đổi khi vào hoặc ra thư mục. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Khái niệm đơn giản nhưng cần quen terminal và cấu hình hook trong shell. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tệp .envrc là mã bash chạy trên máy bạn: chỉ cho phép (direnv allow) khi bạn tin nội dung, đặc biệt với kho tải về từ người lạ. Biến môi trường chứa bí mật: đừng đưa .envrc có khóa thật vào kho Git công khai. Sửa cấu hình shell sai có thể ảnh hưởng terminal: sao lưu trước khi sửa. README phần đã đọc không nêu chi tiết hỗ trợ Windows.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>environment variable (biến môi trường)</strong>: giá trị cấu hình mà chương trình đọc như khóa API; README nêu.</li><li><strong>hook</strong>: cách gắn tính năng vào shell để chạy trước mỗi dòng nhắc; README nêu.</li><li><strong>12factor</strong>: nguyên tắc dựng ứng dụng cấu hình qua biến môi trường; README nêu.</li><li><strong>shell</strong>: chương trình nhận lệnh như bash, zsh, fish; README liệt kê.</li><li><strong>sub-shell (shell con)</strong>: shell phụ mà .envrc được nạp vào; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài qua gói của bản phân phối rồi gắn hook vào shell theo tài liệu (bài không chép lệnh). Cần macOS hoặc Linux và một shell được hỗ trợ. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục How it works.</li><li>Cài và gắn hook vào shell.</li><li>Thử demo .envrc và cơ chế cho phép.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn mỗi dự án có biến môi trường riêng tự bật. Hãy đọc README của direnv (https://github.com/direnv/direnv) và giải thích bằng tiếng Việt: .envrc hoạt động ra sao, vì sao cần cho phép trước khi chạy, và rủi ro khi lưu bí mật. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu hỗ trợ Windows; bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>direnv</strong> có <strong>15.533 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục COPYRIGHT ghi MIT licence. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/direnv/direnv/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/direnv/direnv\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 476. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15533; repo_id 1219305; README SHA256 0746f90b525f10fa8aa0d73864e17167cd22260462537e6033c56ee35af098ba.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/direnv/direnv",
+          "repo_id": "1219305",
+          "source_path": "",
+          "source_revision": "README-SHA256:0746f90b525f10fa8aa0d73864e17167cd22260462537e6033c56ee35af098ba",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/direnv/direnv",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài qua gói của bản phân phối rồi gắn hook vào shell theo tài liệu (bài không chép lệnh). Cần macOS hoặc Linux và một shell được hỗ trợ. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/direnv/direnv/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/direnv/direnv/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "direnv/direnv",
+        "stars": 15533,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/direnv/direnv/master/README.md",
+        "readmeSha256": "0746f90b525f10fa8aa0d73864e17167cd22260462537e6033c56ee35af098ba",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 477,
+      "batch": 81,
+      "slug": "lefthook",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Lefthook: trình quản lý Git hook nhanh, một tệp nhị phân không phụ thuộc, chạy lệnh song song, cấu hình bằng lefthook.yml",
+        "excerpt": "Hiểu Lefthook là trình quản lý Git hook cho Node.js, Ruby, Python và nhiều loại dự án, viết bằng Go, chạy lệnh song song, một tệp nhị phân không phụ thuộc. Git hook là lệnh tự chạy khi bạn commit hay push, ví dụ kiểm tra định dạng mã. Cấu hình bằng lefthook.yml rồi cài vào dự án.",
+        "content": "<p>README tả Lefthook là trình quản lý Git hook cho Node.js, Ruby, Python và nhiều loại dự án khác. Điểm nêu: nhanh (viết bằng Go, chạy lệnh song song), mạnh (kiểm soát việc thực thi và danh sách tệp truyền cho lệnh), đơn giản (một tệp nhị phân không phụ thuộc, chạy ở mọi môi trường). Có bài giới thiệu của Evil Martians. Cài đặt có nhiều cách theo ngôn ngữ (Go, npm, Ruby, Python và các trình quản lý gói khác như apt, brew, winget; bài không chép lệnh). Cách dùng tóm tắt: cấu hình hook trong lefthook.yml, cài vào dự án Git một lần, rồi commit như bình thường để hook tự chạy. README có liên kết cấu hình và cách dùng, mục thảo luận. Mục Why Lefthook nêu chạy song song và các lý do khác. README nói do Evil Martians xây dựng. README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi AI hay bạn commit, Lefthook có thể tự chạy kiểm tra định dạng, lint hay test trước khi commit được chấp nhận, để không đẩy mã lỗi lên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cấu hình một hook chạy định dạng mã trên dự án thử rồi thử commit. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết Git cơ bản và sửa một tệp cấu hình YAML. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hook chạy lệnh tự động trên máy: chỉ cài hook từ cấu hình bạn hiểu, đặc biệt khi nhận kho từ người khác. Hook chậm hoặc lỗi có thể chặn commit: cần biết cách bỏ qua hay sửa. 'Nhanh' là cách nói của README. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Git hook</strong>: lệnh tự chạy ở các thời điểm trong Git như trước khi commit; README nêu.</li><li><strong>lefthook.yml</strong>: tệp cấu hình các hook; README nêu.</li><li><strong>parallel (song song)</strong>: chạy nhiều lệnh cùng lúc; README nêu.</li><li><strong>binary (tệp nhị phân)</strong>: chương trình đóng gói một tệp, không cần phụ thuộc; README nêu.</li><li><strong>lint</strong>: kiểm tra mã theo quy tắc phong cách và lỗi thường gặp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng Go, npm, gem, pipx hoặc trình quản lý gói như apt, brew, winget (bài không chép lệnh), cấu hình lefthook.yml rồi cài vào kho Git. Cần Git và một trong các môi trường trên. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Usage.</li><li>Cài bằng cách phù hợp ngôn ngữ dự án.</li><li>Thử một hook định dạng mã nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự kiểm tra mã trước khi commit. Hãy đọc README của Lefthook (https://github.com/evilmartians/lefthook) và giải thích bằng tiếng Việt: Git hook là gì, Lefthook cấu hình thế nào, và rủi ro khi chạy hook từ kho lạ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa đọc tài liệu cấu hình. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>evilmartians</strong> có <strong>8.984 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/evilmartians/lefthook/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/evilmartians/lefthook\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 477. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8984; repo_id 169250119; README SHA256 37704471dbc1f876f4a31a2dfc5513375f51e36400faca331228c0d4ab29ba65.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/evilmartians/lefthook",
+          "repo_id": "169250119",
+          "source_path": "",
+          "source_revision": "README-SHA256:37704471dbc1f876f4a31a2dfc5513375f51e36400faca331228c0d4ab29ba65",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/evilmartians/lefthook",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng Go, npm, gem, pipx hoặc trình quản lý gói như apt, brew, winget (bài không chép lệnh), cấu hình lefthook.yml rồi cài vào kho Git. Cần Git và một trong các môi trường trên. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/evilmartians/lefthook/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/evilmartians/lefthook/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "evilmartians/lefthook",
+        "stars": 8984,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/evilmartians/lefthook/master/README.md",
+        "readmeSha256": "37704471dbc1f876f4a31a2dfc5513375f51e36400faca331228c0d4ab29ba65",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 478,
+      "batch": 81,
+      "slug": "changesets",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Changesets: công cụ quản lý phiên bản và nhật ký thay đổi cho kho nhiều gói (monorepo); README nói nhánh main là bản phát triển cho v3",
+        "excerpt": "Hiểu Changesets là công cụ giúp mô tả thay đổi và xử lý đến khi xuất bản: người đóng góp khai báo thay đổi nên phát hành thế nào, công cụ cập nhật phiên bản gói, nhật ký thay đổi và xuất bản. Tập trung vào monorepo nhưng cũng hợp kho một gói. README cảnh báo nhánh main là bản phát triển cho v3, mã v2 ở nhánh bảo trì.",
+        "content": "<p>README mở bằng ghi chú quan trọng: đây là nhánh phát triển cho Changesets v3; mã v2 ở nhánh maintenance/v2. Changesets là công cụ quản lý phiên bản và nhật ký thay đổi, tập trung vào monorepo. Công cụ giúp quản lý và mô tả thay đổi suốt tới khi xuất bản: người đóng góp khai báo thay đổi nên được phát hành thế nào, và công cụ lo cập nhật phiên bản gói, nhật ký thay đổi và xuất bản dựa trên các changeset đã cung cấp. README nói Changesets giải quyết các vấn đề cho monorepo, giữ các gói phụ thuộc nhau luôn cập nhật, dễ thay đổi nhóm gói; quy trình cũng có lợi cho kho một gói. Tài liệu ở changesets.dev. README rất ngắn, không có hướng dẫn cài hay giấy phép; giấy phép lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi một dự án có nhiều gói và nhiều người sửa, Changesets giúp ghi 'thay đổi này nên tăng phiên bản nhỏ hay lớn' và tự tạo nhật ký thay đổi khi phát hành.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README và tài liệu để hiểu khái niệm changeset trước khi áp dụng cho dự án nhiều gói. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu quản lý gói, phiên bản ngữ nghĩa và quy trình phát hành. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói nhánh main là bản phát triển cho v3: mã ổn định là v2 ở nhánh bảo trì, kiểm tra phiên bản trước khi dùng. README không có hướng dẫn cài hay giấy phép; bài chưa đọc tài liệu changesets.dev. Chỉ cần cho dự án nhiều gói hoặc phát hành thư viện.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>monorepo</strong>: một kho chứa nhiều gói; README nêu.</li><li><strong>changelog (nhật ký thay đổi)</strong>: danh sách thay đổi mỗi phiên bản; README nêu.</li><li><strong>semantic versioning (phiên bản ngữ nghĩa)</strong>: cách đánh số phiên bản theo mức độ thay đổi.</li><li><strong>publish (xuất bản)</strong>: đưa gói lên kho như npm; README nêu.</li><li><strong>changeset</strong>: tệp mô tả thay đổi và mức phát hành; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không có hướng dẫn cài; trỏ tới changesets.dev. Cần Node và kho gói. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ghi chú về v2 và v3.</li><li>Đọc tài liệu changesets.dev.</li><li>Thử trên kho nhiều gói thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quản lý dự án nhiều gói. Hãy đọc README của Changesets (https://github.com/changesets/changesets) và giải thích bằng tiếng Việt: changeset là gì, vì sao README ghi chú về v3, và khi nào dự án nhỏ không cần dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn (khoảng 1,6 KB), bài chưa đọc tài liệu. README không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>changesets</strong> có <strong>12.555 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/changesets/changesets/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/changesets/changesets\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 478. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12555; repo_id 177033748; README SHA256 e329435714879ba189de905281aa828a33e4933c1d378aad8cfb153359919880.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/changesets/changesets",
+          "repo_id": "177033748",
+          "source_path": "",
+          "source_revision": "README-SHA256:e329435714879ba189de905281aa828a33e4933c1d378aad8cfb153359919880",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/changesets/changesets",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không có hướng dẫn cài; trỏ tới changesets.dev. Cần Node và kho gói. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/changesets/changesets/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/changesets/changesets/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "changesets/changesets",
+        "stars": 12555,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/changesets/changesets/main/README.md",
+        "readmeSha256": "e329435714879ba189de905281aa828a33e4933c1d378aad8cfb153359919880",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 479,
+      "batch": 81,
+      "slug": "commitlint",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "commitlint: kiểm tra thông điệp commit theo chuẩn Conventional Commits, cấu hình chia sẻ qua npm; README nêu yêu cầu Node.js 22.12+ và không hứa vá bản cũ",
+        "excerpt": "Hiểu commitlint là công cụ kiểm tra thông điệp commit Git có theo chuẩn Conventional Commits không (dạng type(scope): chủ đề). README nêu yêu cầu Node.js LTS từ 22.12.0 và git từ 2.13.2; và nói đây không phải dự án được tài trợ nên không hứa phát hành bản vá cho phiên bản cũ.",
+        "content": "<p>README mô tả commitlint kiểm tra thông điệp commit có đúng định dạng Conventional Commits hay không, với mẫu type(scope?): subject, có ví dụ như 'chore: run tests on travis ci' hay 'fix(server): send cors headers'. Lợi ích nêu: làm 'commitizen' tốt, chia sẻ cấu hình qua npm, kết nối với conventional-changelog. Có mục bắt đầu, CLI, cấu hình, cấu hình chia sẻ, tài liệu, API, công cụ, lộ trình, hỗ trợ phiên bản (Node.js LTS từ 22.12.0, git từ 2.13.2) và phát hành. Ghi chú về phát hành: dự án không được tài trợ, nên không hứa phát hành bản vá cho phiên bản cũ kịp thời; nếu cần vá bảo mật cho bản cũ, README mong bạn gửi PR. Có các dự án liên quan (conventional-changelog, commitizen, create-semantic-module). Giấy phép: README ghi mọi gói commitlint phát hành theo giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu cả nhóm hoặc AI viết thông điệp commit theo cùng một khuôn (feat, fix, chore...), lịch sử Git dễ đọc và tự động tạo nhật ký thay đổi. commitlint là người gác cổng kiểm tra khuôn đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cấu hình commitlint với Git hook trên dự án thử và thử commit sai khuôn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Node, Git và cấu hình hook; bản thân quy ước commit dễ hiểu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói không hứa phát hành bản vá cho phiên bản cũ: cập nhật lên bản mới. Thường dùng cùng Git hook: hook sai có thể chặn commit. Quy ước commit chỉ có ích khi cả nhóm cùng theo; thêm kiểm tra cho dự án cá nhân nhỏ có thể không cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Conventional Commits</strong>: quy ước viết thông điệp commit theo khuôn; README nêu.</li><li><strong>commit message (thông điệp commit)</strong>: dòng mô tả khi lưu thay đổi vào Git.</li><li><strong>scope (phạm vi)</strong>: phần trong ngoặc cho biết thay đổi ở đâu; README nêu tùy chọn.</li><li><strong>shared config (cấu hình chia sẻ)</strong>: bộ quy tắc dùng chung qua npm; README nêu.</li><li><strong>changelog</strong>: danh sách thay đổi mỗi phiên bản; README nêu kết nối conventional-changelog.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu bắt đầu ở commitlint.js.org; bài chưa đọc nên không nêu lệnh. Cần Node.js LTS từ 22.12.0 và git từ 2.13.2. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục What is commitlint.</li><li>Thử trên dự án nhỏ.</li><li>Kết hợp với Git hook khi cả nhóm đồng ý quy ước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thông điệp commit nhất quán. Hãy đọc README của commitlint (https://github.com/conventional-changelog/commitlint) và giải thích bằng tiếng Việt: Conventional Commits là gì, commitlint kiểm tra gì, và lưu ý về hỗ trợ phiên bản cũ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 7,6 KB), bài chưa đọc tài liệu commitlint.js.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>conventional-changelog</strong> có <strong>18.798 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi mọi gói commitlint theo giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/conventional-changelog/commitlint/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/conventional-changelog/commitlint\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 479. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18798; repo_id 51575745; README SHA256 b4d053700537430593d69e8bcfd493077e44044a71459637a92e9e1d5b835647.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/conventional-changelog/commitlint",
+          "repo_id": "51575745",
+          "source_path": "",
+          "source_revision": "README-SHA256:b4d053700537430593d69e8bcfd493077e44044a71459637a92e9e1d5b835647",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/conventional-changelog/commitlint",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu bắt đầu ở commitlint.js.org; bài chưa đọc nên không nêu lệnh. Cần Node.js LTS từ 22.12.0 và git từ 2.13.2. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/conventional-changelog/commitlint/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/conventional-changelog/commitlint/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "conventional-changelog/commitlint",
+        "stars": 18798,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/conventional-changelog/commitlint/master/README.md",
+        "readmeSha256": "b4d053700537430593d69e8bcfd493077e44044a71459637a92e9e1d5b835647",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 480,
+      "batch": 81,
+      "slug": "oxc",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Oxc (Oxidation Compiler): bộ công cụ JavaScript và TypeScript viết bằng Rust hiệu năng cao gồm trình kiểm tra Oxlint, định dạng Oxfmt, parser, transformer, minifier, resolver",
+        "excerpt": "Hiểu Oxc là bộ công cụ JavaScript và TypeScript hiệu năng cao viết bằng Rust, một phần tầm nhìn công cụ thống nhất của VoidZero. Có Oxlint (kiểm tra mã) và Oxfmt (định dạng), cùng thư viện parser, transformer, minifier, resolver. README nói Rolldown (bundler của Vite) và Nuxt dùng Oxc.",
+        "content": "<p>README mô tả Oxc là tập hợp công cụ hiệu năng cao cho JavaScript và TypeScript viết bằng Rust, một phần tầm nhìn bộ công cụ thống nhất, hiệu năng cao của VoidZero; chạy Rolldown (bundler của Vite) và cho phép thế hệ công cụ phát triển siêu nhanh tiếp theo (cách nói của README). README liệt kê người dùng: Rolldown và Nuxt dùng Oxc cho phân tích cú pháp, Rolldown dùng cho biến đổi và nén, một số dự án dùng oxc_resolver để phân giải module, một số công ty dùng oxlint để kiểm tra mã. Mục kiểm tra và định dạng: Oxlint để kiểm tra và Oxfmt để định dạng, chạy bằng npx (bài không chép lệnh). Mục công cụ xây dựng: parser, transformer (TypeScript, JSX), minifier, resolver. Có phần đóng góp, tài nguyên (khắc phục sự cố, benchmark, bài nói, đội ngũ, lời chứng thực, phát hành), nhà tài trợ. Giấy phép MIT theo README; README ghi Oxc sao chép hoặc chuyển mã từ các dự án mở khác, giấy phép của chúng nêu ở tệp riêng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Tương tự ESLint và Prettier nhưng viết bằng Rust để chạy nhanh hơn nhiều theo tuyên bố của dự án. Hữu ích khi dự án lớn và kiểm tra mã chậm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy Oxlint trên một dự án JavaScript nhỏ để xem các cảnh báo đầu tiên. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án có AI hỗ trợ, muốn môi trường nhất quán và mã được kiểm tra tự động.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng Oxlint nhanh gọn qua npx; hiểu các thư viện bên dưới khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'hiệu năng cao' và 'thế hệ công cụ siêu nhanh' là của README, bài không kiểm chứng. Quy tắc và kết quả khác ESLint nên chưa chắc thay thế 1-1 (nhận định chung, bài chưa kiểm tra). README chỉ dẫn chạy npx từ gói mới nhất: chú ý nguồn và phiên bản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>linter (trình kiểm tra mã)</strong>: công cụ bắt lỗi và vi phạm phong cách trong mã; README nêu Oxlint.</li><li><strong>formatter (trình định dạng)</strong>: công cụ thống nhất cách trình bày mã; README nêu Oxfmt.</li><li><strong>parser</strong>: phần đọc mã thành cấu trúc để máy hiểu; README nêu.</li><li><strong>minifier</strong>: công cụ rút gọn mã cho bản phát hành; README nêu.</li><li><strong>Rolldown / Vite</strong>: bundler và công cụ dựng web mà Oxc cung cấp nền tảng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: chạy Oxlint hoặc Oxfmt bằng npx (bài không chép lệnh); thư viện Rust và npm cho phần còn lại. Cần Node. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Lint or Format a Codebase.</li><li>Chạy Oxlint trên dự án thử.</li><li>So sánh kết quả với công cụ đang dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn công cụ kiểm tra mã JavaScript nhanh hơn. Hãy đọc README của Oxc (https://github.com/oxc-project/oxc) và giải thích bằng tiếng Việt: Oxlint và Oxfmt làm gì, README tuyên bố gì về hiệu năng, và vì sao cần tự đo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, trỏ tài liệu oxc.rs mà bài chưa đọc. Tuyên bố hiệu năng là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ cấu hình môi trường và Git hook chạy lệnh tự động trên máy bạn: chỉ cho phép tệp cấu hình từ kho đáng tin, đọc kỹ lệnh trước khi cho chạy, sao lưu cấu hình shell, và thử trên dự án nhỏ trước khi áp dụng cho cả nhóm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>oxc-project</strong> có <strong>23.310 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT và có huy hiệu. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/oxc-project/oxc/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/oxc-project/oxc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 480. Chưa cài/chạy thử; không tạo validation. Snapshot sao 23310; repo_id 599431918; README SHA256 91e5c313d8eac4ea611ca2d913cbeaf2338864423a20f0981a36cdfcd868bfe3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/oxc-project/oxc",
+          "repo_id": "599431918",
+          "source_path": "",
+          "source_revision": "README-SHA256:91e5c313d8eac4ea611ca2d913cbeaf2338864423a20f0981a36cdfcd868bfe3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/oxc-project/oxc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: chạy Oxlint hoặc Oxfmt bằng npx (bài không chép lệnh); thư viện Rust và npm cho phần còn lại. Cần Node. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/oxc-project/oxc/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/oxc-project/oxc/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "oxc-project/oxc",
+        "stars": 23310,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/oxc-project/oxc/main/README.md",
+        "readmeSha256": "91e5c313d8eac4ea611ca2d913cbeaf2338864423a20f0981a36cdfcd868bfe3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "key": 478,
+  "repo": "changesets/changesets",
+  "repoId": "177033748",
+  "url": "https://github.com/changesets/changesets",
+  "stars": 12555,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T15:58:09Z",
+  "createdAt": "2019-03-21T22:33:37Z",
+  "defaultBranch": "main",
+  "description": "🦋 A tool to manage versioning and changelogs with a focus on monorepos",
+  "homepage": "https://changesets.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/changesets/changesets/main/README.md",
+    "sha256": "e329435714879ba189de905281aa828a33e4933c1d378aad8cfb153359919880",
+    "bytes": 1591,
+    "sectionsRead": [
+      "Ghi chú đầu README",
+      "Giới thiệu"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu changesets.dev.",
+    "Chưa thử.",
+    "Trạng thái v2 và v3 chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

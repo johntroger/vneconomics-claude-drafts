@@ -1,0 +1,43 @@
+{
+  "key": 476,
+  "repo": "direnv/direnv",
+  "repoId": "1219305",
+  "url": "https://github.com/direnv/direnv",
+  "stars": 15533,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-26T07:02:53Z",
+  "createdAt": "2011-01-04T12:46:15Z",
+  "defaultBranch": "master",
+  "description": "unclutter your .profile",
+  "homepage": "http://direnv.net",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/direnv/direnv/master/README.md",
+    "sha256": "0746f90b525f10fa8aa0d73864e17167cd22260462537e6033c56ee35af098ba",
+    "bytes": 8199,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Use cases",
+      "How it works",
+      "Getting Started",
+      "COPYRIGHT"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs/.",
+    "Chưa thử.",
+    "Hỗ trợ Windows chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

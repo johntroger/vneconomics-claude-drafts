@@ -1,0 +1,43 @@
+{
+  "key": 480,
+  "repo": "oxc-project/oxc",
+  "repoId": "599431918",
+  "url": "https://github.com/oxc-project/oxc",
+  "stars": 23310,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:03:53Z",
+  "createdAt": "2023-02-09T05:46:51Z",
+  "defaultBranch": "main",
+  "description": "⚓ A collection of high-performance JavaScript tools.",
+  "homepage": "https://oxc.rs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/oxc-project/oxc/main/README.md",
+    "sha256": "91e5c313d8eac4ea611ca2d913cbeaf2338864423a20f0981a36cdfcd868bfe3",
+    "bytes": 5581,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Who's using Oxc?",
+      "Lint or Format a Codebase",
+      "Build Tooling on Top of Oxc",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu oxc.rs.",
+    "Chưa thử.",
+    "Chưa so sánh quy tắc với ESLint."
+  ],
+  "runtimeValidated": false
+}
