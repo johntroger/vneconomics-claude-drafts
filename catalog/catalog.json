@@ -5899,5 +5899,171 @@
    "atuin",
    "btop"
   ]
+ },
+ {
+  "key": 430,
+  "slug": "yt-dlp",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "yt-dlp: công cụ dòng lệnh tải âm thanh và video từ hàng nghìn trang; cần tự chịu trách nhiệm về bản quyền",
+  "repo": "yt-dlp/yt-dlp",
+  "stars": 204853,
+  "license": {
+   "key": "unlicense",
+   "name": "The Unlicense",
+   "spdx_id": "Unlicense",
+   "url": "https://api.github.com/licenses/unlicense",
+   "node_id": "MDc6TGljZW5zZTE1"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-10-29",
+  "related": [
+   "invokeai",
+   "rembg"
+  ]
+ },
+ {
+  "key": 431,
+  "slug": "comfyui",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "ComfyUI: engine tạo ảnh, video, âm thanh, 3D bằng AI với giao diện đồ thị nút; README nêu thông số tối thiểu 4GB VRAM và gói cloud trả phí",
+  "repo": "Comfy-Org/ComfyUI",
+  "stars": 144734,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "invokeai"
+  ]
+ },
+ {
+  "key": 432,
+  "slug": "rembg",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "rembg: xóa nền ảnh bằng AI, dùng được dưới dạng dòng lệnh, thư viện Python, máy chủ HTTP hoặc Docker",
+  "repo": "danielgatis/rembg",
+  "stars": 25303,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "upscayl",
+   "yt-dlp"
+  ]
+ },
+ {
+  "key": 433,
+  "slug": "upscayl",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "Upscayl: ứng dụng máy tính phóng to ảnh bằng AI, miễn phí mã nguồn mở, cần card đồ họa tương thích Vulkan",
+  "repo": "upscayl/upscayl",
+  "stars": 51658,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-05",
+  "related": [
+   "krita",
+   "rembg"
+  ]
+ },
+ {
+  "key": 434,
+  "slug": "shotcut",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "Shotcut: trình dựng video miễn phí mã nguồn mở đa nền tảng, giấy phép GPLv3; README cảnh báo tự biên dịch chỉ dành cho người thử nghiệm",
+  "repo": "mltframework/shotcut",
+  "stars": 15583,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "krita"
+  ]
+ },
+ {
+  "key": 435,
+  "slug": "krita",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "Krita: ứng dụng vẽ kỹ thuật số miễn phí mã nguồn mở cho họa sĩ; README nói đây chỉ là bản sao (mirror) GitHub và nêu quy định cấm dùng AI khi phát triển",
+  "repo": "KDE/krita",
+  "stars": 10684,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "shotcut",
+   "upscayl"
+  ]
+ },
+ {
+  "key": 436,
+  "slug": "invokeai",
+  "group": "2026-11-03-anh-video-ai",
+  "title": "InvokeAI: bộ công cụ tạo ảnh bằng AI chạy cục bộ với giao diện web, Unified Canvas và quy trình dạng nút; README có danh sách mô hình hỗ trợ dài",
+  "repo": "invoke-ai/InvokeAI",
+  "stars": 28968,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "comfyui",
+   "yt-dlp"
+  ]
  }
 ]

@@ -1,0 +1,43 @@
+{
+  "key": 431,
+  "repo": "Comfy-Org/ComfyUI",
+  "repoId": "589831718",
+  "url": "https://github.com/Comfy-Org/ComfyUI",
+  "stars": 144734,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:37:54Z",
+  "createdAt": "2023-01-17T03:15:56Z",
+  "defaultBranch": "master",
+  "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+  "homepage": "https://www.comfy.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/README.md",
+    "sha256": "1f5452375de6170925930393ade6380f73a01974d00c7e784d1521a86e5b388a",
+    "bytes": 29314,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Get Started",
+      "Features",
+      "Release Process",
+      "Installing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.comfy.org.",
+    "Chưa thử.",
+    "Giá Comfy Cloud và node đối tác chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

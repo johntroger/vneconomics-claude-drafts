@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-anh-video",
+  "batch": 74,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 430,
+      "batch": 74,
+      "slug": "yt-dlp",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "yt-dlp: công cụ dòng lệnh tải âm thanh và video từ hàng nghìn trang; cần tự chịu trách nhiệm về bản quyền",
+        "excerpt": "Hiểu yt-dlp là công cụ dòng lệnh giàu tính năng để tải âm thanh và video từ hàng nghìn trang, là bản fork của youtube-dl. README rất lớn (khoảng 179 KB) với hàng trăm tùy chọn. Bài nhắc rõ rủi ro bản quyền và điều khoản của từng trang.",
+        "content": "<p>README tả yt-dlp là công cụ dòng lệnh tải âm thanh và video giàu tính năng, hỗ trợ hàng nghìn trang, là bản fork của youtube-dl dựa trên youtube-dlc đã ngừng. Mục lục cho thấy phạm vi rất rộng: cài đặt (tệp phát hành, cập nhật, phụ thuộc, biên dịch), tùy chọn chung, mạng, hạn chế địa lý, chọn video, tải về, hệ thống tệp, ảnh thu nhỏ, phụ đề, xác thực, hậu xử lý, SponsorBlock, mẫu tên tệp và chọn định dạng. README ghi rõ phần giấy phép: yt-dlp theo Unlicense, nhưng nhiều tệp phát hành chứa mã dự án khác; bản đóng gói PyInstaller chứa mã GPLv3+ nên cả sản phẩm là GPLv3+; kho git và gói PyPI chỉ chứa mã Unlicense. Một số phụ thuộc được khuyến nghị cho đầy đủ chức năng (ví dụ một thành phần cho YouTube). Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn cần một bản sao video hoặc âm thanh để làm việc ngoại tuyến, yt-dlp có thể tải về nhiều định dạng. Nhưng tải về không có nghĩa là bạn có quyền dùng lại nội dung đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tải một video do chính bạn đăng hoặc nội dung có giấy phép cho phép để làm tư liệu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Công cụ dòng lệnh với rất nhiều tùy chọn và phụ thuộc; nhiều trang thay đổi nên cần cập nhật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản quyền và điều khoản của trang: tải nội dung không thuộc quyền của bạn có thể vi phạm điều khoản dịch vụ hoặc pháp luật (nguyên tắc chung của bài, README phần đã đọc không bàn về việc này). Giấy phép hỗn hợp: Unlicense cho mã nguồn, nhưng tệp thực thi đóng gói có thể theo GPLv3+. Bản tải từ nguồn khác ngoài README chỉ dẫn có thể không đáng tin.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>command-line (dòng lệnh)</strong>: chương trình điều khiển bằng lệnh gõ.</li><li><strong>fork</strong>: bản sao dự án để phát triển tiếp; README nói yt-dlp là fork của youtube-dl.</li><li><strong>Unlicense</strong>: giấy phép đặt mã vào phạm vi công cộng; README nêu cho mã yt-dlp.</li><li><strong>SponsorBlock</strong>: cơ sở dữ liệu đánh dấu đoạn quảng cáo trong video; README có mục tùy chọn riêng.</li><li><strong>post-processing (hậu xử lý)</strong>: xử lý sau khi tải như chuyển định dạng; README có mục riêng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation chi tiết (tệp phát hành, PyPI, cập nhật); bài chưa đọc nên không nêu lệnh. Cần Python hoặc tệp thực thi và nên có công cụ xử lý media như README khuyến nghị. Miễn phí theo Unlicense.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Licensing và Installation.</li><li>Chọn đúng nguồn tải do README chỉ dẫn.</li><li>Chỉ dùng với nội dung bạn có quyền.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần tải video để làm tư liệu. Hãy đọc README của yt-dlp (https://github.com/yt-dlp/yt-dlp) và giải thích bằng tiếng Việt: công cụ làm gì, mục Licensing nói gì, và những rủi ro bản quyền, điều khoản khi tải nội dung. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất lớn (khoảng 179 KB), bài chỉ lấy giới thiệu, mục lục và Licensing. Lưu ý bản quyền là nguyên tắc chung của bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>yt-dlp</strong> có <strong>204.853 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Unlicense; README có huy hiệu và mục Licensing, nói rõ tệp phát hành có thể theo GPLv3+. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/yt-dlp/yt-dlp/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/yt-dlp/yt-dlp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 430. Chưa cài/chạy thử; không tạo validation. Snapshot sao 204853; repo_id 307260205; README SHA256 6adba80a892aee34940550ee8d7085041afca6140b7ac56d6414f1e6eb484bfe.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/yt-dlp/yt-dlp",
+          "repo_id": "307260205",
+          "source_path": "",
+          "source_revision": "README-SHA256:6adba80a892aee34940550ee8d7085041afca6140b7ac56d6414f1e6eb484bfe",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "unlicense",
+                "name": "The Unlicense",
+                "spdx_id": "Unlicense",
+                "url": "https://api.github.com/licenses/unlicense",
+                "node_id": "MDc6TGljZW5zZTE1"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/yt-dlp/yt-dlp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation chi tiết (tệp phát hành, PyPI, cập nhật); bài chưa đọc nên không nêu lệnh. Cần Python hoặc tệp thực thi và nên có công cụ xử lý media như README khuyến nghị. Miễn phí theo Unlicense.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/yt-dlp/yt-dlp/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/yt-dlp/yt-dlp/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "yt-dlp/yt-dlp",
+        "stars": 204853,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/README.md",
+        "readmeSha256": "6adba80a892aee34940550ee8d7085041afca6140b7ac56d6414f1e6eb484bfe",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 431,
+      "batch": 74,
+      "slug": "comfyui",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ComfyUI: engine tạo ảnh, video, âm thanh, 3D bằng AI với giao diện đồ thị nút; README nêu thông số tối thiểu 4GB VRAM và gói cloud trả phí",
+        "excerpt": "Hiểu ComfyUI là engine AI sáng tạo dùng giao diện nút nối để dựng quy trình tạo ảnh, video, âm thanh, 3D và văn bản. README nói chạy được mô hình lớn trên máy từ 4GB VRAM, có ứng dụng Desktop, bản portable, cloud trả phí và các node đối tác trả phí.",
+        "content": "<p>README tả ComfyUI là engine sáng tạo AI cho người làm hình ảnh chuyên nghiệp muốn kiểm soát từng mô hình, tham số và đầu ra, với giao diện đồ thị nút mô-đun. Tuyên bố của README: là engine suy luận tối ưu nhất thế giới cho mô hình khuếch tán, chạy mô hình lớn nhất trên chỉ 4GB VRAM và 8GB RAM nhờ truyền trọng số bất đồng bộ. Có ứng dụng Desktop, bản portable và Comfy Cloud (dịch vụ hãng); các node đối tác cho phép dùng mô hình đóng như Nano Banana (trả phí). Mục Features: quy trình đồ thị nút không cần mã, mẫu quy trình, App Mode, API cục bộ, thực thi bất đồng bộ, quản lý VRAM và RAM, hỗ trợ mô hình lượng tử hóa, danh sách dài các mô hình ảnh, chỉnh ảnh, video, âm thanh, 3D, văn bản, công cụ vẽ bổ sung và mở rộng, lưu quy trình dạng JSON, chạy ngoại tuyến hoàn toàn (README nói lõi không tải gì trừ khi bạn yêu cầu) và node tùy chỉnh. Chu kỳ phát hành hằng tuần, commit ngoài các bản ổn định có thể rất không ổn định và làm hỏng nhiều node tùy chỉnh. Phần cài đặt dài (Windows, Linux, GPU AMD, Intel, NVIDIA, Apple, NPU). Giấy phép lấy theo GitHub (GPL-3.0); README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì gõ một câu mô tả rồi chờ ảnh, ComfyUI cho bạn nối các khối (mô hình, mặt nạ, nâng cấp ảnh) thành quy trình rồi chạy lại khi cần. Rất mạnh nhưng cần học.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở một quy trình mẫu tạo ảnh và đổi từng khối để hiểu vai trò. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần máy có GPU, tải mô hình lớn và học khái niệm đồ thị; nhiều tùy chọn cài theo phần cứng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'tối ưu nhất thế giới' và '4GB VRAM' là của README. Mô hình AI có giấy phép riêng, có thể hạn chế dùng thương mại; node tùy chỉnh bên thứ ba có thể chạy mã tùy ý, hãy xem xét độ tin cậy. Node đối tác và Comfy Cloud tính phí, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>node graph (đồ thị nút)</strong>: giao diện nối các khối xử lý; README nêu.</li><li><strong>VRAM</strong>: bộ nhớ của card đồ họa; README nêu mức 4GB.</li><li><strong>diffusion model (mô hình khuếch tán)</strong>: loại mô hình tạo ảnh phổ biến; README nêu hỗ trợ.</li><li><strong>LoRA / ControlNet</strong>: phần bổ sung điều chỉnh phong cách hoặc điều khiển bố cục; README nêu tải được.</li><li><strong>custom node (node tùy chỉnh)</strong>: mở rộng do cộng đồng viết; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Desktop, bản portable, comfy-cli và cài thủ công cho nhiều loại GPU; bài chưa đọc chi tiết nên không nêu lệnh. Cần máy có GPU phù hợp và dung lượng cho mô hình. Miễn phí theo giấy phép (GPL-3.0 theo GitHub); Comfy Cloud và node đối tác tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Features và Get Started.</li><li>Thử ứng dụng Desktop nếu máy phù hợp.</li><li>Chỉ dùng mô hình và node từ nguồn đáng tin.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tạo ảnh bằng AI chạy trên máy. Hãy đọc README của ComfyUI (https://github.com/Comfy-Org/ComfyUI) và giải thích bằng tiếng Việt: giao diện nút là gì, yêu cầu phần cứng, và rủi ro khi dùng node tùy chỉnh hay mô hình tải về. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 29 KB), bài chưa đọc từng hướng dẫn cài theo GPU. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Comfy-Org</strong> có <strong>144.734 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Comfy-Org/ComfyUI/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Comfy-Org/ComfyUI\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 431. Chưa cài/chạy thử; không tạo validation. Snapshot sao 144734; repo_id 589831718; README SHA256 1f5452375de6170925930393ade6380f73a01974d00c7e784d1521a86e5b388a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Comfy-Org/ComfyUI",
+          "repo_id": "589831718",
+          "source_path": "",
+          "source_revision": "README-SHA256:1f5452375de6170925930393ade6380f73a01974d00c7e784d1521a86e5b388a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Comfy-Org/ComfyUI",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Desktop, bản portable, comfy-cli và cài thủ công cho nhiều loại GPU; bài chưa đọc chi tiết nên không nêu lệnh. Cần máy có GPU phù hợp và dung lượng cho mô hình. Miễn phí theo giấy phép (GPL-3.0 theo GitHub); Comfy Cloud và node đối tác tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Comfy-Org/ComfyUI",
+        "stars": 144734,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/master/README.md",
+        "readmeSha256": "1f5452375de6170925930393ade6380f73a01974d00c7e784d1521a86e5b388a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 432,
+      "batch": 74,
+      "slug": "rembg",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "rembg: xóa nền ảnh bằng AI, dùng được dưới dạng dòng lệnh, thư viện Python, máy chủ HTTP hoặc Docker",
+        "excerpt": "Hiểu rembg là công cụ xóa nền ảnh, dùng như dòng lệnh, thư viện Python, máy chủ HTTP hoặc Docker. README yêu cầu Python 3.11 đến dưới 3.14, có nhiều mô hình tải về lần đầu dùng, và có hai backend đám mây (withoutbg, atlascloud) cần khóa API.",
+        "content": "<p>README mô tả rembg là công cụ xóa nền ảnh, dùng được như CLI, thư viện Python, máy chủ HTTP hoặc container Docker. Yêu cầu: Python từ 3.11 đến dưới 3.14. Cài đặt chọn một backend theo phần cứng: CPU, GPU NVIDIA/CUDA hoặc AMD/ROCm (bài không chép lệnh). Có các lệnh con xử lý một ảnh (i), cả thư mục (p), máy chủ (s) và luồng (b). README có mục chọn chế độ cạnh, khử nhiễm màu và dùng Docker. Các mô hình ONNX được tải tự động lần đầu dùng và lưu trong thư mục người dùng; danh sách gồm u2net, isnet, birefnet, sam, bria-rmbg và các mô hình khác, mỗi mô hình có nguồn và tải riêng. README ghi hai backend đám mây: withoutbg và atlascloud, cần khóa API. Có phần nhà tài trợ thương mại (PhotoRoom) và nói trang kết quả mẫu do withoutBG lưu trữ. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một bước quen thuộc khi làm ảnh sản phẩm: tách chủ thể khỏi nền. rembg làm việc đó tự động hoặc hàng loạt, ngay trên máy bạn nếu dùng mô hình cục bộ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xóa nền vài ảnh sản phẩm mẫu bằng mô hình cục bộ và so sánh với kết quả bằng tay. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản, quyết định CPU hay GPU và chọn mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mô hình tải về lần đầu dùng từ nguồn bên ngoài; mỗi mô hình có giấy phép riêng, bài chưa kiểm tra điều khoản. Backend đám mây gửi ảnh ra dịch vụ bên thứ ba và cần khóa API: không dùng với ảnh nhạy cảm. Chất lượng tách nền khác nhau tùy mô hình, bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CLI</strong>: công cụ dùng bằng lệnh gõ trong terminal; README nêu.</li><li><strong>ONNX</strong>: định dạng mô hình AI dùng chung; README nêu các mô hình ONNX.</li><li><strong>backend</strong>: phần xử lý chạy phía sau; README nêu CPU, GPU và đám mây.</li><li><strong>segmentation (phân vùng)</strong>: nhận biết vùng chủ thể và nền; README nêu mô hình phân vùng.</li><li><strong>Docker</strong>: cách đóng gói chạy ứng dụng trong container; README có mục riêng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần Python từ 3.11 đến dưới 3.14, cài theo backend CPU, NVIDIA hoặc AMD; có Docker (bài không chép lệnh). Mô hình tải tự động lần đầu. Miễn phí theo giấy phép MIT; backend đám mây có thể tính phí (bài chưa kiểm tra).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Requirements và Installation.</li><li>Chạy lệnh con i trên một ảnh mẫu.</li><li>Thử vài mô hình khác nhau.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xóa nền ảnh sản phẩm. Hãy đọc README của rembg (https://github.com/danielgatis/rembg) và giải thích bằng tiếng Việt: các cách dùng, mô hình cục bộ khác backend đám mây thế nào, và rủi ro về quyền riêng tư của ảnh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 27 KB), bài không đọc từng mô hình. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>danielgatis</strong> có <strong>25.303 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT và mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/danielgatis/rembg/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/danielgatis/rembg\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 432. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25303; repo_id 286500101; README SHA256 8455c52c60130199ab61858d359f2d25440dd95772844e2b3a037e490b31179d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/danielgatis/rembg",
+          "repo_id": "286500101",
+          "source_path": "",
+          "source_revision": "README-SHA256:8455c52c60130199ab61858d359f2d25440dd95772844e2b3a037e490b31179d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/danielgatis/rembg",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần Python từ 3.11 đến dưới 3.14, cài theo backend CPU, NVIDIA hoặc AMD; có Docker (bài không chép lệnh). Mô hình tải tự động lần đầu. Miễn phí theo giấy phép MIT; backend đám mây có thể tính phí (bài chưa kiểm tra).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/danielgatis/rembg/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/danielgatis/rembg/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "danielgatis/rembg",
+        "stars": 25303,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/danielgatis/rembg/main/README.md",
+        "readmeSha256": "8455c52c60130199ab61858d359f2d25440dd95772844e2b3a037e490b31179d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 433,
+      "batch": 74,
+      "slug": "upscayl",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Upscayl: ứng dụng máy tính phóng to ảnh bằng AI, miễn phí mã nguồn mở, cần card đồ họa tương thích Vulkan",
+        "excerpt": "Hiểu Upscayl là ứng dụng miễn phí mã nguồn mở phóng to và làm nét ảnh độ phân giải thấp bằng AI (Real-ESRGAN và Vulkan). README nói rõ cần GPU tương thích Vulkan, không sửa được ảnh bị nhòe hay mất nét.",
+        "content": "<p>README tả Upscayl là trình phóng ảnh AI miễn phí mã nguồn mở, giúp phóng to và tăng cường ảnh độ phân giải thấp (README nói 'gần như phép màu'). Có hướng dẫn cài cho Linux, macOS (có Homebrew) và Windows (Windows 10 trở lên; có cảnh báo SmartScreen cần bấm tiếp tục chạy). Phần FAQ nói Upscayl dùng mô hình AI đoán chi tiết có thể có, dựa trên Real-ESRGAN và kiến trúc Vulkan. Giới hạn nêu rõ: không khử nhòe hay chỉnh nét ảnh bị mất nét; cần GPU hỗ trợ Vulkan, thường không chạy trên phần lớn iGPU hay CPU; có công cụ dòng lệnh upscayl-ncnn. README trỏ tới kho mô hình tùy chỉnh và hướng dẫn chuyển đổi mô hình. Phần Credits nêu mô hình của bên thứ ba (Real-ESRGAN, HFA2k, Remacri, UltraSharp). Phần FAQ nói backend mã nguồn mở dưới AGPLv3; giấy phép của kho lấy theo GitHub (AGPL-3.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có ảnh nhỏ, vỡ hạt và muốn dùng cho bản in lớn hơn. Upscayl phóng to bằng AI 'đoán' thêm chi tiết, dễ dùng vì là ứng dụng có giao diện, không cần gõ lệnh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: phóng thử một ảnh nhỏ và so sánh với phóng to thông thường. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Là ứng dụng có giao diện; yêu cầu phần cứng là điểm khó chính. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> AI 'đoán' chi tiết nên ảnh phóng to có thể sai lệch so với thực tế, không phù hợp làm bằng chứng hay ảnh tư liệu cần trung thực. README nói cần GPU Vulkan. Mô hình bên thứ ba có điều khoản riêng, bài chưa kiểm tra. Bản AGPL có yêu cầu riêng nếu bạn phân phối lại mã.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>upscale (phóng to bằng AI)</strong>: tăng độ phân giải ảnh và đoán thêm chi tiết; README nêu.</li><li><strong>Vulkan</strong>: giao diện lập trình đồ họa cần GPU hỗ trợ; README nêu bắt buộc.</li><li><strong>GPU</strong>: bộ xử lý đồ họa, thường là card đồ họa; README nêu.</li><li><strong>Real-ESRGAN</strong>: nghiên cứu mô hình phóng ảnh mà Upscayl dựa vào; README nêu.</li><li><strong>AGPL</strong>: giấy phép mã nguồn mở có điều kiện chia sẻ lại; README nêu backend theo AGPLv3.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải ứng dụng từ trang phát hành hoặc trang chủ cho Windows, macOS hoặc Linux. Cần GPU hỗ trợ Vulkan. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Kiểm tra GPU có hỗ trợ Vulkan.</li><li>Tải bản chính thức từ trang phát hành.</li><li>Thử phóng một ảnh nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn phóng to ảnh nhỏ bằng AI. Hãy đọc README của Upscayl (https://github.com/upscayl/upscayl) và giải thích bằng tiếng Việt: ứng dụng làm gì, giới hạn gì (GPU, ảnh nhòe), và cách tải từ nguồn chính thức. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README có phần tài trợ thương mại ở đầu; bài không đọc từng mục đóng góp. Giấy phép repo lấy theo GitHub. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>upscayl</strong> có <strong>51.658 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-05. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README chỉ nêu backend theo AGPLv3 trong FAQ. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/upscayl/upscayl/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/upscayl/upscayl\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 433. Chưa cài/chạy thử; không tạo validation. Snapshot sao 51658; repo_id 519577891; README SHA256 4f3467e3748517bd6bf67d8c412e24a1de461e7642d2a4d83e6cd3e082ebb8d0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/upscayl/upscayl",
+          "repo_id": "519577891",
+          "source_path": "",
+          "source_revision": "README-SHA256:4f3467e3748517bd6bf67d8c412e24a1de461e7642d2a4d83e6cd3e082ebb8d0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/upscayl/upscayl",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải ứng dụng từ trang phát hành hoặc trang chủ cho Windows, macOS hoặc Linux. Cần GPU hỗ trợ Vulkan. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/upscayl/upscayl/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/upscayl/upscayl/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "upscayl/upscayl",
+        "stars": 51658,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/upscayl/upscayl/main/README.md",
+        "readmeSha256": "4f3467e3748517bd6bf67d8c412e24a1de461e7642d2a4d83e6cd3e082ebb8d0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 434,
+      "batch": 74,
+      "slug": "shotcut",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Shotcut: trình dựng video miễn phí mã nguồn mở đa nền tảng, giấy phép GPLv3; README cảnh báo tự biên dịch chỉ dành cho người thử nghiệm",
+        "excerpt": "Hiểu Shotcut là trình dựng video miễn phí mã nguồn mở đa nền tảng, giấy phép GPLv3, xây trên MLT, Qt 6, FFmpeg. README ngắn; tải bản dựng sẵn từ trang chính thức. README cảnh báo tự biên dịch chỉ dành cho người thử nghiệm hoặc người đóng góp.",
+        "content": "<p>README mô tả Shotcut là trình dựng video miễn phí, mã nguồn mở, đa nền tảng. Trang tính năng và lộ trình ở trang chủ. Mục Install: các bản dựng sẵn thường xuyên có tại trang tải chính thức. Phụ thuộc trực tiếp: MLT (framework đa phương tiện), Qt 6 (tối thiểu 6.4), FFTW, FFmpeg, Frei0r và SDL; có trang credits liệt kê đầy đủ hơn. Giấy phép GPLv3. Mục How to build có cảnh báo: tự biên dịch chỉ dành cho người thử nghiệm beta hoặc người đóng góp biết rõ mình làm gì; cách nhanh nhất là Qt Creator, hoặc dòng lệnh với CMake (bài không chép). Có mục dịch qua Transifex. Tác giả chính là Dan Dennedy.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn cần dựng video đơn giản mà không muốn trả phí phần mềm, Shotcut là lựa chọn mã nguồn mở có sẵn bản cài cho nhiều hệ điều hành.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cắt ghép vài đoạn video ngắn của chính bạn và xuất ra tệp. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Ứng dụng có giao diện; học cách dựng video cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ngắn, không nêu hiệu năng hay yêu cầu phần cứng; bài chưa kiểm tra. Tự biên dịch không dành cho người mới (README cảnh báo): hãy dùng bản dựng sẵn từ trang chính thức. Một số codec có điều kiện bản quyền riêng, bài chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>video editor (trình dựng video)</strong>: ứng dụng cắt ghép, thêm hiệu ứng cho video; README nêu.</li><li><strong>MLT</strong>: framework đa phương tiện Shotcut dùng; README nêu.</li><li><strong>FFmpeg</strong>: thư viện xử lý định dạng và mã hóa; README nêu là phụ thuộc.</li><li><strong>cross-platform (đa nền tảng)</strong>: chạy được trên nhiều hệ điều hành; README nêu.</li><li><strong>GPLv3</strong>: giấy phép mã nguồn mở có điều kiện chia sẻ lại; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản dựng sẵn từ trang tải chính thức. Tự biên dịch cần Qt 6 và CMake, chỉ dành cho người thử nghiệm (README cảnh báo). Miễn phí theo giấy phép GPLv3.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Install.</li><li>Tải bản dựng sẵn từ trang chính thức.</li><li>Dựng thử một video ngắn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng video bằng phần mềm mã nguồn mở. Hãy đọc README của Shotcut (https://github.com/mltframework/shotcut) và giải thích bằng tiếng Việt: phần mềm làm gì, nên tải từ đâu, và vì sao README cảnh báo về tự biên dịch. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, không có hướng dẫn sử dụng; bài chưa đọc trang tính năng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mltframework</strong> có <strong>15.583 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README mục License ghi GPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mltframework/shotcut/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mltframework/shotcut\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 434. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15583; repo_id 4118776; README SHA256 2a38840fc2fafa928b9b8cfa4082581b1a1a699b920e5b9168a23c62bd6a9df8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mltframework/shotcut",
+          "repo_id": "4118776",
+          "source_path": "",
+          "source_revision": "README-SHA256:2a38840fc2fafa928b9b8cfa4082581b1a1a699b920e5b9168a23c62bd6a9df8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mltframework/shotcut",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản dựng sẵn từ trang tải chính thức. Tự biên dịch cần Qt 6 và CMake, chỉ dành cho người thử nghiệm (README cảnh báo). Miễn phí theo giấy phép GPLv3.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mltframework/shotcut/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mltframework/shotcut/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mltframework/shotcut",
+        "stars": 15583,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mltframework/shotcut/master/README.md",
+        "readmeSha256": "2a38840fc2fafa928b9b8cfa4082581b1a1a699b920e5b9168a23c62bd6a9df8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 435,
+      "batch": 74,
+      "slug": "krita",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Krita: ứng dụng vẽ kỹ thuật số miễn phí mã nguồn mở cho họa sĩ; README nói đây chỉ là bản sao (mirror) GitHub và nêu quy định cấm dùng AI khi phát triển",
+        "excerpt": "Hiểu Krita là ứng dụng vẽ kỹ thuật số mã nguồn mở cho họa sĩ truyện tranh, minh họa, concept art, texture và VFX. README nói kho GitHub chỉ là bản sao, kho chính do KDE giữ, và dự án tạm cấm dùng công cụ AI hỗ trợ phát triển đến tháng 10 năm 2026.",
+        "content": "<p>README tả Krita là ứng dụng vẽ kỹ thuật số miễn phí mã nguồn mở cho nghệ sĩ muốn làm sản phẩm chuyên nghiệp từ đầu đến cuối, được họa sĩ truyện tranh, minh họa, concept art, texture và ngành VFX dùng. Ghi chú quan trọng: nếu đọc trên GitHub, đây chỉ là bản sao (mirror); kho mã chính do KDE cung cấp. README có bảng trạng thái đóng băng của nhánh master, liên kết sách hướng dẫn, ghi chú phát triển, báo lỗi, diễn đàn, kênh IRC, trang chủ và bản dựng hằng đêm (không ổn định và ổn định) cùng hướng dẫn tải bản gỡ lỗi. Giấy phép: Krita nói chung theo GPL phiên bản 3, từng tệp riêng có thể theo giấy phép khác tương thích. Mục AI Moratorium: cộng đồng phát triển chưa đồng thuận về việc dùng công cụ AI hỗ trợ phát triển nên tạm cấm đến tháng 10 năm 2026 và nêu ba lý do; quy định này nói về việc phát triển Krita, không phải tính năng AI trong ứng dụng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn vẽ minh họa hay truyện tranh và muốn phần mềm miễn phí, Krita là ứng dụng được họa sĩ dùng. Bản tải chính thức nằm ở trang Krita, không phải kho GitHub.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: vẽ một phác thảo đơn giản trên Krita và xuất ra ảnh. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Ứng dụng có giao diện; học vẽ số cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói kho GitHub chỉ là bản sao; hãy tải ứng dụng từ trang chính thức. Bản dựng hằng đêm không ổn định. Quy định cấm AI nói về phát triển Krita, không phải tính năng; bài không suy diễn ngoài README. README phần đã đọc không nêu hướng dẫn cài đặt cho người dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>digital painting (vẽ kỹ thuật số)</strong>: vẽ trên máy tính bằng bút số; README nêu.</li><li><strong>mirror (bản sao)</strong>: kho sao chép từ kho chính; README nói GitHub chỉ là mirror.</li><li><strong>nightly build (bản dựng hằng đêm)</strong>: bản dựng mới nhất, có thể không ổn định; README nêu.</li><li><strong>freeze (đóng băng)</strong>: giai đoạn hạn chế thêm tính năng hay chuỗi văn bản; README có bảng trạng thái.</li><li><strong>moratorium</strong>: lệnh tạm cấm; README nêu cho việc dùng AI hỗ trợ phát triển.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang chủ và sách hướng dẫn; bài chưa đọc nên không nêu cách cài. Miễn phí theo giấy phép GPL phiên bản 3.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục giới thiệu và ghi chú về mirror.</li><li>Tải bản chính thức từ trang Krita.</li><li>Đọc sách hướng dẫn người dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn vẽ minh họa trên máy tính bằng phần mềm miễn phí. Hãy đọc README của Krita (https://github.com/KDE/krita) và giải thích bằng tiếng Việt: ứng dụng dành cho ai, vì sao GitHub chỉ là bản sao, và quy định về AI trong README áp dụng cho việc gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README tập trung vào phát triển, không có hướng dẫn cài cho người dùng cuối; bài chưa đọc docs.krita.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>KDE</strong> có <strong>10.684 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README mục License ghi GPL phiên bản 3 và có thể có tệp theo giấy phép khác tương thích. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/KDE/krita/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/KDE/krita\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 435. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10684; repo_id 43975673; README SHA256 e979bfec6ac7f27ca32c023e7f9908c84248190e957bd4aea72272091857cc94.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/KDE/krita",
+          "repo_id": "43975673",
+          "source_path": "",
+          "source_revision": "README-SHA256:e979bfec6ac7f27ca32c023e7f9908c84248190e957bd4aea72272091857cc94",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KDE/krita",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang chủ và sách hướng dẫn; bài chưa đọc nên không nêu cách cài. Miễn phí theo giấy phép GPL phiên bản 3.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KDE/krita/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/KDE/krita/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "KDE/krita",
+        "stars": 10684,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/KDE/krita/master/README.md",
+        "readmeSha256": "e979bfec6ac7f27ca32c023e7f9908c84248190e957bd4aea72272091857cc94",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 436,
+      "batch": 74,
+      "slug": "invokeai",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "InvokeAI: bộ công cụ tạo ảnh bằng AI chạy cục bộ với giao diện web, Unified Canvas và quy trình dạng nút; README có danh sách mô hình hỗ trợ dài",
+        "excerpt": "Hiểu InvokeAI là bộ công cụ tạo ảnh bằng AI chạy trên máy, có giao diện web React, Unified Canvas để vẽ và chỉnh ảnh, quy trình dạng nút và thư viện ảnh. README nói miễn phí theo giấy phép thân thiện thương mại, cài qua Launcher, và liệt kê nhiều mô hình, có vài mô hình chỉ qua API trả phí.",
+        "content": "<p>README tả Invoke là bộ máy sáng tạo hàng đầu cho chuyên gia lẫn người đam mê, tạo nội dung hình ảnh bằng các công nghệ AI mới (cách nói của README), nền tảng của nhiều sản phẩm sáng tạo. Điểm nêu: miễn phí theo giấy phép thân thiện thương mại (README không nêu tên giấy phép trong phần đã đọc), tải và cài trên phần cứng tương thích, tạo, tinh chỉnh ảnh và dựng quy trình. Cài đặt: tải Launcher từ trang phát hành (bài không chép lệnh), có FAQ và Discord. Tính năng: máy chủ web cục bộ cùng giao diện React, Unified Canvas (tô vẽ trong và ngoài, cọ), Workflows và Nodes, quản lý bảng và thư viện ảnh với metadata để tái tạo. Danh sách mô hình hỗ trợ dài: SD 1.5, SDXL, SD 3.5, các bản Flux, Qwen Image và các mô hình khác; riêng Nano Banana, GPT Image và Wan chỉ qua API. Cũng hỗ trợ ckpt, diffusers và một số gguf, công cụ phóng ảnh, quản lý embedding và mô hình, phân vùng đối tượng SAM. Giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống ComfyUI về mục tiêu (tạo ảnh AI trên máy), nhưng InvokeAI nhấn vào Unified Canvas để vẽ và chỉnh ảnh trực tiếp, nên dễ gần với người làm thiết kế hơn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng Launcher cài và thử tạo một ảnh, rồi dùng Canvas để chỉnh vùng nhỏ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm nội dung, thiết kế, video hoặc ảnh, muốn dùng công cụ mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần máy có GPU phù hợp, tải mô hình lớn và học khái niệm; có Launcher để dễ hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Hàng đầu ngành' là cách nói của README. Mô hình có giấy phép riêng, cần kiểm tra khi dùng thương mại; mô hình chỉ qua API (Nano Banana, GPT Image, Wan) có thể tính phí, bài chưa kiểm tra. README phần đã đọc không nêu tên giấy phép cụ thể.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Unified Canvas</strong>: vùng vẽ và chỉnh ảnh tích hợp; README nêu.</li><li><strong>inpainting / outpainting</strong>: vẽ lại phần trong hoặc mở rộng phần ngoài ảnh; README nêu.</li><li><strong>workflow / node</strong>: quy trình dạng khối nối nhau; README nêu.</li><li><strong>model (mô hình)</strong>: bộ trọng số AI tạo ảnh; README liệt kê.</li><li><strong>SDXL / Flux</strong>: họ mô hình tạo ảnh; README liệt kê.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải Launcher từ trang phát hành rồi cài (bài không chép lệnh). Cần phần cứng tương thích và dung lượng cho mô hình. Miễn phí theo giấy phép (Apache-2.0 theo GitHub); một số mô hình qua API tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Features.</li><li>Cài bằng Launcher.</li><li>Thử Unified Canvas với một ảnh.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tạo và chỉnh ảnh AI chạy trên máy. Hãy đọc README của InvokeAI (https://github.com/invoke-ai/InvokeAI) và giải thích bằng tiếng Việt: Unified Canvas làm gì, yêu cầu phần cứng, và vì sao cần kiểm tra giấy phép của từng mô hình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu tên giấy phép (lấy theo GitHub). Danh sách mô hình lấy theo README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải về, chỉnh sửa hay tạo nội dung bằng AI có thể dính bản quyền, quyền hình ảnh và giấy phép của mô hình: chỉ dùng với nội dung bạn có quyền, kiểm tra điều khoản của từng mô hình, và tải phần mềm từ nguồn chính thức.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>invoke-ai</strong> có <strong>28.968 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README nói giấy phép thân thiện thương mại nhưng không nêu tên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/invoke-ai/InvokeAI/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/invoke-ai/InvokeAI\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 436. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28968; repo_id 525592995; README SHA256 87f933b43279c7a7955cf8d2af850f5558ff8f2b6a1c4f84019d5db55bbed273.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/invoke-ai/InvokeAI",
+          "repo_id": "525592995",
+          "source_path": "",
+          "source_revision": "README-SHA256:87f933b43279c7a7955cf8d2af850f5558ff8f2b6a1c4f84019d5db55bbed273",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/invoke-ai/InvokeAI",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải Launcher từ trang phát hành rồi cài (bài không chép lệnh). Cần phần cứng tương thích và dung lượng cho mô hình. Miễn phí theo giấy phép (Apache-2.0 theo GitHub); một số mô hình qua API tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/invoke-ai/InvokeAI/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/invoke-ai/InvokeAI/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "invoke-ai/InvokeAI",
+        "stars": 28968,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/invoke-ai/InvokeAI/main/README.md",
+        "readmeSha256": "87f933b43279c7a7955cf8d2af850f5558ff8f2b6a1c4f84019d5db55bbed273",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

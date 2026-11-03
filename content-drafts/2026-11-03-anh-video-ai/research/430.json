@@ -1,0 +1,42 @@
+{
+  "key": 430,
+  "repo": "yt-dlp/yt-dlp",
+  "repoId": "307260205",
+  "url": "https://github.com/yt-dlp/yt-dlp",
+  "stars": 204853,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "unlicense",
+    "name": "The Unlicense",
+    "spdx_id": "Unlicense",
+    "url": "https://api.github.com/licenses/unlicense",
+    "node_id": "MDc6TGljZW5zZTE1"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-29T20:36:18Z",
+  "createdAt": "2020-10-26T04:22:55Z",
+  "defaultBranch": "master",
+  "description": "A feature-rich command-line audio/video downloader",
+  "homepage": "https://discord.gg/H5MNcFW63r",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/README.md",
+    "sha256": "6adba80a892aee34940550ee8d7085041afca6140b7ac56d6414f1e6eb484bfe",
+    "bytes": 179127,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Mục lục",
+      "Installation",
+      "Licensing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc từng tùy chọn.",
+    "Chưa thử.",
+    "Chưa kiểm tra các trang được hỗ trợ."
+  ],
+  "runtimeValidated": false
+}

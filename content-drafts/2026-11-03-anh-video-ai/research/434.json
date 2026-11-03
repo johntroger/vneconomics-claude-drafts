@@ -1,0 +1,43 @@
+{
+  "key": 434,
+  "repo": "mltframework/shotcut",
+  "repoId": "4118776",
+  "url": "https://github.com/mltframework/shotcut",
+  "stars": 15583,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T16:19:12Z",
+  "createdAt": "2012-04-23T22:37:04Z",
+  "defaultBranch": "master",
+  "description": "cross-platform (Qt), open-source (GPLv3) video editor",
+  "homepage": "https://www.shotcut.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/README.md",
+    "sha256": "2a38840fc2fafa928b9b8cfa4082581b1a1a699b920e5b9168a23c62bd6a9df8",
+    "bytes": 2838,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Install",
+      "Dependencies",
+      "License",
+      "How to build"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc trang tính năng shotcut.org.",
+    "Chưa thử.",
+    "Yêu cầu phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

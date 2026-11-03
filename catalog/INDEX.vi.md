@@ -54,6 +54,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 52 — Framework agent AI](learning-paths/52-framework-agent-ai.vi.md) — Từ công cụ kéo thả đến các framework Python dựng agent, nhóm agent, đồ thị trạng thái và bộ nhớ; chú ý chi phí gọi mô hình, quyền riêng tư và rủi ro chạy mã do AI sinh.
 - [Lộ trình 53 — Cơ sở dữ liệu vector và đánh giá LLM](learning-paths/53-vector-db-danh-gia-llm.vi.md) — Từ kho vector nhỏ để thử đến máy chủ và hệ phân tán, kèm công cụ kiểm thử câu trả lời AI; chú ý cảnh báo bảo mật của Qdrant và chi phí đám mây.
 - [Lộ trình 54 — Công cụ terminal hiện đại](learning-paths/54-terminal-hien-dai.vi.md) — Từ lệnh nhảy thư mục và dấu nhắc đẹp đến theo dõi tài nguyên, xem diff, quản lý tệp và lịch sử lệnh; chú ý sao lưu cấu hình shell và các cảnh báo về đồng bộ và beta.
+- [Lộ trình 55 — Ảnh, video và AI tạo ảnh](learning-paths/55-anh-video-ai.vi.md) — Từ ứng dụng có giao diện đến công cụ dòng lệnh và engine AI tạo ảnh; chú ý bản quyền, giấy phép của mô hình, yêu cầu GPU và bản tải chính thức.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -109,7 +110,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (142 bài)
+### Cơ bản (146 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -255,6 +256,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 426 | btop++: trình theo dõi tài nguyên máy trong terminal (CPU, bộ nhớ, ổ đĩa, mạng, tiến trình), giao diện có hỗ trợ chuột | [aristocratos/btop](https://github.com/aristocratos/btop) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 35233 | terminal-hien-dai |
 | 428 | Atuin: thay lịch sử lệnh của shell bằng cơ sở dữ liệu SQLite, tìm kiếm toàn màn hình, đồng bộ mã hóa tùy chọn | [atuinsh/atuin](https://github.com/atuinsh/atuin) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 32185 | terminal-hien-dai |
 | 429 | delta: trình xem khác biệt (diff) có tô màu cú pháp cho git, diff và grep, có chế độ song song và đánh số dòng | [dandavison/delta](https://github.com/dandavison/delta) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 32640 | terminal-hien-dai |
+| 432 | rembg: xóa nền ảnh bằng AI, dùng được dưới dạng dòng lệnh, thư viện Python, máy chủ HTTP hoặc Docker | [danielgatis/rembg](https://github.com/danielgatis/rembg) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 25303 | anh-video-ai |
+| 433 | Upscayl: ứng dụng máy tính phóng to ảnh bằng AI, miễn phí mã nguồn mở, cần card đồ họa tương thích Vulkan | [upscayl/upscayl](https://github.com/upscayl/upscayl) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 51658 | anh-video-ai |
+| 434 | Shotcut: trình dựng video miễn phí mã nguồn mở đa nền tảng, giấy phép GPLv3; README cảnh báo tự biên dịch chỉ dành cho người thử nghiệm | [mltframework/shotcut](https://github.com/mltframework/shotcut) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 15583 | anh-video-ai |
+| 435 | Krita: ứng dụng vẽ kỹ thuật số miễn phí mã nguồn mở cho họa sĩ; README nói đây chỉ là bản sao (mirror) GitHub và nêu quy định cấm dùng AI khi phát triển | [KDE/krita](https://github.com/KDE/krita) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 10684 | anh-video-ai |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -298,7 +303,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (106 bài)
+### Nâng cao (109 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -408,6 +413,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 421 | Qdrant: công cụ tìm kiếm vector viết bằng Rust, có bản Edge chạy trong ứng dụng; README cảnh báo lệnh Docker mẫu không có xác thực | [qdrant/qdrant](https://github.com/qdrant/qdrant) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 35399 | vector-db-llm-eval |
 | 422 | Milvus: cơ sở dữ liệu vector phân tán dưới LF AI & Data, có chế độ Standalone và Milvus Lite cho người mới | [milvus-io/milvus](https://github.com/milvus-io/milvus) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 46570 | vector-db-llm-eval |
 | 427 | Yazi: trình quản lý tệp trong terminal viết bằng Rust, bất đồng bộ, có xem trước ảnh, plugin Lua; README nói đang public beta | [sxyazi/yazi](https://github.com/sxyazi/yazi) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 43201 | terminal-hien-dai |
+| 430 | yt-dlp: công cụ dòng lệnh tải âm thanh và video từ hàng nghìn trang; cần tự chịu trách nhiệm về bản quyền | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | {'key': 'unlicense', 'name': 'The Unlicense', 'spdx_id': 'Unlicense', 'url': 'https://api.github.com/licenses/unlicense', 'node_id': 'MDc6TGljZW5zZTE1'} | 204853 | anh-video-ai |
+| 431 | ComfyUI: engine tạo ảnh, video, âm thanh, 3D bằng AI với giao diện đồ thị nút; README nêu thông số tối thiểu 4GB VRAM và gói cloud trả phí | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 144734 | anh-video-ai |
+| 436 | InvokeAI: bộ công cụ tạo ảnh bằng AI chạy cục bộ với giao diện web, Unified Canvas và quy trình dạng nút; README có danh sách mô hình hỗ trợ dài | [invoke-ai/InvokeAI](https://github.com/invoke-ai/InvokeAI) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 28968 | anh-video-ai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

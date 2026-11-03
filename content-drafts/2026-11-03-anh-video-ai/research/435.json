@@ -1,0 +1,43 @@
+{
+  "key": 435,
+  "repo": "KDE/krita",
+  "repoId": "43975673",
+  "url": "https://github.com/KDE/krita",
+  "stars": 10684,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:44:31Z",
+  "createdAt": "2015-10-09T19:24:19Z",
+  "defaultBranch": "master",
+  "description": "Krita is a free and open source cross-platform application that offers an end-to-end solution for creating digital art files from scratch built on the KDE and Qt frameworks.",
+  "homepage": "https://invent.kde.org/graphics/krita",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/KDE/krita/master/README.md",
+    "sha256": "e979bfec6ac7f27ca32c023e7f9908c84248190e957bd4aea72272091857cc94",
+    "bytes": 5070,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Repository Status",
+      "User Manual",
+      "License",
+      "AI Moratorium"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc sách hướng dẫn docs.krita.org.",
+    "Chưa thử.",
+    "Yêu cầu phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
