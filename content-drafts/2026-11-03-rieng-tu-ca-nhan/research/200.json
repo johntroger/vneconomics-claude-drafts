@@ -1,0 +1,36 @@
+{
+  "key": 200,
+  "repo": "cryptomator/cryptomator",
+  "repoId": "16446099",
+  "url": "https://github.com/cryptomator/cryptomator",
+  "stars": 16426,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T12:38:46Z",
+  "createdAt": "2014-02-02T00:43:47Z",
+  "defaultBranch": "develop",
+  "description": "Cryptomator for Windows, macOS, and Linux: Secure client-side encryption for your cloud storage, ensuring privacy and control over your data.",
+  "homepage": "https://cryptomator.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/README.md",
+    "sha256": "151671fde75280d19df6d311a79c4e55e2ec730beecff9110abedd9c4185d570",
+    "bytes": 5228,
+    "sectionsRead": [
+      "Introduction",
+      "Features",
+      "Privacy",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần Privacy chi tiết và hướng dẫn biên dịch.",
+    "Chưa kiểm toán bảo mật độc lập.",
+    "Ứng dụng di động chưa tìm hiểu."
+  ],
+  "runtimeValidated": false
+}

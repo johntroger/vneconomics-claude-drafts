@@ -14,13 +14,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 12 — Đưa ứng dụng lên mạng và quản lý máy chủ](learning-paths/12-dua-ung-dung-len-mang.vi.md) — Từ khái niệm container đến nơi triển khai, proxy HTTPS và truy cập từ xa an toàn.
 - [Lộ trình 13 — Giám sát và bảo vệ máy chủ](learning-paths/13-giam-sat-va-bao-ve-may-chu.vi.md) — Biết máy chủ đang khỏe hay yếu, và ai đang cố xâm nhập; chọn công cụ phù hợp mức kinh nghiệm.
 - [Lộ trình 14 — Công cụ cho giảng viên và người viết](learning-paths/14-cong-cu-cho-giang-vien-va-nguoi-viet.vi.md) — Soạn bài giảng, tài liệu có công thức, soát lỗi văn bản và dựng site tài liệu.
+- [Lộ trình 15 — Quyền riêng tư và an toàn cá nhân](learning-paths/15-quyen-rieng-tu-ca-nhan.vi.md) — Ba việc nền tảng: giữ mật khẩu và mã 2FA, mã hóa dữ liệu nhạy cảm, bớt bị theo dõi khi duyệt web.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (23 bài)
+### Bắt đầu (25 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -47,8 +48,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 180 | First Contributions: tập đóng góp đầu tiên cho dự án mã nguồn mở bằng Git và GitHub | [firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions) | MIT | 56677 | tai-lieu-hoc-lap-trinh |
 | 181 | github/gitignore: mẫu tệp .gitignore để không đưa tệp bí mật và tệp rác lên Git | [github/gitignore](https://github.com/github/gitignore) | CC0-1.0 | 176134 | tai-lieu-hoc-lap-trinh |
 | 192 | Marp: viết bài trình chiếu bằng Markdown thuần rồi xuất ra HTML, PDF hoặc PowerPoint | [marp-team/marp](https://github.com/marp-team/marp) | MIT | 12711 | cong-cu-viet-va-giang-day |
+| 202 | uBlock Origin: chặn quảng cáo và theo dõi trong trình duyệt, và tình trạng trên Chrome | [gorhill/uBlock](https://github.com/gorhill/uBlock) | GPL-3.0 | 69041 | rieng-tu-ca-nhan |
+| 203 | Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu | [beemdevelopment/Aegis](https://github.com/beemdevelopment/Aegis) | GPL-3.0 | 13450 | rieng-tu-ca-nhan |
 
-### Cơ bản (49 bài)
+### Cơ bản (52 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -101,6 +104,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 195 | Typst: hệ soạn thảo tài liệu kiểu mới mạnh như LaTeX nhưng dễ học hơn | [typst/typst](https://github.com/typst/typst) | Apache-2.0 | 56956 | cong-cu-viet-va-giang-day |
 | 196 | LanguageTool: kiểm tra chính tả và ngữ pháp mã nguồn mở cho hơn 25 ngôn ngữ | [languagetool-org/languagetool](https://github.com/languagetool-org/languagetool) | LGPL-2.1 | 15229 | cong-cu-viet-va-giang-day |
 | 197 | Material for MkDocs: tạo website tài liệu từ Markdown, và thông báo ngừng hỗ trợ cần biết | [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material) | MIT | 27594 | cong-cu-viet-va-giang-day |
+| 200 | Cryptomator: mã hóa tệp trước khi đưa lên Google Drive, Dropbox hay OneDrive | [cryptomator/cryptomator](https://github.com/cryptomator/cryptomator) | GPL-3.0 | 16426 | rieng-tu-ca-nhan |
+| 201 | age: công cụ mã hóa tệp đơn giản, hiện đại, ít tùy chọn để khỏi cấu hình sai | [FiloSottile/age](https://github.com/FiloSottile/age) | BSD-3-Clause | 24175 | rieng-tu-ca-nhan |
+| 204 | Mullvad VPN (ứng dụng): mã nguồn ứng dụng của một dịch vụ VPN, cần phân biệt ứng dụng và dịch vụ | [mullvad/mullvadvpn-app](https://github.com/mullvad/mullvadvpn-app) | GPL-3.0 | 7743 | rieng-tu-ca-nhan |
 
 ### Khá khó (cần nền kỹ thuật) (19 bài)
 
@@ -126,7 +132,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 191 | CrowdSec: phát hiện và chặn IP độc hại dựa trên nhật ký và danh sách chia sẻ của cộng đồng | [crowdsecurity/crowdsec](https://github.com/crowdsecurity/crowdsec) | MIT | 15437 | giam-sat-may-chu |
 | 198 | PDF.js: thư viện đọc và hiển thị PDF ngay trong trình duyệt do Mozilla phát triển | [mozilla/pdf.js](https://github.com/mozilla/pdf.js) | Apache-2.0 | 54085 | cong-cu-viet-va-giang-day |
 
-### Nâng cao (7 bài)
+### Nâng cao (8 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -137,6 +143,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 168 | LLMs from Scratch: tự viết một mô hình ngôn ngữ nhỏ để hiểu bên trong chatbot | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | NOASSERTION | 107720 | hieu-ai-llm |
 | 169 | LLM Course: lộ trình ba phần để đi từ nền tảng đến xây và triển khai ứng dụng LLM | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Apache-2.0 | 84863 | hieu-ai-llm |
 | 190 | Prometheus: hệ thống giám sát tiêu chuẩn của thế giới cloud, thu số liệu bằng cách hỏi từng dịch vụ | [prometheus/prometheus](https://github.com/prometheus/prometheus) | Apache-2.0 | 66916 | giam-sat-may-chu |
+| 199 | Vaultwarden: máy chủ quản lý mật khẩu tự host, tương thích ứng dụng Bitwarden (không phải của Bitwarden) | [dani-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden) | AGPL-3.0 | 70138 | rieng-tu-ca-nhan |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

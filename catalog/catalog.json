@@ -740,6 +740,7 @@
   "pushed": "2026-10-30",
   "related": [
    "gitleaks",
+   "mullvad-vpn",
    "owasp-cheat-sheet-series"
   ]
  },
@@ -1738,6 +1739,113 @@
   "pushed": "2026-11-02",
   "related": [
    "mkdocs-material"
+  ]
+ },
+ {
+  "key": 199,
+  "slug": "vaultwarden",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "Vaultwarden: máy chủ quản lý mật khẩu tự host, tương thích ứng dụng Bitwarden (không phải của Bitwarden)",
+  "repo": "dani-garcia/vaultwarden",
+  "stars": 70138,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "aegis-authenticator",
+   "cryptomator"
+  ]
+ },
+ {
+  "key": 200,
+  "slug": "cryptomator",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "Cryptomator: mã hóa tệp trước khi đưa lên Google Drive, Dropbox hay OneDrive",
+  "repo": "cryptomator/cryptomator",
+  "stars": 16426,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "age-encryption",
+   "vaultwarden"
+  ]
+ },
+ {
+  "key": 201,
+  "slug": "age-encryption",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "age: công cụ mã hóa tệp đơn giản, hiện đại, ít tùy chọn để khỏi cấu hình sai",
+  "repo": "FiloSottile/age",
+  "stars": 24175,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-08-29",
+  "related": [
+   "cryptomator",
+   "ublock-origin"
+  ]
+ },
+ {
+  "key": 202,
+  "slug": "ublock-origin",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "uBlock Origin: chặn quảng cáo và theo dõi trong trình duyệt, và tình trạng trên Chrome",
+  "repo": "gorhill/uBlock",
+  "stars": 69041,
+  "license": "GPL-3.0",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "age-encryption",
+   "mullvad-vpn"
+  ]
+ },
+ {
+  "key": 203,
+  "slug": "aegis-authenticator",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu",
+  "repo": "beemdevelopment/Aegis",
+  "stars": 13450,
+  "license": "GPL-3.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-09-06",
+  "related": [
+   "vaultwarden"
+  ]
+ },
+ {
+  "key": 204,
+  "slug": "mullvad-vpn",
+  "group": "2026-11-03-rieng-tu-ca-nhan",
+  "title": "Mullvad VPN (ứng dụng): mã nguồn ứng dụng của một dịch vụ VPN, cần phân biệt ứng dụng và dịch vụ",
+  "repo": "mullvad/mullvadvpn-app",
+  "stars": 7743,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "dotenvx",
+   "ublock-origin"
   ]
  }
 ]

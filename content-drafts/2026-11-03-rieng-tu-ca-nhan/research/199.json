@@ -1,0 +1,35 @@
+{
+  "key": 199,
+  "repo": "dani-garcia/vaultwarden",
+  "repoId": "121898717",
+  "url": "https://github.com/dani-garcia/vaultwarden",
+  "stars": 70138,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:12:59Z",
+  "createdAt": "2018-02-17T22:40:20Z",
+  "defaultBranch": "main",
+  "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/README.md",
+    "sha256": "5c7e29e287f600fe1979d196d53f94cd8f87f9c0de1acf6481fde510fbfdd4fc",
+    "bytes": 11157,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Disclaimer"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu triển khai.",
+    "Chưa đánh giá bảo mật độc lập.",
+    "Chưa so sánh với dịch vụ Bitwarden chính thức."
+  ],
+  "runtimeValidated": false
+}

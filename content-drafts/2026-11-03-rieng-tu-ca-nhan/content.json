@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-rieng-tu",
+  "batch": 34,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 199,
+      "batch": 34,
+      "slug": "vaultwarden",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vaultwarden: máy chủ quản lý mật khẩu tự host, tương thích ứng dụng Bitwarden (không phải của Bitwarden)",
+        "excerpt": "Hiểu Vaultwarden là máy chủ thay thế nhẹ cho kho mật khẩu Bitwarden, dành cho người tự host. Cần hiểu đây là dự án không chính thức và rủi ro khi tự giữ kho mật khẩu.",
+        "content": "<p>Vaultwarden là bản triển khai thay thế của máy chủ API Bitwarden, viết bằng Rust, tương thích với các ứng dụng khách chính thức của Bitwarden và phù hợp để tự host ở nơi chạy máy chủ chính thức nặng. README nêu rõ: dự án không liên kết với Bitwarden hay Bitwarden, Inc.; một người duy trì dự án được Bitwarden tuyển dụng nhưng đóng góp độc lập; và khi dùng Vaultwarden, hãy báo lỗi cho Vaultwarden thay vì kênh hỗ trợ chính thức của Bitwarden. Tính năng gần đủ gồm kho cá nhân, Send, tệp đính kèm, tổ chức và chia sẻ mật khẩu, và xác thực hai bước (authenticator, email, FIDO2, YubiKey, Duo).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Quản lý mật khẩu giống két sắt chung cho mọi chìa khóa số của bạn. Dùng dịch vụ của Bitwarden là gửi két ở ngân hàng; Vaultwarden là bạn tự đặt két trong nhà mình bằng loại két nhỏ gọn nhưng dùng cùng 'chìa' (ứng dụng) của họ. Tiện, nhưng từ đó bạn tự chịu trách nhiệm giữ két.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gia đình hoặc nhóm nhỏ muốn dùng chung kho mật khẩu tự quản lý; cân nhắc giữa dùng dịch vụ có sẵn và tự host Vaultwarden. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người có kinh nghiệm tự host và hiểu rủi ro của việc giữ kho mật khẩu; gia đình hoặc nhóm nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần máy chủ, Docker hoặc môi trường tương tự, HTTPS, sao lưu và cập nhật đều đặn; sai sót ảnh hưởng tới toàn bộ mật khẩu của bạn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa quản lý máy chủ thành thạo, dịch vụ quản lý mật khẩu của nhà cung cấp uy tín (hoặc một ứng dụng lưu cục bộ) an toàn và ít việc hơn. Đừng tự host kho mật khẩu chỉ để thử.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>password manager (trình quản lý mật khẩu)</strong>: ứng dụng lưu và điền mật khẩu an toàn, bạn chỉ nhớ một mật khẩu chủ.</li><li><strong>API client (ứng dụng khách)</strong>: ứng dụng bạn dùng hằng ngày; README nói Vaultwarden tương thích ứng dụng Bitwarden chính thức.</li><li><strong>FIDO2 / YubiKey</strong>: khóa bảo mật vật lý dùng cho xác thực hai bước.</li><li><strong>unofficial (không chính thức)</strong>: dự án độc lập không do Bitwarden Inc. làm, theo README.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới Docker và các cách triển khai (ảnh trên ghcr.io, Docker Hub, Quay.io) và wiki; bài không chép lệnh. Cần máy chủ có HTTPS và kế hoạch sao lưu. Phần mềm miễn phí theo giấy phép AGPL-3.0; chi phí máy chủ nằm ngoài README.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Features và Disclaimer của README.</li><li>Đọc kỹ tài liệu triển khai trong wiki, đặc biệt HTTPS và sao lưu.</li><li>Thử với kho mật khẩu thử không có mật khẩu thật trước khi chuyển.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự quản lý kho mật khẩu cho gia đình. Hãy đọc README của Vaultwarden (https://github.com/dani-garcia/vaultwarden) và giải thích bằng tiếng Việt: nó khác Bitwarden chính thức thế nào, rủi ro khi tự host kho mật khẩu, và những điều tối thiểu cần làm (HTTPS, sao lưu, cập nhật). Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tự host kho mật khẩu nghĩa là bạn chịu mọi trách nhiệm bảo mật, sao lưu và khôi phục; mất kho hoặc bị xâm nhập ảnh hưởng toàn bộ tài khoản. Là dự án không chính thức theo README, nên không có hỗ trợ từ Bitwarden. Giấy phép AGPL-3.0 có điều kiện chặt khi cung cấp dịch vụ cho người khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quyền riêng tư và bảo mật chỉ có tác dụng khi dùng đúng: sao lưu khóa và mã khôi phục ở nơi riêng, bật xác thực hai bước cho tài khoản quan trọng, chỉ tải phần mềm từ nguồn chính thức và thử khôi phục trước khi tin vào bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dani-garcia</strong> có <strong>70.138 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dani-garcia/vaultwarden/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dani-garcia/vaultwarden\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 199. Chưa cài/chạy thử; không tạo validation. Snapshot sao 70138; repo_id 121898717; README SHA256 5c7e29e287f600fe1979d196d53f94cd8f87f9c0de1acf6481fde510fbfdd4fc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dani-garcia/vaultwarden",
+          "repo_id": "121898717",
+          "source_path": "",
+          "source_revision": "README-SHA256:5c7e29e287f600fe1979d196d53f94cd8f87f9c0de1acf6481fde510fbfdd4fc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dani-garcia/vaultwarden",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới Docker và các cách triển khai (ảnh trên ghcr.io, Docker Hub, Quay.io) và wiki; bài không chép lệnh. Cần máy chủ có HTTPS và kế hoạch sao lưu. Phần mềm miễn phí theo giấy phép AGPL-3.0; chi phí máy chủ nằm ngoài README.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dani-garcia/vaultwarden/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dani-garcia/vaultwarden/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dani-garcia/vaultwarden",
+        "stars": 70138,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/README.md",
+        "readmeSha256": "5c7e29e287f600fe1979d196d53f94cd8f87f9c0de1acf6481fde510fbfdd4fc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 200,
+      "batch": 34,
+      "slug": "cryptomator",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Cryptomator: mã hóa tệp trước khi đưa lên Google Drive, Dropbox hay OneDrive",
+        "excerpt": "Hiểu cách tạo két mã hóa ngay trên máy để các dịch vụ lưu trữ đám mây chỉ thấy dữ liệu đã mã hóa. Hợp người cất tài liệu nhạy cảm trên cloud.",
+        "content": "<p>Cryptomator mã hóa tệp phía máy khách, đa nền tảng, cho dữ liệu bạn để trên đám mây. README nói nó dùng được với Dropbox, Google Drive, OneDrive, MEGA, pCloud, ownCloud, Nextcloud và dịch vụ nào đồng bộ qua thư mục cục bộ. Cách dùng 'trong suốt': bạn làm việc trên một ổ ảo như một USB, còn dữ liệu được mã hóa AES khóa 256 bit, tên tệp được mã hóa và cấu trúc thư mục được làm rối. Không cần tài khoản và không chia sẻ dữ liệu với dịch vụ trực tuyến nào theo README. Giấy phép hai lớp: GPLv3 cho dự án mã nguồn mở và giấy phép thương mại cho nhà phát triển phần mềm và đại lý.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Gửi hàng qua dịch vụ kho bãi thì nhân viên kho có thể mở thùng xem. Cryptomator giống tự khóa hộp bằng ổ khóa của bạn trước khi gửi: kho vẫn cất giữ và đồng bộ, nhưng không mở được. Chìa khóa chỉ nằm ở bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên cất bản thảo nghiên cứu hoặc dữ liệu khảo sát nhạy cảm trong một két Cryptomator đặt trong thư mục đồng bộ Google Drive. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng dịch vụ đám mây muốn thêm một lớp riêng tư; người giữ dữ liệu nhạy cảm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cách dùng giống mở một ổ đĩa ảo; cần nhớ mật khẩu két và giữ khóa khôi phục. Mất mật khẩu có thể mất dữ liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần chia sẻ tệp cho nhiều người không dùng Cryptomator, két mã hóa gây bất tiện. Nếu bạn muốn chỉ tìm kiếm nội dung trên cloud, tệp mã hóa không tìm được.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>client-side encryption (mã hóa phía máy khách)</strong>: mã hóa xảy ra trên máy bạn trước khi dữ liệu đi, nên dịch vụ lưu trữ không đọc được.</li><li><strong>vault (két)</strong>: thư mục mã hóa mà Cryptomator mở thành ổ ảo.</li><li><strong>AES-256</strong>: thuật toán mã hóa phổ biến với khóa 256 bit.</li><li><strong>scrypt</strong>: cách biến mật khẩu của bạn thành khóa, được README nhắc.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói tải bản dựng sẵn từ cryptomator.org hoặc tự biên dịch bằng Maven. Phần mềm miễn phí theo GPLv3 nhờ quyên góp; có giấy phép thương mại riêng cho nhà phát triển phần mềm. Các ứng dụng di động là sản phẩm khác, bài chưa đọc.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Features và Privacy của README.</li><li>Tải từ trang chính thức và tạo một két thử.</li><li>Thử đóng, mở, đồng bộ và khôi phục từ khóa khôi phục trước khi đưa dữ liệu thật vào.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình lưu tài liệu nhạy cảm trên Google Drive. Hãy đọc README của Cryptomator (https://github.com/cryptomator/cryptomator) và giải thích bằng tiếng Việt: mã hóa phía máy khách là gì, điều gì xảy ra nếu mình quên mật khẩu két, và giới hạn của cách này. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tuyên bố 'không có cửa hậu' và 'hơn năm nghìn commit' là của tác giả, bài chưa kiểm toán. Mất mật khẩu hoặc khóa khôi phục thì dữ liệu không lấy lại được. README nhận quyên góp và tài trợ.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quyền riêng tư và bảo mật chỉ có tác dụng khi dùng đúng: sao lưu khóa và mã khôi phục ở nơi riêng, bật xác thực hai bước cho tài khoản quan trọng, chỉ tải phần mềm từ nguồn chính thức và thử khôi phục trước khi tin vào bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cryptomator</strong> có <strong>16.426 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README ghi GPLv3 cho dự án mở và giấy phép thương mại riêng cho nhà phát triển phần mềm. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cryptomator/cryptomator/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cryptomator/cryptomator\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 200. Chưa cài/chạy thử; không tạo validation. Snapshot sao 16426; repo_id 16446099; README SHA256 151671fde75280d19df6d311a79c4e55e2ec730beecff9110abedd9c4185d570.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cryptomator/cryptomator",
+          "repo_id": "16446099",
+          "source_path": "",
+          "source_revision": "README-SHA256:151671fde75280d19df6d311a79c4e55e2ec730beecff9110abedd9c4185d570",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cryptomator/cryptomator",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói tải bản dựng sẵn từ cryptomator.org hoặc tự biên dịch bằng Maven. Phần mềm miễn phí theo GPLv3 nhờ quyên góp; có giấy phép thương mại riêng cho nhà phát triển phần mềm. Các ứng dụng di động là sản phẩm khác, bài chưa đọc.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cryptomator/cryptomator/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cryptomator/cryptomator/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cryptomator/cryptomator",
+        "stars": 16426,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cryptomator/cryptomator/develop/README.md",
+        "readmeSha256": "151671fde75280d19df6d311a79c4e55e2ec730beecff9110abedd9c4185d570",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 201,
+      "batch": 34,
+      "slug": "age-encryption",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "age: công cụ mã hóa tệp đơn giản, hiện đại, ít tùy chọn để khỏi cấu hình sai",
+        "excerpt": "Hiểu age mã hóa tệp bằng khóa công khai nhỏ gọn, không có cấu hình phức tạp. Một lựa chọn đơn giản thay cho GPG khi cần mã hóa tệp hoặc bí mật.",
+        "content": "<p>age là công cụ, định dạng và thư viện Go để mã hóa tệp, mô tả là đơn giản, hiện đại và an toàn. README nêu đặc điểm: khóa nhỏ và rõ ràng, hỗ trợ hậu lượng tử, không có tùy chọn cấu hình, và dùng kiểu UNIX ghép các lệnh với nhau. Có đặc tả định dạng công khai, bản cài Rust tương thích (rage), bản TypeScript (Typage) chạy trong trình duyệt và Node.js, hỗ trợ thẻ phần cứng YubiKey qua plugin, và danh sách công cụ liên quan. Có bản dựng sẵn cho Windows, Linux, macOS, FreeBSD kèm bằng chứng Sigsum.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Các công cụ mã hóa cũ như bộ đồ nghề đầy nút xoay; vặn sai một nút là mất tác dụng. age giống một chiếc két chỉ có một cách khóa và một cách mở, nên khó dùng sai. Bạn có cặp khóa: khóa công khai để người khác khóa tệp gửi bạn, khóa riêng để bạn mở.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mã hóa một tệp chứa thông tin cấu hình nhạy cảm trước khi sao lưu hoặc gửi, và để khóa riêng ở nơi tách biệt. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng dòng lệnh cần mã hóa tệp hoặc bí mật; người viết công cụ cần thư viện mã hóa đơn giản.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm khóa công khai và khóa riêng cần hiểu; công cụ là dòng lệnh, nhưng ít tùy chọn nên khó cấu hình sai. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn ổ mã hóa tự động tích hợp cloud với giao diện đồ họa, Cryptomator hợp hơn. Nếu bạn cần ký số và tương thích hệ sinh thái PGP, age không thay thế được.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>public/private key (khóa công khai/riêng)</strong>: cặp khóa: ai có khóa công khai có thể mã hóa cho bạn, chỉ khóa riêng giải mã được.</li><li><strong>post-quantum (hậu lượng tử)</strong>: tính năng chống kiểu tấn công của máy tính lượng tử tương lai; README nói age hỗ trợ.</li><li><strong>plugin</strong>: phần mở rộng, ví dụ cho YubiKey.</li><li><strong>Sigsum</strong>: hệ chứng minh minh bạch cho bản phát hành, README nhắc để kiểm tra bản dựng sẵn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê gói cài theo hệ điều hành, bản nhị phân dựng sẵn và cách biên dịch bằng Go. Bài không chép lệnh. Miễn phí theo giấy phép BSD-3-Clause theo GitHub. Cần giữ khóa riêng an toàn.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn mô tả và các liên kết tới bản triển khai khác.</li><li>Tải bản nhị phân từ nguồn chính thức và kiểm tra theo hướng dẫn xác minh nếu cần.</li><li>Thử với tệp thử, giữ khóa riêng tách biệt và thử giải mã trước khi dùng thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn mã hóa tệp cấu hình chứa bí mật. Hãy đọc README của age (https://github.com/FiloSottile/age) và giải thích bằng tiếng Việt: khóa công khai và khóa riêng khác nhau thế nào, vì sao age ít tùy chọn, và những sai lầm hay gặp khi giữ khóa riêng. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mất khóa riêng nghĩa là mất dữ liệu đã mã hóa. age chỉ lo mã hóa tệp, không lo ký số hay quản lý khóa nhóm. README đề cập tính năng hậu lượng tử là tuyên bố của tác giả, bài chưa kiểm toán.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quyền riêng tư và bảo mật chỉ có tác dụng khi dùng đúng: sao lưu khóa và mã khôi phục ở nơi riêng, bật xác thực hai bước cho tài khoản quan trọng, chỉ tải phần mềm từ nguồn chính thức và thử khôi phục trước khi tin vào bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>FiloSottile</strong> có <strong>24.175 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-08-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/FiloSottile/age/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/FiloSottile/age\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 201. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24175; repo_id 187403699; README SHA256 2f715dd7ca55ffeadcca97392dd2f2e97078bc3e21b10a5999f86159f0c05450.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/FiloSottile/age",
+          "repo_id": "187403699",
+          "source_path": "",
+          "source_revision": "README-SHA256:2f715dd7ca55ffeadcca97392dd2f2e97078bc3e21b10a5999f86159f0c05450",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-3-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/FiloSottile/age",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê gói cài theo hệ điều hành, bản nhị phân dựng sẵn và cách biên dịch bằng Go. Bài không chép lệnh. Miễn phí theo giấy phép BSD-3-Clause theo GitHub. Cần giữ khóa riêng an toàn.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/FiloSottile/age/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/FiloSottile/age/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "FiloSottile/age",
+        "stars": 24175,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/FiloSottile/age/main/README.md",
+        "readmeSha256": "2f715dd7ca55ffeadcca97392dd2f2e97078bc3e21b10a5999f86159f0c05450",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 202,
+      "batch": 34,
+      "slug": "ublock-origin",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "uBlock Origin: chặn quảng cáo và theo dõi trong trình duyệt, và tình trạng trên Chrome",
+        "excerpt": "Hiểu uBlock Origin là bộ chặn nội dung nhẹ cho Chromium và Firefox, cùng các thay đổi quan trọng: README ghi bản này đã bị gỡ khỏi Chrome Web Store ngày 31/8/2026.",
+        "content": "<p>uBlock Origin (uBO) là bộ chặn nội dung phổ rộng, tiết kiệm CPU và bộ nhớ, cho Chromium và Firefox. README nói nó chặn quảng cáo, trình theo dõi, đào tiền ảo, cửa sổ bật lên, chống chặn quảng cáo gây phiền và các trang chứa mã độc theo mặc định bằng các danh sách lọc như EasyList; bạn có thể bỏ chọn bớt danh sách nếu thấy chặn quá tay. README ghi uBO hoạt động tốt nhất trên Firefox. Bảng cài đặt cho thấy trạng thái trên Chrome Web Store là 'Removed' (đã gỡ ngày 2026-08-31 theo mốc Manifest V2 của Google), còn Edge, Opera, Firefox, Thunderbird và GitHub Releases có nguồn riêng; README nhắc tới uBlock Origin Lite.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trang web giống con phố đầy người phát tờ rơi và theo dõi bạn. uBO giống tấm áo chống nhiễu: trình duyệt vẫn đi trên phố nhưng không nhận tờ rơi và các thiết bị theo dõi bị cắt. Tác giả tuyên bố mục tiêu chính là vô hiệu hóa các phương tiện xâm phạm quyền riêng tư, không chỉ ẩn quảng cáo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bạn muốn ít trình theo dõi hơn khi nghiên cứu trên web; xem trạng thái hỗ trợ của uBO trên trình duyệt bạn đang dùng trước khi cài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng web quan tâm quyền riêng tư; người muốn trang web nhẹ hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> Cài như một tiện ích trình duyệt; mặc định đã bật nhiều danh sách lọc. Điều khó là chọn đúng nguồn cài và hiểu trạng thái từng trình duyệt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng Chrome, README nói bản này đã bị gỡ khỏi Chrome Web Store nên hãy đọc kỹ các lựa chọn khác (như bản Lite hoặc trình duyệt khác). Bộ chặn không thay thế các biện pháp bảo mật khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>content blocker (bộ chặn nội dung)</strong>: tiện ích ngăn trình duyệt tải một số thành phần của trang, như quảng cáo và trình theo dõi.</li><li><strong>filter list (danh sách lọc)</strong>: tập quy tắc nói chặn cái gì; EasyList là một danh sách phổ biến README nhắc.</li><li><strong>Manifest V2/V3</strong>: hai thế hệ quy định kỹ thuật cho tiện ích trình duyệt; README nhắc mốc Google ngừng hỗ trợ V2.</li><li><strong>extension store (kho tiện ích)</strong>: nơi tải tiện ích; nên chỉ tải từ nguồn mà README chính thức nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê nơi cài theo trình duyệt (Firefox Add-ons, Edge Add-ons, Opera Add-ons, Thunderbird, GitHub Releases) và ghi Chrome Web Store đã gỡ ngày 2026-08-31. Ở mục Edge, README nêu tiện ích do một cá nhân đăng tải đến phiên bản 1.62 rồi chuyển quyền sở hữu ở phiên bản 1.64. Miễn phí theo giấy phép GPLv3. Bài chưa thử.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng cài đặt và trạng thái cho trình duyệt của bạn.</li><li>Chỉ cài từ liên kết do README chính thức nêu, kiểm tra tên nhà phát hành.</li><li>Giữ danh sách lọc mặc định và chỉ tắt cho từng trang khi bị hỏng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Chrome và muốn chặn quảng cáo, theo dõi. Hãy đọc README của uBlock Origin (https://github.com/gorhill/uBlock) và giải thích bằng tiếng Việt: tình trạng trên Chrome hiện thế nào, Manifest V2 và V3 nghĩa là gì, và nên chọn trình duyệt hay phiên bản nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tiện ích chặn có thể làm một số trang hỏng; README cho biết bạn có thể bỏ bớt danh sách lọc. Tình trạng hỗ trợ khác nhau giữa trình duyệt và thay đổi theo thời gian. Việc đổi người đăng tải ở kho Edge cho thấy cần luôn kiểm tra nhà phát hành tiện ích.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tiện ích trình duyệt có quyền đọc trang bạn xem; chỉ cài từ nguồn chính thức, kiểm tra nhà phát hành và cập nhật, và gỡ những tiện ích bạn không dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gorhill</strong> có <strong>69.041 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README ghi GPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gorhill/uBlock/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gorhill/uBlock\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 202. Chưa cài/chạy thử; không tạo validation. Snapshot sao 69041; repo_id 33263118; README SHA256 f7b224072763e85ef9cbebcd6b563e758303625c36ac8b2840cf0e60b4f70560.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gorhill/uBlock",
+          "repo_id": "33263118",
+          "source_path": "",
+          "source_revision": "README-SHA256:f7b224072763e85ef9cbebcd6b563e758303625c36ac8b2840cf0e60b4f70560",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gorhill/uBlock",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê nơi cài theo trình duyệt (Firefox Add-ons, Edge Add-ons, Opera Add-ons, Thunderbird, GitHub Releases) và ghi Chrome Web Store đã gỡ ngày 2026-08-31. Ở mục Edge, README nêu tiện ích do một cá nhân đăng tải đến phiên bản 1.62 rồi chuyển quyền sở hữu ở phiên bản 1.64. Miễn phí theo giấy phép GPLv3. Bài chưa thử.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gorhill/uBlock/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gorhill/uBlock/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gorhill/uBlock",
+        "stars": 69041,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gorhill/uBlock/master/README.md",
+        "readmeSha256": "f7b224072763e85ef9cbebcd6b563e758303625c36ac8b2840cf0e60b4f70560",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 203,
+      "batch": 34,
+      "slug": "aegis-authenticator",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu",
+        "excerpt": "Hiểu ứng dụng 2FA mã nguồn mở cho Android thay cho Google Authenticator, với kho mã được mã hóa và sao lưu tự động. Cần giữ kỹ mật khẩu và bản sao lưu.",
+        "content": "<p>Aegis Authenticator là ứng dụng xác thực hai bước (2FA) mã nguồn mở, miễn phí cho Android. README nêu mục tiêu: cung cấp trình xác thực an toàn với tính năng mà nhiều ứng dụng khác thiếu như mã hóa kho và sao lưu. Hỗ trợ HOTP và TOTP nên tương thích với hàng nghìn dịch vụ và tương thích Google Authenticator. Kho mã được mã hóa (AES-256-GCM), mở bằng mật khẩu (scrypt) hoặc sinh trắc học, có chặn chụp màn hình và chạm để hiện mã, xuất (dạng thường hoặc mã hóa) và tự động sao lưu kho tới nơi bạn chọn.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mã xác thực hai bước giống chiếc chìa thứ hai để vào tài khoản: ngoài mật khẩu còn cần mã 6 số đổi mỗi 30 giây. Aegis là chiếc hộp đựng các chiếc chìa đó trên điện thoại, có khóa riêng và biết tự sao lưu để khi mất máy bạn không mất quyền vào tài khoản.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bạn bật 2FA cho tài khoản GitHub hoặc email quan trọng và cần nơi giữ mã an toàn có sao lưu mã hóa. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng Android muốn kiểm soát và sao lưu mã 2FA; người muốn thoát khỏi ứng dụng xác thực không có sao lưu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Dùng như ứng dụng điện thoại bình thường; điều cần kỷ luật là sao lưu và giữ mật khẩu kho. Chỉ có cho Android theo README. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng iPhone, README nói Aegis dành cho Android. Nếu bạn muốn quản lý mật khẩu và mã trong một nơi, trình quản lý mật khẩu có hỗ trợ 2FA có thể tiện hơn nhưng gộp rủi ro.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>2FA / xác thực hai bước</strong>: lớp bảo vệ thứ hai ngoài mật khẩu, thường là mã 6 số.</li><li><strong>TOTP / HOTP</strong>: hai chuẩn sinh mã dùng một lần theo thời gian hoặc theo bộ đếm; README nói Aegis hỗ trợ cả hai.</li><li><strong>vault (kho)</strong>: nơi lưu các khóa 2FA, được mã hóa bằng AES-256-GCM.</li><li><strong>backup (sao lưu)</strong>: bản dự phòng; README nói Aegis tự động sao lưu tới nơi bạn chọn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới FAQ và tài liệu thiết kế vault; cách cài và nơi tải ứng dụng chưa được bài đọc kỹ nên chưa nêu. Ứng dụng miễn phí theo giấy phép GPL v3. Chỉ dành cho Android.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và tài liệu thiết kế vault nếu bạn muốn hiểu cách bảo vệ.</li><li>Cài từ nguồn mà README chính thức hướng dẫn.</li><li>Thiết lập sao lưu mã hóa và thử khôi phục trên một thiết bị khác trước khi dựa vào nó.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Android và muốn một ứng dụng 2FA có sao lưu. Hãy đọc README của Aegis (https://github.com/beemdevelopment/Aegis) và giải thích bằng tiếng Việt: 2FA, TOTP là gì, vì sao sao lưu quan trọng, và điều gì xảy ra nếu mất điện thoại hoặc quên mật khẩu kho. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Quên mật khẩu kho hoặc mất cả máy lẫn bản sao lưu có thể khóa bạn khỏi tài khoản. README có tùy chọn xuất dạng thường (không mã hóa), cần cẩn thận. Chỉ có cho Android; bài chưa so sánh với ứng dụng khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quyền riêng tư và bảo mật chỉ có tác dụng khi dùng đúng: sao lưu khóa và mã khôi phục ở nơi riêng, bật xác thực hai bước cho tài khoản quan trọng, chỉ tải phần mềm từ nguồn chính thức và thử khôi phục trước khi tin vào bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>beemdevelopment</strong> có <strong>13.450 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-09-06. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README ghi GPL v3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/beemdevelopment/Aegis/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/beemdevelopment/Aegis\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 203. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13450; repo_id 65757761; README SHA256 ea2920b80c0ee4d01fe11ca973dcdd1c880588098953aa2a3b9118bb6643308e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/beemdevelopment/Aegis",
+          "repo_id": "65757761",
+          "source_path": "",
+          "source_revision": "README-SHA256:ea2920b80c0ee4d01fe11ca973dcdd1c880588098953aa2a3b9118bb6643308e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/beemdevelopment/Aegis",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới FAQ và tài liệu thiết kế vault; cách cài và nơi tải ứng dụng chưa được bài đọc kỹ nên chưa nêu. Ứng dụng miễn phí theo giấy phép GPL v3. Chỉ dành cho Android.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/beemdevelopment/Aegis/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/beemdevelopment/Aegis/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "beemdevelopment/Aegis",
+        "stars": 13450,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/beemdevelopment/Aegis/master/README.md",
+        "readmeSha256": "ea2920b80c0ee4d01fe11ca973dcdd1c880588098953aa2a3b9118bb6643308e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 204,
+      "batch": 34,
+      "slug": "mullvad-vpn",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Mullvad VPN (ứng dụng): mã nguồn ứng dụng của một dịch vụ VPN, cần phân biệt ứng dụng và dịch vụ",
+        "excerpt": "Hiểu repo chứa toàn bộ mã nguồn ứng dụng VPN của Mullvad (máy tính và điện thoại), và lưu ý VPN là dịch vụ phải tin cậy, không chỉ là phần mềm.",
+        "content": "<p>Repo này chứa mã nguồn ứng dụng VPN của dịch vụ Mullvad. README nói gồm toàn bộ mã nguồn cho phiên bản máy tính (dịch vụ nền mullvad-daemon, giao diện đồ họa, giao diện dòng lệnh) và di động: Android dùng chung dịch vụ nền cho đường hầm và bảo mật với giao diện riêng, iOS là bản triển khai độc lập. Có bản dựng và ký sẵn cho macOS, Windows, Linux và Android trên trang web và GitHub Releases. README nhắc dịch vụ cũng truy cập được qua dịch vụ onion của Tor. Giấy phép GPL v3 trở lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>VPN giống đi qua một đường hầm riêng thay vì đường phố: nhà mạng chỉ thấy bạn vào hầm, không thấy bạn đi đâu. Nhưng cuối hầm là công ty VPN, nên bạn chuyển niềm tin từ nhà mạng sang công ty đó. Mã nguồn mở giúp kiểm tra ứng dụng, nhưng không tự chứng minh được dịch vụ phía sau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bạn thường dùng Wi-Fi công cộng và muốn hiểu VPN bảo vệ điều gì và không bảo vệ điều gì trước khi chọn dịch vụ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người quan tâm quyền riêng tư trên mạng; người muốn đọc mã nguồn một ứng dụng VPN.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng ứng dụng đã dựng sẵn khá dễ; hiểu VPN bảo vệ gì cần học thêm. README là tài liệu cho nhà phát triển, không phải hướng dẫn người dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> VPN không làm bạn ẩn danh hoàn toàn và không thay các biện pháp khác (cập nhật phần mềm, 2FA). Cần tài khoản trả phí của dịch vụ Mullvad; bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>VPN</strong>: mạng riêng ảo: đường hầm mã hóa giữa thiết bị bạn và một máy chủ của dịch vụ VPN.</li><li><strong>daemon</strong>: chương trình chạy nền, ở đây lo kết nối và bảo mật đường hầm.</li><li><strong>signed release (bản ký)</strong>: bản phát hành có chữ ký số để kiểm tra không bị sửa.</li><li><strong>Tor onion service</strong>: địa chỉ truy cập qua mạng Tor, README nói trang của họ có.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang tải mullvad.net và GitHub Releases. Cần tài khoản dịch vụ Mullvad (README không nêu giá). Phần mã ứng dụng miễn phí theo GPL v3 trở lên. Bài chưa thử và không đánh giá chất lượng dịch vụ.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu để phân biệt ứng dụng và dịch vụ.</li><li>Tải từ trang chính thức, kiểm tra chữ ký nếu hướng dẫn có.</li><li>Tìm hiểu VPN bảo vệ gì và không bảo vệ gì trước khi tin vào nó.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay dùng Wi-Fi công cộng và đang cân nhắc VPN. Hãy đọc README của Mullvad VPN app (https://github.com/mullvad/mullvadvpn-app) và giải thích bằng tiếng Việt: VPN làm gì, mã nguồn mở của ứng dụng chứng minh được gì và không chứng minh được gì, và những hiểu lầm hay gặp về 'ẩn danh'. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mã nguồn mở của ứng dụng không chứng minh việc dịch vụ phía sau có ghi nhật ký hay không; bạn phải tin nhà cung cấp. Bài không đánh giá quyền riêng tư của dịch vụ, vì README này tập trung mã nguồn ứng dụng. VPN không bảo vệ khỏi mọi theo dõi.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quyền riêng tư và bảo mật chỉ có tác dụng khi dùng đúng: sao lưu khóa và mã khôi phục ở nơi riêng, bật xác thực hai bước cho tài khoản quan trọng, chỉ tải phần mềm từ nguồn chính thức và thử khôi phục trước khi tin vào bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mullvad</strong> có <strong>7.743 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README ghi GPL v3 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mullvad/mullvadvpn-app/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mullvad/mullvadvpn-app\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm quyền riêng tư cá nhân, key 204. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7743; repo_id 114742422; README SHA256 f82701ffff2373462859d2d1855e60a364ea1cb100c9cd166b1f9590781ad423.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mullvad/mullvadvpn-app",
+          "repo_id": "114742422",
+          "source_path": "",
+          "source_revision": "README-SHA256:f82701ffff2373462859d2d1855e60a364ea1cb100c9cd166b1f9590781ad423",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mullvad/mullvadvpn-app",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang tải mullvad.net và GitHub Releases. Cần tài khoản dịch vụ Mullvad (README không nêu giá). Phần mã ứng dụng miễn phí theo GPL v3 trở lên. Bài chưa thử và không đánh giá chất lượng dịch vụ.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mullvad/mullvadvpn-app/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mullvad/mullvadvpn-app/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mullvad/mullvadvpn-app",
+        "stars": 7743,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mullvad/mullvadvpn-app/main/README.md",
+        "readmeSha256": "f82701ffff2373462859d2d1855e60a364ea1cb100c9cd166b1f9590781ad423",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
