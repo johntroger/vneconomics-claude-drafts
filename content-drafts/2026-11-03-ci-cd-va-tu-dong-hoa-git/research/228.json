@@ -1,0 +1,35 @@
+{
+  "key": 228,
+  "repo": "nektos/act",
+  "repoId": "163883279",
+  "url": "https://github.com/nektos/act",
+  "stars": 72522,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:46:20Z",
+  "createdAt": "2019-01-02T19:53:43Z",
+  "defaultBranch": "main",
+  "description": "Run your GitHub Actions locally 🚀",
+  "homepage": "https://nektosact.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nektos/act/master/README.md",
+    "sha256": "8fd461d3c9332c056c0466076282277e2cf9d5e56ec912af44b6b8d5f0d107fc",
+    "bytes": 3260,
+    "sectionsRead": [
+      "Overview",
+      "How Does It Work?",
+      "Act User Guide"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc user guide.",
+    "Chưa kiểm tra độ chênh lệch với môi trường GitHub.",
+    "Chưa thử trên Windows."
+  ],
+  "runtimeValidated": false
+}

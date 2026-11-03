@@ -635,8 +635,10 @@
   "related": [
    "cypress",
    "dotenvx",
+   "git-cliff",
    "osv-scanner",
-   "tailscale"
+   "tailscale",
+   "zizmor"
   ]
  },
  {
@@ -2264,6 +2266,112 @@
   "related": [
    "bevy",
    "threejs"
+  ]
+ },
+ {
+  "key": 228,
+  "slug": "act",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "act: chạy thử quy trình GitHub Actions ngay trên máy để khỏi commit lên rồi mới biết lỗi",
+  "repo": "nektos/act",
+  "stars": 72522,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "zizmor"
+  ]
+ },
+ {
+  "key": 229,
+  "slug": "git-cliff",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "git-cliff: tự tạo nhật ký thay đổi (changelog) từ lịch sử Git",
+  "repo": "orhun/git-cliff",
+  "stars": 12354,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "gitleaks",
+   "semantic-release"
+  ]
+ },
+ {
+  "key": 230,
+  "slug": "semantic-release",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "semantic-release: tự động hóa cả quy trình phát hành, từ số phiên bản đến đăng gói",
+  "repo": "semantic-release/semantic-release",
+  "stars": 24151,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-31",
+  "related": [
+   "git-cliff",
+   "ntfy"
+  ]
+ },
+ {
+  "key": 231,
+  "slug": "ntfy",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "ntfy: gửi thông báo tới điện thoại hoặc máy tính từ script bằng một lệnh HTTP",
+  "repo": "binwiederhier/ntfy",
+  "stars": 35254,
+  "license": "Apache-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "lychee",
+   "semantic-release"
+  ]
+ },
+ {
+  "key": 232,
+  "slug": "zizmor",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "zizmor: soát lỗi bảo mật trong quy trình GitHub Actions trước khi bị khai thác",
+  "repo": "zizmorcore/zizmor",
+  "stars": 6861,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "act",
+   "gitleaks"
+  ]
+ },
+ {
+  "key": 233,
+  "slug": "lychee",
+  "group": "2026-11-03-ci-cd-va-tu-dong-hoa-git",
+  "title": "lychee: quét liên kết hỏng trong website và tài liệu Markdown rất nhanh",
+  "repo": "lycheeverse/lychee",
+  "stars": 4085,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "ntfy"
   ]
  }
 ]
