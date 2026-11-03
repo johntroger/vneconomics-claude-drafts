@@ -1,0 +1,36 @@
+{
+  "key": 373,
+  "repo": "supabase/postgres",
+  "repoId": "254578428",
+  "url": "https://github.com/supabase/postgres",
+  "stars": 1801,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "PostgreSQL",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:12:40Z",
+  "createdAt": "2020-04-10T08:02:57Z",
+  "defaultBranch": "develop",
+  "description": "Unmodified Postgres with some useful extensions",
+  "homepage": "https://supabase.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/supabase/postgres/develop/README.md",
+    "sha256": "3267cfeff71a5b78d5b97f5668b60c3a303d56ae3b18d4c03c599d2599ba579f",
+    "bytes": 11381,
+    "sectionsRead": [
+      "What is Supabase Postgres?",
+      "Philosophy",
+      "Directory Structure",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn dựng chi tiết.",
+    "Chưa thử.",
+    "Giấy phép từng tiện ích bên trong chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

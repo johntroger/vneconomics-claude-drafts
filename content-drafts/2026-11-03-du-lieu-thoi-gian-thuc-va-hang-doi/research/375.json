@@ -1,0 +1,35 @@
+{
+  "key": 375,
+  "repo": "apache/kafka",
+  "repoId": "2211243",
+  "url": "https://github.com/apache/kafka",
+  "stars": 34118,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:59:40Z",
+  "createdAt": "2011-08-15T18:06:16Z",
+  "defaultBranch": "trunk",
+  "description": "Apache Kafka - A distributed event streaming platform",
+  "homepage": "https://kafka.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/kafka/trunk/README.md",
+    "sha256": "5550c38ce0519656f04aab69250ae7cdff499040bcb67c95bfb34f1b0dfc7e9a",
+    "bytes": 14713,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Build a JAR and run it",
+      "Run unit/integration tests"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc quickstart.",
+    "Chưa thử.",
+    "Giấy phép chỉ theo GitHub."
+  ],
+  "runtimeValidated": false
+}

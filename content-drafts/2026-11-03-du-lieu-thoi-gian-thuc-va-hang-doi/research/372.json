@@ -1,0 +1,36 @@
+{
+  "key": 372,
+  "repo": "citusdata/pg_cron",
+  "repoId": "67372977",
+  "url": "https://github.com/citusdata/pg_cron",
+  "stars": 3914,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "PostgreSQL",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-09-08T14:39:13Z",
+  "createdAt": "2016-09-04T23:12:31Z",
+  "defaultBranch": "main",
+  "description": "Run periodic jobs in PostgreSQL",
+  "homepage": null,
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/citusdata/pg_cron/main/README.md",
+    "sha256": "f5cd7e285ba950ec24f1aa0a3aefa9a9312c5d9f0c6243397c56eddd572561ec",
+    "bytes": 21006,
+    "sectionsRead": [
+      "What is pg_cron?",
+      "How pg_cron works",
+      "Installing pg_cron",
+      "Managed services"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần Setting up và Monitoring chi tiết.",
+    "Chưa thử.",
+    "Giấy phép chỉ theo GitHub."
+  ],
+  "runtimeValidated": false
+}

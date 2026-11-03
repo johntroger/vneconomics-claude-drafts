@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-thoi-gian-thuc",
+  "batch": 65,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 372,
+      "batch": 65,
+      "slug": "pg-cron",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "pg_cron: lên lịch công việc định kỳ ngay trong PostgreSQL bằng cú pháp cron, chạy với quyền của người tạo",
+        "excerpt": "Hiểu pg_cron là tiện ích mở rộng của PostgreSQL (từ bản 10) chạy công việc theo lịch cron trong cơ sở dữ liệu. README nói công việc chạy với quyền của người gọi và có tùy chọn cho phép lịch chạy bằng siêu người dùng.",
+        "content": "<p>README tả pg_cron là bộ lập lịch công việc đơn giản theo cú pháp cron cho PostgreSQL 10 trở lên, chạy bên trong cơ sở dữ liệu dưới dạng tiện ích mở rộng. Tiện ích tạo một tiến trình nền theo dõi công việc trong bảng cron.job. README có các phần: cách pg_cron hoạt động, cú pháp cron, tạo và quản lý công việc (tạo, tạo ở cơ sở dữ liệu khác, xóa, sửa), cài đặt (qua gói PGDG hay apt.postgresql.org cho PostgreSQL 18, hoặc dựng từ mã nguồn; có hướng dẫn riêng cho Windows), thiết lập, theo dõi công việc, ví dụ sử dụng và bảng các dịch vụ PostgreSQL được quản lý có hỗ trợ pg_cron. README nói để bảo mật, công việc chạy trong cơ sở dữ liệu nơi hàm lập lịch được gọi với cùng quyền của người dùng hiện tại; chính sách RLS đảm bảo mỗi người chỉ thấy và sửa công việc của mình; cấu hình cron.enable_superuser_jobs (mặc định bật) cho phép lập lịch chạy bằng siêu người dùng. Giấy phép theo GitHub là giấy phép PostgreSQL.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Công việc lặp lại như dọn bảng cũ mỗi đêm thường phải nhờ cron của hệ điều hành. pg_cron giống đồng hồ báo thức gắn thẳng vào cơ sở dữ liệu: bạn đặt giờ và câu lệnh SQL, cơ sở dữ liệu tự chạy đúng giờ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xóa bản ghi quá hạn mỗi đêm bằng một câu SQL được lên lịch. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần PostgreSQL, quyền cài tiện ích và hiểu cú pháp cron; cài và cấu hình phụ thuộc cách bạn dùng PostgreSQL. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng dịch vụ PostgreSQL được quản lý, README có bảng hỗ trợ; nên xem dịch vụ của bạn có bật pg_cron không. Công việc lập lịch bằng siêu người dùng có quyền rất cao, nên cân nhắc tắt tùy chọn đó theo cấu hình README mô tả.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>cron</strong>: cách ghi lịch lặp lại theo phút, giờ, ngày; README có phần cú pháp.</li><li><strong>extension (tiện ích mở rộng)</strong>: phần thêm chức năng cho PostgreSQL; README nói pg_cron là một tiện ích.</li><li><strong>background worker (tiến trình nền)</strong>: tiến trình chạy ngầm trong PostgreSQL; README nói pg_cron tạo một cái.</li><li><strong>RLS</strong>: bảo mật mức dòng; README nói chính sách RLS đảm bảo người dùng chỉ thấy công việc của mình.</li><li><strong>superuser (siêu người dùng)</strong>: tài khoản quyền cao nhất của PostgreSQL; README có cấu hình cho phép hoặc không lập lịch bằng siêu người dùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng gói PGDG hoặc apt.postgresql.org (ví dụ cho PostgreSQL 18), hoặc dựng từ mã nguồn, có hướng dẫn Windows (bài không chép lệnh); cần thiết lập thêm trong cấu hình PostgreSQL. Miễn phí theo giấy phép PostgreSQL (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần How pg_cron works và Cron syntax.</li><li>Cài trên PostgreSQL thử.</li><li>Tạo một công việc thử không đụng dữ liệu thật rồi xóa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng PostgreSQL và cần lập lịch công việc. Hãy đọc README của pg_cron (https://github.com/citusdata/pg_cron) và giải thích bằng tiếng Việt: pg_cron hoạt động thế nào, công việc chạy với quyền nào, và rủi ro khi cho phép siêu người dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (hơn 20 KB); bài chỉ lấy các phần chính. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>citusdata</strong> có <strong>3.914 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-09-08. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện giấy phép PostgreSQL; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/citusdata/pg_cron/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/citusdata/pg_cron\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 372. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3914; repo_id 67372977; README SHA256 f5cd7e285ba950ec24f1aa0a3aefa9a9312c5d9f0c6243397c56eddd572561ec.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/citusdata/pg_cron",
+          "repo_id": "67372977",
+          "source_path": "",
+          "source_revision": "README-SHA256:f5cd7e285ba950ec24f1aa0a3aefa9a9312c5d9f0c6243397c56eddd572561ec",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "PostgreSQL",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/citusdata/pg_cron",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng gói PGDG hoặc apt.postgresql.org (ví dụ cho PostgreSQL 18), hoặc dựng từ mã nguồn, có hướng dẫn Windows (bài không chép lệnh); cần thiết lập thêm trong cấu hình PostgreSQL. Miễn phí theo giấy phép PostgreSQL (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/citusdata/pg_cron/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/citusdata/pg_cron/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "citusdata/pg_cron",
+        "stars": 3914,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/citusdata/pg_cron/main/README.md",
+        "readmeSha256": "f5cd7e285ba950ec24f1aa0a3aefa9a9312c5d9f0c6243397c56eddd572561ec",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 373,
+      "batch": 65,
+      "slug": "supabase-postgres",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Supabase Postgres: bản phân phối PostgreSQL không sửa đổi kèm bộ tiện ích mở rộng chọn lọc cài sẵn",
+        "excerpt": "Hiểu Supabase Postgres là bản PostgreSQL 'đủ đồ nghề': PostgreSQL không sửa đổi cộng nhiều tiện ích chọn lọc cài sẵn (tìm toàn văn, địa lý, chuỗi thời gian, GraphQL, mã hóa, hàng đợi...). README liệt kê phiên bản hỗ trợ và giấy phép PostgreSQL.",
+        "content": "<p>README (dạng hướng dẫn bắt đầu) tả Supabase Postgres là bản phân phối PostgreSQL 'trọn gói': PostgreSQL không sửa đổi với một bộ tiện ích mở rộng chọn lọc được cài sẵn, với các khả năng như tìm kiếm toàn văn và lập chỉ mục, xử lý dữ liệu địa lý, quản lý chuỗi thời gian, kiểm tra JSON và GraphQL, mật mã và bảo mật, hàng đợi thông điệp. Mục tiêu: dựng PostgreSQL sẵn sàng cho sản xuất nhanh mà không phải tự tìm, biên dịch, cấu hình hàng chục tiện ích. Nguyên tắc nêu: không fork hay sửa PostgreSQL, tiện ích được chọn lọc, hỗ trợ nhiều phiên bản (PostgreSQL 15, 17 và OrioleDB-17 tại thời điểm viết), mặc định hợp lý cho sao chép, bảo mật và hiệu năng, mã nguồn mở và có thể tự host. README có cấu trúc thư mục, cách dựng và chạy cục bộ và làm việc với hệ tiện ích. Giấy phép PostgreSQL License; README thừa nhận việc cấp phép phức tạp vì gói nhiều tiện ích khác nhau và mời báo nếu có vi phạm.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>PostgreSQL cơ bản như căn nhà thô. Supabase Postgres giống căn đã trang bị sẵn nhiều đồ: tìm kiếm, địa lý, hàng đợi... Bạn dùng được ngay mà không phải tự cài từng món.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một PostgreSQL có sẵn tiện ích tìm toàn văn và mã hóa để thử ứng dụng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu PostgreSQL, tiện ích mở rộng và cách dựng (README hướng dẫn dựng cục bộ); bản này thiên về nhà phát triển hạ tầng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn dùng Supabase như dịch vụ hoàn chỉnh, đây chỉ là một phần của nó; bài Supabase đã có trong kho. Nếu cần chỉ một tiện ích, có thể cài trực tiếp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>extension (tiện ích mở rộng)</strong>: phần thêm chức năng cho PostgreSQL; README nói bản này cài sẵn nhiều tiện ích.</li><li><strong>unmodified (không sửa đổi)</strong>: không fork hay thay đổi mã PostgreSQL; README nêu là nguyên tắc.</li><li><strong>OrioleDB</strong>: một công cụ lưu trữ cho PostgreSQL; README nói hỗ trợ OrioleDB-17.</li><li><strong>full-text search</strong>: tìm kiếm trong nội dung văn bản; README nêu.</li><li><strong>message queue (hàng đợi thông điệp)</strong>: cơ chế xếp hàng và xử lý thông điệp; README nêu là một khả năng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn dựng và chạy PostgreSQL cùng tiện ích cục bộ; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép PostgreSQL.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is Supabase Postgres? và Philosophy.</li><li>Xem cấu trúc thư mục.</li><li>Dựng cục bộ theo hướng dẫn để thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu Supabase Postgres khác PostgreSQL thường ở đâu. Hãy đọc README của supabase/postgres (https://github.com/supabase/postgres) và giải thích bằng tiếng Việt: bản phân phối không sửa đổi nghĩa là gì, những tiện ích nào cài sẵn, và lưu ý về giấy phép. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nêu phiên bản PostgreSQL hỗ trợ tại thời điểm viết (15, 17, OrioleDB-17), có thể đổi. README thừa nhận cấp phép phức tạp vì gói nhiều tiện ích. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>supabase</strong> có <strong>1.801 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện giấy phép PostgreSQL; README ghi PostgreSQL License và nêu lưu ý về việc gói nhiều tiện ích. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/supabase/postgres/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/supabase/postgres\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 373. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1801; repo_id 254578428; README SHA256 3267cfeff71a5b78d5b97f5668b60c3a303d56ae3b18d4c03c599d2599ba579f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/supabase/postgres",
+          "repo_id": "254578428",
+          "source_path": "",
+          "source_revision": "README-SHA256:3267cfeff71a5b78d5b97f5668b60c3a303d56ae3b18d4c03c599d2599ba579f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "PostgreSQL",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supabase/postgres",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn dựng và chạy PostgreSQL cùng tiện ích cục bộ; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép PostgreSQL.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supabase/postgres/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/supabase/postgres/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "supabase/postgres",
+        "stars": 1801,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/supabase/postgres/develop/README.md",
+        "readmeSha256": "3267cfeff71a5b78d5b97f5668b60c3a303d56ae3b18d4c03c599d2599ba579f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 374,
+      "batch": 65,
+      "slug": "nats",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NATS: hệ thống truyền thông đơn giản, an toàn và hiệu năng cao cho dịch vụ và thiết bị, thuộc CNCF",
+        "excerpt": "Hiểu NATS server là máy chủ của NATS, hệ truyền thông đơn giản, an toàn, hiệu năng cao thuộc CNCF. README ngắn: dẫn tới tài liệu, báo cáo kiểm toán bảo mật của Trail of Bits và giấy phép Apache 2.0.",
+        "content": "<p>README tả NATS là hệ thống truyền thông đơn giản, an toàn và hiệu năng cao cho các hệ thống số, dịch vụ và thiết bị; NATS là một phần của CNCF. README rất ngắn: dẫn tới trang web, tài liệu, FAQ, video tổng quan và video về nguồn gốc và triết lý thiết kế; liên hệ (Twitter, Google Groups, Slack), hướng dẫn đóng góp, lộ trình sản phẩm, danh sách người dùng. Mục Security nói đã có kiểm toán bảo mật bên thứ ba của Trail of Bits do Open Source Technology Improvement Fund đặt hàng (báo cáo tháng 4 năm 2025) và địa chỉ email báo lỗ hổng. README ghi, trừ khi có ghi chú khác, các tệp nguồn NATS theo giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Các dịch vụ trong hệ thống cần nhắn nhau: 'đơn hàng mới', 'cập nhật xong'. NATS giống bưu điện nội bộ nhanh: dịch vụ gửi thư vào hòm, các dịch vụ khác đăng ký nhận. README chỉ giới thiệu; cách dùng chi tiết nằm ở tài liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhiều dịch vụ nhỏ trao đổi sự kiện qua một hệ thống nhắn tin chung. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu kiến trúc nhiều dịch vụ và hệ thống thông điệp; README không hướng dẫn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng chỉ có một dịch vụ, chưa cần. README không nêu cách cài hay cấu hình nên bài không khẳng định.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>messaging (truyền thông điệp)</strong>: cách các chương trình gửi nhận thông điệp cho nhau; README mô tả NATS là hệ truyền thông.</li><li><strong>CNCF</strong>: quỹ chủ quản; README nói NATS là một phần của CNCF.</li><li><strong>security audit (kiểm toán bảo mật)</strong>: đánh giá bảo mật do bên thứ ba thực hiện; README nêu báo cáo của Trail of Bits.</li><li><strong>nats-server</strong>: máy chủ NATS; kho này chứa mã máy chủ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Miễn phí theo giấy phép Apache 2.0 (README ghi cho các tệp nguồn, trừ ghi chú khác).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem video tổng quan trong README.</li><li>Đọc tài liệu docs.nats.io.</li><li>Thử máy chủ trong môi trường thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có nhiều dịch vụ cần nhắn nhau. Hãy đọc README của NATS server (https://github.com/nats-io/nats-server) và giải thích bằng tiếng Việt: NATS là gì, phần Security nói gì, và khi nào chưa cần hệ thống thông điệp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn, không nêu tính năng kỹ thuật hay cách cài; 'đơn giản, an toàn, hiệu năng cao' là cách nói của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nats-io</strong> có <strong>20.990 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0 cho các tệp nguồn (trừ ghi chú khác). Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nats-io/nats-server/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nats-io/nats-server\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 374. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20990; repo_id 6443435; README SHA256 af1a7d8d9cc9314ac8ccaa5b851b148de1ca0a781e48a63b7204921abce0b3e6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nats-io/nats-server",
+          "repo_id": "6443435",
+          "source_path": "",
+          "source_revision": "README-SHA256:af1a7d8d9cc9314ac8ccaa5b851b148de1ca0a781e48a63b7204921abce0b3e6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nats-io/nats-server",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không nêu cách cài; bài chưa đọc tài liệu nên không nêu lệnh. Miễn phí theo giấy phép Apache 2.0 (README ghi cho các tệp nguồn, trừ ghi chú khác).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nats-io/nats-server/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nats-io/nats-server/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nats-io/nats-server",
+        "stars": 20990,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nats-io/nats-server/main/README.md",
+        "readmeSha256": "af1a7d8d9cc9314ac8ccaa5b851b148de1ca0a781e48a63b7204921abce0b3e6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 375,
+      "batch": 65,
+      "slug": "kafka",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Kafka: nền tảng truyền luồng sự kiện phân tán mã nguồn mở, README của kho dành cho người dựng từ mã nguồn",
+        "excerpt": "Hiểu Apache Kafka là nền tảng truyền luồng sự kiện phân tán cho đường ống dữ liệu, phân tích luồng và tích hợp dữ liệu. README kho này chủ yếu hướng dẫn dựng và kiểm thử mã nguồn bằng Gradle; người dùng nên xem quickstart ở trang chính.",
+        "content": "<p>README tả Apache Kafka là nền tảng truyền luồng sự kiện phân tán mã nguồn mở được hàng nghìn công ty dùng cho đường ống dữ liệu hiệu năng cao, phân tích luồng, tích hợp dữ liệu (theo README). README chủ yếu hướng dẫn người phát triển: cần cài Java; Kafka được dựng và kiểm thử với Java 17 và 25; chỉ hỗ trợ Scala 2.13; các lệnh Gradle để dựng JAR, JAR mã nguồn, tài liệu javadoc và scaladoc, chạy kiểm thử đơn vị và tích hợp (bài không chép lệnh). README nói muốn chạy thì làm theo hướng dẫn quickstart tại kafka.apache.org/quickstart. Giấy phép Apache-2.0 theo GitHub; README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi dữ liệu sinh ra liên tục như lượt bấm, đơn hàng, số liệu cảm biến, cần một 'băng chuyền' lưu giữ và phân phát chúng cho nhiều nơi. Kafka là băng chuyền cỡ lớn. README này dành cho người dựng và sửa Kafka, không phải hướng dẫn cho người mới dùng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: hiểu vì sao hệ thống lớn dùng Kafka để truyền sự kiện giữa các dịch vụ, qua quickstart chính thức. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Hệ phân tán nhiều khái niệm (topic, partition, broker...), cần Java và hiểu vận hành. README kho không hướng dẫn dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng nhỏ, chưa cần Kafka; NATS hay hàng đợi đơn giản (cùng nhóm, bài chưa so sánh sâu) có thể đủ. Đừng làm theo phần dựng từ mã nguồn nếu bạn chỉ muốn dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>event streaming (truyền luồng sự kiện)</strong>: luồng sự kiện liên tục được lưu và đọc bởi nhiều bên; README mô tả Kafka như vậy.</li><li><strong>data pipeline (đường ống dữ liệu)</strong>: chuỗi bước chuyển dữ liệu giữa hệ thống; README nêu.</li><li><strong>Gradle</strong>: công cụ dựng dự án Java; README dùng cho dựng và kiểm thử.</li><li><strong>Scala 2.13</strong>: phiên bản Scala duy nhất README nói được hỗ trợ.</li><li><strong>distributed (phân tán)</strong>: chạy trên nhiều máy phối hợp với nhau.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dựng từ mã nguồn cần Java (17 hoặc 25) và dùng Gradle; để chạy hãy theo quickstart tại kafka.apache.org/quickstart (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc quickstart tại kafka.apache.org.</li><li>Chạy bản phát hành sẵn trong môi trường thử.</li><li>Chỉ dựng từ mã nguồn nếu bạn muốn đóng góp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình nghe nói nhiều về Kafka. Hãy đọc README của Apache Kafka (https://github.com/apache/kafka) và giải thích bằng tiếng Việt: Kafka làm gì, vì sao README chủ yếu dành cho người dựng, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không mô tả cách dùng cho người dùng cuối; 'hàng nghìn công ty dùng' là tuyên bố của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>34.118 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/kafka/blob/trunk/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/kafka\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 375. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34118; repo_id 2211243; README SHA256 5550c38ce0519656f04aab69250ae7cdff499040bcb67c95bfb34f1b0dfc7e9a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/kafka",
+          "repo_id": "2211243",
+          "source_path": "",
+          "source_revision": "README-SHA256:5550c38ce0519656f04aab69250ae7cdff499040bcb67c95bfb34f1b0dfc7e9a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/kafka",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dựng từ mã nguồn cần Java (17 hoặc 25) và dùng Gradle; để chạy hãy theo quickstart tại kafka.apache.org/quickstart (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/kafka/blob/trunk/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/kafka/blob/trunk/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/kafka",
+        "stars": 34118,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/kafka/trunk/README.md",
+        "readmeSha256": "5550c38ce0519656f04aab69250ae7cdff499040bcb67c95bfb34f1b0dfc7e9a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 376,
+      "batch": 65,
+      "slug": "clickhouse",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ClickHouse: cơ sở dữ liệu phân tích thời gian thực, README có lệnh cài kiểu tải script rồi chạy cần thận trọng",
+        "excerpt": "Hiểu ClickHouse là cơ sở dữ liệu phân tích (mô tả kho GitHub: cơ sở dữ liệu phân tích thời gian thực). README có lệnh cài bằng tải script rồi chạy ngay, có dịch vụ ClickHouse Cloud trả phí, và nhiều liên kết, bản ghi hội nghị.",
+        "content": "<p>README của ClickHouse (phần chữ có thể đọc) bắt đầu bằng mục How To Install (Linux, macOS, FreeBSD): một lệnh tải script từ mạng rồi chạy ngay (bài không chép lệnh và khuyên đọc script trước), hoặc bỏ qua cài đặt và dùng thử ClickHouse Cloud miễn phí. Mục Useful Links liệt kê trang web, ClickHouse Cloud (ClickHouse dạng dịch vụ), hướng dẫn dựng và truy vấn một cụm nhỏ, tài liệu, kênh YouTube, Slack và Telegram, blog, X và LinkedIn, trình duyệt mã. Có mục Monthly Release và Community Call, và mục sự kiện sắp tới. Phần mô tả sản phẩm không nằm trong văn bản README đã đọc; mô tả kho trên GitHub ghi đây là cơ sở dữ liệu phân tích thời gian thực. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn hỏi dữ liệu lớn kiểu 'tháng này mỗi sản phẩm bán bao nhiêu' trên hàng tỷ dòng, cơ sở dữ liệu thường chậm. ClickHouse là loại cơ sở dữ liệu chuyên cho các câu hỏi tổng hợp như vậy (theo mô tả kho), giống kho dữ liệu cho nhà phân tích.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: phân tích nhật ký sự kiện lớn để làm báo cáo. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu cơ sở dữ liệu phân tích và SQL; README chủ yếu là liên kết. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dữ liệu nhỏ, SQLite hay DuckDB (bài trong kho) đơn giản hơn. Đừng chạy lệnh tải script rồi chạy ngay khi chưa đọc script. ClickHouse Cloud là dịch vụ trả phí riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>analytical database (cơ sở dữ liệu phân tích)</strong>: cơ sở dữ liệu tối ưu cho truy vấn tổng hợp trên nhiều dòng; mô tả kho GitHub gọi ClickHouse như vậy.</li><li><strong>ClickHouse Cloud</strong>: dịch vụ ClickHouse do hãng lưu trữ; README nêu.</li><li><strong>release call (buổi giới thiệu bản phát hành)</strong>: buổi trình chiếu hằng tháng về bản mới; README liệt kê.</li><li><strong>cluster (cụm)</strong>: nhóm máy chạy cùng nhau; README nêu tutorial dựng một cụm nhỏ.</li><li><strong>tải script rồi chạy</strong>: cách cài kiểu một lệnh tải và chạy ngay từ mạng, cần thận trọng; README có mục cài đặt như vậy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng lệnh tải script rồi chạy ngay (bài không chép lệnh: nên đọc script hoặc dùng cách cài trong tài liệu), hoặc dùng ClickHouse Cloud thử miễn phí (giá sau thử bài chưa kiểm tra). Miễn phí tự cài theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Useful Links và Tutorial.</li><li>Cài theo tài liệu chính thức thay vì script tải rồi chạy.</li><li>Thử với dữ liệu mẫu nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần phân tích dữ liệu lớn. Hãy đọc README của ClickHouse (https://github.com/ClickHouse/ClickHouse) và giải thích bằng tiếng Việt: ClickHouse dùng để làm gì, vì sao cần thận trọng với lệnh cài kiểu tải script rồi chạy, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không có mô tả sản phẩm; bài dùng mô tả kho GitHub và đã ghi rõ. README có nhiều mục sự kiện và liên kết. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ClickHouse</strong> có <strong>50.724 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ClickHouse/ClickHouse/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ClickHouse/ClickHouse\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 376. Chưa cài/chạy thử; không tạo validation. Snapshot sao 50724; repo_id 60246359; README SHA256 b4375e81937ae0daf57e32a166d319357d4fd5dcf713a1f7806bedaeff00a34d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ClickHouse/ClickHouse",
+          "repo_id": "60246359",
+          "source_path": "",
+          "source_revision": "README-SHA256:b4375e81937ae0daf57e32a166d319357d4fd5dcf713a1f7806bedaeff00a34d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ClickHouse/ClickHouse",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng lệnh tải script rồi chạy ngay (bài không chép lệnh: nên đọc script hoặc dùng cách cài trong tài liệu), hoặc dùng ClickHouse Cloud thử miễn phí (giá sau thử bài chưa kiểm tra). Miễn phí tự cài theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ClickHouse/ClickHouse/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ClickHouse/ClickHouse/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ClickHouse/ClickHouse",
+        "stars": 50724,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ClickHouse/ClickHouse/master/README.md",
+        "readmeSha256": "b4375e81937ae0daf57e32a166d319357d4fd5dcf713a1f7806bedaeff00a34d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 377,
+      "batch": 65,
+      "slug": "opentelemetry-collector",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenTelemetry Collector: thành phần nhận, xử lý và xuất dữ liệu quan sát độc lập nhà cung cấp, thay cho nhiều agent riêng",
+        "excerpt": "Hiểu OpenTelemetry Collector là cách triển khai độc lập nhà cung cấp để nhận, xử lý và xuất dữ liệu quan sát (vết, số liệu, nhật ký). README liệt kê mục tiêu, mức ổn định và cách kiểm chứng chữ ký ảnh.",
+        "content": "<p>README tả OpenTelemetry Collector cung cấp cách triển khai độc lập nhà cung cấp để nhận, xử lý và xuất dữ liệu quan sát; ngoài ra loại bỏ nhu cầu chạy, vận hành và bảo trì nhiều agent hay collector để hỗ trợ các định dạng dữ liệu quan sát mã nguồn mở (như Jaeger, Prometheus) tới nhiều hệ thống nền mã nguồn mở hoặc thương mại. Mục tiêu nêu trong README: dễ dùng (cấu hình mặc định hợp lý, hỗ trợ giao thức phổ biến, chạy ngay), hiệu năng ổn định, có thể quan sát (tự là mẫu mực về dịch vụ quan sát được), mở rộng được mà không đụng mã lõi, thống nhất (một mã nguồn, triển khai như agent hoặc collector, hỗ trợ vết, số liệu và nhật ký). README có mục Community (nhóm SIG họp hằng tuần, kênh Slack CNCF), phiên bản OTLP được hỗ trợ, mức ổn định, tương thích, cách xác minh chữ ký ảnh, và đóng góp. Giấy phép Apache-2.0 theo GitHub; README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ứng dụng của bạn phát ra vết, số liệu và nhật ký theo nhiều định dạng, và bạn có nhiều nơi nhận. Collector giống trạm trung chuyển trung lập: nhận mọi loại, xử lý, rồi chuyển tới nơi nào bạn chọn mà không cần mỗi hệ thống một agent riêng. Về vai trò gần với Vector và Fluentd (bài khác trong kho).</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gom vết và số liệu từ vài dịch vụ rồi chuyển tới một hệ giám sát. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng có dữ liệu; người nhờ AI dựng hệ thống phía sau.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu vết, số liệu và nhật ký; README chủ yếu nêu mục tiêu và cộng đồng, cấu hình nằm ở tài liệu chưa đọc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ có một ứng dụng nhỏ, chưa cần. Bài không khẳng định hiệu năng; README có mục mức ổn định (stability levels) cần đọc trước khi dùng cho sản xuất.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>telemetry (dữ liệu quan sát)</strong>: vết, số liệu và nhật ký từ ứng dụng; README dùng cụm 'telemetry data'.</li><li><strong>vendor-agnostic (độc lập nhà cung cấp)</strong>: không gắn với một hãng cụ thể; README nêu là điểm chính.</li><li><strong>OTLP</strong>: giao thức dữ liệu quan sát của OpenTelemetry; README có mục phiên bản OTLP được hỗ trợ.</li><li><strong>stability levels (mức ổn định)</strong>: phân mức độ ổn định của các thành phần; README có mục riêng.</li><li><strong>agent / collector</strong>: chạy tại từng máy hoặc tại nơi tập trung; README nói triển khai được cả hai.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Supported OTLP version, Stability levels, Compatibility và cách xác minh chữ ký ảnh; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Objectives và Stability levels.</li><li>Đọc tài liệu trên opentelemetry.io.</li><li>Thử với một ứng dụng thử rồi xem dữ liệu ra ở đâu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần gom vết và số liệu từ nhiều dịch vụ. Hãy đọc README của OpenTelemetry Collector (https://github.com/open-telemetry/opentelemetry-collector) và giải thích bằng tiếng Việt: Collector làm gì, vì sao 'độc lập nhà cung cấp' quan trọng, và mức ổn định nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không có hướng dẫn cài đặt chi tiết; bài không khẳng định. 'Hiệu năng ổn định' là mục tiêu của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Hệ thống dữ liệu và thông điệp thường giữ dữ liệu quan trọng và chạy với quyền cao: sao lưu trước, thử trên môi trường thử, không đưa mật khẩu vào kho mã công khai và không mở cổng ra internet khi chưa hiểu cách bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>open-telemetry</strong> có <strong>7.728 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/open-telemetry/opentelemetry-collector\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 377. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7728; repo_id 185861173; README SHA256 a2a5495273901450873dd627c3be7266d6b849a8c4f9abac0c273108832ad294.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/open-telemetry/opentelemetry-collector",
+          "repo_id": "185861173",
+          "source_path": "",
+          "source_revision": "README-SHA256:a2a5495273901450873dd627c3be7266d6b849a8c4f9abac0c273108832ad294",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/open-telemetry/opentelemetry-collector",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Supported OTLP version, Stability levels, Compatibility và cách xác minh chữ ký ảnh; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "open-telemetry/opentelemetry-collector",
+        "stars": 7728,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-collector/main/README.md",
+        "readmeSha256": "a2a5495273901450873dd627c3be7266d6b849a8c4f9abac0c273108832ad294",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

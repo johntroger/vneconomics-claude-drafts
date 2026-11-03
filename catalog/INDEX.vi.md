@@ -45,6 +45,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 43 — Công cụ API, ảnh, PDF và OCR cho người làm web](learning-paths/43-api-anh-pdf-va-ocr.vi.md) — Thử API, xử lý ảnh, tạo PDF, nhận dạng chữ và điều khiển trình duyệt; thử trên bản sao tệp và không mở dịch vụ ra mạng khi chưa bảo vệ.
 - [Lộ trình 44 — Agent lập trình và công cụ AI trên dòng lệnh](learning-paths/44-agent-lap-trinh-va-cli-ai.vi.md) — Từ agent trong trình soạn mã đến AI trong terminal, khám phá dữ liệu và chép lời trên máy; luôn duyệt từng thay đổi và giữ khóa API an toàn.
 - [Lộ trình 45 — Kiểm thử API, tải và giả lập](learning-paths/45-kiem-thu-api-va-hieu-nang.vi.md) — Từ API giả để làm giao diện trước, đến kiểm thử bằng tệp chữ hay kịch bản, và thử tải; chỉ thử trên hệ thống của bạn.
+- [Lộ trình 46 — Dữ liệu, thông điệp và quan sát ở quy mô lớn](learning-paths/46-du-lieu-thoi-gian-thuc-va-hang-doi.vi.md) — Lập lịch trong cơ sở dữ liệu, PostgreSQL trọn gói, thông điệp, luồng sự kiện, phân tích và thu thập dữ liệu quan sát; đây là chủ đề khó, dành cho khi dự án đã đủ lớn.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -260,7 +261,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 367 | Locust: viết kịch bản kiểm thử tải bằng Python thường, chạy từ dòng lệnh hoặc giao diện web, hỗ trợ phân tán | [locustio/locust](https://github.com/locustio/locust) | MIT | 28260 | kiem-thu-api-va-hieu-nang |
 | 368 | Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh | [Orange-OpenSource/hurl](https://github.com/Orange-OpenSource/hurl) | Apache-2.0 | 19295 | kiem-thu-api-va-hieu-nang |
 
-### Nâng cao (77 bài)
+### Nâng cao (83 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -341,6 +342,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 366 | k6: công cụ kiểm thử tải hiện đại viết kịch bản bằng JavaScript và chạy bằng Go, kiểm thử như mã | [grafana/k6](https://github.com/grafana/k6) | AGPL-3.0 | 32110 | kiem-thu-api-va-hieu-nang |
 | 370 | WireMock: công cụ giả lập API HTTP phổ biến, chạy như thư viện hoặc máy chủ độc lập, dựng môi trường kiểm thử ổn định | [wiremock/wiremock](https://github.com/wiremock/wiremock) | Apache-2.0 | 7416 | kiem-thu-api-va-hieu-nang |
 | 371 | Prism: dựng máy chủ giả và proxy kiểm tra hợp đồng từ tệp OpenAPI hoặc Postman Collection | [stoplightio/prism](https://github.com/stoplightio/prism) | Apache-2.0 | 5065 | kiem-thu-api-va-hieu-nang |
+| 372 | pg_cron: lên lịch công việc định kỳ ngay trong PostgreSQL bằng cú pháp cron, chạy với quyền của người tạo | [citusdata/pg_cron](https://github.com/citusdata/pg_cron) | PostgreSQL | 3914 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 373 | Supabase Postgres: bản phân phối PostgreSQL không sửa đổi kèm bộ tiện ích mở rộng chọn lọc cài sẵn | [supabase/postgres](https://github.com/supabase/postgres) | PostgreSQL | 1801 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 374 | NATS: hệ thống truyền thông đơn giản, an toàn và hiệu năng cao cho dịch vụ và thiết bị, thuộc CNCF | [nats-io/nats-server](https://github.com/nats-io/nats-server) | Apache-2.0 | 20990 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 375 | Apache Kafka: nền tảng truyền luồng sự kiện phân tán mã nguồn mở, README của kho dành cho người dựng từ mã nguồn | [apache/kafka](https://github.com/apache/kafka) | Apache-2.0 | 34118 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 376 | ClickHouse: cơ sở dữ liệu phân tích thời gian thực, README có lệnh cài kiểu tải script rồi chạy cần thận trọng | [ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) | Apache-2.0 | 50724 | du-lieu-thoi-gian-thuc-va-hang-doi |
+| 377 | OpenTelemetry Collector: thành phần nhận, xử lý và xuất dữ liệu quan sát độc lập nhà cung cấp, thay cho nhiều agent riêng | [open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector) | Apache-2.0 | 7728 | du-lieu-thoi-gian-thuc-va-hang-doi |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

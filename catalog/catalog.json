@@ -4813,5 +4813,111 @@
    "hurl",
    "wiremock"
   ]
+ },
+ {
+  "key": 372,
+  "slug": "pg-cron",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "pg_cron: lên lịch công việc định kỳ ngay trong PostgreSQL bằng cú pháp cron, chạy với quyền của người tạo",
+  "repo": "citusdata/pg_cron",
+  "stars": 3914,
+  "license": "PostgreSQL",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-09-08",
+  "related": [
+   "supabase-postgres"
+  ]
+ },
+ {
+  "key": 373,
+  "slug": "supabase-postgres",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "Supabase Postgres: bản phân phối PostgreSQL không sửa đổi kèm bộ tiện ích mở rộng chọn lọc cài sẵn",
+  "repo": "supabase/postgres",
+  "stars": 1801,
+  "license": "PostgreSQL",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "nats",
+   "pg-cron"
+  ]
+ },
+ {
+  "key": 374,
+  "slug": "nats",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "NATS: hệ thống truyền thông đơn giản, an toàn và hiệu năng cao cho dịch vụ và thiết bị, thuộc CNCF",
+  "repo": "nats-io/nats-server",
+  "stars": 20990,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "kafka",
+   "supabase-postgres"
+  ]
+ },
+ {
+  "key": 375,
+  "slug": "kafka",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "Apache Kafka: nền tảng truyền luồng sự kiện phân tán mã nguồn mở, README của kho dành cho người dựng từ mã nguồn",
+  "repo": "apache/kafka",
+  "stars": 34118,
+  "license": "Apache-2.0",
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "clickhouse",
+   "nats"
+  ]
+ },
+ {
+  "key": 376,
+  "slug": "clickhouse",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "ClickHouse: cơ sở dữ liệu phân tích thời gian thực, README có lệnh cài kiểu tải script rồi chạy cần thận trọng",
+  "repo": "ClickHouse/ClickHouse",
+  "stars": 50724,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "kafka",
+   "opentelemetry-collector"
+  ]
+ },
+ {
+  "key": 377,
+  "slug": "opentelemetry-collector",
+  "group": "2026-11-03-du-lieu-thoi-gian-thuc-va-hang-doi",
+  "title": "OpenTelemetry Collector: thành phần nhận, xử lý và xuất dữ liệu quan sát độc lập nhà cung cấp, thay cho nhiều agent riêng",
+  "repo": "open-telemetry/opentelemetry-collector",
+  "stars": 7728,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "clickhouse"
+  ]
  }
 ]
