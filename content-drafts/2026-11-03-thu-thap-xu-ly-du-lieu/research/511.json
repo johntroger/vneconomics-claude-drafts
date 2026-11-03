@@ -1,0 +1,43 @@
+{
+  "key": 511,
+  "repo": "cheeriojs/cheerio",
+  "repoId": "2541284",
+  "url": "https://github.com/cheeriojs/cheerio",
+  "stars": 30539,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:14:49Z",
+  "createdAt": "2011-10-09T04:23:20Z",
+  "defaultBranch": "main",
+  "description": "The fast, flexible, and elegant library for parsing and manipulating HTML and XML.",
+  "homepage": "https://cheerio.js.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cheeriojs/cheerio/main/Readme.md",
+    "sha256": "affda984f43d5f6382cc7cba763ec12b4420a143450732e4e2c6bb190039550c",
+    "bytes": 8396,
+    "sectionsRead": [
+      "Ví dụ mở đầu",
+      "Installation",
+      "Features",
+      "API",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần API chi tiết.",
+    "Chưa thử.",
+    "Giới hạn với trang động chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

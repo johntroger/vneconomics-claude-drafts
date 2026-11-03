@@ -67,6 +67,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 65 — Bản đồ, biểu đồ, bảng dữ liệu, hoạt ảnh và bảng tính](learning-paths/65-ban-do-bieu-do-bang.vi.md) — Từ biểu đồ và bản đồ nhẹ đến trực quan hóa dữ liệu lớn, bảng dữ liệu, hoạt ảnh và SDK bảng tính nhúng; chú ý nguồn ảnh bản đồ, phần miễn phí và phần trả phí, giấy phép và hoạt ảnh cho người nhạy cảm chuyển động.
 - [Lộ trình 66 — Công cụ kinh doanh tự host](learning-paths/66-cong-cu-kinh-doanh.vi.md) — Từ chat nhóm, CRM, hỗ trợ khách hàng đến ERP và chữ ký điện tử; chú ý dữ liệu khách hàng và kế toán nhạy cảm, luật thuế và chữ ký điện tử, cấu hình demo không dùng cho sản xuất và chi phí ngoài phần mềm.
 - [Lộ trình 67 — Công cụ giảng dạy](learning-paths/67-cong-cu-giang-day.vi.md) — Từ video toán bằng mã, chấm bài Jupyter tự động đến nền tảng học tập offline; chú ý hai phiên bản Manim không dùng lẫn hướng dẫn cài, dữ liệu bài nộp của sinh viên và việc chạy mã nộp bài.
+- [Lộ trình 68 — Thu thập và xử lý dữ liệu](learning-paths/68-thu-thap-xu-ly-du-lieu.vi.md) — Từ phân tích HTML, cào dữ liệu web đến nạp dữ liệu, dựng pipeline và khám phá bằng biểu đồ; chú ý điều khoản trang, bản quyền, dữ liệu cá nhân, tuyên bố 'qua mặt chống bot' và phần thương mại của dltHub, Mage Pro.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -122,7 +123,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (176 bài)
+### Cơ bản (178 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -302,6 +303,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 496 | Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio | [motiondivision/motion](https://github.com/motiondivision/motion) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 34831 | ban-do-bieu-do-bang |
 | 502 | EspoCRM: nền tảng CRM mã nguồn mở viết bằng PHP với giao diện một trang và REST API, tùy biến thực thể, trường, quan hệ; README nêu yêu cầu PHP 8.3–8.5 | [espocrm/espocrm](https://github.com/espocrm/espocrm) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 3543 | cong-cu-kinh-doanh |
 | 508 | Kolibri: nền tảng học tập ưu tiên offline của Learning Equality; README cho biết kho này dành cho nhà phát triển, người dùng xem Hướng dẫn sử dụng | [learningequality/kolibri](https://github.com/learningequality/kolibri) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 1167 | cong-cu-giang-day |
+| 511 | Cheerio: thư viện JavaScript phân tích và thao tác HTML hoặc XML với cú pháp giống jQuery, chạy trên máy chủ và trình duyệt | [cheeriojs/cheerio](https://github.com/cheeriojs/cheerio) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 30539 | thu-thap-xu-ly-du-lieu |
+| 514 | PyGWalker: biến bảng dữ liệu pandas, polars, pyarrow thành giao diện kéo thả để khám phá và vẽ biểu đồ trong Jupyter hoặc Streamlit | [Kanaries/pygwalker](https://github.com/Kanaries/pygwalker) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 16005 | thu-thap-xu-ly-du-lieu |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -345,7 +348,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (151 bài)
+### Nâng cao (155 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -500,6 +503,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 505 | Manim Community Edition: engine tạo hoạt ảnh bằng mã Python cho video giải thích toán học, bản do cộng đồng duy trì tách ra từ kho của 3Blue1Brown | [ManimCommunity/manim](https://github.com/ManimCommunity/manim) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 42192 | cong-cu-giang-day |
 | 506 | ManimGL (3b1b/manim): bản Manim do tác giả 3Blue1Brown duy trì, cài bằng gói manimgl; README cảnh báo hướng dẫn cài chỉ dành cho bản này | [3b1b/manim](https://github.com/3b1b/manim) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 96055 | cong-cu-giang-day |
 | 507 | nbgrader: hệ thống giao và chấm bài bằng Jupyter notebook, có thanh công cụ cho giảng viên, formgrader và danh sách bài cho sinh viên | [jupyter/nbgrader](https://github.com/jupyter/nbgrader) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 1370 | cong-cu-giang-day |
+| 509 | Scrapy: khung thu thập dữ liệu web bằng Python để trích xuất dữ liệu có cấu trúc từ website, do Zyte duy trì; README yêu cầu Python 3.11+ | [scrapy/scrapy](https://github.com/scrapy/scrapy) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 65190 | thu-thap-xu-ly-du-lieu |
+| 510 | Crawlee: thư viện Node.js thu thập và cào dữ liệu web đầu cuối với trình duyệt không giao diện (Playwright, Puppeteer); README nói crawler 'trông như người thật' và yêu cầu Node.js 22.13+ | [apify/crawlee](https://github.com/apify/crawlee) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 26324 | thu-thap-xu-ly-du-lieu |
+| 512 | dlt: thư viện Python nạp dữ liệu từ nguồn lộn xộn vào bộ dữ liệu có cấu trúc, hơn 20 đích đến, thiết kế cho cả LLM và coding agent; có nền tảng thương mại dltHub | [dlt-hub/dlt](https://github.com/dlt-hub/dlt) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6051 | thu-thap-xu-ly-du-lieu |
+| 513 | Mage OSS: môi trường tự host dựng pipeline dữ liệu bằng Python, SQL, R với giao diện kiểu notebook; có bản Mage Pro trả phí | [mage-ai/mage-ai](https://github.com/mage-ai/mage-ai) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 8841 | thu-thap-xu-ly-du-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

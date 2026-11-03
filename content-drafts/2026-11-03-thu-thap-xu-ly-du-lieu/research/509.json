@@ -1,0 +1,41 @@
+{
+  "key": 509,
+  "repo": "scrapy/scrapy",
+  "repoId": "529502",
+  "url": "https://github.com/scrapy/scrapy",
+  "stars": 65190,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T18:41:18Z",
+  "createdAt": "2010-02-22T02:01:14Z",
+  "defaultBranch": "master",
+  "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
+  "homepage": "https://scrapy.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/scrapy/scrapy/master/README.rst",
+    "sha256": "fe4a631dfdfa11d6643373f22d25e48ac7c0d43d96187e998597e725ba65c36e",
+    "bytes": 1793,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Cài đặt",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.scrapy.org.",
+    "Chưa thử.",
+    "Pháp lý thu thập dữ liệu chưa đánh giá."
+  ],
+  "runtimeValidated": false
+}

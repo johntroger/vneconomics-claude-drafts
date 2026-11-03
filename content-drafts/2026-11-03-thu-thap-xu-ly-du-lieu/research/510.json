@@ -1,0 +1,42 @@
+{
+  "key": 510,
+  "repo": "apify/crawlee",
+  "repoId": "66670819",
+  "url": "https://github.com/apify/crawlee",
+  "stars": 26324,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:06:34Z",
+  "createdAt": "2016-08-26T18:35:03Z",
+  "defaultBranch": "master",
+  "description": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation.",
+  "homepage": "https://crawlee.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apify/crawlee/master/README.md",
+    "sha256": "e030e9713e818a65d50ce9ed648152aa4491b61f4d74817d77343e0ffa0ab859",
+    "bytes": 7495,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Ví dụ PlaywrightCrawler",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu crawlee.dev.",
+    "Chưa thử.",
+    "Tuyên bố chống bot chưa kiểm chứng; pháp lý chưa đánh giá."
+  ],
+  "runtimeValidated": false
+}

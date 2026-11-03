@@ -1,0 +1,44 @@
+{
+  "key": 514,
+  "repo": "Kanaries/pygwalker",
+  "repoId": "602389947",
+  "url": "https://github.com/Kanaries/pygwalker",
+  "stars": 16005,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-09-05T19:19:19Z",
+  "createdAt": "2023-02-16T05:17:24Z",
+  "defaultBranch": "main",
+  "description": "PyGWalker: Turn your dataframe into an interactive UI for visual analysis",
+  "homepage": "https://kanaries.net/pygwalker",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Kanaries/pygwalker/main/README.md",
+    "sha256": "4ff5fce9eb1034ef5c3e8ca778ccb0fa90f4dfe853aaf1a1067e274db67b6149",
+    "bytes": 23940,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Getting Started",
+      "Use pygwalker in Jupyter Notebook",
+      "Use pygwalker in Streamlit",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần API Reference.",
+    "Chưa thử.",
+    "Giới hạn kích thước dữ liệu chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

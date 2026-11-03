@@ -7769,5 +7769,147 @@
   "related": [
    "nbgrader"
   ]
+ },
+ {
+  "key": 509,
+  "slug": "scrapy",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "Scrapy: khung thu thập dữ liệu web bằng Python để trích xuất dữ liệu có cấu trúc từ website, do Zyte duy trì; README yêu cầu Python 3.11+",
+  "repo": "scrapy/scrapy",
+  "stars": 65190,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "cheerio",
+   "crawlee"
+  ]
+ },
+ {
+  "key": 510,
+  "slug": "crawlee",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "Crawlee: thư viện Node.js thu thập và cào dữ liệu web đầu cuối với trình duyệt không giao diện (Playwright, Puppeteer); README nói crawler 'trông như người thật' và yêu cầu Node.js 22.13+",
+  "repo": "apify/crawlee",
+  "stars": 26324,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "dlt",
+   "scrapy"
+  ]
+ },
+ {
+  "key": 511,
+  "slug": "cheerio",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "Cheerio: thư viện JavaScript phân tích và thao tác HTML hoặc XML với cú pháp giống jQuery, chạy trên máy chủ và trình duyệt",
+  "repo": "cheeriojs/cheerio",
+  "stars": 30539,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "pygwalker",
+   "scrapy"
+  ]
+ },
+ {
+  "key": 512,
+  "slug": "dlt",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "dlt: thư viện Python nạp dữ liệu từ nguồn lộn xộn vào bộ dữ liệu có cấu trúc, hơn 20 đích đến, thiết kế cho cả LLM và coding agent; có nền tảng thương mại dltHub",
+  "repo": "dlt-hub/dlt",
+  "stars": 6051,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-31",
+  "related": [
+   "crawlee",
+   "mage-ai"
+  ]
+ },
+ {
+  "key": 513,
+  "slug": "mage-ai",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "Mage OSS: môi trường tự host dựng pipeline dữ liệu bằng Python, SQL, R với giao diện kiểu notebook; có bản Mage Pro trả phí",
+  "repo": "mage-ai/mage-ai",
+  "stars": 8841,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-23",
+  "related": [
+   "dlt"
+  ]
+ },
+ {
+  "key": 514,
+  "slug": "pygwalker",
+  "group": "2026-11-03-thu-thap-xu-ly-du-lieu",
+  "title": "PyGWalker: biến bảng dữ liệu pandas, polars, pyarrow thành giao diện kéo thả để khám phá và vẽ biểu đồ trong Jupyter hoặc Streamlit",
+  "repo": "Kanaries/pygwalker",
+  "stars": 16005,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-09-05",
+  "related": [
+   "cheerio"
+  ]
  }
 ]
