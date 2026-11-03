@@ -1,0 +1,42 @@
+{
+  "key": 422,
+  "repo": "milvus-io/milvus",
+  "repoId": "208728772",
+  "url": "https://github.com/milvus-io/milvus",
+  "stars": 46570,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:23:59Z",
+  "createdAt": "2019-09-16T06:43:43Z",
+  "defaultBranch": "master",
+  "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+  "homepage": "https://milvus.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/milvus-io/milvus/master/README.md",
+    "sha256": "8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f",
+    "bytes": 70771,
+    "sectionsRead": [
+      "What is Milvus?",
+      "Quickstart",
+      "Why Milvus",
+      "Community"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu milvus.io.",
+    "Chưa thử.",
+    "Giá Zilliz Cloud chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

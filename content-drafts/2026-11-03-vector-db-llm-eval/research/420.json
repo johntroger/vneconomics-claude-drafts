@@ -1,0 +1,43 @@
+{
+  "key": 420,
+  "repo": "chroma-core/chroma",
+  "repoId": "546206616",
+  "url": "https://github.com/chroma-core/chroma",
+  "stars": 29624,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T21:09:26Z",
+  "createdAt": "2022-10-05T17:58:44Z",
+  "defaultBranch": "main",
+  "description": "Search infrastructure for AI",
+  "homepage": "https://www.trychroma.com/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/chroma-core/chroma/main/README.md",
+    "sha256": "a71f91e5fadfb03772be1f76b0bab7116eea1bfc6cc9bc4fb190ce95dd275264",
+    "bytes": 3273,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Chroma Cloud",
+      "API",
+      "Get involved",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.trychroma.com.",
+    "Chưa thử.",
+    "Giá Chroma Cloud chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

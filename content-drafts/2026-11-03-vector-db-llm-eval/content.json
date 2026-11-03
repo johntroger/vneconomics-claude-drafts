@@ -1,0 +1,444 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-vector-eval",
+  "batch": 72,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 420,
+      "batch": 72,
+      "slug": "chroma",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Chroma: cơ sở dữ liệu vector mã nguồn mở cho ứng dụng AI, API cốt lõi chỉ 4 hàm, có dịch vụ đám mây trả phí",
+        "excerpt": "Hiểu Chroma là hạ tầng dữ liệu mã nguồn mở cho AI, thường dùng để lưu văn bản dưới dạng vector và tìm kiếm theo nghĩa. README nêu API cốt lõi chỉ 4 hàm, chạy trong bộ nhớ để thử nhanh, và có dịch vụ Chroma Cloud tính phí.",
+        "content": "<p>README mở đầu bằng câu: Chroma là hạ tầng dữ liệu mã nguồn mở cho AI. Có ví dụ cài bằng pip cho Python hoặc npm cho JavaScript và chế độ máy chủ (bài không chép lệnh). Mục Chroma Cloud mô tả dịch vụ lưu trữ do hãng cung cấp cho tìm kiếm vector, lai và toàn văn, kèm 5 USD tín dụng miễn phí (tuyên bố của README). Mục API nói API cốt lõi chỉ có 4 hàm: tạo bộ sưu tập, thêm tài liệu cùng metadata và id (README nói Chroma tự xử lý tách từ, nhúng và lập chỉ mục, hoặc bạn tự đưa embedding), rồi truy vấn các kết quả giống nhất, có bộ lọc theo metadata hoặc nội dung. Ví dụ chạy trong bộ nhớ để thử nhanh. Phần cuối: dự án phát triển nhanh, nhận PR, phát hành bản mới vào thứ Hai. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy tính hiểu nghĩa bằng cách đổi văn bản thành dãy số gọi là vector. Chroma là kho cất các vector này và giúp bạn hỏi kiểu: tìm giúp mình những đoạn có nghĩa gần với câu này.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nạp vài đoạn ghi chú giả vào Chroma và tìm đoạn gần nghĩa nhất với một câu hỏi. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> API nhỏ, dễ làm quen với Python cơ bản; hiểu embedding cần học thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chroma Cloud là dịch vụ trả phí của hãng, bài chưa kiểm tra giá. Các mô tả 'nhanh, tiết kiệm' là của README. Chế độ chạy trong bộ nhớ chỉ để thử, README không nói về an toàn dữ liệu cho sản xuất.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>vector database (cơ sở dữ liệu vector)</strong>: kho lưu vector và tìm các vector gần nhau.</li><li><strong>embedding (nhúng)</strong>: cách đổi văn bản thành vector; README nói Chroma có thể tự xử lý hoặc bạn đưa sẵn.</li><li><strong>collection (bộ sưu tập)</strong>: nhóm tài liệu cùng loại trong Chroma; README nêu.</li><li><strong>metadata</strong>: thông tin kèm tài liệu như nguồn; README nêu có thể lọc theo đó.</li><li><strong>semantic search (tìm theo nghĩa)</strong>: tìm theo ý chứ không chỉ theo từ khóa.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói Python hoặc npm, chạy trong bộ nhớ hoặc chế độ máy chủ (bài không chép lệnh). Cần Python hoặc Node. Miễn phí theo giấy phép Apache 2.0; Chroma Cloud tính phí riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục API.</li><li>Chạy ví dụ trong bộ nhớ với dữ liệu giả.</li><li>Thử lọc theo metadata.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học về tìm kiếm theo nghĩa. Hãy đọc README của Chroma (https://github.com/chroma-core/chroma) và giải thích bằng tiếng Việt: vector database là gì, 4 hàm API làm gì, và Chroma Cloud khác bản mã nguồn mở thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, không nêu hiệu năng hay giới hạn dữ liệu. 5 USD tín dụng là tuyên bố của README, chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>chroma-core</strong> có <strong>29.624 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu Apache 2.0 và mục License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/chroma-core/chroma/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/chroma-core/chroma\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 420. Chưa cài/chạy thử; không tạo validation. Snapshot sao 29624; repo_id 546206616; README SHA256 a71f91e5fadfb03772be1f76b0bab7116eea1bfc6cc9bc4fb190ce95dd275264.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/chroma-core/chroma",
+          "repo_id": "546206616",
+          "source_path": "",
+          "source_revision": "README-SHA256:a71f91e5fadfb03772be1f76b0bab7116eea1bfc6cc9bc4fb190ce95dd275264",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chroma-core/chroma",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói Python hoặc npm, chạy trong bộ nhớ hoặc chế độ máy chủ (bài không chép lệnh). Cần Python hoặc Node. Miễn phí theo giấy phép Apache 2.0; Chroma Cloud tính phí riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chroma-core/chroma/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/chroma-core/chroma/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "chroma-core/chroma",
+        "stars": 29624,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/chroma-core/chroma/main/README.md",
+        "readmeSha256": "a71f91e5fadfb03772be1f76b0bab7116eea1bfc6cc9bc4fb190ce95dd275264",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 421,
+      "batch": 72,
+      "slug": "qdrant",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Qdrant: công cụ tìm kiếm vector viết bằng Rust, có bản Edge chạy trong ứng dụng; README cảnh báo lệnh Docker mẫu không có xác thực",
+        "excerpt": "Hiểu Qdrant là công cụ tìm kiếm tương đồng vector và cơ sở dữ liệu vector, viết bằng Rust, có bộ lọc theo payload, tìm lai, lượng tử hóa và triển khai phân tán. README cảnh báo lệnh Docker mẫu khởi động bản không xác thực, mở trên mọi giao diện mạng.",
+        "content": "<p>README tả Qdrant là công cụ tìm kiếm tương đồng vector và cơ sở dữ liệu vector, cung cấp dịch vụ sẵn sàng sản xuất (cách nói của README) với API tiện lợi để lưu, tìm và quản lý các điểm (vector kèm payload). Viết bằng Rust, README nói nhanh và đáng tin ngay cả khi tải cao và dẫn tới trang benchmark (số liệu là của tác giả). Có Qdrant Cloud kèm gói miễn phí. Phần Getting Started gồm Agent Skills (bộ kỹ năng cho trợ lý lập trình AI), chế độ máy chủ bằng Docker và thư viện khách cho Go, Rust, JavaScript, Python, .NET, Java. Điểm quan trọng: README ghi rõ lệnh Docker mẫu khởi động bản không xác thực và mở cho mọi giao diện mạng, và dặn đọc hướng dẫn bảo mật trước khi đưa lên sản xuất. Qdrant Edge là bản nhẹ chạy ngay trong tiến trình ứng dụng, đồng bộ được với máy chủ. Mục Features nêu vector dày, thưa và nhiều vector, lọc theo payload, tìm lai, lượng tử hóa và lưu trên đĩa, triển khai phân tán, giao diện web. Ghi chú đóng góp: nhánh phát triển là dev, không phải master. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Chroma, nhưng hướng tới dịch vụ máy chủ nghiêm túc hơn: bạn đưa vào các điểm vector kèm thông tin phụ, rồi tìm theo nghĩa và lọc theo thông tin phụ đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy Qdrant trên máy cá nhân với dữ liệu giả, tìm theo nghĩa và lọc theo payload. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Docker hoặc hiểu máy chủ, API và vector; có bản phân tán và lượng tử hóa. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo lệnh Docker mẫu không có xác thực và mở trên mọi giao diện mạng: đừng để mở ra Internet; hãy đọc hướng dẫn bảo mật. Số liệu hiệu năng trên trang benchmark là của tác giả, bài chưa kiểm chứng. Giá Qdrant Cloud chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>payload</strong>: thông tin đi kèm mỗi điểm vector để lọc; README nêu.</li><li><strong>hybrid search (tìm lai)</strong>: kết hợp tìm theo nghĩa và theo từ khóa; README nêu.</li><li><strong>quantization (lượng tử hóa)</strong>: nén vector để tiết kiệm bộ nhớ; README nêu.</li><li><strong>sharding / distributed (phân tán)</strong>: chia dữ liệu ra nhiều máy; README nêu triển khai phân tán.</li><li><strong>Qdrant Edge</strong>: bản nhẹ chạy trong tiến trình ứng dụng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: chạy bằng Docker hoặc dùng thư viện khách, có Qdrant Edge cho Python và Rust (bài không chép lệnh). Cần Docker hoặc môi trường tương đương. Miễn phí theo giấy phép Apache 2.0; Qdrant Cloud có gói miễn phí và trả phí (bài chưa kiểm tra giá).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting Started và cảnh báo bảo mật.</li><li>Chạy cục bộ, không mở ra Internet.</li><li>Đọc hướng dẫn bảo mật trước khi triển khai thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng cơ sở dữ liệu vector. Hãy đọc README của Qdrant (https://github.com/qdrant/qdrant) và giải thích bằng tiếng Việt: payload là gì, vì sao lệnh Docker mẫu không an toàn cho sản xuất, và Qdrant Edge khác bản máy chủ thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài hơn 11 KB; bài không đọc từng demo. Số liệu 'nhanh' và benchmark là của tác giả. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>qdrant</strong> có <strong>35.399 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có mục License ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/qdrant/qdrant/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/qdrant/qdrant\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 421. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35399; repo_id 268163609; README SHA256 f1455d12252bf40235ad0128d8e98b2cd6d42583e441ac832b01f4daf08df2e4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/qdrant/qdrant",
+          "repo_id": "268163609",
+          "source_path": "",
+          "source_revision": "README-SHA256:f1455d12252bf40235ad0128d8e98b2cd6d42583e441ac832b01f4daf08df2e4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/qdrant/qdrant",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: chạy bằng Docker hoặc dùng thư viện khách, có Qdrant Edge cho Python và Rust (bài không chép lệnh). Cần Docker hoặc môi trường tương đương. Miễn phí theo giấy phép Apache 2.0; Qdrant Cloud có gói miễn phí và trả phí (bài chưa kiểm tra giá).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/qdrant/qdrant/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/qdrant/qdrant/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "qdrant/qdrant",
+        "stars": 35399,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/qdrant/qdrant/master/README.md",
+        "readmeSha256": "f1455d12252bf40235ad0128d8e98b2cd6d42583e441ac832b01f4daf08df2e4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 422,
+      "batch": 72,
+      "slug": "milvus",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Milvus: cơ sở dữ liệu vector phân tán dưới LF AI & Data, có chế độ Standalone và Milvus Lite cho người mới",
+        "excerpt": "Hiểu Milvus là cơ sở dữ liệu vector xây cho quy mô lớn, viết bằng Go và C++, kiến trúc phân tán trên Kubernetes, hỗ trợ nhiều loại chỉ mục, tìm lai và RBAC. README nói dự án thuộc LF AI & Data, Zilliz là bên đóng góp chính và có dịch vụ Zilliz Cloud trả phí.",
+        "content": "<p>README tả Milvus là cơ sở dữ liệu vector hiệu năng cao xây cho quy mô lớn, giúp tổ chức và tìm lượng lớn dữ liệu phi cấu trúc như văn bản, ảnh và đa phương thức. Viết bằng Go và C++, tăng tốc phần cứng CPU/GPU; kiến trúc phân tán, chạy tốt trên Kubernetes và có thể mở rộng ngang (cách nói của README). Có chế độ Standalone cho một máy, và Milvus Lite là bản nhẹ cho người mới trong Python. Dịch vụ được quản lý Zilliz Cloud có tùy chọn Serverless, Dedicated và BYOC (trả phí). Mục Why Milvus nêu: tách tính toán khỏi lưu trữ, nhiều loại chỉ mục (HNSW, IVF, FLAT, SCANN, DiskANN), đa người thuê, vector thưa cho tìm toàn văn BM25 và tìm lai, bảo mật với xác thực bắt buộc, TLS và RBAC. README nói dự án thuộc LF AI & Data Foundation, phân phối theo Apache 2.0, Zilliz là bên đóng góp chính. Tuyên bố hiệu năng 'tốt nhất lớp' là của README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chroma và Qdrant chạy tốt cho dự án nhỏ. Milvus nhắm tới quy mô lớn hơn nhiều: nhiều máy, nhiều người dùng, hàng tỷ vector. Người mới nên bắt đầu với Milvus Lite để làm quen khái niệm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử Milvus Lite với dữ liệu giả để hiểu bộ sưu tập, chỉ mục và tìm lai. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Bản phân tán cần Kubernetes và vận hành; Milvus Lite dễ hơn nhưng README rất dài (hơn 70 KB). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hầu hết người mới không cần Milvus phân tán; có thể quá mức cần thiết. Tuyên bố 'tốt nhất lớp' và 'hàng tỷ vector' là của README. Zilliz Cloud là dịch vụ trả phí, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>distributed (phân tán)</strong>: chạy trên nhiều máy phối hợp; README nêu kiến trúc phân tán.</li><li><strong>index (chỉ mục)</strong>: cấu trúc giúp tìm nhanh; README nêu HNSW, IVF, FLAT, SCANN, DiskANN.</li><li><strong>multi-tenancy (đa người thuê)</strong>: nhiều khách dùng chung cụm, tách biệt; README nêu.</li><li><strong>RBAC</strong>: phân quyền theo vai trò; README nêu.</li><li><strong>Milvus Lite</strong>: bản nhẹ cho Python, README nói tiện cho khởi đầu nhanh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn Milvus Lite, Standalone và biên dịch từ mã nguồn; bài chưa đọc chi tiết nên không nêu lệnh. Bản phân tán cần Kubernetes. Miễn phí theo giấy phép Apache 2.0; Zilliz Cloud trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục What is Milvus? và Why Milvus.</li><li>Thử Milvus Lite với dữ liệu giả.</li><li>Chỉ cân nhắc Standalone hoặc phân tán khi thật cần quy mô lớn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang chọn cơ sở dữ liệu vector. Hãy đọc README của Milvus (https://github.com/milvus-io/milvus) và giải thích bằng tiếng Việt: khi nào cần Milvus thay vì Chroma hay Qdrant, Milvus Lite là gì, và các chế độ triển khai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 70 KB), bài chỉ lấy mục giới thiệu và Why Milvus. Hiệu năng và quy mô là tuyên bố của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>milvus-io</strong> có <strong>46.570 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0 và LF AI & Data. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/milvus-io/milvus/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/milvus-io/milvus\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 422. Chưa cài/chạy thử; không tạo validation. Snapshot sao 46570; repo_id 208728772; README SHA256 8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/milvus-io/milvus",
+          "repo_id": "208728772",
+          "source_path": "",
+          "source_revision": "README-SHA256:8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/milvus-io/milvus",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn Milvus Lite, Standalone và biên dịch từ mã nguồn; bài chưa đọc chi tiết nên không nêu lệnh. Bản phân tán cần Kubernetes. Miễn phí theo giấy phép Apache 2.0; Zilliz Cloud trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/milvus-io/milvus/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/milvus-io/milvus/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "milvus-io/milvus",
+        "stars": 46570,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/milvus-io/milvus/master/README.md",
+        "readmeSha256": "8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 423,
+      "batch": 72,
+      "slug": "promptfoo",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "promptfoo: công cụ dòng lệnh đánh giá và kiểm thử đối kháng (red teaming) ứng dụng LLM, chạy cục bộ; README nói dự án nay thuộc OpenAI",
+        "excerpt": "Hiểu promptfoo là công cụ dòng lệnh và thư viện đánh giá prompt, so sánh mô hình và quét lỗ hổng cho ứng dụng LLM. README nói dự án nay thuộc OpenAI và vẫn mã nguồn mở theo MIT, và các lần đánh giá chạy 100% cục bộ.",
+        "content": "<p>README mở đầu: promptfoo là công cụ dòng lệnh và thư viện để đánh giá và red teaming ứng dụng dựa trên LLM, thay cho thử và sai. Ghi chú: promptfoo nay là một phần của OpenAI, vẫn mã nguồn mở và giấy phép MIT (README nói vậy). Mục Quick Start nêu cài bằng npm, brew hoặc pip hoặc chạy bằng npx, cần khóa API của nhà cung cấp mô hình đặt trong biến môi trường (bài không chép lệnh), rồi chạy eval và xem kết quả trên giao diện web. Có thể làm: kiểm thử prompt và mô hình bằng đánh giá tự động, bảo mật ứng dụng LLM bằng red teaming và quét lỗ hổng, so sánh mô hình cạnh nhau, tự động hóa kiểm tra trong CI/CD, rà PR về bảo mật và tuân thủ LLM, chia sẻ kết quả. Mục Why promptfoo nêu: ưu tiên nhà phát triển, riêng tư (đánh giá chạy cục bộ, prompt không rời máy), linh hoạt, 'đã trải qua thực chiến cho ứng dụng phục vụ hơn 10 triệu người dùng' (tuyên bố của README), dựa trên dữ liệu, mã nguồn mở.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi bạn sửa prompt, kết quả có thể tốt lên hoặc xấu đi mà không biết. promptfoo cho bạn bộ bài kiểm tra chạy lặp lại, so sánh nhiều mô hình cạnh nhau và thử tấn công ứng dụng AI của mình để tìm lỗ hổng trước khi người khác tìm ra.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết vài câu hỏi mẫu và so sánh hai mô hình xem câu trả lời nào đạt. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Node hoặc Python cơ bản và khóa API; đọc kết quả đánh giá cần học thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'phục vụ hơn 10 triệu người dùng' và 'riêng tư' là của README; mô hình bên ngoài vẫn nhận prompt của bạn khi gọi API. Red teaming chỉ nên chạy trên ứng dụng của chính bạn hoặc khi có phép. Bài chưa kiểm tra phần dịch vụ trả phí nếu có.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>eval (đánh giá)</strong>: chạy bộ câu hỏi mẫu và chấm kết quả; README nêu.</li><li><strong>red teaming</strong>: tự thử tấn công ứng dụng để tìm lỗ hổng; README nêu.</li><li><strong>CI/CD</strong>: quy trình tự động kiểm tra và đưa mã lên; README nêu tích hợp.</li><li><strong>provider (nhà cung cấp mô hình)</strong>: dịch vụ mô hình như OpenAI, Anthropic; README liệt kê.</li><li><strong>prompt</strong>: câu lệnh đưa cho mô hình.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm, brew hoặc pip hoặc chạy bằng npx, đặt khóa API trong biến môi trường (bài không chép lệnh). Cần Node hoặc Python và khóa API. Miễn phí theo giấy phép MIT; phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Quick Start.</li><li>Chạy ví dụ getting-started với khóa API có giới hạn chi tiêu.</li><li>Xem kết quả trên giao diện web.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn kiểm thử chất lượng câu trả lời AI. Hãy đọc README của promptfoo (https://github.com/promptfoo/promptfoo) và giải thích bằng tiếng Việt: eval và red teaming khác nhau thế nào, vì sao khóa API cần giới hạn chi tiêu, và ghi chú về OpenAI nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói đánh giá chạy cục bộ nhưng gọi mô hình bên ngoài vẫn gửi prompt đến nhà cung cấp. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>promptfoo</strong> có <strong>26.770 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT và ghi chú vẫn theo MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/promptfoo/promptfoo/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/promptfoo/promptfoo\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 423. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26770; repo_id 633927609; README SHA256 7fd57809624e22da73bf6b6feb027c9e09aec74e0099bdea711fe2e276e87c4a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/promptfoo/promptfoo",
+          "repo_id": "633927609",
+          "source_path": "",
+          "source_revision": "README-SHA256:7fd57809624e22da73bf6b6feb027c9e09aec74e0099bdea711fe2e276e87c4a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/promptfoo/promptfoo",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm, brew hoặc pip hoặc chạy bằng npx, đặt khóa API trong biến môi trường (bài không chép lệnh). Cần Node hoặc Python và khóa API. Miễn phí theo giấy phép MIT; phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/promptfoo/promptfoo/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/promptfoo/promptfoo/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "promptfoo/promptfoo",
+        "stars": 26770,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/promptfoo/promptfoo/main/README.md",
+        "readmeSha256": "7fd57809624e22da73bf6b6feb027c9e09aec74e0099bdea711fe2e276e87c4a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

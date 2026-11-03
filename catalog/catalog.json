@@ -5663,5 +5663,99 @@
   "related": [
    "llamaindex"
   ]
+ },
+ {
+  "key": 420,
+  "slug": "chroma",
+  "group": "2026-11-03-vector-db-llm-eval",
+  "title": "Chroma: cơ sở dữ liệu vector mã nguồn mở cho ứng dụng AI, API cốt lõi chỉ 4 hàm, có dịch vụ đám mây trả phí",
+  "repo": "chroma-core/chroma",
+  "stars": 29624,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "promptfoo"
+  ]
+ },
+ {
+  "key": 421,
+  "slug": "qdrant",
+  "group": "2026-11-03-vector-db-llm-eval",
+  "title": "Qdrant: công cụ tìm kiếm vector viết bằng Rust, có bản Edge chạy trong ứng dụng; README cảnh báo lệnh Docker mẫu không có xác thực",
+  "repo": "qdrant/qdrant",
+  "stars": 35399,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "milvus",
+   "promptfoo"
+  ]
+ },
+ {
+  "key": 422,
+  "slug": "milvus",
+  "group": "2026-11-03-vector-db-llm-eval",
+  "title": "Milvus: cơ sở dữ liệu vector phân tán dưới LF AI & Data, có chế độ Standalone và Milvus Lite cho người mới",
+  "repo": "milvus-io/milvus",
+  "stars": 46570,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "qdrant"
+  ]
+ },
+ {
+  "key": 423,
+  "slug": "promptfoo",
+  "group": "2026-11-03-vector-db-llm-eval",
+  "title": "promptfoo: công cụ dòng lệnh đánh giá và kiểm thử đối kháng (red teaming) ứng dụng LLM, chạy cục bộ; README nói dự án nay thuộc OpenAI",
+  "repo": "promptfoo/promptfoo",
+  "stars": 26770,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "chroma",
+   "qdrant"
+  ]
  }
 ]

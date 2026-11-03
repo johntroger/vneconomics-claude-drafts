@@ -141,3 +141,4 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (312 tệp): cả 312 đều trả mã 200.
 - Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" chỉ xuất hiện trong câu phủ định.
 - Nhóm "Framework agent AI" (key 413–419): đã đối chiếu các cụm chính với README thô, cả 7 đường dẫn trả mã 200; quét cụm bị cấm không có kết quả.
+- Nhóm "Vector database và đánh giá LLM" (key 420–423): đã đối chiếu các cụm chính với README thô, cả 4 đường dẫn trả mã 200; quét cụm bị cấm không có kết quả; loại 4 repo do giấy phép NOASSERTION.
