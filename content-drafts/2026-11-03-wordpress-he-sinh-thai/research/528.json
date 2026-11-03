@@ -1,0 +1,43 @@
+{
+  "key": 528,
+  "repo": "WordPress/wordpress-playground",
+  "repoId": "529027653",
+  "url": "https://github.com/WordPress/wordpress-playground",
+  "stars": 1984,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-2.0",
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0",
+    "url": "https://api.github.com/licenses/gpl-2.0",
+    "node_id": "MDc6TGljZW5zZTg="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:11:24Z",
+  "createdAt": "2022-08-25T21:46:08Z",
+  "defaultBranch": "trunk",
+  "description": "Run WordPress in the browser via WebAssembly PHP",
+  "homepage": "https://w.org/playground/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/WordPress/wordpress-playground/trunk/README.md",
+    "sha256": "4ee982b9e0a1aa18e11445b94b7cc205f9c79b856801de4888a523a4ed77cae0",
+    "bytes": 14736,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Why is WordPress Playground useful?",
+      "Getting started",
+      "The Playground CLI",
+      "How can I contribute?"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Playground.",
+    "Chưa thử.",
+    "Giới hạn plugin chạy được chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

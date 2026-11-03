@@ -1,0 +1,43 @@
+{
+  "key": 523,
+  "repo": "wp-cli/wp-cli",
+  "repoId": "2360755",
+  "url": "https://github.com/wp-cli/wp-cli",
+  "stars": 5176,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:12:17Z",
+  "createdAt": "2011-09-10T12:51:59Z",
+  "defaultBranch": "main",
+  "description": "⚙️ WP-CLI framework",
+  "homepage": "https://wp-cli.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wp-cli/wp-cli/main/README.md",
+    "sha256": "40bd57df6bf465e3cc084c445713cf435f6dd5592469dcfa9862a397359ae07b",
+    "bytes": 13930,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Using",
+      "Installing",
+      "Support",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc handbook.",
+    "Chưa thử.",
+    "Hỗ trợ Windows chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

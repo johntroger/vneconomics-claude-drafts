@@ -1,0 +1,43 @@
+{
+  "key": 531,
+  "repo": "composer/composer",
+  "repoId": "1864363",
+  "url": "https://github.com/composer/composer",
+  "stars": 29567,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:56:07Z",
+  "createdAt": "2011-06-08T08:53:00Z",
+  "defaultBranch": "main",
+  "description": "Dependency Manager for PHP",
+  "homepage": "https://getcomposer.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/composer/composer/main/README.md",
+    "sha256": "f9d8689ccaa5d42d881be685bf352642ac9d49967483ffd1315243153a3766f0",
+    "bytes": 5696,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation / Usage",
+      "Packages",
+      "Requirements",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu getcomposer.org.",
+    "Chưa thử.",
+    "Giá Private Packagist chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

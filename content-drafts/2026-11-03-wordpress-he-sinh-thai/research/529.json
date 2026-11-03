@@ -1,0 +1,42 @@
+{
+  "key": 529,
+  "repo": "wp-media/wp-rocket",
+  "repoId": "62721640",
+  "url": "https://github.com/wp-media/wp-rocket",
+  "stars": 769,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-2.0",
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0",
+    "url": "https://api.github.com/licenses/gpl-2.0",
+    "node_id": "MDc6TGljZW5zZTg="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:23:11Z",
+  "createdAt": "2016-07-06T13:07:20Z",
+  "defaultBranch": "develop",
+  "description": "Performance optimization plugin for WordPress",
+  "homepage": "https://wp-rocket.me",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wp-media/wp-rocket/develop/README.md",
+    "sha256": "84a7623403aaca12205cf559fa3984215be547013fc62f983f68c932517da7d5",
+    "bytes": 5288,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Documentation",
+      "Composer installation",
+      "Gulp Tasks"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.wp-rocket.me.",
+    "Chưa thử.",
+    "Giá và điều khoản giấy phép chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

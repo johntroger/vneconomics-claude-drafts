@@ -69,6 +69,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 67 — Công cụ giảng dạy](learning-paths/67-cong-cu-giang-day.vi.md) — Từ video toán bằng mã, chấm bài Jupyter tự động đến nền tảng học tập offline; chú ý hai phiên bản Manim không dùng lẫn hướng dẫn cài, dữ liệu bài nộp của sinh viên và việc chạy mã nộp bài.
 - [Lộ trình 68 — Thu thập và xử lý dữ liệu](learning-paths/68-thu-thap-xu-ly-du-lieu.vi.md) — Từ phân tích HTML, cào dữ liệu web đến nạp dữ liệu, dựng pipeline và khám phá bằng biểu đồ; chú ý điều khoản trang, bản quyền, dữ liệu cá nhân, tuyên bố 'qua mặt chống bot' và phần thương mại của dltHub, Mage Pro.
 - [Lộ trình 69 — Blockchain và tiền mã hóa (kỹ thuật)](learning-paths/69-blockchain-tien-ma-hoa.vi.md) — Từ nút Bitcoin, Lightning, thanh toán và nút Ethereum đến hợp đồng thông minh, ứng dụng phi tập trung và dựng chuỗi riêng; chỉ là giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý; chú ý khóa riêng, mạng thử, kiểm toán hợp đồng và luật địa phương.
+- [Lộ trình 70 — WordPress và hệ sinh thái](learning-paths/70-wordpress-he-sinh-thai.vi.md) — Từ dòng lệnh, Composer, khung Bedrock và theme Sage đến API GraphQL, gỡ lỗi, tăng tốc và trình dựng trang; thử trên bản sao, sao lưu trước khi đổi dữ liệu, chú ý plugin trả phí (WP Rocket, Elementor Pro) và tính thử nghiệm của Playground.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -124,7 +125,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (178 bài)
+### Cơ bản (184 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -306,6 +307,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 508 | Kolibri: nền tảng học tập ưu tiên offline của Learning Equality; README cho biết kho này dành cho nhà phát triển, người dùng xem Hướng dẫn sử dụng | [learningequality/kolibri](https://github.com/learningequality/kolibri) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 1167 | cong-cu-giang-day |
 | 511 | Cheerio: thư viện JavaScript phân tích và thao tác HTML hoặc XML với cú pháp giống jQuery, chạy trên máy chủ và trình duyệt | [cheeriojs/cheerio](https://github.com/cheeriojs/cheerio) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 30539 | thu-thap-xu-ly-du-lieu |
 | 514 | PyGWalker: biến bảng dữ liệu pandas, polars, pyarrow thành giao diện kéo thả để khám phá và vẽ biểu đồ trong Jupyter hoặc Streamlit | [Kanaries/pygwalker](https://github.com/Kanaries/pygwalker) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 16005 | thu-thap-xu-ly-du-lieu |
+| 523 | WP-CLI: giao diện dòng lệnh cho WordPress, cài và quản lý plugin, đa site, cơ sở dữ liệu mà không cần trình duyệt; README yêu cầu PHP 7.2.24 trở lên | [wp-cli/wp-cli](https://github.com/wp-cli/wp-cli) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 5176 | wordpress-he-sinh-thai |
+| 527 | Query Monitor: bảng công cụ gỡ lỗi cho WordPress và WooCommerce, theo dõi truy vấn cơ sở dữ liệu, lỗi PHP, hook, script, lệnh gọi HTTP, REST API và nhiều thứ khác | [johnbillion/query-monitor](https://github.com/johnbillion/query-monitor) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 1780 | wordpress-he-sinh-thai |
+| 528 | WordPress Playground: WordPress chạy ngay trong trình duyệt nhờ WebAssembly không cần máy chủ PHP; README nói bản nhúng iframe còn thử nghiệm và có thể đổi hoặc hỏng | [WordPress/wordpress-playground](https://github.com/WordPress/wordpress-playground) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 1984 | wordpress-he-sinh-thai |
+| 529 | WP Rocket (kho mã): plugin tăng tốc WordPress bằng bộ nhớ đệm; README nói cần email và khóa API từ tài khoản WP Rocket để xác thực giấy phép nên là plugin trả phí | [wp-media/wp-rocket](https://github.com/wp-media/wp-rocket) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 769 | wordpress-he-sinh-thai |
+| 530 | Elementor: trình dựng website kéo thả cho WordPress; README nêu lõi miễn phí mã nguồn mở và các gói trả phí Elementor One/Pro | [elementor/elementor](https://github.com/elementor/elementor) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 7100 | wordpress-he-sinh-thai |
+| 531 | Composer: công cụ khai báo, quản lý và cài đặt phụ thuộc cho dự án PHP, tìm gói công khai trên Packagist; README nêu PHP 7.2.5 trở lên cho bản mới nhất | [composer/composer](https://github.com/composer/composer) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 29567 | wordpress-he-sinh-thai |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -349,7 +356,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (163 bài)
+### Nâng cao (166 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -516,6 +523,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 520 | Scaffold-ETH 2: bộ khởi tạo mã nguồn mở dựng ứng dụng phi tập trung (dapp) trên Ethereum với NextJS, RainbowKit, Foundry hoặc Hardhat, Wagmi, Viem; README nói sẵn sàng cho AI agent | [scaffold-eth/scaffold-eth-2](https://github.com/scaffold-eth/scaffold-eth-2) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 2064 | blockchain-tien-ma-hoa |
 | 521 | BTCPay Server: bộ xử lý thanh toán Bitcoin miễn phí mã nguồn mở, tự host, cho người bán nhận Bitcoin trực tiếp không phí hay trung gian (theo README) | [btcpayserver/btcpayserver](https://github.com/btcpayserver/btcpayserver) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7887 | blockchain-tien-ma-hoa |
 | 522 | lnd: bản cài đặt đầy đủ của nút Lightning Network (mạng thanh toán lớp 2 của Bitcoin), quản lý kênh, định tuyến và thanh toán; README nêu mức tuân thủ đặc tả BOLT | [lightningnetwork/lnd](https://github.com/lightningnetwork/lnd) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 8209 | blockchain-tien-ma-hoa |
+| 524 | Bedrock: bộ khung WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, theo triết lý Twelve-Factor, cấu hình theo môi trường | [roots/bedrock](https://github.com/roots/bedrock) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 6585 | wordpress-he-sinh-thai |
+| 525 | Sage: theme khởi đầu WordPress lai dùng Laravel Blade, Vite và Tailwind CSS, tích hợp Acorn của Laravel và hỗ trợ block editor | [roots/sage](https://github.com/roots/sage) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 13280 | wordpress-he-sinh-thai |
+| 526 | WPGraphQL: API GraphQL mở rộng được cho mọi site WordPress, kho monorepo gồm plugin lõi và các tiện ích (IDE, Smart Cache, ACF) và website wpgraphql.com | [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 3796 | wordpress-he-sinh-thai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

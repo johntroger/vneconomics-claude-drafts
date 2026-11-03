@@ -8101,5 +8101,219 @@
    "btcpayserver",
    "go-ethereum"
   ]
+ },
+ {
+  "key": 523,
+  "slug": "wp-cli",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "WP-CLI: giao diện dòng lệnh cho WordPress, cài và quản lý plugin, đa site, cơ sở dữ liệu mà không cần trình duyệt; README yêu cầu PHP 7.2.24 trở lên",
+  "repo": "wp-cli/wp-cli",
+  "stars": 5176,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "query-monitor",
+   "wordpress-playground"
+  ]
+ },
+ {
+  "key": 524,
+  "slug": "bedrock",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "Bedrock: bộ khung WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, theo triết lý Twelve-Factor, cấu hình theo môi trường",
+  "repo": "roots/bedrock",
+  "stars": 6585,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "composer",
+   "wp-graphql"
+  ]
+ },
+ {
+  "key": 525,
+  "slug": "sage",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "Sage: theme khởi đầu WordPress lai dùng Laravel Blade, Vite và Tailwind CSS, tích hợp Acorn của Laravel và hỗ trợ block editor",
+  "repo": "roots/sage",
+  "stars": 13280,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-07",
+  "related": [
+   "wp-graphql"
+  ]
+ },
+ {
+  "key": 526,
+  "slug": "wp-graphql",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "WPGraphQL: API GraphQL mở rộng được cho mọi site WordPress, kho monorepo gồm plugin lõi và các tiện ích (IDE, Smart Cache, ACF) và website wpgraphql.com",
+  "repo": "wp-graphql/wp-graphql",
+  "stars": 3796,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "bedrock",
+   "sage"
+  ]
+ },
+ {
+  "key": 527,
+  "slug": "query-monitor",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "Query Monitor: bảng công cụ gỡ lỗi cho WordPress và WooCommerce, theo dõi truy vấn cơ sở dữ liệu, lỗi PHP, hook, script, lệnh gọi HTTP, REST API và nhiều thứ khác",
+  "repo": "johnbillion/query-monitor",
+  "stars": 1780,
+  "license": {
+   "key": "gpl-2.0",
+   "name": "GNU General Public License v2.0",
+   "spdx_id": "GPL-2.0",
+   "url": "https://api.github.com/licenses/gpl-2.0",
+   "node_id": "MDc6TGljZW5zZTg="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-27",
+  "related": [
+   "elementor",
+   "wp-cli"
+  ]
+ },
+ {
+  "key": 528,
+  "slug": "wordpress-playground",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "WordPress Playground: WordPress chạy ngay trong trình duyệt nhờ WebAssembly không cần máy chủ PHP; README nói bản nhúng iframe còn thử nghiệm và có thể đổi hoặc hỏng",
+  "repo": "WordPress/wordpress-playground",
+  "stars": 1984,
+  "license": {
+   "key": "gpl-2.0",
+   "name": "GNU General Public License v2.0",
+   "spdx_id": "GPL-2.0",
+   "url": "https://api.github.com/licenses/gpl-2.0",
+   "node_id": "MDc6TGljZW5zZTg="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "wp-cli"
+  ]
+ },
+ {
+  "key": 529,
+  "slug": "wp-rocket",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "WP Rocket (kho mã): plugin tăng tốc WordPress bằng bộ nhớ đệm; README nói cần email và khóa API từ tài khoản WP Rocket để xác thực giấy phép nên là plugin trả phí",
+  "repo": "wp-media/wp-rocket",
+  "stars": 769,
+  "license": {
+   "key": "gpl-2.0",
+   "name": "GNU General Public License v2.0",
+   "spdx_id": "GPL-2.0",
+   "url": "https://api.github.com/licenses/gpl-2.0",
+   "node_id": "MDc6TGljZW5zZTg="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "composer",
+   "elementor"
+  ]
+ },
+ {
+  "key": 530,
+  "slug": "elementor",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "Elementor: trình dựng website kéo thả cho WordPress; README nêu lõi miễn phí mã nguồn mở và các gói trả phí Elementor One/Pro",
+  "repo": "elementor/elementor",
+  "stars": 7100,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "query-monitor",
+   "wp-rocket"
+  ]
+ },
+ {
+  "key": 531,
+  "slug": "composer",
+  "group": "2026-11-03-wordpress-he-sinh-thai",
+  "title": "Composer: công cụ khai báo, quản lý và cài đặt phụ thuộc cho dự án PHP, tìm gói công khai trên Packagist; README nêu PHP 7.2.5 trở lên cho bản mới nhất",
+  "repo": "composer/composer",
+  "stars": 29567,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "bedrock",
+   "wp-rocket"
+  ]
  }
 ]

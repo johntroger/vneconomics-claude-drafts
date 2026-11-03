@@ -1,0 +1,989 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-wordpress",
+  "batch": 89,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 523,
+      "batch": 89,
+      "slug": "wp-cli",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WP-CLI: giao diện dòng lệnh cho WordPress, cài và quản lý plugin, đa site, cơ sở dữ liệu mà không cần trình duyệt; README yêu cầu PHP 7.2.24 trở lên",
+        "excerpt": "Hiểu WP-CLI là giao diện dòng lệnh chính thức cho WordPress để cập nhật plugin, cấu hình multisite và nhiều việc khác mà không cần trình duyệt. README nêu ví dụ cài và kích hoạt plugin, xóa transient, yêu cầu PHP 7.2.24 và WordPress 4.9 trở lên, và nói phiên bản hiện tại là bản duy nhất được hỗ trợ chính thức.",
+        "content": "<p>README tả WP-CLI là giao diện dòng lệnh cho WordPress: cập nhật plugin, cấu hình multisite và nhiều việc khác không cần trình duyệt web. Có phần tài trợ duy trì và nêu bản ổn định hiện tại 2.12.0. Mục Using: WP-CLI làm được nhiều việc bạn làm trong trang quản trị, ví dụ lệnh cài và kích hoạt plugin (README cho ví dụ cài plugin user-switching và kết quả in ra), và cả việc không làm được trong trang quản trị như xóa toàn bộ transient trong cơ sở dữ liệu. Có hướng dẫn nhanh, danh sách lệnh đầy đủ về chủ đề, plugin, nhập xuất dữ liệu, tìm và thay trong cơ sở dữ liệu. Mục Installing: tải tệp Phar là cách khuyến nghị cho đa số; yêu cầu môi trường kiểu UNIX (OS X, Linux, FreeBSD, Cygwin; Windows hỗ trợ hạn chế), PHP 7.2.24 trở lên, WordPress 4.9 trở lên; README dẫn cách tải tệp bằng công cụ tải về, kiểm tra, rồi đưa vào PATH (bài không chép lệnh). Có hoàn thành lệnh tự động cho shell. Mục Support: người duy trì ít thời gian giải đáp chung, chỉ bản hiện tại được hỗ trợ chính thức; issue trên GitHub dành cho cải tiến và lỗi của lệnh có sẵn, không phải hỏi đáp; README nhắc 'libre không có nghĩa là gratis'. Có phần mở rộng, đóng góp, ghi công. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì bấm trong trang quản trị WordPress, bạn gõ lệnh để cài plugin, cập nhật, xóa bộ nhớ đệm hay tìm và thay chuỗi trong cơ sở dữ liệu. Nhanh và có thể viết thành script khi quản lý nhiều website.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: trên một site thử, dùng lệnh liệt kê plugin và thử cập nhật một plugin. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần terminal và hiểu WordPress; nên thử trên site không quan trọng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lệnh thay và tìm trong cơ sở dữ liệu hay xóa dữ liệu có thể làm hỏng site: sao lưu trước, thử trên bản sao. README ghi Windows chỉ hỗ trợ hạn chế. Chỉ phiên bản hiện tại được hỗ trợ chính thức. Lệnh cài trong README tải tệp từ mạng: đọc trước khi chạy. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>CLI (giao diện dòng lệnh)</strong>: điều khiển phần mềm bằng lệnh gõ; README nêu.</li><li><strong>Phar</strong>: tệp PHP đóng gói thành một chương trình chạy được; README nêu là cách cài khuyến nghị.</li><li><strong>multisite</strong>: một cài đặt WordPress chạy nhiều website; README nêu.</li><li><strong>transient</strong>: dữ liệu tạm lưu trong cơ sở dữ liệu WordPress; README nêu ví dụ xóa.</li><li><strong>search-replace (tìm và thay trong cơ sở dữ liệu)</strong>: đổi chuỗi hàng loạt trong dữ liệu site; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải tệp Phar, kiểm tra và đưa vào PATH (bài không chép lệnh); có cách cài khác trong tài liệu. Cần UNIX-like, PHP 7.2.24+, WordPress 4.9+. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Using.</li><li>Cài trên máy phát triển.</li><li>Thử lệnh trên site thử, sao lưu trước khi đổi dữ liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quản lý website WordPress và muốn làm bằng dòng lệnh. Hãy đọc README của WP-CLI (https://github.com/wp-cli/wp-cli) và giải thích bằng tiếng Việt: WP-CLI làm gì, yêu cầu hệ thống, và rủi ro khi thao tác cơ sở dữ liệu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 14 KB), bài chưa đọc handbook. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wp-cli</strong> có <strong>5.176 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wp-cli/wp-cli/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wp-cli/wp-cli\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 523. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5176; repo_id 2360755; README SHA256 40bd57df6bf465e3cc084c445713cf435f6dd5592469dcfa9862a397359ae07b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wp-cli/wp-cli",
+          "repo_id": "2360755",
+          "source_path": "",
+          "source_revision": "README-SHA256:40bd57df6bf465e3cc084c445713cf435f6dd5592469dcfa9862a397359ae07b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-cli/wp-cli",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải tệp Phar, kiểm tra và đưa vào PATH (bài không chép lệnh); có cách cài khác trong tài liệu. Cần UNIX-like, PHP 7.2.24+, WordPress 4.9+. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-cli/wp-cli/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wp-cli/wp-cli/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wp-cli/wp-cli",
+        "stars": 5176,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wp-cli/wp-cli/main/README.md",
+        "readmeSha256": "40bd57df6bf465e3cc084c445713cf435f6dd5592469dcfa9862a397359ae07b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 524,
+      "batch": 89,
+      "slug": "bedrock",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bedrock: bộ khung WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, theo triết lý Twelve-Factor, cấu hình theo môi trường",
+        "excerpt": "Hiểu Bedrock là bộ khung (boilerplate) WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, theo triết lý Twelve-Factor: cấu trúc thư mục tốt hơn, quản lý phụ thuộc bằng Composer (lõi WordPress qua gói roots/wordpress, plugin và theme qua WP Packages), cấu hình theo môi trường, biến môi trường bằng Dotenv và nạp tự động mu-plugins.",
+        "content": "<p>README mô tả Bedrock là bộ khung WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, nhiều triết lý lấy từ phương pháp Twelve-Factor App. Lợi ích nêu: cấu trúc thư mục tốt hơn; quản lý phụ thuộc bằng Composer (gói roots/wordpress cho lõi WordPress, kho WP Packages cho plugin và theme); cấu hình WordPress dễ theo tệp từng môi trường; biến môi trường bằng Dotenv; trình nạp tự động cho mu-plugins (dùng plugin thường như mu-plugin). Getting Started: xem tài liệu cài đặt Bedrock (bài không chép lệnh). Có phần ủng hộ Roots (tổ chức mã nguồn mở độc lập, tài trợ WP Packages, README nhắc sản phẩm trả phí như Radicle) và cộng đồng (Discord qua tài trợ GitHub, Discourse, blog, bản tin). README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với WordPress thông thường, plugin và lõi nằm lẫn trong một thư mục. Bedrock tách rõ và quản lý bằng Composer, nên cả nhóm dựng lại site giống nhau từ Git, hợp với quy trình làm việc hiện đại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc tài liệu cài đặt để hiểu cấu trúc rồi dựng một site thử cục bộ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần quen Git, Composer và khái niệm cấu hình theo môi trường; khác cách cài WordPress truyền thống. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cách làm khác hẳn WordPress truyền thống: nhiều plugin hay hosting dùng chung có thể không phù hợp. Cần Composer và quyền cấu hình máy chủ. Một số quyền lợi (như Discord) gắn với tài trợ trả phí; Radicle là sản phẩm trả phí, bài chưa kiểm tra. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>boilerplate (bộ khung)</strong>: mã khởi đầu dựng sẵn cho dự án; README nêu.</li><li><strong>Composer</strong>: công cụ quản lý phụ thuộc PHP; README nêu.</li><li><strong>Twelve-Factor</strong>: phương pháp dựng ứng dụng, cấu hình qua môi trường; README nêu.</li><li><strong>Dotenv</strong>: nạp biến môi trường từ tệp .env; README nêu.</li><li><strong>mu-plugin</strong>: plugin bắt buộc nạp tự động; README nêu bộ nạp tự động.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần PHP, Composer và Git. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview.</li><li>Đọc tài liệu cài đặt.</li><li>Dựng site thử cục bộ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý site WordPress bằng Git và Composer. Hãy đọc README của Bedrock (https://github.com/roots/bedrock) và giải thích bằng tiếng Việt: Bedrock khác cài WordPress thường thế nào, Twelve-Factor là gì, và lưu ý khi dùng plugin. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,3 KB), bài chưa đọc tài liệu roots.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>roots</strong> có <strong>6.585 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/roots/bedrock/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/roots/bedrock\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 524. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6585; repo_id 14075080; README SHA256 779d7ffe1a987f45e8facb378381096e77acccfb9839cab47b4aae0557ab1931.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/roots/bedrock",
+          "repo_id": "14075080",
+          "source_path": "",
+          "source_revision": "README-SHA256:779d7ffe1a987f45e8facb378381096e77acccfb9839cab47b4aae0557ab1931",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roots/bedrock",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần PHP, Composer và Git. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roots/bedrock/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/roots/bedrock/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "roots/bedrock",
+        "stars": 6585,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/roots/bedrock/master/README.md",
+        "readmeSha256": "779d7ffe1a987f45e8facb378381096e77acccfb9839cab47b4aae0557ab1931",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 525,
+      "batch": 89,
+      "slug": "sage",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Sage: theme khởi đầu WordPress lai dùng Laravel Blade, Vite và Tailwind CSS, tích hợp Acorn của Laravel và hỗ trợ block editor",
+        "excerpt": "Hiểu Sage là theme khởi đầu WordPress nâng cao dùng Laravel Blade cho mẫu giao diện, Vite cho dựng và tải lại nóng CSS, Tailwind CSS tích hợp sẵn, sức mạnh Laravel qua Acorn, và hỗ trợ block editor. README nêu mục tiêu mang mẫu PHP đúng nghĩa và công cụ JavaScript hiện đại vào theme WordPress.",
+        "content": "<p>README tả Sage là theme khởi đầu WordPress lai nâng cao với Laravel Blade và Tailwind CSS. Điểm nêu: mẫu theme sạch, hiệu quả bằng Laravel Blade; quy trình front-end hiện đại với Vite; hỗ trợ sẵn Tailwind CSS; dùng sức mạnh Laravel qua tích hợp Acorn; hỗ trợ block editor tích hợp. README nói Sage mang mẫu PHP đúng nghĩa và công cụ JavaScript hiện đại vào theme WordPress: viết mã có tổ chức theo thành phần bằng Blade, build tức thì và tải lại CSS nóng với Vite, dùng các tính năng Laravel mạnh qua Acorn. Có liên kết đọc tài liệu bắt đầu. Cũng có phần ủng hộ Roots và cộng đồng. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Theme WordPress truyền thống trộn HTML và PHP lộn xộn. Sage cho bạn viết giao diện theo thành phần với Blade và build bằng công cụ hiện đại, gần với cách làm ứng dụng web mới.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc tài liệu cài đặt rồi dựng theme thử cục bộ và sửa một mẫu Blade. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần PHP, Blade, Node, Vite, Tailwind và hiểu theme WordPress. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Không dành cho người mới với WordPress: đây là theme khởi đầu cho nhà phát triển, không phải theme dùng ngay. Phụ thuộc Node, Composer và Laravel Acorn. README ngắn, bài chưa đọc tài liệu; README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Blade</strong>: ngôn ngữ mẫu giao diện của Laravel; README nêu.</li><li><strong>Acorn</strong>: cầu nối đưa tính năng Laravel vào WordPress; README nêu.</li><li><strong>Vite</strong>: công cụ dựng và tải lại nóng cho front-end; README nêu.</li><li><strong>Tailwind CSS</strong>: khung CSS dùng lớp tiện ích; README nêu hỗ trợ sẵn.</li><li><strong>starter theme (theme khởi đầu)</strong>: theme nền để nhà phát triển xây tiếp; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần PHP, Composer, Node. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu cài đặt.</li><li>Dựng theme thử và sửa một mẫu Blade.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết WordPress và muốn làm theme hiện đại. Hãy đọc README của Sage (https://github.com/roots/sage) và giải thích bằng tiếng Việt: Blade, Acorn và Vite là gì, Sage khác theme thường thế nào, và ai nên dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn (khoảng 3,2 KB), bài chưa đọc tài liệu roots.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>roots</strong> có <strong>13.280 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-07. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/roots/sage/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/roots/sage\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 525. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13280; repo_id 1305114; README SHA256 64d3c1b31a440237be6ed6f3437f85fd34730e614edb57f0de31f3859d30209f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/roots/sage",
+          "repo_id": "1305114",
+          "source_path": "",
+          "source_revision": "README-SHA256:64d3c1b31a440237be6ed6f3437f85fd34730e614edb57f0de31f3859d30209f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roots/sage",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần PHP, Composer, Node. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/roots/sage/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/roots/sage/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "roots/sage",
+        "stars": 13280,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/roots/sage/main/README.md",
+        "readmeSha256": "64d3c1b31a440237be6ed6f3437f85fd34730e614edb57f0de31f3859d30209f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 526,
+      "batch": 89,
+      "slug": "wp-graphql",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WPGraphQL: API GraphQL mở rộng được cho mọi site WordPress, kho monorepo gồm plugin lõi và các tiện ích (IDE, Smart Cache, ACF) và website wpgraphql.com",
+        "excerpt": "Hiểu WPGraphQL là plugin cung cấp API GraphQL mở rộng được cho mọi site WordPress, mở khóa quy trình phát triển hiện đại (như dùng WordPress làm CMS không giao diện cho ứng dụng khác). Kho là monorepo gồm plugin lõi, các tiện ích (IDE, Smart Cache, ACF) và site wpgraphql.com. README nói người dùng cuối cài từ WordPress.org, Composer hoặc gói phát hành, không cần clone kho.",
+        "content": "<p>README tả WPGraphQL cung cấp API GraphQL mở rộng được cho mọi site WordPress, mở khóa quy trình phát triển hiện đại, cho cả nhà phát triển WordPress muốn khám phá GraphQL và người thạo GraphQL muốn vào WordPress. Cấu trúc kho (monorepo): thư mục plugins có plugin lõi wp-graphql, tiện ích IDE, tiện ích Smart Cache, tiện ích ACF; thư mục websites có site wpgraphql.com viết bằng Next.js; thư mục design cho tài nguyên thương hiệu; cấu hình môi trường WordPress chung, cấu hình workspace và Turborepo. Với người dùng cuối: không có gì thay đổi, cài WPGraphQL từ WordPress.org, Composer hoặc tải gói phát hành. Với người đóng góp: clone, cài phụ thuộc, khởi động môi trường WordPress với mọi plugin (bài không chép lệnh), xem Development Guide. README phần đã đọc không nêu giấy phép; GitHub nhận diện GPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì dùng WordPress làm cả website lẫn kho nội dung, bạn dùng nó làm kho nội dung và lấy dữ liệu qua GraphQL cho giao diện riêng (React, Next.js). Đây là hướng 'headless WordPress'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài trên site thử và dùng trình soạn truy vấn để lấy danh sách bài viết. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu GraphQL, WordPress và ứng dụng giao diện riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mở API GraphQL công khai có thể làm lộ dữ liệu nếu không cấu hình quyền: README phần đã đọc không bàn, đây là nhận định chung. Kho là monorepo dành cho người đóng góp; người dùng cuối cài từ WordPress.org. Giấy phép GPL-3.0 có điều kiện riêng. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>GraphQL</strong>: kiểu API cho phép hỏi đúng dữ liệu cần; README nêu.</li><li><strong>headless</strong>: hậu trường tách khỏi giao diện hiển thị.</li><li><strong>monorepo</strong>: một kho chứa nhiều dự án; README nêu.</li><li><strong>plugin</strong>: phần mở rộng của WordPress; README nêu.</li><li><strong>wp-env</strong>: công cụ dựng môi trường WordPress để phát triển; README nêu cấu hình dùng chung.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: người dùng cài từ WordPress.org, Composer hoặc gói phát hành; người đóng góp dùng npm và wp-env (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (GPL-3.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và cấu trúc kho.</li><li>Cài plugin lõi trên site thử.</li><li>Kiểm tra quyền truy cập API trước khi công khai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng WordPress làm CMS không giao diện. Hãy đọc README của WPGraphQL (https://github.com/wp-graphql/wp-graphql) và giải thích bằng tiếng Việt: WPGraphQL làm gì, kho monorepo gồm gì, và rủi ro khi mở API công khai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 10 KB), bài chưa đọc tài liệu wpgraphql.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wp-graphql</strong> có <strong>3.796 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wp-graphql/wp-graphql/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wp-graphql/wp-graphql\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 526. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3796; repo_id 72453516; README SHA256 5b8088c2248a71cb534fc03071cf37273b0b17125d9f7c5d08b06f4a6c906c35.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wp-graphql/wp-graphql",
+          "repo_id": "72453516",
+          "source_path": "",
+          "source_revision": "README-SHA256:5b8088c2248a71cb534fc03071cf37273b0b17125d9f7c5d08b06f4a6c906c35",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-graphql/wp-graphql",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: người dùng cài từ WordPress.org, Composer hoặc gói phát hành; người đóng góp dùng npm và wp-env (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (GPL-3.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-graphql/wp-graphql/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wp-graphql/wp-graphql/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wp-graphql/wp-graphql",
+        "stars": 3796,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wp-graphql/wp-graphql/main/README.md",
+        "readmeSha256": "5b8088c2248a71cb534fc03071cf37273b0b17125d9f7c5d08b06f4a6c906c35",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 527,
+      "batch": 89,
+      "slug": "query-monitor",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Query Monitor: bảng công cụ gỡ lỗi cho WordPress và WooCommerce, theo dõi truy vấn cơ sở dữ liệu, lỗi PHP, hook, script, lệnh gọi HTTP, REST API và nhiều thứ khác",
+        "excerpt": "Hiểu Query Monitor là bảng công cụ nhà phát triển cho WordPress và WooCommerce, cho thấy mọi truy vấn cơ sở dữ liệu, lỗi PHP, hook và action, khối block editor, script và style, lệnh gọi HTTP, Ajax, REST API, kiểm tra quyền người dùng và nhiều thông tin khác, có lọc theo plugin hoặc theme. Hữu ích để tìm plugin làm site chậm.",
+        "content": "<p>README tả Query Monitor là bảng công cụ nhà phát triển cho WordPress và WooCommerce, gỡ lỗi truy vấn cơ sở dữ liệu, lỗi PHP, hook và action, khối block editor, script và style đã nạp, lệnh gọi HTTP API và nhiều thứ khác. Có tính năng nâng cao như gỡ lỗi Ajax, REST API, kiểm tra quyền người dùng, hỗ trợ đầy đủ theme khối và chỉnh sửa toàn site; có thể thu hẹp đầu ra theo plugin hoặc theme để thấy phần nào làm site chậm. Các mục tính năng: truy vấn cơ sở dữ liệu (số dòng, thời gian, cảnh báo truy vấn chậm, trùng lặp hoặc lỗi, gộp theo loại, thành phần hay hàm gọi), hook và action, theme (tệp mẫu, phân cấp mẫu, lớp body), lỗi PHP, 'Doing it Wrong' và hàm lỗi thời, khối nội dung, yêu cầu, script và style, ngôn ngữ, lệnh gọi HTTP, kiểm tra quyền, multisite, chuyển hướng, Ajax, REST API, màn hình quản trị, thông tin môi trường, ghi nhật ký, đo hiệu năng, hỗ trợ Guzzle, xác thực. Giấy phép GPLv2 trở lên (huy hiệu và mục License).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi site WordPress chậm, Query Monitor cho thấy truy vấn nào chậm và do plugin nào, ngay trên thanh công cụ quản trị. Rất hữu ích cho người làm WordPress muốn tối ưu mà không đoán mò.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài trên site thử, mở một trang chậm và xem truy vấn gom theo plugin. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng như plugin thường; đọc kết quả cần hiểu truy vấn và hook. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Công cụ gỡ lỗi để lộ nhiều thông tin kỹ thuật (truy vấn, cấu hình, biến): chỉ bật cho quản trị viên và nên tắt trên site sản xuất nếu không cần (nhận định chung, README phần đã đọc không nêu). Chính plugin cũng có thể làm chậm site khi bật. README rất dài (khoảng 19 KB), bài chưa đọc phần cài đặt chi tiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>database query (truy vấn cơ sở dữ liệu)</strong>: yêu cầu lấy dữ liệu từ cơ sở dữ liệu; README nêu.</li><li><strong>hook / action</strong>: điểm WordPress cho plugin chèn mã; README nêu.</li><li><strong>REST API</strong>: giao diện để chương trình khác lấy dữ liệu WordPress; README nêu.</li><li><strong>block theme / FSE</strong>: theme theo khối và chỉnh sửa toàn site của WordPress; README nêu hỗ trợ.</li><li><strong>profiling (đo hiệu năng)</strong>: đo thời gian từng đoạn mã; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài như plugin WordPress (bài chưa đọc chi tiết nên không nêu lệnh). Cần WordPress. Miễn phí theo giấy phép GPLv2 trở lên.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Features.</li><li>Cài trên site thử.</li><li>Xem truy vấn gom theo thành phần trên trang chậm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tìm plugin làm WordPress chậm. Hãy đọc README của Query Monitor (https://github.com/johnbillion/query-monitor) và giải thích bằng tiếng Việt: công cụ cho thấy những gì, cách đọc truy vấn gom theo thành phần, và lưu ý khi bật trên site thật. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 19 KB), bài chưa đọc phần cài đặt chi tiết. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>johnbillion</strong> có <strong>1.780 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-27. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0; README có huy hiệu GPL v2+ và mục License ghi GPLv2. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/johnbillion/query-monitor/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/johnbillion/query-monitor\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 527. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1780; repo_id 3879305; README SHA256 89ded0679d8bbaf6445dc147fd3a61ced5f7513124abc3207e332795cca0b105.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/johnbillion/query-monitor",
+          "repo_id": "3879305",
+          "source_path": "",
+          "source_revision": "README-SHA256:89ded0679d8bbaf6445dc147fd3a61ced5f7513124abc3207e332795cca0b105",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-2.0",
+                "name": "GNU General Public License v2.0",
+                "spdx_id": "GPL-2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "node_id": "MDc6TGljZW5zZTg="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/johnbillion/query-monitor",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài như plugin WordPress (bài chưa đọc chi tiết nên không nêu lệnh). Cần WordPress. Miễn phí theo giấy phép GPLv2 trở lên.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/johnbillion/query-monitor/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/johnbillion/query-monitor/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "johnbillion/query-monitor",
+        "stars": 1780,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/johnbillion/query-monitor/develop/README.md",
+        "readmeSha256": "89ded0679d8bbaf6445dc147fd3a61ced5f7513124abc3207e332795cca0b105",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 528,
+      "batch": 89,
+      "slug": "wordpress-playground",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WordPress Playground: WordPress chạy ngay trong trình duyệt nhờ WebAssembly không cần máy chủ PHP; README nói bản nhúng iframe còn thử nghiệm và có thể đổi hoặc hỏng",
+        "excerpt": "Hiểu WordPress Playground là WordPress thử nghiệm chạy ngay trong trình duyệt nhờ WebAssembly, không cần máy chủ PHP, để học, thử và dựng ứng dụng JavaScript không cần cài đặt. README có bản demo trực tiếp, cách nhúng iframe, ứng dụng khách JavaScript, blueprint, Playground CLI; cảnh báo bản nhúng còn thử nghiệm và có thể thay đổi hoặc hỏng không báo trước.",
+        "content": "<p>README tả WordPress Playground là WordPress thử nghiệm trong trình duyệt chạy không cần máy chủ PHP nhờ WebAssembly. Mục đích: giúp WordPress dễ tiếp cận ngay tức thì cho người dùng, người học, người mở rộng và người đóng góp bằng các công cụ nền tảng để dựng ứng dụng JavaScript tương tác không cần thiết lập, gồm học WordPress qua khám phá, học phát triển WordPress qua viết mã, và truy cập tức thì hệ sinh thái WordPress. Có liên kết tầm nhìn, lộ trình và danh sách cộng đồng 'Awesome WordPress Playground'. Mục Getting started: có bản demo trực tiếp; có thể nhúng Playground vào dự án qua iframe (README ghi rõ bản nhúng là thử nghiệm và có thể hỏng hoặc đổi không báo trước); kết nối bằng ứng dụng khách JavaScript, ví dụ dùng hàm startPlaygroundWeb với blueprint đặt trang đích, phiên bản PHP và WordPress ưa thích. Có mục Playground CLI, công cụ, hướng dẫn clone và chạy cục bộ, biên dịch lại với thông tin gỡ lỗi, thử chế độ offline, đóng góp, ngày Contributor Day, tương thích ngược, sản phẩm trước đây và quản trị. README phần đã đọc không nêu giấy phép; GitHub nhận diện GPL-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn muốn thử WordPress hay một plugin mà không cài máy chủ: Playground chạy WordPress ngay trong tab trình duyệt. Hợp để dạy WordPress hay demo plugin.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bản demo, thử cài một plugin và đổi theme, rồi đóng tab (dữ liệu chỉ tạm thời). Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Dùng bản demo không cần cài; nhúng và blueprint cần JavaScript. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói đây là dự án thử nghiệm và bản nhúng iframe có thể đổi hoặc hỏng không báo trước. Dữ liệu trong Playground chạy trong trình duyệt, không thay thế môi trường thật (nhận định chung). Không dùng cho site sản xuất. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>WebAssembly (WASM)</strong>: công nghệ chạy chương trình biên dịch trong trình duyệt; README nêu.</li><li><strong>blueprint</strong>: tệp mô tả cấu hình khởi tạo Playground như trang đích, phiên bản; README nêu.</li><li><strong>iframe</strong>: khung nhúng một trang web vào trang khác; README nêu cách nhúng.</li><li><strong>Playground CLI</strong>: công cụ dòng lệnh của Playground; README nêu.</li><li><strong>experimental (thử nghiệm)</strong>: chưa ổn định, có thể đổi; README nêu cho bản nhúng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng bản demo trực tiếp, nhúng iframe, ứng dụng khách JavaScript hoặc Playground CLI (bài không chép lệnh). Cần trình duyệt hiện đại. Miễn phí; giấy phép lấy theo GitHub (GPL-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở bản demo trực tiếp.</li><li>Thử một blueprint đơn giản.</li><li>Đọc cảnh báo về bản nhúng thử nghiệm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dạy WordPress và muốn demo không cần cài. Hãy đọc README của WordPress Playground (https://github.com/WordPress/wordpress-playground) và giải thích bằng tiếng Việt: Playground chạy thế nào, blueprint là gì, và những giới hạn của bản nhúng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 15 KB), bài chưa đọc tài liệu Playground. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>WordPress</strong> có <strong>1.984 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/WordPress/wordpress-playground/blob/trunk/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/WordPress/wordpress-playground\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 528. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1984; repo_id 529027653; README SHA256 4ee982b9e0a1aa18e11445b94b7cc205f9c79b856801de4888a523a4ed77cae0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/WordPress/wordpress-playground",
+          "repo_id": "529027653",
+          "source_path": "",
+          "source_revision": "README-SHA256:4ee982b9e0a1aa18e11445b94b7cc205f9c79b856801de4888a523a4ed77cae0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-2.0",
+                "name": "GNU General Public License v2.0",
+                "spdx_id": "GPL-2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "node_id": "MDc6TGljZW5zZTg="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/WordPress/wordpress-playground",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng bản demo trực tiếp, nhúng iframe, ứng dụng khách JavaScript hoặc Playground CLI (bài không chép lệnh). Cần trình duyệt hiện đại. Miễn phí; giấy phép lấy theo GitHub (GPL-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/WordPress/wordpress-playground/blob/trunk/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/WordPress/wordpress-playground/blob/trunk/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "WordPress/wordpress-playground",
+        "stars": 1984,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/WordPress/wordpress-playground/trunk/README.md",
+        "readmeSha256": "4ee982b9e0a1aa18e11445b94b7cc205f9c79b856801de4888a523a4ed77cae0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 529,
+      "batch": 89,
+      "slug": "wp-rocket",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WP Rocket (kho mã): plugin tăng tốc WordPress bằng bộ nhớ đệm; README nói cần email và khóa API từ tài khoản WP Rocket để xác thực giấy phép nên là plugin trả phí",
+        "excerpt": "Hiểu WP Rocket là plugin bộ nhớ đệm giúp giảm thời gian tải của website WordPress. Kho này là mã nguồn để theo dõi và đóng góp; README nói muốn xác thực giấy phép và dùng plugin phải khai báo hằng số email và khóa API từ tài khoản WP Rocket, nghĩa là plugin có giấy phép trả phí dù mã công khai. Bài chưa kiểm tra giá.",
+        "content": "<p>README mở đầu: chào mừng đến kho GitHub WP Rocket, nơi duyệt mã và theo dõi tiến độ plugin; cập nhật qua blog hoặc Twitter. WP Rocket là plugin bộ nhớ đệm đơn giản hóa việc giảm thời gian tải của website (cách nói của README), hướng tới làm web nhanh hơn từng website WordPress. Người không phải nhà phát triển nên xem tài liệu hỗ trợ ở trang riêng (tiếng Anh và tiếng Pháp), kèm nhật ký thay đổi. Mục cài bằng Composer: có thể dùng Composer để cài plugin như một phụ thuộc, nhưng để xác thực giấy phép và dùng plugin cần tự định nghĩa hai hằng số trong wp-config.php: email tài khoản WP Rocket và khóa API (bài không chép lệnh). Mục Gulp Tasks: bảng lệnh Gulp dựng CSS quản trị và JS. Trang hỗ trợ để gửi ticket. README phần đã đọc không nêu giấy phép và không nêu giá; GitHub nhận diện GPL-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>WP Rocket là plugin tăng tốc WordPress phổ biến. Điều dễ nhầm: mã nguồn công khai trên GitHub, nhưng để dùng cần giấy phép trả phí, README tự nói phải có email và khóa API.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc trang giá và tài liệu chính thức để biết chi phí trước khi cân nhắc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng như plugin thường nhưng cần mua giấy phép; kho mã dành cho nhà phát triển. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Plugin cần giấy phép trả phí: README yêu cầu email và khóa API; bài chưa kiểm tra giá hay điều khoản. Giấy phép mã nguồn GPL-2.0 (theo GitHub) khác với quyền dùng dịch vụ và cập nhật. Cache sai có thể làm site hiển thị nội dung cũ: kiểm tra trên staging. Không đưa khóa API vào kho Git công khai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>caching (bộ nhớ đệm)</strong>: lưu sẵn trang đã dựng để lần sau trả nhanh; README nêu.</li><li><strong>wp-config.php</strong>: tệp cấu hình chính của WordPress; README nêu hai hằng số.</li><li><strong>API key (khóa API)</strong>: chuỗi xác thực giấy phép; README nêu WP_ROCKET_KEY.</li><li><strong>Gulp</strong>: công cụ tự động hóa dựng CSS và JS; README nêu bảng lệnh.</li><li><strong>changelog</strong>: danh sách thay đổi theo phiên bản; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài như plugin hoặc bằng Composer, khai báo hai hằng số email và khóa API trong wp-config.php (bài không chép lệnh). Cần WordPress và giấy phép WP Rocket. Mã nguồn theo GPL-2.0 (theo GitHub); dùng plugin cần giấy phép trả phí, bài chưa kiểm tra giá.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc tài liệu chính thức.</li><li>Kiểm tra giá và điều khoản.</li><li>Thử trên site staging trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tăng tốc WordPress. Hãy đọc README của WP Rocket (https://github.com/wp-media/wp-rocket) và giải thích bằng tiếng Việt: plugin này làm gì, vì sao cần email và khóa API, và lưu ý khi dùng bộ nhớ đệm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), không nêu giá hay giấy phép; bài chưa đọc tài liệu. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wp-media</strong> có <strong>769 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wp-media/wp-rocket/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wp-media/wp-rocket\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 529. Chưa cài/chạy thử; không tạo validation. Snapshot sao 769; repo_id 62721640; README SHA256 84a7623403aaca12205cf559fa3984215be547013fc62f983f68c932517da7d5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wp-media/wp-rocket",
+          "repo_id": "62721640",
+          "source_path": "",
+          "source_revision": "README-SHA256:84a7623403aaca12205cf559fa3984215be547013fc62f983f68c932517da7d5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-2.0",
+                "name": "GNU General Public License v2.0",
+                "spdx_id": "GPL-2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "node_id": "MDc6TGljZW5zZTg="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-media/wp-rocket",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài như plugin hoặc bằng Composer, khai báo hai hằng số email và khóa API trong wp-config.php (bài không chép lệnh). Cần WordPress và giấy phép WP Rocket. Mã nguồn theo GPL-2.0 (theo GitHub); dùng plugin cần giấy phép trả phí, bài chưa kiểm tra giá.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wp-media/wp-rocket/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wp-media/wp-rocket/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wp-media/wp-rocket",
+        "stars": 769,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wp-media/wp-rocket/develop/README.md",
+        "readmeSha256": "84a7623403aaca12205cf559fa3984215be547013fc62f983f68c932517da7d5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 530,
+      "batch": 89,
+      "slug": "elementor",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Elementor: trình dựng website kéo thả cho WordPress; README nêu lõi miễn phí mã nguồn mở và các gói trả phí Elementor One/Pro",
+        "excerpt": "Hiểu Elementor là trình dựng website kéo thả phía giao diện cho WordPress, README quảng bá là 'tiên tiến nhất' (cách nói của README). README nói website builder miễn phí và mã nguồn mở, có API cho nhà phát triển tiện ích, lộ trình, và nhắc các gói Elementor One trả phí. Bài chưa kiểm tra giá và tính năng từng gói.",
+        "content": "<p>README chào mừng đến kho GitHub của Elementor và tuyên bố: Elementor là trình dựng website kéo thả phía giao diện tiên tiến nhất, tạo website cao cấp nhanh, xây mọi theme, trang, thiết kế mà không cần mã (tuyên bố của README). README nói dành cho nhà thiết kế web, người làm marketing muốn lên mạng nhanh và nhà phát triển muốn mở rộng, và nhắc 'Elementor One' (gói trả phí) cho nhiều tính năng khác. Có lộ trình tính năng. Mục Developer API: README nói trình dựng là miễn phí và mã nguồn mở, rất hợp để mở rộng và tích hợp, có Developers Center, blog nhà phát triển, tài liệu và cộng đồng. Mục đóng góp: hướng dẫn đóng góp, báo lỗi, gửi pull request, chương trình thưởng lỗi bảo mật, gợi ý tính năng, và yêu cầu hỗ trợ qua ticket. README phần đã đọc không nêu giấy phép; GitHub nhận diện GPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn dựng website WordPress bằng cách kéo thả thay vì viết mã, Elementor là một trong các công cụ phổ biến. Phần lõi miễn phí, nhưng nhiều tính năng nâng cao thuộc gói trả phí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài bản miễn phí trên site thử và dựng một trang giới thiệu đơn giản. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Dùng như plugin WordPress với giao diện kéo thả; tối ưu hiệu năng cần hiểu thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Các mô tả 'tiên tiến nhất', 'số 1' là của README. Nhiều tính năng nằm trong gói trả phí (Elementor One/Pro), bài chưa kiểm tra giá. Trang dựng bằng trình dựng trang có thể nặng và khó chuyển sang công cụ khác (nhận định chung, bài chưa kiểm tra). Plugin bên thứ ba mở rộng Elementor có chất lượng và bảo mật khác nhau. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>page builder (trình dựng trang)</strong>: công cụ dựng trang bằng kéo thả; README nêu.</li><li><strong>drag-and-drop (kéo thả)</strong>: thao tác di chuyển phần tử bằng chuột; README nêu.</li><li><strong>add-on (tiện ích mở rộng)</strong>: phần thêm tính năng do bên thứ ba viết; README nêu.</li><li><strong>open source (mã nguồn mở)</strong>: mã công khai cho mọi người xem; README nêu cho trình dựng.</li><li><strong>roadmap (lộ trình)</strong>: kế hoạch tính năng; README trỏ tới lộ trình.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài như plugin WordPress; có tài liệu cho nhà phát triển (bài không chép lệnh). Cần WordPress. Phần lõi miễn phí; giấy phép lấy theo GitHub (GPL-3.0); gói Elementor One/Pro trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Developer API.</li><li>Cài bản miễn phí trên site thử.</li><li>Cân nhắc gói trả phí chỉ khi cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng website WordPress bằng kéo thả. Hãy đọc README của Elementor (https://github.com/elementor/elementor) và giải thích bằng tiếng Việt: Elementor làm gì, phần nào miễn phí và phần nào trả phí, và lưu ý khi dùng trình dựng trang. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 6,6 KB), bài chưa đọc tài liệu Elementor. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Giá các gói chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>elementor</strong> có <strong>7.100 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/elementor/elementor/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/elementor/elementor\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 530. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7100; repo_id 60010673; README SHA256 2e6de7a7c302f35225dc781e0b191aeb56c4f64563d821a4da24e581b190c98b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/elementor/elementor",
+          "repo_id": "60010673",
+          "source_path": "",
+          "source_revision": "README-SHA256:2e6de7a7c302f35225dc781e0b191aeb56c4f64563d821a4da24e581b190c98b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/elementor/elementor",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài như plugin WordPress; có tài liệu cho nhà phát triển (bài không chép lệnh). Cần WordPress. Phần lõi miễn phí; giấy phép lấy theo GitHub (GPL-3.0); gói Elementor One/Pro trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/elementor/elementor/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/elementor/elementor/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "elementor/elementor",
+        "stars": 7100,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/elementor/elementor/main/README.md",
+        "readmeSha256": "2e6de7a7c302f35225dc781e0b191aeb56c4f64563d821a4da24e581b190c98b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 531,
+      "batch": 89,
+      "slug": "composer",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Composer: công cụ khai báo, quản lý và cài đặt phụ thuộc cho dự án PHP, tìm gói công khai trên Packagist; README nêu PHP 7.2.5 trở lên cho bản mới nhất",
+        "excerpt": "Hiểu Composer là công cụ giúp khai báo, quản lý và cài đặt các phụ thuộc của dự án PHP; gói công khai tìm trên Packagist, gói riêng có Private Packagist. README nêu yêu cầu PHP 7.2.5 trở lên cho bản mới nhất và bản LTS 2.2 cho PHP 5.3.2 đến 8.1. Nền tảng của các bộ khung như Bedrock.",
+        "content": "<p>README tả Composer giúp khai báo, quản lý và cài đặt các phụ thuộc của dự án PHP. Cài đặt và dùng: tải và cài theo hướng dẫn chính thức ở getcomposer.org, xem tài liệu để dùng. Gói: tìm gói công khai trên Packagist.org; lưu trữ gói riêng thì có Private Packagist (sản phẩm thương mại, bài chưa kiểm tra giá). Cộng đồng: theo dõi tài khoản chính thức, hỗ trợ qua Stack Overflow hoặc GitHub Discussions; dự án áp dụng Bộ quy tắc ứng xử. Yêu cầu: phiên bản mới nhất cần PHP 7.2.5 trở lên; bản Composer 2.2 LTS (hỗ trợ dài hạn) hỗ trợ PHP 5.3.2 đến 8.1, trình cài hay lệnh tự cập nhật sẽ tự chọn phiên bản phù hợp. Giấy phép MIT (mục License).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án PHP dùng nhiều thư viện của người khác. Composer ghi lại thư viện nào, phiên bản nào, và cài chúng giúp, để cả nhóm có môi trường giống nhau. WordPress hiện đại như Bedrock dùng Composer.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo một dự án thử và thêm một thư viện qua Composer để xem tệp khai báo và khóa phiên bản. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website WordPress muốn quản lý bằng dòng lệnh, Git và Composer, tăng tốc và gỡ lỗi.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần terminal và PHP cơ bản; khái niệm phụ thuộc và khóa phiên bản cần làm quen. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Composer tải mã từ Packagist và nhiều nguồn: chỉ cài gói bạn tin cậy, kiểm tra tên gói để tránh gói giả mạo (nhận định chung). Một số script của gói có thể chạy lệnh khi cài. Phiên bản Composer phải khớp phiên bản PHP của máy chủ. README ngắn, bài chưa đọc tài liệu getcomposer.org.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dependency (phụ thuộc)</strong>: thư viện mà dự án cần để chạy; README nêu.</li><li><strong>Packagist</strong>: kho gói PHP công khai; README nêu.</li><li><strong>LTS</strong>: phiên bản hỗ trợ dài hạn; README nêu Composer 2.2 LTS.</li><li><strong>package (gói)</strong>: một thư viện hoặc plugin có thể cài; README nêu.</li><li><strong>Private Packagist</strong>: dịch vụ trả phí lưu gói riêng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn cài chính thức ở getcomposer.org; bài chưa đọc nên không nêu lệnh. Cần PHP 7.2.5+ cho bản mới nhất. Miễn phí theo giấy phép MIT; Private Packagist trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Requirements.</li><li>Cài theo hướng dẫn chính thức.</li><li>Thêm một thư viện trong dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm WordPress và nghe nói Composer. Hãy đọc README của Composer (https://github.com/composer/composer) và giải thích bằng tiếng Việt: Composer làm gì, Packagist là gì, yêu cầu PHP ra sao, và lưu ý khi cài gói từ nguồn lạ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5,7 KB), bài chưa đọc tài liệu getcomposer.org. Nhận định về gói giả mạo là nguyên tắc chung. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ WordPress chạm vào cơ sở dữ liệu và mã của website thật: thử trên bản sao (staging) hoặc môi trường cục bộ, sao lưu trước khi đổi, chỉ cài plugin từ nguồn đáng tin, giữ khóa và mật khẩu ngoài kho mã, và kiểm tra giấy phép và phí của từng plugin.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>composer</strong> có <strong>29.567 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/composer/composer/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/composer/composer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 531. Chưa cài/chạy thử; không tạo validation. Snapshot sao 29567; repo_id 1864363; README SHA256 f9d8689ccaa5d42d881be685bf352642ac9d49967483ffd1315243153a3766f0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/composer/composer",
+          "repo_id": "1864363",
+          "source_path": "",
+          "source_revision": "README-SHA256:f9d8689ccaa5d42d881be685bf352642ac9d49967483ffd1315243153a3766f0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/composer/composer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn cài chính thức ở getcomposer.org; bài chưa đọc nên không nêu lệnh. Cần PHP 7.2.5+ cho bản mới nhất. Miễn phí theo giấy phép MIT; Private Packagist trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/composer/composer/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/composer/composer/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "composer/composer",
+        "stars": 29567,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/composer/composer/main/README.md",
+        "readmeSha256": "f9d8689ccaa5d42d881be685bf352642ac9d49967483ffd1315243153a3766f0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

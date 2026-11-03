@@ -1,0 +1,43 @@
+{
+  "key": 527,
+  "repo": "johnbillion/query-monitor",
+  "repoId": "3879305",
+  "url": "https://github.com/johnbillion/query-monitor",
+  "stars": 1780,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-2.0",
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0",
+    "url": "https://api.github.com/licenses/gpl-2.0",
+    "node_id": "MDc6TGljZW5zZTg="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-27T01:23:09Z",
+  "createdAt": "2012-03-30T17:54:40Z",
+  "defaultBranch": "develop",
+  "description": "The developer tools panel for WordPress and WooCommerce",
+  "homepage": "https://querymonitor.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/johnbillion/query-monitor/develop/README.md",
+    "sha256": "89ded0679d8bbaf6445dc147fd3a61ced5f7513124abc3207e332795cca0b105",
+    "bytes": 19331,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Database Queries",
+      "Hooks & Actions",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hết README.",
+    "Chưa thử.",
+    "Tác động hiệu năng của chính plugin chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
