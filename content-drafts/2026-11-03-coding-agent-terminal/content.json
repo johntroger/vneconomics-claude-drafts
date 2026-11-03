@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-coding-agent",
+  "batch": 79,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 463,
+      "batch": 79,
+      "slug": "codex",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Codex CLI: coding agent của OpenAI chạy cục bộ trên máy, đăng nhập bằng tài khoản ChatGPT hoặc khóa API; README có lệnh cài tải từ mạng",
+        "excerpt": "Hiểu Codex CLI là coding agent của OpenAI chạy trên máy bạn, dùng trong terminal; còn có phiên bản cho trình soạn mã, ứng dụng desktop và Codex Web (đám mây). README nêu cài bằng đoạn lệnh tải từ mạng, npm hoặc Homebrew, đăng nhập bằng ChatGPT hoặc khóa API.",
+        "content": "<p>README mở đầu: Codex CLI là coding agent của OpenAI chạy cục bộ trên máy tính. Nếu muốn dùng trong trình soạn mã (VS Code, Cursor, Windsurf) thì cài bản IDE; muốn bản ứng dụng desktop thì chạy lệnh codex app; muốn agent trên đám mây thì dùng Codex Web. Mục Quickstart: cài Codex CLI bằng đoạn lệnh tải từ mạng trên Mac, Linux và Windows (bài không chép lệnh); trình cài tải từ máy chủ phát hành của OpenAI và dự phòng GitHub Releases; cũng cài được qua npm hoặc Homebrew; sau đó chạy lệnh codex. Mỗi bản phát hành GitHub có nhiều tệp thực thi cho macOS và Linux (cần đổi tên sau khi giải nén). Mục sử dụng với gói ChatGPT: chọn đăng nhập bằng ChatGPT để dùng Codex trong gói Plus, Pro, Business, Edu hoặc Enterprise; cũng dùng được khóa API nhưng cần thiết lập thêm. Mục Docs có tài liệu, đóng góp, cài đặt và build, quỹ mã nguồn mở. Giấy phép Apache-2.0 theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn dùng ChatGPT, Codex CLI cho phép nhờ AI đọc dự án, sửa mã và chạy lệnh ngay trong terminal. Có thể dùng chung tài khoản ChatGPT, nhưng gói nào gồm Codex do OpenAI quy định.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy Codex trong một thư mục dự án thử, nhờ giải thích cấu trúc rồi mới cho sửa. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đặt đơn giản nhưng cần quen terminal; dùng agent an toàn cần hiểu quyền hạn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cài bằng đoạn lệnh tải từ mạng chạy thẳng vào shell: đọc nội dung trước khi chạy hoặc chọn npm hay Homebrew. Agent chạy lệnh trên máy bạn nên cần chế độ hỏi trước. Gói ChatGPT nào gồm Codex và giới hạn dùng do OpenAI quy định, bài chưa kiểm tra. Dùng khóa API có thể tốn tiền theo mức dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>coding agent</strong>: AI đọc, sửa mã và chạy lệnh để làm việc lập trình; README nêu Codex là coding agent.</li><li><strong>CLI</strong>: công cụ dùng bằng lệnh trong terminal.</li><li><strong>API key</strong>: khóa để dùng dịch vụ AI trả phí theo mức dùng; README nêu dùng được thay cho đăng nhập ChatGPT.</li><li><strong>Codex Web</strong>: phiên bản chạy trên đám mây của OpenAI; README nêu.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài phần mềm như npm hoặc Homebrew; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng đoạn lệnh tải từ mạng, npm hoặc Homebrew; đăng nhập bằng ChatGPT hoặc khóa API (bài không chép lệnh). Cần terminal. Phần mềm theo giấy phép Apache-2.0; dịch vụ phụ thuộc gói ChatGPT hoặc phí API.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Quickstart và chọn cách cài.</li><li>Chạy trong thư mục dự án thử.</li><li>Chọn đăng nhập ChatGPT hay khóa API và đặt giới hạn chi tiêu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử coding agent của OpenAI. Hãy đọc README của Codex CLI (https://github.com/openai/codex) và giải thích bằng tiếng Việt: các cách cài, đăng nhập bằng ChatGPT khác khóa API thế nào, và rủi ro khi chạy đoạn lệnh tải từ mạng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu developers.openai.com. Gói ChatGPT nào gồm Codex chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openai</strong> có <strong>132.944 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi repo theo Apache-2.0 License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openai/codex/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openai/codex\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 463. Chưa cài/chạy thử; không tạo validation. Snapshot sao 132944; repo_id 965415649; README SHA256 ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openai/codex",
+          "repo_id": "965415649",
+          "source_path": "",
+          "source_revision": "README-SHA256:ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/codex",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng đoạn lệnh tải từ mạng, npm hoặc Homebrew; đăng nhập bằng ChatGPT hoặc khóa API (bài không chép lệnh). Cần terminal. Phần mềm theo giấy phép Apache-2.0; dịch vụ phụ thuộc gói ChatGPT hoặc phí API.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/codex/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openai/codex/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openai/codex",
+        "stars": 132944,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openai/codex/main/README.md",
+        "readmeSha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 464,
+      "batch": 79,
+      "slug": "gemini-cli",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Gemini CLI: coding agent terminal mã nguồn mở của Google; README cảnh báo đầu trang rằng nay dành cho Code Assist doanh nghiệp, người dùng cá nhân miễn phí chuyển sang Antigravity CLI",
+        "excerpt": "Hiểu Gemini CLI là agent terminal mã nguồn mở của Google, nhưng README ghi cảnh báo quan trọng đầu trang: hiện dành cho giấy phép Gemini Code Assist Standard hoặc Enterprise; truy cập cá nhân miễn phí và gói Google AI Pro hoặc Ultra đã chuyển sang Antigravity CLI từ ngày 18 tháng 6 năm 2026; không tối ưu cho Gemini 4 trở lên.",
+        "content": "<p>README mở bằng hộp cảnh báo cần đọc trước khi cài: Gemini CLI dành cho giấy phép Gemini Code Assist Standard hoặc Enterprise và Code Assist for GitHub trên Google Cloud; không còn gói miễn phí hay gói Google AI (Pro, Ultra), vốn đã chuyển sang Antigravity CLI từ 18 tháng 6 năm 2026; không được tối ưu cho dòng Gemini 4 trở lên; không dùng để đo điểm mô hình vì công cụ chưa được tinh chỉnh cho thế hệ đó. Bảng giúp chọn: Antigravity CLI cho agent đa tác tử và tài khoản miễn phí hoặc Pro, Ultra; Gemini API CLI là CLI API không trạng thái, không phải agent lập trình; Gemini CLI (kho này) cho tổ chức có Code Assist. Gemini CLI là agent terminal mã nguồn mở do Google duy trì cho quy trình Code Assist doanh nghiệp. Cài bằng npx, npm, Homebrew, MacPorts hoặc Anaconda (bài không chép lệnh). Kênh phát hành: preview hằng tuần (có thể chưa kiểm định kỹ), stable hằng tuần, nightly hằng ngày. Tính năng: hiểu và sinh mã trên codebase lớn, sinh ứng dụng từ PDF, ảnh hoặc phác thảo, gỡ lỗi bằng ngôn ngữ tự nhiên, tự động hóa như truy vấn PR, kết nối MCP, chạy không tương tác trong script. Ba cách xác thực: đăng nhập Google (kèm đặt dự án Google Cloud cho giấy phép trả phí), khóa Gemini API, Vertex AI. Giấy phép Apache License 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Gemini CLI từng là cách dùng AI của Google ngay trong terminal miễn phí cho cá nhân. README giờ nói rõ điều đó đã chuyển sang công cụ khác; kho này dành cho tổ chức dùng Code Assist.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc hộp cảnh báo đầu README trước để biết công cụ nào hợp với tài khoản của bạn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đặt đơn giản nhưng cần xác định đúng loại tài khoản và công cụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo: không còn truy cập cá nhân miễn phí hay gói Google AI Pro, Ultra; không tối ưu cho Gemini 4 trở lên. Nếu bạn là cá nhân, có thể công cụ phù hợp là Antigravity CLI (README chỉ dẫn), bài chưa kiểm tra. Bản preview và nightly có thể có lỗi. Khóa API và Vertex AI tính phí theo mức dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>Code Assist</strong>: dịch vụ trợ giúp lập trình của Google Cloud; README nói Gemini CLI dành cho giấy phép Standard hoặc Enterprise.</li><li><strong>Antigravity CLI</strong>: công cụ khác của Google mà README nói cá nhân và gói AI Pro, Ultra đã chuyển sang.</li><li><strong>Vertex AI</strong>: nền tảng AI của Google Cloud; README nêu là một cách xác thực.</li><li><strong>MCP</strong>: giao thức nối công cụ cho AI; README nêu kết nối máy chủ MCP.</li><li><strong>release channel (kênh phát hành)</strong>: preview, stable, nightly; README nêu lịch phát hành.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npx, npm, Homebrew, MacPorts hoặc Anaconda (bài không chép lệnh); cần Node nếu dùng npm. Xác thực bằng Google, khóa Gemini API hoặc Vertex AI. Phần mềm Apache 2.0; dịch vụ cần giấy phép Code Assist hoặc khóa trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc hộp cảnh báo đầu README.</li><li>Xác định mình cần công cụ nào trong bảng.</li><li>Chỉ cài nếu thuộc nhóm đối tượng của kho này.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng agent terminal của Google. Hãy đọc README của Gemini CLI (https://github.com/google-gemini/gemini-cli) và giải thích bằng tiếng Việt: hộp cảnh báo đầu trang nói gì, ai nên dùng Gemini CLI và ai nên dùng công cụ khác, và các cách xác thực. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 13 KB); bài chưa đọc tài liệu geminicli.com. Tình trạng gói thay đổi nhanh: kiểm tra README mới nhất. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>google-gemini</strong> có <strong>108.695 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0 và có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/google-gemini/gemini-cli\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 464. Chưa cài/chạy thử; không tạo validation. Snapshot sao 108695; repo_id 968197216; README SHA256 1dcb655995df3a664a7052a0c25d73565d698bc95d8d8965ecad95ef7d2a4568.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/google-gemini/gemini-cli",
+          "repo_id": "968197216",
+          "source_path": "",
+          "source_revision": "README-SHA256:1dcb655995df3a664a7052a0c25d73565d698bc95d8d8965ecad95ef7d2a4568",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google-gemini/gemini-cli",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npx, npm, Homebrew, MacPorts hoặc Anaconda (bài không chép lệnh); cần Node nếu dùng npm. Xác thực bằng Google, khóa Gemini API hoặc Vertex AI. Phần mềm Apache 2.0; dịch vụ cần giấy phép Code Assist hoặc khóa trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "google-gemini/gemini-cli",
+        "stars": 108695,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/README.md",
+        "readmeSha256": "1dcb655995df3a664a7052a0c25d73565d698bc95d8d8965ecad95ef7d2a4568",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 465,
+      "batch": 79,
+      "slug": "opencode",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenCode: coding agent mã nguồn mở có hai chế độ build và plan, ứng dụng desktop beta; README cài bằng lệnh tải từ mạng và nhiều trình quản lý gói",
+        "excerpt": "Hiểu OpenCode là coding agent mã nguồn mở với hai agent tích hợp chuyển bằng phím Tab: build (toàn quyền) và plan (chỉ đọc, hỏi trước khi chạy lệnh). Có ứng dụng desktop beta. README nêu nhiều cách cài và nhắc dự án có tên dựa trên opencode cần ghi rõ không liên kết với đội gốc.",
+        "content": "<p>README mô tả OpenCode là coding agent mã nguồn mở. Mục cài đặt liệt kê nhiều cách: một lệnh tải từ mạng (README tự đánh dấu YOLO), npm, Homebrew (hai gói, một gói luôn mới hơn), Arch Linux, mise, Nix; có ghi chú nên gỡ các phiên bản cũ hơn 0.1.x trước khi cài (bài không chép lệnh). Ứng dụng desktop đang beta, có bản cho macOS (Apple Silicon và Intel), Windows và Linux. Script cài đặt đặt chương trình vào thư mục riêng của người dùng. Mục Agents: hai agent tích hợp chuyển bằng phím Tab: build là agent mặc định có toàn quyền cho phát triển; plan là agent chỉ đọc để phân tích và khám phá mã, từ chối sửa tệp theo mặc định, hỏi quyền trước khi chạy lệnh bash, hợp để tìm hiểu mã lạ hoặc lập kế hoạch. Có thêm subagent general cho tìm kiếm phức tạp. Mục đóng góp trỏ tới tài liệu. Mục Building on OpenCode: dự án liên quan dùng tên opencode phải ghi rõ không do đội OpenCode làm và không liên kết. README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>OpenCode cho bạn chế độ plan để AI chỉ đọc và đề xuất, chưa động tới tệp. Chuyển sang build khi bạn đã hài lòng với kế hoạch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng chế độ plan để AI phân tích một dự án lạ, rồi mới chuyển sang build. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đặt có nhiều cách; dùng cần quen terminal và khái niệm agent. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lệnh cài đầu tiên chạy thẳng từ mạng vào shell (README tự ghi chú YOLO): đọc trước khi chạy. Agent build có toàn quyền, bắt đầu bằng plan. Ứng dụng desktop đang beta. README phần đã đọc không nêu tên giấy phép hay cách kết nối mô hình; bài chưa đọc tài liệu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>build / plan</strong>: hai agent tích hợp: toàn quyền và chỉ đọc; README nêu.</li><li><strong>subagent</strong>: agent phụ được gọi cho việc phức tạp; README nêu general.</li><li><strong>beta</strong>: bản thử nghiệm chưa ổn định; README nêu cho desktop.</li><li><strong>Homebrew / npm</strong>: trình quản lý gói để cài; README liệt kê.</li><li><strong>Nix / mise</strong>: công cụ quản lý môi trường và gói; README liệt kê.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng lệnh tải từ mạng hoặc trình quản lý gói như npm, Homebrew, pacman, mise, Nix; có ứng dụng desktop beta (bài không chép lệnh). Cần terminal. Miễn phí; giấy phép lấy theo GitHub (MIT); chi phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Agents.</li><li>Cài bằng trình quản lý gói bạn quen.</li><li>Dùng plan trước, build sau.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử coding agent mã nguồn mở. Hãy đọc README của OpenCode (https://github.com/anomalyco/opencode) và giải thích bằng tiếng Việt: build khác plan thế nào, rủi ro của lệnh cài đầu tiên, và ghi chú về dự án mang tên opencode. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub) và không nêu cách chọn mô hình. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>anomalyco</strong> có <strong>224.194 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/anomalyco/opencode/blob/dev/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/anomalyco/opencode\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 465. Chưa cài/chạy thử; không tạo validation. Snapshot sao 224194; repo_id 975734319; README SHA256 a1b20d3212d19d10f7567e80730cc84b32879a1c7bb5b04bfa77610163a589f5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/anomalyco/opencode",
+          "repo_id": "975734319",
+          "source_path": "",
+          "source_revision": "README-SHA256:a1b20d3212d19d10f7567e80730cc84b32879a1c7bb5b04bfa77610163a589f5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/anomalyco/opencode",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng lệnh tải từ mạng hoặc trình quản lý gói như npm, Homebrew, pacman, mise, Nix; có ứng dụng desktop beta (bài không chép lệnh). Cần terminal. Miễn phí; giấy phép lấy theo GitHub (MIT); chi phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/anomalyco/opencode/blob/dev/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/anomalyco/opencode/blob/dev/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "anomalyco/opencode",
+        "stars": 224194,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/anomalyco/opencode/dev/README.md",
+        "readmeSha256": "a1b20d3212d19d10f7567e80730cc84b32879a1c7bb5b04bfa77610163a589f5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 466,
+      "batch": 79,
+      "slug": "continue",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Continue: coding agent dạng CLI, tiện ích VS Code và plugin JetBrains; README nói kho không còn được bảo trì tích cực và chỉ đọc",
+        "excerpt": "Hiểu Continue là coding agent có CLI, tiện ích VS Code và plugin JetBrains. README ghi chú rõ ngay đầu: kho continuedev/continue không còn được bảo trì tích cực và chỉ đọc với mọi người; đã có bản 2.0.0 cuối cùng (bỏ telemetry ẩn danh và phần xác thực). README khuyên dùng CLI thay vì plugin JetBrains.",
+        "content": "<p>README mở bằng ghi chú: kho continuedev/continue không còn được bảo trì tích cực và chỉ đọc cho mọi người. Continue là coding agent có sẵn dưới dạng CLI, tiện ích VS Code và plugin JetBrains; có tài liệu cấu hình tại docs.continue.dev. Mục Final 2.0.0 Release: nhóm đã hoàn thiện và phát hành bản 2.0.0 cuối cùng cho tiện ích VS Code, CLI và plugin JetBrains, gồm gỡ telemetry ẩn danh, gỡ phần xác thực, sửa lỗi. README khuyên dùng Continue CLI thay vì plugin JetBrains. Có lời cảm ơn cộng đồng, nói hy vọng mã nguồn tiếp tục là nền tảng cho người khác. Giấy phép Apache 2.0 (bản quyền 2023–2026 Continue Dev, Inc.) theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Continue từng là tiện ích AI viết mã phổ biến trong VS Code. README bây giờ nói rõ kho đã ngừng bảo trì, nên đây là ví dụ về việc cần kiểm tra tình trạng dự án trước khi chọn công cụ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc ghi chú đầu README rồi cân nhắc công cụ còn được bảo trì cho dự án mới. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Tiện ích dễ cài nhưng không còn cập nhật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói kho không còn được bảo trì tích cực và chỉ đọc: không có sửa lỗi bảo mật hay tính năng mới từ kho này (suy luận từ README, bài không kiểm chứng). Dự án mới nên chọn công cụ còn được bảo trì. Bản 2.0.0 là bản cuối cùng; bài chưa kiểm tra cách tiếp tục sử dụng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>read-only (chỉ đọc)</strong>: không nhận thay đổi mới trên kho; README nêu.</li><li><strong>maintained (được bảo trì)</strong>: còn được sửa lỗi và cập nhật; README nói không còn tích cực.</li><li><strong>telemetry</strong>: dữ liệu sử dụng gửi về nhà phát triển; README nói bản cuối đã gỡ telemetry ẩn danh.</li><li><strong>VS Code extension</strong>: phần mở rộng cài vào trình soạn mã VS Code; README nêu.</li><li><strong>JetBrains plugin</strong>: phần mở rộng cho các IDE JetBrains; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.continue.dev; bài chưa đọc nên không nêu cách cài. Cần VS Code, JetBrains hoặc terminal. Miễn phí theo giấy phép Apache 2.0; chi phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ghi chú không còn bảo trì.</li><li>Chỉ dùng cho mục đích tham khảo hoặc dự án đã có.</li><li>Chọn công cụ còn bảo trì cho dự án mới.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy Continue từng rất phổ biến. Hãy đọc README của Continue (https://github.com/continuedev/continue) và giải thích bằng tiếng Việt: ghi chú không còn bảo trì nghĩa là gì, bản 2.0.0 cuối cùng gồm gì, và nên cân nhắc gì trước khi chọn một công cụ ngừng bảo trì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn; bài chưa đọc tài liệu docs.continue.dev. Nhận định về bảo mật là suy luận. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>continuedev</strong> có <strong>36.399 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0 (bản quyền Continue Dev, Inc.). Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/continuedev/continue/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/continuedev/continue\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 466. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36399; repo_id 644686905; README SHA256 054b77f9573011fa4ebf89d960300aabd1ebecc37d8f6f261341ba7d27d885e7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/continuedev/continue",
+          "repo_id": "644686905",
+          "source_path": "",
+          "source_revision": "README-SHA256:054b77f9573011fa4ebf89d960300aabd1ebecc37d8f6f261341ba7d27d885e7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/continuedev/continue",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.continue.dev; bài chưa đọc nên không nêu cách cài. Cần VS Code, JetBrains hoặc terminal. Miễn phí theo giấy phép Apache 2.0; chi phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/continuedev/continue/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/continuedev/continue/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "continuedev/continue",
+        "stars": 36399,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/continuedev/continue/main/README.md",
+        "readmeSha256": "054b77f9573011fa4ebf89d960300aabd1ebecc37d8f6f261341ba7d27d885e7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 467,
+      "batch": 79,
+      "slug": "goose",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "goose: AI agent mã nguồn mở đa dụng chạy trên máy, có ứng dụng desktop, CLI và API, dùng 15+ nhà cung cấp mô hình và 70+ tiện ích MCP; thuộc Agentic AI Foundation",
+        "excerpt": "Hiểu goose là AI agent mã nguồn mở đa dụng chạy trên máy bạn (không chỉ để viết mã): có ứng dụng desktop cho macOS, Linux, Windows, CLI và API, viết bằng Rust. README nêu dùng với hơn 15 nhà cung cấp mô hình và hơn 70 tiện ích qua MCP, thuộc Agentic AI Foundation của Linux Foundation.",
+        "content": "<p>README tả goose là agent mã nguồn mở bản địa (ứng dụng desktop, CLI và API) cho mã, quy trình và hơn thế. Đây là AI agent đa dụng chạy trên máy: dùng cho nghiên cứu, viết, tự động hóa, phân tích dữ liệu, không chỉ lập trình. Có ứng dụng desktop bản địa cho macOS, Linux và Windows, CLI đầy đủ, API để nhúng ở nơi khác, viết bằng Rust. goose làm việc với hơn 15 nhà cung cấp (Anthropic, OpenAI, Google, Ollama, OpenRouter, Azure, Bedrock và các nhà khác), dùng khóa API hoặc tài khoản Claude, ChatGPT, Gemini qua ACP, và kết nối hơn 70 tiện ích qua Model Context Protocol. README nói goose thuộc Agentic AI Foundation (AAIF) của Linux Foundation. Mục Get started: tải ứng dụng desktop hoặc cài CLI bằng đoạn lệnh tải từ mạng (bài không chép lệnh). Có liên kết nhanh tới quickstart, hướng dẫn, quản trị, bản phân phối tùy chỉnh (tự dựng bản goose với nhà cung cấp, tiện ích và thương hiệu đặt sẵn) và mục xử lý sự cố, vấn đề đã biết. Giấy phép Apache 2.0 theo huy hiệu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn một trợ lý AI chạy ngay trên máy và có thể làm cả việc ngoài lập trình như nghiên cứu hay phân tích dữ liệu, goose có giao diện desktop thân thiện hơn terminal.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tải ứng dụng desktop, kết nối một nhà cung cấp mô hình có giới hạn chi tiêu và thử một việc đọc và tóm tắt tệp. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Có ứng dụng desktop nên dễ bắt đầu; cần khóa API hoặc tài khoản và hiểu quyền hạn của tiện ích. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Agent chạy trên máy với tiện ích MCP có thể đọc, sửa tệp và chạy lệnh: chỉ bật tiện ích bạn hiểu. Dùng tài khoản Claude, ChatGPT, Gemini qua ACP phụ thuộc điều khoản của từng dịch vụ, bài chưa kiểm tra. Mô tả 'hơn 70 tiện ích' và 'hiệu năng' là của README. Lệnh cài CLI tải từ mạng: đọc trước khi chạy.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>general-purpose agent (agent đa dụng)</strong>: agent làm nhiều loại việc, không chỉ mã; README nêu.</li><li><strong>MCP (Model Context Protocol)</strong>: giao thức nối công cụ cho AI; README nêu hơn 70 tiện ích.</li><li><strong>ACP</strong>: giao thức dùng tài khoản đăng ký sẵn cho agent; README nêu.</li><li><strong>provider (nhà cung cấp mô hình)</strong>: dịch vụ mô hình như Anthropic, OpenAI, Google, Ollama; README liệt kê.</li><li><strong>custom distribution (bản phân phối tùy chỉnh)</strong>: bản goose dựng sẵn với cấu hình riêng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải ứng dụng desktop hoặc cài CLI bằng lệnh tải từ mạng (bài không chép lệnh). Cần khóa API hoặc tài khoản dịch vụ AI. Miễn phí theo giấy phép Apache 2.0; chi phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Tải ứng dụng desktop chính thức.</li><li>Kết nối một nhà cung cấp mô hình có giới hạn chi tiêu.</li><li>Bật từng tiện ích MCP khi cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một agent AI đa dụng có giao diện desktop. Hãy đọc README của goose (https://github.com/aaif-goose/goose) và giải thích bằng tiếng Việt: goose khác coding agent trong terminal thế nào, MCP và ACP là gì, và rủi ro khi bật nhiều tiện ích. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc tài liệu goose-docs.ai. Số nhà cung cấp và tiện ích là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>aaif-goose</strong> có <strong>56.158 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/aaif-goose/goose/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/aaif-goose/goose\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 467. Chưa cài/chạy thử; không tạo validation. Snapshot sao 56158; repo_id 846698999; README SHA256 0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/aaif-goose/goose",
+          "repo_id": "846698999",
+          "source_path": "",
+          "source_revision": "README-SHA256:0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aaif-goose/goose",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải ứng dụng desktop hoặc cài CLI bằng lệnh tải từ mạng (bài không chép lệnh). Cần khóa API hoặc tài khoản dịch vụ AI. Miễn phí theo giấy phép Apache 2.0; chi phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aaif-goose/goose/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/aaif-goose/goose/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "aaif-goose/goose",
+        "stars": 56158,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/aaif-goose/goose/main/README.md",
+        "readmeSha256": "0f1df85a0c457caf1f3c4e1c0370f2da3887fffa588d207862cfc298c1d39755",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 468,
+      "batch": 79,
+      "slug": "openhands",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenHands Agent Canvas: trung tâm điều khiển tự host cho coding agent và tự động hóa; README cảnh báo chạy không sandbox cho agent toàn quyền truy cập hệ thống tệp",
+        "excerpt": "Hiểu OpenHands (README nay giới thiệu Agent Canvas) là trung tâm điều khiển tự host chạy OpenHands, Claude Code, Codex, Gemini, OpenCode và các agent tương thích ACP trên backend cục bộ, từ xa hoặc đám mây. README cảnh báo rõ chế độ không sandbox cho agent toàn quyền truy cập hệ thống tệp.",
+        "content": "<p>README giới thiệu OpenHands Agent Canvas là trung tâm điều khiển cho nhà phát triển, tự host, dành cho coding agent và tự động hóa; chạy OpenHands, Claude Code, Codex, Gemini, Pi, OpenCode hoặc agent nào tương thích ACP trên backend cục bộ, từ xa và đám mây. Công cụ biến coding agent thành đội kỹ thuật tự host luôn chạy: bắt đầu hội thoại, tự động hóa việc thường ngày như báo cáo đăng lên Slack hay chia issue GitHub thành việc nhỏ. Mặc định chạy cục bộ nhưng nối được nhiều backend (Docker, VM, hạ tầng công ty), tùy chọn chạy trên OpenHands Cloud hoặc Enterprise. Bảng điểm nổi bật: tự host kiểu bạn muốn, chuyển backend, tạo tự động hóa (Slack, GitHub, Linear...), dùng mô hình tùy ý, dùng với mọi agent ACP. Mục Quickstart có bốn cách: không sandbox (README cảnh báo agent sẽ có toàn quyền truy cập hệ thống tệp, cần Node.js 24 trở lên và uv), sandbox Docker (chỉ thấy thư mục dự án được gắn), nhiều sandbox Docker (mỗi hội thoại một container, chạy nhiều agent song song) và từ mã nguồn (bài không chép lệnh). README khuyên chạy trên máy chủ đám mây để agent chạy khi tắt laptop và nhận kích hoạt từ Slack, GitHub, Datadog, và trỏ tới hướng dẫn tự host về làm cứng bảo mật. Các kho liên quan: Agent Canvas, SDK Python, ứng dụng khách TypeScript, dịch vụ tự động hóa. Giấy phép lấy theo GitHub (MIT); README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>OpenHands từng là một agent lập trình độc lập. README giờ trình bày nó như bảng điều khiển để chạy nhiều agent khác nhau, kể cả agent của hãng khác, ở chế độ cô lập hoặc trên máy chủ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy bản Docker sandbox với thư mục dự án thử và giao cho agent một việc nhỏ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để viết mã, muốn chọn công cụ coding agent phù hợp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Docker hoặc Node và uv, hiểu agent, sandbox và quyền hạn; cấu hình trên máy chủ đòi hỏi bảo mật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo chế độ không sandbox: agent có toàn quyền truy cập hệ thống tệp. Chạy trên máy chủ cần làm cứng bảo mật theo hướng dẫn tự host (README). Tự động hóa kích hoạt qua webhook (Slack, GitHub) có thể bị lợi dụng nếu cấu hình sai (nhận định chung). OpenHands Cloud và Enterprise là dịch vụ riêng, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Agent Canvas</strong>: giao diện điều khiển nhiều agent của OpenHands; README nêu.</li><li><strong>sandbox (hộp cách ly)</strong>: môi trường cô lập để agent không đụng vào phần còn lại của máy; README có tùy chọn Docker.</li><li><strong>ACP (Agent Client Protocol)</strong>: giao thức chung để nối nhiều loại agent; README nêu.</li><li><strong>backend</strong>: nơi thực sự chạy agent (máy, Docker, VM, đám mây); README nêu chuyển được.</li><li><strong>webhook</strong>: thông báo tự động khi có sự kiện từ dịch vụ khác; README nêu kích hoạt tự động hóa.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: chạy bằng npm (cần Node.js 24 trở lên và uv), Docker sandbox, nhiều sandbox Docker hoặc từ mã nguồn (bài không chép lệnh). Cần Docker nếu muốn cô lập. Miễn phí cho bản tự host; giấy phép lấy theo GitHub (MIT); OpenHands Cloud và Enterprise là dịch vụ riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo ở mục Option 1.</li><li>Chọn Docker sandbox thay vì không sandbox.</li><li>Chỉ cấp thư mục dự án cần thiết cho agent.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chạy nhiều coding agent từ một chỗ. Hãy đọc README của OpenHands (https://github.com/OpenHands/OpenHands) và giải thích bằng tiếng Việt: Agent Canvas là gì, vì sao README cảnh báo chế độ không sandbox, và khác biệt giữa bốn cách chạy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 13 KB); bài chưa đọc tài liệu docs.openhands.dev. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent đọc, sửa và chạy lệnh trên máy bạn: dùng trong thư mục thử hoặc môi trường cô lập, đặt chế độ hỏi trước khi chạy lệnh, giữ khóa API ngoài mã nguồn, theo dõi chi phí và đọc kỹ lệnh cài tải từ mạng trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>OpenHands</strong> có <strong>92.540 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/OpenHands/OpenHands/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/OpenHands/OpenHands\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 468. Chưa cài/chạy thử; không tạo validation. Snapshot sao 92540; repo_id 771302083; README SHA256 7e286c5b311d5d6160949f786f336cea4f01b4bee82f62689a146d38160009b8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/OpenHands/OpenHands",
+          "repo_id": "771302083",
+          "source_path": "",
+          "source_revision": "README-SHA256:7e286c5b311d5d6160949f786f336cea4f01b4bee82f62689a146d38160009b8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenHands/OpenHands",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: chạy bằng npm (cần Node.js 24 trở lên và uv), Docker sandbox, nhiều sandbox Docker hoặc từ mã nguồn (bài không chép lệnh). Cần Docker nếu muốn cô lập. Miễn phí cho bản tự host; giấy phép lấy theo GitHub (MIT); OpenHands Cloud và Enterprise là dịch vụ riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenHands/OpenHands/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/OpenHands/OpenHands/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "OpenHands/OpenHands",
+        "stars": 92540,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/OpenHands/OpenHands/main/README.md",
+        "readmeSha256": "7e286c5b311d5d6160949f786f336cea4f01b4bee82f62689a146d38160009b8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

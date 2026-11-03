@@ -1,0 +1,44 @@
+{
+  "key": 465,
+  "repo": "anomalyco/opencode",
+  "repoId": "975734319",
+  "url": "https://github.com/anomalyco/opencode",
+  "stars": 224194,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:39:29Z",
+  "createdAt": "2025-04-30T20:08:00Z",
+  "defaultBranch": "dev",
+  "description": "The open source coding agent.",
+  "homepage": "https://opencode.ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/anomalyco/opencode/dev/README.md",
+    "sha256": "a1b20d3212d19d10f7567e80730cc84b32879a1c7bb5b04bfa77610163a589f5",
+    "bytes": 4668,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Desktop App (BETA)",
+      "Agents",
+      "Documentation",
+      "Building on OpenCode"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu opencode.ai.",
+    "Chưa thử.",
+    "Cách kết nối mô hình chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

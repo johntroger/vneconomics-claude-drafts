@@ -6681,5 +6681,147 @@
   "related": [
    "hasura"
   ]
+ },
+ {
+  "key": 463,
+  "slug": "codex",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "Codex CLI: coding agent của OpenAI chạy cục bộ trên máy, đăng nhập bằng tài khoản ChatGPT hoặc khóa API; README có lệnh cài tải từ mạng",
+  "repo": "openai/codex",
+  "stars": 132944,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "gemini-cli"
+  ]
+ },
+ {
+  "key": 464,
+  "slug": "gemini-cli",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "Gemini CLI: coding agent terminal mã nguồn mở của Google; README cảnh báo đầu trang rằng nay dành cho Code Assist doanh nghiệp, người dùng cá nhân miễn phí chuyển sang Antigravity CLI",
+  "repo": "google-gemini/gemini-cli",
+  "stars": 108695,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "codex",
+   "opencode"
+  ]
+ },
+ {
+  "key": 465,
+  "slug": "opencode",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "OpenCode: coding agent mã nguồn mở có hai chế độ build và plan, ứng dụng desktop beta; README cài bằng lệnh tải từ mạng và nhiều trình quản lý gói",
+  "repo": "anomalyco/opencode",
+  "stars": 224194,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "gemini-cli",
+   "goose"
+  ]
+ },
+ {
+  "key": 466,
+  "slug": "continue",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "Continue: coding agent dạng CLI, tiện ích VS Code và plugin JetBrains; README nói kho không còn được bảo trì tích cực và chỉ đọc",
+  "repo": "continuedev/continue",
+  "stars": 36399,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "goose",
+   "openhands"
+  ]
+ },
+ {
+  "key": 467,
+  "slug": "goose",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "goose: AI agent mã nguồn mở đa dụng chạy trên máy, có ứng dụng desktop, CLI và API, dùng 15+ nhà cung cấp mô hình và 70+ tiện ích MCP; thuộc Agentic AI Foundation",
+  "repo": "aaif-goose/goose",
+  "stars": 56158,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "continue",
+   "opencode"
+  ]
+ },
+ {
+  "key": 468,
+  "slug": "openhands",
+  "group": "2026-11-03-coding-agent-terminal",
+  "title": "OpenHands Agent Canvas: trung tâm điều khiển tự host cho coding agent và tự động hóa; README cảnh báo chạy không sandbox cho agent toàn quyền truy cập hệ thống tệp",
+  "repo": "OpenHands/OpenHands",
+  "stars": 92540,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "continue"
+  ]
  }
 ]

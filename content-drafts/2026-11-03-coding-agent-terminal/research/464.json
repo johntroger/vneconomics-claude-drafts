@@ -1,0 +1,44 @@
+{
+  "key": 464,
+  "repo": "google-gemini/gemini-cli",
+  "repoId": "968197216",
+  "url": "https://github.com/google-gemini/gemini-cli",
+  "stars": 108695,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:18:35Z",
+  "createdAt": "2025-04-17T17:04:31Z",
+  "defaultBranch": "main",
+  "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+  "homepage": "https://geminicli.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/README.md",
+    "sha256": "1dcb655995df3a664a7052a0c25d73565d698bc95d8d8965ecad95ef7d2a4568",
+    "bytes": 13488,
+    "sectionsRead": [
+      "Hộp cảnh báo đầu README",
+      "Installation",
+      "Release Channels",
+      "Key Features",
+      "Authentication Options",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa kiểm tra Antigravity CLI."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,42 @@
+{
+  "key": 463,
+  "repo": "openai/codex",
+  "repoId": "965415649",
+  "url": "https://github.com/openai/codex",
+  "stars": 132944,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:06:22Z",
+  "createdAt": "2025-04-13T05:37:54Z",
+  "defaultBranch": "main",
+  "description": "Lightweight coding agent that runs in your terminal",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/openai/codex/main/README.md",
+    "sha256": "ba4e1f69ff48386e72a9c5e1edaf76aad64a475c2d51af79ccba6d1128261ba7",
+    "bytes": 3334,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quickstart",
+      "Using Codex with your ChatGPT plan",
+      "Docs"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chi phí và giới hạn gói chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

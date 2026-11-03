@@ -59,6 +59,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 57 — Website, SEO và phân tích](learning-paths/57-website-seo-phan-tich.vi.md) — Từ đo tốc độ trang đến phân tích lượt truy cập, gửi bản tin và thương mại điện tử; chú ý quyền riêng tư, luật gửi thư, mật khẩu mặc định và phần nào chỉ dành cho nhà phát triển.
 - [Lộ trình 58 — Tự host ghi chú, việc và tri thức](learning-paths/58-tu-host-ghi-chu-viec.vi.md) — Từ ghi chú nhanh đến kho tri thức, wiki, dấu trang lưu trữ và quản lý việc; chú ý sao lưu, dữ liệu gửi tới dịch vụ AI, bản quyền bản sao trang và giấy phép AGPL.
 - [Lộ trình 59 — Cơ sở dữ liệu chuyên biệt](learning-paths/59-csdl-chuyen-biet.vi.md) — Từ SQLite mở rộng và có quản lý phiên bản đến chuỗi thời gian, API GraphQL tự sinh và phân mảnh quy mô lớn; chú ý số liệu hiệu năng của hãng, cổng mở ra Internet và việc có thật sự cần quy mô đó không.
+- [Lộ trình 60 — Coding agent trong terminal và máy chủ](learning-paths/60-coding-agent-terminal.vi.md) — Từ agent của các hãng lớn đến công cụ mã nguồn mở và trung tâm điều khiển nhiều agent; chú ý lệnh cài tải từ mạng, quyền hạn của agent, tình trạng bảo trì và thay đổi về gói dịch vụ.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -114,7 +115,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (158 bài)
+### Cơ bản (163 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -276,6 +277,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 452 | BookStack: nền tảng lưu trữ và tổ chức tài liệu, quan điểm rõ ràng, dễ dùng; README nói repo chính đặt ở Codeberg | [BookStackApp/BookStack](https://github.com/BookStackApp/BookStack) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 19125 | tu-host-ghi-chu |
 | 453 | Memos: ứng dụng ghi chú tự host cho suy nghĩ hằng ngày, dòng thời gian cá nhân, Markdown, chia sẻ có kiểm soát | [usememos/memos](https://github.com/usememos/memos) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 64241 | tu-host-ghi-chu |
 | 454 | Linkwarden: trình quản lý dấu trang cộng tác tự host, lưu bản sao trang (ảnh chụp, PDF, HTML) để chống link rot, có gắn thẻ bằng AI cục bộ tùy chọn | [linkwarden/linkwarden](https://github.com/linkwarden/linkwarden) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 20303 | tu-host-ghi-chu |
+| 463 | Codex CLI: coding agent của OpenAI chạy cục bộ trên máy, đăng nhập bằng tài khoản ChatGPT hoặc khóa API; README có lệnh cài tải từ mạng | [openai/codex](https://github.com/openai/codex) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 132944 | coding-agent-terminal |
+| 464 | Gemini CLI: coding agent terminal mã nguồn mở của Google; README cảnh báo đầu trang rằng nay dành cho Code Assist doanh nghiệp, người dùng cá nhân miễn phí chuyển sang Antigravity CLI | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 108695 | coding-agent-terminal |
+| 465 | OpenCode: coding agent mã nguồn mở có hai chế độ build và plan, ứng dụng desktop beta; README cài bằng lệnh tải từ mạng và nhiều trình quản lý gói | [anomalyco/opencode](https://github.com/anomalyco/opencode) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 224194 | coding-agent-terminal |
+| 466 | Continue: coding agent dạng CLI, tiện ích VS Code và plugin JetBrains; README nói kho không còn được bảo trì tích cực và chỉ đọc | [continuedev/continue](https://github.com/continuedev/continue) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 36399 | coding-agent-terminal |
+| 467 | goose: AI agent mã nguồn mở đa dụng chạy trên máy, có ứng dụng desktop, CLI và API, dùng 15+ nhà cung cấp mô hình và 70+ tiện ích MCP; thuộc Agentic AI Foundation | [aaif-goose/goose](https://github.com/aaif-goose/goose) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 56158 | coding-agent-terminal |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -319,7 +325,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (123 bài)
+### Nâng cao (124 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -446,6 +452,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 460 | QuestDB: cơ sở dữ liệu chuỗi thời gian mã nguồn mở độ trễ thấp, SQL mở rộng cho chuỗi thời gian; README có số liệu benchmark của hãng và bản Enterprise trả phí | [questdb/questdb](https://github.com/questdb/questdb) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 17496 | csdl-chuyen-biet |
 | 461 | Hasura GraphQL Engine: một điểm cuối API GraphQL an toàn tới nhiều nguồn dữ liệu; kho có hai phiên bản V2 ổn định và V3 (DDN) | [hasura/graphql-engine](https://github.com/hasura/graphql-engine) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 32125 | csdl-chuyen-biet |
 | 462 | Vitess: hệ cơ sở dữ liệu phân tán mở rộng ngang xây trên MySQL, từng là thành phần cốt lõi hạ tầng dữ liệu của YouTube | [vitessio/vitess](https://github.com/vitessio/vitess) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 21399 | csdl-chuyen-biet |
+| 468 | OpenHands Agent Canvas: trung tâm điều khiển tự host cho coding agent và tự động hóa; README cảnh báo chạy không sandbox cho agent toàn quyền truy cập hệ thống tệp | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 92540 | coding-agent-terminal |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
