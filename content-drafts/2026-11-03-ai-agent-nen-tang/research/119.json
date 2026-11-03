@@ -1,0 +1,36 @@
+{
+  "key": 119,
+  "repo": "supabase/supabase",
+  "repoId": "214587193",
+  "url": "https://github.com/supabase/supabase",
+  "stars": 114461,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:32:05Z",
+  "createdAt": "2019-10-12T05:56:49Z",
+  "defaultBranch": "master",
+  "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+  "homepage": "https://supabase.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/supabase/supabase/master/README.md",
+    "sha256": "82793d79c85c3e0ee0e3860eb75e9b8f0f8f85f09d26b0681bd41e78f6e3c490",
+    "bytes": 16839,
+    "sectionsRead": [
+      "Tính năng",
+      "How it works",
+      "Architecture",
+      "Client libraries"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giá và giới hạn bản host chưa kiểm tra.",
+    "Chưa đọc tài liệu về phân quyền.",
+    "Chưa kiểm tra độ khó tự host."
+  ],
+  "runtimeValidated": false
+}

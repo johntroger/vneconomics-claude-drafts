@@ -1,0 +1,38 @@
+{
+  "key": 117,
+  "repo": "appwrite/appwrite",
+  "repoId": "180190854",
+  "url": "https://github.com/appwrite/appwrite",
+  "stars": 57855,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:32:16Z",
+  "createdAt": "2019-04-08T16:36:25Z",
+  "defaultBranch": "main",
+  "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+  "homepage": "https://appwrite.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/appwrite/appwrite/main/README.md",
+    "sha256": "2e7848f9892152d2066cd3ec7909b141ee751614d64705a8f92b545ff4160f6b",
+    "bytes": 17807,
+    "sectionsRead": [
+      "Products",
+      "Installation & Setup",
+      "Self-Hosting",
+      "Getting Started",
+      "Architecture",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giới hạn gói miễn phí chưa kiểm tra.",
+    "Chưa đọc phần SDK và kiến trúc chi tiết.",
+    "Chưa đánh giá mức bảo mật mặc định."
+  ],
+  "runtimeValidated": false
+}

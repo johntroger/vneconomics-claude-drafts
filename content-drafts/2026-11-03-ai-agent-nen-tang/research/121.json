@@ -1,0 +1,37 @@
+{
+  "key": 121,
+  "repo": "shadcn-ui/ui",
+  "repoId": "585146387",
+  "url": "https://github.com/shadcn-ui/ui",
+  "stars": 127219,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T07:02:07Z",
+  "createdAt": "2023-01-04T12:43:27Z",
+  "defaultBranch": "main",
+  "description": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+  "homepage": "https://ui.shadcn.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/shadcn-ui/ui/main/README.md",
+    "sha256": "bb0869848a2063e405b141aa6fae8b10f132ac45036f613459e2d778b7609619",
+    "bytes": 467,
+    "sectionsRead": [
+      "Mô tả và Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [
+    "https://ui.shadcn.com/docs",
+    "https://ui.shadcn.com/docs/installation"
+  ],
+  "unknowns": [
+    "README quá ngắn; thông tin lấy từ trang tài liệu chỉ đọc phần giới thiệu và cài đặt.",
+    "Chưa kiểm tra yêu cầu phiên bản React, Tailwind hay Node.",
+    "Chưa đánh giá mức độ khó cho người chưa biết React."
+  ],
+  "runtimeValidated": false
+}

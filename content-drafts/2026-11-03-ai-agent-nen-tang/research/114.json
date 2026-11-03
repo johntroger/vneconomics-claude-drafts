@@ -1,0 +1,39 @@
+{
+  "key": 114,
+  "repo": "punkpeye/awesome-mcp-servers",
+  "repoId": "896335270",
+  "url": "https://github.com/punkpeye/awesome-mcp-servers",
+  "stars": 97216,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T04:38:05Z",
+  "createdAt": "2024-11-30T04:49:10Z",
+  "defaultBranch": "main",
+  "description": "A collection of MCP servers.",
+  "homepage": "https://glama.ai/mcp/servers",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/punkpeye/awesome-mcp-servers/main/README.md",
+    "sha256": "30cfd63388477a60dd7c21b8cdf24b287a15b1e592c7e3bc2b08ebe2222a4670",
+    "bytes": 1626662,
+    "sectionsRead": [
+      "What is MCP?",
+      "Clients",
+      "Remote Servers",
+      "Legend",
+      "Server Implementations (đã duyệt đầu và một số mục)"
+    ]
+  },
+  "docsRead": [
+    "https://modelcontextprotocol.io/docs/getting-started/intro"
+  ],
+  "unknowns": [
+    "README quá dài, chưa đọc từng mục.",
+    "Chưa đánh giá độ tin cậy của bất kỳ server cụ thể nào.",
+    "Chất lượng các điểm số badge của bên thứ ba chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

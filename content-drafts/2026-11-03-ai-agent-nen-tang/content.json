@@ -1,0 +1,1244 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ai-agent-nen-tang",
+  "batch": 21,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 111,
+      "batch": 21,
+      "slug": "firecrawl",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Firecrawl: biến trang web thành dữ liệu sạch cho trợ lý AI đọc",
+        "excerpt": "Hiểu cách công cụ lấy nội dung website ra dạng Markdown hoặc JSON để AI dùng, kèm hai đường dùng: dịch vụ có khóa API hoặc tự cài. Cần đọc kỹ giấy phép và quy tắc của trang web bị lấy dữ liệu.",
+        "content": "<p>Firecrawl là công cụ lấy nội dung từ website và đưa ra dưới dạng AI dễ đọc, như Markdown, JSON hoặc ảnh chụp màn hình. Theo README, nó có các chức năng tìm kiếm web, lấy một trang (scrape), đi theo liên kết lấy cả website (crawl), liệt kê mọi địa chỉ của một site (map), tương tác với trang rồi mới lấy nội dung, và chuyển PDF hay DOCX thành Markdown. Dự án có bản mã nguồn mở và dịch vụ trả phí do chính nhóm tác giả vận hành.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy tưởng tượng bạn nhờ trợ lý đọc giúp một trang web đầy quảng cáo, menu và đoạn mã lộn xộn. Firecrawl giống người ngồi gọt bỏ phần thừa rồi đưa lại bản chỉ có nội dung chính, sạch sẽ, để trợ lý AI đọc nhanh hơn và đỡ tốn công xử lý.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: lấy nội dung một trang tài liệu công khai của thư viện bạn đang dùng rồi dán vào trợ lý AI để hỏi cách áp dụng. Đây là tình huống gợi ý, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người đang vibe code và muốn AI đọc được tài liệu hoặc nội dung web cập nhật; người làm ứng dụng AI cần nguồn dữ liệu web ở dạng sạch.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> README cho thấy cách dùng qua khóa API với ví dụ Python, Node.js hay cURL; dùng được cả qua dòng lệnh và qua MCP. Người chưa từng gọi API sẽ cần một buổi làm quen khái niệm. Tự cài đặt (self-host) theo README dẫn tới Self-Hosting Guide riêng và có thể phức tạp hơn; chúng tôi chưa đọc hướng dẫn đó.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần một vài trang và có thể copy tay, chưa cần công cụ này. Nếu cần theo dõi thay đổi của một trang web thì xem thêm bài changedetection.io.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>scrape / crawl</strong>: scrape là lấy nội dung của một trang; crawl là đi theo liên kết để lấy nhiều trang của cùng một website.</li><li><strong>Markdown</strong>: định dạng văn bản đơn giản với dấu # cho tiêu đề, dấu - cho danh sách; AI đọc rất dễ.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>AGPL-3.0</strong>: giấy phép mã nguồn mở có điều khoản chặt về việc chia sẻ mã nếu bạn chạy phần mềm như một dịch vụ cho người khác dùng qua mạng. README nói phần chính theo AGPL-3.0, còn SDK và một số thành phần giao diện theo MIT.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn đăng ký trên trang của Firecrawl để lấy khóa API; chưa nêu giá. Giá và hạn mức nằm ở trang giá chính thức, chúng tôi chưa kiểm tra. Có SDK cho nhiều ngôn ngữ và công cụ dòng lệnh. README ghi cloud có thêm tính năng mà bản mã nguồn mở không có (mục Open Source vs Cloud liệt kê); chưa đối chiếu chi tiết.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng Feature Overview của README để biết các chức năng: Search, Scrape, Interact, Crawl, Map…</li><li>Quyết định: dùng thử dịch vụ có khóa API (cần đọc giá và điều khoản), hay đọc Self-Hosting Guide nếu muốn tự chạy.</li><li>Thử với một trang công khai không có dữ liệu cá nhân và chỉ lấy một trang trước khi lấy cả website.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình là người mới vibe code. Hãy đọc README của Firecrawl (https://github.com/firecrawl/firecrawl) và giải thích bằng tiếng Việt: scrape, crawl, map khác nhau thế nào, khi nào mình nên tự copy tay thay vì dùng công cụ, và mình cần lưu ý gì về quy tắc của trang web bị lấy dữ liệu. Chưa gọi API nào, chưa cần khóa API.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Lấy dữ liệu web có thể vi phạm điều khoản của trang nguồn hoặc luật về dữ liệu cá nhân. README nhấn mạnh người dùng chịu trách nhiệm tuân thủ chính sách của website và rằng Firecrawl mặc định tôn trọng robots.txt. Các con số như 'phủ 96% web' hay độ trễ P95 3,4 giây là tuyên bố của tác giả, chúng tôi chưa kiểm chứng. Nội dung lấy về có thể sai hoặc lỗi thời, và có thể chứa chỉ dẫn cố tình dán vào trang để đánh lừa AI (xem mục an toàn).</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi cho AI đọc nội dung lấy từ web, hãy nhớ trang web có thể chứa câu chữ do người khác cố ý viết để 'ra lệnh' cho AI. Đừng để AI tự thực hiện hành động nhạy cảm (gửi email, xóa file, thanh toán) chỉ vì nội dung đọc được yêu cầu như vậy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>firecrawl</strong> có <strong>198.050 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi dự án chủ yếu theo AGPL-3.0, SDK và một số thành phần giao diện theo MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/firecrawl/firecrawl/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/firecrawl/firecrawl\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 111. Chưa cài/chạy thử; không tạo validation. Snapshot sao 198050; repo_id 787076358; README SHA256 13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/firecrawl/firecrawl",
+          "repo_id": "787076358",
+          "source_path": "",
+          "source_revision": "README-SHA256:13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firecrawl/firecrawl",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn đăng ký trên trang của Firecrawl để lấy khóa API; chưa nêu giá. Giá và hạn mức nằm ở trang giá chính thức, chúng tôi chưa kiểm tra. Có SDK cho nhiều ngôn ngữ và công cụ dòng lệnh. README ghi cloud có thêm tính năng mà bản mã nguồn mở không có (mục Open Source vs Cloud liệt kê); chưa đối chiếu chi tiết.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "firecrawl/firecrawl",
+        "stars": 198050,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/firecrawl/firecrawl/main/README.md",
+        "readmeSha256": "13ac2f319b675696004dc004f4e32084d08f138151424499f7239d2b9f0d8a67",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 112,
+      "batch": 21,
+      "slug": "browser-use",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Browser Use: cho trợ lý AI điều khiển trình duyệt để làm việc trên web",
+        "excerpt": "Làm quen ý tưởng để AI tự mở trang, bấm và điền thông tin như người dùng. Có ba đường dùng và nhiều lưu ý về an toàn, chi phí và quy tắc của trang web.",
+        "content": "<p>Browser Use là thư viện mã nguồn mở để AI điều khiển trình duyệt: mở trang, tìm thông tin, bấm nút, điền biểu mẫu. README mô tả ba đường dùng: dịch vụ đám mây tự lo cả agent lẫn trình duyệt, công cụ dòng lệnh để cấp quyền duyệt web cho một agent bạn đang dùng (như Claude Code hay Codex), và thư viện Python chạy trên máy của bạn với model bạn chọn.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thông thường AI chỉ trả lời bằng chữ. Browser Use giống việc đưa cho AI một chiếc chuột và bàn phím: nó nhìn màn hình trình duyệt, quyết định bấm đâu, gõ gì rồi làm tiếp, giống một nhân viên mới được giao 'vào trang này tìm giúp tôi thông tin X'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giao AI vào một trang công khai của chính bạn để tìm một con số rồi báo lại, như ví dụ 'tìm số sao của repo' trong README. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người muốn thử tự động hóa thao tác trên web mà không có API, và đã sẵn sàng làm việc với Python hoặc công cụ dòng lệnh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Đường Python theo README cần Python 3.11 trở lên, công cụ uv và khóa API của một nhà cung cấp model. Đường dòng lệnh có sẵn câu lệnh mẫu để dán vào agent, nhưng chúng tôi chưa thử nên chưa biết mức dễ dùng. Đường đám mây không cần cài trình duyệt nhưng có chi phí.</p><p><strong>Khi nào chưa cần:</strong> Nếu trang bạn cần có sẵn API hoặc cho tải dữ liệu chính thức, hãy dùng cách đó thay vì để AI bấm chuột. Cũng chưa nên dùng khi bạn chưa kiểm soát được AI sẽ bấm gì.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>headless/stealth</strong>: chạy trình duyệt ẩn hoặc che dấu hiệu tự động. README nhắc các tính năng 'stealth' và giải CAPTCHA ở bản cloud; bài này không khuyến khích dùng để lách quy tắc của trang web.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Theo README: thư viện Python cần Python từ 3.11 và khóa API của nhà cung cấp model (ví dụ trong README dùng OpenAI). Dịch vụ đám mây tính phí: README ghi trình duyệt cloud giá 0,02 USD mỗi giờ cộng lưu lượng mạng và tặng 1 USD tín dụng cho tài khoản mới đăng ký bằng Google, GitHub hoặc Microsoft (số liệu tại thời điểm đọc, có thể đã đổi). README cũng nói có thể dùng trình duyệt và model chạy cục bộ qua Ollama, tùy phần cứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'Which Browser Use do I need?' để chọn một trong ba đường.</li><li>Với người mới, đọc kỹ FAQ về chi phí trước khi nhập bất kỳ khóa API nào.</li><li>Thử với một nhiệm vụ chỉ đọc trên trang công khai, đặt giới hạn số bước, và theo dõi AI làm gì.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình chưa có kinh nghiệm tự động hóa trình duyệt. Hãy đọc README của Browser Use (https://github.com/browser-use/browser-use) và giải thích bằng tiếng Việt: ba đường dùng khác nhau thế nào, mỗi đường tốn chi phí gì, và những rủi ro khi để AI điều khiển trình duyệt (ví dụ đăng nhập sẵn tài khoản). Chưa cài đặt gì và không yêu cầu mình đưa khóa API.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>AI điều khiển trình duyệt có thể bấm nhầm, gửi biểu mẫu sai hoặc làm việc không mong muốn trên tài khoản đã đăng nhập. Nhiều trang cấm tự động hóa trong điều khoản; việc lách CAPTCHA hay chặn bot có thể vi phạm quy định. Chi phí model và trình duyệt cloud tính theo mức dùng, có thể tăng đáng kể nếu nhiệm vụ lặp lại.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dùng một hồ sơ trình duyệt riêng, không đăng nhập sẵn email, ngân hàng hay mạng xã hội quan trọng. Với thao tác thay đổi dữ liệu (gửi, xóa, mua), hãy yêu cầu AI dừng lại hỏi bạn trước khi thực hiện.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>browser-use</strong> có <strong>119.884 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi thư viện Python miễn phí theo MIT, còn model và trình duyệt cloud là dịch vụ tính phí riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/browser-use/browser-use/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/browser-use/browser-use\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 112. Chưa cài/chạy thử; không tạo validation. Snapshot sao 119884; repo_id 881458615; README SHA256 21a31ea5601d3cd6622bff2ea62b26c2d4f40cdb5805810e38a3fb37db241c11.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/browser-use/browser-use",
+          "repo_id": "881458615",
+          "source_path": "",
+          "source_revision": "README-SHA256:21a31ea5601d3cd6622bff2ea62b26c2d4f40cdb5805810e38a3fb37db241c11",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/browser-use/browser-use",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Theo README: thư viện Python cần Python từ 3.11 và khóa API của nhà cung cấp model (ví dụ trong README dùng OpenAI). Dịch vụ đám mây tính phí: README ghi trình duyệt cloud giá 0,02 USD mỗi giờ cộng lưu lượng mạng và tặng 1 USD tín dụng cho tài khoản mới đăng ký bằng Google, GitHub hoặc Microsoft (số liệu tại thời điểm đọc, có thể đã đổi). README cũng nói có thể dùng trình duyệt và model chạy cục bộ qua Ollama, tùy phần cứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "browser-use/browser-use",
+        "stars": 119884,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/browser-use/browser-use/main/README.md",
+        "readmeSha256": "21a31ea5601d3cd6622bff2ea62b26c2d4f40cdb5805810e38a3fb37db241c11",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 113,
+      "batch": 21,
+      "slug": "context7",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Context7: đưa tài liệu thư viện mới nhất cho AI khi nó viết code",
+        "excerpt": "Giải quyết tình trạng AI viết code dựa trên tài liệu cũ hoặc bịa hàm không tồn tại, bằng cách tự lấy tài liệu đúng phiên bản. Cần hiểu phần nào mã nguồn mở, phần nào là dịch vụ.",
+        "content": "<p>Context7 là công cụ cung cấp tài liệu và ví dụ mới theo từng phiên bản của thư viện lập trình cho trợ lý code AI. README mô tả vấn đề: model dựa vào dữ liệu huấn luyện cũ nên có thể đưa ví dụ lỗi thời hoặc gọi API không có thật. Context7 lấy tài liệu từ nguồn rồi đưa vào ngữ cảnh của agent khi bạn thêm 'use context7' vào câu hỏi, hoặc khi agent được cài sẵn kỹ năng gọi công cụ này.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy nghĩ tới việc bạn nhờ một người giỏi nhưng đã nghỉ đọc sách từ năm ngoái. Họ vẫn trả lời tự tin nhưng có thể nhớ sai. Context7 giống việc mở sẵn cho họ cuốn tài liệu bản mới nhất ngay cạnh bàn trước khi họ trả lời.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi nhờ AI viết đoạn đăng nhập bằng một thư viện hay đổi phiên bản, bạn nêu rõ phiên bản và nhờ AI tra tài liệu trước khi viết. README có các ví dụ câu lệnh tương tự. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code thường gặp lỗi do AI dùng cú pháp cũ của thư viện; người dùng Cursor, Claude Code, OpenCode hoặc các agent khác có hỗ trợ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> README mô tả cách thiết lập bằng một lệnh và hai chế độ (công cụ dòng lệnh kèm skill, hoặc máy chủ MCP). Cần Node.js 22.13 trở lên cho công cụ dòng lệnh. Chúng tôi chưa thử nên chưa biết mức dễ thật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ làm việc không dùng thư viện lập trình (ví dụ chỉ viết nội dung), chưa cần. Nếu bạn dùng thư viện rất nhỏ hoặc nội bộ, có thể chưa có trong chỉ mục của Context7.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>ngữ cảnh (context)</strong>: toàn bộ thông tin mà AI đang 'nhìn thấy' khi trả lời; thêm tài liệu đúng vào đây giúp câu trả lời bám thực tế hơn.</li><li><strong>skill</strong>: một gói hướng dẫn cài vào agent để nó biết khi nào và cách dùng một công cụ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói cần Node.js 22.13 trở lên cho công cụ dòng lệnh ctx7 và khuyến nghị lấy khóa API miễn phí ở trang quản lý của dịch vụ để có giới hạn gọi cao hơn. Lệnh thiết lập có đăng nhập qua OAuth và tự tạo khóa API; hãy đọc kỹ những gì nó thay đổi trên máy. Bài chưa nêu lệnh cụ thể vì chưa kiểm chứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'Without/With Context7' để thấy vấn đề được giải quyết.</li><li>Đọc phần Installation và Important Tips: dùng Library Id và nêu phiên bản.</li><li>Thử trước trên một dự án nhỏ, so sánh câu trả lời của AI khi có và không có tài liệu đi kèm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng AI để viết code và hay gặp lỗi vì nó dùng cú pháp cũ. Hãy đọc README của Context7 (https://github.com/upstash/context7) và giải thích bằng tiếng Việt: nó giải quyết vấn đề gì, khác nhau thế nào giữa chế độ CLI + Skills và chế độ MCP, và dịch vụ này cần mình cấp quyền gì. Chưa cài đặt gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Theo phần Disclaimer của README: các dự án trong Context7 do cộng đồng đóng góp, tác giả không bảo đảm độ chính xác, đầy đủ hay an toàn của mọi tài liệu. Repo này chỉ chứa mã nguồn máy chủ MCP; backend API, bộ phân tích và bộ thu thập là mã riêng, không nằm trong repo. Vì vậy 'mã nguồn mở' ở đây chỉ một phần; hãy đọc kỹ trước khi coi đó là giải pháp tự chủ hoàn toàn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ đưa nội dung từ bên ngoài vào ngữ cảnh của AI, nên hãy đọc câu trả lời và đối chiếu với tài liệu chính thức của thư viện trước khi chạy code quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>upstash</strong> có <strong>64.105 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi giấy phép MIT cho repo. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/upstash/context7/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/upstash/context7\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 113. Chưa cài/chạy thử; không tạo validation. Snapshot sao 64105; repo_id 955620917; README SHA256 387e015c40c4541d966e754525e626cfbbb0482f66c9a00246d956c943886548.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/upstash/context7",
+          "repo_id": "955620917",
+          "source_path": "",
+          "source_revision": "README-SHA256:387e015c40c4541d966e754525e626cfbbb0482f66c9a00246d956c943886548",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/upstash/context7",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói cần Node.js 22.13 trở lên cho công cụ dòng lệnh ctx7 và khuyến nghị lấy khóa API miễn phí ở trang quản lý của dịch vụ để có giới hạn gọi cao hơn. Lệnh thiết lập có đăng nhập qua OAuth và tự tạo khóa API; hãy đọc kỹ những gì nó thay đổi trên máy. Bài chưa nêu lệnh cụ thể vì chưa kiểm chứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/upstash/context7/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/upstash/context7/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "upstash/context7",
+        "stars": 64105,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/upstash/context7/master/README.md",
+        "readmeSha256": "387e015c40c4541d966e754525e626cfbbb0482f66c9a00246d956c943886548",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 114,
+      "batch": 21,
+      "slug": "awesome-mcp-servers",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Awesome MCP Servers: đọc danh mục server MCP và cách chọn an toàn",
+        "excerpt": "Một danh sách lớn do cộng đồng góp các server MCP giúp AI dùng thêm công cụ. Bài hướng dẫn cách đọc danh sách và cân nhắc rủi ro trước khi cài bất kỳ mục nào.",
+        "content": "<p>Awesome MCP Servers là danh sách tuyển chọn các server cho Model Context Protocol (MCP), thứ cho phép ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài như file, cơ sở dữ liệu, trình duyệt hay dịch vụ web. README chia thành các phần: MCP là gì, danh sách client, hướng dẫn, quy ước ký hiệu và một danh mục rất dài các server theo nhóm chức năng. Mỗi mục có biểu tượng cho ngôn ngữ lập trình, chạy cục bộ hay trên cloud và hệ điều hành.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trang giới thiệu chính thức của MCP ví von nó như cổng USB-C cho ứng dụng AI: một chuẩn chung để cắm thêm 'thiết bị'. Nếu vậy, repo này giống một gian hàng bày rất nhiều thiết bị cắm vào cổng đó. Gian hàng lớn, nhưng không phải thiết bị nào cũng đáng tin hay phù hợp với bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thay vì cài thử nhiều server, bạn viết ra một việc cụ thể (ví dụ để AI đọc thư mục ghi chú của bạn) rồi chỉ tìm đúng nhóm liên quan trong danh sách và đọc kỹ mô tả, ngôn ngữ, quyền cần cấp. Đây là gợi ý cách dùng danh sách, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người đã dùng một ứng dụng AI hỗ trợ MCP và muốn biết có những công cụ nào có thể thêm; người cần bản đồ hệ sinh thái MCP.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ để đọc, khó để chọn đúng.</strong> Đọc danh sách thì dễ, nhưng README rất dài (dung lượng khoảng 1,6 MB, hàng nghìn liên kết GitHub) nên khó biết server nào đáng dùng. Việc cài và cấp quyền cho server là phần cần kiến thức hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa dùng ứng dụng nào hỗ trợ MCP, hãy làm quen khái niệm trước ở trang giới thiệu chính thức của MCP rồi mới quay lại danh sách.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>MCP server</strong>: một chương trình nhỏ mở một số chức năng (đọc file, tra cứu, gọi dịch vụ) cho ứng dụng AI dùng qua chuẩn MCP.</li><li><strong>MCP client</strong>: ứng dụng AI hoặc công cụ code kết nối tới các server MCP.</li><li><strong>local và cloud (trong README)</strong>: README dùng biểu tượng để phân biệt server chạy trên máy bạn (điều khiển phần mềm cài sẵn) với server nói chuyện với dịch vụ từ xa.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Cần một ứng dụng AI hỗ trợ MCP và đọc hướng dẫn của từng server; yêu cầu khác nhau rất nhiều, có server cần khóa API hoặc trả phí. Danh sách có phần client, phần tutorials và liên kết tới danh sách server từ xa riêng. Bài này chưa cài hay thử server nào.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc 'What is MCP?' và phần Legend để hiểu cách đọc ký hiệu.</li><li>Xác định một việc cụ thể bạn muốn AI làm, rồi chỉ xem nhóm liên quan.</li><li>Với server định dùng, mở repo gốc, đọc README, giấy phép, ngày cập nhật cuối và quyền cần cấp trước khi cài.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình là người mới, muốn thêm công cụ cho trợ lý AI qua MCP. Hãy giải thích bằng tiếng Việt MCP server là gì, và đưa cho mình một danh sách kiểm tra để đánh giá độ an toàn của một server trong https://github.com/punkpeye/awesome-mcp-servers (nguồn, giấy phép, quyền, dữ liệu gửi đi đâu). Đừng cài server nào và đừng yêu cầu mình cung cấp khóa API.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Đây là danh sách do cộng đồng đóng góp, không phải bảo chứng. Việc có mặt trong danh sách không có nghĩa server an toàn hay hoạt động tốt; một server cài lên máy có thể đọc file hoặc gọi dịch vụ với quyền của bạn. README có thông báo quảng cáo ở đầu trang và bao gồm cả các mục thử nghiệm. Một số mục đề cập dịch vụ tính phí theo lượt gọi; hãy đọc kỹ chi phí trước khi cho AI dùng.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài server từ tác giả bạn kiểm tra được, ưu tiên mục đánh dấu bản chính thức của nhà cung cấp. Cấp quyền tối thiểu (một thư mục thay vì cả ổ đĩa), và không để AI dùng công cụ trả tiền hay gửi tin nhắn nếu bạn chưa duyệt từng hành động.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>punkpeye</strong> có <strong>97.216 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT cho chính repo danh sách; từng server trong danh sách có giấy phép riêng cần xem ở repo của nó. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/punkpeye/awesome-mcp-servers\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 114. Chưa cài/chạy thử; không tạo validation. Snapshot sao 97216; repo_id 896335270; README SHA256 30cfd63388477a60dd7c21b8cdf24b287a15b1e592c7e3bc2b08ebe2222a4670.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "repo_id": "896335270",
+          "source_path": "",
+          "source_revision": "README-SHA256:30cfd63388477a60dd7c21b8cdf24b287a15b1e592c7e3bc2b08ebe2222a4670",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/punkpeye/awesome-mcp-servers",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Cần một ứng dụng AI hỗ trợ MCP và đọc hướng dẫn của từng server; yêu cầu khác nhau rất nhiều, có server cần khóa API hoặc trả phí. Danh sách có phần client, phần tutorials và liên kết tới danh sách server từ xa riêng. Bài này chưa cài hay thử server nào.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "punkpeye/awesome-mcp-servers",
+        "stars": 97216,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/punkpeye/awesome-mcp-servers/main/README.md",
+        "readmeSha256": "30cfd63388477a60dd7c21b8cdf24b287a15b1e592c7e3bc2b08ebe2222a4670",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 115,
+      "batch": 21,
+      "slug": "ai-agents-for-beginners",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "AI Agents for Beginners: lộ trình 18 bài học để hiểu agent AI từ đầu",
+        "excerpt": "Khóa học miễn phí của Microsoft gồm 18 bài có chữ, video và mã Python, có bản dịch tiếng Việt. Phù hợp để nắm khái niệm agent trước khi tự xây.",
+        "content": "<p>AI Agents for Beginners là khóa học của Microsoft về cách xây dựng agent AI. README nêu 18 bài, mỗi bài có phần chữ trong README, code mẫu Python trong thư mục code_samples và nhiều bài có video ngắn. Các chủ đề gồm: giới thiệu agent và ca sử dụng, các framework, mẫu thiết kế agent, sử dụng công cụ, RAG dạng agent, agent đáng tin, lập kế hoạch, nhiều agent phối hợp, giao thức MCP/A2A/NLWeb, kỹ thuật ngữ cảnh, bộ nhớ, agent điều khiển trình duyệt, triển khai, agent chạy cục bộ và bảo mật cho agent.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một giáo trình có thứ tự: bài đầu giải thích agent là gì, các bài sau đi dần tới việc agent dùng công cụ, nhớ, phối hợp và cuối cùng là cách giữ an toàn. Bạn không bắt buộc đọc hết; README nói có thể bắt đầu từ bài nào cũng được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc bài mở đầu và bài về 'Tool Use' để hiểu vì sao AI cần công cụ ngoài, rồi dùng khái niệm đó khi bạn đọc về MCP hay các công cụ tự động hóa khác. Đây là gợi ý lộ trình đọc, chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người mới muốn nền tảng khái niệm về agent AI trước khi chọn công cụ; giảng viên cần giáo trình có sẵn tài liệu mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Phần chữ và video không đòi hỏi lập trình. Phần mã mẫu cần Python và thiết lập môi trường. Theo README, mã mẫu mặc định dùng Microsoft Agent Framework với Microsoft Foundry Agent Service và cần tài khoản Azure; một số mẫu hỗ trợ nhà cung cấp tương thích OpenAI khác. Đây là nhận định biên tập về mức dễ.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần một công cụ dùng ngay, khóa học này là việc học dài hơi. Nếu bạn không muốn dùng hệ sinh thái Microsoft thì có thể chỉ đọc khái niệm và bỏ qua phần mã.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>RAG</strong>: kỹ thuật cho AI tra cứu tài liệu của bạn trước khi trả lời để bám nguồn thay vì đoán.</li><li><strong>design pattern (mẫu thiết kế)</strong>: cách làm đã được nhiều người dùng và đặt tên, như 'dùng công cụ' hay 'lập kế hoạch'.</li><li><strong>multi-agent</strong>: nhiều agent phối hợp, mỗi agent lo một phần việc.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Theo README: mã mẫu dùng Microsoft Agent Framework với Microsoft Foundry Agent Service V2 và cần tài khoản Azure; một số mẫu hỗ trợ nhà cung cấp tương thích OpenAI như MiniMax. README hướng dẫn thiết lập ở bài 00-course-setup. Có bản dịch nhiều ngôn ngữ, trong đó có tiếng Việt (liên kết trong README). Chi phí Azure hay model chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng Lessons và chọn một bài khớp nhu cầu, README cho phép bắt đầu ở bất kỳ bài nào.</li><li>Đọc bản tiếng Việt qua liên kết dịch trong README nếu tiện; lưu ý bản dịch có thể chậm hơn bản gốc.</li><li>Chỉ chạy mã mẫu khi đã đọc phần Course Setup và hiểu mình đang cấp khóa hay tài khoản nào.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình là người mới, muốn học về agent AI. Hãy đọc README của khóa AI Agents for Beginners (https://github.com/microsoft/ai-agents-for-beginners) và đề xuất một lộ trình 5 bài đầu phù hợp với người chưa biết lập trình, giải thích ngắn mỗi bài dạy gì. Chưa yêu cầu cài đặt hay dùng tài khoản đám mây nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mã mẫu gắn với hệ sinh thái Microsoft; dùng đầy đủ có thể cần tài khoản đám mây và chi phí. Nội dung AI thay đổi nhanh nên bài học có thể lỗi thời theo thời gian. README có hơn 50 bản dịch; chất lượng bản dịch tiếng Việt chưa được đánh giá.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi chạy mã mẫu có dùng khóa API hay tài khoản đám mây, đặt hạn mức chi tiêu và không đưa khóa vào mã đưa lên GitHub.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>78.734 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có badge giấy phép và nói về CLA cho người đóng góp. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/ai-agents-for-beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 115. Chưa cài/chạy thử; không tạo validation. Snapshot sao 78734; repo_id 895508656; README SHA256 7add14e5da37ed09249eb9432130f76d4f38e70cc4f7b135b313cb18161406dc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/ai-agents-for-beginners",
+          "repo_id": "895508656",
+          "source_path": "",
+          "source_revision": "README-SHA256:7add14e5da37ed09249eb9432130f76d4f38e70cc4f7b135b313cb18161406dc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/ai-agents-for-beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Theo README: mã mẫu dùng Microsoft Agent Framework với Microsoft Foundry Agent Service V2 và cần tài khoản Azure; một số mẫu hỗ trợ nhà cung cấp tương thích OpenAI như MiniMax. README hướng dẫn thiết lập ở bài 00-course-setup. Có bản dịch nhiều ngôn ngữ, trong đó có tiếng Việt (liên kết trong README). Chi phí Azure hay model chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/ai-agents-for-beginners",
+        "stars": 78734,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/README.md",
+        "readmeSha256": "7add14e5da37ed09249eb9432130f76d4f38e70cc4f7b135b313cb18161406dc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 116,
+      "batch": 21,
+      "slug": "coolify",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Coolify: tự dựng nơi đưa ứng dụng lên mạng thay cho Vercel hay Heroku",
+        "excerpt": "Hiểu công cụ giúp bạn triển khai ứng dụng, cơ sở dữ liệu và dịch vụ trên máy chủ của chính mình. Hữu ích khi vibe code xong và muốn đưa app lên mạng.",
+        "content": "<p>Coolify là nền tảng mã nguồn mở để triển khai ứng dụng, cơ sở dữ liệu và dịch vụ trên máy chủ của bạn, như một lựa chọn tự host thay cho Heroku, Netlify hay Vercel. README nói bạn chỉ cần kết nối SSH tới máy chủ (VPS, máy riêng, Raspberry Pi…). Coolify có thể lấy mã từ GitHub, GitLab, Bitbucket hoặc Gitea, triển khai mỗi khi có thay đổi, cấu hình tên miền và chứng chỉ HTTPS, chạy cơ sở dữ liệu, sao lưu và hơn 360 dịch vụ cài một cú bấm.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi bạn vibe code xong một ứng dụng, nó mới chỉ nằm trên máy bạn. Coolify giống một 'nhà kho kiêm bưu điện' bạn tự thuê: bạn đưa mã vào, nó đóng gói, đặt lên máy chủ, gắn địa chỉ web và giữ cho nó chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: một trang web nhỏ do AI viết cần được đưa lên mạng; bạn đọc xem Coolify có hợp so với dùng dịch vụ lưu trữ trả sẵn hay không. Đây là tình huống gợi ý, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người đã làm được ứng dụng và muốn kiểm soát chi phí và dữ liệu; người sẵn sàng thuê và quản lý một máy chủ Linux.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần thuê hoặc có máy chủ Linux và hiểu SSH, Docker, tên miền ở mức cơ bản. Trang tài liệu cài đặt (đọc ngày 2026-11-03) nêu yêu cầu tối thiểu khoảng 2 nhân CPU, 2 GB RAM, 10 GB đĩa trống, chạy trên Linux amd64 hoặc arm64, và khuyến nghị dùng máy chủ mới. Chúng tôi chưa cài thử.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có một trang web tĩnh hoặc ứng dụng nhỏ, một dịch vụ lưu trữ trả sẵn có thể đơn giản hơn. Nếu chưa muốn chịu trách nhiệm bảo mật, cập nhật và sao lưu máy chủ, hãy cân nhắc bản Coolify Cloud (trả phí) hoặc dịch vụ khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>SSH</strong>: cách đăng nhập từ xa vào máy chủ bằng dòng lệnh, có mã hóa.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>Docker</strong>: công nghệ đóng gói ứng dụng cùng môi trường chạy vào một 'hộp' để chạy giống nhau ở mọi nơi.</li><li><strong>reverse proxy / HTTPS</strong>: thành phần nhận truy cập từ internet, gắn tên miền và mã hóa kết nối cho ứng dụng của bạn.</li><li><strong>PaaS</strong>: nền tảng cho thuê chỗ chạy ứng dụng, bạn không phải tự dựng từng phần hạ tầng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Cần một máy chủ truy cập được qua SSH và chạy Linux; tài liệu cài đặt liệt kê các bản phân phối được hỗ trợ (Debian, Ubuntu, CentOS và một số khác) và khuyến nghị dùng Ubuntu bản LTS, máy chủ mới. README nói bản tự host miễn phí; bản Coolify Cloud là dịch vụ trả phí (xem trang giá). Chi phí thuê máy chủ nằm ngoài README. Bài không nêu lệnh cài vì chưa kiểm chứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc 'What is Coolify?' và 'What can Coolify do?' để biết phạm vi.</li><li>Đọc trang cài đặt trong tài liệu để nắm yêu cầu máy chủ và các cảnh báo.</li><li>Thử với một máy chủ thuê riêng không chứa gì quan trọng, và lưu ý tạo tài khoản quản trị ngay sau khi cài.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đã làm xong một ứng dụng nhỏ bằng AI và muốn đưa lên mạng. Hãy đọc README của Coolify (https://github.com/coollabsio/coolify) rồi giải thích bằng tiếng Việt: Coolify làm gì, mình cần chuẩn bị máy chủ và kiến thức gì, và khi nào dịch vụ lưu trữ trả sẵn sẽ phù hợp hơn. Chưa chạy lệnh cài nào và chưa thuê máy chủ.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tự host nghĩa là bạn chịu trách nhiệm bảo mật, cập nhật, sao lưu và độ ổn định. Tài liệu cảnh báo người đầu tiên mở trang đăng ký có thể trở thành quản trị viên nếu bạn để máy chủ lộ ra mà chưa tạo tài khoản. Chạy build ngay trên cùng máy chủ có thể làm máy quá tải. Coolify chỉ chạy trên Linux.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không cài lên máy chủ đang chạy dịch vụ quan trọng khác. Đặt mật khẩu mạnh, bật xác thực hai bước nếu có, và sao lưu cơ sở dữ liệu trước khi triển khai thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>coollabsio</strong> có <strong>65.563 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; bài chưa đối chiếu phạm vi giữa bản mã nguồn mở và các gói trả phí. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/coollabsio/coolify/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/coollabsio/coolify\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 116. Chưa cài/chạy thử; không tạo validation. Snapshot sao 65563; repo_id 332880689; README SHA256 1a0d82030ab34c0f810bce5721d11399e35327ad7f5865028b549fc46e23281a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/coollabsio/coolify",
+          "repo_id": "332880689",
+          "source_path": "",
+          "source_revision": "README-SHA256:1a0d82030ab34c0f810bce5721d11399e35327ad7f5865028b549fc46e23281a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/coollabsio/coolify",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Cần một máy chủ truy cập được qua SSH và chạy Linux; tài liệu cài đặt liệt kê các bản phân phối được hỗ trợ (Debian, Ubuntu, CentOS và một số khác) và khuyến nghị dùng Ubuntu bản LTS, máy chủ mới. README nói bản tự host miễn phí; bản Coolify Cloud là dịch vụ trả phí (xem trang giá). Chi phí thuê máy chủ nằm ngoài README. Bài không nêu lệnh cài vì chưa kiểm chứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/coollabsio/coolify/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/coollabsio/coolify/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "coollabsio/coolify",
+        "stars": 65563,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/coollabsio/coolify/main/README.md",
+        "readmeSha256": "1a0d82030ab34c0f810bce5721d11399e35327ad7f5865028b549fc46e23281a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 117,
+      "batch": 21,
+      "slug": "appwrite",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Appwrite: nền tảng backend có đăng nhập, dữ liệu và lưu file cho ứng dụng của bạn",
+        "excerpt": "Hiểu cách một nền tảng backend trọn gói giúp ứng dụng có tài khoản người dùng, cơ sở dữ liệu và lưu trữ file mà không phải tự dựng từng phần.",
+        "content": "<p>Appwrite là nền tảng mã nguồn mở để xây và mở rộng ứng dụng. README liệt kê các sản phẩm: Auth (đăng nhập), Databases, Storage (lưu file), Functions (hàm chạy phía máy chủ), Sites (đưa giao diện web lên mạng), Messaging (email, SMS, thông báo đẩy), Firewall, Realtime và MCP để các agent AI thao tác trên dự án Appwrite. Có thể dùng bản cloud có gói miễn phí hoặc tự host bằng Docker.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một ứng dụng thật cần 'hậu trường': ai đăng nhập, dữ liệu để đâu, ảnh tải lên cất ở đâu. Appwrite là bộ hậu trường làm sẵn: bạn cắm giao diện của mình vào và dùng các chức năng đó qua thư viện, thay vì tự viết từng phần.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: ứng dụng ghi chú do AI viết cần thêm chức năng đăng nhập và lưu ghi chú theo từng người; bạn xem Appwrite có đáp ứng được không. Đây là gợi ý, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code ứng dụng cần backend nhưng chưa muốn tự dựng; nhóm muốn có lựa chọn tự host.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm đăng nhập, cơ sở dữ liệu, file dễ hình dung. Cài tự host cần Docker. Dùng bản cloud không cần cài, nhưng bạn cần biết nối ứng dụng với dịch vụ qua SDK hoặc API. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng của bạn chỉ là trang tĩnh không cần tài khoản hay dữ liệu, chưa cần backend. Nếu bạn đã chọn một nền tảng khác (ví dụ Supabase trong cùng nhóm bài), hãy so sánh trước khi chuyển.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>SDK</strong>: bộ thư viện để dùng một dịch vụ từ ngôn ngữ lập trình cụ thể, thay vì tự gọi API.</li><li><strong>serverless function</strong>: đoạn mã chạy trên máy chủ của nhà cung cấp khi có sự kiện, bạn không phải quản lý máy chủ.</li><li><strong>OAuth</strong>: cách cho người dùng đăng nhập bằng tài khoản Google, GitHub… mà không gửi mật khẩu cho ứng dụng của bạn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói cách dễ nhất là đăng ký Appwrite Cloud (có gói miễn phí, giá xem trang chính thức). Tự host cần Docker; README có hướng dẫn riêng cho Unix, Windows (CMD, PowerShell) và nêu bước hoàn tất qua trình cài đặt trên trình duyệt. Chưa kiểm tra giới hạn của gói miễn phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Products để biết Appwrite có những khối chức năng nào.</li><li>Quyết định cloud hay tự host; với người mới, đọc trước về cloud và giới hạn gói miễn phí.</li><li>Thử tạo một dự án trống và chỉ dùng một chức năng (ví dụ đăng nhập) với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình vibe code một ứng dụng và cần đăng nhập, lưu dữ liệu. Hãy đọc README của Appwrite (https://github.com/appwrite/appwrite) và giải thích bằng tiếng Việt: Auth, Databases, Storage, Functions là gì, mình cần chọn cloud hay tự host, và rủi ro khi để AI thao tác trực tiếp trên dự án qua MCP. Chưa tạo dự án hay cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Backend lưu dữ liệu người dùng nên sai sót về quyền truy cập có thể làm lộ dữ liệu. Tự host đòi hỏi bạn lo bảo mật và sao lưu. Dùng cloud bạn phụ thuộc vào gói và điều khoản của nhà cung cấp. README nói MCP được tích hợp để agent thao tác trên dự án thật, nên cần kiểm soát quyền cấp.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng cho AI quyền quản trị toàn bộ dự án khi chưa cần. Dùng dự án thử riêng, dữ liệu giả, và kiểm tra lại quy tắc quyền truy cập trước khi mở cho người dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>appwrite</strong> có <strong>57.855 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README ghi repo theo BSD 3-Clause License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/appwrite/appwrite/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/appwrite/appwrite\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 117. Chưa cài/chạy thử; không tạo validation. Snapshot sao 57855; repo_id 180190854; README SHA256 2e7848f9892152d2066cd3ec7909b141ee751614d64705a8f92b545ff4160f6b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/appwrite/appwrite",
+          "repo_id": "180190854",
+          "source_path": "",
+          "source_revision": "README-SHA256:2e7848f9892152d2066cd3ec7909b141ee751614d64705a8f92b545ff4160f6b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-3-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/appwrite/appwrite",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói cách dễ nhất là đăng ký Appwrite Cloud (có gói miễn phí, giá xem trang chính thức). Tự host cần Docker; README có hướng dẫn riêng cho Unix, Windows (CMD, PowerShell) và nêu bước hoàn tất qua trình cài đặt trên trình duyệt. Chưa kiểm tra giới hạn của gói miễn phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/appwrite/appwrite/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/appwrite/appwrite/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "appwrite/appwrite",
+        "stars": 57855,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/appwrite/appwrite/main/README.md",
+        "readmeSha256": "2e7848f9892152d2066cd3ec7909b141ee751614d64705a8f92b545ff4160f6b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 118,
+      "batch": 21,
+      "slug": "crawl4ai",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Crawl4AI: thu thập website thành Markdown sạch cho AI, tự chạy hoặc dùng đám mây",
+        "excerpt": "Hiểu thư viện Python mã nguồn mở biến trang web thành Markdown và JSON cho AI, cùng ba cách dùng: thư viện, server Docker hoặc cloud.",
+        "content": "<p>Crawl4AI là trình thu thập (crawler) mã nguồn mở biến website thành Markdown sạch cho RAG, agent AI và pipeline dữ liệu. README mô tả ba cách dùng: thư viện Python chạy trong tiến trình của bạn, server Docker tự vận hành, hoặc Crawl4AI Cloud do tác giả vận hành. Các tính năng nêu trong README gồm Markdown có tiêu đề, bảng, đoạn code; lọc bớt menu và chân trang; trích xuất dữ liệu bằng CSS/XPath hoặc bằng LLM; thu thập sâu nhiều trang; chạy JavaScript; chụp ảnh và PDF.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Firecrawl trong bài trước, Crawl4AI là người gọt dũa nội dung web thành bản sạch cho AI đọc. Khác biệt chính theo README là bạn có thể chạy hoàn toàn trên máy mình, miễn phí, hoặc trả tiền dùng bản cloud đỡ phải lo trình duyệt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: lấy nội dung một trang tài liệu công khai thành Markdown rồi dùng làm tài liệu tham khảo cho trợ lý AI. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người biết hoặc sẵn sàng học Python cơ bản và cần dữ liệu web sạch cho dự án AI; ai thích tự chạy thay vì phụ thuộc dịch vụ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài thư viện Python và một bước cài trình duyệt (README nêu hai lệnh); bạn cần Python và biết chạy script. Bản cloud dễ hơn về hạ tầng nhưng có chi phí. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng Python và chỉ cần vài trang, chưa cần. Nếu đã dùng một công cụ tương tự như Firecrawl, hãy so sánh trước thay vì dùng cả hai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>scrape / crawl</strong>: scrape là lấy nội dung của một trang; crawl là đi theo liên kết để lấy nhiều trang của cùng một website.</li><li><strong>Markdown</strong>: định dạng văn bản đơn giản với dấu # cho tiêu đề, dấu - cho danh sách; AI đọc rất dễ.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>RAG</strong>: kỹ thuật cho AI tra cứu tài liệu trước khi trả lời để bám nguồn.</li><li><strong>CSS/XPath</strong>: hai cách chỉ ra phần nào của trang web cần lấy, ví dụ 'tiêu đề nằm trong thẻ này'.</li><li><strong>stealth mode</strong>: chế độ cố che dấu hiệu tự động để không bị trang chặn; dùng sai mục đích có thể vi phạm điều khoản của trang.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói thư viện miễn phí, cài bằng pip kèm một bước cài trình duyệt; có server Docker và CLI. Bản Cloud: README ghi 1.000 tín dụng miễn phí mỗi tháng sau khi xác minh email, các gói trả phí bắt đầu từ 10 USD và tính theo mức dùng (số liệu tại thời điểm đọc, xem trang giá hiện hành). Bài không nêu lệnh cài vì chưa kiểm chứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng 'Which one?' để chọn thư viện, server riêng hay cloud.</li><li>Đọc mục Features, tập trung vào Markdown sạch và lọc nội dung thừa.</li><li>Thử với một trang công khai, chỉ một trang, rồi mới nghĩ tới thu thập nhiều trang.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình là người mới và muốn lấy nội dung một số trang web cho AI đọc. Hãy đọc README của Crawl4AI (https://github.com/unclecode/crawl4ai) và so sánh bằng tiếng Việt ba cách dùng (thư viện, server Docker, cloud) về độ khó và chi phí. Nhắc mình những điều cần cân nhắc về quy tắc của trang web. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giống mọi công cụ lấy dữ liệu web, bạn cần tôn trọng điều khoản và robots.txt của trang nguồn; tính năng stealth và proxy có thể bị lạm dụng. Tác giả tự mô tả đây là crawler nhiều sao nhất trên GitHub; đó là tuyên bố của tác giả, chúng tôi chưa kiểm chứng. Hiệu năng thực tế phụ thuộc trang đích và cấu hình của bạn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Giữ tần suất thu thập thấp để không gây tải cho trang nguồn, không thu thập dữ liệu cá nhân, và nhớ rằng nội dung lấy về có thể chứa chỉ dẫn cố ý để đánh lừa AI.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>unclecode</strong> có <strong>86.802 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0 và khuyến nghị ghi nguồn bằng huy hiệu. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/unclecode/crawl4ai/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/unclecode/crawl4ai\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 118. Chưa cài/chạy thử; không tạo validation. Snapshot sao 86802; repo_id 798201435; README SHA256 abbc0acf9ae76c81d19622603636bfa25c681fa9daececc9573a907d75f85582.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/unclecode/crawl4ai",
+          "repo_id": "798201435",
+          "source_path": "",
+          "source_revision": "README-SHA256:abbc0acf9ae76c81d19622603636bfa25c681fa9daececc9573a907d75f85582",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/unclecode/crawl4ai",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói thư viện miễn phí, cài bằng pip kèm một bước cài trình duyệt; có server Docker và CLI. Bản Cloud: README ghi 1.000 tín dụng miễn phí mỗi tháng sau khi xác minh email, các gói trả phí bắt đầu từ 10 USD và tính theo mức dùng (số liệu tại thời điểm đọc, xem trang giá hiện hành). Bài không nêu lệnh cài vì chưa kiểm chứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "unclecode/crawl4ai",
+        "stars": 86802,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/unclecode/crawl4ai/main/README.md",
+        "readmeSha256": "abbc0acf9ae76c81d19622603636bfa25c681fa9daececc9573a907d75f85582",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 119,
+      "batch": 21,
+      "slug": "supabase",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Supabase: cơ sở dữ liệu Postgres kèm đăng nhập và API dựng sẵn cho ứng dụng",
+        "excerpt": "Hiểu nền tảng xoay quanh cơ sở dữ liệu Postgres, có đăng nhập, API tự sinh, lưu file và hàm chạy phía máy chủ. Có bản cloud và bản tự host.",
+        "content": "<p>Supabase tự giới thiệu là nền tảng phát triển xoay quanh Postgres, xây các tính năng giống Firebase bằng các công cụ mã nguồn mở. README liệt kê: cơ sở dữ liệu Postgres, đăng nhập và phân quyền, API tự sinh (REST, GraphQL, realtime), hàm trong cơ sở dữ liệu và Edge Functions, lưu file, bộ công cụ AI với vector và embeddings, và bảng điều khiển. Bạn có thể đăng ký bản đã host sẵn mà không cần cài gì, hoặc tự host và chạy cục bộ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy hình dung một ứng dụng cần một cuốn sổ cái (cơ sở dữ liệu) và một người gác cổng (đăng nhập). Supabase đưa sẵn cả hai, thêm 'cửa sổ' (API) để giao diện của bạn hỏi sổ cái mà không phải tự viết từng chức năng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: một ứng dụng danh sách việc cần làm cần lưu việc theo từng người đăng nhập; bạn đọc xem Supabase xử lý phần đăng nhập và lưu dữ liệu như thế nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web cần cơ sở dữ liệu thật; người muốn dùng Postgres, loại cơ sở dữ liệu phổ biến, nhưng có giao diện thân thiện.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Bạn cần hiểu khái niệm bảng dữ liệu và quyền truy cập. Bản đã host không cần cài đặt; tự host phức tạp hơn. Phân quyền sai là lỗi bảo mật phổ biến khi mới làm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng chưa cần lưu dữ liệu hay tài khoản, chưa cần. Nếu bạn đang cân nhắc Appwrite (cùng nhóm), hãy so sánh về cơ sở dữ liệu, mức quen thuộc và điều kiện dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>Postgres</strong>: một hệ quản trị cơ sở dữ liệu quan hệ phổ biến; README nói nó đã được phát triển hơn 30 năm.</li><li><strong>Firebase</strong>: nền tảng backend của Google, được README dùng làm hình mẫu so sánh.</li><li><strong>vector/embedding</strong>: cách biểu diễn nội dung thành dãy số để AI tìm theo ý nghĩa; dùng trong tìm kiếm thông minh.</li><li><strong>Row Level Security</strong>: cơ chế Postgres để quy định ai được đọc dòng dữ liệu nào (README chưa mô tả; tìm hiểu ở tài liệu).</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói bạn có thể đăng ký bản host sẵn mà không cần cài, hoặc tự host và phát triển cục bộ theo các tài liệu hosting và local development. Chi phí và hạn mức của bản host chưa nêu trong README; xem trang giá chính thức. Bài chưa kiểm tra yêu cầu tự host.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và mục 'How it works' để hiểu các thành phần.</li><li>Đọc tài liệu về database và auth trên trang chính thức, chú ý phần phân quyền.</li><li>Thử với dữ liệu giả và một bảng nhỏ trước khi đưa dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang vibe code một ứng dụng cần lưu dữ liệu theo từng người dùng. Hãy đọc README của Supabase (https://github.com/supabase/supabase) và giải thích bằng tiếng Việt: các khối Auth, Database, Storage làm gì, nguy cơ lộ dữ liệu khi phân quyền sai, và khi nào mình nên chọn cloud hay tự host. Chưa tạo dự án hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Backend lưu dữ liệu thật; sai quyền truy cập có thể làm lộ dữ liệu người dùng. README không bàn chi phí hay giới hạn của bản host. Supabase là nhiều thành phần ghép lại nên khi tự host bạn phải hiểu và vận hành nhiều phần.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kiểm tra kỹ quy tắc quyền truy cập trước khi cho người dùng thật vào, không đưa khóa quản trị vào mã giao diện công khai, và không cho AI chạy lệnh thay đổi dữ liệu trên cơ sở dữ liệu thật khi chưa có bản sao lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>supabase</strong> có <strong>114.461 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README nói Supabase kết hợp các công cụ mã nguồn mở với giấy phép MIT, Apache 2 hoặc tương đương. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/supabase/supabase/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/supabase/supabase\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 119. Chưa cài/chạy thử; không tạo validation. Snapshot sao 114461; repo_id 214587193; README SHA256 82793d79c85c3e0ee0e3860eb75e9b8f0f8f85f09d26b0681bd41e78f6e3c490.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/supabase/supabase",
+          "repo_id": "214587193",
+          "source_path": "",
+          "source_revision": "README-SHA256:82793d79c85c3e0ee0e3860eb75e9b8f0f8f85f09d26b0681bd41e78f6e3c490",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supabase/supabase",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói bạn có thể đăng ký bản host sẵn mà không cần cài, hoặc tự host và phát triển cục bộ theo các tài liệu hosting và local development. Chi phí và hạn mức của bản host chưa nêu trong README; xem trang giá chính thức. Bài chưa kiểm tra yêu cầu tự host.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/supabase/supabase/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/supabase/supabase/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "supabase/supabase",
+        "stars": 114461,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/supabase/supabase/master/README.md",
+        "readmeSha256": "82793d79c85c3e0ee0e3860eb75e9b8f0f8f85f09d26b0681bd41e78f6e3c490",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 120,
+      "batch": 21,
+      "slug": "langchain",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LangChain: bộ khung nối model AI với công cụ và dữ liệu để xây agent",
+        "excerpt": "Hiểu LangChain là gì, khi nào cần đến và khi nào chưa cần, cùng các sản phẩm đi kèm như LangGraph và Deep Agents. Dành cho người đã bắt đầu viết code Python.",
+        "content": "<p>LangChain là framework để xây agent và ứng dụng chạy bằng LLM. README mô tả nó giúp nối các thành phần có thể thay thế cho nhau (model, embeddings, kho vector, công cụ) qua một giao diện chung để dễ đổi model. README còn giới thiệu hệ sinh thái: Deep Agents (agent biết lập kế hoạch, dùng subagent, hệ thống file), LangGraph (điều phối agent mức thấp), các tích hợp, LangSmith (đánh giá và quan sát agent) và LangSmith Deployment. README gợi ý người mới có thể xem Deep Agents trước.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu mỗi nhà cung cấp AI dùng một 'ổ cắm' khác nhau, LangChain giống bộ chuyển đổi nhiều đầu: bạn viết ứng dụng một lần và có thể đổi model hay công cụ phía sau mà không phải viết lại từ đầu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README rồi vẽ ra trên giấy ứng dụng AI của bạn gồm những phần nào (model, tài liệu, công cụ) để xem LangChain nối chúng ra sao. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người đã viết được Python cơ bản và muốn tự dựng ứng dụng AI có công cụ hoặc dữ liệu riêng; người cần hiểu thuật ngữ trong hệ sinh thái agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần Python và khóa API của nhà cung cấp model. Hệ sinh thái có nhiều sản phẩm (LangChain, LangGraph, Deep Agents, LangSmith) nên người mới dễ lẫn; README tự gợi ý bắt đầu từ Deep Agents. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần gọi một model để trả lời một câu hỏi, có thể dùng thư viện của nhà cung cấp trực tiếp. Nếu chưa có ứng dụng cụ thể, hãy học khái niệm trước ở khóa AI Agents for Beginners.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>embedding / vector store</strong>: cách biến văn bản thành dãy số và nơi lưu chúng để tìm theo ý nghĩa.</li><li><strong>LangGraph</strong>: khung điều phối agent ở mức thấp theo README, dùng khi cần kiểm soát chi tiết luồng chạy.</li><li><strong>LangSmith</strong>: sản phẩm của cùng tác giả để đánh giá, quan sát và gỡ lỗi agent; README không nêu giá.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Theo README: cài gói Python qua công cụ quản lý gói và dùng model của một nhà cung cấp (ví dụ trong README khởi tạo model OpenAI), nên cần khóa API và có chi phí theo nhà cung cấp. Có thư viện JavaScript/TypeScript tương đương (LangChain.js). Bài không đưa lệnh cài vì chưa kiểm chứng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'LangChain ecosystem' để phân biệt các sản phẩm.</li><li>Xem gợi ý Deep Agents ở đầu README nếu bạn muốn bắt đầu từ mức cao hơn.</li><li>Thử với một nhiệm vụ nhỏ và đặt hạn mức chi tiêu cho khóa API.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới tìm hiểu về xây ứng dụng AI. Hãy đọc README của LangChain (https://github.com/langchain-ai/langchain) và giải thích bằng tiếng Việt: LangChain, LangGraph, Deep Agents và LangSmith khác nhau thế nào, và với ý tưởng này của mình ([mô tả]) mình có cần LangChain không hay gọi model trực tiếp là đủ. Chưa cài đặt gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Framework có nhiều lớp trừu tượng nên người mới có thể khó biết điều gì đang xảy ra phía sau. Hệ sinh thái thay đổi nhanh, tên và cách dùng có thể đổi. Chi phí model và các sản phẩm đi kèm nằm ngoài README.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa API gắn với chi phí; đặt giới hạn chi tiêu, lưu khóa trong biến môi trường chứ không dán vào code, và cẩn thận khi cho agent quyền chạy công cụ ghi dữ liệu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>langchain-ai</strong> có <strong>148.919 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/langchain-ai/langchain/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/langchain-ai/langchain\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 120. Chưa cài/chạy thử; không tạo validation. Snapshot sao 148919; repo_id 552661142; README SHA256 9e6d706b38215c6979ef398ba72181b0f9099b8150f317c4c221877456c2dc2e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/langchain-ai/langchain",
+          "repo_id": "552661142",
+          "source_path": "",
+          "source_revision": "README-SHA256:9e6d706b38215c6979ef398ba72181b0f9099b8150f317c4c221877456c2dc2e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/langchain",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Theo README: cài gói Python qua công cụ quản lý gói và dùng model của một nhà cung cấp (ví dụ trong README khởi tạo model OpenAI), nên cần khóa API và có chi phí theo nhà cung cấp. Có thư viện JavaScript/TypeScript tương đương (LangChain.js). Bài không đưa lệnh cài vì chưa kiểm chứng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/langchain/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/langchain-ai/langchain/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "langchain-ai/langchain",
+        "stars": 148919,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/langchain-ai/langchain/master/README.md",
+        "readmeSha256": "9e6d706b38215c6979ef398ba72181b0f9099b8150f317c4c221877456c2dc2e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 121,
+      "batch": 21,
+      "slug": "shadcn-ui",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "shadcn/ui: bộ thành phần giao diện bạn sở hữu mã nguồn để tự tùy biến",
+        "excerpt": "Hiểu vì sao shadcn/ui tự nói mình không phải thư viện thành phần thông thường, mà là cách lấy mã giao diện về dự án để chỉnh sửa. Hay gặp trong các dự án do AI dựng giao diện.",
+        "content": "<p>shadcn/ui là bộ thành phần giao diện (nút, hộp thoại, bảng…) được thiết kế đẹp và dễ tiếp cận. README mô tả: 'Open Source. Open Code.' và gợi ý dùng nó để xây thư viện thành phần của riêng bạn. Trang tài liệu chính thức nói nó không phải thư viện cài về rồi gọi như thông thường mà là cách phân phối mã thành phần để bạn chỉnh sửa trực tiếp; trang cài đặt liệt kê các hướng dẫn cho Next.js, Vite, TanStack Start, Laravel, React Router, Astro và React cài thủ công.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thư viện thông thường giống thuê đồ nội thất: dùng được nhưng khó sửa. shadcn/ui giống nhận bản vẽ và gỗ đã cắt sẵn: đồ về nhà là của bạn, bạn muốn đổi màu hay hình dáng cứ sửa thẳng. Vì vậy AI cũng dễ chỉnh theo yêu cầu của bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi nhờ AI dựng giao diện trang web và thấy mã có dùng 'shadcn', bạn biết các thành phần đó nằm ngay trong dự án và có thể nhờ AI sửa. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người dựng giao diện web bằng React hoặc các framework liên quan; người vibe code thường gặp shadcn trong mã do AI sinh ra.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng được hiệu quả khi dự án web đã có khung (như Next.js hoặc Vite). Chúng tôi không đọc thấy tiền đề cài đặt cụ thể trên trang tài liệu đã xem; hãy đọc từng hướng dẫn framework. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không làm giao diện web hoặc chưa có dự án web, chưa cần. Nếu bạn muốn một thư viện cài về dùng ngay không chỉnh sửa, hướng tiếp cận này có thể chưa phù hợp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>component (thành phần giao diện)</strong>: một khối giao diện dùng lại được, như nút bấm, hộp thoại, bảng.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>React</strong>: thư viện phổ biến để dựng giao diện web bằng các thành phần; shadcn/ui xoay quanh hệ sinh thái này.</li><li><strong>Tailwind CSS</strong>: công cụ định kiểu giao diện bằng các lớp ngắn; trang tài liệu chưa nêu rõ yêu cầu này, hãy đọc hướng dẫn cài đặt từng framework.</li><li><strong>CLI</strong>: công cụ dòng lệnh; trang tài liệu cho biết có CLI để dựng dự án và lấy thành phần.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Cần một dự án web và làm theo hướng dẫn cho đúng framework (Next.js, Vite, TanStack Start, Laravel, React Router, Astro hoặc cài thủ công). README gốc rất ngắn nên thông tin cài đặt lấy từ trang tài liệu chính thức đọc ngày 2026-11-03; trang đó không liệt kê tiền đề cụ thể. Chi phí phần mềm: README ghi giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang giới thiệu tài liệu để hiểu khác biệt 'không phải thư viện thông thường'.</li><li>Mở hướng dẫn cài đặt cho đúng framework của bạn.</li><li>Thử thêm một thành phần đơn giản (như nút) và đọc mã nằm trong dự án.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy mã giao diện do AI viết có dùng shadcn/ui nhưng chưa hiểu nó là gì. Hãy đọc README và trang tài liệu của shadcn/ui (https://github.com/shadcn-ui/ui, https://ui.shadcn.com/docs) rồi giải thích bằng tiếng Việt: khác gì thư viện giao diện thông thường, mình cần biết gì về React, và khi nào nên chỉnh mã thành phần. Chưa cài đặt gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Vì mã nằm trong dự án của bạn, bạn tự chịu trách nhiệm cập nhật và sửa lỗi cho phần mã đã lấy về. Người chưa biết React sẽ khó hiểu mã khi AI chỉnh. README gốc chỉ vài dòng; thông tin chi tiết nằm ở trang tài liệu, một phần bài này chỉ đọc qua phần giới thiệu và trang cài đặt.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã giao diện do AI sinh ra vẫn cần đọc và kiểm tra, nhất là phần nhận dữ liệu từ người dùng. Chỉ cài thành phần từ nguồn bạn tin cậy và xem lại thay đổi trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>shadcn-ui</strong> có <strong>127.219 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/shadcn-ui/ui/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/shadcn-ui/ui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 121. Chưa cài/chạy thử; không tạo validation. Snapshot sao 127219; repo_id 585146387; README SHA256 bb0869848a2063e405b141aa6fae8b10f132ac45036f613459e2d778b7609619.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/shadcn-ui/ui",
+          "repo_id": "585146387",
+          "source_path": "",
+          "source_revision": "README-SHA256:bb0869848a2063e405b141aa6fae8b10f132ac45036f613459e2d778b7609619",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/shadcn-ui/ui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Cần một dự án web và làm theo hướng dẫn cho đúng framework (Next.js, Vite, TanStack Start, Laravel, React Router, Astro hoặc cài thủ công). README gốc rất ngắn nên thông tin cài đặt lấy từ trang tài liệu chính thức đọc ngày 2026-11-03; trang đó không liệt kê tiền đề cụ thể. Chi phí phần mềm: README ghi giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/shadcn-ui/ui/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/shadcn-ui/ui/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "shadcn-ui/ui",
+        "stars": 127219,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/shadcn-ui/ui/main/README.md",
+        "readmeSha256": "bb0869848a2063e405b141aa6fae8b10f132ac45036f613459e2d778b7609619",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 122,
+      "batch": 21,
+      "slug": "dyad",
+      "category": "Workflow và ứng dụng trực quan",
+      "need": "Xây ứng dụng và agent AI",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dyad: ứng dụng tạo app bằng AI chạy ngay trên máy của bạn",
+        "excerpt": "Giới thiệu một công cụ kiểu Lovable hay v0 nhưng chạy cục bộ, dùng khóa API của chính bạn. Phù hợp để làm quen vibe coding, cần đọc kỹ giấy phép hỗn hợp.",
+        "content": "<p>Dyad là ứng dụng tạo app bằng AI mã nguồn mở chạy cục bộ trên máy bạn. README mô tả nó nhanh, riêng tư và nằm dưới quyền kiểm soát của bạn, giống Lovable, v0 hay Bolt nhưng chạy ngay trên máy. Điểm nhấn: không khóa nhà cung cấp, dùng khóa API AI của chính bạn, chạy trên Mac hoặc Windows, tải về không cần đăng ký. Trang tài liệu nói ứng dụng của bạn là 'mã bình thường trong một thư mục bạn giữ'.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Các công cụ tạo app bằng AI trên web giống thuê xưởng của người khác: tiện nhưng sản phẩm nằm trong xưởng họ. Dyad giống mang xưởng nhỏ về nhà: bạn nói muốn gì, AI tạo ra mã ngay trên máy bạn, và bạn giữ nguyên thư mục đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử tạo một trang giới thiệu cá nhân đơn giản bằng cách mô tả bằng tiếng Việt, rồi mở thư mục kết quả để xem AI đã sinh ra những file nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người mới muốn thử vibe coding với một ứng dụng desktop thay vì dòng lệnh; người muốn giữ mã trên máy mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> README nói tải về và dùng, không cần đăng ký, nên bước vào cửa khá nhẹ. Bạn vẫn cần có khóa API của một nhà cung cấp AI và hiểu chi phí. Trang tài liệu chúng tôi đọc không nêu yêu cầu và hướng dẫn chi tiết (nó chỉ dẫn tới quickstart), nên mức dễ thật chưa kiểm chứng.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn một dịch vụ trên web có sẵn mọi thứ kể cả đưa app lên mạng chỉ bằng vài cú bấm, bản cục bộ này có thể yêu cầu bạn tự lo thêm. Nếu không muốn quản lý khóa API, hãy cân nhắc cách khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>app builder</strong>: công cụ cho bạn mô tả ứng dụng bằng lời rồi AI tạo mã.</li><li><strong>fair-source (FSL)</strong>: giấy phép cho xem và dùng mã nhưng có giới hạn về cạnh tranh trong một thời gian rồi chuyển sang giấy phép mở; README nói thư mục src/pro dùng loại này.</li><li><strong>bring your own key (BYOK)</strong>: bạn tự đưa khóa API của nhà cung cấp AI, chi phí tính trực tiếp với họ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Theo README: tải bản cho hệ điều hành của bạn (Mac hoặc Windows) từ trang chính thức, không cần đăng ký, và dùng khóa API AI của chính bạn. Trang tài liệu chưa nêu yêu cầu chi tiết trong phần chúng tôi đọc. Chi phí model do nhà cung cấp bạn chọn tính. Bài chưa tải hay chạy thử.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang giới thiệu và quickstart trong tài liệu chính thức trước khi tải.</li><li>Chuẩn bị khóa API có hạn mức chi tiêu thấp.</li><li>Thử với một ứng dụng rất nhỏ, mở thư mục kết quả và đọc mã để hiểu AI đã làm gì.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới làm quen vibe coding. Hãy đọc README và tài liệu của Dyad (https://github.com/dyad-sh/dyad, https://www.dyad.sh/docs) rồi giải thích bằng tiếng Việt: Dyad làm gì, mình cần chuẩn bị gì (khóa API, máy), và những điểm cần cẩn thận khi để AI tạo mã trên máy. Chưa tải hay cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giấy phép hỗn hợp: README nói mã ngoài thư mục src/pro theo Apache 2.0, còn src/pro theo Functional Source License 1.1 Apache 2.0, nên GitHub không gán một giấy phép duy nhất. Bạn chịu chi phí khóa API và trách nhiệm kiểm tra mã AI tạo ra. Chưa rõ mức độ phù hợp cho người hoàn toàn chưa biết lập trình.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không dán khóa API vào mã hoặc chia sẻ thư mục dự án chứa tệp cấu hình có khóa. Đọc mã trước khi chạy hoặc đưa lên mạng, và chạy thử với dữ liệu giả.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dyad-sh</strong> có <strong>22.173 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub không gán một giấy phép duy nhất (NOASSERTION) vì repo dùng hai giấy phép: Apache 2.0 cho phần ngoài src/pro và Functional Source License 1.1 Apache 2.0 cho src/pro, theo README. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dyad-sh/dyad/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dyad-sh/dyad\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm AI agent và nền tảng, key 122. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22173; repo_id 964395174; README SHA256 98fc871e1af1002882dbccd9b2d6f4de759a42f132f556b18439f8c15227c1e2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dyad-sh/dyad",
+          "repo_id": "964395174",
+          "source_path": "",
+          "source_revision": "README-SHA256:98fc871e1af1002882dbccd9b2d6f4de759a42f132f556b18439f8c15227c1e2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dyad-sh/dyad",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Theo README: tải bản cho hệ điều hành của bạn (Mac hoặc Windows) từ trang chính thức, không cần đăng ký, và dùng khóa API AI của chính bạn. Trang tài liệu chưa nêu yêu cầu chi tiết trong phần chúng tôi đọc. Chi phí model do nhà cung cấp bạn chọn tính. Bài chưa tải hay chạy thử.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dyad-sh/dyad/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dyad-sh/dyad/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dyad-sh/dyad",
+        "stars": 22173,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dyad-sh/dyad/main/README.md",
+        "readmeSha256": "98fc871e1af1002882dbccd9b2d6f4de759a42f132f556b18439f8c15227c1e2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

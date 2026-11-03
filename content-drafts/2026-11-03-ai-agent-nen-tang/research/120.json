@@ -1,0 +1,36 @@
+{
+  "key": 120,
+  "repo": "langchain-ai/langchain",
+  "repoId": "552661142",
+  "url": "https://github.com/langchain-ai/langchain",
+  "stars": 148919,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:22:35Z",
+  "createdAt": "2022-10-17T02:58:36Z",
+  "defaultBranch": "master",
+  "description": "The agent engineering platform.",
+  "homepage": "https://docs.langchain.com/langchain/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/langchain-ai/langchain/master/README.md",
+    "sha256": "9e6d706b38215c6979ef398ba72181b0f9099b8150f317c4c221877456c2dc2e",
+    "bytes": 5935,
+    "sectionsRead": [
+      "Quickstart",
+      "LangChain ecosystem",
+      "Why use LangChain?",
+      "Resources"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giá LangSmith và các dịch vụ đi kèm chưa kiểm tra.",
+    "Chưa đọc tài liệu Deep Agents hay LangGraph.",
+    "Chưa đánh giá độ ổn định giữa các phiên bản."
+  ],
+  "runtimeValidated": false
+}
