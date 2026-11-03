@@ -4229,5 +4229,129 @@
   "related": [
    "opentofu"
   ]
+ },
+ {
+  "key": 339,
+  "slug": "kubernetes",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "Kubernetes (K8s): hệ thống điều phối ứng dụng đóng gói container trên nhiều máy, README nói không hỗ trợ dùng mã làm thư viện",
+  "repo": "kubernetes/kubernetes",
+  "stars": 128631,
+  "license": "Apache-2.0",
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "minikube"
+  ]
+ },
+ {
+  "key": 340,
+  "slug": "minikube",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "minikube: chạy cụm Kubernetes cục bộ trên macOS, Linux, Windows để học và phát triển ứng dụng",
+  "repo": "kubernetes/minikube",
+  "stars": 32220,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "kind",
+   "kubernetes"
+  ]
+ },
+ {
+  "key": 341,
+  "slug": "kind",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "kind: dựng cụm Kubernetes cục bộ bằng container Docker làm nút, thiết kế ban đầu để kiểm thử Kubernetes",
+  "repo": "kubernetes-sigs/kind",
+  "stars": 15590,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-29",
+  "related": [
+   "k3s",
+   "minikube"
+  ]
+ },
+ {
+  "key": 342,
+  "slug": "k3s",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "k3s: bản Kubernetes gọn nhẹ đóng trong một tệp, hợp thiết bị biên, IoT, CI và phòng thí nghiệm tại nhà",
+  "repo": "k3s-io/k3s",
+  "stars": 34322,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "helm",
+   "kind"
+  ]
+ },
+ {
+  "key": 343,
+  "slug": "helm",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "Helm: trình quản lý gói cho Kubernetes, đóng cấu hình ứng dụng thành chart; README nêu thời hạn hỗ trợ Helm v3",
+  "repo": "helm/helm",
+  "stars": 30388,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "k3s",
+   "k9s"
+  ]
+ },
+ {
+  "key": 344,
+  "slug": "k9s",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "K9s: giao diện terminal để duyệt, theo dõi và quản lý cụm Kubernetes, README rất dài với nhiều phím tắt",
+  "repo": "derailed/k9s",
+  "stars": 34914,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "argo-cd",
+   "helm"
+  ]
+ },
+ {
+  "key": 345,
+  "slug": "argo-cd",
+  "group": "2026-11-03-kubernetes-cho-nguoi-moi",
+  "title": "Argo CD: công cụ triển khai liên tục theo kiểu GitOps cho Kubernetes, mô tả ứng dụng bằng cấu hình trong Git",
+  "repo": "argoproj/argo-cd",
+  "stars": 24517,
+  "license": "Apache-2.0",
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "k9s"
+  ]
  }
 ]

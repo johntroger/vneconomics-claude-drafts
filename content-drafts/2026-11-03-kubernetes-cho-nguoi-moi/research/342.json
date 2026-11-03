@@ -1,0 +1,35 @@
+{
+  "key": 342,
+  "repo": "k3s-io/k3s",
+  "repoId": "135516270",
+  "url": "https://github.com/k3s-io/k3s",
+  "stars": 34322,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T09:31:54Z",
+  "createdAt": "2018-05-31T01:37:46Z",
+  "defaultBranch": "main",
+  "description": "Lightweight Kubernetes",
+  "homepage": "https://k3s.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/k3s-io/k3s/main/README.md",
+    "sha256": "975ad1416e11b9b0b27bc48766f749ae9518a179a78b50b6a1e9039e735f8441",
+    "bytes": 10804,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What is this?",
+      "Bundled technologies"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử.",
+    "Chưa so sánh với minikube hay kind."
+  ],
+  "runtimeValidated": false
+}

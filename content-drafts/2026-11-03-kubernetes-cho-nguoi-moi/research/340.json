@@ -1,0 +1,35 @@
+{
+  "key": 340,
+  "repo": "kubernetes/minikube",
+  "repoId": "56353740",
+  "url": "https://github.com/kubernetes/minikube",
+  "stars": 32220,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:43:32Z",
+  "createdAt": "2016-04-15T22:38:35Z",
+  "defaultBranch": "master",
+  "description": "Run Kubernetes locally",
+  "homepage": "https://minikube.sigs.k8s.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/kubernetes/minikube/master/README.md",
+    "sha256": "bf3aa3e287ebfebbf9384b399c11f209e16a61355119ca9a962c6aea6c0150a3",
+    "bytes": 5276,
+    "sectionsRead": [
+      "Features",
+      "Installation",
+      "GitHub Codespace"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn bắt đầu.",
+    "Chưa thử.",
+    "Yêu cầu cấu hình chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

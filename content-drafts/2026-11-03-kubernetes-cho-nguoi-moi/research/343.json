@@ -1,0 +1,35 @@
+{
+  "key": 343,
+  "repo": "helm/helm",
+  "repoId": "43723161",
+  "url": "https://github.com/helm/helm",
+  "stars": 30388,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:34:21Z",
+  "createdAt": "2015-10-06T01:07:32Z",
+  "defaultBranch": "main",
+  "description": "The Kubernetes Package Manager",
+  "homepage": "https://helm.sh",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/helm/helm/main/README.md",
+    "sha256": "76795af9c4b1a2eb0f3f105319d4e624196dc255bdcb44f55f4cfc6b12e443e8",
+    "bytes": 4410,
+    "sectionsRead": [
+      "Helm in a Handbasket",
+      "Development and Stable Versions",
+      "Install"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chart.",
+    "Chưa thử.",
+    "Lịch hỗ trợ cần kiểm tra lại tại helm.sh."
+  ],
+  "runtimeValidated": false
+}

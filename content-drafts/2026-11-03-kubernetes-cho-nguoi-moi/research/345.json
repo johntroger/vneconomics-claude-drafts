@@ -1,0 +1,36 @@
+{
+  "key": 345,
+  "repo": "argoproj/argo-cd",
+  "repoId": "120896210",
+  "url": "https://github.com/argoproj/argo-cd",
+  "stars": 24517,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:16:45Z",
+  "createdAt": "2018-02-09T11:12:01Z",
+  "defaultBranch": "master",
+  "description": "Declarative Continuous Deployment for Kubernetes",
+  "homepage": "https://argo-cd.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/argoproj/argo-cd/master/README.md",
+    "sha256": "da0adc25870375979e2f5c3b2bcf6656b44ddf6a1bf848087bc756d7a326daae",
+    "bytes": 7517,
+    "sectionsRead": [
+      "What is Argo CD?",
+      "Why Argo CD?",
+      "Documentation",
+      "Community"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử demo.",
+    "Chưa so sánh với Flux (không đưa vào đợt này)."
+  ],
+  "runtimeValidated": false
+}

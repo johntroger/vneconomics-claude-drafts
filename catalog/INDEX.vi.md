@@ -40,6 +40,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 38 — Thư viện game và đồ họa trên web](learning-paths/38-game-va-do-hoa-web.vi.md) — Từ game 2D vui vẻ đến engine 3D; chọn theo ngôn ngữ bạn biết và đọc kỹ lưu ý của từng README.
 - [Lộ trình 39 — Quản lý dự án và wiki tự host cho nhóm](learning-paths/39-quan-ly-du-an-va-wiki-tu-host.vi.md) — Công cụ theo dõi việc và wiki chung; chú ý giấy phép và phần tính năng trả phí của từng dự án.
 - [Lộ trình 40 — Dữ liệu, hạ tầng và giám sát](learning-paths/40-du-lieu-ha-tang-va-giam-sat.vi.md) — Phân tích dữ liệu, bảng điều khiển, hạ tầng như mã và giám sát; luôn thử ở môi trường thử và dùng tài khoản quyền tối thiểu.
+- [Lộ trình 41 — Làm quen Kubernetes từ cụm cục bộ](learning-paths/41-kubernetes-cho-nguoi-moi.vi.md) — Học Kubernetes từ cụm nhỏ trên máy trước khi chạm môi trường thật; đây là chủ đề khó, đừng vội dùng cho sản xuất.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -245,7 +246,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 336 | Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu | [getredash/redash](https://github.com/getredash/redash) | BSD-2-Clause | 28862 | du-lieu-ha-tang-va-giam-sat |
 | 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
 
-### Nâng cao (54 bài)
+### Nâng cao (61 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -303,6 +304,13 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 334 | Ansible: tự động hóa cấu hình máy chủ qua SSH mà không cần cài đại lý, mô tả bằng ngôn ngữ dễ đọc | [ansible/ansible](https://github.com/ansible/ansible) | GPL-3.0 | 71222 | du-lieu-ha-tang-va-giam-sat |
 | 335 | Apache Superset: nền tảng khám phá và trực quan hóa dữ liệu doanh nghiệp, làm biểu đồ không cần viết mã | [apache/superset](https://github.com/apache/superset) | Apache-2.0 | 75394 | du-lieu-ha-tang-va-giam-sat |
 | 338 | SWC: trình biên dịch TypeScript và JavaScript viết bằng Rust, thay Babel để dựng nhanh hơn theo mô tả của dự án | [swc-project/swc](https://github.com/swc-project/swc) | Apache-2.0 | 34211 | du-lieu-ha-tang-va-giam-sat |
+| 339 | Kubernetes (K8s): hệ thống điều phối ứng dụng đóng gói container trên nhiều máy, README nói không hỗ trợ dùng mã làm thư viện | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | Apache-2.0 | 128631 | kubernetes-cho-nguoi-moi |
+| 340 | minikube: chạy cụm Kubernetes cục bộ trên macOS, Linux, Windows để học và phát triển ứng dụng | [kubernetes/minikube](https://github.com/kubernetes/minikube) | Apache-2.0 | 32220 | kubernetes-cho-nguoi-moi |
+| 341 | kind: dựng cụm Kubernetes cục bộ bằng container Docker làm nút, thiết kế ban đầu để kiểm thử Kubernetes | [kubernetes-sigs/kind](https://github.com/kubernetes-sigs/kind) | Apache-2.0 | 15590 | kubernetes-cho-nguoi-moi |
+| 342 | k3s: bản Kubernetes gọn nhẹ đóng trong một tệp, hợp thiết bị biên, IoT, CI và phòng thí nghiệm tại nhà | [k3s-io/k3s](https://github.com/k3s-io/k3s) | Apache-2.0 | 34322 | kubernetes-cho-nguoi-moi |
+| 343 | Helm: trình quản lý gói cho Kubernetes, đóng cấu hình ứng dụng thành chart; README nêu thời hạn hỗ trợ Helm v3 | [helm/helm](https://github.com/helm/helm) | Apache-2.0 | 30388 | kubernetes-cho-nguoi-moi |
+| 344 | K9s: giao diện terminal để duyệt, theo dõi và quản lý cụm Kubernetes, README rất dài với nhiều phím tắt | [derailed/k9s](https://github.com/derailed/k9s) | Apache-2.0 | 34914 | kubernetes-cho-nguoi-moi |
+| 345 | Argo CD: công cụ triển khai liên tục theo kiểu GitOps cho Kubernetes, mô tả ứng dụng bằng cấu hình trong Git | [argoproj/argo-cd](https://github.com/argoproj/argo-cd) | Apache-2.0 | 24517 | kubernetes-cho-nguoi-moi |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
