@@ -2159,5 +2159,111 @@
   "related": [
    "supabase"
   ]
+ },
+ {
+  "key": 222,
+  "slug": "godot",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "Godot Engine: công cụ làm game 2D và 3D miễn phí, giấy phép MIT không tiền bản quyền",
+  "repo": "godotengine/godot",
+  "stars": 119487,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "phaser",
+   "threejs"
+  ]
+ },
+ {
+  "key": 223,
+  "slug": "phaser",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "Phaser: khung làm game 2D bằng JavaScript chạy trực tiếp trên trình duyệt",
+  "repo": "phaserjs/phaser",
+  "stars": 40636,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-08-21",
+  "related": [
+   "godot",
+   "p5js"
+  ]
+ },
+ {
+  "key": 224,
+  "slug": "threejs",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "three.js: thư viện JavaScript vẽ đồ họa 3D trong trình duyệt",
+  "repo": "mrdoob/three.js",
+  "stars": 117456,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "godot",
+   "raylib"
+  ]
+ },
+ {
+  "key": 225,
+  "slug": "p5js",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "p5.js: thư viện JavaScript cho lập trình sáng tạo, dễ tiếp cận cho người mới và nghệ sĩ",
+  "repo": "processing/p5.js",
+  "stars": 24291,
+  "license": "LGPL-2.1",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "phaser"
+  ]
+ },
+ {
+  "key": 226,
+  "slug": "bevy",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "Bevy: engine game viết bằng Rust, hướng dữ liệu, README cảnh báo còn sớm và hay đổi API",
+  "repo": "bevyengine/bevy",
+  "stars": 49475,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "raylib"
+  ]
+ },
+ {
+  "key": 227,
+  "slug": "raylib",
+  "group": "2026-11-03-game-va-do-hoa",
+  "title": "raylib: thư viện C đơn giản để học lập trình game, không giao diện, chỉ có mã",
+  "repo": "raysan5/raylib",
+  "stars": 35543,
+  "license": "Zlib",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "bevy",
+   "threejs"
+  ]
  }
 ]

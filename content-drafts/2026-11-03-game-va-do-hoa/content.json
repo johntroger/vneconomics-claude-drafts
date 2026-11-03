@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-game",
+  "batch": 38,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 222,
+      "batch": 38,
+      "slug": "godot",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Godot Engine: công cụ làm game 2D và 3D miễn phí, giấy phép MIT không tiền bản quyền",
+        "excerpt": "Hiểu Godot là công cụ làm game trọn gói có giao diện, xuất ra máy tính, di động và web. Giấy phép MIT: game của bạn hoàn toàn của bạn.",
+        "content": "<p>Godot Engine là công cụ làm game đa nền tảng giàu tính năng cho game 2D và 3D từ một giao diện thống nhất. README nói nó có bộ công cụ chung để người dùng tập trung làm game, và game xuất được bằng một cú bấm tới máy tính (Linux, macOS, Windows), di động (Android, iOS), nền tảng web và máy chơi game console. Godot hoàn toàn miễn phí và mã nguồn mở theo giấy phép MIT 'không ràng buộc, không tiền bản quyền': game của bạn thuộc về bạn, tới từng dòng mã của engine. Dự án được Godot Foundation phi lợi nhuận hỗ trợ và phát triển độc lập, do cộng đồng dẫn dắt.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Làm game bằng cách tự viết hết mọi thứ giống tự xây cả xưởng phim trước khi quay. Godot giống xưởng phim đã dựng sẵn: sân khấu, đèn, máy quay (công cụ) nằm sẵn trong một chương trình có giao diện; bạn chỉ lo kịch bản và nhân vật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên hoặc người mới làm một game 2D rất nhỏ để học khái niệm cảnh, nhân vật và va chạm; AI có thể giúp giải thích từng phần. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn làm game, kể cả người mới; giảng viên dạy lập trình qua game.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Có giao diện trực quan, nhưng cần học khái niệm làm game (cảnh, nút, vật lý) và ngôn ngữ script. README không đi sâu vào học tập. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn làm trò chơi web nhẹ bằng JavaScript, Phaser (cùng nhóm) có thể hợp hơn. Nếu bạn cần engine mức thấp tự do hoàn toàn, raylib hoặc Bevy là hướng khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>game engine (công cụ làm game)</strong>: phần mềm cung cấp sẵn công cụ vẽ, vật lý, âm thanh và xuất bản cho game.</li><li><strong>MIT license (không tiền bản quyền)</strong>: README nói không tiền bản quyền, game thuộc về bạn.</li><li><strong>export (xuất bản)</strong>: đóng gói game để chạy trên nền tảng khác nhau.</li><li><strong>Godot Foundation</strong>: tổ chức phi lợi nhuận hỗ trợ Godot, theo README.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê tải bản nhị phân và hướng dẫn biên dịch từ mã nguồn; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép MIT. Xuất lên console có thể cần điều kiện riêng (README dẫn tới trang consoles).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và giấy phép.</li><li>Tải bản chính thức từ trang godotengine.org.</li><li>Làm hướng dẫn game đầu tiên trong tài liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử làm game đơn giản. Hãy đọc README của Godot (https://github.com/godotengine/godot) và giải thích bằng tiếng Việt: Godot là gì, giấy phép MIT có ý nghĩa gì với game mình làm, và nên bắt đầu thế nào với người chưa biết lập trình game. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, chi tiết nằm ở tài liệu chưa đọc. Làm game vẫn đòi hỏi nhiều kỹ năng ngoài công cụ (thiết kế, đồ họa, âm thanh). Tuyên bố 'không ràng buộc' áp dụng cho engine; tài nguyên bạn dùng có giấy phép riêng.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>godotengine</strong> có <strong>119.487 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT license. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/godotengine/godot/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/godotengine/godot\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 222. Chưa cài/chạy thử; không tạo validation. Snapshot sao 119487; repo_id 15634981; README SHA256 999955511e1d54b0abe323ad899633a5a22c14c4899d46e31d06de2175bd19f0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/godotengine/godot",
+          "repo_id": "15634981",
+          "source_path": "",
+          "source_revision": "README-SHA256:999955511e1d54b0abe323ad899633a5a22c14c4899d46e31d06de2175bd19f0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/godotengine/godot",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê tải bản nhị phân và hướng dẫn biên dịch từ mã nguồn; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép MIT. Xuất lên console có thể cần điều kiện riêng (README dẫn tới trang consoles).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/godotengine/godot/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/godotengine/godot/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "godotengine/godot",
+        "stars": 119487,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/godotengine/godot/master/README.md",
+        "readmeSha256": "999955511e1d54b0abe323ad899633a5a22c14c4899d46e31d06de2175bd19f0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 223,
+      "batch": 38,
+      "slug": "phaser",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Phaser: khung làm game 2D bằng JavaScript chạy trực tiếp trên trình duyệt",
+        "excerpt": "Hiểu Phaser giúp làm game web chạy trên máy tính và điện thoại bằng JavaScript hoặc TypeScript. Hợp người đã biết web, có do công ty thương mại duy trì.",
+        "content": "<p>Phaser là khung làm game HTML5 mã nguồn mở nhanh và miễn phí, vẽ bằng WebGL và Canvas trên trình duyệt máy tính và điện thoại, được phát triển hơn 13 năm theo README. Game có thể làm cho web, YouTube Playables, Discord Activities, game Reddit, lớp phủ Twitch, hoặc đóng gói cho iOS, Android, Steam và ứng dụng native bằng công cụ bên thứ ba. Dùng JavaScript hoặc TypeScript. README nói Phaser do Phaser Studio Inc phát triển thương mại cùng cộng đồng mã nguồn mở; có hướng dẫn cài qua npm và dùng từ CDN. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Godot là xưởng phim có giao diện, Phaser giống bộ đạo cụ dành cho người làm web: bạn viết JavaScript, game chạy ngay trong trình duyệt nên chia sẻ chỉ bằng một đường dẫn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: làm một mini game chạy trong trình duyệt để học lập trình, rồi chia sẻ link cho sinh viên. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người biết JavaScript hoặc đang học web muốn làm game; giảng viên dạy lập trình qua game web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript cơ bản và hiểu khái niệm vòng lặp game; README có hướng dẫn cài và CDN. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần game 3D phức tạp hoặc giao diện soạn cảnh trực quan, Godot hợp hơn. Phaser chủ yếu dành cho game 2D.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>HTML5 / Canvas / WebGL</strong>: công nghệ vẽ đồ họa trong trình duyệt mà Phaser dùng.</li><li><strong>CDN</strong>: cách nạp thư viện trực tiếp từ mạng; README nêu dùng jsDelivr hoặc cdnjs.</li><li><strong>TypeScript</strong>: JavaScript có kiểu dữ liệu, README nói Phaser dùng được.</li><li><strong>Phaser Studio Inc</strong>: công ty duy trì Phaser theo hướng thương mại, theo README.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài qua npm hoặc nạp từ CDN (jsDelivr, cdnjs) (bài không chép lệnh). Miễn phí theo giấy phép MIT; công cụ đóng gói bên thứ ba cho di động có điều khoản riêng. Phaser Studio có sản phẩm thương mại; bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và cách cài.</li><li>Làm hướng dẫn game đầu tiên.</li><li>Thử nghiệm trong trình duyệt trước khi nghĩ tới đóng gói.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút JavaScript và muốn làm game chạy trên web. Hãy đọc README của Phaser (https://github.com/phaserjs/phaser) và giải thích bằng tiếng Việt: Phaser là gì, vòng lặp game là gì, và khác Godot ở điểm nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Chủ yếu 2D; đóng gói cho di động cần công cụ bên thứ ba. Commit gần nhất vào 2026-08-21, chậm hơn nhiều dự án cùng nhóm. Tuyên bố 'một trong những repo được gắn sao nhiều nhất' là của tác giả.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>phaserjs</strong> có <strong>40.636 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-08-21. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/phaserjs/phaser/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/phaserjs/phaser\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 223. Chưa cài/chạy thử; không tạo validation. Snapshot sao 40636; repo_id 9393759; README SHA256 14735751fff0e0a93fc6fd40e5b1393ff8d5b951ce176d8f430eb754aa386379.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/phaserjs/phaser",
+          "repo_id": "9393759",
+          "source_path": "",
+          "source_revision": "README-SHA256:14735751fff0e0a93fc6fd40e5b1393ff8d5b951ce176d8f430eb754aa386379",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/phaserjs/phaser",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài qua npm hoặc nạp từ CDN (jsDelivr, cdnjs) (bài không chép lệnh). Miễn phí theo giấy phép MIT; công cụ đóng gói bên thứ ba cho di động có điều khoản riêng. Phaser Studio có sản phẩm thương mại; bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/phaserjs/phaser/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/phaserjs/phaser/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "phaserjs/phaser",
+        "stars": 40636,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/phaserjs/phaser/master/README.md",
+        "readmeSha256": "14735751fff0e0a93fc6fd40e5b1393ff8d5b951ce176d8f430eb754aa386379",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 224,
+      "batch": 38,
+      "slug": "threejs",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "three.js: thư viện JavaScript vẽ đồ họa 3D trong trình duyệt",
+        "excerpt": "Hiểu three.js giúp dựng cảnh 3D trên web từ vài dòng JavaScript, nền của nhiều trang 3D tương tác. Cần quen JavaScript và khái niệm cảnh, camera.",
+        "content": "<p>three.js là thư viện 3D JavaScript. README nói mục tiêu là tạo thư viện 3D dễ dùng, nhẹ, chạy trên nhiều trình duyệt, đa dụng; bản dựng hiện chỉ gồm trình vẽ WebGL và WebGPU, còn SVG và CSS3D là bổ sung. README có ví dụ tạo cảnh, camera, một khối lập phương, bộ vẽ WebGL và thêm vào trang rồi cho hoạt họa. Có trang ví dụ, tài liệu, sổ tay, wiki, hướng dẫn di chuyển, diễn đàn và Discord. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn quay một vật thể 3D, bạn cần sân khấu (cảnh), máy quay (camera) và vật thể. three.js giống bộ đạo cụ cho việc đó trên trang web: vài đối tượng ghép lại là thành cảnh 3D xoay được ngay trong trình duyệt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI tạo một cảnh có khối lập phương xoay rồi đọc từng đối tượng (cảnh, camera, vật liệu) để hiểu chúng làm gì. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm web muốn có 3D; người học đồ họa; mã AI hay dùng three.js khi được yêu cầu 3D.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript và khái niệm 3D cơ bản (cảnh, camera, ánh sáng, vật liệu). README có ví dụ ngắn; tài liệu và ví dụ rất nhiều. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn engine game đầy đủ với giao diện soạn cảnh, Godot hợp hơn. Nếu chỉ cần ảnh hay biểu đồ 2D, không cần 3D.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>WebGL / WebGPU</strong>: công nghệ vẽ đồ họa tăng tốc bằng card đồ họa trong trình duyệt.</li><li><strong>scene (cảnh)</strong>: không gian chứa mọi vật thể 3D.</li><li><strong>camera</strong>: góc nhìn vào cảnh.</li><li><strong>material (vật liệu)</strong>: cách bề mặt vật thể trông thế nào (màu, bóng, ánh sáng).</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có ví dụ mã và liên kết tài liệu; bài chưa đọc hướng dẫn cài chi tiết nên không nêu lệnh. Miễn phí theo giấy phép MIT. WebGPU có thể cần trình duyệt mới; bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ví dụ trong README và chạy một ví dụ trên trang ví dụ.</li><li>Đọc phần Manual để hiểu cảnh, camera, vật liệu.</li><li>Thử đổi màu và kích thước vật thể trong ví dụ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm trang web có cảnh 3D. Hãy đọc README của three.js (https://github.com/mrdoob/three.js) và giải thích bằng tiếng Việt: cảnh, camera, vật liệu là gì, và hiệu năng trên điện thoại cần lưu ý gì. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>3D trên web tốn tài nguyên; thiết bị yếu có thể giật. README ngắn; thông tin chi tiết ở tài liệu. Có nhiều phiên bản và cách import nên mã AI sinh có thể lệch phiên bản.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mrdoob</strong> có <strong>117.456 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mrdoob/three.js/blob/dev/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mrdoob/three.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 224. Chưa cài/chạy thử; không tạo validation. Snapshot sao 117456; repo_id 576201; README SHA256 d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mrdoob/three.js",
+          "repo_id": "576201",
+          "source_path": "",
+          "source_revision": "README-SHA256:d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mrdoob/three.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có ví dụ mã và liên kết tài liệu; bài chưa đọc hướng dẫn cài chi tiết nên không nêu lệnh. Miễn phí theo giấy phép MIT. WebGPU có thể cần trình duyệt mới; bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mrdoob/three.js/blob/dev/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mrdoob/three.js/blob/dev/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mrdoob/three.js",
+        "stars": 117456,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mrdoob/three.js/dev/README.md",
+        "readmeSha256": "d553d824625a07d7690de93af6f8daf13d6aaed42700929d7ce4e725fa5ef10d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 225,
+      "batch": 38,
+      "slug": "p5js",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "p5.js: thư viện JavaScript cho lập trình sáng tạo, dễ tiếp cận cho người mới và nghệ sĩ",
+        "excerpt": "Hiểu p5.js giúp vẽ, tạo hoạt họa và âm thanh tương tác bằng vài dòng mã, rất hợp người mới học lập trình và giảng viên. Cộng đồng chú trọng sự hòa nhập.",
+        "content": "<p>p5.js là thư viện JavaScript miễn phí, mã nguồn mở cho lập trình sáng tạo dễ tiếp cận. README mô tả đây là cộng đồng nuôi dưỡng, ngôn ngữ dễ gần, công cụ khám phá, môi trường dễ tiếp cận, ưu tiên khả năng tiếp cận, hòa nhập, cộng đồng và niềm vui. Ví dụ README chỉ vài dòng: tạo khung vẽ và vẽ một hình tròn theo vị trí chuột. Có hướng dẫn bắt đầu, tài liệu tham khảo, ví dụ và thư viện bổ sung, cùng trình soạn trực tuyến (p5.js web editor). Giấy phép LGPL-2.1.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bảng vẽ và bút đặc biệt mà bạn điều khiển bằng vài dòng chữ: ví dụ 'vẽ hình tròn theo chuột'. Rất hợp để học lập trình bằng cách thấy kết quả ngay, như tập vẽ nháp trước khi làm tranh lớn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên hướng dẫn sinh viên mới viết vài dòng p5.js để vẽ hình theo chuột và chia sẻ qua trình soạn trực tuyến. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học lập trình; nghệ sĩ, nhà thiết kế, giảng viên dạy lập trình sáng tạo.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> Ví dụ khởi đầu chỉ vài dòng và có trình soạn trực tuyến nên không cần cài đặt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần engine game đầy đủ hoặc 3D phức tạp, Godot hoặc three.js hợp hơn. p5.js tập trung vào vẽ và thử nghiệm sáng tạo.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>creative coding (lập trình sáng tạo)</strong>: dùng mã để tạo nghệ thuật và trải nghiệm tương tác.</li><li><strong>canvas (khung vẽ)</strong>: vùng trên trang web nơi mã vẽ hình.</li><li><strong>setup / draw</strong>: hai hàm mẫu: setup chạy một lần để chuẩn bị, draw chạy lặp để vẽ liên tục.</li><li><strong>LGPL</strong>: giấy phép mã nguồn mở cho phép dùng trong sản phẩm khác với điều kiện nhất định khi sửa thư viện.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang Get Started, Reference, Tutorials, Examples, Libraries; có trình soạn trực tuyến, bài chưa đọc chi tiết nên không chép lệnh. Miễn phí theo giấy phép LGPL-2.1 theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử ví dụ trên trình soạn trực tuyến.</li><li>Đọc hướng dẫn bắt đầu trên trang chính thức.</li><li>Thay đổi các thông số để hiểu từng dòng làm gì.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dạy sinh viên mới học lập trình và muốn dùng p5.js. Hãy đọc README của p5.js (https://github.com/processing/p5.js) và giải thích bằng tiếng Việt: p5.js làm gì, setup và draw là gì, và gợi ý một bài thực hành đầu tiên 15 phút. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>p5.js tập trung đồ họa 2D và sáng tạo, không phải khung dựng ứng dụng lớn. Giấy phép LGPL có điều kiện khi sửa thư viện. README tập trung cộng đồng và liên kết; chi tiết ở trang chính thức.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>processing</strong> có <strong>24.291 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện LGPL-2.1. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/processing/p5.js/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/processing/p5.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 225. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24291; repo_id 8424040; README SHA256 460758c363412e49b7393b5823e3305a3d62dcf78f0a212bfc8c6e6c4276dd14.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/processing/p5.js",
+          "repo_id": "8424040",
+          "source_path": "",
+          "source_revision": "README-SHA256:460758c363412e49b7393b5823e3305a3d62dcf78f0a212bfc8c6e6c4276dd14",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "LGPL-2.1",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/processing/p5.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang Get Started, Reference, Tutorials, Examples, Libraries; có trình soạn trực tuyến, bài chưa đọc chi tiết nên không chép lệnh. Miễn phí theo giấy phép LGPL-2.1 theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/processing/p5.js/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/processing/p5.js/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "processing/p5.js",
+        "stars": 24291,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/processing/p5.js/main/README.md",
+        "readmeSha256": "460758c363412e49b7393b5823e3305a3d62dcf78f0a212bfc8c6e6c4276dd14",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 226,
+      "batch": 38,
+      "slug": "bevy",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bevy: engine game viết bằng Rust, hướng dữ liệu, README cảnh báo còn sớm và hay đổi API",
+        "excerpt": "Hiểu Bevy là engine game Rust theo mô hình ECS. Chính README cảnh báo dự án còn giai đoạn đầu, tài liệu thưa và API đổi khoảng ba tháng một lần.",
+        "content": "<p>Bevy là engine game hướng dữ liệu, đơn giản, viết bằng Rust, miễn phí và mã nguồn mở 'mãi mãi' theo README. README có mục WARNING: Bevy còn ở giai đoạn đầu, thiếu nhiều tính năng quan trọng, tài liệu thưa, và một phiên bản mới với thay đổi phá vỡ API được phát hành khoảng ba tháng một lần. Mục tiêu thiết kế: đầy đủ tính năng 2D và 3D, đơn giản cho người mới nhưng linh hoạt cho người chuyên, hướng dữ liệu theo mô hình Entity Component System, mô-đun, nhanh, năng suất. Có Quick Start Guide, tài liệu API Rust, ví dụ chính thức và tài nguyên cộng đồng. Giấy phép MIT/Apache.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bevy giống bộ Lego rất mạnh nhưng mới ra mắt: các khối đẹp và linh hoạt, nhưng nhà sản xuất tự nói hướng dẫn còn thưa và khối mới có thể đổi hình dạng sau vài tháng. Phù hợp người thích thử nghiệm hơn người cần chắc chắn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người đã biết Rust muốn thử một game nhỏ và chấp nhận đọc ví dụ chính thức để theo kịp thay đổi. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đã biết hoặc sẵn sàng học Rust; người thích thử nghiệm engine mới.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Rust và hiểu mô hình ECS; README tự cảnh báo tài liệu thưa và API đổi thường xuyên. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Người mới chưa biết lập trình nên bắt đầu bằng Godot hoặc p5.js. Dự án cần ổn định lâu dài nên cân nhắc cảnh báo của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>ECS (Entity Component System)</strong>: cách tổ chức game bằng thực thể, thành phần dữ liệu và hệ thống xử lý; README gọi là kiến trúc hướng dữ liệu.</li><li><strong>MSRV</strong>: phiên bản Rust tối thiểu được hỗ trợ; README nói gần với bản ổn định mới nhất.</li><li><strong>breaking change</strong>: thay đổi API làm mã cũ không chạy; README nói mỗi khoảng ba tháng.</li><li><strong>Rust</strong>: ngôn ngữ lập trình hệ thống mà Bevy dùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới Quick Start Guide ở bevy.org, tài liệu API trên docs.rs và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Rust bản mới. Miễn phí theo giấy phép MIT hoặc Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc kỹ mục WARNING.</li><li>Đọc Quick Start Guide và chạy một ví dụ chính thức.</li><li>Ghim phiên bản Bevy và Rust khi làm dự án.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang cân nhắc làm game bằng Bevy. Hãy đọc README của Bevy (https://github.com/bevyengine/bevy) và giải thích bằng tiếng Việt: ECS là gì, vì sao README cảnh báo API đổi thường xuyên, và ai nên dùng Bevy so với Godot. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Theo chính README: dự án còn sớm, thiếu tính năng, tài liệu thưa, API đổi mỗi ~3 tháng. Mã AI sinh có thể dùng API của phiên bản cũ nên khó chạy. Cần học Rust.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>bevyengine</strong> có <strong>49.475 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu MIT/Apache. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/bevyengine/bevy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/bevyengine/bevy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 226. Chưa cài/chạy thử; không tạo validation. Snapshot sao 49475; repo_id 234798675; README SHA256 dd2327c348fe01e66f585fd00f8cf06b07396afaf9194c228a6291b87a314c2f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/bevyengine/bevy",
+          "repo_id": "234798675",
+          "source_path": "",
+          "source_revision": "README-SHA256:dd2327c348fe01e66f585fd00f8cf06b07396afaf9194c228a6291b87a314c2f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bevyengine/bevy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới Quick Start Guide ở bevy.org, tài liệu API trên docs.rs và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Rust bản mới. Miễn phí theo giấy phép MIT hoặc Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bevyengine/bevy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/bevyengine/bevy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "bevyengine/bevy",
+        "stars": 49475,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/bevyengine/bevy/main/README.md",
+        "readmeSha256": "dd2327c348fe01e66f585fd00f8cf06b07396afaf9194c228a6291b87a314c2f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 227,
+      "batch": 38,
+      "slug": "raylib",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "raylib: thư viện C đơn giản để học lập trình game, không giao diện, chỉ có mã",
+        "excerpt": "Hiểu raylib là thư viện nhỏ viết bằng C dành cho người thích học làm game bằng mã thuần, không có công cụ trực quan. Hợp giảng dạy và thử nghiệm.",
+        "content": "<p>raylib là thư viện đơn giản dễ dùng để thưởng thức lập trình game. README nói nó lấy cảm hứng từ thư viện đồ họa Borland BGI và khung XNA, rất hợp để tạo mẫu thử, công cụ, ứng dụng đồ họa, hệ thống nhúng và giáo dục. README nhấn mạnh: không có giao diện, không có công cụ trực quan, không có nút gỡ lỗi, chỉ có mã. Đặc điểm: không phụ thuộc thư viện ngoài, hỗ trợ nhiều nền tảng (Windows, Linux, macOS, Raspberry Pi, Android, HTML5…), viết bằng C thuần (C99), tăng tốc OpenGL nhiều phiên bản kèm trình vẽ phần mềm, hỗ trợ 3D, vật liệu PBR, mô hình hoạt họa, shader, mô-đun toán và âm thanh nhiều định dạng. Giấy phép zlib/libpng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Godot giống xưởng phim có giao diện; raylib giống chiếc máy quay tay và bộ dụng cụ cơ bản: không nút bấm bóng bẩy, nhưng bạn thấy rõ từng bước và học được cách mọi thứ vận hành.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên dùng raylib để dạy sinh viên viết vòng lặp game và vẽ hình bằng C, vì ít thứ che giấu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn học làm game từ gốc; giảng viên dạy lập trình đồ họa; người thích C.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần biết C hoặc ngôn ngữ có thể gọi raylib; README nói rõ không có công cụ trực quan. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Người mới hoàn toàn muốn kéo thả hoặc thấy kết quả bằng giao diện nên bắt đầu bằng Godot hoặc p5.js.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>C99</strong>: phiên bản chuẩn của ngôn ngữ C mà raylib dùng.</li><li><strong>OpenGL</strong>: chuẩn đồ họa tăng tốc bằng card đồ họa; README nêu nhiều phiên bản được hỗ trợ.</li><li><strong>shader</strong>: chương trình nhỏ chạy trên card đồ họa để tạo hiệu ứng.</li><li><strong>PBR</strong>: vật liệu mô phỏng ánh sáng thực tế hơn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê tính năng, ví dụ mã và hướng dẫn biên dịch (bài chưa đọc chi tiết, không chép lệnh). Cần trình biên dịch C. Miễn phí theo giấy phép zlib/libpng (README nói cho phép liên kết tĩnh với phần mềm đóng).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn mô tả và danh sách tính năng.</li><li>Xem các ví dụ mã trên trang chính thức.</li><li>Biên dịch một ví dụ nhỏ trên máy riêng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học làm game từ mức thấp. Hãy đọc README của raylib (https://github.com/raysan5/raylib) và giải thích bằng tiếng Việt: raylib khác Godot ra sao, 'không có công cụ trực quan' nghĩa là gì, và cần biết gì để bắt đầu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Không có giao diện soạn cảnh; mọi thứ bằng mã C nên đòi hỏi kỹ năng lập trình. README chỉ giới thiệu; tài nguyên học ở trang chính thức chưa đọc.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi tải tài nguyên đồ họa, âm thanh hoặc mã mẫu từ nguồn ngoài, hãy kiểm tra giấy phép sử dụng và nguồn gốc; trò chơi hay đồ họa có thể dùng cả mã lẫn tài nguyên có điều khoản khác nhau.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>raysan5</strong> có <strong>35.543 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Zlib; README ghi zlib/libpng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/raysan5/raylib/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/raysan5/raylib\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm game và đồ họa, key 227. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35543; repo_id 13836499; README SHA256 cf122c1e570836aeeceefb69f56153c5d99872304d2d087463d2d624244b54f4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/raysan5/raylib",
+          "repo_id": "13836499",
+          "source_path": "",
+          "source_revision": "README-SHA256:cf122c1e570836aeeceefb69f56153c5d99872304d2d087463d2d624244b54f4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Zlib",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/raysan5/raylib",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê tính năng, ví dụ mã và hướng dẫn biên dịch (bài chưa đọc chi tiết, không chép lệnh). Cần trình biên dịch C. Miễn phí theo giấy phép zlib/libpng (README nói cho phép liên kết tĩnh với phần mềm đóng).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/raysan5/raylib/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/raysan5/raylib/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "raysan5/raylib",
+        "stars": 35543,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/raysan5/raylib/master/README.md",
+        "readmeSha256": "cf122c1e570836aeeceefb69f56153c5d99872304d2d087463d2d624244b54f4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

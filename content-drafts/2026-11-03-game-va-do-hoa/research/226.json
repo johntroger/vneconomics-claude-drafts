@@ -1,0 +1,37 @@
+{
+  "key": 226,
+  "repo": "bevyengine/bevy",
+  "repoId": "234798675",
+  "url": "https://github.com/bevyengine/bevy",
+  "stars": 49475,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:30:15Z",
+  "createdAt": "2020-01-18T21:13:55Z",
+  "defaultBranch": "main",
+  "description": "A refreshingly simple data-driven game engine built in Rust",
+  "homepage": "https://bevy.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/bevyengine/bevy/main/README.md",
+    "sha256": "dd2327c348fe01e66f585fd00f8cf06b07396afaf9194c228a6291b87a314c2f",
+    "bytes": 7650,
+    "sectionsRead": [
+      "What is Bevy?",
+      "WARNING",
+      "Design Goals",
+      "Docs",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc Quick Start.",
+    "Mức ổn định thực tế chưa kiểm chứng.",
+    "Chưa so sánh với Godot."
+  ],
+  "runtimeValidated": false
+}
