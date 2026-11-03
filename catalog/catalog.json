@@ -631,6 +631,7 @@
   "need": "Làm việc với coding agent",
   "pushed": "2026-10-28",
   "related": [
+   "cypress",
    "dotenvx",
    "osv-scanner",
    "tailscale"
@@ -848,7 +849,9 @@
   "need": "Làm việc với coding agent",
   "pushed": "2026-11-03",
   "related": [
+   "cypress",
    "front-end-checklist",
+   "jest",
    "vitest"
   ]
  },
@@ -923,7 +926,9 @@
   "pushed": "2026-11-03",
   "related": [
    "drizzle-orm",
+   "jest",
    "playwright",
+   "ruff",
    "understand-anything"
   ]
  },
@@ -1846,6 +1851,95 @@
   "related": [
    "dotenvx",
    "ublock-origin"
+  ]
+ },
+ {
+  "key": 205,
+  "slug": "eslint",
+  "group": "2026-11-03-kiem-thu-va-chat-luong-ma",
+  "title": "ESLint: công cụ soát lỗi và quy tắc viết mã JavaScript, thường có sẵn trong dự án do AI dựng",
+  "repo": "eslint/eslint",
+  "stars": 27605,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "prettier",
+   "ruff"
+  ]
+ },
+ {
+  "key": 206,
+  "slug": "prettier",
+  "group": "2026-11-03-kiem-thu-va-chat-luong-ma",
+  "title": "Prettier: tự động dàn mã cho đồng nhất để khỏi tranh cãi về cách trình bày",
+  "repo": "prettier/prettier",
+  "stars": 52404,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "eslint"
+  ]
+ },
+ {
+  "key": 207,
+  "slug": "ruff",
+  "group": "2026-11-03-kiem-thu-va-chat-luong-ma",
+  "title": "Ruff: công cụ soát lỗi và định dạng mã Python rất nhanh, gom nhiều công cụ vào một",
+  "repo": "astral-sh/ruff",
+  "stars": 50403,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "eslint",
+   "vitest"
+  ]
+ },
+ {
+  "key": 208,
+  "slug": "jest",
+  "group": "2026-11-03-kiem-thu-va-chat-luong-ma",
+  "title": "Jest: framework kiểm thử JavaScript phổ biến, có chế độ theo dõi và kiểm thử snapshot",
+  "repo": "jestjs/jest",
+  "stars": 45471,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "playwright",
+   "vitest"
+  ]
+ },
+ {
+  "key": 209,
+  "slug": "cypress",
+  "group": "2026-11-03-kiem-thu-va-chat-luong-ma",
+  "title": "Cypress: kiểm thử website như người dùng thật trên trình duyệt, có dịch vụ đám mây trả phí",
+  "repo": "cypress-io/cypress",
+  "stars": 51018,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "gitleaks",
+   "playwright"
   ]
  }
 ]

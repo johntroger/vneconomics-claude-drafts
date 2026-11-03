@@ -15,13 +15,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 13 — Giám sát và bảo vệ máy chủ](learning-paths/13-giam-sat-va-bao-ve-may-chu.vi.md) — Biết máy chủ đang khỏe hay yếu, và ai đang cố xâm nhập; chọn công cụ phù hợp mức kinh nghiệm.
 - [Lộ trình 14 — Công cụ cho giảng viên và người viết](learning-paths/14-cong-cu-cho-giang-vien-va-nguoi-viet.vi.md) — Soạn bài giảng, tài liệu có công thức, soát lỗi văn bản và dựng site tài liệu.
 - [Lộ trình 15 — Quyền riêng tư và an toàn cá nhân](learning-paths/15-quyen-rieng-tu-ca-nhan.vi.md) — Ba việc nền tảng: giữ mật khẩu và mã 2FA, mã hóa dữ liệu nhạy cảm, bớt bị theo dõi khi duyệt web.
+- [Lộ trình 16 — Kiểm thử và giữ chất lượng mã khi có AI viết](learning-paths/16-kiem-thu-va-chat-luong-ma.vi.md) — Lưới an toàn khi AI sửa mã: định dạng, soát lỗi, kiểm thử từng hàm và kiểm thử luồng người dùng.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (25 bài)
+### Bắt đầu (26 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -50,8 +51,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 192 | Marp: viết bài trình chiếu bằng Markdown thuần rồi xuất ra HTML, PDF hoặc PowerPoint | [marp-team/marp](https://github.com/marp-team/marp) | MIT | 12711 | cong-cu-viet-va-giang-day |
 | 202 | uBlock Origin: chặn quảng cáo và theo dõi trong trình duyệt, và tình trạng trên Chrome | [gorhill/uBlock](https://github.com/gorhill/uBlock) | GPL-3.0 | 69041 | rieng-tu-ca-nhan |
 | 203 | Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu | [beemdevelopment/Aegis](https://github.com/beemdevelopment/Aegis) | GPL-3.0 | 13450 | rieng-tu-ca-nhan |
+| 206 | Prettier: tự động dàn mã cho đồng nhất để khỏi tranh cãi về cách trình bày | [prettier/prettier](https://github.com/prettier/prettier) | MIT | 52404 | kiem-thu-va-chat-luong-ma |
 
-### Cơ bản (52 bài)
+### Cơ bản (56 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -107,6 +109,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 200 | Cryptomator: mã hóa tệp trước khi đưa lên Google Drive, Dropbox hay OneDrive | [cryptomator/cryptomator](https://github.com/cryptomator/cryptomator) | GPL-3.0 | 16426 | rieng-tu-ca-nhan |
 | 201 | age: công cụ mã hóa tệp đơn giản, hiện đại, ít tùy chọn để khỏi cấu hình sai | [FiloSottile/age](https://github.com/FiloSottile/age) | BSD-3-Clause | 24175 | rieng-tu-ca-nhan |
 | 204 | Mullvad VPN (ứng dụng): mã nguồn ứng dụng của một dịch vụ VPN, cần phân biệt ứng dụng và dịch vụ | [mullvad/mullvadvpn-app](https://github.com/mullvad/mullvadvpn-app) | GPL-3.0 | 7743 | rieng-tu-ca-nhan |
+| 205 | ESLint: công cụ soát lỗi và quy tắc viết mã JavaScript, thường có sẵn trong dự án do AI dựng | [eslint/eslint](https://github.com/eslint/eslint) | MIT | 27605 | kiem-thu-va-chat-luong-ma |
+| 207 | Ruff: công cụ soát lỗi và định dạng mã Python rất nhanh, gom nhiều công cụ vào một | [astral-sh/ruff](https://github.com/astral-sh/ruff) | MIT | 50403 | kiem-thu-va-chat-luong-ma |
+| 208 | Jest: framework kiểm thử JavaScript phổ biến, có chế độ theo dõi và kiểm thử snapshot | [jestjs/jest](https://github.com/jestjs/jest) | MIT | 45471 | kiem-thu-va-chat-luong-ma |
+| 209 | Cypress: kiểm thử website như người dùng thật trên trình duyệt, có dịch vụ đám mây trả phí | [cypress-io/cypress](https://github.com/cypress-io/cypress) | MIT | 51018 | kiem-thu-va-chat-luong-ma |
 
 ### Khá khó (cần nền kỹ thuật) (19 bài)
 

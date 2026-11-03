@@ -1,0 +1,35 @@
+{
+  "key": 209,
+  "repo": "cypress-io/cypress",
+  "repoId": "31629751",
+  "url": "https://github.com/cypress-io/cypress",
+  "stars": 51018,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:39:04Z",
+  "createdAt": "2015-03-04T00:46:28Z",
+  "defaultBranch": "develop",
+  "description": "Fast, easy and reliable testing for anything that runs in a browser.",
+  "homepage": "https://cypress.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cypress-io/cypress/develop/README.md",
+    "sha256": "eba13436afb8b34b2b2fdf0a59d133729ac90fd303b045d6d808be9819687882",
+    "bytes": 3403,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installing",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README rất ngắn, chưa đọc tài liệu chính thức.",
+    "Giá Cypress Cloud chưa kiểm tra.",
+    "Chưa so sánh với Playwright."
+  ],
+  "runtimeValidated": false
+}

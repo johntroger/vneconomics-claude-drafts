@@ -1,0 +1,37 @@
+{
+  "key": 205,
+  "repo": "eslint/eslint",
+  "repoId": "11061773",
+  "url": "https://github.com/eslint/eslint",
+  "stars": 27605,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:42:38Z",
+  "createdAt": "2013-06-29T23:59:48Z",
+  "defaultBranch": "main",
+  "description": "Find and fix problems in your JavaScript code.",
+  "homepage": "https://eslint.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/eslint/eslint/main/README.md",
+    "sha256": "a41bc731c816df59132cbb68fd298da3c948ba25cd04b18300a56f446c3c7be8",
+    "bytes": 20498,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation and Usage",
+      "Configuration",
+      "Version Support",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc danh sách quy tắc.",
+    "Chưa so sánh với Biome.",
+    "Chưa tìm hiểu cấu hình cho TypeScript."
+  ],
+  "runtimeValidated": false
+}

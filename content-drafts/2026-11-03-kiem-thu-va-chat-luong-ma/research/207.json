@@ -1,0 +1,36 @@
+{
+  "key": 207,
+  "repo": "astral-sh/ruff",
+  "repoId": "523043277",
+  "url": "https://github.com/astral-sh/ruff",
+  "stars": 50403,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:42:45Z",
+  "createdAt": "2022-08-09T17:17:44Z",
+  "defaultBranch": "main",
+  "description": "An extremely fast Python linter and code formatter, written in Rust.",
+  "homepage": "https://docs.astral.sh/ruff",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/astral-sh/ruff/main/README.md",
+    "sha256": "4461157360567200bd704cffc64a86ed519328c43e0649e71f5ed1ea6fa502dc",
+    "bytes": 19636,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Getting Started",
+      "Installation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hết danh sách quy tắc.",
+    "Con số hiệu năng do tác giả công bố.",
+    "Chưa so sánh với Pylint hay mypy."
+  ],
+  "runtimeValidated": false
+}

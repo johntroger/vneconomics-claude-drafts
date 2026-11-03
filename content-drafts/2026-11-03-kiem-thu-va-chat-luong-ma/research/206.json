@@ -1,0 +1,35 @@
+{
+  "key": 206,
+  "repo": "prettier/prettier",
+  "repoId": "75104123",
+  "url": "https://github.com/prettier/prettier",
+  "stars": 52404,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:16:05Z",
+  "createdAt": "2016-11-29T17:13:37Z",
+  "defaultBranch": "main",
+  "description": "Prettier is an opinionated code formatter.",
+  "homepage": "https://prettier.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/prettier/prettier/main/README.md",
+    "sha256": "f1f5a86cd0fd0f6a288882527830a9bbbd5851e3238c4d7426b7bbb496165cd1",
+    "bytes": 3396,
+    "sectionsRead": [
+      "Danh sách ngôn ngữ",
+      "Intro",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cấu hình và tùy chọn.",
+    "Chưa kiểm tra yêu cầu Node.js.",
+    "Chưa so sánh với Biome."
+  ],
+  "runtimeValidated": false
+}
