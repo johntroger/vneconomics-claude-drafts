@@ -1,0 +1,37 @@
+{
+  "key": 137,
+  "repo": "trufflesecurity/trufflehog",
+  "repoId": "77726177",
+  "url": "https://github.com/trufflesecurity/trufflehog",
+  "stars": 28822,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:57:08Z",
+  "createdAt": "2016-12-31T05:08:12Z",
+  "defaultBranch": "main",
+  "description": "Find, verify, and analyze leaked credentials",
+  "homepage": "https://trufflesecurity.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/README.md",
+    "sha256": "7cf6efb50ab892347b1fa3bee77592603b371b066b6b1659fcc2c56a62e6eff7",
+    "bytes": 38524,
+    "sectionsRead": [
+      "What is TruffleHog",
+      "Installation",
+      "Verifying the artifacts",
+      "Ví dụ quét",
+      "GitHub Action và pre-commit"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc danh sách nguồn quét chi tiết.",
+    "Chưa đánh giá tỷ lệ báo nhầm.",
+    "Điều khoản sản phẩm Enterprise chưa đọc."
+  ],
+  "runtimeValidated": false
+}

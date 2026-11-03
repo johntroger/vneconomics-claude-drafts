@@ -1,0 +1,35 @@
+{
+  "key": 143,
+  "repo": "Infisical/infisical",
+  "repoId": "521655652",
+  "url": "https://github.com/Infisical/infisical",
+  "stars": 30227,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "NOASSERTION",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:13:47Z",
+  "createdAt": "2022-08-05T13:50:00Z",
+  "defaultBranch": "main",
+  "description": "Infisical is the open-source platform for securing secrets, certificates, access, and AI Agents.",
+  "homepage": "https://infisical.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Infisical/infisical/main/README.md",
+    "sha256": "977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742",
+    "bytes": 20192,
+    "sectionsRead": [
+      "Introduction",
+      "Features (Secrets Management, Secret Scanning, Certificate Management, KMS)",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn tự host.",
+    "Giá cloud và enterprise chưa kiểm tra.",
+    "Chưa đối chiếu giấy phép thư mục ee."
+  ],
+  "runtimeValidated": false
+}

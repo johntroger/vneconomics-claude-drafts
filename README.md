@@ -13,3 +13,4 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 | `content-drafts/2026-11-03-ai-agent-nen-tang/` | 12 bài nháp nhóm "AI agent, backend và công cụ cho người vibe code" (key 111–122) |
 | `content-drafts/2026-11-03-hoc-nen-tang/` | 7 bài nháp nhóm "Học nền tảng: lập trình, web, API và MCP" (key 123–129) |
 | `content-drafts/2026-11-03-vibe-coding-thuc-hanh/` | 6 bài nháp nhóm "Vibe coding thực hành: skills, thiết kế và hiểu mã" (key 130–135) |
+| `content-drafts/2026-11-03-bao-mat-co-ban/` | 8 bài nháp nhóm "Bảo mật cơ bản cho người vibe code" (key 136–143) |

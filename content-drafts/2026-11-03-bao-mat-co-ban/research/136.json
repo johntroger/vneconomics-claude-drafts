@@ -1,0 +1,36 @@
+{
+  "key": 136,
+  "repo": "gitleaks/gitleaks",
+  "repoId": "119190187",
+  "url": "https://github.com/gitleaks/gitleaks",
+  "stars": 30609,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T04:14:29Z",
+  "createdAt": "2018-01-27T18:19:31Z",
+  "defaultBranch": "master",
+  "description": "Find secrets with Gitleaks 🔑",
+  "homepage": "https://gitleaks.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/gitleaks/gitleaks/master/README.md",
+    "sha256": "65e87e68f4a16aefa1f1fba55b2e7a9b9bc8716393b7ddb013fc7c7bef4e4bc1",
+    "bytes": 29328,
+    "sectionsRead": [
+      "Cảnh báo trạng thái dự án",
+      "Giới thiệu",
+      "Getting Started",
+      "Pre-Commit"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa tìm hiểu Betterleaks.",
+    "Chưa đọc phần cấu hình và quy tắc tùy chỉnh.",
+    "Chưa đánh giá tỷ lệ báo nhầm."
+  ],
+  "runtimeValidated": false
+}

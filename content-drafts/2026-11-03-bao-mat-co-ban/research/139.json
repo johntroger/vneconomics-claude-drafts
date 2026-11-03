@@ -1,0 +1,35 @@
+{
+  "key": 139,
+  "repo": "aquasecurity/trivy",
+  "repoId": "180687624",
+  "url": "https://github.com/aquasecurity/trivy",
+  "stars": 38919,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T08:37:30Z",
+  "createdAt": "2019-04-11T01:01:07Z",
+  "defaultBranch": "main",
+  "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+  "homepage": "https://trivy.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/aquasecurity/trivy/main/README.md",
+    "sha256": "217d4d9db626c98b80f0fa214b510705d922f16b9c9452a6ce10d86788be67ba",
+    "bytes": 5590,
+    "sectionsRead": [
+      "Giới thiệu (targets, scanners)",
+      "Quick Start",
+      "Integrations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Mức độ báo nhầm chưa đánh giá.",
+    "Dịch vụ thương mại đi kèm (nếu có) chưa đọc."
+  ],
+  "runtimeValidated": false
+}

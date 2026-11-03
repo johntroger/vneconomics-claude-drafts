@@ -1,0 +1,36 @@
+{
+  "key": 140,
+  "repo": "google/osv-scanner",
+  "repoId": "565629124",
+  "url": "https://github.com/google/osv-scanner",
+  "stars": 11370,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:20:25Z",
+  "createdAt": "2022-11-14T01:05:20Z",
+  "defaultBranch": "main",
+  "description": "Vulnerability scanner written in Go which uses the data provided by https://osv.dev",
+  "homepage": "https://google.github.io/osv-scanner/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/google/osv-scanner/main/README.md",
+    "sha256": "ae9d6a52e41fea4dad413bf20ef6097cba581891e139e918484c38cad8fcb751",
+    "bytes": 11071,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Underlying database",
+      "Basic installation",
+      "Key Features (đầu)"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc từng tính năng chi tiết.",
+    "Dữ liệu nào gửi tới OSV.dev khi quét chưa kiểm tra.",
+    "Chưa so sánh độ chính xác với công cụ khác."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,832 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-bao-mat-co-ban",
+  "batch": 24,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 136,
+      "batch": 24,
+      "slug": "gitleaks",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Gitleaks: dò mật khẩu và khóa API lỡ để lại trong mã nguồn",
+        "excerpt": "Hiểu công cụ quét kho Git để tìm khóa API, mật khẩu và token bị commit nhầm. Cần biết rằng tác giả đã ghi công cụ ở chế độ chỉ vá bảo mật.",
+        "content": "<p>Gitleaks là công cụ phát hiện bí mật như mật khẩu, khóa API và token trong kho Git, trong tệp, hoặc dữ liệu đưa vào qua đầu vào chuẩn. README cho thấy kết quả quét gồm đoạn bị phát hiện, mã quy tắc, tệp, dòng, commit và tác giả. Có thể cài qua Homebrew, Docker, Go hoặc bản nhị phân, và dùng như pre-commit hook. README có cảnh báo quan trọng: Gitleaks đã 'feature complete', tác giả không nhận thêm tính năng mới, các bản phát hành sau chỉ là vá bảo mật và tác giả chuyển sự chú ý sang một dự án khác tên Betterleaks.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy tưởng tượng bạn lỡ để quên chìa khóa nhà trong một cuốn sổ rồi đem sổ đi photo phát cho mọi người. Gitleaks giống người rà từng trang sổ (cả các bản cũ) trước khi phát, để hét lên 'trang này có chìa khóa!'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: trước khi đưa một dự án do AI viết lên GitHub, quét thử để xem có tệp nào chứa khóa API thật không. Đây là gợi ý quy trình, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code thường dán khóa API vào mã; người sắp đưa dự án lên GitHub công khai.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần dùng dòng lệnh và hiểu Git ở mức cơ bản; có thể cài bằng Homebrew hoặc Docker theo README. Đọc kết quả (khóa nào là thật, khóa nào là mẫu) cần thận trọng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dự án chưa dùng Git hoặc chưa có khóa nào, chưa cần. Nếu bạn muốn công cụ còn được thêm tính năng mới, lưu ý cảnh báo của chính tác giả trong README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>secret (bí mật)</strong>: thông tin để máy chứng minh danh tính, như khóa API, token, mật khẩu cơ sở dữ liệu.</li><li><strong>commit</strong>: một lần lưu thay đổi vào Git; bí mật lỡ commit vẫn nằm trong lịch sử dù sau đó bạn xóa khỏi tệp.</li><li><strong>pre-commit hook</strong>: bước kiểm tra tự chạy trước khi Git cho phép bạn commit; README có hướng dẫn dùng gitleaks theo cách này.</li><li><strong>entropy</strong>: độ ngẫu nhiên của chuỗi; chuỗi ngẫu nhiên dài thường là khóa, nên công cụ dùng để đoán.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài bằng Homebrew, Docker hoặc Go, hoặc tải bản nhị phân, và có phần dùng như pre-commit hook. Bài không chép lệnh vì chưa kiểm chứng. Công cụ miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo ở đầu README về trạng thái dự án.</li><li>Đọc mục Getting Started và Pre-Commit để biết hai cách dùng.</li><li>Chạy thử trên một kho thử có khóa mẫu giả, không phải kho thật, rồi hiểu từng trường trong kết quả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay dán khóa API vào code khi vibe code. Hãy đọc README của Gitleaks (https://github.com/gitleaks/gitleaks) và giải thích bằng tiếng Việt: nó tìm gì, vì sao khóa lỡ commit vẫn nguy hiểm dù đã xóa, và dự án đang ở trạng thái nào. Hướng dẫn mình xử lý nếu phát hiện khóa thật. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Chính tác giả ghi Gitleaks đã dừng thêm tính năng mới và chỉ vá bảo mật, nên với nhu cầu mới bạn nên xem công cụ thay thế mà README nhắc tới (Betterleaks); chúng tôi chưa tìm hiểu công cụ đó. Công cụ có thể báo nhầm (khóa mẫu) hoặc bỏ sót. Phát hiện được khóa thật thì việc quan trọng nhất là thu hồi và tạo khóa mới, không phải chỉ xóa khỏi mã.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Nếu phát hiện khóa thật đã lộ, hãy coi như đã bị lộ: vào dịch vụ cấp khóa để thu hồi và tạo khóa mới. Xóa khỏi mã hoặc lịch sử không đủ vì khóa có thể đã bị sao chép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gitleaks</strong> có <strong>30.609 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; bài chưa đọc kỹ file LICENSE. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gitleaks/gitleaks/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gitleaks/gitleaks\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 136. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30609; repo_id 119190187; README SHA256 65e87e68f4a16aefa1f1fba55b2e7a9b9bc8716393b7ddb013fc7c7bef4e4bc1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gitleaks/gitleaks",
+          "repo_id": "119190187",
+          "source_path": "",
+          "source_revision": "README-SHA256:65e87e68f4a16aefa1f1fba55b2e7a9b9bc8716393b7ddb013fc7c7bef4e4bc1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gitleaks/gitleaks",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài bằng Homebrew, Docker hoặc Go, hoặc tải bản nhị phân, và có phần dùng như pre-commit hook. Bài không chép lệnh vì chưa kiểm chứng. Công cụ miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gitleaks/gitleaks/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gitleaks/gitleaks/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gitleaks/gitleaks",
+        "stars": 30609,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gitleaks/gitleaks/master/README.md",
+        "readmeSha256": "65e87e68f4a16aefa1f1fba55b2e7a9b9bc8716393b7ddb013fc7c7bef4e4bc1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 137,
+      "batch": 24,
+      "slug": "trufflehog",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "TruffleHog: tìm khóa rò rỉ và kiểm tra khóa nào còn dùng được",
+        "excerpt": "Công cụ quét nhiều nguồn để tìm thông tin xác thực bị lộ, có thể kiểm tra khóa còn hiệu lực. Mạnh hơn nhưng cần hiểu rõ việc kiểm tra khóa nghĩa là gì.",
+        "content": "<p>TruffleHog tự mô tả là công cụ khám phá, phân loại, xác thực và phân tích bí mật. README nói nó tìm thông tin xác thực trong Git, kênh chat, wiki, nhật ký, nền tảng thử API, kho đối tượng, hệ thống tệp; phân loại hơn 800 loại bí mật; và với mỗi loại có thể đăng nhập thử để biết bí mật còn hoạt động hay không. Với khoảng 20 loại khóa phổ biến, nó có thể gửi nhiều yêu cầu để tìm hiểu quyền của khóa. Có tùy chọn chỉ báo kết quả đã xác thực, đầu ra SARIF, GitHub Action và pre-commit hook.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Gitleaks chỉ hô 'trang này có chìa khóa', TruffleHog còn thử tra chìa vào ổ để xem nó có mở được cửa không. Biết khóa còn mở được hay không giúp bạn ưu tiên xử lý đúng, nhưng thử khóa cũng là một hành động có hệ quả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nếu đã lỡ đưa dự án lên GitHub, quét thử lịch sử của chính dự án bạn để xem khóa nào còn hoạt động và cần thu hồi trước. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người đã công khai mã nguồn và lo ngại khóa bị lộ; nhóm cần rà soát nhiều nguồn ngoài Git.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cài đặt qua Homebrew, Docker hoặc bản nhị phân; kết quả nhiều thông tin kỹ thuật. Cần hiểu việc xác thực khóa gửi yêu cầu ra dịch vụ bên ngoài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng dùng để quét tài khoản hay dữ liệu của người khác khi chưa có phép; và nếu bạn chỉ cần dò khóa trong mã trước khi commit, một công cụ đơn giản hơn có thể đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>xác thực (verification)</strong>: bước công cụ thử đăng nhập bằng bí mật tìm được để biết nó còn sống; nghĩa là bí mật được gửi tới dịch vụ liên quan.</li><li><strong>SARIF</strong>: định dạng chuẩn để công cụ bảo mật xuất kết quả.</li><li><strong>phát hiện (detector)</strong>: phần nhận ra một loại bí mật cụ thể, ví dụ khóa AWS hay Stripe.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê cài đặt qua Homebrew, Docker, script cài có kiểm tra chữ ký bằng cosign và bản phát hành; cũng có GitHub Action và pre-commit hook. Bài không chép lệnh. Phần mềm theo giấy phép AGPL-3.0; README còn quảng bá sản phẩm Enterprise trả phí của chính hãng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc 4 phần Discovery, Classification, Validation, Analysis để hiểu khác biệt với công cụ chỉ quét.</li><li>Đọc kỹ ý nghĩa của kết quả 'verified' và cách chỉ lấy kết quả đã xác thực.</li><li>Chỉ quét tài nguyên của chính bạn và coi mọi bí mật còn hoạt động là cần thu hồi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình lo khóa API của dự án đã bị lộ trên GitHub. Hãy đọc README của TruffleHog (https://github.com/trufflesecurity/trufflehog) và giải thích bằng tiếng Việt: nó khác gì Gitleaks, 'validation' nghĩa là gì và có rủi ro gì, và các bước ưu tiên xử lý khi phát hiện khóa còn hoạt động. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Chức năng xác thực đưa bí mật tìm được tới dịch vụ liên quan để thử đăng nhập; chỉ nên dùng với bí mật của chính bạn. README có quảng bá sản phẩm doanh nghiệp. Giấy phép AGPL-3.0 có điều kiện chặt khi bạn cung cấp phần mềm như một dịch vụ; cần đọc nếu định tích hợp vào sản phẩm.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không chạy công cụ trên kho hay tài khoản của người khác nếu chưa được phép. Kết quả quét chứa chính các bí mật bị lộ, nên đừng dán nguyên văn vào chat hay tài liệu chia sẻ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>trufflesecurity</strong> có <strong>28.822 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/trufflesecurity/trufflehog/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/trufflesecurity/trufflehog\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 137. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28822; repo_id 77726177; README SHA256 7cf6efb50ab892347b1fa3bee77592603b371b066b6b1659fcc2c56a62e6eff7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/trufflesecurity/trufflehog",
+          "repo_id": "77726177",
+          "source_path": "",
+          "source_revision": "README-SHA256:7cf6efb50ab892347b1fa3bee77592603b371b066b6b1659fcc2c56a62e6eff7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trufflesecurity/trufflehog",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê cài đặt qua Homebrew, Docker, script cài có kiểm tra chữ ký bằng cosign và bản phát hành; cũng có GitHub Action và pre-commit hook. Bài không chép lệnh. Phần mềm theo giấy phép AGPL-3.0; README còn quảng bá sản phẩm Enterprise trả phí của chính hãng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trufflesecurity/trufflehog/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/trufflesecurity/trufflehog/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "trufflesecurity/trufflehog",
+        "stars": 28822,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/README.md",
+        "readmeSha256": "7cf6efb50ab892347b1fa3bee77592603b371b066b6b1659fcc2c56a62e6eff7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 138,
+      "batch": 24,
+      "slug": "semgrep",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Semgrep: quét mã nguồn để tìm lỗi và lỗ hổng bằng các quy tắc đọc được",
+        "excerpt": "Công cụ phân tích tĩnh nhanh cho hơn 30 ngôn ngữ, giúp tìm lỗi bảo mật trong mã (kể cả mã do AI viết). Cần phân biệt bản cộng đồng miễn phí với nền tảng thương mại.",
+        "content": "<p>Semgrep là công cụ phân tích tĩnh mã nguồn mở nhanh, tìm lỗi và áp dụng quy tắc bảo mật, chuẩn mã hóa. README nói nó hỗ trợ hơn 30 ngôn ngữ, chạy được trong IDE, như bước pre-commit hoặc trong CI. Quy tắc viết trông giống chính đoạn mã bạn muốn tìm. README cũng nói rõ phiên bản Community Edition trong bối cảnh bảo mật bỏ sót nhiều lỗi thật vì chỉ phân tích trong phạm vi một hàm hoặc một tệp, và giới thiệu nền tảng AppSec thương mại với quy tắc độc quyền, phân tích sâu hơn và trợ lý AI. README ghi mặc định mã không được tải lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống công cụ 'tìm kiếm thông minh' cho mã: thay vì tìm đúng chữ, nó hiểu cấu trúc mã nên tìm được những đoạn có cùng ý nghĩa, ví dụ mọi chỗ gọi một hàm nguy hiểm. Với mã do AI viết, nó là một cặp mắt khác kiểm tra.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy trên một dự án nhỏ do AI tạo để xem có đoạn nhận dữ liệu người dùng mà không kiểm tra không. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code muốn có lớp kiểm tra tự động cho mã AI sinh ra; nhóm muốn thêm kiểm tra vào quy trình CI.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> README khuyến nghị người mới bắt đầu bằng nền tảng AppSec (có giao diện, dự án demo), hoặc dùng CLI cài qua pipx hay uv. Hiểu kết quả quét cần kiến thức bảo mật cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần phân tích bảo mật sâu qua nhiều tệp và hàm, lưu ý README nói bản Community Edition có giới hạn này. Nếu chưa có mã để quét thì chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>phân tích tĩnh (static analysis)</strong>: đọc mã mà không chạy nó để tìm lỗi.</li><li><strong>SAST</strong>: kiểm thử bảo mật mã nguồn tĩnh, một nhóm công cụ như Semgrep.</li><li><strong>SCA</strong>: phân tích thành phần phần mềm, kiểm tra thư viện bên thứ ba có lỗ hổng.</li><li><strong>CI</strong>: hệ thống tự chạy kiểm tra mỗi khi có thay đổi mã.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nêu hai đường: đăng ký nền tảng AppSec trên semgrep.dev, hoặc cài CLI (khuyến nghị pipx hoặc uv). README nói mã mặc định không bị tải lên; các tính năng nền tảng thương mại như quy tắc độc quyền và trợ lý AI có điều khoản riêng, chưa kiểm tra. Bài không chép lệnh cài.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn nói về giới hạn của Community Edition trong bối cảnh bảo mật.</li><li>Chọn một đường: nền tảng (có giao diện) hoặc CLI.</li><li>Quét một dự án thử và đọc từng cảnh báo, hỏi AI hoặc người có kinh nghiệm khi chưa chắc.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình vibe code và muốn kiểm tra bảo mật mã mà AI viết. Hãy đọc README của Semgrep (https://github.com/semgrep/semgrep) và giải thích bằng tiếng Việt: nó làm gì, khác gì chỉ nhờ AI tự rà, giới hạn của bản Community, và dữ liệu mã của mình có bị gửi đi đâu không. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Công cụ quét tự động không thay thế người xem xét; có thể báo nhầm hoặc bỏ sót. README tự nói bản cộng đồng bỏ sót nhiều lỗi thật trong bối cảnh bảo mật. Nền tảng thương mại có quy tắc riêng và chi phí. Chúng tôi không biết bộ quy tắc cộng đồng dùng giấy phép nào vì chưa đọc phần đó.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng coi 'không có cảnh báo' là mã an toàn. Với dịch vụ cloud, đọc kỹ dữ liệu nào gửi đi; README nói mặc định mã không tải lên nhưng bạn nên kiểm tra cấu hình bạn chọn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>semgrep</strong> có <strong>17.415 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện LGPL-2.1 cho repo; giấy phép của bộ quy tắc và nền tảng thương mại là riêng và chưa được đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/semgrep/semgrep/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/semgrep/semgrep\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 138. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17415; repo_id 227803815; README SHA256 4751611e81df6ea2e9ba234f5c20f154239c652f68bee70779dc9f8f35f90f8f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/semgrep/semgrep",
+          "repo_id": "227803815",
+          "source_path": "",
+          "source_revision": "README-SHA256:4751611e81df6ea2e9ba234f5c20f154239c652f68bee70779dc9f8f35f90f8f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "LGPL-2.1",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/semgrep/semgrep",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nêu hai đường: đăng ký nền tảng AppSec trên semgrep.dev, hoặc cài CLI (khuyến nghị pipx hoặc uv). README nói mã mặc định không bị tải lên; các tính năng nền tảng thương mại như quy tắc độc quyền và trợ lý AI có điều khoản riêng, chưa kiểm tra. Bài không chép lệnh cài.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/semgrep/semgrep/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/semgrep/semgrep/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "semgrep/semgrep",
+        "stars": 17415,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/semgrep/semgrep/develop/README.md",
+        "readmeSha256": "4751611e81df6ea2e9ba234f5c20f154239c652f68bee70779dc9f8f35f90f8f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 139,
+      "batch": 24,
+      "slug": "trivy",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Trivy: một công cụ quét lỗ hổng, cấu hình sai và bí mật cho ứng dụng và container",
+        "excerpt": "Hiểu một bộ quét bảo mật đa năng cho container, thư mục mã, kho Git và hạ tầng. Hữu ích khi bạn bắt đầu đóng gói và triển khai ứng dụng.",
+        "content": "<p>Trivy là công cụ quét bảo mật đa năng. README chia theo 'đối tượng cần quét' (ảnh container, hệ thống tệp, kho Git từ xa, ảnh máy ảo, Kubernetes) và 'bộ quét' (gói hệ điều hành và phụ thuộc phần mềm kèm SBOM, lỗ hổng đã biết CVE, lỗi cấu hình hạ tầng dạng mã, thông tin nhạy cảm và bí mật, giấy phép phần mềm). Có tích hợp GitHub Actions, Kubernetes operator và plugin VS Code.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống đội kiểm tra tổng hợp trước khi giao một tòa nhà: một người kiểm tra vật liệu có bị thu hồi không, một người kiểm tra ổ khóa, một người kiểm tra giấy tờ. Trivy làm nhiều việc kiểm tra đó trên một đối tượng chung là ứng dụng của bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi bạn đóng gói ứng dụng vào một ảnh container, quét thử xem có thư viện nào đã có lỗ hổng đã biết. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người bắt đầu đóng gói ứng dụng bằng container; nhóm muốn kiểm tra tự động trong quy trình triển khai.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đặt đơn giản theo README (Homebrew, Docker, bản nhị phân); khái niệm container và CVE cần được hiểu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa dùng container hay chưa có ứng dụng nào để quét, chưa cần. Nếu chỉ cần dò khóa lỡ commit, công cụ chuyên cho việc đó như Gitleaks có thể đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>container image</strong>: gói đóng sẵn ứng dụng cùng môi trường để chạy ở bất cứ đâu, thường dùng với Docker.</li><li><strong>CVE</strong>: mã số công khai của một lỗ hổng bảo mật đã được biết.</li><li><strong>SBOM</strong>: bảng kê các thành phần phần mềm trong sản phẩm của bạn.</li><li><strong>IaC (hạ tầng dưới dạng mã)</strong>: cấu hình hạ tầng viết thành tệp mã; sai cấu hình có thể mở cửa cho kẻ tấn công.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê cài qua Homebrew, Docker hoặc bản nhị phân, và có nhiều tích hợp. Bài không chép lệnh. Công cụ theo giấy phép Apache-2.0; dịch vụ thương mại của công ty phát triển, nếu có, bài chưa đọc.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách 'targets' và 'scanners' để chọn việc cần kiểm tra.</li><li>Đọc trang cài đặt và tích hợp GitHub Actions nếu bạn dùng GitHub.</li><li>Quét một dự án thử và sắp xếp cảnh báo theo mức độ nghiêm trọng trước khi xử lý.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình sắp đóng gói ứng dụng bằng container. Hãy đọc README của Trivy (https://github.com/aquasecurity/trivy) và giải thích bằng tiếng Việt: Trivy quét được những gì, CVE và SBOM nghĩa là gì, và nên xử lý cảnh báo theo thứ tự nào. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Quét ra nhiều cảnh báo là bình thường; không phải cảnh báo nào cũng đáng lo hoặc sửa được ngay. Công cụ chỉ biết những lỗ hổng đã được công bố. Kết quả cần người đọc đánh giá bối cảnh.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ưu tiên xử lý lỗ hổng mức nghiêm trọng đang bị khai thác; không tắt cảnh báo hàng loạt chỉ để 'qua' bước kiểm tra.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>aquasecurity</strong> có <strong>38.919 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/aquasecurity/trivy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/aquasecurity/trivy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 139. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38919; repo_id 180687624; README SHA256 217d4d9db626c98b80f0fa214b510705d922f16b9c9452a6ce10d86788be67ba.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/aquasecurity/trivy",
+          "repo_id": "180687624",
+          "source_path": "",
+          "source_revision": "README-SHA256:217d4d9db626c98b80f0fa214b510705d922f16b9c9452a6ce10d86788be67ba",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aquasecurity/trivy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê cài qua Homebrew, Docker hoặc bản nhị phân, và có nhiều tích hợp. Bài không chép lệnh. Công cụ theo giấy phép Apache-2.0; dịch vụ thương mại của công ty phát triển, nếu có, bài chưa đọc.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aquasecurity/trivy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/aquasecurity/trivy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "aquasecurity/trivy",
+        "stars": 38919,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/aquasecurity/trivy/main/README.md",
+        "readmeSha256": "217d4d9db626c98b80f0fa214b510705d922f16b9c9452a6ce10d86788be67ba",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 140,
+      "batch": 24,
+      "slug": "osv-scanner",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OSV-Scanner: kiểm tra thư viện bạn dùng có lỗ hổng đã được công bố không",
+        "excerpt": "Công cụ của Google đối chiếu danh sách thư viện trong dự án với cơ sở dữ liệu lỗ hổng mở OSV. Rất hợp để kiểm tra dự án do AI dựng vì AI thường kéo theo nhiều thư viện.",
+        "content": "<p>OSV-Scanner giúp tìm các lỗ hổng đã biết ảnh hưởng tới phụ thuộc của dự án. README mô tả nó là giao diện chính thức của cơ sở dữ liệu OSV và là giao diện dòng lệnh cho thư viện OSV-Scalibr. Công cụ hỗ trợ nhiều ngôn ngữ (như JavaScript, Python, Go, Java, Rust, PHP, Ruby) và trình quản lý gói (npm, pip, yarn, maven, cargo, composer, nuget…), quét ảnh container và có chức năng gợi ý nâng cấp phiên bản. README ghi các hướng dẫn trong đó dành cho bản V2 beta.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi AI dựng ứng dụng, nó thường kéo theo hàng chục thư viện của người khác. OSV-Scanner giống việc đối chiếu danh sách đồ bạn đang dùng với bảng thông báo thu hồi sản phẩm: nếu thư viện nào bị thông báo lỗi nguy hiểm, bạn biết để nâng cấp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: quét thư mục một dự án nhỏ do AI tạo để xem thư viện nào đã có lỗ hổng được công bố. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code dự án có nhiều thư viện; người muốn kiểm tra nhanh chuỗi cung ứng phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng dòng lệnh; khái niệm phụ thuộc và phiên bản cần được hiểu. README nói có hướng dẫn nâng cấp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn quét cả bí mật hay lỗi cấu hình trong cùng công cụ, Trivy rộng hơn; nếu chỉ có mã và không có thư viện ngoài thì chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>dependency (phụ thuộc)</strong>: thư viện của người khác mà dự án của bạn dùng.</li><li><strong>OSV</strong>: cơ sở dữ liệu lỗ hổng mở, mỗi thông báo ghi rõ các phiên bản bị ảnh hưởng.</li><li><strong>guided remediation</strong>: gợi ý cách nâng cấp phiên bản để vá lỗ hổng, theo README.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt trong tài liệu và nhắc có thể dựng từ mã nguồn bằng Go. README ghi hướng dẫn trong đó là cho V2 beta; nếu bạn dùng V1 thì có README riêng. Công cụ theo giấy phép Apache-2.0. Việc công cụ truy vấn dữ liệu nào từ internet chưa được bài kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và danh sách ngôn ngữ, trình quản lý gói được hỗ trợ.</li><li>Chọn một dự án nhỏ làm thử và quét thư mục của nó.</li><li>Đọc kỹ gợi ý nâng cấp và thử nâng cấp từng thư viện, kiểm tra ứng dụng vẫn chạy.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án mình do AI dựng và có nhiều thư viện. Hãy đọc README của OSV-Scanner (https://github.com/google/osv-scanner) và giải thích bằng tiếng Việt: nó kiểm tra điều gì, OSV là gì, và cách đọc kết quả để quyết định có nên nâng cấp thư viện không. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Công cụ chỉ báo lỗ hổng đã được công bố, không phát hiện lỗi mới trong mã của bạn. Nâng cấp thư viện có thể làm hỏng ứng dụng nên cần kiểm tra lại. README ghi hướng dẫn thuộc V2 beta nên có thể đổi.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Sao lưu hoặc dùng nhánh Git trước khi nâng cấp hàng loạt; nâng từng thư viện và chạy lại ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>google</strong> có <strong>11.370 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/google/osv-scanner/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/google/osv-scanner\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 140. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11370; repo_id 565629124; README SHA256 ae9d6a52e41fea4dad413bf20ef6097cba581891e139e918484c38cad8fcb751.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/google/osv-scanner",
+          "repo_id": "565629124",
+          "source_path": "",
+          "source_revision": "README-SHA256:ae9d6a52e41fea4dad413bf20ef6097cba581891e139e918484c38cad8fcb751",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/osv-scanner",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt trong tài liệu và nhắc có thể dựng từ mã nguồn bằng Go. README ghi hướng dẫn trong đó là cho V2 beta; nếu bạn dùng V1 thì có README riêng. Công cụ theo giấy phép Apache-2.0. Việc công cụ truy vấn dữ liệu nào từ internet chưa được bài kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/osv-scanner/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/google/osv-scanner/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "google/osv-scanner",
+        "stars": 11370,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/google/osv-scanner/main/README.md",
+        "readmeSha256": "ae9d6a52e41fea4dad413bf20ef6097cba581891e139e918484c38cad8fcb751",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 141,
+      "batch": 24,
+      "slug": "owasp-cheat-sheet-series",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OWASP Cheat Sheet Series: bảng tóm tắt bảo mật ứng dụng ngắn gọn cho người xây dựng",
+        "excerpt": "Bộ hướng dẫn ngắn về bảo mật ứng dụng như đăng nhập, lưu mật khẩu, quản lý bí mật, chống XSS. Nên đọc trên website chính thức, không đọc tệp thô trên GitHub.",
+        "content": "<p>OWASP Cheat Sheet Series là dự án của Open Worldwide Application Security Project cung cấp các hướng dẫn thực hành bảo mật ngắn gọn cho người xây dựng ứng dụng. README nói đây là repo chính thức nhưng để đọc và trích dẫn thì dùng website chính thức; các tệp Markdown trong repo là bản nguồn đang làm việc, không dành cho việc trích dẫn bên ngoài. Trang chủ liệt kê nhiều chủ đề như Authentication, Password Storage, Secrets Management, Input Validation, SQL Injection Prevention, Cross Site Scripting Prevention, Content Security Policy, Session Management, JSON Web Token, REST Security và Logging.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống cuốn sổ tay an toàn lao động: mỗi trang chỉ một chủ đề, dài vài phút đọc, nói rõ nên làm gì và đừng làm gì. Bạn không cần nhớ hết, chỉ cần biết trang nào để mở khi gặp đúng việc.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: trước khi nhờ AI viết chức năng đăng nhập, đọc bảng Authentication và Password Storage rồi dùng các điểm chính để kiểm tra mã AI viết. Chưa phải kết quả đã làm thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần đăng nhập hoặc nhận dữ liệu từ người dùng; người muốn có bản kiểm tra tham chiếu cho mã AI viết.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ để đọc.</strong> Mỗi bảng ngắn và thực hành. Một số khái niệm (token, phiên, CSRF) cần làm quen; có thể nhờ AI giải thích. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần tiêu chuẩn kiểm tra đầy đủ có thể chứng nhận (như danh sách yêu cầu ASVS), các bảng ngắn này chỉ là tham khảo.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>OWASP</strong>: tổ chức phi lợi nhuận về bảo mật ứng dụng web, nổi tiếng với danh sách rủi ro hàng đầu và nhiều tài liệu mở.</li><li><strong>XSS</strong>: lỗi cho phép kẻ tấn công chèn mã chạy trên trang của người khác.</li><li><strong>CSRF</strong>: lỗi khiến trình duyệt của nạn nhân gửi yêu cầu ngoài ý muốn tới một site họ đã đăng nhập.</li><li><strong>session</strong>: phiên đăng nhập của người dùng, thường được giữ bằng cookie hoặc token.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì. README hướng dẫn đọc trên cheatsheetseries.owasp.org và có bản tải ngoại tuyến dạng ZIP. Nội dung theo giấy phép CC BY-SA 4.0 (có điều kiện chia sẻ tương tự khi bạn dùng lại).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở website chính thức và tìm bảng cho chức năng bạn đang làm (ví dụ Authentication).</li><li>Đọc phần tóm tắt, ghi lại 5 điểm quan trọng nhất.</li><li>Đưa các điểm đó thành danh sách kiểm tra để rà mã do AI viết.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang nhờ AI viết chức năng đăng nhập cho ứng dụng. Hãy đọc bảng Authentication và Password Storage của OWASP Cheat Sheet Series (https://cheatsheetseries.owasp.org/) và tóm tắt bằng tiếng Việt 8 điểm mình nên kiểm tra khi xem mã AI viết. Chưa chạy hay sửa mã nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Bảng tóm tắt ngắn không thay cho đánh giá bảo mật đầy đủ. Nội dung bằng tiếng Anh; chúng tôi chưa kiểm tra bản dịch. README nói tệp Markdown trong repo là bản nguồn không dành cho trích dẫn; hãy trích dẫn từ website chính thức. Một số bảng có thể lỗi thời so với thực tế công nghệ.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dùng bảng làm tham khảo chứ không chép mã từ bảng vào sản phẩm khi chưa hiểu. Với chức năng nhạy cảm như thanh toán hay dữ liệu cá nhân, nên có người có kinh nghiệm xem lại.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>OWASP</strong> có <strong>33.853 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện CC-BY-SA-4.0; nội dung có điều kiện ghi nguồn và chia sẻ tương tự. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/OWASP/CheatSheetSeries/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/OWASP/CheatSheetSeries\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 141. Chưa cài/chạy thử; không tạo validation. Snapshot sao 33853; repo_id 162723104; README SHA256 ed0df5d11a4e8ab9afcda66b3a77332fc57ba9f4bf0cf342ce68ef94938f0f05.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/OWASP/CheatSheetSeries",
+          "repo_id": "162723104",
+          "source_path": "",
+          "source_revision": "README-SHA256:ed0df5d11a4e8ab9afcda66b3a77332fc57ba9f4bf0cf342ce68ef94938f0f05",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "CC-BY-SA-4.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OWASP/CheatSheetSeries",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì. README hướng dẫn đọc trên cheatsheetseries.owasp.org và có bản tải ngoại tuyến dạng ZIP. Nội dung theo giấy phép CC BY-SA 4.0 (có điều kiện chia sẻ tương tự khi bạn dùng lại).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/OWASP/CheatSheetSeries/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "OWASP/CheatSheetSeries",
+        "stars": 33853,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/README.md",
+        "readmeSha256": "ed0df5d11a4e8ab9afcda66b3a77332fc57ba9f4bf0cf342ce68ef94938f0f05",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 142,
+      "batch": 24,
+      "slug": "dotenvx",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "dotenvx: mã hóa tệp .env để quản lý biến môi trường an toàn hơn",
+        "excerpt": "Hiểu cách tệp .env thường chứa khóa API và cách dotenvx mã hóa các giá trị đó. Cần giữ kỹ khóa giải mã.",
+        "content": "<p>dotenvx tự giới thiệu là 'dotenv an toàn' từ tác giả của thư viện dotenv, với ba chữ: Encrypt, Commit, Ship. README mô tả cách dùng trong mã giống dotenv hoặc cài toàn cục để dùng với mọi ngôn ngữ, và lệnh encrypt mã hóa các giá trị trong tệp .env thành bản mã mà chỉ khóa riêng mới mở được. README liệt kê nhiều cách cài (npm, script cài, Homebrew, Docker, winget, bản nhị phân).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Tệp .env giống một tờ giấy ghi mật khẩu để ở bàn làm việc: tiện nhưng ai thấy cũng đọc được. dotenvx cất tờ giấy đó vào két: nội dung vẫn nằm trong dự án nhưng ở dạng mã hóa, và chiếc chìa két phải được giữ ở nơi khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: với một dự án nhỏ có khóa API trong .env, tìm hiểu cách mã hóa giá trị rồi quyết định chiếc khóa riêng sẽ được giữ ở đâu, không để cùng chỗ với mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code dùng biến môi trường chứa khóa API; nhóm nhỏ muốn chia sẻ cấu hình mà không để lộ giá trị.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết .env là gì, dùng dòng lệnh và hiểu việc giữ khóa riêng. README có nhiều lệnh và tùy chọn nên cần đọc cẩn thận. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng .env hoặc chỉ làm thử cục bộ không có khóa thật, chưa cần. Nếu bạn cần quản lý bí mật cho cả nhóm và nhiều môi trường, công cụ như Infisical (bài kế bên) có phạm vi rộng hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>.env</strong>: tệp văn bản lưu cấu hình và bí mật của ứng dụng dưới dạng cặp tên=giá trị.</li><li><strong>mã hóa (encrypt)</strong>: biến chữ rõ thành bản mã chỉ người có khóa mới đọc được.</li><li><strong>khóa riêng (private key)</strong>: chiếc khóa mở bản mã; README nói chỉ khóa riêng mới mở được giá trị đã mã hóa, nên mất hoặc lộ khóa này là vấn đề lớn.</li><li><strong>biến môi trường</strong>: giá trị cấu hình mà ứng dụng đọc khi chạy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê cài qua npm, script cài, Homebrew, Docker, winget và bản nhị phân; bài không chép lệnh. Lưu ý một số cách cài tải script từ mạng rồi chạy; hãy đọc nội dung script trước khi chạy bất kỳ script nào. Công cụ theo giấy phép BSD-3-Clause (SPDX theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quickstart và mục Encrypt của README để hiểu chuyện gì xảy ra với tệp .env.</li><li>Quyết định nơi giữ khóa riêng (tách khỏi kho mã).</li><li>Thử trên một tệp .env thử không chứa khóa thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình lưu khóa API trong tệp .env. Hãy đọc README của dotenvx (https://github.com/dotenvx/dotenvx) và giải thích bằng tiếng Việt: lệnh encrypt làm gì, khóa riêng được giữ ở đâu, và những sai lầm hay gặp khiến mã hóa vô tác dụng. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mã hóa chỉ an toàn khi khóa riêng được giữ kín; để khóa riêng cùng chỗ với bản mã thì mất tác dụng. README dài (hơn 79 KB) và nhiều lệnh nên dễ rối. Công cụ không thay thế việc thu hồi khóa API đã lộ.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không đưa khóa riêng lên GitHub hay dán vào chat. Nếu khóa API gốc từng lộ trước khi mã hóa, hãy thu hồi và tạo khóa mới.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dotenvx</strong> có <strong>5.871 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; bài chưa đọc kỹ file LICENSE. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dotenvx/dotenvx/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dotenvx/dotenvx\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 142. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5871; repo_id 720267554; README SHA256 1459159e8e5a0f437e31a4892a8bb2c2b040ff378be31f3db26f53a187533308.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dotenvx/dotenvx",
+          "repo_id": "720267554",
+          "source_path": "",
+          "source_revision": "README-SHA256:1459159e8e5a0f437e31a4892a8bb2c2b040ff378be31f3db26f53a187533308",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-3-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dotenvx/dotenvx",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê cài qua npm, script cài, Homebrew, Docker, winget và bản nhị phân; bài không chép lệnh. Lưu ý một số cách cài tải script từ mạng rồi chạy; hãy đọc nội dung script trước khi chạy bất kỳ script nào. Công cụ theo giấy phép BSD-3-Clause (SPDX theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dotenvx/dotenvx/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dotenvx/dotenvx/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dotenvx/dotenvx",
+        "stars": 5871,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dotenvx/dotenvx/main/README.md",
+        "readmeSha256": "1459159e8e5a0f437e31a4892a8bb2c2b040ff378be31f3db26f53a187533308",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 143,
+      "batch": 24,
+      "slug": "infisical",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Infisical: nền tảng mã nguồn mở để quản lý bí mật, chứng chỉ và quyền truy cập",
+        "excerpt": "Hiểu nền tảng giữ khóa API và cấu hình ở một nơi, đồng bộ sang dịch vụ triển khai, xoay khóa và quét rò rỉ. Cần đọc kỹ phần nào miễn phí, phần nào doanh nghiệp.",
+        "content": "<p>Infisical là nền tảng hạ tầng bảo mật mã nguồn mở cho bí mật, chứng chỉ, quản lý quyền truy cập đặc quyền và quyền truy cập của agent AI. Phần quản lý bí mật theo README gồm bảng điều khiển theo dự án và môi trường, đồng bộ bí mật sang các nền tảng như GitHub và Vercel, lưu phiên bản và khôi phục theo thời điểm, xoay khóa, bí mật động, chia sẻ qua liên kết hết hạn, toán tử Kubernetes, agent tự chèn bí mật vào ứng dụng và 'honey token'. Còn có quét bí mật (quét kho, quét cục bộ, pre-commit), quản lý chứng chỉ và hệ thống quản lý khóa mật mã.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì để mật khẩu và khóa API rải rác trong tệp .env của từng người và từng máy, Infisical giống một két sắt trung tâm của cả nhóm: ai được lấy gì, lấy lúc nào đều được ghi lại, và khi cần đổi khóa thì đổi ở một chỗ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhóm hai ba người dùng chung nhiều khóa API cho dự án muốn bỏ thói quen gửi khóa qua tin nhắn; họ đọc xem Infisical có phù hợp không. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Nhóm nhỏ đang dùng chung khóa; người làm sản phẩm có nhiều môi trường (thử, chạy thật).</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Phạm vi rất rộng (bí mật, chứng chỉ, PAM, KMS, Kubernetes) nên người mới dễ choáng; phần bí mật là điểm vào hợp lý. Cài tự host cần hạ tầng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn làm một mình với vài khóa, một cách đơn giản như tệp .env mã hóa có thể đủ. Nếu bạn chưa hiểu bản chất khóa API, hãy đọc các bài cơ bản về bảo mật trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>secrets management (quản lý bí mật)</strong>: hệ thống lưu, cấp và đổi bí mật như khóa API và mật khẩu một cách có kiểm soát.</li><li><strong>secret rotation (xoay khóa)</strong>: tự đổi bí mật định kỳ để khóa cũ bị lộ cũng hết tác dụng.</li><li><strong>honey token</strong>: khóa mồi đặt xen với khóa thật; ai dùng khóa mồi sẽ kích hoạt cảnh báo.</li><li><strong>KMS</strong>: hệ thống quản lý khóa mật mã.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói có bản cloud do Infisical vận hành và bản tự host; phần mã mở theo MIT 'ngoại trừ các thư mục ee' chứa tính năng doanh nghiệp trả phí. Hướng dẫn cài chi tiết nằm ở tài liệu; bài chưa đọc. Giá bản cloud và enterprise chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Secrets Management trước, bỏ qua phần chứng chỉ và KMS khi mới bắt đầu.</li><li>Đọc phần License để biết thư mục ee không theo giấy phép MIT.</li><li>Thử với dự án thử và khóa mẫu, chưa nhập khóa thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Nhóm mình dùng chung nhiều khóa API. Hãy đọc README của Infisical (https://github.com/Infisical/infisical) và giải thích bằng tiếng Việt: secrets management là gì, phần nào mình cần ngay và phần nào chưa cần, và giấy phép miễn phí so với enterprise ra sao. Chưa cài hay đăng ký gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>GitHub không gán một giấy phép duy nhất vì repo dùng MIT cho phần lớn và giấy phép riêng cho thư mục ee. Nền tảng tập trung bí mật nghĩa là nếu nó bị xâm nhập thì rủi ro lớn; cần cấu hình bảo mật cẩn thận khi tự host. README quảng bá bản cloud và enterprise.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ giữ bí mật là mục tiêu hấp dẫn: bật xác thực hai bước, cấp quyền tối thiểu cho từng người, và đừng dùng khóa thật khi mới thử nghiệm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Infisical</strong> có <strong>30.227 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub trả NOASSERTION; README ghi giấy phép MIT expat, ngoại trừ các thư mục ee chứa tính năng doanh nghiệp. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Infisical/infisical/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Infisical/infisical\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm bảo mật cơ bản, key 143. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30227; repo_id 521655652; README SHA256 977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Infisical/infisical",
+          "repo_id": "521655652",
+          "source_path": "",
+          "source_revision": "README-SHA256:977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Infisical/infisical",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói có bản cloud do Infisical vận hành và bản tự host; phần mã mở theo MIT 'ngoại trừ các thư mục ee' chứa tính năng doanh nghiệp trả phí. Hướng dẫn cài chi tiết nằm ở tài liệu; bài chưa đọc. Giá bản cloud và enterprise chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Infisical/infisical/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Infisical/infisical/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Infisical/infisical",
+        "stars": 30227,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Infisical/infisical/main/README.md",
+        "readmeSha256": "977beaedaac4919c0b8720ae1de0708482f0f9d80e90aef459520a27a739f742",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

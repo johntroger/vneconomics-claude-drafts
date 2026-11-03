@@ -1,0 +1,35 @@
+{
+  "key": 138,
+  "repo": "semgrep/semgrep",
+  "repoId": "227803815",
+  "url": "https://github.com/semgrep/semgrep",
+  "stars": 17415,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "LGPL-2.1",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:14:26Z",
+  "createdAt": "2019-12-13T09:29:54Z",
+  "defaultBranch": "develop",
+  "description": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.",
+  "homepage": "https://semgrep.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/semgrep/semgrep/develop/README.md",
+    "sha256": "4751611e81df6ea2e9ba234f5c20f154239c652f68bee70779dc9f8f35f90f8f",
+    "bytes": 20608,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Language support",
+      "Getting started"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giấy phép bộ quy tắc chưa đọc.",
+    "Chưa đọc hướng dẫn CLI chi tiết.",
+    "Giá nền tảng AppSec chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
