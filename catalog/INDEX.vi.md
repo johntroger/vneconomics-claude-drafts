@@ -83,13 +83,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 81 — Bản đồ và dữ liệu địa lý](learning-paths/81-ban-do-va-du-lieu-dia-ly.vi.md) — Từ vẽ bản đồ nhanh, hình học và dữ liệu địa lý bằng Python, phần mềm GIS đến chỉ mục lục giác và tìm đường; chú ý hệ tọa độ, quyền riêng tư của dữ liệu vị trí và điều khoản dữ liệu OpenStreetMap.
 - [Lộ trình 82 — Đồ họa 3D và vật lý trên web](learning-paths/82-do-hoa-3d-va-vat-ly-web.vi.md) — Từ vật lý 2D và động cơ trò chơi HTML5, hiển thị mô hình 3D, kết hợp React với three.js đến truy vấn không gian và động cơ vật lý Rust; chú ý ghép đúng phiên bản React, tuyên bố hiệu năng của tác giả, giấy phép mô hình và tài sản, và hiệu năng trên máy yếu.
 - [Lộ trình 83 — Tài chính định lượng và dữ liệu thị trường (chỉ để học)](learning-paths/83-tai-chinh-dinh-luong-va-du-lieu-thi-truong.vi.md) — Từ lấy dữ liệu thị trường cho bài tập, nền tảng nghiên cứu định lượng, đến các bot giao dịch, thư viện kết nối sàn và sổ cái phân tán; chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư; chú ý điều khoản dữ liệu, rủi ro mất tiền, khóa API và kết quả kiểm thử lại không đảm bảo tương lai.
+- [Lộ trình 84 — Jupyter và giảng dạy trực tuyến](learning-paths/84-jupyter-va-giang-day-truc-tuyen.vi.md) — Từ trình bày công thức toán, sổ tay Jupyter, chạy Python ngay trong trình duyệt, quản lý sổ tay dưới Git đến máy chủ nhiều người dùng và chia sẻ môi trường bằng container; chú ý cách ly và xác thực khi nhiều người dùng chung, dữ liệu của người học và phiên bản mở rộng cũ không tương thích.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (48 bài)
+### Bắt đầu (50 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -141,8 +142,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 613 | leafmap: gói Python phân tích địa không gian và vẽ bản đồ tương tác trong Jupyter với ít mã, chuyển đổi giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), giấy phép MIT | [opengeos/leafmap](https://github.com/opengeos/leafmap) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3796 | ban-do-va-du-lieu-dia-ly |
 | 623 | glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường | [KhronosGroup/glTF-Sample-Viewer](https://github.com/KhronosGroup/glTF-Sample-Viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 1484 | do-hoa-3d-va-vat-ly-web |
 | 624 | yfinance: công cụ Python lấy dữ liệu tài chính và thị trường từ API công khai của Yahoo Finance, dành cho nghiên cứu và giáo dục, không liên kết với Yahoo; README nhắc đọc điều khoản của Yahoo và API chỉ cho dùng cá nhân | [ranaroussi/yfinance](https://github.com/ranaroussi/yfinance) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 25805 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 630 | KaTeX: thư viện JavaScript nhanh, dễ dùng để hiển thị công thức TeX trên web, kết xuất đồng bộ, chất lượng in, không phụ thuộc, hỗ trợ kết xuất phía máy chủ, giấy phép MIT | [KaTeX/KaTeX](https://github.com/KaTeX/KaTeX) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 20494 | jupyter-va-giang-day-truc-tuyen |
+| 631 | Jupyter Notebook: môi trường sổ tay trên web để tính toán tương tác; README nêu hai phiên bản chính còn duy trì (Classic v6 và v7 xây trên JupyterLab) và lưu ý phần mở rộng cũ không tương thích với v7 | [jupyter/notebook](https://github.com/jupyter/notebook) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 13458 | jupyter-va-giang-day-truc-tuyen |
 
-### Cơ bản (214 bài)
+### Cơ bản (216 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -360,6 +363,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 618 | Matter.js: công cụ vật lý vật rắn 2D bằng JavaScript cho web, có vật thể ghép, đa giác lồi và lõm, va chạm đàn hồi, ví dụ, bộ phụ trợ và giấy phép MIT | [liabru/matter-js](https://github.com/liabru/matter-js) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18592 | do-hoa-3d-va-vat-ly-web |
 | 620 | model-viewer: kho chính của thành phần web <model-viewer> để hiển thị mô hình 3D và các dự án liên quan (hiệu ứng, trang tài liệu, công cụ đo độ trung thực kết xuất, tài sản dùng chung, trình soạn thảo) | [google/model-viewer](https://github.com/google/model-viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 8304 | do-hoa-3d-va-vat-ly-web |
 | 621 | melonJS: động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, kết xuất WebGPU, WebGL 2 hoặc Canvas2D, có vật lý, bản đồ ô, âm thanh, giấy phép MIT | [melonjs/melonJS](https://github.com/melonjs/melonJS) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 6435 | do-hoa-3d-va-vat-ly-web |
+| 633 | JupyterLite: bản phân phối JupyterLab chạy hoàn toàn trong trình duyệt, nhân Python chạy trong Web Worker (Pyodide, Xeus Python), không cần máy chủ; không phải mọi tính năng JupyterLab đều chạy được | [jupyterlite/jupyterlite](https://github.com/jupyterlite/jupyterlite) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 4915 | jupyter-va-giang-day-truc-tuyen |
+| 634 | Jupytext: lưu sổ tay Jupyter thành tài liệu văn bản thuần (Python, Markdown...) để chỉnh trong IDE và theo dõi thay đổi rõ ràng bằng kiểm soát phiên bản, có sổ tay ghép đôi và dòng lệnh, giấy phép MIT | [jupytext/jupytext](https://github.com/jupytext/jupytext) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7280 | jupyter-va-giang-day-truc-tuyen |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -403,7 +408,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (230 bài)
+### Nâng cao (233 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -637,6 +642,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 627 | CCXT: thư viện giao diện thống nhất để kết nối và giao dịch với hơn 100 sàn tiền mã hóa và thị trường dự đoán, nhiều ngôn ngữ, README rất dài và có mục Disclaimer về phần mềm không lưu ký tiền | [ccxt/ccxt](https://github.com/ccxt/ccxt) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 44693 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
 | 628 | Hummingbot: khung mã nguồn mở thiết kế và triển khai chiến lược giao dịch tự động (bot) trên nhiều sàn tập trung và phi tập trung, chiến lược kịch bản, bộ điều khiển, bộ thực thi, dòng lệnh hbot và Condor (khung AI), Apache 2.0 | [hummingbot/hummingbot](https://github.com/hummingbot/hummingbot) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 20918 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
 | 629 | XRP Ledger (xrpld/rippled): sổ cái mật mã phi tập trung do mạng nút ngang hàng vận hành, phần mềm máy chủ xrpld theo giấy phép ISC, README nêu đặc tính như đồng thuận 4 đến 5 giây; bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư | [XRPLF/rippled](https://github.com/XRPLF/rippled) | {'key': 'isc', 'name': 'ISC License', 'spdx_id': 'ISC', 'url': 'https://api.github.com/licenses/isc', 'node_id': 'MDc6TGljZW5zZTEw'} | 5243 | tai-chinh-dinh-luong-va-du-lieu-thi-truong |
+| 632 | JupyterHub: máy chủ nhiều người dùng sinh, quản lý và ủy quyền nhiều máy chủ Jupyter Notebook đơn người dùng, phục vụ lớp học, nhóm khoa học dữ liệu hay cụm tính toán; giấy phép BSD sửa đổi | [jupyterhub/jupyterhub](https://github.com/jupyterhub/jupyterhub) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 8362 | jupyter-va-giang-day-truc-tuyen |
+| 635 | repo2docker: lấy một kho git và dựng ảnh container dựa trên các tệp cấu hình trong kho, nền cho Binder; yêu cầu Docker, Python 3.9+, hỗ trợ Linux và macOS; README có ghi chú nghiên cứu về tính bền vững | [jupyterhub/repo2docker](https://github.com/jupyterhub/repo2docker) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 1740 | jupyter-va-giang-day-truc-tuyen |
+| 636 | BinderHub: dựng và đăng ký ảnh Docker từ một kho git rồi kết nối với JupyterHub để người dùng tương tác với mã trong một phiên trực tiếp, nối JupyterHub và repo2docker, xây trên Python, Kubernetes | [jupyterhub/binderhub](https://github.com/jupyterhub/binderhub) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 2671 | jupyter-va-giang-day-truc-tuyen |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

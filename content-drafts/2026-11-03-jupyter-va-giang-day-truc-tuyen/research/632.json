@@ -1,0 +1,42 @@
+{
+  "key": 632,
+  "repo": "jupyterhub/jupyterhub",
+  "repoId": "20785986",
+  "url": "https://github.com/jupyterhub/jupyterhub",
+  "stars": 8362,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:56:28Z",
+  "createdAt": "2014-06-12T23:22:10Z",
+  "defaultBranch": "main",
+  "description": "Multi-user server for Jupyter notebooks",
+  "homepage": "https://jupyterhub.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyterhub/jupyterhub/main/README.md",
+    "sha256": "e0281c7bf23acb2dd7ed727e15bd12b5861003392ecb04e892c13bd2f2a82081",
+    "bytes": 11640,
+    "sectionsRead": [
+      "Technical overview",
+      "Installation",
+      "Configuration",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu jupyterhub.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa đánh giá tài nguyên cho lớp lớn."
+  ],
+  "runtimeValidated": false
+}

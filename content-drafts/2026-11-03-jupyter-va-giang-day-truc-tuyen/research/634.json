@@ -1,0 +1,42 @@
+{
+  "key": 634,
+  "repo": "jupytext/jupytext",
+  "repoId": "137444487",
+  "url": "https://github.com/jupytext/jupytext",
+  "stars": 7280,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:37:31Z",
+  "createdAt": "2018-06-15T05:25:36Z",
+  "defaultBranch": "main",
+  "description": "Jupyter Notebooks as Markdown Documents, Julia, Python or R scripts",
+  "homepage": "https://jupytext.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupytext/jupytext/main/README.md",
+    "sha256": "47137e234c1e1504b4d547c2c2150753704a23995142531d9c2109434beb7a93",
+    "bytes": 8855,
+    "sectionsRead": [
+      "Text Notebooks",
+      "Installation",
+      "Paired Notebooks",
+      "Command line"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa thử.",
+    "Chưa kiểm tra xung đột khi sửa cả hai tệp."
+  ],
+  "runtimeValidated": false
+}

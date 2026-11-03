@@ -1,0 +1,42 @@
+{
+  "key": 631,
+  "repo": "jupyter/notebook",
+  "repoId": "33653601",
+  "url": "https://github.com/jupyter/notebook",
+  "stars": 13458,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T07:34:36Z",
+  "createdAt": "2015-04-09T06:58:03Z",
+  "defaultBranch": "main",
+  "description": "Jupyter Interactive Notebook",
+  "homepage": "https://jupyter-notebook.readthedocs.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyter/notebook/main/README.md",
+    "sha256": "c915d71b0f3feab040d4268dc21e429c75fd6705cdf1ad9517b04ca214e2e8d7",
+    "bytes": 5931,
+    "sectionsRead": [
+      "Maintained versions",
+      "Installation",
+      "Usage - Running Jupyter notebook",
+      "Resources"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa thử.",
+    "Chưa kiểm tra tương thích phần mở rộng."
+  ],
+  "runtimeValidated": false
+}

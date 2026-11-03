@@ -1,0 +1,42 @@
+{
+  "key": 633,
+  "repo": "jupyterlite/jupyterlite",
+  "repoId": "352160885",
+  "url": "https://github.com/jupyterlite/jupyterlite",
+  "stars": 4915,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T20:33:40Z",
+  "createdAt": "2021-03-27T19:36:52Z",
+  "defaultBranch": "main",
+  "description": "Wasm powered Jupyter running in the browser 💡",
+  "homepage": "https://jupyterlite.rtfd.io/en/stable/try/lab",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyterlite/jupyterlite/main/README.md",
+    "sha256": "e973d7db15f48102da08c7a761508e720141dff6ba69152a4778557b34ab87c8",
+    "bytes": 5980,
+    "sectionsRead": [
+      "Status",
+      "Try it in your browser",
+      "Build your own JupyterLite",
+      "Version Compatibility"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa kiểm tra thư viện nào chạy được."
+  ],
+  "runtimeValidated": false
+}

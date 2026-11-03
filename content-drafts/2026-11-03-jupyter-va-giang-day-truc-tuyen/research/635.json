@@ -1,0 +1,42 @@
+{
+  "key": 635,
+  "repo": "jupyterhub/repo2docker",
+  "repoId": "90722372",
+  "url": "https://github.com/jupyterhub/repo2docker",
+  "stars": 1740,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:51:31Z",
+  "createdAt": "2017-05-09T08:36:30Z",
+  "defaultBranch": "main",
+  "description": "Turn repositories into Jupyter-enabled Docker images",
+  "homepage": "https://repo2docker.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyterhub/repo2docker/main/README.md",
+    "sha256": "ab4623581215b9cedbcb1a6e9afe09789c1d43956314f32206773132a5a42f1d",
+    "bytes": 4417,
+    "sectionsRead": [
+      "Using repo2docker",
+      "Prerequisites",
+      "Installation",
+      "Repository specifications"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu repo2docker.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa kiểm tra hỗ trợ Windows."
+  ],
+  "runtimeValidated": false
+}

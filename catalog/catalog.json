@@ -10641,5 +10641,171 @@
    "ccxt",
    "qlib"
   ]
+ },
+ {
+  "key": 630,
+  "slug": "katex",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "KaTeX: thư viện JavaScript nhanh, dễ dùng để hiển thị công thức TeX trên web, kết xuất đồng bộ, chất lượng in, không phụ thuộc, hỗ trợ kết xuất phía máy chủ, giấy phép MIT",
+  "repo": "KaTeX/KaTeX",
+  "stars": 20494,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "jupyter-notebook"
+  ]
+ },
+ {
+  "key": 631,
+  "slug": "jupyter-notebook",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "Jupyter Notebook: môi trường sổ tay trên web để tính toán tương tác; README nêu hai phiên bản chính còn duy trì (Classic v6 và v7 xây trên JupyterLab) và lưu ý phần mở rộng cũ không tương thích với v7",
+  "repo": "jupyter/notebook",
+  "stars": 13458,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-30",
+  "related": [
+   "jupyterlite",
+   "katex"
+  ]
+ },
+ {
+  "key": 632,
+  "slug": "jupyterhub",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "JupyterHub: máy chủ nhiều người dùng sinh, quản lý và ủy quyền nhiều máy chủ Jupyter Notebook đơn người dùng, phục vụ lớp học, nhóm khoa học dữ liệu hay cụm tính toán; giấy phép BSD sửa đổi",
+  "repo": "jupyterhub/jupyterhub",
+  "stars": 8362,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "binderhub",
+   "repo2docker"
+  ]
+ },
+ {
+  "key": 633,
+  "slug": "jupyterlite",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "JupyterLite: bản phân phối JupyterLab chạy hoàn toàn trong trình duyệt, nhân Python chạy trong Web Worker (Pyodide, Xeus Python), không cần máy chủ; không phải mọi tính năng JupyterLab đều chạy được",
+  "repo": "jupyterlite/jupyterlite",
+  "stars": 4915,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-30",
+  "related": [
+   "jupyter-notebook",
+   "jupytext"
+  ]
+ },
+ {
+  "key": 634,
+  "slug": "jupytext",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "Jupytext: lưu sổ tay Jupyter thành tài liệu văn bản thuần (Python, Markdown...) để chỉnh trong IDE và theo dõi thay đổi rõ ràng bằng kiểm soát phiên bản, có sổ tay ghép đôi và dòng lệnh, giấy phép MIT",
+  "repo": "jupytext/jupytext",
+  "stars": 7280,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "jupyterlite",
+   "repo2docker"
+  ]
+ },
+ {
+  "key": 635,
+  "slug": "repo2docker",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "repo2docker: lấy một kho git và dựng ảnh container dựa trên các tệp cấu hình trong kho, nền cho Binder; yêu cầu Docker, Python 3.9+, hỗ trợ Linux và macOS; README có ghi chú nghiên cứu về tính bền vững",
+  "repo": "jupyterhub/repo2docker",
+  "stars": 1740,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "jupyterhub",
+   "jupytext"
+  ]
+ },
+ {
+  "key": 636,
+  "slug": "binderhub",
+  "group": "2026-11-03-jupyter-va-giang-day-truc-tuyen",
+  "title": "BinderHub: dựng và đăng ký ảnh Docker từ một kho git rồi kết nối với JupyterHub để người dùng tương tác với mã trong một phiên trực tiếp, nối JupyterHub và repo2docker, xây trên Python, Kubernetes",
+  "repo": "jupyterhub/binderhub",
+  "stars": 2671,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "jupyterhub"
+  ]
  }
 ]

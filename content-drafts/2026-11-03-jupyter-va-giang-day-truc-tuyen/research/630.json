@@ -1,0 +1,42 @@
+{
+  "key": 630,
+  "repo": "KaTeX/KaTeX",
+  "repoId": "11195700",
+  "url": "https://github.com/KaTeX/KaTeX",
+  "stars": 20494,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:00:20Z",
+  "createdAt": "2013-07-05T09:01:54Z",
+  "defaultBranch": "main",
+  "description": "Fast math typesetting for the web.",
+  "homepage": "https://katex.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/KaTeX/KaTeX/main/README.md",
+    "sha256": "ef41f42d7256023faf98b789fd3d56bac3f04de84b945437b38798ea1eafd6e9",
+    "bytes": 6503,
+    "sectionsRead": [
+      "Getting started",
+      "API",
+      "Demo and Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu katex.org.",
+    "Chưa thử.",
+    "Chưa kiểm chứng so sánh tốc độ."
+  ],
+  "runtimeValidated": false
+}

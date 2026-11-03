@@ -1,0 +1,44 @@
+{
+  "key": 636,
+  "repo": "jupyterhub/binderhub",
+  "repoId": "89419368",
+  "url": "https://github.com/jupyterhub/binderhub",
+  "stars": 2671,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:51:06Z",
+  "createdAt": "2017-04-26T00:28:26Z",
+  "defaultBranch": "main",
+  "description": "Run your code in the cloud, with technology so advanced, it feels like magic!",
+  "homepage": "https://binderhub.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyterhub/binderhub/main/README.md",
+    "sha256": "71e045df5bced6b572676b51aede31f80d463e143df1f28b852cfe3d1f210842",
+    "bytes": 3383,
+    "sectionsRead": [
+      "What is BinderHub?",
+      "Documentation",
+      "Installation",
+      "Why BinderHub?",
+      "Who is BinderHub for?",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu binderhub.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa đánh giá chi phí vận hành."
+  ],
+  "runtimeValidated": false
+}
