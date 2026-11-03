@@ -1,0 +1,43 @@
+{
+  "key": 450,
+  "repo": "go-vikunja/vikunja",
+  "repoId": "159556794",
+  "url": "https://github.com/go-vikunja/vikunja",
+  "stars": 5946,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:06:32Z",
+  "createdAt": "2018-11-28T19:52:27Z",
+  "defaultBranch": "main",
+  "description": "The task manager you actually own.",
+  "homepage": "https://vikunja.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/go-vikunja/vikunja/main/README.md",
+    "sha256": "30ae2bf5983bce8c0c1f313e02028fe5bae967afb82fc21d8adb4a912de1559e",
+    "bytes": 3150,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Security Reports",
+      "Features",
+      "Docs",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá bản đám mây và Pro chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

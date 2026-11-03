@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-tu-host-ghi-chu",
+  "batch": 77,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 450,
+      "batch": 77,
+      "slug": "vikunja",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vikunja: ứng dụng quản lý công việc tự host, README nêu bản đám mây và bản Pro trả phí, và nói dự án dùng công cụ lập trình có LLM hỗ trợ",
+        "excerpt": "Hiểu Vikunja là trình quản lý công việc bạn tự sở hữu (cách nói của README), có thể tự host hoặc dùng bản đám mây trả phí; có bản Pro với bảng quản trị, nhật ký kiểm toán và theo dõi thời gian. README ghi dự án dùng công cụ lập trình có LLM hỗ trợ ở nhiều phần.",
+        "content": "<p>README mở đầu: Vikunja là trình quản lý công việc bạn thực sự sở hữu. Dự án kêu gọi ủng hộ qua mời cà phê, tài trợ GitHub hoặc mua bộ nhãn dán. Có bản hosted Vikunja (vikunja.cloud) cho ai muốn đỡ vất vả, và Vikunja Pro cho công ty cần bảng quản trị, nhật ký kiểm toán và theo dõi thời gian (các bản này trả phí, README không nêu giá). Ghi chú: dự án dùng công cụ lập trình có LLM hỗ trợ ở nhiều phần, và phần lớn đóng góp của một tài khoản bot được tạo bằng cách đó. Mục lục gồm báo cáo bảo mật (liên hệ riêng thay vì công khai), tính năng (xem trang tính năng), tài liệu (cài đặt, biên dịch từ mã nguồn, thiết lập phát triển), lộ trình (đăng trên chính Vikunja), đóng góp và giấy phép. Có bản dùng thử trực tuyến. Giấy phép: phần lớn kho theo AGPL-3.0-or-later, thư mục desktop theo GPL-3.0-or-later, ảnh nền Unsplash theo Unsplash License (cần ghi công).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn một ứng dụng việc cần làm kiểu Todoist hay Trello mà dữ liệu nằm trên máy chủ của bạn, Vikunja là một lựa chọn mã nguồn mở.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng bản dùng thử để xem giao diện trước khi quyết định tự host. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần chọn cách cài; README không có hướng dẫn trực tiếp mà trỏ tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản Pro và bản đám mây trả phí, bài chưa kiểm tra giá. Giấy phép hỗn hợp (AGPL cho phần lớn, GPL cho desktop). README ghi dự án dùng LLM hỗ trợ lập trình; bài không đánh giá chất lượng mã. Báo lỗi bảo mật qua liên hệ riêng, không đăng công khai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>task manager (quản lý công việc)</strong>: ứng dụng ghi và theo dõi việc cần làm; README mô tả Vikunja như vậy.</li><li><strong>self-host (tự host)</strong>: tự chạy trên máy chủ của bạn.</li><li><strong>AGPL</strong>: giấy phép mã nguồn mở có điều kiện chia sẻ lại; README nêu cho phần lớn kho.</li><li><strong>audit log (nhật ký kiểm toán)</strong>: ghi lại ai làm gì; README nêu thuộc bản Pro.</li><li><strong>roadmap (lộ trình)</strong>: kế hoạch phát triển; README trỏ tới lộ trình đăng trên Vikunja.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần máy chủ hoặc dịch vụ tự host. Miễn phí theo giấy phép AGPL-3.0-or-later; bản đám mây và Pro trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Dùng thử trên trang demo.</li><li>Đọc tài liệu cài đặt.</li><li>Chọn tự host hoặc dùng bản đám mây.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự host ứng dụng quản lý công việc. Hãy đọc README của Vikunja (https://github.com/go-vikunja/vikunja) và giải thích bằng tiếng Việt: các bản miễn phí và trả phí, giấy phép hỗn hợp nghĩa là gì, và ghi chú về LLM trong phát triển nói gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, trỏ phần lớn tới trang web; bài chưa đọc tài liệu vikunja.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>go-vikunja</strong> có <strong>5.946 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi phần lớn theo AGPL-3.0-or-later, thư mục desktop theo GPL-3.0-or-later. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/go-vikunja/vikunja/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/go-vikunja/vikunja\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 450. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5946; repo_id 159556794; README SHA256 30ae2bf5983bce8c0c1f313e02028fe5bae967afb82fc21d8adb4a912de1559e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/go-vikunja/vikunja",
+          "repo_id": "159556794",
+          "source_path": "",
+          "source_revision": "README-SHA256:30ae2bf5983bce8c0c1f313e02028fe5bae967afb82fc21d8adb4a912de1559e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/go-vikunja/vikunja",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần máy chủ hoặc dịch vụ tự host. Miễn phí theo giấy phép AGPL-3.0-or-later; bản đám mây và Pro trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/go-vikunja/vikunja/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/go-vikunja/vikunja/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "go-vikunja/vikunja",
+        "stars": 5946,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/go-vikunja/vikunja/main/README.md",
+        "readmeSha256": "30ae2bf5983bce8c0c1f313e02028fe5bae967afb82fc21d8adb4a912de1559e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 451,
+      "batch": 77,
+      "slug": "trilium",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Trilium Notes: ứng dụng ghi chú phân cấp mã nguồn mở xây kho tri thức cá nhân lớn, có mã hóa từng ghi chú, đồng bộ qua máy chủ tự host và tập lệnh",
+        "excerpt": "Hiểu Trilium Notes là ứng dụng ghi chú phân cấp đa nền tảng tập trung vào kho tri thức cá nhân lớn. README nêu cây ghi chú nhiều tầng, sao chép ghi chú vào nhiều chỗ, mã hóa theo từng ghi chú, đồng bộ qua máy chủ tự host, API REST và tập lệnh. README nói dự án là bản cộng đồng tiếp nối kho gốc.",
+        "content": "<p>README mô tả Trilium Notes là ứng dụng ghi chú mã nguồn mở miễn phí, đa nền tảng, phân cấp, tập trung vào xây dựng kho tri thức cá nhân lớn; tên đúng là Trilium với một chữ l. Tải bản mới nhất ổn định hoặc bản nightly không ổn định hằng ngày. Tính năng: cây ghi chú sâu tùy ý và một ghi chú đặt ở nhiều nơi (nhân bản), trình soạn WYSIWYG có bảng, ảnh, công thức, ghi chú mã nguồn tô màu, tìm kiếm toàn văn, phiên bản ghi chú, thuộc tính để tổ chức, truy vấn và viết tập lệnh, đăng nhập OpenID và TOTP, đồng bộ qua máy chủ tự host (có dịch vụ bên thứ ba), chia sẻ lên Internet, mã hóa mạnh từng ghi chú, sơ đồ Excalidraw, bản đồ quan hệ, sơ đồ tư duy, bản đồ địa lý, API REST, nhập từ Evernote và Markdown, Web Clipper, hỗ trợ trên 100.000 ghi chú, giao diện di động. Mục Why TriliumNext: nhà phát triển gốc đã trao kho cho dự án cộng đồng; không cần bước chuyển đổi đặc biệt từ bản cũ, nhưng các bản sau v0.90.4 tăng phiên bản đồng bộ nên không còn tương thích với bản cũ nhất. Cài trên Windows hoặc macOS bằng bản nhị phân; Linux có gói theo bản phân phối; cũng chạy trên trình duyệt qua máy chủ. Giấy phép AGPL phiên bản 3 trở lên theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một cuốn sổ tay khổng lồ có cây thư mục, tìm kiếm mạnh và có thể lập trình thêm. Hợp với người muốn xây kho tri thức lâu dài.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhập một số ghi chú Markdown thử và dùng ghi chú mã hóa cho thông tin nhạy cảm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng bản desktop khá dễ; tập lệnh và đồng bộ cần học thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản nightly không ổn định: dùng bản phát hành ổn định (README). README nói các bản sau v0.90.4 không còn đồng bộ được với bản gốc cũ; kiểm tra phiên bản trước khi chuyển. Ghi chú mã hóa chỉ an toàn khi bạn giữ mật khẩu; mất mật khẩu có thể không khôi phục được (nhận định chung). Tuyên bố 'mạnh' là của README, bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>hierarchical (phân cấp)</strong>: ghi chú xếp thành cây nhiều tầng; README nêu.</li><li><strong>cloning (nhân bản)</strong>: đặt một ghi chú ở nhiều nơi trong cây; README nêu.</li><li><strong>TOTP</strong>: mã đăng nhập một lần theo thời gian; README nêu tích hợp.</li><li><strong>REST API (ETAPI)</strong>: giao diện để tự động hóa từ chương trình khác; README nêu.</li><li><strong>Web Clipper</strong>: tiện ích lưu trang web vào ghi chú; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản nhị phân cho Windows hoặc macOS, gói cho Linux, hoặc chạy máy chủ (Docker) để dùng qua trình duyệt (bài không chép lệnh). Miễn phí theo giấy phép AGPL phiên bản 3 trở lên.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Tải bản phát hành ổn định.</li><li>Thử với ghi chú không quan trọng.</li><li>Chỉ bật đồng bộ sau khi hiểu cách hoạt động.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xây kho ghi chú lâu dài. Hãy đọc README của Trilium (https://github.com/TriliumNext/Trilium) và giải thích bằng tiếng Việt: các tính năng chính, vì sao có TriliumNext, và cảnh báo về bản nightly và tương thích phiên bản. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 16 KB), bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>TriliumNext</strong> có <strong>38.675 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README mục License ghi AGPL phiên bản 3 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/TriliumNext/Trilium/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/TriliumNext/Trilium\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 451. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38675; repo_id 92111509; README SHA256 087906667d44cbca6a47a4e198713c7b068c1766c8fe9a80daa9b4e7480eae95.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/TriliumNext/Trilium",
+          "repo_id": "92111509",
+          "source_path": "",
+          "source_revision": "README-SHA256:087906667d44cbca6a47a4e198713c7b068c1766c8fe9a80daa9b4e7480eae95",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TriliumNext/Trilium",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản nhị phân cho Windows hoặc macOS, gói cho Linux, hoặc chạy máy chủ (Docker) để dùng qua trình duyệt (bài không chép lệnh). Miễn phí theo giấy phép AGPL phiên bản 3 trở lên.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/TriliumNext/Trilium/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "TriliumNext/Trilium",
+        "stars": 38675,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/TriliumNext/Trilium/main/README.md",
+        "readmeSha256": "087906667d44cbca6a47a4e198713c7b068c1766c8fe9a80daa9b4e7480eae95",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 452,
+      "batch": 77,
+      "slug": "bookstack",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "BookStack: nền tảng lưu trữ và tổ chức tài liệu, quan điểm rõ ràng, dễ dùng; README nói repo chính đặt ở Codeberg",
+        "excerpt": "Hiểu BookStack là nền tảng lưu và sắp xếp thông tin và tài liệu, thiết kế đơn giản, chỉ cần kỹ năng soạn thảo văn bản cơ bản. README nói đây không phải nền tảng mở rộng cho mục đích khác. README trỏ phần issue, mã và cộng đồng sang Codeberg; bài chưa kiểm tra kho nào là kho chính.",
+        "content": "<p>README tả BookStack là nền tảng lưu trữ và tổ chức thông tin và tài liệu, trỏ tới trang chính thức, hướng dẫn cài đặt, tài liệu, bản demo, ảnh chụp và blog. Mục Project Definition: BookStack là nền tảng tài liệu có quan điểm, mang trải nghiệm dễ chịu và đơn giản ngay từ đầu; người mới chỉ cần kỹ năng soạn văn bản cơ bản; README nói rõ BookStack không được thiết kế làm nền tảng mở rộng cho mục đích khác. Triết lý phát triển là thoải mái, cởi mở, tiến hóa chậm nhưng liên tục và nâng cấp ổn định. Phần lớn liên kết (issue, bản phát hành, quy tắc cộng đồng, kho website) trỏ tới Codeberg. Có mục phát triển, dịch qua Crowdin, đóng góp (PR vào nhánh development, không vào release), bảo mật (đăng ký danh sách thư bảo mật), tài trợ (README ghi các dịch vụ tài trợ không được dự án kiểm thử hay bảo chứng) và danh sách thư viện phụ thuộc với giấy phép riêng. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn cần wiki nội bộ cho nhóm với cấu trúc sách, chương, trang rõ ràng, BookStack là lựa chọn đơn giản và quen với người dùng không rành kỹ thuật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem bản demo trực tuyến để cảm nhận cấu trúc sách, chương, trang. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đặt theo tài liệu (README trỏ ra ngoài); người dùng cuối chỉ cần soạn văn bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói BookStack không dành cho mục đích khác ngoài tài liệu. Các liên kết chính trỏ tới Codeberg; bài chưa kiểm tra kho GitHub có phải bản sao hay không (README không nói). Bản phát hành nên lấy từ nơi README chỉ dẫn. Các dịch vụ tài trợ không được dự án bảo chứng (theo README).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>wiki</strong>: trang web tài liệu cho nhiều người cùng soạn.</li><li><strong>opinionated (có quan điểm)</strong>: thiết kế theo một hướng cố định thay vì tùy biến vô hạn; README nêu.</li><li><strong>Codeberg</strong>: nền tảng lưu mã nguồn thay thế GitHub; README trỏ nhiều liên kết tới đó.</li><li><strong>Crowdin</strong>: dịch vụ quản lý bản dịch; README yêu cầu dịch qua đó.</li><li><strong>release branch (nhánh phát hành)</strong>: nhánh chỉ để phát hành; README nói đừng gửi PR vào đó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần máy chủ web (README phần đã đọc không nêu yêu cầu cụ thể). Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản demo trực tuyến.</li><li>Đọc tài liệu cài đặt và bảo mật.</li><li>Cân nhắc có đúng nhu cầu tài liệu không.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần wiki nội bộ cho nhóm. Hãy đọc README của BookStack (https://github.com/BookStackApp/BookStack) và giải thích bằng tiếng Việt: dự án phù hợp cho việc gì, không phù hợp cho việc gì, và vì sao nhiều liên kết trỏ tới Codeberg. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dùng tên tệp readme.md; bài chưa đọc tài liệu và chưa kiểm tra kho chính. README phần đã đọc không nêu yêu cầu máy chủ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>BookStackApp</strong> có <strong>19.125 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu và mục License ghi MIT, thư viện phụ thuộc có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/BookStackApp/BookStack/blob/development/readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/BookStackApp/BookStack\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 452. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19125; repo_id 41589337; README SHA256 627585ac4c2e3c00c0f72ecfd1694c1b8084311c8dcee79c47feac795ebfd26b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/BookStackApp/BookStack",
+          "repo_id": "41589337",
+          "source_path": "",
+          "source_revision": "README-SHA256:627585ac4c2e3c00c0f72ecfd1694c1b8084311c8dcee79c47feac795ebfd26b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BookStackApp/BookStack",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần máy chủ web (README phần đã đọc không nêu yêu cầu cụ thể). Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BookStackApp/BookStack/blob/development/readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/BookStackApp/BookStack/blob/development/readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "BookStackApp/BookStack",
+        "stars": 19125,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md",
+        "readmeSha256": "627585ac4c2e3c00c0f72ecfd1694c1b8084311c8dcee79c47feac795ebfd26b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 453,
+      "batch": 77,
+      "slug": "memos",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Memos: ứng dụng ghi chú tự host cho suy nghĩ hằng ngày, dòng thời gian cá nhân, Markdown, chia sẻ có kiểm soát",
+        "excerpt": "Hiểu Memos là ứng dụng ghi chú mã nguồn mở tự host gom suy nghĩ hằng ngày vào dòng thời gian cá nhân. README có lệnh Docker chạy nhanh, nói mọi dữ liệu nằm trong một thư mục cần sao lưu, và có API cùng máy chủ MCP kết nối với công cụ AI.",
+        "content": "<p>README tả Memos là ứng dụng ghi chú mã nguồn mở, tự host, cho suy nghĩ hằng ngày: viết ngắn hay dài bằng Markdown, mỗi ghi chú nằm theo ngày trong dòng thời gian cá nhân, thẻ nối các ý liên quan, dữ liệu nằm trên máy chủ của bạn, chia sẻ có kiểm soát (riêng tư, chia sẻ với người thân, hoặc xuất bản lên web). Có bản demo. Mục Quick start dùng Docker (một lệnh chạy ở cổng 5230, bài không chép), sau đó vào trình duyệt tạo tài khoản đầu tiên; README nói mọi dữ liệu nằm trong một thư mục trên máy và nên sao lưu thư mục đó. Cách chạy khác (Docker Compose, Kubernetes, tệp nhị phân) ở hướng dẫn triển khai. Mục Upgrading: phiên bản gắn thẻ theo kiểu năm.tháng.số, thẻ stable theo bản ổn định, canary theo bản phát triển; người từ bản trước v0.31.0 cần làm thêm bước riêng trước khi nâng cấp. Ngoài ra có Web Clipper cho Chrome và Firefox, bot Telegram Memogram, API và máy chủ MCP. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Memos giống một dòng Twitter riêng của bạn: viết nhanh một ý, gắn thẻ, nhìn lại theo ngày. Phù hợp để ghi ý tưởng thoáng qua.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy thử trên máy cá nhân, ghi vài ý với thẻ rồi thử sao lưu thư mục dữ liệu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Có lệnh Docker ngắn nhưng cần Docker; dùng thì đơn giản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói mọi dữ liệu nằm trong một thư mục: sao lưu đều đặn. Người nâng cấp từ bản trước v0.31.0 cần đọc README (có bước bổ sung trước khi nâng cấp). Máy chủ MCP kết nối công cụ AI với ghi chú của bạn: chỉ bật khi hiểu quyền truy cập; bài chưa kiểm tra. Lệnh Docker trong README chạy một ảnh bên ngoài, hãy kiểm tra nguồn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>timeline (dòng thời gian)</strong>: ghi chú xếp theo ngày; README nêu.</li><li><strong>Markdown</strong>: cú pháp định dạng văn bản đơn giản; README nêu.</li><li><strong>self-host (tự host)</strong>: tự chạy trên máy chủ của bạn.</li><li><strong>Web Clipper</strong>: tiện ích lưu trang web thành ghi chú; README nêu.</li><li><strong>MCP server</strong>: cho công cụ AI truy cập dữ liệu của ứng dụng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: có Docker, Docker Compose, Kubernetes hoặc tệp nhị phân (bài không chép lệnh). Cần Docker nếu theo cách nhanh. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo.</li><li>Chạy cục bộ và tạo tài khoản đầu tiên.</li><li>Sao lưu thư mục dữ liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn ghi ý tưởng nhanh mỗi ngày bằng ứng dụng tự host. Hãy đọc README của Memos (https://github.com/usememos/memos) và giải thích bằng tiếng Việt: Memos làm gì, dữ liệu nằm ở đâu, cần lưu ý gì khi nâng cấp, và rủi ro khi bật máy chủ MCP. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn, bài chưa đọc tài liệu. README phần Upgrading có lệnh cho bản cũ mà bài không chép. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>usememos</strong> có <strong>64.241 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/usememos/memos/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/usememos/memos\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 453. Chưa cài/chạy thử; không tạo validation. Snapshot sao 64241; repo_id 436297812; README SHA256 441f879a482850273554612eb656bc10d25e85d565bb8b34fc1d4349cae56811.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/usememos/memos",
+          "repo_id": "436297812",
+          "source_path": "",
+          "source_revision": "README-SHA256:441f879a482850273554612eb656bc10d25e85d565bb8b34fc1d4349cae56811",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/usememos/memos",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: có Docker, Docker Compose, Kubernetes hoặc tệp nhị phân (bài không chép lệnh). Cần Docker nếu theo cách nhanh. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/usememos/memos/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/usememos/memos/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "usememos/memos",
+        "stars": 64241,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/usememos/memos/main/README.md",
+        "readmeSha256": "441f879a482850273554612eb656bc10d25e85d565bb8b34fc1d4349cae56811",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 454,
+      "batch": 77,
+      "slug": "linkwarden",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Linkwarden: trình quản lý dấu trang cộng tác tự host, lưu bản sao trang (ảnh chụp, PDF, HTML) để chống link rot, có gắn thẻ bằng AI cục bộ tùy chọn",
+        "excerpt": "Hiểu Linkwarden là trình quản lý dấu trang mã nguồn mở tự host dùng để thu thập, đọc, chú thích và lưu trữ trọn vẹn trang web. README nói tự chụp ảnh màn hình, PDF và HTML của mỗi trang để chống link rot, có app di động, tiện ích trình duyệt, và bản đám mây trả phí.",
+        "content": "<p>README mô tả Linkwarden là trình quản lý dấu trang cộng tác, mã nguồn mở, tự host để thu thập, đọc, chú thích và lưu giữ trọn vẹn điều quan trọng. Mục tiêu: tổ chức trang hữu ích trong một nơi, và vì trang có thể biến mất (link rot) nên lưu bản sao dạng ảnh chụp và PDF. Cung cấp trải nghiệm đọc và chú thích kết hợp sự đơn giản của công cụ đọc sau với độ tin cậy của lưu trữ web, và cộng tác với nhiều người dùng. README ghi bản đám mây chính thức là cách bắt đầu đơn giản nhất, đăng ký trả phí hỗ trợ hạ tầng và phát triển; tự host là miễn phí nhưng bạn tự triển khai và bảo trì. Tính năng: tự chụp ảnh, PDF, HTML, chế độ đọc có đánh dấu và chú thích, gửi lên Wayback Machine (tùy chọn), gắn thẻ bằng AI cục bộ (tùy chọn), tổ chức theo bộ sưu tập, cộng tác, phân quyền thành viên, chia sẻ công khai, app iOS và Android, tìm toàn văn, tiện ích trình duyệt, đồng bộ qua Floccus, nhập từ SingleFile, SSO (cho người dùng doanh nghiệp và tự host), khóa API, hành động hàng loạt, đăng ký RSS. Báo lỗ hổng bảo mật qua email riêng. README phần đã đọc không nêu giấy phép; lấy theo GitHub là AGPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn lưu một bài hay, vài tháng sau trang bị xóa. Linkwarden giữ sẵn một bản sao để bạn vẫn đọc được, và cho cả nhóm cùng thu thập.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo, lưu vài trang và xem ảnh chụp, PDF được tạo. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng thì dễ; tự host cần máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản sao trang web chứa nội dung có bản quyền của người khác: chỉ dùng cho mục đích cá nhân hoặc theo luật (nguyên tắc chung của bài, README không bàn). Gắn thẻ bằng AI cục bộ cần mô hình riêng và là tùy chọn. Bản đám mây trả phí, bài chưa kiểm tra giá; một số tính năng (SSO) chỉ cho người dùng doanh nghiệp và tự host.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>bookmark manager (quản lý dấu trang)</strong>: công cụ lưu và sắp xếp liên kết; README nêu.</li><li><strong>link rot</strong>: hiện tượng liên kết hỏng theo thời gian; README nêu.</li><li><strong>archive (lưu trữ)</strong>: giữ bản sao của trang; README nêu ảnh chụp, PDF, HTML.</li><li><strong>Wayback Machine</strong>: kho lưu trữ web của archive.org; README nêu gửi bản chụp tùy chọn.</li><li><strong>SSO</strong>: đăng nhập một lần cho nhiều dịch vụ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tự host theo tài liệu hoặc dùng bản đám mây; app di động cần tài khoản (bài chưa đọc tài liệu nên không nêu lệnh). Miễn phí tự host; giấy phép lấy theo GitHub (AGPL-3.0); bản đám mây trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo.</li><li>Chọn bản đám mây hoặc tự host.</li><li>Lưu một vài trang và kiểm tra bản sao.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay lưu bài hay rồi mất link. Hãy đọc README của Linkwarden (https://github.com/linkwarden/linkwarden) và giải thích bằng tiếng Việt: Linkwarden lưu gì, tự host khác bản đám mây thế nào, và lưu ý bản quyền khi lưu bản sao trang. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Lưu ý bản quyền là nguyên tắc chung của bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>linkwarden</strong> có <strong>20.303 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/linkwarden/linkwarden/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/linkwarden/linkwarden\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 454. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20303; repo_id 479657569; README SHA256 2813dd16022b0e23f9f2f19cbf216be22b201cb9a089cd3d38184dc7a62c7939.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/linkwarden/linkwarden",
+          "repo_id": "479657569",
+          "source_path": "",
+          "source_revision": "README-SHA256:2813dd16022b0e23f9f2f19cbf216be22b201cb9a089cd3d38184dc7a62c7939",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/linkwarden/linkwarden",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tự host theo tài liệu hoặc dùng bản đám mây; app di động cần tài khoản (bài chưa đọc tài liệu nên không nêu lệnh). Miễn phí tự host; giấy phép lấy theo GitHub (AGPL-3.0); bản đám mây trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/linkwarden/linkwarden/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/linkwarden/linkwarden/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "linkwarden/linkwarden",
+        "stars": 20303,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/linkwarden/linkwarden/main/README.md",
+        "readmeSha256": "2813dd16022b0e23f9f2f19cbf216be22b201cb9a089cd3d38184dc7a62c7939",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 455,
+      "batch": 77,
+      "slug": "karakeep",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Karakeep (trước là Hoarder): ứng dụng tự host lưu mọi thứ (liên kết, ghi chú, ảnh, PDF) với gắn thẻ và tóm tắt bằng LLM, hỗ trợ mô hình cục bộ qua ollama",
+        "excerpt": "Hiểu Karakeep (trước là Hoarder) là ứng dụng tự host để lưu liên kết, ghi chú, ảnh và PDF, có tìm kiếm toàn văn và ngữ nghĩa, tự gắn thẻ và tóm tắt bằng LLM (có thể dùng mô hình cục bộ qua ollama), OCR, lưu trọn trang chống link rot và lưu video bằng yt-dlp. README có tài liệu về bảo mật và demo chỉ đọc.",
+        "content": "<p>README tả Karakeep (trước đây là Hoarder) là ứng dụng tự host lưu mọi thứ, thêm chút AI cho người thích tích trữ dữ liệu. Tính năng nêu: lưu liên kết, ghi chú, ảnh và PDF, tự lấy tiêu đề, mô tả và ảnh, danh sách và cộng tác, tìm kiếm toàn văn và ngữ nghĩa, gắn thẻ và tóm tắt dựa trên LLM (hỗ trợ mô hình cục bộ với ollama), thân thiện với các agent LLM qua CLI và kỹ năng chính thức, bộ quy tắc, OCR, tiện ích Chrome, Firefox, Safari, app iOS và Android, đọc ngoại tuyến, tự thu thập từ RSS, REST API, đa ngôn ngữ, đánh dấu nội dung, lưu cả trang bằng monolith, tự lưu video bằng yt-dlp, SSO, nhập từ Chrome, Pocket, Linkwarden, Omnivore. Mục tài liệu có cài đặt Docker, cấu hình, ảnh chụp, cân nhắc bảo mật và phát triển. README có bản demo chỉ đọc và cung cấp tài khoản demo công khai. Giấy phép AGPL-3.0, sở hữu bởi Localhost Labs Ltd theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Karakeep là chỗ bạn ném mọi thứ muốn nhớ: link, ghi chú, ảnh. AI giúp tự gắn thẻ và tóm tắt, bạn không phải tự phân loại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng trang demo chỉ đọc để xem giao diện, rồi tự host thử trên máy cá nhân. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Tự host bằng Docker và cấu hình LLM (hoặc mô hình cục bộ) cần kiến thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tính năng AI gửi nội dung bạn lưu tới nhà cung cấp LLM (trừ khi dùng mô hình cục bộ): cân nhắc dữ liệu nhạy cảm (nhận định chung, README nêu cả hai lựa chọn). Lưu video bằng yt-dlp có thể vi phạm bản quyền hay điều khoản trang. README có mục Security Considerations; hãy đọc trước khi mở ra Internet. Trang demo dùng tài khoản công khai, không đưa dữ liệu thật vào.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM tagging (gắn thẻ bằng LLM)</strong>: mô hình ngôn ngữ tự đề xuất thẻ; README nêu.</li><li><strong>ollama</strong>: công cụ chạy mô hình AI cục bộ; README nêu hỗ trợ.</li><li><strong>OCR</strong>: nhận dạng chữ trong ảnh; README nêu.</li><li><strong>semantic search (tìm theo nghĩa)</strong>: tìm theo ý chứ không chỉ từ khóa; README nêu.</li><li><strong>link rot / archival</strong>: mất liên kết theo thời gian và lưu lại bản sao; README nêu lưu trọn trang.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng Docker theo tài liệu; có app di động và tiện ích trình duyệt (bài chưa đọc tài liệu nên không nêu lệnh). Cần Docker; AI cần khóa API hoặc ollama. Miễn phí theo giấy phép AGPL-3.0; chi phí dịch vụ LLM tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử trang demo chỉ đọc.</li><li>Đọc Security Considerations.</li><li>Tự host và cân nhắc dùng ollama thay vì dịch vụ ngoài.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một chỗ lưu link và ghi chú có AI tự gắn thẻ. Hãy đọc README của Karakeep (https://github.com/karakeep-app/karakeep) và giải thích bằng tiếng Việt: tính năng chính, khi nào dữ liệu gửi cho dịch vụ AI bên ngoài, và cách dùng mô hình cục bộ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc có tài khoản demo công khai mà bài không chép. Lưu ý bản quyền video là nguyên tắc chung của bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>karakeep-app</strong> có <strong>30.260 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README mục License ghi AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/karakeep-app/karakeep/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/karakeep-app/karakeep\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 455. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30260; repo_id 753589979; README SHA256 68e769d2d94115a9db7280cf99e61c753e7dd8f856a373d8e64c154da4d7778f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/karakeep-app/karakeep",
+          "repo_id": "753589979",
+          "source_path": "",
+          "source_revision": "README-SHA256:68e769d2d94115a9db7280cf99e61c753e7dd8f856a373d8e64c154da4d7778f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/karakeep-app/karakeep",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng Docker theo tài liệu; có app di động và tiện ích trình duyệt (bài chưa đọc tài liệu nên không nêu lệnh). Cần Docker; AI cần khóa API hoặc ollama. Miễn phí theo giấy phép AGPL-3.0; chi phí dịch vụ LLM tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/karakeep-app/karakeep/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/karakeep-app/karakeep/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "karakeep-app/karakeep",
+        "stars": 30260,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/karakeep-app/karakeep/main/README.md",
+        "readmeSha256": "68e769d2d94115a9db7280cf99e61c753e7dd8f856a373d8e64c154da4d7778f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 456,
+      "batch": 77,
+      "slug": "silverbullet",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SilverBullet: cơ sở tri thức cá nhân trên trình duyệt, ghi chú Markdown có thể lập trình bằng Lua, tự host",
+        "excerpt": "Hiểu SilverBullet là cơ sở tri thức cá nhân mã nguồn mở, tự host, chạy trên trình duyệt, có thể lập trình bằng Lua: soạn Markdown trực tiếp, liên kết kiểu wiki hai chiều, cơ sở dữ liệu và ngôn ngữ truy vấn tích hợp. README cho thấy cấu trúc mã nguồn và yêu cầu phát triển Node.js 24+ và Rust.",
+        "content": "<p>README định nghĩa SilverBullet là cơ sở tri thức cá nhân lập trình được, riêng tư, trên trình duyệt, mã nguồn mở, tự host, tức 'ứng dụng ghi chú tăng lực', và nói đây là trình soạn Markdown trên trình duyệt có thể lập trình bằng Lua. SilverBullet kết hợp trình soạn có xem trước trực tiếp, liên kết kiểu wiki hai chiều, cơ sở dữ liệu và ngôn ngữ truy vấn tích hợp, cùng môi trường viết tập lệnh Space Lua. Nội dung là tập các trang Markdown (một Space), điều hướng bằng Page Picker hoặc liên kết. Có công cụ cho người viết, người làm dàn ý, người làm việc (Tasks), người thích cơ sở dữ liệu và người thích lập trình (tạo nội dung động, lệnh, mẫu trang, widget bằng Space Lua). Cài đặt theo tài liệu. Phần phát triển: client viết bằng TypeScript trên CodeMirror 6 và Preact, backend viết bằng Rust phục vụ gói client, API tệp, xác thực và môi trường Chrome không giao diện cho Lua phía máy chủ; yêu cầu Node.js 24+, npm 10+ và Rust. README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu ghi chú Markdown thông thường chưa đủ, SilverBullet cho bạn tự động hóa: tạo trang tổng hợp, truy vấn ghi chú như cơ sở dữ liệu và viết lệnh riêng bằng Lua.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo vài trang liên kết hai chiều rồi thử một truy vấn danh sách việc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự quản lý ghi chú, việc cần làm và tư liệu trên máy hoặc máy chủ của mình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần quen Markdown; phần lập trình Lua và tự host cần kiến thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói phía máy chủ dùng môi trường Chrome không giao diện cho Lua phía server: thêm thành phần cần cập nhật và bảo mật, bài chưa kiểm tra. Tập lệnh Lua chạy trong ứng dụng của bạn; chỉ dùng tập lệnh bạn hiểu. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Space</strong>: tập các trang Markdown của bạn; README nêu.</li><li><strong>bi-directional link (liên kết hai chiều)</strong>: trang nào trỏ tới trang này cũng hiện ra; README nêu.</li><li><strong>Lua</strong>: ngôn ngữ lập trình nhẹ; README nêu Space Lua.</li><li><strong>live preview (xem trước trực tiếp)</strong>: thấy kết quả định dạng ngay khi gõ; README nêu.</li><li><strong>Cargo workspace</strong>: cách tổ chức dự án Rust; README nêu cho backend.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Phát triển cần Node.js 24+, npm 10+ và Rust. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu cài đặt.</li><li>Thử vài trang Markdown trước khi viết Lua.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thích ghi chú Markdown và muốn tự động hóa. Hãy đọc README của SilverBullet (https://github.com/silverbulletmd/silverbullet) và giải thích bằng tiếng Việt: Space và Space Lua là gì, ai nên dùng, và rủi ro khi chạy tập lệnh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub); phần lớn README là cấu trúc mã cho nhà phát triển. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host chứa dữ liệu cá nhân hoặc công việc: đổi mật khẩu mặc định, đặt sau đăng nhập và kết nối mã hóa, sao lưu đều đặn, và cập nhật bản vá bảo mật; đừng mở ra Internet khi chưa hiểu cấu hình.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>silverbulletmd</strong> có <strong>6.451 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/silverbulletmd/silverbullet/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/silverbulletmd/silverbullet\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 456. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6451; repo_id 459944886; README SHA256 29806b792de1b6a449f794869a342f542e4599de358046b5b7172ecd404dffdb.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/silverbulletmd/silverbullet",
+          "repo_id": "459944886",
+          "source_path": "",
+          "source_revision": "README-SHA256:29806b792de1b6a449f794869a342f542e4599de358046b5b7172ecd404dffdb",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/silverbulletmd/silverbullet",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Phát triển cần Node.js 24+, npm 10+ và Rust. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/silverbulletmd/silverbullet/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/silverbulletmd/silverbullet/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "silverbulletmd/silverbullet",
+        "stars": 6451,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/silverbulletmd/silverbullet/main/README.md",
+        "readmeSha256": "29806b792de1b6a449f794869a342f542e4599de358046b5b7172ecd404dffdb",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -6373,5 +6373,171 @@
    "listmonk",
    "saleor"
   ]
+ },
+ {
+  "key": 450,
+  "slug": "vikunja",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "Vikunja: ứng dụng quản lý công việc tự host, README nêu bản đám mây và bản Pro trả phí, và nói dự án dùng công cụ lập trình có LLM hỗ trợ",
+  "repo": "go-vikunja/vikunja",
+  "stars": 5946,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "memos",
+   "trilium"
+  ]
+ },
+ {
+  "key": 451,
+  "slug": "trilium",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "Trilium Notes: ứng dụng ghi chú phân cấp mã nguồn mở xây kho tri thức cá nhân lớn, có mã hóa từng ghi chú, đồng bộ qua máy chủ tự host và tập lệnh",
+  "repo": "TriliumNext/Trilium",
+  "stars": 38675,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "bookstack",
+   "vikunja"
+  ]
+ },
+ {
+  "key": 452,
+  "slug": "bookstack",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "BookStack: nền tảng lưu trữ và tổ chức tài liệu, quan điểm rõ ràng, dễ dùng; README nói repo chính đặt ở Codeberg",
+  "repo": "BookStackApp/BookStack",
+  "stars": 19125,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "linkwarden",
+   "trilium"
+  ]
+ },
+ {
+  "key": 453,
+  "slug": "memos",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "Memos: ứng dụng ghi chú tự host cho suy nghĩ hằng ngày, dòng thời gian cá nhân, Markdown, chia sẻ có kiểm soát",
+  "repo": "usememos/memos",
+  "stars": 64241,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "vikunja"
+  ]
+ },
+ {
+  "key": 454,
+  "slug": "linkwarden",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "Linkwarden: trình quản lý dấu trang cộng tác tự host, lưu bản sao trang (ảnh chụp, PDF, HTML) để chống link rot, có gắn thẻ bằng AI cục bộ tùy chọn",
+  "repo": "linkwarden/linkwarden",
+  "stars": 20303,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-10-26",
+  "related": [
+   "bookstack",
+   "karakeep"
+  ]
+ },
+ {
+  "key": 455,
+  "slug": "karakeep",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "Karakeep (trước là Hoarder): ứng dụng tự host lưu mọi thứ (liên kết, ghi chú, ảnh, PDF) với gắn thẻ và tóm tắt bằng LLM, hỗ trợ mô hình cục bộ qua ollama",
+  "repo": "karakeep-app/karakeep",
+  "stars": 30260,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "linkwarden",
+   "silverbullet"
+  ]
+ },
+ {
+  "key": 456,
+  "slug": "silverbullet",
+  "group": "2026-11-03-tu-host-ghi-chu",
+  "title": "SilverBullet: cơ sở tri thức cá nhân trên trình duyệt, ghi chú Markdown có thể lập trình bằng Lua, tự host",
+  "repo": "silverbulletmd/silverbullet",
+  "stars": 6451,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "karakeep"
+  ]
  }
 ]

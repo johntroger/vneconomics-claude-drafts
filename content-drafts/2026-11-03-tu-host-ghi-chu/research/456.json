@@ -1,0 +1,43 @@
+{
+  "key": 456,
+  "repo": "silverbulletmd/silverbullet",
+  "repoId": "459944886",
+  "url": "https://github.com/silverbulletmd/silverbullet",
+  "stars": 6451,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:34:28Z",
+  "createdAt": "2022-02-16T09:56:34Z",
+  "defaultBranch": "main",
+  "description": "The malleable knowledge base for you and your team. Powered by Markdown and Lua.",
+  "homepage": "https://silverbullet.md",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/silverbulletmd/silverbullet/main/README.md",
+    "sha256": "29806b792de1b6a449f794869a342f542e4599de358046b5b7172ecd404dffdb",
+    "bytes": 5857,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installing SilverBullet",
+      "Developing SilverBullet",
+      "Code structure",
+      "Requirements"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.silverbullet.md.",
+    "Chưa thử.",
+    "Chưa kiểm tra độ ổn định của backend Rust."
+  ],
+  "runtimeValidated": false
+}

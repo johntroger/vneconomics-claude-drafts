@@ -1,0 +1,44 @@
+{
+  "key": 452,
+  "repo": "BookStackApp/BookStack",
+  "repoId": "41589337",
+  "url": "https://github.com/BookStackApp/BookStack",
+  "stars": 19125,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:31:22Z",
+  "createdAt": "2015-08-29T10:26:44Z",
+  "defaultBranch": "development",
+  "description": "NOW MANAGED ON CODEBERG",
+  "homepage": "https://codeberg.org/bookstack/bookstack",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/BookStackApp/BookStack/development/readme.md",
+    "sha256": "627585ac4c2e3c00c0f72ecfd1694c1b8084311c8dcee79c47feac795ebfd26b",
+    "bytes": 15147,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Project Definition",
+      "Development & Testing",
+      "Contributing",
+      "Security",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu bookstackapp.com.",
+    "Chưa thử.",
+    "Kho chính (GitHub hay Codeberg) chưa xác nhận."
+  ],
+  "runtimeValidated": false
+}

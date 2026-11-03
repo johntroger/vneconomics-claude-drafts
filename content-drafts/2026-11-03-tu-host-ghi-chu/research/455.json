@@ -1,0 +1,43 @@
+{
+  "key": 455,
+  "repo": "karakeep-app/karakeep",
+  "repoId": "753589979",
+  "url": "https://github.com/karakeep-app/karakeep",
+  "stars": 30260,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T01:44:10Z",
+  "createdAt": "2024-02-06T12:28:31Z",
+  "defaultBranch": "main",
+  "description": "A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging and full text search",
+  "homepage": "https://karakeep.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/karakeep-app/karakeep/main/README.md",
+    "sha256": "68e769d2d94115a9db7280cf99e61c753e7dd8f856a373d8e64c154da4d7778f",
+    "bytes": 8737,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Documentation",
+      "Demo",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.karakeep.com.",
+    "Chưa thử.",
+    "Chi phí dịch vụ LLM chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
