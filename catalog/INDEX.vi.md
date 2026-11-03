@@ -47,6 +47,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 45 — Kiểm thử API, tải và giả lập](learning-paths/45-kiem-thu-api-va-hieu-nang.vi.md) — Từ API giả để làm giao diện trước, đến kiểm thử bằng tệp chữ hay kịch bản, và thử tải; chỉ thử trên hệ thống của bạn.
 - [Lộ trình 46 — Dữ liệu, thông điệp và quan sát ở quy mô lớn](learning-paths/46-du-lieu-thoi-gian-thuc-va-hang-doi.vi.md) — Lập lịch trong cơ sở dữ liệu, PostgreSQL trọn gói, thông điệp, luồng sự kiện, phân tích và thu thập dữ liệu quan sát; đây là chủ đề khó, dành cho khi dự án đã đủ lớn.
 - [Lộ trình 47 — Làm quen các ngôn ngữ lập trình thường gặp](learning-paths/47-ngon-ngu-lap-trinh.vi.md) — Hiểu một số ngôn ngữ để đọc mã do AI viết; README nhiều kho dành cho người dựng ngôn ngữ nên cần tài liệu chính thức để học.
+- [Lộ trình 48 — Framework web phía máy chủ](learning-paths/48-framework-web-may-chu.vi.md) — Từ framework trọn gói đến framework nhẹ cho API; README nhiều dự án rất ngắn nên cần đọc tài liệu chính thức.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -102,7 +103,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (120 bài)
+### Cơ bản (124 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -226,6 +227,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 363 | Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu | [simonw/datasette](https://github.com/simonw/datasette) | Apache-2.0 | 11537 | agent-lap-trinh-va-cli-ai |
 | 383 | Dart: ngôn ngữ dễ tiếp cận, di động và năng suất cho ứng dụng chất lượng cao, biên dịch ra mã gốc hoặc JavaScript và WebAssembly | [dart-lang/sdk](https://github.com/dart-lang/sdk) | BSD-3-Clause | 11331 | ngon-ngu-lap-trinh |
 | 384 | PHP: ngôn ngữ kịch bản phổ biến cho phát triển web, kho php-src là trình thông dịch với hướng dẫn dựng và kiểm thử | [php/php-src](https://github.com/php/php-src) | BSD-3-Clause | 41758 | ngon-ngu-lap-trinh |
+| 386 | Ruby on Rails: framework web trọn gói theo mô hình MVC, có sẵn mọi thứ để dựng ứng dụng gắn cơ sở dữ liệu | [rails/rails](https://github.com/rails/rails) | MIT | 58846 | framework-web-may-chu |
+| 387 | Laravel: framework web PHP với cú pháp biểu cảm, định tuyến, hàng đợi và phát sóng sự kiện; kho này chỉ chứa lõi framework | [laravel/framework](https://github.com/laravel/framework) | MIT | 34987 | framework-web-may-chu |
+| 390 | Fastify: framework web Node.js tập trung vào hiệu quả, mở rộng bằng hook, plugin và decorator, khuyến khích kiểm tra bằng JSON Schema | [fastify/fastify](https://github.com/fastify/fastify) | MIT | 37336 | framework-web-may-chu |
+| 391 | Gin: framework web Go hiệu năng cao với API kiểu Martini, README nêu yêu cầu phiên bản Go và con số hiệu năng của tác giả | [gin-gonic/gin](https://github.com/gin-gonic/gin) | MIT | 89472 | framework-web-may-chu |
 
 ### Khá khó (cần nền kỹ thuật) (33 bài)
 
@@ -265,7 +270,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 368 | Hurl: chạy và kiểm thử yêu cầu HTTP viết trong tệp chữ đơn giản, nối yêu cầu và kiểm tra phản hồi bằng dòng lệnh | [Orange-OpenSource/hurl](https://github.com/Orange-OpenSource/hurl) | Apache-2.0 | 19295 | kiem-thu-api-va-hieu-nang |
 | 382 | Crystal: ngôn ngữ cú pháp gần Ruby, kiểm tra kiểu tĩnh mà không phải ghi kiểu khắp nơi, biên dịch ra mã gốc | [crystal-lang/crystal](https://github.com/crystal-lang/crystal) | Apache-2.0 | 20481 | ngon-ngu-lap-trinh |
 
-### Nâng cao (88 bài)
+### Nâng cao (90 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -357,6 +362,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 380 | Elixir: ngôn ngữ lập trình để xây ứng dụng mở rộng và dễ bảo trì, README nhấn mạnh chính sách xử lý issue | [elixir-lang/elixir](https://github.com/elixir-lang/elixir) | Apache-2.0 | 26701 | ngon-ngu-lap-trinh |
 | 381 | Julia: ngôn ngữ động hiệu năng cao cho tính toán kỹ thuật, README có hướng dẫn cài và dựng từ mã nguồn | [JuliaLang/julia](https://github.com/JuliaLang/julia) | MIT | 49236 | ngon-ngu-lap-trinh |
 | 385 | Swift: ngôn ngữ lập trình hệ thống hiệu năng cao với cú pháp hiện đại và an toàn bộ nhớ theo mặc định, README dành cho người dựng | [swiftlang/swift](https://github.com/swiftlang/swift) | Apache-2.0 | 70525 | ngon-ngu-lap-trinh |
+| 388 | Spring Boot: dựng ứng dụng Spring sẵn sàng sản xuất với rất ít cấu hình, chạy như ứng dụng Java độc lập hay WAR | [spring-projects/spring-boot](https://github.com/spring-projects/spring-boot) | Apache-2.0 | 81734 | framework-web-may-chu |
+| 389 | Phoenix: framework web của Elixir, 'yên tâm từ nguyên mẫu đến sản xuất', README có cách tạo dự án từ bản chưa phát hành | [phoenixframework/phoenix](https://github.com/phoenixframework/phoenix) | MIT | 23212 | framework-web-may-chu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

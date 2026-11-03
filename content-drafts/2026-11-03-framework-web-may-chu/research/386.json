@@ -1,0 +1,38 @@
+{
+  "key": 386,
+  "repo": "rails/rails",
+  "repoId": "8514",
+  "url": "https://github.com/rails/rails",
+  "stars": 58846,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:11:43Z",
+  "createdAt": "2008-04-11T02:19:47Z",
+  "defaultBranch": "main",
+  "description": "Ruby on Rails",
+  "homepage": "https://rubyonrails.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/rails/rails/main/README.md",
+    "sha256": "e02213e78427746cdd109ae43b86b25a9428399f624efde91f72e96526480fa5",
+    "bytes": 4786,
+    "sectionsRead": [
+      "What's Rails?",
+      "Model layer",
+      "View layer",
+      "Controller layer",
+      "Getting Started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc guides.rubyonrails.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Django hay Laravel."
+  ],
+  "runtimeValidated": false
+}

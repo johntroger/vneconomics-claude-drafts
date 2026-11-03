@@ -1,0 +1,36 @@
+{
+  "key": 388,
+  "repo": "spring-projects/spring-boot",
+  "repoId": "6296790",
+  "url": "https://github.com/spring-projects/spring-boot",
+  "stars": 81734,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:33:13Z",
+  "createdAt": "2012-10-19T15:02:57Z",
+  "defaultBranch": "main",
+  "description": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss.",
+  "homepage": "https://spring.io/projects/spring-boot",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/spring-projects/spring-boot/main/README.adoc",
+    "sha256": "05a1bce942de45a7ddb341f1af1dc95e77ed8d1567b7d6c8410f200d6da407ea",
+    "bytes": 5279,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Our primary goals",
+      "Installation and Getting Started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.spring.io.",
+    "Chưa thử.",
+    "Chưa so sánh với framework khác."
+  ],
+  "runtimeValidated": false
+}
