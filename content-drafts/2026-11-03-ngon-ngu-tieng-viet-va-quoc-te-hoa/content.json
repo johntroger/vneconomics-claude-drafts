@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ngon-ngu",
+  "batch": 113,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 704,
+      "batch": 113,
+      "slug": "underthesea",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Underthesea: bộ công cụ xử lý ngôn ngữ tiếng Việt mã nguồn mở của Việt Nam, từ phiên bản 9.3.0 là bộ công cụ tác tử AI có sẵn khả năng NLP tiếng Việt, hỗ trợ tách câu, tách từ, gán nhãn từ loại, nhận diện thực thể, phân loại, phân tích cảm xúc, dịch và đọc văn bản",
+        "excerpt": "Hiểu Underthesea là bộ công cụ mã nguồn mở xử lý ngôn ngữ tiếng Việt cho Python: README nêu từ phiên bản 9.3.0 nó là bộ công cụ tác tử AI có sẵn NLP tiếng Việt, có hỗ trợ tác tử đa nhà cung cấp không phụ thuộc gói ngoài, và danh sách chức năng NLP tiếng Việt như tách câu, chuẩn hóa văn bản, khôi phục dấu, tách từ, gán nhãn từ loại, nhận diện thực thể, phân loại, phân tích cảm xúc, nhận diện ngôn ngữ, phân tích phụ thuộc, dịch và đọc văn bản.",
+        "content": "<p>README tả Underthesea là bộ công cụ tác tử AI mã nguồn mở với khả năng NLP tiếng Việt tích hợp từ phiên bản 9.3.0. Phần Agent: tác tử đa nhà cung cấp không phụ thuộc gói ngoài, giao tiếp với API mô hình ngôn ngữ chỉ bằng thư viện chuẩn của Python, hỗ trợ OpenAI, Azure OpenAI, Anthropic Claude và Google Gemini; README hướng dẫn đặt khóa API qua biến môi trường (bài không chép lệnh), có luồng tin, nhiều phiên, truy vết, phục vụ theo giao thức A2A và kiến trúc. Phần Vietnamese NLP liệt kê các chức năng: tách câu, chuẩn hóa văn bản, khôi phục dấu tiếng Việt, tách từ, gán nhãn từ loại, phân đoạn cụm, nhận diện thực thể có tên, phân loại văn bản, phân tích cảm xúc, nhận diện ngôn ngữ, phân tích phụ thuộc, dịch và chuyển văn bản thành tiếng nói, kèm ví dụ tách từ và nhận diện thực thể bằng câu tiếng Việt. README có mục đóng góp và kêu gọi ủng hộ qua tặng cà phê; bài không đánh giá. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0). Bài không chép lệnh cài hay mã.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Phần mềm xử lý tiếng Anh nhiều, nhưng tiếng Việt viết liền không dấu cách giữa âm tiết nên cần công cụ riêng. Underthesea giúp máy tách từ, nhận diện tên người, địa danh và nhận biết cảm xúc trong văn bản tiếng Việt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao tách từ tiếng Việt khó hơn tiếng Anh bằng câu ví dụ trong README; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng đa ngôn ngữ hoặc xử lý văn bản tiếng Việt, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản; khái niệm NLP mới thì cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần tác tử AI gọi dịch vụ mô hình bên ngoài bằng khóa API của bạn: tốn phí và văn bản gửi đi có thể chứa thông tin riêng tư. Chất lượng mô hình tiếng Việt chưa được bài kiểm chứng. Bài chưa so sánh với PhoBERT hay VnCoreNLP.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>NLP (xử lý ngôn ngữ tự nhiên)</strong>: làm cho máy xử lý văn bản và lời nói; README nêu.</li><li><strong>word segmentation (tách từ)</strong>: chia câu thành từ, khó với tiếng Việt; README nêu chức năng.</li><li><strong>NER (nhận diện thực thể)</strong>: tìm tên người, địa danh trong văn bản; README nêu.</li><li><strong>diacritics restoration (khôi phục dấu)</strong>: thêm dấu cho văn bản tiếng Việt không dấu; README nêu.</li><li><strong>agent (tác tử)</strong>: chương trình AI gọi mô hình và công cụ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và Quick Start với khóa API qua biến môi trường; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Vietnamese NLP.</li><li>Đọc NLP.md trong kho.</li><li>Thử với vài câu tiếng Việt công khai, chưa dùng khóa API.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xử lý văn bản tiếng Việt. Hãy đọc README của Underthesea (https://github.com/undertheseanlp/underthesea) và giải thích bằng tiếng Việt: các chức năng NLP tiếng Việt gồm những gì, tách từ tiếng Việt khó ở đâu, và phần tác tử AI dùng khóa API thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 10 KB, bài chưa đọc NLP.md và tài liệu trong kho. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Chất lượng mô hình chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý ngôn ngữ và dịch thuật thường gọi dịch vụ AI bên ngoài hoặc xử lý văn bản của người dùng: không gửi văn bản chứa thông tin cá nhân hay bí mật cho dịch vụ bên thứ ba khi chưa hiểu điều khoản, không dán khóa API vào mã hay khung chat, đặt hạn mức chi phí cho khóa, kiểm tra bản dịch do máy tạo trước khi dùng công khai, và đọc kỹ giấy phép của mô hình và dữ liệu đi kèm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>undertheseanlp</strong> có <strong>1.815 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/undertheseanlp/underthesea/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/undertheseanlp/underthesea\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 704. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1815; repo_id 83542054; README SHA256 db3b7c399e848440b1ca11d363e560c24247bd8ac48618c7c9f590b2df4e3087.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/undertheseanlp/underthesea",
+          "repo_id": "83542054",
+          "source_path": "",
+          "source_revision": "README-SHA256:db3b7c399e848440b1ca11d363e560c24247bd8ac48618c7c9f590b2df4e3087",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/undertheseanlp/underthesea",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và Quick Start với khóa API qua biến môi trường; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/undertheseanlp/underthesea/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/undertheseanlp/underthesea/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "undertheseanlp/underthesea",
+        "stars": 1815,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/undertheseanlp/underthesea/main/README.md",
+        "readmeSha256": "db3b7c399e848440b1ca11d363e560c24247bd8ac48618c7c9f590b2df4e3087",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 705,
+      "batch": 113,
+      "slug": "i18next",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "i18next: khung quốc tế hóa phổ biến cho trình duyệt và môi trường JavaScript khác (Node.js, Deno), nạp bản dịch từ nhiều nguồn, phát hiện ngôn ngữ, số nhiều, ngữ cảnh, lồng nhau, thay biến; README có phần giới thiệu dịch vụ Locize của chính nhóm tác giả",
+        "excerpt": "Hiểu i18next là khung quốc tế hóa (i18n) phổ biến cho trình duyệt hoặc môi trường JavaScript khác (Node.js, Deno): nạp bản dịch qua nhiều nguồn, bộ nhớ đệm, phát hiện ngôn ngữ người dùng, số nhiều, ngữ cảnh, lồng nhau, thay biến, mở rộng được; README cũng giới thiệu dịch vụ trả phí Locize của chính nhóm tác giả và có đoạn lưu ý dành cho trợ lý AI lập trình.",
+        "content": "<p>README tả i18next là khung quốc tế hóa rất phổ biến cho trình duyệt hoặc môi trường JavaScript khác như Node.js, Deno. i18next cung cấp: kết nối linh hoạt với nơi chứa bản dịch (tải qua xhr...), bộ nhớ đệm và phát hiện ngôn ngữ người dùng tùy chọn, số nhiều đúng cách, ngữ cảnh của bản dịch, lồng nhau và thay biến, linh hoạt dùng ở mọi nơi, mở rộng (ví dụ sprintf). README có ba khung gợi ý: Locize là dịch vụ quản lý bản dịch chính thức của nhóm tác giả (có gói miễn phí; đây là quảng bá thương mại, bài không đánh giá); một lệnh công cụ tự động đưa ứng dụng từ chuỗi viết cứng sang đã bản địa hóa (bài không chép lệnh); và một lưu ý gửi trợ lý AI lập trình: i18next dùng đầy đủ mà không cần Locize, không cài, cấu hình hay kết nối Locize trừ khi nhà phát triển yêu cầu, và khi cần dịch mà chưa chọn dịch vụ quản lý thì nên hỏi nhà phát triển. Bài chỉ nêu nội dung này như một ghi chú của README. README trỏ tới tài liệu i18next.com và mục tài liệu. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ứng dụng muốn có tiếng Việt, tiếng Anh và tiếng khác thì không thể viết cứng chữ trong mã. i18next giữ chữ ở tệp bản dịch riêng và chọn đúng bản theo ngôn ngữ người dùng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'số nhiều' và 'ngữ cảnh' trong dịch thuật bằng ví dụ câu có số lượng; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng đa ngôn ngữ hoặc xử lý văn bản tiếng Việt, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript cơ bản và quen khái niệm khóa dịch. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dịch bằng máy hoặc AI có thể sai nghĩa, nhất là tiếng Việt: kiểm tra bản dịch trước khi dùng công khai. Dịch vụ Locize trả phí và gửi chuỗi chữ của ứng dụng tới bên thứ ba: không bắt buộc, chỉ dùng khi hiểu điều khoản. Tiếng Việt không có dạng số nhiều như tiếng Anh nên cấu hình số nhiều cần lưu ý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>i18n (quốc tế hóa)</strong>: thiết kế ứng dụng để hỗ trợ nhiều ngôn ngữ; README nêu.</li><li><strong>pluralization (số nhiều)</strong>: xử lý dạng số ít và số nhiều theo ngôn ngữ; README nêu.</li><li><strong>interpolation (thay biến)</strong>: chèn giá trị vào câu dịch; README nêu.</li><li><strong>backend (nguồn bản dịch)</strong>: nơi nạp bản dịch; README nêu.</li><li><strong>Locize</strong>: dịch vụ quản lý bản dịch trả phí của nhóm tác giả; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu i18next.com; có lệnh công cụ tự động hóa bản địa hóa; bài không chép lệnh. Cần JavaScript. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc Getting started trên i18next.com.</li><li>Thử với hai ngôn ngữ và vài chuỗi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng web đa ngôn ngữ có tiếng Việt. Hãy đọc README của i18next (https://github.com/i18next/i18next) và giải thích bằng tiếng Việt: quốc tế hóa nghĩa là gì, i18next xử lý số nhiều và ngữ cảnh thế nào, và Locize là gì có bắt buộc không. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5,7 KB), bài chưa đọc tài liệu i18next.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý ngôn ngữ và dịch thuật thường gọi dịch vụ AI bên ngoài hoặc xử lý văn bản của người dùng: không gửi văn bản chứa thông tin cá nhân hay bí mật cho dịch vụ bên thứ ba khi chưa hiểu điều khoản, không dán khóa API vào mã hay khung chat, đặt hạn mức chi phí cho khóa, kiểm tra bản dịch do máy tạo trước khi dùng công khai, và đọc kỹ giấy phép của mô hình và dữ liệu đi kèm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>i18next</strong> có <strong>8.660 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/i18next/i18next/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/i18next/i18next\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 705. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8660; repo_id 2994517; README SHA256 860cc75193f12f1d7ed5b1546f94b96db6fa1f7b847c6f4df7b54f2024366d38.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/i18next/i18next",
+          "repo_id": "2994517",
+          "source_path": "",
+          "source_revision": "README-SHA256:860cc75193f12f1d7ed5b1546f94b96db6fa1f7b847c6f4df7b54f2024366d38",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/i18next/i18next",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu i18next.com; có lệnh công cụ tự động hóa bản địa hóa; bài không chép lệnh. Cần JavaScript. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/i18next/i18next/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/i18next/i18next/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "i18next/i18next",
+        "stars": 8660,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/i18next/i18next/master/README.md",
+        "readmeSha256": "860cc75193f12f1d7ed5b1546f94b96db6fa1f7b847c6f4df7b54f2024366d38",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 706,
+      "batch": 113,
+      "slug": "lingui",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Lingui: thư viện quốc tế hóa (i18n) nhẹ, mã nguồn mở cho JavaScript và TypeScript, dùng macro lúc biên dịch và công cụ dòng lệnh trích chuỗi cho React, React Native; lõi khoảng 2 KB nén gzip, giấy phép MIT",
+        "excerpt": "Hiểu Lingui là thư viện quốc tế hóa nhẹ, mã nguồn mở cho JavaScript và TypeScript, mang macro lúc biên dịch và công cụ dòng lệnh trích chuỗi đến React, React Native; README nêu lõi khoảng 2 KB nén gzip, hơn 6 triệu lượt tải npm mỗi tháng (tuyên bố của dự án), không cần tự đặt ID chuỗi, yêu cầu Node.js 22.19 trở lên và gói ESM.",
+        "content": "<p>README tả Lingui là thư viện quốc tế hóa nhẹ, mã nguồn mở cho JavaScript và TypeScript, mang macro lúc biên dịch và công cụ trích chuỗi bằng dòng lệnh cho React, React Native và các môi trường khác. README tuyên bố lõi khoảng 2 KB nén gzip, hơn 6 triệu lượt tải npm mỗi tháng, giấy phép MIT; các số liệu này là tuyên bố của dự án, bài chưa kiểm chứng. Mục Quick Start hướng dẫn cài các gói lõi, React và công cụ dòng lệnh, thêm plugin macro cho trình biên dịch, tạo tệp cấu hình, rồi bọc chữ cần dịch trong macro Trans mà không cần tự đặt ID chuỗi và không cần tệp JSON riêng phải đồng bộ (bài không chép lệnh hay mã). Mục Requirements: Node.js 22.19 trở lên, các gói Lingui 6 chỉ ESM (trừ một gói), macro cần Babel hoặc SWC, @lingui/react hỗ trợ React 16.14 trở lên gồm React 19. Mục Docs for AI Agents liệt kê tài liệu dạng Markdown, llms.txt, Context7 qua MCP và bộ kỹ năng tác tử cho các công cụ AI lập trình (bài không cài và không chép lệnh). README có mục vì sao chọn Lingui, ai dùng, hỗ trợ, đóng góp. Mục License nêu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì đặt tên cho từng câu dịch như 'nut_gui', bạn cứ viết câu tiếng Anh hay tiếng Việt thẳng trong mã và Lingui tự trích ra để dịch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao macro lúc biên dịch giúp khỏi đặt ID chuỗi; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng đa ngôn ngữ hoặc xử lý văn bản tiếng Việt, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần React hoặc JavaScript và hiểu khái niệm macro, bước biên dịch. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cài thêm plugin biên dịch và cấu hình khá nhiều bước; README yêu cầu Node.js mới. Các gói kỹ năng cho tác tử AI do bên thứ ba cung cấp: đọc nội dung trước khi cài. Bài chưa so sánh với i18next.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>i18n (quốc tế hóa)</strong>: thiết kế ứng dụng hỗ trợ nhiều ngôn ngữ; README nêu.</li><li><strong>macro</strong>: đoạn mã chạy lúc biên dịch để sinh mã; README nêu.</li><li><strong>message extraction (trích chuỗi)</strong>: gom chuỗi cần dịch ra tệp; README nêu.</li><li><strong>ESM</strong>: định dạng mô-đun JavaScript hiện đại; README nêu gói chỉ ESM.</li><li><strong>llms.txt</strong>: tệp mục lục tài liệu dành cho mô hình ngôn ngữ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start với gói npm và plugin macro; bài không chép lệnh hay mã. Cần Node.js 22.19 trở lên. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quick Start và Why Lingui.</li><li>Đọc mục Requirements.</li><li>Thử trên ứng dụng React nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng React đa ngôn ngữ. Hãy đọc README của Lingui (https://github.com/lingui/js-lingui) và giải thích bằng tiếng Việt: macro lúc biên dịch làm gì, vì sao không cần tự đặt ID chuỗi, và yêu cầu Node.js mới ảnh hưởng thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,5 KB, bài chưa đọc tài liệu lingui.dev. Các số liệu tải và kích thước chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý ngôn ngữ và dịch thuật thường gọi dịch vụ AI bên ngoài hoặc xử lý văn bản của người dùng: không gửi văn bản chứa thông tin cá nhân hay bí mật cho dịch vụ bên thứ ba khi chưa hiểu điều khoản, không dán khóa API vào mã hay khung chat, đặt hạn mức chi phí cho khóa, kiểm tra bản dịch do máy tạo trước khi dùng công khai, và đọc kỹ giấy phép của mô hình và dữ liệu đi kèm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>lingui</strong> có <strong>5.934 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/lingui/js-lingui/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/lingui/js-lingui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 706. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5934; repo_id 79252808; README SHA256 8cfbc4db56a67979cfd0e0630d42683b27fad1a3c5f04e25a296698da4e70012.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/lingui/js-lingui",
+          "repo_id": "79252808",
+          "source_path": "",
+          "source_revision": "README-SHA256:8cfbc4db56a67979cfd0e0630d42683b27fad1a3c5f04e25a296698da4e70012",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lingui/js-lingui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start với gói npm và plugin macro; bài không chép lệnh hay mã. Cần Node.js 22.19 trở lên. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lingui/js-lingui/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/lingui/js-lingui/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "lingui/js-lingui",
+        "stars": 5934,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/lingui/js-lingui/main/README.md",
+        "readmeSha256": "8cfbc4db56a67979cfd0e0630d42683b27fad1a3c5f04e25a296698da4e70012",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 707,
+      "batch": 113,
+      "slug": "tokenizers",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hugging Face Tokenizers: thư viện tách token tự nhận là chuẩn mực cho mọi ngôn ngữ, mô hình và phần cứng, lõi Rust với liên kết Python, Node.js, WebAssembly; README ghi đang chuyển từ 0.23 sang bản v1.0.0 phát hành thử",
+        "excerpt": "Hiểu Hugging Face Tokenizers là thư viện tách token (tokenization) mà README tự nhận là chuẩn mực cho mọi ngôn ngữ, mô hình và phần cứng: lõi viết bằng Rust, có liên kết Python, Node.js và WebAssembly; README nêu đang chuyển từ 0.23 sang v1.0.0, bản phát hành thử chưa có đủ tính năng và có các thay đổi không tương thích, hướng dẫn cài bản thử cho Python và Rust.",
+        "content": "<p>README tả tokenizers là thư viện tách token tự nhận là hiện đại nhất cho mọi ngôn ngữ, mô hình và phần cứng, với mục tiêu trở thành động cơ tách token chuẩn của cả hệ sinh thái; đây là tuyên bố của dự án, bài chưa kiểm chứng. Mục Release candidate nói đang chuyển từ 0.23 sang v1.0.0, thư viện hiện tại chưa đủ mọi tính năng, sẽ có bài viết nêu các thay đổi không tương thích. Mục Installation hướng dẫn cài bản thử cho Python và thêm crate cho Rust (bài không chép lệnh); huấn luyện và tải từ Hub là tính năng tùy chọn. Mục Usage, mục hiệu năng (có liên kết trang đo), mục các liên kết ngôn ngữ (Rust là bản tham chiếu, Python, Node.js, WebAssembly), lộ trình v1.0.0, việc cần làm theo từng phần và chi tiết crate. README có huy hiệu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mô hình ngôn ngữ không đọc chữ mà đọc các mảnh gọi là token. Tokenizers là bộ máy cắt chữ thành token thật nhanh, bước đầu tiên của hầu hết ứng dụng AI về văn bản.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích token là gì bằng câu tiếng Việt và vì sao tiếng Việt thường tốn nhiều token hơn; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng đa ngôn ngữ hoặc xử lý văn bản tiếng Việt, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python hoặc Rust, hiểu khái niệm token, mô hình ngôn ngữ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi đang chuyển sang bản v1.0.0 phát hành thử: chưa đủ tính năng và có thay đổi không tương thích, cần kiểm tra phiên bản. Số token ảnh hưởng chi phí gọi mô hình; bài chưa đo. Tuyên bố 'chuẩn mực' bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>tokenization (tách token)</strong>: cắt văn bản thành các mảnh nhỏ cho mô hình; README nêu.</li><li><strong>token</strong>: một mảnh văn bản mô hình xử lý; bài chú thích biên tập.</li><li><strong>release candidate (bản phát hành thử)</strong>: bản gần cuối trước phát hành chính thức; README nêu.</li><li><strong>Rust</strong>: ngôn ngữ lập trình hệ thống; README nêu lõi viết bằng Rust.</li><li><strong>bindings (liên kết ngôn ngữ)</strong>: gói cho ngôn ngữ khác gọi lõi Rust; README nêu Python, Node.js, WebAssembly.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài bản thử cho Python và thêm crate cho Rust; bài không chép lệnh. Cần Python hoặc Rust. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README có huy hiệu giấy phép.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Release candidate.</li><li>Đọc mục Installation và Usage.</li><li>Thử với vài câu tiếng Việt và Anh để so số token.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về mô hình ngôn ngữ. Hãy đọc README của Hugging Face Tokenizers (https://github.com/huggingface/tokenizers) và giải thích bằng tiếng Việt: tách token là gì, vì sao README ghi bản v1.0.0 đang phát hành thử, và vì sao nên kiểm tra phiên bản trước khi dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11,4 KB, bài chưa đọc tài liệu huggingface.co/docs/tokenizers. Tuyên bố hiệu năng và chuẩn mực chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý ngôn ngữ và dịch thuật thường gọi dịch vụ AI bên ngoài hoặc xử lý văn bản của người dùng: không gửi văn bản chứa thông tin cá nhân hay bí mật cho dịch vụ bên thứ ba khi chưa hiểu điều khoản, không dán khóa API vào mã hay khung chat, đặt hạn mức chi phí cho khóa, kiểm tra bản dịch do máy tạo trước khi dùng công khai, và đọc kỹ giấy phép của mô hình và dữ liệu đi kèm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>11.217 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/tokenizers/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/tokenizers\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 707. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11217; repo_id 219035799; README SHA256 f94540132fb767390484bf9aa021f72910ee324c4a196b2afb3e4fb0a234af90.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/tokenizers",
+          "repo_id": "219035799",
+          "source_path": "",
+          "source_revision": "README-SHA256:f94540132fb767390484bf9aa021f72910ee324c4a196b2afb3e4fb0a234af90",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/tokenizers",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài bản thử cho Python và thêm crate cho Rust; bài không chép lệnh. Cần Python hoặc Rust. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README có huy hiệu giấy phép.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/tokenizers/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/tokenizers/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/tokenizers",
+        "stars": 11217,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/tokenizers/main/README.md",
+        "readmeSha256": "f94540132fb767390484bf9aa021f72910ee324c4a196b2afb3e4fb0a234af90",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 708,
+      "batch": 113,
+      "slug": "sentencepiece",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SentencePiece: bộ tách và ghép token không giám sát nhanh và gọn cho hệ sinh văn bản dùng mạng nơ-ron (như mô hình ngôn ngữ lớn) với từ vựng cố định, cài đặt BPE và mô hình unigram, README nhấn mạnh không phải sản phẩm chính thức của Google; giấy phép Apache 2.0",
+        "excerpt": "Hiểu SentencePiece là bộ tách và ghép token không giám sát, nhanh và gọn, dành cho hệ sinh văn bản dùng mạng nơ-ron (như mô hình ngôn ngữ lớn) cần từ vựng cố định: cài đặt đơn vị con từ gồm BPE và mô hình ngôn ngữ unigram, huấn luyện trực tiếp từ văn bản thô không cần tiền xử lý theo ngôn ngữ, tái tạo văn bản không mất; README ghi rõ không phải sản phẩm chính thức của Google.",
+        "content": "<p>README tả SentencePiece là bộ tách token và ghép token (detokenizer) không giám sát, nhanh và gọn, thiết kế cho các hệ sinh văn bản dựa trên mạng nơ-ron như mô hình ngôn ngữ lớn, nơi kích thước từ vựng cố định trước khi huấn luyện. Nó cài đặt đơn vị con từ, gồm mã hóa cặp byte (BPE) và mô hình ngôn ngữ unigram. README nhấn mạnh đây không phải sản phẩm chính thức của Google. Mục Quick Start cho Python hướng dẫn cài qua pip (bài không chép lệnh) và có ví dụ huấn luyện một mô hình trực tiếp từ tệp văn bản thô không cần tách từ hay tiền xử lý theo ngôn ngữ, mã hóa văn bản thành token hoặc ID, giải mã ngược lại, và README nói việc tái tạo hoàn toàn không mất. Phần License nêu Apache 2.0. Các mô tả 'nhanh và gọn' là của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với tiếng Việt hay tiếng Nhật không có dấu cách rõ ràng giữa từ, SentencePiece học cách cắt chữ từ chính dữ liệu thô mà không cần luật riêng cho từng ngôn ngữ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích BPE và unigram bằng ví dụ vài từ tiếng Việt; chưa huấn luyện. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng đa ngôn ngữ hoặc xử lý văn bản tiếng Việt, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, hiểu khái niệm token, từ vựng và dữ liệu huấn luyện. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu huấn luyện văn bản có thể chứa thông tin cá nhân hoặc bản quyền: cần kiểm tra. README ghi không phải sản phẩm chính thức của Google. Bài chưa so sánh với Hugging Face Tokenizers.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>subword (đơn vị con từ)</strong>: mảnh nhỏ hơn từ dùng làm token; README nêu.</li><li><strong>BPE (mã hóa cặp byte)</strong>: cách gộp các cặp ký tự phổ biến thành token; README nêu.</li><li><strong>unigram language model</strong>: mô hình chọn cách cắt token tốt nhất; README nêu.</li><li><strong>detokenizer (ghép token)</strong>: đưa token về văn bản gốc; README nêu.</li><li><strong>vocabulary (từ vựng)</strong>: danh sách token cố định; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start Python với pip; bài không chép lệnh hay mã. Cần Python. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Quick Start.</li><li>Đọc mục các lệnh huấn luyện và tùy chọn.</li><li>Thử với tệp văn bản công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về mô hình ngôn ngữ và tiếng Việt. Hãy đọc README của SentencePiece (https://github.com/google/sentencepiece) và giải thích bằng tiếng Việt: BPE và unigram là gì, vì sao không cần tách từ trước, và vì sao README ghi không phải sản phẩm chính thức của Google. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,8 KB, bài chưa đọc tài liệu trong thư mục doc. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ xử lý ngôn ngữ và dịch thuật thường gọi dịch vụ AI bên ngoài hoặc xử lý văn bản của người dùng: không gửi văn bản chứa thông tin cá nhân hay bí mật cho dịch vụ bên thứ ba khi chưa hiểu điều khoản, không dán khóa API vào mã hay khung chat, đặt hạn mức chi phí cho khóa, kiểm tra bản dịch do máy tạo trước khi dùng công khai, và đọc kỹ giấy phép của mô hình và dữ liệu đi kèm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>google</strong> có <strong>12.163 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/google/sentencepiece/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/google/sentencepiece\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 708. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12163; repo_id 84183882; README SHA256 12cf3d1c5b22ba2d486c5bd19f800a70707e1438d60b4385dfe9c4a17d398144.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/google/sentencepiece",
+          "repo_id": "84183882",
+          "source_path": "",
+          "source_revision": "README-SHA256:12cf3d1c5b22ba2d486c5bd19f800a70707e1438d60b4385dfe9c4a17d398144",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/sentencepiece",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start Python với pip; bài không chép lệnh hay mã. Cần Python. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/sentencepiece/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/google/sentencepiece/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "google/sentencepiece",
+        "stars": 12163,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/google/sentencepiece/master/README.md",
+        "readmeSha256": "12cf3d1c5b22ba2d486c5bd19f800a70707e1438d60b4385dfe9c4a17d398144",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "key": 705,
+  "repo": "i18next/i18next",
+  "repoId": "2994517",
+  "url": "https://github.com/i18next/i18next",
+  "stars": 8660,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T22:38:38Z",
+  "createdAt": "2011-12-16T12:37:42Z",
+  "defaultBranch": "master",
+  "description": " i18next: learn once - translate everywhere",
+  "homepage": "https://www.i18next.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/i18next/i18next/master/README.md",
+    "sha256": "860cc75193f12f1d7ed5b1546f94b96db6fa1f7b847c6f4df7b54f2024366d38",
+    "bytes": 5697,
+    "sectionsRead": [
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu i18next.com.",
+    "Chưa thử.",
+    "Chưa kiểm tra xử lý số nhiều cho tiếng Việt."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,42 @@
+{
+  "key": 704,
+  "repo": "undertheseanlp/underthesea",
+  "repoId": "83542054",
+  "url": "https://github.com/undertheseanlp/underthesea",
+  "stars": 1815,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T05:06:56Z",
+  "createdAt": "2017-03-01T10:24:26Z",
+  "defaultBranch": "main",
+  "description": "Underthesea - AI Assistant",
+  "homepage": "http://undertheseanlp.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/undertheseanlp/underthesea/main/README.md",
+    "sha256": "db3b7c399e848440b1ca11d363e560c24247bd8ac48618c7c9f590b2df4e3087",
+    "bytes": 9988,
+    "sectionsRead": [
+      "Installation",
+      "Agent",
+      "Vietnamese NLP",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc NLP.md.",
+    "Chưa thử.",
+    "Chưa kiểm chứng chất lượng mô hình tiếng Việt."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,42 @@
+{
+  "key": 707,
+  "repo": "huggingface/tokenizers",
+  "repoId": "219035799",
+  "url": "https://github.com/huggingface/tokenizers",
+  "stars": 11217,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:09:24Z",
+  "createdAt": "2019-11-01T17:52:20Z",
+  "defaultBranch": "main",
+  "description": "💥 Fast State-of-the-Art Tokenizers optimized for Research and Production",
+  "homepage": "https://huggingface.co/docs/tokenizers",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/huggingface/tokenizers/main/README.md",
+    "sha256": "f94540132fb767390484bf9aa021f72910ee324c4a196b2afb3e4fb0a234af90",
+    "bytes": 11386,
+    "sectionsRead": [
+      "Installation",
+      "Usage",
+      "Performances",
+      "Bindings"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu huggingface.co/docs/tokenizers.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố hiệu năng."
+  ],
+  "runtimeValidated": false
+}

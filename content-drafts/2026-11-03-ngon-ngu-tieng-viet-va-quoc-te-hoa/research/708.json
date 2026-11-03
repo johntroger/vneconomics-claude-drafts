@@ -1,0 +1,41 @@
+{
+  "key": 708,
+  "repo": "google/sentencepiece",
+  "repoId": "84183882",
+  "url": "https://github.com/google/sentencepiece",
+  "stars": 12163,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T10:37:38Z",
+  "createdAt": "2017-03-07T10:03:48Z",
+  "defaultBranch": "master",
+  "description": "Unsupervised text tokenizer for Neural Network-based text generation.",
+  "homepage": "https://google.github.io/sentencepiece/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/google/sentencepiece/master/README.md",
+    "sha256": "12cf3d1c5b22ba2d486c5bd19f800a70707e1438d60b4385dfe9c4a17d398144",
+    "bytes": 9775,
+    "sectionsRead": [
+      "Quick Start (Python)",
+      "Basic Example",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu trong thư mục doc.",
+    "Chưa thử.",
+    "Chưa so sánh với Hugging Face Tokenizers."
+  ],
+  "runtimeValidated": false
+}

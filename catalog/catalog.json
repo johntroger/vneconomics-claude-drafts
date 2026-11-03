@@ -12397,5 +12397,123 @@
   "related": [
    "dashy"
   ]
+ },
+ {
+  "key": 704,
+  "slug": "underthesea",
+  "group": "2026-11-03-ngon-ngu-tieng-viet-va-quoc-te-hoa",
+  "title": "Underthesea: bộ công cụ xử lý ngôn ngữ tiếng Việt mã nguồn mở của Việt Nam, từ phiên bản 9.3.0 là bộ công cụ tác tử AI có sẵn khả năng NLP tiếng Việt, hỗ trợ tách câu, tách từ, gán nhãn từ loại, nhận diện thực thể, phân loại, phân tích cảm xúc, dịch và đọc văn bản",
+  "repo": "undertheseanlp/underthesea",
+  "stars": 1815,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "lingui",
+   "sentencepiece"
+  ]
+ },
+ {
+  "key": 705,
+  "slug": "i18next",
+  "group": "2026-11-03-ngon-ngu-tieng-viet-va-quoc-te-hoa",
+  "title": "i18next: khung quốc tế hóa phổ biến cho trình duyệt và môi trường JavaScript khác (Node.js, Deno), nạp bản dịch từ nhiều nguồn, phát hiện ngôn ngữ, số nhiều, ngữ cảnh, lồng nhau, thay biến; README có phần giới thiệu dịch vụ Locize của chính nhóm tác giả",
+  "repo": "i18next/i18next",
+  "stars": 8660,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-01",
+  "related": [
+   "lingui"
+  ]
+ },
+ {
+  "key": 706,
+  "slug": "lingui",
+  "group": "2026-11-03-ngon-ngu-tieng-viet-va-quoc-te-hoa",
+  "title": "Lingui: thư viện quốc tế hóa (i18n) nhẹ, mã nguồn mở cho JavaScript và TypeScript, dùng macro lúc biên dịch và công cụ dòng lệnh trích chuỗi cho React, React Native; lõi khoảng 2 KB nén gzip, giấy phép MIT",
+  "repo": "lingui/js-lingui",
+  "stars": 5934,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "i18next",
+   "underthesea"
+  ]
+ },
+ {
+  "key": 707,
+  "slug": "tokenizers",
+  "group": "2026-11-03-ngon-ngu-tieng-viet-va-quoc-te-hoa",
+  "title": "Hugging Face Tokenizers: thư viện tách token tự nhận là chuẩn mực cho mọi ngôn ngữ, mô hình và phần cứng, lõi Rust với liên kết Python, Node.js, WebAssembly; README ghi đang chuyển từ 0.23 sang bản v1.0.0 phát hành thử",
+  "repo": "huggingface/tokenizers",
+  "stars": 11217,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "sentencepiece"
+  ]
+ },
+ {
+  "key": 708,
+  "slug": "sentencepiece",
+  "group": "2026-11-03-ngon-ngu-tieng-viet-va-quoc-te-hoa",
+  "title": "SentencePiece: bộ tách và ghép token không giám sát nhanh và gọn cho hệ sinh văn bản dùng mạng nơ-ron (như mô hình ngôn ngữ lớn) với từ vựng cố định, cài đặt BPE và mô hình unigram, README nhấn mạnh không phải sản phẩm chính thức của Google; giấy phép Apache 2.0",
+  "repo": "google/sentencepiece",
+  "stars": 12163,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "tokenizers",
+   "underthesea"
+  ]
  }
 ]
