@@ -80,13 +80,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 78 — Kiểm thử và giả lập](learning-paths/78-kiem-thu-va-gia-lap.vi.md) — Từ kiểm thử bằng ngôn ngữ thường, giả lập HTTP và dịch vụ AWS đến kiểm tra tệp mô tả API, kiểm thử API tự động và tự ghi, phát lại lưu lượng; chú ý yêu cầu thật tạo, sửa, xóa dữ liệu, bản ghi chứa dữ liệu nhạy cảm, telemetry của ảnh Docker và lệnh cài tải tập lệnh từ mạng.
 - [Lộ trình 79 — Liên lạc và cộng đồng tự host](learning-paths/79-lien-lac-va-cong-dong-tu-host.vi.md) — Từ họp video, nhắn tin, email, phát trực tiếp đến diễn đàn cộng đồng; chú ý giấy phép AGPL và GPL, nhiều giấy phép của Element, tuyên bố của tác giả, độ khó và trách nhiệm khi tự host email, nội dung người dùng và lệnh cài tải tập lệnh từ mạng.
 - [Lộ trình 80 — Bảo mật chuỗi cung ứng và định danh](learning-paths/80-bao-mat-chuoi-cung-ung-va-dinh-danh.vi.md) — Từ đánh giá thực hành bảo mật của thư viện, tạo SBOM, quét lỗ hổng, ký ảnh container, quét hạ tầng dưới dạng mã đến phát hiện hành vi bất thường và quản lý đăng nhập; chú ý tài khoản mặc định, lệnh cài tải tập lệnh từ mạng, bảng so sánh của tác giả và giới hạn của mọi công cụ quét.
+- [Lộ trình 81 — Bản đồ và dữ liệu địa lý](learning-paths/81-ban-do-va-du-lieu-dia-ly.vi.md) — Từ vẽ bản đồ nhanh, hình học và dữ liệu địa lý bằng Python, phần mềm GIS đến chỉ mục lục giác và tìm đường; chú ý hệ tọa độ, quyền riêng tư của dữ liệu vị trí và điều khoản dữ liệu OpenStreetMap.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (45 bài)
+### Bắt đầu (46 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -135,8 +136,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 | 573 | seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ | [mwaskom/seaborn](https://github.com/mwaskom/seaborn) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 14099 | khoa-hoc-du-lieu |
+| 613 | leafmap: gói Python phân tích địa không gian và vẽ bản đồ tương tác trong Jupyter với ít mã, chuyển đổi giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), giấy phép MIT | [opengeos/leafmap](https://github.com/opengeos/leafmap) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3796 | ban-do-va-du-lieu-dia-ly |
 
-### Cơ bản (206 bài)
+### Cơ bản (211 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -346,6 +348,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 604 | Grype: công cụ quét lỗ hổng cho ảnh container và hệ tệp, hỗ trợ SBOM, nhiều hệ gói hệ điều hành và ngôn ngữ, xếp hạng rủi ro theo EPSS và KEV, hỗ trợ OpenVEX, giấy phép Apache 2.0 | [anchore/grype](https://github.com/anchore/grype) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 13166 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 605 | Syft: công cụ dòng lệnh và thư viện Go tạo SBOM (danh sách thành phần phần mềm) từ ảnh container và hệ tệp, nhiều định dạng đầu ra (CycloneDX, SPDX), dùng tốt cùng Grype, giấy phép Apache 2.0 | [anchore/syft](https://github.com/anchore/syft) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9819 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 608 | OpenSSF Scorecard: công cụ tự động chấm điểm 0 đến 10 cho từng kiểm tra về thực hành bảo mật của một dự án mã nguồn mở, giúp người bảo trì cải thiện và người dùng đánh giá rủi ro phụ thuộc; có CLI, GitHub Action, REST API và máy chủ MCP | [ossf/scorecard](https://github.com/ossf/scorecard) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 5806 | bao-mat-chuoi-cung-ung-va-dinh-danh |
+| 609 | kepler.gl: ứng dụng web hiệu năng cao không phụ thuộc loại dữ liệu để khám phá trực quan tập dữ liệu vị trí quy mô lớn, xây trên MapLibre GL và deck.gl, đồng thời là thành phần React dùng Redux, giấy phép MIT | [keplergl/kepler.gl](https://github.com/keplergl/kepler.gl) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12078 | ban-do-va-du-lieu-dia-ly |
+| 610 | GeoPandas: công cụ Python cho dữ liệu địa lý, thêm kiểu GeoSeries và GeoDataFrame vào pandas để thao tác hình học; phép toán theo hệ tọa độ phẳng, hệ quy chiếu lưu trong thuộc tính, tài trợ qua NumFOCUS | [geopandas/geopandas](https://github.com/geopandas/geopandas) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 5290 | ban-do-va-du-lieu-dia-ly |
+| 611 | Shapely: gói Python thao tác và phân tích đối tượng hình học phẳng, dùng thư viện GEOS (công cụ của PostGIS), có giao diện Geometry và hàm ufunc NumPy hiệu năng cao, giấy phép BSD 3 điều khoản | [shapely/shapely](https://github.com/shapely/shapely) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 4536 | ban-do-va-du-lieu-dia-ly |
+| 614 | QGIS: hệ thống thông tin địa lý (GIS) đầy đủ tính năng, thân thiện, miễn phí và mã nguồn mở chạy trên Unix, Windows và macOS, có QGIS Server và API Python; giấy phép GPL phiên bản 2 trở lên | [qgis/QGIS](https://github.com/qgis/QGIS) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 14767 | ban-do-va-du-lieu-dia-ly |
+| 615 | H3: hệ lập chỉ mục địa không gian theo lưới lục giác phân cấp của Uber, chia nhỏ dần thành lưới lục giác mịn hơn, có thư viện C và nhiều liên kết ngôn ngữ, giấy phép Apache 2.0 | [uber/h3](https://github.com/uber/h3) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6684 | ban-do-va-du-lieu-dia-ly |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -389,7 +396,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (220 bài)
+### Nâng cao (221 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -613,6 +620,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 603 | Falco: công cụ bảo mật thời gian chạy cloud native cho Linux, tác tử giám sát nhân phát hiện hành vi bất thường theo quy tắc, dự án tốt nghiệp CNCF do Sysdig tạo, giấy phép Apache 2.0 | [falcosecurity/falco](https://github.com/falcosecurity/falco) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9548 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 606 | Cosign: ký, xác minh và lưu chữ ký cho ảnh container và các tệp khác theo Sigstore, ký không khóa với Fulcio và Rekor, hỗ trợ khóa phần cứng, KMS và PKI riêng; README rất dài | [sigstore/cosign](https://github.com/sigstore/cosign) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6406 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 607 | Checkov: công cụ phân tích mã tĩnh cho hạ tầng dưới dạng mã (Terraform, CloudFormation, Kubernetes, Dockerfile, GitHub Actions...) và phân tích thành phần phần mềm, hơn 1000 chính sách dựng sẵn, cung cấp sức mạnh cho Prisma Cloud | [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9130 | bao-mat-chuoi-cung-ung-va-dinh-danh |
+| 612 | OSRM (Open Source Routing Machine): công cụ tìm đường hiệu năng cao viết bằng C++ chạy trên dữ liệu OpenStreetMap, dịch vụ gần nhất, tuyến đường, bảng thời gian, khớp vết GPS, chuyến đi; dùng qua HTTP, thư viện C++ hoặc NodeJs | [Project-OSRM/osrm-backend](https://github.com/Project-OSRM/osrm-backend) | {'key': 'bsd-2-clause', 'name': 'BSD 2-Clause "Simplified" License', 'spdx_id': 'BSD-2-Clause', 'url': 'https://api.github.com/licenses/bsd-2-clause', 'node_id': 'MDc6TGljZW5zZTQ='} | 8189 | ban-do-va-du-lieu-dia-ly |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

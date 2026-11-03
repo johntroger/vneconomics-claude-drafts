@@ -1,0 +1,41 @@
+{
+  "key": 615,
+  "repo": "uber/h3",
+  "repoId": "114948816",
+  "url": "https://github.com/uber/h3",
+  "stars": 6684,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T10:58:53Z",
+  "createdAt": "2017-12-21T01:38:35Z",
+  "defaultBranch": "master",
+  "description": "Hexagonal hierarchical geospatial indexing system",
+  "homepage": "https://h3geo.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/uber/h3/master/README.md",
+    "sha256": "4dfc170c62092a23729588778973e3a1bd85eb702a95554d95fa79f9b7c85c11",
+    "bytes": 7856,
+    "sectionsRead": [
+      "Installing",
+      "Building from source",
+      "Legal and Licensing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu h3geo.org.",
+    "Chưa thử.",
+    "Chưa so sánh với S2."
+  ],
+  "runtimeValidated": false
+}

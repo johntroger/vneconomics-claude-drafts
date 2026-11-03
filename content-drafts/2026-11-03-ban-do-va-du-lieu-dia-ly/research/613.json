@@ -1,0 +1,42 @@
+{
+  "key": 613,
+  "repo": "opengeos/leafmap",
+  "repoId": "346188421",
+  "url": "https://github.com/opengeos/leafmap",
+  "stars": 3796,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:24:38Z",
+  "createdAt": "2021-03-10T00:54:29Z",
+  "defaultBranch": "master",
+  "description": "A Python package for interactive mapping and geospatial analysis with minimal coding in a Jupyter environment",
+  "homepage": "https://leafmap.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/opengeos/leafmap/master/README.md",
+    "sha256": "282f9fe322739e8ead1d7775cdad6f0ada7f699993ec061d0726c286df9c31b7",
+    "bytes": 12794,
+    "sectionsRead": [
+      "Introduction",
+      "Statement of Need",
+      "Usage",
+      "Key Features"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu leafmap.org.",
+    "Chưa thử.",
+    "Chưa so sánh các backend."
+  ],
+  "runtimeValidated": false
+}

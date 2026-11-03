@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ban-do",
+  "batch": 100,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 609,
+      "batch": 100,
+      "slug": "kepler-gl",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "kepler.gl: ứng dụng web hiệu năng cao không phụ thuộc loại dữ liệu để khám phá trực quan tập dữ liệu vị trí quy mô lớn, xây trên MapLibre GL và deck.gl, đồng thời là thành phần React dùng Redux, giấy phép MIT",
+        "excerpt": "Hiểu kepler.gl là ứng dụng web để khám phá trực quan tập dữ liệu vị trí quy mô lớn, xây trên MapLibre GL và deck.gl, đồng thời là thành phần React dùng Redux để nhúng vào ứng dụng khác; README có ứng dụng demo, hướng dẫn người dùng, widget Jupyter và nêu yêu cầu phiên bản Node.",
+        "content": "<p>README tả kepler.gl là ứng dụng web hiệu năng cao, không phụ thuộc loại dữ liệu, để khám phá trực quan các tập dữ liệu vị trí lớn, xây trên MapLibre GL và deck.gl. Kepler.gl cũng là thành phần React dùng Redux quản lý trạng thái và luồng dữ liệu, nhúng được vào ứng dụng React-Redux khác và tùy biến sâu. README có liên kết tới website, bản demo, ví dụ, hướng dẫn bắt đầu, hướng dẫn người dùng ứng dụng và widget Jupyter, tài liệu, tham chiếu API và lộ trình. Mục Env nói phát triển kho này dùng Node 24.21.0, còn dùng kepler.gl như phụ thuộc thì dùng Node 20 hoặc bản LTS mới hơn. README chỉ cách thêm các mô-đun và nạp stylesheet của MapLibre, rồi hướng dẫn cách dùng cơ bản: gắn reducer, gắn thành phần, thuộc tính, bản đồ nền tùy chỉnh, gửi hành động, tùy biến giao diện và thêm dữ liệu vào bản đồ. README có huy hiệu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Có một bảng tọa độ các chuyến xe hay cửa hàng và muốn nhìn nhanh trên bản đồ, có lọc theo thời gian và tô màu theo giá trị? kepler.gl cho bạn kéo thả dữ liệu vào và dựng bản đồ ngay trên trình duyệt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bản demo với một tập dữ liệu công khai nhỏ để làm quen các lớp bản đồ; không tải dữ liệu vị trí cá nhân. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng ứng dụng demo thì dễ; nhúng vào ứng dụng cần React, Redux và Node. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu tải lên bản demo công khai có thể đi qua máy chủ của bên thứ ba: README phần đã đọc không nói rõ, bài chưa kiểm tra, nên chỉ dùng dữ liệu công khai khi thử. Bạn chỉ cần biểu đồ đơn giản thì bảng tính là đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>geospatial data (dữ liệu địa không gian)</strong>: dữ liệu gắn với vị trí trên Trái Đất; README nêu.</li><li><strong>MapLibre GL</strong>: thư viện bản đồ mã nguồn mở; README nêu kepler.gl xây trên nó.</li><li><strong>deck.gl</strong>: thư viện vẽ dữ liệu lớn trên bản đồ; README nêu.</li><li><strong>reducer (Redux)</strong>: hàm quản lý trạng thái trong Redux; README hướng dẫn gắn reducer.</li><li><strong>basemap (bản đồ nền)</strong>: lớp bản đồ nằm dưới dữ liệu của bạn; README nêu bản đồ nền mặc định dùng MapLibre.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Node 20 trở lên khi dùng như phụ thuộc, cài mô-đun qua trình quản lý gói JavaScript; bài không chép lệnh. Miễn phí theo MIT (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở bản demo trên kepler.gl.</li><li>Đọc hướng dẫn người dùng ứng dụng.</li><li>Chỉ khi cần nhúng mới đọc phần Basic Usage.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có dữ liệu vị trí công khai và muốn vẽ bản đồ. Hãy đọc README của kepler.gl (https://github.com/keplergl/kepler.gl) và giải thích bằng tiếng Việt: kepler.gl làm gì, khác một thành phần nhúng ở đâu, và vì sao không nên tải dữ liệu vị trí cá nhân lên bản demo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 27 KB), bài đọc phần đầu, môi trường, cài đặt và cách dùng cơ bản, chưa đọc tài liệu docs.kepler.gl. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>keplergl</strong> có <strong>12.078 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/keplergl/kepler.gl/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/keplergl/kepler.gl\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 609. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12078; repo_id 123345344; README SHA256 9d331ef5ccb1b5e4ce3d9fdbf564d063f28aae8c59323ea51307cdb85a1c2aae.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/keplergl/kepler.gl",
+          "repo_id": "123345344",
+          "source_path": "",
+          "source_revision": "README-SHA256:9d331ef5ccb1b5e4ce3d9fdbf564d063f28aae8c59323ea51307cdb85a1c2aae",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keplergl/kepler.gl",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Node 20 trở lên khi dùng như phụ thuộc, cài mô-đun qua trình quản lý gói JavaScript; bài không chép lệnh. Miễn phí theo MIT (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/keplergl/kepler.gl/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "keplergl/kepler.gl",
+        "stars": 12078,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/keplergl/kepler.gl/master/README.md",
+        "readmeSha256": "9d331ef5ccb1b5e4ce3d9fdbf564d063f28aae8c59323ea51307cdb85a1c2aae",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 610,
+      "batch": 100,
+      "slug": "geopandas",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "GeoPandas: công cụ Python cho dữ liệu địa lý, thêm kiểu GeoSeries và GeoDataFrame vào pandas để thao tác hình học; phép toán theo hệ tọa độ phẳng, hệ quy chiếu lưu trong thuộc tính, tài trợ qua NumFOCUS",
+        "excerpt": "Hiểu GeoPandas là dự án thêm hỗ trợ dữ liệu địa lý vào pandas qua hai kiểu GeoSeries và GeoDataFrame, thao tác trên hình học Shapely; README nêu phép toán hình học theo hệ tọa độ phẳng và hệ quy chiếu tọa độ lưu thành thuộc tính, đổi bằng to_crs.",
+        "content": "<p>README tả GeoPandas là dự án thêm hỗ trợ dữ liệu địa lý vào các đối tượng pandas, hiện có hai kiểu GeoSeries và GeoDataFrame kế thừa Series và DataFrame của pandas, thao tác trên các đối tượng hình học Shapely và thực hiện phép toán hình học. Phép toán hình học của GeoPandas theo hệ tọa độ phẳng (cartesian). Hệ quy chiếu tọa độ (crs) lưu thành thuộc tính và tự gán khi đọc từ tệp, đổi sang hệ khác bằng phương thức to_crs. README nói hiện chưa ép buộc các đối tượng cùng hệ tọa độ khi tính, nhưng sau này có thể đổi. Tài liệu ở geopandas.org và Read the Docs. Dự án có mô hình quản trị mở và được NumFOCUS tài trợ tài chính, README kêu gọi quyên góp. Cách cài trỏ tới tài liệu cài đặt. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn đã quen pandas để xử lý bảng, GeoPandas thêm cột 'hình học' (điểm, đường, vùng) để bạn hỏi các câu như 'điểm này nằm trong quận nào' hay 'đường nào cắt nhau'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích hệ quy chiếu tọa độ và vì sao đo diện tích bằng tọa độ kinh vĩ độ dễ sai; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, pandas và khái niệm hệ tọa độ; hiểu sai hệ tọa độ là lỗi phổ biến. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần bảng thường mà không có hình học thì pandas là đủ. README nói phép toán theo hệ tọa độ phẳng: khoảng cách và diện tích trên dữ liệu kinh vĩ độ có thể sai nếu không đổi hệ phù hợp, cần kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>GeoDataFrame</strong>: bảng dữ liệu có cột hình học; README nêu.</li><li><strong>CRS (hệ quy chiếu tọa độ)</strong>: cách biểu diễn tọa độ trên mặt đất; README nêu lưu thành thuộc tính.</li><li><strong>geometry (hình học)</strong>: điểm, đường hoặc vùng; README nêu qua Shapely.</li><li><strong>pandas</strong>: thư viện bảng dữ liệu Python; README nêu GeoPandas mở rộng nó.</li><li><strong>NumFOCUS</strong>: tổ chức phi lợi nhuận bảo trợ dự án khoa học mở; README nêu tài trợ tài chính.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt; bài không chép lệnh. Cần Python và pandas. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction.</li><li>Đọc tài liệu geopandas.org về hệ quy chiếu tọa độ.</li><li>Thử với dữ liệu địa lý công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút pandas và muốn xử lý dữ liệu bản đồ. Hãy đọc README của GeoPandas (https://github.com/geopandas/geopandas) và giải thích bằng tiếng Việt: GeoDataFrame là gì, hệ quy chiếu tọa độ ảnh hưởng thế nào, và vì sao phép toán theo hệ phẳng cần cẩn thận với dữ liệu kinh vĩ độ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8,3 KB, bài chưa đọc tài liệu geopandas.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>geopandas</strong> có <strong>5.290 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/geopandas/geopandas/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/geopandas/geopandas\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 610. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5290; repo_id 11002815; README SHA256 89f497a003e6454a2fbf40c9b2586348eb61920898572516f923301ef6a1980c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/geopandas/geopandas",
+          "repo_id": "11002815",
+          "source_path": "",
+          "source_revision": "README-SHA256:89f497a003e6454a2fbf40c9b2586348eb61920898572516f923301ef6a1980c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/geopandas/geopandas",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt; bài không chép lệnh. Cần Python và pandas. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/geopandas/geopandas/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/geopandas/geopandas/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "geopandas/geopandas",
+        "stars": 5290,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/geopandas/geopandas/main/README.md",
+        "readmeSha256": "89f497a003e6454a2fbf40c9b2586348eb61920898572516f923301ef6a1980c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 611,
+      "batch": 100,
+      "slug": "shapely",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Shapely: gói Python thao tác và phân tích đối tượng hình học phẳng, dùng thư viện GEOS (công cụ của PostGIS), có giao diện Geometry và hàm ufunc NumPy hiệu năng cao, giấy phép BSD 3 điều khoản",
+        "excerpt": "Hiểu Shapely là gói Python thao tác và phân tích đối tượng hình học phẳng, bọc thư viện GEOS và cung cấp cả giao diện Geometry cho từng đối tượng lẫn hàm ufunc NumPy cho mảng hình học; README giải thích ufunc, đa luồng và cảnh báo an toàn luồng khi dùng chung mảng hình học.",
+        "content": "<p>README tả Shapely là gói Python dùng giấy phép BSD để thao tác và phân tích các đối tượng hình học phẳng trên mặt phẳng Descartes, dùng thư viện GEOS (động cơ của PostGIS). Shapely bọc hình học và phép toán của GEOS để cung cấp giao diện Geometry giàu tính năng cho từng đối tượng và hàm ufunc NumPy hiệu năng cao cho mảng hình học. Shapely không tập trung vào định dạng tuần tự hóa hay hệ tọa độ, nhưng dễ tích hợp với gói làm việc đó. README giải thích ufunc (hàm chạy từng phần tử trên mảng, vòng lặp bằng C), đa luồng (các hàm thường nhả khóa GIL để GEOS chạy đồng thời) và cảnh báo: khi chia sẻ mảng hình học giữa các luồng cần cực kỳ cẩn thận vì ghi đè một hình học đang được luồng khác dùng có thể làm trình thông dịch sập. Phần Copyright & License nêu Shapely theo BSD 3 điều khoản, GEOS theo LGPL 2.1.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Shapely là bộ công cụ hình học: tạo điểm, đường, vùng rồi hỏi hai hình có cắt nhau không, một điểm có nằm trong vùng không, vùng đệm quanh một điểm rộng bao nhiêu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích ufunc và vì sao mảng hình học nhanh hơn vòng lặp từng hình, chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, NumPy và khái niệm hình học phẳng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Shapely làm việc trên mặt phẳng, không tự lo hệ tọa độ: tính khoảng cách trên kinh vĩ độ có thể sai. README cảnh báo dùng chung mảng hình học giữa các luồng cần cẩn thận; người mới nên tránh đa luồng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>GEOS</strong>: thư viện hình học nền tảng; README nêu Shapely dùng và là động cơ của PostGIS.</li><li><strong>ufunc</strong>: hàm chạy từng phần tử trên mảng NumPy; README giải thích.</li><li><strong>GIL</strong>: khóa của Python giới hạn nhiều luồng chạy cùng lúc; README nêu Shapely nhả khóa này.</li><li><strong>Cartesian plane (mặt phẳng Descartes)</strong>: mặt phẳng tọa độ x, y; README nêu Shapely làm việc trên đó.</li><li><strong>LGPL</strong>: giấy phép thư viện với điều kiện riêng; README nêu cho GEOS.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu; bài không chép lệnh. Cần Python và NumPy. Miễn phí theo BSD 3 điều khoản (README nêu); thư viện GEOS theo LGPL 2.1.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc mục What is a ufunc? và Multithreading.</li><li>Thử với vài điểm và vùng đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình xử lý dữ liệu hình học bằng Python. Hãy đọc README của Shapely (https://github.com/shapely/shapely) và giải thích bằng tiếng Việt: Shapely làm gì, ufunc là gì, và vì sao README cảnh báo khi chia sẻ mảng hình học giữa các luồng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,6 KB, bài chưa đọc tài liệu shapely.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>shapely</strong> có <strong>4.536 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu BSD 3 điều khoản (GEOS theo LGPL 2.1); GitHub nhận diện BSD-3-Clause. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/shapely/shapely/blob/main/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/shapely/shapely\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 611. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4536; repo_id 3080613; README SHA256 369d1740229afbe485b14b3d3d5406537b2b1be0355447e96061dff0723142a0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/shapely/shapely",
+          "repo_id": "3080613",
+          "source_path": "",
+          "source_revision": "README-SHA256:369d1740229afbe485b14b3d3d5406537b2b1be0355447e96061dff0723142a0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/shapely/shapely",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu; bài không chép lệnh. Cần Python và NumPy. Miễn phí theo BSD 3 điều khoản (README nêu); thư viện GEOS theo LGPL 2.1.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/shapely/shapely/blob/main/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/shapely/shapely/blob/main/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "shapely/shapely",
+        "stars": 4536,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/shapely/shapely/main/README.rst",
+        "readmeSha256": "369d1740229afbe485b14b3d3d5406537b2b1be0355447e96061dff0723142a0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 612,
+      "batch": 100,
+      "slug": "osrm",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OSRM (Open Source Routing Machine): công cụ tìm đường hiệu năng cao viết bằng C++ chạy trên dữ liệu OpenStreetMap, dịch vụ gần nhất, tuyến đường, bảng thời gian, khớp vết GPS, chuyến đi; dùng qua HTTP, thư viện C++ hoặc NodeJs",
+        "excerpt": "Hiểu OSRM là công cụ tìm đường hiệu năng cao viết bằng C++ chạy trên dữ liệu OpenStreetMap, có các dịch vụ Nearest, Route, Table, Match, Trip, Tile qua API HTTP, thư viện C++ hoặc NodeJs; README có máy chủ demo, ảnh Docker dựng sẵn và hướng dẫn nhanh.",
+        "content": "<p>README tả OSRM là công cụ tìm đường hiệu năng cao viết bằng C++ chạy trên dữ liệu OpenStreetMap. Các dịch vụ dùng qua API HTTP, thư viện C++ hoặc bộ bọc NodeJs: Nearest (gắn tọa độ vào mạng đường), Route (đường nhanh nhất giữa các tọa độ), Table (thời gian hoặc khoảng cách giữa mọi cặp tọa độ), Match (khớp vết GPS nhiễu vào mạng đường), Trip (giải bài người bán hàng bằng thuật toán tham lam), Tile (sinh ô vector có thông tin tìm đường). README có máy chủ demo kèm giao diện, các kho liên quan (giao diện, hướng dẫn bằng chữ, ảnh Docker), tài liệu, cách liên hệ qua Discord và BlueSky, cách ủng hộ dự án. Mục Quick Start nói cách nhanh nhất dựng công cụ tìm đường riêng là dùng ảnh Docker do dự án cung cấp; bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub. README không nêu điều khoản sử dụng dữ liệu OpenStreetMap; bài chưa kiểm tra.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống ứng dụng chỉ đường nhưng chạy trên máy chủ của bạn: bạn đưa hai địa điểm, OSRM tính đường đi và thời gian dựa trên dữ liệu bản đồ cộng đồng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng máy chủ demo công khai để xem một tuyến đường mẫu; không gửi tọa độ cá nhân. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu dữ liệu OpenStreetMap, Docker hoặc C++, tài nguyên máy để xử lý bản đồ lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dựng công cụ tìm đường riêng cần tải và xử lý dữ liệu bản đồ lớn, tốn dung lượng và bộ nhớ; bài chưa đo. Tọa độ gửi tới máy chủ demo công khai có thể là dữ liệu vị trí cá nhân: không gửi điểm nhà hay nơi làm việc thật. Dữ liệu OpenStreetMap có điều khoản sử dụng và ghi công riêng cần kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>routing engine (công cụ tìm đường)</strong>: phần mềm tính đường đi; README nêu.</li><li><strong>OpenStreetMap</strong>: bản đồ cộng đồng mở; README nêu OSRM chạy trên dữ liệu này.</li><li><strong>map matching (khớp vết GPS)</strong>: gắn vết GPS nhiễu vào đường thật; README nêu dịch vụ Match.</li><li><strong>Traveling Salesman Problem</strong>: bài toán thăm nhiều điểm theo đường ngắn; README nêu dịch vụ Trip dùng thuật toán tham lam.</li><li><strong>vector tile (ô vector)</strong>: mảnh bản đồ dạng dữ liệu vector; README nêu dịch vụ Tile.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Quick Start dùng ảnh Docker và tài liệu project-osrm.org; bài không chép lệnh. Cần dữ liệu OpenStreetMap và đủ tài nguyên máy. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần mô tả các dịch vụ.</li><li>Dùng máy chủ demo xem tuyến mẫu, không gửi tọa độ cá nhân.</li><li>Đọc tài liệu API HTTP trước khi tự dựng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu cách một công cụ tìm đường hoạt động. Hãy đọc README của OSRM (https://github.com/Project-OSRM/osrm-backend) và giải thích bằng tiếng Việt: các dịch vụ Route, Table, Match, Trip khác nhau thế nào, vì sao cần dữ liệu OpenStreetMap, và vì sao không nên gửi tọa độ cá nhân lên máy chủ demo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 10,6 KB, bài chưa đọc tài liệu project-osrm.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Project-OSRM</strong> có <strong>8.189 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Project-OSRM/osrm-backend/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Project-OSRM/osrm-backend\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 612. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8189; repo_id 2436255; README SHA256 36ffbc34505ed337343619f1498f73c487e2774d0d389655652550d19dfbf8bd.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Project-OSRM/osrm-backend",
+          "repo_id": "2436255",
+          "source_path": "",
+          "source_revision": "README-SHA256:36ffbc34505ed337343619f1498f73c487e2774d0d389655652550d19dfbf8bd",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-2-clause",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "spdx_id": "BSD-2-Clause",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "node_id": "MDc6TGljZW5zZTQ="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Project-OSRM/osrm-backend",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Quick Start dùng ảnh Docker và tài liệu project-osrm.org; bài không chép lệnh. Cần dữ liệu OpenStreetMap và đủ tài nguyên máy. Miễn phí; giấy phép lấy theo GitHub (BSD-2-Clause), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Project-OSRM/osrm-backend/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Project-OSRM/osrm-backend/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Project-OSRM/osrm-backend",
+        "stars": 8189,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Project-OSRM/osrm-backend/master/README.md",
+        "readmeSha256": "36ffbc34505ed337343619f1498f73c487e2774d0d389655652550d19dfbf8bd",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 613,
+      "batch": 100,
+      "slug": "leafmap",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "leafmap: gói Python phân tích địa không gian và vẽ bản đồ tương tác trong Jupyter với ít mã, chuyển đổi giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), giấy phép MIT",
+        "excerpt": "Hiểu leafmap là gói Python phân tích địa không gian và vẽ bản đồ tương tác trong môi trường Jupyter với rất ít mã, tách ra từ gói geemap; README nêu khả năng chuyển nhiều backend, đổi bản đồ nền, thêm dịch vụ XYZ, WMS, ô vector, hiển thị dữ liệu vector và raster.",
+        "content": "<p>README tả leafmap là gói Python cho phân tích địa không gian và vẽ bản đồ tương tác với ít mã trong môi trường Jupyter, tách ra từ gói geemap. Phần Statement of Need nói có nhiều gói Python cho địa không gian (như geopandas cho vector, xarray cho raster), leafmap tận dụng giao tiếp hai chiều của ipyleaflet để nạp và hiển thị dữ liệu bằng một dòng mã. Tính năng chính theo README: tạo bản đồ tương tác bằng một dòng mã, chuyển giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), đổi bản đồ nền (OpenStreetMap, Stamen Terrain, CartoDB Positron...), thêm dịch vụ XYZ, WMS và ô vector, hiển thị dữ liệu vector (Shapefile, GeoJSON, GeoPackage...) và raster (GeoTIFF), tạo chú giải và thanh màu, bản đồ chia đôi và bản đồ liên kết. README có liên kết bài hướng dẫn qua Google Colab, Binder, SageMaker Studio Lab, kênh YouTube và nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn xem dữ liệu địa lý ngay trong sổ tay Jupyter mà không muốn học từng thư viện bản đồ? leafmap cho bạn vẽ bản đồ vài dòng mã và đổi qua lại giữa các thư viện bên dưới.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở sổ tay hướng dẫn của dự án trên môi trường trực tuyến và chỉ dùng dữ liệu công khai mẫu. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python và Jupyter cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn không dùng Jupyter hoặc chỉ cần một bản đồ tĩnh thì chưa cần leafmap. Sổ tay trên Colab, Binder chạy trên máy của bên thứ ba: không tải dữ liệu vị trí cá nhân lên.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Jupyter</strong>: môi trường viết và chạy mã theo từng ô; README nêu leafmap dùng trong Jupyter.</li><li><strong>backend</strong>: thư viện bản đồ chạy bên dưới; README nêu ipyleaflet, folium, kepler.gl, pydeck, bokeh.</li><li><strong>XYZ/WMS</strong>: hai kiểu dịch vụ ô bản đồ và ảnh bản đồ; README nêu có thể thêm.</li><li><strong>raster/vector</strong>: ảnh lưới và dữ liệu điểm, đường, vùng; README nêu hiển thị được cả hai.</li><li><strong>GeoTIFF</strong>: định dạng ảnh bản đồ; README nêu hiển thị được.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu leafmap.org, có sổ tay trên Google Colab, Binder, SageMaker Studio Lab; bài không chép lệnh. Cần Python. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction và Key Features.</li><li>Mở sổ tay hướng dẫn trực tuyến của dự án.</li><li>Thử với dữ liệu công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Jupyter và muốn vẽ bản đồ nhanh. Hãy đọc README của leafmap (https://github.com/opengeos/leafmap) và giải thích bằng tiếng Việt: leafmap làm gì, chuyển giữa các backend nghĩa là gì, và lưu ý khi chạy sổ tay trên dịch vụ trực tuyến của bên thứ ba. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12,8 KB, bài đọc phần đầu và tính năng chính, chưa đọc tài liệu leafmap.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>opengeos</strong> có <strong>3.796 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/opengeos/leafmap/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/opengeos/leafmap\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 613. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3796; repo_id 346188421; README SHA256 282f9fe322739e8ead1d7775cdad6f0ada7f699993ec061d0726c286df9c31b7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/opengeos/leafmap",
+          "repo_id": "346188421",
+          "source_path": "",
+          "source_revision": "README-SHA256:282f9fe322739e8ead1d7775cdad6f0ada7f699993ec061d0726c286df9c31b7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/opengeos/leafmap",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu leafmap.org, có sổ tay trên Google Colab, Binder, SageMaker Studio Lab; bài không chép lệnh. Cần Python. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/opengeos/leafmap/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/opengeos/leafmap/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "opengeos/leafmap",
+        "stars": 3796,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/opengeos/leafmap/master/README.md",
+        "readmeSha256": "282f9fe322739e8ead1d7775cdad6f0ada7f699993ec061d0726c286df9c31b7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 614,
+      "batch": 100,
+      "slug": "qgis",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "QGIS: hệ thống thông tin địa lý (GIS) đầy đủ tính năng, thân thiện, miễn phí và mã nguồn mở chạy trên Unix, Windows và macOS, có QGIS Server và API Python; giấy phép GPL phiên bản 2 trở lên",
+        "excerpt": "Hiểu QGIS là hệ thống thông tin địa lý (GIS) đầy đủ tính năng, miễn phí, mã nguồn mở, chạy trên Unix, Windows, macOS: quản lý dữ liệu không gian, bản đồ đẹp, phân tích địa không gian, tùy biến qua plugin và API Python, và QGIS Server để chia sẻ bản đồ; README nêu giấy phép GPL 2 trở lên.",
+        "content": "<p>README tả QGIS là hệ thông tin địa lý (GIS) đầy đủ tính năng, thân thiện, miễn phí và mã nguồn mở chạy trên Unix, Windows và macOS. Năm nhóm tính năng: quản lý dữ liệu không gian linh hoạt (raster, vector, lưới, đám mây điểm, nhiều định dạng công nghiệp, tệp cục bộ, cơ sở dữ liệu không gian như PostGIS, dịch vụ web, số hóa, tham chiếu địa lý, đổi hệ tọa độ tức thì, tìm địa chỉ qua Nominatim, hỗ trợ thời gian); bản đồ đẹp; phân tích địa không gian mạnh và chắc; tùy biến và mở rộng (giao diện tùy chỉnh, bộ biểu thức, hệ plugin phong phú, trình quản lý kiểu, API Python và C++ gồm PyQGIS); QGIS Server (máy chủ bản đồ không giao diện dùng chung mã với QGIS, hỗ trợ WMS, WFS, OGC API for Features, WCS, chạy với Apache, nginx hoặc độc lập). README có phần phiên bản và chu kỳ phát hành, cài đặt và dùng, tài liệu, kênh hỗ trợ, tham gia cộng đồng. Mục giấy phép nêu QGIS phát hành theo GNU Public License phiên bản 2 hoặc bất kỳ phiên bản mới hơn.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>QGIS là phần mềm bản đồ chuyên nghiệp miễn phí: bạn mở dữ liệu địa lý, tô màu, phân tích, in bản đồ, giống ArcGIS nhưng mã nguồn mở.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tải dữ liệu địa lý công khai nhỏ và làm quen giao diện, xem tài liệu hướng dẫn người mới trên docs.qgis.org. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm bản đồ, hệ tọa độ; thành thạo cần thời gian học. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> QGIS là phần mềm ứng dụng, không phải thư viện: nếu bạn chỉ cần xử lý dữ liệu bằng mã, GeoPandas hoặc Shapely hợp hơn. Plugin của bên thứ ba chạy mã trên máy bạn: cài từ nguồn tin cậy. QGIS Server mở ra mạng cần cấu hình bảo mật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>GIS (hệ thông tin địa lý)</strong>: phần mềm quản lý và phân tích dữ liệu bản đồ; README nêu.</li><li><strong>raster/vector/mesh</strong>: các loại dữ liệu không gian; README liệt kê.</li><li><strong>PostGIS</strong>: phần mở rộng không gian của PostgreSQL; README nêu là nguồn dữ liệu.</li><li><strong>PyQGIS</strong>: API Python để viết mã điều khiển QGIS; README nêu.</li><li><strong>QGIS Server</strong>: máy chủ bản đồ không giao diện; README nêu hỗ trợ WMS, WFS, WCS.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang cài đặt và tài liệu; bài không chép lệnh. Chạy trên Unix, Windows, macOS. Miễn phí theo GPL phiên bản 2 trở lên (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc phần Installing and using QGIS.</li><li>Làm theo hướng dẫn người mới trên docs.qgis.org với dữ liệu mẫu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học GIS. Hãy đọc README của QGIS (https://github.com/qgis/QGIS) và giải thích bằng tiếng Việt: QGIS làm được gì, khác GeoPandas ở đâu, và QGIS Server dùng khi nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12,4 KB, bài chưa đọc tài liệu docs.qgis.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>qgis</strong> có <strong>14.767 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GPL phiên bản 2 trở lên; GitHub nhận diện GPL-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/qgis/QGIS/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/qgis/QGIS\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 614. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14767; repo_id 1690480; README SHA256 8ef9dcac16c5892e10554e8bf7f87327330d2b24639f891ce110a2b1010c63e4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/qgis/QGIS",
+          "repo_id": "1690480",
+          "source_path": "",
+          "source_revision": "README-SHA256:8ef9dcac16c5892e10554e8bf7f87327330d2b24639f891ce110a2b1010c63e4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-2.0",
+                "name": "GNU General Public License v2.0",
+                "spdx_id": "GPL-2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "node_id": "MDc6TGljZW5zZTg="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/qgis/QGIS",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang cài đặt và tài liệu; bài không chép lệnh. Chạy trên Unix, Windows, macOS. Miễn phí theo GPL phiên bản 2 trở lên (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/qgis/QGIS/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/qgis/QGIS/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "qgis/QGIS",
+        "stars": 14767,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/qgis/QGIS/master/README.md",
+        "readmeSha256": "8ef9dcac16c5892e10554e8bf7f87327330d2b24639f891ce110a2b1010c63e4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 615,
+      "batch": 100,
+      "slug": "h3",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "H3: hệ lập chỉ mục địa không gian theo lưới lục giác phân cấp của Uber, chia nhỏ dần thành lưới lục giác mịn hơn, có thư viện C và nhiều liên kết ngôn ngữ, giấy phép Apache 2.0",
+        "excerpt": "Hiểu H3 là hệ lập chỉ mục địa không gian dùng lưới lục giác có thể chia nhỏ dần, kết hợp lợi ích của lưới lục giác với S2; README liệt kê liên kết cho nhiều ngôn ngữ, hướng dẫn cài từ mã nguồn bằng C, và yêu cầu ký thỏa thuận đóng góp của Uber.",
+        "content": "<p>README tả H3 là hệ lập chỉ mục địa không gian dùng lưới lục giác có thể (xấp xỉ) chia nhỏ dần thành lưới lục giác mịn hơn, kết hợp lợi ích của lưới lục giác với S2 của Google. README trỏ tới tài liệu h3geo.org, tài liệu nhà phát triển trong thư mục dev-docs, trang báo lỗi, StackOverflow và Slack. Khuyến nghị dùng liên kết dựng sẵn cho ngôn ngữ của bạn (Java, JavaScript, Python và các ngôn ngữ khác) nếu có; trên macOS cài được bằng brew; không thì xây từ mã nguồn bằng trình biên dịch C, CMake và Make, với phần cài phụ thuộc cho Alpine, Debian, Ubuntu. Bài không chép lệnh. README cho biết muốn gộp thay đổi phải đồng ý Thỏa thuận cấp phép đóng góp của Uber và nêu H3 theo Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì mô tả vị trí bằng tọa độ, H3 chia Trái Đất thành các ô lục giác có mã số. Bạn đếm số chuyến xe hay số cửa hàng trong từng ô để làm bản đồ nhiệt rất nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao lưới lục giác hữu ích hơn lưới vuông cho khoảng cách đều; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm phân tích dữ liệu hoặc ứng dụng có bản đồ, thường nhờ AI viết mã Python hoặc JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm tọa độ và lưới; dùng qua liên kết ngôn ngữ như Python thì dễ hơn xây từ mã C. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói nên dùng liên kết dựng sẵn thay vì xây từ mã C. Bạn không cần phân tích theo ô thì chưa cần H3. Việc chia vùng thành ô làm mất độ chính xác tọa độ gốc: cần hiểu độ phân giải.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>geospatial index (chỉ mục địa không gian)</strong>: cách đánh mã vị trí để tìm nhanh; README nêu.</li><li><strong>hexagonal grid (lưới lục giác)</strong>: lưới ô sáu cạnh; README nêu.</li><li><strong>hierarchical (phân cấp)</strong>: ô lớn chia thành ô nhỏ hơn; README nêu.</li><li><strong>S2</strong>: hệ lập chỉ mục địa không gian của Google; README nêu H3 kết hợp lợi ích.</li><li><strong>bindings (liên kết ngôn ngữ)</strong>: gói cho ngôn ngữ khác gọi thư viện C; README liệt kê.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README khuyến nghị dùng liên kết dựng sẵn; có cách cài bằng brew trên macOS và xây từ mã nguồn bằng C, CMake, Make; bài không chép lệnh. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu h3geo.org.</li><li>Dùng liên kết Python hoặc JavaScript thay vì xây từ mã C.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn phân tích dữ liệu vị trí theo ô lục giác. Hãy đọc README của H3 (https://github.com/uber/h3) và giải thích bằng tiếng Việt: lưới lục giác phân cấp là gì, độ phân giải ảnh hưởng thế nào, và vì sao README khuyên dùng liên kết dựng sẵn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,9 KB, bài chưa đọc tài liệu h3geo.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dữ liệu vị trí rất nhạy cảm về quyền riêng tư: tọa độ có thể cho thấy nơi ở, nơi làm việc và thói quen đi lại của người thật. Dùng dữ liệu công khai hoặc dữ liệu giả khi thử, không tải dữ liệu vị trí cá nhân lên dịch vụ bản đồ của bên thứ ba, kiểm tra điều khoản sử dụng và ghi công của nguồn dữ liệu bản đồ, và đừng nhờ AI xử lý dữ liệu vị trí của người khác khi chưa được phép.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>uber</strong> có <strong>6.684 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/uber/h3/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/uber/h3\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 615. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6684; repo_id 114948816; README SHA256 4dfc170c62092a23729588778973e3a1bd85eb702a95554d95fa79f9b7c85c11.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/uber/h3",
+          "repo_id": "114948816",
+          "source_path": "",
+          "source_revision": "README-SHA256:4dfc170c62092a23729588778973e3a1bd85eb702a95554d95fa79f9b7c85c11",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/uber/h3",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README khuyến nghị dùng liên kết dựng sẵn; có cách cài bằng brew trên macOS và xây từ mã nguồn bằng C, CMake, Make; bài không chép lệnh. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/uber/h3/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/uber/h3/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "uber/h3",
+        "stars": 6684,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/uber/h3/master/README.md",
+        "readmeSha256": "4dfc170c62092a23729588778973e3a1bd85eb702a95554d95fa79f9b7c85c11",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

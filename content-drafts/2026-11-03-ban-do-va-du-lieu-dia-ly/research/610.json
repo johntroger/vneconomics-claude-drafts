@@ -1,0 +1,40 @@
+{
+  "key": 610,
+  "repo": "geopandas/geopandas",
+  "repoId": "11002815",
+  "url": "https://github.com/geopandas/geopandas",
+  "stars": 5290,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-31T05:27:58Z",
+  "createdAt": "2013-06-27T17:03:47Z",
+  "defaultBranch": "main",
+  "description": "Python tools for geographic data",
+  "homepage": "http://geopandas.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/geopandas/geopandas/main/README.md",
+    "sha256": "89f497a003e6454a2fbf40c9b2586348eb61920898572516f923301ef6a1980c",
+    "bytes": 8290,
+    "sectionsRead": [
+      "Introduction",
+      "Install"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu geopandas.org.",
+    "Chưa thử.",
+    "Chưa đo độ sai của phép toán trên kinh vĩ độ."
+  ],
+  "runtimeValidated": false
+}

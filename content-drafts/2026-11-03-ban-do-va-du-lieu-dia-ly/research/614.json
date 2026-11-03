@@ -1,0 +1,41 @@
+{
+  "key": 614,
+  "repo": "qgis/QGIS",
+  "repoId": "1690480",
+  "url": "https://github.com/qgis/QGIS",
+  "stars": 14767,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-2.0",
+    "name": "GNU General Public License v2.0",
+    "spdx_id": "GPL-2.0",
+    "url": "https://api.github.com/licenses/gpl-2.0",
+    "node_id": "MDc6TGljZW5zZTg="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:26:39Z",
+  "createdAt": "2011-05-02T08:06:26Z",
+  "defaultBranch": "master",
+  "description": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS)",
+  "homepage": "https://qgis.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/qgis/QGIS/master/README.md",
+    "sha256": "8ef9dcac16c5892e10554e8bf7f87327330d2b24639f891ce110a2b1010c63e4",
+    "bytes": 12406,
+    "sectionsRead": [
+      "Features",
+      "Under the hood",
+      "Installing and using QGIS"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.qgis.org.",
+    "Chưa thử.",
+    "Chưa so sánh với phần mềm GIS khác."
+  ],
+  "runtimeValidated": false
+}

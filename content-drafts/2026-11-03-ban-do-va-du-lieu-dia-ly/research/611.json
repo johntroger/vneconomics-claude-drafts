@@ -1,0 +1,41 @@
+{
+  "key": 611,
+  "repo": "shapely/shapely",
+  "repoId": "3080613",
+  "url": "https://github.com/shapely/shapely",
+  "stars": 4536,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:59:36Z",
+  "createdAt": "2011-12-31T19:43:11Z",
+  "defaultBranch": "main",
+  "description": "Manipulation and analysis of geometric objects",
+  "homepage": "https://shapely.readthedocs.io/en/stable/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/shapely/shapely/main/README.rst",
+    "sha256": "369d1740229afbe485b14b3d3d5406537b2b1be0355447e96061dff0723142a0",
+    "bytes": 5626,
+    "sectionsRead": [
+      "What is a ufunc?",
+      "Multithreading",
+      "Copyright & License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu shapely.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa đo hiệu năng."
+  ],
+  "runtimeValidated": false
+}
