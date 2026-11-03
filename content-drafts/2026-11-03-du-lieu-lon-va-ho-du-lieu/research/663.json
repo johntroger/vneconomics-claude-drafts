@@ -1,0 +1,42 @@
+{
+  "key": 663,
+  "repo": "apache/arrow",
+  "repoId": "51905353",
+  "url": "https://github.com/apache/arrow",
+  "stars": 17273,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:50:08Z",
+  "createdAt": "2016-02-17T08:00:23Z",
+  "defaultBranch": "main",
+  "description": "Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics",
+  "homepage": "https://arrow.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/arrow/main/README.md",
+    "sha256": "a8240517de55f26840b8d798cba46d2159ee62cf3a9ea8758565db7fe2db86e7",
+    "bytes": 5855,
+    "sectionsRead": [
+      "Powering In-Memory Analytics",
+      "What's in the Arrow libraries?",
+      "Implementation status",
+      "How to Contribute"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu arrow.apache.org.",
+    "Chưa thử.",
+    "Chưa kiểm tra tốc độ thực tế."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-du-lieu-lon",
+  "batch": 107,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 660,
+      "batch": 107,
+      "slug": "apache-flink",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Flink: khung xử lý luồng mã nguồn mở có khả năng xử lý luồng và lô mạnh, runtime ưu tiên luồng, hỗ trợ thời gian sự kiện, cửa sổ linh hoạt và xử lý đúng một lần theo tuyên bố của dự án",
+        "excerpt": "Hiểu Apache Flink là khung xử lý luồng mã nguồn mở có khả năng xử lý cả luồng và lô: runtime ưu tiên luồng, hỗ trợ thời gian sự kiện và dữ liệu đến lộn xộn, cửa sổ linh hoạt, chịu lỗi với bảo đảm xử lý đúng một lần theo tuyên bố của dự án, thư viện đồ thị, học máy và xử lý sự kiện phức tạp.",
+        "content": "<p>README tả Apache Flink là khung xử lý luồng mã nguồn mở với khả năng xử lý luồng và lô mạnh. Tính năng nêu: runtime ưu tiên luồng hỗ trợ cả lô và luồng; API Java gọn; runtime đồng thời thông lượng rất cao và độ trễ sự kiện thấp; hỗ trợ thời gian sự kiện và xử lý dữ liệu đến sai thứ tự trong DataStream API dựa trên Dataflow Model; cửa sổ linh hoạt (thời gian, đếm, phiên, kích hoạt tùy chỉnh); chịu lỗi với bảo đảm xử lý đúng một lần; áp lực ngược tự nhiên; thư viện cho đồ thị (lô), học máy (lô), xử lý sự kiện phức tạp (luồng); quản lý bộ nhớ riêng; lớp tương thích với Hadoop MapReduce; tích hợp YARN, HDFS, HBase. Những mô tả hiệu năng và bảo đảm này là tuyên bố của dự án, bài chưa kiểm chứng. README có ví dụ luồng và ví dụ lô bằng Java, hướng dẫn xây từ mã nguồn (bài không chép lệnh), phát triển trong IDE, hỗ trợ, tài liệu, đóng góp và các trình kết nối tách riêng. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dữ liệu như đơn hàng hay cảm biến đến liên tục, không dừng. Flink xử lý ngay khi dữ liệu chảy qua thay vì chờ gom đủ rồi xử lý một lần.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích thời gian sự kiện và cửa sổ bằng ví dụ đếm lượt nhấp trong từng phút; chưa dựng cụm. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Java hoặc Scala, hệ phân tán và khái niệm luồng dữ liệu; vận hành cụm phức tạp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có luồng dữ liệu thời gian thực lớn thì chưa cần Flink. Cụm xử lý luồng chạy liên tục tốn chi phí đám mây. Tuyên bố bảo đảm đúng một lần và hiệu năng chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>stream processing (xử lý luồng)</strong>: xử lý dữ liệu khi nó đến liên tục; README nêu.</li><li><strong>event time (thời gian sự kiện)</strong>: thời điểm sự kiện thật sự xảy ra, khác thời điểm nhận; README nêu.</li><li><strong>windowing (cửa sổ)</strong>: chia luồng thành khoảng theo thời gian hoặc số lượng; README nêu.</li><li><strong>exactly-once</strong>: bảo đảm mỗi sự kiện được xử lý đúng một lần; README nêu.</li><li><strong>back-pressure (áp lực ngược)</strong>: tín hiệu làm chậm nguồn khi đầu ra quá tải; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn xây từ mã nguồn bằng Maven và nhiều ví dụ Java; bài không chép lệnh hay mã. Cần Java và cụm hoặc máy thử. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc tài liệu nightlies.apache.org/flink.</li><li>Thử ví dụ đếm từ nhỏ trên máy cá nhân.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về dữ liệu luồng. Hãy đọc README của Apache Flink (https://github.com/apache/flink) và giải thích bằng tiếng Việt: xử lý luồng khác xử lý lô ở đâu, thời gian sự kiện và cửa sổ là gì, và các bảo đảm đúng một lần là tuyên bố của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,8 KB, bài chưa đọc tài liệu Flink. Tuyên bố hiệu năng chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>26.443 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/flink/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/flink\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 660. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26443; repo_id 20587599; README SHA256 bb09aa317a5cff5096e13b7157df4b39d31fd12d4c61ee6233a5be518acf9ec6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/flink",
+          "repo_id": "20587599",
+          "source_path": "",
+          "source_revision": "README-SHA256:bb09aa317a5cff5096e13b7157df4b39d31fd12d4c61ee6233a5be518acf9ec6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/flink",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn xây từ mã nguồn bằng Maven và nhiều ví dụ Java; bài không chép lệnh hay mã. Cần Java và cụm hoặc máy thử. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/flink/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/flink/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/flink",
+        "stars": 26443,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/flink/master/README.md",
+        "readmeSha256": "bb09aa317a5cff5096e13b7157df4b39d31fd12d4c61ee6233a5be518acf9ec6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 661,
+      "batch": 107,
+      "slug": "apache-spark",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Spark: công cụ phân tích hợp nhất cho xử lý dữ liệu quy mô lớn với API Scala, Java, Python và R, Spark SQL, pandas API, MLlib, GraphX, Structured Streaming; README nêu đây chỉ là hướng dẫn thiết lập cơ bản",
+        "excerpt": "Hiểu Apache Spark là công cụ phân tích hợp nhất cho xử lý dữ liệu quy mô lớn, có API Scala, Java, Python và R (R đã bị loại dần), kèm Spark SQL, API pandas trên Spark, MLlib cho học máy, GraphX cho đồ thị và Structured Streaming cho luồng; README nói chỉ có hướng dẫn thiết lập cơ bản, tài liệu đầy đủ ở trang dự án.",
+        "content": "<p>README tả Spark là công cụ phân tích hợp nhất cho xử lý dữ liệu quy mô lớn, có API bậc cao bằng Scala, Java, Python, R (R ghi là deprecated) và động cơ tối ưu hỗ trợ đồ thị tính toán tổng quát cho phân tích dữ liệu. Công cụ cấp cao hơn gồm Spark SQL cho SQL và DataFrame, API pandas trên Spark cho khối lượng pandas, MLlib cho học máy, GraphX cho đồ thị và Structured Streaming cho luồng. README trỏ tới phiên bản chính thức, phiên bản phát triển và tài liệu trực tuyến, nói README chỉ chứa hướng dẫn thiết lập cơ bản. README có bảng trạng thái xây dựng (nhiều quy trình tự động), mục xây Spark, shell Scala và Python tương tác, chương trình ví dụ, chạy kiểm thử, lưu ý về phiên bản Hadoop, cấu hình và đóng góp. Bài không chép lệnh. README có huy hiệu Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một bảng có hàng trăm triệu dòng không mở nổi bằng Excel hay pandas trên một máy. Spark chia bảng đó cho nhiều máy cùng xử lý rồi gộp kết quả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích DataFrame trong Spark và Spark SQL bằng dữ liệu nhỏ công khai; chạy thử trên máy cá nhân, không dùng cụm trả phí. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python hoặc Scala, SQL và hiểu xử lý phân tán; học ở chế độ cục bộ thì vừa phải. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu vừa trong một máy thì pandas hoặc DuckDB đơn giản và rẻ hơn nhiều; bài chưa so sánh. Chạy Spark trên cụm đám mây có thể tốn chi phí lớn nếu quên tắt.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>unified analytics engine (động cơ phân tích hợp nhất)</strong>: một công cụ cho SQL, học máy, đồ thị, luồng; README nêu.</li><li><strong>DataFrame</strong>: bảng dữ liệu có cột; README nêu.</li><li><strong>Spark SQL</strong>: dùng SQL để truy vấn dữ liệu trong Spark; README nêu.</li><li><strong>MLlib</strong>: thư viện học máy của Spark; README nêu.</li><li><strong>Structured Streaming</strong>: xử lý luồng trong Spark; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục xây Spark và shell tương tác; bài không chép lệnh. Cần Java và Python hoặc Scala. Miễn phí theo Apache 2.0 (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Online Documentation.</li><li>Đọc tài liệu spark.apache.org.</li><li>Thử shell Python tương tác với dữ liệu nhỏ trên máy cá nhân.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học khoa học dữ liệu và nghe nói Spark. Hãy đọc README của Apache Spark (https://github.com/apache/spark) và giải thích bằng tiếng Việt: Spark giải quyết vấn đề gì, Spark SQL và MLlib là gì, và khi nào pandas là đủ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 23,6 KB, phần lớn là bảng trạng thái xây dựng, bài chưa đọc tài liệu spark.apache.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>44.391 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/spark/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/spark\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 661. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44391; repo_id 17165658; README SHA256 85e2b11a7d2ffccaf86057aa4eedf06bfb0c3f05258808af10a4cb3110be67e3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/spark",
+          "repo_id": "17165658",
+          "source_path": "",
+          "source_revision": "README-SHA256:85e2b11a7d2ffccaf86057aa4eedf06bfb0c3f05258808af10a4cb3110be67e3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/spark",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục xây Spark và shell tương tác; bài không chép lệnh. Cần Java và Python hoặc Scala. Miễn phí theo Apache 2.0 (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/spark/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/spark/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/spark",
+        "stars": 44391,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/spark/master/README.md",
+        "readmeSha256": "85e2b11a7d2ffccaf86057aa4eedf06bfb0c3f05258808af10a4cb3110be67e3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 662,
+      "batch": 107,
+      "slug": "trino",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Trino: bộ máy truy vấn SQL phân tán nhanh cho phân tích dữ liệu lớn; README chủ yếu hướng dẫn phát triển, xây, chạy trong IDE và chính sách bảo mật; hỗ trợ bản dựng tái lập",
+        "excerpt": "Hiểu Trino là bộ máy truy vấn SQL phân tán nhanh cho phân tích dữ liệu lớn; README gần như chỉ dành cho nhà phát triển (phát triển, đóng góp, chính sách bảo mật, yêu cầu xây, chạy trong IDE, chạy máy chủ thử nghiệm và CLI) và nêu hỗ trợ bản dựng tái lập từ phiên bản 449.",
+        "content": "<p>README mở đầu bằng câu Trino là bộ máy truy vấn SQL phân tán nhanh cho phân tích dữ liệu lớn (mô tả của dự án) và trỏ tới sách hướng dẫn người dùng để xem cách triển khai và tài liệu người dùng cuối. Phần còn lại hướng dẫn phát triển: tài liệu DEVELOPMENT.md cho phát triển, phát hành, phong cách mã và hướng dẫn viết plugin; CONTRIBUTING.md cho yêu cầu đóng góp; chính sách bảo mật để báo lỗ hổng; Trino hỗ trợ bản dựng tái lập từ phiên bản 449; yêu cầu để xây (bài không chép), cách xây, chạy Trino trong IDE (tổng quan, chạy máy chủ thử nghiệm, chạy kiểm thử, chạy máy chủ đầy đủ, chạy CLI). README có các huy hiệu bản phát hành, Slack và sách Trino: The Definitive Guide. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dữ liệu nằm rải rác ở nhiều nơi như S3, cơ sở dữ liệu và tệp. Trino cho bạn viết một câu SQL truy vấn xuyên suốt nhiều nguồn đó mà không phải gom về một chỗ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm connector và truy vấn liên nguồn; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần SQL, hiểu hệ phân tán và vận hành cụm; README dành cho nhà phát triển. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README không dạy cách dùng, chỉ hướng dẫn phát triển: người dùng cuối cần đọc sách hướng dẫn và tài liệu trino.io. Truy vấn xuyên nhiều nguồn dễ làm lộ dữ liệu nếu phân quyền sai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>query engine (bộ máy truy vấn)</strong>: phần mềm thực thi truy vấn SQL; README nêu.</li><li><strong>distributed (phân tán)</strong>: chạy trên nhiều máy; README nêu.</li><li><strong>connector</strong>: phần nối Trino với một nguồn dữ liệu; README không nêu, đây là chú thích biên tập.</li><li><strong>reproducible builds (bản dựng tái lập)</strong>: dựng lại cho ra tệp giống hệt; README nêu hỗ trợ từ phiên bản 449.</li><li><strong>plugin</strong>: phần mở rộng; README nêu hướng dẫn cho người viết plugin.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu công cụ xây (Java, Maven) và nhiều bước phát triển; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc dòng mô tả và liên kết sách hướng dẫn.</li><li>Đọc tài liệu trino.io cho người dùng cuối.</li><li>Chỉ đọc phần phát triển nếu muốn đóng góp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu truy vấn SQL xuyên nhiều nguồn dữ liệu. Hãy đọc README của Trino (https://github.com/trinodb/trino) và giải thích bằng tiếng Việt: Trino làm gì theo README, vì sao README chủ yếu hướng dẫn phát triển, và người dùng cuối nên đọc gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,7 KB, gần như chỉ hướng dẫn phát triển, bài chưa đọc tài liệu trino.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>trinodb</strong> có <strong>13.434 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/trinodb/trino/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/trinodb/trino\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 662. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13434; repo_id 166515022; README SHA256 a65d4ecc86c4d71c296ab44edcb500772e648a00355fe70cb1b837ff4ee13d16.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/trinodb/trino",
+          "repo_id": "166515022",
+          "source_path": "",
+          "source_revision": "README-SHA256:a65d4ecc86c4d71c296ab44edcb500772e648a00355fe70cb1b837ff4ee13d16",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trinodb/trino",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu công cụ xây (Java, Maven) và nhiều bước phát triển; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trinodb/trino/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/trinodb/trino/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "trinodb/trino",
+        "stars": 13434,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/trinodb/trino/master/README.md",
+        "readmeSha256": "a65d4ecc86c4d71c296ab44edcb500772e648a00355fe70cb1b837ff4ee13d16",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 663,
+      "batch": 107,
+      "slug": "apache-arrow",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Arrow: định dạng cột phổ quát và bộ công cụ đa ngôn ngữ cho trao đổi dữ liệu nhanh và phân tích trong bộ nhớ, gồm định dạng cột, IPC, ADBC, Flight RPC và thư viện C++; giấy phép Apache 2.0",
+        "excerpt": "Hiểu Apache Arrow là định dạng cột phổ quát và bộ công cụ đa ngôn ngữ cho trao đổi dữ liệu nhanh và phân tích trong bộ nhớ: gồm định dạng cột, định dạng IPC để truyền giữa tiến trình, ADBC (API kết nối cơ sở dữ liệu), giao thức Flight RPC và thư viện C++; README nêu giấy phép Apache 2.0 và tình trạng triển khai.",
+        "content": "<p>README tả Apache Arrow là định dạng cột phổ quát và bộ công cụ đa ngôn ngữ cho trao đổi dữ liệu nhanh và phân tích trong bộ nhớ, gồm các công nghệ giúp hệ dữ liệu lưu trữ, xử lý và di chuyển dữ liệu hiệu quả. Thành phần chính: định dạng cột Arrow (biểu diễn chuẩn trong bộ nhớ cho nhiều kiểu dữ liệu), định dạng IPC (tuần tự hóa hiệu quả để giao tiếp giữa tiến trình và môi trường khác nhau), ADBC (API và trình điều khiển dựa trên Arrow để truy cập cơ sở dữ liệu), giao thức Flight RPC (khối xây dựng cho dịch vụ từ xa trao đổi dữ liệu Arrow), thư viện C++ và nhiều thư viện ngôn ngữ khác. README có mục các thư viện Arrow gồm gì, tình trạng triển khai, cách đóng góp, tham gia cộng đồng và nhà tài trợ CI. Phần đầu README là thông báo giấy phép của Apache Software Foundation theo Apache License 2.0. Các mô tả 'nhanh' và 'hiệu quả' là cách tự mô tả của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhiều công cụ dữ liệu như pandas hay Spark lưu bảng theo cách riêng nên chuyển qua lại tốn thời gian chuyển đổi. Arrow đặt một cách lưu bảng chung để hai công cụ trao đổi gần như không phải dịch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'định dạng cột' khác 'định dạng hàng' bằng ví dụ bảng nhỏ; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần khái niệm bảng dữ liệu và ít nhất một ngôn ngữ như Python; dùng gián tiếp qua pandas hay Polars dễ hơn dùng trực tiếp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần lớn người dùng gặp Arrow gián tiếp qua các thư viện khác; bạn chưa cần dùng trực tiếp. Bài chưa kiểm tra độ nhanh thực tế.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>columnar format (định dạng cột)</strong>: lưu dữ liệu theo từng cột; README nêu.</li><li><strong>IPC</strong>: giao tiếp giữa các tiến trình; README nêu định dạng IPC.</li><li><strong>ADBC</strong>: API kết nối cơ sở dữ liệu dựa trên Arrow; README nêu.</li><li><strong>Flight RPC</strong>: giao thức trao đổi dữ liệu Arrow qua mạng; README nêu.</li><li><strong>in-memory analytics (phân tích trong bộ nhớ)</strong>: phân tích dữ liệu đã nạp vào RAM; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu arrow.apache.org; bài không chép lệnh. Cần ngôn ngữ có thư viện Arrow. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Powering In-Memory Analytics.</li><li>Đọc What's in the Arrow libraries?</li><li>Xem tình trạng triển khai cho ngôn ngữ của bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học khoa học dữ liệu và thấy nhiều công cụ nhắc Arrow. Hãy đọc README của Apache Arrow (https://github.com/apache/arrow) và giải thích bằng tiếng Việt: định dạng cột là gì, IPC, ADBC và Flight dùng để làm gì, và vì sao mình thường dùng Arrow gián tiếp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,9 KB, bài chưa đọc tài liệu arrow.apache.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>17.273 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu thông báo Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/arrow/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/arrow\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 663. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17273; repo_id 51905353; README SHA256 a8240517de55f26840b8d798cba46d2159ee62cf3a9ea8758565db7fe2db86e7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/arrow",
+          "repo_id": "51905353",
+          "source_path": "",
+          "source_revision": "README-SHA256:a8240517de55f26840b8d798cba46d2159ee62cf3a9ea8758565db7fe2db86e7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/arrow",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu arrow.apache.org; bài không chép lệnh. Cần ngôn ngữ có thư viện Arrow. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/arrow/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/arrow/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/arrow",
+        "stars": 17273,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/arrow/main/README.md",
+        "readmeSha256": "a8240517de55f26840b8d798cba46d2159ee62cf3a9ea8758565db7fe2db86e7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 664,
+      "batch": 107,
+      "slug": "ray",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ray: khung hợp nhất để mở rộng ứng dụng AI và Python, gồm runtime phân tán lõi và các thư viện AI (Data, Train, Tune, RLlib, Serve), có Tasks, Actors, Objects, bảng điều khiển và trình gỡ lỗi phân tán",
+        "excerpt": "Hiểu Ray là khung hợp nhất để mở rộng ứng dụng AI và Python: runtime phân tán lõi cùng các thư viện AI (Data, Train, Tune, RLlib, Serve) và các khái niệm lõi Tasks, Actors, Objects; README nêu Ray chạy trên máy, cụm, nhà cung cấp đám mây và Kubernetes, có bảng điều khiển và trình gỡ lỗi phân tán; có lệnh cài, bài không chép.",
+        "content": "<p>README tả Ray là khung hợp nhất để mở rộng ứng dụng AI và Python, gồm runtime phân tán lõi và bộ thư viện AI giúp đơn giản hóa tính toán học máy: Data (tập dữ liệu mở rộng cho ML), Train (huấn luyện phân tán), Tune (tinh chỉnh siêu tham số mở rộng), RLlib (học tăng cường mở rộng), Serve (phục vụ mô hình mở rộng và lập trình được). Khái niệm lõi: Tasks (hàm không trạng thái chạy trong cụm), Actors (tiến trình có trạng thái trong cụm), Objects (giá trị bất biến truy cập được khắp cụm). README có phần giám sát và gỡ lỗi (Ray Dashboard, Ray Distributed Debugger), nói Ray chạy trên mọi máy, cụm, nhà cung cấp đám mây và Kubernetes, có hệ sinh thái tích hợp cộng đồng. README có lệnh cài bằng pip và trang cài đặt cho bản đêm (bài không chép lệnh). Phần Why Ray? giải thích tải ML ngày càng nặng và máy cá nhân không đủ. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chương trình Python chạy trên một máy thì chậm khi xử lý dữ liệu hay huấn luyện mô hình lớn. Ray giúp chia việc cho nhiều máy với ít thay đổi trong mã Python.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích Task và Actor bằng ví dụ xử lý song song nhiều tệp; chạy thử trên máy cá nhân chứ chưa dùng cụm trả phí. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python vững và hiểu tính toán phân tán; cụm đám mây tốn kém. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu vừa trong một máy thì chưa cần cụm. Cụm Ray trên đám mây có thể tốn chi phí lớn nếu quên tắt. Hệ phân tán dễ sai: lỗi song song khó gỡ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>distributed runtime (runtime phân tán)</strong>: phần thực thi chạy trên nhiều máy; README nêu.</li><li><strong>task (tác vụ)</strong>: hàm không trạng thái chạy trong cụm; README nêu.</li><li><strong>actor</strong>: tiến trình có trạng thái trong cụm; README nêu.</li><li><strong>hyperparameter tuning (tinh chỉnh siêu tham số)</strong>: tìm cấu hình tốt cho mô hình; README nêu thư viện Tune.</li><li><strong>model serving (phục vụ mô hình)</strong>: cho ứng dụng gọi mô hình đã huấn luyện; README nêu Serve.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có lệnh cài từ PyPI và trang cài đặt bản đêm; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Why Ray?</li><li>Đọc phần Ray Core: Tasks, Actors, Objects.</li><li>Thử chế độ cục bộ trên máy cá nhân.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết Python và muốn chạy song song trên nhiều máy. Hãy đọc README của Ray (https://github.com/ray-project/ray) và giải thích bằng tiếng Việt: Task, Actor và Object là gì, các thư viện Data, Train, Tune, Serve dùng làm gì, và chi phí khi dùng cụm đám mây. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,6 KB, bài chưa đọc tài liệu docs.ray.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ray-project</strong> có <strong>44.191 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ray-project/ray/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ray-project/ray\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 664. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44191; repo_id 71932349; README SHA256 27d1e25d12e737128e04b73efb0f55c1514011a6c6a137ee9f0b692db403034e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ray-project/ray",
+          "repo_id": "71932349",
+          "source_path": "",
+          "source_revision": "README-SHA256:27d1e25d12e737128e04b73efb0f55c1514011a6c6a137ee9f0b692db403034e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ray-project/ray",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có lệnh cài từ PyPI và trang cài đặt bản đêm; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ray-project/ray/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ray-project/ray/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ray-project/ray",
+        "stars": 44191,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ray-project/ray/master/README.md",
+        "readmeSha256": "27d1e25d12e737128e04b73efb0f55c1514011a6c6a137ee9f0b692db403034e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 665,
+      "batch": 107,
+      "slug": "apache-iceberg",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Iceberg: định dạng hiệu năng cao cho bảng phân tích khổng lồ, đưa độ tin cậy và đơn giản của bảng SQL vào dữ liệu lớn, cho phép nhiều bộ máy (Spark, Trino, Flink, Presto, Hive, Impala) làm việc trên cùng bảng",
+        "excerpt": "Hiểu Apache Iceberg là định dạng hiệu năng cao cho bảng phân tích khổng lồ, đưa độ tin cậy và sự đơn giản của bảng SQL vào dữ liệu lớn và cho phép nhiều bộ máy như Spark, Trino, Flink, Presto, Hive, Impala cùng làm việc an toàn trên cùng một bảng; kho này chứa thư viện Java lõi, bản cài đặt tham chiếu.",
+        "content": "<p>README tả Iceberg là định dạng hiệu năng cao cho bảng phân tích khổng lồ; Iceberg mang độ tin cậy và sự đơn giản của bảng SQL vào dữ liệu lớn đồng thời cho phép các bộ máy như Spark, Trino, Flink, Presto, Hive, Impala làm việc an toàn trên cùng một bảng cùng lúc; đây là cách tự mô tả của dự án, bài chưa kiểm chứng. README trỏ tới tài liệu iceberg.apache.org. Mục Status nói Iceberg đang phát triển tích cực tại Apache Software Foundation, đặc tả định dạng ổn định và tính năng mới thêm theo từng phiên bản, thư viện Java lõi nằm trong kho này và là bản cài đặt tham chiếu cho các thư viện khác. README có mục hợp tác, cách xây (bài không chép lệnh), tài liệu, tương thích bộ máy (trang đa bộ máy; Presto, Trino xem trang của họ) và các bản cài đặt khác (Go, Python, Rust, C++...). Phần đầu README là thông báo giấy phép của Apache Software Foundation theo Apache License 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bảng dữ liệu khổng lồ lưu dưới dạng hàng nghìn tệp rất dễ hỏng khi nhiều chương trình cùng ghi. Iceberg thêm một lớp quản lý để bảng hành xử như bảng SQL đáng tin cậy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'định dạng bảng' khác 'định dạng tệp' như Parquet bằng ví dụ đời thường; chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu hồ dữ liệu, tệp Parquet, bộ máy truy vấn như Spark hoặc Trino. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần lớn người học gặp Iceberg gián tiếp qua nền tảng dữ liệu; bạn chưa có hồ dữ liệu lớn thì chưa cần. Kho này chủ yếu là thư viện Java lõi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>table format (định dạng bảng)</strong>: quy ước quản lý bảng gồm nhiều tệp; README nêu.</li><li><strong>analytic tables (bảng phân tích)</strong>: bảng lớn dùng để phân tích; README nêu.</li><li><strong>reference implementation (bản cài đặt tham chiếu)</strong>: bản mẫu chuẩn; README nêu thư viện Java lõi là bản này.</li><li><strong>multi-engine (đa bộ máy)</strong>: nhiều công cụ cùng dùng một bảng; README nêu.</li><li><strong>specification (đặc tả)</strong>: tài liệu chuẩn mô tả định dạng; README nêu đặc tả ổn định.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Building; bài không chép lệnh. Cần Java và bộ máy như Spark hoặc Trino. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Status.</li><li>Đọc tài liệu iceberg.apache.org.</li><li>Xem trang Multi-Engine Support cho bộ máy bạn dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về hồ dữ liệu. Hãy đọc README của Apache Iceberg (https://github.com/apache/iceberg) và giải thích bằng tiếng Việt: định dạng bảng là gì, vì sao nhiều bộ máy dùng chung một bảng cần Iceberg, và kho này chứa gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,3 KB, bài chưa đọc tài liệu iceberg.apache.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>9.401 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu thông báo Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/iceberg/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/iceberg\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 665. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9401; repo_id 158256479; README SHA256 c2bbafebecdbd97adf45121fceb5395a0bd114767d6976f4cd244e5088806a32.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/iceberg",
+          "repo_id": "158256479",
+          "source_path": "",
+          "source_revision": "README-SHA256:c2bbafebecdbd97adf45121fceb5395a0bd114767d6976f4cd244e5088806a32",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/iceberg",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Building; bài không chép lệnh. Cần Java và bộ máy như Spark hoặc Trino. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/iceberg/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/iceberg/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/iceberg",
+        "stars": 9401,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/iceberg/main/README.md",
+        "readmeSha256": "c2bbafebecdbd97adf45121fceb5395a0bd114767d6976f4cd244e5088806a32",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 666,
+      "batch": 107,
+      "slug": "delta-lake",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Delta Lake: khung lưu trữ mã nguồn mở để dựng kiến trúc Lakehouse với các bộ máy tính toán như Spark, PrestoDB, Flink, Trino và Hive, có các trình kết nối, giao thức giao dịch và kiểm soát đồng thời; giấy phép Apache 2",
+        "excerpt": "Hiểu Delta Lake là khung lưu trữ mã nguồn mở giúp dựng kiến trúc Lakehouse với các bộ máy như Spark, PrestoDB, Flink, Trino, Hive; README liệt kê các trình kết nối, giao thức giao dịch, kiểm soát đồng thời, yêu cầu với hệ lưu trữ nền, tương thích API và dữ liệu, lộ trình và hướng dẫn xây.",
+        "content": "<p>README tả Delta Lake là khung lưu trữ mã nguồn mở cho phép dựng kiến trúc Lakehouse với các bộ máy tính toán gồm Spark, PrestoDB, Flink, Trino và Hive, kèm API cho Scala, Java, Rust và Python. README trỏ tới tài liệu docs.delta.io và hướng dẫn nhanh cho Scala, Java, Python, nói kho này là một trong nhiều kho của tổ chức delta-io (delta, delta-rs, delta-sharing, kafka-delta-ingest, website). Danh sách tích hợp phổ biến: Apache Spark, Apache Flink (bản xem trước), PrestoDB, Trino, Delta Standalone, Apache Hive, Delta Rust API. README có mục bản dựng mới nhất, tài liệu API, tương thích (API và lưu trữ dữ liệu), lộ trình, giao thức giao dịch, yêu cầu với hệ lưu trữ nền, kiểm soát đồng thời, báo lỗi, đóng góp, xây. README có huy hiệu Apache 2 và mục License. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lakehouse là cách gộp ưu điểm của kho dữ liệu (đáng tin cậy, truy vấn nhanh) với hồ dữ liệu (rẻ, lưu mọi loại dữ liệu). Delta Lake thêm giao dịch và quản lý phiên bản lên tệp trong hồ dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích giao dịch ACID và vì sao tệp thường không có; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Spark hoặc bộ máy tương đương, hiểu hồ dữ liệu và giao dịch. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần lớn người học dùng Delta Lake qua nền tảng dữ liệu; bài chưa so sánh với Iceberg hay Hudi. README có mục yêu cầu với hệ lưu trữ nền: đọc kỹ trước khi dùng trên kho lưu trữ đám mây.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Lakehouse</strong>: kiến trúc gộp kho dữ liệu và hồ dữ liệu; README nêu.</li><li><strong>transaction protocol (giao thức giao dịch)</strong>: quy ước đảm bảo ghi dữ liệu nhất quán; README có mục này.</li><li><strong>concurrency control (kiểm soát đồng thời)</strong>: xử lý nhiều người ghi cùng lúc; README có mục này.</li><li><strong>connector (trình kết nối)</strong>: phần nối bộ máy với Delta Lake; README liệt kê.</li><li><strong>delta-rs</strong>: cài đặt Rust của Delta Lake; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start Guide cho Scala, Java, Python và mục Building; bài không chép lệnh. Cần bộ máy như Spark. Miễn phí theo Apache 2 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Latest Binaries.</li><li>Đọc Transaction Protocol và Concurrency Control.</li><li>Xem Quick Start Guide trên docs.delta.io.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về Lakehouse. Hãy đọc README của Delta Lake (https://github.com/delta-io/delta) và giải thích bằng tiếng Việt: Lakehouse là gì, giao thức giao dịch và kiểm soát đồng thời dùng để làm gì, và README nêu yêu cầu gì với hệ lưu trữ nền. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11,4 KB, bài chưa đọc tài liệu docs.delta.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>delta-io</strong> có <strong>9.066 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu và mục License Apache 2; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/delta-io/delta/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/delta-io/delta\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 666. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9066; repo_id 182849188; README SHA256 dc6f99c0120da2a69972589130d2e8c485f8c6cccfc122d9aeae6897e9289b32.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/delta-io/delta",
+          "repo_id": "182849188",
+          "source_path": "",
+          "source_revision": "README-SHA256:dc6f99c0120da2a69972589130d2e8c485f8c6cccfc122d9aeae6897e9289b32",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/delta-io/delta",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start Guide cho Scala, Java, Python và mục Building; bài không chép lệnh. Cần bộ máy như Spark. Miễn phí theo Apache 2 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/delta-io/delta/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/delta-io/delta/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "delta-io/delta",
+        "stars": 9066,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/delta-io/delta/master/README.md",
+        "readmeSha256": "dc6f99c0120da2a69972589130d2e8c485f8c6cccfc122d9aeae6897e9289b32",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 667,
+      "batch": 107,
+      "slug": "apache-hudi",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Hudi: nền tảng hồ dữ liệu mở dựng trên định dạng bảng mở hiệu năng cao để nạp, lập chỉ mục, lưu, phục vụ, biến đổi và quản lý dữ liệu trên nhiều môi trường đám mây; có công cụ nạp cho Spark và Flink",
+        "excerpt": "Hiểu Apache Hudi là nền tảng lakehouse dữ liệu mở dựng trên định dạng bảng mở hiệu năng cao để nạp, lập chỉ mục, lưu, phục vụ, biến đổi và quản lý dữ liệu trên nhiều môi trường đám mây; README liệt kê tính năng theo từng mảng (nạp, lưu trữ, lập chỉ mục, ghi, truy vấn, quản lý bảng).",
+        "content": "<p>README tả Apache Hudi là nền tảng hồ dữ liệu mở (data lakehouse) dựng trên định dạng bảng mở hiệu năng cao để nạp, lập chỉ mục, lưu, phục vụ, biến đổi và quản lý dữ liệu trên nhiều môi trường đám mây. Hudi lưu dữ liệu và siêu dữ liệu trên kho đám mây ở định dạng mở, với các nhóm tính năng: nạp (công cụ nạp sẵn cho người dùng Spark và Flink), lưu trữ, lập chỉ mục, ghi, truy vấn và quản lý bảng. README có mục xây từ mã nguồn (bài không chép lệnh), tài liệu và đóng góp. Phần đầu README là thông báo giấy phép của Apache Software Foundation theo Apache License 2.0. Các mô tả về hiệu năng cao là cách tự mô tả của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi dữ liệu thay đổi liên tục như đơn hàng được sửa, hồ dữ liệu thường khó cập nhật từng bản ghi. Hudi thêm chỉ mục và giao dịch để cập nhật và xóa trong hồ dữ liệu hiệu quả hơn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'upsert' (chèn hoặc cập nhật) và vì sao nó khó với tệp thường; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học khoa học dữ liệu hoặc làm việc với dữ liệu lớn, muốn hiểu bức tranh công cụ ở mức nhập môn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Spark hoặc Flink, hiểu hồ dữ liệu và vận hành đám mây. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có hồ dữ liệu lớn thì chưa cần. Bài chưa so sánh với Iceberg và Delta Lake. Xóa và cập nhật dữ liệu quy mô lớn có thể gây mất dữ liệu nếu cấu hình sai: thử trên dữ liệu giả.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>data lakehouse</strong>: kiến trúc gộp kho dữ liệu và hồ dữ liệu; README nêu.</li><li><strong>table format (định dạng bảng)</strong>: quy ước quản lý bảng gồm nhiều tệp; README nêu.</li><li><strong>ingestion (nạp dữ liệu)</strong>: đưa dữ liệu vào hệ thống; README nêu có công cụ nạp sẵn.</li><li><strong>indexing (lập chỉ mục)</strong>: tạo bảng tra cứu nhanh; README nêu.</li><li><strong>upsert</strong>: chèn hoặc cập nhật bản ghi; README không nêu, đây là chú thích biên tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục xây từ mã nguồn; bài không chép lệnh. Cần Spark hoặc Flink và kho đám mây. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Features.</li><li>Đọc tài liệu hudi.apache.org.</li><li>Thử trên dữ liệu giả ở chế độ cục bộ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học về hồ dữ liệu. Hãy đọc README của Apache Hudi (https://github.com/apache/hudi) và giải thích bằng tiếng Việt: Hudi là gì, upsert là gì, các nhóm tính năng nạp, lưu trữ, lập chỉ mục khác nhau thế nào, và rủi ro khi cập nhật hoặc xóa dữ liệu quy mô lớn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13 KB, bài chưa đọc tài liệu hudi.apache.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dữ liệu lớn chạy trên cụm máy tốn nhiều tiền điện toán đám mây và thường chạm vào dữ liệu nhạy cảm của tổ chức: đặt hạn mức chi phí trước khi chạy cụm, dùng dữ liệu công khai hoặc dữ liệu giả khi học, phân quyền truy cập và mã hóa dữ liệu, không để lộ khóa đám mây, và đừng nhờ AI chạy tác vụ xóa hay ghi đè dữ liệu thật mà chưa hiểu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>6.347 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu thông báo Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/hudi/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/hudi\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 667. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6347; repo_id 76474200; README SHA256 a89f0c73486edd07743f70d4484d0f5dfedaa39dd4e1734465b82e5a350ed059.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/hudi",
+          "repo_id": "76474200",
+          "source_path": "",
+          "source_revision": "README-SHA256:a89f0c73486edd07743f70d4484d0f5dfedaa39dd4e1734465b82e5a350ed059",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/hudi",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục xây từ mã nguồn; bài không chép lệnh. Cần Spark hoặc Flink và kho đám mây. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/hudi/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/hudi/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/hudi",
+        "stars": 6347,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/hudi/master/README.md",
+        "readmeSha256": "a89f0c73486edd07743f70d4484d0f5dfedaa39dd4e1734465b82e5a350ed059",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

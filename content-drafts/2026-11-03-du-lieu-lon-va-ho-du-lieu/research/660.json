@@ -1,0 +1,43 @@
+{
+  "key": 660,
+  "repo": "apache/flink",
+  "repoId": "20587599",
+  "url": "https://github.com/apache/flink",
+  "stars": 26443,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:58:50Z",
+  "createdAt": "2014-06-07T07:00:10Z",
+  "defaultBranch": "master",
+  "description": "Apache Flink",
+  "homepage": "https://flink.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/flink/master/README.md",
+    "sha256": "bb09aa317a5cff5096e13b7157df4b39d31fd12d4c61ee6233a5be518acf9ec6",
+    "bytes": 7771,
+    "sectionsRead": [
+      "Features",
+      "Streaming Example",
+      "Batch Example",
+      "Building Apache Flink from Source",
+      "Externalized Connectors"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Flink.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố hiệu năng."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,43 @@
+{
+  "key": 666,
+  "repo": "delta-io/delta",
+  "repoId": "182849188",
+  "url": "https://github.com/delta-io/delta",
+  "stars": 9066,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:55:44Z",
+  "createdAt": "2019-04-22T18:56:51Z",
+  "defaultBranch": "master",
+  "description": "An open-source storage framework that enables building a Lakehouse architecture with compute engines including Spark, PrestoDB, Flink, Trino, and Hive and APIs",
+  "homepage": "https://delta.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/delta-io/delta/master/README.md",
+    "sha256": "dc6f99c0120da2a69972589130d2e8c485f8c6cccfc122d9aeae6897e9289b32",
+    "bytes": 11352,
+    "sectionsRead": [
+      "Latest Binaries",
+      "Compatibility",
+      "Transaction Protocol",
+      "Concurrency Control",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.delta.io.",
+    "Chưa thử.",
+    "Chưa so sánh với Iceberg và Hudi."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,43 @@
+{
+  "key": 662,
+  "repo": "trinodb/trino",
+  "repoId": "166515022",
+  "url": "https://github.com/trinodb/trino",
+  "stars": 13434,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:49:22Z",
+  "createdAt": "2019-01-19T06:38:14Z",
+  "defaultBranch": "master",
+  "description": "Official repository of Trino, the distributed SQL query engine for big data, formerly known as PrestoSQL (https://trino.io)",
+  "homepage": "https://trino.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/trinodb/trino/master/README.md",
+    "sha256": "a65d4ecc86c4d71c296ab44edcb500772e648a00355fe70cb1b837ff4ee13d16",
+    "bytes": 6695,
+    "sectionsRead": [
+      "Development",
+      "Security",
+      "Build requirements",
+      "Building Trino",
+      "Running Trino in your IDE"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu trino.io.",
+    "Chưa thử.",
+    "Chưa so sánh với Spark SQL."
+  ],
+  "runtimeValidated": false
+}

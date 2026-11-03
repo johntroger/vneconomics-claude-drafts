@@ -1,0 +1,43 @@
+{
+  "key": 661,
+  "repo": "apache/spark",
+  "repoId": "17165658",
+  "url": "https://github.com/apache/spark",
+  "stars": 44391,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:39:42Z",
+  "createdAt": "2014-02-25T08:00:08Z",
+  "defaultBranch": "master",
+  "description": "Apache Spark - A unified analytics engine for large-scale data processing",
+  "homepage": "https://spark.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/spark/master/README.md",
+    "sha256": "85e2b11a7d2ffccaf86057aa4eedf06bfb0c3f05258808af10a4cb3110be67e3",
+    "bytes": 23592,
+    "sectionsRead": [
+      "Online Documentation",
+      "Building Spark",
+      "Interactive Python Shell",
+      "Example Programs",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu spark.apache.org.",
+    "Chưa thử.",
+    "Chưa so sánh với pandas hay DuckDB."
+  ],
+  "runtimeValidated": false
+}

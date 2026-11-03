@@ -1,0 +1,26 @@
+# Nhóm "Dữ liệu lớn và hồ dữ liệu" — bản nháp 03/11/2026
+
+8 bài, key 660–667, `batch: 107`. Không trùng repo với các đợt trước. **Bản nháp, chưa import, chưa xuất bản.**
+
+| Key | Bài | Repo | License (GitHub) | Sao (2026-11-03) | Commit gần nhất |
+|---|---|---|---|---:|---|
+| 660 | Apache Flink: khung xử lý luồng mã nguồn mở có khả năng xử lý luồng và lô mạnh, runtime ưu tiên luồng, hỗ trợ thời gian sự kiện, cửa sổ linh hoạt và xử lý đúng một lần theo tuyên bố của dự án | [apache/flink](https://github.com/apache/flink) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 26443 | 2026-11-03 |
+| 661 | Apache Spark: công cụ phân tích hợp nhất cho xử lý dữ liệu quy mô lớn với API Scala, Java, Python và R, Spark SQL, pandas API, MLlib, GraphX, Structured Streaming; README nêu đây chỉ là hướng dẫn thiết lập cơ bản | [apache/spark](https://github.com/apache/spark) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 44391 | 2026-11-03 |
+| 662 | Trino: bộ máy truy vấn SQL phân tán nhanh cho phân tích dữ liệu lớn; README chủ yếu hướng dẫn phát triển, xây, chạy trong IDE và chính sách bảo mật; hỗ trợ bản dựng tái lập | [trinodb/trino](https://github.com/trinodb/trino) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 13434 | 2026-11-03 |
+| 663 | Apache Arrow: định dạng cột phổ quát và bộ công cụ đa ngôn ngữ cho trao đổi dữ liệu nhanh và phân tích trong bộ nhớ, gồm định dạng cột, IPC, ADBC, Flight RPC và thư viện C++; giấy phép Apache 2.0 | [apache/arrow](https://github.com/apache/arrow) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 17273 | 2026-11-03 |
+| 664 | Ray: khung hợp nhất để mở rộng ứng dụng AI và Python, gồm runtime phân tán lõi và các thư viện AI (Data, Train, Tune, RLlib, Serve), có Tasks, Actors, Objects, bảng điều khiển và trình gỡ lỗi phân tán | [ray-project/ray](https://github.com/ray-project/ray) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 44191 | 2026-11-03 |
+| 665 | Apache Iceberg: định dạng hiệu năng cao cho bảng phân tích khổng lồ, đưa độ tin cậy và đơn giản của bảng SQL vào dữ liệu lớn, cho phép nhiều bộ máy (Spark, Trino, Flink, Presto, Hive, Impala) làm việc trên cùng bảng | [apache/iceberg](https://github.com/apache/iceberg) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9401 | 2026-11-03 |
+| 666 | Delta Lake: khung lưu trữ mã nguồn mở để dựng kiến trúc Lakehouse với các bộ máy tính toán như Spark, PrestoDB, Flink, Trino và Hive, có các trình kết nối, giao thức giao dịch và kiểm soát đồng thời; giấy phép Apache 2 | [delta-io/delta](https://github.com/delta-io/delta) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9066 | 2026-11-02 |
+| 667 | Apache Hudi: nền tảng hồ dữ liệu mở dựng trên định dạng bảng mở hiệu năng cao để nạp, lập chỉ mục, lưu, phục vụ, biến đổi và quản lý dữ liệu trên nhiều môi trường đám mây; có công cụ nạp cho Spark và Flink | [apache/hudi](https://github.com/apache/hudi) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6347 | 2026-11-03 |
+
+## Repo đã xem nhưng không đưa vào nhóm này
+
+- **opensearch-project/OpenSearch** (README khoảng 3,0 KB, sát ngưỡng) và **dask/dask** (khoảng 1,3 KB): README ngắn; chưa đưa vào nhóm này. **apache/beam** (README khoảng 9 KB, đủ điều kiện) chưa đưa vào nhóm này.
+- **meilisearch/meilisearch**, **airbytehq/airbyte**, **metabase/metabase**: GitHub không trả giấy phép SPDX rõ (NOASSERTION); loại. **dbt-labs/dbt-core**, **great-expectations/great_expectations**: tìm kiếm không trả kết quả.
+
+## Điều chưa biết
+
+- Chưa cài hay chạy công cụ nào; độ khó là đánh giá biên tập. Nhóm dùng nhãn 'Dữ liệu và giao diện ứng dụng', nhãn gần nhất trong 9 nhãn có sẵn.
+- Arrow, Iceberg, Hudi (thông báo Apache License 2.0 ở đầu README), Spark (huy hiệu Apache 2.0), Delta Lake (huy hiệu và mục License Apache 2) nêu giấy phép trong README. Flink, Trino, Ray: README phần đã đọc không nêu giấy phép, lấy theo GitHub (Apache-2.0).
+- Tuyên bố của tác giả, bài không kiểm chứng: bảo đảm đúng một lần và hiệu năng của Flink, độ nhanh của Trino và Arrow, độ tin cậy của Iceberg, hiệu năng của Hudi. README Trino và Spark chủ yếu hướng dẫn phát triển và bảng trạng thái xây dựng, bài chưa đọc tài liệu người dùng. README Spark (khoảng 23,6 KB) đọc phần đầu và các mục chính. Các hệ phân tán tốn chi phí đám mây; bài khuyên dùng dữ liệu giả, hạn mức chi phí và quyền tối thiểu.
+

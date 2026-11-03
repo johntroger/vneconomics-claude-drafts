@@ -11353,5 +11353,195 @@
    "jotai",
    "react-hook-form"
   ]
+ },
+ {
+  "key": 660,
+  "slug": "apache-flink",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Apache Flink: khung xử lý luồng mã nguồn mở có khả năng xử lý luồng và lô mạnh, runtime ưu tiên luồng, hỗ trợ thời gian sự kiện, cửa sổ linh hoạt và xử lý đúng một lần theo tuyên bố của dự án",
+  "repo": "apache/flink",
+  "stars": 26443,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "ray",
+   "trino"
+  ]
+ },
+ {
+  "key": 661,
+  "slug": "apache-spark",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Apache Spark: công cụ phân tích hợp nhất cho xử lý dữ liệu quy mô lớn với API Scala, Java, Python và R, Spark SQL, pandas API, MLlib, GraphX, Structured Streaming; README nêu đây chỉ là hướng dẫn thiết lập cơ bản",
+  "repo": "apache/spark",
+  "stars": 44391,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-arrow",
+   "ray"
+  ]
+ },
+ {
+  "key": 662,
+  "slug": "trino",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Trino: bộ máy truy vấn SQL phân tán nhanh cho phân tích dữ liệu lớn; README chủ yếu hướng dẫn phát triển, xây, chạy trong IDE và chính sách bảo mật; hỗ trợ bản dựng tái lập",
+  "repo": "trinodb/trino",
+  "stars": 13434,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-flink",
+   "apache-iceberg"
+  ]
+ },
+ {
+  "key": 663,
+  "slug": "apache-arrow",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Apache Arrow: định dạng cột phổ quát và bộ công cụ đa ngôn ngữ cho trao đổi dữ liệu nhanh và phân tích trong bộ nhớ, gồm định dạng cột, IPC, ADBC, Flight RPC và thư viện C++; giấy phép Apache 2.0",
+  "repo": "apache/arrow",
+  "stars": 17273,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-spark"
+  ]
+ },
+ {
+  "key": 664,
+  "slug": "ray",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Ray: khung hợp nhất để mở rộng ứng dụng AI và Python, gồm runtime phân tán lõi và các thư viện AI (Data, Train, Tune, RLlib, Serve), có Tasks, Actors, Objects, bảng điều khiển và trình gỡ lỗi phân tán",
+  "repo": "ray-project/ray",
+  "stars": 44191,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-flink",
+   "apache-spark"
+  ]
+ },
+ {
+  "key": 665,
+  "slug": "apache-iceberg",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Apache Iceberg: định dạng hiệu năng cao cho bảng phân tích khổng lồ, đưa độ tin cậy và đơn giản của bảng SQL vào dữ liệu lớn, cho phép nhiều bộ máy (Spark, Trino, Flink, Presto, Hive, Impala) làm việc trên cùng bảng",
+  "repo": "apache/iceberg",
+  "stars": 9401,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "delta-lake",
+   "trino"
+  ]
+ },
+ {
+  "key": 666,
+  "slug": "delta-lake",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Delta Lake: khung lưu trữ mã nguồn mở để dựng kiến trúc Lakehouse với các bộ máy tính toán như Spark, PrestoDB, Flink, Trino và Hive, có các trình kết nối, giao thức giao dịch và kiểm soát đồng thời; giấy phép Apache 2",
+  "repo": "delta-io/delta",
+  "stars": 9066,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "apache-hudi",
+   "apache-iceberg"
+  ]
+ },
+ {
+  "key": 667,
+  "slug": "apache-hudi",
+  "group": "2026-11-03-du-lieu-lon-va-ho-du-lieu",
+  "title": "Apache Hudi: nền tảng hồ dữ liệu mở dựng trên định dạng bảng mở hiệu năng cao để nạp, lập chỉ mục, lưu, phục vụ, biến đổi và quản lý dữ liệu trên nhiều môi trường đám mây; có công cụ nạp cho Spark và Flink",
+  "repo": "apache/hudi",
+  "stars": 6347,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "delta-lake"
+  ]
  }
 ]

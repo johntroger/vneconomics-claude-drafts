@@ -1,0 +1,43 @@
+{
+  "key": 665,
+  "repo": "apache/iceberg",
+  "repoId": "158256479",
+  "url": "https://github.com/apache/iceberg",
+  "stars": 9401,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:33:32Z",
+  "createdAt": "2018-11-19T16:26:46Z",
+  "defaultBranch": "main",
+  "description": "Apache Iceberg",
+  "homepage": "https://iceberg.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/iceberg/main/README.md",
+    "sha256": "c2bbafebecdbd97adf45121fceb5395a0bd114767d6976f4cd244e5088806a32",
+    "bytes": 5332,
+    "sectionsRead": [
+      "Status",
+      "Collaboration",
+      "Building",
+      "Engine Compatibility",
+      "Implementations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu iceberg.apache.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Delta Lake và Hudi."
+  ],
+  "runtimeValidated": false
+}

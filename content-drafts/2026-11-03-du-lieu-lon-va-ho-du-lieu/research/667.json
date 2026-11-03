@@ -1,0 +1,43 @@
+{
+  "key": 667,
+  "repo": "apache/hudi",
+  "repoId": "76474200",
+  "url": "https://github.com/apache/hudi",
+  "stars": 6347,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:22:39Z",
+  "createdAt": "2016-12-14T15:53:41Z",
+  "defaultBranch": "master",
+  "description": "Upserts, Deletes And Incremental Processing on Big Data.",
+  "homepage": "https://hudi.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/hudi/master/README.md",
+    "sha256": "a89f0c73486edd07743f70d4484d0f5dfedaa39dd4e1734465b82e5a350ed059",
+    "bytes": 13057,
+    "sectionsRead": [
+      "Features",
+      "Ingestion",
+      "Storage",
+      "Indexing",
+      "Building Apache Hudi from source"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu hudi.apache.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Iceberg và Delta Lake."
+  ],
+  "runtimeValidated": false
+}
