@@ -1,0 +1,42 @@
+{
+  "key": 579,
+  "repo": "jaegertracing/jaeger",
+  "repoId": "56342508",
+  "url": "https://github.com/jaegertracing/jaeger",
+  "stars": 23365,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:34:07Z",
+  "createdAt": "2016-04-15T18:49:02Z",
+  "defaultBranch": "main",
+  "description": "CNCF Jaeger, a Distributed Tracing Platform",
+  "homepage": "https://www.jaegertracing.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jaegertracing/jaeger/main/README.md",
+    "sha256": "59c953e4bc84c8a62d28c9cdff21b42e54c6a37cd920bbcf97a30c6b8f8140ea",
+    "bytes": 13691,
+    "sectionsRead": [
+      "Quick Start",
+      "Architecture",
+      "Version Compatibility Guarantees",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu jaegertracing.io.",
+    "Chưa thử.",
+    "Chưa đọc kỹ bảng tương thích kho lưu trữ."
+  ],
+  "runtimeValidated": false
+}

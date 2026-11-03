@@ -1,0 +1,43 @@
+{
+  "key": 581,
+  "repo": "openobserve/openobserve",
+  "repoId": "596377730",
+  "url": "https://github.com/openobserve/openobserve",
+  "stars": 22739,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:38:43Z",
+  "createdAt": "2023-02-02T03:29:51Z",
+  "defaultBranch": "main",
+  "description": "Open source observability platform for logs, metrics, traces, RUM (web, android, ios), Session replay, pipelines, SLO and LLM observability. A sophisticated, simple and highly performant alternative to Datadog, Splunk, and Elasticsearch with 140x lower storage costs and single binary deployment.",
+  "homepage": "https://openobserve.ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/openobserve/openobserve/main/README.md",
+    "sha256": "a33ac02d442f77fa3caea5638e6d1351348417f2770d790eb52c3c0db48087c3",
+    "bytes": 19159,
+    "sectionsRead": [
+      "Why OpenObserve?",
+      "Quick Start",
+      "Architecture",
+      "Enterprise Edition",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu openobserve.ai.",
+    "Chưa thử.",
+    "Tuyên bố 140 lần rẻ hơn chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

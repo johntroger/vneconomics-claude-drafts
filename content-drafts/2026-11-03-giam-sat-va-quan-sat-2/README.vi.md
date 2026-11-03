@@ -1,0 +1,26 @@
+# Nhóm "Giám sát và quan sát hệ thống (phần 2)" — bản nháp 03/11/2026
+
+8 bài, key 578–585, `batch: 96`. Không trùng repo với các đợt trước. **Bản nháp, chưa import, chưa xuất bản.**
+
+| Key | Bài | Repo | License (GitHub) | Sao (2026-11-03) | Commit gần nhất |
+|---|---|---|---|---:|---|
+| 578 | Grafana Tempo: hệ thống lưu vết phân tán mã nguồn mở, chỉ cần lưu trữ đối tượng để vận hành, tích hợp với Grafana, Prometheus và Loki, giấy phép AGPL-3.0 có ngoại lệ Apache-2.0 | [grafana/tempo](https://github.com/grafana/tempo) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 5552 | 2026-11-03 |
+| 579 | Jaeger: nền tảng lưu vết phân tán do Uber tạo ra và tặng cho CNCF, dự án tốt nghiệp từ 2019, bản v2 dùng nhiều thành phần của OpenTelemetry Collector, giấy phép Apache 2.0 | [jaegertracing/jaeger](https://github.com/jaegertracing/jaeger) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 23365 | 2026-11-02 |
+| 580 | VictoriaMetrics: cơ sở dữ liệu chuỗi thời gian nhanh, tiết kiệm và mở rộng được cho giám sát, thay thế hoặc lưu trữ dài hạn cho Prometheus, có bản đơn nút và cụm mã nguồn mở và bản Enterprise | [VictoriaMetrics/VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 18004 | 2026-11-03 |
+| 581 | OpenObserve: nền tảng quan sát cho log, số liệu, vết, giám sát người dùng thật và AI, tự tả là thay thế Datadog mã nguồn mở, giấy phép AGPL-3.0 và có bản Enterprise | [openobserve/openobserve](https://github.com/openobserve/openobserve) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 22739 | 2026-11-03 |
+| 582 | Fluent Bit: tác tử thu thập, xử lý và chuyển tiếp log, số liệu và vết gọn nhẹ hiệu năng cao, thuộc hệ sinh thái Fluentd và CNCF, hơn 70 plugin dựng sẵn, giấy phép Apache v2.0 | [fluent/fluent-bit](https://github.com/fluent/fluent-bit) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 8180 | 2026-11-03 |
+| 583 | Grafana Alloy: bản phân phối OpenTelemetry Collector mã nguồn mở có sẵn pipeline Prometheus, hỗ trợ số liệu, log, vết và profile, cấu hình bằng cú pháp lập trình được | [grafana/alloy](https://github.com/grafana/alloy) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 3664 | 2026-11-03 |
+| 584 | Thanos: bộ thành phần dựng hệ số liệu sẵn sàng cao và lưu trữ không giới hạn, đặt trên Prometheus hiện có, lưu dữ liệu lịch sử vào kho đối tượng, dự án CNCF ở giai đoạn ươm | [thanos-io/thanos](https://github.com/thanos-io/thanos) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 14264 | 2026-10-30 |
+| 585 | Apache SkyWalking: hệ thống giám sát hiệu năng ứng dụng (APM) cho vi dịch vụ và kiến trúc đám mây, có lưu vết phân tán, nhiều tác tử ngôn ngữ, eBPF, cơ sở dữ liệu BanyanDB, giấy phép Apache 2.0 | [apache/skywalking](https://github.com/apache/skywalking) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 24988 | 2026-11-03 |
+
+## Repo đã xem nhưng không đưa vào nhóm này
+
+- **getsentry/sentry**, **signoz/signoz**, **gotify/server**, **keephq/keep**, **redis/redis**, **mongodb/mongo**, **cockroachdb/cockroach**, **surrealdb/surrealdb**, **timescale/timescaledb**, **sqlite/sqlite**: GitHub không trả giấy phép SPDX rõ (NOASSERTION); loại. **pocketbase/pocketbase**: đã lưu trữ (archived); loại. **neondatabase/neon**: commit gần nhất 2026-08-31, quá 60 ngày; loại.
+- **grafana/mimir**, **grafana/loki**, **perses/perses**, **cortexproject/cortex**, **prometheus/alertmanager**: đủ điều kiện hoặc đã có trong catalog nhưng chưa đưa vào nhóm này.
+
+## Điều chưa biết
+
+- Chưa cài hay chạy công cụ nào; độ khó là đánh giá biên tập. Nhóm dùng nhãn 'Lưu trữ và công cụ cá nhân', nhãn gần nhất trong 9 nhãn có sẵn.
+- Tempo (AGPL-3.0-only, ngoại lệ Apache-2.0 ở LICENSING.md), Jaeger, Fluent Bit, SkyWalking (Apache) và OpenObserve (AGPL-3.0 cho bản mã nguồn mở) nêu giấy phép trong README. VictoriaMetrics, Alloy, Thanos: README phần đã đọc không nêu giấy phép bằng văn bản, giấy phép lấy theo GitHub (Apache-2.0).
+- Hiệu năng và chi phí (VictoriaMetrics, OpenObserve 140 lần rẻ hơn, SkyWalking 100 tỷ dữ liệu) là tuyên bố của tác giả, bài không kiểm chứng. Phần Enterprise và hỗ trợ thương mại trong README VictoriaMetrics và OpenObserve là quảng bá, bài không đánh giá. TraceQL metrics của Tempo README nêu là thử nghiệm. Bài không phải tư vấn pháp lý về AGPL.
+

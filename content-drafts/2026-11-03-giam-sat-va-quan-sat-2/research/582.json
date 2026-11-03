@@ -1,0 +1,42 @@
+{
+  "key": 582,
+  "repo": "fluent/fluent-bit",
+  "repoId": "29933948",
+  "url": "https://github.com/fluent/fluent-bit",
+  "stars": 8180,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:31:22Z",
+  "createdAt": "2015-01-27T20:41:52Z",
+  "defaultBranch": "master",
+  "description": "Fast and Lightweight Logs, Metrics and Traces processor for Linux, BSD, OSX and Windows",
+  "homepage": "https://fluentbit.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/fluent/fluent-bit/master/README.md",
+    "sha256": "e5f73f9f7b40338d1cc25fb07e24343386bef2e269bd88891a691f072db58c39",
+    "bytes": 5258,
+    "sectionsRead": [
+      "About",
+      "Roadmap & Maintenance",
+      "Key Features",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu fluentbit.io.",
+    "Chưa thử.",
+    "Hiệu năng thực tế chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

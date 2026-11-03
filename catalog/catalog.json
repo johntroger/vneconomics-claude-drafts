@@ -9407,5 +9407,195 @@
   "related": [
    "nltk"
   ]
+ },
+ {
+  "key": 578,
+  "slug": "grafana-tempo",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Grafana Tempo: hệ thống lưu vết phân tán mã nguồn mở, chỉ cần lưu trữ đối tượng để vận hành, tích hợp với Grafana, Prometheus và Loki, giấy phép AGPL-3.0 có ngoại lệ Apache-2.0",
+  "repo": "grafana/tempo",
+  "stars": 5552,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "jaeger",
+   "openobserve"
+  ]
+ },
+ {
+  "key": 579,
+  "slug": "jaeger",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Jaeger: nền tảng lưu vết phân tán do Uber tạo ra và tặng cho CNCF, dự án tốt nghiệp từ 2019, bản v2 dùng nhiều thành phần của OpenTelemetry Collector, giấy phép Apache 2.0",
+  "repo": "jaegertracing/jaeger",
+  "stars": 23365,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "grafana-tempo",
+   "thanos"
+  ]
+ },
+ {
+  "key": 580,
+  "slug": "victoriametrics",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "VictoriaMetrics: cơ sở dữ liệu chuỗi thời gian nhanh, tiết kiệm và mở rộng được cho giám sát, thay thế hoặc lưu trữ dài hạn cho Prometheus, có bản đơn nút và cụm mã nguồn mở và bản Enterprise",
+  "repo": "VictoriaMetrics/VictoriaMetrics",
+  "stars": 18004,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "grafana-alloy",
+   "thanos"
+  ]
+ },
+ {
+  "key": 581,
+  "slug": "openobserve",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "OpenObserve: nền tảng quan sát cho log, số liệu, vết, giám sát người dùng thật và AI, tự tả là thay thế Datadog mã nguồn mở, giấy phép AGPL-3.0 và có bản Enterprise",
+  "repo": "openobserve/openobserve",
+  "stars": 22739,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-skywalking",
+   "grafana-tempo"
+  ]
+ },
+ {
+  "key": 582,
+  "slug": "fluent-bit",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Fluent Bit: tác tử thu thập, xử lý và chuyển tiếp log, số liệu và vết gọn nhẹ hiệu năng cao, thuộc hệ sinh thái Fluentd và CNCF, hơn 70 plugin dựng sẵn, giấy phép Apache v2.0",
+  "repo": "fluent/fluent-bit",
+  "stars": 8180,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "grafana-alloy"
+  ]
+ },
+ {
+  "key": 583,
+  "slug": "grafana-alloy",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Grafana Alloy: bản phân phối OpenTelemetry Collector mã nguồn mở có sẵn pipeline Prometheus, hỗ trợ số liệu, log, vết và profile, cấu hình bằng cú pháp lập trình được",
+  "repo": "grafana/alloy",
+  "stars": 3664,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "fluent-bit",
+   "victoriametrics"
+  ]
+ },
+ {
+  "key": 584,
+  "slug": "thanos",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Thanos: bộ thành phần dựng hệ số liệu sẵn sàng cao và lưu trữ không giới hạn, đặt trên Prometheus hiện có, lưu dữ liệu lịch sử vào kho đối tượng, dự án CNCF ở giai đoạn ươm",
+  "repo": "thanos-io/thanos",
+  "stars": 14264,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "jaeger",
+   "victoriametrics"
+  ]
+ },
+ {
+  "key": 585,
+  "slug": "apache-skywalking",
+  "group": "2026-11-03-giam-sat-va-quan-sat-2",
+  "title": "Apache SkyWalking: hệ thống giám sát hiệu năng ứng dụng (APM) cho vi dịch vụ và kiến trúc đám mây, có lưu vết phân tán, nhiều tác tử ngôn ngữ, eBPF, cơ sở dữ liệu BanyanDB, giấy phép Apache 2.0",
+  "repo": "apache/skywalking",
+  "stars": 24988,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "openobserve"
+  ]
  }
 ]

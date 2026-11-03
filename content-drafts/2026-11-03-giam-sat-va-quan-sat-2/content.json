@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-giam-sat-2",
+  "batch": 96,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 578,
+      "batch": 96,
+      "slug": "grafana-tempo",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grafana Tempo: hệ thống lưu vết phân tán mã nguồn mở, chỉ cần lưu trữ đối tượng để vận hành, tích hợp với Grafana, Prometheus và Loki, giấy phép AGPL-3.0 có ngoại lệ Apache-2.0",
+        "excerpt": "Hiểu Grafana Tempo là backend lưu vết phân tán (distributed tracing) mã nguồn mở, README tả là dễ dùng, chi phí thấp vì chỉ cần lưu trữ đối tượng, tích hợp sâu với Grafana, Prometheus và Loki; có ngôn ngữ truy vấn TraceQL và giấy phép AGPL-3.0-only kèm ngoại lệ Apache-2.0.",
+        "content": "<p>README tả Grafana Tempo là backend lưu vết phân tán mã nguồn mở, dễ dùng, quy mô lớn, tiết kiệm vì chỉ cần lưu trữ đối tượng và tích hợp sâu với Grafana, Prometheus, Loki. Lưu vết giúp xác định vấn đề hiệu năng và hiểu đường đi của yêu cầu qua nhiều dịch vụ. README giới thiệu giao diện Traces Drilldown (không cần viết truy vấn), ngôn ngữ truy vấn TraceQL lấy cảm hứng từ LogQL và PromQL, và TraceQL metrics (README nêu là tính năng thử nghiệm). Tempo tương thích Jaeger, Zipkin, Kafka, OpenTelemetry và ghi ra Azure, GCS, S3 hoặc đĩa cục bộ. README có ví dụ triển khai bằng Docker Compose, Helm, Jsonnet và hai công cụ phụ tempo-vulture, tempo-cli. Phần License nói Tempo theo AGPL-3.0-only, một số ngoại lệ theo Apache-2.0 ghi trong LICENSING.md.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một yêu cầu của khách có thể đi qua nhiều dịch vụ nhỏ. Lưu vết giống như dán nhãn lên bưu kiện để biết nó đã đi qua những trạm nào và chậm ở trạm nào. Tempo là nơi lưu các nhãn đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc README và tài liệu để hiểu một vết (trace) gồm những đoạn (span) nào, chưa dựng hệ thống thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu dịch vụ nhiều tầng, OpenTelemetry, lưu trữ đối tượng và thường là Kubernetes. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ có một ứng dụng nhỏ một dịch vụ thì chưa cần lưu vết phân tán; log và số liệu cơ bản thường đủ. Giấy phép AGPL-3.0 có điều khoản riêng khi cung cấp dịch vụ qua mạng: cần đọc LICENSE và LICENSING.md, bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>distributed tracing (lưu vết phân tán)</strong>: theo dõi đường đi của một yêu cầu qua nhiều dịch vụ; README nêu.</li><li><strong>trace và span</strong>: vết là toàn bộ hành trình, span là một đoạn trong đó; đây là chú thích biên tập.</li><li><strong>TraceQL</strong>: ngôn ngữ truy vấn vết của Tempo; README nêu.</li><li><strong>object storage (lưu trữ đối tượng)</strong>: kho lưu tệp kiểu S3; README nêu Tempo chỉ cần loại này.</li><li><strong>OpenTelemetry</strong>: chuẩn mở thu dữ liệu giám sát; README nêu Tempo tương thích.</li><li><strong>AGPL-3.0</strong>: giấy phép mã nguồn mở copyleft có điều khoản cho dịch vụ qua mạng; README nêu cho Tempo.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu get started của Grafana; có ví dụ Docker Compose, Helm, Jsonnet trong thư mục example; bài không chép lệnh. Cần nơi lưu vết (lưu trữ đối tượng hoặc đĩa) và ứng dụng đã gửi vết theo OpenTelemetry hoặc Jaeger, Zipkin. Miễn phí theo AGPL-3.0-only (README nêu), có ngoại lệ Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và TraceQL.</li><li>Mở tài liệu Tempo của Grafana, hiểu trace và span.</li><li>Nếu thử, dùng ví dụ Docker Compose với dữ liệu giả, không cổng mở ra Internet.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tự host vài dịch vụ nhỏ và muốn hiểu lưu vết phân tán. Hãy đọc README của Grafana Tempo (https://github.com/grafana/tempo) và giải thích bằng tiếng Việt: lưu vết khác log và số liệu thế nào, TraceQL là gì, giấy phép AGPL-3.0 kèm ngoại lệ Apache-2.0 nghĩa là gì, và vì sao không nên mở cổng giám sát ra Internet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,6 KB, bài chưa đọc tài liệu grafana.com/docs/tempo, chưa đọc LICENSING.md. TraceQL metrics README nêu là thử nghiệm. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grafana</strong> có <strong>5.552 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL-3.0-only, ngoại lệ Apache-2.0 ở LICENSING.md; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grafana/tempo/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grafana/tempo\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 578. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5552; repo_id 236055696; README SHA256 e5e068feb7acf0cd43eb1d77d3dc2fd3de38a76269f58ed8fabf5a485edea587.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grafana/tempo",
+          "repo_id": "236055696",
+          "source_path": "",
+          "source_revision": "README-SHA256:e5e068feb7acf0cd43eb1d77d3dc2fd3de38a76269f58ed8fabf5a485edea587",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/tempo",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu get started của Grafana; có ví dụ Docker Compose, Helm, Jsonnet trong thư mục example; bài không chép lệnh. Cần nơi lưu vết (lưu trữ đối tượng hoặc đĩa) và ứng dụng đã gửi vết theo OpenTelemetry hoặc Jaeger, Zipkin. Miễn phí theo AGPL-3.0-only (README nêu), có ngoại lệ Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/tempo/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grafana/tempo/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grafana/tempo",
+        "stars": 5552,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grafana/tempo/main/README.md",
+        "readmeSha256": "e5e068feb7acf0cd43eb1d77d3dc2fd3de38a76269f58ed8fabf5a485edea587",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 579,
+      "batch": 96,
+      "slug": "jaeger",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Jaeger: nền tảng lưu vết phân tán do Uber tạo ra và tặng cho CNCF, dự án tốt nghiệp từ 2019, bản v2 dùng nhiều thành phần của OpenTelemetry Collector, giấy phép Apache 2.0",
+        "excerpt": "Hiểu Jaeger là nền tảng lưu vết phân tán do Uber tạo ra và tặng cho Cloud Native Computing Foundation, tốt nghiệp ở CNCF tháng 10 năm 2019; README giới thiệu Jaeger v2, kiến trúc gồm collector, query service, UI và bảng tương thích phiên bản kho lưu trữ.",
+        "content": "<p>README tả Jaeger là nền tảng lưu vết phân tán do Uber Technologies tạo ra, tặng cho CNCF, là dự án cấp cao thứ 7 và tốt nghiệp tháng 10 năm 2019. README báo Jaeger v2 đã phát hành. Kiến trúc: SDK OpenTelemetry gửi dữ liệu tới Jaeger Collector, Collector ghi vào kho lưu trữ (có thể qua plugin gRPC), Query Service đọc ra cho giao diện Jaeger UI. Jaeger dùng nhiều thành phần của OpenTelemetry Collector nên cố giữ tương thích cấu hình giữa các bản. README có bảng phiên bản kho lưu trữ được hỗ trợ (ví dụ Cassandra) và nêu giấy phép Apache 2.0. README có khung khởi động nhanh bằng Docker với lệnh chạy một khối gồm giao diện, collector, query và kho lưu trữ trong bộ nhớ; bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cũng như Tempo, Jaeger giúp theo dõi hành trình một yêu cầu qua nhiều dịch vụ. Điểm khác nằm ở cách lưu dữ liệu và thành phần đi kèm; bài chưa so sánh chất lượng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc sơ đồ kiến trúc trong README để hiểu SDK, collector, query và UI nối với nhau thế nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu dịch vụ nhiều tầng, OpenTelemetry và vận hành kho lưu trữ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có hệ thống nhiều dịch vụ thì chưa cần lưu vết. Bản all-in-one trong README dùng kho trong bộ nhớ, chỉ hợp để làm quen; bài không đánh giá cho sản xuất.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>distributed tracing (lưu vết phân tán)</strong>: theo dõi yêu cầu qua nhiều dịch vụ; README nêu.</li><li><strong>collector</strong>: thành phần nhận và chuyển dữ liệu vết; README nêu.</li><li><strong>CNCF</strong>: Cloud Native Computing Foundation, tổ chức bảo trợ phần mềm nền tảng đám mây; README nêu Jaeger tốt nghiệp ở đó.</li><li><strong>OTLP</strong>: giao thức truyền dữ liệu của OpenTelemetry; README nêu cổng gRPC và HTTP.</li><li><strong>storage plugin (plugin lưu trữ)</strong>: cách nối Jaeger với kho dữ liệu; README nêu qua gRPC.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có khung Quick Start dùng Docker và trỏ tới Getting Started Guide cho sản xuất; bài không chép lệnh. Cần ứng dụng gửi vết theo OpenTelemetry. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Architecture trong README.</li><li>Đọc Getting Started Guide trên jaegertracing.io.</li><li>Nếu thử bản all-in-one, chỉ dùng dữ liệu giả và không mở cổng ra Internet.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu lưu vết phân tán. Hãy đọc README của Jaeger (https://github.com/jaegertracing/jaeger) và giải thích bằng tiếng Việt: các thành phần collector, query, UI làm gì, v2 thay đổi gì theo README, và vì sao bản all-in-one chỉ hợp để làm quen. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13,7 KB, bài đọc phần đầu, kiến trúc, tương thích và giấy phép, chưa đọc tài liệu jaegertracing.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jaegertracing</strong> có <strong>23.365 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jaegertracing/jaeger/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jaegertracing/jaeger\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 579. Chưa cài/chạy thử; không tạo validation. Snapshot sao 23365; repo_id 56342508; README SHA256 59c953e4bc84c8a62d28c9cdff21b42e54c6a37cd920bbcf97a30c6b8f8140ea.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jaegertracing/jaeger",
+          "repo_id": "56342508",
+          "source_path": "",
+          "source_revision": "README-SHA256:59c953e4bc84c8a62d28c9cdff21b42e54c6a37cd920bbcf97a30c6b8f8140ea",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jaegertracing/jaeger",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có khung Quick Start dùng Docker và trỏ tới Getting Started Guide cho sản xuất; bài không chép lệnh. Cần ứng dụng gửi vết theo OpenTelemetry. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jaegertracing/jaeger/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jaegertracing/jaeger/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jaegertracing/jaeger",
+        "stars": 23365,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jaegertracing/jaeger/main/README.md",
+        "readmeSha256": "59c953e4bc84c8a62d28c9cdff21b42e54c6a37cd920bbcf97a30c6b8f8140ea",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 580,
+      "batch": 96,
+      "slug": "victoriametrics",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "VictoriaMetrics: cơ sở dữ liệu chuỗi thời gian nhanh, tiết kiệm và mở rộng được cho giám sát, thay thế hoặc lưu trữ dài hạn cho Prometheus, có bản đơn nút và cụm mã nguồn mở và bản Enterprise",
+        "excerpt": "Hiểu VictoriaMetrics là giải pháp giám sát và quản lý dữ liệu chuỗi thời gian; README tuyên bố nhanh, tiết kiệm, mở rộng được, dùng làm lưu trữ dài hạn hoặc thay thế Prometheus, hỗ trợ PromQL và MetricsQL; có bản mã nguồn mở và bản Enterprise tính năng riêng.",
+        "content": "<p>README tả VictoriaMetrics là giải pháp nhanh, tiết kiệm và mở rộng được để giám sát và quản lý dữ liệu chuỗi thời gian; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README nêu có bản một nút và bản cụm, bản mã nhị phân, ảnh Docker, tính năng nổi bật như lưu trữ dài hạn cho Prometheus hoặc thay thế Prometheus và Graphite trong Grafana, gom nhóm luồng, ngôn ngữ truy vấn PromQL và MetricsQL, cài một tệp nhị phân nhỏ cấu hình qua cờ dòng lệnh, nhiều giao thức nạp dữ liệu (Prometheus, InfluxDB, Graphite, OpenTSDB, DataDog, NewRelic, OpenTelemetry). README có mục Enterprise với tính năng bổ sung, hỗ trợ thương mại và bản dùng thử có giấy phép; phần này là quảng bá thương mại, bài không đánh giá. README phần đã đọc không nêu tên giấy phép bằng văn bản, bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy chủ và ứng dụng liên tục ghi các con số như mức CPU hay số yêu cầu mỗi giây. VictoriaMetrics là kho chuyên lưu những con số theo thời gian đó và cho bạn hỏi lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần khái niệm chính trong tài liệu để hiểu chuỗi thời gian, nhãn và độ phân tán (cardinality). Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu số liệu giám sát, PromQL cơ bản và vận hành máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ giám sát vài máy nhỏ thì chưa cần cơ sở dữ liệu riêng cho số liệu; phần Enterprise và hỗ trợ thương mại không bắt buộc và bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>time series (chuỗi thời gian)</strong>: dữ liệu số ghi theo mốc thời gian; README nêu.</li><li><strong>PromQL</strong>: ngôn ngữ truy vấn của Prometheus; README nêu được hỗ trợ.</li><li><strong>MetricsQL</strong>: ngôn ngữ truy vấn riêng của VictoriaMetrics; README nêu.</li><li><strong>cardinality (độ phân tán nhãn)</strong>: số tổ hợp nhãn khác nhau; README nhắc bộ giới hạn cardinality, giải thích là chú thích biên tập.</li><li><strong>Enterprise</strong>: bản trả phí có thêm tính năng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.victoriametrics.com, có bản nhị phân và Docker; bài không chép lệnh. Có bản đơn nút và cụm. Miễn phí cho bản mã nguồn mở; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; bản Enterprise tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Prominent features.</li><li>Đọc key concepts trong tài liệu.</li><li>Chọn bản đơn nút hay cụm theo nhu cầu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tự host giám sát và nghe nói VictoriaMetrics. Hãy đọc README của VictoriaMetrics (https://github.com/VictoriaMetrics/VictoriaMetrics) và giải thích bằng tiếng Việt: nó làm gì khác Prometheus, bản mã nguồn mở khác Enterprise ở đâu, và tuyên bố nào của README chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13,7 KB, bài đọc phần đầu và tính năng, chưa đọc tài liệu docs.victoriametrics.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>VictoriaMetrics</strong> có <strong>18.004 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/VictoriaMetrics/VictoriaMetrics\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 580. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18004; repo_id 150954997; README SHA256 ecaeaa4b0277523a93202c96f0a03cb6f332ddf1c5ad92b64e2fd2cfbd185c27.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+          "repo_id": "150954997",
+          "source_path": "",
+          "source_revision": "README-SHA256:ecaeaa4b0277523a93202c96f0a03cb6f332ddf1c5ad92b64e2fd2cfbd185c27",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.victoriametrics.com, có bản nhị phân và Docker; bài không chép lệnh. Có bản đơn nút và cụm. Miễn phí cho bản mã nguồn mở; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; bản Enterprise tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "VictoriaMetrics/VictoriaMetrics",
+        "stars": 18004,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/VictoriaMetrics/VictoriaMetrics/master/README.md",
+        "readmeSha256": "ecaeaa4b0277523a93202c96f0a03cb6f332ddf1c5ad92b64e2fd2cfbd185c27",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 581,
+      "batch": 96,
+      "slug": "openobserve",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenObserve: nền tảng quan sát cho log, số liệu, vết, giám sát người dùng thật và AI, tự tả là thay thế Datadog mã nguồn mở, giấy phép AGPL-3.0 và có bản Enterprise",
+        "excerpt": "Hiểu OpenObserve là nền tảng quan sát gom log, số liệu, vết và giám sát người dùng thật; README tuyên bố rẻ hơn Elasticsearch, Splunk và Datadog, triển khai một tệp nhị phân; giấy phép bản mã nguồn mở là AGPL-3.0 và có bản Enterprise với tính năng riêng.",
+        "content": "<p>README tả OpenObserve là nền tảng quan sát cloud-native cho log, số liệu, vết, phân tích, giám sát người dùng thật (RUM) và quan sát AI/LLM, tự giới thiệu là lựa chọn rẻ thay Datadog, Splunk, Elasticsearch. README tuyên bố chi phí lưu trữ thấp hơn 140 lần, triển khai một tệp trong khoảng hai phút, hiệu năng truy vấn tốt hơn Elasticsearch trên phần cứng bằng một phần tư; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README nêu truy vấn bằng SQL và PromQL, viết bằng Rust, dùng lưu trữ Parquet và S3. README nói bản mã nguồn mở theo AGPL-3.0 và có bản Enterprise thêm đăng nhập một lần, RBAC nâng cao, nhật ký kiểm toán, tìm kiếm liên cụm, che dữ liệu nhạy cảm, mã hóa nâng cao. Phần tuân thủ (như HIPAA) là tuyên bố của tác giả. README có khung khởi động nhanh dùng đám mây hoặc Docker, bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì mở nhiều công cụ cho log, số liệu và vết, OpenObserve gom tất cả vào một nơi để bạn tìm và vẽ biểu đồ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Why OpenObserve và Architecture để hiểu một công cụ gom log và số liệu khác gì ba công cụ riêng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu log, số liệu, SQL cơ bản và vận hành máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ có vài ứng dụng nhỏ thì log tệp đơn giản có thể đủ. Giấy phép AGPL-3.0 có điều khoản riêng khi cung cấp dịch vụ qua mạng: cần đọc LICENSE, bài không phải tư vấn pháp lý. Các tính năng đánh dấu Enterprise không thuộc bản mã nguồn mở.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>observability (quan sát hệ thống)</strong>: hiểu hệ thống qua log, số liệu và vết; README nêu.</li><li><strong>RUM (Real User Monitoring)</strong>: theo dõi trải nghiệm người dùng thật trên web hoặc ứng dụng; README nêu.</li><li><strong>Parquet</strong>: định dạng lưu cột; README nêu dùng để giảm chi phí lưu trữ.</li><li><strong>SSO</strong>: đăng nhập một lần; README nêu là tính năng Enterprise.</li><li><strong>AGPL-3.0</strong>: giấy phép mã nguồn mở copyleft có điều khoản cho dịch vụ qua mạng; README nêu cho bản mã nguồn mở.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có khung Quick Start (đám mây hoặc Docker); bài không chép lệnh. Cần nơi lưu dữ liệu (đĩa hoặc S3). Bản mã nguồn mở miễn phí theo AGPL-3.0 (README nêu); bản đám mây và Enterprise tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Why OpenObserve? và Architecture.</li><li>Đọc Enterprise Edition để biết phần nào không có trong bản mở.</li><li>Nếu thử, dùng dữ liệu giả và đặt mật khẩu mạnh cho tài khoản quản trị.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gom log và số liệu cho dịch vụ tự host. Hãy đọc README của OpenObserve (https://github.com/openobserve/openobserve) và giải thích bằng tiếng Việt: nó thay những công cụ nào, tuyên bố 140 lần rẻ hơn là của ai và chưa kiểm chứng, giấy phép AGPL-3.0 khác Enterprise ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 19 KB), bài đọc phần đầu, ưu điểm, Enterprise và giấy phép, chưa đọc tài liệu openobserve.ai. Tuyên bố chi phí và hiệu năng chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openobserve</strong> có <strong>22.739 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL-3.0 cho bản mã nguồn mở; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openobserve/openobserve/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openobserve/openobserve\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 581. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22739; repo_id 596377730; README SHA256 a33ac02d442f77fa3caea5638e6d1351348417f2770d790eb52c3c0db48087c3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openobserve/openobserve",
+          "repo_id": "596377730",
+          "source_path": "",
+          "source_revision": "README-SHA256:a33ac02d442f77fa3caea5638e6d1351348417f2770d790eb52c3c0db48087c3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openobserve/openobserve",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có khung Quick Start (đám mây hoặc Docker); bài không chép lệnh. Cần nơi lưu dữ liệu (đĩa hoặc S3). Bản mã nguồn mở miễn phí theo AGPL-3.0 (README nêu); bản đám mây và Enterprise tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openobserve/openobserve/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openobserve/openobserve/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openobserve/openobserve",
+        "stars": 22739,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openobserve/openobserve/main/README.md",
+        "readmeSha256": "a33ac02d442f77fa3caea5638e6d1351348417f2770d790eb52c3c0db48087c3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 582,
+      "batch": 96,
+      "slug": "fluent-bit",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Fluent Bit: tác tử thu thập, xử lý và chuyển tiếp log, số liệu và vết gọn nhẹ hiệu năng cao, thuộc hệ sinh thái Fluentd và CNCF, hơn 70 plugin dựng sẵn, giấy phép Apache v2.0",
+        "excerpt": "Hiểu Fluent Bit là tác tử thu thập, xử lý và chuyển tiếp log, số liệu và vết từ nhiều nguồn tới nhiều đích, README tả gọn nhẹ và hiệu quả, thuộc hệ sinh thái Fluentd tốt nghiệp ở CNCF, hỗ trợ nhiều hệ điều hành, hơn 70 plugin, xử lý luồng bằng SQL.",
+        "content": "<p>README tả Fluent Bit là tác tử telemetry gọn nhẹ hiệu năng cao thu thập, xử lý và chuyển tiếp log, số liệu và vết từ bất kỳ nguồn nào tới bất kỳ đích nào; đây là cách tả của tác giả. Fluent Bit thuộc hệ sinh thái Fluentd, dự án CNCF, hỗ trợ Linux, Windows, macOS, BSD và hệ nhúng. README nêu chu kỳ phát hành lớn mỗi ba đến bốn tháng, nhánh master theo dõi v5.2.0 và bản ổn định v5.1 ở nhánh riêng, trỏ tới MAINTENANCE.md. Tính năng gồm hơn 70 plugin đầu vào, bộ lọc, đầu ra, xử lý luồng bằng SQL, TLS/SSL, hiển thị số liệu nội bộ qua HTTP hoặc Prometheus, viết plugin bằng C, bộ lọc Lua và đầu ra Go. README nêu giấy phép Apache v2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy chủ tạo ra rất nhiều dòng log. Fluent Bit là người chạy quanh nhặt log, lọc bớt và chuyển về nơi bạn lưu, như Loki hay OpenObserve, mà không tốn nhiều tài nguyên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Key Features và tài liệu để hiểu đầu vào, bộ lọc và đầu ra, rồi vẽ sơ đồ luồng log của một ứng dụng nhỏ. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu log, cấu hình tệp và ít nhất một nơi nhận log. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần xem log trực tiếp trên một máy thì chưa cần tác tử thu thập. Cấu hình lọc sai có thể làm mất hoặc lộ log: kiểm tra kỹ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>telemetry agent (tác tử telemetry)</strong>: chương trình thu và chuyển dữ liệu giám sát; README nêu.</li><li><strong>input/filter/output</strong>: ba loại plugin: nhận, xử lý, gửi dữ liệu; README nêu.</li><li><strong>Lua</strong>: ngôn ngữ kịch bản nhẹ; README nêu dùng viết bộ lọc.</li><li><strong>CNCF</strong>: tổ chức bảo trợ phần mềm nền tảng đám mây; README nêu Fluent Bit là dự án ở đó.</li><li><strong>stream processing (xử lý luồng)</strong>: xử lý dữ liệu khi nó chạy qua; README nêu hỗ trợ bằng SQL.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu fluentbit.io và MAINTENANCE.md; bài không chép lệnh. Cần nơi nhận log. Miễn phí theo Apache v2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Key Features.</li><li>Đọc MAINTENANCE.md để biết bản ổn định.</li><li>Thử luồng nhỏ với log giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gom log từ vài dịch vụ. Hãy đọc README của Fluent Bit (https://github.com/fluent/fluent-bit) và giải thích bằng tiếng Việt: nó làm gì, plugin đầu vào, bộ lọc, đầu ra nghĩa là gì, nhánh master khác nhánh ổn định ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,3 KB, bài chưa đọc tài liệu fluentbit.io hay MAINTENANCE.md. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>fluent</strong> có <strong>8.180 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License v2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/fluent/fluent-bit/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/fluent/fluent-bit\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 582. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8180; repo_id 29933948; README SHA256 e5f73f9f7b40338d1cc25fb07e24343386bef2e269bd88891a691f072db58c39.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/fluent/fluent-bit",
+          "repo_id": "29933948",
+          "source_path": "",
+          "source_revision": "README-SHA256:e5f73f9f7b40338d1cc25fb07e24343386bef2e269bd88891a691f072db58c39",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/fluent/fluent-bit",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu fluentbit.io và MAINTENANCE.md; bài không chép lệnh. Cần nơi nhận log. Miễn phí theo Apache v2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/fluent/fluent-bit/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/fluent/fluent-bit/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "fluent/fluent-bit",
+        "stars": 8180,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/fluent/fluent-bit/master/README.md",
+        "readmeSha256": "e5f73f9f7b40338d1cc25fb07e24343386bef2e269bd88891a691f072db58c39",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 583,
+      "batch": 96,
+      "slug": "grafana-alloy",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grafana Alloy: bản phân phối OpenTelemetry Collector mã nguồn mở có sẵn pipeline Prometheus, hỗ trợ số liệu, log, vết và profile, cấu hình bằng cú pháp lập trình được",
+        "excerpt": "Hiểu Grafana Alloy là bản phân phối OpenTelemetry Collector mã nguồn mở có sẵn pipeline Prometheus, hỗ trợ số liệu, log, vết và profile; có pipeline lập trình được, tích hợp Kubernetes, chia sẻ pipeline qua module và cấu hình tập trung.",
+        "content": "<p>README tả Grafana Alloy là bản phân phối OpenTelemetry Collector mã nguồn mở có sẵn pipeline Prometheus và hỗ trợ số liệu, log, vết, profile. Điểm nổi bật theo README: pipeline lập trình được bằng cú pháp biểu thức, hỗ trợ nhiều thành phần của OpenTelemetry Collector, triết lý big tent dùng được với nhà cung cấp hoặc cơ sở dữ liệu khác (OpenTelemetry, Prometheus, Loki, Pyroscope), thành phần gốc Kubernetes, chia sẻ pipeline bằng module, tự phân chia tải khi chạy cụm, và lấy cấu hình từ máy chủ trung tâm. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Fluent Bit là người nhặt log, Alloy là người nhặt rất nhiều thứ cùng lúc (số liệu, log, vết) theo kịch bản bạn viết, rồi chuyển tới Prometheus, Loki, Tempo hoặc nơi khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần What can Alloy do? và tài liệu để hiểu một pipeline gồm những thành phần nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu OpenTelemetry, Prometheus, ngôn ngữ cấu hình riêng của Alloy và thường là Kubernetes. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có số liệu hay log nào cần thu thì chưa cần. Bài chưa so sánh Alloy với Fluent Bit hay OpenTelemetry Collector gốc.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>OpenTelemetry Collector</strong>: chương trình thu dữ liệu giám sát chuẩn mở; README nêu Alloy là bản phân phối của nó.</li><li><strong>pipeline</strong>: chuỗi bước nhận, xử lý, gửi dữ liệu; README nêu.</li><li><strong>profile (hồ sơ hiệu năng)</strong>: dữ liệu tiêu thụ CPU và bộ nhớ theo hàm; README nêu Alloy hỗ trợ.</li><li><strong>module</strong>: gói pipeline chia sẻ được; README nêu.</li><li><strong>cluster (cụm)</strong>: nhiều bản Alloy chia nhau công việc; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu grafana.com/docs/alloy; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What can Alloy do?</li><li>Mở tài liệu Alloy.</li><li>Phác một pipeline nhỏ bằng sơ đồ trước khi viết cấu hình.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang học giám sát hệ thống. Hãy đọc README của Grafana Alloy (https://github.com/grafana/alloy) và giải thích bằng tiếng Việt: Alloy là gì so với OpenTelemetry Collector, pipeline lập trình được nghĩa là gì, và vì sao bài chưa nên so sánh với Fluent Bit. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5,4 KB), bài chưa đọc tài liệu Alloy. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grafana</strong> có <strong>3.664 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grafana/alloy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grafana/alloy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 583. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3664; repo_id 764670636; README SHA256 10eadb8efc7e4c81c9eff9cdc374a99a675a96a180c4c0c9860904d226221907.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grafana/alloy",
+          "repo_id": "764670636",
+          "source_path": "",
+          "source_revision": "README-SHA256:10eadb8efc7e4c81c9eff9cdc374a99a675a96a180c4c0c9860904d226221907",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/alloy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu grafana.com/docs/alloy; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/alloy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grafana/alloy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grafana/alloy",
+        "stars": 3664,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grafana/alloy/main/README.md",
+        "readmeSha256": "10eadb8efc7e4c81c9eff9cdc374a99a675a96a180c4c0c9860904d226221907",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 584,
+      "batch": 96,
+      "slug": "thanos",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Thanos: bộ thành phần dựng hệ số liệu sẵn sàng cao và lưu trữ không giới hạn, đặt trên Prometheus hiện có, lưu dữ liệu lịch sử vào kho đối tượng, dự án CNCF ở giai đoạn ươm",
+        "excerpt": "Hiểu Thanos là bộ thành phần ghép thành hệ số liệu sẵn sàng cao với dung lượng lưu trữ không giới hạn, thêm được lên trên Prometheus hiện có; mục tiêu theo README là tầm nhìn truy vấn toàn cục, lưu giữ không giới hạn và sẵn sàng cao.",
+        "content": "<p>README tả Thanos là bộ thành phần có thể ghép thành hệ số liệu sẵn sàng cao với dung lượng lưu trữ không giới hạn, thêm liền mạch lên các Prometheus hiện có; là dự án CNCF giai đoạn ươm. Thanos dùng định dạng lưu trữ của Prometheus 2.0 để lưu dữ liệu lịch sử vào kho đối tượng bất kỳ mà giữ truy vấn nhanh. Ba mục tiêu: tầm nhìn truy vấn toàn cục, lưu giữ số liệu không giới hạn, sẵn sàng cao. Tính năng nêu: truy vấn toàn cục trên nhiều Prometheus, khử trùng lặp dữ liệu từ cặp Prometheus HA, kho đối tượng là phụ thuộc duy nhất và tùy chọn, giảm độ phân giải dữ liệu cũ để truy vấn nhanh, liên hợp giữa cụm, định tuyến truy vấn chịu lỗi, giao diện gRPC Store API. README có sơ đồ kiến trúc và liên kết tới tài liệu bắt đầu. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Prometheus lưu số liệu trên một máy và chỉ giữ được một thời gian. Thanos giúp gom nhiều Prometheus vào một chỗ và giữ số liệu lâu hơn bằng cách đẩy dữ liệu cũ sang kho lưu trữ rẻ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Overview và Features để hiểu vì sao một Prometheus đơn lẻ có giới hạn, chưa dựng thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu Prometheus, kho đối tượng, Kubernetes và vận hành hệ thống phân tán. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa dùng Prometheus hoặc chỉ có một máy nhỏ thì chưa cần Thanos. Bài chưa so sánh Thanos với VictoriaMetrics.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Prometheus</strong>: hệ giám sát số liệu mã nguồn mở; README nêu Thanos đặt lên trên.</li><li><strong>object storage (kho đối tượng)</strong>: kho kiểu S3 dùng lưu dữ liệu lịch sử; README nêu.</li><li><strong>downsampling (giảm độ phân giải)</strong>: gộp dữ liệu cũ thành mức thô hơn để truy vấn nhanh; README nêu.</li><li><strong>high availability (sẵn sàng cao)</strong>: hệ thống vẫn chạy khi một phần hỏng; README nêu là mục tiêu.</li><li><strong>gRPC Store API</strong>: giao diện truy cập dữ liệu thống nhất; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Getting Started tại thanos.io; bài không chép lệnh. Cần Prometheus và kho đối tượng. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Overview và Features.</li><li>Đọc Getting Started tại thanos.io.</li><li>Chỉ thử sau khi đã vận hành Prometheus ổn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đã chạy Prometheus cho vài dịch vụ. Hãy đọc README của Thanos (https://github.com/thanos-io/thanos) và giải thích bằng tiếng Việt: Thanos giải quyết giới hạn nào của Prometheus, ba mục tiêu là gì, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,8 KB, bài chưa đọc tài liệu thanos.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>thanos-io</strong> có <strong>14.264 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/thanos-io/thanos/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/thanos-io/thanos\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 584. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14264; repo_id 109162639; README SHA256 869c20385ec53e454d1e56441b5690e9cb74a262289d3c6b29b1cf2e4cfeeac1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/thanos-io/thanos",
+          "repo_id": "109162639",
+          "source_path": "",
+          "source_revision": "README-SHA256:869c20385ec53e454d1e56441b5690e9cb74a262289d3c6b29b1cf2e4cfeeac1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/thanos-io/thanos",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Getting Started tại thanos.io; bài không chép lệnh. Cần Prometheus và kho đối tượng. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/thanos-io/thanos/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/thanos-io/thanos/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "thanos-io/thanos",
+        "stars": 14264,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/thanos-io/thanos/main/README.md",
+        "readmeSha256": "869c20385ec53e454d1e56441b5690e9cb74a262289d3c6b29b1cf2e4cfeeac1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 585,
+      "batch": 96,
+      "slug": "apache-skywalking",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache SkyWalking: hệ thống giám sát hiệu năng ứng dụng (APM) cho vi dịch vụ và kiến trúc đám mây, có lưu vết phân tán, nhiều tác tử ngôn ngữ, eBPF, cơ sở dữ liệu BanyanDB, giấy phép Apache 2.0",
+        "excerpt": "Hiểu Apache SkyWalking là hệ thống giám sát hiệu năng ứng dụng (APM) mã nguồn mở cho vi dịch vụ, đám mây và container, README nêu lưu vết đầu cuối, tác tử cho nhiều ngôn ngữ, eBPF, cơ sở dữ liệu BanyanDB, cảnh báo và bản demo trực tuyến.",
+        "content": "<p>README tả SkyWalking là hệ thống APM mã nguồn mở cung cấp giám sát, lưu vết và chẩn đoán cho hệ thống phân tán kiểu đám mây. Tính năng nêu: lưu vết đầu cuối và phân tích sơ đồ dịch vụ, tác tử cho Java, .NET Core, PHP, NodeJS, Golang, Lua, Rust, C++, JavaScript phía client và Python, tác tử Rover dùng eBPF cho Kubernetes, tuyên bố một cụm thu và phân tích hơn 100 tỷ dữ liệu giám sát (tuyên bố của tác giả, bài chưa kiểm chứng), hỗ trợ dữ liệu từ Zipkin, OpenTelemetry, Prometheus, Zabbix, Fluentd, cơ sở dữ liệu giám sát BanyanDB, đường ống log, cảnh báo, và tính năng dùng AI phân tích dữ liệu. README có bản demo trực tuyến, bản đồ hạ tầng 3D và nêu giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>SkyWalking theo dõi ứng dụng của bạn từ bên trong bằng các tác tử gắn vào mã, rồi vẽ ra sơ đồ dịch vụ nào gọi dịch vụ nào và chỗ nào chậm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bản demo trực tuyến trong README để xem sơ đồ dịch vụ, chưa gửi dữ liệu thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc làm ứng dụng web nhỏ, muốn hiểu giám sát và theo dõi hệ thống, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu vi dịch vụ, tác tử theo ngôn ngữ, cơ sở dữ liệu giám sát và vận hành hệ thống. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ có ứng dụng nhỏ một khối thì chưa cần APM đầy đủ. Tác tử gắn vào ứng dụng có thể ảnh hưởng hiệu năng và thu cả dữ liệu nhạy cảm: kiểm tra kỹ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>APM</strong>: giám sát hiệu năng ứng dụng; README nêu.</li><li><strong>agent (tác tử)</strong>: thành phần gắn vào ứng dụng để thu dữ liệu; README nêu cho nhiều ngôn ngữ.</li><li><strong>eBPF</strong>: công nghệ nhân Linux để quan sát hệ thống; README nêu tác tử Rover dùng.</li><li><strong>BanyanDB</strong>: cơ sở dữ liệu giám sát của dự án; README nêu.</li><li><strong>service topology (sơ đồ dịch vụ)</strong>: sơ đồ các dịch vụ gọi nhau; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang chủ và demo; bài không chép lệnh. Cần tác tử cho ngôn ngữ ứng dụng và nơi lưu dữ liệu. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Abstract.</li><li>Xem bản demo trực tuyến trong README.</li><li>Chỉ thử gắn tác tử vào ứng dụng mẫu không có dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng nhiều dịch vụ và muốn hiểu APM. Hãy đọc README của Apache SkyWalking (https://github.com/apache/skywalking) và giải thích bằng tiếng Việt: APM là gì, tác tử gắn vào ứng dụng ra sao, eBPF và BanyanDB là gì, và tuyên bố 100 tỷ dữ liệu là của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,7 KB), bài chưa đọc tài liệu skywalking.apache.org. Tuyên bố quy mô chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát thu log, số liệu và vết gọi dịch vụ, nên có thể chứa dữ liệu nhạy cảm như địa chỉ IP, email, mã định danh người dùng hoặc khóa trong thông điệp lỗi: kiểm tra dữ liệu gửi đi đâu, ai xem được, cài xác thực trước khi mở ra mạng, và không phơi cổng giám sát ra Internet khi chưa bảo vệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>24.988 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/skywalking/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/skywalking\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 585. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24988; repo_id 45721011; README SHA256 057ed83b97178b9d0508c1a8429fa833e36ad20c991e0efbd19f9ac8b0d12c40.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/skywalking",
+          "repo_id": "45721011",
+          "source_path": "",
+          "source_revision": "README-SHA256:057ed83b97178b9d0508c1a8429fa833e36ad20c991e0efbd19f9ac8b0d12c40",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/skywalking",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang chủ và demo; bài không chép lệnh. Cần tác tử cho ngôn ngữ ứng dụng và nơi lưu dữ liệu. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/skywalking/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/skywalking/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/skywalking",
+        "stars": 24988,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/skywalking/master/README.md",
+        "readmeSha256": "057ed83b97178b9d0508c1a8429fa833e36ad20c991e0efbd19f9ac8b0d12c40",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

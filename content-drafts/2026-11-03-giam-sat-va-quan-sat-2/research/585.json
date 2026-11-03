@@ -1,0 +1,41 @@
+{
+  "key": 585,
+  "repo": "apache/skywalking",
+  "repoId": "45721011",
+  "url": "https://github.com/apache/skywalking",
+  "stars": 24988,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:48:12Z",
+  "createdAt": "2015-11-07T03:30:36Z",
+  "defaultBranch": "master",
+  "description": "APM, Application Performance Monitoring System",
+  "homepage": "https://skywalking.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/skywalking/master/README.md",
+    "sha256": "057ed83b97178b9d0508c1a8429fa833e36ad20c991e0efbd19f9ac8b0d12c40",
+    "bytes": 4712,
+    "sectionsRead": [
+      "Abstract",
+      "Live Demo",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu skywalking.apache.org.",
+    "Chưa thử.",
+    "Tuyên bố 100 tỷ dữ liệu chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

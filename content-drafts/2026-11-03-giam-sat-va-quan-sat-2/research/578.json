@@ -1,0 +1,42 @@
+{
+  "key": 578,
+  "repo": "grafana/tempo",
+  "repoId": "236055696",
+  "url": "https://github.com/grafana/tempo",
+  "stars": 5552,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:27:55Z",
+  "createdAt": "2020-01-24T18:05:02Z",
+  "defaultBranch": "main",
+  "description": "Grafana Tempo is a high volume, minimal dependency distributed tracing backend.",
+  "homepage": "https://grafana.com/oss/tempo/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/grafana/tempo/main/README.md",
+    "sha256": "e5e068feb7acf0cd43eb1d77d3dc2fd3de38a76269f58ed8fabf5a485edea587",
+    "bytes": 6610,
+    "sectionsRead": [
+      "Business value of distributed tracing",
+      "TraceQL",
+      "Getting started with Tempo",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Tempo hay LICENSING.md.",
+    "Chưa thử.",
+    "Chưa so sánh với Jaeger."
+  ],
+  "runtimeValidated": false
+}

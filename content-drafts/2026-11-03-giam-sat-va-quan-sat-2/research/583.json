@@ -1,0 +1,39 @@
+{
+  "key": 583,
+  "repo": "grafana/alloy",
+  "repoId": "764670636",
+  "url": "https://github.com/grafana/alloy",
+  "stars": 3664,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:25:26Z",
+  "createdAt": "2024-02-28T14:00:15Z",
+  "defaultBranch": "main",
+  "description": "OpenTelemetry Collector distribution with programmable pipelines",
+  "homepage": "https://grafana.com/oss/alloy",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/grafana/alloy/main/README.md",
+    "sha256": "10eadb8efc7e4c81c9eff9cdc374a99a675a96a180c4c0c9860904d226221907",
+    "bytes": 5370,
+    "sectionsRead": [
+      "What can Alloy do?"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Alloy.",
+    "Chưa thử.",
+    "Chưa so sánh với công cụ khác."
+  ],
+  "runtimeValidated": false
+}

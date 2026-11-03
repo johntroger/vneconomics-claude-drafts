@@ -1,0 +1,42 @@
+{
+  "key": 584,
+  "repo": "thanos-io/thanos",
+  "repoId": "109162639",
+  "url": "https://github.com/thanos-io/thanos",
+  "stars": 14264,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T18:41:48Z",
+  "createdAt": "2017-11-01T17:38:03Z",
+  "defaultBranch": "main",
+  "description": "Highly available Prometheus setup with long term storage capabilities. A CNCF Incubating project.",
+  "homepage": "https://thanos.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/thanos-io/thanos/main/README.md",
+    "sha256": "869c20385ec53e454d1e56441b5690e9cb74a262289d3c6b29b1cf2e4cfeeac1",
+    "bytes": 5759,
+    "sectionsRead": [
+      "Overview",
+      "Getting Started",
+      "Features",
+      "Architecture Overview"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu thanos.io.",
+    "Chưa thử.",
+    "Chưa so sánh với VictoriaMetrics."
+  ],
+  "runtimeValidated": false
+}
