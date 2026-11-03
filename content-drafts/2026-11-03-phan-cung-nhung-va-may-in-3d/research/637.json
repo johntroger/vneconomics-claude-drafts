@@ -1,0 +1,40 @@
+{
+  "key": 637,
+  "repo": "platformio/platformio-core",
+  "repoId": "19606299",
+  "url": "https://github.com/platformio/platformio-core",
+  "stars": 9580,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-16T09:30:41Z",
+  "createdAt": "2014-05-09T09:38:42Z",
+  "defaultBranch": "develop",
+  "description": "Your Gateway to Embedded Software Development Excellence :alien:",
+  "homepage": "https://platformio.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/platformio/platformio-core/develop/README.rst",
+    "sha256": "2eb1247517f6463dfd9feab60e9a176050b3d48f66dba6ec67e2321d48df027a",
+    "bytes": 5240,
+    "sectionsRead": [
+      "Get Started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.platformio.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Arduino IDE."
+  ],
+  "runtimeValidated": false
+}

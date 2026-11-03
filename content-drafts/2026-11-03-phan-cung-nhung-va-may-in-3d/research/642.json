@@ -1,0 +1,42 @@
+{
+  "key": 642,
+  "repo": "nodemcu/nodemcu-firmware",
+  "repoId": "26917568",
+  "url": "https://github.com/nodemcu/nodemcu-firmware",
+  "stars": 7952,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T10:47:49Z",
+  "createdAt": "2014-11-20T15:06:45Z",
+  "defaultBranch": "release",
+  "description": "Lua based interactive firmware for ESP8266, ESP8285 and ESP32",
+  "homepage": "https://nodemcu.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nodemcu/nodemcu-firmware/release/README.md",
+    "sha256": "cd5fd039cad146be0456b0c23286d15f94ec65b1abe622ed9d33f9f25a56601c",
+    "bytes": 5294,
+    "sectionsRead": [
+      "Summary",
+      "Programming Model",
+      "Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu nodemcu.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa so sánh với MicroPython."
+  ],
+  "runtimeValidated": false
+}

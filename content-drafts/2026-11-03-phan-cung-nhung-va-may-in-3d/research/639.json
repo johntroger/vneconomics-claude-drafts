@@ -1,0 +1,43 @@
+{
+  "key": 639,
+  "repo": "espressif/esp-idf",
+  "repoId": "65899476",
+  "url": "https://github.com/espressif/esp-idf",
+  "stars": 19409,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:18:19Z",
+  "createdAt": "2016-08-17T10:40:35Z",
+  "defaultBranch": "master",
+  "description": "Espressif IoT Development Framework. Official development framework for Espressif SoCs.",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/espressif/esp-idf/master/README.md",
+    "sha256": "297147eaa68730d705e4edd23a6cc6e70096290e2d31c250109568e1e59b4603",
+    "bytes": 6545,
+    "sectionsRead": [
+      "ESP-IDF Release Support Schedule",
+      "ESP-IDF Release and SoC Compatibility",
+      "Setting Up ESP-IDF",
+      "Finding a Project",
+      "Quick Reference"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.espressif.com.",
+    "Chưa thử.",
+    "Chưa kiểm tra bảng tương thích chi tiết."
+  ],
+  "runtimeValidated": false
+}

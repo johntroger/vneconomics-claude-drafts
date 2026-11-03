@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-phan-cung",
+  "batch": 104,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 637,
+      "batch": 104,
+      "slug": "platformio-core",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PlatformIO Core: hệ sinh thái phát triển phần mềm nhúng mã nguồn mở, hệ dựng đa nền tảng đa kiến trúc, gỡ lỗi thống nhất, phân tích mã tĩnh và kiểm thử từ xa, giấy phép Apache 2.0",
+        "excerpt": "Hiểu PlatformIO Core là lõi dòng lệnh của hệ sinh thái phát triển phần mềm nhúng mã nguồn mở: hệ dựng đa nền tảng đa kiến trúc, IDE, trình gỡ lỗi thống nhất, phân tích mã tĩnh, kiểm thử từ xa, kiểm tra bộ nhớ firmware; giấy phép Apache 2.0.",
+        "content": "<p>README tả PlatformIO là cửa ngõ tới phát triển phần mềm nhúng xuất sắc, dùng hệ sinh thái cộng tác theo nguyên tắc khai báo, phương pháp hướng kiểm thử và chuỗi công cụ hiện đại; đây là cách tự mô tả của dự án. Điểm nêu: giấy phép Apache 2.0 cho phép dùng thương mại và cá nhân, IDE đa nền tảng và trình gỡ lỗi thống nhất, phân tích mã tĩnh và kiểm thử đơn vị từ xa, hệ dựng đa nền tảng đa kiến trúc, trình khám phá tệp firmware và kiểm tra bộ nhớ. README có liên kết tới trang chủ, PlatformIO IDE, kho đăng ký, ví dụ dự án, tài liệu, quyên góp, liên hệ và diễn đàn. Mục Get Started trỏ tới What is PlatformIO?, IDE, Core (CLI) và ví dụ. Mục License nêu giấy phép Apache 2.0. README không có lệnh cài hay ví dụ mã. Các liên kết quyên góp và dịch vụ thương mại của công ty là quảng bá, bài không đánh giá.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi loại vi điều khiển có công cụ biên dịch và nạp mã riêng, rất rối. PlatformIO gom tất cả vào một nơi: chọn bo mạch, thư viện, biên dịch, nạp, gỡ lỗi bằng cùng một cách.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần What is PlatformIO? và hình dung một dự án nhúng cho một bo mạch rẻ tiền; chưa nạp firmware. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm vi điều khiển và lập trình C hoặc C++ cơ bản; quen Arduino sẽ dễ hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có bo mạch hoặc chưa từng lập trình vi điều khiển thì chưa cần. Nạp firmware sai có thể làm hỏng thiết bị: dùng bo mạch thử và đọc tài liệu của nhà sản xuất.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>embedded software (phần mềm nhúng)</strong>: phần mềm chạy trong thiết bị như cảm biến hay bo mạch; README nêu.</li><li><strong>build system (hệ dựng)</strong>: công cụ biên dịch và đóng gói mã; README nêu đa nền tảng.</li><li><strong>debugger (trình gỡ lỗi)</strong>: công cụ tìm lỗi khi chạy; README nêu thống nhất.</li><li><strong>static analysis (phân tích tĩnh)</strong>: kiểm tra mã không cần chạy; README nêu.</li><li><strong>firmware</strong>: phần mềm nạp vào thiết bị; README nêu trình khám phá tệp firmware.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.platformio.org và nhiều cách dùng (IDE, CLI); bài không chép lệnh. Cần bo mạch và cáp để nạp. Miễn phí theo Apache 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Get Started.</li><li>Đọc tài liệu What is PlatformIO?</li><li>Thử với bo mạch rẻ tiền dành cho học tập.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn bắt đầu lập trình vi điều khiển. Hãy đọc README của PlatformIO Core (https://github.com/platformio/platformio-core) và giải thích bằng tiếng Việt: PlatformIO làm gì, hệ dựng đa nền tảng nghĩa là gì, và rủi ro khi nạp firmware sai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,2 KB, bài chưa đọc tài liệu docs.platformio.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>platformio</strong> có <strong>9.580 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-16. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/platformio/platformio-core/blob/develop/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/platformio/platformio-core\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 637. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9580; repo_id 19606299; README SHA256 2eb1247517f6463dfd9feab60e9a176050b3d48f66dba6ec67e2321d48df027a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/platformio/platformio-core",
+          "repo_id": "19606299",
+          "source_path": "",
+          "source_revision": "README-SHA256:2eb1247517f6463dfd9feab60e9a176050b3d48f66dba6ec67e2321d48df027a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/platformio/platformio-core",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.platformio.org và nhiều cách dùng (IDE, CLI); bài không chép lệnh. Cần bo mạch và cáp để nạp. Miễn phí theo Apache 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/platformio/platformio-core/blob/develop/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/platformio/platformio-core/blob/develop/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "platformio/platformio-core",
+        "stars": 9580,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/platformio/platformio-core/develop/README.rst",
+        "readmeSha256": "2eb1247517f6463dfd9feab60e9a176050b3d48f66dba6ec67e2321d48df027a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 638,
+      "batch": 104,
+      "slug": "zephyr",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Zephyr: hệ điều hành thời gian thực (RTOS) co giãn, hỗ trợ nhiều kiến trúc phần cứng, tối ưu cho thiết bị hạn chế tài nguyên và xây có chú trọng bảo mật, từ cảm biến đơn giản đến cổng IoT",
+        "excerpt": "Hiểu Zephyr là hệ điều hành thời gian thực (RTOS) co giãn, hỗ trợ nhiều kiến trúc (ARM Cortex-A, R, M, Intel x86, ARC, Xtensa, RISC-V, SPARC, MIPS) và nhiều bo mạch, tối ưu cho thiết bị hạn chế tài nguyên từ cảm biến môi trường và đồ đeo LED đến đồng hồ thông minh và cổng IoT không dây.",
+        "content": "<p>README tả Zephyr Project là hệ điều hành thời gian thực co giãn, hỗ trợ nhiều kiến trúc phần cứng, tối ưu cho thiết bị hạn chế tài nguyên và xây có tính đến bảo mật. Zephyr OS dựa trên nhân nhỏ gọn dùng cho hệ hạn chế tài nguyên: từ cảm biến môi trường và đồ đeo LED đến đồng hồ thông minh và cổng IoT không dây. Nhân hỗ trợ nhiều kiến trúc gồm ARM (Cortex-A, R, M), Intel x86, ARC, Tensilica Xtensa, RISC-V, SPARC, MIPS và nhiều bo mạch được hỗ trợ. README trỏ tới giới thiệu Zephyr và Getting Started Guide, hỗ trợ cộng đồng qua danh sách thư và Discord, tài nguyên (tài liệu, mẫu mã, mẹo hỏi), danh sách bo mạch. README không có lệnh cài hay ví dụ mã. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một chiếc đèn thông minh hay cảm biến nhỏ cần hệ điều hành rất nhẹ và đáp ứng đúng lúc. Zephyr là loại hệ điều hành đó, có sẵn trình điều khiển cho nhiều bo mạch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc Getting Started Guide trên trang tài liệu để hiểu cần gì cho một dự án đèn nhấp nháy; chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần C, kiến thức vi điều khiển và hệ điều hành thời gian thực; chuỗi công cụ phức tạp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn mới làm quen phần cứng thì Arduino hay MicroPython dễ hơn nhiều; bài chưa so sánh. Nạp firmware sai có thể làm hỏng thiết bị. README chưa nêu chi tiết bảo mật, bài không đánh giá mức bảo mật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>RTOS (hệ điều hành thời gian thực)</strong>: hệ điều hành đáp ứng trong thời hạn cố định; README nêu.</li><li><strong>kernel (nhân)</strong>: lõi của hệ điều hành; README nêu nhân nhỏ gọn.</li><li><strong>microcontroller (vi điều khiển)</strong>: chip nhỏ chạy chương trình trong thiết bị; bài chú thích biên tập.</li><li><strong>architecture (kiến trúc)</strong>: họ chip như ARM, RISC-V; README liệt kê.</li><li><strong>board (bo mạch)</strong>: mạch điện chứa chip và linh kiện; README nêu danh sách bo mạch được hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Getting Started Guide trong tài liệu; bài không chép lệnh. Cần bo mạch được hỗ trợ và chuỗi công cụ. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc Getting Started Guide.</li><li>Chọn một bo mạch trong danh sách được hỗ trợ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu RTOS. Hãy đọc README của Zephyr (https://github.com/zephyrproject-rtos/zephyr) và giải thích bằng tiếng Việt: RTOS là gì, Zephyr hỗ trợ những kiến trúc nào, và khi nào chưa nên bắt đầu bằng Zephyr. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,6 KB), bài chưa đọc tài liệu docs.zephyrproject.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>zephyrproject-rtos</strong> có <strong>16.985 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/zephyrproject-rtos/zephyr/blob/main/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/zephyrproject-rtos/zephyr\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 638. Chưa cài/chạy thử; không tạo validation. Snapshot sao 16985; repo_id 59771425; README SHA256 f2bc73e25fd06244470d27897a0deb2938aaa81ce57253f087b5e9c1404a500c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/zephyrproject-rtos/zephyr",
+          "repo_id": "59771425",
+          "source_path": "",
+          "source_revision": "README-SHA256:f2bc73e25fd06244470d27897a0deb2938aaa81ce57253f087b5e9c1404a500c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zephyrproject-rtos/zephyr",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Getting Started Guide trong tài liệu; bài không chép lệnh. Cần bo mạch được hỗ trợ và chuỗi công cụ. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zephyrproject-rtos/zephyr/blob/main/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/zephyrproject-rtos/zephyr/blob/main/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "zephyrproject-rtos/zephyr",
+        "stars": 16985,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/README.rst",
+        "readmeSha256": "f2bc73e25fd06244470d27897a0deb2938aaa81ce57253f087b5e9c1404a500c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 639,
+      "batch": 104,
+      "slug": "esp-idf",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ESP-IDF: khung phát triển chính thức của Espressif cho các SoC ESP (Windows, Linux, macOS), có lịch hỗ trợ phát hành, bảng tương thích với phiên bản chip, công cụ dòng lệnh để dựng, nạp và cấu hình",
+        "excerpt": "Hiểu ESP-IDF là khung phát triển chính thức của Espressif cho các SoC ESP (ESP32 và họ hàng) trên Windows, Linux và macOS; README nêu lịch hỗ trợ phiên bản, bảng tương thích giữa phiên bản ESP-IDF và phiên bản chip, ESP8266 dùng SDK riêng, hướng dẫn thiết lập, ví dụ dự án và một số lệnh tham khảo.",
+        "content": "<p>README tả ESP-IDF là khung phát triển cho các SoC của Espressif hỗ trợ Windows, Linux, macOS. README nêu chính sách hỗ trợ phiên bản (đọc SUPPORT_POLICY và tài liệu, xem thông báo hết hỗ trợ), tương thích giữa phiên bản ESP-IDF và bản sửa đổi của chip (tài liệu COMPATIBILITY.md) và nói chip Espressif trước năm 2016 (ESP8266, ESP8285) dùng SDK RTOS riêng. Phần thiết lập trỏ tới idf.espressif.com để chọn hướng dẫn theo chip; mỗi dòng chip và mỗi phiên bản có tài liệu riêng. README lưu ý khi tạo fork ngoài GitHub phải chạy một tập lệnh đặt đường dẫn tuyệt đối cho mô-đun con. Phần Finding a Project nói có dự án mẫu trong thư mục examples và mẫu esp-idf-template. Phần Quick Reference nhắc các bước chung (cài phụ thuộc xây, chạy tập lệnh cài, dựng, nạp, cấu hình); bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bo mạch ESP32 rất phổ biến trong dự án IoT sở thích. ESP-IDF là bộ công cụ chính thức của hãng chip để biên dịch và nạp chương trình cho các bo mạch đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Finding a Project và liệt kê ví dụ nào gần với ý tưởng của bạn; chưa nạp firmware. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần C hoặc C++, vi điều khiển và chuỗi công cụ dòng lệnh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phải chọn đúng phiên bản ESP-IDF cho đúng dòng chip và bản sửa đổi chip: README nhắc kiểm tra bảng tương thích. Nạp firmware sai có thể làm hỏng bo mạch. Thiết bị ESP kết nối mạng cần đổi mật khẩu mặc định và cập nhật bản vá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>SoC (hệ thống trên chip)</strong>: chip tích hợp nhiều thành phần; README nêu.</li><li><strong>framework (khung phát triển)</strong>: bộ công cụ và thư viện dựng sẵn; README nêu.</li><li><strong>submodule (mô-đun con)</strong>: kho git lồng trong kho khác; README nêu.</li><li><strong>flash (nạp firmware)</strong>: ghi chương trình vào chip; README nêu mục Flashing.</li><li><strong>menuconfig</strong>: công cụ cấu hình dự án; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới idf.espressif.com để thiết lập theo chip và có mục Quick Reference; bài không chép lệnh. Cần bo mạch Espressif và cáp nối. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Release Support Schedule và SoC Compatibility.</li><li>Đọc Setting Up ESP-IDF qua idf.espressif.com.</li><li>Thử dự án mẫu trong examples trên bo mạch thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có bo mạch ESP32 và muốn lập trình. Hãy đọc README của ESP-IDF (https://github.com/espressif/esp-idf) và giải thích bằng tiếng Việt: ESP-IDF làm gì, vì sao phải chọn đúng phiên bản theo dòng chip, và rủi ro khi nạp firmware sai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,5 KB, bài chưa đọc tài liệu docs.espressif.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>espressif</strong> có <strong>19.409 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/espressif/esp-idf/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/espressif/esp-idf\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 639. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19409; repo_id 65899476; README SHA256 297147eaa68730d705e4edd23a6cc6e70096290e2d31c250109568e1e59b4603.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/espressif/esp-idf",
+          "repo_id": "65899476",
+          "source_path": "",
+          "source_revision": "README-SHA256:297147eaa68730d705e4edd23a6cc6e70096290e2d31c250109568e1e59b4603",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/espressif/esp-idf",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới idf.espressif.com để thiết lập theo chip và có mục Quick Reference; bài không chép lệnh. Cần bo mạch Espressif và cáp nối. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/espressif/esp-idf/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/espressif/esp-idf/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "espressif/esp-idf",
+        "stars": 19409,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/espressif/esp-idf/master/README.md",
+        "readmeSha256": "297147eaa68730d705e4edd23a6cc6e70096290e2d31c250109568e1e59b4603",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 640,
+      "batch": 104,
+      "slug": "pico-sdk",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Raspberry Pi Pico SDK: tiêu đề, thư viện và hệ dựng để viết chương trình C, C++ hoặc hợp ngữ cho vi điều khiển dòng RP (Pico, Pico 2), có thư viện cho hẹn giờ, đồng bộ, Wi-Fi, Bluetooth, USB, đa nhân",
+        "excerpt": "Hiểu Raspberry Pi Pico SDK là bộ tiêu đề, thư viện và hệ dựng để viết chương trình C, C++ hoặc hợp ngữ cho vi điều khiển dòng RP như Raspberry Pi Pico và Pico 2; README nêu API quen thuộc với lập trình viên C, hỗ trợ PIO, thư viện cao cấp (hẹn giờ, Wi-Fi, Bluetooth, USB, đa nhân) và hướng dẫn bắt đầu.",
+        "content": "<p>README tả Pico SDK cung cấp tiêu đề, thư viện và hệ dựng cần để viết chương trình cho thiết bị dùng vi điều khiển dòng RP như Raspberry Pi Pico hoặc Pico 2 bằng C, C++ hoặc hợp ngữ. SDK thiết kế để API và môi trường lập trình quen thuộc với cả lập trình viên C thông thường lẫn lập trình viên nhúng: một chương trình chạy một lần trên thiết bị, bắt đầu bằng hàm main thông thường, hỗ trợ thư viện C/C++ chuẩn và thư viện C để truy cập phần cứng của vi điều khiển RP, gồm PIO (vào ra lập trình được). Ngoài ra có thư viện cao cấp cho hẹn giờ, đồng bộ, mạng Wi-Fi và Bluetooth, USB và lập trình đa nhân. SDK dùng được để xây từ ứng dụng đơn giản đến môi trường chạy như MicroPython hay phần mềm cấp thấp như bootrom. README trỏ tới hướng dẫn bắt đầu, kết nối Internet với Pico W, tài liệu C/C++ SDK, tài liệu API, kho ví dụ pico-examples và pico-extras, và nói nhánh master chứa bản ổn định mới nhất, nhánh develop chứa tính năng sắp ra. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Raspberry Pi Pico là bo mạch vi điều khiển rẻ, phổ biến cho người mới. SDK này là bộ công cụ chính thức của hãng để lập trình nó bằng C hoặc C++.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc hướng dẫn Getting Started và liệt kê ví dụ trong pico-examples phù hợp mục tiêu; chưa nạp firmware. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần C hoặc C++ cơ bản và khái niệm vi điều khiển; có nhiều hướng dẫn và ví dụ chính thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn mới học thì MicroPython trên Pico có thể dễ hơn; bài chưa so sánh. Dùng nhánh develop để thử tính năng mới có thể không ổn định. Thiết bị Pico W kết nối mạng cần bảo vệ mật khẩu Wi-Fi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>SDK</strong>: bộ công cụ phát triển; README nêu.</li><li><strong>RP-series</strong>: dòng vi điều khiển của Raspberry Pi; README nêu Pico và Pico 2.</li><li><strong>PIO (Programmable IO)</strong>: khối vào ra lập trình được của chip RP; README nêu.</li><li><strong>multicore (đa nhân)</strong>: nhiều lõi xử lý chạy song song; README nêu thư viện hỗ trợ.</li><li><strong>bootrom</strong>: mã khởi động cố định trong chip; README nêu SDK dùng để xây.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu bắt đầu, API và pico-examples; bài không chép lệnh. Cần bo mạch RP và cáp USB. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Documentation.</li><li>Làm theo hướng dẫn Getting Started với Pico.</li><li>Thử một ví dụ nhấp nháy đèn từ pico-examples.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới có Raspberry Pi Pico và muốn lập trình bằng C. Hãy đọc README của Pico SDK (https://github.com/raspberrypi/pico-sdk) và giải thích bằng tiếng Việt: SDK gồm những gì, PIO là gì, và nhánh master khác develop thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,8 KB, bài chưa đọc tài liệu rptl.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>raspberrypi</strong> có <strong>5.013 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/raspberrypi/pico-sdk/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/raspberrypi/pico-sdk\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 640. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5013; repo_id 331380723; README SHA256 bc438bc2b70ce0731f14205113d5241bb53b9a93a7eeba4cf6ecce3ced8e545f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/raspberrypi/pico-sdk",
+          "repo_id": "331380723",
+          "source_path": "",
+          "source_revision": "README-SHA256:bc438bc2b70ce0731f14205113d5241bb53b9a93a7eeba4cf6ecce3ced8e545f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/raspberrypi/pico-sdk",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu bắt đầu, API và pico-examples; bài không chép lệnh. Cần bo mạch RP và cáp USB. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/raspberrypi/pico-sdk/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/raspberrypi/pico-sdk/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "raspberrypi/pico-sdk",
+        "stars": 5013,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/README.md",
+        "readmeSha256": "bc438bc2b70ce0731f14205113d5241bb53b9a93a7eeba4cf6ecce3ced8e545f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 641,
+      "batch": 104,
+      "slug": "freertos-kernel",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "FreeRTOS Kernel: nhân hệ điều hành thời gian thực chứa mã nguồn và các bản chuyển (port) của nhân, là mô-đun con của kho FreeRTOS có sẵn dự án demo; README nêu bản V11.1.0 thuộc LTS 202406",
+        "excerpt": "Hiểu FreeRTOS Kernel là kho chứa mã nguồn nhân FreeRTOS và các bản chuyển (port) của nhân, được dùng làm mô-đun con trong kho FreeRTOS chính có sẵn các dự án demo; README khuyên bắt đầu từ một dự án demo dựng sẵn và nêu cách dùng nhân bằng CMake hoặc sao chép kho.",
+        "content": "<p>README tả kho này chỉ chứa tệp nguồn và tiêu đề của nhân FreeRTOS và các bản chuyển của nhân; kho là mô-đun con của kho FreeRTOS/FreeRTOS chứa các dự án ứng dụng demo cấu hình sẵn trong thư mục Demo. README khuyên cách dễ nhất dùng FreeRTOS là bắt đầu từ một dự án demo dựng sẵn để có đúng tệp nguồn và đường dẫn, chạy được rồi mới bỏ phần demo và thêm mã của bạn; có Quick Start Guide, tài liệu cho nhà phát triển, tham chiếu API. README nêu phiên bản V11.1.0 của nhân là một phần của bản hỗ trợ dài hạn FreeRTOS 202406.00 LTS. Có mục cách dùng nhân với CMake (chọn cổng biên dịch gốc hoặc chéo), dùng độc lập bằng cách sao chép kho, cấu trúc kho, định dạng mã, kết thúc dòng, tối ưu lịch sử git. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhiều thiết bị nhỏ cần làm vài việc cùng lúc: đọc cảm biến, nhấp nháy đèn, gửi dữ liệu. FreeRTOS cho phép chia chương trình thành các tác vụ mà nhân sẽ luân phiên chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích tác vụ (task) và lập lịch bằng ví dụ nhấp nháy hai đèn với nhịp khác nhau; chưa nạp. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần C, vi điều khiển và khái niệm đa tác vụ; chọn đúng bản chuyển cho chip là bước dễ sai. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Kho này chỉ có nhân; muốn bắt đầu dễ phải dùng kho FreeRTOS chính có demo, như README khuyên. Lỗi đa tác vụ như tranh chấp tài nguyên rất khó gỡ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>RTOS</strong>: hệ điều hành thời gian thực; README nêu nhân FreeRTOS.</li><li><strong>port (bản chuyển)</strong>: phần mã nối nhân với một kiến trúc chip cụ thể; README nêu.</li><li><strong>task (tác vụ)</strong>: đơn vị công việc nhân luân phiên chạy; README nhắc API tạo tác vụ.</li><li><strong>LTS</strong>: bản hỗ trợ dài hạn; README nêu FreeRTOS 202406.00 LTS.</li><li><strong>submodule (mô-đun con)</strong>: kho git lồng trong kho khác; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới Quick Start Guide và có mục dùng CMake; bài không chép lệnh. Cần bo mạch hoặc mô phỏng hỗ trợ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting started.</li><li>Mở kho FreeRTOS chính để lấy dự án demo.</li><li>Đọc Quick Start Guide và chạy demo nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu đa tác vụ trên vi điều khiển. Hãy đọc README của FreeRTOS Kernel (https://github.com/FreeRTOS/FreeRTOS-Kernel) và giải thích bằng tiếng Việt: kho này chứa gì và không chứa gì, bản chuyển là gì, và vì sao README khuyên bắt đầu từ dự án demo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,5 KB, bài chưa đọc tài liệu freertos.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>FreeRTOS</strong> có <strong>4.634 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/FreeRTOS/FreeRTOS-Kernel\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 641. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4634; repo_id 207354223; README SHA256 343f07facc543d2547fe3fc12ea7f63397ed0be7f3e30c0cf70a2b3a7cdd13d2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel",
+          "repo_id": "207354223",
+          "source_path": "",
+          "source_revision": "README-SHA256:343f07facc543d2547fe3fc12ea7f63397ed0be7f3e30c0cf70a2b3a7cdd13d2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới Quick Start Guide và có mục dùng CMake; bài không chép lệnh. Cần bo mạch hoặc mô phỏng hỗ trợ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "FreeRTOS/FreeRTOS-Kernel",
+        "stars": 4634,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/FreeRTOS/FreeRTOS-Kernel/main/README.md",
+        "readmeSha256": "343f07facc543d2547fe3fc12ea7f63397ed0be7f3e30c0cf70a2b3a7cdd13d2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 642,
+      "batch": 104,
+      "slug": "nodemcu-firmware",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NodeMCU: firmware mã nguồn mở dựa trên Lua cho SoC Wi-Fi ESP8266, mô hình lập trình bất đồng bộ theo sự kiện giống Node.js, hơn 70 mô-đun C dựng sẵn, giấy phép MIT",
+        "excerpt": "Hiểu NodeMCU là firmware mã nguồn mở dựa trên Lua cho SoC Wi-Fi ESP8266 của Espressif, lập trình bất đồng bộ theo sự kiện giống Node.js, hơn 70 mô-đun C dựng sẵn và gần 20 mô-đun Lua, hỗ trợ Lua Flash Store; README nêu nhánh release và dev nhắm ESP8266, nhánh dev-esp32 nhắm ESP32.",
+        "content": "<p>README tả NodeMCU là firmware mã nguồn mở dựa trên Lua cho SoC Wi-Fi ESP8266 của Espressif, dùng bộ nhớ flash trên mô-đun với hệ tệp SPIFFS; ban đầu là dự án đi kèm các mô-đun phát triển ESP8266 NodeMCU phổ biến, nay do cộng đồng duy trì. README lưu ý nhánh release và dev nhắm ESP8266, nhánh dev-esp32 nhắm ESP32. Tóm tắt: nút không dây hoặc điểm truy cập dễ lập trình, dựa trên Lua 5.1.4 hoặc 5.3 (không có một số mô-đun), mô hình bất đồng bộ theo sự kiện, hơn 70 mô-đun C và gần 20 mô-đun Lua, firmware có hoặc không số thực dấu phẩy động (số nguyên dùng ít bộ nhớ hơn), tài liệu tại nodemcu.readthedocs.io. Hỗ trợ Lua Flash Store (LFS) từ tháng 7 năm 2018 để chạy mã Lua trực tiếp từ flash. README có ví dụ máy chủ HTTP đơn giản bằng Lua (bài không chép), các mục tài liệu, phát hành, hỗ trợ. Mục License nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với NodeMCU bạn viết chương trình cho bo mạch ESP8266 bằng ngôn ngữ Lua đơn giản, ví dụ cho nó làm máy chủ web nhỏ hoặc gửi dữ liệu cảm biến qua Wi-Fi.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Programming Model để hiểu lập trình theo sự kiện; chưa nạp firmware. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần chút lập trình (Lua) và khái niệm Wi-Fi, vi điều khiển. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chọn đúng nhánh theo chip: nhánh release và dev cho ESP8266, nhánh dev-esp32 cho ESP32. Thiết bị tự làm máy chủ web trên Wi-Fi cần đặt mật khẩu và cập nhật; nạp sai firmware có thể làm hỏng bo mạch.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>firmware</strong>: phần mềm nạp trong thiết bị; README nêu NodeMCU là firmware.</li><li><strong>Lua</strong>: ngôn ngữ lập trình nhẹ; README nêu dựa trên Lua 5.1.4 hoặc 5.3.</li><li><strong>asynchronous/event-driven (bất đồng bộ/theo sự kiện)</strong>: chương trình phản ứng khi có sự kiện; README nêu mô hình này.</li><li><strong>LFS (Lua Flash Store)</strong>: chạy mã Lua trực tiếp từ flash; README nêu.</li><li><strong>ESP8266</strong>: chip Wi-Fi của Espressif; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu nodemcu.readthedocs.io; bài không chép lệnh hay mã ví dụ. Cần bo mạch ESP8266 (hoặc ESP32 nhánh riêng). Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Summary và Programming Model.</li><li>Đọc tài liệu nodemcu.readthedocs.io.</li><li>Thử với bo mạch ESP8266 dành cho học tập.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn lập trình bo mạch ESP8266 bằng Lua. Hãy đọc README của NodeMCU (https://github.com/nodemcu/nodemcu-firmware) và giải thích bằng tiếng Việt: firmware này khác Arduino ở đâu, mô hình theo sự kiện nghĩa là gì, và vì sao phải chọn đúng nhánh theo chip. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,3 KB, bài chưa đọc tài liệu nodemcu.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nodemcu</strong> có <strong>7.952 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nodemcu/nodemcu-firmware/blob/release/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nodemcu/nodemcu-firmware\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 642. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7952; repo_id 26917568; README SHA256 cd5fd039cad146be0456b0c23286d15f94ec65b1abe622ed9d33f9f25a56601c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nodemcu/nodemcu-firmware",
+          "repo_id": "26917568",
+          "source_path": "",
+          "source_revision": "README-SHA256:cd5fd039cad146be0456b0c23286d15f94ec65b1abe622ed9d33f9f25a56601c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nodemcu/nodemcu-firmware",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu nodemcu.readthedocs.io; bài không chép lệnh hay mã ví dụ. Cần bo mạch ESP8266 (hoặc ESP32 nhánh riêng). Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nodemcu/nodemcu-firmware/blob/release/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nodemcu/nodemcu-firmware/blob/release/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nodemcu/nodemcu-firmware",
+        "stars": 7952,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nodemcu/nodemcu-firmware/release/README.md",
+        "readmeSha256": "cd5fd039cad146be0456b0c23286d15f94ec65b1abe622ed9d33f9f25a56601c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 643,
+      "batch": 104,
+      "slug": "octoprint",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OctoPrint: giao diện web nhanh gọn để điều khiển máy in 3D tiêu dùng, phần mềm tự do theo GNU Affero GPL phiên bản 3, có diễn đàn, FAQ, tài liệu và kho plugin chính thức",
+        "excerpt": "Hiểu OctoPrint là giao diện web để điều khiển máy in 3D tiêu dùng, phần mềm tự do theo GNU Affero General Public License phiên bản 3; README trỏ tới trang web, diễn đàn, Discord, FAQ, tài liệu, kho plugin và OctoPi (bản phân phối cho Raspberry Pi), nói kho này là mã nguồn chứ không phải hướng dẫn dùng.",
+        "content": "<p>README tả OctoPrint cung cấp giao diện web nhanh gọn để điều khiển máy in 3D tiêu dùng, là phần mềm tự do phát hành theo GNU Affero General Public License phiên bản 3 (chú thích nói tệp hoặc thư mục có giấy phép khác thì ghi ngay trong đó và có THIRDPARTYLICENSES.md). README liệt kê trang octoprint.org, diễn đàn cộng đồng, Discord, FAQ, tài liệu, kho plugin chính thức và nói sự phát triển phụ thuộc hỗ trợ tài chính của cộng đồng, mời quyên góp. README lưu ý bạn đang xem kho mã nguồn; nếu đã cài (ví dụ qua bản phân phối OctoPi cho Raspberry Pi) và chỉ muốn biết cách dùng thì nên xem tài liệu và diễn đàn. Có phần đóng góp và lời cảm ơn. README không có lệnh cài. Lời kêu gọi quyên góp là quảng bá, bài không đánh giá.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì đứng cạnh máy in để bấm nút, bạn mở trình duyệt, tải tệp in lên và xem tiến trình từ xa. OctoPrint là phần mềm làm cầu nối đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc FAQ và tài liệu để hiểu cần những gì (máy tính nhỏ, cáp, camera) và những rủi ro; chưa kết nối máy in. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần máy in 3D, máy tính nhỏ như Raspberry Pi và hiểu cơ bản về mạng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> An toàn vật lý: máy in 3D có bộ phận gia nhiệt có thể gây cháy nếu hỏng hoặc cấu hình sai; không bỏ máy đang in không giám sát khi chưa có biện pháp an toàn. An toàn mạng: không mở OctoPrint ra Internet khi chưa đặt xác thực và kênh bảo mật, vì ai vào được có thể điều khiển máy in. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>3D printer (máy in 3D)</strong>: máy tạo vật thể bằng cách đắp từng lớp; README nêu.</li><li><strong>web interface (giao diện web)</strong>: điều khiển bằng trình duyệt; README nêu.</li><li><strong>plugin</strong>: phần mở rộng tính năng; README trỏ kho plugin chính thức.</li><li><strong>OctoPi</strong>: bản phân phối cài sẵn cho Raspberry Pi; README nêu.</li><li><strong>AGPL</strong>: giấy phép tự do copyleft có điều khoản cho dịch vụ qua mạng; README nêu phiên bản 3.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không có lệnh cài; trỏ tới tài liệu docs.octoprint.org và OctoPi. Cần máy in 3D và máy tính nhỏ. Miễn phí theo GNU AGPL phiên bản 3 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc FAQ và tài liệu.</li><li>Thử khi có người giám sát máy in.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có máy in 3D và muốn điều khiển từ xa. Hãy đọc README của OctoPrint (https://github.com/OctoPrint/OctoPrint) và giải thích bằng tiếng Việt: OctoPrint làm gì, vì sao không nên để máy in chạy không giám sát, và rủi ro khi mở nó ra Internet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,7 KB, bài chưa đọc tài liệu docs.octoprint.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>OctoPrint</strong> có <strong>9.179 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GNU Affero GPL phiên bản 3; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/OctoPrint/OctoPrint/blob/dev/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/OctoPrint/OctoPrint\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 643. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9179; repo_id 7386799; README SHA256 8d901a815f7be92cbf8b1619591aa4c41ba75621baca35f125ddc16ea02b46fb.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/OctoPrint/OctoPrint",
+          "repo_id": "7386799",
+          "source_path": "",
+          "source_revision": "README-SHA256:8d901a815f7be92cbf8b1619591aa4c41ba75621baca35f125ddc16ea02b46fb",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OctoPrint/OctoPrint",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không có lệnh cài; trỏ tới tài liệu docs.octoprint.org và OctoPi. Cần máy in 3D và máy tính nhỏ. Miễn phí theo GNU AGPL phiên bản 3 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OctoPrint/OctoPrint/blob/dev/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/OctoPrint/OctoPrint/blob/dev/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "OctoPrint/OctoPrint",
+        "stars": 9179,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/OctoPrint/OctoPrint/dev/README.md",
+        "readmeSha256": "8d901a815f7be92cbf8b1619591aa4c41ba75621baca35f125ddc16ea02b46fb",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 644,
+      "batch": 104,
+      "slug": "marlin",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Marlin: firmware mã nguồn mở cho máy in 3D, hỗ trợ cả bo ARM 32 bit và AVR 8 bit, tối đa 9 trục và 8 đầu đùn; README nêu nhánh bugfix 2.1 không dùng cho sản xuất, giấy phép GPL",
+        "excerpt": "Hiểu Marlin là firmware mã nguồn mở điều khiển máy in 3D, hỗ trợ cả bo ARM 32 bit và AVR 8 bit, tối đa 9 trục phối hợp và 8 đầu đùn; README cảnh báo nhánh bugfix 2.1 không dùng cho sản xuất, yêu cầu cấu hình riêng cho từng máy, và giấy phép GPL buộc giữ mã mở nếu bạn phát hành.",
+        "content": "<p>README tả Marlin 2.1 hỗ trợ cả bo ARM 32 bit và AVR 8 bit, thêm hỗ trợ đến 9 trục phối hợp và 8 đầu đùn. README lưu ý nhánh Marlin 2.1 Bugfix chỉ dành cho bản vá của bản 2.1.x mới nhất và ghi rõ không dùng cho sản xuất, dùng thận trọng; README nhờ người dùng thử firmware và báo lỗi. Trước khi dựng, bạn cần cấu hình riêng cho phần cứng của mình; README nói nhà cung cấp thường cung cấp mã và cấu hình đầy đủ. Công cụ dựng gồm Visual Studio Code với tiện ích Auto Build Marlin, PlatformIO, devcontainer hoặc Arduino IDE. README có mục bo 32 bit, bo 8 bit, lớp trừu tượng phần cứng (HAL) và danh sách nền tảng được hỗ trợ, Discord, hỗ trợ khác, cách gửi bản vá. Mục License nêu Marlin phát hành theo GPL để giữ phát triển mở: dùng làm firmware cho sản phẩm mã nguồn mở hay đóng đều phải giữ Marlin mở và cung cấp mã nguồn tương thích cho người dùng; đây là tóm tắt của README, bài không phải tư vấn pháp lý.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy in 3D cần một chương trình điều khiển động cơ, bộ gia nhiệt và cảm biến. Marlin là chương trình điều khiển đó, bạn tinh chỉnh cho đúng máy của mình rồi nạp vào bo mạch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc phần Example Configurations để hiểu mỗi máy cần cấu hình riêng; chưa nạp firmware. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án phần cứng, IoT hoặc máy in 3D ở mức sở thích hoặc giáo dục, thường nhờ AI viết mã nhúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu phần cứng máy in, C++ và cấu hình; sai cấu hình có thể gây nguy hiểm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> An toàn vật lý: cấu hình sai giới hạn nhiệt hoặc tắt bảo vệ chạy nhiệt có thể gây cháy; không tắt các tính năng bảo vệ khi chưa hiểu. Nhánh bugfix không dùng cho sản xuất theo README. Không nhờ AI sinh cấu hình an toàn nhiệt mà không đối chiếu tài liệu của chính nhà sản xuất máy in. Giấy phép GPL có nghĩa vụ riêng khi phát hành; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>firmware</strong>: phần mềm nạp trong bo mạch điều khiển; README nêu.</li><li><strong>extruder (đầu đùn)</strong>: bộ phận ép nhựa của máy in; README nêu hỗ trợ đến 8.</li><li><strong>HAL (lớp trừu tượng phần cứng)</strong>: lớp che khác biệt phần cứng; README nêu.</li><li><strong>AVR/ARM</strong>: hai họ chip điều khiển; README nêu cả hai.</li><li><strong>GPL</strong>: giấy phép tự do copyleft; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu marlinfw.org và các công cụ dựng (VS Code, PlatformIO, devcontainer, Arduino IDE); bài không chép lệnh. Cần bo mạch máy in và cấu hình theo máy. Miễn phí theo GPL (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Marlin 2.1 Bugfix Branch và Example Configurations.</li><li>Đọc tài liệu marlinfw.org.</li><li>Chỉ thử khi có người giám sát và đã hiểu bảo vệ nhiệt.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu firmware máy in 3D. Hãy đọc README của Marlin (https://github.com/MarlinFirmware/Marlin) và giải thích bằng tiếng Việt: Marlin làm gì, vì sao nhánh bugfix không dùng cho sản xuất, vì sao mỗi máy cần cấu hình riêng, và rủi ro cháy nếu tắt bảo vệ nhiệt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 17 KB), bài đọc phần đầu, cấu hình, dựng, HAL và giấy phép, chưa đọc tài liệu marlinfw.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần cứng và firmware có thể gây hại vật lý: nạp sai firmware có thể làm hỏng bo mạch, cấu hình sai bộ phận gia nhiệt của máy in 3D có thể gây cháy, và thiết bị kết nối mạng có thể bị lợi dụng nếu để mật khẩu mặc định. Làm trên thiết bị thử, không bỏ mặc thiết bị đang nóng hoặc đang nạp, đọc kỹ cảnh báo an toàn của nhà sản xuất, đổi mật khẩu mặc định, và không nhờ AI sinh cấu hình an toàn nhiệt mà không kiểm chứng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>MarlinFirmware</strong> có <strong>17.646 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GPL; GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/MarlinFirmware/Marlin/blob/bugfix-2.1.x/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/MarlinFirmware/Marlin\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 644. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17646; repo_id 2200856; README SHA256 f79f8e655222ed298a0f9804bbe59dc0d0f10508ab6b92f0d7d1cf98d7c12ebd.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/MarlinFirmware/Marlin",
+          "repo_id": "2200856",
+          "source_path": "",
+          "source_revision": "README-SHA256:f79f8e655222ed298a0f9804bbe59dc0d0f10508ab6b92f0d7d1cf98d7c12ebd",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/MarlinFirmware/Marlin",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu marlinfw.org và các công cụ dựng (VS Code, PlatformIO, devcontainer, Arduino IDE); bài không chép lệnh. Cần bo mạch máy in và cấu hình theo máy. Miễn phí theo GPL (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/MarlinFirmware/Marlin/blob/bugfix-2.1.x/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/MarlinFirmware/Marlin/blob/bugfix-2.1.x/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "MarlinFirmware/Marlin",
+        "stars": 17646,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/MarlinFirmware/Marlin/bugfix-2.1.x/README.md",
+        "readmeSha256": "f79f8e655222ed298a0f9804bbe59dc0d0f10508ab6b92f0d7d1cf98d7c12ebd",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

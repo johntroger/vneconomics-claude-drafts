@@ -1,0 +1,41 @@
+{
+  "key": 641,
+  "repo": "FreeRTOS/FreeRTOS-Kernel",
+  "repoId": "207354223",
+  "url": "https://github.com/FreeRTOS/FreeRTOS-Kernel",
+  "stars": 4634,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T17:10:00Z",
+  "createdAt": "2019-09-09T16:28:01Z",
+  "defaultBranch": "main",
+  "description": "FreeRTOS kernel files only, submoduled into https://github.com/FreeRTOS/FreeRTOS and various other repos.",
+  "homepage": "https://www.FreeRTOS.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/FreeRTOS/FreeRTOS-Kernel/main/README.md",
+    "sha256": "343f07facc543d2547fe3fc12ea7f63397ed0be7f3e30c0cf70a2b3a7cdd13d2",
+    "bytes": 7545,
+    "sectionsRead": [
+      "Getting started",
+      "To consume FreeRTOS-Kernel",
+      "Repository structure"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu freertos.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Zephyr."
+  ],
+  "runtimeValidated": false
+}

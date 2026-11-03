@@ -1,0 +1,41 @@
+{
+  "key": 640,
+  "repo": "raspberrypi/pico-sdk",
+  "repoId": "331380723",
+  "url": "https://github.com/raspberrypi/pico-sdk",
+  "stars": 5013,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:07:11Z",
+  "createdAt": "2021-01-20T17:30:11Z",
+  "defaultBranch": "master",
+  "description": null,
+  "homepage": null,
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/README.md",
+    "sha256": "bc438bc2b70ce0731f14205113d5241bb53b9a93a7eeba4cf6ecce3ced8e545f",
+    "bytes": 9794,
+    "sectionsRead": [
+      "Documentation",
+      "Example code",
+      "Getting the latest SDK code"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chính thức.",
+    "Chưa thử.",
+    "Chưa so sánh với MicroPython."
+  ],
+  "runtimeValidated": false
+}

@@ -10807,5 +10807,195 @@
   "related": [
    "jupyterhub"
   ]
+ },
+ {
+  "key": 637,
+  "slug": "platformio-core",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "PlatformIO Core: hệ sinh thái phát triển phần mềm nhúng mã nguồn mở, hệ dựng đa nền tảng đa kiến trúc, gỡ lỗi thống nhất, phân tích mã tĩnh và kiểm thử từ xa, giấy phép Apache 2.0",
+  "repo": "platformio/platformio-core",
+  "stars": 9580,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-16",
+  "related": [
+   "octoprint",
+   "pico-sdk"
+  ]
+ },
+ {
+  "key": 638,
+  "slug": "zephyr",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "Zephyr: hệ điều hành thời gian thực (RTOS) co giãn, hỗ trợ nhiều kiến trúc phần cứng, tối ưu cho thiết bị hạn chế tài nguyên và xây có chú trọng bảo mật, từ cảm biến đơn giản đến cổng IoT",
+  "repo": "zephyrproject-rtos/zephyr",
+  "stars": 16985,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "freertos-kernel",
+   "marlin"
+  ]
+ },
+ {
+  "key": 639,
+  "slug": "esp-idf",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "ESP-IDF: khung phát triển chính thức của Espressif cho các SoC ESP (Windows, Linux, macOS), có lịch hỗ trợ phát hành, bảng tương thích với phiên bản chip, công cụ dòng lệnh để dựng, nạp và cấu hình",
+  "repo": "espressif/esp-idf",
+  "stars": 19409,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "freertos-kernel",
+   "octoprint"
+  ]
+ },
+ {
+  "key": 640,
+  "slug": "pico-sdk",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "Raspberry Pi Pico SDK: tiêu đề, thư viện và hệ dựng để viết chương trình C, C++ hoặc hợp ngữ cho vi điều khiển dòng RP (Pico, Pico 2), có thư viện cho hẹn giờ, đồng bộ, Wi-Fi, Bluetooth, USB, đa nhân",
+  "repo": "raspberrypi/pico-sdk",
+  "stars": 5013,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "nodemcu-firmware",
+   "platformio-core"
+  ]
+ },
+ {
+  "key": 641,
+  "slug": "freertos-kernel",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "FreeRTOS Kernel: nhân hệ điều hành thời gian thực chứa mã nguồn và các bản chuyển (port) của nhân, là mô-đun con của kho FreeRTOS có sẵn dự án demo; README nêu bản V11.1.0 thuộc LTS 202406",
+  "repo": "FreeRTOS/FreeRTOS-Kernel",
+  "stars": 4634,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "esp-idf",
+   "zephyr"
+  ]
+ },
+ {
+  "key": 642,
+  "slug": "nodemcu-firmware",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "NodeMCU: firmware mã nguồn mở dựa trên Lua cho SoC Wi-Fi ESP8266, mô hình lập trình bất đồng bộ theo sự kiện giống Node.js, hơn 70 mô-đun C dựng sẵn, giấy phép MIT",
+  "repo": "nodemcu/nodemcu-firmware",
+  "stars": 7952,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "pico-sdk"
+  ]
+ },
+ {
+  "key": 643,
+  "slug": "octoprint",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "OctoPrint: giao diện web nhanh gọn để điều khiển máy in 3D tiêu dùng, phần mềm tự do theo GNU Affero GPL phiên bản 3, có diễn đàn, FAQ, tài liệu và kho plugin chính thức",
+  "repo": "OctoPrint/OctoPrint",
+  "stars": 9179,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "esp-idf",
+   "platformio-core"
+  ]
+ },
+ {
+  "key": 644,
+  "slug": "marlin",
+  "group": "2026-11-03-phan-cung-nhung-va-may-in-3d",
+  "title": "Marlin: firmware mã nguồn mở cho máy in 3D, hỗ trợ cả bo ARM 32 bit và AVR 8 bit, tối đa 9 trục và 8 đầu đùn; README nêu nhánh bugfix 2.1 không dùng cho sản xuất, giấy phép GPL",
+  "repo": "MarlinFirmware/Marlin",
+  "stars": 17646,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "zephyr"
+  ]
  }
 ]

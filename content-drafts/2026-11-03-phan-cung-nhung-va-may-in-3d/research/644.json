@@ -1,0 +1,43 @@
+{
+  "key": 644,
+  "repo": "MarlinFirmware/Marlin",
+  "repoId": "2200856",
+  "url": "https://github.com/MarlinFirmware/Marlin",
+  "stars": 17646,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:28:44Z",
+  "createdAt": "2011-08-13T08:07:20Z",
+  "defaultBranch": "bugfix-2.1.x",
+  "description": "Marlin is a firmware for RepRap 3D printers optimized for both 8 and 32 bit microcontrollers.  Marlin supports all common platforms.   Many commercial 3D printers come with Marlin installed.  Check with your vendor if you need source code for your specific machine.",
+  "homepage": "https://marlinfw.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/MarlinFirmware/Marlin/bugfix-2.1.x/README.md",
+    "sha256": "f79f8e655222ed298a0f9804bbe59dc0d0f10508ab6b92f0d7d1cf98d7c12ebd",
+    "bytes": 17430,
+    "sectionsRead": [
+      "Marlin 2.1 Bugfix Branch",
+      "Example Configurations",
+      "Building Marlin 2.1",
+      "Hardware Abstraction Layer (HAL)",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu marlinfw.org.",
+    "Chưa thử.",
+    "Chưa đánh giá bảo vệ nhiệt của từng cấu hình."
+  ],
+  "runtimeValidated": false
+}

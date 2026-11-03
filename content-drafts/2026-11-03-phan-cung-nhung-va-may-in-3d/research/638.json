@@ -1,0 +1,41 @@
+{
+  "key": 638,
+  "repo": "zephyrproject-rtos/zephyr",
+  "repoId": "59771425",
+  "url": "https://github.com/zephyrproject-rtos/zephyr",
+  "stars": 16985,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:29:01Z",
+  "createdAt": "2016-05-26T17:54:19Z",
+  "defaultBranch": "main",
+  "description": "Primary Git Repository for the Zephyr Project. Zephyr is a new generation, scalable, optimized, secure RTOS for multiple hardware architectures.",
+  "homepage": "https://docs.zephyrproject.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/README.rst",
+    "sha256": "f2bc73e25fd06244470d27897a0deb2938aaa81ce57253f087b5e9c1404a500c",
+    "bytes": 4560,
+    "sectionsRead": [
+      "Getting Started",
+      "Community Support",
+      "Resources"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.zephyrproject.org.",
+    "Chưa thử.",
+    "Chưa so sánh với RTOS khác."
+  ],
+  "runtimeValidated": false
+}
