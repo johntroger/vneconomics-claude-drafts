@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-framework-api",
+  "batch": 105,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 645,
+      "batch": 105,
+      "slug": "nestjs",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NestJS: framework xây ứng dụng máy chủ Node.js hiệu quả và co giãn, viết bằng TypeScript, kiến trúc lấy cảm hứng từ Angular, dùng Express bên dưới và tương thích Fastify, giấy phép MIT",
+        "excerpt": "Hiểu NestJS là framework xây ứng dụng máy chủ Node.js hiệu quả và co giãn, dùng JavaScript hiện đại, viết bằng TypeScript và kết hợp lập trình hướng đối tượng, hàm và phản ứng hàm; README nêu kiến trúc lấy cảm hứng từ Angular, dùng Express bên dưới và tương thích Fastify, giấy phép MIT.",
+        "content": "<p>README tả Nest là framework xây ứng dụng máy chủ Node.js hiệu quả và co giãn, dùng JavaScript hiện đại, viết bằng TypeScript (tương thích JavaScript thuần), kết hợp yếu tố lập trình hướng đối tượng, hàm và phản ứng hàm. Bên dưới Nest dùng Express nhưng tương thích nhiều thư viện khác như Fastify để dùng các plugin sẵn có. Phần triết lý nói Node.js đã đưa JavaScript thành ngôn ngữ chung cho cả trước và sau, nhưng thiếu kiến trúc hiệu quả cho phía máy chủ; Nest hướng tới kiến trúc ứng dụng dễ kiểm thử, co giãn, ít phụ thuộc lẫn nhau và dễ bảo trì, lấy cảm hứng mạnh từ Angular. README trỏ tới hướng dẫn docs.nestjs.com, kênh Discord, danh sách vấn đề chỉ cho báo lỗi và yêu cầu tính năng, nền tảng quan sát NestJS Observe và dịch vụ tư vấn trả phí của nhóm cốt lõi; các phần này là quảng bá, bài không đánh giá. Nest theo giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn viết máy chủ Node.js bằng Express, Nest cho thêm một khung kiến trúc có sẵn: cách chia thư mục, tiêm phụ thuộc, kiểm thử. Giống nhà có bản vẽ thay vì tự xây từng viên gạch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích Nest tổ chức một ứng dụng thành các mô-đun, bộ điều khiển và dịch vụ ra sao; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần JavaScript hoặc TypeScript, Node.js và khái niệm hướng đối tượng; cấu trúc lớn có thể rườm rà với dự án nhỏ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dự án nhỏ vài đường dẫn thì Express hoặc Fastify thuần có thể gọn hơn; bài chưa so sánh. README có nhiều phần tài trợ, tư vấn trả phí và nền tảng quan sát: bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung dựng sẵn cho ứng dụng; README nêu.</li><li><strong>TypeScript</strong>: JavaScript có kiểu dữ liệu; README nêu Nest viết bằng TypeScript.</li><li><strong>Express/Fastify</strong>: hai thư viện máy chủ web Node.js; README nêu Nest dùng Express và tương thích Fastify.</li><li><strong>OOP/FP/FRP</strong>: lập trình hướng đối tượng, hàm, phản ứng hàm; README nêu Nest kết hợp.</li><li><strong>Angular</strong>: framework giao diện; README nêu kiến trúc Nest lấy cảm hứng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.nestjs.com; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Description và Philosophy.</li><li>Đọc hướng dẫn tại docs.nestjs.com.</li><li>Dựng ứng dụng nhỏ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút Node.js và muốn hiểu NestJS. Hãy đọc README của Nest (https://github.com/nestjs/nest) và giải thích bằng tiếng Việt: Nest khác Express ở đâu, vì sao nói kiến trúc lấy cảm hứng từ Angular, và khi nào chưa cần framework lớn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11,5 KB, phần lớn là nhà tài trợ và liên kết, bài chưa đọc tài liệu docs.nestjs.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nestjs</strong> có <strong>76.973 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nestjs/nest/blob/master/Readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nestjs/nest\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 645. Chưa cài/chạy thử; không tạo validation. Snapshot sao 76973; repo_id 80945428; README SHA256 dfc28a01206cd405e4b5cd0a7e34e4631926099de647af6fc89ce23852df73c4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nestjs/nest",
+          "repo_id": "80945428",
+          "source_path": "",
+          "source_revision": "README-SHA256:dfc28a01206cd405e4b5cd0a7e34e4631926099de647af6fc89ce23852df73c4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nestjs/nest",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.nestjs.com; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nestjs/nest/blob/master/Readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nestjs/nest/blob/master/Readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nestjs/nest",
+        "stars": 76973,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nestjs/nest/master/Readme.md",
+        "readmeSha256": "dfc28a01206cd405e4b5cd0a7e34e4631926099de647af6fc89ce23852df73c4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 646,
+      "batch": 105,
+      "slug": "koa",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Koa: framework phần mềm trung gian HTTP biểu cảm cho Node.js để viết ứng dụng web và API dễ chịu hơn, ngăn xếp phần mềm trung gian chạy kiểu ngăn xếp, lõi nhỏ khoảng 570 dòng mã, không đi kèm phần mềm trung gian nào, giấy phép MIT",
+        "excerpt": "Hiểu Koa là framework phần mềm trung gian HTTP cho Node.js để viết ứng dụng web và API dễ chịu hơn: ngăn xếp phần mềm trung gian chạy kiểu ngăn xếp cho phép hành động đi xuống rồi quay ngược, lõi nhỏ khoảng 570 dòng mã, không đi kèm phần mềm trung gian nào, yêu cầu Node 18 trở lên.",
+        "content": "<p>README tả Koa là framework phần mềm trung gian HTTP biểu cảm cho Node.js, làm việc viết ứng dụng web và API dễ chịu hơn. Ngăn xếp phần mềm trung gian của Koa chạy kiểu ngăn xếp, cho phép làm việc theo chiều đi xuống rồi đi ngược lên. Chỉ các phương thức chung cho gần mọi máy chủ HTTP được tích hợp thẳng vào lõi nhỏ khoảng 570 dòng mã (thương lượng nội dung, chuẩn hóa điểm không nhất quán của Node, chuyển hướng...). Koa không đi kèm phần mềm trung gian nào. README yêu cầu Node 18.0.0 trở lên, có ví dụ Hello Koa, hướng dẫn phần mềm trung gian (hàm bất đồng bộ, hàm thường, chữ ký của v1), ngữ cảnh, yêu cầu và phản hồi, đối tượng ứng dụng, tài liệu, khắc phục sự cố, chạy kiểm thử. README nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Koa cho bạn rất ít thứ có sẵn: chỉ bộ khung tối thiểu. Mọi tính năng khác như đăng nhập hay định tuyến bạn tự ghép từ các gói nhỏ, nên hiểu rõ mỗi mảnh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm phần mềm trung gian chạy đi xuống rồi quay ngược bằng ví dụ ghi log thời gian xử lý; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript, async/await và hiểu khái niệm phần mềm trung gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Vì Koa không kèm phần mềm trung gian nào, bạn phải tự chọn gói cho định tuyến, xác thực, bảo mật: chất lượng gói bên thứ ba khác nhau. Người mới có thể thấy Express dễ hơn; bài chưa so sánh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>middleware (phần mềm trung gian)</strong>: hàm xử lý yêu cầu theo từng lớp; README nêu.</li><li><strong>async function (hàm bất đồng bộ)</strong>: hàm chờ kết quả; README nêu Koa dùng.</li><li><strong>context (ngữ cảnh)</strong>: đối tượng chứa yêu cầu và phản hồi; README nêu.</li><li><strong>content negotiation</strong>: chọn định dạng nội dung phù hợp với client; README nêu Koa tích hợp.</li><li><strong>SLOC</strong>: số dòng mã nguồn; README nêu lõi khoảng 570.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Node v18.0.0 trở lên, cài từ npm; bài không chép lệnh hay mã ví dụ. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Middleware.</li><li>Đọc mục Context, Request and Response.</li><li>Thử ví dụ Hello Koa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu phần mềm trung gian trong Node.js. Hãy đọc README của Koa (https://github.com/koajs/koa) và giải thích bằng tiếng Việt: Koa khác Express ở đâu, ngăn xếp phần mềm trung gian đi xuống rồi quay ngược nghĩa là gì, và vì sao Koa không kèm phần mềm trung gian. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 17 KB, bài chưa đọc tài liệu koajs.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>koajs</strong> có <strong>35.682 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/koajs/koa/blob/master/Readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/koajs/koa\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 646. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35682; repo_id 11551538; README SHA256 fe1557fb00b87d4c1ccf3af31d4b58c52c05bfb3384658ab2a17615b372738c1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/koajs/koa",
+          "repo_id": "11551538",
+          "source_path": "",
+          "source_revision": "README-SHA256:fe1557fb00b87d4c1ccf3af31d4b58c52c05bfb3384658ab2a17615b372738c1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/koajs/koa",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Node v18.0.0 trở lên, cài từ npm; bài không chép lệnh hay mã ví dụ. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/koajs/koa/blob/master/Readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/koajs/koa/blob/master/Readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "koajs/koa",
+        "stars": 35682,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/koajs/koa/master/Readme.md",
+        "readmeSha256": "fe1557fb00b87d4c1ccf3af31d4b58c52c05bfb3384658ab2a17615b372738c1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 647,
+      "batch": 105,
+      "slug": "aiohttp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "aiohttp: khung client và máy chủ HTTP bất đồng bộ cho Python, hỗ trợ cả client và máy chủ WebSocket, máy chủ web có phần mềm trung gian và định tuyến cắm thêm được, giấy phép Apache 2.0",
+        "excerpt": "Hiểu aiohttp là khung client và máy chủ HTTP bất đồng bộ cho Python: hỗ trợ cả hai phía của HTTP, WebSocket cho cả client và máy chủ mà tránh địa ngục callback, máy chủ web có phần mềm trung gian và định tuyến cắm thêm; README có ví dụ client và máy chủ nhỏ.",
+        "content": "<p>README tả aiohttp là khung client và máy chủ HTTP bất đồng bộ. Tính năng chính: hỗ trợ cả client và máy chủ của giao thức HTTP, hỗ trợ sẵn WebSocket cho client và máy chủ mà tránh được địa ngục callback, máy chủ web có phần mềm trung gian và định tuyến cắm thêm được. README có ví dụ client lấy dữ liệu từ một trang, ví dụ máy chủ, và các mục tài liệu, hỗ trợ, cách dùng cho mã client với ClientSession. README phần đã đọc không nêu rõ tên giấy phép trong mục chính; bài lấy theo GitHub (Apache-2.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chương trình Python thường chờ từng yêu cầu mạng xong mới làm tiếp. Với aiohttp bạn gửi nhiều yêu cầu cùng lúc mà không phải chờ lần lượt, hợp để lấy dữ liệu từ nhiều API.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích async và await qua ví dụ client trong README, rồi đọc ví dụ máy chủ; chưa gửi yêu cầu thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và khái niệm bất đồng bộ (asyncio). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mã bất đồng bộ dễ sai nếu lẫn mã chặn; bạn mới học thì thư viện đồng bộ như requests dễ hơn; bài chưa so sánh. Chỉ gửi yêu cầu tới nguồn bạn được phép và tôn trọng điều khoản của dịch vụ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>asynchronous (bất đồng bộ)</strong>: không chờ từng việc xong mới làm việc kế tiếp; README nêu.</li><li><strong>WebSocket</strong>: kết nối hai chiều lâu dài; README nêu hỗ trợ.</li><li><strong>middleware (phần mềm trung gian)</strong>: hàm xen vào xử lý yêu cầu; README nêu máy chủ có.</li><li><strong>routing (định tuyến)</strong>: gắn đường dẫn với hàm xử lý; README nêu pluggable.</li><li><strong>callback hell (địa ngục callback)</strong>: mã lồng nhiều tầng khó đọc; README nêu tránh được.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có ví dụ client và máy chủ, cài qua trình quản lý gói Python; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Key Features.</li><li>Đọc ví dụ client và máy chủ.</li><li>Thử gửi yêu cầu tới một API công khai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút Python và muốn gọi nhiều API cùng lúc. Hãy đọc README của aiohttp (https://github.com/aio-libs/aiohttp) và giải thích bằng tiếng Việt: bất đồng bộ nghĩa là gì, aiohttp làm được gì ở cả client và máy chủ, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,6 KB, bài chưa đọc tài liệu docs.aiohttp.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>aio-libs</strong> có <strong>16.606 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/aio-libs/aiohttp/blob/master/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/aio-libs/aiohttp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 647. Chưa cài/chạy thử; không tạo validation. Snapshot sao 16606; repo_id 13258039; README SHA256 8536c66dfc86d31bccfeb892e7d3d11374925a589c93a9d9c26389b6d549d666.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/aio-libs/aiohttp",
+          "repo_id": "13258039",
+          "source_path": "",
+          "source_revision": "README-SHA256:8536c66dfc86d31bccfeb892e7d3d11374925a589c93a9d9c26389b6d549d666",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aio-libs/aiohttp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có ví dụ client và máy chủ, cài qua trình quản lý gói Python; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aio-libs/aiohttp/blob/master/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/aio-libs/aiohttp/blob/master/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "aio-libs/aiohttp",
+        "stars": 16606,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/aio-libs/aiohttp/master/README.rst",
+        "readmeSha256": "8536c66dfc86d31bccfeb892e7d3d11374925a589c93a9d9c26389b6d549d666",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 648,
+      "batch": 105,
+      "slug": "trpc",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "tRPC: xây và dùng API an toàn kiểu hoàn toàn không cần lược đồ hay sinh mã, client không nhập mã từ máy chủ mà chỉ dùng khai báo kiểu; adapter cho React, Next.js, Express, Fastify, giấy phép MIT",
+        "excerpt": "Hiểu tRPC cho phép xây và dùng API an toàn kiểu mà không cần lược đồ hay sinh mã: client không nhập mã từ máy chủ mà chỉ dùng khai báo kiểu của nó; README nêu không phụ thuộc, adapter cho React, Next.js, Express, Fastify, hỗ trợ subscription, gộp yêu cầu, và nhiều ví dụ.",
+        "content": "<p>README tả tRPC cho phép xây và dùng API an toàn kiểu đầy đủ mà không cần lược đồ hay sinh mã; client không nhập mã nào từ máy chủ, chỉ dùng khai báo kiểu. Tính năng theo README: được tác giả mô tả là kiểm thử kỹ và sẵn sàng sản xuất, an toàn kiểu tĩnh đầy đủ và tự gợi ý ở client cho đầu vào, đầu ra, lỗi, trải nghiệm nhà phát triển nhanh không sinh mã hay quy trình dựng, nhẹ với số phụ thuộc bằng không, dễ thêm vào dự án sẵn có, kèm adapter React, Next.js, Express, Fastify, hỗ trợ subscription, gộp yêu cầu đồng thời thành một, nhiều ví dụ. Các nhận định về độ sẵn sàng và nhẹ là tuyên bố của dự án, bài chưa kiểm chứng. README có mục Quickstart với ví dụ Next.js đầy đủ cho nhiều trình quản lý gói (bài không chép lệnh), lịch sử sao, đội ngũ cốt lõi. README có huy hiệu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bình thường frontend và backend nói chuyện qua API và dễ lệch kiểu dữ liệu. tRPC cho cả hai bên dùng chung kiểu dữ liệu TypeScript nên sai là báo lỗi ngay khi viết mã.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'an toàn kiểu' bằng ví dụ gọi một hàm API và đổi tên một trường; chưa dựng ứng dụng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần TypeScript, hiểu API và một framework như Next.js. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> tRPC hợp khi cả client và máy chủ đều viết bằng TypeScript; nếu API phục vụ ứng dụng viết bằng ngôn ngữ khác thì cần cách khác. Bài chưa so sánh với REST hay GraphQL.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>typesafe (an toàn kiểu)</strong>: kiểu dữ liệu được kiểm tra khi viết mã; README nêu.</li><li><strong>schema (lược đồ)</strong>: bản mô tả cấu trúc dữ liệu; README nêu tRPC không cần.</li><li><strong>code generation (sinh mã)</strong>: tạo mã tự động từ lược đồ; README nêu tRPC không cần.</li><li><strong>adapter</strong>: lớp nối với framework khác; README nêu React, Next.js, Express, Fastify.</li><li><strong>subscription</strong>: nhận dữ liệu đẩy từ máy chủ; README nêu hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quickstart với ví dụ Next.js dùng nhiều trình quản lý gói; bài không chép lệnh. Cần TypeScript và Node.js. Miễn phí theo MIT (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Intro và Features.</li><li>Đọc Quickstart và xem ví dụ.</li><li>Thử với dự án TypeScript nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng TypeScript cho cả frontend và backend. Hãy đọc README của tRPC (https://github.com/trpc/trpc) và giải thích bằng tiếng Việt: an toàn kiểu nghĩa là gì, vì sao không cần lược đồ hay sinh mã, và khi nào tRPC không phù hợp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12 KB, bài chưa đọc tài liệu trpc.io. Tuyên bố của dự án chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>trpc</strong> có <strong>40.756 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/trpc/trpc/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/trpc/trpc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 648. Chưa cài/chạy thử; không tạo validation. Snapshot sao 40756; repo_id 280557054; README SHA256 6700cfb1b8dceb4197c7ec2d7a2c853ab3949bf3e434286b1c52e36a649bd0f7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/trpc/trpc",
+          "repo_id": "280557054",
+          "source_path": "",
+          "source_revision": "README-SHA256:6700cfb1b8dceb4197c7ec2d7a2c853ab3949bf3e434286b1c52e36a649bd0f7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trpc/trpc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quickstart với ví dụ Next.js dùng nhiều trình quản lý gói; bài không chép lệnh. Cần TypeScript và Node.js. Miễn phí theo MIT (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/trpc/trpc/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/trpc/trpc/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "trpc/trpc",
+        "stars": 40756,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/trpc/trpc/main/README.md",
+        "readmeSha256": "6700cfb1b8dceb4197c7ec2d7a2c853ab3949bf3e434286b1c52e36a649bd0f7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 649,
+      "batch": 105,
+      "slug": "strawberry-graphql",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Strawberry GraphQL: thư viện GraphQL cho Python dựa trên dataclass, định nghĩa kiểu bằng chú thích kiểu, có tích hợp Django và công cụ dòng lệnh, giấy phép MIT",
+        "excerpt": "Hiểu Strawberry là thư viện GraphQL cho Python dựa trên dataclass: bạn định nghĩa kiểu dữ liệu bằng lớp Python có chú thích kiểu rồi tạo lược đồ GraphQL; README có hướng dẫn khởi đầu, kiểm tra kiểu, tích hợp Django, ví dụ và giấy phép MIT.",
+        "content": "<p>README tả Strawberry là thư viện GraphQL cho Python dựa trên dataclass. Phần cài đặt nhanh có máy chủ và công cụ dòng lệnh để bắt đầu; bài không chép lệnh. Phần Getting Started hướng dẫn tạo tệp ứng dụng khai báo kiểu User, kiểu Query với một trường trả về người dùng và dựng lược đồ (bài không chép mã). README còn có các mục kiểm tra kiểu, tích hợp Django, ví dụ, đóng góp, liên kết hữu ích và phần Licensing nêu mã theo giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>GraphQL là cách để client hỏi đúng những trường dữ liệu mình cần thay vì nhận cả cục. Strawberry cho bạn mô tả dữ liệu bằng lớp Python bình thường rồi tự dựng API GraphQL.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích kiểu, truy vấn và lược đồ bằng ví dụ người dùng trong README; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python có chú thích kiểu và khái niệm GraphQL. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần API đơn giản thì REST có thể dễ hơn; bài chưa so sánh. Một API GraphQL mở ra Internet cần giới hạn độ sâu truy vấn, xác thực và phân quyền.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>GraphQL</strong>: ngôn ngữ truy vấn cho API; README nêu thư viện cho GraphQL.</li><li><strong>dataclass</strong>: lớp Python chứa dữ liệu; README nêu thư viện dựa trên đó.</li><li><strong>schema (lược đồ)</strong>: mô tả các kiểu và truy vấn của API; README nêu.</li><li><strong>type hint (chú thích kiểu)</strong>: ghi kiểu dữ liệu trong mã Python; README nêu dùng trong ví dụ.</li><li><strong>Django</strong>: framework web Python; README có mục tích hợp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt nhanh và hướng dẫn bắt đầu; bài không chép lệnh hay mã. Cần Python. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting Started.</li><li>Đọc mục Type-checking và Django Integration.</li><li>Thử một truy vấn với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Python và muốn làm API GraphQL. Hãy đọc README của Strawberry (https://github.com/strawberry-graphql/strawberry) và giải thích bằng tiếng Việt: GraphQL khác REST thế nào, kiểu và lược đồ trong ví dụ là gì, và rủi ro khi mở API ra Internet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,6 KB), bài chưa đọc tài liệu strawberry.rocks. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>strawberry-graphql</strong> có <strong>4.725 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/strawberry-graphql/strawberry/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/strawberry-graphql/strawberry\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 649. Chưa cài/chạy thử; không tạo validation. Snapshot sao 4725; repo_id 162690887; README SHA256 c689e7cd0cd5dc1aca94f26efa8bc5f0f5cf36108920034683296f3762202a11.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/strawberry-graphql/strawberry",
+          "repo_id": "162690887",
+          "source_path": "",
+          "source_revision": "README-SHA256:c689e7cd0cd5dc1aca94f26efa8bc5f0f5cf36108920034683296f3762202a11",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/strawberry-graphql/strawberry",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt nhanh và hướng dẫn bắt đầu; bài không chép lệnh hay mã. Cần Python. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/strawberry-graphql/strawberry/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/strawberry-graphql/strawberry/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "strawberry-graphql/strawberry",
+        "stars": 4725,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/strawberry-graphql/strawberry/main/README.md",
+        "readmeSha256": "c689e7cd0cd5dc1aca94f26efa8bc5f0f5cf36108920034683296f3762202a11",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 650,
+      "batch": 105,
+      "slug": "graphql-js",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "GraphQL.js: bản cài đặt tham chiếu bằng JavaScript của GraphQL, ngôn ngữ truy vấn cho API do Facebook tạo ra, dùng làm nền cho nhiều thư viện; README có phần hỗ trợ phiên bản và lịch hết hỗ trợ, giấy phép MIT",
+        "excerpt": "Hiểu GraphQL.js là bản cài đặt tham chiếu bằng JavaScript của GraphQL, ngôn ngữ truy vấn cho API do Facebook tạo ra; README khuyên đi qua đặc tả và các kiểm thử song song, có hướng dẫn dùng, dùng trong trình duyệt, nhánh mới nhất, hỗ trợ phiên bản dài hạn và lịch hết hỗ trợ.",
+        "content": "<p>README tả GraphQL.js là bản cài đặt tham chiếu bằng JavaScript cho GraphQL, ngôn ngữ truy vấn cho API do Facebook tạo ra. README trỏ tới graphql.org để xem tài liệu đầy đủ. Cách bắt đầu tốt là đi qua README của đặc tả GraphQL song song với các kiểm thử tương ứng trong kho. README có hướng dẫn cài từ npm hoặc yarn (bài không chép lệnh), mục dùng bản mới nhất trên nhánh phát triển, dùng trong trình duyệt, đóng góp, nhật ký thay đổi, và phần Version Support nêu hỗ trợ dài hạn (LTS), lịch hết hỗ trợ (EOL) và hỗ trợ nâng cấp. Nhánh mặc định của kho là 17.x.x. README nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>GraphQL.js là bộ máy chạy ngôn ngữ truy vấn GraphQL trong JavaScript. Nhiều thư viện làm máy chủ GraphQL bằng JavaScript dùng nó bên dưới.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README đặc tả và các kiểm thử tương ứng để hiểu một truy vấn đơn giản; chưa viết máy chủ. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần JavaScript, khái niệm GraphQL và đọc đặc tả; dùng trực tiếp ít phổ biến với người mới. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đây là thư viện tham chiếu cấp thấp: người mới thường dùng thư viện cấp cao hơn dựa trên nó; bài chưa so sánh. Nhánh mặc định 17.x.x có thể là phiên bản chưa ổn định: kiểm tra phần Version Support.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>reference implementation (bản cài đặt tham chiếu)</strong>: bản mẫu chuẩn để các bản khác đối chiếu; README nêu.</li><li><strong>GraphQL specification (đặc tả)</strong>: tài liệu chuẩn mô tả GraphQL; README trỏ tới.</li><li><strong>LTS</strong>: phiên bản hỗ trợ dài hạn; README có mục.</li><li><strong>EOL</strong>: hết hỗ trợ; README có lịch.</li><li><strong>bleeding edge</strong>: bản mới nhất chưa ổn định; README có mục này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài từ npm hoặc yarn và mục dùng trong trình duyệt; bài không chép lệnh. Cần JavaScript. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Getting Started.</li><li>Đọc mục Version Support.</li><li>Thử các kiểm thử trong kho khi đã hiểu đặc tả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu GraphQL ở mức nền tảng. Hãy đọc README của GraphQL.js (https://github.com/graphql/graphql-js) và giải thích bằng tiếng Việt: bản cài đặt tham chiếu nghĩa là gì, vì sao nên đọc đặc tả cùng các kiểm thử, và mục Version Support nói gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,6 KB, bài chưa đọc tài liệu graphql.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>graphql</strong> có <strong>20.344 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/graphql/graphql-js/blob/17.x.x/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/graphql/graphql-js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 650. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20344; repo_id 38307428; README SHA256 e9c65e895181cf18bd62a367549cfcc4d8a584712316382b31a85fadd1fc04b7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/graphql/graphql-js",
+          "repo_id": "38307428",
+          "source_path": "",
+          "source_revision": "README-SHA256:e9c65e895181cf18bd62a367549cfcc4d8a584712316382b31a85fadd1fc04b7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/graphql/graphql-js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn cài từ npm hoặc yarn và mục dùng trong trình duyệt; bài không chép lệnh. Cần JavaScript. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/graphql/graphql-js/blob/17.x.x/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/graphql/graphql-js/blob/17.x.x/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "graphql/graphql-js",
+        "stars": 20344,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/graphql/graphql-js/17.x.x/README.md",
+        "readmeSha256": "e9c65e895181cf18bd62a367549cfcc4d8a584712316382b31a85fadd1fc04b7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 651,
+      "batch": 105,
+      "slug": "falcon",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Falcon: framework web ASGI và WSGI tối giản để xây API REST và vi dịch vụ quan trọng, ưu tiên độ tin cậy, đúng đắn và hiệu năng ở quy mô lớn, ít phụ thuộc, chạy trên CPython 3.9+ và PyPy 3.9+, giấy phép Apache 2.0",
+        "excerpt": "Hiểu Falcon là framework web ASGI và WSGI tối giản để xây API REST và vi dịch vụ quan trọng, tập trung vào độ tin cậy, đúng đắn và hiệu năng ở quy mô lớn; README nêu thiết kế gọn ôm sát HTTP và kiểu kiến trúc REST, ít phụ thuộc, chạy với mọi máy chủ WSGI hoặc ASGI.",
+        "content": "<p>README tả Falcon là framework ASGI và WSGI tối giản để xây API REST và vi dịch vụ quan trọng, tập trung vào độ tin cậy, đúng đắn và hiệu năng ở quy mô lớn. README nói các framework khác kéo theo nhiều phụ thuộc và trừu tượng không cần thiết còn Falcon có thiết kế gọn ôm lấy HTTP và REST; đây là cách tự mô tả của dự án, bài chưa kiểm chứng. Ứng dụng Falcon chạy với mọi máy chủ WSGI hoặc ASGI, dưới CPython 3.9 trở lên và PyPy 3.9 trở lên. README có các liên kết tài liệu (hỏi đáp, tham chiếu), gói bổ sung, bài viết, kênh Gitter, rồi nhiều mục về ví dụ, cách làm việc với bất đồng bộ, thử nghiệm hiệu năng và nhà tài trợ. Phần giấy phép nêu Apache License 2.0. README rất dài (khoảng 32 KB), bài đọc phần đầu và các mục chính.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn viết một API gọn, nhanh, ít 'phép màu'? Falcon cho bạn một bộ khung nhỏ bám sát cách HTTP hoạt động, bạn tự quyết định phần còn lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm tài nguyên và phương thức HTTP trong REST rồi đối chiếu với tài liệu Falcon; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, hiểu HTTP và REST. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Falcon tối giản nên bạn phải tự ghép xác thực, kiểm tra dữ liệu, cơ sở dữ liệu; người mới có thể thấy framework nhiều tính năng dễ hơn; bài chưa so sánh. Tuyên bố về độ tin cậy và hiệu năng bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ASGI/WSGI</strong>: hai chuẩn giao tiếp giữa máy chủ web và ứng dụng Python; README nêu.</li><li><strong>REST</strong>: kiểu thiết kế API dựa trên HTTP; README nêu.</li><li><strong>microservice (vi dịch vụ)</strong>: dịch vụ nhỏ làm một việc; README nêu.</li><li><strong>PyPy</strong>: bản chạy Python khác CPython; README nêu hỗ trợ.</li><li><strong>minimalist (tối giản)</strong>: ít thành phần và phụ thuộc; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu falcon.readthedocs.io; bài không chép lệnh hay mã. Cần Python 3.9 trở lên. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Quick Links.</li><li>Đọc FAQ trong tài liệu.</li><li>Thử một API nhỏ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn viết API REST nhỏ bằng Python. Hãy đọc README của Falcon (https://github.com/falconry/falcon) và giải thích bằng tiếng Việt: Falcon khác các framework nhiều tính năng ở đâu, ASGI và WSGI là gì, và khi nào tối giản là bất tiện. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 32 KB), bài đọc phần đầu và liên kết chính, chưa đọc tài liệu falcon.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>falconry</strong> có <strong>9.811 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-24. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/falconry/falcon/blob/master/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/falconry/falcon\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 651. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9811; repo_id 7040500; README SHA256 17cad0f323fca54b9bcee7bb775fef07dd09dab7ba6413ac449ab94f861069e1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/falconry/falcon",
+          "repo_id": "7040500",
+          "source_path": "",
+          "source_revision": "README-SHA256:17cad0f323fca54b9bcee7bb775fef07dd09dab7ba6413ac449ab94f861069e1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/falconry/falcon",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu falcon.readthedocs.io; bài không chép lệnh hay mã. Cần Python 3.9 trở lên. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/falconry/falcon/blob/master/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/falconry/falcon/blob/master/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "falconry/falcon",
+        "stars": 9811,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/falconry/falcon/master/README.rst",
+        "readmeSha256": "17cad0f323fca54b9bcee7bb775fef07dd09dab7ba6413ac449ab94f861069e1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 652,
+      "batch": 105,
+      "slug": "drogon",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Drogon: framework ứng dụng HTTP viết bằng C++17/20, I/O không chặn dựa trên epoll, hoàn toàn bất đồng bộ, hỗ trợ WebSocket, JSON, đọc ghi cơ sở dữ liệu bất đồng bộ, công cụ dòng lệnh drogon_ctl, đa nền tảng",
+        "excerpt": "Hiểu Drogon là framework ứng dụng HTTP viết bằng C++17/20 để xây máy chủ web bằng C++, đa nền tảng, dùng I/O không chặn dựa trên epoll, lập trình bất đồng bộ hoàn toàn, hỗ trợ HTTP, WebSocket, JSON, cookie, phiên, HTTPS, nén, đọc ghi PostgreSQL và MySQL bất đồng bộ; README dẫn kết quả TFB về hiệu năng, là tuyên bố của dự án.",
+        "content": "<p>README tả Drogon là framework ứng dụng HTTP dựa trên C++17/20 để dựng nhiều loại chương trình máy chủ web bằng C++, đa nền tảng (Linux, macOS, FreeBSD, OpenBSD, HaikuOS, Windows). Tính năng chính: thư viện mạng I/O không chặn dựa trên epoll (kqueue trên macOS và FreeBSD) cho đồng thời và hiệu năng cao (README dẫn kết quả TFB; đây là tuyên bố của dự án, bài chưa kiểm chứng), chế độ lập trình hoàn toàn bất đồng bộ, HTTP 1.0 và 1.1 cho cả máy chủ và client, phản xạ đơn giản dựa trên template để tách khung chính, bộ điều khiển và giao diện, cookie và phiên, kết xuất phía sau với tệp mẫu CSP, nạp trang động, định tuyến linh hoạt, chuỗi bộ lọc (xác thực đăng nhập, ràng buộc phương thức HTTP), HTTPS qua OpenSSL, WebSocket, JSON thân thiện cho API REST, tải lên xuống tệp, nén gzip và brotli, pipelining, công cụ dòng lệnh drogon_ctl, đọc ghi PostgreSQL và MySQL bất đồng bộ, sqlite3 qua nhóm luồng. README có ví dụ mã C++ (bài không chép). README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hầu hết người viết web dùng Python hay JavaScript. Drogon dành cho ai cần máy chủ cực nhanh viết bằng C++, đổi lại phải tự lo nhiều chi tiết và an toàn bộ nhớ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc danh sách tính năng và hiểu vì sao chọn C++ cho máy chủ; chưa biên dịch. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc API ở phía máy chủ nhờ AI viết mã, muốn hiểu lựa chọn framework.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần C++ hiện đại, hệ dựng như CMake, lập trình bất đồng bộ và bảo mật bộ nhớ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> C++ dễ gây lỗi bộ nhớ có thể thành lỗ hổng bảo mật; nếu AI sinh mã C++ cho máy chủ cần xem xét rất kỹ. Người mới không nên bắt đầu ở đây. Tuyên bố hiệu năng TFB chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>asynchronous (bất đồng bộ)</strong>: không chờ từng việc xong mới làm việc kế tiếp; README nêu.</li><li><strong>epoll/kqueue</strong>: cơ chế hệ điều hành theo dõi nhiều kết nối hiệu quả; README nêu.</li><li><strong>filter chain (chuỗi bộ lọc)</strong>: các bước kiểm tra trước khi xử lý yêu cầu; README nêu.</li><li><strong>CSP</strong>: mẫu trang cho phép nhúng mã C++ vào HTML; README nêu.</li><li><strong>TFB (TechEmpower Framework Benchmarks)</strong>: bộ đo hiệu năng framework web; README dẫn kết quả.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có ví dụ mã C++ và dùng công cụ drogon_ctl; bài không chép lệnh hay mã. Cần trình biên dịch C++17 trở lên. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview và danh sách tính năng.</li><li>Đọc ví dụ rất đơn giản.</li><li>Chỉ thử khi đã quen C++.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu máy chủ web viết bằng C++. Hãy đọc README của Drogon (https://github.com/drogonframework/drogon) và giải thích bằng tiếng Việt: Drogon làm gì, bất đồng bộ và epoll nghĩa là gì, và rủi ro khi viết máy chủ bằng C++. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11 KB, bài chưa đọc wiki của Drogon. Tuyên bố hiệu năng chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Máy chủ web và API mở ra mạng là mục tiêu bị tấn công: kiểm tra đầu vào, xác thực và phân quyền, không để lộ khóa API hay mật khẩu trong mã, không chạy mã AI viết mà chưa đọc, giữ thư viện cập nhật, và chỉ phơi ra Internet những cổng thật sự cần sau khi bật HTTPS và giới hạn tốc độ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>drogonframework</strong> có <strong>14.386 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/drogonframework/drogon/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/drogonframework/drogon\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 652. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14386; repo_id 131236938; README SHA256 f4b2a4a7a3d86817796ed7cc7df5e9ee84ebcc616d241081bd633c177bd36347.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/drogonframework/drogon",
+          "repo_id": "131236938",
+          "source_path": "",
+          "source_revision": "README-SHA256:f4b2a4a7a3d86817796ed7cc7df5e9ee84ebcc616d241081bd633c177bd36347",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/drogonframework/drogon",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có ví dụ mã C++ và dùng công cụ drogon_ctl; bài không chép lệnh hay mã. Cần trình biên dịch C++17 trở lên. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/drogonframework/drogon/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/drogonframework/drogon/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "drogonframework/drogon",
+        "stars": 14386,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/drogonframework/drogon/master/README.md",
+        "readmeSha256": "f4b2a4a7a3d86817796ed7cc7df5e9ee84ebcc616d241081bd633c177bd36347",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

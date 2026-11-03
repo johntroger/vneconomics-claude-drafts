@@ -1,0 +1,41 @@
+{
+  "key": 647,
+  "repo": "aio-libs/aiohttp",
+  "repoId": "13258039",
+  "url": "https://github.com/aio-libs/aiohttp",
+  "stars": 16606,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:41:38Z",
+  "createdAt": "2013-10-01T23:04:01Z",
+  "defaultBranch": "master",
+  "description": "Asynchronous HTTP client/server framework for asyncio and Python",
+  "homepage": "https://docs.aiohttp.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/aio-libs/aiohttp/master/README.rst",
+    "sha256": "8536c66dfc86d31bccfeb892e7d3d11374925a589c93a9d9c26389b6d549d666",
+    "bytes": 5582,
+    "sectionsRead": [
+      "Key Features",
+      "Getting started",
+      "Client"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.aiohttp.org.",
+    "Chưa thử.",
+    "Chưa so sánh với requests hay httpx."
+  ],
+  "runtimeValidated": false
+}

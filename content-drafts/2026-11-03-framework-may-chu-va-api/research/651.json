@@ -1,0 +1,39 @@
+{
+  "key": 651,
+  "repo": "falconry/falcon",
+  "repoId": "7040500",
+  "url": "https://github.com/falconry/falcon",
+  "stars": 9811,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-24T19:47:09Z",
+  "createdAt": "2012-12-06T18:17:51Z",
+  "defaultBranch": "master",
+  "description": "The no-magic web API and microservices framework for Python developers, with a focus on reliability and performance at scale.",
+  "homepage": "https://falcon.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/falconry/falcon/master/README.rst",
+    "sha256": "17cad0f323fca54b9bcee7bb775fef07dd09dab7ba6413ac449ab94f861069e1",
+    "bytes": 31982,
+    "sectionsRead": [
+      "Quick Links"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu falcon.readthedocs.io.",
+    "Chưa thử.",
+    "Tuyên bố hiệu năng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

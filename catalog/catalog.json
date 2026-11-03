@@ -10997,5 +10997,195 @@
   "related": [
    "zephyr"
   ]
+ },
+ {
+  "key": 645,
+  "slug": "nestjs",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "NestJS: framework xây ứng dụng máy chủ Node.js hiệu quả và co giãn, viết bằng TypeScript, kiến trúc lấy cảm hứng từ Angular, dùng Express bên dưới và tương thích Fastify, giấy phép MIT",
+  "repo": "nestjs/nest",
+  "stars": 76973,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "strawberry-graphql",
+   "trpc"
+  ]
+ },
+ {
+  "key": 646,
+  "slug": "koa",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "Koa: framework phần mềm trung gian HTTP biểu cảm cho Node.js để viết ứng dụng web và API dễ chịu hơn, ngăn xếp phần mềm trung gian chạy kiểu ngăn xếp, lõi nhỏ khoảng 570 dòng mã, không đi kèm phần mềm trung gian nào, giấy phép MIT",
+  "repo": "koajs/koa",
+  "stars": 35682,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "aiohttp"
+  ]
+ },
+ {
+  "key": 647,
+  "slug": "aiohttp",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "aiohttp: khung client và máy chủ HTTP bất đồng bộ cho Python, hỗ trợ cả client và máy chủ WebSocket, máy chủ web có phần mềm trung gian và định tuyến cắm thêm được, giấy phép Apache 2.0",
+  "repo": "aio-libs/aiohttp",
+  "stars": 16606,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "falcon",
+   "koa"
+  ]
+ },
+ {
+  "key": 648,
+  "slug": "trpc",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "tRPC: xây và dùng API an toàn kiểu hoàn toàn không cần lược đồ hay sinh mã, client không nhập mã từ máy chủ mà chỉ dùng khai báo kiểu; adapter cho React, Next.js, Express, Fastify, giấy phép MIT",
+  "repo": "trpc/trpc",
+  "stars": 40756,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "graphql-js",
+   "nestjs"
+  ]
+ },
+ {
+  "key": 649,
+  "slug": "strawberry-graphql",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "Strawberry GraphQL: thư viện GraphQL cho Python dựa trên dataclass, định nghĩa kiểu bằng chú thích kiểu, có tích hợp Django và công cụ dòng lệnh, giấy phép MIT",
+  "repo": "strawberry-graphql/strawberry",
+  "stars": 4725,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "falcon",
+   "nestjs"
+  ]
+ },
+ {
+  "key": 650,
+  "slug": "graphql-js",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "GraphQL.js: bản cài đặt tham chiếu bằng JavaScript của GraphQL, ngôn ngữ truy vấn cho API do Facebook tạo ra, dùng làm nền cho nhiều thư viện; README có phần hỗ trợ phiên bản và lịch hết hỗ trợ, giấy phép MIT",
+  "repo": "graphql/graphql-js",
+  "stars": 20344,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "drogon",
+   "trpc"
+  ]
+ },
+ {
+  "key": 651,
+  "slug": "falcon",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "Falcon: framework web ASGI và WSGI tối giản để xây API REST và vi dịch vụ quan trọng, ưu tiên độ tin cậy, đúng đắn và hiệu năng ở quy mô lớn, ít phụ thuộc, chạy trên CPython 3.9+ và PyPy 3.9+, giấy phép Apache 2.0",
+  "repo": "falconry/falcon",
+  "stars": 9811,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-24",
+  "related": [
+   "aiohttp",
+   "strawberry-graphql"
+  ]
+ },
+ {
+  "key": 652,
+  "slug": "drogon",
+  "group": "2026-11-03-framework-may-chu-va-api",
+  "title": "Drogon: framework ứng dụng HTTP viết bằng C++17/20, I/O không chặn dựa trên epoll, hoàn toàn bất đồng bộ, hỗ trợ WebSocket, JSON, đọc ghi cơ sở dữ liệu bất đồng bộ, công cụ dòng lệnh drogon_ctl, đa nền tảng",
+  "repo": "drogonframework/drogon",
+  "stars": 14386,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "graphql-js"
+  ]
  }
 ]

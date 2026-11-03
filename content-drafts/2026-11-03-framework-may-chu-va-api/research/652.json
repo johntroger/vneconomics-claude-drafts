@@ -1,0 +1,40 @@
+{
+  "key": 652,
+  "repo": "drogonframework/drogon",
+  "repoId": "131236938",
+  "url": "https://github.com/drogonframework/drogon",
+  "stars": 14386,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:02:53Z",
+  "createdAt": "2018-04-27T02:49:26Z",
+  "defaultBranch": "master",
+  "description": "Drogon: A C++14/17/20 based HTTP web application framework running on Linux/macOS/Unix/Windows",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/drogonframework/drogon/master/README.md",
+    "sha256": "f4b2a4a7a3d86817796ed7cc7df5e9ee84ebcc616d241081bd633c177bd36347",
+    "bytes": 10854,
+    "sectionsRead": [
+      "Overview",
+      "A very simple example"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc wiki của Drogon.",
+    "Chưa thử.",
+    "Tuyên bố hiệu năng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,43 @@
+{
+  "key": 649,
+  "repo": "strawberry-graphql/strawberry",
+  "repoId": "162690887",
+  "url": "https://github.com/strawberry-graphql/strawberry",
+  "stars": 4725,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T16:41:49Z",
+  "createdAt": "2018-12-21T08:56:55Z",
+  "defaultBranch": "main",
+  "description": "A GraphQL library for Python that leverages type annotations 🍓",
+  "homepage": "https://strawberry.rocks",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/strawberry-graphql/strawberry/main/README.md",
+    "sha256": "c689e7cd0cd5dc1aca94f26efa8bc5f0f5cf36108920034683296f3762202a11",
+    "bytes": 3596,
+    "sectionsRead": [
+      "Installation ( Quick Start )",
+      "Getting Started",
+      "Type-checking",
+      "Django Integration",
+      "Licensing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu strawberry.rocks.",
+    "Chưa thử.",
+    "Chưa so sánh với REST."
+  ],
+  "runtimeValidated": false
+}

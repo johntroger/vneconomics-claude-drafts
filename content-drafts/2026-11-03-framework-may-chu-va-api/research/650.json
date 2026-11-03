@@ -1,0 +1,42 @@
+{
+  "key": 650,
+  "repo": "graphql/graphql-js",
+  "repoId": "38307428",
+  "url": "https://github.com/graphql/graphql-js",
+  "stars": 20344,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:10:12Z",
+  "createdAt": "2015-06-30T12:16:50Z",
+  "defaultBranch": "17.x.x",
+  "description": "A reference implementation of GraphQL for JavaScript",
+  "homepage": "http://graphql.org/graphql-js/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/graphql/graphql-js/17.x.x/README.md",
+    "sha256": "e9c65e895181cf18bd62a367549cfcc4d8a584712316382b31a85fadd1fc04b7",
+    "bytes": 7638,
+    "sectionsRead": [
+      "Getting Started",
+      "Using in a Browser",
+      "License",
+      "Version Support"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu graphql.org.",
+    "Chưa thử.",
+    "Chưa kiểm tra mức ổn định nhánh 17."
+  ],
+  "runtimeValidated": false
+}

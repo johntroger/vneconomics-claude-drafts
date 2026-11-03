@@ -1,0 +1,42 @@
+{
+  "key": 645,
+  "repo": "nestjs/nest",
+  "repoId": "80945428",
+  "url": "https://github.com/nestjs/nest",
+  "stars": 76973,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:10:43Z",
+  "createdAt": "2017-02-04T20:12:52Z",
+  "defaultBranch": "master",
+  "description": "A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀",
+  "homepage": "https://nestjs.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nestjs/nest/master/Readme.md",
+    "sha256": "dfc28a01206cd405e4b5cd0a7e34e4631926099de647af6fc89ce23852df73c4",
+    "bytes": 11493,
+    "sectionsRead": [
+      "Description",
+      "Philosophy",
+      "Getting started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.nestjs.com.",
+    "Chưa thử.",
+    "Chưa so sánh với Express thuần."
+  ],
+  "runtimeValidated": false
+}

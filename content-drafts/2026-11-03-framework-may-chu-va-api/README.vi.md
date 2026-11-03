@@ -1,0 +1,26 @@
+# Nhóm "Framework máy chủ và API" — bản nháp 03/11/2026
+
+8 bài, key 645–652, `batch: 105`. Không trùng repo với các đợt trước. **Bản nháp, chưa import, chưa xuất bản.**
+
+| Key | Bài | Repo | License (GitHub) | Sao (2026-11-03) | Commit gần nhất |
+|---|---|---|---|---:|---|
+| 645 | NestJS: framework xây ứng dụng máy chủ Node.js hiệu quả và co giãn, viết bằng TypeScript, kiến trúc lấy cảm hứng từ Angular, dùng Express bên dưới và tương thích Fastify, giấy phép MIT | [nestjs/nest](https://github.com/nestjs/nest) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 76973 | 2026-11-03 |
+| 646 | Koa: framework phần mềm trung gian HTTP biểu cảm cho Node.js để viết ứng dụng web và API dễ chịu hơn, ngăn xếp phần mềm trung gian chạy kiểu ngăn xếp, lõi nhỏ khoảng 570 dòng mã, không đi kèm phần mềm trung gian nào, giấy phép MIT | [koajs/koa](https://github.com/koajs/koa) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 35682 | 2026-11-03 |
+| 647 | aiohttp: khung client và máy chủ HTTP bất đồng bộ cho Python, hỗ trợ cả client và máy chủ WebSocket, máy chủ web có phần mềm trung gian và định tuyến cắm thêm được, giấy phép Apache 2.0 | [aio-libs/aiohttp](https://github.com/aio-libs/aiohttp) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 16606 | 2026-11-03 |
+| 648 | tRPC: xây và dùng API an toàn kiểu hoàn toàn không cần lược đồ hay sinh mã, client không nhập mã từ máy chủ mà chỉ dùng khai báo kiểu; adapter cho React, Next.js, Express, Fastify, giấy phép MIT | [trpc/trpc](https://github.com/trpc/trpc) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 40756 | 2026-11-03 |
+| 649 | Strawberry GraphQL: thư viện GraphQL cho Python dựa trên dataclass, định nghĩa kiểu bằng chú thích kiểu, có tích hợp Django và công cụ dòng lệnh, giấy phép MIT | [strawberry-graphql/strawberry](https://github.com/strawberry-graphql/strawberry) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 4725 | 2026-11-02 |
+| 650 | GraphQL.js: bản cài đặt tham chiếu bằng JavaScript của GraphQL, ngôn ngữ truy vấn cho API do Facebook tạo ra, dùng làm nền cho nhiều thư viện; README có phần hỗ trợ phiên bản và lịch hết hỗ trợ, giấy phép MIT | [graphql/graphql-js](https://github.com/graphql/graphql-js) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 20344 | 2026-11-03 |
+| 651 | Falcon: framework web ASGI và WSGI tối giản để xây API REST và vi dịch vụ quan trọng, ưu tiên độ tin cậy, đúng đắn và hiệu năng ở quy mô lớn, ít phụ thuộc, chạy trên CPython 3.9+ và PyPy 3.9+, giấy phép Apache 2.0 | [falconry/falcon](https://github.com/falconry/falcon) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9811 | 2026-10-24 |
+| 652 | Drogon: framework ứng dụng HTTP viết bằng C++17/20, I/O không chặn dựa trên epoll, hoàn toàn bất đồng bộ, hỗ trợ WebSocket, JSON, đọc ghi cơ sở dữ liệu bất đồng bộ, công cụ dòng lệnh drogon_ctl, đa nền tảng | [drogonframework/drogon](https://github.com/drogonframework/drogon) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 14386 | 2026-11-03 |
+
+## Repo đã xem nhưng không đưa vào nhóm này
+
+- **actix/actix-web** (README 19 byte), **tokio-rs/axum** (14 byte), **apollographql/apollo-server** (25 byte): README là con trỏ; loại. **tornadoweb/tornado** (khoảng 1,4 KB), **elysiajs/elysia** (khoảng 1,6 KB), **bottlepy/bottle** (khoảng 2,8 KB), **symfony/symfony** (khoảng 3,2 KB, chủ yếu liên kết): README quá ngắn; loại. **litestar-org/litestar**: README rất dài (khoảng 106 KB), chưa đưa vào nhóm này.
+- **sinatra/sinatra**, **sanic-org/sanic**: commit gần nhất tháng 7 năm 2026, quá 60 ngày; loại. **pocoproject/poco**: NOASSERTION; loại. **encode/starlette**, **crow-cpp/Crow**: tìm kiếm không trả kết quả. **fastapi/fastapi**, **laravel/framework**, **expressjs/express**, **honojs/hono**, **django/django**, **pallets/flask** và các framework khác: đã có trong catalog.
+
+## Điều chưa biết
+
+- Chưa cài hay chạy framework nào; độ khó là đánh giá biên tập. Nhóm dùng nhãn 'Coding agent và cách làm dự án', nhãn gần nhất trong 9 nhãn có sẵn.
+- NestJS, Koa, Strawberry, GraphQL.js (MIT), Falcon (Apache License 2.0), tRPC (huy hiệu MIT) nêu giấy phép trong README. aiohttp và Drogon: README phần đã đọc không nêu giấy phép, lấy theo GitHub (Apache-2.0, MIT).
+- Tuyên bố của tác giả, bài không kiểm chứng: hiệu năng Drogon (TFB), độ tin cậy Falcon, độ sẵn sàng và nhẹ của tRPC. Nhánh mặc định của graphql-js là 17.x.x: cần kiểm tra mức ổn định. README NestJS nhiều phần tài trợ, tư vấn và nền tảng quan sát trả phí: bài không đánh giá. README Falcon (khoảng 32 KB) và Koa (khoảng 17 KB) dài, bài đọc phần đầu và các mục chính.
+

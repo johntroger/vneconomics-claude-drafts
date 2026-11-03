@@ -1,0 +1,44 @@
+{
+  "key": 646,
+  "repo": "koajs/koa",
+  "repoId": "11551538",
+  "url": "https://github.com/koajs/koa",
+  "stars": 35682,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:27:25Z",
+  "createdAt": "2013-07-20T18:53:45Z",
+  "defaultBranch": "master",
+  "description": "Expressive middleware for node.js using ES2017 async functions",
+  "homepage": "https://koajs.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/koajs/koa/master/Readme.md",
+    "sha256": "fe1557fb00b87d4c1ccf3af31d4b58c52c05bfb3384658ab2a17615b372738c1",
+    "bytes": 16969,
+    "sectionsRead": [
+      "Installation",
+      "Hello Koa",
+      "Middleware",
+      "Context, Request and Response",
+      "Koa Application",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu koajs.com.",
+    "Chưa thử.",
+    "Chưa so sánh với Express."
+  ],
+  "runtimeValidated": false
+}
