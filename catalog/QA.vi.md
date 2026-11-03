@@ -83,3 +83,9 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Lỗi phát hiện và đã sửa trong lúc làm: (1) bài K9s ban đầu gán huy hiệu giấy phép Apache 2.0 cho K9s trong khi huy hiệu đó trỏ tới thư viện khác; (2) bài Fluentd ban đầu nói README nêu CNCF, thực ra thông tin này nằm ở mô tả kho GitHub; (3) bài Alertmanager ban đầu mô tả sai các mục của README. Cả ba đã sửa theo README.
 - Rà lại toàn kho các câu "README có huy hiệu giấy phép ...": các huy hiệu trỏ tới trang giấy phép chung (opensource.org, gnu.org) hoặc tệp LICENSE của chính dự án; không còn trường hợp trỏ nhầm sang dự án khác.
 - Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.
+
+## Bổ sung rà soát (nhóm 44, key 353–360; tổng 260 bài)
+
+- Danh mục 260 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Lỗi phát hiện và đã sửa: đường dẫn README của bài Bruno ghi `README.md` trong khi tệp thật là `readme.md` (trả mã 404); đã sửa trong `content.json` và `research/353.json`.
+- Sau khi sửa, kiểm tra lại đường dẫn README thô trong toàn bộ 260 tệp nghiên cứu: cả 260 đều trả mã 200.
