@@ -38,6 +38,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 36 — Thư viện JavaScript dựng giao diện và quản lý dữ liệu](learning-paths/36-javascript-giao-dien-cho-nguoi-moi.vi.md) — Từ thêm tương tác vào HTML đến khung giao diện và quản lý dữ liệu; chọn một hướng rồi đọc tài liệu chính thức.
 - [Lộ trình 37 — Công cụ chạy và dựng dự án JavaScript](learning-paths/37-cong-cu-dung-javascript.vi.md) — Runtime, trình quản lý gói, hệ thống build và bộ đóng gói; để đọc hiểu dự án web do AI dựng.
 - [Lộ trình 38 — Thư viện game và đồ họa trên web](learning-paths/38-game-va-do-hoa-web.vi.md) — Từ game 2D vui vẻ đến engine 3D; chọn theo ngôn ngữ bạn biết và đọc kỹ lưu ý của từng README.
+- [Lộ trình 39 — Quản lý dự án và wiki tự host cho nhóm](learning-paths/39-quan-ly-du-an-va-wiki-tu-host.vi.md) — Công cụ theo dõi việc và wiki chung; chú ý giấy phép và phần tính năng trả phí của từng dự án.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -91,7 +92,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 
-### Cơ bản (109 bài)
+### Cơ bản (112 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -204,6 +205,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 320 | pnpm: trình quản lý gói JavaScript tiết kiệm ổ đĩa, lưu mỗi tệp một lần; lưu ý giấy phép có ngoại lệ cho thư mục pnpr | [pnpm/pnpm](https://github.com/pnpm/pnpm) | MIT | 36997 | cong-cu-dung-javascript |
 | 323 | PixiJS: thư viện đồ họa 2D cho web dùng WebGL và WebGPU, hợp game và hoạt họa tương tác | [pixijs/pixijs](https://github.com/pixijs/pixijs) | MIT | 48621 | game-va-do-hoa-web |
 | 327 | Excalibur.js: engine game 2D bằng TypeScript, lưu ý README nói vẫn ở phiên bản 0.x và có thay đổi phá vỡ | [excaliburjs/Excalibur](https://github.com/excaliburjs/Excalibur) | BSD-2-Clause | 2361 | game-va-do-hoa-web |
+| 329 | Plane: công cụ quản lý dự án mã nguồn mở theo dõi việc, chạy theo chu kỳ và lập lộ trình, dùng đám mây hoặc tự host | [makeplane/plane](https://github.com/makeplane/plane) | AGPL-3.0 | 61901 | quan-ly-du-an-va-wiki-tu-host |
+| 330 | Wiki.js: phần mềm wiki mã nguồn mở thế hệ mới, README chủ yếu là liên kết và danh sách nhà tài trợ | [requarks/wiki](https://github.com/requarks/wiki) | AGPL-3.0 | 29136 | quan-ly-du-an-va-wiki-tu-host |
+| 331 | Docmost: wiki và tài liệu cộng tác mã nguồn mở, lưu ý một số thư mục theo giấy phép Enterprise riêng | [docmost/docmost](https://github.com/docmost/docmost) | AGPL-3.0 | 22207 | quan-ly-du-an-va-wiki-tu-host |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 

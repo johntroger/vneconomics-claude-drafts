@@ -4053,5 +4053,57 @@
   "related": [
    "playcanvas"
   ]
+ },
+ {
+  "key": 329,
+  "slug": "plane",
+  "group": "2026-11-03-quan-ly-du-an-va-wiki-tu-host",
+  "title": "Plane: công cụ quản lý dự án mã nguồn mở theo dõi việc, chạy theo chu kỳ và lập lộ trình, dùng đám mây hoặc tự host",
+  "repo": "makeplane/plane",
+  "stars": 61901,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "docmost"
+  ]
+ },
+ {
+  "key": 330,
+  "slug": "wiki-js",
+  "group": "2026-11-03-quan-ly-du-an-va-wiki-tu-host",
+  "title": "Wiki.js: phần mềm wiki mã nguồn mở thế hệ mới, README chủ yếu là liên kết và danh sách nhà tài trợ",
+  "repo": "requarks/wiki",
+  "stars": 29136,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "docmost"
+  ]
+ },
+ {
+  "key": 331,
+  "slug": "docmost",
+  "group": "2026-11-03-quan-ly-du-an-va-wiki-tu-host",
+  "title": "Docmost: wiki và tài liệu cộng tác mã nguồn mở, lưu ý một số thư mục theo giấy phép Enterprise riêng",
+  "repo": "docmost/docmost",
+  "stars": 22207,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "plane",
+   "wiki-js"
+  ]
  }
 ]
