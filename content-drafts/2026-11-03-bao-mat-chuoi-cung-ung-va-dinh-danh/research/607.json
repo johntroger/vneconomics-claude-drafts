@@ -1,0 +1,42 @@
+{
+  "key": 607,
+  "repo": "bridgecrewio/checkov",
+  "repoId": "224386599",
+  "url": "https://github.com/bridgecrewio/checkov",
+  "stars": 9130,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:02:03Z",
+  "createdAt": "2019-11-27T08:55:14Z",
+  "defaultBranch": "main",
+  "description": "Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.",
+  "homepage": "https://www.checkov.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/bridgecrewio/checkov/main/README.md",
+    "sha256": "3c6aeee9721851b6e94b41331d49f9b11bf7aae0987bd337ce3fdb0b495e67d6",
+    "bytes": 23252,
+    "sectionsRead": [
+      "Features",
+      "Getting started",
+      "Examples",
+      "Disclaimer"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ ví dụ.",
+    "Chưa thử.",
+    "Chưa đo tỷ lệ dương tính giả."
+  ],
+  "runtimeValidated": false
+}

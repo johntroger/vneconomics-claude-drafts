@@ -1,0 +1,42 @@
+{
+  "key": 603,
+  "repo": "falcosecurity/falco",
+  "repoId": "49986046",
+  "url": "https://github.com/falcosecurity/falco",
+  "stars": 9548,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T10:54:58Z",
+  "createdAt": "2016-01-19T21:58:12Z",
+  "defaultBranch": "master",
+  "description": "Cloud Native Runtime Security",
+  "homepage": "https://falco.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/falcosecurity/falco/master/README.md",
+    "sha256": "51d6bc97d21a0503e7d25d5129a3219ca17d69f54709b7cfde452b3edc5dc869",
+    "bytes": 12611,
+    "sectionsRead": [
+      "The Falco Project",
+      "Getting Started with Falco",
+      "Commitment to Falco's Own Security",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu falco.org.",
+    "Chưa thử.",
+    "Chưa đọc báo cáo kiểm toán."
+  ],
+  "runtimeValidated": false
+}

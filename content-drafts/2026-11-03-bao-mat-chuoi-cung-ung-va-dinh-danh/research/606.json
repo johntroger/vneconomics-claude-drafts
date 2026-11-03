@@ -1,0 +1,43 @@
+{
+  "key": 606,
+  "repo": "sigstore/cosign",
+  "repoId": "335952417",
+  "url": "https://github.com/sigstore/cosign",
+  "stars": 6406,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T16:23:33Z",
+  "createdAt": "2021-02-04T12:49:39Z",
+  "defaultBranch": "main",
+  "description": "Code signing and transparency for containers and binaries",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/sigstore/cosign/main/README.md",
+    "sha256": "ff167bbc67a9ad2a043bc0581c5f5cfd9701cf826bc8ea15c18d01b496920983",
+    "bytes": 34472,
+    "sectionsRead": [
+      "Installation",
+      "Developer Installation",
+      "Quick Start",
+      "Caveats",
+      "FAQ"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README dài.",
+    "Chưa thử.",
+    "Chưa đánh giá quyền riêng tư của ký không khóa."
+  ],
+  "runtimeValidated": false
+}

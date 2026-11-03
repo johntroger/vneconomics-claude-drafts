@@ -9953,5 +9953,195 @@
    "element-web",
    "lemmy"
   ]
+ },
+ {
+  "key": 601,
+  "slug": "zitadel",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "ZITADEL: nền tảng quản lý định danh và truy cập (IAM) mã nguồn mở, ưu tiên API, đa thuê bao ở cấp hạ tầng, nhật ký sự kiện bất biến; giấy phép AGPL-3.0 kèm ngoại lệ Apache 2.0 và MIT cho một số thư mục",
+  "repo": "zitadel/zitadel",
+  "stars": 15502,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "casdoor"
+  ]
+ },
+ {
+  "key": 602,
+  "slug": "casdoor",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Casdoor: máy chủ đăng nhập một lần (SSO) và xác thực có bảng điều khiển web, hỗ trợ OAuth 2.0, OIDC, SAML 2.0, CAS, LDAP, SCIM; README có tài khoản demo mặc định built-in/admin/123",
+  "repo": "casdoor/casdoor",
+  "stars": 14747,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "falco",
+   "zitadel"
+  ]
+ },
+ {
+  "key": 603,
+  "slug": "falco",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Falco: công cụ bảo mật thời gian chạy cloud native cho Linux, tác tử giám sát nhân phát hiện hành vi bất thường theo quy tắc, dự án tốt nghiệp CNCF do Sysdig tạo, giấy phép Apache 2.0",
+  "repo": "falcosecurity/falco",
+  "stars": 9548,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "casdoor",
+   "cosign"
+  ]
+ },
+ {
+  "key": 604,
+  "slug": "grype",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Grype: công cụ quét lỗ hổng cho ảnh container và hệ tệp, hỗ trợ SBOM, nhiều hệ gói hệ điều hành và ngôn ngữ, xếp hạng rủi ro theo EPSS và KEV, hỗ trợ OpenVEX, giấy phép Apache 2.0",
+  "repo": "anchore/grype",
+  "stars": 13166,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "checkov",
+   "syft"
+  ]
+ },
+ {
+  "key": 605,
+  "slug": "syft",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Syft: công cụ dòng lệnh và thư viện Go tạo SBOM (danh sách thành phần phần mềm) từ ảnh container và hệ tệp, nhiều định dạng đầu ra (CycloneDX, SPDX), dùng tốt cùng Grype, giấy phép Apache 2.0",
+  "repo": "anchore/syft",
+  "stars": 9819,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "grype",
+   "scorecard"
+  ]
+ },
+ {
+  "key": 606,
+  "slug": "cosign",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Cosign: ký, xác minh và lưu chữ ký cho ảnh container và các tệp khác theo Sigstore, ký không khóa với Fulcio và Rekor, hỗ trợ khóa phần cứng, KMS và PKI riêng; README rất dài",
+  "repo": "sigstore/cosign",
+  "stars": 6406,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "checkov",
+   "falco"
+  ]
+ },
+ {
+  "key": 607,
+  "slug": "checkov",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "Checkov: công cụ phân tích mã tĩnh cho hạ tầng dưới dạng mã (Terraform, CloudFormation, Kubernetes, Dockerfile, GitHub Actions...) và phân tích thành phần phần mềm, hơn 1000 chính sách dựng sẵn, cung cấp sức mạnh cho Prisma Cloud",
+  "repo": "bridgecrewio/checkov",
+  "stars": 9130,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "cosign",
+   "grype"
+  ]
+ },
+ {
+  "key": 608,
+  "slug": "scorecard",
+  "group": "2026-11-03-bao-mat-chuoi-cung-ung-va-dinh-danh",
+  "title": "OpenSSF Scorecard: công cụ tự động chấm điểm 0 đến 10 cho từng kiểm tra về thực hành bảo mật của một dự án mã nguồn mở, giúp người bảo trì cải thiện và người dùng đánh giá rủi ro phụ thuộc; có CLI, GitHub Action, REST API và máy chủ MCP",
+  "repo": "ossf/scorecard",
+  "stars": 5806,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "syft"
+  ]
  }
 ]

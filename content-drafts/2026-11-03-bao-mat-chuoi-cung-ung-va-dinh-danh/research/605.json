@@ -1,0 +1,41 @@
+{
+  "key": 605,
+  "repo": "anchore/syft",
+  "repoId": "262126497",
+  "url": "https://github.com/anchore/syft",
+  "stars": 9819,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:52:39Z",
+  "createdAt": "2020-05-07T18:19:29Z",
+  "defaultBranch": "main",
+  "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/anchore/syft/main/README.md",
+    "sha256": "b072fd6c75f6ba759933b4f035bb9e263309f535e2128f13e6ed50860c328aef",
+    "bytes": 6730,
+    "sectionsRead": [
+      "Features",
+      "Installation",
+      "The basics"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu oss.anchore.com.",
+    "Chưa thử.",
+    "Chưa so sánh các định dạng SBOM."
+  ],
+  "runtimeValidated": false
+}

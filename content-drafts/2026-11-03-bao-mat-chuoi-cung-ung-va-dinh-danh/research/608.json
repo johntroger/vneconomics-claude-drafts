@@ -1,0 +1,42 @@
+{
+  "key": 608,
+  "repo": "ossf/scorecard",
+  "repoId": "302670797",
+  "url": "https://github.com/ossf/scorecard",
+  "stars": 5806,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:28:44Z",
+  "createdAt": "2020-10-09T14:48:27Z",
+  "defaultBranch": "main",
+  "description": "OpenSSF Scorecard - Security health metrics for Open Source",
+  "homepage": "https://scorecard.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ossf/scorecard/main/README.md",
+    "sha256": "5adcee7670647196175e5308a417474f61ce207931c6144606e52a97679bcfa0",
+    "bytes": 44400,
+    "sectionsRead": [
+      "Overview",
+      "Using Scorecard",
+      "Checks",
+      "Scoring"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc chi tiết từng kiểm tra.",
+    "Chưa thử.",
+    "Chưa so sánh điểm giữa các dự án."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,40 @@
+{
+  "key": 604,
+  "repo": "anchore/grype",
+  "repoId": "267054247",
+  "url": "https://github.com/anchore/grype",
+  "stars": 13166,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:24:32Z",
+  "createdAt": "2020-05-26T13:44:38Z",
+  "defaultBranch": "main",
+  "description": "A vulnerability scanner for container images and filesystems",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/anchore/grype/main/README.md",
+    "sha256": "e0d65fd01f3fc4f2378bcf2750440046b1b9d829172c805a39853f7d34003f0f",
+    "bytes": 6724,
+    "sectionsRead": [
+      "Features",
+      "Installation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu oss.anchore.com.",
+    "Chưa thử.",
+    "Chưa đo tỷ lệ dương tính giả."
+  ],
+  "runtimeValidated": false
+}
