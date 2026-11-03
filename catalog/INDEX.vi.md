@@ -73,6 +73,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 71 — Marketing tự host](learning-paths/71-marketing-tu-host.vi.md) — Từ rút gọn liên kết, lên lịch mạng xã hội, cờ tính năng và A/B testing đến trang trạng thái và mạng chia sẻ ảnh; chú ý tài khoản và khóa mặc định, cảnh báo tên miền giả mạo, phê duyệt ứng dụng nền tảng, bản trả phí và dữ liệu người dùng.
 - [Lộ trình 72 — Container và hạ tầng](learning-paths/72-container-ha-tang.vi.md) — Từ máy chủ web, ảnh container, máy ảo cho container và tự động hóa giao phần mềm đến hạ tầng dưới dạng mã và cổng API; chú ý tài nguyên đám mây tốn tiền, cổng quản trị, socket Docker và bản trả phí.
 - [Lộ trình 73 — MCP và công cụ nối AI với thế giới ngoài](learning-paths/73-mcp-cong-cu-agent.vi.md) — Từ giao thức MCP, khung dựng máy chủ, máy chủ GitHub, điều khiển trình duyệt đến chuyển tài liệu, quy trình có cấu trúc và đóng gói kho mã cho AI; cấp quyền tối thiểu, giữ mã truy cập an toàn, dùng tài khoản thử, tắt thống kê khi cần và đừng gửi dữ liệu nhạy cảm cho AI.
+- [Lộ trình 74 — Agent và nền tảng dựng app bằng AI](learning-paths/74-agent-dung-app.vi.md) — Từ ứng dụng mẫu dựng app bằng trò chuyện, coding agent trong trình soạn mã, hệ nhiều agent, agent sửa lỗi nghiên cứu đến cổng mô hình và agent gửi pull request; chú ý khóa API và chi phí, sandbox, quyền GitHub, tình trạng bảo trì và cảnh báo của từng README.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -128,7 +129,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (192 bài)
+### Cơ bản (193 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -324,6 +325,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 553 | MarkItDown: tiện ích Python chuyển PDF, PowerPoint, Word, Excel, ảnh, âm thanh, HTML, ZIP, YouTube... sang Markdown cho LLM; README cảnh báo thực hiện I/O với quyền tiến trình và dặn làm sạch đầu vào | [microsoft/markitdown](https://github.com/microsoft/markitdown) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 193648 | mcp-cong-cu-agent |
 | 554 | Spec Kit: bộ công cụ mã nguồn mở của GitHub cho coding agent có quy trình có cấu trúc (phát triển dựa trên đặc tả, sửa lỗi, đánh giá ý tưởng), mẫu và kết quả được ghi lại | [github/spec-kit](https://github.com/github/spec-kit) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 145997 | mcp-cong-cu-agent |
 | 555 | Repomix: đóng gói cả kho mã thành một tệp thân thiện với AI để đưa cho LLM, có đếm token, tôn trọng .gitignore và dùng Secretlint để loại tệp có khóa; README có cảnh báo về cấu hình từ kho từ xa | [yamadashy/repomix](https://github.com/yamadashy/repomix) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 29129 | mcp-cong-cu-agent |
+| 557 | Kilo Code: coding agent mã nguồn mở chạy trong VS Code, JetBrains và CLI, chọn trong hơn 500 mô hình; README có lệnh cài tải từ mạng và dịch vụ trả phí | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 27844 | agent-dung-app |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -367,7 +369,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (182 bài)
+### Nâng cao (187 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -553,6 +555,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 550 | Playwright MCP: máy chủ MCP cho AI điều khiển trình duyệt qua cây khả năng truy cập (accessibility tree) của Playwright, không cần mô hình thị giác; README so sánh với Playwright CLI cho coding agent | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 39107 | mcp-cong-cu-agent |
 | 551 | Chrome DevTools cho agent (chrome-devtools-mcp): cho coding agent điều khiển và kiểm tra Chrome thật qua MCP hoặc CLI; README nêu Google thu thống kê sử dụng mặc định và cách tắt | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 54704 | mcp-cong-cu-agent |
 | 552 | Stagehand: khung tự động hóa trình duyệt bằng AI của Browserbase với act, observe, extract; chạy cục bộ hoặc trên nền tảng đám mây Browserbase trả phí; README có cảnh báo về khóa và mô hình | [browserbase/stagehand](https://github.com/browserbase/stagehand) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 25917 | mcp-cong-cu-agent |
+| 556 | Open Lovable: ứng dụng mẫu của Firecrawl để trò chuyện với AI dựng ứng dụng React ngay lập tức; cần khóa Firecrawl, khóa nhà cung cấp AI và sandbox Vercel hoặc E2B | [firecrawl/open-lovable](https://github.com/firecrawl/open-lovable) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 28849 | agent-dung-app |
+| 558 | ChatDev 2.0 (DevAll): nền tảng đa tác tử không cần mã, nay là bản 2.0 'phát triển mọi thứ'; bản 1.0 'công ty phần mềm ảo' chuyển sang nhánh riêng | [OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 34645 | agent-dung-app |
+| 559 | SWE-agent: agent do nhà nghiên cứu Princeton và Stanford làm để mô hình ngôn ngữ tự dùng công cụ sửa lỗi trong kho GitHub thật; README nói mini-swe-agent đã thay thế và khuyến nghị dùng thay | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 20712 | agent-dung-app |
+| 560 | Claude Code Router: cổng mô hình cục bộ và bảng điều khiển cho coding agent, nối Claude Code, Codex, OpenCode và nhiều agent khác với nhà cung cấp bạn chọn, có định tuyến, dự phòng và quan sát | [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 37972 | agent-dung-app |
+| 561 | Open SWE: agent kỹ sư phần mềm mã nguồn mở của LangChain, điều tra kho mã, triển khai thay đổi trong sandbox và gửi pull request; README nói đang phát triển mạnh, không nhận issue hay đóng góp ngoài | [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 11165 | agent-dung-app |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

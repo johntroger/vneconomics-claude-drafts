@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-agent-app",
+  "batch": 93,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 556,
+      "batch": 93,
+      "slug": "open-lovable",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Open Lovable: ứng dụng mẫu của Firecrawl để trò chuyện với AI dựng ứng dụng React ngay lập tức; cần khóa Firecrawl, khóa nhà cung cấp AI và sandbox Vercel hoặc E2B",
+        "excerpt": "Hiểu Open Lovable là ứng dụng mẫu do đội Firecrawl làm để trò chuyện với AI và dựng ứng dụng React ngay lập tức; README nói đây là ví dụ, và nhắc dịch vụ đám mây đầy đủ là Lovable.dev. Cài đặt cần nhiều khóa API (Firecrawl, một nhà cung cấp AI, tùy chọn Morph) và một sandbox (Vercel mặc định hoặc E2B).",
+        "content": "<p>README tả Open Lovable là cách trò chuyện với AI để dựng ứng dụng React ngay lập tức, một ứng dụng mẫu do đội Firecrawl làm; README nhắc để có giải pháp đám mây hoàn chỉnh hãy xem Lovable.dev. Mục Setup gồm ba bước: sao chép kho và cài phụ thuộc (README đưa lệnh git và pnpm, bài không chép); tạo tệp .env.local với các biến: khóa Firecrawl (bắt buộc), chọn nhà cung cấp AI qua một trong các khóa Gemini, Anthropic, OpenAI hoặc Groq, tùy chọn khóa Morph để áp dụng chỉnh sửa nhanh hơn, và nhà cung cấp sandbox: Vercel (mặc định, xác thực bằng token OIDC lấy qua vercel link và vercel env pull hoặc bằng mã truy cập cá nhân cùng mã đội và dự án) hoặc E2B (khóa API); và chạy máy chủ phát triển rồi mở localhost cổng 3000. Giấy phép MIT (mục License). README ngắn, không nêu giới hạn, chi phí hay mức độ hoàn thiện.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lovable là dịch vụ nổi tiếng cho dựng ứng dụng bằng trò chuyện với AI. Open Lovable là bản mã nguồn mở mẫu để bạn chạy thử cách làm đó trên máy mình, nhưng cần nhiều khóa API và dịch vụ sandbox.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy cục bộ với khóa có giới hạn chi tiêu và nhờ AI dựng một trang React nhỏ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Node, nhiều khóa API và dịch vụ sandbox; kết quả phụ thuộc mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README gọi đây là ứng dụng ví dụ: không nêu cam kết ổn định hay hỗ trợ. Cần nhiều khóa API trả phí (Firecrawl, nhà cung cấp AI, Morph, Vercel hoặc E2B): đặt giới hạn chi tiêu, giữ khóa trong .env.local và không commit. Tệp .env.local mẫu có token Vercel: bí mật. Mã AI sinh ra chạy trong sandbox bên ngoài: không đưa dữ liệu nhạy cảm. Bài chưa kiểm tra chất lượng ứng dụng sinh ra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>sandbox (hộp cách ly)</strong>: môi trường cô lập để chạy mã AI viết mà không ảnh hưởng máy bạn; README nêu Vercel hoặc E2B.</li><li><strong>API key (khóa API)</strong>: chuỗi để dùng dịch vụ trả phí; README nêu nhiều khóa.</li><li><strong>Firecrawl</strong>: dịch vụ lấy nội dung web mà ví dụ dùng; README nêu khóa bắt buộc.</li><li><strong>React</strong>: thư viện dựng giao diện web; README nêu ứng dụng sinh ra là React.</li><li><strong>.env.local</strong>: tệp biến môi trường cục bộ, không nên commit; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: sao chép kho, cài phụ thuộc, tạo .env.local với các khóa, rồi chạy máy chủ phát triển ở cổng 3000 (bài không chép lệnh). Cần Node và nhiều khóa API. Miễn phí theo giấy phép MIT; dịch vụ bên thứ ba tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đặt giới hạn chi tiêu cho từng khóa.</li><li>Cấu hình .env.local và chạy cục bộ.</li><li>Thử một trang nhỏ, đừng dùng dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử dựng ứng dụng bằng trò chuyện với AI. Hãy đọc README của Open Lovable (https://github.com/firecrawl/open-lovable) và giải thích bằng tiếng Việt: cần những khóa nào, sandbox làm gì, và rủi ro chi phí. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn (khoảng 2,6 KB), không nêu giới hạn hay chi phí. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>firecrawl</strong> có <strong>28.849 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-09. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/firecrawl/open-lovable/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/firecrawl/open-lovable\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 556. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28849; repo_id 1034478597; README SHA256 bdf15793411d02d8b3a999e4a9832916de93108415c7127fd9a2243919eb1d20.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/firecrawl/open-lovable",
+          "repo_id": "1034478597",
+          "source_path": "",
+          "source_revision": "README-SHA256:bdf15793411d02d8b3a999e4a9832916de93108415c7127fd9a2243919eb1d20",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firecrawl/open-lovable",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: sao chép kho, cài phụ thuộc, tạo .env.local với các khóa, rồi chạy máy chủ phát triển ở cổng 3000 (bài không chép lệnh). Cần Node và nhiều khóa API. Miễn phí theo giấy phép MIT; dịch vụ bên thứ ba tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/firecrawl/open-lovable/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/firecrawl/open-lovable/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "firecrawl/open-lovable",
+        "stars": 28849,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/firecrawl/open-lovable/main/README.md",
+        "readmeSha256": "bdf15793411d02d8b3a999e4a9832916de93108415c7127fd9a2243919eb1d20",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 557,
+      "batch": 93,
+      "slug": "kilocode",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Kilo Code: coding agent mã nguồn mở chạy trong VS Code, JetBrains và CLI, chọn trong hơn 500 mô hình; README có lệnh cài tải từ mạng và dịch vụ trả phí",
+        "excerpt": "Hiểu Kilo Code là coding agent mã nguồn mở có mặt trong VS Code, JetBrains và dòng lệnh, 'mã nguồn mở với giá mở' và cho chọn trong hơn 500 mô hình (README nói vậy). Có tiện ích VS Code, plugin JetBrains, CLI, bản chạy trên web và đánh giá mã tự động cho pull request. Giấy phép MIT.",
+        "content": "<p>README tả Kilo Code là coding agent AI có mặt ở mọi nơi bạn làm việc: VS Code, JetBrains và CLI, mã nguồn mở với giá mở, cho chọn trong hơn 500 mô hình. Mục Installation: cài tiện ích Kilo Code cho VS Code từ marketplace, tạo tài khoản để dùng hơn 500 mô hình; cài CLI bằng npm, đoạn lệnh tải từ mạng, pnpm, bun, Homebrew hoặc AUR rồi chạy lệnh kilo trong thư mục dự án (bài không chép lệnh); cài plugin Kilo Code từ JetBrains Marketplace; chạy trên web không cần máy cục bộ ở app.kilo.ai; thiết lập đánh giá mã AI tự động cho pull request; tải tệp thực thi từ trang phát hành cho Windows, macOS (Apple Silicon và Intel), Linux. Mục License: MIT, được dùng, sửa, phân phối kể cả thương mại miễn giữ thông báo ghi công và giấy phép. README không nêu chi tiết giá.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kilo Code là một coding agent giống Cline hay các công cụ khác, chạy trong VS Code hoặc terminal, cho bạn chọn nhiều mô hình khác nhau. Nhưng dịch vụ tài khoản và các tính năng đám mây có phí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài tiện ích VS Code, thử với một dự án nhỏ trong thư mục thử, theo dõi chi phí. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài tiện ích dễ; cần hiểu quyền của agent và chi phí mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Giá mở' và 'hơn 500 mô hình' là cách nói của README; chi phí thực tế tùy mô hình và tài khoản, bài chưa kiểm tra giá. Agent đọc và sửa mã trên máy bạn: dùng kho thử và bật hỏi trước khi chạy lệnh. README có lệnh cài tải từ mạng: đọc trước khi chạy. Đánh giá mã tự động cho PR gửi mã tới dịch vụ bên ngoài: cân nhắc kho riêng tư.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>coding agent</strong>: AI đọc, sửa mã và chạy lệnh; README nêu.</li><li><strong>VS Code / JetBrains</strong>: hai nhóm trình soạn mã; README nêu có mặt.</li><li><strong>CLI</strong>: công cụ dòng lệnh; README nêu lệnh kilo.</li><li><strong>marketplace</strong>: cửa hàng tiện ích của trình soạn mã; README nêu.</li><li><strong>AI code review (đánh giá mã bằng AI)</strong>: AI nhận xét pull request; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài tiện ích VS Code, plugin JetBrains, CLI bằng npm hoặc trình quản lý gói khác, hoặc dùng bản web (bài không chép lệnh). Cần tài khoản cho một số tính năng. Miễn phí phần mềm theo giấy phép MIT; dịch vụ và mô hình tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation.</li><li>Cài tiện ích VS Code trên dự án thử.</li><li>Theo dõi chi phí mô hình khi dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử coding agent mã nguồn mở trong VS Code. Hãy đọc README của Kilo Code (https://github.com/Kilo-Org/kilocode) và giải thích bằng tiếng Việt: các cách cài, 'giá mở' nghĩa là gì, và rủi ro khi để agent chạy lệnh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 7,8 KB), bài chưa đọc tài liệu kilo.ai. Giá chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Kilo-Org</strong> có <strong>27.844 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Kilo-Org/kilocode/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Kilo-Org/kilocode\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 557. Chưa cài/chạy thử; không tạo validation. Snapshot sao 27844; repo_id 946087422; README SHA256 b0f214bc5c1a01324edd41e2424a91ab028c7d98e880173bb4475d74df8aab21.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Kilo-Org/kilocode",
+          "repo_id": "946087422",
+          "source_path": "",
+          "source_revision": "README-SHA256:b0f214bc5c1a01324edd41e2424a91ab028c7d98e880173bb4475d74df8aab21",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kilo-Org/kilocode",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài tiện ích VS Code, plugin JetBrains, CLI bằng npm hoặc trình quản lý gói khác, hoặc dùng bản web (bài không chép lệnh). Cần tài khoản cho một số tính năng. Miễn phí phần mềm theo giấy phép MIT; dịch vụ và mô hình tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Kilo-Org/kilocode/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Kilo-Org/kilocode",
+        "stars": 27844,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Kilo-Org/kilocode/main/README.md",
+        "readmeSha256": "b0f214bc5c1a01324edd41e2424a91ab028c7d98e880173bb4475d74df8aab21",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 558,
+      "batch": 93,
+      "slug": "chatdev",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ChatDev 2.0 (DevAll): nền tảng đa tác tử không cần mã, nay là bản 2.0 'phát triển mọi thứ'; bản 1.0 'công ty phần mềm ảo' chuyển sang nhánh riêng",
+        "excerpt": "Hiểu ChatDev 2.0 (DevAll) là nền tảng điều phối nhiều tác tử AI không cần mã để 'phát triển mọi thứ', có bảng điều khiển web (dựng quy trình trên canvas kéo thả, khởi chạy, theo dõi) và SDK Python. README ghi bản ChatDev 1.0, 'công ty phần mềm ảo' với các tác tử CEO, CTO, lập trình viên, nay là bản cũ ở nhánh chatdev1.0.",
+        "content": "<p>README tả ChatDev đã phát triển từ hệ đa tác tử chuyên phát triển phần mềm thành nền tảng điều phối đa tác tử tổng quát. ChatDev 2.0 (DevAll) là nền tảng đa tác tử không cần mã để 'phát triển mọi thứ', cho dựng và chạy nhanh hệ thống đa tác tử tùy biến bằng cấu hình đơn giản; ChatDev 1.0 (Legacy) hoạt động như một công ty phần mềm ảo với các tác tử thông minh (CEO, CTO, lập trình viên...) tham gia các buổi hội thảo chuyên môn; bản 1.0 được chuyển sang nhánh chatdev1.0 sau khi ChatDev 2.0 phát hành ngày 7 tháng 1 năm 2026. Mục tin tức liệt kê nhiều thay đổi theo thời gian (bài báo NeurIPS 2025, paradigm 'người điều khiển rối', MacNet, học kinh nghiệm, chế độ Git, chế độ Docker, chế độ con người tham gia, v.v.; bài không liệt kê hết). Quick Start: yêu cầu hệ điều hành macOS, Linux, WSL hoặc Windows; Python 3.12+; Node.js 18+; trình quản lý gói uv; cài phụ thuộc backend bằng uv và frontend (Vite và Vue 3) bằng npm; cấu hình khóa; chạy bằng Makefile (khuyến nghị) hoặc lệnh thủ công; chạy cùng OpenClaw; chạy bằng Docker (bài không chép lệnh). Cách dùng: bảng điều khiển web với hướng dẫn tích hợp, canvas quy trình kéo thả, khởi chạy và theo dõi nhật ký, đưa phản hồi con người; SDK Python. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>ChatDev ban đầu là 'công ty AI' trong đó nhiều agent đóng vai CEO, lập trình viên, người kiểm thử để làm phần mềm. Bản 2.0 mở rộng thành nền tảng ghép nhiều agent cho mọi việc, dựng bằng giao diện kéo thả.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem hướng dẫn tích hợp trong bảng điều khiển web và dựng một quy trình hai tác tử đơn giản. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Python 3.12, Node.js, uv và khóa mô hình; khái niệm đa tác tử phức tạp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nhiều agent trao đổi qua lại có thể tốn nhiều token và tiền: đặt giới hạn chi tiêu. README đã chuyển bản 1.0 sang nhánh khác: kiểm tra đúng phiên bản bạn dùng. Agent chạy mã sinh ra: dùng Docker hoặc môi trường cô lập (README có chế độ Docker). Kết quả đa tác tử khó dự đoán, bài chưa kiểm chứng hiệu quả. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>multi-agent (đa tác tử)</strong>: nhiều agent AI phối hợp; README nêu.</li><li><strong>orchestration (điều phối)</strong>: sắp xếp và quản lý các agent làm việc cùng nhau; README nêu.</li><li><strong>zero-code (không cần mã)</strong>: dựng bằng cấu hình và giao diện thay vì viết mã; README nêu.</li><li><strong>legacy (bản cũ)</strong>: bản trước, ChatDev 1.0 ở nhánh chatdev1.0; README nêu.</li><li><strong>human-in-the-loop (con người tham gia)</strong>: người xem và góp ý giữa chừng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần Python 3.12+, Node.js 18+ và uv; cài backend và frontend, cấu hình khóa rồi chạy bằng Makefile hoặc Docker (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0); chi phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview và ghi chú về bản 1.0.</li><li>Chạy bằng Docker để cô lập.</li><li>Dựng một quy trình nhỏ và theo dõi chi phí.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tò mò về hệ nhiều agent AI cùng làm việc. Hãy đọc README của ChatDev (https://github.com/OpenBMB/ChatDev) và giải thích bằng tiếng Việt: ChatDev 2.0 khác 1.0 thế nào, đa tác tử là gì, và rủi ro chi phí khi nhiều agent trao đổi. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 24 KB, phần lớn là tin tức), bài không đọc hết. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>OpenBMB</strong> có <strong>34.645 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/OpenBMB/ChatDev/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/OpenBMB/ChatDev\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 558. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34645; repo_id 683892956; README SHA256 0f1bdd4ad88f9e2be3c05a1dd37670b11caaf8bf433eec1a862d44a872f48daf.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/OpenBMB/ChatDev",
+          "repo_id": "683892956",
+          "source_path": "",
+          "source_revision": "README-SHA256:0f1bdd4ad88f9e2be3c05a1dd37670b11caaf8bf433eec1a862d44a872f48daf",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenBMB/ChatDev",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần Python 3.12+, Node.js 18+ và uv; cài backend và frontend, cấu hình khóa rồi chạy bằng Makefile hoặc Docker (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0); chi phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/OpenBMB/ChatDev/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "OpenBMB/ChatDev",
+        "stars": 34645,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/OpenBMB/ChatDev/main/README.md",
+        "readmeSha256": "0f1bdd4ad88f9e2be3c05a1dd37670b11caaf8bf433eec1a862d44a872f48daf",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 559,
+      "batch": 93,
+      "slug": "swe-agent",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SWE-agent: agent do nhà nghiên cứu Princeton và Stanford làm để mô hình ngôn ngữ tự dùng công cụ sửa lỗi trong kho GitHub thật; README nói mini-swe-agent đã thay thế và khuyến nghị dùng thay",
+        "excerpt": "Hiểu SWE-agent là agent cho mô hình ngôn ngữ tự dùng công cụ để sửa lỗi trong kho GitHub thật, tìm lỗ hổng bảo mật hoặc làm việc tùy chọn, do nhà nghiên cứu Princeton và Stanford xây. README có cảnh báo đầu trang: phần lớn công sức phát triển nay dành cho mini-swe-agent, đã thay thế SWE-agent với hiệu năng tương đương nhưng đơn giản hơn; khuyến nghị dùng mini-SWE-agent từ nay.",
+        "content": "<p>README mở đầu bằng cảnh báo: phần lớn nỗ lực phát triển hiện nay dành cho mini-swe-agent, đã thay thế SWE-agent; nó đạt hiệu năng tương đương SWE-agent nhưng đơn giản hơn nhiều (tuyên bố của README); khuyến nghị chung là dùng mini-SWE-agent từ nay. SWE-agent cho mô hình ngôn ngữ bạn chọn (như GPT-4o hay Claude Sonnet 4) tự dùng công cụ để sửa lỗi trong các kho GitHub thật, tìm lỗ hổng an ninh mạng hoặc làm việc tùy chọn. Điểm nêu: hiệu năng tiên tiến trên SWE-bench trong các dự án mã nguồn mở (tuyên bố của README), trao tối đa quyền cho mô hình, cấu hình bằng một tệp yaml, làm cho nghiên cứu, dễ chỉnh. Do nhà nghiên cứu Đại học Princeton và Stanford xây và duy trì. Tin tức: mini-SWE-agent đạt 65% trên SWE-bench verified chỉ với 100 dòng Python (tuyên bố của README), mô hình SWE-agent-LM-32b và phát hành SWE-agent 1.0. Mục bắt đầu: thử trên trình duyệt qua GitHub Codespaces, tài liệu (cài đặt, chạy từ dòng lệnh, đánh giá trên SWE-bench, hỏi đáp). Có chế độ EnIGMA cho thử thách an ninh mạng tấn công (CTF). Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>SWE-agent là một trong những agent nghiên cứu đầu tiên chứng minh mô hình ngôn ngữ có thể tự sửa lỗi trong kho mã thật. Nhưng chính README khuyên bạn dùng bản nhỏ gọn kế nhiệm của nó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README và chuyển sang đọc mini-SWE-agent nếu bạn muốn dùng agent này; thử trên Codespaces với một kho thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Python, khóa mô hình và hiểu agent; hướng nghiên cứu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README khuyên dùng mini-SWE-agent thay SWE-agent. Các con số như 65% trên SWE-bench verified và 'tiên tiến nhất' là của README. Agent tự chạy lệnh trên kho: dùng sandbox hoặc Codespaces. Chế độ EnIGMA nhắm thử thách an ninh tấn công (CTF): chỉ dùng trong cuộc thi hay môi trường được phép. Chi phí mô hình có thể lớn khi chạy hàng loạt.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>SWE-bench</strong>: bộ bài kiểm tra mô hình sửa lỗi trong kho GitHub thật; README nêu.</li><li><strong>agent</strong>: mô hình ngôn ngữ tự dùng công cụ; README nêu.</li><li><strong>yaml</strong>: định dạng tệp cấu hình; README nêu cấu hình bằng một tệp yaml.</li><li><strong>Codespaces</strong>: môi trường phát triển trên đám mây của GitHub; README nêu thử trên trình duyệt.</li><li><strong>CTF</strong>: thử thách an ninh mạng kiểu cuộc thi; README nêu chế độ EnIGMA.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: thử trên GitHub Codespaces hoặc cài từ mã nguồn theo tài liệu (bài không chép lệnh). Cần khóa mô hình. Miễn phí; giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo về mini-SWE-agent.</li><li>Quyết định dùng SWE-agent hay mini-SWE-agent.</li><li>Thử trên Codespaces với kho thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử agent sửa lỗi tự động. Hãy đọc README của SWE-agent (https://github.com/SWE-agent/SWE-agent) và giải thích bằng tiếng Việt: cảnh báo về mini-swe-agent nghĩa là gì, SWE-bench là gì, và rủi ro khi cho agent chạy lệnh trên kho. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn (khoảng 8 KB), bài chưa đọc tài liệu swe-agent.com. Các số liệu hiệu năng là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>SWE-agent</strong> có <strong>20.712 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/SWE-agent/SWE-agent/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/SWE-agent/SWE-agent\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 559. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20712; repo_id 780737106; README SHA256 dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/SWE-agent/SWE-agent",
+          "repo_id": "780737106",
+          "source_path": "",
+          "source_revision": "README-SHA256:dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SWE-agent/SWE-agent",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: thử trên GitHub Codespaces hoặc cài từ mã nguồn theo tài liệu (bài không chép lệnh). Cần khóa mô hình. Miễn phí; giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SWE-agent/SWE-agent/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/SWE-agent/SWE-agent/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "SWE-agent/SWE-agent",
+        "stars": 20712,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/SWE-agent/SWE-agent/main/README.md",
+        "readmeSha256": "dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 560,
+      "batch": 93,
+      "slug": "claude-code-router",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Claude Code Router: cổng mô hình cục bộ và bảng điều khiển cho coding agent, nối Claude Code, Codex, OpenCode và nhiều agent khác với nhà cung cấp bạn chọn, có định tuyến, dự phòng và quan sát",
+        "excerpt": "Hiểu Claude Code Router (CCR) là cổng mô hình cục bộ và bảng điều khiển cho coding agent: một điểm cuối cục bộ ổn định cho Claude Code, Claude Design, Codex, Grok CLI, Kimi CLI, Kilo Code, OpenCode và các agent khác, cho phép chuyển nhà cung cấp hay mô hình, thử lại, xoay khóa, mô hình dự phòng, thêm khả năng như thị giác, tìm web, MCP, và xem nhật ký, độ trễ, token, chi phí ước tính. Bản desktop khuyến nghị, có CLI cần Node.js 22+ và Docker.",
+        "content": "<p>README mở đầu 'Quản lý mọi agent và nhà cung cấp ở một nơi': kết nối Claude Code, Claude Design, Codex, Grok CLI, Kimi CLI, Kilo Code, OpenCode, Pi, ZCode, WorkBuddy và các máy khách API tương thích với nhà cung cấp bạn chọn, rồi định tuyến, dự phòng, mở rộng và quan sát mọi yêu cầu từ một ứng dụng. Why use CCR?: CCR là cổng mô hình cục bộ và mặt phẳng điều khiển cho coding agent, cho các agent một điểm cuối cục bộ ổn định. Dùng để quản lý tất cả agent và nhà cung cấp cùng nhau, đổi nhà cung cấp hay mô hình không đổi quy trình, giữ yêu cầu chạy (thử lại, nhóm khóa, xoay khóa, mô hình dự phòng theo thứ tự), thêm khả năng cho mô hình có sẵn (thị giác, tìm web, MCP, ToolHub), xem điều gì thực sự xảy ra qua nhật ký yêu cầu, tuyến được chọn, độ trễ, token, chi phí ước tính, trạng thái tài khoản. Hỗ trợ nhiều giao thức và nhà cung cấp (OpenAI, Anthropic, Gemini, OpenRouter, DeepSeek, SiliconFlow, Moonshot, Kimi, Mistral, Z.AI, Bailian và nhà cung cấp tương thích tùy chỉnh). Quick Start: ứng dụng desktop (khuyến nghị): thêm nhà cung cấp và khóa API, bật máy chủ (mặc định lắng nghe 127.0.0.1 cổng 3456), cấu hình agent, xem nhật ký; hoặc CLI qua npm cần Node.js 22 trở lên với giao diện quản lý trên trình duyệt; hoặc Docker (bài không chép lệnh). Có mục tính năng: agent, nhà cung cấp, định tuyến, công cụ, khóa client có hạn, quan sát, AgentClaw (chuyển tiếp agent qua nhiều ứng dụng nhắn tin). Có phần ủng hộ và nhà tài trợ dài. Giấy phép MIT theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn dùng nhiều coding agent và nhiều nhà cung cấp mô hình, CCR đứng giữa: agent gọi một địa chỉ cục bộ, CCR chuyển sang nhà cung cấp bạn chọn, có dự phòng và nhật ký chi phí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thêm một nhà cung cấp có giới hạn chi tiêu và xem nhật ký yêu cầu và token khi dùng một agent. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu API, khóa và nhiều nhà cung cấp; cấu hình agent cần cẩn thận. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> CCR giữ khóa API của nhiều nhà cung cấp và nhìn thấy mọi yêu cầu, nội dung hội thoại: dùng máy cục bộ tin cậy, không mở cổng ra mạng, bảo vệ nhật ký. Dùng tài khoản đăng ký sẵn (nhập thông tin đăng nhập cục bộ) với agent khác có thể vi phạm điều khoản nhà cung cấp: bài không đánh giá. Chi phí ước tính trong nhật ký chỉ là ước tính. Phần quảng bá nhà tài trợ trong README là quảng cáo. Bài chưa kiểm tra độ tin cậy.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>model gateway (cổng mô hình)</strong>: điểm cuối trung gian nối agent với nhà cung cấp mô hình; README nêu.</li><li><strong>provider (nhà cung cấp)</strong>: dịch vụ mô hình như OpenAI, Anthropic, Gemini; README liệt kê.</li><li><strong>fallback (dự phòng)</strong>: dùng mô hình khác khi mô hình chính lỗi; README nêu.</li><li><strong>credential pool (nhóm khóa)</strong>: nhiều khóa xoay vòng; README nêu.</li><li><strong>MCP / ToolHub</strong>: cách đưa công cụ cho AI; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng ứng dụng desktop (khuyến nghị), CLI qua npm (cần Node.js 22+) hoặc Docker (bài không chép lệnh). Cần khóa API của nhà cung cấp. Miễn phí theo giấy phép MIT; chi phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thêm một nhà cung cấp có giới hạn chi tiêu.</li><li>Bật máy chủ cục bộ và cấu hình một agent.</li><li>Xem nhật ký để hiểu chi phí và tuyến.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng nhiều coding agent và nhiều nhà cung cấp mô hình. Hãy đọc README của Claude Code Router (https://github.com/musistudio/claude-code-router) và giải thích bằng tiếng Việt: CCR đứng ở đâu giữa agent và nhà cung cấp, những rủi ro về khóa và nhật ký, và 'dự phòng' hoạt động thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 22,6 KB, nhiều phần tài trợ), bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>musistudio</strong> có <strong>37.972 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-10. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/musistudio/claude-code-router/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/musistudio/claude-code-router\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 560. Chưa cài/chạy thử; không tạo validation. Snapshot sao 37972; repo_id 938468965; README SHA256 3caeaf7bab9ddc861fd04ac3927d638a22b010e0a3b60d2fca08e8949f4b48dc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/musistudio/claude-code-router",
+          "repo_id": "938468965",
+          "source_path": "",
+          "source_revision": "README-SHA256:3caeaf7bab9ddc861fd04ac3927d638a22b010e0a3b60d2fca08e8949f4b48dc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/musistudio/claude-code-router",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng ứng dụng desktop (khuyến nghị), CLI qua npm (cần Node.js 22+) hoặc Docker (bài không chép lệnh). Cần khóa API của nhà cung cấp. Miễn phí theo giấy phép MIT; chi phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/musistudio/claude-code-router/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/musistudio/claude-code-router/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "musistudio/claude-code-router",
+        "stars": 37972,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/musistudio/claude-code-router/main/README.md",
+        "readmeSha256": "3caeaf7bab9ddc861fd04ac3927d638a22b010e0a3b60d2fca08e8949f4b48dc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 561,
+      "batch": 93,
+      "slug": "open-swe",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Open SWE: agent kỹ sư phần mềm mã nguồn mở của LangChain, điều tra kho mã, triển khai thay đổi trong sandbox và gửi pull request; README nói đang phát triển mạnh, không nhận issue hay đóng góp ngoài",
+        "excerpt": "Hiểu Open SWE là hệ thống agent của LangChain biến công việc kỹ thuật thành quy trình lặp lại: điều tra codebase, triển khai thay đổi, kiểm tra và gửi pull request; còn đánh giá PR, theo dõi CI và phản hồi. README cảnh báo đang phát triển mạnh, có thể thay đổi phá vỡ, không nhận issue hay đóng góp ngoài, và để triển khai nguyên trạng cần dịch vụ Managed Deep Agents.",
+        "content": "<p>README tả Open SWE biến công việc kỹ thuật thành hệ thống lặp lại: điều tra codebase, triển khai thay đổi, kiểm tra và gửi pull request; còn đánh giá PR, học sở thích đánh giá riêng của kho, theo dõi CI và phản hồi. Do LangChain xây, mã nguồn mở và triển khai được trong hạ tầng của bạn. Cảnh báo quan trọng: đang phát triển mạnh, kỳ vọng có thay đổi phá vỡ và nhiều chỗ chưa mượt; hiện không nhận issue hay đóng góp ngoài; bạn được khám phá và fork nhưng tính đúng, ổn định và tương thích không được đảm bảo; triển khai nguyên trạng cần Managed Deep Agents để chạy agent, nếu không README khuyên fork và chuyển sang runtime của bạn. Chức năng: xây (điều tra, sửa, kiểm tra tập trung, mở hoặc cập nhật PR), song song (subagent), đánh giá (theo yêu cầu hoặc tự động nếu bật, đăng kết quả lên GitHub), điều tra (chat PR chỉ đọc), vận hành (lập lịch, /baby-sit để theo dõi PR đã đăng ký, chẩn đoán lỗi và chạy lại chỉ các tác vụ chập chờn có bằng chứng), tùy biến (mô hình, mức suy luận, chỉ dẫn, kỹ năng, tích hợp, nhà cung cấp sandbox). Bắt đầu từ bảng điều khiển, GitHub, Slack hoặc Linear. Cách hoạt động: Deep Agents cung cấp lập kế hoạch, hệ tệp, shell, kỹ năng, subagent; LangGraph cung cấp thực thi bền và trạng thái luồng; chạy trong sandbox Linux riêng cho từng luồng; LangSmith là nhà cung cấp sandbox và theo dõi mặc định. Mục Control and safety: sandbox thường nhận quyền GitHub App trên toàn bộ bản cài đặt, một số quy trình dùng phạm vi hẹp hơn; ràng buộc kho của không gian làm việc điều khiển định tuyến chứ không phải ranh giới thông tin xác thực; tích hợp MCP xếp lớp công cụ theo phạm vi; lời nhắc phê duyệt quy trình chỉ chặn các lệnh push Git phát hiện được, không chặn mọi lệnh shell hay ghi API; người đánh giá được dặn không commit hay push. Giấy phép MIT chỉ bao gồm mã của Open SWE, không bao gồm thư mục vendor.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Open SWE là kiểu 'đồng nghiệp AI' nhận issue, tự đọc mã, sửa trong sandbox và gửi PR cho bạn duyệt. Nhưng chính README cảnh báo nó chưa ổn định và quyền GitHub cấp cho nó khá rộng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc README và tài liệu cài đặt để hiểu mô hình quyền, chưa triển khai. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để dựng ứng dụng và sửa lỗi tự động, muốn hiểu các công cụ agent mã nguồn mở.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hạ tầng, GitHub App, LangSmith hay dịch vụ tương đương, và hiểu bảo mật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo đang phát triển mạnh, có thể thay đổi phá vỡ, không nhận issue hay đóng góp ngoài, nguyên trạng cần Managed Deep Agents. Sandbox thường nhận quyền GitHub App trên toàn bộ bản cài đặt: README nói ràng buộc kho không phải ranh giới thông tin xác thực; phê duyệt chỉ chặn push Git phát hiện được, không phải mọi lệnh shell hay ghi API. Cấp quyền tối thiểu. Mã trong thư mục vendor không được cấp phép bởi kho này. Chi phí mô hình và dịch vụ chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>SWE (software engineering agent)</strong>: agent làm việc kỹ sư phần mềm; README nêu.</li><li><strong>sandbox</strong>: môi trường Linux cô lập cho từng luồng; README nêu.</li><li><strong>subagent</strong>: agent phụ làm việc độc lập; README nêu.</li><li><strong>GitHub App</strong>: ứng dụng được cấp quyền trên kho GitHub; README nêu quyền của sandbox.</li><li><strong>CI</strong>: quy trình tự động kiểm tra; README nêu theo dõi CI và /baby-sit.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: xem hướng dẫn cài (docs/INSTALLATION.md); nguyên trạng cần Managed Deep Agents, hoặc fork và chuyển sang runtime riêng (bài chưa đọc nên không nêu lệnh). Cần GitHub App và hạ tầng. Miễn phí phần mã theo giấy phép MIT (không gồm vendor); dịch vụ đi kèm tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo đầu README.</li><li>Đọc phần Control and safety.</li><li>Chỉ cân nhắc triển khai khi hiểu mô hình quyền GitHub.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu agent kỹ sư phần mềm tự gửi PR. Hãy đọc README của Open SWE (https://github.com/langchain-ai/open-swe) và giải thích bằng tiếng Việt: Open SWE làm gì, cảnh báo đầu README nói gì, và rủi ro về quyền GitHub của sandbox. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 6,5 KB), bài chưa đọc tài liệu cài đặt. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Coding agent và nền tảng dựng app bằng AI chạy mã, đọc kho và dùng khóa API trả phí: dùng thư mục hoặc kho thử, chạy trong sandbox, đặt giới hạn chi tiêu cho khóa, giữ khóa ngoài kho mã, cấp quyền GitHub tối thiểu, và kiểm tra mã AI viết trước khi dùng thật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>langchain-ai</strong> có <strong>11.165 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT chỉ cho mã của Open SWE, không gồm thư mục vendor. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/langchain-ai/open-swe/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/langchain-ai/open-swe\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 561. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11165; repo_id 987975584; README SHA256 cca393edec65af64d7cd48473efc8c36c29e08aae0169bdfe7b12295d22646d2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/langchain-ai/open-swe",
+          "repo_id": "987975584",
+          "source_path": "",
+          "source_revision": "README-SHA256:cca393edec65af64d7cd48473efc8c36c29e08aae0169bdfe7b12295d22646d2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/open-swe",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: xem hướng dẫn cài (docs/INSTALLATION.md); nguyên trạng cần Managed Deep Agents, hoặc fork và chuyển sang runtime riêng (bài chưa đọc nên không nêu lệnh). Cần GitHub App và hạ tầng. Miễn phí phần mã theo giấy phép MIT (không gồm vendor); dịch vụ đi kèm tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/open-swe/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/langchain-ai/open-swe/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "langchain-ai/open-swe",
+        "stars": 11165,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/langchain-ai/open-swe/main/README.md",
+        "readmeSha256": "cca393edec65af64d7cd48473efc8c36c29e08aae0169bdfe7b12295d22646d2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

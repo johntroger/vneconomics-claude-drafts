@@ -1,0 +1,43 @@
+{
+  "key": 561,
+  "repo": "langchain-ai/open-swe",
+  "repoId": "987975584",
+  "url": "https://github.com/langchain-ai/open-swe",
+  "stars": 11165,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:05:23Z",
+  "createdAt": "2025-05-21T21:44:24Z",
+  "defaultBranch": "main",
+  "description": "An Open-Source Asynchronous Coding Agent",
+  "homepage": "https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/langchain-ai/open-swe/main/README.md",
+    "sha256": "cca393edec65af64d7cd48473efc8c36c29e08aae0169bdfe7b12295d22646d2",
+    "bytes": 6487,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What Open SWE does",
+      "How it works",
+      "Control and safety",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc docs/INSTALLATION.md.",
+    "Chưa thử.",
+    "Chi phí dịch vụ đi kèm chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

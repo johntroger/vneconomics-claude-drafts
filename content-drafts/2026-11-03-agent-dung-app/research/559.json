@@ -1,0 +1,43 @@
+{
+  "key": 559,
+  "repo": "SWE-agent/SWE-agent",
+  "repoId": "780737106",
+  "url": "https://github.com/SWE-agent/SWE-agent",
+  "stars": 20712,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:40:08Z",
+  "createdAt": "2024-04-02T04:09:47Z",
+  "defaultBranch": "main",
+  "description": "SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice. It can also be employed for offensive cybersecurity or competitive coding challenges. [NeurIPS 2024] ",
+  "homepage": "https://swe-agent.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/SWE-agent/SWE-agent/main/README.md",
+    "sha256": "dcd880557720efbab0f5c0e68f2bc742309efecfce83244c9e670ec1f1adf76f",
+    "bytes": 8158,
+    "sectionsRead": [
+      "Cảnh báo đầu README",
+      "Giới thiệu",
+      "News",
+      "Get started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu swe-agent.com.",
+    "Chưa thử.",
+    "Chưa đọc mini-swe-agent."
+  ],
+  "runtimeValidated": false
+}
