@@ -1,9 +1,9 @@
 {
   "key": 655,
-  "repo": "pmndrs/jotai",
-  "repoId": "286867459",
-  "url": "https://github.com/pmndrs/jotai",
-  "stars": 21304,
+  "repo": "mobxjs/mobx",
+  "repoId": "32215970",
+  "url": "https://github.com/mobxjs/mobx",
+  "stars": 28220,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,27 +14,28 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-10-23T00:08:54Z",
-  "createdAt": "2020-08-11T23:15:36Z",
+  "pushedAt": "2026-11-01T07:30:53Z",
+  "createdAt": "2015-03-14T14:31:38Z",
   "defaultBranch": "main",
-  "description": "👻 Primitive and flexible state management for React",
-  "homepage": "https://jotai.org",
+  "description": "Simple, scalable state management.",
+  "homepage": "http://mobx.js.org",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/pmndrs/jotai/main/README.md",
-    "sha256": "ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347",
-    "bytes": 5543,
+    "url": "https://raw.githubusercontent.com/mobxjs/mobx/main/README.md",
+    "sha256": "cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5",
+    "bytes": 13210,
     "sectionsRead": [
-      "First, create a primitive atom",
-      "Use the atom in your components",
-      "Create derived atoms with computed values",
-      "Async actions"
+      "Documentation",
+      "Sponsors",
+      "Introduction",
+      "A quick example",
+      "Getting started"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc tài liệu jotai.org.",
+    "Chưa đọc tài liệu mobx.js.org.",
     "Chưa thử.",
     "Chưa so sánh với thư viện khác."
   ],

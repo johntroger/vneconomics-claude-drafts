@@ -14,7 +14,7 @@ Từ biểu đồ và bản đồ nhẹ đến trực quan hóa dữ liệu lớ
    Repo: [visgl/deck.gl](https://github.com/visgl/deck.gl) · Bản nháp: `content-drafts/2026-11-03-ban-do-bieu-do-bang/content.json`
 5. **TanStack Table: thư viện bảng dữ liệu 'headless' (không có giao diện sẵn), kiểm soát toàn bộ HTML và kiểu dáng; có bản cho React, Vue, Solid, Svelte, Angular và nhiều framework** (key 495, độ khó: Khó) — Bảng dữ liệu headless (khó).  
    Repo: [TanStack/table](https://github.com/TanStack/table) · Bản nháp: `content-drafts/2026-11-03-ban-do-bieu-do-bang/content.json`
-6. **Motion: thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue, động cơ lai dùng JavaScript kết hợp API trình duyệt gốc, cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng theo cuộn; có gói Motion+ trả phí và công cụ AI, giấy phép MIT** (key 653, độ khó: Dễ đến trung bình) — Hoạt ảnh; có phần trả phí (trung bình).  
-   Repo: [motiondivision/motion](https://github.com/motiondivision/motion) · Bản nháp: `content-drafts/2026-11-03-giao-dien-trang-thai-va-hoat-anh/content.json`
+6. **Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio** (key 496, độ khó: Trung bình) — Hoạt ảnh; có phần trả phí (trung bình).  
+   Repo: [motiondivision/motion](https://github.com/motiondivision/motion) · Bản nháp: `content-drafts/2026-11-03-ban-do-bieu-do-bang/content.json`
 7. **Univer: SDK văn phòng mã nguồn mở (bảng tính, tài liệu, trình chiếu) nhúng vào sản phẩm của bạn; README tách rõ phần mã nguồn mở và phần Pro thương mại** (key 497, độ khó: Rất khó) — SDK bảng tính nhúng; nhiều tính năng thuộc bản Pro (rất khó).  
    Repo: [dream-num/univer](https://github.com/dream-num/univer) · Bản nháp: `content-drafts/2026-11-03-ban-do-bieu-do-bang/content.json`

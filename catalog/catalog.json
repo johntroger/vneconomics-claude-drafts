@@ -7464,12 +7464,12 @@
   ]
  },
  {
-  "key": 653,
+  "key": 496,
   "slug": "motion",
-  "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
-  "title": "Motion: thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue, động cơ lai dùng JavaScript kết hợp API trình duyệt gốc, cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng theo cuộn; có gói Motion+ trả phí và công cụ AI, giấy phép MIT",
+  "group": "2026-11-03-ban-do-bieu-do-bang",
+  "title": "Motion (trước là Framer Motion): thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue; README có phần trả phí Motion+ và công cụ Motion Studio",
   "repo": "motiondivision/motion",
-  "stars": 34837,
+  "stars": 34831,
   "license": {
    "key": "mit",
    "name": "MIT License",
@@ -7477,14 +7477,12 @@
    "url": "https://api.github.com/licenses/mit",
    "node_id": "MDc6TGljZW5zZTEz"
   },
-  "level_text": "Dễ đến trung bình",
-  "tier": "bat-dau",
-  "category": "Thiết kế và hình ảnh",
-  "need": "Thiết kế nội dung trực quan",
-  "pushed": "2026-11-03",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
   "related": [
-   "pinia",
-   "react-hook-form",
    "tanstack-table",
    "univer"
   ]
@@ -11191,7 +11189,7 @@
   ]
  },
  {
-  "key": 654,
+  "key": 653,
   "slug": "react-hook-form",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "React Hook Form: thư viện xử lý biểu mẫu cho React tập trung vào hiệu năng, trải nghiệm và dễ dùng, tận dụng kiểm tra hợp lệ HTML gốc, không phụ thuộc, tích hợp Yup, Zod, AJV, Superstruct; giấy phép MIT",
@@ -11211,11 +11209,11 @@
   "pushed": "2026-11-03",
   "related": [
    "floating-ui",
-   "motion"
+   "pinia"
   ]
  },
  {
-  "key": 655,
+  "key": 654,
   "slug": "jotai",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "Jotai: thư viện quản lý trạng thái nguyên tử cho React, lõi tối thiểu 2 KB, mở rộng từ thay thế useState đến ứng dụng TypeScript lớn, không dùng khóa chuỗi (so với Recoil), atom dẫn xuất và bất đồng bộ",
@@ -11239,7 +11237,7 @@
   ]
  },
  {
-  "key": 656,
+  "key": 655,
   "slug": "mobx",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "MobX: thư viện quản lý trạng thái đơn giản và co giãn dựa trên tín hiệu, áp dụng lập trình phản ứng hàm minh bạch, mọi thứ có thể dẫn xuất từ trạng thái thì tự động dẫn xuất; README nhiều phần tài trợ",
@@ -11263,7 +11261,7 @@
   ]
  },
  {
-  "key": 657,
+  "key": 656,
   "slug": "pinia",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "Pinia: kho trạng thái trực quan, an toàn kiểu và linh hoạt cho Vue, hỗ trợ devtools, mở rộng được, mô-đun hóa, rất nhẹ, có mô-đun Nuxt; README nêu là kế thừa của Vuex, giấy phép MIT",
@@ -11282,12 +11280,12 @@
   "need": "Thiết kế nội dung trực quan",
   "pushed": "2026-11-03",
   "related": [
-   "motion",
+   "react-hook-form",
    "stimulus"
   ]
  },
  {
-  "key": 658,
+  "key": 657,
   "slug": "stimulus",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "Stimulus: framework JavaScript khiêm tốn cho phần HTML bạn đã có, không lo kết xuất HTML mà thêm hành vi qua thuộc tính controller, target, action; của Basecamp, giấy phép MIT",
@@ -11310,7 +11308,7 @@
   ]
  },
  {
-  "key": 659,
+  "key": 658,
   "slug": "rolldown",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "Rolldown: công cụ đóng gói JavaScript và TypeScript viết bằng Rust, dự định làm công cụ đóng gói tương lai của Vite, tương thích API và plugin của Rollup nhưng nhanh hơn, của VoidZero, giấy phép MIT",
@@ -11333,7 +11331,7 @@
   ]
  },
  {
-  "key": 660,
+  "key": 659,
   "slug": "floating-ui",
   "group": "2026-11-03-giao-dien-trang-thai-va-hoat-anh",
   "title": "Floating UI: thư viện nhỏ giúp tạo phần tử nổi như tooltip, popover, dropdown với hai tính năng neo vị trí và tương tác người dùng cho React; trước đây là Popper, giấy phép MIT",

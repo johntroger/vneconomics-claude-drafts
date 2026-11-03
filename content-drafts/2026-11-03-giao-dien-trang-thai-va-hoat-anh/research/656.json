@@ -1,9 +1,9 @@
 {
   "key": 656,
-  "repo": "mobxjs/mobx",
-  "repoId": "32215970",
-  "url": "https://github.com/mobxjs/mobx",
-  "stars": 28220,
+  "repo": "vuejs/pinia",
+  "repoId": "222544417",
+  "url": "https://github.com/vuejs/pinia",
+  "stars": 14759,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,30 +14,30 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-11-01T07:30:53Z",
-  "createdAt": "2015-03-14T14:31:38Z",
-  "defaultBranch": "main",
-  "description": "Simple, scalable state management.",
-  "homepage": "http://mobx.js.org",
+  "pushedAt": "2026-11-03T00:15:47Z",
+  "createdAt": "2019-11-18T21:05:01Z",
+  "defaultBranch": "v4",
+  "description": "🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support",
+  "homepage": "https://pinia.vuejs.org",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/mobxjs/mobx/main/README.md",
-    "sha256": "cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5",
-    "bytes": 13210,
+    "url": "https://raw.githubusercontent.com/vuejs/pinia/v4/README.md",
+    "sha256": "39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7",
+    "bytes": 6702,
     "sectionsRead": [
-      "Documentation",
-      "Sponsors",
-      "Introduction",
-      "A quick example",
-      "Getting started"
+      "FAQ",
+      "Installation",
+      "Usage",
+      "Create a Store",
+      "License"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc tài liệu mobx.js.org.",
+    "Chưa đọc tài liệu pinia.vuejs.org.",
     "Chưa thử.",
-    "Chưa so sánh với thư viện khác."
+    "Chưa so sánh với Vuex."
   ],
   "runtimeValidated": false
 }

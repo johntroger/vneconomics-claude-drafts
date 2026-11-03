@@ -1,9 +1,9 @@
 {
   "key": 654,
-  "repo": "react-hook-form/react-hook-form",
-  "repoId": "174038031",
-  "url": "https://github.com/react-hook-form/react-hook-form",
-  "stars": 44898,
+  "repo": "pmndrs/jotai",
+  "repoId": "286867459",
+  "url": "https://github.com/pmndrs/jotai",
+  "stars": 21304,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,29 +14,29 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-11-03T11:06:26Z",
-  "createdAt": "2019-03-05T23:47:10Z",
-  "defaultBranch": "master",
-  "description": "📋 React Hooks for form state management and validation (Web + React Native)",
-  "homepage": "https://react-hook-form.com",
+  "pushedAt": "2026-10-23T00:08:54Z",
+  "createdAt": "2020-08-11T23:15:36Z",
+  "defaultBranch": "main",
+  "description": "👻 Primitive and flexible state management for React",
+  "homepage": "https://jotai.org",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/README.md",
-    "sha256": "3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6",
-    "bytes": 8296,
+    "url": "https://raw.githubusercontent.com/pmndrs/jotai/main/README.md",
+    "sha256": "ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347",
+    "bytes": 5543,
     "sectionsRead": [
-      "Features",
-      "Install",
-      "Quickstart",
-      "Sponsors"
+      "First, create a primitive atom",
+      "Use the atom in your components",
+      "Create derived atoms with computed values",
+      "Async actions"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc tài liệu react-hook-form.com.",
+    "Chưa đọc tài liệu jotai.org.",
     "Chưa thử.",
-    "Tuyên bố hiệu năng chưa kiểm chứng."
+    "Chưa so sánh với thư viện khác."
   ],
   "runtimeValidated": false
 }

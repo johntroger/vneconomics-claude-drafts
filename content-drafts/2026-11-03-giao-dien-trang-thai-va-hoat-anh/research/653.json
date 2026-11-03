@@ -1,9 +1,9 @@
 {
   "key": 653,
-  "repo": "motiondivision/motion",
-  "repoId": "157846876",
-  "url": "https://github.com/motiondivision/motion",
-  "stars": 34837,
+  "repo": "react-hook-form/react-hook-form",
+  "repoId": "174038031",
+  "url": "https://github.com/react-hook-form/react-hook-form",
+  "stars": 44898,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,28 +14,27 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-11-03T09:44:59Z",
-  "createdAt": "2018-11-16T09:48:38Z",
-  "defaultBranch": "main",
-  "description": "A modern animation library for React and JavaScript",
-  "homepage": "https://motion.dev",
+  "pushedAt": "2026-11-03T11:06:26Z",
+  "createdAt": "2019-03-05T23:47:10Z",
+  "defaultBranch": "master",
+  "description": "📋 React Hooks for form state management and validation (Web + React Native)",
+  "homepage": "https://react-hook-form.com",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/motiondivision/motion/main/README.md",
-    "sha256": "08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
-    "bytes": 7475,
+    "url": "https://raw.githubusercontent.com/react-hook-form/react-hook-form/master/README.md",
+    "sha256": "3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6",
+    "bytes": 8296,
     "sectionsRead": [
-      "Why Motion?",
-      "Platforms",
-      "Using Motion with AI",
-      "Motion+",
-      "License"
+      "Features",
+      "Install",
+      "Quickstart",
+      "Sponsors"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc tài liệu motion.dev.",
+    "Chưa đọc tài liệu react-hook-form.com.",
     "Chưa thử.",
     "Tuyên bố hiệu năng chưa kiểm chứng."
   ],

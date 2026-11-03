@@ -1,9 +1,9 @@
 {
   "key": 658,
-  "repo": "hotwired/stimulus",
-  "repoId": "76694515",
-  "url": "https://github.com/hotwired/stimulus",
-  "stars": 13102,
+  "repo": "rolldown/rolldown",
+  "repoId": "693187866",
+  "url": "https://github.com/rolldown/rolldown",
+  "stars": 13994,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,28 +14,29 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-10-29T11:35:18Z",
-  "createdAt": "2016-12-17T00:19:29Z",
+  "pushedAt": "2026-11-03T11:19:04Z",
+  "createdAt": "2023-09-18T14:20:28Z",
   "defaultBranch": "main",
-  "description": "A modest JavaScript framework for the HTML you already have",
-  "homepage": "https://stimulus.hotwired.dev/",
+  "description": "Fast Rust bundler for JavaScript/TypeScript with Rollup-compatible API.",
+  "homepage": "https://rolldown.rs",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/hotwired/stimulus/main/README.md",
-    "sha256": "02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a",
-    "bytes": 3155,
+    "url": "https://raw.githubusercontent.com/rolldown/rolldown/main/README.md",
+    "sha256": "bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89",
+    "bytes": 4995,
     "sectionsRead": [
-      "Installing Stimulus",
-      "Getting Help",
-      "Contributing Back"
+      "VoidZero Inc.",
+      "Contributing",
+      "Credits",
+      "Licenses"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc sổ tay stimulus.hotwired.dev.",
+    "Chưa đọc tài liệu rolldown.rs.",
     "Chưa thử.",
-    "Chưa so sánh với framework giao diện khác."
+    "Chưa kiểm chứng tuyên bố tốc độ."
   ],
   "runtimeValidated": false
 }

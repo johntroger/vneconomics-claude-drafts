@@ -1,9 +1,9 @@
 {
   "key": 657,
-  "repo": "vuejs/pinia",
-  "repoId": "222544417",
-  "url": "https://github.com/vuejs/pinia",
-  "stars": 14759,
+  "repo": "hotwired/stimulus",
+  "repoId": "76694515",
+  "url": "https://github.com/hotwired/stimulus",
+  "stars": 13102,
   "starsObservedAt": "2026-11-03",
   "archived": false,
   "license": {
@@ -14,30 +14,28 @@
     "node_id": "MDc6TGljZW5zZTEz"
   },
   "licenseSource": "GitHub Search API spdx_id",
-  "pushedAt": "2026-11-03T00:15:47Z",
-  "createdAt": "2019-11-18T21:05:01Z",
-  "defaultBranch": "v4",
-  "description": "🍍 Intuitive, type safe, light and flexible Store for Vue using the composition api with DevTools support",
-  "homepage": "https://pinia.vuejs.org",
+  "pushedAt": "2026-10-29T11:35:18Z",
+  "createdAt": "2016-12-17T00:19:29Z",
+  "defaultBranch": "main",
+  "description": "A modest JavaScript framework for the HTML you already have",
+  "homepage": "https://stimulus.hotwired.dev/",
   "observedAt": "2026-11-03",
   "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
   "readme": {
-    "url": "https://raw.githubusercontent.com/vuejs/pinia/v4/README.md",
-    "sha256": "39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7",
-    "bytes": 6702,
+    "url": "https://raw.githubusercontent.com/hotwired/stimulus/main/README.md",
+    "sha256": "02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a",
+    "bytes": 3155,
     "sectionsRead": [
-      "FAQ",
-      "Installation",
-      "Usage",
-      "Create a Store",
-      "License"
+      "Installing Stimulus",
+      "Getting Help",
+      "Contributing Back"
     ]
   },
   "docsRead": [],
   "unknowns": [
-    "Chưa đọc tài liệu pinia.vuejs.org.",
+    "Chưa đọc sổ tay stimulus.hotwired.dev.",
     "Chưa thử.",
-    "Chưa so sánh với Vuex."
+    "Chưa so sánh với framework giao diện khác."
   ],
   "runtimeValidated": false
 }

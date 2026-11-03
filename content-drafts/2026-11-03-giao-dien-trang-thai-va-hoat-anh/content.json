@@ -7,115 +7,6 @@
     {
       "key": 653,
       "batch": 106,
-      "slug": "motion",
-      "category": "Thiết kế và hình ảnh",
-      "need": "Thiết kế nội dung trực quan",
-      "payload": {
-        "post_type": "vne_resource",
-        "title": "Motion: thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue, động cơ lai dùng JavaScript kết hợp API trình duyệt gốc, cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng theo cuộn; có gói Motion+ trả phí và công cụ AI, giấy phép MIT",
-        "excerpt": "Hiểu Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue: API đơn giản, động cơ lai kết hợp JavaScript với API trình duyệt gốc, có cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng liên kết cuộn, dòng thời gian; README cũng giới thiệu gói trả phí Motion+, trình soạn Motion Studio và cách dùng với tác tử AI.",
-        "content": "<p>README tả Motion là thư viện hoạt ảnh mã nguồn mở cho JavaScript, React và Vue. Lý do chọn theo README: API đơn giản với gói riêng cho React, JavaScript và Vue; động cơ lai kết hợp sức mạnh JavaScript với API trình duyệt gốc cho hoạt ảnh 120 khung hình mỗi giây tăng tốc bằng GPU (tuyên bố của tác giả, bài chưa kiểm chứng); sẵn sàng sản xuất với TypeScript, bộ kiểm thử rộng, có thể loại mã không dùng và kích thước nhỏ; tích hợp cử chỉ, lò xo, chuyển tiếp bố cục, hiệu ứng liên kết với cuộn, dòng thời gian. README có mục các nền tảng, hơn 110 ví dụ có hướng dẫn từng bước, và mục dùng Motion với AI: một kỹ năng tác tử miễn phí giấy phép MIT cài qua một lệnh và thiết lập máy chủ MCP cho nhiều công cụ AI lập trình (bài không chép lệnh), một máy chủ MCP tìm tài liệu, và tệp llms.txt. README cũng quảng bá Motion Studio (trình soạn hoạt ảnh trực quan có tác tử AI) và Motion+ (gói trả phí một lần hoặc hằng năm với 450 ví dụ, API cao cấp, trình soạn chuyển tiếp, bộ công cụ AI, Discord riêng); bài không đánh giá phần trả phí. Phần License nêu Motion theo MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn nút bấm nảy nhẹ, thẻ trượt vào mượt hay phần tử đổi chỗ có chuyển động tự nhiên? Motion cho bạn mô tả chuyển động bằng vài thuộc tính thay vì tự tính từng khung hình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem các ví dụ miễn phí trên motion.dev và nhờ AI giải thích khác biệt giữa hoạt ảnh lò xo và hoạt ảnh theo thời gian; chưa nhúng vào trang. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm giao diện web nhờ AI viết mã, muốn hiểu thư viện hoạt ảnh, biểu mẫu và quản lý trạng thái.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Dùng thư viện cơ bản khá dễ nếu biết React hoặc JavaScript; bố cục và cử chỉ nâng cao khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Hoạt ảnh quá nhiều làm khó chịu và gây hại cho người nhạy cảm với chuyển động: cần tôn trọng tùy chọn giảm chuyển động của hệ điều hành. Phần Motion+, Studio, AI Kit là sản phẩm trả phí: không bắt buộc. Lệnh cài kỹ năng AI tải gói từ mạng: chỉ chạy sau khi đã hiểu nó làm gì.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>animation (hoạt ảnh)</strong>: chuyển động của phần tử trên trang; README nêu.</li><li><strong>spring (lò xo)</strong>: kiểu chuyển động có đà và nảy; README nêu.</li><li><strong>layout transition (chuyển tiếp bố cục)</strong>: chuyển động khi phần tử đổi vị trí hoặc kích thước; README nêu.</li><li><strong>scroll-linked (liên kết với cuộn)</strong>: hiệu ứng thay đổi theo vị trí cuộn; README nêu.</li><li><strong>MCP server</strong>: cầu nối để AI dùng công cụ hoặc đọc tài liệu; README nêu có máy chủ MCP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài gói cho React, JavaScript và Vue; bài không chép lệnh. Cần JavaScript hoặc React hoặc Vue. Miễn phí theo MIT (README nêu); Motion+, Studio và công cụ AI trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why Motion? và Platforms.</li><li>Xem ví dụ miễn phí trên motion.dev.</li><li>Thử một hoạt ảnh nhỏ và kiểm tra tùy chọn giảm chuyển động.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm giao diện web và muốn thêm hoạt ảnh. Hãy đọc README của Motion (https://github.com/motiondivision/motion) và giải thích bằng tiếng Việt: Motion làm gì, hoạt ảnh lò xo là gì, phần nào miễn phí và phần nào trả phí, và vì sao cần quan tâm giảm chuyển động cho người dùng nhạy cảm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,5 KB, bài chưa đọc tài liệu motion.dev. Tuyên bố 120 khung hình chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện giao diện ảnh hưởng đến tốc độ tải trang, khả năng truy cập cho người dùng khuyết tật và bảo mật: chọn phiên bản được duy trì, kiểm tra giấy phép và gói phụ thuộc, không nhúng khóa hay dữ liệu nhạy cảm vào mã chạy ở trình duyệt, và thử trên thiết bị và trình duyệt thật trước khi nhờ AI viết nhiều mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>motiondivision</strong> có <strong>34.837 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/motiondivision/motion/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/motiondivision/motion\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
-        "status": "publish",
-        "primary_category": 0,
-        "categories": [],
-        "needs": [],
-        "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 653. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34837; repo_id 157846876; README SHA256 08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df.",
-        "data": {
-          "resource_type": "tool",
-          "source_url": "https://github.com/motiondivision/motion",
-          "repo_id": "157846876",
-          "source_path": "",
-          "source_revision": "README-SHA256:08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
-          "source_verified": true,
-          "observed_at": "2026-11-03",
-          "claims": {
-            "cost": {
-              "value": null,
-              "verification_status": "unknown",
-              "source_url": null,
-              "observed_at": null,
-              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
-              "conflict_sources": []
-            },
-            "license": {
-              "value": {
-                "key": "mit",
-                "name": "MIT License",
-                "spdx_id": "MIT",
-                "url": "https://api.github.com/licenses/mit",
-                "node_id": "MDc6TGljZW5zZTEz"
-              },
-              "verification_status": "upstream_claimed",
-              "source_url": "https://github.com/motiondivision/motion",
-              "observed_at": "2026-11-03",
-              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
-              "conflict_sources": []
-            },
-            "requirements": {
-              "value": "README có hướng dẫn cài gói cho React, JavaScript và Vue; bài không chép lệnh. Cần JavaScript hoặc React hoặc Vue. Miễn phí theo MIT (README nêu); Motion+, Studio và công cụ AI trả phí.",
-              "verification_status": "upstream_claimed",
-              "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
-              "observed_at": "2026-11-03",
-              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
-              "conflict_sources": []
-            },
-            "permissions": {
-              "value": null,
-              "verification_status": "unknown",
-              "source_url": null,
-              "observed_at": null,
-              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
-              "conflict_sources": []
-            },
-            "compatibility": {
-              "value": null,
-              "verification_status": "unknown",
-              "source_url": null,
-              "observed_at": null,
-              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
-              "conflict_sources": []
-            }
-          }
-        }
-      },
-      "state": {
-        "source_access": {
-          "status": "available",
-          "source_url": "https://github.com/motiondivision/motion/blob/main/README.md",
-          "observed_at": "2026-11-03",
-          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
-        },
-        "maintenance": {
-          "status": "unknown",
-          "source_url": "",
-          "observed_at": "",
-          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
-        },
-        "recommendation": {
-          "status": "normal",
-          "reason": ""
-        },
-        "review": {
-          "needed": true,
-          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
-          "reviewed_at": "",
-          "review_due_at": ""
-        }
-      },
-      "evidence": {
-        "repo": "motiondivision/motion",
-        "stars": 34837,
-        "observedAt": "2026-11-03T00:00:00Z",
-        "readmeUrl": "https://raw.githubusercontent.com/motiondivision/motion/main/README.md",
-        "readmeSha256": "08915bb5254a4bc1fd47e8d7ea8fff0dcb470461f6fd6b59fb6d2f0bef0400df",
-        "reviewer": "AI draft in cloud session, not independent human review",
-        "runtimeValidated": false
-      }
-    },
-    {
-      "key": 654,
-      "batch": 106,
       "slug": "react-hook-form",
       "category": "Thiết kế và hình ảnh",
       "need": "Thiết kế nội dung trực quan",
@@ -129,7 +20,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 654. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44898; repo_id 174038031; README SHA256 3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 653. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44898; repo_id 174038031; README SHA256 3c336afad19f1714ea9d40b7b51491a6849d602be4f6a9ed14bd8063f243d3b6.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/react-hook-form/react-hook-form",
@@ -223,7 +114,7 @@
       }
     },
     {
-      "key": 655,
+      "key": 654,
       "batch": 106,
       "slug": "jotai",
       "category": "Thiết kế và hình ảnh",
@@ -238,7 +129,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 655. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21304; repo_id 286867459; README SHA256 ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 654. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21304; repo_id 286867459; README SHA256 ac1282016db1e46c4186f650e1afcf4f08b84cd6bb0fb9a9bd3512d86540a347.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/pmndrs/jotai",
@@ -332,7 +223,7 @@
       }
     },
     {
-      "key": 656,
+      "key": 655,
       "batch": 106,
       "slug": "mobx",
       "category": "Thiết kế và hình ảnh",
@@ -347,7 +238,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 656. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28220; repo_id 32215970; README SHA256 cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 655. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28220; repo_id 32215970; README SHA256 cbddb0a632f827276c1ca1df92b29d49120bb27036f64a5ab0fcdfa8636d75f5.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/mobxjs/mobx",
@@ -441,7 +332,7 @@
       }
     },
     {
-      "key": 657,
+      "key": 656,
       "batch": 106,
       "slug": "pinia",
       "category": "Thiết kế và hình ảnh",
@@ -456,7 +347,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 657. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14759; repo_id 222544417; README SHA256 39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 656. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14759; repo_id 222544417; README SHA256 39b8cdedeecf0418d1bb7d1d0076848b6510ae162e232c4d826e665d83503cd7.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/vuejs/pinia",
@@ -550,7 +441,7 @@
       }
     },
     {
-      "key": 658,
+      "key": 657,
       "batch": 106,
       "slug": "stimulus",
       "category": "Thiết kế và hình ảnh",
@@ -565,7 +456,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 658. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13102; repo_id 76694515; README SHA256 02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 657. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13102; repo_id 76694515; README SHA256 02fd44c720669c59c9ef4108faaf9d545970197f67cb65b8a389ebb884e70f9a.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/hotwired/stimulus",
@@ -659,7 +550,7 @@
       }
     },
     {
-      "key": 659,
+      "key": 658,
       "batch": 106,
       "slug": "rolldown",
       "category": "Thiết kế và hình ảnh",
@@ -674,7 +565,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 659. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13994; repo_id 693187866; README SHA256 bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 658. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13994; repo_id 693187866; README SHA256 bc0995b1826a76cb21d2b2f58548557faf882143af639c6ef73c93b33b78dd89.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/rolldown/rolldown",
@@ -768,7 +659,7 @@
       }
     },
     {
-      "key": 660,
+      "key": 659,
       "batch": 106,
       "slug": "floating-ui",
       "category": "Thiết kế và hình ảnh",
@@ -783,7 +674,7 @@
         "categories": [],
         "needs": [],
         "tools": [],
-        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 660. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32789; repo_id 54994103; README SHA256 b352baf175998877bad6168b0e55cf887690ede7a85acdfea344de996744d123.",
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 659. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32789; repo_id 54994103; README SHA256 b352baf175998877bad6168b0e55cf887690ede7a85acdfea344de996744d123.",
         "data": {
           "resource_type": "tool",
           "source_url": "https://github.com/floating-ui/floating-ui",

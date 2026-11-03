@@ -100,4 +100,4 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 | `content-drafts/2026-11-03-jupyter-va-giang-day-truc-tuyen/` | 7 bài nháp nhóm "Jupyter và giảng dạy trực tuyến" (key 630–636) |
 | `content-drafts/2026-11-03-phan-cung-nhung-va-may-in-3d/` | 8 bài nháp nhóm "Phần cứng nhúng và máy in 3D" (key 637–644) |
 | `content-drafts/2026-11-03-framework-may-chu-va-api/` | 8 bài nháp nhóm "Framework máy chủ và API" (key 645–652) |
-| `content-drafts/2026-11-03-giao-dien-trang-thai-va-hoat-anh/` | 8 bài nháp nhóm "Giao diện, trạng thái và hoạt ảnh" (key 653–660) |
+| `content-drafts/2026-11-03-giao-dien-trang-thai-va-hoat-anh/` | 7 bài nháp nhóm "Giao diện và trạng thái" (key 653–659) |
