@@ -17,13 +17,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 15 — Quyền riêng tư và an toàn cá nhân](learning-paths/15-quyen-rieng-tu-ca-nhan.vi.md) — Ba việc nền tảng: giữ mật khẩu và mã 2FA, mã hóa dữ liệu nhạy cảm, bớt bị theo dõi khi duyệt web.
 - [Lộ trình 16 — Kiểm thử và giữ chất lượng mã khi có AI viết](learning-paths/16-kiem-thu-va-chat-luong-ma.vi.md) — Lưới an toàn khi AI sửa mã: định dạng, soát lỗi, kiểm thử từng hàm và kiểm thử luồng người dùng.
 - [Lộ trình 17 — Biến ý tưởng thành ứng dụng di động và máy tính](learning-paths/17-ung-dung-di-dong-va-may-tinh.vi.md) — Chọn đường theo ngôn ngữ bạn biết: JavaScript, Python, Dart hay web sẵn có.
+- [Lộ trình 18 — Hiểu backend và API mà AI dựng](learning-paths/18-backend-va-api.vi.md) — Nhận ra các framework backend hay xuất hiện và biết nên kiểm tra gì ở mã AI viết.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (26 bài)
+### Bắt đầu (27 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -53,8 +54,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 202 | uBlock Origin: chặn quảng cáo và theo dõi trong trình duyệt, và tình trạng trên Chrome | [gorhill/uBlock](https://github.com/gorhill/uBlock) | GPL-3.0 | 69041 | rieng-tu-ca-nhan |
 | 203 | Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu | [beemdevelopment/Aegis](https://github.com/beemdevelopment/Aegis) | GPL-3.0 | 13450 | rieng-tu-ca-nhan |
 | 206 | Prettier: tự động dàn mã cho đồng nhất để khỏi tranh cãi về cách trình bày | [prettier/prettier](https://github.com/prettier/prettier) | MIT | 52404 | kiem-thu-va-chat-luong-ma |
+| 220 | Flask: framework Python nhỏ gọn để dựng website hoặc API, tự chọn thư viện kèm theo | [pallets/flask](https://github.com/pallets/flask) | BSD-3-Clause | 74943 | backend-va-api |
 
-### Cơ bản (60 bài)
+### Cơ bản (64 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -118,6 +120,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 213 | Electron: viết ứng dụng máy tính bằng JavaScript, HTML và CSS, nền của VS Code | [electron/electron](https://github.com/electron/electron) | MIT | 123730 | ung-dung-di-dong-da-nen-tang |
 | 214 | Capacitor: đưa ứng dụng web có sẵn lên iOS và Android như ứng dụng native | [ionic-team/capacitor](https://github.com/ionic-team/capacitor) | MIT | 17023 | ung-dung-di-dong-da-nen-tang |
 | 215 | Flet: dựng ứng dụng web, máy tính và di động hoàn toàn bằng Python | [flet-dev/flet](https://github.com/flet-dev/flet) | Apache-2.0 | 17496 | ung-dung-di-dong-da-nen-tang |
+| 216 | FastAPI: framework Python dựng API nhanh, có tài liệu tương tác tự sinh | [fastapi/fastapi](https://github.com/fastapi/fastapi) | MIT | 104362 | backend-va-api |
+| 217 | Django: framework Python trọn gói cho website có đăng nhập, cơ sở dữ liệu và trang quản trị | [django/django](https://github.com/django/django) | BSD-3-Clause | 91489 | backend-va-api |
+| 218 | Express: framework web tối giản cho Node.js, nền tảng của vô số backend JavaScript | [expressjs/express](https://github.com/expressjs/express) | MIT | 69581 | backend-va-api |
+| 219 | Hono: framework web nhỏ, rất nhanh, chạy cùng một mã trên nhiều nền tảng đám mây | [honojs/hono](https://github.com/honojs/hono) | MIT | 32792 | backend-va-api |
 
 ### Khá khó (cần nền kỹ thuật) (21 bài)
 
@@ -145,7 +151,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 210 | Flutter: SDK của Google để làm ứng dụng di động, web và máy tính từ một mã nguồn | [flutter/flutter](https://github.com/flutter/flutter) | BSD-3-Clause | 181015 | ung-dung-di-dong-da-nen-tang |
 | 212 | Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust | [tauri-apps/tauri](https://github.com/tauri-apps/tauri) | Apache-2.0 | 112448 | ung-dung-di-dong-da-nen-tang |
 
-### Nâng cao (8 bài)
+### Nâng cao (9 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -157,6 +163,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 169 | LLM Course: lộ trình ba phần để đi từ nền tảng đến xây và triển khai ứng dụng LLM | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Apache-2.0 | 84863 | hieu-ai-llm |
 | 190 | Prometheus: hệ thống giám sát tiêu chuẩn của thế giới cloud, thu số liệu bằng cách hỏi từng dịch vụ | [prometheus/prometheus](https://github.com/prometheus/prometheus) | Apache-2.0 | 66916 | giam-sat-may-chu |
 | 199 | Vaultwarden: máy chủ quản lý mật khẩu tự host, tương thích ứng dụng Bitwarden (không phải của Bitwarden) | [dani-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden) | AGPL-3.0 | 70138 | rieng-tu-ca-nhan |
+| 221 | Valkey: kho dữ liệu khóa-giá trị tốc độ cao, bản nhánh mã nguồn mở từ Redis | [valkey-io/valkey](https://github.com/valkey-io/valkey) | BSD-3-Clause | 27589 | backend-va-api |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

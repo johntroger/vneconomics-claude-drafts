@@ -1,0 +1,34 @@
+{
+  "key": 220,
+  "repo": "pallets/flask",
+  "repoId": "596892",
+  "url": "https://github.com/pallets/flask",
+  "stars": 74943,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T15:05:22Z",
+  "createdAt": "2010-04-06T11:11:59Z",
+  "defaultBranch": "main",
+  "description": "The Python micro framework for building web applications.",
+  "homepage": "https://flask.palletsprojects.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pallets/flask/main/README.md",
+    "sha256": "1f2de14735b1ee9d3a342fa7c5d5e87b95727276c0a56c8a9d77221f37880602",
+    "bytes": 1639,
+    "sectionsRead": [
+      "Mô tả",
+      "A Simple Example"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu và tutorial.",
+    "Chưa đọc phần triển khai.",
+    "Chưa so sánh với FastAPI."
+  ],
+  "runtimeValidated": false
+}

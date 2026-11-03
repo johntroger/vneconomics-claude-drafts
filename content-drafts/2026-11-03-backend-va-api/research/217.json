@@ -1,0 +1,33 @@
+{
+  "key": 217,
+  "repo": "django/django",
+  "repoId": "4164482",
+  "url": "https://github.com/django/django",
+  "stars": 91489,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:00:37Z",
+  "createdAt": "2012-04-28T02:47:18Z",
+  "defaultBranch": "main",
+  "description": "The Web framework for perfectionists with deadlines.",
+  "homepage": "https://www.djangoproject.com/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/django/django/main/README.rst",
+    "sha256": "34c0989b01e1cb8ee592522872fdc28d13cb711e60bae0b792cc907538e6da55",
+    "bytes": 2179,
+    "sectionsRead": [
+      "Giới thiệu và thứ tự đọc tài liệu"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README ngắn, chưa đọc tài liệu.",
+    "Chưa kiểm tra yêu cầu phiên bản Python.",
+    "Chưa so sánh với Flask và FastAPI."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,35 @@
+{
+  "key": 216,
+  "repo": "fastapi/fastapi",
+  "repoId": "160919119",
+  "url": "https://github.com/fastapi/fastapi",
+  "stars": 104362,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T14:05:20Z",
+  "createdAt": "2018-12-08T08:21:47Z",
+  "defaultBranch": "master",
+  "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+  "homepage": "https://fastapi.tiangolo.com/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/fastapi/fastapi/master/README.md",
+    "sha256": "e928974f1168d4bcd703f803f6538f9a998646363c3a98e22949aa6e2ecb15e9",
+    "bytes": 22497,
+    "sectionsRead": [
+      "Giới thiệu và tính năng",
+      "Opinions",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Các con số hiệu suất do tác giả công bố.",
+    "Chưa so sánh với Flask và Django."
+  ],
+  "runtimeValidated": false
+}

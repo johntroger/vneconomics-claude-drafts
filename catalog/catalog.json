@@ -336,7 +336,9 @@
   "pushed": "2026-11-03",
   "related": [
    "appwrite",
-   "awesome-design-md"
+   "awesome-design-md",
+   "valkey",
+   "zod"
   ]
  },
  {
@@ -891,6 +893,8 @@
   "pushed": "2026-10-30",
   "related": [
    "drizzle-orm",
+   "hono",
+   "supabase",
    "tailwindcss"
   ]
  },
@@ -2048,6 +2052,112 @@
   "related": [
    "expo",
    "flutter"
+  ]
+ },
+ {
+  "key": 216,
+  "slug": "fastapi",
+  "group": "2026-11-03-backend-va-api",
+  "title": "FastAPI: framework Python dựng API nhanh, có tài liệu tương tác tự sinh",
+  "repo": "fastapi/fastapi",
+  "stars": 104362,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "django",
+   "flask"
+  ]
+ },
+ {
+  "key": 217,
+  "slug": "django",
+  "group": "2026-11-03-backend-va-api",
+  "title": "Django: framework Python trọn gói cho website có đăng nhập, cơ sở dữ liệu và trang quản trị",
+  "repo": "django/django",
+  "stars": 91489,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "express",
+   "fastapi"
+  ]
+ },
+ {
+  "key": 218,
+  "slug": "express",
+  "group": "2026-11-03-backend-va-api",
+  "title": "Express: framework web tối giản cho Node.js, nền tảng của vô số backend JavaScript",
+  "repo": "expressjs/express",
+  "stars": 69581,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "django",
+   "hono"
+  ]
+ },
+ {
+  "key": 219,
+  "slug": "hono",
+  "group": "2026-11-03-backend-va-api",
+  "title": "Hono: framework web nhỏ, rất nhanh, chạy cùng một mã trên nhiều nền tảng đám mây",
+  "repo": "honojs/hono",
+  "stars": 32792,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "express",
+   "zod"
+  ]
+ },
+ {
+  "key": 220,
+  "slug": "flask",
+  "group": "2026-11-03-backend-va-api",
+  "title": "Flask: framework Python nhỏ gọn để dựng website hoặc API, tự chọn thư viện kèm theo",
+  "repo": "pallets/flask",
+  "stars": 74943,
+  "license": "BSD-3-Clause",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "fastapi"
+  ]
+ },
+ {
+  "key": 221,
+  "slug": "valkey",
+  "group": "2026-11-03-backend-va-api",
+  "title": "Valkey: kho dữ liệu khóa-giá trị tốc độ cao, bản nhánh mã nguồn mở từ Redis",
+  "repo": "valkey-io/valkey",
+  "stars": 27589,
+  "license": "BSD-3-Clause",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "supabase"
   ]
  }
 ]

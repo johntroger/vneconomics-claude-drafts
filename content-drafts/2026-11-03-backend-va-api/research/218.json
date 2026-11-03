@@ -1,0 +1,36 @@
+{
+  "key": 218,
+  "repo": "expressjs/express",
+  "repoId": "237159",
+  "url": "https://github.com/expressjs/express",
+  "stars": 69581,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:15:26Z",
+  "createdAt": "2009-06-26T18:56:01Z",
+  "defaultBranch": "master",
+  "description": "Fast, unopinionated, minimalist web framework for node.",
+  "homepage": "https://expressjs.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/expressjs/express/master/Readme.md",
+    "sha256": "3cf5f3e224dbb9b5e2bc0ac255871de453762ae7a277f868da5f4a69d6ff2509",
+    "bytes": 10375,
+    "sectionsRead": [
+      "Mục lục",
+      "Quick Start",
+      "Philosophy",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu và danh sách middleware.",
+    "Chưa đọc phần bảo mật.",
+    "Chưa so sánh với Hono và NestJS."
+  ],
+  "runtimeValidated": false
+}
