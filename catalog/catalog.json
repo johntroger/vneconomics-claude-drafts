@@ -5539,5 +5539,129 @@
    "fiber",
    "qwik"
   ]
+ },
+ {
+  "key": 413,
+  "slug": "langflow",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "Langflow: nền tảng kéo thả dựng agent và quy trình AI, có thể xuất thành API hoặc máy chủ MCP, có bản Desktop cho Windows và macOS",
+  "repo": "langflow-ai/langflow",
+  "stars": 156280,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "smolagents"
+  ]
+ },
+ {
+  "key": 414,
+  "slug": "crewai",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "CrewAI: framework Python dựng nhóm agent AI cộng tác (Crews) và quy trình điều khiển theo sự kiện (Flows), có gói doanh nghiệp trả phí",
+  "repo": "crewAIInc/crewAI",
+  "stars": 60437,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "langgraph",
+   "openai-agents-python"
+  ]
+ },
+ {
+  "key": 415,
+  "slug": "llamaindex",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "LlamaIndex: framework mã nguồn mở dựng ứng dụng agent, README nói trọng tâm công ty đã chuyển sang LlamaParse",
+  "repo": "run-llama/llama_index",
+  "stars": 52790,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-26",
+  "related": [
+   "langgraph",
+   "mem0"
+  ]
+ },
+ {
+  "key": 416,
+  "slug": "langgraph",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "LangGraph: framework điều phối cấp thấp để dựng agent có trạng thái, chạy lâu, có thể phục hồi sau lỗi và có người duyệt",
+  "repo": "langchain-ai/langgraph",
+  "stars": 44368,
+  "license": "MIT",
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "crewai",
+   "llamaindex"
+  ]
+ },
+ {
+  "key": 417,
+  "slug": "openai-agents-python",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "OpenAI Agents SDK (Python): framework nhẹ để dựng quy trình đa agent, không giới hạn nhà cung cấp mô hình, có guardrail và người duyệt",
+  "repo": "openai/openai-agents-python",
+  "stars": 30469,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "crewai",
+   "smolagents"
+  ]
+ },
+ {
+  "key": 418,
+  "slug": "smolagents",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "smolagents: thư viện nhỏ gọn chạy agent trong vài dòng mã, agent viết hành động bằng mã (CodeAgent)",
+  "repo": "huggingface/smolagents",
+  "stars": 30196,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-29",
+  "related": [
+   "langflow",
+   "openai-agents-python"
+  ]
+ },
+ {
+  "key": 419,
+  "slug": "mem0",
+  "group": "2026-11-03-framework-agent-ai",
+  "title": "Mem0: lớp bộ nhớ cho agent AI, lưu và truy xuất ký ức của người dùng; README có số liệu đánh giá của hãng cần đọc thận trọng",
+  "repo": "mem0ai/mem0",
+  "stars": 68310,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "llamaindex"
+  ]
  }
 ]

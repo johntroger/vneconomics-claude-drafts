@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-agent-ai",
+  "batch": 71,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 413,
+      "batch": 71,
+      "slug": "langflow",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Langflow: nền tảng kéo thả dựng agent và quy trình AI, có thể xuất thành API hoặc máy chủ MCP, có bản Desktop cho Windows và macOS",
+        "excerpt": "Hiểu Langflow là nền tảng dựng và triển khai agent và quy trình AI bằng giao diện trực quan, có truy cập mã Python, sân chơi thử và xuất thành API hay máy chủ MCP. Có bản Langflow Desktop cho Windows và macOS.",
+        "content": "<p>README tả Langflow là nền tảng mạnh để dựng và triển khai agent và quy trình làm việc dùng AI, cho nhà phát triển cả trải nghiệm tạo trực quan lẫn máy chủ API và MCP tích hợp biến mọi quy trình thành công cụ. Tính năng nêu: giao diện dựng trực quan để bắt đầu và lặp nhanh, truy cập mã nguồn để tùy biến mọi thành phần bằng Python, sân chơi tương tác để thử và tinh chỉnh quy trình từng bước, điều phối nhiều agent kèm quản lý hội thoại và truy xuất, triển khai thành API hoặc xuất JSON cho ứng dụng Python, triển khai thành máy chủ MCP để biến quy trình thành công cụ cho máy khách MCP, quan sát với LangSmith, LangFuse và các tích hợp khác, và 'sẵn sàng cho doanh nghiệp' về bảo mật và mở rộng (cách nói của README). Langflow Desktop là cách dễ nhất để bắt đầu, gồm sẵn mọi phụ thuộc, có cho Windows và macOS. Cài cục bộ khuyến nghị cần Python 3.10 đến 3.14 và công cụ uv (bài không chép lệnh). Giấy phép MIT theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì viết mã từng bước, bạn kéo các khối (mô hình, công cụ, bộ nhớ) và nối chúng thành một quy trình AI. Langflow giống bảng nối dây trực quan cho AI: thử ngay trên sân chơi, rồi xuất thành API hay công cụ MCP.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng quy trình hỏi đáp trên tài liệu bằng khối kéo thả và thử trong sân chơi. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Giao diện trực quan dễ bắt đầu, bản Desktop gồm sẵn phụ thuộc; hiểu mô hình, khóa API và agent cần học thêm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Sẵn sàng cho doanh nghiệp' là cách nói của README. Quy trình có công cụ có thể thực hiện hành động thật; hãy thử với công cụ chỉ đọc trước. Bài chưa kiểm tra mức bảo mật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>workflow (quy trình)</strong>: chuỗi bước xử lý nối nhau; README nói Langflow dựng quy trình AI.</li><li><strong>playground (sân chơi)</strong>: nơi thử quy trình từng bước; README nêu.</li><li><strong>MCP server</strong>: cách biến quy trình thành công cụ cho máy khách MCP; README nêu.</li><li><strong>observability (khả năng quan sát)</strong>: theo dõi hoạt động để gỡ lỗi; README nêu tích hợp LangSmith, LangFuse.</li><li><strong>uv</strong>: công cụ quản lý gói Python; README nêu là khuyến nghị.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng Langflow Desktop (Windows và macOS, gồm sẵn phụ thuộc) hoặc cài cục bộ cần Python 3.10 đến 3.14 và uv (bài không chép lệnh). Cần khóa API của nhà cung cấp mô hình hoặc mô hình cục bộ. Miễn phí theo giấy phép MIT; phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Highlight features.</li><li>Dùng bản Desktop để thử.</li><li>Dựng quy trình đơn giản trong sân chơi với khóa API có giới hạn chi tiêu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng agent AI bằng giao diện kéo thả. Hãy đọc README của Langflow (https://github.com/langflow-ai/langflow) và giải thích bằng tiếng Việt: các tính năng chính, MCP server là gì, và rủi ro khi quy trình có công cụ thật. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu giá dịch vụ đám mây của hãng hay hiệu năng; bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>langflow-ai</strong> có <strong>156.280 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/langflow-ai/langflow/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/langflow-ai/langflow\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 413. Chưa cài/chạy thử; không tạo validation. Snapshot sao 156280; repo_id 599320067; README SHA256 0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/langflow-ai/langflow",
+          "repo_id": "599320067",
+          "source_path": "",
+          "source_revision": "README-SHA256:0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langflow-ai/langflow",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng Langflow Desktop (Windows và macOS, gồm sẵn phụ thuộc) hoặc cài cục bộ cần Python 3.10 đến 3.14 và uv (bài không chép lệnh). Cần khóa API của nhà cung cấp mô hình hoặc mô hình cục bộ. Miễn phí theo giấy phép MIT; phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langflow-ai/langflow/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/langflow-ai/langflow/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "langflow-ai/langflow",
+        "stars": 156280,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/langflow-ai/langflow/main/README.md",
+        "readmeSha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 414,
+      "batch": 71,
+      "slug": "crewai",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "CrewAI: framework Python dựng nhóm agent AI cộng tác (Crews) và quy trình điều khiển theo sự kiện (Flows), có gói doanh nghiệp trả phí",
+        "excerpt": "Hiểu CrewAI là framework mã nguồn mở bằng Python để dựng quy trình đa agent: Crews cho tự chủ và cộng tác theo vai, Flows cho điều khiển chính xác theo sự kiện. README nêu gói thương mại CrewAI AMP Suite.",
+        "content": "<p>README tả CrewAI là framework Python mã nguồn mở với trừu tượng cấp cao và API cấp thấp để dựng quy trình đa agent sẵn sàng cho sản xuất (theo README), cho phép agent tự chủ cộng tác qua Crews và điều khiển chính xác theo sự kiện qua Flows. CrewAI Crews tối ưu cho tự chủ và trí tuệ cộng tác với agent AI theo vai; CrewAI Flows dựng tự động hóa theo sự kiện kết hợp điều khiển chính xác, một lần gọi mô hình và hỗ trợ sẵn Crews. README nói hơn 100.000 nhà phát triển được cấp chứng chỉ qua khóa học cộng đồng (tuyên bố của README) và liệt kê CrewAI 'đang trở thành tiêu chuẩn' (cách nói của README). Có phần CrewAI AMP Suite cho tổ chức cần mặt phẳng điều khiển thương mại: triển khai có quản lý, quan sát, quản trị, bảo mật và hỗ trợ doanh nghiệp. README yêu cầu Python từ 3.10 đến dưới 3.14 và khóa API của nhà cung cấp mô hình; công cụ tìm web cần khóa Serper.dev riêng. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một AI làm mọi việc thường lẫn lộn. CrewAI giống đội làm việc: mỗi agent có một vai (nghiên cứu, viết, kiểm), được giao việc và phối hợp. Phần Flows là 'lịch trình' chắc tay hơn khi bạn muốn kiểm soát từng bước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng nhóm hai agent nghiên cứu và viết tóm tắt một chủ đề. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, khóa API và hiểu agent; README rất dài (hơn 32 KB). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chi phí gọi mô hình có thể tăng nhanh khi nhiều agent trao đổi qua lại; hãy đặt giới hạn chi tiêu. Tuyên bố 'tiêu chuẩn' và số nhà phát triển là của README. Bài chưa kiểm tra giá AMP Suite.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>agent</strong>: AI được giao vai và công cụ để làm việc; README nói agent AI theo vai.</li><li><strong>Crews / Flows</strong>: hai cách dùng của CrewAI: nhóm tự chủ và luồng điều khiển theo sự kiện; README nêu.</li><li><strong>event-driven (theo sự kiện)</strong>: chạy khi có sự kiện xảy ra; README nêu cho Flows.</li><li><strong>control plane (mặt phẳng điều khiển)</strong>: lớp quản lý triển khai và quan sát; README nêu trong AMP Suite.</li><li><strong>Serper.dev</strong>: dịch vụ tìm kiếm web cần khóa riêng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python từ 3.10 đến dưới 3.14, khóa API của nhà cung cấp mô hình và khóa Serper.dev nếu dùng tìm web (bài không chép lệnh). Miễn phí theo giấy phép MIT; AMP Suite thương mại, phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Crews, Flows.</li><li>Cài theo hướng dẫn trong môi trường ảo.</li><li>Chạy ví dụ nhỏ với khóa API có giới hạn chi tiêu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử nhiều agent AI cộng tác. Hãy đọc README của CrewAI (https://github.com/crewAIInc/crewAI) và giải thích bằng tiếng Việt: Crews khác Flows thế nào, rủi ro chi phí khi nhiều agent, và AMP Suite là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài, bài chỉ lấy các mục chính. Tuyên bố 'hơn 100.000 người được cấp chứng chỉ' và 'trở thành tiêu chuẩn' là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>crewAIInc</strong> có <strong>60.437 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu License: MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/crewAIInc/crewAI/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/crewAIInc/crewAI\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 414. Chưa cài/chạy thử; không tạo validation. Snapshot sao 60437; repo_id 710601088; README SHA256 b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/crewAIInc/crewAI",
+          "repo_id": "710601088",
+          "source_path": "",
+          "source_revision": "README-SHA256:b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/crewAIInc/crewAI",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python từ 3.10 đến dưới 3.14, khóa API của nhà cung cấp mô hình và khóa Serper.dev nếu dùng tìm web (bài không chép lệnh). Miễn phí theo giấy phép MIT; AMP Suite thương mại, phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/crewAIInc/crewAI/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/crewAIInc/crewAI/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "crewAIInc/crewAI",
+        "stars": 60437,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/crewAIInc/crewAI/main/README.md",
+        "readmeSha256": "b0f39843f93676b12883d5821a34555e2146e62bd2c42dc12733fc41222de013",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 415,
+      "batch": 71,
+      "slug": "llamaindex",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LlamaIndex: framework mã nguồn mở dựng ứng dụng agent, README nói trọng tâm công ty đã chuyển sang LlamaParse",
+        "excerpt": "Hiểu LlamaIndex là framework mã nguồn mở dựng ứng dụng AI dùng dữ liệu của bạn. README ghi chú quan trọng: trọng tâm hiện tại của công ty là LlamaParse (phân tích và trích xuất tài liệu); framework mã nguồn mở vẫn có sẵn nhưng không còn là trọng tâm chính.",
+        "content": "<p>README mở đầu bằng ghi chú: trọng tâm hiện tại của LlamaIndex là xây dựng công cụ AI tốt nhất cho phân tích và trích xuất tài liệu, với sản phẩm LlamaParse cho doanh nghiệp; công ty đã thay đổi so với khi khung mã nguồn mở ra mắt cách đây ba năm vào năm 2023; framework mã nguồn mở vẫn có sẵn như bộ công cụ mở để dùng, nhưng trọng tâm chính của công ty đã chuyển sang LlamaParse cùng liteparse và các nỗ lực đánh giá (README nói rõ như vậy). README mô tả LlamaIndex Framework là framework mã nguồn mở dựng ứng dụng agentic. Tài liệu có ba phần: LlamaParse, LlamaIndex Framework và LlamaAgents. Có hai cách bắt đầu: gói khởi đầu llama-index (lõi cùng một số tích hợp chọn lọc) hoặc tự chọn lõi và các tích hợp riêng (bài chưa đọc chi tiết nên không nêu lệnh). Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>LlamaIndex từng là cách nối AI với tài liệu và dữ liệu riêng của bạn. README bây giờ nói thẳng: công ty đang tập trung vào sản phẩm đọc tài liệu LlamaParse, còn framework mã nguồn mở vẫn cho dùng nhưng không còn là mũi nhọn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README để hiểu hướng đi của dự án trước khi chọn cho ứng dụng hỏi đáp tài liệu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, khóa API và hiểu khái niệm truy xuất; hướng đi của dự án đã thay đổi. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần dự án đang được đầu tư mạnh, hãy cân nhắc ghi chú về trọng tâm của README và theo dõi tần suất cập nhật. Bài không kết luận framework có bị ngừng hay không: README chỉ nói trọng tâm đã chuyển.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework (khung)</strong>: bộ công cụ dựng ứng dụng theo cấu trúc chung.</li><li><strong>agentic application</strong>: ứng dụng dùng agent AI; README mô tả LlamaIndex Framework như vậy.</li><li><strong>LlamaParse</strong>: sản phẩm phân tích và trích xuất tài liệu thương mại của công ty; README nêu là trọng tâm.</li><li><strong>integration (tích hợp)</strong>: gói nối với dịch vụ hoặc mô hình khác; README nói có hai cách chọn tích hợp.</li><li><strong>starter package (gói khởi đầu)</strong>: gói gồm lõi và một số tích hợp chọn lọc; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng gói khởi đầu llama-index hoặc cài lõi và tích hợp riêng bằng trình quản lý gói Python (bài không chép lệnh). Cần Python và khóa API. Miễn phí theo giấy phép MIT (theo GitHub); LlamaParse là sản phẩm thương mại (bài chưa kiểm tra giá).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc kỹ ghi chú về trọng tâm của công ty.</li><li>Xem tài liệu LlamaIndex Framework.</li><li>Chỉ dùng cho dự án mới sau khi đánh giá tình trạng cập nhật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng hỏi đáp trên tài liệu. Hãy đọc README của LlamaIndex (https://github.com/run-llama/llama_index) và giải thích bằng tiếng Việt: ghi chú về trọng tâm của công ty nghĩa là gì, LlamaParse là gì, và nên cân nhắc gì trước khi chọn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). README nói rõ trọng tâm đã chuyển; bài không dự đoán tương lai. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>run-llama</strong> có <strong>52.790 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/run-llama/llama_index/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/run-llama/llama_index\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 415. Chưa cài/chạy thử; không tạo validation. Snapshot sao 52790; repo_id 560704231; README SHA256 625c49e7dedf84826b350be28d118e7823e669504689105611e91ff709406d1f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/run-llama/llama_index",
+          "repo_id": "560704231",
+          "source_path": "",
+          "source_revision": "README-SHA256:625c49e7dedf84826b350be28d118e7823e669504689105611e91ff709406d1f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/run-llama/llama_index",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng gói khởi đầu llama-index hoặc cài lõi và tích hợp riêng bằng trình quản lý gói Python (bài không chép lệnh). Cần Python và khóa API. Miễn phí theo giấy phép MIT (theo GitHub); LlamaParse là sản phẩm thương mại (bài chưa kiểm tra giá).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/run-llama/llama_index/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/run-llama/llama_index/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "run-llama/llama_index",
+        "stars": 52790,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/run-llama/llama_index/main/README.md",
+        "readmeSha256": "625c49e7dedf84826b350be28d118e7823e669504689105611e91ff709406d1f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 416,
+      "batch": 71,
+      "slug": "langgraph",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LangGraph: framework điều phối cấp thấp để dựng agent có trạng thái, chạy lâu, có thể phục hồi sau lỗi và có người duyệt",
+        "excerpt": "Hiểu LangGraph là framework điều phối cấp thấp để dựng, quản lý và triển khai agent chạy lâu có trạng thái. README nêu thực thi bền, người duyệt, bộ nhớ, gỡ lỗi với LangSmith; có thư viện JS/TS riêng.",
+        "content": "<p>README tả LangGraph là framework điều phối cấp thấp để dựng, quản lý và triển khai agent có trạng thái chạy lâu, 'được các công ty định hình tương lai agent tin dùng' (cách nói của README). Cài bằng một lệnh pip (bài không chép lệnh). README gợi ý nếu muốn dựng agent nhanh thì xem Deep Agents, gói cấp cao hơn xây trên LangGraph; có LangGraph.js cho JS/TS. Mục Why use LangGraph? nêu hạ tầng cấp thấp cho mọi quy trình hay agent chạy lâu có trạng thái: thực thi bền (agent chịu được lỗi và tiếp tục đúng chỗ dừng), có người duyệt (kiểm tra và sửa trạng thái agent tại bất kỳ lúc nào), bộ nhớ toàn diện (ngắn hạn khi suy luận và dài hạn giữa các phiên), gỡ lỗi với LangSmith (trực quan hóa luồng thực thi, chuyển trạng thái), triển khai sẵn sàng sản xuất. Giấy phép MIT theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Agent AI chạy lâu có thể hỏng giữa chừng hay cần người duyệt ở một bước. LangGraph giống bảng điều phối có nhớ: nó lưu trạng thái, cho dừng chờ bạn xác nhận, rồi chạy tiếp đúng chỗ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng quy trình agent có bước chờ người duyệt trước khi thực hiện hành động. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cấp thấp: cần Python, khái niệm đồ thị trạng thái và hạ tầng; README nói cho agent chạy lâu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn mới làm quen, README gợi ý Deep Agents để dựng nhanh; LangGraph có độ khó cao. Tuyên bố 'được tin dùng' là của README. Một số tính năng gắn với LangSmith (dịch vụ riêng).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>orchestration (điều phối)</strong>: phối hợp các bước và agent; README mô tả LangGraph như vậy.</li><li><strong>durable execution (thực thi bền)</strong>: chạy tiếp được sau lỗi; README nêu.</li><li><strong>human-in-the-loop (người duyệt)</strong>: con người kiểm tra và sửa giữa chừng; README nêu.</li><li><strong>stateful (có trạng thái)</strong>: nhớ thông tin giữa các bước; README nêu.</li><li><strong>LangSmith</strong>: dịch vụ gỡ lỗi và triển khai của cùng hãng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói langgraph bằng trình quản lý gói Python (bài không chép lệnh); có LangGraph.js cho JS/TS. Cần Python và khóa API mô hình. Miễn phí theo giấy phép MIT; LangSmith là dịch vụ riêng, bài chưa kiểm tra giá.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why use LangGraph?.</li><li>Xem Deep Agents nếu muốn dựng nhanh.</li><li>Thử ví dụ nhỏ trước khi thêm trạng thái bền.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng agent chạy lâu có người duyệt. Hãy đọc README của LangGraph (https://github.com/langchain-ai/langgraph) và giải thích bằng tiếng Việt: thực thi bền là gì, người duyệt nghĩa là gì, và khi nào nên dùng Deep Agents thay vì LangGraph. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README mô tả tính năng, bài không kiểm chứng. Giá LangSmith bài chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>langchain-ai</strong> có <strong>44.368 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/langchain-ai/langgraph/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/langchain-ai/langgraph\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 416. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44368; repo_id 676672661; README SHA256 3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/langchain-ai/langgraph",
+          "repo_id": "676672661",
+          "source_path": "",
+          "source_revision": "README-SHA256:3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/langgraph",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói langgraph bằng trình quản lý gói Python (bài không chép lệnh); có LangGraph.js cho JS/TS. Cần Python và khóa API mô hình. Miễn phí theo giấy phép MIT; LangSmith là dịch vụ riêng, bài chưa kiểm tra giá.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "langchain-ai/langgraph",
+        "stars": 44368,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/README.md",
+        "readmeSha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 417,
+      "batch": 71,
+      "slug": "openai-agents-python",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenAI Agents SDK (Python): framework nhẹ để dựng quy trình đa agent, không giới hạn nhà cung cấp mô hình, có guardrail và người duyệt",
+        "excerpt": "Hiểu OpenAI Agents SDK là framework nhẹ để dựng quy trình đa agent bằng Python, hỗ trợ Responses và Chat Completions của OpenAI cùng hơn 100 mô hình khác. README liệt kê khái niệm cốt lõi và nói PR chỉ nhận từ cộng tác viên của kho.",
+        "content": "<p>README tả OpenAI Agents SDK là framework nhẹ nhưng mạnh để dựng quy trình đa agent; không giới hạn nhà cung cấp, hỗ trợ OpenAI Responses và Chat Completions cùng hơn 100 mô hình ngôn ngữ khác. Khái niệm cốt lõi theo README: Agents (mô hình cấu hình với hướng dẫn, công cụ, guardrail và chuyển giao), Sandbox agents (agent làm việc trong container trong thời gian dài), Realtime agents và Voice agents (tác tử giọng nói), Agents as tools và Handoffs (giao việc cho agent khác), Tools (hàm, MCP, công cụ do nhà cung cấp lưu trữ), Guardrails (kiểm tra an toàn cho đầu vào và đầu ra), Human in the loop, Sessions (quản lý lịch sử hội thoại), Tracing (theo dõi các lần chạy để gỡ lỗi). Có thư mục ví dụ và tài liệu; có phiên bản JS/TS riêng. README nêu: pull request chỉ nhận từ cộng tác viên của kho, không nhận từ người ngoài; và cam kết tiếp tục phát triển như mã nguồn mở. Giấy phép MIT theo GitHub; README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một cách dựng agent AI gọn gàng: bạn khai báo agent với hướng dẫn và công cụ, đặt guardrail để chặn đầu vào đầu ra không an toàn, cho agent giao việc cho nhau, và theo dõi mọi lần chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một agent đơn giản có một công cụ và một guardrail, rồi đọc dấu vết chạy. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, khóa API và khái niệm agent; README liệt kê nhiều khái niệm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói PR chỉ nhận từ cộng tác viên của kho; nếu bạn muốn đóng góp hãy đọc mục Contributing. Nhiều tính năng (sandbox, realtime, voice) cần mô hình hay dịch vụ riêng, bài chưa kiểm tra chi phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>agent</strong>: mô hình ngôn ngữ cấu hình với hướng dẫn và công cụ; README định nghĩa.</li><li><strong>handoff (chuyển giao)</strong>: giao việc cho agent khác; README nêu.</li><li><strong>guardrail</strong>: kiểm tra an toàn cho đầu vào hoặc đầu ra; README nêu.</li><li><strong>tracing (theo dõi)</strong>: ghi lại mọi bước chạy để gỡ lỗi; README nêu.</li><li><strong>provider-agnostic (không giới hạn nhà cung cấp)</strong>: dùng được với nhiều mô hình; README nêu hơn 100 mô hình khác.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API của nhà cung cấp mô hình. Miễn phí theo giấy phép MIT (theo GitHub); phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Core concepts.</li><li>Chạy ví dụ trong thư mục examples với khóa API có giới hạn chi tiêu.</li><li>Thêm một guardrail và xem dấu vết.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng agent AI bằng thư viện chính hãng. Hãy đọc README của OpenAI Agents SDK (https://github.com/openai/openai-agents-python) và giải thích bằng tiếng Việt: handoff, guardrail và tracing là gì, và rủi ro khi cho agent dùng công cụ thật. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). 'Nhẹ nhưng mạnh' là cách nói của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openai</strong> có <strong>30.469 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openai/openai-agents-python/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openai/openai-agents-python\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 417. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30469; repo_id 946380199; README SHA256 cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openai/openai-agents-python",
+          "repo_id": "946380199",
+          "source_path": "",
+          "source_revision": "README-SHA256:cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-agents-python",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API của nhà cung cấp mô hình. Miễn phí theo giấy phép MIT (theo GitHub); phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-agents-python/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openai/openai-agents-python/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openai/openai-agents-python",
+        "stars": 30469,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openai/openai-agents-python/main/README.md",
+        "readmeSha256": "cf68cb43182d6ea4f79a32421f6723e8ee2cc0f68f97524da7f300e9fc77940b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 418,
+      "batch": 71,
+      "slug": "smolagents",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "smolagents: thư viện nhỏ gọn chạy agent trong vài dòng mã, agent viết hành động bằng mã (CodeAgent)",
+        "excerpt": "Hiểu smolagents là thư viện của Hugging Face để chạy agent bằng vài dòng mã; logic agent nằm trong khoảng 1.000 dòng. README nêu CodeAgent viết hành động bằng mã và hỗ trợ mô hình bất kỳ, nên cần lưu ý chạy mã do AI sinh.",
+        "content": "<p>README tả smolagents là thư viện cho phép chạy agent mạnh trong vài dòng mã. Đặc điểm: đơn giản (logic agent nằm trong khoảng 1.000 dòng mã, tác giả giữ trừu tượng ở mức tối thiểu), hỗ trợ hạng nhất cho Code Agents (CodeAgent viết hành động của nó bằng mã, khác với 'agent dùng để viết mã'), tích hợp Hub (chia sẻ hay kéo công cụ và agent từ Hub), không phụ thuộc mô hình (mô hình transformers hay ollama cục bộ, nhà cung cấp trên Hub, hay mô hình của OpenAI, Anthropic...), không phụ thuộc phương thức (văn bản, ảnh, video, âm thanh). README phần đầu ghi bản quyền Hugging Face theo Apache License 2.0 và có ví dụ cấu hình khóa API của máy chủ mô hình. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hầu hết agent chọn hành động từ một danh sách. CodeAgent viết hành động thành đoạn mã rồi chạy nó, nên linh hoạt hơn nhưng cũng rủi ro hơn: mã do AI viết có thể làm điều bạn không ngờ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy một agent nhỏ trong môi trường cô lập và đọc đoạn mã nó sinh ra. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python và khóa API hoặc mô hình cục bộ; hiểu rủi ro chạy mã do AI sinh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng chạy CodeAgent trên máy chứa dữ liệu quan trọng khi chưa cô lập; mã do AI sinh chạy với quyền của bạn (nguyên tắc chung của bài, README không nêu trong phần đã đọc). 'Mạnh trong vài dòng mã' là cách nói của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CodeAgent</strong>: agent viết hành động thành mã Python để chạy; README nêu là hạng nhất.</li><li><strong>Hub (Hugging Face Hub)</strong>: kho chia sẻ mô hình, công cụ và agent; README nêu tích hợp.</li><li><strong>model-agnostic (không phụ thuộc mô hình)</strong>: dùng được với nhiều mô hình; README nêu.</li><li><strong>modality (phương thức)</strong>: dạng dữ liệu như văn bản, ảnh, video, âm thanh; README nêu hỗ trợ.</li><li><strong>API key</strong>: khóa dùng dịch vụ mô hình; README có ví dụ đọc từ biến môi trường.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API hoặc mô hình cục bộ. Miễn phí theo giấy phép Apache 2.0; phí mô hình tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và CodeAgent.</li><li>Chạy ví dụ trong môi trường cô lập.</li><li>Đọc mã agent sinh ra trước khi tin kết quả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử agent AI viết mã để hành động. Hãy đọc README của smolagents (https://github.com/huggingface/smolagents) và giải thích bằng tiếng Việt: CodeAgent khác agent thường thế nào, rủi ro khi chạy mã do AI viết, và cách giữ an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Lưu ý chạy mã do AI sinh là nguyên tắc chung của bài, không nêu trong phần README đã đọc. 'Khoảng 1.000 dòng' là mô tả của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>30.196 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; phần đầu README ghi giấy phép Apache License 2.0 của Hugging Face. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/smolagents/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/smolagents\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 418. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30196; repo_id 898968194; README SHA256 131628d2669b4ee983c715002b57ea4b375b62c8502f6354b8d9fdf3fbc39f8d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/smolagents",
+          "repo_id": "898968194",
+          "source_path": "",
+          "source_revision": "README-SHA256:131628d2669b4ee983c715002b57ea4b375b62c8502f6354b8d9fdf3fbc39f8d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/smolagents",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt và ví dụ; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API hoặc mô hình cục bộ. Miễn phí theo giấy phép Apache 2.0; phí mô hình tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/smolagents/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/smolagents/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/smolagents",
+        "stars": 30196,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/smolagents/main/README.md",
+        "readmeSha256": "131628d2669b4ee983c715002b57ea4b375b62c8502f6354b8d9fdf3fbc39f8d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 419,
+      "batch": 71,
+      "slug": "mem0",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Mem0: lớp bộ nhớ cho agent AI, lưu và truy xuất ký ức của người dùng; README có số liệu đánh giá của hãng cần đọc thận trọng",
+        "excerpt": "Hiểu Mem0 là lớp bộ nhớ giúp agent AI nhớ thông tin về người dùng qua các phiên. README công bố thuật toán bộ nhớ mới (tháng 4 năm 2026) và điểm đánh giá của hãng; các con số đó là của tác giả và gắn với nền tảng được quản lý.",
+        "content": "<p>README mở đầu bằng mục 'New Memory Algorithm (April 2026)': mọi phép đo chạy trên cùng một ngăn xếp mô hình; truy xuất một lượt với ngân sách top_200; điểm phản ánh nền tảng được quản lý của Mem0, vốn gồm các tối ưu độc quyền (tuyên bố của README). Thay đổi nêu: trích xuất một lượt chỉ thêm (một lần gọi mô hình, không cập nhật hay xóa nên ký ức tích lũy và không ghi đè), thông tin do agent sinh ra được coi là hạng nhất, liên kết thực thể giữa các ký ức, truy xuất đa tín hiệu (ngữ nghĩa, từ khóa BM25 và khớp thực thể chấm điểm song song rồi hợp nhất), suy luận thời gian. Có hướng dẫn nâng cấp từ OSS v2 lên v3 và khung đánh giá mã nguồn mở. Mục Research Highlights nêu điểm số (92,5 trên LoCoMo, 94,4 trên LongMemEval, 64,1 trên BEAM 1 triệu token) và dẫn tới bài báo. README còn nêu agent có thể tự tạo khóa API Mem0 trong vài giây, một bảng so sánh tính năng giữa các bản và hướng dẫn chạy cả ngăn xếp tự host. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>AI thường 'quên' bạn sau mỗi cuộc trò chuyện. Mem0 giống cuốn sổ ghi chú của AI về bạn: lưu ký ức, tìm lại khi cần. Nhưng sổ ghi chú chứa thông tin cá nhân, nên cần cân nhắc ai giữ và ai đọc được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử cho một chatbot nhớ sở thích người dùng qua nhiều phiên, với dữ liệu giả. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học dựng ứng dụng AI và tự động hóa; người nhờ AI viết agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, khóa API và hiểu bộ nhớ AI; README dài và có cả nền tảng quản lý lẫn tự host. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ký ức về người dùng là dữ liệu cá nhân: cần quy định quyền riêng tư và xóa dữ liệu (nguyên tắc chung của bài, README không nêu trong phần đã đọc). Điểm đánh giá trong README là của hãng và gắn với nền tảng quản lý; bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>memory layer (lớp bộ nhớ)</strong>: phần lưu và tìm lại ký ức cho agent; README mô tả Mem0 như vậy.</li><li><strong>retrieval (truy xuất)</strong>: tìm lại ký ức liên quan; README mô tả truy xuất đa tín hiệu.</li><li><strong>BM25</strong>: phương pháp tìm theo từ khóa; README nêu trong truy xuất đa tín hiệu.</li><li><strong>entity linking (liên kết thực thể)</strong>: nối các ký ức nói về cùng một người, vật; README nêu.</li><li><strong>benchmark (đánh giá chuẩn)</strong>: bài kiểm tra để so điểm; README nêu LoCoMo, LongMemEval, BEAM.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn nền tảng quản lý, tự host và nâng cấp từ v2 lên v3; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API. Miễn phí theo giấy phép Apache 2.0; nền tảng quản lý có gói riêng (bài chưa kiểm tra giá).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Research Highlights với thái độ thận trọng.</li><li>Chọn tự host hoặc nền tảng quản lý sau khi cân nhắc dữ liệu.</li><li>Thử với dữ liệu giả, không dùng thông tin thật của người dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chatbot nhớ người dùng. Hãy đọc README của Mem0 (https://github.com/mem0ai/mem0) và giải thích bằng tiếng Việt: lớp bộ nhớ làm gì, vì sao điểm đánh giá của hãng cần đọc thận trọng, và rủi ro quyền riêng tư. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài; số điểm 92,5 94,4 và 64,1 là của hãng, gắn với nền tảng quản lý có tối ưu độc quyền, bài không kiểm chứng. Lưu ý quyền riêng tư là nguyên tắc chung của bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Agent AI có thể gọi công cụ, chạy mã và dùng khóa API tốn tiền: giữ khóa ngoài kho mã, đặt giới hạn chi tiêu, bắt đầu với công cụ chỉ đọc, và duyệt từng thao tác nhạy cảm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mem0ai</strong> có <strong>68.310 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mem0ai/mem0/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mem0ai/mem0\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 419. Chưa cài/chạy thử; không tạo validation. Snapshot sao 68310; repo_id 656099147; README SHA256 f72db3426438dbdf6879a2b50583fbee8e7e2dde5d01308c6295bcd09fd3db86.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mem0ai/mem0",
+          "repo_id": "656099147",
+          "source_path": "",
+          "source_revision": "README-SHA256:f72db3426438dbdf6879a2b50583fbee8e7e2dde5d01308c6295bcd09fd3db86",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mem0ai/mem0",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn nền tảng quản lý, tự host và nâng cấp từ v2 lên v3; bài chưa đọc chi tiết nên không nêu lệnh. Cần Python và khóa API. Miễn phí theo giấy phép Apache 2.0; nền tảng quản lý có gói riêng (bài chưa kiểm tra giá).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mem0ai/mem0/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mem0ai/mem0/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mem0ai/mem0",
+        "stars": 68310,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mem0ai/mem0/main/README.md",
+        "readmeSha256": "f72db3426438dbdf6879a2b50583fbee8e7e2dde5d01308c6295bcd09fd3db86",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

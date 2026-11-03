@@ -140,3 +140,4 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 312 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Kiểm tra toàn bộ đường dẫn README thô trong các tệp nghiên cứu (312 tệp): cả 312 đều trả mã 200.
 - Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" chỉ xuất hiện trong câu phủ định.
+- Nhóm "Framework agent AI" (key 413–419): đã đối chiếu các cụm chính với README thô, cả 7 đường dẫn trả mã 200; quét cụm bị cấm không có kết quả.

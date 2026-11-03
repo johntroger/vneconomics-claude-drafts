@@ -51,6 +51,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 49 — ORM, thư viện giao diện React và công cụ thử giao diện](learning-paths/49-orm-va-thu-vien-giao-dien.vi.md) — Lưu dữ liệu bằng ORM, dựng giao diện bằng thư viện thành phần, thử thành phần và giả lập API; chú ý phiên bản và tình trạng bảo trì.
 - [Lộ trình 50 — Bảo mật web và đăng nhập](learning-paths/50-bao-mat-web-va-dang-nhap.vi.md) — Tăng bảo mật bằng tiêu đề HTTP, kiểm tra bằng công cụ quét và hướng dẫn chuẩn, xử lý token và đăng nhập; chỉ thử trên hệ thống của bạn.
 - [Lộ trình 51 — Meta-framework web và framework Go](learning-paths/51-meta-framework-web.vi.md) — Từ bộ định tuyến đến framework dựng ứng dụng toàn diện trên React, Svelte, Vue, Angular, Qwik, và hai framework API Go; chú ý phiên bản và nhánh beta.
+- [Lộ trình 52 — Framework agent AI](learning-paths/52-framework-agent-ai.vi.md) — Từ công cụ kéo thả đến các framework Python dựng agent, nhóm agent, đồ thị trạng thái và bộ nhớ; chú ý chi phí gọi mô hình, quyền riêng tư và rủi ro chạy mã do AI sinh.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -106,7 +107,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (134 bài)
+### Cơ bản (135 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -244,6 +245,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 408 | Nuxt: framework mã nguồn mở dựng ứng dụng toàn diện với Vue.js, có kết xuất phía máy chủ, định tuyến tự động và hơn 300 mô-đun | [nuxt/nuxt](https://github.com/nuxt/nuxt) | MIT | 61033 | meta-framework-web |
 | 411 | Fiber: framework web Go lấy cảm hứng từ Express, README nêu yêu cầu Go 1.26 và hạn chế do dùng unsafe | [gofiber/fiber](https://github.com/gofiber/fiber) | MIT | 40240 | meta-framework-web |
 | 412 | Echo: framework web Go xây trên net/http với bộ định tuyến cây radix, nhóm route và middleware; có thư viện Echo Pro thương mại riêng | [labstack/echo](https://github.com/labstack/echo) | MIT | 32786 | meta-framework-web |
+| 413 | Langflow: nền tảng kéo thả dựng agent và quy trình AI, có thể xuất thành API hoặc máy chủ MCP, có bản Desktop cho Windows và macOS | [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | MIT | 156280 | framework-agent-ai |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -287,7 +289,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (97 bài)
+### Nâng cao (103 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -388,6 +390,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 404 | Keycloak: hệ thống quản lý danh tính và truy cập mã nguồn mở, thêm đăng nhập cho ứng dụng mà không tự lưu người dùng | [keycloak/keycloak](https://github.com/keycloak/keycloak) | Apache-2.0 | 37666 | bao-mat-web-va-dang-nhap |
 | 409 | Angular: nền tảng phát triển ứng dụng web và di động bằng TypeScript hay JavaScript, README là tổng quan tài liệu | [angular/angular](https://github.com/angular/angular) | MIT | 101099 | meta-framework-web |
 | 410 | Qwik: framework tải trang gần như không cần JavaScript và 'tiếp tục' từ máy chủ; README ghi nhánh main là Qwik v2 đang beta | [QwikDev/qwik](https://github.com/QwikDev/qwik) | MIT | 22070 | meta-framework-web |
+| 414 | CrewAI: framework Python dựng nhóm agent AI cộng tác (Crews) và quy trình điều khiển theo sự kiện (Flows), có gói doanh nghiệp trả phí | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | MIT | 60437 | framework-agent-ai |
+| 415 | LlamaIndex: framework mã nguồn mở dựng ứng dụng agent, README nói trọng tâm công ty đã chuyển sang LlamaParse | [run-llama/llama_index](https://github.com/run-llama/llama_index) | MIT | 52790 | framework-agent-ai |
+| 416 | LangGraph: framework điều phối cấp thấp để dựng agent có trạng thái, chạy lâu, có thể phục hồi sau lỗi và có người duyệt | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | MIT | 44368 | framework-agent-ai |
+| 417 | OpenAI Agents SDK (Python): framework nhẹ để dựng quy trình đa agent, không giới hạn nhà cung cấp mô hình, có guardrail và người duyệt | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | MIT | 30469 | framework-agent-ai |
+| 418 | smolagents: thư viện nhỏ gọn chạy agent trong vài dòng mã, agent viết hành động bằng mã (CodeAgent) | [huggingface/smolagents](https://github.com/huggingface/smolagents) | Apache-2.0 | 30196 | framework-agent-ai |
+| 419 | Mem0: lớp bộ nhớ cho agent AI, lưu và truy xuất ký ức của người dùng; README có số liệu đánh giá của hãng cần đọc thận trọng | [mem0ai/mem0](https://github.com/mem0ai/mem0) | Apache-2.0 | 68310 | framework-agent-ai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
