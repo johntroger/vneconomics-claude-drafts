@@ -1,0 +1,41 @@
+{
+  "key": 675,
+  "repo": "pypa/hatch",
+  "repoId": "92997800",
+  "url": "https://github.com/pypa/hatch",
+  "stars": 7249,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T04:16:50Z",
+  "createdAt": "2017-05-31T23:37:53Z",
+  "defaultBranch": "master",
+  "description": "Modern, extensible Python project management",
+  "homepage": "https://hatch.pypa.io/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pypa/hatch/master/README.md",
+    "sha256": "cb063661396f4171a6f749a8f4c8efdd9f0b788611fc3c7e282d2dd50d586e18",
+    "bytes": 3769,
+    "sectionsRead": [
+      "Features",
+      "Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu hatch.pypa.io.",
+    "Chưa thử.",
+    "Chưa so sánh với Poetry, PDM, uv."
+  ],
+  "runtimeValidated": false
+}

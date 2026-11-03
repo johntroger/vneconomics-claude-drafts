@@ -1,0 +1,43 @@
+{
+  "key": 680,
+  "repo": "apache/beam",
+  "repoId": "50904245",
+  "url": "https://github.com/apache/beam",
+  "stars": 8705,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:09:34Z",
+  "createdAt": "2016-02-02T08:00:06Z",
+  "defaultBranch": "master",
+  "description": "Apache Beam is a unified programming model for Batch and Streaming data processing.",
+  "homepage": "https://beam.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/beam/master/README.md",
+    "sha256": "4ec233819079e628766500672823af11d724b0c894a173e7be80fb22e9c0c1e0",
+    "bytes": 9390,
+    "sectionsRead": [
+      "Quick Start (Beginner Friendly)",
+      "Status",
+      "Overview",
+      "SDKs",
+      "Runners"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu beam.apache.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Flink và Spark trực tiếp."
+  ],
+  "runtimeValidated": false
+}

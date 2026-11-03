@@ -1,0 +1,43 @@
+{
+  "key": 681,
+  "repo": "agno-agi/agno",
+  "repoId": "488641606",
+  "url": "https://github.com/agno-agi/agno",
+  "stars": 43031,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:49:13Z",
+  "createdAt": "2022-05-04T15:23:02Z",
+  "defaultBranch": "main",
+  "description": "The self-driving agent platform",
+  "homepage": "https://docs.agno.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/agno-agi/agno/main/README.md",
+    "sha256": "f8f1ec532e2c97dc0e158cd0b1c5cbb75d3847f2e25c73dc50dfdaccad2467e0",
+    "bytes": 6175,
+    "sectionsRead": [
+      "Introduction",
+      "Get started",
+      "What's included",
+      "License",
+      "Telemetry"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.agno.com.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố tự vận hành."
+  ],
+  "runtimeValidated": false
+}

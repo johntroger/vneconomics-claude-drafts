@@ -1,0 +1,41 @@
+{
+  "key": 679,
+  "repo": "pydantic/pydantic-ai",
+  "repoId": "818331198",
+  "url": "https://github.com/pydantic/pydantic-ai",
+  "stars": 21005,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:56:19Z",
+  "createdAt": "2024-06-21T15:55:04Z",
+  "defaultBranch": "main",
+  "description": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end.",
+  "homepage": "https://pydantic.dev/pydantic-ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic-ai/main/README.md",
+    "sha256": "a90ff23acf9635490c53d3cce383f5344b0342065ee6db295ab7238179fe71c0",
+    "bytes": 25980,
+    "sectionsRead": [
+      "What are you building?",
+      "Why Pydantic AI",
+      "Next Steps"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu pydantic.dev/docs/ai.",
+    "Chưa thử.",
+    "Chưa kiểm chứng phần so sánh với framework khác."
+  ],
+  "runtimeValidated": false
+}

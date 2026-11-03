@@ -1,0 +1,43 @@
+{
+  "key": 677,
+  "repo": "mamba-org/mamba",
+  "repoId": "173947939",
+  "url": "https://github.com/mamba-org/mamba",
+  "stars": 8112,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-25T21:12:33Z",
+  "createdAt": "2019-03-05T13:05:10Z",
+  "defaultBranch": "main",
+  "description": "The Fast Cross-Platform Package Manager",
+  "homepage": "https://mamba.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mamba-org/mamba/main/README.md",
+    "sha256": "74293464a22d578a1c15f9b292023c1a11246c290927c447f4dc9c146e3c33ab",
+    "bytes": 9108,
+    "sectionsRead": [
+      "mamba",
+      "micromamba",
+      "Installation",
+      "Differences with",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu mamba.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa so sánh với conda mới, Pixi, uv."
+  ],
+  "runtimeValidated": false
+}

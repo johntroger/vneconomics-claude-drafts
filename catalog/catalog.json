@@ -11709,5 +11709,171 @@
    "pdm",
    "textual"
   ]
+ },
+ {
+  "key": 675,
+  "slug": "hatch",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "Hatch: trình quản lý dự án Python hiện đại, mở rộng được, có hệ dựng chuẩn hóa với bản dựng tái lập, quản lý môi trường kèm UV, quản lý bản phân phối Python, chạy kiểm thử, phân tích tĩnh, chạy tập lệnh Python, xuất bản lên PyPI và sinh dự án mẫu",
+  "repo": "pypa/hatch",
+  "stars": 7249,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-28",
+  "related": [
+   "mamba",
+   "pyenv"
+  ]
+ },
+ {
+  "key": 676,
+  "slug": "pyenv",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "pyenv: quản lý nhiều phiên bản Python đơn giản, đổi phiên bản toàn cục hoặc theo từng dự án, thuần tập lệnh shell, dùng thư mục shims trên PATH; README có lệnh cài tự động tải tập lệnh từ mạng, giấy phép MIT",
+  "repo": "pyenv/pyenv",
+  "stars": 45181,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "hatch"
+  ]
+ },
+ {
+  "key": 677,
+  "slug": "mamba",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "Mamba: cài đặt lại trình quản lý gói conda bằng C++, tải song song, dùng libsolv giải phụ thuộc nhanh hơn, tương thích với conda; có bản micromamba liên kết tĩnh không phụ thuộc, hợp CI/CD và container; giấy phép BSD-3-Clause",
+  "repo": "mamba-org/mamba",
+  "stars": 8112,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-25",
+  "related": [
+   "apscheduler",
+   "hatch"
+  ]
+ },
+ {
+  "key": 678,
+  "slug": "apscheduler",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "APScheduler: bộ lập lịch tác vụ và hệ hàng đợi tác vụ cho Python, dùng riêng như hàng đợi cũng được, có bản đồng bộ và bất đồng bộ, lưu lịch bền vững; README cảnh báo loạt v4.0 chỉ là bản thử trước phát hành, đừng dùng cho sản xuất",
+  "repo": "agronholm/apscheduler",
+  "stars": 7678,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-26",
+  "related": [
+   "mamba",
+   "pydantic-ai"
+  ]
+ },
+ {
+  "key": 679,
+  "slug": "pydantic-ai",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "Pydantic AI: SDK AI cho Python với vòng lặp tác tử có kiểu, mở rộng được, chuyển đổi mô hình bằng chuỗi, kèm Harness, Evals và Logfire; README có lệnh cài, ví dụ tác tử lập trình dùng shell và lệnh trình hướng dẫn tải từ mạng, bài không chép",
+  "repo": "pydantic/pydantic-ai",
+  "stars": 21005,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "agno",
+   "apscheduler"
+  ]
+ },
+ {
+  "key": 680,
+  "slug": "apache-beam",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "Apache Beam: mô hình hợp nhất định nghĩa pipeline xử lý dữ liệu song song cả lô và luồng, cùng các SDK theo ngôn ngữ (Java, Python, Go) và runner thực thi; README có phần Quick Start cho người mới",
+  "repo": "apache/beam",
+  "stars": 8705,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "agno"
+  ]
+ },
+ {
+  "key": 681,
+  "slug": "agno",
+  "group": "2026-11-03-moi-truong-lap-lich-va-tac-tu",
+  "title": "Agno: nền tảng tác tử tự vận hành, xây tác tử bằng các SDK, chạy như dịch vụ bền vững trên AgentOS có API và MCP, tự động hóa vận hành công ty với Company OS; README có hướng dẫn nhờ tác tử lập trình tự dựng nền tảng và mục telemetry",
+  "repo": "agno-agi/agno",
+  "stars": 43031,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "apache-beam",
+   "pydantic-ai"
+  ]
  }
 ]

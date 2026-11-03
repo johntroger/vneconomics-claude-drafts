@@ -1,0 +1,41 @@
+{
+  "key": 676,
+  "repo": "pyenv/pyenv",
+  "repoId": "5625464",
+  "url": "https://github.com/pyenv/pyenv",
+  "stars": 45181,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:11:58Z",
+  "createdAt": "2012-08-31T06:57:52Z",
+  "defaultBranch": "master",
+  "description": "Simple Python version management",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pyenv/pyenv/master/README.md",
+    "sha256": "52fc20144b57ff27e05b8a4e6028a701a63a43eb84356405c71c290827fbe95d",
+    "bytes": 32344,
+    "sectionsRead": [
+      "Simple Python Version Management",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README.",
+    "Chưa thử.",
+    "Chưa so sánh với uv hay Pixi."
+  ],
+  "runtimeValidated": false
+}
