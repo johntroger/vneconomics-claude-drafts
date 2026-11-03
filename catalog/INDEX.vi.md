@@ -39,6 +39,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 37 — Công cụ chạy và dựng dự án JavaScript](learning-paths/37-cong-cu-dung-javascript.vi.md) — Runtime, trình quản lý gói, hệ thống build và bộ đóng gói; để đọc hiểu dự án web do AI dựng.
 - [Lộ trình 38 — Thư viện game và đồ họa trên web](learning-paths/38-game-va-do-hoa-web.vi.md) — Từ game 2D vui vẻ đến engine 3D; chọn theo ngôn ngữ bạn biết và đọc kỹ lưu ý của từng README.
 - [Lộ trình 39 — Quản lý dự án và wiki tự host cho nhóm](learning-paths/39-quan-ly-du-an-va-wiki-tu-host.vi.md) — Công cụ theo dõi việc và wiki chung; chú ý giấy phép và phần tính năng trả phí của từng dự án.
+- [Lộ trình 40 — Dữ liệu, hạ tầng và giám sát](learning-paths/40-du-lieu-ha-tang-va-giam-sat.vi.md) — Phân tích dữ liệu, bảng điều khiển, hạ tầng như mã và giám sát; luôn thử ở môi trường thử và dùng tài khoản quyền tối thiểu.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -92,7 +93,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 
-### Cơ bản (112 bài)
+### Cơ bản (113 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -208,8 +209,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 329 | Plane: công cụ quản lý dự án mã nguồn mở theo dõi việc, chạy theo chu kỳ và lập lộ trình, dùng đám mây hoặc tự host | [makeplane/plane](https://github.com/makeplane/plane) | AGPL-3.0 | 61901 | quan-ly-du-an-va-wiki-tu-host |
 | 330 | Wiki.js: phần mềm wiki mã nguồn mở thế hệ mới, README chủ yếu là liên kết và danh sách nhà tài trợ | [requarks/wiki](https://github.com/requarks/wiki) | AGPL-3.0 | 29136 | quan-ly-du-an-va-wiki-tu-host |
 | 331 | Docmost: wiki và tài liệu cộng tác mã nguồn mở, lưu ý một số thư mục theo giấy phép Enterprise riêng | [docmost/docmost](https://github.com/docmost/docmost) | AGPL-3.0 | 22207 | quan-ly-du-an-va-wiki-tu-host |
+| 332 | DuckDB: cơ sở dữ liệu phân tích chạy ngay trong ứng dụng, đọc thẳng tệp CSV và Parquet bằng SQL | [duckdb/duckdb](https://github.com/duckdb/duckdb) | MIT | 42761 | du-lieu-ha-tang-va-giam-sat |
 
-### Khá khó (cần nền kỹ thuật) (27 bài)
+### Khá khó (cần nền kỹ thuật) (29 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -240,8 +242,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 277 | SiYuan: ghi chú theo khối có tham chiếu hai chiều, lưu ý không đồng bộ qua ổ đĩa đồng bộ của bên thứ ba | [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) | AGPL-3.0 | 47045 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
+| 336 | Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu | [getredash/redash](https://github.com/getredash/redash) | BSD-2-Clause | 28862 | du-lieu-ha-tang-va-giam-sat |
+| 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
 
-### Nâng cao (50 bài)
+### Nâng cao (54 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -295,6 +299,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 324 | Babylon.js: công cụ 3D trên web có sân chơi trực tuyến, README cảnh báo không dùng CDN cho môi trường sản xuất | [BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) | Apache-2.0 | 26282 | game-va-do-hoa-web |
 | 325 | PlayCanvas: engine game mã nguồn mở trên WebGL2 và WebGPU để làm ứng dụng và trò chơi 3D chạy trong trình duyệt | [playcanvas/engine](https://github.com/playcanvas/engine) | MIT | 17183 | game-va-do-hoa-web |
 | 328 | libGDX: khung phát triển game đa nền tảng bằng Java trên OpenGL, thiết lập qua Gradle và công cụ riêng | [libgdx/libgdx](https://github.com/libgdx/libgdx) | Apache-2.0 | 25506 | game-va-do-hoa-web |
+| 333 | OpenTofu: công cụ mã nguồn mở mô tả hạ tầng bằng mã, có bước lập kế hoạch trước khi thay đổi | [opentofu/opentofu](https://github.com/opentofu/opentofu) | MPL-2.0 | 30708 | du-lieu-ha-tang-va-giam-sat |
+| 334 | Ansible: tự động hóa cấu hình máy chủ qua SSH mà không cần cài đại lý, mô tả bằng ngôn ngữ dễ đọc | [ansible/ansible](https://github.com/ansible/ansible) | GPL-3.0 | 71222 | du-lieu-ha-tang-va-giam-sat |
+| 335 | Apache Superset: nền tảng khám phá và trực quan hóa dữ liệu doanh nghiệp, làm biểu đồ không cần viết mã | [apache/superset](https://github.com/apache/superset) | Apache-2.0 | 75394 | du-lieu-ha-tang-va-giam-sat |
+| 338 | SWC: trình biên dịch TypeScript và JavaScript viết bằng Rust, thay Babel để dựng nhanh hơn theo mô tả của dự án | [swc-project/swc](https://github.com/swc-project/swc) | Apache-2.0 | 34211 | du-lieu-ha-tang-va-giam-sat |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

@@ -65,3 +65,12 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Đường dẫn README thô của 11 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
 - Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" xuất hiện 29 lần, cả 29 lần đều nằm trong câu phủ định "chưa phải kết quả đã chạy thử".
 - Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.
+
+## Bổ sung rà soát (nhóm 38–39, key 323–338; tổng 238 bài)
+
+- Danh mục 238 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu.
+- Đường dẫn README thô của 10 bài mới (nhóm 40–41) đều trả mã 200; số sao khớp tệp nghiên cứu.
+- Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" xuất hiện 29 lần, đều trong câu phủ định "chưa phải kết quả đã chạy thử".
+- Đã gỡ khỏi bài Ansible một mục thuật ngữ không có căn cứ trong README (idempotent), và ghi rõ mục playbook là hiểu biết chung cần kiểm tra trong tài liệu.
+- Quy ước loại trừ đã áp dụng: repo có giấy phép `NOASSERTION` trên GitHub, repo đã lưu trữ, repo đã chuyển nơi phát triển (ví dụ BookStack, ghi "NOW MANAGED ON CODEBERG"), README gốc chỉ là một dòng trỏ, commit quá cũ.
+- Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.

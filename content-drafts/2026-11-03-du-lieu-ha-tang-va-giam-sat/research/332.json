@@ -1,0 +1,36 @@
+{
+  "key": 332,
+  "repo": "duckdb/duckdb",
+  "repoId": "138754790",
+  "url": "https://github.com/duckdb/duckdb",
+  "stars": 42761,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:44:24Z",
+  "createdAt": "2018-06-26T15:04:45Z",
+  "defaultBranch": "main",
+  "description": "DuckDB is a high-performance analytical database system",
+  "homepage": "http://www.duckdb.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/duckdb/duckdb/main/README.md",
+    "sha256": "d9c2afdbd78821e5cd28731bdefa22760374c7670ef2100cd4c44e2d8ced8a8a",
+    "bytes": 5808,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Reads and writes any data",
+      "Connects to other databases",
+      "Installation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử cài hay truy vấn.",
+    "Chưa so sánh với SQLite hay Polars."
+  ],
+  "runtimeValidated": false
+}

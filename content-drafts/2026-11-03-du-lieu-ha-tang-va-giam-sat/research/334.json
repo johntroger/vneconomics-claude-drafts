@@ -1,0 +1,35 @@
+{
+  "key": 334,
+  "repo": "ansible/ansible",
+  "repoId": "3638964",
+  "url": "https://github.com/ansible/ansible",
+  "stars": 71222,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:07:32Z",
+  "createdAt": "2012-03-06T14:58:02Z",
+  "defaultBranch": "devel",
+  "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
+  "homepage": "https://www.ansible.com/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ansible/ansible/devel/README.md",
+    "sha256": "a0d060dbbf5cc7d8881761018364e29f9b503a1b1229934d1150563f0773448c",
+    "bytes": 6154,
+    "sectionsRead": [
+      "Design Principles",
+      "Use Ansible",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu playbook.",
+    "Chưa thử.",
+    "Chưa so sánh chi tiết với OpenTofu."
+  ],
+  "runtimeValidated": false
+}

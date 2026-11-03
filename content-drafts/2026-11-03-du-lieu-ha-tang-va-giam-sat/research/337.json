@@ -1,0 +1,35 @@
+{
+  "key": 337,
+  "repo": "grafana/grafana",
+  "repoId": "15111821",
+  "url": "https://github.com/grafana/grafana",
+  "stars": 77653,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:58:40Z",
+  "createdAt": "2013-12-11T15:59:56Z",
+  "defaultBranch": "main",
+  "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. ",
+  "homepage": "https://grafana.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/grafana/grafana/main/README.md",
+    "sha256": "fc8a867bf09f319b9288746ab0148faff2e92ed39cd702252ce59161e576c019",
+    "bytes": 3114,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Get started",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử sân chơi.",
+    "Chưa so sánh với Superset, Redash."
+  ],
+  "runtimeValidated": false
+}

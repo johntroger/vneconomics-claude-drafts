@@ -1,0 +1,36 @@
+{
+  "key": 333,
+  "repo": "opentofu/opentofu",
+  "repoId": "679421146",
+  "url": "https://github.com/opentofu/opentofu",
+  "stars": 30708,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MPL-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:46:12Z",
+  "createdAt": "2023-08-16T20:01:36Z",
+  "defaultBranch": "main",
+  "description": "OpenTofu lets you declaratively manage your cloud infrastructure.",
+  "homepage": "https://opentofu.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/opentofu/opentofu/main/README.md",
+    "sha256": "60c539cfab196b4b39768781ee871f07b34aadcada2f4bef42393810e3dbfb92",
+    "bytes": 4419,
+    "sectionsRead": [
+      "Key features",
+      "Nightly Builds",
+      "Getting help",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử.",
+    "Chưa so sánh với Ansible (cùng nhóm) về vai trò."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ha-tang-giam-sat",
+  "batch": 59,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 332,
+      "batch": 59,
+      "slug": "duckdb",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "DuckDB: cơ sở dữ liệu phân tích chạy ngay trong ứng dụng, đọc thẳng tệp CSV và Parquet bằng SQL",
+        "excerpt": "Hiểu DuckDB là hệ cơ sở dữ liệu phân tích hiệu năng cao chạy trong tiến trình, không cần máy chủ riêng, đọc và ghi CSV, Parquet, JSON. Hợp người phân tích dữ liệu ngay trên máy.",
+        "content": "<p>README tả DuckDB là hệ cơ sở dữ liệu phân tích hiệu năng cao, thiết kế nhanh, đáng tin, di động và dễ dùng; chạy ngay trong tiến trình của ứng dụng nên không có máy chủ riêng cần quản lý và không có phụ thuộc ngoài (theo README). Có ứng dụng dòng lệnh độc lập và máy khách cho Python, R và các ngôn ngữ khác. README nêu DuckDB đọc và ghi nhiều định dạng tệp (CSV, Parquet, JSON...): ví dụ SQL chọn toàn bộ dữ liệu từ một tệp CSV hay Parquet bằng tên tệp; hỗ trợ định dạng lakehouse mở như DuckLake; có thể kết nối với hệ cơ sở dữ liệu khác để truy vấn tại chỗ, nối và di chuyển dữ liệu mà không cần bước ETL riêng; có cơ chế mở rộng với tiện ích lõi và tiện ích cộng đồng. Cài đặt theo trang cài đặt chính thức; dựng từ mã nguồn cần CMake, Python 3 và trình biên dịch C++17. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn xem nhanh một tệp dữ liệu lớn thì mở bảng tính thường nặng. DuckDB giống kính hiển vi gắn sẵn: bạn viết câu SQL đọc thẳng từ tệp, không phải dựng máy chủ cơ sở dữ liệu trước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: phân tích một tệp CSV lớn bằng SQL ngay trong Python hay terminal. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết SQL cơ bản; cài và dùng ngay; README dẫn tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần nhiều người ghi dữ liệu cùng lúc như hệ thống giao dịch, README mô tả DuckDB là cơ sở dữ liệu phân tích nên cần tự tìm hiểu thêm. Bài không khẳng định hiệu năng so với công cụ khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>analytical database (cơ sở dữ liệu phân tích)</strong>: cơ sở dữ liệu tối ưu cho truy vấn tổng hợp trên nhiều dòng; README mô tả DuckDB như vậy.</li><li><strong>in-process (trong tiến trình)</strong>: chạy ngay trong ứng dụng, không cần máy chủ riêng; README nêu.</li><li><strong>Parquet</strong>: định dạng tệp dữ liệu cột nén; README nêu DuckDB đọc được.</li><li><strong>ETL</strong>: quy trình trích xuất, biến đổi, nạp dữ liệu; README nói không cần bước ETL riêng khi truy vấn nhiều nguồn.</li><li><strong>SQL</strong>: ngôn ngữ truy vấn cơ sở dữ liệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt tại duckdb.org/docs/installation; bài chưa đọc nên không nêu lệnh. Dựng từ mã nguồn cần CMake, Python 3 và trình biên dịch C++17. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Reads and writes any data.</li><li>Cài ứng dụng dòng lệnh hoặc gói Python theo trang chính thức.</li><li>Thử đọc một tệp CSV nhỏ bằng SQL.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có tệp CSV lớn và biết SQL cơ bản. Hãy đọc README của DuckDB (https://github.com/duckdb/duckdb) và giải thích bằng tiếng Việt: chạy trong tiến trình nghĩa là gì, khác SQLite và PostgreSQL ở đâu, và cách đọc tệp trực tiếp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hiệu năng cao' là tuyên bố của dự án; README không nêu số đo. Bài chưa so sánh với công cụ khác. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>duckdb</strong> có <strong>42.761 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/duckdb/duckdb/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/duckdb/duckdb\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 332. Chưa cài/chạy thử; không tạo validation. Snapshot sao 42761; repo_id 138754790; README SHA256 d9c2afdbd78821e5cd28731bdefa22760374c7670ef2100cd4c44e2d8ced8a8a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/duckdb/duckdb",
+          "repo_id": "138754790",
+          "source_path": "",
+          "source_revision": "README-SHA256:d9c2afdbd78821e5cd28731bdefa22760374c7670ef2100cd4c44e2d8ced8a8a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/duckdb/duckdb",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt tại duckdb.org/docs/installation; bài chưa đọc nên không nêu lệnh. Dựng từ mã nguồn cần CMake, Python 3 và trình biên dịch C++17. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/duckdb/duckdb/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/duckdb/duckdb/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "duckdb/duckdb",
+        "stars": 42761,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/duckdb/duckdb/main/README.md",
+        "readmeSha256": "d9c2afdbd78821e5cd28731bdefa22760374c7670ef2100cd4c44e2d8ced8a8a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 333,
+      "batch": 59,
+      "slug": "opentofu",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenTofu: công cụ mã nguồn mở mô tả hạ tầng bằng mã, có bước lập kế hoạch trước khi thay đổi",
+        "excerpt": "Hiểu OpenTofu là công cụ mã nguồn mở để xây dựng, thay đổi và quản lý phiên bản hạ tầng an toàn. README nêu bước kế hoạch thực thi và đồ thị tài nguyên; bản nightly chỉ để thử.",
+        "content": "<p>README tả OpenTofu là công cụ mã nguồn mở để xây dựng, thay đổi và quản lý phiên bản hạ tầng một cách an toàn và hiệu quả, quản lý được các nhà cung cấp dịch vụ phổ biến và giải pháp nội bộ. Tính năng chính theo README: hạ tầng như mã (mô tả bằng cú pháp cấu hình bậc cao, có thể quản lý phiên bản như mã nguồn), kế hoạch thực thi (bước lập kế hoạch cho biết sẽ làm gì khi áp dụng để tránh bất ngờ), đồ thị tài nguyên (xây đồ thị và tạo song song những tài nguyên không phụ thuộc), tự động hóa thay đổi. Mục Nightly Builds nói các bản nightly để thử thay đổi mới nhất, mang tính thử nghiệm, không dành cho sản xuất và bị xóa sau 30 ngày. README có kênh hỏi đáp (GitHub Discussions, CNCF Slack), họp cộng đồng, chính sách báo lỗ hổng và mục báo vấn đề bản quyền. Giấy phép Mozilla Public License v2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dựng máy chủ và mạng bằng cách bấm từng nút trên trang quản lý thì khó lặp lại. OpenTofu giống bản vẽ thi công: bạn mô tả hạ tầng bằng chữ, nó cho xem kế hoạch 'sẽ thêm cái này, xóa cái kia' trước khi làm thật, nên ít bất ngờ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một máy chủ thử trên dịch vụ đám mây bằng mô tả viết sẵn, xem kế hoạch rồi mới áp dụng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu hạ tầng đám mây, mạng và trạng thái; thay đổi sai có thể xóa hay tạo tài nguyên tốn tiền. README rất ngắn về cách dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng áp dụng thay đổi lên môi trường thật khi chưa đọc kế hoạch. Đừng dùng bản nightly cho sản xuất theo đúng README. Nếu chưa dùng dịch vụ đám mây, chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Infrastructure as Code (hạ tầng như mã)</strong>: mô tả máy chủ, mạng bằng tệp cấu hình có thể quản lý phiên bản; README nêu là tính năng chính.</li><li><strong>execution plan (kế hoạch thực thi)</strong>: bản xem trước các thay đổi sẽ làm; README nêu bước planning trước apply.</li><li><strong>provider (nhà cung cấp)</strong>: dịch vụ hay nền tảng mà công cụ quản lý được; README nêu.</li><li><strong>resource graph (đồ thị tài nguyên)</strong>: quan hệ phụ thuộc giữa tài nguyên; README nói dùng để làm song song.</li><li><strong>nightly build</strong>: bản dựng hằng đêm để thử; README cảnh báo không dùng cho sản xuất.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt tại opentofu.org/docs/intro/install; bài chưa đọc nên không nêu lệnh. Cần tài khoản dịch vụ đám mây nếu muốn thử tạo hạ tầng thật. Miễn phí theo giấy phép MPL-2.0; dịch vụ đám mây bạn dùng tính phí riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Key features.</li><li>Làm theo hướng dẫn Get Started trên trang chính thức với tài nguyên rẻ hoặc cục bộ.</li><li>Luôn đọc kế hoạch thực thi trước khi áp dụng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý hạ tầng bằng mã. Hãy đọc README của OpenTofu (https://github.com/opentofu/opentofu) và giải thích bằng tiếng Việt: kế hoạch thực thi và đồ thị tài nguyên là gì, vì sao không nên dùng bản nightly, và rủi ro khi áp dụng sai. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn về cách dùng; bài không mô tả cú pháp hay nhà cung cấp cụ thể. Thay đổi hạ tầng có thể gây chi phí hay mất dữ liệu nếu áp dụng sai. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>opentofu</strong> có <strong>30.708 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MPL-2.0; README ghi Mozilla Public License v2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/opentofu/opentofu/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/opentofu/opentofu\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 333. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30708; repo_id 679421146; README SHA256 60c539cfab196b4b39768781ee871f07b34aadcada2f4bef42393810e3dbfb92.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/opentofu/opentofu",
+          "repo_id": "679421146",
+          "source_path": "",
+          "source_revision": "README-SHA256:60c539cfab196b4b39768781ee871f07b34aadcada2f4bef42393810e3dbfb92",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/opentofu/opentofu",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt tại opentofu.org/docs/intro/install; bài chưa đọc nên không nêu lệnh. Cần tài khoản dịch vụ đám mây nếu muốn thử tạo hạ tầng thật. Miễn phí theo giấy phép MPL-2.0; dịch vụ đám mây bạn dùng tính phí riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/opentofu/opentofu/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/opentofu/opentofu/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "opentofu/opentofu",
+        "stars": 30708,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/opentofu/opentofu/main/README.md",
+        "readmeSha256": "60c539cfab196b4b39768781ee871f07b34aadcada2f4bef42393810e3dbfb92",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 334,
+      "batch": 59,
+      "slug": "ansible",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ansible: tự động hóa cấu hình máy chủ qua SSH mà không cần cài đại lý, mô tả bằng ngôn ngữ dễ đọc",
+        "excerpt": "Hiểu Ansible là hệ thống tự động hóa IT quản lý cấu hình, triển khai ứng dụng, cung cấp hạ tầng và điều phối nhiều máy chủ. README nói Ansible không cần đại lý và dùng SSH; nhánh devel có thể có thay đổi phá vỡ.",
+        "content": "<p>README tả Ansible là hệ thống tự động hóa IT 'đơn giản triệt để': quản lý cấu hình, triển khai ứng dụng, cung cấp hạ tầng đám mây, chạy lệnh ad-hoc, tự động hóa mạng và điều phối nhiều nút; giúp các thay đổi phức tạp như cập nhật cuốn chiếu không gián đoạn với bộ cân bằng tải trở nên dễ. Nguyên tắc thiết kế nêu trong README: cài đặt cực đơn giản và ít học, quản lý máy nhanh và song song, không cần đại lý riêng hay cổng mở thêm (dựa vào dịch vụ SSH có sẵn), mô tả hạ tầng bằng ngôn ngữ cả máy và người đều đọc được, tập trung bảo mật và dễ kiểm tra, quản lý máy mới ngay không cần cài phần mềm bootstrap, viết mô-đun bằng bất kỳ ngôn ngữ động nào, dùng được không cần quyền root. Cách dùng: cài bản phát hành bằng pip hoặc trình quản lý gói theo hướng dẫn; README nói người dùng nâng cao có thể chạy nhánh devel với tính năng mới nhất nhưng dễ gặp thay đổi phá vỡ hơn. Giấy phép GNU GPL v3.0 trở lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Có mười máy chủ cần cài cùng một cấu hình thì làm tay mười lần rất dễ sai. Ansible giống quản đốc gõ cửa từng máy qua kênh SSH quen thuộc và làm đúng danh sách việc bạn viết sẵn; không cần cài người trực riêng trên máy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài cùng một bộ phần mềm lên vài máy chủ thử theo một danh sách việc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu SSH, Linux và cấu trúc playbook; thay đổi sai có thể ảnh hưởng nhiều máy cùng lúc. README không có hướng dẫn chi tiết. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng chạy trên máy thật khi chưa thử trên máy thử; đừng chạy nhánh devel cho hệ thống quan trọng theo cảnh báo của README. Nếu chỉ có một máy, tự cài tay có thể đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>agentless (không cần đại lý)</strong>: không cần cài chương trình riêng trên máy bị quản lý; README nêu là nguyên tắc.</li><li><strong>SSH</strong>: cách điều khiển máy từ xa an toàn; README nói Ansible tận dụng SSH.</li><li><strong>playbook</strong>: danh sách việc cần làm của Ansible viết bằng ngôn ngữ dễ đọc; thuật ngữ này README bài đọc không giải thích, bài nêu theo hiểu biết chung và cần kiểm tra trong tài liệu.</li><li><strong>orchestration (điều phối)</strong>: phối hợp thay đổi trên nhiều máy theo thứ tự; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn cài đặt tại docs.ansible.com; cài bằng pip hoặc trình quản lý gói (bài không chép lệnh). Cần SSH tới các máy được quản lý. Miễn phí theo giấy phép GPL v3.0 trở lên.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Design Principles.</li><li>Đọc hướng dẫn cài đặt chính thức.</li><li>Thử trên một máy ảo thử trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần cài cùng một cấu hình lên vài máy chủ. Hãy đọc README của Ansible (https://github.com/ansible/ansible) và giải thích bằng tiếng Việt: không cần đại lý nghĩa là gì, khác OpenTofu ở vai trò nào, và rủi ro khi chạy trên nhiều máy cùng lúc. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói nhánh devel dễ gặp thay đổi phá vỡ. 'Dễ nhất từng có' là tuyên bố của dự án. Bài chưa viết hay chạy playbook.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ansible</strong> có <strong>71.222 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README ghi GPL v3.0 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ansible/ansible/blob/devel/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ansible/ansible\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 334. Chưa cài/chạy thử; không tạo validation. Snapshot sao 71222; repo_id 3638964; README SHA256 a0d060dbbf5cc7d8881761018364e29f9b503a1b1229934d1150563f0773448c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ansible/ansible",
+          "repo_id": "3638964",
+          "source_path": "",
+          "source_revision": "README-SHA256:a0d060dbbf5cc7d8881761018364e29f9b503a1b1229934d1150563f0773448c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ansible/ansible",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn cài đặt tại docs.ansible.com; cài bằng pip hoặc trình quản lý gói (bài không chép lệnh). Cần SSH tới các máy được quản lý. Miễn phí theo giấy phép GPL v3.0 trở lên.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ansible/ansible/blob/devel/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ansible/ansible/blob/devel/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ansible/ansible",
+        "stars": 71222,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ansible/ansible/devel/README.md",
+        "readmeSha256": "a0d060dbbf5cc7d8881761018364e29f9b503a1b1229934d1150563f0773448c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 335,
+      "batch": 59,
+      "slug": "superset",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache Superset: nền tảng khám phá và trực quan hóa dữ liệu doanh nghiệp, làm biểu đồ không cần viết mã",
+        "excerpt": "Hiểu Apache Superset là ứng dụng web phân tích kinh doanh hiện đại: giao diện tạo biểu đồ không mã, trình soạn SQL, lớp ngữ nghĩa nhẹ và hỗ trợ nhiều cơ sở dữ liệu. README dẫn tới hướng dẫn Docker Compose.",
+        "content": "<p>README tả Superset là ứng dụng web phân tích kinh doanh hiện đại, 'sẵn sàng cho doanh nghiệp'. Phần Why Superset nêu: nền tảng khám phá và trực quan hóa dữ liệu có thể thay hoặc bổ sung công cụ BI độc quyền cho nhiều nhóm; giao diện không mã để tạo biểu đồ nhanh, trình soạn SQL trên web, lớp ngữ nghĩa nhẹ để định nghĩa chiều và số đo riêng, hỗ trợ sẵn gần như mọi cơ sở dữ liệu SQL, nhiều kiểu trực quan hóa (từ biểu đồ cột đơn giản đến địa lý), lớp lưu đệm cấu hình được, vai trò bảo mật và xác thực mở rộng, API, kiến trúc cloud-native. README có danh sách cơ sở dữ liệu hỗ trợ, ảnh chụp, hướng dẫn cài đặt và cấu hình dẫn tới Docker Compose 'trong 2 phút' và ảnh Docker chính thức, và tài liệu quản trị (cài, cấu hình, vận hành, bảo mật, mở rộng). Phần đầu tệp ghi thông báo giấy phép của Apache Software Foundation theo Apache License 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dữ liệu nằm trong cơ sở dữ liệu thì chỉ người biết SQL mới xem được. Superset giống trạm xem số liệu trên web: người không rành mã kéo thả để làm biểu đồ, người biết SQL viết truy vấn, rồi gom lên bảng điều khiển chia sẻ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhóm nhỏ gom số liệu bán hàng hay điểm danh vào bảng điều khiển có biểu đồ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cài và vận hành cần Docker, cơ sở dữ liệu và cấu hình bảo mật; dùng giao diện thì dễ hơn. README dài (hơn 24 KB). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ vài biểu đồ cho một tệp, thư viện biểu đồ hay Streamlit đơn giản hơn. Đừng mở Superset ra internet khi chưa hiểu bảo mật; README dẫn tới tài liệu bảo mật riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>BI (phân tích kinh doanh)</strong>: công cụ xem và phân tích số liệu doanh nghiệp.</li><li><strong>semantic layer (lớp ngữ nghĩa)</strong>: nơi định nghĩa số đo và chiều dữ liệu dùng chung; README nêu bản nhẹ.</li><li><strong>dashboard (bảng điều khiển)</strong>: trang gom nhiều biểu đồ.</li><li><strong>cloud-native</strong>: thiết kế để chạy mở rộng trên hạ tầng đám mây; README nêu.</li><li><strong>caching layer (lớp lưu đệm)</strong>: giữ kết quả để giảm tải cho cơ sở dữ liệu; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới Docker Compose, ảnh Docker chính thức và tài liệu quản trị tại superset.apache.org; bài chưa đọc nên không nêu lệnh. Cần Docker và một cơ sở dữ liệu để kết nối. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why Superset.</li><li>Đọc hướng dẫn Docker Compose chính thức.</li><li>Thử với dữ liệu mẫu rồi mới nối dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm bảng điều khiển dữ liệu cho nhóm. Hãy đọc README của Apache Superset (https://github.com/apache/superset) và giải thích bằng tiếng Việt: Superset làm gì, khác Streamlit ở đâu, và những lưu ý bảo mật khi dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Sẵn sàng cho doanh nghiệp' và 'hỗ trợ gần như mọi SQL' là tuyên bố của dự án, bài không kiểm chứng. README dài, bài chỉ lấy phần chính. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>75.394 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; phần đầu README ghi thông báo giấy phép Apache License 2.0 của ASF. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/superset/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/superset\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 335. Chưa cài/chạy thử; không tạo validation. Snapshot sao 75394; repo_id 39464018; README SHA256 0f9fecb2c68733121efe9aaa968a935c0b81b281935e6b24c4455887860fe3c4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/superset",
+          "repo_id": "39464018",
+          "source_path": "",
+          "source_revision": "README-SHA256:0f9fecb2c68733121efe9aaa968a935c0b81b281935e6b24c4455887860fe3c4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/superset",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới Docker Compose, ảnh Docker chính thức và tài liệu quản trị tại superset.apache.org; bài chưa đọc nên không nêu lệnh. Cần Docker và một cơ sở dữ liệu để kết nối. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/superset/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/superset/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/superset",
+        "stars": 75394,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/superset/master/README.md",
+        "readmeSha256": "0f9fecb2c68733121efe9aaa968a935c0b81b281935e6b24c4455887860fe3c4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 336,
+      "batch": 59,
+      "slug": "redash",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu",
+        "excerpt": "Hiểu Redash là công cụ trên trình duyệt để truy vấn, trực quan hóa và chia sẻ dữ liệu. README liệt kê tính năng và danh sách nguồn dữ liệu hỗ trợ; giấy phép BSD-2-Clause.",
+        "content": "<p>README tả Redash được thiết kế để mọi người, dù trình độ kỹ thuật, đều tận dụng được sức mạnh dữ liệu lớn hay nhỏ; người biết SQL khám phá, truy vấn, trực quan hóa và chia sẻ dữ liệu từ nhiều nguồn. Tính năng nêu: chạy hoàn toàn trên trình duyệt với URL chia sẻ được, dễ dùng, trình soạn truy vấn SQL và NoSQL với trình duyệt schema và tự hoàn thành, trực quan hóa và bảng điều khiển bằng kéo thả, chia sẻ (cùng xem xét truy vấn và báo cáo), làm mới theo lịch, cảnh báo khi dữ liệu đổi điều kiện, REST API cho mọi thao tác trong giao diện, hỗ trợ rộng nhiều nguồn dữ liệu (hơn 35 nguồn SQL và NoSQL theo README, có danh sách như Amazon Athena, Redshift, ClickHouse, Cassandra...). README dẫn tới hướng dẫn dựng một phiên bản Redash (kèm liên kết tới ảnh sẵn cho AWS và GCE) và tài liệu. Mục Security nói gửi email tới địa chỉ bảo mật để báo lỗ hổng. Giấy phép BSD-2-Clause.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Superset: dữ liệu nằm trong cơ sở dữ liệu thì cần công cụ xem. Redash nghiêng về người biết SQL: bạn viết truy vấn, bấm tạo biểu đồ, gom lên bảng, hẹn giờ làm mới và đặt cảnh báo khi số liệu vượt ngưỡng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết truy vấn lấy số liệu hằng ngày, tạo biểu đồ và đặt cảnh báo khi giảm bất thường. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần biết SQL; dựng phiên bản riêng cần máy chủ và theo hướng dẫn riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không biết SQL, Superset có giao diện không mã có thể dễ hơn (README Superset nêu). Đừng cho truy vấn Redash đụng vào cơ sở dữ liệu sản xuất bằng tài khoản có quyền ghi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>query editor (trình soạn truy vấn)</strong>: nơi gõ câu SQL; README nêu có schema browser và tự hoàn thành.</li><li><strong>alert (cảnh báo)</strong>: thông báo khi dữ liệu đáp ứng điều kiện; README nêu.</li><li><strong>data source (nguồn dữ liệu)</strong>: cơ sở dữ liệu hay dịch vụ nối vào Redash; README nói hơn 35 nguồn.</li><li><strong>scheduled refresh (làm mới theo lịch)</strong>: cập nhật biểu đồ định kỳ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn dựng Redash tại redash.io/help/open-source/setup; bài chưa đọc nên không nêu lệnh. Cần máy chủ và nguồn dữ liệu. Miễn phí theo giấy phép BSD-2-Clause.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và nguồn dữ liệu.</li><li>Đọc hướng dẫn dựng Redash.</li><li>Nối một cơ sở dữ liệu thử bằng tài khoản chỉ đọc.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết SQL và muốn làm báo cáo tự cập nhật. Hãy đọc README của Redash (https://github.com/getredash/redash) và giải thích bằng tiếng Việt: Redash làm gì, cảnh báo hoạt động thế nào, và vì sao nên dùng tài khoản chỉ đọc khi nối cơ sở dữ liệu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nêu 'hơn 35 nguồn dữ liệu' nhưng không nói mức hỗ trợ từng nguồn. README không nêu tình trạng bảo trì; bài chưa kiểm tra ngoài ngày commit gần nhất. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>getredash</strong> có <strong>28.862 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README ghi BSD-2-Clause. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/getredash/redash/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/getredash/redash\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 336. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28862; repo_id 13926404; README SHA256 90a66e8fde740fd37aefa70d54c574338ec3e2028df7bcb378a3ebd5f992ba7a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/getredash/redash",
+          "repo_id": "13926404",
+          "source_path": "",
+          "source_revision": "README-SHA256:90a66e8fde740fd37aefa70d54c574338ec3e2028df7bcb378a3ebd5f992ba7a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-2-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/getredash/redash",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn dựng Redash tại redash.io/help/open-source/setup; bài chưa đọc nên không nêu lệnh. Cần máy chủ và nguồn dữ liệu. Miễn phí theo giấy phép BSD-2-Clause.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/getredash/redash/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/getredash/redash/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "getredash/redash",
+        "stars": 28862,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/getredash/redash/master/README.md",
+        "readmeSha256": "90a66e8fde740fd37aefa70d54c574338ec3e2028df7bcb378a3ebd5f992ba7a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 337,
+      "batch": 59,
+      "slug": "grafana",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký",
+        "excerpt": "Hiểu Grafana là nền tảng giám sát và quan sát để truy vấn, trực quan hóa, cảnh báo và hiểu số liệu từ nhiều nguồn khác nhau. Có sân chơi trực tuyến play.grafana.org; giấy phép AGPL-3.0.",
+        "content": "<p>README tả Grafana là nền tảng mã nguồn mở cho giám sát và quan sát, cho phép truy vấn, trực quan hóa, cảnh báo và hiểu số liệu dù lưu ở đâu; tạo, khám phá và chia sẻ bảng điều khiển với nhóm. Tính năng nêu: trực quan hóa (biểu đồ phía máy khách nhanh, linh hoạt, plugin bảng), bảng điều khiển động (biến mẫu hiện thành ô chọn), khám phá số liệu (truy vấn tức thời, so sánh khoảng thời gian), khám phá nhật ký (chuyển từ số liệu sang nhật ký giữ nguyên bộ lọc nhãn), cảnh báo (định nghĩa quy tắc, gửi tới Slack, PagerDuty, VictorOps, OpsGenie), trộn nhiều nguồn dữ liệu trong cùng biểu đồ. README dẫn tới trang tải, hướng dẫn cài đặt, tài liệu và sân chơi trực tuyến play.grafana.org để xem thử. Có hướng dẫn đóng góp và kênh cộng đồng. Giấy phép AGPL-3.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy chủ và ứng dụng của bạn liên tục sinh ra số liệu: tải CPU, lỗi, thời gian phản hồi. Grafana giống bảng đồng hồ của buồng lái: gom các chỉ số về một nơi, vẽ thành biểu đồ, và rung chuông khi có chỉ số vượt ngưỡng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem biểu đồ tải máy chủ và nhận cảnh báo khi dịch vụ chậm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần có nguồn số liệu (như hệ giám sát) và hiểu truy vấn; sân chơi trực tuyến dễ thử. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có một vài biểu đồ tĩnh, chưa cần. Grafana cần nguồn số liệu riêng, README không nêu cách tạo nguồn đó.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>observability (quan sát)</strong>: khả năng hiểu hệ thống qua số liệu, nhật ký và vết; README dùng cụm 'monitoring and observability'.</li><li><strong>metrics (số liệu)</strong>: các chỉ số đo theo thời gian như CPU, lỗi.</li><li><strong>logs (nhật ký)</strong>: bản ghi sự kiện của ứng dụng; README nêu Explore Logs.</li><li><strong>data source (nguồn dữ liệu)</strong>: nơi chứa số liệu mà Grafana truy vấn; README nói trộn nhiều nguồn được.</li><li><strong>alert rule (quy tắc cảnh báo)</strong>: điều kiện kích hoạt thông báo; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang tải tại grafana.com/get và hướng dẫn cài đặt chính thức; bài chưa đọc nên không nêu lệnh. Cần nguồn số liệu để có gì hiển thị. Miễn phí theo giấy phép AGPL-3.0; dịch vụ đám mây của hãng bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử sân chơi play.grafana.org.</li><li>Đọc hướng dẫn cài đặt.</li><li>Nối một nguồn số liệu thử và tạo một biểu đồ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xem số liệu máy chủ trên biểu đồ. Hãy đọc README của Grafana (https://github.com/grafana/grafana) và giải thích bằng tiếng Việt: Grafana làm gì, nguồn số liệu là gì, và cảnh báo hoạt động thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu cách tạo nguồn số liệu; bài không khẳng định hiệu năng. Giá dịch vụ đám mây của hãng chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grafana</strong> có <strong>77.653 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grafana/grafana/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grafana/grafana\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 337. Chưa cài/chạy thử; không tạo validation. Snapshot sao 77653; repo_id 15111821; README SHA256 fc8a867bf09f319b9288746ab0148faff2e92ed39cd702252ce59161e576c019.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grafana/grafana",
+          "repo_id": "15111821",
+          "source_path": "",
+          "source_revision": "README-SHA256:fc8a867bf09f319b9288746ab0148faff2e92ed39cd702252ce59161e576c019",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/grafana",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang tải tại grafana.com/get và hướng dẫn cài đặt chính thức; bài chưa đọc nên không nêu lệnh. Cần nguồn số liệu để có gì hiển thị. Miễn phí theo giấy phép AGPL-3.0; dịch vụ đám mây của hãng bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/grafana/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grafana/grafana/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grafana/grafana",
+        "stars": 77653,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grafana/grafana/main/README.md",
+        "readmeSha256": "fc8a867bf09f319b9288746ab0148faff2e92ed39cd702252ce59161e576c019",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 338,
+      "batch": 59,
+      "slug": "swc",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SWC: trình biên dịch TypeScript và JavaScript viết bằng Rust, thay Babel để dựng nhanh hơn theo mô tả của dự án",
+        "excerpt": "Hiểu SWC (Speedy Web Compiler) là trình biên dịch TypeScript và JavaScript viết bằng Rust, dùng được từ Rust và JavaScript. README có lệnh cập nhật bằng cách tải script rồi chạy nên cần thận trọng.",
+        "content": "<p>README tả SWC (viết tắt Speedy Web Compiler) là trình biên dịch TypeScript và JavaScript 'siêu nhanh' (cách nói của dự án) viết bằng Rust, là thư viện cho cả Rust và JavaScript. README nói nếu dùng từ Rust, xem rustdoc; nếu dùng từ JavaScript, xem tài liệu trên trang web; phiên bản Rust tối thiểu hỗ trợ của các crate là 1.73; hỗ trợ Node 10 trở lên để dùng và Node 20 trở lên để phát triển. README mô tả một script cập nhật mọi crate SWC bằng lệnh tải script từ mạng rồi chạy ngay, yêu cầu có jq và cargo upgrade (bài không chép lệnh và khuyên đọc script trước). README nói các gói npm gốc dùng addon tự nạp nén trên macOS x64 và arm64, Windows MSVC, Linux GNU và musl. Phần tính năng dẫn tới trang so sánh với Babel và phần hiệu năng. Giấy phép chính là Apache License 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trước khi chạy trên trình duyệt, mã TypeScript phải được 'dịch' sang JavaScript. Babel là phiên dịch quen thuộc; SWC là phiên dịch viết bằng Rust, mục tiêu là làm việc đó nhanh hơn. Bạn thường gặp nó gián tiếp, ẩn trong công cụ khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: hiểu vì sao dự án web dùng SWC khi dựng, rồi đọc trang so sánh với Babel. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với dữ liệu hay hạ tầng; người nhờ AI dựng hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần TypeScript, JavaScript và hiểu bước dựng; README chia theo người dùng Rust hay JavaScript. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu không cần tối ưu thời gian dựng, chưa cần quan tâm. Đừng chạy lệnh tải script rồi chạy ngay khi chưa đọc script.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>compiler (trình biên dịch)</strong>: chương trình biến mã nguồn thành dạng chạy được; README gọi SWC là trình biên dịch TypeScript và JavaScript.</li><li><strong>Rust</strong>: ngôn ngữ lập trình mà SWC viết bằng; README nêu.</li><li><strong>crate</strong>: gói thư viện của Rust; README nhắc cập nhật các crate SWC.</li><li><strong>Babel</strong>: trình biên dịch JavaScript phổ biến; README có trang so sánh.</li><li><strong>native addon</strong>: phần mở rộng biên dịch sẵn cho từng hệ điều hành; README mô tả gói npm gốc dùng loại này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt tại swc.rs/docs/installation; bài chưa đọc nên không nêu lệnh. README có script cập nhật bằng lệnh tải rồi chạy ngay (bài không chép lệnh). Cần Node 10 trở lên để dùng hoặc Rust nếu dùng như thư viện Rust. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu cài đặt trên swc.rs.</li><li>Xem trang so sánh với Babel nếu bạn đang dùng Babel.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án web của mình dùng SWC khi dựng. Hãy đọc README của SWC (https://github.com/swc-project/swc) và giải thích bằng tiếng Việt: SWC làm gì, khác Babel ở đâu, và vì sao cần thận trọng với lệnh cập nhật tải script rồi chạy. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Siêu nhanh' là cách nói của dự án; README dẫn tới phần hiệu năng nhưng bài không kiểm chứng. README liệt kê điều kiện phiên bản (Rust 1.73, Node 10+). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ hạ tầng và dữ liệu có thể thay đổi hay xóa hệ thống thật: chỉ chạy trên môi trường thử trước, sao lưu, đọc kế hoạch thay đổi trước khi áp dụng và không đưa mật khẩu hay khóa vào mã công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>swc-project</strong> có <strong>34.211 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi chủ yếu theo Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/swc-project/swc/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/swc-project/swc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 338. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34211; repo_id 115110181; README SHA256 b1003406e72d7888dabae3f79eace311997950ad55b666afb326337cb9596af8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/swc-project/swc",
+          "repo_id": "115110181",
+          "source_path": "",
+          "source_revision": "README-SHA256:b1003406e72d7888dabae3f79eace311997950ad55b666afb326337cb9596af8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/swc-project/swc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt tại swc.rs/docs/installation; bài chưa đọc nên không nêu lệnh. README có script cập nhật bằng lệnh tải rồi chạy ngay (bài không chép lệnh). Cần Node 10 trở lên để dùng hoặc Rust nếu dùng như thư viện Rust. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/swc-project/swc/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/swc-project/swc/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "swc-project/swc",
+        "stars": 34211,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/swc-project/swc/main/README.md",
+        "readmeSha256": "b1003406e72d7888dabae3f79eace311997950ad55b666afb326337cb9596af8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

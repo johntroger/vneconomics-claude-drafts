@@ -4105,5 +4105,129 @@
    "plane",
    "wiki-js"
   ]
+ },
+ {
+  "key": 332,
+  "slug": "duckdb",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "DuckDB: cơ sở dữ liệu phân tích chạy ngay trong ứng dụng, đọc thẳng tệp CSV và Parquet bằng SQL",
+  "repo": "duckdb/duckdb",
+  "stars": 42761,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "redash"
+  ]
+ },
+ {
+  "key": 333,
+  "slug": "opentofu",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "OpenTofu: công cụ mã nguồn mở mô tả hạ tầng bằng mã, có bước lập kế hoạch trước khi thay đổi",
+  "repo": "opentofu/opentofu",
+  "stars": 30708,
+  "license": "MPL-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "ansible",
+   "swc"
+  ]
+ },
+ {
+  "key": 334,
+  "slug": "ansible",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "Ansible: tự động hóa cấu hình máy chủ qua SSH mà không cần cài đại lý, mô tả bằng ngôn ngữ dễ đọc",
+  "repo": "ansible/ansible",
+  "stars": 71222,
+  "license": "GPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "grafana",
+   "opentofu"
+  ]
+ },
+ {
+  "key": 335,
+  "slug": "superset",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "Apache Superset: nền tảng khám phá và trực quan hóa dữ liệu doanh nghiệp, làm biểu đồ không cần viết mã",
+  "repo": "apache/superset",
+  "stars": 75394,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "grafana",
+   "redash"
+  ]
+ },
+ {
+  "key": 336,
+  "slug": "redash",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu",
+  "repo": "getredash/redash",
+  "stars": 28862,
+  "license": "BSD-2-Clause",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "duckdb",
+   "superset"
+  ]
+ },
+ {
+  "key": 337,
+  "slug": "grafana",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký",
+  "repo": "grafana/grafana",
+  "stars": 77653,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "ansible",
+   "superset"
+  ]
+ },
+ {
+  "key": 338,
+  "slug": "swc",
+  "group": "2026-11-03-du-lieu-ha-tang-va-giam-sat",
+  "title": "SWC: trình biên dịch TypeScript và JavaScript viết bằng Rust, thay Babel để dựng nhanh hơn theo mô tả của dự án",
+  "repo": "swc-project/swc",
+  "stars": 34211,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "opentofu"
+  ]
  }
 ]

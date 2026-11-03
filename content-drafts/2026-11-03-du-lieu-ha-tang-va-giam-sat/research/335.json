@@ -1,0 +1,35 @@
+{
+  "key": 335,
+  "repo": "apache/superset",
+  "repoId": "39464018",
+  "url": "https://github.com/apache/superset",
+  "stars": 75394,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:24:24Z",
+  "createdAt": "2015-07-21T18:55:34Z",
+  "defaultBranch": "master",
+  "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+  "homepage": "https://superset.apache.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/superset/master/README.md",
+    "sha256": "0f9fecb2c68733121efe9aaa968a935c0b81b281935e6b24c4455887860fe3c4",
+    "bytes": 24052,
+    "sectionsRead": [
+      "Why Superset?",
+      "Supported Databases",
+      "Installation and Configuration"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu quản trị.",
+    "Chưa thử cài hay tạo biểu đồ.",
+    "Chưa so sánh với Redash, Grafana (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}

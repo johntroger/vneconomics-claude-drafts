@@ -1,0 +1,37 @@
+{
+  "key": 336,
+  "repo": "getredash/redash",
+  "repoId": "13926404",
+  "url": "https://github.com/getredash/redash",
+  "stars": 28862,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-2-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:01:32Z",
+  "createdAt": "2013-10-28T13:19:39Z",
+  "defaultBranch": "master",
+  "description": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.",
+  "homepage": "http://redash.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/getredash/redash/master/README.md",
+    "sha256": "90a66e8fde740fd37aefa70d54c574338ec3e2028df7bcb378a3ebd5f992ba7a",
+    "bytes": 4450,
+    "sectionsRead": [
+      "Features",
+      "Getting Started",
+      "Supported Data Sources",
+      "Security",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn dựng.",
+    "Chưa thử.",
+    "Chưa so sánh chi tiết với Superset."
+  ],
+  "runtimeValidated": false
+}
