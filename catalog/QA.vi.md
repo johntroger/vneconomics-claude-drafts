@@ -89,3 +89,9 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Danh mục 260 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
 - Lỗi phát hiện và đã sửa: đường dẫn README của bài Bruno ghi `README.md` trong khi tệp thật là `readme.md` (trả mã 404); đã sửa trong `content.json` và `research/353.json`.
 - Sau khi sửa, kiểm tra lại đường dẫn README thô trong toàn bộ 260 tệp nghiên cứu: cả 260 đều trả mã 200.
+
+## Bổ sung rà soát (nhóm 45, key 361–364; tổng 264 bài)
+
+- Danh mục 264 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu; số sao khớp tệp nghiên cứu.
+- Kiểm tra toàn bộ 264 đường dẫn README thô trong các tệp nghiên cứu: cả 264 đều trả mã 200.
+- Quy ước loại trừ đã áp dụng thêm: repo ngừng bảo trì và chỉ đọc theo chính README (Continue), commit quá cũ (Aider), giấy phép `NOASSERTION` (HandBrake).

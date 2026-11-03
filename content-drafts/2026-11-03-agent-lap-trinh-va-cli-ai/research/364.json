@@ -1,0 +1,35 @@
+{
+  "key": 364,
+  "repo": "ggml-org/whisper.cpp",
+  "repoId": "541269386",
+  "url": "https://github.com/ggml-org/whisper.cpp",
+  "stars": 54875,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:04:33Z",
+  "createdAt": "2022-09-25T18:26:37Z",
+  "defaultBranch": "master",
+  "description": "Port of OpenAI's Whisper model in C/C++",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ggml-org/whisper.cpp/master/README.md",
+    "sha256": "43451813ec96b5ea286c6d676f467bdffb053224c110c257ce3d67d911e774e7",
+    "bytes": 40988,
+    "sectionsRead": [
+      "Features",
+      "Supported platforms",
+      "Limitations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn dựng và tải mô hình.",
+    "Chưa thử.",
+    "Chất lượng tiếng Việt chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

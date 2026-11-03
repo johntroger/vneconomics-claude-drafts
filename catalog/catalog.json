@@ -4619,5 +4619,75 @@
   "related": [
    "gotenberg"
   ]
+ },
+ {
+  "key": 361,
+  "slug": "cline",
+  "group": "2026-11-03-agent-lap-trinh-va-cli-ai",
+  "title": "Cline: agent lập trình mã nguồn mở trong IDE, terminal và ứng dụng desktop, mỗi lần sửa tệp hay chạy lệnh đều chờ bạn duyệt",
+  "repo": "cline/cline",
+  "stars": 71243,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "llm-cli"
+  ]
+ },
+ {
+  "key": 362,
+  "slug": "llm-cli",
+  "group": "2026-11-03-agent-lap-trinh-va-cli-ai",
+  "title": "LLM: công cụ dòng lệnh và thư viện Python gọi nhiều mô hình ngôn ngữ, lưu lời nhắc và câu trả lời vào SQLite",
+  "repo": "simonw/llm",
+  "stars": 12696,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "cline",
+   "datasette"
+  ]
+ },
+ {
+  "key": 363,
+  "slug": "datasette",
+  "group": "2026-11-03-agent-lap-trinh-va-cli-ai",
+  "title": "Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu",
+  "repo": "simonw/datasette",
+  "stars": 11537,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "llm-cli",
+   "whisper-cpp"
+  ]
+ },
+ {
+  "key": 364,
+  "slug": "whisper-cpp",
+  "group": "2026-11-03-agent-lap-trinh-va-cli-ai",
+  "title": "whisper.cpp: bản C/C++ của mô hình nhận dạng giọng nói Whisper, chạy được trên máy yếu, điện thoại và trình duyệt",
+  "repo": "ggml-org/whisper.cpp",
+  "stars": 54875,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-03",
+  "related": [
+   "datasette"
+  ]
  }
 ]

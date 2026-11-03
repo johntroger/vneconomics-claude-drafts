@@ -1,0 +1,37 @@
+{
+  "key": 361,
+  "repo": "cline/cline",
+  "repoId": "824874689",
+  "url": "https://github.com/cline/cline",
+  "stars": 71243,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:23:42Z",
+  "createdAt": "2024-07-06T07:28:10Z",
+  "defaultBranch": "main",
+  "description": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+  "homepage": "https://cline.bot",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cline/cline/main/README.md",
+    "sha256": "6640ce1ef463f641e05b9b6b3361fa20da3cbb4fe5d613950bf2623218c89b6e",
+    "bytes": 9244,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Plan and Act",
+      "Works With Every Model",
+      "Extend With Plugins or MCP Servers",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.cline.bot.",
+    "Chưa thử.",
+    "Chưa so sánh với các agent khác."
+  ],
+  "runtimeValidated": false
+}

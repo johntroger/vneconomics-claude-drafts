@@ -43,6 +43,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 41 — Làm quen Kubernetes từ cụm cục bộ](learning-paths/41-kubernetes-cho-nguoi-moi.vi.md) — Học Kubernetes từ cụm nhỏ trên máy trước khi chạm môi trường thật; đây là chủ đề khó, đừng vội dùng cho sản xuất.
 - [Lộ trình 42 — CI/CD, lưu mã tự host và nhật ký](learning-paths/42-ci-cd-va-nhat-ky.vi.md) — Tự động hóa kiểm thử và triển khai, lưu mã tự host, thu thập nhật ký và cảnh báo; luôn giữ bí mật ngoài kho mã.
 - [Lộ trình 43 — Công cụ API, ảnh, PDF và OCR cho người làm web](learning-paths/43-api-anh-pdf-va-ocr.vi.md) — Thử API, xử lý ảnh, tạo PDF, nhận dạng chữ và điều khiển trình duyệt; thử trên bản sao tệp và không mở dịch vụ ra mạng khi chưa bảo vệ.
+- [Lộ trình 44 — Agent lập trình và công cụ AI trên dòng lệnh](learning-paths/44-agent-lap-trinh-va-cli-ai.vi.md) — Từ agent trong trình soạn mã đến AI trong terminal, khám phá dữ liệu và chép lời trên máy; luôn duyệt từng thay đổi và giữ khóa API an toàn.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -97,7 +98,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 
-### Cơ bản (115 bài)
+### Cơ bản (118 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -216,6 +217,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 332 | DuckDB: cơ sở dữ liệu phân tích chạy ngay trong ứng dụng, đọc thẳng tệp CSV và Parquet bằng SQL | [duckdb/duckdb](https://github.com/duckdb/duckdb) | MIT | 42761 | du-lieu-ha-tang-va-giam-sat |
 | 353 | Bruno: ứng dụng khách API mã nguồn mở lưu bộ sưu tập ngay trong thư mục, làm việc ngoại tuyến và cộng tác bằng Git | [usebruno/bruno](https://github.com/usebruno/bruno) | MIT | 47999 | api-anh-pdf-va-ocr |
 | 355 | sharp: thư viện Node.js xử lý ảnh tốc độ cao, co ảnh lớn thành JPEG, PNG, WebP, GIF, AVIF thân thiện web | [lovell/sharp](https://github.com/lovell/sharp) | Apache-2.0 | 32816 | api-anh-pdf-va-ocr |
+| 361 | Cline: agent lập trình mã nguồn mở trong IDE, terminal và ứng dụng desktop, mỗi lần sửa tệp hay chạy lệnh đều chờ bạn duyệt | [cline/cline](https://github.com/cline/cline) | Apache-2.0 | 71243 | agent-lap-trinh-va-cli-ai |
+| 362 | LLM: công cụ dòng lệnh và thư viện Python gọi nhiều mô hình ngôn ngữ, lưu lời nhắc và câu trả lời vào SQLite | [simonw/llm](https://github.com/simonw/llm) | Apache-2.0 | 12696 | agent-lap-trinh-va-cli-ai |
+| 363 | Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu | [simonw/datasette](https://github.com/simonw/datasette) | Apache-2.0 | 11537 | agent-lap-trinh-va-cli-ai |
 
 ### Khá khó (cần nền kỹ thuật) (30 bài)
 
@@ -252,7 +256,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
 | 360 | Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Apache-2.0 | 95791 | api-anh-pdf-va-ocr |
 
-### Nâng cao (72 bài)
+### Nâng cao (73 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -328,6 +332,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 357 | Gotenberg: API chạy bằng Docker chuyển HTML, URL và tệp Office sang PDF, gộp, tách và đóng dấu PDF | [gotenberg/gotenberg](https://github.com/gotenberg/gotenberg) | MIT | 13507 | api-anh-pdf-va-ocr |
 | 358 | OCRmyPDF: thêm lớp chữ tìm kiếm được vào PDF quét, giữ nguyên ảnh gốc, dùng Tesseract nhận dạng hơn 100 ngôn ngữ | [ocrmypdf/OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | MPL-2.0 | 35220 | api-anh-pdf-va-ocr |
 | 359 | Tesseract: động cơ nhận dạng chữ OCR mã nguồn mở hỗ trợ hơn 100 ngôn ngữ, không có giao diện đồ họa | [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | Apache-2.0 | 77308 | api-anh-pdf-va-ocr |
+| 364 | whisper.cpp: bản C/C++ của mô hình nhận dạng giọng nói Whisper, chạy được trên máy yếu, điện thoại và trình duyệt | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | MIT | 54875 | agent-lap-trinh-va-cli-ai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

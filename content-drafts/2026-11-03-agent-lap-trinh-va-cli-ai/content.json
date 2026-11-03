@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-agent-cli-ai",
+  "batch": 63,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 361,
+      "batch": 63,
+      "slug": "cline",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Cline: agent lập trình mã nguồn mở trong IDE, terminal và ứng dụng desktop, mỗi lần sửa tệp hay chạy lệnh đều chờ bạn duyệt",
+        "excerpt": "Hiểu Cline là agent lập trình mã nguồn mở chạy trong VS Code, JetBrains, dòng lệnh và ứng dụng desktop. README nói mỗi lần sửa tệp và chạy lệnh terminal cần bạn duyệt, có chế độ tự duyệt tùy chọn.",
+        "content": "<p>README tả Cline là agent lập trình mã nguồn mở trong IDE, terminal và desktop. Các hình thức: CLI (chat tương tác hoặc chạy không giao diện cho CI/CD và script), ứng dụng desktop cho macOS và Windows (chạy phiên agent trong thư mục bất kỳ, hẹn lịch, quản lý mô hình, plugin và máy chủ MCP), tiện ích VS Code (tạo tệp, chạy lệnh, duyệt web, dùng công cụ với sự phê duyệt của con người), plugin JetBrains (README nói hiện không mở mã nguồn plugin JetBrains), và SDK Node.js để dựng agent riêng. README mô tả: sửa mã trên cả dự án và theo dõi lỗi linter, trình biên dịch; chạy lệnh bash và theo dõi đầu ra; chế độ Plan và Act (Plan khám phá và lập chiến lược, Act thực thi; README nói mỗi lần sửa tệp và chạy lệnh terminal đều cần bạn duyệt, hoặc có thể bật tự duyệt); quy tắc dự án trong tệp .clinerules và kỹ năng; hỗ trợ nhiều nhà cung cấp mô hình (Anthropic, OpenAI, Google, OpenRouter, AWS Bedrock, Azure, Vertex, Cerebras, Groq, Ollama, LM Studio, API tương thích OpenAI); mở rộng bằng plugin hay máy chủ MCP; nhóm đa agent; agent chạy theo lịch cron. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một lập trình viên phụ ngồi trong trình soạn mã của bạn: nó đọc cả dự án, sửa tệp, chạy lệnh. Điểm an toàn mà README nhấn mạnh là mặc định mỗi bước đều hỏi bạn trước; nếu bạn bật 'tự duyệt', bạn đưa quyền đó cho AI.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người mới nhờ agent sửa một lỗi nhỏ trong dự án thử và đọc từng thay đổi trước khi duyệt. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để lập trình hay xử lý dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài tiện ích dễ; dùng an toàn cần đọc kỹ từng thay đổi và hiểu lệnh được chạy; cần khóa API của nhà cung cấp mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng bật tự duyệt trên dự án quan trọng hay có khóa bí mật khi chưa hiểu rủi ro. Chạy lệnh terminal do AI đề xuất có thể xóa hay thay đổi tệp; hãy dùng thư mục thử và Git để hoàn tác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>coding agent</strong>: AI viết, sửa mã và chạy lệnh thay bạn theo nhiệm vụ.</li><li><strong>human-in-the-loop (người duyệt)</strong>: mỗi hành động chờ người xác nhận; README nói Cline làm vậy mặc định.</li><li><strong>Plan / Act</strong>: hai chế độ: lập kế hoạch rồi mới thực thi; README nêu.</li><li><strong>MCP</strong>: giao thức nối AI với công cụ ngoài; README nói Cline dùng máy chủ MCP.</li><li><strong>.clinerules</strong>: tệp quy tắc dự án để hướng dẫn agent; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng tiện ích VS Code, plugin JetBrains, ứng dụng desktop (macOS và Windows), CLI cài bằng npm hoặc SDK (bài không chép lệnh). Cần khóa API hay mô hình cục bộ (Ollama, LM Studio). Mã nguồn miễn phí theo Apache 2.0; phí mô hình bạn dùng tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Plan and Act và cơ chế duyệt.</li><li>Cài trong một dự án thử có Git.</li><li>Giữ chế độ duyệt từng bước và đọc từng thay đổi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử agent lập trình trong VS Code. Hãy đọc README của Cline (https://github.com/cline/cline) và giải thích bằng tiếng Việt: Plan và Act khác nhau thế nào, cơ chế duyệt hoạt động ra sao, và rủi ro khi bật tự duyệt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu giá cũng như mức chính xác của mô hình; chất lượng phụ thuộc mô hình bạn chọn. README nói plugin JetBrains hiện không mở mã nguồn. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ AI và dữ liệu chạy với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ từng thao tác trước khi duyệt, không đưa khóa API vào kho mã công khai và thử trên dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cline</strong> có <strong>71.243 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cline/cline/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cline/cline\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 361. Chưa cài/chạy thử; không tạo validation. Snapshot sao 71243; repo_id 824874689; README SHA256 6640ce1ef463f641e05b9b6b3361fa20da3cbb4fe5d613950bf2623218c89b6e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cline/cline",
+          "repo_id": "824874689",
+          "source_path": "",
+          "source_revision": "README-SHA256:6640ce1ef463f641e05b9b6b3361fa20da3cbb4fe5d613950bf2623218c89b6e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cline/cline",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng tiện ích VS Code, plugin JetBrains, ứng dụng desktop (macOS và Windows), CLI cài bằng npm hoặc SDK (bài không chép lệnh). Cần khóa API hay mô hình cục bộ (Ollama, LM Studio). Mã nguồn miễn phí theo Apache 2.0; phí mô hình bạn dùng tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cline/cline/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cline/cline/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cline/cline",
+        "stars": 71243,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cline/cline/main/README.md",
+        "readmeSha256": "6640ce1ef463f641e05b9b6b3361fa20da3cbb4fe5d613950bf2623218c89b6e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 362,
+      "batch": 63,
+      "slug": "llm-cli",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LLM: công cụ dòng lệnh và thư viện Python gọi nhiều mô hình ngôn ngữ, lưu lời nhắc và câu trả lời vào SQLite",
+        "excerpt": "Hiểu LLM là công cụ dòng lệnh và thư viện Python để làm việc với nhiều mô hình ngôn ngữ (OpenAI, Claude, Gemini và nhiều hãng khác), lưu lời nhắc và phản hồi vào SQLite. README dài và sinh tự động từ tài liệu.",
+        "content": "<p>README (sinh tự động từ tài liệu bằng Sphinx) tả LLM là công cụ dòng lệnh và thư viện Python để làm việc với OpenAI, Claude của Anthropic, Gemini của Google, Qwen, Gemma, Kimi, DeepSeek, Mistral và hàng chục mô hình ngôn ngữ lớn khác, qua API từ xa hoặc mô hình chạy cục bộ. Với LLM bạn có thể: chạy lời nhắc từ dòng lệnh, lưu lời nhắc và phản hồi vào SQLite, tạo và lưu embedding, trích xuất nội dung có cấu trúc từ văn bản và ảnh, cho mô hình quyền chạy công cụ, và nhiều hơn nữa. Phần Quick start hướng dẫn cài bằng pip, Homebrew (kèm lưu ý cảnh báo), pipx hoặc uv, rồi đặt khóa API bằng một lệnh và chạy lời nhắc đầu tiên; README nói có thể dùng Gemini hoặc Anthropic qua plugin riêng (bài không chép lệnh). Giấy phép Apache 2.0 theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bình thường bạn trò chuyện với AI trong trang web. LLM cho bạn nói chuyện với AI ngay trong terminal như một lệnh bình thường, có thể ghép với lệnh khác, và nó ghi lại mọi câu hỏi và trả lời vào một cơ sở dữ liệu nhỏ để bạn tra lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tóm tắt một tệp văn bản bằng một lệnh trong terminal và lưu lại kết quả. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để lập trình hay xử lý dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần terminal và khóa API của nhà cung cấp; README dài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Khóa API là bí mật: đừng dán vào kho công khai hay chia sẻ lịch sử SQLite chứa lời nhắc nhạy cảm (bài nêu theo nguyên tắc chung; README không nói). Dịch vụ AI tính phí theo lượt dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>CLI</strong>: chương trình dòng lệnh.</li><li><strong>SQLite</strong>: cơ sở dữ liệu nhỏ trong một tệp; README nói LLM lưu lời nhắc và phản hồi vào đó.</li><li><strong>embedding</strong>: biểu diễn văn bản bằng số để so sánh độ giống; README nêu có thể tạo và lưu.</li><li><strong>plugin</strong>: phần mở rộng thêm mô hình hay tính năng; README nói Gemini, Anthropic dùng qua plugin.</li><li><strong>structured extraction (trích xuất có cấu trúc)</strong>: lấy thông tin theo khuôn từ văn bản hay ảnh; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng pip, Homebrew (có cảnh báo), pipx hoặc uv, rồi đặt khóa API (bài không chép lệnh). Cần khóa API cho mô hình từ xa. Miễn phí theo giấy phép Apache 2.0; phí mô hình bạn gọi tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quick start.</li><li>Cài trong môi trường ảo hoặc bằng công cụ cô lập.</li><li>Đặt khóa API và chạy một lời nhắc ngắn không nhạy cảm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng AI ngay trong terminal. Hãy đọc README của LLM (https://github.com/simonw/llm) và giải thích bằng tiếng Việt: công cụ này làm gì, lịch sử được lưu ở đâu, và cách giữ khóa API an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (gần 33 KB) và sinh tự động từ tài liệu; bài chỉ lấy phần đầu. Lưu ý về khóa API và lịch sử SQLite là nguyên tắc chung của bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ AI và dữ liệu chạy với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ từng thao tác trước khi duyệt, không đưa khóa API vào kho mã công khai và thử trên dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>simonw</strong> có <strong>12.696 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu giấy phép Apache 2.0 trỏ tới LICENSE của chính kho. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/simonw/llm/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/simonw/llm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 362. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12696; repo_id 622352364; README SHA256 8efabe13accf55d26cd8005643525af725665561aec0bce2d332fa41bafd2ab3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/simonw/llm",
+          "repo_id": "622352364",
+          "source_path": "",
+          "source_revision": "README-SHA256:8efabe13accf55d26cd8005643525af725665561aec0bce2d332fa41bafd2ab3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simonw/llm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng pip, Homebrew (có cảnh báo), pipx hoặc uv, rồi đặt khóa API (bài không chép lệnh). Cần khóa API cho mô hình từ xa. Miễn phí theo giấy phép Apache 2.0; phí mô hình bạn gọi tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simonw/llm/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/simonw/llm/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "simonw/llm",
+        "stars": 12696,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/simonw/llm/main/README.md",
+        "readmeSha256": "8efabe13accf55d26cd8005643525af725665561aec0bce2d332fa41bafd2ab3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 363,
+      "batch": 63,
+      "slug": "datasette",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Datasette: biến dữ liệu thành website khám phá được và API, dành cho nhà báo dữ liệu, thủ thư, nhà nghiên cứu",
+        "excerpt": "Hiểu Datasette là công cụ khám phá và công bố dữ liệu: biến dữ liệu thành trang web tương tác kèm API. README có ví dụ chạy trên tệp SQLite và lệnh cài đặt cần dùng trong môi trường thử.",
+        "content": "<p>README tả Datasette là công cụ khám phá và công bố dữ liệu: giúp biến dữ liệu mọi hình dạng và kích cỡ thành một website tương tác duyệt được cùng API đi kèm. Đối tượng: nhà báo dữ liệu, giám tuyển bảo tàng, nhà lưu trữ, chính quyền địa phương, nhà khoa học, nhà nghiên cứu và bất kỳ ai có dữ liệu muốn chia sẻ. README có bản demo, video, và cách thử trên GitHub Codespaces, trang web chính thức, tin tức, tài liệu, ví dụ, bản demo trực tiếp của nhánh main, Discord và bản tin. Cài đặt: README nói trên Mac dễ nhất qua Homebrew, hoặc pip, pipx; cần Python 3.11 trở lên; có hướng dẫn chi tiết cho Docker (bài không chép lệnh). Cách dùng cơ bản: chạy lệnh phục vụ trên một tệp cơ sở dữ liệu sẽ mở máy chủ web ở cổng 8001. Ví dụ README: với Chrome trên macOS có thể chạy Datasette trên lịch sử trình duyệt của bạn (bài lưu ý lịch sử duyệt web là dữ liệu riêng tư). README mô tả tệp metadata.json để thêm giấy phép và nguồn dữ liệu vào trang. Giấy phép Apache 2.0 theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dữ liệu nằm trong tệp thì khó xem và khó chia sẻ. Datasette giống người dựng triển lãm: bạn đưa tệp dữ liệu, nó dựng thành một trang web có bảng, tìm kiếm, lọc và một API, để người khác khám phá.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: công bố một bảng số liệu công khai dưới dạng trang web có tìm kiếm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để lập trình hay xử lý dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python 3.11 trở lên và hiểu cơ sở dữ liệu SQLite cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng công bố dữ liệu có thông tin cá nhân; README còn có ví dụ chạy trên lịch sử trình duyệt, thứ không nên công khai. Máy chủ mặc định chạy cổng 8001; đừng mở ra internet khi chưa bảo vệ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>data journalist (nhà báo dữ liệu)</strong>: người làm tin từ phân tích dữ liệu; README nêu là đối tượng.</li><li><strong>SQLite</strong>: cơ sở dữ liệu nhỏ trong một tệp; README ví dụ dùng tệp .db.</li><li><strong>metadata.json</strong>: tệp thêm giấy phép, nguồn và tiêu đề; README mô tả.</li><li><strong>API</strong>: cách ứng dụng khác lấy dữ liệu; README nói Datasette tạo kèm theo.</li><li><strong>Codespaces</strong>: môi trường lập trình trên đám mây; README nêu cách thử.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng Homebrew (Mac), pip hoặc pipx; cần Python 3.11 trở lên; có hướng dẫn Docker (bài không chép lệnh). Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản demo và video.</li><li>Cài trong môi trường thử.</li><li>Chạy trên một tệp dữ liệu công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có bảng số liệu muốn chia sẻ thành trang web. Hãy đọc README của Datasette (https://github.com/simonw/datasette) và giải thích bằng tiếng Việt: Datasette làm gì, metadata.json để làm gì, và rủi ro khi công bố dữ liệu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README có ví dụ dùng lịch sử trình duyệt: đây là dữ liệu riêng tư, chỉ để minh họa. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ AI và dữ liệu chạy với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ từng thao tác trước khi duyệt, không đưa khóa API vào kho mã công khai và thử trên dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>simonw</strong> có <strong>11.537 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu giấy phép Apache 2.0 trỏ tới LICENSE của chính kho. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/simonw/datasette/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/simonw/datasette\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 363. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11537; repo_id 107914493; README SHA256 2e8db86098c9a04b0f2ff3a3b5538db987c5ccae04b5fb66816e38ddbffd6fba.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/simonw/datasette",
+          "repo_id": "107914493",
+          "source_path": "",
+          "source_revision": "README-SHA256:2e8db86098c9a04b0f2ff3a3b5538db987c5ccae04b5fb66816e38ddbffd6fba",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simonw/datasette",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng Homebrew (Mac), pip hoặc pipx; cần Python 3.11 trở lên; có hướng dẫn Docker (bài không chép lệnh). Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simonw/datasette/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/simonw/datasette/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "simonw/datasette",
+        "stars": 11537,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/simonw/datasette/main/README.md",
+        "readmeSha256": "2e8db86098c9a04b0f2ff3a3b5538db987c5ccae04b5fb66816e38ddbffd6fba",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 364,
+      "batch": 63,
+      "slug": "whisper-cpp",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "whisper.cpp: bản C/C++ của mô hình nhận dạng giọng nói Whisper, chạy được trên máy yếu, điện thoại và trình duyệt",
+        "excerpt": "Hiểu whisper.cpp là cài đặt C/C++ không phụ thuộc của Whisper, hỗ trợ lượng tử hóa, nhiều loại GPU và NPU, và nhiều nền tảng (Mac, iOS, Android, Linux, Windows, WebAssembly, Raspberry Pi, Docker). README ghi hạn chế: chỉ suy luận.",
+        "content": "<p>README tả whisper.cpp là cài đặt suy luận hiệu năng cao cho mô hình nhận dạng giọng nói tự động Whisper của OpenAI: viết bằng C/C++ thuần không phụ thuộc, tối ưu hạng nhất cho Apple Silicon (ARM NEON, Accelerate, Metal, Core ML), hỗ trợ AVX trên x86, VSX trên POWER, độ chính xác hỗn hợp F16 và F32, lượng tử hóa số nguyên, không cấp phát bộ nhớ lúc chạy, Vulkan, chạy chỉ bằng CPU, GPU NVIDIA, AMD ROCm, NPU AMD Ryzen AI, OpenVINO, Ascend NPU, Moore Threads, API kiểu C, phát hiện giọng nói (VAD). Nền tảng hỗ trợ theo danh sách trong README: Mac OS (Intel và Arm), iOS, Android, Java, Linux, FreeBSD, WebAssembly, Windows (MSVC và MinGW), Raspberry Pi, Docker. README có video chạy ngoại tuyến trên iPhone 13. Toàn bộ phần cài đặt mô hình ở cấp cao nằm trong whisper.h và whisper.cpp, phần còn lại thuộc thư viện máy học ggml. README ghi mục Limitations: chỉ suy luận (inference only). Giấy phép MIT theo huy hiệu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Whisper là thư ký nghe giọng nói. Bản gốc nặng; whisper.cpp là bản gọn nhẹ chạy được cả trên máy yếu, điện thoại và trình duyệt, không cần mạng khi chép lời.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chép lời một bài giảng ghi âm ngay trên laptop, không gửi dữ liệu ra ngoài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI để lập trình hay xử lý dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần dựng từ mã nguồn hoặc tìm bản dựng sẵn, tải mô hình, hiểu lượng tử hóa; README dài (hơn 40 KB) và chia theo nền tảng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài không khẳng định chất lượng cho tiếng Việt. Nếu cần giao diện đơn giản, hãy xem công cụ có giao diện bên ngoài (bài chưa tìm hiểu). README nêu rõ đây chỉ là suy luận, không dùng để huấn luyện.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>inference (suy luận)</strong>: chạy mô hình đã huấn luyện để tạo kết quả; README ghi giới hạn là chỉ suy luận.</li><li><strong>quantization (lượng tử hóa)</strong>: nén số liệu mô hình xuống ít bit; README nêu hỗ trợ.</li><li><strong>VAD</strong>: phát hiện đoạn có giọng nói; README nêu hỗ trợ.</li><li><strong>ggml</strong>: thư viện máy học nền mà phần còn lại của mã thuộc về; README nêu.</li><li><strong>Core ML / Metal</strong>: công nghệ tăng tốc trên Apple Silicon; README nêu tối ưu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn riêng cho từng nền tảng và tăng tốc phần cứng; bài chưa đọc chi tiết nên không nêu lệnh. Cần tải tệp mô hình. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và nền tảng.</li><li>Chọn mô hình nhỏ trước.</li><li>Thử chép lời một đoạn ngắn không nhạy cảm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chép lời giọng nói ngay trên máy, không gửi lên mạng. Hãy đọc README của whisper.cpp (https://github.com/ggml-org/whisper.cpp) và giải thích bằng tiếng Việt: khác Whisper gốc và faster-whisper thế nào, lượng tử hóa là gì, và vì sao phải tự thử với tiếng Việt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README chỉ ghi giới hạn 'chỉ suy luận'; bài không khẳng định hiệu năng hay chất lượng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ AI và dữ liệu chạy với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ từng thao tác trước khi duyệt, không đưa khóa API vào kho mã công khai và thử trên dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ggml-org</strong> có <strong>54.875 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ggml-org/whisper.cpp/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ggml-org/whisper.cpp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 364. Chưa cài/chạy thử; không tạo validation. Snapshot sao 54875; repo_id 541269386; README SHA256 43451813ec96b5ea286c6d676f467bdffb053224c110c257ce3d67d911e774e7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ggml-org/whisper.cpp",
+          "repo_id": "541269386",
+          "source_path": "",
+          "source_revision": "README-SHA256:43451813ec96b5ea286c6d676f467bdffb053224c110c257ce3d67d911e774e7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ggml-org/whisper.cpp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn riêng cho từng nền tảng và tăng tốc phần cứng; bài chưa đọc chi tiết nên không nêu lệnh. Cần tải tệp mô hình. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ggml-org/whisper.cpp/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ggml-org/whisper.cpp/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ggml-org/whisper.cpp",
+        "stars": 54875,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ggml-org/whisper.cpp/master/README.md",
+        "readmeSha256": "43451813ec96b5ea286c6d676f467bdffb053224c110c257ce3d67d911e774e7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
