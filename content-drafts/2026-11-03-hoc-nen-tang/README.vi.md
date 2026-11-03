@@ -26,4 +26,4 @@
 - public-apis: README mở đầu bằng nội dung quảng bá thương mại của APILayer; bài đã nói rõ; chưa kiểm tra API cụ thể nào.
 - Front-End Checklist: có MCP server do tác giả host; chính sách dữ liệu của dịch vụ đó chưa kiểm tra.
 - Bản dịch tiếng Việt của các giáo trình Microsoft có liên kết trong README nhưng chưa đánh giá chất lượng. freeCodeCamp: README không nói về tiếng Việt.
-- Giá trị `category` và `need` được gán về nhãn đã có trên site (10 category, 10 need ở đợt cũ); đây là gợi ý, importer/chủ site quyết định cuối.
+- Giá trị `category` và `need` được gán về nhãn đã có trên site (9 category và 9 need); đây là gợi ý, importer/chủ site quyết định cuối.
