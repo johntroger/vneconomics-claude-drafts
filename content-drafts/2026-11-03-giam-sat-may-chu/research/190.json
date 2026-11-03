@@ -1,0 +1,36 @@
+{
+  "key": 190,
+  "repo": "prometheus/prometheus",
+  "repoId": "6838921",
+  "url": "https://github.com/prometheus/prometheus",
+  "stars": 66916,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:22:53Z",
+  "createdAt": "2012-11-24T11:14:12Z",
+  "defaultBranch": "main",
+  "description": "The Prometheus monitoring system and time series database.",
+  "homepage": "https://prometheus.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/prometheus/prometheus/main/README.md",
+    "sha256": "fb0d761371424c5fe128cbee49d1c2999c0b99d554a5f2332b1148d97b99b04d",
+    "bytes": 9689,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Install",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình và exporter.",
+    "Chưa đọc phần Architecture chi tiết.",
+    "Chưa so sánh với Netdata."
+  ],
+  "runtimeValidated": false
+}

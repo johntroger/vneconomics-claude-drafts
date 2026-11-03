@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-giam-sat",
+  "batch": 32,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 189,
+      "batch": 32,
+      "slug": "netdata",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Netdata: xem sức khỏe máy chủ theo thời gian thực, và lưu ý các thành phần có giấy phép khác nhau",
+        "excerpt": "Hiểu Netdata là công cụ giám sát hạ tầng theo từng giây, giúp biết máy chủ đang quá tải hay lỗi. Cần phân biệt Agent mã nguồn mở với giao diện và dịch vụ đám mây có giấy phép riêng.",
+        "content": "<p>Netdata là nền tảng giám sát hạ tầng thời gian thực mã nguồn mở. README nêu lợi thế: số liệu từng giây, triển khai gần như không cấu hình, phát hiện bất thường bằng học máy, tiết kiệm tài nguyên và dữ liệu lưu cục bộ không cần gom về trung tâm. README mô tả hệ sinh thái ba phần với giấy phép khác nhau: Netdata Agent (lõi giám sát, theo GPL v3+), Netdata Cloud (tính năng doanh nghiệp, có bậc cộng đồng miễn phí) và Netdata UI (miễn phí dùng, theo giấy phép NCUL1). Có thể giám sát Linux, FreeBSD, macOS và Windows ở các mức khác nhau.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy chủ giống một chiếc xe: bình thường chạy êm, nhưng khi sắp quá nóng bạn muốn thấy đồng hồ ngay chứ không đợi xe chết máy. Netdata là bảng đồng hồ gắn cho máy chủ: CPU, bộ nhớ, đĩa, mạng cập nhật từng giây, kèm cảnh báo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi ứng dụng bạn triển khai chậm bất thường, xem đồng hồ để biết do CPU, bộ nhớ hay đĩa là nguyên nhân. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tự quản lý máy chủ hoặc homelab muốn biết máy đang làm gì; người học vận hành hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> README nói triển khai gần như không cần cấu hình (tuyên bố của tác giả). Hiểu các biểu đồ và cảnh báo cần kiến thức vận hành. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng dịch vụ lưu trữ do nhà cung cấp tự giám sát, chưa cần. Nếu bạn cần giám sát theo kiểu truy vấn và tự xây dashboard linh hoạt, Prometheus (cùng nhóm) là hướng khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>monitoring (giám sát)</strong>: theo dõi liên tục sức khỏe hệ thống và báo khi có vấn đề.</li><li><strong>metrics (số liệu)</strong>: các số đo như phần trăm CPU, dung lượng đĩa theo thời gian.</li><li><strong>anomaly detection (phát hiện bất thường)</strong>: tìm điểm dữ liệu lạ so với thông thường; README nói Netdata dùng học máy cho việc này.</li><li><strong>RBAC</strong>: phân quyền theo vai trò; README nói thuộc phần Cloud.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Getting Started và bảng những gì giám sát được theo hệ điều hành; bài chưa đọc chi tiết nên không nêu lệnh cài. Netdata Cloud có bậc cộng đồng miễn phí; giá và giới hạn của các bậc khác chưa kiểm tra. Agent theo GPL v3+, UI theo giấy phép NCUL1 riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng Netdata Ecosystem để biết ba thành phần và giấy phép từng phần.</li><li>Đọc mục Getting Started trong README.</li><li>Thử trên máy thử và xem bảng điều khiển trước khi cài trên máy chủ thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tự quản lý một máy chủ nhỏ. Hãy đọc README của Netdata (https://github.com/netdata/netdata) và giải thích bằng tiếng Việt: giám sát hạ tầng là gì, ba thành phần Agent, Cloud, UI khác nhau thế nào và giấy phép ra sao, và dữ liệu nào có thể gửi lên dịch vụ đám mây. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tuyên bố như 'nghiện Netdata', 'tiết kiệm năng lượng nhất' (README viện dẫn một nghiên cứu) và 'không cần cấu hình' là của tác giả, bài chưa kiểm chứng. Giấy phép không đồng nhất giữa các thành phần. README có so sánh với Prometheus theo hướng có lợi cho Netdata.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát và bảo mật thu thập thông tin nhạy cảm về máy chủ của bạn; hãy kiểm soát ai xem được bảng điều khiển, không mở nó ra internet công cộng và đọc kỹ dữ liệu nào được gửi tới dịch vụ đám mây của hãng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>netdata</strong> có <strong>81.256 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0 cho repo; README nêu Agent GPL v3+, UI giấy phép NCUL1, Cloud là dịch vụ riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/netdata/netdata/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/netdata/netdata\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm giám sát và bảo mật máy chủ, key 189. Chưa cài/chạy thử; không tạo validation. Snapshot sao 81256; repo_id 10744183; README SHA256 e78af62f9af72ef9a0fa0cf46a8b0252af185b5a7d94aeaf40325a8b213cd4c8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/netdata/netdata",
+          "repo_id": "10744183",
+          "source_path": "",
+          "source_revision": "README-SHA256:e78af62f9af72ef9a0fa0cf46a8b0252af185b5a7d94aeaf40325a8b213cd4c8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/netdata/netdata",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Getting Started và bảng những gì giám sát được theo hệ điều hành; bài chưa đọc chi tiết nên không nêu lệnh cài. Netdata Cloud có bậc cộng đồng miễn phí; giá và giới hạn của các bậc khác chưa kiểm tra. Agent theo GPL v3+, UI theo giấy phép NCUL1 riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/netdata/netdata/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/netdata/netdata/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "netdata/netdata",
+        "stars": 81256,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/netdata/netdata/master/README.md",
+        "readmeSha256": "e78af62f9af72ef9a0fa0cf46a8b0252af185b5a7d94aeaf40325a8b213cd4c8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 190,
+      "batch": 32,
+      "slug": "prometheus",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Prometheus: hệ thống giám sát tiêu chuẩn của thế giới cloud, thu số liệu bằng cách hỏi từng dịch vụ",
+        "excerpt": "Hiểu Prometheus thu thập số liệu theo mô hình 'đi hỏi' định kỳ, lưu theo thời gian và cho truy vấn bằng PromQL. Nền của nhiều bảng điều khiển như Grafana.",
+        "content": "<p>Prometheus là hệ thống giám sát dịch vụ, thuộc Cloud Native Computing Foundation. README mô tả nó thu thập số liệu từ các đích đã cấu hình theo chu kỳ, đánh giá các quy tắc, hiển thị kết quả và có thể kích hoạt cảnh báo. Điểm khác biệt nêu trong README: mô hình dữ liệu nhiều chiều (chuỗi thời gian định nghĩa bằng tên số liệu và các cặp nhãn), ngôn ngữ truy vấn PromQL, mỗi máy chủ đơn lẻ tự chủ (không phụ thuộc lưu trữ phân tán), thu bằng mô hình kéo qua HTTP, hỗ trợ đẩy qua cổng trung gian cho tác vụ ngắn, tìm đích tự động hoặc cấu hình tĩnh, và liên kết phân cấp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì mỗi dịch vụ tự nhắn 'tôi ổn' liên tục, Prometheus giống bác sĩ đi khám từng phòng định kỳ: cứ vài giây đến hỏi 'số liệu của bạn lúc này là bao nhiêu', ghi lại, rồi sau đó bạn hỏi lại bác sĩ 'tuần qua phòng nào hay quá tải'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: với một ứng dụng mở số liệu qua HTTP, hình dung Prometheus ghi lại số yêu cầu mỗi phút để bạn truy vấn về xu hướng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vận hành dịch vụ và học viên DevOps; người dùng Kubernetes và Docker nhiều dịch vụ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Khái niệm chuỗi thời gian, nhãn, PromQL và exporter cần thời gian làm quen; thường dùng kèm công cụ vẽ biểu đồ khác. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có một máy chủ nhỏ và muốn bảng đồng hồ dựng sẵn, Netdata hoặc Uptime Kuma có thể dễ hơn. Nếu chưa có dịch vụ nào để theo dõi, chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>time series (chuỗi thời gian)</strong>: dãy giá trị đo theo thời gian, như số yêu cầu mỗi phút.</li><li><strong>PromQL</strong>: ngôn ngữ truy vấn riêng của Prometheus để hỏi về số liệu.</li><li><strong>pull model (mô hình kéo)</strong>: Prometheus chủ động đến lấy số liệu, theo README.</li><li><strong>federation (liên kết)</strong>: gom số liệu giữa nhiều máy Prometheus.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê cài qua bản nhị phân dựng sẵn (khuyến nghị bản phát hành mới nhất) và ảnh Docker trên Quay.io hoặc Docker Hub, cùng cách biên dịch từ mã nguồn. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0. Cần có dịch vụ mở số liệu hoặc exporter để theo dõi.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách điểm khác biệt để hiểu tư duy 'kéo' và nhãn.</li><li>Đọc trang giới thiệu trong tài liệu chính thức.</li><li>Thử trên máy riêng, theo dõi một dịch vụ mẫu và chạy vài truy vấn PromQL.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình nghe nói Prometheus là tiêu chuẩn giám sát. Hãy đọc README của Prometheus (https://github.com/prometheus/prometheus) và giải thích bằng tiếng Việt: mô hình 'kéo' là gì, chuỗi thời gian và nhãn nghĩa là gì, và khi nào mình thật sự cần nó thay vì công cụ đơn giản hơn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Prometheus lưu số liệu, không tự có bảng điều khiển đẹp như công cụ chuyên dụng. Độ phức tạp cao với người mới. README không nêu chi phí vận hành lưu trữ dài hạn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ giám sát và bảo mật thu thập thông tin nhạy cảm về máy chủ của bạn; hãy kiểm soát ai xem được bảng điều khiển, không mở nó ra internet công cộng và đọc kỹ dữ liệu nào được gửi tới dịch vụ đám mây của hãng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>prometheus</strong> có <strong>66.916 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/prometheus/prometheus/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/prometheus/prometheus\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm giám sát và bảo mật máy chủ, key 190. Chưa cài/chạy thử; không tạo validation. Snapshot sao 66916; repo_id 6838921; README SHA256 fb0d761371424c5fe128cbee49d1c2999c0b99d554a5f2332b1148d97b99b04d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/prometheus/prometheus",
+          "repo_id": "6838921",
+          "source_path": "",
+          "source_revision": "README-SHA256:fb0d761371424c5fe128cbee49d1c2999c0b99d554a5f2332b1148d97b99b04d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prometheus/prometheus",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê cài qua bản nhị phân dựng sẵn (khuyến nghị bản phát hành mới nhất) và ảnh Docker trên Quay.io hoặc Docker Hub, cùng cách biên dịch từ mã nguồn. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0. Cần có dịch vụ mở số liệu hoặc exporter để theo dõi.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prometheus/prometheus/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/prometheus/prometheus/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "prometheus/prometheus",
+        "stars": 66916,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/prometheus/prometheus/main/README.md",
+        "readmeSha256": "fb0d761371424c5fe128cbee49d1c2999c0b99d554a5f2332b1148d97b99b04d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 191,
+      "batch": 32,
+      "slug": "crowdsec",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "CrowdSec: phát hiện và chặn IP độc hại dựa trên nhật ký và danh sách chia sẻ của cộng đồng",
+        "excerpt": "Hiểu CrowdSec như một hệ thống chống xâm nhập cho máy chủ, đọc nhật ký để chặn kẻ dò mật khẩu hay quét web, và chia sẻ thông tin tấn công với cộng đồng. Cần hiểu dữ liệu nào được chia sẻ.",
+        "content": "<p>CrowdSec là giải pháp bảo mật mã nguồn mở có tính tham gia: phát hiện và bảo vệ máy chủ trước IP độc hại, dựa trên dữ liệu cộng đồng. README mô tả Security Engine là IDS/IPS và WAF trong một: phân tích nhật ký và yêu cầu HTTP để phát hiện hành vi xấu, và cho khắc phục chủ động qua các thành phần remediation (như firewall, reverse proxy, CDN). Có Community Blocklist (danh sách IP độc hại do cộng đồng báo), Console để giám sát và tự động hóa, và các kịch bản phát hiện (brute force, quét cổng, quét web) mở rộng qua Hub. README so sánh với fail2ban, ModSecurity/Coraza và phát hiện bot.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống khu phố có nhóm bảo vệ chia sẻ danh sách kẻ gian: nhà nào bị kẻ lạ mò cửa sẽ báo cho nhóm, và nhà khác chặn kẻ đó trước khi hắn tới. CrowdSec đọc 'camera' (nhật ký) của máy chủ, báo cáo và nhận danh sách đen chung.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: máy chủ nhỏ của bạn liên tục bị dò mật khẩu SSH; tìm hiểu xem CrowdSec phát hiện và chặn các IP đó thế nào. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tự quản lý máy chủ có SSH và web mở ra internet; người học phòng thủ cơ bản.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần hiểu nhật ký, tường lửa và các thành phần (engine, bouncer/remediation). Cấu hình sai có thể chặn nhầm chính bạn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng dịch vụ lưu trữ do nhà cung cấp lo bảo mật mạng, chưa cần. Nếu bạn không muốn chia sẻ thông tin tấn công với bên thứ ba, hãy đọc kỹ cơ chế chia sẻ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>SSH</strong>: cách đăng nhập từ xa vào máy chủ bằng dòng lệnh, có mã hóa.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>IDS / IPS</strong>: hệ thống phát hiện (IDS) và ngăn chặn (IPS) xâm nhập.</li><li><strong>WAF</strong>: tường lửa ứng dụng web chặn các yêu cầu độc hại.</li><li><strong>brute force (dò mật khẩu)</strong>: thử hàng loạt mật khẩu để đoán trúng.</li><li><strong>remediation / bouncer</strong>: thành phần thực hiện việc chặn, như firewall hay proxy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt và Hub; bài chưa đọc chi tiết nên không nêu lệnh hay yêu cầu. Engine mã nguồn mở (GitHub trả MIT); README nói quy tắc phát hiện trên Hub theo MIT; Console có tính năng cao cấp trả phí (README nhắc 'premium features'); giá chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần 'How CrowdSec compares' để thấy khác biệt với fail2ban.</li><li>Tìm hiểu cơ chế chia sẻ báo cáo tấn công và Community Blocklist.</li><li>Thử trên máy chủ thử và bật chế độ chỉ ghi log trước khi cho phép chặn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Máy chủ của mình bị dò mật khẩu SSH. Hãy đọc README của CrowdSec (https://github.com/crowdsecurity/crowdsec) và giải thích bằng tiếng Việt: IDS/IPS khác nhau thế nào, CrowdSec khác fail2ban ra sao, dữ liệu nào được chia sẻ với cộng đồng, và cách tránh tự chặn nhầm mình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Cơ chế cộng đồng nghĩa là thông tin về các IP tấn công bạn phát hiện được chia sẻ; cần hiểu chính xác dữ liệu gì được gửi. Có thể chặn nhầm người dùng hợp lệ. README so sánh với công cụ khác theo hướng có lợi cho CrowdSec.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi bật chặn tự động, hãy đảm bảo IP của chính bạn nằm trong danh sách cho phép và bạn vẫn có cách vào máy chủ nếu bị chặn nhầm.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>crowdsecurity</strong> có <strong>15.437 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi quy tắc trên Hub theo MIT; Console có tính năng cao cấp riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/crowdsecurity/crowdsec/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/crowdsecurity/crowdsec\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm giám sát và bảo mật máy chủ, key 191. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15437; repo_id 264154402; README SHA256 33dbfdfcbc369b21b456fb7443464b3c1935c6c455ff07e19cd5400b8dd1b16e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/crowdsecurity/crowdsec",
+          "repo_id": "264154402",
+          "source_path": "",
+          "source_revision": "README-SHA256:33dbfdfcbc369b21b456fb7443464b3c1935c6c455ff07e19cd5400b8dd1b16e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/crowdsecurity/crowdsec",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt và Hub; bài chưa đọc chi tiết nên không nêu lệnh hay yêu cầu. Engine mã nguồn mở (GitHub trả MIT); README nói quy tắc phát hiện trên Hub theo MIT; Console có tính năng cao cấp trả phí (README nhắc 'premium features'); giá chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "crowdsecurity/crowdsec",
+        "stars": 15437,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/crowdsecurity/crowdsec/master/README.md",
+        "readmeSha256": "33dbfdfcbc369b21b456fb7443464b3c1935c6c455ff07e19cd5400b8dd1b16e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

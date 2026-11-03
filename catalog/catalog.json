@@ -632,7 +632,8 @@
   "pushed": "2026-10-28",
   "related": [
    "dotenvx",
-   "osv-scanner"
+   "osv-scanner",
+   "tailscale"
   ]
  },
  {
@@ -1520,6 +1521,8 @@
   "pushed": "2026-11-02",
   "related": [
    "cloudflared",
+   "crowdsec",
+   "gitleaks",
    "portainer"
   ]
  },
@@ -1556,6 +1559,59 @@
   "related": [
    "caddy",
    "portainer"
+  ]
+ },
+ {
+  "key": 189,
+  "slug": "netdata",
+  "group": "2026-11-03-giam-sat-may-chu",
+  "title": "Netdata: xem sức khỏe máy chủ theo thời gian thực, và lưu ý các thành phần có giấy phép khác nhau",
+  "repo": "netdata/netdata",
+  "stars": 81256,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "prometheus"
+  ]
+ },
+ {
+  "key": 190,
+  "slug": "prometheus",
+  "group": "2026-11-03-giam-sat-may-chu",
+  "title": "Prometheus: hệ thống giám sát tiêu chuẩn của thế giới cloud, thu số liệu bằng cách hỏi từng dịch vụ",
+  "repo": "prometheus/prometheus",
+  "stars": 66916,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "crowdsec",
+   "netdata"
+  ]
+ },
+ {
+  "key": 191,
+  "slug": "crowdsec",
+  "group": "2026-11-03-giam-sat-may-chu",
+  "title": "CrowdSec: phát hiện và chặn IP độc hại dựa trên nhật ký và danh sách chia sẻ của cộng đồng",
+  "repo": "crowdsecurity/crowdsec",
+  "stars": 15437,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "prometheus",
+   "tailscale"
   ]
  }
 ]

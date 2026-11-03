@@ -1,0 +1,35 @@
+{
+  "key": 191,
+  "repo": "crowdsecurity/crowdsec",
+  "repoId": "264154402",
+  "url": "https://github.com/crowdsecurity/crowdsec",
+  "stars": 15437,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:50:53Z",
+  "createdAt": "2020-05-15T09:38:05Z",
+  "defaultBranch": "master",
+  "description": "Open-source IDS/IPS, WAF and bot detection for Linux, Windows, Docker and Kubernetes, with a crowdsourced blocklist of malicious IPs.",
+  "homepage": "https://docs.crowdsec.net",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/crowdsecurity/crowdsec/master/README.md",
+    "sha256": "33dbfdfcbc369b21b456fb7443464b3c1935c6c455ff07e19cd5400b8dd1b16e",
+    "bytes": 5419,
+    "sectionsRead": [
+      "Features & Advantages",
+      "How CrowdSec compares",
+      "Outnumbering hackers all together"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Dữ liệu chia sẻ cụ thể chưa kiểm tra.",
+    "Giá Console cao cấp chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
