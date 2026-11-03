@@ -1,0 +1,41 @@
+{
+  "key": 589,
+  "repo": "getmoto/moto",
+  "repoId": "8277372",
+  "url": "https://github.com/getmoto/moto",
+  "stars": 8732,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:21:05Z",
+  "createdAt": "2013-02-18T21:10:59Z",
+  "defaultBranch": "master",
+  "description": "A library that allows you to easily mock out tests based on AWS infrastructure.",
+  "homepage": "http://docs.getmoto.org/en/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/getmoto/moto/master/README.md",
+    "sha256": "654fa1fb2242accbef03e84a2cba1ce24c5908b305ccee0de02a3df0c70b7d35",
+    "bytes": 3227,
+    "sectionsRead": [
+      "Install",
+      "In a nutshell",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.getmoto.org.",
+    "Chưa thử.",
+    "Chưa kiểm tra độ phủ dịch vụ."
+  ],
+  "runtimeValidated": false
+}

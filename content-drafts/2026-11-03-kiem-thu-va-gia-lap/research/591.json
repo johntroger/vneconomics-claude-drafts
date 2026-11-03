@@ -1,0 +1,41 @@
+{
+  "key": 591,
+  "repo": "stoplightio/spectral",
+  "repoId": "144890632",
+  "url": "https://github.com/stoplightio/spectral",
+  "stars": 3247,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:32:05Z",
+  "createdAt": "2018-08-15T18:43:18Z",
+  "defaultBranch": "develop",
+  "description": "A flexible JSON/YAML linter for creating automated style guides, with baked in support for OpenAPI (v3.1, v3.0, and v2.0), Arazzo v1.0, as well as AsyncAPI v2.x.",
+  "homepage": "https://stoplight.io/spectral",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/stoplightio/spectral/develop/README.md",
+    "sha256": "f0dd1b8599a834acc60efeda70c51992a8ce33c044c819eade7c4b3896a402ad",
+    "bytes": 11159,
+    "sectionsRead": [
+      "Installation",
+      "Usage",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Spectral.",
+    "Chưa thử.",
+    "Chưa kiểm tra bộ quy tắc mẫu."
+  ],
+  "runtimeValidated": false
+}

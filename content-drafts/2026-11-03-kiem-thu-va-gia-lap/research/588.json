@@ -1,0 +1,44 @@
+{
+  "key": 588,
+  "repo": "nock/nock",
+  "repoId": "2436267",
+  "url": "https://github.com/nock/nock",
+  "stars": 13137,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T01:15:01Z",
+  "createdAt": "2011-09-22T10:08:03Z",
+  "defaultBranch": "main",
+  "description": "HTTP server mocking and expectations library for Node.js",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nock/nock/main/README.md",
+    "sha256": "90cb7f6df53a52d86d85add8445d8d5397d5077a68fedf9e8d87c4cdca995c22",
+    "bytes": 62212,
+    "sectionsRead": [
+      "How does it work?",
+      "Install",
+      "Enable/Disable real HTTP requests",
+      "Recording",
+      "Common issues",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README dài.",
+    "Chưa thử.",
+    "Chưa so sánh với msw."
+  ],
+  "runtimeValidated": false
+}

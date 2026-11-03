@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-kiem-thu",
+  "batch": 97,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 586,
+      "batch": 97,
+      "slug": "robot-framework",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Robot Framework: khung tự động hóa mã nguồn mở cho kiểm thử chấp nhận, phát triển hướng kiểm thử chấp nhận (ATDD) và tự động hóa quy trình bằng robot (RPA), cú pháp văn bản thuần, mở rộng bằng thư viện Python",
+        "excerpt": "Hiểu Robot Framework là khung tự động hóa mã nguồn mở cho kiểm thử chấp nhận, ATDD và RPA, cú pháp văn bản thuần dễ đọc, mở rộng bằng thư viện tổng quát hoặc tự viết, chạy trên mọi hệ điều hành, viết bằng Python, do Robot Framework Foundation phi lợi nhuận tài trợ.",
+        "content": "<p>README tả Robot Framework là khung tự động hóa mã nguồn mở cho kiểm thử chấp nhận, phát triển hướng kiểm thử chấp nhận (ATDD) và tự động hóa quy trình bằng robot (RPA), có cú pháp văn bản thuần và dễ mở rộng bằng thư viện chung hoặc tự viết. Khung không phụ thuộc hệ điều hành hay ứng dụng, viết bằng Python, hệ sinh thái có nhiều thư viện và công cụ phát triển ở dự án riêng. Dự án do Robot Framework Foundation phi lợi nhuận tài trợ và mời tham gia. README nêu yêu cầu Python 3.8 trở lên (bản cũ hơn dùng phiên bản khung cũ), có ví dụ kiểm thử đăng nhập vào một hệ thống, cách chạy bằng lệnh robot và công cụ rebot gộp kết quả, phần tài liệu (hướng dẫn người dùng, thư viện chuẩn, API) và phần giấy phép: Apache License 2.0 cho phần mềm, tài liệu theo Creative Commons Attribution 3.0, thư viện hệ sinh thái có thể dùng giấy phép khác.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì viết mã phức tạp để kiểm tra 'đăng nhập có được không', bạn viết các bước gần như tiếng nói thường: mở trang, nhập tên, bấm nút, kiểm tra thông báo. Robot Framework đọc các bước đó và chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích ví dụ kiểm thử đăng nhập trong README từng dòng, rồi tự phác một kịch bản cho ứng dụng nhỏ của mình trên giấy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm kiểm thử và chút Python; kiểm thử trình duyệt cần thêm thư viện riêng ngoài README. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có phần mềm nào để kiểm thử hoặc chỉ cần kiểm thử đơn vị nhỏ thì khung kiểm thử của ngôn ngữ bạn dùng thường đủ; bài chưa so sánh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>acceptance testing (kiểm thử chấp nhận)</strong>: kiểm tra phần mềm đáp ứng yêu cầu người dùng; README nêu.</li><li><strong>ATDD</strong>: phát triển dựa trên kiểm thử chấp nhận; README nêu.</li><li><strong>RPA</strong>: tự động hóa quy trình bằng robot phần mềm; README nêu.</li><li><strong>keyword (từ khóa)</strong>: bước có tên trong Robot Framework; README không giải thích, đây là chú thích biên tập.</li><li><strong>rebot</strong>: công cụ gộp và xử lý kết quả; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python 3.8 trở lên; cài qua trình quản lý gói Python hoặc theo INSTALL.rst, bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction và Example.</li><li>Mở User Guide trên robotframework.org.</li><li>Phác một kịch bản nhỏ trên giấy trước khi viết.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học kiểm thử phần mềm. Hãy đọc README của Robot Framework (https://github.com/robotframework/robotframework) và giải thích bằng tiếng Việt: kiểm thử chấp nhận, ATDD và RPA là gì, ví dụ đăng nhập trong README làm gì, và vì sao thư viện hệ sinh thái có thể có giấy phép khác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,5 KB, bài chưa đọc User Guide trên robotframework.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>robotframework</strong> có <strong>11.981 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0 (tài liệu CC BY 3.0); GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/robotframework/robotframework/blob/master/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/robotframework/robotframework\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 586. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11981; repo_id 21273155; README SHA256 6327012ed15cb9f119e56c44129ebbd97aa0ec4ab42c200e758e037b3b641638.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/robotframework/robotframework",
+          "repo_id": "21273155",
+          "source_path": "",
+          "source_revision": "README-SHA256:6327012ed15cb9f119e56c44129ebbd97aa0ec4ab42c200e758e037b3b641638",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/robotframework/robotframework",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python 3.8 trở lên; cài qua trình quản lý gói Python hoặc theo INSTALL.rst, bài không chép lệnh. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/robotframework/robotframework/blob/master/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/robotframework/robotframework/blob/master/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "robotframework/robotframework",
+        "stars": 11981,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/robotframework/robotframework/master/README.rst",
+        "readmeSha256": "6327012ed15cb9f119e56c44129ebbd97aa0ec4ab42c200e758e037b3b641638",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 587,
+      "batch": 97,
+      "slug": "cucumber-js",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Cucumber.js: bản JavaScript của Cucumber chạy kiểm thử tự động viết bằng ngôn ngữ thường (Gherkin) cho Node.js, để cả nhóm đều đọc được kịch bản kiểm thử",
+        "excerpt": "Hiểu Cucumber.js là bản JavaScript của Cucumber, công cụ chạy kiểm thử tự động viết bằng ngôn ngữ thường để cả nhóm đọc được, chạy trên các bản Node.js còn được duy trì; README có ví dụ từng bước từ mã chính, tệp kịch bản, đến mã gắn bước.",
+        "content": "<p>README tả Cucumber là công cụ chạy kiểm thử tự động viết bằng ngôn ngữ thường; vì ai cũng đọc được nên giúp cải thiện giao tiếp, cộng tác và tin cậy trong nhóm. Đây là bản JavaScript, chạy trên các bản Node.js còn được duy trì, có thể thử nhanh qua CodeSandbox. README có ví dụ: viết mã chính (một lớp chào), viết kịch bản bằng cú pháp Gherkin (Feature, Scenario, When, Then), viết mã gắn các bước, rồi chạy Cucumber và xem kết quả. README trỏ tới kho ví dụ, tài liệu cài đặt, dòng lệnh, cấu hình, mã hỗ trợ, hướng dẫn và FAQ, và nói tài liệu theo nhánh main có thể có tính năng chưa phát hành. README không nêu giấy phép bằng văn bản trong phần đã đọc; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kịch bản kiểm thử như một đoạn văn: 'Khi người dùng chào, tôi nên nghe thấy lời chào'. Bên dưới, mã nối từng câu đó với hành động thật. Nhờ vậy người không biết lập trình vẫn đọc và góp ý được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích ví dụ Greeter trong README, rồi đọc kho ví dụ để xem một dự án thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript và Node.js cơ bản, khái niệm kiểm thử. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn làm một mình và kịch bản không cần ai khác đọc thì kiểm thử viết thẳng bằng mã có thể gọn hơn; bài chưa so sánh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Gherkin</strong>: cú pháp viết kịch bản bằng ngôn ngữ thường; README dùng trong ví dụ.</li><li><strong>feature (tính năng)</strong>: nhóm kịch bản về một chức năng; README nêu trong ví dụ.</li><li><strong>scenario (kịch bản)</strong>: một tình huống cần kiểm tra; README nêu trong ví dụ.</li><li><strong>step definition (mã gắn bước)</strong>: mã nối câu chữ với hành động thật; README nêu trong ví dụ.</li><li><strong>Node.js</strong>: môi trường chạy JavaScript ngoài trình duyệt; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Node.js còn được duy trì và cài gói từ npm; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Get Started.</li><li>Thử ví dụ qua CodeSandbox trong README.</li><li>Đọc tài liệu cài đặt và cấu hình.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút JavaScript và nghe nói Cucumber. Hãy đọc README của Cucumber.js (https://github.com/cucumber/cucumber-js) và giải thích bằng tiếng Việt: kịch bản Gherkin là gì, mã gắn bước làm gì, và vì sao kiểm thử viết bằng ngôn ngữ thường có ích cho cả nhóm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,5 KB, bài chưa đọc tài liệu trong thư mục docs. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cucumber</strong> có <strong>5.405 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cucumber/cucumber-js/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cucumber/cucumber-js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 587. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5405; repo_id 1811965; README SHA256 00e506c9384c3c2080b0a04cd9a34104d4d753746bea3626194bfa69b8aab19e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cucumber/cucumber-js",
+          "repo_id": "1811965",
+          "source_path": "",
+          "source_revision": "README-SHA256:00e506c9384c3c2080b0a04cd9a34104d4d753746bea3626194bfa69b8aab19e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cucumber/cucumber-js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Node.js còn được duy trì và cài gói từ npm; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cucumber/cucumber-js/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cucumber/cucumber-js/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cucumber/cucumber-js",
+        "stars": 5405,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cucumber/cucumber-js/main/README.md",
+        "readmeSha256": "00e506c9384c3c2080b0a04cd9a34104d4d753746bea3626194bfa69b8aab19e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 588,
+      "batch": 97,
+      "slug": "nock",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "nock: thư viện giả lập máy chủ HTTP và kiểm tra kỳ vọng cho Node.js, kiểm thử mô-đun gọi HTTP một cách cô lập bằng cách ghi đè http.request; README rất dài",
+        "excerpt": "Hiểu nock là thư viện giả lập máy chủ HTTP và kiểm tra kỳ vọng cho Node.js, giúp kiểm thử riêng một mô-đun có gọi HTTP (ví dụ tới CouchDB hay API Amazon) mà không gọi ra ngoài; nock ghi đè http.request; README rất dài với mục ghi lại yêu cầu thật và lỗi thường gặp.",
+        "content": "<p>README tả nock là thư viện giả lập máy chủ HTTP và kiểm tra kỳ vọng cho Node.js, dùng để kiểm thử cô lập một mô-đun thực hiện yêu cầu HTTP, chẳng hạn tới máy chủ CouchDB hay API của Amazon. Nock hoạt động bằng cách ghi đè hàm http.request và lớp http.ClientRequest. README rất dài (hơn 60 KB) với các mục dùng, kỳ vọng, khôi phục, kích hoạt, bật hoặc tắt yêu cầu HTTP thật (mặc định yêu cầu tới máy chủ chưa giả lập vẫn chạy bình thường), ghi lại yêu cầu thật, sự kiện, Nock Back, lỗi thường gặp (ví dụ thư viện got tự thử lại khiến mô phỏng đã bị dùng hết) và gỡ lỗi. README nêu giấy phép MIT. Bài chỉ đọc phần đầu và các mục chính chứ chưa đọc toàn bộ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi ứng dụng gọi một API bên ngoài, mỗi lần kiểm thử mà gọi thật thì chậm, tốn tiền và dễ hỏng. nock đóng vai máy chủ giả, trả lời theo kịch bản bạn đặt trước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'giả lập yêu cầu HTTP' bằng ví dụ gọi một API thời tiết công khai, rồi đọc mục lỗi thường gặp. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript, Node.js và một khung kiểm thử như Jest hoặc Vitest. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn không làm bằng Node.js thì chưa cần nock. Mặc định yêu cầu chưa giả lập vẫn đi ra ngoài thật: dễ vô tình gọi API thật khi kiểm thử, cần đọc phần tắt yêu cầu thật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>mock (giả lập)</strong>: thay một phần thật bằng phần giả để kiểm thử; README nêu.</li><li><strong>interceptor</strong>: bộ chặn yêu cầu của nock; README nêu mục riêng về interceptor.</li><li><strong>HTTP</strong>: giao thức web để gọi API; README nêu.</li><li><strong>recording (ghi lại)</strong>: lưu phản hồi thật để dùng làm mô phỏng; README nêu mục Recording.</li><li><strong>Nock Back</strong>: cách nock lưu và phát lại tệp ghi; README nêu mục này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Node.js (mục Node version support) và cài gói từ npm; bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và How does it work?</li><li>Đọc mục Enable/Disable real HTTP requests.</li><li>Đọc Common issues trước khi gặp lỗi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết ứng dụng Node.js gọi API ngoài. Hãy đọc README của nock (https://github.com/nock/nock) và giải thích bằng tiếng Việt: nock giả lập HTTP thế nào, vì sao mặc định yêu cầu chưa giả lập vẫn đi ra ngoài thật, và lỗi với got tự thử lại nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 62 KB), bài chỉ đọc phần đầu và các mục chính, chưa đọc toàn bộ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nock</strong> có <strong>13.137 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nock/nock/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nock/nock\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 588. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13137; repo_id 2436267; README SHA256 90cb7f6df53a52d86d85add8445d8d5397d5077a68fedf9e8d87c4cdca995c22.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nock/nock",
+          "repo_id": "2436267",
+          "source_path": "",
+          "source_revision": "README-SHA256:90cb7f6df53a52d86d85add8445d8d5397d5077a68fedf9e8d87c4cdca995c22",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nock/nock",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Node.js (mục Node version support) và cài gói từ npm; bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nock/nock/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nock/nock/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nock/nock",
+        "stars": 13137,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nock/nock/main/README.md",
+        "readmeSha256": "90cb7f6df53a52d86d85add8445d8d5397d5077a68fedf9e8d87c4cdca995c22",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 589,
+      "batch": 97,
+      "slug": "moto",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Moto: thư viện Python giả lập các dịch vụ AWS để kiểm thử, dùng bộ trang trí @mock_aws để mọi lệnh gọi dịch vụ bị chặn trong tài khoản AWS ảo",
+        "excerpt": "Hiểu Moto là thư viện Python giả lập dịch vụ AWS cho kiểm thử: bọc hàm kiểm thử bằng một trang trí để lệnh gọi AWS (như tạo thùng S3) chạy trên tài khoản AWS ảo, nhờ đó không đụng tài nguyên thật và không tốn chi phí AWS.",
+        "content": "<p>README tả Moto là thư viện cho phép kiểm thử dễ dàng bằng cách giả lập các dịch vụ AWS. README đưa ví dụ lớp Python lưu dữ liệu vào S3 bằng boto3, rồi cho thấy cách kiểm thử với Moto: bọc hàm kiểm thử bằng bộ trang trí mock_aws, tạo thùng trong tài khoản AWS ảo, chạy mã và kiểm tra nội dung lưu. Mọi lệnh gọi S3 trong hàm kiểm thử được giả lập và Moto giữ trạng thái thùng và khóa. README trỏ tới danh sách độ phủ dịch vụ và tài liệu docs.getmoto.org, và có mục tài trợ qua OpenCollective. README nêu cách cài với các dịch vụ chọn lọc, bài không chép lệnh. README không nêu giấy phép bằng văn bản trong phần đã đọc; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn thử mã gọi AWS mà không muốn tạo tài nguyên thật và bị tính tiền? Moto dựng một AWS giả trong bộ nhớ, mã của bạn tưởng đang nói chuyện với AWS thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích ví dụ lưu dữ liệu vào S3 trong README và vì sao cần tạo thùng trong tài khoản ảo trước. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, boto3 cơ bản và hiểu khái niệm dịch vụ AWS như S3. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn không dùng AWS hoặc không viết bằng Python thì chưa cần Moto. Danh sách dịch vụ được giả lập không đầy đủ: cần xem độ phủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>mock (giả lập)</strong>: thay dịch vụ thật bằng bản giả để kiểm thử; README nêu.</li><li><strong>boto3</strong>: thư viện Python gọi AWS; README dùng trong ví dụ.</li><li><strong>S3</strong>: dịch vụ lưu tệp của AWS; README dùng trong ví dụ.</li><li><strong>decorator (trang trí)</strong>: cú pháp Python bọc quanh hàm; README dùng mock_aws làm ví dụ.</li><li><strong>implementation coverage (độ phủ cài đặt)</strong>: danh sách dịch vụ và tính năng được giả lập; README trỏ tới.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python và boto3, cài gói với các dịch vụ chọn lọc; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần In a nutshell.</li><li>Xem danh sách độ phủ dịch vụ.</li><li>Thử với dịch vụ đơn giản như S3 trên máy, không dùng khóa AWS thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết mã Python gọi AWS và muốn kiểm thử không tốn tiền. Hãy đọc README của Moto (https://github.com/getmoto/moto) và giải thích bằng tiếng Việt: Moto giả lập AWS thế nào, trang trí mock_aws làm gì, và vì sao cần xem danh sách độ phủ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,2 KB), bài chưa đọc tài liệu docs.getmoto.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>getmoto</strong> có <strong>8.732 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/getmoto/moto/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/getmoto/moto\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 589. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8732; repo_id 8277372; README SHA256 654fa1fb2242accbef03e84a2cba1ce24c5908b305ccee0de02a3df0c70b7d35.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/getmoto/moto",
+          "repo_id": "8277372",
+          "source_path": "",
+          "source_revision": "README-SHA256:654fa1fb2242accbef03e84a2cba1ce24c5908b305ccee0de02a3df0c70b7d35",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/getmoto/moto",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python và boto3, cài gói với các dịch vụ chọn lọc; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/getmoto/moto/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/getmoto/moto/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "getmoto/moto",
+        "stars": 8732,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/getmoto/moto/master/README.md",
+        "readmeSha256": "654fa1fb2242accbef03e84a2cba1ce24c5908b305ccee0de02a3df0c70b7d35",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 590,
+      "batch": 97,
+      "slug": "schemathesis",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Schemathesis: kiểm thử API OpenAPI, GraphQL và gRPC bằng cách sinh đầu vào từ lược đồ, thích ứng với phản hồi máy chủ và nối các thao tác thành quy trình thực tế; README cảnh báo yêu cầu thật tạo, sửa và xóa dữ liệu",
+        "excerpt": "Hiểu Schemathesis là công cụ kiểm thử API OpenAPI, GraphQL và gRPC bằng cách sinh đầu vào từ lược đồ, thích ứng với phản hồi và nối thao tác thành quy trình; README cảnh báo công cụ gửi yêu cầu thật tạo, sửa, xóa dữ liệu nên chỉ dùng trên môi trường thử.",
+        "content": "<p>README tả Schemathesis giúp bắt lỗi API trước khi người dùng gặp: công cụ kiểm thử API OpenAPI, GraphQL, gRPC bằng cách sinh đầu vào từ lược đồ, thích ứng theo phản hồi và nối các thao tác thành quy trình thực tế. Lỗi nó tìm: lỗi 500 với đầu vào lạ, phản hồi sai lược đồ, kiểm tra đầu vào bị bỏ qua, lỗi tích hợp, lỗi theo trạng thái và lỗi phân quyền cấp đối tượng (người dùng này đọc được đối tượng người dùng khác). README có khung Try it now với lệnh chạy thử vào API demo và API của bạn; bài không chép lệnh. README cảnh báo rõ: Schemathesis gửi yêu cầu thật tạo, thay đổi và xóa dữ liệu, chỉ trỏ vào môi trường phát triển hoặc staging, không phải sản xuất. README có báo cáo HTML, mục cài đặt, người dùng, tài liệu, trợ giúp, đóng góp và nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì tự nghĩ ra từng ca thử cho API, bạn đưa bản mô tả API (OpenAPI), Schemathesis tự sinh rất nhiều đầu vào kỳ lạ và xem API có vỡ không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc README để hiểu lược đồ OpenAPI là gì và liệt kê các loại lỗi công cụ tìm; chưa chạy vào bất kỳ API nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu API, OpenAPI và có môi trường thử riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có API hoặc chưa có môi trường thử tách biệt thì chưa dùng: công cụ gửi yêu cầu thật và có thể tạo, sửa, xóa dữ liệu. Tuyệt đối không trỏ vào API sản xuất hay API của người khác khi chưa được phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>OpenAPI</strong>: chuẩn mô tả API; README nêu là một đầu vào.</li><li><strong>schema (lược đồ)</strong>: bản mô tả dữ liệu và thao tác của API; README nêu.</li><li><strong>property-based testing</strong>: kiểm thử bằng đầu vào sinh tự động; README không dùng thuật ngữ này, đây là chú thích biên tập.</li><li><strong>staging</strong>: môi trường thử giống sản xuất; README khuyên dùng thay vì sản xuất.</li><li><strong>broken object-level authorization</strong>: lỗi cho phép người này đọc đối tượng của người khác; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có khung Try it now chạy qua lệnh của công cụ chạy gói Python và mục Installation & Usage; bài không chép lệnh. Cần lược đồ API (OpenAPI, GraphQL hoặc gRPC) và môi trường thử. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What problems does it solve?</li><li>Đọc cảnh báo về yêu cầu thật trong Try it now.</li><li>Chỉ thử trên API thử của chính bạn hoặc API demo.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có API nhỏ tự làm và muốn kiểm thử. Hãy đọc README của Schemathesis (https://github.com/schemathesis/schemathesis) và giải thích bằng tiếng Việt: công cụ sinh đầu vào thế nào, vì sao README cảnh báo yêu cầu thật tạo sửa xóa dữ liệu, và vì sao không bao giờ trỏ vào sản xuất. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8 KB, bài đọc phần đầu, vấn đề giải quyết và giấy phép, chưa đọc tài liệu đầy đủ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>schemathesis</strong> có <strong>3.739 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/schemathesis/schemathesis/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/schemathesis/schemathesis\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 590. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3739; repo_id 203157084; README SHA256 e9aaf03d2188da4b47d97ece5328d5cddd2a1597b93030788e90a9f26c3687d0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/schemathesis/schemathesis",
+          "repo_id": "203157084",
+          "source_path": "",
+          "source_revision": "README-SHA256:e9aaf03d2188da4b47d97ece5328d5cddd2a1597b93030788e90a9f26c3687d0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/schemathesis/schemathesis",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có khung Try it now chạy qua lệnh của công cụ chạy gói Python và mục Installation & Usage; bài không chép lệnh. Cần lược đồ API (OpenAPI, GraphQL hoặc gRPC) và môi trường thử. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/schemathesis/schemathesis/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/schemathesis/schemathesis/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "schemathesis/schemathesis",
+        "stars": 3739,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/schemathesis/schemathesis/master/README.md",
+        "readmeSha256": "e9aaf03d2188da4b47d97ece5328d5cddd2a1597b93030788e90a9f26c3687d0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 591,
+      "batch": 97,
+      "slug": "spectral",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Spectral: trình kiểm tra (linter) cho JSON và YAML, có sẵn bộ quy tắc cho OpenAPI, AsyncAPI và Arazzo, tự viết quy tắc và hàm riêng; README nêu ảnh Docker gửi telemetry ẩn danh",
+        "excerpt": "Hiểu Spectral là trình kiểm tra JSON và YAML với bộ quy tắc dựng sẵn cho OpenAPI v2 đến v3.2, AsyncAPI và Arazzo v1, cho phép tự viết quy tắc và hàm riêng để áp quy chuẩn thiết kế API; README nêu ảnh Docker gửi telemetry ẩn danh khi khởi động.",
+        "content": "<p>README tả Spectral là trình kiểm tra (linter) JSON và YAML. Tính năng: quy tắc tự viết, bộ quy tắc dựng sẵn cho OpenAPI v2, v3.0, v3.1, v3.2, AsyncAPI và Arazzo v1, quy chuẩn kiểu API bằng bộ quy tắc để thống nhất thiết kế, hàm dựng sẵn và hàm tự viết. README có mục cài đặt qua trình quản lý gói JavaScript và Docker, mục dùng (tạo bộ quy tắc cục bộ rồi kiểm tra tệp), tài liệu, hỗ trợ, bộ quy tắc thực tế, tích hợp, đóng góp. README nêu ảnh Docker gửi một tín hiệu telemetry ẩn danh nhẹ khi khởi động (phiên bản và nền tảng) và cách tắt bằng hai biến môi trường; bài không chép lệnh. Spectral cần một bộ quy tắc mới kiểm tra được. README nêu 100% miễn phí và mã nguồn mở theo Apache License 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Linter giống người soát chính tả cho tệp mô tả API: nó chỉ ra chỗ thiếu mô tả, tên không đúng quy ước hay cấu trúc sai, trước khi người khác phải sửa.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích bộ quy tắc là gì và liệt kê vài quy tắc hợp lý cho một tệp OpenAPI nhỏ; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết YAML hoặc JSON và khái niệm OpenAPI. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn không có tệp mô tả API (OpenAPI, AsyncAPI) hoặc không cần quy chuẩn chung thì chưa cần Spectral.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>linter</strong>: công cụ soát lỗi và quy ước trong tệp hoặc mã; README nêu Spectral là linter.</li><li><strong>ruleset (bộ quy tắc)</strong>: tệp liệt kê các quy tắc cần kiểm; README nêu Spectral cần bộ quy tắc.</li><li><strong>OpenAPI</strong>: chuẩn mô tả API; README nêu.</li><li><strong>AsyncAPI</strong>: chuẩn mô tả API sự kiện; README nêu.</li><li><strong>telemetry</strong>: gửi dữ liệu thống kê sử dụng; README nêu ảnh Docker gửi ẩn danh và cách tắt.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài qua trình quản lý gói JavaScript hoặc ảnh Docker; bài không chép lệnh. Ảnh Docker gửi telemetry ẩn danh (phiên bản và nền tảng) theo README, tắt bằng hai biến môi trường. Miễn phí theo Apache License 2.0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation và Usage.</li><li>Tạo bộ quy tắc từ bộ dựng sẵn.</li><li>Kiểm tra một tệp OpenAPI nhỏ của bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết tệp mô tả API OpenAPI. Hãy đọc README của Spectral (https://github.com/stoplightio/spectral) và giải thích bằng tiếng Việt: linter làm gì, bộ quy tắc là gì, và telemetry của ảnh Docker được README mô tả thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11 KB, bài chưa đọc tài liệu Spectral. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>stoplightio</strong> có <strong>3.247 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/stoplightio/spectral/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/stoplightio/spectral\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 591. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3247; repo_id 144890632; README SHA256 f0dd1b8599a834acc60efeda70c51992a8ce33c044c819eade7c4b3896a402ad.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/stoplightio/spectral",
+          "repo_id": "144890632",
+          "source_path": "",
+          "source_revision": "README-SHA256:f0dd1b8599a834acc60efeda70c51992a8ce33c044c819eade7c4b3896a402ad",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stoplightio/spectral",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài qua trình quản lý gói JavaScript hoặc ảnh Docker; bài không chép lệnh. Ảnh Docker gửi telemetry ẩn danh (phiên bản và nền tảng) theo README, tắt bằng hai biến môi trường. Miễn phí theo Apache License 2.0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/stoplightio/spectral/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/stoplightio/spectral/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "stoplightio/spectral",
+        "stars": 3247,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/stoplightio/spectral/develop/README.md",
+        "readmeSha256": "f0dd1b8599a834acc60efeda70c51992a8ce33c044c819eade7c4b3896a402ad",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 592,
+      "batch": 97,
+      "slug": "keploy",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Keploy: công cụ kiểm thử API và tích hợp tự sinh kiểm thử và dữ liệu giả bằng cách ghi lại lệnh gọi API, truy vấn cơ sở dữ liệu và sự kiện, dùng eBPF ở tầng mạng, rồi phát lại thành kiểm thử",
+        "excerpt": "Hiểu Keploy là công cụ kiểm thử API và tích hợp ghi lại lệnh gọi API, truy vấn cơ sở dữ liệu và sự kiện rồi phát lại thành kiểm thử, README nói dùng eBPF ở tầng mạng và không cần sửa mã; README có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README tả Keploy là công cụ kiểm thử API và tích hợp hướng nhà phát triển, tự sinh kiểm thử và dữ liệu giả nhanh hơn kiểm thử đơn vị. Công cụ ghi lại lệnh gọi API, truy vấn cơ sở dữ liệu và sự kiện luồng rồi phát lại như kiểm thử; README nói dùng eBPF để bắt lưu lượng ở tầng mạng nên không cần SDK hay sửa mã. Điểm nổi bật theo README: ghi và phát lại luồng phức tạp, giả lập hạ tầng ngoài HTTP (Postgres, MySQL, MongoDB, Kafka, RabbitMQ), độ phủ kết hợp cho nhà phát triển và kiểm thử viên, mở rộng độ phủ API bằng AI dựa trên bản ghi và lược đồ OpenAPI, tích hợp CI/CD, đóng băng thời gian, kho dữ liệu giả. Những mô tả này là tuyên bố của tác giả, bài chưa kiểm chứng. README có khung Quick Start trong đó bước cài dùng lệnh tải tập lệnh từ mạng rồi chạy ngay; bài không chép lệnh và khuyên đọc tập lệnh trước. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub. README cũng quảng bá demo trực tiếp và hỗ trợ doanh nghiệp, bài không đánh giá.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì tự viết kiểm thử, bạn dùng ứng dụng như bình thường, Keploy ghi lại các yêu cầu và phản hồi thật, rồi sau này phát lại để xem kết quả có đổi không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc README và tài liệu để hiểu ghi và phát lại là gì và dữ liệu nào bị ghi lại; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhờ AI viết mã, muốn biết cách kiểm thử để mã AI viết không âm thầm hỏng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu API, cơ sở dữ liệu, Docker hoặc Linux và quyền hệ thống mà eBPF cần. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bản ghi có thể chứa dữ liệu thật như tài khoản, mật khẩu, mã thông báo và nội dung truy vấn cơ sở dữ liệu: không ghi trên hệ thống sản xuất hoặc dữ liệu cá nhân thật, và đừng đưa bản ghi lên kho mã công khai. Lệnh cài tải tập lệnh từ mạng: chỉ chạy sau khi đã đọc nội dung.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>record and replay (ghi và phát lại)</strong>: lưu lưu lượng thật rồi dùng lại làm kiểm thử; README nêu.</li><li><strong>eBPF</strong>: công nghệ nhân Linux quan sát hệ thống; README nêu Keploy dùng.</li><li><strong>mock (dữ liệu giả)</strong>: phản hồi giả thay dịch vụ thật; README nêu Keploy sinh.</li><li><strong>integration testing (kiểm thử tích hợp)</strong>: kiểm thử nhiều phần phối hợp; README nêu.</li><li><strong>CI/CD</strong>: quy trình tự động kiểm tra và triển khai; README nêu tích hợp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start dùng lệnh tải tập lệnh cài đặt từ mạng và lệnh ghi, chạy; bài không chép lệnh. Cần ứng dụng cần kiểm thử và môi trường hỗ trợ eBPF theo tài liệu. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; phần demo và hỗ trợ doanh nghiệp có thể tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Key Highlights.</li><li>Đọc tài liệu Installation trên keploy.io.</li><li>Nếu thử, dùng ứng dụng mẫu và dữ liệu giả, không dùng dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm API nhỏ và muốn tự sinh kiểm thử. Hãy đọc README của Keploy (https://github.com/keploy/keploy) và giải thích bằng tiếng Việt: ghi và phát lại là gì, eBPF dùng làm gì, bản ghi có thể chứa dữ liệu nhạy cảm nào, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 11 KB, bài đọc phần đầu, điểm nổi bật và Quick Start, chưa đọc tài liệu keploy.io. Các tuyên bố chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ kiểm thử có thể gửi yêu cầu thật, tạo hoặc xóa dữ liệu, hoặc ghi lại lưu lượng chứa thông tin nhạy cảm: chỉ chạy trên môi trường thử hoặc dữ liệu giả, không trỏ vào hệ thống sản xuất, không để khóa API hay mật khẩu trong tệp kiểm thử hoặc bản ghi, và đọc kỹ mọi lệnh cài đặt trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>keploy</strong> có <strong>19.212 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/keploy/keploy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/keploy/keploy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 592. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19212; repo_id 449649393; README SHA256 e7a4825432e279e8940dcb24e354e2571f8659a17813905d0465eec66e6aa6e3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/keploy/keploy",
+          "repo_id": "449649393",
+          "source_path": "",
+          "source_revision": "README-SHA256:e7a4825432e279e8940dcb24e354e2571f8659a17813905d0465eec66e6aa6e3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keploy/keploy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start dùng lệnh tải tập lệnh cài đặt từ mạng và lệnh ghi, chạy; bài không chép lệnh. Cần ứng dụng cần kiểm thử và môi trường hỗ trợ eBPF theo tài liệu. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu; phần demo và hỗ trợ doanh nghiệp có thể tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keploy/keploy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/keploy/keploy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "keploy/keploy",
+        "stars": 19212,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/keploy/keploy/main/README.md",
+        "readmeSha256": "e7a4825432e279e8940dcb24e354e2571f8659a17813905d0465eec66e6aa6e3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

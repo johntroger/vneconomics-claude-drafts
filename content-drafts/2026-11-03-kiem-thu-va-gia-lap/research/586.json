@@ -1,0 +1,42 @@
+{
+  "key": 586,
+  "repo": "robotframework/robotframework",
+  "repoId": "21273155",
+  "url": "https://github.com/robotframework/robotframework",
+  "stars": 11981,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:15:08Z",
+  "createdAt": "2014-06-27T11:10:38Z",
+  "defaultBranch": "master",
+  "description": "Generic automation framework for acceptance testing and RPA",
+  "homepage": "http://robotframework.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/robotframework/robotframework/master/README.rst",
+    "sha256": "6327012ed15cb9f119e56c44129ebbd97aa0ec4ab42c200e758e037b3b641638",
+    "bytes": 5528,
+    "sectionsRead": [
+      "Introduction",
+      "Installation",
+      "Example",
+      "License and Trademark"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc User Guide.",
+    "Chưa thử.",
+    "Chưa kiểm tra thư viện trình duyệt."
+  ],
+  "runtimeValidated": false
+}

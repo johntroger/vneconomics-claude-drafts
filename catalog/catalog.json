@@ -9597,5 +9597,171 @@
   "related": [
    "openobserve"
   ]
+ },
+ {
+  "key": 586,
+  "slug": "robot-framework",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Robot Framework: khung tự động hóa mã nguồn mở cho kiểm thử chấp nhận, phát triển hướng kiểm thử chấp nhận (ATDD) và tự động hóa quy trình bằng robot (RPA), cú pháp văn bản thuần, mở rộng bằng thư viện Python",
+  "repo": "robotframework/robotframework",
+  "stars": 11981,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "cucumber-js"
+  ]
+ },
+ {
+  "key": 587,
+  "slug": "cucumber-js",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Cucumber.js: bản JavaScript của Cucumber chạy kiểm thử tự động viết bằng ngôn ngữ thường (Gherkin) cho Node.js, để cả nhóm đều đọc được kịch bản kiểm thử",
+  "repo": "cucumber/cucumber-js",
+  "stars": 5405,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "nock",
+   "robot-framework"
+  ]
+ },
+ {
+  "key": 588,
+  "slug": "nock",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "nock: thư viện giả lập máy chủ HTTP và kiểm tra kỳ vọng cho Node.js, kiểm thử mô-đun gọi HTTP một cách cô lập bằng cách ghi đè http.request; README rất dài",
+  "repo": "nock/nock",
+  "stars": 13137,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "cucumber-js",
+   "moto"
+  ]
+ },
+ {
+  "key": 589,
+  "slug": "moto",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Moto: thư viện Python giả lập các dịch vụ AWS để kiểm thử, dùng bộ trang trí @mock_aws để mọi lệnh gọi dịch vụ bị chặn trong tài khoản AWS ảo",
+  "repo": "getmoto/moto",
+  "stars": 8732,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "nock",
+   "spectral"
+  ]
+ },
+ {
+  "key": 590,
+  "slug": "schemathesis",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Schemathesis: kiểm thử API OpenAPI, GraphQL và gRPC bằng cách sinh đầu vào từ lược đồ, thích ứng với phản hồi máy chủ và nối các thao tác thành quy trình thực tế; README cảnh báo yêu cầu thật tạo, sửa và xóa dữ liệu",
+  "repo": "schemathesis/schemathesis",
+  "stars": 3739,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "keploy",
+   "spectral"
+  ]
+ },
+ {
+  "key": 591,
+  "slug": "spectral",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Spectral: trình kiểm tra (linter) cho JSON và YAML, có sẵn bộ quy tắc cho OpenAPI, AsyncAPI và Arazzo, tự viết quy tắc và hàm riêng; README nêu ảnh Docker gửi telemetry ẩn danh",
+  "repo": "stoplightio/spectral",
+  "stars": 3247,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "moto",
+   "schemathesis"
+  ]
+ },
+ {
+  "key": 592,
+  "slug": "keploy",
+  "group": "2026-11-03-kiem-thu-va-gia-lap",
+  "title": "Keploy: công cụ kiểm thử API và tích hợp tự sinh kiểm thử và dữ liệu giả bằng cách ghi lại lệnh gọi API, truy vấn cơ sở dữ liệu và sự kiện, dùng eBPF ở tầng mạng, rồi phát lại thành kiểm thử",
+  "repo": "keploy/keploy",
+  "stars": 19212,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "schemathesis"
+  ]
  }
 ]

@@ -1,0 +1,43 @@
+{
+  "key": 590,
+  "repo": "schemathesis/schemathesis",
+  "repoId": "203157084",
+  "url": "https://github.com/schemathesis/schemathesis",
+  "stars": 3739,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:30:49Z",
+  "createdAt": "2019-08-19T11:13:01Z",
+  "defaultBranch": "master",
+  "description": "Catch API bugs before your users do",
+  "homepage": "https://schemathesis.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/schemathesis/schemathesis/master/README.md",
+    "sha256": "e9aaf03d2188da4b47d97ece5328d5cddd2a1597b93030788e90a9f26c3687d0",
+    "bytes": 8079,
+    "sectionsRead": [
+      "Schemathesis",
+      "Try it now",
+      "What problems does it solve?",
+      "Installation & Usage",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu đầy đủ.",
+    "Chưa thử.",
+    "Chưa so sánh với công cụ kiểm thử API khác."
+  ],
+  "runtimeValidated": false
+}
