@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-hoc-nen-tang",
+  "batch": 22,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 123,
+      "batch": 22,
+      "slug": "freecodecamp",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "freeCodeCamp: học lập trình miễn phí theo lộ trình có bài tập và chứng chỉ",
+        "excerpt": "Giới thiệu lộ trình học lập trình web, Python và cơ sở dữ liệu hoàn toàn miễn phí do một tổ chức phi lợi nhuận vận hành. Phù hợp để có nền tảng trước khi vibe code.",
+        "content": "<p>freeCodeCamp là cộng đồng học lập trình miễn phí; repo này chứa mã nguồn nền tảng học và chương trình học. README nói tổ chức vận hành là một tổ chức từ thiện 501(c)(3) sống bằng đóng góp, cung cấp chương trình full-stack web và machine learning tự học theo tốc độ riêng với hàng nghìn bài tập tương tác. Các chứng chỉ miễn phí nêu trong README gồm Responsive Web Design, JavaScript, Front-End Development Libraries, Python, Relational Databases và Back-End Development and APIs, kèm các chứng chỉ ngôn ngữ như tiếng Anh cho lập trình viên (bản beta).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu vibe coding giống nhờ AI nấu giúp, thì freeCodeCamp giống lớp nấu ăn cơ bản: bạn tự làm một số món để biết thế nào là chín, thế nào là hỏng. Biết nền tảng giúp bạn đọc được món AI làm và phát hiện khi nó làm sai.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nếu bạn chưa từng viết HTML hay JavaScript, thử học vài bài đầu của chứng chỉ Responsive Web Design để hiểu cấu trúc một trang web mà AI vẫn dựng cho bạn. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người mới hoàn toàn muốn học từ đầu với bài tập tương tác; người vibe code muốn hiểu mã AI sinh ra.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> README mô tả nội dung tự học, chia thành bài giảng, bài tập, dự án và bài kiểm tra. Mỗi chứng chỉ yêu cầu hoàn thành bài tập và 5 dự án bắt buộc rồi qua bài thi (theo README). Cần kiên trì chứ không cần cài đặt nhiều. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần một ứng dụng chạy được ngay hôm nay và không có ý định học, khóa học đầy đủ sẽ tốn thời gian. Hãy học theo từng phần đúng thứ bạn đang gặp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>chứng chỉ (certification)</strong>: giấy xác nhận bạn đã hoàn thành chương trình và bài thi trên nền tảng; README nói giá trị phụ thuộc chính sách trung thực học thuật của freeCodeCamp.</li><li><strong>self-paced</strong>: tự học theo tốc độ của bạn, không có lớp hay lịch cố định.</li><li><strong>curriculum (chương trình học)</strong>: toàn bộ thứ tự bài học và bài tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói nền tảng chạy trực tuyến tại freecodecamp.org, nên người học chỉ cần dùng website; repo GitHub chủ yếu cho người muốn đóng góp hoặc xem mã nguồn. README không nêu bản dịch tiếng Việt; chưa kiểm tra nội dung tiếng Việt. Chương trình học miễn phí theo README; cần kiểm tra điều khoản trên website.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Certifications để chọn chứng chỉ khớp mục tiêu (ví dụ Responsive Web Design nếu muốn hiểu giao diện web).</li><li>Dùng website freecodecamp.org để học; chỉ xem repo nếu bạn muốn đọc cách nền tảng làm việc hoặc đóng góp.</li><li>Đặt mục tiêu nhỏ như 20 phút mỗi ngày và ghi lại những điều học được để sau nhờ AI giải thích thêm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học lập trình cơ bản để hiểu code mà AI viết. Hãy đọc README của freeCodeCamp (https://github.com/freeCodeCamp/freeCodeCamp) và đề xuất bằng tiếng Việt chứng chỉ nào nên học trước với người mới, kèm lý do. Nhắc mình những điều cần chú ý (như tiếng Anh, thời gian). Chưa cần đăng ký hay cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Hầu hết nội dung bằng tiếng Anh; README không nói về bản tiếng Việt. Học thụ động bằng cách đọc thì không đủ; hiệu quả đến từ việc làm bài tập. Phần repo là mã nguồn của nền tảng, không phải sách học đọc thẳng trên GitHub. Các chứng chỉ ngôn ngữ trong README được ghi là bản beta.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đăng nhập hoặc đăng ký, chỉ làm trên đúng tên miền chính thức của freeCodeCamp và không chia sẻ mật khẩu. Nhớ rằng chép dự án của người khác rồi nộp như của mình bị README coi là vi phạm chính sách trung thực học thuật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>freeCodeCamp</strong> có <strong>458.460 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause cho repo; chưa đối chiếu giấy phép riêng của từng phần nội dung học. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/freeCodeCamp/freeCodeCamp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 123. Chưa cài/chạy thử; không tạo validation. Snapshot sao 458460; repo_id 28457823; README SHA256 4031ab5b19f4029f1f38f680bcd0b18e19bbc25c0e562b0f3b8d3b8941f1faea.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "repo_id": "28457823",
+          "source_path": "",
+          "source_revision": "README-SHA256:4031ab5b19f4029f1f38f680bcd0b18e19bbc25c0e562b0f3b8d3b8941f1faea",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-3-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói nền tảng chạy trực tuyến tại freecodecamp.org, nên người học chỉ cần dùng website; repo GitHub chủ yếu cho người muốn đóng góp hoặc xem mã nguồn. README không nêu bản dịch tiếng Việt; chưa kiểm tra nội dung tiếng Việt. Chương trình học miễn phí theo README; cần kiểm tra điều khoản trên website.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "freeCodeCamp/freeCodeCamp",
+        "stars": 458460,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/README.md",
+        "readmeSha256": "4031ab5b19f4029f1f38f680bcd0b18e19bbc25c0e562b0f3b8d3b8941f1faea",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 124,
+      "batch": 22,
+      "slug": "web-dev-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Web Development for Beginners: học HTML, CSS và JavaScript qua các dự án nhỏ",
+        "excerpt": "Giáo trình 12 tuần của Microsoft dạy làm web bằng dự án như trò chơi gõ phím, tiện ích trình duyệt và ứng dụng ngân hàng, có bản dịch tiếng Việt.",
+        "content": "<p>Web Development for Beginners là giáo trình 12 tuần của Microsoft Cloud Advocates dạy nền tảng làm web. README mô tả các bài dạy JavaScript, CSS và HTML qua dự án thực hành như Terrarium, trò chơi gõ phím, tiện ích mở rộng trình duyệt, trò chơi không gian và ứng dụng ngân hàng, có bài kiểm tra trước và sau bài. README còn thêm phần dùng trình soạn mã, một dự án trợ lý AI và các thử thách dùng GitHub Copilot ở chế độ Agent.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống học làm đồ gỗ bằng cách làm luôn những món nhỏ: hộp cây cảnh, trò chơi, tiện ích. Mỗi dự án dạy thêm một kỹ năng, cho đến khi bạn tự dựng được một ứng dụng nhỏ có đăng nhập.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chọn các bài về nền tảng JavaScript để hiểu những dòng code AI viết khi bạn nhờ làm một trang web tương tác. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người mới hoàn toàn muốn nền tảng web có thứ tự; giáo viên cần giáo trình có sẵn; người vibe code muốn nắm điều AI đang làm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Giáo trình viết cho người mới, có quiz và bài tập, nhưng bạn cần cài trình soạn mã và làm theo hướng dẫn trong README (fork và clone repo). Đây là nhận định biên tập về mức dễ.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn dùng công cụ tạo web bằng AI mà không học code, giáo trình đầy đủ sẽ chậm; chọn vài bài liên quan thôi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>HTML/CSS/JavaScript</strong>: ba ngôn ngữ nền của web: HTML dựng cấu trúc, CSS tạo giao diện, JavaScript làm cho trang hoạt động.</li><li><strong>DOM</strong>: cách trình duyệt biểu diễn trang web để JavaScript đọc và sửa nội dung.</li><li><strong>fork và clone</strong>: fork là sao chép repo về tài khoản GitHub của bạn; clone là tải bản sao đó về máy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn fork repo, clone về máy và tham gia Discord; có bản dịch nhiều ngôn ngữ trong đó có tiếng Việt (liên kết trong README). README nói repo có hơn 50 bản dịch nên rất nặng nếu clone thông thường, và đưa hướng dẫn sparse checkout để bỏ qua bản dịch. Bài không chép lệnh vì chưa kiểm chứng. Cần trình soạn mã như VS Code (README có phần gợi ý).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Getting Started và bảng bài học để thấy các dự án.</li><li>Bắt đầu từ nhóm bài Getting Started và JS Basics, đọc bản tiếng Việt nếu cần.</li><li>Làm bài quiz trước và sau bài, rồi nhờ AI giải thích lại những chỗ chưa hiểu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình chưa biết gì về làm web và muốn học để hiểu code AI viết. Hãy đọc README của Web-Dev-For-Beginners (https://github.com/microsoft/Web-Dev-For-Beginners) và đề xuất bằng tiếng Việt lộ trình 6 bài đầu phù hợp, kèm giải thích ngắn mỗi bài dạy gì. Chưa yêu cầu cài đặt hay clone repo.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Repo rất nặng vì nhiều bản dịch nên cần làm theo hướng dẫn tải nhẹ. Công nghệ web thay đổi nên một số bài có thể lỗi thời theo thời gian. Phần thử thách Copilot Agent cần công cụ của GitHub mà bài này chưa tìm hiểu về chi phí.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi làm theo bài có gọi API hoặc tiện ích trình duyệt, không nhập khóa hay tài khoản thật vào mã ví dụ, và dùng trình duyệt hoặc hồ sơ riêng để thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>97.073 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/Web-Dev-For-Beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 124. Chưa cài/chạy thử; không tạo validation. Snapshot sao 97073; repo_id 311525798; README SHA256 6c128e5e226b88adb6cb70258a8d3486eea33ed95f9271561afeaa5c1e98106d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+          "repo_id": "311525798",
+          "source_path": "",
+          "source_revision": "README-SHA256:6c128e5e226b88adb6cb70258a8d3486eea33ed95f9271561afeaa5c1e98106d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn fork repo, clone về máy và tham gia Discord; có bản dịch nhiều ngôn ngữ trong đó có tiếng Việt (liên kết trong README). README nói repo có hơn 50 bản dịch nên rất nặng nếu clone thông thường, và đưa hướng dẫn sparse checkout để bỏ qua bản dịch. Bài không chép lệnh vì chưa kiểm chứng. Cần trình soạn mã như VS Code (README có phần gợi ý).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/Web-Dev-For-Beginners",
+        "stars": 97073,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/Web-Dev-For-Beginners/main/README.md",
+        "readmeSha256": "6c128e5e226b88adb6cb70258a8d3486eea33ed95f9271561afeaa5c1e98106d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 125,
+      "batch": 22,
+      "slug": "mcp-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MCP for Beginners: giáo trình học Model Context Protocol từ khái niệm đến tự dựng server",
+        "excerpt": "Giáo trình mở của Microsoft dạy MCP bằng ví dụ ở nhiều ngôn ngữ, từ khái niệm, bảo mật đến dựng server đầu tiên. Cần nền lập trình cơ bản.",
+        "content": "<p>MCP for Beginners là giáo trình dạy Model Context Protocol, chuẩn kết nối ứng dụng AI với công cụ và dữ liệu bên ngoài. README ví MCP như bộ phiên dịch chung giống cổng USB, và cho ví dụ code bằng C#, Java, JavaScript, Rust, Python và TypeScript. Các mô-đun gồm khái niệm cốt lõi, bảo mật, dựng server và client đầu tiên, dùng với VS Code, kiểm thử, triển khai, MCP Inspector, cùng các bài lab về tích hợp Azure. README ghi giáo trình dạy phiên bản đặc tả MCP 2026-07-28.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu MCP là chuẩn ổ cắm giúp AI cắm vào nhiều công cụ, thì giáo trình này giống khóa thợ điện nhập môn: học ổ cắm gồm những phần nào, cách nối an toàn, rồi tự lắp một ổ đầu tiên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần 'Core Concepts' và 'Security in MCP' trước khi cài bất kỳ server MCP nào ở bài Awesome MCP Servers, để hiểu quyền mà server có thể có. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người đã biết một ngôn ngữ lập trình cơ bản và muốn tự dựng hoặc hiểu sâu MCP.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> README yêu cầu nền: lập trình cơ bản ở ít nhất một ngôn ngữ trong danh sách, hiểu mô hình client-server và API, quen REST/HTTP; kiến thức AI/ML là tùy chọn. Không phù hợp cho người chưa viết dòng code nào. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn dùng các công cụ có sẵn qua MCP chứ không tự làm server, hãy đọc trang giới thiệu MCP chính thức và phần bảo mật, chưa cần cả giáo trình.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>client-server</strong>: mô hình trong đó một bên (client) gửi yêu cầu và bên kia (server) trả lời.</li><li><strong>đặc tả (specification)</strong>: văn bản quy định chuẩn; MCP dùng phiên bản theo ngày, README nhắc phiên bản 2026-07-28.</li><li><strong>stdio và HTTP streaming</strong>: hai cách MCP server và client nói chuyện với nhau, một là qua đầu vào/đầu ra của chương trình, một là qua mạng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nêu điều kiện học (xem mục độ khó). Có ví dụ ở nhiều ngôn ngữ nên bạn chọn một. Một số lab dùng Azure, Docker và các dịch vụ trả phí hoặc cần tài khoản; chi phí chưa kiểm tra. Có bản dịch tiếng Việt qua liên kết README. Bài chưa chạy mẫu nào.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Overview và Prerequisites để biết bạn đã đủ nền chưa.</li><li>Đọc bài Core Concepts và Security trước khi đụng tới code.</li><li>Chọn một ngôn ngữ bạn quen và làm theo bài First Server.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu MCP nhưng chưa biết lập trình nhiều. Hãy đọc README của MCP for Beginners (https://github.com/microsoft/mcp-for-beginners) và giải thích bằng tiếng Việt: mình cần biết gì trước khi học, những bài nào dành cho người chỉ muốn hiểu khái niệm, và rủi ro bảo mật cơ bản của MCP. Chưa cài đặt gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giáo trình thay đổi theo đặc tả MCP, mà đặc tả thay đổi nhanh; README ghi một số ví dụ vẫn dùng phiên bản cũ hơn. Phần lab gắn với Azure có thể phát sinh chi phí. Bản dịch tiếng Việt chưa được đánh giá chất lượng.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Học xong cách dựng server thì nhớ nguyên tắc quyền tối thiểu: server chỉ nên truy cập đúng thư mục hoặc dịch vụ cần thiết, và mọi hành động thay đổi dữ liệu nên được người duyệt.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>17.586 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chưa được đọc kỹ phần giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/mcp-for-beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/mcp-for-beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 125. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17586; repo_id 960665821; README SHA256 a22222f08a10481041cb82408c63ae2ad651c2cb5d9fe72ab9a2c485f29943eb.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/mcp-for-beginners",
+          "repo_id": "960665821",
+          "source_path": "",
+          "source_revision": "README-SHA256:a22222f08a10481041cb82408c63ae2ad651c2cb5d9fe72ab9a2c485f29943eb",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/mcp-for-beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nêu điều kiện học (xem mục độ khó). Có ví dụ ở nhiều ngôn ngữ nên bạn chọn một. Một số lab dùng Azure, Docker và các dịch vụ trả phí hoặc cần tài khoản; chi phí chưa kiểm tra. Có bản dịch tiếng Việt qua liên kết README. Bài chưa chạy mẫu nào.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/mcp-for-beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/mcp-for-beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/mcp-for-beginners",
+        "stars": 17586,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/mcp-for-beginners/main/README.md",
+        "readmeSha256": "a22222f08a10481041cb82408c63ae2ad651c2cb5d9fe72ab9a2c485f29943eb",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 126,
+      "batch": 22,
+      "slug": "public-apis",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Public APIs: danh sách API miễn phí để tìm nguồn dữ liệu cho dự án nhỏ",
+        "excerpt": "Một danh sách khổng lồ các API công khai theo chủ đề, hữu ích khi cần dữ liệu thời tiết, tiền tệ, động vật… Cần đọc kỹ điều kiện từng API và chú ý phần quảng cáo đầu README.",
+        "content": "<p>Public APIs là danh sách do cộng đồng tuyển chọn các API miễn phí, theo nhiều danh mục từ động vật, anime đến chống mã độc. Mỗi mục trong bảng chính nêu tên API, mô tả, kiểu xác thực (Auth), có hỗ trợ HTTPS và CORS hay không. README còn có phần quảng bá bộ API thương mại APILayer ở đầu trang và một bảng MCP server.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống danh bạ các 'vòi nước dữ liệu' công cộng: thời tiết, tỷ giá, ảnh động vật… Bạn tra danh bạ để biết cắm ống vào đâu. Nhưng danh bạ chỉ cho địa chỉ; vòi có chảy hay có thu phí hay không bạn phải tự kiểm tra.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi làm ứng dụng nhỏ hiển thị tỷ giá hoặc thời tiết, bạn tìm trong danh mục liên quan, mở trang chính thức của API để đọc điều khoản trước khi nhờ AI viết code gọi API đó. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng nhỏ, bài tập hoặc thử nghiệm cần dữ liệu thật; người học cách gọi API.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ để tìm, trung bình để dùng.</strong> Tìm trong danh sách khá dễ. Dùng một API cần hiểu khóa API, giới hạn gọi và định dạng JSON; có thể nhờ AI giải thích. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dự án cần độ tin cậy cao (thanh toán, y tế…), đừng chọn API chỉ vì nó nằm trong danh sách miễn phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>CORS</strong>: quy tắc trình duyệt về việc một trang web có được gọi dữ liệu từ tên miền khác hay không; cột CORS trong README cho biết API có cho phép.</li><li><strong>rate limit (giới hạn gọi)</strong>: số lần tối đa bạn được gọi API trong một khoảng thời gian.</li><li><strong>JSON</strong>: định dạng dữ liệu dạng chữ mà hầu hết API trả về.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì để đọc. Mỗi API có điều kiện riêng: có API cần khóa, có API giới hạn số lần gọi hoặc yêu cầu ghi nguồn; bạn phải đọc trang chính thức của từng API. Danh sách không bảo đảm API còn hoạt động hay còn miễn phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Index và chọn danh mục sát nhu cầu.</li><li>Mở trang chính thức của API, đọc điều khoản, giới hạn và giá.</li><li>Thử gọi với một yêu cầu rất nhỏ và kiểm tra dữ liệu trả về trước khi đưa vào ứng dụng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang làm một ứng dụng nhỏ cần dữ liệu từ API miễn phí. Hãy đọc danh sách tại https://github.com/public-apis/public-apis và hướng dẫn bằng tiếng Việt cách đọc các cột Auth, HTTPS, CORS, cách kiểm tra một API còn hoạt động và có miễn phí thật không. Chưa gọi API nào và đừng yêu cầu mình đưa khóa.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README mở đầu bằng nội dung quảng bá một bộ API thương mại, nên cần tách biệt phần quảng cáo với danh sách cộng đồng. Danh sách do cộng đồng đóng góp, không bảo đảm chất lượng hay độ bền của API. Một API miễn phí hôm nay có thể bị tính phí hoặc ngừng sau này. Chúng tôi chưa kiểm tra bất kỳ API cụ thể nào.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng dán khóa API vào mã gửi lên GitHub. Với API cần khóa, đặt giới hạn chi tiêu nếu có và đọc kỹ dữ liệu bạn gửi đi, nhất là khi nó chứa thông tin cá nhân.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>public-apis</strong> có <strong>495.574 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT (c) 2022 public-apis. Mỗi API trong danh sách có điều khoản riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/public-apis/public-apis/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/public-apis/public-apis\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 126. Chưa cài/chạy thử; không tạo validation. Snapshot sao 495574; repo_id 54346799; README SHA256 1ce4b056b48404fe8a332497495ca5d12ca2b9f5aa4e985e8fd5fb14f90fe164.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/public-apis/public-apis",
+          "repo_id": "54346799",
+          "source_path": "",
+          "source_revision": "README-SHA256:1ce4b056b48404fe8a332497495ca5d12ca2b9f5aa4e985e8fd5fb14f90fe164",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/public-apis/public-apis",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì để đọc. Mỗi API có điều kiện riêng: có API cần khóa, có API giới hạn số lần gọi hoặc yêu cầu ghi nguồn; bạn phải đọc trang chính thức của từng API. Danh sách không bảo đảm API còn hoạt động hay còn miễn phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/public-apis/public-apis/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/public-apis/public-apis/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "public-apis/public-apis",
+        "stars": 495574,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/public-apis/public-apis/master/README.md",
+        "readmeSha256": "1ce4b056b48404fe8a332497495ca5d12ca2b9f5aa4e985e8fd5fb14f90fe164",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 127,
+      "batch": 22,
+      "slug": "free-programming-books",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Free Programming Books: kho sách và khóa học lập trình miễn phí, có mục tiếng Việt",
+        "excerpt": "Danh sách sách, khóa học, cheat sheet và bài tập lập trình miễn phí đa ngôn ngữ, trong đó có phần tiếng Việt. Dùng như thư mục chỉ đường tới tài liệu bên ngoài.",
+        "content": "<p>Free Programming Books là danh sách tài liệu học miễn phí đa ngôn ngữ, hiện do Free Ebook Foundation (tổ chức phi lợi nhuận) quản lý. README chia thành sách (theo ngôn ngữ lập trình hoặc theo chủ đề), cheat sheet, khóa học trực tuyến, tài nguyên tương tác, bài tập, podcast/screencast và sân chơi lập trình. Có tệp tiếng Việt riêng cho sách và cho khóa học.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống thư viện công cộng chỉ có phần mục lục: nó cho bạn biết sách và lớp nào có thể học miễn phí và nằm ở đâu, chứ không chứa sẵn sách. Bạn đi theo liên kết đến nơi gốc để đọc.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở danh sách khóa học tiếng Việt để tìm một khóa nhập môn lập trình hoặc web, sau đó đọc trang gốc của khóa để kiểm tra nội dung và điều kiện trước khi học. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người tự học muốn nguồn miễn phí; giảng viên tìm tài liệu cho sinh viên; người muốn tìm tài nguyên bằng tiếng Việt.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> Chỉ cần đọc và chọn. Khó nhất là chọn đúng thứ giữa quá nhiều lựa chọn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần một lộ trình có thứ tự và bài tập có chấm, hãy chọn một khóa như freeCodeCamp hoặc Web-Dev-For-Beginners thay vì tự ghép từ danh sách.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>cheat sheet</strong>: tờ tóm tắt cú pháp và lệnh hay dùng của một công nghệ.</li><li><strong>playground</strong>: nơi chạy code ngay trên trình duyệt để thử, không cần cài đặt.</li><li><strong>CC BY 4.0</strong>: giấy phép cho phép chia sẻ và sửa nếu ghi nguồn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Không cần cài gì để đọc. Mỗi tài liệu trong danh sách nằm ở website khác và có điều kiện sử dụng riêng. README có công cụ tìm kiếm ngoài và trang web đọc dễ hơn, nhưng bài chưa mở các trang đó.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Resources để biết cách chia nhóm.</li><li>Mở tệp tiếng Việt cho sách hoặc cho khóa học nếu muốn tài liệu bằng tiếng Việt.</li><li>Chọn tối đa hai tài liệu, kiểm tra ngày cập nhật và trang gốc trước khi bắt đầu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tìm tài liệu học lập trình miễn phí bằng tiếng Việt. Hãy đọc https://github.com/EbookFoundation/free-programming-books (đặc biệt các tệp tiếng Việt) và đề xuất bằng tiếng Việt cách chọn một tài liệu phù hợp với người mới: cần kiểm tra điều gì ở mỗi liên kết. Đừng yêu cầu mình cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Đây là danh sách liên kết; tài liệu bên ngoài có thể đổi, mất hoặc lỗi thời. README không đánh giá chất lượng từng tài nguyên. Giấy phép CC BY áp dụng cho các tệp trong repo, không phải cho nội dung tài liệu mà liên kết dẫn đến.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Tải sách hoặc công cụ từ nguồn bên ngoài thì chỉ tải từ trang gốc đáng tin, quét virus nếu là file chạy được, và tránh nhập thông tin cá nhân vào các trang lạ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>EbookFoundation</strong> có <strong>400.766 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện CC-BY-4.0; README ghi mỗi tệp trong repo theo giấy phép CC BY. Tài liệu được liên kết có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/EbookFoundation/free-programming-books/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/EbookFoundation/free-programming-books\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 127. Chưa cài/chạy thử; không tạo validation. Snapshot sao 400766; repo_id 13491895; README SHA256 6bd4b8985c3f6332c9a1e681149d797007979bd2b615c3f6912799791b3c8c37.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/EbookFoundation/free-programming-books",
+          "repo_id": "13491895",
+          "source_path": "",
+          "source_revision": "README-SHA256:6bd4b8985c3f6332c9a1e681149d797007979bd2b615c3f6912799791b3c8c37",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "CC-BY-4.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/EbookFoundation/free-programming-books",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Không cần cài gì để đọc. Mỗi tài liệu trong danh sách nằm ở website khác và có điều kiện sử dụng riêng. README có công cụ tìm kiếm ngoài và trang web đọc dễ hơn, nhưng bài chưa mở các trang đó.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/EbookFoundation/free-programming-books/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/EbookFoundation/free-programming-books/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "EbookFoundation/free-programming-books",
+        "stars": 400766,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/EbookFoundation/free-programming-books/main/README.md",
+        "readmeSha256": "6bd4b8985c3f6332c9a1e681149d797007979bd2b615c3f6912799791b3c8c37",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 128,
+      "batch": 22,
+      "slug": "front-end-checklist",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Front-End Checklist: danh sách kiểm tra chất lượng giao diện web cho người và AI",
+        "excerpt": "Bộ quy tắc rà soát giao diện web theo nhóm HTML, CSS, hiệu năng, khả năng tiếp cận, SEO và bảo mật. Hữu ích để kiểm tra trang do AI dựng.",
+        "content": "<p>Front-End Checklist là danh sách kiểm tra chất lượng giao diện web dành cho cả người và agent AI. README nêu 386 quy tắc bằng tiếng Anh chia 11 nhóm, ví dụ HTML, CSS, JavaScript, hiệu năng, khả năng tiếp cận, SEO, bảo mật và quyền riêng tư; mỗi quy tắc có mức ưu tiên (Critical, High, Medium, Low) và trang giải thích, cách khắc phục, cách kiểm tra. Có website để duyệt và một MCP server do tác giả host cho agent AI.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bảng kiểm tra trước khi giao nhà: cửa có khóa chưa, điện nước chạy chưa, lối đi người khuyết tật có không. Khi AI dựng một trang web, bạn có thể lấy bảng này để kiểm tra từng hạng mục thay vì tin rằng trang đã ổn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: lấy các mục mức Critical của nhóm Accessibility và Security rồi kiểm tra với một trang bạn vừa nhờ AI tạo. Đây là gợi ý cách dùng, chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người vibe code muốn kiểm tra trang trước khi đưa lên mạng; người làm SEO, nội dung hoặc quản trị web cần danh mục rà soát.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ để đọc, trung bình để áp dụng.</strong> Đọc checklist thì dễ, nhưng hiểu và sửa từng mục cần kiến thức web. Dùng qua MCP cần ứng dụng AI hỗ trợ MCP. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa có trang web nào để kiểm tra, chưa cần. Nếu trang chỉ là bản nháp riêng, có thể bỏ qua các mục nâng cao.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>accessibility (khả năng tiếp cận)</strong>: thiết kế để người khuyết tật, người dùng trình đọc màn hình, v.v. vẫn dùng được trang.</li><li><strong>SEO</strong>: tối ưu để công cụ tìm kiếm hiểu và xếp hạng trang.</li><li><strong>hosted MCP server</strong>: máy chủ MCP do tác giả chạy trên mạng; khi bạn nối agent vào đó, dữ liệu bạn gửi (như nội dung trang) đi qua dịch vụ ngoài.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói có thể duyệt web miễn phí, dùng README này hoặc nối agent vào MCP server do tác giả host. Điều kiện sử dụng, dữ liệu gửi đi và giới hạn của dịch vụ host chưa được kiểm tra. README viết bằng tiếng Anh; chưa rõ có bản tiếng Việt.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'What you get' và Priority legend để hiểu mức ưu tiên.</li><li>Chọn nhóm liên quan nhất (ví dụ Accessibility hoặc Security) và làm theo các mục Critical trước.</li><li>Chỉ dùng MCP server hosted sau khi đọc kỹ dữ liệu nào được gửi đi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có một trang web do AI dựng và muốn kiểm tra chất lượng. Hãy đọc README của Front-End Checklist (https://github.com/thedaviddias/Front-End-Checklist) và đề xuất bằng tiếng Việt 10 mục quan trọng nhất cho người mới kiểm tra trước, kèm lý do. Đừng yêu cầu mình gửi mã hay địa chỉ trang đi đâu cả.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Checklist lớn (hàng trăm mục) nên dễ quá tải; cần chọn mục ưu tiên. Quy tắc phản ánh quan điểm của tác giả và cộng đồng, không phải tiêu chuẩn pháp lý. Việc dùng MCP server do tác giả host nghĩa là đưa dữ liệu qua dịch vụ ngoài; chúng tôi chưa kiểm tra chính sách của dịch vụ đó.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng gửi mã nguồn riêng tư hoặc địa chỉ trang nội bộ cho dịch vụ bên ngoài nếu chưa đọc chính sách dữ liệu. Với trang có dữ liệu người dùng, đừng coi checklist là bằng chứng an toàn đầy đủ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>thedaviddias</strong> có <strong>74.638 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/thedaviddias/Front-End-Checklist\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 128. Chưa cài/chạy thử; không tạo validation. Snapshot sao 74638; repo_id 107111421; README SHA256 14933b44a397b06f62b70cbfb87e58616b7188c435aef93d38c309c81c9fe121.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/thedaviddias/Front-End-Checklist",
+          "repo_id": "107111421",
+          "source_path": "",
+          "source_revision": "README-SHA256:14933b44a397b06f62b70cbfb87e58616b7188c435aef93d38c309c81c9fe121",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/thedaviddias/Front-End-Checklist",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói có thể duyệt web miễn phí, dùng README này hoặc nối agent vào MCP server do tác giả host. Điều kiện sử dụng, dữ liệu gửi đi và giới hạn của dịch vụ host chưa được kiểm tra. README viết bằng tiếng Anh; chưa rõ có bản tiếng Việt.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "thedaviddias/Front-End-Checklist",
+        "stars": 74638,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/main/README.md",
+        "readmeSha256": "14933b44a397b06f62b70cbfb87e58616b7188c435aef93d38c309c81c9fe121",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 129,
+      "batch": 22,
+      "slug": "ml-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ML for Beginners: giáo trình 12 tuần về học máy cổ điển cho người mới",
+        "excerpt": "Giáo trình của Microsoft dạy học máy cổ điển qua dự án như dự đoán giá bí ngô, có quiz và bản dịch tiếng Việt. Giúp hiểu AI không chỉ là chatbot.",
+        "content": "<p>ML for Beginners là giáo trình 12 tuần, 26 bài của Microsoft Cloud Advocates về học máy cổ điển (classic machine learning). README nêu bài học chủ yếu viết bằng Python, nhiều bài có thêm bản R; bài học dựa trên dự án như dự đoán giá bí ngô Bắc Mỹ, có bài kiểm tra trước và sau mỗi bài và video ngắn. README có gợi ý dùng GitHub Codespaces để học trên trình duyệt mà không cài Python cục bộ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chatbot AI hôm nay chỉ là một nhánh của AI. Giáo trình này dạy phần nền: máy học từ dữ liệu như thế nào, như bạn học đoán giá bí ngô từ lịch sử bán hàng. Hiểu nền này giúp bạn bớt tin AI một cách mù quáng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc các bài mở đầu về hồi quy để hiểu 'dự đoán' nghĩa là gì và tại sao dự đoán có thể sai, sau đó dùng hiểu biết ấy khi đọc báo cáo do AI tạo. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người muốn hiểu nền tảng AI/ML; sinh viên và giảng viên cần giáo trình có cấu trúc sẵn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Giáo trình cho người mới nhưng dùng Python và dữ liệu, nên người chưa lập trình sẽ cần thời gian làm quen. README có hướng dẫn trợ giúp và Codespaces. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn dùng công cụ AI tạo nội dung, giáo trình này (học máy cổ điển) không phải điểm bắt đầu. Hãy xem các khóa về agent AI hay generative AI.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>machine learning (học máy)</strong>: phương pháp để máy tự rút quy luật từ dữ liệu thay vì được lập trình từng luật.</li><li><strong>hồi quy (regression)</strong>: loại mô hình dự đoán một con số, như giá.</li><li><strong>phân loại (classification)</strong>: loại mô hình xếp một mẫu vào một nhóm, như thư rác hay không phải thư rác.</li><li><strong>Codespaces</strong>: môi trường lập trình chạy trên đám mây của GitHub, mở trong trình duyệt.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn fork repo và clone về máy hoặc dùng Codespaces; có gợi ý cài đặt, hỗ trợ xử lý sự cố và bản dịch nhiều ngôn ngữ, trong đó có tiếng Việt (liên kết README). Codespaces và một số dịch vụ có thể giới hạn hoặc tính phí; chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Pedagogy để biết cách học (dự án và quiz).</li><li>Đọc các bài mở đầu về hồi quy, chưa cần làm hết.</li><li>Dùng Codespaces nếu không muốn cài Python, sau khi đọc điều kiện sử dụng của GitHub.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu cơ bản về học máy để bớt tin AI một cách mù quáng. Hãy đọc README của ML-For-Beginners (https://github.com/microsoft/ML-For-Beginners) và đề xuất bằng tiếng Việt 5 bài đầu phù hợp với người chưa lập trình, giải thích ngắn bằng ví dụ đời thường. Chưa yêu cầu cài đặt gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Nội dung là học máy cổ điển, không bao quát mô hình ngôn ngữ lớn hay agent AI hiện nay. Cần Python và thời gian. README có nhiều bản dịch; chất lượng bản dịch tiếng Việt chưa được đánh giá.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi chạy notebook hoặc mã mẫu từ nguồn bên ngoài, đọc qua code trước, và không dán dữ liệu cá nhân hoặc khóa API vào notebook rồi chia sẻ công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>91.956 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/ML-For-Beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/ML-For-Beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm học nền tảng, key 129. Chưa cài/chạy thử; không tạo validation. Snapshot sao 91956; repo_id 343965132; README SHA256 9ba547bfc11370e232c30c959bf4dd31d7ba2cd17e80e19973a534c4dea117c5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/ML-For-Beginners",
+          "repo_id": "343965132",
+          "source_path": "",
+          "source_revision": "README-SHA256:9ba547bfc11370e232c30c959bf4dd31d7ba2cd17e80e19973a534c4dea117c5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/ML-For-Beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn fork repo và clone về máy hoặc dùng Codespaces; có gợi ý cài đặt, hỗ trợ xử lý sự cố và bản dịch nhiều ngôn ngữ, trong đó có tiếng Việt (liên kết README). Codespaces và một số dịch vụ có thể giới hạn hoặc tính phí; chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/ML-For-Beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/ML-For-Beginners",
+        "stars": 91956,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/ML-For-Beginners/main/README.md",
+        "readmeSha256": "9ba547bfc11370e232c30c959bf4dd31d7ba2cd17e80e19973a534c4dea117c5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

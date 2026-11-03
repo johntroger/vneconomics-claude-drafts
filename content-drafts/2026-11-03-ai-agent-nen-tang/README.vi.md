@@ -38,3 +38,4 @@ README qua raw.githubusercontent.com; số sao, license, ngày commit từ GitHu
 - shadcn/ui: README chỉ vài dòng; trang tài liệu không nêu tiền đề cài đặt cụ thể.
 - Dyad: giấy phép hỗn hợp (Apache 2.0 và FSL cho src/pro); chưa đọc quickstart.
 - Không có `contentHash`; `review.needed = true` cho mọi bài.
+- Giá trị `category` và `need` được gán về nhãn đã có trên site (đợt cũ); đây là gợi ý, importer/chủ site quyết định cuối.
