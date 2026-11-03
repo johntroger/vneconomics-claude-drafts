@@ -2555,5 +2555,129 @@
    "losslesscut",
    "sherpa-onnx"
   ]
+ },
+ {
+  "key": 244,
+  "slug": "paperless-ngx",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn",
+  "repo": "paperless-ngx/paperless-ngx",
+  "stars": 47606,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "archivebox",
+   "dbeaver"
+  ]
+ },
+ {
+  "key": 245,
+  "slug": "jabref",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "JabRef: quản lý tài liệu tham khảo BibTeX, tìm bài báo và chèn trích dẫn miễn phí",
+  "repo": "JabRef/jabref",
+  "stars": 4864,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "linkding",
+   "zettlr"
+  ]
+ },
+ {
+  "key": 246,
+  "slug": "zettlr",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "Zettlr: trình soạn Markdown cho người viết học thuật, có trích dẫn và xuất bằng Pandoc",
+  "repo": "Zettlr/Zettlr",
+  "stars": 13854,
+  "license": "GPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "archivebox",
+   "jabref"
+  ]
+ },
+ {
+  "key": 247,
+  "slug": "overleaf",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "Overleaf Community Edition: soạn LaTeX cộng tác trực tuyến tự host, chỉ nên dùng khi mọi người dùng đều tin cậy",
+  "repo": "overleaf/overleaf",
+  "stars": 18300,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-09-17",
+  "related": [
+   "dbeaver"
+  ]
+ },
+ {
+  "key": 248,
+  "slug": "linkding",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "linkding: quản lý dấu trang tự host, tối giản, nhanh và dễ cài bằng Docker",
+  "repo": "sissbruecker/linkding",
+  "stars": 11380,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-10-26",
+  "related": [
+   "jabref"
+  ]
+ },
+ {
+  "key": 249,
+  "slug": "archivebox",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "ArchiveBox: tự lưu bản sao trang web, video và tài liệu để còn đọc được nhiều năm sau",
+  "repo": "ArchiveBox/ArchiveBox",
+  "stars": 28930,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "paperless-ngx",
+   "zettlr"
+  ]
+ },
+ {
+  "key": 250,
+  "slug": "dbeaver",
+  "group": "2026-11-03-nghien-cuu-va-luu-tru-tai-lieu",
+  "title": "DBeaver: giao diện xem và truy vấn hơn 100 loại cơ sở dữ liệu, giúp hiểu dữ liệu AI tạo ra",
+  "repo": "dbeaver/dbeaver",
+  "stars": 52281,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "overleaf",
+   "paperless-ngx"
+  ]
  }
 ]

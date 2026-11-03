@@ -1,0 +1,36 @@
+{
+  "key": 250,
+  "repo": "dbeaver/dbeaver",
+  "repoId": "44662669",
+  "url": "https://github.com/dbeaver/dbeaver",
+  "stars": 52281,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:07:16Z",
+  "createdAt": "2015-10-21T08:26:28Z",
+  "defaultBranch": "devel",
+  "description": "Free universal database tool and SQL client",
+  "homepage": "https://dbeaver.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/devel/README.md",
+    "sha256": "ea03cc7b39acce4fcd355be439dd2b14f8b861f7b4406ca4024de9267b06deb1",
+    "bytes": 9549,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Download",
+      "Running",
+      "Architecture"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Điều khoản tính năng AI chưa kiểm tra.",
+    "Chưa so sánh với công cụ khác (pgAdmin, DB Browser for SQLite)."
+  ],
+  "runtimeValidated": false
+}

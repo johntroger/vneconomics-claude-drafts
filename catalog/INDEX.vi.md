@@ -22,6 +22,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 20 — Quy trình tự động và phát hành an toàn](learning-paths/20-ci-cd-va-quy-trinh-phat-hanh.vi.md) — Từ chạy thử quy trình cục bộ đến phát hành có kiểm soát, thông báo và kiểm tra liên kết.
 - [Lộ trình 21 — Nhà thông minh tự chủ, từng bước](learning-paths/21-nha-thong-minh.vi.md) — Từ gom thiết bị về một nơi đến camera cục bộ; mỗi bước đều có rủi ro riêng về điện, riêng tư và bảo mật.
 - [Lộ trình 22 — Làm video, âm thanh và ảnh bằng công cụ mở](learning-paths/22-video-am-thanh-va-anh.vi.md) — Quay, cắt, dựng và tạo nội dung đa phương tiện; luôn kiểm tra giấy phép và quyền riêng tư.
+- [Lộ trình 23 — Tri thức và nghiên cứu cá nhân](learning-paths/23-tri-thuc-va-nghien-cuu-ca-nhan.vi.md) — Lưu liên kết, quản lý tài liệu tham khảo, soạn bài và giữ hồ sơ an toàn; luôn đọc cảnh báo bảo mật của từng công cụ.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -63,7 +64,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 231 | ntfy: gửi thông báo tới điện thoại hoặc máy tính từ script bằng một lệnh HTTP | [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) | Apache-2.0 | 35254 | ci-cd-va-tu-dong-hoa-git |
 | 242 | LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 45636 | video-am-thanh-va-anh-ai |
 
-### Cơ bản (73 bài)
+### Cơ bản (77 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -140,8 +141,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 234 | Home Assistant: điều khiển nhà thông minh tại chỗ, ưu tiên quyền riêng tư và chạy trên Raspberry Pi | [home-assistant/core](https://github.com/home-assistant/core) | Apache-2.0 | 91923 | nha-thong-minh |
 | 241 | OBS Studio: phần mềm miễn phí để quay màn hình và phát trực tiếp, nền tảng của nhiều video bài giảng | [obsproject/obs-studio](https://github.com/obsproject/obs-studio) | GPL-2.0 | 78853 | video-am-thanh-va-anh-ai |
 | 243 | Kdenlive: phần mềm dựng video miễn phí, mã nguồn mở của cộng đồng KDE | [KDE/kdenlive](https://github.com/KDE/kdenlive) | GPL-3.0 | 6039 | video-am-thanh-va-anh-ai |
+| 245 | JabRef: quản lý tài liệu tham khảo BibTeX, tìm bài báo và chèn trích dẫn miễn phí | [JabRef/jabref](https://github.com/JabRef/jabref) | MIT | 4864 | nghien-cuu-va-luu-tru-tai-lieu |
+| 246 | Zettlr: trình soạn Markdown cho người viết học thuật, có trích dẫn và xuất bằng Pandoc | [Zettlr/Zettlr](https://github.com/Zettlr/Zettlr) | GPL-3.0 | 13854 | nghien-cuu-va-luu-tru-tai-lieu |
+| 248 | linkding: quản lý dấu trang tự host, tối giản, nhanh và dễ cài bằng Docker | [sissbruecker/linkding](https://github.com/sissbruecker/linkding) | MIT | 11380 | nghien-cuu-va-luu-tru-tai-lieu |
+| 250 | DBeaver: giao diện xem và truy vấn hơn 100 loại cơ sở dữ liệu, giúp hiểu dữ liệu AI tạo ra | [dbeaver/dbeaver](https://github.com/dbeaver/dbeaver) | Apache-2.0 | 52281 | nghien-cuu-va-luu-tru-tai-lieu |
 
-### Khá khó (cần nền kỹ thuật) (23 bài)
+### Khá khó (cần nền kỹ thuật) (24 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -168,8 +173,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 212 | Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust | [tauri-apps/tauri](https://github.com/tauri-apps/tauri) | Apache-2.0 | 112448 | ung-dung-di-dong-da-nen-tang |
 | 232 | zizmor: soát lỗi bảo mật trong quy trình GitHub Actions trước khi bị khai thác | [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) | MIT | 6861 | ci-cd-va-tu-dong-hoa-git |
 | 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
+| 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
 
-### Nâng cao (17 bài)
+### Nâng cao (19 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -190,6 +196,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 237 | Frigate: đầu ghi camera chạy tại nhà, nhận diện vật thể thời gian thực bằng AI cục bộ | [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) | MIT | 37165 | nha-thong-minh |
 | 238 | Valetudo: cho robot hút bụi chạy cục bộ không cần đám mây, và lưu ý về mô hình phát triển | [Hypfer/Valetudo](https://github.com/Hypfer/Valetudo) | Apache-2.0 | 9898 | nha-thong-minh |
 | 240 | sherpa-onnx: nhận dạng và tổng hợp giọng nói chạy ngoại tuyến trên nhiều thiết bị và ngôn ngữ lập trình | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Apache-2.0 | 15694 | video-am-thanh-va-anh-ai |
+| 247 | Overleaf Community Edition: soạn LaTeX cộng tác trực tuyến tự host, chỉ nên dùng khi mọi người dùng đều tin cậy | [overleaf/overleaf](https://github.com/overleaf/overleaf) | AGPL-3.0 | 18300 | nghien-cuu-va-luu-tru-tai-lieu |
+| 249 | ArchiveBox: tự lưu bản sao trang web, video và tài liệu để còn đọc được nhiều năm sau | [ArchiveBox/ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) | MIT | 28930 | nghien-cuu-va-luu-tru-tai-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
