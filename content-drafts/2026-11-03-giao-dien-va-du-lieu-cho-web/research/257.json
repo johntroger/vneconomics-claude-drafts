@@ -1,0 +1,37 @@
+{
+  "key": 257,
+  "repo": "sqlalchemy/sqlalchemy",
+  "repoId": "159271175",
+  "url": "https://github.com/sqlalchemy/sqlalchemy",
+  "stars": 12276,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:26:46Z",
+  "createdAt": "2018-11-27T03:35:03Z",
+  "defaultBranch": "main",
+  "description": "The Database Toolkit for Python",
+  "homepage": "https://www.sqlalchemy.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/sqlalchemy/sqlalchemy/main/README.rst",
+    "sha256": "326efb4f98f6ff5222da0653e9fcf115e22d92e5c3e8bda5823e4daa9e901a9c",
+    "bytes": 5701,
+    "sectionsRead": [
+      "Introduction",
+      "Philosophy",
+      "Documentation",
+      "Installation / Requirements",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử với cơ sở dữ liệu thật.",
+    "Chưa so sánh với ORM khác như Drizzle (bài khác)."
+  ],
+  "runtimeValidated": false
+}

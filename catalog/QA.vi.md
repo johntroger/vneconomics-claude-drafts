@@ -21,3 +21,11 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Số sao, giấy phép, ngày commit là snapshot 2026-11-03.
 - Độ khó và câu lệnh mẫu cho AI là nhận định biên tập, chưa kiểm chứng bằng cách dùng thật.
 - Liên kết trang `github.com` (blob) không được kiểm tra vì bị proxy phiên cloud chặn; chỉ kiểm tra liên kết README raw.
+
+## Bổ sung rà soát ngày 2026-11-03 (nhóm 23–26, key 244–259)
+
+- Kiểm tra máy trên toàn danh mục (159 bài): không trùng key, slug hay repo; chỉ dùng nhãn danh mục và nhu cầu đã có.
+- Số sao trong danh mục khớp với tệp nghiên cứu của 16 bài mới.
+- Đường dẫn README thô của 16 bài mới đều trả mã 200.
+- Mỗi bài mới đã được đối chiếu các ý chính với README bằng grep; không có cụm "đã chạy thử", "đã kiểm thử" hay lệnh cài đặt trong nội dung.
+- Hạn chế như trước: đây là kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa bài nào được cài hay chạy thử.

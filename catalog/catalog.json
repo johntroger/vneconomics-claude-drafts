@@ -2767,5 +2767,75 @@
   "related": [
    "zk"
   ]
+ },
+ {
+  "key": 256,
+  "slug": "daisyui",
+  "group": "2026-11-03-giao-dien-va-du-lieu-cho-web",
+  "title": "daisyUI: bộ thành phần giao diện dựng sẵn cho Tailwind CSS, giúp trang web đẹp mà ít phải viết class dài",
+  "repo": "saadeghi/daisyui",
+  "stars": 42732,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-31",
+  "related": [
+   "sqlalchemy"
+  ]
+ },
+ {
+  "key": 257,
+  "slug": "sqlalchemy",
+  "group": "2026-11-03-giao-dien-va-du-lieu-cho-web",
+  "title": "SQLAlchemy: nói chuyện với cơ sở dữ liệu bằng Python mà vẫn giữ quyền kiểm soát câu SQL",
+  "repo": "sqlalchemy/sqlalchemy",
+  "stars": 12276,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "daisyui",
+   "typesense"
+  ]
+ },
+ {
+  "key": 258,
+  "slug": "typesense",
+  "group": "2026-11-03-giao-dien-va-du-lieu-cho-web",
+  "title": "Typesense: công cụ tìm kiếm chịu lỗi gõ sai cho website, lưu ý khóa API mẫu trong README chỉ để học",
+  "repo": "typesense/typesense",
+  "stars": 27076,
+  "license": "GPL-3.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "postgrest",
+   "sqlalchemy"
+  ]
+ },
+ {
+  "key": 259,
+  "slug": "postgrest",
+  "group": "2026-11-03-giao-dien-va-du-lieu-cho-web",
+  "title": "PostgREST: biến cơ sở dữ liệu PostgreSQL có sẵn thành API REST mà không phải viết máy chủ",
+  "repo": "PostgREST/postgrest",
+  "stars": 27739,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "typesense"
+  ]
  }
 ]

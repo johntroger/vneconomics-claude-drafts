@@ -1,0 +1,37 @@
+{
+  "key": 259,
+  "repo": "PostgREST/postgrest",
+  "repoId": "20787122",
+  "url": "https://github.com/PostgREST/postgrest",
+  "stars": 27739,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:09:00Z",
+  "createdAt": "2014-06-13T00:23:00Z",
+  "defaultBranch": "main",
+  "description": "REST API for any Postgres database",
+  "homepage": "https://postgrest.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/PostgREST/postgrest/main/README.md",
+    "sha256": "8db249c3e25502b900b3f2470711f941f4789486dfaebd9c53bb3aeedcba2778",
+    "bytes": 6843,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Performance",
+      "Security",
+      "Versioning",
+      "Data Integrity"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử với PostgreSQL thật.",
+    "Chưa so sánh với Supabase (bài khác) hay Hasura."
+  ],
+  "runtimeValidated": false
+}

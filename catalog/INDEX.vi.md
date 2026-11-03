@@ -24,6 +24,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 22 — Làm video, âm thanh và ảnh bằng công cụ mở](learning-paths/22-video-am-thanh-va-anh.vi.md) — Quay, cắt, dựng và tạo nội dung đa phương tiện; luôn kiểm tra giấy phép và quyền riêng tư.
 - [Lộ trình 23 — Tri thức và nghiên cứu cá nhân](learning-paths/23-tri-thuc-va-nghien-cuu-ca-nhan.vi.md) — Lưu liên kết, quản lý tài liệu tham khảo, soạn bài và giữ hồ sơ an toàn; luôn đọc cảnh báo bảo mật của từng công cụ.
 - [Lộ trình 24 — Đọc sau, ghi chú cộng tác và xem dữ liệu bảng](learning-paths/24-doc-sau-ghi-chu-va-du-lieu-bang.vi.md) — Gom bài đọc, soạn ghi chú chung và nhìn nhanh dữ liệu; chọn công cụ theo mức quen terminal.
+- [Lộ trình 25 — Giao diện, tìm kiếm và dữ liệu cho ứng dụng web](learning-paths/25-giao-dien-va-du-lieu-cho-web.vi.md) — Từ giao diện đến cơ sở dữ liệu và API; càng về cuối càng cần hiểu phân quyền và bảo mật.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -66,7 +67,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 242 | LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 45636 | video-am-thanh-va-anh-ai |
 | 251 | calibre: quản lý, đọc và chuyển đổi sách điện tử cho tủ sách cá nhân và tài liệu học tập | [kovidgoyal/calibre](https://github.com/kovidgoyal/calibre) | GPL-3.0 | 26326 | ghi-chu-doc-sau-va-du-lieu-bang |
 
-### Cơ bản (79 bài)
+### Cơ bản (80 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -149,6 +150,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 250 | DBeaver: giao diện xem và truy vấn hơn 100 loại cơ sở dữ liệu, giúp hiểu dữ liệu AI tạo ra | [dbeaver/dbeaver](https://github.com/dbeaver/dbeaver) | Apache-2.0 | 52281 | nghien-cuu-va-luu-tru-tai-lieu |
 | 252 | wallabag: lưu bài web để đọc sau, không bị quảng cáo và cửa sổ bật lên quấy rầy | [wallabag/wallabag](https://github.com/wallabag/wallabag) | MIT | 13040 | ghi-chu-doc-sau-va-du-lieu-bang |
 | 253 | HedgeDoc: soạn ghi chú Markdown cộng tác thời gian thực, lưu ý nhánh develop là bản viết lại HedgeDoc 2 | [hedgedoc/hedgedoc](https://github.com/hedgedoc/hedgedoc) | AGPL-3.0 | 7502 | ghi-chu-doc-sau-va-du-lieu-bang |
+| 256 | daisyUI: bộ thành phần giao diện dựng sẵn cho Tailwind CSS, giúp trang web đẹp mà ít phải viết class dài | [saadeghi/daisyui](https://github.com/saadeghi/daisyui) | MIT | 42732 | giao-dien-va-du-lieu-cho-web |
 
 ### Khá khó (cần nền kỹ thuật) (24 bài)
 
@@ -179,7 +181,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
 | 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
 
-### Nâng cao (21 bài)
+### Nâng cao (24 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -204,6 +206,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 249 | ArchiveBox: tự lưu bản sao trang web, video và tài liệu để còn đọc được nhiều năm sau | [ArchiveBox/ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) | MIT | 28930 | nghien-cuu-va-luu-tru-tai-lieu |
 | 254 | zk: trợ lý ghi chú văn bản thuần chạy trong terminal để xây Zettelkasten hoặc wiki cá nhân | [zk-org/zk](https://github.com/zk-org/zk) | GPL-3.0 | 2864 | ghi-chu-doc-sau-va-du-lieu-bang |
 | 255 | VisiData: xem và sắp xếp bảng dữ liệu CSV, JSON, Excel ngay trong terminal | [saulpw/visidata](https://github.com/saulpw/visidata) | GPL-3.0 | 9440 | ghi-chu-doc-sau-va-du-lieu-bang |
+| 257 | SQLAlchemy: nói chuyện với cơ sở dữ liệu bằng Python mà vẫn giữ quyền kiểm soát câu SQL | [sqlalchemy/sqlalchemy](https://github.com/sqlalchemy/sqlalchemy) | MIT | 12276 | giao-dien-va-du-lieu-cho-web |
+| 258 | Typesense: công cụ tìm kiếm chịu lỗi gõ sai cho website, lưu ý khóa API mẫu trong README chỉ để học | [typesense/typesense](https://github.com/typesense/typesense) | GPL-3.0 | 27076 | giao-dien-va-du-lieu-cho-web |
+| 259 | PostgREST: biến cơ sở dữ liệu PostgreSQL có sẵn thành API REST mà không phải viết máy chủ | [PostgREST/postgrest](https://github.com/PostgREST/postgrest) | MIT | 27739 | giao-dien-va-du-lieu-cho-web |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
