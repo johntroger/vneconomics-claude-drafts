@@ -7107,5 +7107,75 @@
    "changesets",
    "commitlint"
   ]
+ },
+ {
+  "key": 481,
+  "slug": "go",
+  "group": "2026-11-03-ngon-ngu-runtime",
+  "title": "Go: ngôn ngữ lập trình mã nguồn mở giúp xây phần mềm đơn giản, đáng tin cậy và hiệu quả; kho GitHub chỉ là bản sao của kho chính",
+  "repo": "golang/go",
+  "stars": 139542,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "dotnet-runtime"
+  ]
+ },
+ {
+  "key": 482,
+  "slug": "dotnet-runtime",
+  "group": "2026-11-03-ngon-ngu-runtime",
+  "title": "dotnet/runtime: kho mã nguồn của .NET runtime, thư viện và trình cài đặt dotnet; README chủ yếu dành cho người đóng góp và trỏ tới tài liệu Microsoft Learn",
+  "repo": "dotnet/runtime",
+  "stars": 18404,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "go",
+   "odin"
+  ]
+ },
+ {
+  "key": 483,
+  "slug": "odin",
+  "group": "2026-11-03-ngon-ngu-runtime",
+  "title": "Odin: ngôn ngữ lập trình đa dụng 'thay thế C' theo hướng dữ liệu, README có ví dụ mã và liên kết học, cài đặt, bản nightly",
+  "repo": "odin-lang/Odin",
+  "stars": 12256,
+  "license": {
+   "key": "zlib",
+   "name": "zlib License",
+   "spdx_id": "Zlib",
+   "url": "https://api.github.com/licenses/zlib",
+   "node_id": "MDc6TGljZW5zZTI3"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "dotnet-runtime"
+  ]
  }
 ]

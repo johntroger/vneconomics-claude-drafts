@@ -62,6 +62,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 60 — Coding agent trong terminal và máy chủ](learning-paths/60-coding-agent-terminal.vi.md) — Từ agent của các hãng lớn đến công cụ mã nguồn mở và trung tâm điều khiển nhiều agent; chú ý lệnh cài tải từ mạng, quyền hạn của agent, tình trạng bảo trì và thay đổi về gói dịch vụ.
 - [Lộ trình 61 — Mạng riêng và truyền thông riêng tư](learning-paths/61-mang-rieng-tu.vi.md) — Từ chặn quảng cáo cho cả nhà, VPN tự dựng đến mạng xã hội và nhắn tin liên thông; chú ý cổng quản trị mở ra Internet, lệnh cài tải từ mạng, luật về mã hóa và trách nhiệm khi tự vận hành.
 - [Lộ trình 62 — Môi trường nhất quán và chất lượng mã](learning-paths/62-moi-truong-chat-luong-ma.vi.md) — Từ biến môi trường theo thư mục và quản lý phiên bản công cụ đến Git hook, quy ước commit, phát hành và công cụ kiểm tra mã nhanh; chú ý chỉ cho chạy cấu hình từ kho đáng tin và sao lưu cấu hình shell.
+- [Lộ trình 63 — Ngôn ngữ và nền tảng chạy mã](learning-paths/63-ngon-ngu-runtime.vi.md) — Ba kho mã của ngôn ngữ và nền tảng: Go, .NET runtime và Odin; README đều ngắn hoặc dành cho người đóng góp, nên đây chỉ là điểm xuất phát để tìm nơi tải chính thức và tài liệu học.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -117,7 +118,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (168 bài)
+### Cơ bản (169 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -289,6 +290,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 477 | Lefthook: trình quản lý Git hook nhanh, một tệp nhị phân không phụ thuộc, chạy lệnh song song, cấu hình bằng lefthook.yml | [evilmartians/lefthook](https://github.com/evilmartians/lefthook) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 8984 | moi-truong-chat-luong-ma |
 | 479 | commitlint: kiểm tra thông điệp commit theo chuẩn Conventional Commits, cấu hình chia sẻ qua npm; README nêu yêu cầu Node.js 22.12+ và không hứa vá bản cũ | [conventional-changelog/commitlint](https://github.com/conventional-changelog/commitlint) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18798 | moi-truong-chat-luong-ma |
 | 480 | Oxc (Oxidation Compiler): bộ công cụ JavaScript và TypeScript viết bằng Rust hiệu năng cao gồm trình kiểm tra Oxlint, định dạng Oxfmt, parser, transformer, minifier, resolver | [oxc-project/oxc](https://github.com/oxc-project/oxc) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 23310 | moi-truong-chat-luong-ma |
+| 481 | Go: ngôn ngữ lập trình mã nguồn mở giúp xây phần mềm đơn giản, đáng tin cậy và hiệu quả; kho GitHub chỉ là bản sao của kho chính | [golang/go](https://github.com/golang/go) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 139542 | ngon-ngu-runtime |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -332,7 +334,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (131 bài)
+### Nâng cao (133 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -467,6 +469,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 473 | Synapse: máy chủ Matrix mã nguồn mở của Element, README nói không có hỗ trợ trừ khi có thuê bao Element và có giấy phép thương mại thay thế | [element-hq/synapse](https://github.com/element-hq/synapse) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 4755 | mang-rieng-tu |
 | 474 | Signal Android: mã nguồn ứng dụng nhắn tin Signal cho Android, README nêu thông báo về mật mã học và quy định xuất khẩu | [signalapp/Signal-Android](https://github.com/signalapp/Signal-Android) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 29569 | mang-rieng-tu |
 | 478 | Changesets: công cụ quản lý phiên bản và nhật ký thay đổi cho kho nhiều gói (monorepo); README nói nhánh main là bản phát triển cho v3 | [changesets/changesets](https://github.com/changesets/changesets) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12555 | moi-truong-chat-luong-ma |
+| 482 | dotnet/runtime: kho mã nguồn của .NET runtime, thư viện và trình cài đặt dotnet; README chủ yếu dành cho người đóng góp và trỏ tới tài liệu Microsoft Learn | [dotnet/runtime](https://github.com/dotnet/runtime) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18404 | ngon-ngu-runtime |
+| 483 | Odin: ngôn ngữ lập trình đa dụng 'thay thế C' theo hướng dữ liệu, README có ví dụ mã và liên kết học, cài đặt, bản nightly | [odin-lang/Odin](https://github.com/odin-lang/Odin) | {'key': 'zlib', 'name': 'zlib License', 'spdx_id': 'Zlib', 'url': 'https://api.github.com/licenses/zlib', 'node_id': 'MDc6TGljZW5zZTI3'} | 12256 | ngon-ngu-runtime |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

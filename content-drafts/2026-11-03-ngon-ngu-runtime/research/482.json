@@ -1,0 +1,43 @@
+{
+  "key": 482,
+  "repo": "dotnet/runtime",
+  "repoId": "210716005",
+  "url": "https://github.com/dotnet/runtime",
+  "stars": 18404,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:59:40Z",
+  "createdAt": "2019-09-24T23:36:39Z",
+  "defaultBranch": "main",
+  "description": ".NET is a cross-platform runtime for cloud, mobile, desktop, and IoT apps.",
+  "homepage": "https://docs.microsoft.com/dotnet/core/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dotnet/runtime/main/README.md",
+    "sha256": "bcd0ca8841408b85528eb4f91a610c072eb46df2a0e89ba5ab38a60270286057",
+    "bytes": 4800,
+    "sectionsRead": [
+      "What is .NET?",
+      "How can I contribute?",
+      "Reporting security issues",
+      "Filing issues",
+      "Useful Links"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Microsoft Learn.",
+    "Chưa thử.",
+    "Giấy phép chỉ theo GitHub."
+  ],
+  "runtimeValidated": false
+}

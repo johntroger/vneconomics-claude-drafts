@@ -1,0 +1,41 @@
+{
+  "key": 481,
+  "repo": "golang/go",
+  "repoId": "23096959",
+  "url": "https://github.com/golang/go",
+  "stars": 139542,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:49:30Z",
+  "createdAt": "2014-08-19T04:33:40Z",
+  "defaultBranch": "master",
+  "description": "The Go programming language",
+  "homepage": "https://go.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/golang/go/master/README.md",
+    "sha256": "8247b7c5de1e74854aac1a08aa5894444d1d33b4045c70d5cc3367ad0e25c3f3",
+    "bytes": 1454,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Download and Install",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu go.dev.",
+    "Chưa thử.",
+    "Đặc tính và hiệu năng của Go chưa được kiểm chứng trong bài."
+  ],
+  "runtimeValidated": false
+}

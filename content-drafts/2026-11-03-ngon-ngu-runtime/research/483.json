@@ -1,0 +1,42 @@
+{
+  "key": 483,
+  "repo": "odin-lang/Odin",
+  "repoId": "74583692",
+  "url": "https://github.com/odin-lang/Odin",
+  "stars": 12256,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "zlib",
+    "name": "zlib License",
+    "spdx_id": "Zlib",
+    "url": "https://api.github.com/licenses/zlib",
+    "node_id": "MDc6TGljZW5zZTI3"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:52:23Z",
+  "createdAt": "2016-11-23T14:22:10Z",
+  "defaultBranch": "master",
+  "description": "Odin Programming Language",
+  "homepage": "https://odin-lang.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/odin-lang/Odin/master/README.md",
+    "sha256": "1486e0efd3efde8882fa10f01f32617eb90fbf7dc496565407ffad80f8f11244",
+    "bytes": 3015,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Ví dụ mã",
+      "Documentation",
+      "Learning Odin"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu odin-lang.org.",
+    "Chưa thử.",
+    "Mức ổn định và yêu cầu hệ điều hành chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
