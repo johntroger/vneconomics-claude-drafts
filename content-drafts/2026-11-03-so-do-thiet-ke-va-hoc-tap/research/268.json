@@ -1,0 +1,36 @@
+{
+  "key": 268,
+  "repo": "moodle/moodle",
+  "repoId": "439861",
+  "url": "https://github.com/moodle/moodle",
+  "stars": 7575,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T03:46:06Z",
+  "createdAt": "2009-12-16T23:01:23Z",
+  "defaultBranch": "main",
+  "description": "Moodle - the world's open source learning platform",
+  "homepage": "https://moodle.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/moodle/moodle/main/README.md",
+    "sha256": "1a8d83ef58c7971abf7915d7c7c66e548eb99bf487a29f88c2203b42c8eaf830",
+    "bytes": 1903,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Documentation",
+      "Installation and hosting",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README rất ngắn, chưa đọc tài liệu cài đặt.",
+    "Giá MoodleCloud và đối tác chưa kiểm tra.",
+    "Tính năng chi tiết chưa nghiên cứu."
+  ],
+  "runtimeValidated": false
+}

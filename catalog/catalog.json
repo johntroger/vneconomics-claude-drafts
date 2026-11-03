@@ -2907,5 +2907,93 @@
   "related": [
    "llama-cpp"
   ]
+ },
+ {
+  "key": 264,
+  "slug": "mermaid",
+  "group": "2026-11-03-so-do-thiet-ke-va-hoc-tap",
+  "title": "Mermaid: viết vài dòng chữ để tạo sơ đồ quy trình, tuần tự, Gantt và hơn 20 loại sơ đồ khác",
+  "repo": "mermaid-js/mermaid",
+  "stars": 90987,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "drawio",
+   "excalidraw"
+  ]
+ },
+ {
+  "key": 265,
+  "slug": "excalidraw",
+  "group": "2026-11-03-so-do-thiet-ke-va-hoc-tap",
+  "title": "Excalidraw: bảng trắng vẽ tay trên web, hợp phác thảo sơ đồ và wireframe, có mã hóa đầu cuối khi cộng tác",
+  "repo": "excalidraw/excalidraw",
+  "stars": 135069,
+  "license": "MIT",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "mermaid"
+  ]
+ },
+ {
+  "key": 266,
+  "slug": "drawio",
+  "group": "2026-11-03-so-do-thiet-ke-va-hoc-tap",
+  "title": "draw.io (diagrams.net): vẽ sơ đồ kỹ thuật chính xác, lưu ý README nói đây là bản thử và có điều khoản riêng cho biểu tượng",
+  "repo": "jgraph/drawio",
+  "stars": 9147,
+  "license": "Apache-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-30",
+  "related": [
+   "mermaid",
+   "penpot"
+  ]
+ },
+ {
+  "key": 267,
+  "slug": "penpot",
+  "group": "2026-11-03-so-do-thiet-ke-va-hoc-tap",
+  "title": "Penpot: nền tảng thiết kế giao diện mã nguồn mở thay thế Figma, tự host được và nối với mã bằng API và MCP",
+  "repo": "penpot/penpot",
+  "stars": 62003,
+  "license": "MPL-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "drawio",
+   "moodle"
+  ]
+ },
+ {
+  "key": 268,
+  "slug": "moodle",
+  "group": "2026-11-03-so-do-thiet-ke-va-hoc-tap",
+  "title": "Moodle: nền tảng quản lý học tập mã nguồn mở của nhiều trường đại học, tự cài hoặc thuê host",
+  "repo": "moodle/moodle",
+  "stars": 7575,
+  "license": "GPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "penpot"
+  ]
  }
 ]
