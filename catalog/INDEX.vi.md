@@ -70,6 +70,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 68 — Thu thập và xử lý dữ liệu](learning-paths/68-thu-thap-xu-ly-du-lieu.vi.md) — Từ phân tích HTML, cào dữ liệu web đến nạp dữ liệu, dựng pipeline và khám phá bằng biểu đồ; chú ý điều khoản trang, bản quyền, dữ liệu cá nhân, tuyên bố 'qua mặt chống bot' và phần thương mại của dltHub, Mage Pro.
 - [Lộ trình 69 — Blockchain và tiền mã hóa (kỹ thuật)](learning-paths/69-blockchain-tien-ma-hoa.vi.md) — Từ nút Bitcoin, Lightning, thanh toán và nút Ethereum đến hợp đồng thông minh, ứng dụng phi tập trung và dựng chuỗi riêng; chỉ là giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý; chú ý khóa riêng, mạng thử, kiểm toán hợp đồng và luật địa phương.
 - [Lộ trình 70 — WordPress và hệ sinh thái](learning-paths/70-wordpress-he-sinh-thai.vi.md) — Từ dòng lệnh, Composer, khung Bedrock và theme Sage đến API GraphQL, gỡ lỗi, tăng tốc và trình dựng trang; thử trên bản sao, sao lưu trước khi đổi dữ liệu, chú ý plugin trả phí (WP Rocket, Elementor Pro) và tính thử nghiệm của Playground.
+- [Lộ trình 71 — Marketing tự host](learning-paths/71-marketing-tu-host.vi.md) — Từ rút gọn liên kết, lên lịch mạng xã hội, cờ tính năng và A/B testing đến trang trạng thái và mạng chia sẻ ảnh; chú ý tài khoản và khóa mặc định, cảnh báo tên miền giả mạo, phê duyệt ứng dụng nền tảng, bản trả phí và dữ liệu người dùng.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -125,7 +126,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (184 bài)
+### Cơ bản (187 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -313,6 +314,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 529 | WP Rocket (kho mã): plugin tăng tốc WordPress bằng bộ nhớ đệm; README nói cần email và khóa API từ tài khoản WP Rocket để xác thực giấy phép nên là plugin trả phí | [wp-media/wp-rocket](https://github.com/wp-media/wp-rocket) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 769 | wordpress-he-sinh-thai |
 | 530 | Elementor: trình dựng website kéo thả cho WordPress; README nêu lõi miễn phí mã nguồn mở và các gói trả phí Elementor One/Pro | [elementor/elementor](https://github.com/elementor/elementor) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 7100 | wordpress-he-sinh-thai |
 | 531 | Composer: công cụ khai báo, quản lý và cài đặt phụ thuộc cho dự án PHP, tìm gói công khai trên Packagist; README nêu PHP 7.2.5 trở lên cho bản mới nhất | [composer/composer](https://github.com/composer/composer) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 29567 | wordpress-he-sinh-thai |
+| 534 | YOURLS: bộ script PHP chạy trình rút gọn liên kết riêng trên máy chủ của bạn, có thống kê chi tiết; README nói 'làm gì tùy thích' với phần mềm tự do giấy phép MIT | [YOURLS/YOURLS](https://github.com/YOURLS/YOURLS) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12298 | marketing-tu-host |
+| 535 | Kutt: trình rút gọn liên kết hiện đại hỗ trợ tên miền riêng, thống kê, quản lý người dùng và API; README cảnh báo kutt.it không thuộc dự án và có thể là trang lừa đảo | [thedevs-network/kutt](https://github.com/thedevs-network/kutt) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 11188 | marketing-tu-host |
+| 538 | openstatus: nền tảng trang trạng thái, ứng phó sự cố và giám sát uptime mã nguồn mở, khai báo bằng YAML hoặc Terraform, có máy chủ MCP; README nêu 28 vùng kiểm tra, giá phẳng, AGPL-3.0 | [openstatushq/openstatus](https://github.com/openstatushq/openstatus) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 9243 | marketing-tu-host |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -356,7 +360,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (166 bài)
+### Nâng cao (171 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -526,6 +530,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 524 | Bedrock: bộ khung WordPress cho nhà phát triển muốn quản lý dự án bằng Git và Composer, theo triết lý Twelve-Factor, cấu hình theo môi trường | [roots/bedrock](https://github.com/roots/bedrock) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 6585 | wordpress-he-sinh-thai |
 | 525 | Sage: theme khởi đầu WordPress lai dùng Laravel Blade, Vite và Tailwind CSS, tích hợp Acorn của Laravel và hỗ trợ block editor | [roots/sage](https://github.com/roots/sage) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 13280 | wordpress-he-sinh-thai |
 | 526 | WPGraphQL: API GraphQL mở rộng được cho mọi site WordPress, kho monorepo gồm plugin lõi và các tiện ích (IDE, Smart Cache, ACF) và website wpgraphql.com | [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) | {'key': 'gpl-3.0', 'name': 'GNU General Public License v3.0', 'spdx_id': 'GPL-3.0', 'url': 'https://api.github.com/licenses/gpl-3.0', 'node_id': 'MDc6TGljZW5zZTk='} | 3796 | wordpress-he-sinh-thai |
+| 532 | Postiz: công cụ lên lịch đăng mạng xã hội mã nguồn mở có AI, phân tích và cộng tác; README so sánh bản Cloud trả phí với bản tự host miễn phí AGPL | [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 40759 | marketing-tu-host |
+| 533 | Shlink: trình rút gọn liên kết tự host bằng PHP, dùng dưới tên miền của bạn; README nêu yêu cầu PHP 8.4 hoặc 8.5 và cơ sở dữ liệu MySQL, MariaDB, PostgreSQL, SQL Server hoặc SQLite | [shlinkio/shlink](https://github.com/shlinkio/shlink) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 5402 | marketing-tu-host |
+| 536 | Flagsmith: nền tảng quản lý tính năng (feature flag), cấu hình từ xa và A/B testing mã nguồn mở, tự host miễn phí hoặc bản Enterprise trả phí, tích hợp OpenFeature | [Flagsmith/flagsmith](https://github.com/Flagsmith/flagsmith) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 6640 | marketing-tu-host |
+| 537 | Unleash: nền tảng quản lý tính năng (feature flag) mã nguồn mở, 15 SDK chính thức; README cho tài khoản mặc định admin/unleash4all khi chạy cục bộ và mời thử Enterprise | [Unleash/unleash](https://github.com/Unleash/unleash) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 13926 | marketing-tu-host |
+| 539 | Pixelfed: nền tảng chia sẻ ảnh thuộc Fediverse, tự host bằng PHP; README ghi từ chối đóng góp do AI tạo ra và nêu hỗ trợ PHP 8.5 và 8.4, MySQL 8+, MariaDB 11+ | [pixelfed/pixelfed](https://github.com/pixelfed/pixelfed) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 7135 | marketing-tu-host |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

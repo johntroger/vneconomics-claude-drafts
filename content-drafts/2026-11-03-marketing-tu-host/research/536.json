@@ -1,0 +1,41 @@
+{
+  "key": 536,
+  "repo": "Flagsmith/flagsmith",
+  "repoId": "136163130",
+  "url": "https://github.com/Flagsmith/flagsmith",
+  "stars": 6640,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:14:56Z",
+  "createdAt": "2018-06-05T10:49:57Z",
+  "defaultBranch": "main",
+  "description": "Flagsmith is an open-source feature flag platform with remote config, experimentation, and self-hosted or cloud deployment options.",
+  "homepage": "https://www.flagsmith.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Flagsmith/flagsmith/main/README.md",
+    "sha256": "dcf62a4b8116bb40de8df9d6ba0f9882f160026e6fb571d2b69b36a66fd433b7",
+    "bytes": 8859,
+    "sectionsRead": [
+      "What is Flagsmith?",
+      "Get up and running",
+      "Check a feature flag in your code"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá bản Enterprise và đám mây chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

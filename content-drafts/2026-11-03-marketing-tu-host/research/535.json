@@ -1,0 +1,43 @@
+{
+  "key": 535,
+  "repo": "thedevs-network/kutt",
+  "repoId": "121380371",
+  "url": "https://github.com/thedevs-network/kutt",
+  "stars": 11188,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-19T07:55:33Z",
+  "createdAt": "2018-02-13T12:33:16Z",
+  "defaultBranch": "main",
+  "description": "Free Modern URL Shortener.",
+  "homepage": "https://kutt.to",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/thedevs-network/kutt/main/README.md",
+    "sha256": "12fd66dd4e5ccd12a6a3ca06c88f35ba173d20799bf69a9a0fffe7fde050b2c0",
+    "bytes": 16280,
+    "sectionsRead": [
+      "Cảnh báo đầu README",
+      "Key features",
+      "Setup",
+      "API",
+      "Configuration"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cấu hình chi tiết.",
+    "Chưa thử.",
+    "Cách chống lạm dụng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

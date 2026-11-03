@@ -1,0 +1,44 @@
+{
+  "key": 539,
+  "repo": "pixelfed/pixelfed",
+  "repoId": "129829848",
+  "url": "https://github.com/pixelfed/pixelfed",
+  "stars": 7135,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T10:44:45Z",
+  "createdAt": "2018-04-17T01:48:45Z",
+  "defaultBranch": "dev",
+  "description": "Photo Sharing. For Everyone.",
+  "homepage": "https://pixelfed.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pixelfed/pixelfed/dev/README.md",
+    "sha256": "5de5edbb515d9fd50f2e445903a252246d3c48f2ff2b4f9b9b4a166bc95a2efa",
+    "bytes": 5824,
+    "sectionsRead": [
+      "Introduction",
+      "AI-Generated Contributions",
+      "PHP Support",
+      "Database Support",
+      "Official Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.pixelfed.org.",
+    "Chưa thử.",
+    "Chi phí lưu trữ ảnh chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

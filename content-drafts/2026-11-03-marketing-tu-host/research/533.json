@@ -1,0 +1,42 @@
+{
+  "key": 533,
+  "repo": "shlinkio/shlink",
+  "repoId": "55801807",
+  "url": "https://github.com/shlinkio/shlink",
+  "stars": 5402,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:04:51Z",
+  "createdAt": "2016-04-08T18:44:25Z",
+  "defaultBranch": "develop",
+  "description": "The definitive self-hosted URL shortener",
+  "homepage": "https://shlink.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/shlinkio/shlink/develop/README.md",
+    "sha256": "5f124b3db9014bcb2cf6629e041c8597e12dd1a9b4d2f01ba1e7316581a69cf9",
+    "bytes": 6872,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Docker image",
+      "Self-hosted",
+      "Using shlink"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu shlink.io.",
+    "Chưa thử.",
+    "Cấu hình bảo mật API chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

@@ -8315,5 +8315,195 @@
    "bedrock",
    "wp-rocket"
   ]
+ },
+ {
+  "key": 532,
+  "slug": "postiz",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Postiz: công cụ lên lịch đăng mạng xã hội mã nguồn mở có AI, phân tích và cộng tác; README so sánh bản Cloud trả phí với bản tự host miễn phí AGPL",
+  "repo": "gitroomhq/postiz-app",
+  "stars": 40759,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "pixelfed",
+   "unleash"
+  ]
+ },
+ {
+  "key": 533,
+  "slug": "shlink",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Shlink: trình rút gọn liên kết tự host bằng PHP, dùng dưới tên miền của bạn; README nêu yêu cầu PHP 8.4 hoặc 8.5 và cơ sở dữ liệu MySQL, MariaDB, PostgreSQL, SQL Server hoặc SQLite",
+  "repo": "shlinkio/shlink",
+  "stars": 5402,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "kutt",
+   "openstatus"
+  ]
+ },
+ {
+  "key": 534,
+  "slug": "yourls",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "YOURLS: bộ script PHP chạy trình rút gọn liên kết riêng trên máy chủ của bạn, có thống kê chi tiết; README nói 'làm gì tùy thích' với phần mềm tự do giấy phép MIT",
+  "repo": "YOURLS/YOURLS",
+  "stars": 12298,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "kutt"
+  ]
+ },
+ {
+  "key": 535,
+  "slug": "kutt",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Kutt: trình rút gọn liên kết hiện đại hỗ trợ tên miền riêng, thống kê, quản lý người dùng và API; README cảnh báo kutt.it không thuộc dự án và có thể là trang lừa đảo",
+  "repo": "thedevs-network/kutt",
+  "stars": 11188,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-19",
+  "related": [
+   "shlink",
+   "yourls"
+  ]
+ },
+ {
+  "key": 536,
+  "slug": "flagsmith",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Flagsmith: nền tảng quản lý tính năng (feature flag), cấu hình từ xa và A/B testing mã nguồn mở, tự host miễn phí hoặc bản Enterprise trả phí, tích hợp OpenFeature",
+  "repo": "Flagsmith/flagsmith",
+  "stars": 6640,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "openstatus",
+   "unleash"
+  ]
+ },
+ {
+  "key": 537,
+  "slug": "unleash",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Unleash: nền tảng quản lý tính năng (feature flag) mã nguồn mở, 15 SDK chính thức; README cho tài khoản mặc định admin/unleash4all khi chạy cục bộ và mời thử Enterprise",
+  "repo": "Unleash/unleash",
+  "stars": 13926,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "flagsmith",
+   "postiz"
+  ]
+ },
+ {
+  "key": 538,
+  "slug": "openstatus",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "openstatus: nền tảng trang trạng thái, ứng phó sự cố và giám sát uptime mã nguồn mở, khai báo bằng YAML hoặc Terraform, có máy chủ MCP; README nêu 28 vùng kiểm tra, giá phẳng, AGPL-3.0",
+  "repo": "openstatushq/openstatus",
+  "stars": 9243,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "flagsmith",
+   "shlink"
+  ]
+ },
+ {
+  "key": 539,
+  "slug": "pixelfed",
+  "group": "2026-11-03-marketing-tu-host",
+  "title": "Pixelfed: nền tảng chia sẻ ảnh thuộc Fediverse, tự host bằng PHP; README ghi từ chối đóng góp do AI tạo ra và nêu hỗ trợ PHP 8.5 và 8.4, MySQL 8+, MariaDB 11+",
+  "repo": "pixelfed/pixelfed",
+  "stars": 7135,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "postiz"
+  ]
  }
 ]
