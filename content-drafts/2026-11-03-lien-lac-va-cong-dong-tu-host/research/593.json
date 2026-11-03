@@ -1,0 +1,42 @@
+{
+  "key": 593,
+  "repo": "jitsi/jitsi-meet",
+  "repoId": "15225670",
+  "url": "https://github.com/jitsi/jitsi-meet",
+  "stars": 30188,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T10:52:24Z",
+  "createdAt": "2013-12-16T12:51:09Z",
+  "defaultBranch": "master",
+  "description": "Jitsi Meet - Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application.",
+  "homepage": "https://jitsi.org/meet",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jitsi/jitsi-meet/master/README.md",
+    "sha256": "cd50b8ddb4e1fe4569dd36c8cd4f94da91e584a228ee7330d9498a2eccbe769f",
+    "bytes": 3603,
+    "sectionsRead": [
+      "Using Jitsi Meet",
+      "Running your own instance",
+      "Jitsi as a Service",
+      "Security"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc sổ tay devops.",
+    "Chưa thử.",
+    "Chưa đo băng thông và chi phí."
+  ],
+  "runtimeValidated": false
+}

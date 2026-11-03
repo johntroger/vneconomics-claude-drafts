@@ -1,0 +1,43 @@
+{
+  "key": 598,
+  "repo": "simplex-chat/simplex-chat",
+  "repoId": "229407566",
+  "url": "https://github.com/simplex-chat/simplex-chat",
+  "stars": 19643,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:38:29Z",
+  "createdAt": "2019-12-21T09:50:09Z",
+  "defaultBranch": "stable",
+  "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
+  "homepage": "https://simplex.chat",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/README.md",
+    "sha256": "576ee3078c56e070e5401de213802493932821a9d93482ea652dc75d0fcc115c",
+    "bytes": 42439,
+    "sectionsRead": [
+      "Install the app",
+      "SimpleX approach to privacy and security",
+      "Privacy and security: technical details and limitations",
+      "Disclaimers",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc báo cáo bảo mật gốc.",
+    "Chưa thử.",
+    "Tuyên bố riêng tư chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

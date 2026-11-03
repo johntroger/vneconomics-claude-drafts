@@ -9763,5 +9763,195 @@
   "related": [
    "schemathesis"
   ]
+ },
+ {
+  "key": 593,
+  "slug": "jitsi-meet",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Jitsi Meet: bộ dự án mã nguồn mở để dùng và triển khai nền tảng họp video, chạy trên trình duyệt, có ứng dụng di động, SDK web và gốc, có thể tự host bằng gói Debian hoặc Docker",
+  "repo": "jitsi/jitsi-meet",
+  "stars": 30188,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "livekit",
+   "simplex-chat"
+  ]
+ },
+ {
+  "key": 594,
+  "slug": "element-web",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Element Web: ứng dụng khách web và máy tính cho Matrix (trước đây là Vector và Riot) xây trên Matrix JS SDK, giấy phép AGPL, GPL hoặc giấy phép thương mại trả phí của Element",
+  "repo": "element-hq/element-web",
+  "stars": 13637,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "discourse",
+   "simplex-chat"
+  ]
+ },
+ {
+  "key": 595,
+  "slug": "docker-mailserver",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Docker Mailserver: máy chủ thư đóng gói bằng container, đầy đủ nhưng đơn giản (SMTP, IMAP, LDAP, chống thư rác, chống vi-rút), chỉ dùng tệp cấu hình, không cơ sở dữ liệu SQL, do tình nguyện viên duy trì",
+  "repo": "docker-mailserver/docker-mailserver",
+  "stars": 19718,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "livekit"
+  ]
+ },
+ {
+  "key": 596,
+  "slug": "owncast",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Owncast: máy chủ phát trực tiếp video và trò chuyện mã nguồn mở, tự host, phi tập trung, một người dùng, để tự phát luồng như các dịch vụ lớn và giữ quyền kiểm soát nội dung",
+  "repo": "owncast/owncast",
+  "stars": 11645,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-26",
+  "related": [
+   "lemmy"
+  ]
+ },
+ {
+  "key": 597,
+  "slug": "livekit",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "LiveKit: hạ tầng thời gian thực cho giọng nói, video và tác tử AI, máy chủ SFU WebRTC phân tán viết bằng Go trên Pion, Apache 2.0; README nêu khách hàng lớn và gợi ý LiveKit Agents",
+  "repo": "livekit/livekit",
+  "stars": 22012,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "docker-mailserver",
+   "jitsi-meet"
+  ]
+ },
+ {
+  "key": 598,
+  "slug": "simplex-chat",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "SimpleX Chat: nền tảng nhắn tin tự nhận không có mã định danh người dùng nào, riêng tư theo thiết kế; có ứng dụng di động, ứng dụng dòng lệnh, giấy phép AGPLv3, README nêu hai lần đánh giá bảo mật của Trail of Bits",
+  "repo": "simplex-chat/simplex-chat",
+  "stars": 19643,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "element-web",
+   "jitsi-meet"
+  ]
+ },
+ {
+  "key": 599,
+  "slug": "lemmy",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Lemmy: nơi tổng hợp liên kết và diễn đàn cho fediverse, mã nguồn mở theo AGPL, dễ tự host, có Docker và Ansible, viết bằng Rust, mỗi máy chủ tự đặt chính sách kiểm duyệt",
+  "repo": "lemmynet/lemmy",
+  "stars": 14660,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "discourse",
+   "owncast"
+  ]
+ },
+ {
+  "key": 600,
+  "slug": "discourse",
+  "group": "2026-11-03-lien-lac-va-cong-dong-tu-host",
+  "title": "Discourse: nền tảng cộng đồng mã nguồn mở 100%, diễn đàn chủ đề, trò chuyện thời gian thực, giao diện và plugin (kể cả AI), có thể tự host hoặc dùng dịch vụ trả phí chính thức, giấy phép GPL 2.0 trở lên",
+  "repo": "discourse/discourse",
+  "stars": 48045,
+  "license": {
+   "key": "gpl-2.0",
+   "name": "GNU General Public License v2.0",
+   "spdx_id": "GPL-2.0",
+   "url": "https://api.github.com/licenses/gpl-2.0",
+   "node_id": "MDc6TGljZW5zZTg="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "element-web",
+   "lemmy"
+  ]
  }
 ]

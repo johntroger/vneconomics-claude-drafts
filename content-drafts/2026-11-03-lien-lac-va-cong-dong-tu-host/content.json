@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-lien-lac-tu-host",
+  "batch": 98,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 593,
+      "batch": 98,
+      "slug": "jitsi-meet",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Jitsi Meet: bộ dự án mã nguồn mở để dùng và triển khai nền tảng họp video, chạy trên trình duyệt, có ứng dụng di động, SDK web và gốc, có thể tự host bằng gói Debian hoặc Docker",
+        "excerpt": "Hiểu Jitsi Meet là bộ dự án mã nguồn mở để dùng và triển khai nền tảng họp video chất lượng cao: chạy trên trình duyệt, có ứng dụng di động, SDK tích hợp, chia sẻ nội dung, giơ tay, trò chuyện, bình chọn, nền ảo; README nêu cả tự host và dịch vụ trả phí Jitsi as a Service của 8x8.",
+        "content": "<p>README tả Jitsi Meet là bộ dự án mã nguồn mở giúp người dùng dùng và triển khai nền tảng họp video với chất lượng và tính năng hiện đại: hỗ trợ các trình duyệt hiện hành, ứng dụng di động, SDK web và gốc, âm thanh hình ảnh HD, chia sẻ nội dung, giơ tay và biểu cảm, trò chuyện kèm tin riêng, bình chọn, nền ảo. README nói có thể thử ngay tại meet.jit.si, miễn phí, nhưng cần tài khoản Google, Facebook hoặc GitHub để bắt đầu một cuộc họp. Muốn tự dựng, README trỏ tới sổ tay devops, nói có gói Debian và bộ Docker đầy đủ, người dùng nâng cao có thể tự biên dịch. README cũng giới thiệu Jitsi as a Service (JaaS) của 8x8 là dịch vụ doanh nghiệp trả phí; đây là quảng bá thương mại, bài không đánh giá. Phần Security trỏ tới mô tả bảo mật và tài liệu mã hóa đầu cuối (E2EE) tại jitsi.org. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Zoom hay Google Meet là dịch vụ của công ty khác. Jitsi cho phép bạn tự dựng một phòng họp video trên máy chủ của mình, hoặc dùng bản công khai miễn phí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc sổ tay devops để hiểu tự host họp video cần những thành phần gì và cần mở cổng nào; chưa dựng thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần quản trị Linux hoặc Docker, tên miền, chứng chỉ, mở cổng mạng và hiểu băng thông. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần họp thỉnh thoảng thì dùng dịch vụ có sẵn đơn giản hơn nhiều. Tự host họp video tiêu tốn băng thông và cần vá bảo mật; README không nói gì về chi phí thực tế, bài chưa đo.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>video conferencing (họp video)</strong>: cuộc họp có hình và tiếng qua mạng; README nêu.</li><li><strong>SDK</strong>: bộ công cụ cho lập trình viên tích hợp tính năng vào ứng dụng; README nêu có SDK web và gốc.</li><li><strong>E2EE (mã hóa đầu cuối)</strong>: chỉ người trong cuộc họp giải mã được; README trỏ tới tài liệu E2EE.</li><li><strong>JaaS</strong>: dịch vụ Jitsi trả phí do 8x8 cung cấp; README nêu.</li><li><strong>Debian package</strong>: gói cài đặt cho Debian và Ubuntu; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có gói Debian và bộ Docker, trỏ tới sổ tay devops tại jitsi.github.io/handbook; bài không chép lệnh. Cần máy chủ, tên miền và cổng mạng. Miễn phí khi tự host; giấy phép lấy theo GitHub (Apache-2.0); JaaS trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Using Jitsi Meet và Running your own instance.</li><li>Đọc sổ tay devops.</li><li>Thử bản công khai trước khi nghĩ đến tự host.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu tự host họp video. Hãy đọc README của Jitsi Meet (https://github.com/jitsi/jitsi-meet) và giải thích bằng tiếng Việt: Jitsi gồm những phần nào, tự host khác dùng meet.jit.si ra sao, E2EE là gì, và JaaS là gì khác tự host. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,6 KB), bài chưa đọc sổ tay devops. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jitsi</strong> có <strong>30.188 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jitsi/jitsi-meet/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jitsi/jitsi-meet\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 593. Chưa cài/chạy thử; không tạo validation. Snapshot sao 30188; repo_id 15225670; README SHA256 cd50b8ddb4e1fe4569dd36c8cd4f94da91e584a228ee7330d9498a2eccbe769f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jitsi/jitsi-meet",
+          "repo_id": "15225670",
+          "source_path": "",
+          "source_revision": "README-SHA256:cd50b8ddb4e1fe4569dd36c8cd4f94da91e584a228ee7330d9498a2eccbe769f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jitsi/jitsi-meet",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có gói Debian và bộ Docker, trỏ tới sổ tay devops tại jitsi.github.io/handbook; bài không chép lệnh. Cần máy chủ, tên miền và cổng mạng. Miễn phí khi tự host; giấy phép lấy theo GitHub (Apache-2.0); JaaS trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jitsi/jitsi-meet/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jitsi/jitsi-meet/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jitsi/jitsi-meet",
+        "stars": 30188,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jitsi/jitsi-meet/master/README.md",
+        "readmeSha256": "cd50b8ddb4e1fe4569dd36c8cd4f94da91e584a228ee7330d9498a2eccbe769f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 594,
+      "batch": 98,
+      "slug": "element-web",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Element Web: ứng dụng khách web và máy tính cho Matrix (trước đây là Vector và Riot) xây trên Matrix JS SDK, giấy phép AGPL, GPL hoặc giấy phép thương mại trả phí của Element",
+        "excerpt": "Hiểu Element Web là ứng dụng khách web và máy tính cho giao thức Matrix, xây trên Matrix JS SDK; README nêu các mức hỗ trợ môi trường, khuyên dùng ứng dụng Element X cho di động, và giấy phép nhiều lựa chọn: AGPL, GPL hoặc giấy phép thương mại trả phí.",
+        "content": "<p>README tả Element (trước đây là Vector và Riot) là ứng dụng khách web và máy tính cho Matrix xây trên Matrix JS SDK. README phân bốn mức hỗ trợ môi trường: được hỗ trợ (hai bản chính gần nhất của Chrome, Firefox, Edge, hai bản Safari, ứng dụng Element Desktop chính thức), cố gắng hết sức, cộng đồng hỗ trợ (trình duyệt di động) và không hỗ trợ. Trên di động README khuyên dùng ứng dụng gốc element-x-android và element-x-ios. Cách thử nhanh: bản host tại app.element.io; nhánh develop được triển khai liên tục tại develop.element.io. Muốn tự host, README trỏ tới tài liệu cài đặt. Phần giấy phép nói phần mềm có nhiều lựa chọn: dùng miễn phí theo AGPL phiên bản 3 trở lên, hoặc miễn phí theo GPL phiên bản 3 trở lên, hoặc theo hợp đồng giấy phép thương mại trả phí với Element. Element Web chỉ là ứng dụng khách; muốn tự quản cần thêm một máy chủ Matrix (chú thích biên tập, README phần đã đọc không nói chi tiết).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Matrix là giao thức nhắn tin mở, giống như email có nhiều nhà cung cấp. Element là một ứng dụng để bạn đọc và gửi tin trên Matrix, giống như Gmail là ứng dụng để dùng email.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bản host tại app.element.io với tài khoản thử để làm quen giao diện, không dùng thông tin thật nhạy cảm. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu Matrix, máy chủ tự host và cách giữ khóa mã hóa; tự host còn cần tên miền và chứng chỉ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần một ứng dụng nhắn tin thông thường thì ứng dụng phổ biến đơn giản hơn. Element Web chỉ là phần giao diện: muốn tự quản cần thêm máy chủ Matrix. Giấy phép nhiều lựa chọn: cần đọc kỹ điều khoản; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Matrix</strong>: giao thức nhắn tin mở phi tập trung; README nêu Element là ứng dụng khách Matrix.</li><li><strong>client (ứng dụng khách)</strong>: phần mềm bạn dùng để đọc và gửi tin; README nêu.</li><li><strong>homeserver (máy chủ Matrix)</strong>: máy chủ lưu tài khoản và tin nhắn; README không giải thích, đây là chú thích biên tập.</li><li><strong>SDK</strong>: bộ công cụ cho lập trình viên; README nêu Matrix JS SDK.</li><li><strong>multi-license (nhiều giấy phép)</strong>: cho chọn một trong nhiều giấy phép; README nêu AGPL, GPL hoặc thương mại.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt docs/install.md và mục chạy như ứng dụng máy tính; bài không chép lệnh. Cần máy chủ Matrix khi tự quản. Miễn phí theo AGPL hoặc GPL; có giấy phép thương mại trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Supported Environments và Getting Started.</li><li>Thử bản host tại app.element.io với tài khoản thử.</li><li>Đọc tài liệu cài đặt nếu muốn tự host.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu Matrix và Element. Hãy đọc README của Element Web (https://github.com/element-hq/element-web) và giải thích bằng tiếng Việt: Element Web làm gì, cần gì thêm để tự quản, và giấy phép AGPL, GPL hoặc thương mại khác nhau ra sao (không phải tư vấn pháp lý). Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,3 KB, bài chưa đọc docs/install.md. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>element-hq</strong> có <strong>13.637 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL-3.0 hoặc GPL-3.0 hoặc giấy phép thương mại của Element; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/element-hq/element-web/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/element-hq/element-web\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 594. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13637; repo_id 39487546; README SHA256 587769691a569fe64a392fd24c6b205629a0607a60f62223d0801d02d888feb9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/element-hq/element-web",
+          "repo_id": "39487546",
+          "source_path": "",
+          "source_revision": "README-SHA256:587769691a569fe64a392fd24c6b205629a0607a60f62223d0801d02d888feb9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/element-hq/element-web",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt docs/install.md và mục chạy như ứng dụng máy tính; bài không chép lệnh. Cần máy chủ Matrix khi tự quản. Miễn phí theo AGPL hoặc GPL; có giấy phép thương mại trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/element-hq/element-web/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/element-hq/element-web/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "element-hq/element-web",
+        "stars": 13637,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/element-hq/element-web/develop/README.md",
+        "readmeSha256": "587769691a569fe64a392fd24c6b205629a0607a60f62223d0801d02d888feb9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 595,
+      "batch": 98,
+      "slug": "docker-mailserver",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Docker Mailserver: máy chủ thư đóng gói bằng container, đầy đủ nhưng đơn giản (SMTP, IMAP, LDAP, chống thư rác, chống vi-rút), chỉ dùng tệp cấu hình, không cơ sở dữ liệu SQL, do tình nguyện viên duy trì",
+        "excerpt": "Hiểu Docker Mailserver là máy chủ thư đóng gói bằng container, README tả sẵn sàng sản xuất nhưng đơn giản: gồm SMTP, IMAP, LDAP, chống thư rác và vi-rút, chỉ dùng tệp cấu hình thay vì cơ sở dữ liệu SQL, do tình nguyện viên duy trì từ tháng 1 năm 2021.",
+        "content": "<p>README tả Docker Mailserver là máy chủ thư đóng gói trong container đầy đủ nhưng đơn giản (SMTP, IMAP, LDAP, chống thư rác, chống vi-rút...), chỉ dùng tệp cấu hình, không cơ sở dữ liệu SQL, dễ triển khai và nâng cấp. Dự án do tomav tạo, từ tháng 1 năm 2021 do tình nguyện viên duy trì. README nhắc đọc tài liệu đúng với phiên bản ảnh đang dùng và nói trình theo dõi lỗi không phải nơi hỗ trợ cá nhân. Các dịch vụ gồm Postfix, Dovecot (SASL, IMAP, POP3, LDAP, Sieve, hạn ngạch), Rspamd, Amavis, SpamAssassin, ClamAV, OpenDKIM và OpenDMARC, Fail2ban, Fetchmail, Getmail6, Postscreen, Postgrey, hỗ trợ chứng chỉ Let's Encrypt, thủ công hoặc tự ký, tập lệnh thiết lập và xác thực OAuth2. README phần đã đọc không nêu giấy phép bằng văn bản; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Email tự host nghĩa là bạn tự giữ hộp thư của mình. Docker Mailserver gom sẵn các thành phần cần thiết để nhận và gửi thư vào một gói dễ chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc tài liệu để hiểu SPF, DKIM, DMARC là gì và vì sao thư tự host dễ bị coi là thư rác; chưa dựng thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần quản trị Linux hoặc Docker, tên miền, DNS, chứng chỉ, SPF, DKIM, DMARC và theo dõi danh tiếng IP. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa từng quản trị máy chủ thì tự host email là một trong những việc khó và dễ sai nhất: thư có thể bị đánh dấu rác, lộ dữ liệu hoặc để máy chủ bị lợi dụng gửi thư rác. Bài khuyên cân nhắc kỹ và chỉ làm khi hiểu rủi ro.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>SMTP</strong>: giao thức gửi thư; README nêu.</li><li><strong>IMAP</strong>: giao thức đọc thư từ máy chủ; README nêu.</li><li><strong>DKIM/DMARC</strong>: cách chứng minh thư đến từ tên miền của bạn; README nêu OpenDKIM và OpenDMARC.</li><li><strong>spam (thư rác)</strong>: thư không mong muốn; README nêu nhiều công cụ chống.</li><li><strong>container</strong>: gói chạy ứng dụng tách biệt; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docker-mailserver.github.io với phần usage, FAQ, ví dụ cài đặt cơ bản và biến môi trường; bài không chép lệnh. Cần tên miền, DNS, máy chủ có cổng thư mở và chứng chỉ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Included Services.</li><li>Đọc FAQ và hướng dẫn cài đặt cơ bản trong tài liệu.</li><li>Chỉ thử trên tên miền và máy chủ thử, không cho thư thật đi qua.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang cân nhắc tự host email. Hãy đọc README của Docker Mailserver (https://github.com/docker-mailserver/docker-mailserver) và giải thích bằng tiếng Việt: nó gồm những dịch vụ nào, vì sao tự host email khó, và DKIM, DMARC là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,8 KB), bài chưa đọc tài liệu docker-mailserver.github.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>docker-mailserver</strong> có <strong>19.718 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/docker-mailserver/docker-mailserver/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/docker-mailserver/docker-mailserver\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 595. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19718; repo_id 33037215; README SHA256 3aee4a4f0936fad8b9a799ccf93e3a5157469e4bfc6e84f0f88f347ba02e5371.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/docker-mailserver/docker-mailserver",
+          "repo_id": "33037215",
+          "source_path": "",
+          "source_revision": "README-SHA256:3aee4a4f0936fad8b9a799ccf93e3a5157469e4bfc6e84f0f88f347ba02e5371",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/docker-mailserver/docker-mailserver",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docker-mailserver.github.io với phần usage, FAQ, ví dụ cài đặt cơ bản và biến môi trường; bài không chép lệnh. Cần tên miền, DNS, máy chủ có cổng thư mở và chứng chỉ. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/docker-mailserver/docker-mailserver/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/docker-mailserver/docker-mailserver/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "docker-mailserver/docker-mailserver",
+        "stars": 19718,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/README.md",
+        "readmeSha256": "3aee4a4f0936fad8b9a799ccf93e3a5157469e4bfc6e84f0f88f347ba02e5371",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 596,
+      "batch": 98,
+      "slug": "owncast",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Owncast: máy chủ phát trực tiếp video và trò chuyện mã nguồn mở, tự host, phi tập trung, một người dùng, để tự phát luồng như các dịch vụ lớn và giữ quyền kiểm soát nội dung",
+        "excerpt": "Hiểu Owncast là máy chủ phát video trực tiếp và trò chuyện mã nguồn mở, tự host, phi tập trung, dành cho một người phát; README nêu tương thích phần mềm phát qua RTMP như OBS, giấy phép MIT, và lưu ý quan trọng về nhánh develop.",
+        "content": "<p>README tả Owncast là máy chủ phát video trực tiếp và trò chuyện mã nguồn mở, tự host, phi tập trung, một người dùng, cho phép chạy luồng riêng giống kiểu các dịch vụ lớn nhưng toàn quyền với nội dung, giao diện và kiểm duyệt. README nói mục tiêu là một dịch vụ duy nhất chạy ngay, có trang khởi đầu nhanh, bản demo. Owncast tương thích mọi phần mềm phát qua RTMP; OBS, Streamlabs, Restream và nhiều phần mềm khác đã được dùng với Owncast theo README. README nêu cách xây từ mã nguồn (phần phía sau viết bằng Go, giao diện bằng React) kèm lưu ý về nhánh develop và ghi chú Windows, mục đóng góp, bảo mật. README nêu giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì phát trực tiếp trên nền tảng của người khác, bạn dựng kênh riêng của mình: người xem vào trang của bạn, xem video và trò chuyện, bạn tự đặt luật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc tài liệu để hiểu RTMP là gì và luồng từ OBS đến người xem đi qua những bước nào; chưa dựng thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần phần mềm phát như OBS, máy chủ có băng thông đủ, tên miền và chứng chỉ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ phát thử với vài người thì nền tảng có sẵn dễ hơn. Phát trực tiếp tiêu tốn băng thông và tự chịu trách nhiệm về nội dung trò chuyện, bản quyền và kiểm duyệt; bài không phải tư vấn pháp lý. README lưu ý nhánh develop là trạng thái phát triển mới nhất, không phải lúc nào cũng là thứ bạn muốn: muốn bản ổn định đã phát hành thì dùng thẻ phiên bản; README cũng nói Owncast chưa hỗ trợ gốc máy chủ Windows, có thể dùng WSL2.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>live streaming (phát trực tiếp)</strong>: truyền video thời gian thực; README nêu.</li><li><strong>RTMP</strong>: giao thức phát luồng mà phần mềm như OBS dùng; README nêu.</li><li><strong>OBS</strong>: phần mềm phát luồng phổ biến; README nêu đã dùng với Owncast.</li><li><strong>self-hosted (tự host)</strong>: chạy trên máy chủ của bạn; README nêu.</li><li><strong>decentralized (phi tập trung)</strong>: không phụ thuộc một nền tảng trung tâm; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang Quickstart tại owncast.online; bài không chép lệnh. Cần phần mềm phát RTMP, máy chủ, băng thông. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc About The Project và Getting Started.</li><li>Đọc mục tương thích phần mềm phát.</li><li>Thử với luồng riêng tư trước khi mở cho người xem.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn phát trực tiếp trên kênh riêng. Hãy đọc README của Owncast (https://github.com/owncast/owncast) và giải thích bằng tiếng Việt: Owncast là gì, RTMP và OBS đóng vai trò gì, và vì sao README nói nhánh develop không phải lúc nào cũng là thứ bạn muốn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8,9 KB, bài chưa đọc tài liệu owncast.online. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>owncast</strong> có <strong>11.645 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/owncast/owncast/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/owncast/owncast\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 596. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11645; repo_id 266445736; README SHA256 8966aa0549a958f4fb5b2df2f767d1b1fb38024b4ff6e864b5bd8ed4297a2287.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/owncast/owncast",
+          "repo_id": "266445736",
+          "source_path": "",
+          "source_revision": "README-SHA256:8966aa0549a958f4fb5b2df2f767d1b1fb38024b4ff6e864b5bd8ed4297a2287",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/owncast/owncast",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang Quickstart tại owncast.online; bài không chép lệnh. Cần phần mềm phát RTMP, máy chủ, băng thông. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/owncast/owncast/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/owncast/owncast/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "owncast/owncast",
+        "stars": 11645,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/owncast/owncast/develop/README.md",
+        "readmeSha256": "8966aa0549a958f4fb5b2df2f767d1b1fb38024b4ff6e864b5bd8ed4297a2287",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 597,
+      "batch": 98,
+      "slug": "livekit",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LiveKit: hạ tầng thời gian thực cho giọng nói, video và tác tử AI, máy chủ SFU WebRTC phân tán viết bằng Go trên Pion, Apache 2.0; README nêu khách hàng lớn và gợi ý LiveKit Agents",
+        "excerpt": "Hiểu LiveKit là nền tảng mã nguồn mở xây ứng dụng giọng nói, video và tác tử AI thời gian thực; kho này là máy chủ SFU WebRTC phân tán viết bằng Go; README trỏ SDK, khung LiveKit Agents và liệt kê tính năng như đồng thuận mã hóa đầu cuối, điện thoại SIP.",
+        "content": "<p>README tả LiveKit là nền tảng mã nguồn mở để xây tác tử giọng nói, video và tác tử vật lý. Kho này là máy chủ LiveKit: SFU WebRTC phân tán, mở rộng được, chuyển âm thanh, video và dữ liệu giữa người, thiết bị và mô hình AI. Máy chủ viết bằng Go, dùng thư viện Pion WebRTC. README giới thiệu LiveKit Agents là SDK để xây tác tử giọng nói theo mã (nhận dạng giọng, mô hình ngôn ngữ, đọc giọng, phát hiện lượt nói), có mã ví dụ; bài không chép. README nói LiveKit xử lý hàng tỷ cuộc gọi mỗi năm cho nhiều công ty lớn: đây là tuyên bố của tác giả, bài chưa kiểm chứng. Tính năng gồm xác thực JWT, kết nối UDP, TCP, TURN, triển khai bằng một tệp nhị phân, Docker hoặc Kubernetes, phát hiện người nói, simulcast, API kiểm duyệt, mã hóa đầu cuối, codec SVC, kênh dữ liệu, điện thoại qua SIP, webhook. README nêu giấy phép Apache License v2.0 cho máy chủ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn làm ứng dụng họp video, gọi thoại hoặc trợ lý giọng nói AI trong ứng dụng của bạn? LiveKit là phần động cơ phía sau lo việc truyền âm thanh và video giữa nhiều người.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích SFU và WebRTC là gì, chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu WebRTC, mạng, Go hoặc SDK ngôn ngữ khác, và vận hành máy chủ thời gian thực. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần họp video thì dùng dịch vụ có sẵn. Tác tử giọng nói AI dùng mô hình bên thứ ba có thể tốn phí và gửi âm thanh người dùng ra ngoài: kiểm tra kỹ. README có phần quảng bá dịch vụ đám mây và khách hàng, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>WebRTC</strong>: công nghệ truyền âm thanh và video thời gian thực qua trình duyệt; README nêu.</li><li><strong>SFU</strong>: máy chủ chuyển tiếp luồng giữa nhiều người; README nêu.</li><li><strong>simulcast</strong>: gửi nhiều chất lượng cùng lúc để người nhận chọn; README nêu.</li><li><strong>TURN</strong>: cách vượt tường lửa khi kết nối trực tiếp thất bại; README nêu.</li><li><strong>voice agent (tác tử giọng nói)</strong>: trợ lý AI nói chuyện thời gian thực; README nêu LiveKit Agents.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.livekit.io; bài không chép lệnh. Cần máy chủ, mạng cho UDP, TCP, TURN. Miễn phí theo Apache License v2.0 (README nêu); các dịch vụ đám mây đi kèm có thể trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Features.</li><li>Đọc tài liệu docs.livekit.io.</li><li>Chỉ thử với dữ liệu giả và không phơi máy chủ ra Internet khi chưa bảo vệ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm họp video hoặc trợ lý giọng nói vào ứng dụng. Hãy đọc README của LiveKit (https://github.com/livekit/livekit) và giải thích bằng tiếng Việt: SFU và WebRTC là gì, LiveKit Agents làm gì, và tuyên bố hàng tỷ cuộc gọi là của ai và chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13 KB, bài đọc phần đầu, tính năng và giấy phép, chưa đọc tài liệu docs.livekit.io. Tuyên bố khách hàng và quy mô chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>livekit</strong> có <strong>22.012 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License v2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/livekit/livekit/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/livekit/livekit\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 597. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22012; repo_id 299832860; README SHA256 6c78b326b377ffd7cc5c7e150c8637ce1647715d58c1ae84b838c744b23366cc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/livekit/livekit",
+          "repo_id": "299832860",
+          "source_path": "",
+          "source_revision": "README-SHA256:6c78b326b377ffd7cc5c7e150c8637ce1647715d58c1ae84b838c744b23366cc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/livekit/livekit",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.livekit.io; bài không chép lệnh. Cần máy chủ, mạng cho UDP, TCP, TURN. Miễn phí theo Apache License v2.0 (README nêu); các dịch vụ đám mây đi kèm có thể trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/livekit/livekit/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/livekit/livekit/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "livekit/livekit",
+        "stars": 22012,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/livekit/livekit/master/README.md",
+        "readmeSha256": "6c78b326b377ffd7cc5c7e150c8637ce1647715d58c1ae84b838c744b23366cc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 598,
+      "batch": 98,
+      "slug": "simplex-chat",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SimpleX Chat: nền tảng nhắn tin tự nhận không có mã định danh người dùng nào, riêng tư theo thiết kế; có ứng dụng di động, ứng dụng dòng lệnh, giấy phép AGPLv3, README nêu hai lần đánh giá bảo mật của Trail of Bits",
+        "excerpt": "Hiểu SimpleX Chat là nền tảng nhắn tin tự mô tả không có mã định danh người dùng nào và riêng tư 100% theo thiết kế; README nêu mã hóa đầu cuối kép, bảo vệ siêu dữ liệu, ứng dụng di động và dòng lệnh, hai lần đánh giá bảo mật của Trail of Bits, và nhắc đây còn là nền tảng giai đoạn đầu.",
+        "content": "<p>README tả SimpleX là nền tảng nhắn tin đầu tiên không có mã định danh người dùng dưới bất kỳ hình thức nào và riêng tư 100% theo thiết kế; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README liệt kê: bảo vệ tin nhắn và siêu dữ liệu (ai nói chuyện với ai và khi nào), mã hóa đầu cuối double ratchet có thêm một lớp mã hóa, ứng dụng Android và iOS, bản xem trước TestFlight cho iOS giới hạn 10.000 người dùng, ứng dụng dòng lệnh trên Linux, macOS, Windows. README có các phần mô tả cách tiếp cận bảo mật, thiết kế nền tảng, giới hạn kỹ thuật, hướng dẫn phát triển và viết bot, lộ trình, lời từ chối trách nhiệm. Mục Disclaimers nêu giao thức được rà soát, đánh giá triển khai mật mã và mạng bởi Trail of Bits tháng 10 năm 2022 và rà soát giao thức tháng 7 năm 2024, đồng thời nói nền tảng còn ở giai đoạn đầu (ứng dụng di động ra mắt tháng 3 năm 2022) nên có thể có lỗi. README có phần kêu gọi quyên góp và đầu tư; bài không đánh giá. README nêu giấy phép AGPLv3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hầu hết ứng dụng nhắn tin cần số điện thoại hay tên đăng nhập. SimpleX tìm cách làm mà không có tài khoản kiểu đó, để giảm dấu vết về việc bạn nói chuyện với ai.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Privacy and security: technical details and limitations để hiểu mô hình và giới hạn mà tác giả tự nêu. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu khái niệm riêng tư, mã hóa đầu cuối, quản lý khóa và rủi ro mất tin khi đổi thiết bị. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài không đánh giá mức riêng tư thật của nền tảng; các đánh giá của Trail of Bits là do README nêu, bài chưa đọc báo cáo gốc. Mất thiết bị có thể mất tin nhắn; chưa phải công cụ cho mọi nhu cầu. Không dùng để né quy định pháp luật; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>user identifier (mã định danh người dùng)</strong>: số điện thoại, tên đăng nhập hoặc mã tài khoản dùng nhận ra bạn; README tuyên bố SimpleX không dùng.</li><li><strong>metadata (siêu dữ liệu)</strong>: thông tin về cuộc trò chuyện như ai nói với ai và khi nào; README nêu bảo vệ.</li><li><strong>double ratchet</strong>: cơ chế mã hóa đổi khóa liên tục; README nêu.</li><li><strong>E2EE (mã hóa đầu cuối)</strong>: chỉ hai đầu giải mã được tin; README nêu.</li><li><strong>security audit (đánh giá bảo mật)</strong>: kiểm tra độc lập; README nêu hai lần bởi Trail of Bits.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần Install the app (cửa hàng ứng dụng, F-Droid, TestFlight, APK) và cài ứng dụng dòng lệnh; bài không chép lệnh. Miễn phí theo AGPLv3 (README nêu). Chưa kiểm tra tính khả dụng trên máy bạn.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và SimpleX approach to privacy and security.</li><li>Đọc Privacy and security: technical details and limitations.</li><li>Đọc Disclaimers trước khi tin cậy.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quan tâm nhắn tin riêng tư. Hãy đọc README của SimpleX Chat (https://github.com/simplex-chat/simplex-chat) và giải thích bằng tiếng Việt: 'không có mã định danh người dùng' nghĩa là gì theo README, README nêu giới hạn kỹ thuật nào, và vì sao tuyên bố 100% riêng tư chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 42 KB), bài đọc phần đầu, cách tiếp cận, Disclaimers và giấy phép, chưa đọc báo cáo của Trail of Bits. Tuyên bố riêng tư chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>simplex-chat</strong> có <strong>19.643 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPLv3; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/simplex-chat/simplex-chat/blob/stable/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/simplex-chat/simplex-chat\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 598. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19643; repo_id 229407566; README SHA256 576ee3078c56e070e5401de213802493932821a9d93482ea652dc75d0fcc115c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/simplex-chat/simplex-chat",
+          "repo_id": "229407566",
+          "source_path": "",
+          "source_revision": "README-SHA256:576ee3078c56e070e5401de213802493932821a9d93482ea652dc75d0fcc115c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simplex-chat/simplex-chat",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần Install the app (cửa hàng ứng dụng, F-Droid, TestFlight, APK) và cài ứng dụng dòng lệnh; bài không chép lệnh. Miễn phí theo AGPLv3 (README nêu). Chưa kiểm tra tính khả dụng trên máy bạn.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/simplex-chat/simplex-chat/blob/stable/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/simplex-chat/simplex-chat/blob/stable/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "simplex-chat/simplex-chat",
+        "stars": 19643,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/simplex-chat/simplex-chat/stable/README.md",
+        "readmeSha256": "576ee3078c56e070e5401de213802493932821a9d93482ea652dc75d0fcc115c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 599,
+      "batch": 98,
+      "slug": "lemmy",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Lemmy: nơi tổng hợp liên kết và diễn đàn cho fediverse, mã nguồn mở theo AGPL, dễ tự host, có Docker và Ansible, viết bằng Rust, mỗi máy chủ tự đặt chính sách kiểm duyệt",
+        "excerpt": "Hiểu Lemmy là nơi tổng hợp liên kết và diễn đàn cho fediverse, kiểu Reddit hay Hacker News: người dùng ở một máy chủ có thể theo dõi diễn đàn ở máy chủ khác; mã nguồn mở theo AGPL, tự host dễ với Docker hoặc Ansible, mỗi máy chủ tự đặt chính sách kiểm duyệt.",
+        "content": "<p>README tả Lemmy là diễn đàn và nơi tổng hợp liên kết cho fediverse, giống Reddit, Lobste.rs hay Hacker News: bạn theo dõi diễn đàn mình quan tâm, đăng liên kết, thảo luận. Khác ở chỗ phi tập trung: người dùng đăng ký ở một máy chủ có thể theo dõi và trò chuyện với diễn đàn ở máy chủ khác. Mỗi máy chủ đặt chính sách kiểm duyệt riêng, có quản trị viên toàn trang và người kiểm duyệt cộng đồng. README nêu công nghệ: Rust, Actix, Diesel, Inferno, TypeScript, và tính năng: mã nguồn mở theo AGPL, tự host với Docker và Ansible, giao diện gọn thân thiện di động, chỉ cần tên đăng nhập và mật khẩu để đăng ký, điểm bình chọn, giao diện sáng tối, nhắc người dùng bằng @ và cộng đồng bằng !, tải ảnh, thông báo qua email và tin nhắn riêng, hỗ trợ đa ngôn ngữ. Giấy phép AGPL nêu trong README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một Reddit mà ai cũng có thể dựng riêng, và các cộng đồng ở nhiều máy chủ vẫn nhìn thấy và nói chuyện được với nhau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README và tài liệu join-lemmy.org để hiểu fediverse và liên hợp giữa các máy chủ; chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần quản trị máy chủ, tên miền, cơ sở dữ liệu và kiểm duyệt nội dung. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Chạy một máy chủ diễn đàn nghĩa là bạn chịu trách nhiệm về nội dung người dùng đăng, spam và kiểm duyệt; bài không phải tư vấn pháp lý. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng: cần đọc LICENSE.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>fediverse</strong>: mạng các dịch vụ xã hội độc lập nhưng kết nối được với nhau; README nêu.</li><li><strong>link aggregator (nơi tổng hợp liên kết)</strong>: trang xếp hạng liên kết do người dùng đăng; README nêu.</li><li><strong>federation (liên hợp)</strong>: các máy chủ nói chuyện với nhau; README mô tả người dùng ở máy chủ này theo dõi diễn đàn máy chủ khác.</li><li><strong>moderation (kiểm duyệt)</strong>: quản lý nội dung và hành vi; README nêu mỗi máy chủ tự đặt.</li><li><strong>AGPL</strong>: giấy phép mã nguồn mở copyleft có điều khoản cho dịch vụ qua mạng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt Docker và Ansible tại join-lemmy.org; bài không chép lệnh. Cần máy chủ, tên miền, cơ sở dữ liệu. Miễn phí theo AGPL (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About The Project và Features.</li><li>Đọc tài liệu quản trị tại join-lemmy.org.</li><li>Thử gia nhập một máy chủ công khai trước khi tự dựng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu fediverse và Lemmy. Hãy đọc README của Lemmy (https://github.com/LemmyNet/lemmy) và giải thích bằng tiếng Việt: Lemmy khác Reddit ở đâu, liên hợp giữa máy chủ nghĩa là gì, và quản trị một máy chủ nghĩa là chịu trách nhiệm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8,2 KB, bài chưa đọc tài liệu join-lemmy.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>lemmynet</strong> có <strong>14.660 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/lemmynet/lemmy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/lemmynet/lemmy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 599. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14660; repo_id 170729130; README SHA256 8a8b8d6325d6ccfc4c477fa28ac17b4f15c4f3c05bf6422d8239a64c4a4d9957.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/lemmynet/lemmy",
+          "repo_id": "170729130",
+          "source_path": "",
+          "source_revision": "README-SHA256:8a8b8d6325d6ccfc4c477fa28ac17b4f15c4f3c05bf6422d8239a64c4a4d9957",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lemmynet/lemmy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt Docker và Ansible tại join-lemmy.org; bài không chép lệnh. Cần máy chủ, tên miền, cơ sở dữ liệu. Miễn phí theo AGPL (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lemmynet/lemmy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/lemmynet/lemmy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "lemmynet/lemmy",
+        "stars": 14660,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/lemmynet/lemmy/main/README.md",
+        "readmeSha256": "8a8b8d6325d6ccfc4c477fa28ac17b4f15c4f3c05bf6422d8239a64c4a4d9957",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 600,
+      "batch": 98,
+      "slug": "discourse",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Discourse: nền tảng cộng đồng mã nguồn mở 100%, diễn đàn chủ đề, trò chuyện thời gian thực, giao diện và plugin (kể cả AI), có thể tự host hoặc dùng dịch vụ trả phí chính thức, giấy phép GPL 2.0 trở lên",
+        "excerpt": "Hiểu Discourse là nền tảng cộng đồng mã nguồn mở cho ai muốn toàn quyền cách và nơi chạy diễn đàn: chủ đề thảo luận, chat tích hợp, giao diện và plugin (như Discourse AI, Data Explorer); README nêu tự host cần Ruby, PostgreSQL và Redis, và có lệnh cài tải tập lệnh từ mạng mà bài không chép.",
+        "content": "<p>README tả Discourse là nền tảng cộng đồng mã nguồn mở 100% cho ai muốn toàn quyền cách và nơi chạy trang. README nói có thể tự host hoặc dùng dịch vụ hosting chính thức trả phí (có gói miễn phí theo README), đây là quảng bá thương mại, bài không đánh giá. Việc bạn làm được: tạo chủ đề thảo luận, trò chuyện thời gian thực bằng chat tích hợp, tùy biến bằng giao diện chính thức và cộng đồng, mở rộng bằng plugin như chatbot Discourse AI hay công cụ SQL Data Explorer. README nói nền tảng đã được thử thách hơn mười năm: đây là tuyên bố của tác giả. Phần Development chỉ cách thiết lập môi trường (Docker, macOS, Ubuntu, Windows) và yêu cầu phiên bản tối thiểu Ruby, PostgreSQL, Redis. Phần Setting up Discourse trỏ tới hosting chính thức và nêu cách tự host bằng một lệnh tải tập lệnh từ mạng rồi chạy bằng quyền quản trị; bài không chép lệnh và khuyên đọc tập lệnh trước. Phần giấy phép nêu GNU GPL phiên bản 2.0 trở lên, có thỏa thuận đóng góp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Diễn đàn kiểu cũ nhưng hiện đại: chủ đề có thứ tự, trả lời lồng nhau, chat, tìm kiếm và nhiều plugin. Bạn có thể tự dựng hoặc thuê dịch vụ do chính nhóm Discourse chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem trang discourse.org và meta.discourse.org để hiểu một cộng đồng đang dùng Discourse; chưa dựng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ hoặc xây cộng đồng trực tuyến nhỏ, muốn hiểu các lựa chọn liên lạc tự quản, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần quản trị máy chủ, hiểu email gửi đi, cơ sở dữ liệu và kiểm duyệt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có cộng đồng thì chưa cần diễn đàn riêng. Tự host nghĩa là chịu trách nhiệm cập nhật, sao lưu, email và kiểm duyệt; bài khuyên cân nhắc hosting chính thức nếu không muốn quản trị. Lệnh cài tải tập lệnh từ mạng chạy với quyền quản trị: chỉ chạy sau khi đã đọc tập lệnh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>community platform (nền tảng cộng đồng)</strong>: phần mềm xây diễn đàn hoặc cộng đồng trực tuyến; README nêu.</li><li><strong>plugin</strong>: tiện ích mở rộng tính năng; README nêu Discourse AI và Data Explorer.</li><li><strong>theme (giao diện)</strong>: bộ giao diện tùy biến; README nêu.</li><li><strong>Redis/PostgreSQL</strong>: hệ lưu trữ dữ liệu; README nêu là yêu cầu tối thiểu cho môi trường phát triển.</li><li><strong>CLA</strong>: thỏa thuận cấp phép đóng góp; README nêu cần ký khi đóng góp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn thiết lập từng hệ điều hành cho phát triển; tự host dùng lệnh tải tập lệnh từ mạng chạy bằng quyền quản trị, bài không chép lệnh. Cần Ruby, PostgreSQL, Redis cho phát triển. Miễn phí theo GNU GPL 2.0 trở lên (README nêu); hosting chính thức trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Development.</li><li>Xem meta.discourse.org để hiểu cộng đồng đang dùng.</li><li>Cân nhắc tự host hay dùng hosting chính thức.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xây diễn đàn cho cộng đồng nhỏ. Hãy đọc README của Discourse (https://github.com/discourse/discourse) và giải thích bằng tiếng Việt: Discourse làm được gì, tự host khác hosting chính thức ở đâu, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,7 KB, bài chưa đọc tài liệu meta.discourse.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dịch vụ liên lạc và cộng đồng tự host chứa tin nhắn, địa chỉ email, cuộc gọi và thông tin người dùng: bạn chịu trách nhiệm cập nhật bản vá, sao lưu, kiểm duyệt nội dung và bảo vệ dữ liệu người khác. Đừng mở dịch vụ ra Internet khi chưa bật xác thực, mã hóa và kiểm tra cấu hình, và không dùng dữ liệu thật của người khác khi thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>discourse</strong> có <strong>48.045 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GPL 2.0 trở lên; GitHub nhận diện GPL-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/discourse/discourse/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/discourse/discourse\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 600. Chưa cài/chạy thử; không tạo validation. Snapshot sao 48045; repo_id 7569578; README SHA256 ae4f7dd1c707589c3e98a86b40467aeb66d9dcd4776caf4ec5d68ee2bde345ef.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/discourse/discourse",
+          "repo_id": "7569578",
+          "source_path": "",
+          "source_revision": "README-SHA256:ae4f7dd1c707589c3e98a86b40467aeb66d9dcd4776caf4ec5d68ee2bde345ef",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-2.0",
+                "name": "GNU General Public License v2.0",
+                "spdx_id": "GPL-2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "node_id": "MDc6TGljZW5zZTg="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/discourse/discourse",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn thiết lập từng hệ điều hành cho phát triển; tự host dùng lệnh tải tập lệnh từ mạng chạy bằng quyền quản trị, bài không chép lệnh. Cần Ruby, PostgreSQL, Redis cho phát triển. Miễn phí theo GNU GPL 2.0 trở lên (README nêu); hosting chính thức trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/discourse/discourse/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/discourse/discourse/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "discourse/discourse",
+        "stars": 48045,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/discourse/discourse/main/README.md",
+        "readmeSha256": "ae4f7dd1c707589c3e98a86b40467aeb66d9dcd4776caf4ec5d68ee2bde345ef",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

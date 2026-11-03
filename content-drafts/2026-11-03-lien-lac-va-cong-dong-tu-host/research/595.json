@@ -1,0 +1,41 @@
+{
+  "key": 595,
+  "repo": "docker-mailserver/docker-mailserver",
+  "repoId": "33037215",
+  "url": "https://github.com/docker-mailserver/docker-mailserver",
+  "stars": 19718,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:56:56Z",
+  "createdAt": "2015-03-28T14:56:28Z",
+  "defaultBranch": "master",
+  "description": "Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam, Antivirus, etc.) running inside a container.",
+  "homepage": "https://docker-mailserver.github.io/docker-mailserver/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/README.md",
+    "sha256": "3aee4a4f0936fad8b9a799ccf93e3a5157469e4bfc6e84f0f88f347ba02e5371",
+    "bytes": 3826,
+    "sectionsRead": [
+      "About",
+      "Links to Useful Resources",
+      "Included Services"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docker-mailserver.github.io.",
+    "Chưa thử.",
+    "Chưa đánh giá độ khó thực tế."
+  ],
+  "runtimeValidated": false
+}
