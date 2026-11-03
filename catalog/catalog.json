@@ -2679,5 +2679,93 @@
    "overleaf",
    "paperless-ngx"
   ]
+ },
+ {
+  "key": 251,
+  "slug": "calibre",
+  "group": "2026-11-03-ghi-chu-doc-sau-va-du-lieu-bang",
+  "title": "calibre: quản lý, đọc và chuyển đổi sách điện tử cho tủ sách cá nhân và tài liệu học tập",
+  "repo": "kovidgoyal/calibre",
+  "stars": 26326,
+  "license": "GPL-3.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "hedgedoc",
+   "wallabag"
+  ]
+ },
+ {
+  "key": 252,
+  "slug": "wallabag",
+  "group": "2026-11-03-ghi-chu-doc-sau-va-du-lieu-bang",
+  "title": "wallabag: lưu bài web để đọc sau, không bị quảng cáo và cửa sổ bật lên quấy rầy",
+  "repo": "wallabag/wallabag",
+  "stars": 13040,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "calibre"
+  ]
+ },
+ {
+  "key": 253,
+  "slug": "hedgedoc",
+  "group": "2026-11-03-ghi-chu-doc-sau-va-du-lieu-bang",
+  "title": "HedgeDoc: soạn ghi chú Markdown cộng tác thời gian thực, lưu ý nhánh develop là bản viết lại HedgeDoc 2",
+  "repo": "hedgedoc/hedgedoc",
+  "stars": 7502,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "calibre",
+   "zk"
+  ]
+ },
+ {
+  "key": 254,
+  "slug": "zk",
+  "group": "2026-11-03-ghi-chu-doc-sau-va-du-lieu-bang",
+  "title": "zk: trợ lý ghi chú văn bản thuần chạy trong terminal để xây Zettelkasten hoặc wiki cá nhân",
+  "repo": "zk-org/zk",
+  "stars": 2864,
+  "license": "GPL-3.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-10-31",
+  "related": [
+   "hedgedoc",
+   "visidata"
+  ]
+ },
+ {
+  "key": 255,
+  "slug": "visidata",
+  "group": "2026-11-03-ghi-chu-doc-sau-va-du-lieu-bang",
+  "title": "VisiData: xem và sắp xếp bảng dữ liệu CSV, JSON, Excel ngay trong terminal",
+  "repo": "saulpw/visidata",
+  "stars": 9440,
+  "license": "GPL-3.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "zk"
+  ]
  }
 ]

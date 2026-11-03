@@ -23,13 +23,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 21 — Nhà thông minh tự chủ, từng bước](learning-paths/21-nha-thong-minh.vi.md) — Từ gom thiết bị về một nơi đến camera cục bộ; mỗi bước đều có rủi ro riêng về điện, riêng tư và bảo mật.
 - [Lộ trình 22 — Làm video, âm thanh và ảnh bằng công cụ mở](learning-paths/22-video-am-thanh-va-anh.vi.md) — Quay, cắt, dựng và tạo nội dung đa phương tiện; luôn kiểm tra giấy phép và quyền riêng tư.
 - [Lộ trình 23 — Tri thức và nghiên cứu cá nhân](learning-paths/23-tri-thuc-va-nghien-cuu-ca-nhan.vi.md) — Lưu liên kết, quản lý tài liệu tham khảo, soạn bài và giữ hồ sơ an toàn; luôn đọc cảnh báo bảo mật của từng công cụ.
+- [Lộ trình 24 — Đọc sau, ghi chú cộng tác và xem dữ liệu bảng](learning-paths/24-doc-sau-ghi-chu-va-du-lieu-bang.vi.md) — Gom bài đọc, soạn ghi chú chung và nhìn nhanh dữ liệu; chọn công cụ theo mức quen terminal.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (30 bài)
+### Bắt đầu (31 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -63,8 +64,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 225 | p5.js: thư viện JavaScript cho lập trình sáng tạo, dễ tiếp cận cho người mới và nghệ sĩ | [processing/p5.js](https://github.com/processing/p5.js) | LGPL-2.1 | 24291 | game-va-do-hoa |
 | 231 | ntfy: gửi thông báo tới điện thoại hoặc máy tính từ script bằng một lệnh HTTP | [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) | Apache-2.0 | 35254 | ci-cd-va-tu-dong-hoa-git |
 | 242 | LosslessCut: cắt, ghép video và âm thanh không mất chất lượng, nhanh như chớp | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 45636 | video-am-thanh-va-anh-ai |
+| 251 | calibre: quản lý, đọc và chuyển đổi sách điện tử cho tủ sách cá nhân và tài liệu học tập | [kovidgoyal/calibre](https://github.com/kovidgoyal/calibre) | GPL-3.0 | 26326 | ghi-chu-doc-sau-va-du-lieu-bang |
 
-### Cơ bản (77 bài)
+### Cơ bản (79 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -145,6 +147,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 246 | Zettlr: trình soạn Markdown cho người viết học thuật, có trích dẫn và xuất bằng Pandoc | [Zettlr/Zettlr](https://github.com/Zettlr/Zettlr) | GPL-3.0 | 13854 | nghien-cuu-va-luu-tru-tai-lieu |
 | 248 | linkding: quản lý dấu trang tự host, tối giản, nhanh và dễ cài bằng Docker | [sissbruecker/linkding](https://github.com/sissbruecker/linkding) | MIT | 11380 | nghien-cuu-va-luu-tru-tai-lieu |
 | 250 | DBeaver: giao diện xem và truy vấn hơn 100 loại cơ sở dữ liệu, giúp hiểu dữ liệu AI tạo ra | [dbeaver/dbeaver](https://github.com/dbeaver/dbeaver) | Apache-2.0 | 52281 | nghien-cuu-va-luu-tru-tai-lieu |
+| 252 | wallabag: lưu bài web để đọc sau, không bị quảng cáo và cửa sổ bật lên quấy rầy | [wallabag/wallabag](https://github.com/wallabag/wallabag) | MIT | 13040 | ghi-chu-doc-sau-va-du-lieu-bang |
+| 253 | HedgeDoc: soạn ghi chú Markdown cộng tác thời gian thực, lưu ý nhánh develop là bản viết lại HedgeDoc 2 | [hedgedoc/hedgedoc](https://github.com/hedgedoc/hedgedoc) | AGPL-3.0 | 7502 | ghi-chu-doc-sau-va-du-lieu-bang |
 
 ### Khá khó (cần nền kỹ thuật) (24 bài)
 
@@ -175,7 +179,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
 | 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
 
-### Nâng cao (19 bài)
+### Nâng cao (21 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -198,6 +202,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 240 | sherpa-onnx: nhận dạng và tổng hợp giọng nói chạy ngoại tuyến trên nhiều thiết bị và ngôn ngữ lập trình | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Apache-2.0 | 15694 | video-am-thanh-va-anh-ai |
 | 247 | Overleaf Community Edition: soạn LaTeX cộng tác trực tuyến tự host, chỉ nên dùng khi mọi người dùng đều tin cậy | [overleaf/overleaf](https://github.com/overleaf/overleaf) | AGPL-3.0 | 18300 | nghien-cuu-va-luu-tru-tai-lieu |
 | 249 | ArchiveBox: tự lưu bản sao trang web, video và tài liệu để còn đọc được nhiều năm sau | [ArchiveBox/ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) | MIT | 28930 | nghien-cuu-va-luu-tru-tai-lieu |
+| 254 | zk: trợ lý ghi chú văn bản thuần chạy trong terminal để xây Zettelkasten hoặc wiki cá nhân | [zk-org/zk](https://github.com/zk-org/zk) | GPL-3.0 | 2864 | ghi-chu-doc-sau-va-du-lieu-bang |
+| 255 | VisiData: xem và sắp xếp bảng dữ liệu CSV, JSON, Excel ngay trong terminal | [saulpw/visidata](https://github.com/saulpw/visidata) | GPL-3.0 | 9440 | ghi-chu-doc-sau-va-du-lieu-bang |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

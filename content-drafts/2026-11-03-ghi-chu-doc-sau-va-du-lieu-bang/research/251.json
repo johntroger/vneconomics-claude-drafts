@@ -1,0 +1,36 @@
+{
+  "key": 251,
+  "repo": "kovidgoyal/calibre",
+  "repoId": "10332822",
+  "url": "https://github.com/kovidgoyal/calibre",
+  "stars": 26326,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:14:37Z",
+  "createdAt": "2013-05-28T10:03:23Z",
+  "defaultBranch": "master",
+  "description": "The official source code repository for the calibre ebook manager",
+  "homepage": "https://calibre-ebook.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/kovidgoyal/calibre/master/README.md",
+    "sha256": "222de55e3ccec741fbc9ff24f53b124d830177944e24c23dfe368204c1efcae4",
+    "bytes": 1938,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Usage",
+      "Bugs",
+      "Support calibre"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README rất ngắn, chưa đọc User Manual.",
+    "Danh sách định dạng chưa kiểm tra.",
+    "Chưa thử trên thiết bị đọc sách."
+  ],
+  "runtimeValidated": false
+}
