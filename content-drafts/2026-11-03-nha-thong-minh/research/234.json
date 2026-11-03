@@ -1,0 +1,34 @@
+{
+  "key": 234,
+  "repo": "home-assistant/core",
+  "repoId": "12888993",
+  "url": "https://github.com/home-assistant/core",
+  "stars": 91923,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:14:22Z",
+  "createdAt": "2013-09-17T07:29:48Z",
+  "defaultBranch": "dev",
+  "description": ":house_with_garden: Open source home automation that puts local control and privacy first.",
+  "homepage": "https://www.home-assistant.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/home-assistant/core/dev/README.rst",
+    "sha256": "7cd3c381536b6d26371f921d730242c6162fc3fa840bf8e9418409f8b482e7cb",
+    "bytes": 1964,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Featured integrations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README ngắn, chưa đọc tài liệu chính thức.",
+    "Chưa kiểm tra yêu cầu phần cứng.",
+    "Chưa so sánh với openHAB."
+  ],
+  "runtimeValidated": false
+}

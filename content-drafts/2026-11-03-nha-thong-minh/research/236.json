@@ -1,0 +1,36 @@
+{
+  "key": 236,
+  "repo": "arendst/Tasmota",
+  "repoId": "80286288",
+  "url": "https://github.com/arendst/Tasmota",
+  "stars": 24961,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T14:21:26Z",
+  "createdAt": "2017-01-28T13:37:08Z",
+  "defaultBranch": "development",
+  "description": "Alternative firmware for ESP8266 and ESP32 based devices with easy configuration using webUI, OTA updates, automation using timers or rules, expandability and entirely local control over MQTT, HTTP, Serial or KNX. Full documentation at",
+  "homepage": "https://tasmota.github.io/docs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/arendst/Tasmota/development/README.md",
+    "sha256": "706eb8ae890cf22086f0810087d6e8c535b7edb67367b3b13b65de1e07032136",
+    "bytes": 18963,
+    "sectionsRead": [
+      "Why Tasmota?",
+      "Bảng tính năng",
+      "Disclaimer",
+      "Note"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt chi tiết.",
+    "Chưa kiểm tra danh sách thiết bị tương thích.",
+    "Chưa đánh giá rủi ro mất bảo hành."
+  ],
+  "runtimeValidated": false
+}

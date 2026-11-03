@@ -32,7 +32,9 @@
   "pushed": "2026-10-26",
   "related": [
    "changedetection-io",
-   "kestra"
+   "kestra",
+   "tasmota",
+   "zigbee2mqtt"
   ]
  },
  {
@@ -1538,7 +1540,8 @@
    "cloudflared",
    "crowdsec",
    "gitleaks",
-   "portainer"
+   "portainer",
+   "valetudo"
   ]
  },
  {
@@ -2372,6 +2375,95 @@
   "pushed": "2026-11-02",
   "related": [
    "ntfy"
+  ]
+ },
+ {
+  "key": 234,
+  "slug": "home-assistant",
+  "group": "2026-11-03-nha-thong-minh",
+  "title": "Home Assistant: điều khiển nhà thông minh tại chỗ, ưu tiên quyền riêng tư và chạy trên Raspberry Pi",
+  "repo": "home-assistant/core",
+  "stars": 91923,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "zigbee2mqtt"
+  ]
+ },
+ {
+  "key": 235,
+  "slug": "zigbee2mqtt",
+  "group": "2026-11-03-nha-thong-minh",
+  "title": "Zigbee2MQTT: dùng thiết bị Zigbee mà không cần cổng kết nối riêng của hãng",
+  "repo": "Koenkk/zigbee2mqtt",
+  "stars": 15783,
+  "license": "GPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "home-assistant",
+   "node-red"
+  ]
+ },
+ {
+  "key": 236,
+  "slug": "tasmota",
+  "group": "2026-11-03-nha-thong-minh",
+  "title": "Tasmota: phần mềm thay thế cho ổ cắm và thiết bị ESP, kèm cảnh báo nguy hiểm điện giật",
+  "repo": "arendst/Tasmota",
+  "stars": 24961,
+  "license": "GPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "frigate",
+   "node-red"
+  ]
+ },
+ {
+  "key": 237,
+  "slug": "frigate",
+  "group": "2026-11-03-nha-thong-minh",
+  "title": "Frigate: đầu ghi camera chạy tại nhà, nhận diện vật thể thời gian thực bằng AI cục bộ",
+  "repo": "blakeblackshear/frigate",
+  "stars": 37165,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "tasmota",
+   "valetudo"
+  ]
+ },
+ {
+  "key": 238,
+  "slug": "valetudo",
+  "group": "2026-11-03-nha-thong-minh",
+  "title": "Valetudo: cho robot hút bụi chạy cục bộ không cần đám mây, và lưu ý về mô hình phát triển",
+  "repo": "Hypfer/Valetudo",
+  "stars": 9898,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "frigate",
+   "tailscale"
   ]
  }
 ]

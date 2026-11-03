@@ -20,6 +20,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 18 — Hiểu backend và API mà AI dựng](learning-paths/18-backend-va-api.vi.md) — Nhận ra các framework backend hay xuất hiện và biết nên kiểm tra gì ở mã AI viết.
 - [Lộ trình 19 — Game và đồ họa cho người mới](learning-paths/19-game-va-do-hoa.vi.md) — Từ vẽ vài hình bằng mã đến làm game và cảnh 3D; chọn theo trình độ.
 - [Lộ trình 20 — Quy trình tự động và phát hành an toàn](learning-paths/20-ci-cd-va-quy-trinh-phat-hanh.vi.md) — Từ chạy thử quy trình cục bộ đến phát hành có kiểm soát, thông báo và kiểm tra liên kết.
+- [Lộ trình 21 — Nhà thông minh tự chủ, từng bước](learning-paths/21-nha-thong-minh.vi.md) — Từ gom thiết bị về một nơi đến camera cục bộ; mỗi bước đều có rủi ro riêng về điện, riêng tư và bảo mật.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -60,7 +61,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 225 | p5.js: thư viện JavaScript cho lập trình sáng tạo, dễ tiếp cận cho người mới và nghệ sĩ | [processing/p5.js](https://github.com/processing/p5.js) | LGPL-2.1 | 24291 | game-va-do-hoa |
 | 231 | ntfy: gửi thông báo tới điện thoại hoặc máy tính từ script bằng một lệnh HTTP | [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) | Apache-2.0 | 35254 | ci-cd-va-tu-dong-hoa-git |
 
-### Cơ bản (70 bài)
+### Cơ bản (71 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -134,6 +135,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 228 | act: chạy thử quy trình GitHub Actions ngay trên máy để khỏi commit lên rồi mới biết lỗi | [nektos/act](https://github.com/nektos/act) | MIT | 72522 | ci-cd-va-tu-dong-hoa-git |
 | 229 | git-cliff: tự tạo nhật ký thay đổi (changelog) từ lịch sử Git | [orhun/git-cliff](https://github.com/orhun/git-cliff) | Apache-2.0 | 12354 | ci-cd-va-tu-dong-hoa-git |
 | 233 | lychee: quét liên kết hỏng trong website và tài liệu Markdown rất nhanh | [lycheeverse/lychee](https://github.com/lycheeverse/lychee) | Apache-2.0 | 4085 | ci-cd-va-tu-dong-hoa-git |
+| 234 | Home Assistant: điều khiển nhà thông minh tại chỗ, ưu tiên quyền riêng tư và chạy trên Raspberry Pi | [home-assistant/core](https://github.com/home-assistant/core) | Apache-2.0 | 91923 | nha-thong-minh |
 
 ### Khá khó (cần nền kỹ thuật) (22 bài)
 
@@ -162,7 +164,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 212 | Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust | [tauri-apps/tauri](https://github.com/tauri-apps/tauri) | Apache-2.0 | 112448 | ung-dung-di-dong-da-nen-tang |
 | 232 | zizmor: soát lỗi bảo mật trong quy trình GitHub Actions trước khi bị khai thác | [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) | MIT | 6861 | ci-cd-va-tu-dong-hoa-git |
 
-### Nâng cao (12 bài)
+### Nâng cao (16 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -178,6 +180,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 226 | Bevy: engine game viết bằng Rust, hướng dữ liệu, README cảnh báo còn sớm và hay đổi API | [bevyengine/bevy](https://github.com/bevyengine/bevy) | Apache-2.0 | 49475 | game-va-do-hoa |
 | 227 | raylib: thư viện C đơn giản để học lập trình game, không giao diện, chỉ có mã | [raysan5/raylib](https://github.com/raysan5/raylib) | Zlib | 35543 | game-va-do-hoa |
 | 230 | semantic-release: tự động hóa cả quy trình phát hành, từ số phiên bản đến đăng gói | [semantic-release/semantic-release](https://github.com/semantic-release/semantic-release) | MIT | 24151 | ci-cd-va-tu-dong-hoa-git |
+| 235 | Zigbee2MQTT: dùng thiết bị Zigbee mà không cần cổng kết nối riêng của hãng | [Koenkk/zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt) | GPL-3.0 | 15783 | nha-thong-minh |
+| 236 | Tasmota: phần mềm thay thế cho ổ cắm và thiết bị ESP, kèm cảnh báo nguy hiểm điện giật | [arendst/Tasmota](https://github.com/arendst/Tasmota) | GPL-3.0 | 24961 | nha-thong-minh |
+| 237 | Frigate: đầu ghi camera chạy tại nhà, nhận diện vật thể thời gian thực bằng AI cục bộ | [blakeblackshear/frigate](https://github.com/blakeblackshear/frigate) | MIT | 37165 | nha-thong-minh |
+| 238 | Valetudo: cho robot hút bụi chạy cục bộ không cần đám mây, và lưu ý về mô hình phát triển | [Hypfer/Valetudo](https://github.com/Hypfer/Valetudo) | Apache-2.0 | 9898 | nha-thong-minh |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
