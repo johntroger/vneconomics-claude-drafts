@@ -1,0 +1,36 @@
+{
+  "key": 263,
+  "repo": "SYSTRAN/faster-whisper",
+  "repoId": "600368121",
+  "url": "https://github.com/SYSTRAN/faster-whisper",
+  "stars": 26427,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T11:19:13Z",
+  "createdAt": "2023-02-11T09:17:27Z",
+  "defaultBranch": "master",
+  "description": "Faster Whisper transcription with CTranslate2",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/SYSTRAN/faster-whisper/master/README.md",
+    "sha256": "43efe4a6eb9046d5ba4dcdcf2abcc27ad9e021f3edfc00bd6eb4913a9abe065b",
+    "bytes": 15249,
+    "sectionsRead": [
+      "Benchmark",
+      "Requirements",
+      "Usage",
+      "VAD filter"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa thử trên tiếng Việt.",
+    "Chưa thử cài GPU.",
+    "Chưa so sánh với whisper.cpp, sherpa-onnx (bài khác)."
+  ],
+  "runtimeValidated": false
+}

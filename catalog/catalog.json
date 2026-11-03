@@ -2837,5 +2837,75 @@
   "related": [
    "typesense"
   ]
+ },
+ {
+  "key": 260,
+  "slug": "ollama",
+  "group": "2026-11-03-ai-chay-tren-may-ca-nhan",
+  "title": "Ollama: chạy mô hình AI mở trên máy của bạn và gọi chúng như một dịch vụ cục bộ",
+  "repo": "ollama/ollama",
+  "stars": 185733,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "anything-llm"
+  ]
+ },
+ {
+  "key": 261,
+  "slug": "llama-cpp",
+  "group": "2026-11-03-ai-chay-tren-may-ca-nhan",
+  "title": "llama.cpp: động cơ chạy mô hình ngôn ngữ trên nhiều loại phần cứng, nền tảng của nhiều công cụ AI cục bộ",
+  "repo": "ggml-org/llama.cpp",
+  "stars": 133220,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "anything-llm",
+   "faster-whisper"
+  ]
+ },
+ {
+  "key": 262,
+  "slug": "anything-llm",
+  "group": "2026-11-03-ai-chay-tren-may-ca-nhan",
+  "title": "AnythingLLM: trò chuyện với tài liệu của bạn bằng AI, có agent và chạy cục bộ theo mặc định, kèm thu thập số liệu ẩn danh",
+  "repo": "Mintplex-Labs/anything-llm",
+  "stars": 67878,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "llama-cpp",
+   "ollama"
+  ]
+ },
+ {
+  "key": 263,
+  "slug": "faster-whisper",
+  "group": "2026-11-03-ai-chay-tren-may-ca-nhan",
+  "title": "faster-whisper: chuyển giọng nói thành văn bản bằng Python, nhanh hơn Whisper gốc theo benchmark của tác giả",
+  "repo": "SYSTRAN/faster-whisper",
+  "stars": 26427,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "llama-cpp"
+  ]
  }
 ]

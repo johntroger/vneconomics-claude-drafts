@@ -1,0 +1,36 @@
+{
+  "key": 260,
+  "repo": "ollama/ollama",
+  "repoId": "658928958",
+  "url": "https://github.com/ollama/ollama",
+  "stars": 185733,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:42:58Z",
+  "createdAt": "2023-06-26T19:39:32Z",
+  "defaultBranch": "main",
+  "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+  "homepage": "https://ollama.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ollama/ollama/main/README.md",
+    "sha256": "9e5a7d406950fdd2742084065ab38a3ea09b5aab5e2f13ef7d64147229ae0d8b",
+    "bytes": 19347,
+    "sectionsRead": [
+      "Download",
+      "Get started",
+      "REST API",
+      "Community Integrations"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa thử cài hay chạy mô hình.",
+    "Điều khoản và giá chạy trên đám mây chưa kiểm tra.",
+    "Chưa so sánh với llama.cpp hay AnythingLLM (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}

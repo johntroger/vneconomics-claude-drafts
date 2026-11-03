@@ -1,0 +1,36 @@
+{
+  "key": 261,
+  "repo": "ggml-org/llama.cpp",
+  "repoId": "612354784",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "stars": 133220,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:15:24Z",
+  "createdAt": "2023-03-10T18:58:00Z",
+  "defaultBranch": "master",
+  "description": "LLM inference in C/C++",
+  "homepage": "https://llama.app",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/README.md",
+    "sha256": "404287f3e07f32aeaa5b951cfe7e43277a6444b2cf921c9f70894c1f7e89dd80",
+    "bytes": 7676,
+    "sectionsRead": [
+      "Quick start",
+      "Description",
+      "Supported backends",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn build.",
+    "Chưa kiểm tra hiệu năng thực tế.",
+    "Chưa thử trên phần cứng cụ thể."
+  ],
+  "runtimeValidated": false
+}

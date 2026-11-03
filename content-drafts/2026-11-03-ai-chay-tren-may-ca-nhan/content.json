@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ai-cuc-bo",
+  "batch": 45,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 260,
+      "batch": 45,
+      "slug": "ollama",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ollama: chạy mô hình AI mở trên máy của bạn và gọi chúng như một dịch vụ cục bộ",
+        "excerpt": "Hiểu Ollama là công cụ tải và chạy mô hình AI mở trên máy cá nhân, có REST API và thư viện Python, JavaScript. README cảnh báo cách cài bằng script cần đọc trước.",
+        "content": "<p>README mở đầu: bắt đầu xây với các mô hình mở, truy cập bản mới nhất cục bộ hoặc trên đám mây với quyền riêng tư hoàn toàn (đây là tuyên bố của dự án). Có bản tải cho macOS, Windows, Linux và ảnh Docker chính thức. README mô tả các việc chính: chạy một mô hình để trò chuyện, kết nối Ollama với các công cụ lập trình như Claude Code, Codex, Copilot CLI theo danh sách tích hợp, dùng REST API cục bộ để quản lý và chạy mô hình, và thư viện ollama-python, ollama-js. Danh sách thư viện tích hợp của cộng đồng trong README rất dài. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dịch vụ AI trên mạng giống thuê taxi: tiện nhưng mỗi chuyến đều gửi thông tin đi. Ollama giống tự mua xe: bạn tải mô hình về, chạy trong máy, và các ứng dụng khác gọi nó như gọi một dịch vụ trên chính máy bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người học muốn thử mô hình mở để trò chuyện hoặc làm nguồn cho ứng dụng cục bộ mà không gửi dữ liệu ra ngoài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn thử mô hình AI mở trên máy mình; người dựng ứng dụng cần mô hình cục bộ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài và chạy mô hình dễ, nhưng chọn mô hình phù hợp RAM, GPU và dùng API cần học. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Máy cấu hình yếu sẽ chạy chậm với mô hình lớn. Nếu bạn chỉ cần trò chuyện thỉnh thoảng, dịch vụ trực tuyến có thể tiện hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>model (mô hình)</strong>: bộ tham số AI đã huấn luyện, tải về dạng tệp rất lớn.</li><li><strong>local (cục bộ)</strong>: chạy ngay trong máy bạn, không qua máy chủ của người khác.</li><li><strong>REST API</strong>: cách ứng dụng khác gọi Ollama qua HTTP; README có ví dụ gọi cục bộ.</li><li><strong>integration (tích hợp)</strong>: nối Ollama với công cụ khác; README liệt kê nhiều công cụ lập trình.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Phần cài đặt trong README có lệnh tải script từ mạng rồi chạy ngay (curl hoặc irm chuyển thẳng vào shell); bài không chép các lệnh đó. Nếu muốn dùng, hãy ưu tiên tải bộ cài thủ công từ trang chính thức hoặc tự đọc script trước khi chạy. README cũng cho tải bộ cài thủ công cho macOS và Windows và ghi hướng dẫn cài thủ công cho Linux. Mô hình tải thêm khi dùng, dung lượng lớn. Miễn phí theo giấy phép MIT; README nhắc có chạy 'trên đám mây', bài chưa kiểm tra điều khoản hay giá.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Download và cân nhắc cài thủ công thay vì script.</li><li>Chọn một mô hình nhỏ phù hợp cấu hình máy.</li><li>Thử trò chuyện, rồi mới thử gọi qua API cục bộ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chạy AI mở trên máy cá nhân. Hãy đọc README của Ollama (https://github.com/ollama/ollama) và giải thích bằng tiếng Việt: Ollama làm gì, cách cài nào an toàn hơn script curl, cần cấu hình máy ra sao, và API cục bộ dùng để làm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Quyền riêng tư hoàn toàn' là tuyên bố của dự án; README cũng nhắc việc truy cập mô hình trên đám mây nên dữ liệu có thể rời máy tùy cách dùng, bài chưa kiểm tra. Chất lượng mô hình phụ thuộc mô hình bạn chọn, không phải Ollama.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mô hình AI chạy trên máy có thể tải tệp rất lớn và dùng nhiều RAM, đĩa, GPU. Chỉ tải từ nguồn chính thức, không đưa tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu. Cẩn thận với lệnh tải script rồi chạy ngay trong README.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ollama</strong> có <strong>185.733 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ollama/ollama/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ollama/ollama\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 260. Chưa cài/chạy thử; không tạo validation. Snapshot sao 185733; repo_id 658928958; README SHA256 9e5a7d406950fdd2742084065ab38a3ea09b5aab5e2f13ef7d64147229ae0d8b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ollama/ollama",
+          "repo_id": "658928958",
+          "source_path": "",
+          "source_revision": "README-SHA256:9e5a7d406950fdd2742084065ab38a3ea09b5aab5e2f13ef7d64147229ae0d8b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Phần cài đặt trong README có lệnh tải script từ mạng rồi chạy ngay (curl hoặc irm chuyển thẳng vào shell); bài không chép các lệnh đó. Nếu muốn dùng, hãy ưu tiên tải bộ cài thủ công từ trang chính thức hoặc tự đọc script trước khi chạy. README cũng cho tải bộ cài thủ công cho macOS và Windows và ghi hướng dẫn cài thủ công cho Linux. Mô hình tải thêm khi dùng, dung lượng lớn. Miễn phí theo giấy phép MIT; README nhắc có chạy 'trên đám mây', bài chưa kiểm tra điều khoản hay giá.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ollama/ollama/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ollama/ollama/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ollama/ollama",
+        "stars": 185733,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ollama/ollama/main/README.md",
+        "readmeSha256": "9e5a7d406950fdd2742084065ab38a3ea09b5aab5e2f13ef7d64147229ae0d8b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 261,
+      "batch": 45,
+      "slug": "llama-cpp",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "llama.cpp: động cơ chạy mô hình ngôn ngữ trên nhiều loại phần cứng, nền tảng của nhiều công cụ AI cục bộ",
+        "excerpt": "Hiểu llama.cpp là thư viện C/C++ chạy mô hình ngôn ngữ với ít phụ thuộc, hỗ trợ lượng tử hóa và nhiều GPU. Đây là công cụ cho người thích tìm hiểu kỹ thuật.",
+        "content": "<p>README nói mục tiêu chính của llama.cpp là chạy suy luận mô hình ngôn ngữ (và mô hình thị giác) với cài đặt tối thiểu và hiệu năng hàng đầu trên nhiều phần cứng, cục bộ và trên đám mây (đây là tuyên bố của dự án). Đặc điểm nêu trong README: viết bằng C/C++ thuần không phụ thuộc; Apple silicon được tối ưu hạng nhất; hỗ trợ AVX, AMX trên x86; lượng tử hóa từ 1,5 đến 8 bit để chạy nhanh và dùng ít bộ nhớ; kernel CUDA cho GPU NVIDIA, HIP cho AMD, Vulkan, SYCL; suy luận lai CPU và GPU cho mô hình lớn hơn VRAM. Có công cụ dòng lệnh, máy chủ tương thích API kiểu OpenAI và giao diện web tích hợp. Cài bằng script, bộ cài sẵn, Docker hoặc tự biên dịch. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhiều ứng dụng AI cục bộ cần một động cơ bên dưới. llama.cpp là động cơ đó: nhỏ gọn, chạy được trên cả máy yếu bằng cách nén mô hình (lượng tử hóa) cho vừa bộ nhớ. Bạn thường dùng nó gián tiếp qua công cụ khác, nhưng cũng có thể dùng trực tiếp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người muốn hiểu cách mô hình chạy trên laptop thường, thử mô hình nhỏ bằng dòng lệnh. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người thích kỹ thuật; người muốn kiểm soát sâu cách chạy mô hình; người dạy về AI cục bộ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Nhiều tùy chọn phần cứng, lượng tử hóa và định dạng mô hình; README liệt kê rất nhiều backend. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ muốn trò chuyện với AI cho nhanh, công cụ có giao diện sẵn (như Ollama hay AnythingLLM) dễ hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>inference (suy luận)</strong>: giai đoạn dùng mô hình đã huấn luyện để tạo câu trả lời.</li><li><strong>quantization (lượng tử hóa)</strong>: nén số liệu của mô hình xuống ít bit để chạy nhanh, dùng ít bộ nhớ; README liệt kê các mức.</li><li><strong>backend</strong>: phần chịu trách nhiệm tính toán trên một loại phần cứng như CUDA hay Vulkan.</li><li><strong>VRAM</strong>: bộ nhớ của card đồ họa; README nói hỗ trợ chạy mô hình lớn hơn VRAM bằng cách lai CPU và GPU.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Phần cài đặt trong README có lệnh tải script từ mạng rồi chạy ngay (curl hoặc irm chuyển thẳng vào shell); bài không chép các lệnh đó. Nếu muốn dùng, hãy ưu tiên tải bộ cài thủ công từ trang chính thức hoặc tự đọc script trước khi chạy. README còn nêu: tải bộ cài sẵn ở trang releases, chạy bằng Docker, hoặc tự biên dịch (có hướng dẫn build). Mô hình tải từ Hugging Face khi dùng, dung lượng có thể lớn. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Description và danh sách backend.</li><li>Chọn cách cài từ trang releases hoặc Docker thay cho script.</li><li>Thử một mô hình rất nhỏ trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu cách chạy mô hình ngôn ngữ trên laptop. Hãy đọc README của llama.cpp (https://github.com/ggml-org/llama.cpp) và giải thích bằng tiếng Việt: lượng tử hóa là gì, backend nghĩa là gì, và nên chọn cách cài nào an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hiệu năng hàng đầu' là tuyên bố của dự án. README liệt kê backend với nhiều trạng thái (có mục ghi In Progress), bài không khẳng định hỗ trợ từng phần cứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mô hình AI chạy trên máy có thể tải tệp rất lớn và dùng nhiều RAM, đĩa, GPU. Chỉ tải từ nguồn chính thức, không đưa tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu. Cẩn thận với lệnh tải script rồi chạy ngay trong README.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ggml-org</strong> có <strong>133.220 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ggml-org/llama.cpp/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ggml-org/llama.cpp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 261. Chưa cài/chạy thử; không tạo validation. Snapshot sao 133220; repo_id 612354784; README SHA256 404287f3e07f32aeaa5b951cfe7e43277a6444b2cf921c9f70894c1f7e89dd80.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ggml-org/llama.cpp",
+          "repo_id": "612354784",
+          "source_path": "",
+          "source_revision": "README-SHA256:404287f3e07f32aeaa5b951cfe7e43277a6444b2cf921c9f70894c1f7e89dd80",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ggml-org/llama.cpp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Phần cài đặt trong README có lệnh tải script từ mạng rồi chạy ngay (curl hoặc irm chuyển thẳng vào shell); bài không chép các lệnh đó. Nếu muốn dùng, hãy ưu tiên tải bộ cài thủ công từ trang chính thức hoặc tự đọc script trước khi chạy. README còn nêu: tải bộ cài sẵn ở trang releases, chạy bằng Docker, hoặc tự biên dịch (có hướng dẫn build). Mô hình tải từ Hugging Face khi dùng, dung lượng có thể lớn. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ggml-org/llama.cpp",
+        "stars": 133220,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/README.md",
+        "readmeSha256": "404287f3e07f32aeaa5b951cfe7e43277a6444b2cf921c9f70894c1f7e89dd80",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 262,
+      "batch": 45,
+      "slug": "anything-llm",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "AnythingLLM: trò chuyện với tài liệu của bạn bằng AI, có agent và chạy cục bộ theo mặc định, kèm thu thập số liệu ẩn danh",
+        "excerpt": "Hiểu AnythingLLM là ứng dụng AI tất cả trong một: nạp tài liệu, trò chuyện có trích nguồn, agent, nhiều nhà cung cấp mô hình. README nói rõ có telemetry ẩn danh và cách tắt.",
+        "content": "<p>README tả AnythingLLM là ứng dụng AI tất cả trong một giúp xây một ChatGPT riêng: kết nối mô hình cục bộ hoặc đám mây, nạp tài liệu và trò chuyện; có bản desktop cho Mac, Windows, Linux và bản Docker. Tính năng nêu: công cụ mô hình cục bộ tích hợp, định tuyến mô hình, bộ nhớ, tác vụ định kỳ, trình xây agent không cần mã, tương thích MCP, hỗ trợ nhiều loại tài liệu (PDF, TXT, DOCX), trích nguồn, API cho nhà phát triển. Một số tính năng như đa người dùng, thương hiệu riêng, widget nhúng chỉ có ở bản Docker. README liệt kê rất nhiều nhà cung cấp mô hình (cục bộ và đám mây). Mục Telemetry & Privacy nói ứng dụng có thu thập số liệu sử dụng ẩn danh; có thể tắt bằng biến môi trường hoặc trong mục Privacy; khi tắt vẫn có thể có kết nối ra ngoài tới một số dịch vụ như CDN tải mô hình. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có một chồng tài liệu và muốn hỏi AI về nội dung mà không gửi tài liệu cho công ty khác. AnythingLLM giống một phòng đọc riêng: bạn bỏ tài liệu vào, hỏi, và AI trả lời kèm trích nguồn. Bạn chọn AI bên trong, chạy cục bộ hoặc gọi dịch vụ trên mạng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên nạp tài liệu giảng dạy vào không gian làm việc và hỏi để tìm ý. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn hỏi đáp trên tài liệu riêng; người dựng trợ lý nội bộ cho nhóm nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Bản desktop dễ; Docker, nhiều nhà cung cấp mô hình và agent cần cấu hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chọn nhà cung cấp mô hình đám mây thì tài liệu sẽ được gửi tới nhà cung cấp đó; không phù hợp tài liệu nhạy cảm nếu chưa hiểu điều khoản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>RAG / chat với tài liệu</strong>: AI tìm đoạn liên quan trong tài liệu của bạn rồi trả lời dựa trên đó.</li><li><strong>embedder</strong>: mô hình biến văn bản thành số để tìm đoạn giống nhau; README liệt kê nhiều lựa chọn.</li><li><strong>vector database</strong>: cơ sở dữ liệu lưu số liệu biểu diễn văn bản để tìm kiếm.</li><li><strong>telemetry</strong>: số liệu sử dụng gửi về nhà phát triển; README nói ẩn danh và có thể tắt.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản desktop từ trang chính thức hoặc chạy bản Docker theo hướng dẫn riêng (bài không chép lệnh). Miễn phí theo giấy phép MIT; có bản 'Hosted Instance' trả phí, bài chưa kiểm tra giá. Dùng nhà cung cấp đám mây thì có phí của họ.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Telemetry & Privacy và quyết định có tắt telemetry không.</li><li>Chọn mô hình cục bộ cho tài liệu riêng tư.</li><li>Thử với tài liệu không nhạy cảm trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hỏi đáp trên tài liệu giảng dạy bằng AI. Hãy đọc README của AnythingLLM (https://github.com/Mintplex-Labs/anything-llm) và giải thích bằng tiếng Việt: nó làm gì, khi nào dữ liệu rời khỏi máy, telemetry thu thập gì và tắt thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tuyên bố như 'tiết kiệm đến 80% token' hay 'không rắc rối khi cài' là của tác giả, bài không kiểm chứng. Một số tính năng chỉ có ở bản Docker. Telemetry mặc định có thu thập số liệu ẩn danh theo README.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mô hình AI chạy trên máy có thể tải tệp rất lớn và dùng nhiều RAM, đĩa, GPU. Chỉ tải từ nguồn chính thức, không đưa tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu. Nếu dùng mô hình đám mây, nội dung tài liệu sẽ đi đến nhà cung cấp đó.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Mintplex-Labs</strong> có <strong>67.878 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Mintplex-Labs/anything-llm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 262. Chưa cài/chạy thử; không tạo validation. Snapshot sao 67878; repo_id 649170660; README SHA256 54fa19d813e8bb7bbed9346771e17ad29a9d5753effa19427bea4c38de6c7a2c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Mintplex-Labs/anything-llm",
+          "repo_id": "649170660",
+          "source_path": "",
+          "source_revision": "README-SHA256:54fa19d813e8bb7bbed9346771e17ad29a9d5753effa19427bea4c38de6c7a2c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Mintplex-Labs/anything-llm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản desktop từ trang chính thức hoặc chạy bản Docker theo hướng dẫn riêng (bài không chép lệnh). Miễn phí theo giấy phép MIT; có bản 'Hosted Instance' trả phí, bài chưa kiểm tra giá. Dùng nhà cung cấp đám mây thì có phí của họ.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Mintplex-Labs/anything-llm",
+        "stars": 67878,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/README.md",
+        "readmeSha256": "54fa19d813e8bb7bbed9346771e17ad29a9d5753effa19427bea4c38de6c7a2c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 263,
+      "batch": 45,
+      "slug": "faster-whisper",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "faster-whisper: chuyển giọng nói thành văn bản bằng Python, nhanh hơn Whisper gốc theo benchmark của tác giả",
+        "excerpt": "Hiểu faster-whisper là bản cài đặt lại mô hình Whisper dùng CTranslate2 để chép lời nhanh và ít bộ nhớ hơn. Có lọc khoảng lặng và mốc thời gian từng từ.",
+        "content": "<p>README nói faster-whisper là bản cài đặt lại mô hình Whisper của OpenAI dùng CTranslate2, một công cụ suy luận nhanh cho mô hình Transformer. Tác giả cho biết nhanh hơn tới 4 lần so với openai/whisper với cùng độ chính xác và ít bộ nhớ hơn; có thể tối ưu thêm bằng lượng tử hóa 8 bit trên CPU và GPU. README có bảng benchmark (chép 13 phút âm thanh) so sánh với openai/whisper, whisper.cpp, transformers; chạy GPU cần thư viện NVIDIA cuBLAS và cuDNN, README nêu các cách cài và lưu ý phiên bản CUDA. Yêu cầu Python 3.9 trở lên; không cần cài FFmpeg riêng vì dùng PyAV. Tính năng: mô hình distil, mốc thời gian từng từ, bộ lọc VAD (Silero) loại đoạn không có lời. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chép lời cuộc họp hay bài giảng bằng tay rất tốn công. Whisper là mô hình nghe giọng nói và gõ ra chữ; faster-whisper là phiên bản được tối ưu để chép nhanh và ít tốn máy hơn. Bạn đưa tệp ghi âm, nó trả văn bản kèm mốc thời gian.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên chép lời bài giảng đã ghi âm để làm phụ đề hoặc ghi chú. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người cần chép lời giọng nói; người làm phụ đề, ghi chú họp; người học Python.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Dùng thư viện Python; chạy GPU cần cấu hình CUDA và cuDNN đúng phiên bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần chép một đoạn ngắn, dịch vụ trực tuyến có thể tiện hơn. Bài chưa kiểm tra chất lượng cho tiếng Việt.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>Whisper</strong>: mô hình nhận dạng giọng nói của OpenAI.</li><li><strong>CTranslate2</strong>: công cụ suy luận nhanh cho mô hình Transformer, nền của faster-whisper.</li><li><strong>VAD</strong>: bộ lọc phát hiện đoạn có tiếng nói để bỏ khoảng lặng; README dùng Silero VAD.</li><li><strong>word timestamps (mốc thời gian từng từ)</strong>: thời điểm bắt đầu và kết thúc của từng từ, README có ví dụ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần Python 3.9 trở lên, cài từ PyPI (bài không chép lệnh); không cần FFmpeg riêng. Chạy GPU cần cuBLAS cho CUDA 12 và cuDNN 9 của NVIDIA, README nêu nhiều cách cài và lưu ý phiên bản. Mô hình tải khi dùng. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Requirements và cân nhắc chạy trên CPU trước.</li><li>Thử chép lời một tệp âm thanh ngắn không nhạy cảm.</li><li>Thử bộ lọc VAD và mốc thời gian.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chép lời bài giảng đã ghi âm. Hãy đọc README của faster-whisper (https://github.com/SYSTRAN/faster-whisper) và giải thích bằng tiếng Việt: nó khác Whisper gốc thế nào, chạy CPU hay GPU, và các bước cần chuẩn bị. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Nhanh hơn tới 4 lần' và các số benchmark là của tác giả trên phần cứng cụ thể (RTX 3070 Ti và Core i7-12700K), bài không kiểm chứng. README nêu rủi ro lệch phiên bản CUDA. Chất lượng tiếng Việt chưa kiểm tra.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mô hình AI chạy trên máy có thể tải tệp rất lớn và dùng nhiều RAM, đĩa, GPU. Chỉ tải từ nguồn chính thức, không đưa tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu. Ghi âm có giọng người khác nên có sự đồng ý khi chép lời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>SYSTRAN</strong> có <strong>26.427 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/SYSTRAN/faster-whisper/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/SYSTRAN/faster-whisper\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 263. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26427; repo_id 600368121; README SHA256 43efe4a6eb9046d5ba4dcdcf2abcc27ad9e021f3edfc00bd6eb4913a9abe065b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/SYSTRAN/faster-whisper",
+          "repo_id": "600368121",
+          "source_path": "",
+          "source_revision": "README-SHA256:43efe4a6eb9046d5ba4dcdcf2abcc27ad9e021f3edfc00bd6eb4913a9abe065b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SYSTRAN/faster-whisper",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần Python 3.9 trở lên, cài từ PyPI (bài không chép lệnh); không cần FFmpeg riêng. Chạy GPU cần cuBLAS cho CUDA 12 và cuDNN 9 của NVIDIA, README nêu nhiều cách cài và lưu ý phiên bản. Mô hình tải khi dùng. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/SYSTRAN/faster-whisper/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/SYSTRAN/faster-whisper/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "SYSTRAN/faster-whisper",
+        "stars": 26427,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/SYSTRAN/faster-whisper/master/README.md",
+        "readmeSha256": "43efe4a6eb9046d5ba4dcdcf2abcc27ad9e021f3edfc00bd6eb4913a9abe065b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
