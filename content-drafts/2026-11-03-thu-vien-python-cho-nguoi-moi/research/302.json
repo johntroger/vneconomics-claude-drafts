@@ -1,0 +1,37 @@
+{
+  "key": 302,
+  "repo": "pytest-dev/pytest",
+  "repoId": "37489525",
+  "url": "https://github.com/pytest-dev/pytest",
+  "stars": 14662,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:43:42Z",
+  "createdAt": "2015-06-15T20:28:27Z",
+  "defaultBranch": "main",
+  "description": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing",
+  "homepage": "https://pytest.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pytest-dev/pytest/main/README.rst",
+    "sha256": "37c713f12b48774c77c40accfe3a6a28c25d7e763c9c5e34266261cf738713b5",
+    "bytes": 5454,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Ví dụ test",
+      "Features",
+      "Requirements",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc getting-started.",
+    "Chưa thử chạy test.",
+    "Chưa so sánh với unittest."
+  ],
+  "runtimeValidated": false
+}

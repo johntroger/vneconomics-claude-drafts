@@ -1,0 +1,36 @@
+{
+  "key": 298,
+  "repo": "encode/httpx",
+  "repoId": "179492861",
+  "url": "https://github.com/encode/httpx",
+  "stars": 15732,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "BSD-3-Clause",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-02T12:53:43Z",
+  "createdAt": "2019-04-04T12:27:00Z",
+  "defaultBranch": "master",
+  "description": "A next generation HTTP client for Python. 🦋",
+  "homepage": "https://www.python-httpx.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/encode/httpx/master/README.md",
+    "sha256": "d58f476c1273c9c06c978467c6596620d3840ea8c99ba9d32300ab3286f0e0c3",
+    "bytes": 4944,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Installation",
+      "Dependencies"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu async.",
+    "Chưa thử chạy mã.",
+    "Chưa so sánh hiệu năng với requests."
+  ],
+  "runtimeValidated": false
+}

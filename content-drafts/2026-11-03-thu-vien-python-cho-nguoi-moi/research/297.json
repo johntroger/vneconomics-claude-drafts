@@ -1,0 +1,35 @@
+{
+  "key": 297,
+  "repo": "psf/requests",
+  "repoId": "1362490",
+  "url": "https://github.com/psf/requests",
+  "stars": 54594,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T16:55:12Z",
+  "createdAt": "2011-02-13T18:38:17Z",
+  "defaultBranch": "main",
+  "description": "A simple, yet elegant, HTTP library.",
+  "homepage": "https://requests.readthedocs.io/en/latest/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/psf/requests/main/README.md",
+    "sha256": "2a9268c9be5f4dc9abe9105740be7c5234babc3dd2b25eb11ca376c538a0c67b",
+    "bytes": 2906,
+    "sectionsRead": [
+      "Requests",
+      "Installing Requests and Supported Versions",
+      "Supported Features & Best–Practices"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa thử chạy mã ví dụ.",
+    "Chưa so sánh với httpx (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}

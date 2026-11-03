@@ -1,0 +1,37 @@
+{
+  "key": 301,
+  "repo": "pydantic/pydantic",
+  "repoId": "90194616",
+  "url": "https://github.com/pydantic/pydantic",
+  "stars": 29276,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T20:40:06Z",
+  "createdAt": "2017-05-03T21:23:58Z",
+  "defaultBranch": "main",
+  "description": "Data validation using Python type hints",
+  "homepage": "https://pydantic.dev/docs/validation",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pydantic/pydantic/main/README.md",
+    "sha256": "accb7413ab1829ea2844ba58d837f4321997d7ce6d94544f565c4f49f8ff8bd5",
+    "bytes": 3596,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Logfire",
+      "V1.10 vs V2",
+      "Installation",
+      "A Simple Example"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa thử chạy ví dụ.",
+    "Giá Logfire chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

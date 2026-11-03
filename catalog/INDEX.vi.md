@@ -32,13 +32,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 30 — Tự host cho gia đình và nhóm nhỏ](learning-paths/30-tu-host-cho-gia-dinh-va-nhom-nho.vi.md) — Từ dịch vụ ít rủi ro đến dịch vụ chứa dữ liệu nhạy cảm; càng về cuối càng cần bảo mật và sao lưu.
 - [Lộ trình 31 — Sao lưu và đồng bộ dữ liệu](learning-paths/31-sao-luu-va-dong-bo-du-lieu.vi.md) — Hiểu khác biệt giữa sao lưu và đồng bộ, rồi chọn công cụ; luôn thử khôi phục trước khi tin tưởng.
 - [Lộ trình 32 — Công cụ terminal và viết tài liệu](learning-paths/32-cong-cu-terminal-va-tai-lieu.vi.md) — Làm đọc, tìm và chuyển đổi tài liệu dễ hơn trong terminal; cuối lộ trình là dựng website tài liệu.
+- [Lộ trình 33 — Thư viện Python thường gặp khi AI viết mã](learning-paths/33-thu-vien-python-cho-nguoi-moi.vi.md) — Gọi API, kiểm tra dữ liệu, viết công cụ dòng lệnh và kiểm thử: những thư viện hay xuất hiện trong mã do AI sinh.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (38 bài)
+### Bắt đầu (39 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -80,8 +81,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 283 | Actual Budget: quản lý chi tiêu cá nhân kiểu phong bì, dữ liệu lưu cục bộ trước, có đồng bộ giữa thiết bị | [actualbudget/actual](https://github.com/actualbudget/actual) | MIT | 29930 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 291 | bat: xem nội dung tệp trong terminal có tô màu cú pháp và hiện thay đổi Git, như lệnh cat nâng cấp | [sharkdp/bat](https://github.com/sharkdp/bat) | Apache-2.0 | 61036 | cong-cu-terminal-va-tai-lieu |
 | 294 | fd: tìm tên tệp trong terminal bằng cú pháp đơn giản, thay lệnh find khó nhớ | [sharkdp/fd](https://github.com/sharkdp/fd) | Apache-2.0 | 44933 | cong-cu-terminal-va-tai-lieu |
+| 297 | requests: thư viện Python gọi API và tải trang web chỉ bằng vài dòng, quen thuộc với mọi người học Python | [psf/requests](https://github.com/psf/requests) | Apache-2.0 | 54594 | thu-vien-python-cho-nguoi-moi |
 
-### Cơ bản (95 bài)
+### Cơ bản (100 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -180,6 +182,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 292 | ripgrep (rg): tìm văn bản trong cả thư mục dự án rất nhanh, tự bỏ qua tệp ẩn và tệp trong .gitignore | [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) | Unlicense | 69666 | cong-cu-terminal-va-tai-lieu |
 | 293 | fzf: bộ chọn mờ trong terminal, gõ vài chữ là tìm ra tệp, lệnh cũ hay nhánh Git cần dùng | [junegunn/fzf](https://github.com/junegunn/fzf) | MIT | 83962 | cong-cu-terminal-va-tai-lieu |
 | 296 | VitePress: công cụ tạo website tài liệu tĩnh từ Markdown dựa trên Vue và Vite | [vuejs/vitepress](https://github.com/vuejs/vitepress) | MIT | 18454 | cong-cu-terminal-va-tai-lieu |
+| 298 | HTTPX: ứng dụng khách HTTP đầy đủ cho Python, có async, HTTP/2 và dòng lệnh, API tương thích requests | [encode/httpx](https://github.com/encode/httpx) | BSD-3-Clause | 15732 | thu-vien-python-cho-nguoi-moi |
+| 299 | Typer: tạo chương trình dòng lệnh bằng Python chỉ với vài dòng, dựa trên chú thích kiểu, 'FastAPI của CLI' | [fastapi/typer](https://github.com/fastapi/typer) | MIT | 20257 | thu-vien-python-cho-nguoi-moi |
+| 300 | Click: bộ công cụ tạo giao diện dòng lệnh cho Python, ghép lệnh lồng nhau và tự sinh trang trợ giúp | [pallets/click](https://github.com/pallets/click) | BSD-3-Clause | 17813 | thu-vien-python-cho-nguoi-moi |
+| 301 | Pydantic: kiểm tra và làm sạch dữ liệu trong Python bằng chú thích kiểu, nền tảng của nhiều ứng dụng AI và API | [pydantic/pydantic](https://github.com/pydantic/pydantic) | MIT | 29276 | thu-vien-python-cho-nguoi-moi |
+| 302 | pytest: viết kiểm thử Python ngắn gọn bằng câu lệnh assert thường, khi AI viết mã thì kiểm thử giúp bạn tin được mã | [pytest-dev/pytest](https://github.com/pytest-dev/pytest) | MIT | 14662 | thu-vien-python-cho-nguoi-moi |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 
