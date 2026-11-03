@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-khoa-hoc",
+  "batch": 75,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 437,
+      "batch": 75,
+      "slug": "generative-ai-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Generative AI for Beginners: khóa 21 bài của Microsoft về dựng ứng dụng AI tạo sinh, mã mẫu Python và TypeScript, nhiều bản dịch",
+        "excerpt": "Hiểu Generative AI for Beginners là khóa học 21 bài của Microsoft Cloud Advocates, chia thành bài Learn (khái niệm) và Build (có mã Python và TypeScript). README nêu chạy mã cần Azure OpenAI, Microsoft Foundry Models, OpenAI API hoặc Foundry Local.",
+        "content": "<p>README tả đây là khóa 21 bài dạy mọi điều cần để bắt đầu dựng ứng dụng AI tạo sinh, phiên bản 3, do Microsoft Cloud Advocates soạn. Bài chia hai loại: Learn (giải thích khái niệm) và Build (khái niệm kèm mã Python và TypeScript khi có thể); mỗi bài có video giới thiệu, nội dung viết, mã mẫu, và mục Keep Learning. README ghi: bắt đầu bài nào cũng được. Phần What You Need nêu cách chạy mã: Azure OpenAI Service, Microsoft Foundry Models (README ghi GitHub Models sẽ ngừng cuối tháng 7 năm 2026, thay bằng Foundry Models), OpenAI API hoặc Foundry Local (chạy mô hình ngoại tuyến trên máy, không cần thuê bao đám mây); cần kiến thức Python hoặc TypeScript cơ bản và tài khoản GitHub để fork. Bảng bài học có bài 00 thiết lập, 01 giới thiệu AI tạo sinh và LLM, 02 so sánh các LLM, 03 dùng AI tạo sinh có trách nhiệm, 04 và 05 nền tảng và kỹ thuật nâng cao của prompt. Kho có hơn 50 bản dịch nên rất nặng; README gợi ý tải kiểu sparse để bỏ bản dịch (bài không chép lệnh). Có phần cho người xây dựng startup với tín dụng Azure (tuyên bố quảng bá của README). Giấy phép lấy theo GitHub (MIT); README chỉ có huy hiệu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn hiểu AI tạo sinh từ nền tảng rồi tự dựng ứng dụng, đây là khóa có cấu trúc: bài nào giải thích khái niệm, bài nào có mã để làm theo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: học bài 01 và 02 để hiểu LLM, rồi làm bài 04 về prompt với một dịch vụ có giới hạn chi tiêu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học AI và lập trình, muốn có lộ trình tự học có hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Là khóa học cho người mới, có video và quiz; cần Python hoặc TypeScript cơ bản và khóa API cho bài Build. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài Build cần dịch vụ như Azure OpenAI hoặc OpenAI API, có thể tính phí. README ghi GitHub Models sắp ngừng; nội dung và phiên bản dịch vụ có thể đổi nhanh. Tuyên bố 'mọi điều cần để bắt đầu' là của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>generative AI (AI tạo sinh)</strong>: AI tạo văn bản, ảnh hoặc nội dung mới; README nêu là chủ đề của khóa.</li><li><strong>Learn / Build lesson</strong>: bài khái niệm / bài khái niệm kèm mã; README phân loại như vậy.</li><li><strong>Azure OpenAI Service</strong>: dịch vụ mô hình OpenAI trên đám mây Microsoft; README nêu.</li><li><strong>Foundry Local</strong>: chạy mô hình ngoại tuyến trên máy; README nêu.</li><li><strong>sparse checkout</strong>: tải một phần kho thay vì toàn bộ; README gợi ý để bỏ bản dịch.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng một trong Azure OpenAI, Microsoft Foundry Models, OpenAI API hoặc Foundry Local (bài không chép lệnh); cần Python hoặc TypeScript cơ bản và tài khoản GitHub. Miễn phí nội dung theo giấy phép MIT (theo GitHub); dịch vụ AI có thể tính phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Làm bài 00 để thiết lập môi trường.</li><li>Học bài 01 đến 03 để hiểu LLM và dùng có trách nhiệm.</li><li>Làm bài prompt rồi các bài Build với giới hạn chi tiêu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học AI tạo sinh. Hãy đọc README của Generative AI for Beginners (https://github.com/microsoft/generative-ai-for-beginners) và giải thích bằng tiếng Việt: khóa học có gì, bài Learn khác Build thế nào, cần dịch vụ nào để chạy mã, và chi phí có thể phát sinh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc chỉ có huy hiệu giấy phép (lấy theo GitHub); bài chỉ đọc phần đầu bảng bài học. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa học thường dùng khóa API và dịch vụ đám mây có thể tính phí: đặt giới hạn chi tiêu, giữ khóa ngoài mã nguồn, và kiểm tra phiên bản công cụ vì nội dung khóa có thể lỗi thời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>122.884 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chỉ có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/generative-ai-for-beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 437. Chưa cài/chạy thử; không tạo validation. Snapshot sao 122884; repo_id 655806940; README SHA256 a57045087a78daa833312fe2f4f404427985d89457d86eabeb69722df010d109.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/generative-ai-for-beginners",
+          "repo_id": "655806940",
+          "source_path": "",
+          "source_revision": "README-SHA256:a57045087a78daa833312fe2f4f404427985d89457d86eabeb69722df010d109",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/generative-ai-for-beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng một trong Azure OpenAI, Microsoft Foundry Models, OpenAI API hoặc Foundry Local (bài không chép lệnh); cần Python hoặc TypeScript cơ bản và tài khoản GitHub. Miễn phí nội dung theo giấy phép MIT (theo GitHub); dịch vụ AI có thể tính phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/generative-ai-for-beginners",
+        "stars": 122884,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/README.md",
+        "readmeSha256": "a57045087a78daa833312fe2f4f404427985d89457d86eabeb69722df010d109",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 438,
+      "batch": 75,
+      "slug": "ai-for-beginners",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "AI for Beginners: giáo trình 12 tuần, 24 bài của Microsoft về AI, mạng nơ-ron, TensorFlow và PyTorch; không bao gồm AI cho kinh doanh hay ML cổ điển",
+        "excerpt": "Hiểu AI for Beginners là giáo trình 12 tuần, 24 bài của Microsoft với bài học, quiz và bài thực hành, dạy các hướng tiếp cận AI từ biểu diễn tri thức đến mạng nơ-ron và học sâu bằng TensorFlow và PyTorch, cộng đạo đức AI. README nêu rõ những gì giáo trình không bao gồm.",
+        "content": "<p>README tả đây là giáo trình 12 tuần, 24 bài về AI, gồm bài học thực hành, câu đố và bài lab, thân thiện người mới, dùng các công cụ như TensorFlow và PyTorch và có phần đạo đức AI. Có bản đồ tư duy của khóa. Nội dung học: các hướng tiếp cận AI gồm hướng biểu tượng cổ điển với biểu diễn tri thức và suy luận, mạng nơ-ron và học sâu với mã trên hai framework, kiến trúc nơ-ron cho ảnh và văn bản (README nói có thể chưa phải mới nhất), và các hướng ít phổ biến như thuật toán di truyền và hệ đa tác tử. README nói rõ giáo trình không bao gồm: AI trong kinh doanh, học máy cổ điển (trỏ tới giáo trình ML for Beginners), ứng dụng dựng bằng Cognitive Services, framework đám mây cụ thể, AI hội thoại và chatbot, và toán học sâu của học sâu. Cũng có nhiều bản dịch tự động và gợi ý tải kiểu sparse. Giấy phép lấy theo GitHub (MIT); README chỉ có huy hiệu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Đây là giáo trình kiểu đại học nhập môn AI: không chỉ AI chat hiện nay mà cả lịch sử và các hướng khác nhau. Phù hợp nếu bạn muốn hiểu nền tảng chứ không chỉ dùng công cụ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: học vài tuần đầu về các hướng tiếp cận AI trước khi làm bài về mạng nơ-ron. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học AI và lập trình, muốn có lộ trình tự học có hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và làm quen khái niệm học máy; bài lab dùng TensorFlow hoặc PyTorch. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói nội dung về kiến trúc nơ-ron 'có thể chưa phải tiên tiến nhất' và không bao gồm AI tạo sinh hiện đại hay toán sâu; muốn đi vào LLM cần khóa khác. README phần đã đọc không nêu chi tiết yêu cầu phần cứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>neural network (mạng nơ-ron)</strong>: mô hình học máy nhiều lớp; README nêu là cốt lõi AI hiện đại.</li><li><strong>deep learning (học sâu)</strong>: học máy bằng mạng nơ-ron sâu; README nêu.</li><li><strong>TensorFlow / PyTorch</strong>: hai thư viện học sâu phổ biến; README nêu dùng cả hai.</li><li><strong>GOFAI</strong>: AI biểu tượng kiểu cổ điển; README nhắc.</li><li><strong>multi-agent system (hệ đa tác tử)</strong>: nhiều tác tử AI phối hợp; README nêu là hướng ít phổ biến.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: giáo trình đọc theo bài, có bản đồ tư duy, bài lab dùng Python với TensorFlow hoặc PyTorch; có Binder để chạy sổ tay trực tuyến (bài chưa kiểm tra). Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản đồ tư duy của khóa.</li><li>Học các bài đầu về các hướng tiếp cận AI.</li><li>Làm bài lab về mạng nơ-ron khi đã quen Python.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu nền tảng AI. Hãy đọc README của AI for Beginners (https://github.com/microsoft/AI-For-Beginners) và giải thích bằng tiếng Việt: khóa dạy gì, không dạy gì, và nên học cùng hay sau khóa nào nếu muốn đi vào AI tạo sinh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc chỉ có huy hiệu giấy phép (lấy theo GitHub); bài chưa đọc từng bài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa học thường dùng khóa API và dịch vụ đám mây có thể tính phí: đặt giới hạn chi tiêu, giữ khóa ngoài mã nguồn, và kiểm tra phiên bản công cụ vì nội dung khóa có thể lỗi thời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>70.518 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-23. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chỉ có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/AI-For-Beginners/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/AI-For-Beginners\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 438. Chưa cài/chạy thử; không tạo validation. Snapshot sao 70518; repo_id 344190478; README SHA256 40fbad0f74adf8b43ca581a5921921673c8cf215705af01fb4a7142527698c3f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/AI-For-Beginners",
+          "repo_id": "344190478",
+          "source_path": "",
+          "source_revision": "README-SHA256:40fbad0f74adf8b43ca581a5921921673c8cf215705af01fb4a7142527698c3f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/AI-For-Beginners",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: giáo trình đọc theo bài, có bản đồ tư duy, bài lab dùng Python với TensorFlow hoặc PyTorch; có Binder để chạy sổ tay trực tuyến (bài chưa kiểm tra). Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/AI-For-Beginners/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/AI-For-Beginners/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/AI-For-Beginners",
+        "stars": 70518,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/README.md",
+        "readmeSha256": "40fbad0f74adf8b43ca581a5921921673c8cf215705af01fb4a7142527698c3f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 439,
+      "batch": 75,
+      "slug": "agents-course",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hugging Face Agents Course: khóa học miễn phí 4 đơn vị về agent AI, từ nền tảng đến dự án cuối kỳ có đánh giá tự động",
+        "excerpt": "Hiểu Hugging Face Agents Course là khóa học 4 đơn vị đi từ nền tảng agent đến bài tập cuối có benchmark, gồm smolagents, LlamaIndex, LangGraph, observability và Agentic RAG. README nêu điều kiện: biết Python và LLM cơ bản.",
+        "content": "<p>README tả khóa gồm 4 đơn vị, từ nền tảng agent đến bài tập cuối với benchmark; đăng ký và truy cập khóa miễn phí ở trang Hugging Face Learn. Bảng nội dung: đơn vị 0 chào mừng và công cụ cần thiết; đơn vị 1 giới thiệu agent, LLM, cây họ mô hình, token đặc biệt, kèm bonus tinh chỉnh LLM cho gọi hàm; đơn vị 2 các framework agent với smolagents, LlamaIndex và LangGraph, kèm bonus quan sát và đánh giá; đơn vị 3 trường hợp dùng Agentic RAG, kèm bonus agent trong game Pokemon; đơn vị 4 dự án cuối: tạo, kiểm tra và chứng nhận agent của bạn với đánh giá tự động và bảng xếp hạng. Điều kiện: biết Python cơ bản và LLM cơ bản. Có hướng dẫn đóng góp và cách trích dẫn. README xin bạn gắn sao cho kho. Giấy phép lấy theo GitHub (Apache-2.0); README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khóa này nối với ba framework agent bạn có thể đã thấy: smolagents, LlamaIndex và LangGraph. Học xong bạn hiểu agent là gì và tự dựng được một cái.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: học đơn vị 0 và 1 để hiểu agent trước khi chọn framework ở đơn vị 2. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học AI và lập trình, muốn có lộ trình tự học có hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và LLM cơ bản; khóa miễn phí nhưng các bài thực hành có thể cần khóa API hoặc dịch vụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài thực hành có thể cần mô hình và dịch vụ trả phí hay giới hạn, README phần đã đọc không nêu chi phí. Nội dung về framework (smolagents, LlamaIndex, LangGraph) có thể thay đổi nhanh, phiên bản trong khóa có thể lỗi thời. Bài chưa kiểm tra bảng xếp hạng còn hoạt động hay không.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>agent</strong>: AI được giao vai và công cụ để làm việc; README là chủ đề khóa.</li><li><strong>function calling (gọi hàm)</strong>: mô hình gọi công cụ theo định dạng; README có bonus tinh chỉnh.</li><li><strong>Agentic RAG</strong>: agent dùng truy xuất tài liệu để trả lời; README có đơn vị 3.</li><li><strong>observability (quan sát)</strong>: theo dõi và đánh giá agent; README có bonus.</li><li><strong>benchmark</strong>: bài đánh giá chuẩn; README nêu cho dự án cuối.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: đăng ký và học miễn phí qua trang Hugging Face Learn; cần Python và LLM cơ bản. Bài thực hành có thể cần khóa API (bài chưa kiểm tra). Giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng nội dung và điều kiện.</li><li>Học đơn vị 0 và 1.</li><li>Chọn một framework ở đơn vị 2 để làm thực hành.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học dựng agent AI từ đầu. Hãy đọc README của Hugging Face Agents Course (https://github.com/huggingface/agents-course) và giải thích bằng tiếng Việt: 4 đơn vị học gì, cần biết gì trước, và nên cẩn trọng gì về chi phí và phiên bản. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, bài chưa đọc nội dung khóa trên trang Learn. README phần đã đọc không nêu giấy phép. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa học thường dùng khóa API và dịch vụ đám mây có thể tính phí: đặt giới hạn chi tiêu, giữ khóa ngoài mã nguồn, và kiểm tra phiên bản công cụ vì nội dung khóa có thể lỗi thời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>34.390 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-14. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/agents-course/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/agents-course\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 439. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34390; repo_id 917868934; README SHA256 5bf034d62f8102d860318dcb5628d404a091c31bfdbd6ba589c84159f0aa1538.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/agents-course",
+          "repo_id": "917868934",
+          "source_path": "",
+          "source_revision": "README-SHA256:5bf034d62f8102d860318dcb5628d404a091c31bfdbd6ba589c84159f0aa1538",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/agents-course",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: đăng ký và học miễn phí qua trang Hugging Face Learn; cần Python và LLM cơ bản. Bài thực hành có thể cần khóa API (bài chưa kiểm tra). Giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/agents-course/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/agents-course/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/agents-course",
+        "stars": 34390,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/agents-course/main/README.md",
+        "readmeSha256": "5bf034d62f8102d860318dcb5628d404a091c31bfdbd6ba589c84159f0aa1538",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 440,
+      "batch": 75,
+      "slug": "deep-rl-class",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hugging Face Deep Reinforcement Learning Course: khóa học học tăng cường sâu, README nói đang ở trạng thái bảo trì thấp, một số phần không còn hoạt động",
+        "excerpt": "Hiểu Hugging Face Deep RL Course là khóa học lý thuyết và thực hành về học tăng cường sâu. README ghi khóa đang ở trạng thái bảo trì thấp: đơn vị 7 (AI vs AI) không hoạt động và bảng xếp hạng ngừng hoạt động, phần còn lại vẫn học được.",
+        "content": "<p>README mô tả kho chứa các tệp mdx và sổ tay của khóa Deep Reinforcement Learning phiên bản 2.0, trang khóa học nằm ở Hugging Face. Có đề cương và đăng ký nhận tin. Mục Course Maintenance Notice ghi rõ: khóa đang ở trạng thái bảo trì thấp nhưng vẫn là tài nguyên tốt để học cả lý thuyết lẫn thực hành; đơn vị 7 (AI đấu AI) hiện không hoạt động nhưng bạn vẫn huấn luyện agent chơi bóng đá và xem hiệu suất; bảng xếp hạng không còn hoạt động; phần lý thuyết và bài tập khác vẫn dùng được; nếu gặp lỗi ở bài thực hành hãy xem phần issues. Có mục trích dẫn. Giấy phép lấy theo GitHub (Apache-2.0); README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Học tăng cường là cách dạy AI qua thử và sai với phần thưởng, như dạy robot hay agent chơi game. Khóa này dạy từ lý thuyết đến thực hành, nhưng README tự cho biết đã vào chế độ bảo trì thấp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc các đơn vị đầu để hiểu học tăng cường và bỏ qua phần bảng xếp hạng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học AI và lập trình, muốn có lộ trình tự học có hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python và nền toán cơ bản; học tăng cường là chủ đề chuyên sâu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói rõ khóa ở trạng thái bảo trì thấp, đơn vị 7 và bảng xếp hạng không hoạt động: một số bài thực hành có thể lỗi do phiên bản thư viện thay đổi (README khuyên xem issues). Nội dung học tăng cường không phải lĩnh vực chính của người mới vibe coding; đây có thể ngoài nhu cầu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>reinforcement learning (học tăng cường)</strong>: AI học qua thử, sai và phần thưởng; README là chủ đề khóa.</li><li><strong>agent (tác tử)</strong>: phần ra quyết định trong môi trường học tăng cường.</li><li><strong>leaderboard (bảng xếp hạng)</strong>: bảng điểm các agent; README nói không còn hoạt động.</li><li><strong>low-maintenance (bảo trì thấp)</strong>: dự án ít được cập nhật; README tự nêu.</li><li><strong>notebook (sổ tay)</strong>: tệp chạy mã và ghi chú; README nói kho có sổ tay.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới trang khóa học và đề cương; bài chưa đọc nội dung. Cần Python và sổ tay. Giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Course Maintenance Notice.</li><li>Học các đơn vị đầu về lý thuyết.</li><li>Xem issues khi gặp lỗi ở bài thực hành.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tò mò học tăng cường sâu. Hãy đọc README của Hugging Face Deep RL Course (https://github.com/huggingface/deep-rl-class) và giải thích bằng tiếng Việt: khóa dạy gì, phần nào đã không còn hoạt động, và có nên học nếu mình chỉ cần dựng ứng dụng AI. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn; bài chưa đọc nội dung khóa. README phần đã đọc không nêu giấy phép. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa học thường dùng khóa API và dịch vụ đám mây có thể tính phí: đặt giới hạn chi tiêu, giữ khóa ngoài mã nguồn, và kiểm tra phiên bản công cụ vì nội dung khóa có thể lỗi thời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>5.086 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-14. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/deep-rl-class/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/deep-rl-class\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 440. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5086; repo_id 484003883; README SHA256 c548ec0e310e3643f85aa565f786ebab49ac9158717b4ac5d4e38ad5d5748404.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/deep-rl-class",
+          "repo_id": "484003883",
+          "source_path": "",
+          "source_revision": "README-SHA256:c548ec0e310e3643f85aa565f786ebab49ac9158717b4ac5d4e38ad5d5748404",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/deep-rl-class",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới trang khóa học và đề cương; bài chưa đọc nội dung. Cần Python và sổ tay. Giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/deep-rl-class/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/deep-rl-class/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/deep-rl-class",
+        "stars": 5086,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/deep-rl-class/main/README.md",
+        "readmeSha256": "c548ec0e310e3643f85aa565f786ebab49ac9158717b4ac5d4e38ad5d5748404",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 441,
+      "batch": 75,
+      "slug": "30-seconds-of-code",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "30 Seconds of Code: kho bài viết và đoạn mã ngắn để nâng kỹ năng lập trình, đoạn mã theo CC-BY-4.0 còn nội dung khác không được dùng khi chưa có phép",
+        "excerpt": "Hiểu 30 Seconds of Code là kho bài viết lập trình ngắn kèm đoạn mã, giải thích và ví dụ, tra cứu qua website. README ghi rõ đoạn mã theo CC-BY-4.0 còn văn bản, hình, mã nguồn website, logo và tên không được dùng khi chưa có sự đồng ý của chủ sở hữu, và hiện không nhận đóng góp nội dung mới.",
+        "content": "<p>README tả đây là bài viết lập trình để nâng kỹ năng, xem toàn bộ trên website 30secondsofcode.org: tìm theo tên, thẻ, ngôn ngữ hoặc mô tả, duyệt bài hay bộ sưu tập theo chủ đề, bấm thẻ để xem bài đầy đủ kèm đoạn mã, giải thích và ví dụ. Đóng góp: README ghi không nhận nội dung mới vào lúc này, nhưng có thể báo lỗi website hay đề xuất cải tiến qua issue. Credits: do Angelos Chalaris duy trì; mọi đoạn mã theo giấy phép CC-BY-4.0 trừ khi ghi khác; mọi tài liệu khác (gồm văn bản, hình ảnh, mã nguồn website, logo, tên và nhãn hiệu) không được dùng khi chưa có sự đồng ý rõ ràng của chủ sở hữu; website chạy bằng Netlify, Astro và GitHub; ảnh từ Unsplash. Giấy phép theo GitHub là CC-BY-4.0, nhưng README giới hạn phạm vi như trên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi bài là một thủ thuật nhỏ đọc trong khoảng 30 giây: một hàm, một mẹo CSS, một cách làm với mảng. Dùng để tra cứu nhanh khi viết mã hoặc kiểm tra mã AI viết.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi AI viết một hàm xử lý mảng, tra bài tương ứng để so cách làm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới học AI và lập trình, muốn có lộ trình tự học có hệ thống.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Bắt đầu.</strong> Là bài đọc ngắn trên web; không cần cài đặt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phạm vi giấy phép khác nhau: chỉ đoạn mã theo CC-BY-4.0 (cần ghi nguồn), còn văn bản, hình ảnh, mã nguồn website, logo và tên không được dùng khi chưa có phép của chủ sở hữu (theo README). Nếu muốn trích lại bài viết để đăng, hãy xin phép hoặc chỉ dẫn link. Kho hiện không nhận đóng góp nội dung mới.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>snippet (đoạn mã ngắn)</strong>: đoạn mã nhỏ giải quyết một việc; README nêu.</li><li><strong>CC-BY-4.0</strong>: giấy phép cho dùng lại nếu ghi công tác giả; README áp dụng cho đoạn mã.</li><li><strong>Astro</strong>: công cụ dựng website; README nêu website dùng Astro.</li><li><strong>collection (bộ sưu tập)</strong>: nhóm bài theo chủ đề; README nêu.</li><li><strong>attribution (ghi nguồn)</strong>: nêu tên tác giả khi dùng lại; yêu cầu của CC-BY.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: không cần cài; truy cập website để đọc bài. Miễn phí xem; phạm vi dùng lại theo CC-BY-4.0 cho đoạn mã, các tài liệu khác cần phép (theo README).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Truy cập website và thử tìm theo ngôn ngữ.</li><li>Đọc bộ sưu tập theo chủ đề.</li><li>Khi dùng lại đoạn mã, ghi nguồn theo CC-BY-4.0.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tra thủ thuật lập trình ngắn. Hãy đọc README của 30 Seconds of Code (https://github.com/Chalarangelo/30-seconds-of-code) và giải thích bằng tiếng Việt: kho này dùng thế nào, phần nào theo CC-BY-4.0, và phần nào không được dùng lại khi chưa có phép. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; bài chưa đọc website. Giới hạn giấy phép lấy theo README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khóa học thường dùng khóa API và dịch vụ đám mây có thể tính phí: đặt giới hạn chi tiêu, giữ khóa ngoài mã nguồn, và kiểm tra phiên bản công cụ vì nội dung khóa có thể lỗi thời.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Chalarangelo</strong> có <strong>129.390 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện CC-BY-4.0; README ghi đoạn mã theo CC-BY-4.0, tài liệu khác không được dùng khi chưa có sự đồng ý. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Chalarangelo/30-seconds-of-code\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 441. Chưa cài/chạy thử; không tạo validation. Snapshot sao 129390; repo_id 112507086; README SHA256 292177e76844059f449590e8653ca919433a2563b79b886bdd199c5ec0d8e409.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Chalarangelo/30-seconds-of-code",
+          "repo_id": "112507086",
+          "source_path": "",
+          "source_revision": "README-SHA256:292177e76844059f449590e8653ca919433a2563b79b886bdd199c5ec0d8e409",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "cc-by-4.0",
+                "name": "Creative Commons Attribution 4.0 International",
+                "spdx_id": "CC-BY-4.0",
+                "url": "https://api.github.com/licenses/cc-by-4.0",
+                "node_id": "MDc6TGljZW5zZTI1"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Chalarangelo/30-seconds-of-code",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: không cần cài; truy cập website để đọc bài. Miễn phí xem; phạm vi dùng lại theo CC-BY-4.0 cho đoạn mã, các tài liệu khác cần phép (theo README).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Chalarangelo/30-seconds-of-code/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Chalarangelo/30-seconds-of-code",
+        "stars": 129390,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Chalarangelo/30-seconds-of-code/master/README.md",
+        "readmeSha256": "292177e76844059f449590e8653ca919433a2563b79b886bdd199c5ec0d8e409",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

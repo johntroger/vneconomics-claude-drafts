@@ -6065,5 +6065,123 @@
    "comfyui",
    "yt-dlp"
   ]
+ },
+ {
+  "key": 437,
+  "slug": "generative-ai-for-beginners",
+  "group": "2026-11-03-khoa-hoc-ai",
+  "title": "Generative AI for Beginners: khóa 21 bài của Microsoft về dựng ứng dụng AI tạo sinh, mã mẫu Python và TypeScript, nhiều bản dịch",
+  "repo": "microsoft/generative-ai-for-beginners",
+  "stars": 122884,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-02",
+  "related": [
+   "30-seconds-of-code",
+   "ai-for-beginners"
+  ]
+ },
+ {
+  "key": 438,
+  "slug": "ai-for-beginners",
+  "group": "2026-11-03-khoa-hoc-ai",
+  "title": "AI for Beginners: giáo trình 12 tuần, 24 bài của Microsoft về AI, mạng nơ-ron, TensorFlow và PyTorch; không bao gồm AI cho kinh doanh hay ML cổ điển",
+  "repo": "microsoft/AI-For-Beginners",
+  "stars": 70518,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-23",
+  "related": [
+   "agents-course",
+   "generative-ai-for-beginners"
+  ]
+ },
+ {
+  "key": 439,
+  "slug": "agents-course",
+  "group": "2026-11-03-khoa-hoc-ai",
+  "title": "Hugging Face Agents Course: khóa học miễn phí 4 đơn vị về agent AI, từ nền tảng đến dự án cuối kỳ có đánh giá tự động",
+  "repo": "huggingface/agents-course",
+  "stars": 34390,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-14",
+  "related": [
+   "ai-for-beginners",
+   "deep-rl-class"
+  ]
+ },
+ {
+  "key": 440,
+  "slug": "deep-rl-class",
+  "group": "2026-11-03-khoa-hoc-ai",
+  "title": "Hugging Face Deep Reinforcement Learning Course: khóa học học tăng cường sâu, README nói đang ở trạng thái bảo trì thấp, một số phần không còn hoạt động",
+  "repo": "huggingface/deep-rl-class",
+  "stars": 5086,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-14",
+  "related": [
+   "agents-course"
+  ]
+ },
+ {
+  "key": 441,
+  "slug": "30-seconds-of-code",
+  "group": "2026-11-03-khoa-hoc-ai",
+  "title": "30 Seconds of Code: kho bài viết và đoạn mã ngắn để nâng kỹ năng lập trình, đoạn mã theo CC-BY-4.0 còn nội dung khác không được dùng khi chưa có phép",
+  "repo": "Chalarangelo/30-seconds-of-code",
+  "stars": 129390,
+  "license": {
+   "key": "cc-by-4.0",
+   "name": "Creative Commons Attribution 4.0 International",
+   "spdx_id": "CC-BY-4.0",
+   "url": "https://api.github.com/licenses/cc-by-4.0",
+   "node_id": "MDc6TGljZW5zZTI1"
+  },
+  "level_text": "Bắt đầu",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-26",
+  "related": [
+   "generative-ai-for-beginners"
+  ]
  }
 ]
