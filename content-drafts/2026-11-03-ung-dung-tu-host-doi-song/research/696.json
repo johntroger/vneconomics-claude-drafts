@@ -1,0 +1,41 @@
+{
+  "key": 696,
+  "repo": "glanceapp/glance",
+  "repoId": "792861139",
+  "url": "https://github.com/glanceapp/glance",
+  "stars": 37996,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:05:27Z",
+  "createdAt": "2024-04-27T18:55:38Z",
+  "defaultBranch": "main",
+  "description": "A self-hosted dashboard that puts all your feeds in one place",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/glanceapp/glance/main/README.md",
+    "sha256": "8bd07cbba9ec198a2cca8be73454140edb4c99956c541e7e0b7b4618d7ef0c11",
+    "bytes": 14571,
+    "sectionsRead": [
+      "Features",
+      "Configuration",
+      "Installation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc docs/configuration.md.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố nhanh và nhẹ."
+  ],
+  "runtimeValidated": false
+}

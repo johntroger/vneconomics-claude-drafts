@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-doi-song",
+  "batch": 111,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 690,
+      "batch": 111,
+      "slug": "grocy",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grocy: phần mềm quản lý hộ gia đình tự host viết bằng PHP, có bản demo công khai, REST API, đọc mã vạch; README nêu tài khoản mặc định admin/admin phải đổi ngay, giấy phép MIT",
+        "excerpt": "Hiểu Grocy là ứng dụng quản lý hộ gia đình tự host (thực phẩm, tồn kho, việc nhà...) viết bằng PHP, có bản demo công khai, REST API, hỗ trợ máy quét mã vạch; README nêu tài khoản mặc định là admin với mật khẩu admin và yêu cầu đổi ngay, giấy phép MIT, và nói tác giả chỉ hỗ trợ qua trình theo dõi lỗi và diễn đàn.",
+        "content": "<p>README mở đầu bằng mục thử bản demo công khai (bản ổn định và bản phát triển), nói tính năng xem trên trang grocy.info, mục hỏi đáp và báo lỗi (Reddit và trình theo dõi lỗi; tác giả nói không hỗ trợ ngoài hai kênh này), đóng góp cộng đồng và tiện ích bổ sung. Mục cài đặt nói Grocy là ứng dụng PHP khá đơn giản: giải nén bản phát hành, sao chép tệp cấu hình mẫu thành tệp cấu hình thật rồi sửa, thư mục dữ liệu phải ghi được, gốc máy chủ web trỏ vào thư mục public; có Grocy Desktop cho người dùng Windows không muốn quản lý máy chủ web, và cách chạy bằng Docker. Mật khẩu: README ghi đăng nhập mặc định là người dùng admin với mật khẩu admin và nhắc đổi ngay trong menu người dùng. Các mục còn lại: nền tảng hỗ trợ, cập nhật, bản địa hóa, động lực, REST API (giao diện Swagger tích hợp), máy quét mã vạch và camera. Phần License nêu The MIT License. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trong nhà có bao nhiêu hộp sữa, cái nào sắp hết hạn, ai phải làm việc nhà nào? Grocy là một cuốn sổ điện tử tự host để quản lý những thứ đó, giống ERP thu nhỏ cho gia đình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo công khai bằng dữ liệu giả để hiểu các chức năng; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần chút quản trị máy chủ web PHP hoặc Docker; dùng bản Grocy Desktop thì đơn giản hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tài khoản mặc định admin/admin là công khai: đổi ngay trước khi mở ra mạng. Grocy không có hỗ trợ cá nhân từ tác giả. Dữ liệu hộ gia đình là dữ liệu cá nhân: bảo vệ bằng HTTPS và sao lưu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-hosted (tự host)</strong>: chạy trên máy của bạn; bài chú thích biên tập.</li><li><strong>REST API</strong>: giao diện cho chương trình khác điều khiển; README nêu.</li><li><strong>barcode (mã vạch)</strong>: mã quét được trên sản phẩm; README nêu hỗ trợ máy quét và camera.</li><li><strong>default credentials (tài khoản mặc định)</strong>: tên và mật khẩu có sẵn khi cài; README nêu admin/admin.</li><li><strong>localization (bản địa hóa)</strong>: hỗ trợ nhiều ngôn ngữ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục How to install và cách chạy bằng Docker; bài không chép lệnh. Cần máy chủ web PHP hoặc Docker. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo công khai.</li><li>Đọc mục How to install.</li><li>Đổi mật khẩu mặc định trước khi dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý tủ bếp và việc nhà. Hãy đọc README của Grocy (https://github.com/grocy/grocy) và giải thích bằng tiếng Việt: Grocy làm gì, vì sao phải đổi tài khoản mặc định admin/admin, và hỗ trợ từ tác giả giới hạn thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 12 KB, bài chưa đọc trang grocy.info. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grocy</strong> có <strong>9.647 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-09-16. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu The MIT License; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grocy/grocy/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grocy/grocy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 690. Chưa cài/chạy thử; không tạo validation. Snapshot sao 9647; repo_id 88370518; README SHA256 afec4a26b8386bf628a531166d2c7cfc5887c89fd146b17f3838f5bcac4da33b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grocy/grocy",
+          "repo_id": "88370518",
+          "source_path": "",
+          "source_revision": "README-SHA256:afec4a26b8386bf628a531166d2c7cfc5887c89fd146b17f3838f5bcac4da33b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grocy/grocy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục How to install và cách chạy bằng Docker; bài không chép lệnh. Cần máy chủ web PHP hoặc Docker. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grocy/grocy/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grocy/grocy/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grocy/grocy",
+        "stars": 9647,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grocy/grocy/master/README.md",
+        "readmeSha256": "afec4a26b8386bf628a531166d2c7cfc5887c89fd146b17f3838f5bcac4da33b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 691,
+      "batch": 111,
+      "slug": "wallos",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Wallos: ứng dụng web mã nguồn mở tự host để quản lý đăng ký định kỳ và chi tiêu, đa tiền tệ, thông báo qua nhiều kênh, hỗ trợ OIDC, có tính năng gợi ý bằng AI dùng khóa API của bạn; giấy phép GPL v3",
+        "excerpt": "Hiểu Wallos là ứng dụng web mã nguồn mở tự host để quản lý các khoản đăng ký định kỳ và chi tiêu: nhiều tiền tệ, quy đổi tỷ giá qua API Fixer, thống kê, thông báo qua email, Discord, Pushover, Telegram, Gotify, webhook, OIDC; README có mục Gợi ý bằng AI dùng ChatGPT, Gemini, OpenRouter, Ollama cục bộ hoặc API tương thích OpenAI.",
+        "content": "<p>README tả Wallos là ứng dụng web mã nguồn mở tự host giúp quản lý tài chính, theo dõi các khoản đăng ký định kỳ và thanh toán. Tính năng: quản lý đăng ký, danh mục chi tiêu, nhiều tiền tệ, quy đổi tỷ giá qua Fixer API, quyền riêng tư dữ liệu nhờ tự host (cách mô tả của dự án), tùy biến giao diện, sắp xếp, tìm logo trên web, giao diện di động, thống kê, thông báo qua nhiều kênh, nhiều ngôn ngữ, OIDC với OAuth, và gợi ý bằng AI. Mục Demo có bản thử công khai với tài khoản demo công khai. Mục Getting Started hướng dẫn cài (bare metal, Docker, Docker Compose), cập nhật, cách dùng; bài không chép lệnh. Mục AI Recommendations nói Wallos có thể hỏi một mô hình AI cách tiết kiệm trên các đăng ký, mỗi người dùng tự bật trong Cài đặt, chọn nhà cung cấp (ChatGPT cần khóa API OpenAI, Gemini cần khóa Google AI Studio, và các nhà cung cấp khác), bấm Test để tải danh sách mô hình. Phần License nêu GNU GPL Version 3 và giải thích vì sao chọn GPLv3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Đăng ký Netflix, hosting, phần mềm... mỗi tháng trừ một ít, cộng lại bao nhiêu? Wallos là sổ ghi các khoản định kỳ đó, nhắc ngày thanh toán và cho xem thống kê.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo công khai bằng dữ liệu giả; chưa tự host và chưa bật tính năng AI. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Docker hoặc máy chủ web PHP; dùng cơ bản khá đơn giản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu tài chính cá nhân rất nhạy cảm: bảo vệ bằng HTTPS, xác thực mạnh và sao lưu. Tính năng AI gửi thông tin đăng ký của bạn tới nhà cung cấp mô hình bên ngoài bằng khóa API của bạn: cân nhắc kỹ và có thể tốn phí; dùng Ollama cục bộ nếu muốn giữ dữ liệu trong máy. Quy đổi tiền tệ qua Fixer API cần khóa API riêng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>subscription (đăng ký định kỳ)</strong>: khoản trả tiền lặp lại; README nêu.</li><li><strong>OIDC</strong>: đăng nhập qua nhà cung cấp danh tính; README nêu.</li><li><strong>Fixer API</strong>: dịch vụ tỷ giá; README nêu Wallos dùng để quy đổi.</li><li><strong>webhook</strong>: cách gửi thông báo tới dịch vụ khác; README nêu.</li><li><strong>Ollama</strong>: công cụ chạy mô hình AI trên máy mình; README nêu là một lựa chọn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation cho bare metal, Docker và Docker Compose; bài không chép lệnh. Cần Docker hoặc PHP. Miễn phí theo GPL v3 (README nêu); khóa API AI và tỷ giá có thể tốn phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo công khai.</li><li>Đọc mục Features và AI Recommendations.</li><li>Chỉ bật AI khi đã hiểu dữ liệu nào được gửi đi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn theo dõi các khoản đăng ký định kỳ. Hãy đọc README của Wallos (https://github.com/ellite/Wallos) và giải thích bằng tiếng Việt: Wallos làm gì, tính năng gợi ý bằng AI gửi dữ liệu đi đâu, và khi nào nên dùng Ollama cục bộ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 15 KB, bài chưa đọc tài liệu trong kho. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ellite</strong> có <strong>8.784 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GNU GPL Version 3; GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ellite/Wallos/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ellite/Wallos\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 691. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8784; repo_id 701017456; README SHA256 90571c6c47c1e3bab5a92351abe69769a42984c205958a2d8b19dbd5e5c1d066.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ellite/Wallos",
+          "repo_id": "701017456",
+          "source_path": "",
+          "source_revision": "README-SHA256:90571c6c47c1e3bab5a92351abe69769a42984c205958a2d8b19dbd5e5c1d066",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ellite/Wallos",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation cho bare metal, Docker và Docker Compose; bài không chép lệnh. Cần Docker hoặc PHP. Miễn phí theo GPL v3 (README nêu); khóa API AI và tỷ giá có thể tốn phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ellite/Wallos/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ellite/Wallos/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ellite/Wallos",
+        "stars": 8784,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ellite/Wallos/main/README.md",
+        "readmeSha256": "90571c6c47c1e3bab5a92351abe69769a42984c205958a2d8b19dbd5e5c1d066",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 692,
+      "batch": 111,
+      "slug": "homebox",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "HomeBox: hệ thống kiểm kê và sắp xếp đồ đạc cho người dùng gia đình, đơn giản, viết bằng Go, nhẹ, di động với SQLite và giao diện web nhúng, theo dõi tài liệu bảo hành mua sắm bảo trì; giấy phép AGPL",
+        "excerpt": "Hiểu HomeBox là hệ thống kiểm kê và sắp xếp đồ đạc xây cho người dùng gia đình: đơn giản, mở rộng được, viết bằng Go nên nhẹ (README nêu bộ nhớ nhàn rỗi dưới 50 MB), di động nhờ SQLite và giao diện web nhúng, tổ chức theo danh mục, vị trí, thẻ và trường tùy chỉnh, theo dõi hình ảnh, tài liệu, bảo hành, mua sắm và bảo trì.",
+        "content": "<p>README tả HomeBox là hệ thống kiểm kê và tổ chức xây cho người dùng gia đình, nhấn mạnh sự đơn giản và dễ dùng: đơn giản nhưng mở rộng được, rất nhanh vì viết bằng Go và cần ít tài nguyên (README nêu bộ nhớ nhàn rỗi dưới 50 MB cho cả container; tuyên bố của dự án, bài chưa kiểm chứng), di động nhờ dùng SQLite và giao diện web nhúng. Tính năng chính: tổ chức phong phú (danh mục, vị trí, thẻ, trường tùy chỉnh), tìm kiếm mạnh, tải ảnh lên, theo dõi tài liệu và bảo hành, theo dõi mua sắm và bảo trì, thiết kế đáp ứng. README có ảnh chụp màn hình, bản demo và bản nightly, mục Quick Start trỏ tới trang cấu hình và Docker Compose (kèm các ảnh rootless và hardened; bài không chép lệnh), đóng góp, dịch thuật, lời cảm ơn. README có huy hiệu giấy phép và bài lấy theo GitHub (AGPL-3.0).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có nhớ bảo hành chiếc máy giặt còn đến khi nào, hoặc chiếc khoan nằm trong thùng nào ở gara? HomeBox là sổ kiểm kê đồ đạc của nhà bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo công khai với vài món đồ giả; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Docker cơ bản; giao diện đơn giản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu kiểm kê (giá trị đồ đạc, địa chỉ, ảnh, hóa đơn) là thông tin cá nhân: bảo vệ bằng xác thực, HTTPS và sao lưu. README có ảnh hardened và rootless để tăng bảo mật nhưng bài chưa kiểm tra. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>inventory (kiểm kê)</strong>: danh sách đồ đạc và tài sản; README nêu.</li><li><strong>SQLite</strong>: cơ sở dữ liệu nhẹ nằm trong một tệp; README nêu.</li><li><strong>custom field (trường tùy chỉnh)</strong>: ô thông tin bạn tự thêm; README nêu.</li><li><strong>warranty (bảo hành)</strong>: thời hạn nhà sản xuất sửa chữa miễn phí; README nêu theo dõi.</li><li><strong>AGPL</strong>: giấy phép tự do copyleft có điều khoản cho dịch vụ qua mạng; README có huy hiệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start trỏ tới homebox.software và Docker Compose; bài không chép lệnh. Cần Docker. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0), README có huy hiệu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is HomeBox.</li><li>Thử bản demo.</li><li>Đọc Quick Start trên homebox.software.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn kiểm kê đồ đạc trong nhà. Hãy đọc README của HomeBox (https://github.com/sysadminsmedia/homebox) và giải thích bằng tiếng Việt: HomeBox làm gì, vì sao nhẹ nhờ SQLite, và dữ liệu kiểm kê cần bảo vệ thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,1 KB, bài chưa đọc tài liệu homebox.software. Tuyên bố bộ nhớ chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sysadminsmedia</strong> có <strong>7.735 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sysadminsmedia/homebox/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sysadminsmedia/homebox\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 692. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7735; repo_id 816422401; README SHA256 eb3f4dc03dc36e3f8f08a31394db063ff5fc3c2bdeb9f18d2fdec030303e9b70.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sysadminsmedia/homebox",
+          "repo_id": "816422401",
+          "source_path": "",
+          "source_revision": "README-SHA256:eb3f4dc03dc36e3f8f08a31394db063ff5fc3c2bdeb9f18d2fdec030303e9b70",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sysadminsmedia/homebox",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start trỏ tới homebox.software và Docker Compose; bài không chép lệnh. Cần Docker. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0), README có huy hiệu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sysadminsmedia/homebox/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sysadminsmedia/homebox/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sysadminsmedia/homebox",
+        "stars": 7735,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sysadminsmedia/homebox/main/README.md",
+        "readmeSha256": "eb3f4dc03dc36e3f8f08a31394db063ff5fc3c2bdeb9f18d2fdec030303e9b70",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 693,
+      "batch": 111,
+      "slug": "wger",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "wger: trình quản lý tập luyện và thể hình mã nguồn mở tự host, tạo giáo án luyện tập, theo dõi chế độ ăn, cân nặng, số đo, thư viện bài tập, có ứng dụng Android và iOS, REST API; mã AGPL-3.0 trở lên, tài liệu CC-BY-SA-4.0",
+        "excerpt": "Hiểu wger là trình quản lý tập luyện và thể hình mã nguồn mở có thể tự host: tạo giáo án linh hoạt có quy tắc tăng tạ tự động, theo dõi chế độ ăn, cân nặng và số đo tùy chỉnh, ghi calo với cơ sở dữ liệu thực phẩm Open Food Facts, thư viện ảnh tiến độ, wiki bài tập, ứng dụng di động, REST API; mã theo AGPL-3.0 trở lên, tài liệu CC-BY-SA-4.0.",
+        "content": "<p>README tả wger là trình quản lý tập luyện và thể hình miễn phí. Tính năng: giáo án tập tùy chỉnh với quy tắc tăng tạ tự động, theo dõi toàn diện chế độ ăn, cân nặng và số đo tùy chỉnh, quản lý dinh dưỡng với cơ sở dữ liệu thực phẩm Open Food Facts, thư viện ảnh tiến độ, wiki bài tập tích hợp, ứng dụng Android, iOS, F-Droid, Flathub, tự host bằng Docker, nhiều ngôn ngữ do cộng đồng dịch, REST API, nhiều người dùng với chức năng quản lý phòng tập cơ bản. README nói giấy phép AGPL-3.0 trở lên và có hệ thống trực tuyến tại wger.de. Mục Self-hosting nói tự host về cơ bản chỉ cần một lệnh Docker Compose (bài không chép lệnh). Phần License nêu mã ứng dụng AGPL-3.0-or-later, tài liệu CC-BY-SA-4.0. README có mục nguồn dữ liệu bài tập.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ghi lại buổi tập, cân nặng và bữa ăn trong một ứng dụng bạn tự giữ dữ liệu, thay vì giao cho ứng dụng thương mại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử hệ thống trực tuyến wger.de với dữ liệu giả; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Docker cơ bản để tự host; dùng ứng dụng thì dễ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dữ liệu sức khỏe (cân nặng, số đo, ảnh tiến độ, chế độ ăn) rất nhạy cảm: bảo vệ bằng xác thực, HTTPS và sao lưu; không đưa ảnh cá nhân lên hệ thống công khai khi chưa hiểu chính sách. Bài không phải lời khuyên y tế hay luyện tập; hỏi chuyên gia khi cần. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>workout routine (giáo án tập)</strong>: kế hoạch các buổi tập; README nêu.</li><li><strong>progression (tăng tải)</strong>: tăng dần mức tạ qua các buổi; README nêu quy tắc tự động.</li><li><strong>Open Food Facts</strong>: cơ sở dữ liệu thực phẩm mở; README nêu dùng cho calo.</li><li><strong>multi-user (nhiều người dùng)</strong>: nhiều tài khoản trên một hệ thống; README nêu.</li><li><strong>AGPL-3.0-or-later</strong>: giấy phép tự do copyleft từ phiên bản 3 trở lên; README nêu cho mã.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Self-hosting với Docker Compose; bài không chép lệnh. Cần Docker nếu tự host. Miễn phí theo AGPL-3.0 trở lên (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và tính năng.</li><li>Thử wger.de với dữ liệu giả.</li><li>Đọc mục Self-hosting.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự giữ dữ liệu tập luyện. Hãy đọc README của wger (https://github.com/wger-project/wger) và giải thích bằng tiếng Việt: wger theo dõi những gì, giấy phép AGPL và CC-BY-SA khác nhau thế nào, và dữ liệu sức khỏe cần bảo vệ ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,6 KB, bài chưa đọc tài liệu wger.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wger-project</strong> có <strong>7.229 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu AGPL-3.0-or-later cho mã và CC-BY-SA-4.0 cho tài liệu; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wger-project/wger/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wger-project/wger\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 693. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7229; repo_id 7705569; README SHA256 11b4826a7357eabd8756a6a5d21099f5660122e87ef6c4ec688249b351b42f05.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wger-project/wger",
+          "repo_id": "7705569",
+          "source_path": "",
+          "source_revision": "README-SHA256:11b4826a7357eabd8756a6a5d21099f5660122e87ef6c4ec688249b351b42f05",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wger-project/wger",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Self-hosting với Docker Compose; bài không chép lệnh. Cần Docker nếu tự host. Miễn phí theo AGPL-3.0 trở lên (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wger-project/wger/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wger-project/wger/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wger-project/wger",
+        "stars": 7229,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wger-project/wger/master/README.md",
+        "readmeSha256": "11b4826a7357eabd8756a6a5d21099f5660122e87ef6c4ec688249b351b42f05",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 694,
+      "batch": 111,
+      "slug": "kavita",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Kavita: máy chủ đọc sách nhanh, nhiều tính năng, đa nền tảng, phục vụ truyện tranh, manga, webtoon và sách (epub, pdf), trình đọc đáp ứng, siêu dữ liệu phong phú, quản lý người dùng; README ghi phần mềm ở mức beta, có thể mất dữ liệu",
+        "excerpt": "Hiểu Kavita là máy chủ đọc sách tự host: phục vụ manga, webtoon, truyện tranh (cbr, cbz, zip, rar, 7zip, ảnh thô) và sách (epub, pdf), trình đọc web đáp ứng, giao diện tùy biến, siêu dữ liệu phong phú, bộ sưu tập, danh sách đọc, quản lý người dùng theo vai trò và hạn chế độ tuổi, OIDC; README ghi rõ phần mềm ở mức beta, có thể mất dữ liệu và phải bắt đầu lại.",
+        "content": "<p>README tả Kavita là máy chủ đọc sách nhanh, nhiều tính năng, đa nền tảng, xây để trở thành giải pháp trọn vẹn cho nhu cầu đọc: dựng máy chủ riêng và chia sẻ bộ sưu tập với bạn bè, gia đình. Kavita phục vụ manga, webtoon, truyện tranh (cbr, cbz, zip, rar, rar5, 7zip, ảnh thô) và sách (epub, pdf), có trình đọc đáp ứng trên mọi thiết bị, giao diện tùy biến, siêu dữ liệu phong phú với lọc và tìm kiếm, nhóm tài liệu theo bộ sưu tập, danh sách đọc, muốn đọc, quản lý người dùng theo vai trò (hạn chế độ tuổi, quyền, OIDC), trình đọc web có chế độ webtoon và đọc liên tục, bảng điều khiển tùy biến, bản địa hóa, chú thích và đánh dấu cho epub. Một số tính năng như tải siêu dữ liệu, đánh giá, gợi ý có trong gói trả phí Kavita+ (bài không đánh giá). Mục Notice nói Kavita đang phát triển tích cực và nên coi là phần mềm beta đến khi có bản 1.0.0, có thể đổi cách hoạt động, bạn có thể mất dữ liệu và phải làm lại, nhóm cố gắng tránh mất dữ liệu. README có bản demo, cài đặt, yêu cầu tính năng, quyên góp, bản địa hóa. Mục License nêu GNU GPL v3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có một thư viện sách và truyện tranh số. Kavita dựng thành một thư viện trực tuyến riêng để đọc trên điện thoại, máy tính bảng hay máy tính, nhớ bạn đọc đến đâu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo trực tuyến; chỉ dùng sách bạn có quyền sử dụng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Docker hoặc cài đặt máy chủ cơ bản và tổ chức thư mục sách. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi phần mềm ở mức beta: có thể mất dữ liệu, nên sao lưu. Nội dung sách và truyện có bản quyền: chỉ phục vụ tác phẩm bạn có quyền dùng; bài không phải tư vấn pháp lý. Chia sẻ máy chủ ra Internet cần xác thực và HTTPS. Phần Kavita+ trả phí là tùy chọn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>reading server (máy chủ đọc sách)</strong>: dịch vụ lưu và phục vụ thư viện sách; README nêu.</li><li><strong>cbz/cbr</strong>: định dạng tệp truyện tranh nén; README nêu.</li><li><strong>webtoon</strong>: truyện tranh cuộn dọc; README nêu chế độ đọc riêng.</li><li><strong>OIDC</strong>: đăng nhập qua nhà cung cấp danh tính; README nêu.</li><li><strong>beta</strong>: giai đoạn thử, có thể mất dữ liệu; README ghi trong Notice.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Setup trỏ tới wiki; bài không chép lệnh. Miễn phí theo GPL v3 (README nêu); Kavita+ trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What Kavita Provides và Notice.</li><li>Thử bản demo.</li><li>Đọc Setup trên wiki và sao lưu trước khi dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có thư viện sách số và muốn đọc ở nhiều thiết bị. Hãy đọc README của Kavita (https://github.com/Kareadita/Kavita) và giải thích bằng tiếng Việt: Kavita phục vụ những định dạng nào, vì sao README cảnh báo beta có thể mất dữ liệu, và vì sao cần quan tâm bản quyền nội dung. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,2 KB, bài chưa đọc wiki kavitareader.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Kareadita</strong> có <strong>12.001 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GNU GPL v3; GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Kareadita/Kavita/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Kareadita/Kavita\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 694. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12001; repo_id 320936145; README SHA256 c418289222b8f01170d365262797101167f9ebc2b71041048603dc9cb1fa39e8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Kareadita/Kavita",
+          "repo_id": "320936145",
+          "source_path": "",
+          "source_revision": "README-SHA256:c418289222b8f01170d365262797101167f9ebc2b71041048603dc9cb1fa39e8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kareadita/Kavita",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Setup trỏ tới wiki; bài không chép lệnh. Miễn phí theo GPL v3 (README nêu); Kavita+ trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Kareadita/Kavita/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Kareadita/Kavita",
+        "stars": 12001,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/README.md",
+        "readmeSha256": "c418289222b8f01170d365262797101167f9ebc2b71041048603dc9cb1fa39e8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 695,
+      "batch": 111,
+      "slug": "audiobookshelf",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Audiobookshelf: máy chủ sách nói và podcast tự host, mã nguồn mở gồm cả ứng dụng Android và iOS (beta), phát mọi định dạng âm thanh, tải podcast tự động, nhiều người dùng, đồng bộ tiến độ; README ghi giao diện Vue đang được viết lại sang React",
+        "excerpt": "Hiểu Audiobookshelf là máy chủ sách nói và podcast tự host mã nguồn mở, phát được mọi định dạng âm thanh, tìm và thêm podcast để tải tập tự động, nhiều người dùng với quyền tùy chỉnh, nhớ tiến độ từng người và đồng bộ qua thiết bị, sao lưu hằng ngày, ứng dụng web tiến bộ (PWA), hỗ trợ Chromecast; README thông báo các PR giao diện không được xem xét vì giao diện Vue đang được viết lại bằng React.",
+        "content": "<p>README mở đầu bằng cảnh báo: các PR giao diện cho phần Vue hiện tại không được xem xét hay gộp vì giao diện đang được viết lại và chuyển sang React, sẽ sớm có. Audiobookshelf là máy chủ sách nói và podcast tự host. Tính năng: hoàn toàn mã nguồn mở gồm ứng dụng Android và iOS (đang beta), phát mọi định dạng âm thanh theo thời gian thực, tìm và thêm podcast để tải tập tự động, nhiều người dùng với quyền tùy chỉnh, giữ tiến độ từng người và đồng bộ qua thiết bị, tự phát hiện thư viện thay đổi (không cần quét lại), tải sách và podcast hàng loạt bằng kéo thả thư mục, sao lưu siêu dữ liệu cùng sao lưu tự động hằng ngày, ứng dụng web tiến bộ, hỗ trợ Chromecast. README có mục demo, ứng dụng Android và iOS (beta), tổ chức phương tiện (cấu trúc thư mục và tên thư mục quan trọng), cài đặt và thiết lập reverse proxy. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (GPL-3.0). Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống thư viện nghe sách và podcast riêng của bạn: bạn đưa tệp âm thanh vào, nghe ở nhà hay ngoài đường, ứng dụng nhớ bạn nghe đến phút nào.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo công khai; chỉ dùng sách nói bạn có quyền sử dụng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Docker hoặc cài đặt máy chủ cơ bản và hiểu cấu trúc thư mục; phần reverse proxy khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói giao diện đang được viết lại: có thể thay đổi lớn; ứng dụng di động ở mức beta. Nội dung sách nói có bản quyền: bài không phải tư vấn pháp lý. Mở máy chủ ra Internet cần reverse proxy, HTTPS và xác thực.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>audiobook (sách nói)</strong>: sách thu âm; README nêu.</li><li><strong>podcast</strong>: chương trình âm thanh phát định kỳ; README nêu tải tập tự động.</li><li><strong>PWA</strong>: ứng dụng web cài như ứng dụng thường; README nêu.</li><li><strong>reverse proxy</strong>: máy chủ đứng trước ứng dụng để bảo vệ và định tuyến; README có mục thiết lập.</li><li><strong>Chromecast</strong>: thiết bị phát nội dung lên TV hoặc loa; README nêu hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và Reverse Proxy Set Up; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo đầu README.</li><li>Đọc mục About và Features.</li><li>Đọc Organizing your media trước khi nạp thư viện.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có sách nói và podcast và muốn nghe ở nhiều thiết bị. Hãy đọc README của Audiobookshelf (https://github.com/advplyr/audiobookshelf) và giải thích bằng tiếng Việt: máy chủ làm gì, vì sao cấu trúc thư mục quan trọng, và vì sao README cảnh báo giao diện đang viết lại. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8 KB, bài chưa đọc tài liệu audiobookshelf.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>advplyr</strong> có <strong>14.898 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/advplyr/audiobookshelf/blob/master/readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/advplyr/audiobookshelf\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 695. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14898; repo_id 397401267; README SHA256 55fb2e82236a0bec478f2c53f39c4b57d8e762a5c5a89d255680909e785470be.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/advplyr/audiobookshelf",
+          "repo_id": "397401267",
+          "source_path": "",
+          "source_revision": "README-SHA256:55fb2e82236a0bec478f2c53f39c4b57d8e762a5c5a89d255680909e785470be",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/advplyr/audiobookshelf",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và Reverse Proxy Set Up; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (GPL-3.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/advplyr/audiobookshelf/blob/master/readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/advplyr/audiobookshelf/blob/master/readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "advplyr/audiobookshelf",
+        "stars": 14898,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/advplyr/audiobookshelf/master/readme.md",
+        "readmeSha256": "55fb2e82236a0bec478f2c53f39c4b57d8e762a5c5a89d255680909e785470be",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 696,
+      "batch": 111,
+      "slug": "glance",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Glance: bảng điều khiển tự host gom nhiều tiện ích (RSS, Reddit, Hacker News, thời tiết, YouTube, Twitch, giá thị trường, trạng thái Docker, thông số máy chủ), nhanh, nhẹ, tùy biến nhiều, tối ưu cho di động; giấy phép lấy theo GitHub (AGPL-3.0)",
+        "excerpt": "Hiểu Glance là bảng điều khiển tự host gom nhiều tiện ích về một trang: nguồn RSS, bài trên Reddit, Hacker News, dự báo thời tiết, video YouTube mới, kênh Twitch, giá thị trường, trạng thái container Docker, thông số máy chủ và tiện ích tự viết; README nêu nhanh, nhẹ, ít phụ thuộc, nhiều tùy biến, tối ưu cho di động, nhiều trang và tab, giao diện tùy biến.",
+        "content": "<p>README liệt kê tính năng: nhiều loại tiện ích (nguồn RSS, bài Reddit, bài Hacker News, dự báo thời tiết, video mới của kênh YouTube, kênh Twitch, giá thị trường, trạng thái container Docker, thông số máy chủ, tiện ích tùy chỉnh và nhiều thứ khác); nhanh và nhẹ (dùng ít bộ nhớ, ít phụ thuộc); tùy biến cao (nhiều bố cục, nhiều trang và tab tùy ý, nhiều tùy chọn cho mỗi tiện ích, nhiều kiểu cho một số tiện ích); tối ưu cho di động; có thể đổi giao diện. Có mục cấu hình và cài đặt (Docker, Linux, Windows); bài không chép lệnh. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (AGPL-3.0). Các lời mô tả 'nhanh và nhẹ' là của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì mở năm trang web mỗi sáng để xem tin, thời tiết và trạng thái máy chủ, Glance gom tất cả vào một trang bạn tự bố trí.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích cấu hình mẫu trong tài liệu; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Docker cơ bản và sửa tệp cấu hình dạng văn bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tiện ích trạng thái Docker và thông số máy chủ có thể cần truy cập vào Docker hoặc hệ thống: cấp quyền tối thiểu. Trang tổng hợp có thể hiện thông tin riêng tư: không mở ra Internet khi chưa có xác thực. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dashboard (bảng điều khiển)</strong>: trang gom nhiều thông tin; README nêu.</li><li><strong>widget (tiện ích)</strong>: khối thông tin nhỏ trên bảng; README nêu nhiều loại.</li><li><strong>RSS</strong>: nguồn tin cấp tự động; README nêu là một loại tiện ích.</li><li><strong>self-hosted (tự host)</strong>: chạy trên máy của bạn; bài chú thích biên tập.</li><li><strong>theme (giao diện)</strong>: bộ màu sắc và kiểu hiển thị; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Configuration và Installation cho Docker, Linux, Windows; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Đọc mục Configuration.</li><li>Chỉ bật tiện ích Docker khi hiểu quyền cần cấp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một trang gom tin tức và trạng thái máy chủ. Hãy đọc README của Glance (https://github.com/glanceapp/glance) và giải thích bằng tiếng Việt: các tiện ích làm gì, tiện ích Docker cần quyền gì, và vì sao không nên mở ra Internet khi chưa có xác thực. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 14,6 KB, bài chưa đọc docs/configuration.md. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>glanceapp</strong> có <strong>37.996 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/glanceapp/glance/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/glanceapp/glance\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 696. Chưa cài/chạy thử; không tạo validation. Snapshot sao 37996; repo_id 792861139; README SHA256 8bd07cbba9ec198a2cca8be73454140edb4c99956c541e7e0b7b4618d7ef0c11.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/glanceapp/glance",
+          "repo_id": "792861139",
+          "source_path": "",
+          "source_revision": "README-SHA256:8bd07cbba9ec198a2cca8be73454140edb4c99956c541e7e0b7b4618d7ef0c11",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/glanceapp/glance",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Configuration và Installation cho Docker, Linux, Windows; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (AGPL-3.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/glanceapp/glance/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/glanceapp/glance/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "glanceapp/glance",
+        "stars": 37996,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/glanceapp/glance/main/README.md",
+        "readmeSha256": "8bd07cbba9ec198a2cca8be73454140edb4c99956c541e7e0b7b4618d7ef0c11",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 697,
+      "batch": 111,
+      "slug": "calibre-web",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Calibre-Web: ứng dụng web có giao diện gọn gàng để duyệt, đọc và tải sách điện tử từ cơ sở dữ liệu Calibre hợp lệ; README có hướng dẫn khởi động nhanh kèm tài khoản quản trị mặc định, giấy phép GPL v3",
+        "excerpt": "Hiểu Calibre-Web là ứng dụng web có giao diện sạch và trực quan để duyệt, đọc và tải sách điện tử từ một cơ sở dữ liệu Calibre hợp lệ; README nêu cách cài bằng pip (khuyến nghị) hoặc Docker, danh mục OPDS, yêu cầu, và ghi tài khoản quản trị mặc định cho lần đăng nhập đầu: cần đổi ngay.",
+        "content": "<p>README tả Calibre-Web là ứng dụng web cho giao diện gọn gàng, trực quan để duyệt, đọc và tải sách điện tử bằng cơ sở dữ liệu Calibre hợp lệ. README nói phần mềm là một nhánh của dự án library và cấp phép theo GPL v3. Mục Features nêu giao diện Bootstrap 3 HTML5 hiện đại đáp ứng và nhiều chức năng khác. Mục cài đặt nêu cài bằng pip (khuyến nghị), khởi động nhanh, yêu cầu; mục ảnh Docker nêu các ảnh của LinuxServer; có mục khắc phục sự cố, ghi nhận người đóng góp, liên hệ. Mục Quick Start hướng dẫn mở trình duyệt vào địa chỉ cục bộ hoặc danh mục OPDS rồi đăng nhập bằng tài khoản quản trị mặc định (ghi trong README); đây là thông tin mặc định công khai nên phải đổi ngay. Bài không chép lệnh hay mật khẩu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn quản lý sách điện tử bằng Calibre trên máy tính, Calibre-Web cho phép bạn duyệt và đọc cùng thư viện đó qua trình duyệt từ điện thoại hay máy khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục Features để hiểu cần cơ sở dữ liệu Calibre trước; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người tự host ứng dụng cho gia đình hoặc cá nhân, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần thư viện Calibre sẵn có và Python hoặc Docker cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi tài khoản quản trị mặc định ở bước đăng nhập đầu: là thông tin công khai, đổi ngay trước khi mở ra mạng. Nội dung sách có bản quyền: chỉ phục vụ tác phẩm bạn có quyền dùng; bài không phải tư vấn pháp lý. Mở ra Internet cần xác thực và HTTPS.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Calibre</strong>: phần mềm quản lý sách điện tử; README nêu cần cơ sở dữ liệu của nó.</li><li><strong>OPDS</strong>: giao thức danh mục sách cho ứng dụng đọc; README nêu.</li><li><strong>eBook (sách điện tử)</strong>: sách ở dạng tệp số; README nêu.</li><li><strong>Docker image (ảnh Docker)</strong>: gói đóng sẵn ứng dụng; README nêu ảnh của LinuxServer.</li><li><strong>default credentials (tài khoản mặc định)</strong>: tên và mật khẩu có sẵn khi cài; README ghi trong Quick Start.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation via pip, Quick Start và Docker Images; bài không chép lệnh hay mật khẩu. Cần cơ sở dữ liệu Calibre. Miễn phí theo GPL v3 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và Requirements.</li><li>Đọc Quick Start và lưu ý tài khoản mặc định.</li><li>Đổi mật khẩu quản trị ngay sau khi đăng nhập.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quản lý sách bằng Calibre và muốn đọc qua web. Hãy đọc README của Calibre-Web (https://github.com/janeczku/calibre-web) và giải thích bằng tiếng Việt: Calibre-Web cần gì sẵn, OPDS là gì, và vì sao phải đổi tài khoản quản trị mặc định. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,9 KB, bài chưa đọc wiki của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ứng dụng tự host cho gia đình chứa dữ liệu cá nhân như tài chính, sức khỏe, sách và kho đồ: đổi ngay mật khẩu mặc định, đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ, cập nhật bản vá, và đừng gửi dữ liệu cá nhân thật cho mô hình AI hay dịch vụ bên thứ ba khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>janeczku</strong> có <strong>18.527 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-10. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu GPL v3; GitHub nhận diện GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/janeczku/calibre-web/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/janeczku/calibre-web\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 697. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18527; repo_id 40089578; README SHA256 feb9051b9a3b11b3fd9e64375704cd0a888a496fca6d11f0dfc72a0135dd8f1f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/janeczku/calibre-web",
+          "repo_id": "40089578",
+          "source_path": "",
+          "source_revision": "README-SHA256:feb9051b9a3b11b3fd9e64375704cd0a888a496fca6d11f0dfc72a0135dd8f1f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/janeczku/calibre-web",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation via pip, Quick Start và Docker Images; bài không chép lệnh hay mật khẩu. Cần cơ sở dữ liệu Calibre. Miễn phí theo GPL v3 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/janeczku/calibre-web/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/janeczku/calibre-web/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "janeczku/calibre-web",
+        "stars": 18527,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/janeczku/calibre-web/master/README.md",
+        "readmeSha256": "feb9051b9a3b11b3fd9e64375704cd0a888a496fca6d11f0dfc72a0135dd8f1f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "key": 697,
+  "repo": "janeczku/calibre-web",
+  "repoId": "40089578",
+  "url": "https://github.com/janeczku/calibre-web",
+  "stars": 18527,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-10T05:40:20Z",
+  "createdAt": "2015-08-02T19:01:42Z",
+  "defaultBranch": "master",
+  "description": ":books: Web app for browsing, reading and downloading eBooks stored in a Calibre database",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/janeczku/calibre-web/master/README.md",
+    "sha256": "feb9051b9a3b11b3fd9e64375704cd0a888a496fca6d11f0dfc72a0135dd8f1f",
+    "bytes": 9867,
+    "sectionsRead": [
+      "Features",
+      "Installation",
+      "Quick Start",
+      "Requirements",
+      "Docker Images"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc wiki của dự án.",
+    "Chưa thử.",
+    "Chưa kiểm tra ảnh Docker."
+  ],
+  "runtimeValidated": false
+}

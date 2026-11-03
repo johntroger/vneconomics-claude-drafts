@@ -12065,5 +12065,195 @@
    "jujutsu",
    "release-please"
   ]
+ },
+ {
+  "key": 690,
+  "slug": "grocy",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Grocy: phần mềm quản lý hộ gia đình tự host viết bằng PHP, có bản demo công khai, REST API, đọc mã vạch; README nêu tài khoản mặc định admin/admin phải đổi ngay, giấy phép MIT",
+  "repo": "grocy/grocy",
+  "stars": 9647,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-09-16",
+  "related": [
+   "homebox",
+   "wallos"
+  ]
+ },
+ {
+  "key": 691,
+  "slug": "wallos",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Wallos: ứng dụng web mã nguồn mở tự host để quản lý đăng ký định kỳ và chi tiêu, đa tiền tệ, thông báo qua nhiều kênh, hỗ trợ OIDC, có tính năng gợi ý bằng AI dùng khóa API của bạn; giấy phép GPL v3",
+  "repo": "ellite/Wallos",
+  "stars": 8784,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "grocy",
+   "wger"
+  ]
+ },
+ {
+  "key": 692,
+  "slug": "homebox",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "HomeBox: hệ thống kiểm kê và sắp xếp đồ đạc cho người dùng gia đình, đơn giản, viết bằng Go, nhẹ, di động với SQLite và giao diện web nhúng, theo dõi tài liệu bảo hành mua sắm bảo trì; giấy phép AGPL",
+  "repo": "sysadminsmedia/homebox",
+  "stars": 7735,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-31",
+  "related": [
+   "glance",
+   "grocy"
+  ]
+ },
+ {
+  "key": 693,
+  "slug": "wger",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "wger: trình quản lý tập luyện và thể hình mã nguồn mở tự host, tạo giáo án luyện tập, theo dõi chế độ ăn, cân nặng, số đo, thư viện bài tập, có ứng dụng Android và iOS, REST API; mã AGPL-3.0 trở lên, tài liệu CC-BY-SA-4.0",
+  "repo": "wger-project/wger",
+  "stars": 7229,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "calibre-web",
+   "wallos"
+  ]
+ },
+ {
+  "key": 694,
+  "slug": "kavita",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Kavita: máy chủ đọc sách nhanh, nhiều tính năng, đa nền tảng, phục vụ truyện tranh, manga, webtoon và sách (epub, pdf), trình đọc đáp ứng, siêu dữ liệu phong phú, quản lý người dùng; README ghi phần mềm ở mức beta, có thể mất dữ liệu",
+  "repo": "Kareadita/Kavita",
+  "stars": 12001,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "audiobookshelf",
+   "calibre-web"
+  ]
+ },
+ {
+  "key": 695,
+  "slug": "audiobookshelf",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Audiobookshelf: máy chủ sách nói và podcast tự host, mã nguồn mở gồm cả ứng dụng Android và iOS (beta), phát mọi định dạng âm thanh, tải podcast tự động, nhiều người dùng, đồng bộ tiến độ; README ghi giao diện Vue đang được viết lại sang React",
+  "repo": "advplyr/audiobookshelf",
+  "stars": 14898,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "kavita"
+  ]
+ },
+ {
+  "key": 696,
+  "slug": "glance",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Glance: bảng điều khiển tự host gom nhiều tiện ích (RSS, Reddit, Hacker News, thời tiết, YouTube, Twitch, giá thị trường, trạng thái Docker, thông số máy chủ), nhanh, nhẹ, tùy biến nhiều, tối ưu cho di động; giấy phép lấy theo GitHub (AGPL-3.0)",
+  "repo": "glanceapp/glance",
+  "stars": 37996,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "homebox"
+  ]
+ },
+ {
+  "key": 697,
+  "slug": "calibre-web",
+  "group": "2026-11-03-ung-dung-tu-host-doi-song",
+  "title": "Calibre-Web: ứng dụng web có giao diện gọn gàng để duyệt, đọc và tải sách điện tử từ cơ sở dữ liệu Calibre hợp lệ; README có hướng dẫn khởi động nhanh kèm tài khoản quản trị mặc định, giấy phép GPL v3",
+  "repo": "janeczku/calibre-web",
+  "stars": 18527,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-10",
+  "related": [
+   "kavita",
+   "wger"
+  ]
  }
 ]

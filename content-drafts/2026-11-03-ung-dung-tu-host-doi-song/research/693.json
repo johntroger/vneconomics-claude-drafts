@@ -1,0 +1,42 @@
+{
+  "key": 693,
+  "repo": "wger-project/wger",
+  "repoId": "7705569",
+  "url": "https://github.com/wger-project/wger",
+  "stars": 7229,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:24:51Z",
+  "createdAt": "2013-01-19T16:34:38Z",
+  "defaultBranch": "master",
+  "description": "Self hosted FLOSS fitness/workout, nutrition and weight tracker",
+  "homepage": "https://wger.de",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wger-project/wger/master/README.md",
+    "sha256": "11b4826a7357eabd8756a6a5d21099f5660122e87ef6c4ec688249b351b42f05",
+    "bytes": 5636,
+    "sectionsRead": [
+      "Self-hosting",
+      "Developing and contributing",
+      "Documentation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu wger.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa kiểm tra nguồn dữ liệu bài tập."
+  ],
+  "runtimeValidated": false
+}
