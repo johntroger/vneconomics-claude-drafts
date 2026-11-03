@@ -1,0 +1,36 @@
+{
+  "key": 319,
+  "repo": "denoland/deno",
+  "repoId": "133442384",
+  "url": "https://github.com/denoland/deno",
+  "stars": 108794,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-29T08:03:10Z",
+  "createdAt": "2018-05-15T01:34:26Z",
+  "defaultBranch": "main",
+  "description": "A modern runtime for JavaScript and TypeScript.",
+  "homepage": "https://deno.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/denoland/deno/main/README.md",
+    "sha256": "83a959d62dea940f94ce1b50024928e34afb447de35197b7ea1d944fd6dbbcf7",
+    "bytes": 3807,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Your first Deno program",
+      "Additional resources"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu mô hình quyền.",
+    "Chưa thử cài hay chạy.",
+    "Chưa kiểm tra tương thích với dự án Node.js."
+  ],
+  "runtimeValidated": false
+}

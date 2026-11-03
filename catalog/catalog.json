@@ -3877,5 +3877,75 @@
    "preact",
    "tanstack-query"
   ]
+ },
+ {
+  "key": 319,
+  "slug": "deno",
+  "group": "2026-11-03-cong-cu-dung-javascript",
+  "title": "Deno: môi trường chạy JavaScript, TypeScript và WebAssembly với mặc định an toàn, hỏi quyền trước khi truy cập mạng hay tệp",
+  "repo": "denoland/deno",
+  "stars": 108794,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-29",
+  "related": [
+   "pnpm",
+   "webpack"
+  ]
+ },
+ {
+  "key": 320,
+  "slug": "pnpm",
+  "group": "2026-11-03-cong-cu-dung-javascript",
+  "title": "pnpm: trình quản lý gói JavaScript tiết kiệm ổ đĩa, lưu mỗi tệp một lần; lưu ý giấy phép có ngoại lệ cho thư mục pnpr",
+  "repo": "pnpm/pnpm",
+  "stars": 36997,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "deno"
+  ]
+ },
+ {
+  "key": 321,
+  "slug": "turborepo",
+  "group": "2026-11-03-cong-cu-dung-javascript",
+  "title": "Turborepo: hệ thống build cho monorepo JavaScript và TypeScript, README chỉ dẫn tới turborepo.dev",
+  "repo": "vercel/turborepo",
+  "stars": 31297,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "webpack"
+  ]
+ },
+ {
+  "key": 322,
+  "slug": "webpack",
+  "group": "2026-11-03-cong-cu-dung-javascript",
+  "title": "webpack: công cụ gói mô-đun JavaScript và tài nguyên web cho trình duyệt, phổ biến nhưng cấu hình nhiều",
+  "repo": "webpack/webpack",
+  "stars": 65986,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "deno",
+   "turborepo"
+  ]
  }
 ]

@@ -58,3 +58,10 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Đường dẫn README thô của 11 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
 - Quét toàn bộ kho: không còn cụm "đợt cũ"; cụm "đã chạy thử" xuất hiện 29 lần và đều nằm trong câu phủ định "chưa phải kết quả đã chạy thử"; không có cụm "đã kiểm thử".
 - Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.
+
+## Bổ sung rà soát (nhóm 36–37, key 312–322)
+
+- Danh mục 222 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu.
+- Đường dẫn README thô của 11 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
+- Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" xuất hiện 29 lần, cả 29 lần đều nằm trong câu phủ định "chưa phải kết quả đã chạy thử".
+- Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.

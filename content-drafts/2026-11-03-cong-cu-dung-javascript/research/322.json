@@ -1,0 +1,36 @@
+{
+  "key": 322,
+  "repo": "webpack/webpack",
+  "repoId": "3678731",
+  "url": "https://github.com/webpack/webpack",
+  "stars": 65986,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:49:57Z",
+  "createdAt": "2012-03-10T10:08:14Z",
+  "defaultBranch": "main",
+  "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
+  "homepage": "https://webpack.js.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/webpack/webpack/main/README.md",
+    "sha256": "0b959a147e8b875e42f77fa5804c8d4e70f86b3399d4baba9d90d2f756dd2e0f",
+    "bytes": 79633,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Introduction (TL;DR)",
+      "Concepts: Plugins",
+      "Install"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình.",
+    "Chưa thử gói dự án.",
+    "Chưa so sánh với Vite hay esbuild."
+  ],
+  "runtimeValidated": false
+}

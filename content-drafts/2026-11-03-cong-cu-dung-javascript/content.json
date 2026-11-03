@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-cong-cu-dung-js",
+  "batch": 56,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 319,
+      "batch": 56,
+      "slug": "deno",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Deno: môi trường chạy JavaScript, TypeScript và WebAssembly với mặc định an toàn, hỏi quyền trước khi truy cập mạng hay tệp",
+        "excerpt": "Hiểu Deno là runtime JavaScript, TypeScript và WebAssembly xây trên V8, Rust, Tokio, mặc định an toàn. README có ví dụ máy chủ web cần cờ cấp quyền mạng; cách cài đầu tiên là lệnh tải script rồi chạy ngay.",
+        "content": "<p>README tả Deno là môi trường chạy JavaScript, TypeScript và WebAssembly với mặc định an toàn và trải nghiệm lập trình tốt, xây trên V8, Rust và Tokio. README liệt kê nhiều cách cài: lệnh shell cho Mac và Linux và lệnh PowerShell cho Windows (đều là lệnh tải script từ mạng rồi chạy ngay; bài không chép lệnh), Homebrew, Chocolatey, WinGet, Scoop, hoặc tự dựng từ mã nguồn theo hướng dẫn đóng góp. Chương trình đầu tiên theo README: tạo tệp server.ts chứa một máy chủ web trả về lời chào, chạy bằng lệnh chạy chương trình của Deno kèm cờ cho phép truy cập mạng (cờ allow-net) rồi mở trang tại localhost cổng 8000. Tài nguyên: tài liệu, thư viện chuẩn, JSR (kho gói mã nguồn mở cho JavaScript và TypeScript), blog. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Các môi trường chạy JavaScript truyền thống cho chương trình làm gần như mọi thứ trên máy bạn. Deno giống cánh cổng có người gác: mặc định không cho đọc tệp hay ra mạng; muốn gì phải xin phép bằng cờ lệnh. Ví dụ máy chủ trong README phải xin quyền mạng rồi mới chạy được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy một máy chủ web nhỏ viết bằng TypeScript và quan sát cách xin quyền mạng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học JavaScript hoặc TypeScript; người quan tâm bảo mật khi chạy mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài và chạy ví dụ ngắn; cần biết TypeScript hoặc JavaScript cơ bản và hiểu cờ cấp quyền. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dự án đã dựng sẵn cho Node.js thì chuyển sang Deno cần kiểm tra (bài chưa đánh giá tương thích). Đừng dán lệnh cài kiểu tải script rồi chạy ngay khi chưa đọc script.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>runtime (môi trường chạy)</strong>: chương trình chạy mã JavaScript hay TypeScript của bạn.</li><li><strong>TypeScript</strong>: JavaScript có thêm kiểu dữ liệu; README nêu Deno chạy được.</li><li><strong>WebAssembly</strong>: định dạng mã chạy nhanh trong trình duyệt và runtime; README nêu hỗ trợ.</li><li><strong>permission flag (cờ cấp quyền)</strong>: tùy chọn dòng lệnh cho phép chương trình truy cập mạng, tệp; README có ví dụ allow-net.</li><li><strong>JSR</strong>: kho gói mã nguồn mở cho JavaScript và TypeScript; README giới thiệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê các cách cài: lệnh tải script rồi chạy ngay (shell và PowerShell: nên đọc script trước hoặc dùng cách khác), Homebrew, Chocolatey, WinGet, Scoop, hoặc dựng từ mã nguồn (bài không chép lệnh). Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation; ưu tiên trình quản lý gói thay vì script tải rồi chạy.</li><li>Chạy ví dụ máy chủ trong README ở thư mục thử.</li><li>Thử bỏ cờ mạng để xem thông báo xin quyền.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử Deno. Hãy đọc README của Deno (https://github.com/denoland/deno) và giải thích bằng tiếng Việt: Deno khác Node.js ở đâu, cờ cấp quyền như allow-net dùng để làm gì, và vì sao nên thận trọng với lệnh cài kiểu tải script rồi chạy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Mặc định an toàn' là tuyên bố của dự án, bài không kiểm chứng; README không mô tả chi tiết mô hình quyền. Bài chưa so sánh tương thích với Node.js. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ lập trình chạy mã với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ lệnh trước khi chạy và thử trong dự án thử. Cẩn thận với lệnh tải script rồi chạy ngay trong README; cờ cấp quyền chỉ nên cho khi bạn hiểu mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>denoland</strong> có <strong>108.794 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/denoland/deno/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/denoland/deno\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 319. Chưa cài/chạy thử; không tạo validation. Snapshot sao 108794; repo_id 133442384; README SHA256 83a959d62dea940f94ce1b50024928e34afb447de35197b7ea1d944fd6dbbcf7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/denoland/deno",
+          "repo_id": "133442384",
+          "source_path": "",
+          "source_revision": "README-SHA256:83a959d62dea940f94ce1b50024928e34afb447de35197b7ea1d944fd6dbbcf7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/denoland/deno",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê các cách cài: lệnh tải script rồi chạy ngay (shell và PowerShell: nên đọc script trước hoặc dùng cách khác), Homebrew, Chocolatey, WinGet, Scoop, hoặc dựng từ mã nguồn (bài không chép lệnh). Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/denoland/deno/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/denoland/deno/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "denoland/deno",
+        "stars": 108794,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/denoland/deno/main/README.md",
+        "readmeSha256": "83a959d62dea940f94ce1b50024928e34afb447de35197b7ea1d944fd6dbbcf7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 320,
+      "batch": 56,
+      "slug": "pnpm",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "pnpm: trình quản lý gói JavaScript tiết kiệm ổ đĩa, lưu mỗi tệp một lần; lưu ý giấy phép có ngoại lệ cho thư mục pnpr",
+        "excerpt": "Hiểu pnpm là trình quản lý gói nhanh và tiết kiệm đĩa, dùng kho lưu trữ nội dung chung và liên kết. README nói giấy phép MIT, trừ thư mục pnpr theo PolyForm Shield (source-available).",
+        "content": "<p>README tả pnpm là trình quản lý gói nhanh và tiết kiệm dung lượng. Điểm nêu: nhanh (README nói nhanh hơn tới 2 lần so với các lựa chọn khác, kèm benchmark của dự án), hiệu quả (tệp trong node_modules được liên kết từ một kho lưu trữ theo nội dung), tốt cho monorepo, nghiêm ngặt (gói chỉ truy cập các phụ thuộc khai báo trong package.json), có tính xác định (tệp khóa pnpm-lock.yaml), có thể dùng như trình quản lý phiên bản Node.js, hỗ trợ Windows, Linux, macOS, đã dùng trong sản xuất từ năm 2016, và có bản chuyển Rust thử nghiệm (pacquet). README trích lời đội Rush của Microsoft. Phần Background giải thích: với npm, 100 dự án dùng lodash thì có 100 bản trên đĩa; với pnpm chỉ lưu một lần và khi cập nhật chỉ thêm tệp khác biệt. Giấy phép: MIT, ngoại trừ thư mục pnpr theo PolyForm Shield License 1.0.0 (README nói là source-available).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án JavaScript thường tải riêng một bản thư viện, nên ổ đĩa đầy bản sao trùng nhau. pnpm giống kho chung: mỗi thư viện chỉ cất một lần, các dự án dùng liên kết trỏ tới đó nên nhanh hơn và đỡ tốn chỗ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảm dung lượng khi có nhiều dự án JavaScript trên một máy. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người có nhiều dự án JavaScript; người làm monorepo.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Thay thế npm với lệnh gần giống; cần Node.js và hiểu khái niệm lockfile. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có một dự án nhỏ, npm là đủ. Nếu dùng phần thuộc thư mục pnpr, đọc kỹ giấy phép riêng của nó.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ tải và quản lý thư viện cho dự án.</li><li><strong>content-addressable storage</strong>: kho lưu tệp theo nội dung nên tệp giống nhau chỉ lưu một lần; README nêu.</li><li><strong>lockfile</strong>: tệp ghi phiên bản chính xác; README nêu pnpm-lock.yaml.</li><li><strong>monorepo</strong>: nhiều dự án trong một kho mã; README nêu pnpm hợp.</li><li><strong>PolyForm Shield</strong>: giấy phép source-available có điều khoản hạn chế; README nêu áp dụng cho thư mục pnpr.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang pnpm.io; bài chưa đọc hướng dẫn cài nên không nêu lệnh. Cần Node.js hoặc dùng chính pnpm như trình quản lý phiên bản Node.js theo README. Miễn phí theo MIT, riêng thư mục pnpr theo PolyForm Shield.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Background.</li><li>Đọc hướng dẫn cài trên pnpm.io.</li><li>Thử cài phụ thuộc cho một dự án thử rồi so dung lượng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có nhiều dự án JavaScript và đĩa gần đầy. Hãy đọc README của pnpm (https://github.com/pnpm/pnpm) và giải thích bằng tiếng Việt: pnpm tiết kiệm đĩa thế nào, khác npm ở đâu, và ngoại lệ giấy phép của thư mục pnpr nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Nhanh hơn tới 2 lần' là benchmark của chính dự án, bài không kiểm chứng. README nêu bản Rust còn thử nghiệm. Giấy phép có ngoại lệ cho thư mục pnpr. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ lập trình chạy mã với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ lệnh trước khi chạy và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pnpm</strong> có <strong>36.997 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT trừ thư mục pnpr theo PolyForm Shield License 1.0.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pnpm/pnpm/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pnpm/pnpm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 320. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36997; repo_id 50565430; README SHA256 d933be9081a9854e5d3a1743cddafe6385e25007caa1f2c3b5d118e1c5302d26.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pnpm/pnpm",
+          "repo_id": "50565430",
+          "source_path": "",
+          "source_revision": "README-SHA256:d933be9081a9854e5d3a1743cddafe6385e25007caa1f2c3b5d118e1c5302d26",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pnpm/pnpm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang pnpm.io; bài chưa đọc hướng dẫn cài nên không nêu lệnh. Cần Node.js hoặc dùng chính pnpm như trình quản lý phiên bản Node.js theo README. Miễn phí theo MIT, riêng thư mục pnpr theo PolyForm Shield.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pnpm/pnpm/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pnpm/pnpm/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pnpm/pnpm",
+        "stars": 36997,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pnpm/pnpm/main/README.md",
+        "readmeSha256": "d933be9081a9854e5d3a1743cddafe6385e25007caa1f2c3b5d118e1c5302d26",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 321,
+      "batch": 56,
+      "slug": "turborepo",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Turborepo: hệ thống build cho monorepo JavaScript và TypeScript, README chỉ dẫn tới turborepo.dev",
+        "excerpt": "Hiểu Turborepo là hệ thống build, mô tả trong README là hệ thống build cho các coding agent. README rất ngắn: dẫn tới turborepo.dev, cộng đồng và chính sách bảo mật.",
+        "content": "<p>README mở đầu: Turborepo là hệ thống build cho các coding agent (đây là cách mô tả của dự án). Phần Getting Started chỉ nói hãy vào turborepo.dev để bắt đầu. README có liên kết hướng dẫn đóng góp, cộng đồng (GitHub Discussions và thẻ #turborepo của Vercel Community), quy tắc ứng xử, trang trưng bày những nơi dùng Turborepo (README nói được các công ty hàng đầu thế giới dùng, đây là tuyên bố của dự án), cập nhật qua X và chính sách báo lỗ hổng qua email riêng. README không nêu cách cài, tính năng hay giấy phép. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi một kho mã chứa nhiều dự án con, mỗi lần dựng lại tất cả rất tốn thời gian. Turborepo giống người quản đốc công trường: nhớ phần nào đã dựng xong, chỉ dựng lại phần đổi. README không giải thích thêm, mọi chi tiết ở trang chính thức.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: một kho chứa vài ứng dụng và thư viện dùng chung cần dựng nhanh hơn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm kho mã nhiều dự án JavaScript hoặc TypeScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần hiểu monorepo, công cụ quản lý gói và tác vụ dựng; README không có hướng dẫn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ có một dự án nhỏ, chưa cần. Bài chưa thử và không khẳng định tăng tốc bao nhiêu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>build system (hệ thống dựng)</strong>: công cụ chạy các bước biên dịch, đóng gói và kiểm tra dự án.</li><li><strong>monorepo</strong>: nhiều dự án trong một kho mã.</li><li><strong>cache (lưu đệm)</strong>: nhớ kết quả đã dựng để khỏi dựng lại (bài chưa kiểm chứng trong README).</li><li><strong>coding agent</strong>: công cụ AI viết và sửa mã; README mô tả Turborepo là hệ thống build cho các coding agent.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không nêu cách cài; bài chưa đọc turborepo.dev nên không nêu lệnh. Cần Node.js. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Vào turborepo.dev đọc phần bắt đầu.</li><li>Thử với một monorepo mẫu.</li><li>Đọc về lưu đệm và tác vụ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có kho mã chứa nhiều dự án JavaScript. Hãy đọc README của Turborepo (https://github.com/vercel/turborepo) và trang turborepo.dev rồi giải thích bằng tiếng Việt: monorepo là gì, Turborepo giúp gì, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn: không mô tả tính năng, cách cài hay giấy phép; bài không khẳng định hiệu năng. 'Hệ thống build cho coding agent' và 'được công ty hàng đầu dùng' là cách nói của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ lập trình chạy mã với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ lệnh trước khi chạy và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vercel</strong> có <strong>31.297 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vercel/turborepo/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vercel/turborepo\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 321. Chưa cài/chạy thử; không tạo validation. Snapshot sao 31297; repo_id 413918947; README SHA256 ceec0b97c498612e1ecfaa28b24364faa335f96f005e61babede64b745f28c5d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vercel/turborepo",
+          "repo_id": "413918947",
+          "source_path": "",
+          "source_revision": "README-SHA256:ceec0b97c498612e1ecfaa28b24364faa335f96f005e61babede64b745f28c5d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vercel/turborepo",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không nêu cách cài; bài chưa đọc turborepo.dev nên không nêu lệnh. Cần Node.js. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vercel/turborepo/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vercel/turborepo/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vercel/turborepo",
+        "stars": 31297,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vercel/turborepo/main/README.md",
+        "readmeSha256": "ceec0b97c498612e1ecfaa28b24364faa335f96f005e61babede64b745f28c5d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 322,
+      "batch": 56,
+      "slug": "webpack",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "webpack: công cụ gói mô-đun JavaScript và tài nguyên web cho trình duyệt, phổ biến nhưng cấu hình nhiều",
+        "excerpt": "Hiểu webpack là bộ đóng gói mô-đun, gom JavaScript và nhiều loại tài nguyên cho trình duyệt, mở rộng bằng loader và plugin. README rất dài vì phần nhà tài trợ.",
+        "content": "<p>README tả webpack là bộ đóng gói mô-đun (module bundler): mục đích chính là gom các tệp JavaScript cho trình duyệt, nhưng cũng chuyển đổi, gom hoặc đóng gói hầu như mọi tài nguyên. Điểm nêu (TL;DR): gom mô-đun ES Modules, CommonJS và AMD (kể cả trộn), tạo một gói đơn hoặc nhiều mảnh nạp không đồng bộ khi chạy để giảm thời gian tải đầu, phụ thuộc được giải quyết lúc biên dịch, loader tiền xử lý tệp (ví dụ TypeScript sang JavaScript, ảnh sang Base64), hệ plugin rất mô-đun. README nói webpack có thể tạo trang HTML và tách tệp CSS ở mức thử nghiệm. Có hướng dẫn cài bằng npm hoặc yarn (bài không chép lệnh), phần khái niệm, đóng góp, hỗ trợ, danh sách thành viên và rất nhiều nhà tài trợ (phần lớn dung lượng README). Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trang web hiện đại gồm hàng trăm tệp rời. webpack giống người đóng gói hàng: gom chúng lại thành vài kiện gọn, kiểm tra thứ cần dùng, và chuyển đổi định dạng trước khi gửi cho trình duyệt. Nhưng cách xếp hàng của nó tùy chỉnh được rất nhiều nên cấu hình có thể phức tạp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: hiểu vì sao dự án cũ có tệp cấu hình webpack khi AI sinh mã web. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đọc hoặc bảo trì dự án web có sẵn; người học công cụ dựng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần JavaScript, Node.js và hiểu khái niệm mô-đun, loader, plugin; cấu hình nhiều. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dự án mới đơn giản thường có công cụ dựng gọn hơn (bài không so sánh). Nếu chỉ cần trang tĩnh, chưa cần bộ đóng gói.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>bundler (bộ đóng gói)</strong>: công cụ gom nhiều tệp thành vài gói để tải nhanh; README nêu là mục đích chính.</li><li><strong>loader</strong>: bộ chuyển đổi tệp trong lúc dựng; README ví dụ TypeScript sang JavaScript.</li><li><strong>plugin</strong>: phần mở rộng tính năng; README nói hệ plugin rất mô-đun.</li><li><strong>chunk</strong>: một mảnh của gói nạp không đồng bộ; README nêu.</li><li><strong>ES Modules / CommonJS / AMD</strong>: các cách tổ chức mô-đun JavaScript; README nói webpack gom được cả ba.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm hoặc yarn như phụ thuộc phát triển (bài không chép lệnh); cần Node.js. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction và Concepts.</li><li>Đọc tài liệu Get Started trên webpack.js.org.</li><li>Thử gói một dự án JavaScript nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án web của mình có tệp cấu hình webpack. Hãy đọc README của webpack (https://github.com/webpack/webpack) và giải thích bằng tiếng Việt: bộ đóng gói làm gì, loader và plugin khác nhau thế nào, và vì sao cấu hình thường dài. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (gần 80 KB) vì phần nhà tài trợ; bài chỉ lấy phần khái niệm. README nói hỗ trợ tạo HTML và tách CSS ở mức thử nghiệm. Bài chưa so sánh với công cụ khác. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ lập trình chạy mã với quyền của bạn: chỉ cài từ nguồn chính thức, đọc kỹ lệnh trước khi chạy và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>webpack</strong> có <strong>65.986 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/webpack/webpack/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/webpack/webpack\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 322. Chưa cài/chạy thử; không tạo validation. Snapshot sao 65986; repo_id 3678731; README SHA256 0b959a147e8b875e42f77fa5804c8d4e70f86b3399d4baba9d90d2f756dd2e0f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/webpack/webpack",
+          "repo_id": "3678731",
+          "source_path": "",
+          "source_revision": "README-SHA256:0b959a147e8b875e42f77fa5804c8d4e70f86b3399d4baba9d90d2f756dd2e0f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/webpack/webpack",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm hoặc yarn như phụ thuộc phát triển (bài không chép lệnh); cần Node.js. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/webpack/webpack/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/webpack/webpack/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "webpack/webpack",
+        "stars": 65986,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/webpack/webpack/main/README.md",
+        "readmeSha256": "0b959a147e8b875e42f77fa5804c8d4e70f86b3399d4baba9d90d2f756dd2e0f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

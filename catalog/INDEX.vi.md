@@ -36,6 +36,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 34 — Công cụ lập trình, xử lý văn bản và email thử nghiệm](learning-paths/34-cong-cu-lap-trinh-va-email-thu-nghiem.vi.md) — Trình soạn mã, thư viện xử lý văn bản và công cụ thử email; đọc kỹ cảnh báo của từng README.
 - [Lộ trình 35 — Chép lời, Python trong trình duyệt, đăng nhập chung và sách tính toán](learning-paths/35-giong-noi-trinh-duyet-xac-thuc-va-sach.vi.md) — Bốn công cụ cho giảng viên và người tự host: chép lời giọng nói, bài giảng chạy mã, cổng đăng nhập chung và giáo trình có mã.
 - [Lộ trình 36 — Thư viện JavaScript dựng giao diện và quản lý dữ liệu](learning-paths/36-javascript-giao-dien-cho-nguoi-moi.vi.md) — Từ thêm tương tác vào HTML đến khung giao diện và quản lý dữ liệu; chọn một hướng rồi đọc tài liệu chính thức.
+- [Lộ trình 37 — Công cụ chạy và dựng dự án JavaScript](learning-paths/37-cong-cu-dung-javascript.vi.md) — Runtime, trình quản lý gói, hệ thống build và bộ đóng gói; để đọc hiểu dự án web do AI dựng.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -88,7 +89,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 304 | VSCodium: bản dựng cộng đồng của VS Code theo giấy phép tự do, tắt telemetry, nhưng không dùng được mọi tiện ích | [VSCodium/vscodium](https://github.com/VSCodium/vscodium) | MIT | 33926 | cong-cu-lap-trinh-va-email-thu-nghiem |
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 
-### Cơ bản (105 bài)
+### Cơ bản (107 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -197,6 +198,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 313 | Svelte: trình biên dịch biến thành phần khai báo thành JavaScript cập nhật trang web hiệu quả | [sveltejs/svelte](https://github.com/sveltejs/svelte) | MIT | 88538 | javascript-giao-dien-cho-nguoi-moi |
 | 315 | Preact: thư viện giao diện nhẹ, API giống React, dùng Virtual DOM không cồng kềnh | [preactjs/preact](https://github.com/preactjs/preact) | MIT | 38974 | javascript-giao-dien-cho-nguoi-moi |
 | 318 | Zustand: thư viện quản lý trạng thái nhỏ gọn cho React, không cần provider | [pmndrs/zustand](https://github.com/pmndrs/zustand) | MIT | 58893 | javascript-giao-dien-cho-nguoi-moi |
+| 319 | Deno: môi trường chạy JavaScript, TypeScript và WebAssembly với mặc định an toàn, hỏi quyền trước khi truy cập mạng hay tệp | [denoland/deno](https://github.com/denoland/deno) | MIT | 108794 | cong-cu-dung-javascript |
+| 320 | pnpm: trình quản lý gói JavaScript tiết kiệm ổ đĩa, lưu mỗi tệp một lần; lưu ý giấy phép có ngoại lệ cho thư mục pnpr | [pnpm/pnpm](https://github.com/pnpm/pnpm) | MIT | 36997 | cong-cu-dung-javascript |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 
@@ -230,7 +233,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (45 bài)
+### Nâng cao (47 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -279,6 +282,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 311 | Jupyter Book: dựng sách và tài liệu có mã chạy được từ Markdown và notebook, xuất web và PDF | [jupyter-book/jupyter-book](https://github.com/jupyter-book/jupyter-book) | BSD-3-Clause | 4289 | giong-noi-trinh-duyet-xac-thuc-va-sach |
 | 314 | Solid: thư viện giao diện khai báo biên dịch thành DOM thật và cập nhật bằng phản ứng chi tiết | [solidjs/solid](https://github.com/solidjs/solid) | MIT | 36211 | javascript-giao-dien-cho-nguoi-moi |
 | 317 | TanStack Query: quản lý dữ liệu lấy từ máy chủ trong ứng dụng web, bao gồm lưu đệm, tải lại và cập nhật nền | [TanStack/query](https://github.com/TanStack/query) | MIT | 50520 | javascript-giao-dien-cho-nguoi-moi |
+| 321 | Turborepo: hệ thống build cho monorepo JavaScript và TypeScript, README chỉ dẫn tới turborepo.dev | [vercel/turborepo](https://github.com/vercel/turborepo) | MIT | 31297 | cong-cu-dung-javascript |
+| 322 | webpack: công cụ gói mô-đun JavaScript và tài nguyên web cho trình duyệt, phổ biến nhưng cấu hình nhiều | [webpack/webpack](https://github.com/webpack/webpack) | MIT | 65986 | cong-cu-dung-javascript |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
