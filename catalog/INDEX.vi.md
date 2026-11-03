@@ -37,13 +37,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 35 — Chép lời, Python trong trình duyệt, đăng nhập chung và sách tính toán](learning-paths/35-giong-noi-trinh-duyet-xac-thuc-va-sach.vi.md) — Bốn công cụ cho giảng viên và người tự host: chép lời giọng nói, bài giảng chạy mã, cổng đăng nhập chung và giáo trình có mã.
 - [Lộ trình 36 — Thư viện JavaScript dựng giao diện và quản lý dữ liệu](learning-paths/36-javascript-giao-dien-cho-nguoi-moi.vi.md) — Từ thêm tương tác vào HTML đến khung giao diện và quản lý dữ liệu; chọn một hướng rồi đọc tài liệu chính thức.
 - [Lộ trình 37 — Công cụ chạy và dựng dự án JavaScript](learning-paths/37-cong-cu-dung-javascript.vi.md) — Runtime, trình quản lý gói, hệ thống build và bộ đóng gói; để đọc hiểu dự án web do AI dựng.
+- [Lộ trình 38 — Thư viện game và đồ họa trên web](learning-paths/38-game-va-do-hoa-web.vi.md) — Từ game 2D vui vẻ đến engine 3D; chọn theo ngôn ngữ bạn biết và đọc kỹ lưu ý của từng README.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (41 bài)
+### Bắt đầu (42 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -88,8 +89,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 297 | requests: thư viện Python gọi API và tải trang web chỉ bằng vài dòng, quen thuộc với mọi người học Python | [psf/requests](https://github.com/psf/requests) | Apache-2.0 | 54594 | thu-vien-python-cho-nguoi-moi |
 | 304 | VSCodium: bản dựng cộng đồng của VS Code theo giấy phép tự do, tắt telemetry, nhưng không dùng được mọi tiện ích | [VSCodium/vscodium](https://github.com/VSCodium/vscodium) | MIT | 33926 | cong-cu-lap-trinh-va-email-thu-nghiem |
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
+| 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 
-### Cơ bản (107 bài)
+### Cơ bản (109 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -200,6 +202,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 318 | Zustand: thư viện quản lý trạng thái nhỏ gọn cho React, không cần provider | [pmndrs/zustand](https://github.com/pmndrs/zustand) | MIT | 58893 | javascript-giao-dien-cho-nguoi-moi |
 | 319 | Deno: môi trường chạy JavaScript, TypeScript và WebAssembly với mặc định an toàn, hỏi quyền trước khi truy cập mạng hay tệp | [denoland/deno](https://github.com/denoland/deno) | MIT | 108794 | cong-cu-dung-javascript |
 | 320 | pnpm: trình quản lý gói JavaScript tiết kiệm ổ đĩa, lưu mỗi tệp một lần; lưu ý giấy phép có ngoại lệ cho thư mục pnpr | [pnpm/pnpm](https://github.com/pnpm/pnpm) | MIT | 36997 | cong-cu-dung-javascript |
+| 323 | PixiJS: thư viện đồ họa 2D cho web dùng WebGL và WebGPU, hợp game và hoạt họa tương tác | [pixijs/pixijs](https://github.com/pixijs/pixijs) | MIT | 48621 | game-va-do-hoa-web |
+| 327 | Excalibur.js: engine game 2D bằng TypeScript, lưu ý README nói vẫn ở phiên bản 0.x và có thay đổi phá vỡ | [excaliburjs/Excalibur](https://github.com/excaliburjs/Excalibur) | BSD-2-Clause | 2361 | game-va-do-hoa-web |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 
@@ -233,7 +237,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (47 bài)
+### Nâng cao (50 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -284,6 +288,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 317 | TanStack Query: quản lý dữ liệu lấy từ máy chủ trong ứng dụng web, bao gồm lưu đệm, tải lại và cập nhật nền | [TanStack/query](https://github.com/TanStack/query) | MIT | 50520 | javascript-giao-dien-cho-nguoi-moi |
 | 321 | Turborepo: hệ thống build cho monorepo JavaScript và TypeScript, README chỉ dẫn tới turborepo.dev | [vercel/turborepo](https://github.com/vercel/turborepo) | MIT | 31297 | cong-cu-dung-javascript |
 | 322 | webpack: công cụ gói mô-đun JavaScript và tài nguyên web cho trình duyệt, phổ biến nhưng cấu hình nhiều | [webpack/webpack](https://github.com/webpack/webpack) | MIT | 65986 | cong-cu-dung-javascript |
+| 324 | Babylon.js: công cụ 3D trên web có sân chơi trực tuyến, README cảnh báo không dùng CDN cho môi trường sản xuất | [BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js) | Apache-2.0 | 26282 | game-va-do-hoa-web |
+| 325 | PlayCanvas: engine game mã nguồn mở trên WebGL2 và WebGPU để làm ứng dụng và trò chơi 3D chạy trong trình duyệt | [playcanvas/engine](https://github.com/playcanvas/engine) | MIT | 17183 | game-va-do-hoa-web |
+| 328 | libGDX: khung phát triển game đa nền tảng bằng Java trên OpenGL, thiết lập qua Gradle và công cụ riêng | [libgdx/libgdx](https://github.com/libgdx/libgdx) | Apache-2.0 | 25506 | game-va-do-hoa-web |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

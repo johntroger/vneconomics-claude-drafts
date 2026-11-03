@@ -3947,5 +3947,111 @@
    "deno",
    "turborepo"
   ]
+ },
+ {
+  "key": 323,
+  "slug": "pixijs",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "PixiJS: thư viện đồ họa 2D cho web dùng WebGL và WebGPU, hợp game và hoạt họa tương tác",
+  "repo": "pixijs/pixijs",
+  "stars": 48621,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-30",
+  "related": [
+   "excalibur",
+   "kaplay"
+  ]
+ },
+ {
+  "key": 324,
+  "slug": "babylonjs",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "Babylon.js: công cụ 3D trên web có sân chơi trực tuyến, README cảnh báo không dùng CDN cho môi trường sản xuất",
+  "repo": "BabylonJS/Babylon.js",
+  "stars": 26282,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "excalibur",
+   "playcanvas"
+  ]
+ },
+ {
+  "key": 325,
+  "slug": "playcanvas",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "PlayCanvas: engine game mã nguồn mở trên WebGL2 và WebGPU để làm ứng dụng và trò chơi 3D chạy trong trình duyệt",
+  "repo": "playcanvas/engine",
+  "stars": 17183,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "babylonjs",
+   "libgdx"
+  ]
+ },
+ {
+  "key": 326,
+  "slug": "kaplay",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ",
+  "repo": "kaplayjs/kaplay",
+  "stars": 1823,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-22",
+  "related": [
+   "pixijs"
+  ]
+ },
+ {
+  "key": 327,
+  "slug": "excalibur",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "Excalibur.js: engine game 2D bằng TypeScript, lưu ý README nói vẫn ở phiên bản 0.x và có thay đổi phá vỡ",
+  "repo": "excaliburjs/Excalibur",
+  "stars": 2361,
+  "license": "BSD-2-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "babylonjs",
+   "pixijs"
+  ]
+ },
+ {
+  "key": 328,
+  "slug": "libgdx",
+  "group": "2026-11-03-game-va-do-hoa-web",
+  "title": "libGDX: khung phát triển game đa nền tảng bằng Java trên OpenGL, thiết lập qua Gradle và công cụ riêng",
+  "repo": "libgdx/libgdx",
+  "stars": 25506,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "playcanvas"
+  ]
  }
 ]

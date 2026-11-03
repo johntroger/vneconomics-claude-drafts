@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-game-do-hoa-web",
+  "batch": 57,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 323,
+      "batch": 57,
+      "slug": "pixijs",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PixiJS: thư viện đồ họa 2D cho web dùng WebGL và WebGPU, hợp game và hoạt họa tương tác",
+        "excerpt": "Hiểu PixiJS là thư viện kết xuất 2D cho web với trình kết xuất WebGL và WebGPU, hỗ trợ chuột, đa chạm, văn bản, bộ lọc. README nói nhanh nhất; bài không kiểm chứng.",
+        "content": "<p>README tả PixiJS là công cụ tạo nội dung HTML5 thế hệ mới, 'nhanh nhất' cho web (tuyên bố của dự án). Tính năng nêu: kết xuất WebGL và WebGPU, API dễ dùng mà mạnh, tải tài nguyên, hỗ trợ chuột và đa chạm, kết xuất văn bản linh hoạt, vẽ hình nguyên thủy và SVG, kết cấu động, mặt nạ, bộ lọc, chế độ hòa trộn. README tả PixiJS là thư viện 2D nhẹ nhất cho web, chạy trên mọi thiết bị. Cách bắt đầu: dùng công cụ dòng lệnh PixiJS Create để dựng dự án chỉ bằng một lệnh, hoặc thêm vào dự án sẵn có bằng npm (bài không chép lệnh). README có ví dụ TypeScript tạo ứng dụng, tải ảnh và thêm sprite. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn vẽ nhân vật và hiệu ứng chuyển động mượt trên web thì vẽ bằng thẻ HTML thường rất chậm. PixiJS giống bảng vẽ chuyên dụng chạy bằng card đồ họa của máy: bạn thêm hình, ảnh, chữ, hiệu ứng và nó vẽ nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng một trò chơi 2D đơn giản hay hoạt họa tương tác trên trang web. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript hoặc TypeScript và khái niệm sprite, cảnh; README có ví dụ ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đây là thư viện kết xuất, không phải bộ công cụ làm game đầy đủ (README không nêu vật lý hay âm thanh; bài không khẳng định). Nếu muốn khung game đầy đủ hơn, xem Phaser hay Kaplay (trong kho).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>WebGL / WebGPU</strong>: công nghệ cho trình duyệt dùng card đồ họa; README nói PixiJS hỗ trợ cả hai.</li><li><strong>sprite</strong>: hình ảnh 2D hiển thị và di chuyển trong cảnh.</li><li><strong>filter (bộ lọc)</strong>: hiệu ứng hình ảnh như làm mờ; README nêu.</li><li><strong>renderer (trình kết xuất)</strong>: phần vẽ cảnh lên màn hình.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng công cụ PixiJS Create để dựng dự án, hoặc thêm gói bằng npm vào dự án có sẵn (bài không chép lệnh); cần Node.js. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Usage trong README.</li><li>Dựng dự án thử bằng công cụ chính thức.</li><li>Thử thêm một sprite và di chuyển nó.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng trò chơi 2D trên web. Hãy đọc README của PixiJS (https://github.com/pixijs/pixijs) và giải thích bằng tiếng Việt: WebGL và WebGPU là gì, sprite là gì, và PixiJS khác khung game đầy đủ ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Nhanh nhất' và 'nhẹ nhất' là tuyên bố của dự án, bài không kiểm chứng. README không nói về vật lý hay âm thanh. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pixijs</strong> có <strong>48.621 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pixijs/pixijs/blob/dev/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pixijs/pixijs\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 323. Chưa cài/chạy thử; không tạo validation. Snapshot sao 48621; repo_id 7741856; README SHA256 b3cb23be81679ac800387f85ed094131addf9226136a2133dbdd7c8922e6e088.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pixijs/pixijs",
+          "repo_id": "7741856",
+          "source_path": "",
+          "source_revision": "README-SHA256:b3cb23be81679ac800387f85ed094131addf9226136a2133dbdd7c8922e6e088",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pixijs/pixijs",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng công cụ PixiJS Create để dựng dự án, hoặc thêm gói bằng npm vào dự án có sẵn (bài không chép lệnh); cần Node.js. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pixijs/pixijs/blob/dev/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pixijs/pixijs/blob/dev/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pixijs/pixijs",
+        "stars": 48621,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pixijs/pixijs/dev/README.md",
+        "readmeSha256": "b3cb23be81679ac800387f85ed094131addf9226136a2133dbdd7c8922e6e088",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 324,
+      "batch": 57,
+      "slug": "babylonjs",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Babylon.js: công cụ 3D trên web có sân chơi trực tuyến, README cảnh báo không dùng CDN cho môi trường sản xuất",
+        "excerpt": "Hiểu Babylon.js là thư viện 3D cho web có sân chơi trực tuyến để học. README cảnh báo CDN chỉ để học và thử nghiệm, không dùng trong sản xuất.",
+        "content": "<p>README mở đầu bằng gợi ý thử API trực tiếp trên sân chơi (playground) của Babylon.js, nơi có nhiều ví dụ, và diễn đàn chính thức để hỏi. Mục CDN có cảnh báo: CDN không nên dùng trong môi trường sản xuất; mục đích chỉ để người học và thử nghiệm nhỏ; khi đã dựng xong ứng dụng thì nên phục vụ các gói từ CDN của riêng bạn. README liệt kê địa chỉ gói bản ổn định và bản xem trước. Phần npm: gói và mô-đun của BabylonJS có trên npm đầy đủ kiểu dữ liệu. Có mục tài nguyên học: sân chơi trực tuyến để thử. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn xem mô hình 3D hay trò chơi 3D trong trình duyệt thì cần một 'xưởng dựng cảnh'. Babylon.js là xưởng đó, kèm một sân chơi trên web để bạn gõ mã và thấy ngay. README dặn rõ: đường dẫn CDN chỉ để học; khi làm sản phẩm thật hãy tự lưu và phục vụ tệp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử sân chơi trực tuyến để dựng cảnh 3D đơn giản rồi học cách nhúng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> 3D cần hiểu cảnh, camera, ánh sáng; cần JavaScript hoặc TypeScript. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng phục vụ sản phẩm thật từ CDN thử nghiệm của dự án theo cảnh báo trong README. Nếu chỉ cần 2D, PixiJS đơn giản hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CDN</strong>: mạng phân phối tệp thư viện; README cảnh báo không dùng CDN chung của dự án cho sản xuất.</li><li><strong>playground (sân chơi)</strong>: trang web để gõ mã và xem kết quả ngay; README giới thiệu.</li><li><strong>npm</strong>: kho gói JavaScript; README nói BabylonJS có gói trên npm.</li><li><strong>3D scene (cảnh 3D)</strong>: tập hợp vật thể, camera và ánh sáng được vẽ cùng nhau.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: thử bằng sân chơi trực tuyến không cần cài; có địa chỉ CDN (chỉ để học, README cảnh báo không dùng sản xuất) hoặc gói npm (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử sân chơi trực tuyến.</li><li>Đọc tài liệu chính thức tại doc.babylonjs.com.</li><li>Chỉ chuyển sang npm hoặc tự phục vụ khi làm sản phẩm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử đồ họa 3D trên web. Hãy đọc README của Babylon.js (https://github.com/BabylonJS/Babylon.js) và giải thích bằng tiếng Việt: sân chơi dùng để làm gì, vì sao README cảnh báo về CDN, và những khái niệm cơ bản của cảnh 3D. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, chủ yếu về cách lấy gói; không mô tả tính năng 3D chi tiết nên bài không khẳng định. CDN chỉ dành cho học tập theo README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>BabylonJS</strong> có <strong>26.282 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/BabylonJS/Babylon.js/blob/master/readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/BabylonJS/Babylon.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 324. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26282; repo_id 11007313; README SHA256 26d07948acd808d5e28e409d5925355d9cb7e18f9c608c360c2ca9b6407c5ce6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/BabylonJS/Babylon.js",
+          "repo_id": "11007313",
+          "source_path": "",
+          "source_revision": "README-SHA256:26d07948acd808d5e28e409d5925355d9cb7e18f9c608c360c2ca9b6407c5ce6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BabylonJS/Babylon.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: thử bằng sân chơi trực tuyến không cần cài; có địa chỉ CDN (chỉ để học, README cảnh báo không dùng sản xuất) hoặc gói npm (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BabylonJS/Babylon.js/blob/master/readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/BabylonJS/Babylon.js/blob/master/readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "BabylonJS/Babylon.js",
+        "stars": 26282,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/BabylonJS/Babylon.js/master/readme.md",
+        "readmeSha256": "26d07948acd808d5e28e409d5925355d9cb7e18f9c608c360c2ca9b6407c5ce6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 325,
+      "batch": 57,
+      "slug": "playcanvas",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PlayCanvas: engine game mã nguồn mở trên WebGL2 và WebGPU để làm ứng dụng và trò chơi 3D chạy trong trình duyệt",
+        "excerpt": "Hiểu PlayCanvas Engine là engine game mã nguồn mở chạy trên WebGL2 và WebGPU, có ví dụ khối lập phương xoay và công cụ dựng dự án nhanh.",
+        "content": "<p>README tả PlayCanvas là engine game mã nguồn mở xây trên WebGL2 và WebGPU, dùng để tạo ứng dụng, trò chơi và trực quan hóa 3D tương tác chạy trong trình duyệt trên mọi thiết bị. README dẫn tới sổ tay người dùng, tài liệu API, ví dụ, blog, diễn đàn. Phần Install: cài gói bằng npm (bài không chép lệnh) hoặc dựng cả dự án bằng công cụ create-playcanvas. Phần Usage: ví dụ Hello World là một khối lập phương xoay bằng mã JavaScript: tạo canvas, ứng dụng, thực thể và thêm vào cảnh. Có README bằng nhiều ngôn ngữ. Giấy phép theo huy hiệu trỏ tới LICENSE của kho (MIT theo GitHub).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Babylon.js là xưởng 3D có sân chơi, PlayCanvas là xưởng khác cùng mục đích: dựng trò chơi và cảnh 3D chạy trong trình duyệt. Ví dụ đầu tiên là khối lập phương xoay, 'Hello World' của đồ họa 3D.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng cảnh 3D đơn giản như khối xoay rồi mở rộng thành trình xem sản phẩm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần JavaScript, khái niệm thực thể và cảnh 3D; README có ví dụ đầy đủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần 2D hay trang tĩnh, chưa cần engine 3D. Bài chưa so sánh với three.js hay Babylon.js.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>engine (động cơ trò chơi)</strong>: bộ khung xử lý đồ họa, thực thể và logic của trò chơi.</li><li><strong>WebGL2 / WebGPU</strong>: công nghệ đồ họa của trình duyệt; README nói engine xây trên cả hai.</li><li><strong>entity (thực thể)</strong>: đối tượng trong cảnh; README dùng trong ví dụ khối lập phương.</li><li><strong>scaffold (dựng khung dự án)</strong>: tạo sẵn cấu trúc dự án; README nêu công cụ create-playcanvas.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói bằng npm hoặc dựng dự án bằng create-playcanvas (bài không chép lệnh); cần Node.js. Miễn phí, mã nguồn mở (giấy phép theo LICENSE trong kho; GitHub nhận diện MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Usage và ví dụ khối lập phương.</li><li>Dựng dự án bằng công cụ chính thức.</li><li>Xem trang Examples.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng ứng dụng 3D trên web. Hãy đọc README của PlayCanvas Engine (https://github.com/playcanvas/engine) và giải thích bằng tiếng Việt: engine là gì, ví dụ khối lập phương làm gì từng bước, và khi nào nên chọn engine 3D. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không so sánh hiệu năng hay mô tả giới hạn; bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>playcanvas</strong> có <strong>17.183 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép trỏ tới LICENSE. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/playcanvas/engine/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/playcanvas/engine\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 325. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17183; repo_id 19696006; README SHA256 263f5ff13ec7c7d53397bb2e1f150203ce1b7bebbc710757826b3d9b10e0c461.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/playcanvas/engine",
+          "repo_id": "19696006",
+          "source_path": "",
+          "source_revision": "README-SHA256:263f5ff13ec7c7d53397bb2e1f150203ce1b7bebbc710757826b3d9b10e0c461",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/playcanvas/engine",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói bằng npm hoặc dựng dự án bằng create-playcanvas (bài không chép lệnh); cần Node.js. Miễn phí, mã nguồn mở (giấy phép theo LICENSE trong kho; GitHub nhận diện MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/playcanvas/engine/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/playcanvas/engine/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "playcanvas/engine",
+        "stars": 17183,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/playcanvas/engine/main/README.md",
+        "readmeSha256": "263f5ff13ec7c7d53397bb2e1f150203ce1b7bebbc710757826b3d9b10e0c461",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 326,
+      "batch": 57,
+      "slug": "kaplay",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ",
+        "excerpt": "Hiểu KAPLAY là thư viện game 2D cho JavaScript và TypeScript, thiết kế để làm game thấy vui, có sân chơi KAPLAYGROUND để thử mã và hơn 90 ví dụ.",
+        "content": "<p>README tả KAPLAY là thư viện game 2D 'vui trước tiên' cho JavaScript và TypeScript, làm sao để cảm giác như đang chơi khi làm game, 'đơn giản, nhanh, mạnh' (tuyên bố của dự án). Có trình soạn web KAPLAYGROUND để thử mã ngay và học qua hơn 90 ví dụ. README có ví dụ tổng quan: khởi động game với màu nền, tải ảnh sprite, thêm vào cảnh; đối tượng game được ghép từ các thành phần đơn giản (hình chữ nhật, vị trí...). Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Làm game thường phải học nhiều thứ cùng lúc. KAPLAY giống bộ đồ chơi lắp ghép: bạn thêm 'thành phần' (hình, vị trí, va chạm) vào một vật rồi vật đó tự hoạt động. Có sân chơi trên web để thử trước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người mới học thử làm game 2D nhỏ trên sân chơi web. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> README nêu sân chơi và ví dụ; cần JavaScript cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu muốn engine 3D, KAPLAY không phù hợp. 'Vui', 'đơn giản' là cách nói của dự án, bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>component (thành phần)</strong>: mảnh hành vi gắn vào đối tượng game; README dùng cách ghép này.</li><li><strong>sprite</strong>: hình ảnh 2D trong game.</li><li><strong>game object (đối tượng game)</strong>: vật thể trong cảnh game.</li><li><strong>playground (sân chơi)</strong>: trang web gõ mã và xem kết quả; README nói là KAPLAYGROUND.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: thử ngay trên sân chơi web (play.kaplayjs.com) không cần cài; phần cài đặt chi tiết bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử KAPLAYGROUND.</li><li>Đọc ví dụ tổng quan trong README.</li><li>Chạy thử vài trong hơn 90 ví dụ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm game 2D đơn giản. Hãy đọc README của KAPLAY (https://github.com/kaplayjs/kaplay) và giải thích bằng tiếng Việt: thành phần là gì, ví dụ tổng quan hoạt động ra sao, và cách học nhanh nhất. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README mang tính giới thiệu, không nêu giới hạn hay hiệu năng; bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>kaplayjs</strong> có <strong>1.823 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-22. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/kaplayjs/kaplay/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/kaplayjs/kaplay\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 326. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1823; repo_id 803898449; README SHA256 42695044b3d55d578f5635669f3bd7a3ac03be2de724b35804c5e97e5434ae0d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/kaplayjs/kaplay",
+          "repo_id": "803898449",
+          "source_path": "",
+          "source_revision": "README-SHA256:42695044b3d55d578f5635669f3bd7a3ac03be2de724b35804c5e97e5434ae0d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/kaplayjs/kaplay",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: thử ngay trên sân chơi web (play.kaplayjs.com) không cần cài; phần cài đặt chi tiết bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/kaplayjs/kaplay/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/kaplayjs/kaplay/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "kaplayjs/kaplay",
+        "stars": 1823,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/kaplayjs/kaplay/master/README.md",
+        "readmeSha256": "42695044b3d55d578f5635669f3bd7a3ac03be2de724b35804c5e97e5434ae0d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 327,
+      "batch": 57,
+      "slug": "excalibur",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Excalibur.js: engine game 2D bằng TypeScript, lưu ý README nói vẫn ở phiên bản 0.x và có thay đổi phá vỡ",
+        "excerpt": "Hiểu Excalibur là engine game 2D miễn phí viết bằng TypeScript cho canvas HTML5. README nói vẫn ở phiên bản 0.x nên có thể có thay đổi phá vỡ; giấy phép BSD 2 điều khoản.",
+        "content": "<p>README tả Excalibur là engine game miễn phí viết bằng TypeScript để làm game 2D trên canvas HTML5, nhằm giúp việc tạo game dễ hơn cho cả người mới lẫn người có kinh nghiệm. README nói dự án theo giấy phép BSD 2 điều khoản (dùng được trong sản phẩm thương mại), miễn phí và 'luôn luôn miễn phí'. Có hướng dẫn cài đặt, bắt đầu, tính năng, lộ trình bản 1.0, tài liệu API, thảo luận, ví dụ và hướng dẫn đóng góp. README có lưu ý quan trọng: Excalibur vẫn ở phiên bản 0.x, nghĩa là dự án và các plugin có thể còn thô, nhóm cố giảm thay đổi API nhưng thay đổi phá vỡ sẽ xảy ra ở bản mới. README nói cam kết hỗ trợ hai phiên bản mới nhất của các trình duyệt phổ biến. Giấy phép BSD 2-Clause (README có nguyên văn).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Excalibur là bộ khung làm game 2D viết bằng TypeScript. Điểm cần nhớ: bộ khung vẫn đang ở đời 0.x, nghĩa là chưa phải bản chốt; cập nhật lên bản mới có thể làm hỏng mã cũ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người biết TypeScript thử làm game 2D nhỏ và đọc kỹ ghi chú phát hành khi nâng cấp. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần TypeScript hoặc JavaScript; tài liệu và ví dụ có sẵn. Phiên bản 0.x nghĩa là cần theo dõi thay đổi. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần API ổn định lâu dài, hãy cân nhắc README nói rõ có thay đổi phá vỡ. Nếu cần 3D thì không phù hợp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>canvas HTML5</strong>: vùng vẽ đồ họa của trang web; README nói Excalibur dùng.</li><li><strong>BSD 2-clause</strong>: giấy phép tự do cho phép dùng thương mại; README nêu và có nguyên văn.</li><li><strong>breaking change (thay đổi phá vỡ)</strong>: thay đổi làm mã cũ không chạy được; README nói sẽ xảy ra ở bản mới.</li><li><strong>0.x</strong>: phiên bản chưa đạt 1.0; README nói Excalibur vẫn ở đây.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn cài đặt và bắt đầu tại excaliburjs.com/docs; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép BSD 2-Clause.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc lưu ý về phiên bản 0.x.</li><li>Đọc Installation và Getting Started.</li><li>Thử một trò chơi nhỏ rồi theo dõi ghi chú phát hành khi nâng cấp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm game 2D bằng TypeScript. Hãy đọc README của Excalibur (https://github.com/excaliburjs/Excalibur) và giải thích bằng tiếng Việt: lưu ý phiên bản 0.x nghĩa là gì, giấy phép BSD 2 điều khoản cho phép gì, và cách đọc ghi chú phát hành. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói rõ có thể có thay đổi phá vỡ trong phiên bản 0.x. 'Luôn miễn phí' là cam kết của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>excaliburjs</strong> có <strong>2.361 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README ghi giấy phép BSD 2-Clause và có nguyên văn. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/excaliburjs/Excalibur/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/excaliburjs/Excalibur\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 327. Chưa cài/chạy thử; không tạo validation. Snapshot sao 2361; repo_id 7457728; README SHA256 5c01916c079b75918296551b634519f0d974236ec4de0d99b6c612a45f36a512.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/excaliburjs/Excalibur",
+          "repo_id": "7457728",
+          "source_path": "",
+          "source_revision": "README-SHA256:5c01916c079b75918296551b634519f0d974236ec4de0d99b6c612a45f36a512",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-2-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/excaliburjs/Excalibur",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn cài đặt và bắt đầu tại excaliburjs.com/docs; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép BSD 2-Clause.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/excaliburjs/Excalibur/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/excaliburjs/Excalibur/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "excaliburjs/Excalibur",
+        "stars": 2361,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/excaliburjs/Excalibur/main/README.md",
+        "readmeSha256": "5c01916c079b75918296551b634519f0d974236ec4de0d99b6c612a45f36a512",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 328,
+      "batch": 57,
+      "slug": "libgdx",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "libGDX: khung phát triển game đa nền tảng bằng Java trên OpenGL, thiết lập qua Gradle và công cụ riêng",
+        "excerpt": "Hiểu libGDX là khung phát triển game đa nền tảng bằng Java dựa trên OpenGL (ES), chạy trên Windows, Linux, macOS, Android, trình duyệt và iOS. Giấy phép Apache 2.0.",
+        "content": "<p>README tả libGDX là khung phát triển game đa nền tảng bằng Java dựa trên OpenGL (ES), thiết kế cho Windows, Linux, macOS, Android, trình duyệt web và iOS. Giấy phép Apache 2.0, dùng không hạn chế cho cả thương mại và phi thương mại; README nói không bắt buộc nhưng hoan nghênh ghi công. Có hệ sinh thái công cụ và thư viện của bên thứ ba (awesome-libgdx). Cách bắt đầu: nhờ Gradle, bạn thiết lập libGDX không cần tải khung về, có công cụ thiết lập riêng; có hướng dẫn tạo dự án, xây trò chơi đơn giản, hướng dẫn và demo, tài liệu javadoc, blog, Discord. README nêu trò chơi mẫu Pathway trên Steam trong mục Showcase.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn một trò chơi chạy trên cả máy tính, điện thoại Android và trình duyệt từ cùng một mã nguồn, libGDX là một lựa chọn kiểu 'viết một lần, chạy nhiều nơi' bằng Java. Công cụ dựng dự án lo phần cấu hình, nhưng bạn vẫn cần quen Java.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người biết Java làm một trò chơi 2D chạy trên PC và Android. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học làm game hoặc đồ họa web; người nhờ AI dựng trò chơi nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần Java, Gradle và khái niệm OpenGL; thiết lập có công cụ hỗ trợ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa biết Java, chưa nên bắt đầu từ đây; engine có giao diện như Godot (trong kho) dễ hơn cho người mới. Bài chưa kiểm chứng hỗ trợ từng nền tảng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework (khung)</strong>: bộ thư viện giúp dựng ứng dụng; README gọi libGDX là khung phát triển game.</li><li><strong>OpenGL (ES)</strong>: giao diện đồ họa dùng card đồ họa; README nói libGDX dựa trên đó.</li><li><strong>Gradle</strong>: công cụ dựng dự án Java; README nói dùng để thiết lập libGDX.</li><li><strong>javadoc</strong>: tài liệu API sinh từ mã Java; README nói có trực tuyến.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: thiết lập qua Gradle và công cụ thiết lập của dự án, không cần tải khung riêng (bài không chép lệnh); cần Java. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc hướng dẫn tạo dự án.</li><li>Làm theo bài xây trò chơi đơn giản.</li><li>Thử xuất ra một nền tảng trước khi mở rộng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết Java và muốn làm game đa nền tảng. Hãy đọc README của libGDX (https://github.com/libgdx/libgdx) và giải thích bằng tiếng Việt: libGDX là gì, Gradle dùng để làm gì, và các bước đầu tiên. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README liệt kê nền tảng hỗ trợ nhưng không nói mức hỗ trợ từng nền; bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mã chạy trong trình duyệt hay máy của người chơi: chỉ cài gói từ nguồn chính thức, đừng nhúng khóa bí mật vào mã trò chơi, và thử trong dự án thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>libgdx</strong> có <strong>25.506 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/libgdx/libgdx/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/libgdx/libgdx\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 328. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25506; repo_id 5373551; README SHA256 5cea4273b63c3e983ba10fdb0bdd37313bd99ac7b10a80c0c825369d8397b70b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/libgdx/libgdx",
+          "repo_id": "5373551",
+          "source_path": "",
+          "source_revision": "README-SHA256:5cea4273b63c3e983ba10fdb0bdd37313bd99ac7b10a80c0c825369d8397b70b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/libgdx/libgdx",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: thiết lập qua Gradle và công cụ thiết lập của dự án, không cần tải khung riêng (bài không chép lệnh); cần Java. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/libgdx/libgdx/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/libgdx/libgdx/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "libgdx/libgdx",
+        "stars": 25506,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/libgdx/libgdx/master/README.md",
+        "readmeSha256": "5cea4273b63c3e983ba10fdb0bdd37313bd99ac7b10a80c0c825369d8397b70b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
