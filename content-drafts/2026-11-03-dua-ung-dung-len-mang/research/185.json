@@ -1,0 +1,36 @@
+{
+  "key": 185,
+  "repo": "dokku/dokku",
+  "repoId": "10567197",
+  "url": "https://github.com/dokku/dokku",
+  "stars": 32220,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:48:15Z",
+  "createdAt": "2013-06-08T10:26:57Z",
+  "defaultBranch": "master",
+  "description": "A docker-powered PaaS that helps you build and manage the lifecycle of applications",
+  "homepage": "https://dokku.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dokku/dokku/master/README.md",
+    "sha256": "cf171ee3417fc0ebc04c678810cdab42d0fb768fdca12946e4267e9f18922413",
+    "bytes": 10234,
+    "sectionsRead": [
+      "Requirements",
+      "Installation",
+      "Upgrade",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa so sánh với Coolify, CapRover.",
+    "Chưa đọc script cài."
+  ],
+  "runtimeValidated": false
+}

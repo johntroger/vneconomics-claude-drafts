@@ -1,0 +1,35 @@
+{
+  "key": 187,
+  "repo": "cloudflare/cloudflared",
+  "repoId": "106867604",
+  "url": "https://github.com/cloudflare/cloudflared",
+  "stars": 16412,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-30T17:04:47Z",
+  "createdAt": "2017-10-13T19:54:47Z",
+  "defaultBranch": "master",
+  "description": "Cloudflare Tunnel client",
+  "homepage": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cloudflare/cloudflared/master/README.md",
+    "sha256": "91c3fa30e5637ce4b79a469bfe3783b8bb91b9582b94cb731a07f03b72935669",
+    "bytes": 7150,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Before you get started",
+      "Installing cloudflared"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Giá dịch vụ Tunnel chưa kiểm tra.",
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa so sánh với Tailscale."
+  ],
+  "runtimeValidated": false
+}

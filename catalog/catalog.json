@@ -280,6 +280,8 @@
   "pushed": "2026-11-02",
   "related": [
    "appwrite",
+   "docker-compose",
+   "dokku",
    "front-end-checklist"
   ]
  },
@@ -1430,6 +1432,130 @@
   "related": [
    "dyad",
    "first-contributions"
+  ]
+ },
+ {
+  "key": 182,
+  "slug": "caddy",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Caddy: máy chủ web tự bật HTTPS, cấu hình ngắn gọn cho dự án nhỏ",
+  "repo": "caddyserver/caddy",
+  "stars": 78667,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "dokku",
+   "traefik"
+  ]
+ },
+ {
+  "key": 183,
+  "slug": "docker-compose",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Docker Compose: mô tả nhiều phần của ứng dụng trong một tệp để chạy cùng nhau",
+  "repo": "docker/compose",
+  "stars": 38582,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "coolify"
+  ]
+ },
+ {
+  "key": 184,
+  "slug": "portainer",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Portainer CE: giao diện web quản lý Docker, nhưng README nói rõ chỉ dành cho nhà và học tập",
+  "repo": "portainer/portainer",
+  "stars": 38767,
+  "license": "Zlib",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "tailscale",
+   "traefik"
+  ]
+ },
+ {
+  "key": 185,
+  "slug": "dokku",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Dokku: PaaS nhỏ tự dựng trên một máy chủ, đưa ứng dụng lên bằng Git như Heroku",
+  "repo": "dokku/dokku",
+  "stars": 32220,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "caddy",
+   "coolify"
+  ]
+ },
+ {
+  "key": 186,
+  "slug": "tailscale",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Tailscale: nối các thiết bị của bạn thành một mạng riêng an toàn dựa trên WireGuard",
+  "repo": "tailscale/tailscale",
+  "stars": 38547,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "cloudflared",
+   "portainer"
+  ]
+ },
+ {
+  "key": 187,
+  "slug": "cloudflared",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "cloudflared: đưa dịch vụ trên máy bạn ra internet qua Cloudflare Tunnel mà không mở cổng",
+  "repo": "cloudflare/cloudflared",
+  "stars": 16412,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-30",
+  "related": [
+   "tailscale"
+  ]
+ },
+ {
+  "key": 188,
+  "slug": "traefik",
+  "group": "2026-11-03-dua-ung-dung-len-mang",
+  "title": "Traefik: reverse proxy tự tìm các dịch vụ chạy trong Docker và tạo đường dẫn cho chúng",
+  "repo": "traefik/traefik",
+  "stars": 65445,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "caddy",
+   "portainer"
   ]
  }
 ]

@@ -1,0 +1,35 @@
+{
+  "key": 182,
+  "repo": "caddyserver/caddy",
+  "repoId": "29207621",
+  "url": "https://github.com/caddyserver/caddy",
+  "stars": 78667,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:55:55Z",
+  "createdAt": "2015-01-13T19:45:03Z",
+  "defaultBranch": "master",
+  "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+  "homepage": "https://caddyserver.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/caddyserver/caddy/master/README.md",
+    "sha256": "0bc5939a26994a481e65b84b4e1b9ee44dd06796df4a196c75e9bdcdd4868b18",
+    "bytes": 12661,
+    "sectionsRead": [
+      "Features",
+      "Install",
+      "Quick start"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn cài chi tiết.",
+    "Chưa kiểm tra các tuyên bố hiệu năng.",
+    "Chưa so sánh với Nginx và Traefik."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,36 @@
+{
+  "key": 188,
+  "repo": "traefik/traefik",
+  "repoId": "42408804",
+  "url": "https://github.com/traefik/traefik",
+  "stars": 65445,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T10:42:06Z",
+  "createdAt": "2015-09-13T19:04:02Z",
+  "defaultBranch": "master",
+  "description": "The Cloud Native Application Proxy",
+  "homepage": "https://traefik.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/traefik/traefik/master/README.md",
+    "sha256": "a0d231580233fd3096498e738578e222c2fb524e6aaa84723357f846ed440634",
+    "bytes": 7864,
+    "sectionsRead": [
+      "Overview",
+      "Features",
+      "Quickstart",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu chi tiết.",
+    "Chưa so sánh với Caddy/Nginx.",
+    "Chưa đọc chi tiết Quickstart."
+  ],
+  "runtimeValidated": false
+}

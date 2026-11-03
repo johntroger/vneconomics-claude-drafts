@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-dua-len-mang",
+  "batch": 31,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 182,
+      "batch": 31,
+      "slug": "caddy",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Caddy: máy chủ web tự bật HTTPS, cấu hình ngắn gọn cho dự án nhỏ",
+        "excerpt": "Hiểu Caddy là máy chủ web và reverse proxy tự lo chứng chỉ HTTPS, hợp khi bạn đưa ứng dụng nhỏ lên máy chủ riêng. Cấu hình bằng tệp ngắn gọn.",
+        "content": "<p>Caddy là máy chủ web nhanh, mở rộng được, chạy trên nhiều nền tảng. README liệt kê điểm nổi bật: cấu hình dễ bằng Caddyfile hoặc mạnh hơn bằng JSON, cấu hình động qua API, HTTPS tự động mặc định (dùng ZeroSSL và Let's Encrypt cho tên công khai, có CA nội bộ cho tên nội bộ), hỗ trợ HTTP/1.1, HTTP/2, HTTP/3, kiến trúc mô-đun, chạy không cần phụ thuộc ngoài (kể cả libc) và viết bằng Go. README khuyên mọi người, bất kể kinh nghiệm, làm theo hướng dẫn Getting Started.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy chủ web giống người gác cổng và chỉ đường cho khách vào ngôi nhà (ứng dụng) của bạn. Việc phiền nhất là xin và gia hạn 'giấy chứng nhận an toàn' (HTTPS). Caddy giống người gác cổng tự lo giấy tờ đó cho bạn, bạn chỉ cần ghi tên miền và nơi khách cần được dẫn tới.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bạn có một ứng dụng chạy ở cổng nội bộ trên máy chủ và muốn có địa chỉ https đẹp; đọc xem Caddy làm vai trò 'cổng vào' như thế nào. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đưa ứng dụng nhỏ lên máy chủ riêng; người ngán cấu hình chứng chỉ HTTPS thủ công.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần có máy chủ, tên miền trỏ đúng và hiểu khái niệm cổng và proxy. Tệp Caddyfile ngắn nhưng lỗi DNS hay tường lửa vẫn là điểm vấp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng dịch vụ lưu trữ do nhà cung cấp lo HTTPS, không cần. Nếu bạn dùng nền tảng như Coolify (cùng nhóm) đã tự cấu hình proxy, chưa cần động vào Caddy.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>reverse proxy</strong>: máy chủ đứng trước ứng dụng, nhận truy cập từ internet rồi chuyển vào ứng dụng bên trong.</li><li><strong>HTTPS / TLS</strong>: kết nối được mã hóa; chứng chỉ chứng minh trang đúng là của bạn.</li><li><strong>Let's Encrypt / ZeroSSL</strong>: hai nhà cấp chứng chỉ miễn phí mà README nói Caddy dùng cho tên công khai.</li><li><strong>Caddyfile</strong>: tệp cấu hình ngắn gọn của Caddy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install (nhiều cách) và Build from source; bài chưa đọc chi tiết nên chưa nêu yêu cầu và không chép lệnh. Cần tên miền và máy chủ nếu muốn HTTPS công khai tự động. Miễn phí theo giấy phép Apache-2.0 theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và hướng dẫn Getting Started trên trang tài liệu chính thức.</li><li>Thử trên máy riêng với địa chỉ nội bộ trước khi dùng tên miền thật.</li><li>Khi dùng tên miền thật, kiểm tra DNS và tường lửa trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có ứng dụng nhỏ trên máy chủ và muốn có HTTPS. Hãy đọc README của Caddy (https://github.com/caddyserver/caddy) và giải thích bằng tiếng Việt: reverse proxy là gì, HTTPS tự động hoạt động ra sao, và mình cần chuẩn bị gì (tên miền, DNS, cổng). Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tuyên bố như 'production-ready sau hàng nghìn tỷ yêu cầu' hay 'mở rộng tới hàng trăm nghìn site' là của tác giả, bài chưa kiểm chứng. Cấu hình sai có thể làm lộ dịch vụ nội bộ ra internet. README có phần quảng cáo công cụ khác ở đầu.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đưa dịch vụ ra internet, hãy đóng mọi cổng không cần, dùng mật khẩu mạnh và xác thực hai bước cho trang quản trị, cập nhật thường xuyên và sao lưu trước khi thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>caddyserver</strong> có <strong>78.667 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/caddyserver/caddy/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/caddyserver/caddy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 182. Chưa cài/chạy thử; không tạo validation. Snapshot sao 78667; repo_id 29207621; README SHA256 0bc5939a26994a481e65b84b4e1b9ee44dd06796df4a196c75e9bdcdd4868b18.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/caddyserver/caddy",
+          "repo_id": "29207621",
+          "source_path": "",
+          "source_revision": "README-SHA256:0bc5939a26994a481e65b84b4e1b9ee44dd06796df4a196c75e9bdcdd4868b18",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/caddyserver/caddy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install (nhiều cách) và Build from source; bài chưa đọc chi tiết nên chưa nêu yêu cầu và không chép lệnh. Cần tên miền và máy chủ nếu muốn HTTPS công khai tự động. Miễn phí theo giấy phép Apache-2.0 theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/caddyserver/caddy/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/caddyserver/caddy/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "caddyserver/caddy",
+        "stars": 78667,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/caddyserver/caddy/master/README.md",
+        "readmeSha256": "0bc5939a26994a481e65b84b4e1b9ee44dd06796df4a196c75e9bdcdd4868b18",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 183,
+      "batch": 31,
+      "slug": "docker-compose",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Docker Compose: mô tả nhiều phần của ứng dụng trong một tệp để chạy cùng nhau",
+        "excerpt": "Hiểu Docker Compose giúp bạn khai báo ứng dụng gồm nhiều container (web, cơ sở dữ liệu…) trong một tệp và chạy bằng một lệnh. Hay xuất hiện trong hướng dẫn cài công cụ AI.",
+        "content": "<p>Docker Compose là công cụ chạy ứng dụng nhiều container trên Docker, được định nghĩa bằng định dạng tệp Compose. README nói một tệp Compose mô tả cách cấu hình một hoặc nhiều container tạo nên ứng dụng của bạn, và khi đã có tệp thì tạo và khởi động ứng dụng bằng một lệnh. README có ghi chú về Docker Swarm (không còn do Docker Inc duy trì) và nơi lấy Compose: đi kèm Docker Desktop trên Windows và macOS, cài riêng trên Linux.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một bữa tiệc cần nhiều món cùng lên: món chính, nước chấm, rau. Compose giống tờ thực đơn đã ghi sẵn gồm những món nào, nấu bằng nồi nào, bày cạnh nhau ra sao; bạn chỉ cần ra lệnh 'dọn tiệc' thay vì làm từng món.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi README của một công cụ AI có tệp compose.yaml, bạn hiểu nó gom nhiều dịch vụ (ứng dụng, cơ sở dữ liệu) để chạy chung và biết cần đọc nội dung tệp trước. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người cài các ứng dụng tự host có nhiều thành phần; người học triển khai.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần hiểu container và Docker cơ bản; tệp YAML cần đọc cẩn thận. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu ứng dụng chỉ có một tiến trình đơn giản, có thể chưa cần. Nếu bạn cần điều phối lớn nhiều máy, Compose không phải công cụ đó (README nói về Swarm như bối cảnh).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>container</strong>: hộp chứa ứng dụng cùng môi trường cần thiết để chạy giống nhau ở mọi nơi.</li><li><strong>Compose file</strong>: tệp YAML mô tả các dịch vụ, mạng và ổ lưu trữ của ứng dụng.</li><li><strong>Docker Desktop</strong>: ứng dụng cài Docker cho Windows và macOS, README nói có kèm Compose.</li><li><strong>volume</strong>: nơi lưu dữ liệu bền vững của container.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: trên Windows và macOS, Compose đi kèm Docker Desktop; trên Linux có hướng dẫn cài riêng. Bài chưa kiểm tra điều khoản Docker Desktop (có thể có điều kiện giấy phép với tổ chức lớn) và không chép lệnh. Compose theo giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Where to get Docker Compose cho hệ điều hành của bạn.</li><li>Mở một tệp Compose mẫu và đọc từng dịch vụ.</li><li>Chạy trong môi trường thử và theo dõi nhật ký trước khi dùng dữ liệu thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>README của một công cụ AI bảo chạy bằng Docker Compose. Hãy đọc README của Compose (https://github.com/docker/compose) và giải thích bằng tiếng Việt: container là gì, tệp compose mô tả gì, và những điểm cần kiểm tra trong tệp trước khi chạy (cổng mở, thư mục gắn vào, biến môi trường). Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Chạy tệp Compose của người khác nghĩa là chạy phần mềm và gắn thư mục máy bạn vào container; cần đọc trước. Docker Swarm không còn do Docker Inc duy trì theo README. Điều khoản Docker Desktop chưa được bài kiểm tra.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đọc kỹ phần ports và volumes trong tệp Compose: cổng mở ra ngoài và thư mục máy được chia sẻ vào container là hai chỗ dễ gây lộ dữ liệu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>docker</strong> có <strong>38.582 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/docker/compose/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/docker/compose\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 183. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38582; repo_id 15045751; README SHA256 02d853bbccd7d847c65eaea8c07bb14135b3f7904a48abf5898de90d5c75cb8e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/docker/compose",
+          "repo_id": "15045751",
+          "source_path": "",
+          "source_revision": "README-SHA256:02d853bbccd7d847c65eaea8c07bb14135b3f7904a48abf5898de90d5c75cb8e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/docker/compose",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: trên Windows và macOS, Compose đi kèm Docker Desktop; trên Linux có hướng dẫn cài riêng. Bài chưa kiểm tra điều khoản Docker Desktop (có thể có điều kiện giấy phép với tổ chức lớn) và không chép lệnh. Compose theo giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/docker/compose/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/docker/compose/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "docker/compose",
+        "stars": 38582,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/docker/compose/main/README.md",
+        "readmeSha256": "02d853bbccd7d847c65eaea8c07bb14135b3f7904a48abf5898de90d5c75cb8e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 184,
+      "batch": 31,
+      "slug": "portainer",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Portainer CE: giao diện web quản lý Docker, nhưng README nói rõ chỉ dành cho nhà và học tập",
+        "excerpt": "Hiểu Portainer giúp xem và quản lý container bằng giao diện đồ họa, và đọc kỹ phần 'Intended use': bản Community không dành cho môi trường sản xuất.",
+        "content": "<p>Portainer Community Edition là giao diện quản lý container miễn phí, nhẹ cho Docker, Swarm, Podman, Kubernetes và ACI. README nêu rõ bản CE được cung cấp nguyên trạng, miễn phí cho người dùng homelab, người đam mê và sinh viên; Portainer Business Edition thêm các tính năng và hỗ trợ thương mại (RBAC, GitOps, quản lý edge, kiểm toán, SSO). Mục 'Intended use' nói CE dành cho homelab, môi trường học tập, dự án cá nhân và triển khai không phải sản xuất, không được hỗ trợ cho môi trường kinh doanh hay sản xuất.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Container giống nhiều chiếc hộp đang chạy trong nhà; Portainer giống bảng điều khiển trung tâm có nút bật tắt từng hộp và xem trong hộp có gì. Nhưng cửa hàng ghi sẵn trên hộp: 'dùng cho nhà và học tập, không bán hàng cho khách'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người đã chạy vài container trên máy nhà dùng Portainer để xem nhật ký và trạng thái thay vì gõ lệnh, trong khi hiểu nó chưa dành cho hệ thống kinh doanh. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm homelab và học Docker; người muốn nhìn container qua giao diện.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần có Docker và hiểu container cơ bản; giao diện giúp người ngại dòng lệnh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói rõ CE không dành cho môi trường kinh doanh hoặc sản xuất cần thời gian hoạt động và bảo mật; nếu bạn cần điều đó, xem bản trả phí hoặc công cụ khác.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>homelab</strong>: hệ thống thử nghiệm và học tập tại nhà.</li><li><strong>Swarm / Kubernetes / Podman</strong>: các cách điều phối và chạy container; Portainer hỗ trợ nhiều loại theo README.</li><li><strong>RBAC</strong>: phân quyền theo vai trò; README nói là tính năng bản Business.</li><li><strong>SLA</strong>: cam kết mức dịch vụ; README nói CE không có.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn triển khai Portainer CE trong tài liệu và không nêu chi tiết; bài không chép lệnh. CE miễn phí theo giấy phép zlib; README nói không có kênh hỗ trợ chính thức; có Take 3 (3 nút Business miễn phí) theo README, điều kiện chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'Intended use' trước tiên.</li><li>Đọc hướng dẫn cài CE trong tài liệu.</li><li>Dùng cho môi trường thử, bật xác thực mạnh và không để cổng quản trị mở ra internet.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý container bằng giao diện. Hãy đọc README của Portainer (https://github.com/portainer/portainer) và giải thích bằng tiếng Việt: CE khác Business thế nào, 'Intended use' nghĩa là gì với mình, và những rủi ro khi để giao diện quản lý Docker mở ra mạng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói CE cập nhật không theo lịch cố định, không hỗ trợ, không cam kết lộ trình. Giao diện có quyền điều khiển Docker nên nếu bị chiếm có thể chiếm cả máy chủ. Bản Business trả phí có nhiều tính năng hơn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Không mở giao diện quản lý Docker ra internet công cộng; bảo vệ bằng mạng riêng hoặc xác thực mạnh, vì quyền điều khiển Docker rất rộng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>portainer</strong> có <strong>38.767 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Zlib; README ghi giấy phép zlib. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/portainer/portainer/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/portainer/portainer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 184. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38767; repo_id 59239347; README SHA256 c695d1b63abef9ad7ddd487941b1ccf2d04ec7e71ddfecb92ed043f7363fa317.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/portainer/portainer",
+          "repo_id": "59239347",
+          "source_path": "",
+          "source_revision": "README-SHA256:c695d1b63abef9ad7ddd487941b1ccf2d04ec7e71ddfecb92ed043f7363fa317",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Zlib",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/portainer/portainer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn triển khai Portainer CE trong tài liệu và không nêu chi tiết; bài không chép lệnh. CE miễn phí theo giấy phép zlib; README nói không có kênh hỗ trợ chính thức; có Take 3 (3 nút Business miễn phí) theo README, điều kiện chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/portainer/portainer/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/portainer/portainer/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "portainer/portainer",
+        "stars": 38767,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/portainer/portainer/develop/README.md",
+        "readmeSha256": "c695d1b63abef9ad7ddd487941b1ccf2d04ec7e71ddfecb92ed043f7363fa317",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 185,
+      "batch": 31,
+      "slug": "dokku",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dokku: PaaS nhỏ tự dựng trên một máy chủ, đưa ứng dụng lên bằng Git như Heroku",
+        "excerpt": "Hiểu Dokku biến một máy chủ Linux thành nơi triển khai ứng dụng kiểu Heroku. Hợp người muốn hiểu quy trình đẩy mã lên và chạy.",
+        "content": "<p>Dokku được README mô tả là 'mini-Heroku chạy bằng Docker', cài đặt PaaS nhỏ nhất bạn từng thấy. Yêu cầu theo README: một máy ảo mới chạy Ubuntu 22.04, 24.04 hoặc 26.04 (amd64 hoặc arm64) hoặc Debian 11 trở lên, và một cặp khóa SSH dùng để triển khai ứng dụng. README hướng dẫn cài bằng script bootstrap theo phiên bản, rồi cấu hình tên miền máy chủ và quyền truy cập người dùng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Heroku là dịch vụ cho thuê chỗ chạy ứng dụng chỉ bằng việc 'đẩy mã lên'. Dokku là phiên bản bạn tự dựng trên máy chủ thuê: đẩy mã vào máy chủ, nó tự đóng gói và chạy. Giống mở một tiệm nhỏ có quy trình giống chuỗi lớn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: học quy trình 'push để triển khai' trên máy chủ thử rẻ tiền, với ứng dụng mẫu không có dữ liệu thật. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đã biết Git và muốn tự quản lý nơi triển khai nhỏ; người học khái niệm PaaS.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần máy chủ Linux, SSH và Git; README yêu cầu máy ảo mới. Cài đặt là script chạy với quyền sudo. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn giao diện đồ họa và nhiều dịch vụ cài một cú bấm, Coolify (cùng nhóm) có thể dễ hơn. Nếu bạn không quản lý máy chủ, hãy dùng dịch vụ lưu trữ trả sẵn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>SSH</strong>: cách đăng nhập từ xa vào máy chủ bằng dòng lệnh, có mã hóa.</li><li><strong>PaaS</strong>: nền tảng cho thuê chỗ chạy ứng dụng, bạn không tự lo từng phần hạ tầng.</li><li><strong>Heroku</strong>: dịch vụ PaaS nổi tiếng mà Dokku mô phỏng quy trình.</li><li><strong>bootstrap script</strong>: script cài đặt ban đầu; README dẫn cài bằng script theo phiên bản.</li><li><strong>sudo</strong>: quyền quản trị tạm thời để chạy lệnh thay đổi hệ thống.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: máy ảo mới chạy Ubuntu 22.04/24.04/26.04 hoặc Debian 11 trở lên và cặp khóa SSH; cài bằng script bootstrap chạy với sudo (bài không chép lệnh). Miễn phí theo giấy phép MIT. Chi phí thuê máy chủ nằm ngoài README.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Requirements.</li><li>Đọc kỹ script bootstrap trước khi chạy với quyền sudo.</li><li>Thử với một máy chủ thử không chứa dữ liệu quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu quy trình đẩy mã lên để triển khai kiểu Heroku. Hãy đọc README của Dokku (https://github.com/dokku/dokku) và giải thích bằng tiếng Việt: PaaS là gì, Dokku cần máy chủ thế nào, script cài đặt thay đổi gì trên máy chủ, và rủi ro. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Script cài đặt chạy với quyền cao và tải mã từ mạng; chỉ dùng trên máy chủ mới. README ngắn; tài liệu chính ở trang riêng. Bạn tự chịu trách nhiệm bảo mật và sao lưu.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đưa dịch vụ ra internet, hãy đóng mọi cổng không cần, dùng mật khẩu mạnh và xác thực hai bước cho trang quản trị, cập nhật thường xuyên và sao lưu trước khi thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dokku</strong> có <strong>32.220 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dokku/dokku/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dokku/dokku\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 185. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32220; repo_id 10567197; README SHA256 cf171ee3417fc0ebc04c678810cdab42d0fb768fdca12946e4267e9f18922413.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dokku/dokku",
+          "repo_id": "10567197",
+          "source_path": "",
+          "source_revision": "README-SHA256:cf171ee3417fc0ebc04c678810cdab42d0fb768fdca12946e4267e9f18922413",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dokku/dokku",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: máy ảo mới chạy Ubuntu 22.04/24.04/26.04 hoặc Debian 11 trở lên và cặp khóa SSH; cài bằng script bootstrap chạy với sudo (bài không chép lệnh). Miễn phí theo giấy phép MIT. Chi phí thuê máy chủ nằm ngoài README.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dokku/dokku/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dokku/dokku/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dokku/dokku",
+        "stars": 32220,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dokku/dokku/master/README.md",
+        "readmeSha256": "cf171ee3417fc0ebc04c678810cdab42d0fb768fdca12946e4267e9f18922413",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 186,
+      "batch": 31,
+      "slug": "tailscale",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Tailscale: nối các thiết bị của bạn thành một mạng riêng an toàn dựa trên WireGuard",
+        "excerpt": "Hiểu cách tạo mạng riêng giữa máy tính, điện thoại và máy chủ của bạn mà không phải mở cổng ra internet. Cần phân biệt phần mã nguồn mở với dịch vụ của hãng.",
+        "content": "<p>Tailscale được README mô tả là 'mạng riêng WireGuard làm cho dễ'. Repo chứa phần lớn mã nguồn mở của Tailscale, gồm daemon tailscaled và công cụ dòng lệnh tailscale, chạy trên Linux, Windows, macOS và ở mức độ khác nhau trên FreeBSD và OpenBSD. Ứng dụng iOS và Android dùng mã trong repo nhưng giao diện di động nằm ở repo khác. README dẫn tới trang giải thích phần nào của Tailscale là mã nguồn mở và vì sao.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn truy cập máy chủ nhà từ quán cà phê, cách cũ là mở cửa nhà ra phố (nguy hiểm). Tailscale giống đào một đường hầm riêng chỉ các thiết bị của bạn đi qua: máy ở đâu cũng thấy nhau như trong cùng một mạng nội bộ, cửa nhà vẫn đóng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: truy cập giao diện quản trị của một dịch vụ tự host qua mạng riêng thay vì mở cổng ra internet. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người có máy chủ hoặc homelab muốn truy cập từ xa an toàn; người làm việc từ nhiều thiết bị.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm mạng riêng dễ hiểu, nhưng cần đăng ký dịch vụ và cài trên từng thiết bị; cấu hình quyền truy cập có thể phức tạp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn công khai dịch vụ cho mọi người truy cập, đây không phải công cụ đó. Nếu bạn muốn tự vận hành hoàn toàn không phụ thuộc dịch vụ, cần đọc kỹ phần nào mở nguồn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>SSH</strong>: cách đăng nhập từ xa vào máy chủ bằng dòng lệnh, có mã hóa.</li><li><strong>VPN / mạng riêng ảo</strong>: đường hầm mã hóa nối các thiết bị như thể cùng một mạng nội bộ.</li><li><strong>WireGuard</strong>: giao thức VPN hiện đại mà README nói Tailscale xây trên đó.</li><li><strong>daemon</strong>: chương trình chạy nền; tailscaled là daemon của Tailscale.</li><li><strong>CLI</strong>: công cụ dùng bằng dòng lệnh; tailscale là công cụ dòng lệnh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê phần mã mở và các repo liên quan (Android, Synology, QNAP, Chocolatey); mục Using và hướng dẫn cài nằm trong tài liệu chính thức, bài chưa đọc. Dịch vụ của hãng có điều khoản và giá riêng; bài chưa kiểm tra. Mã theo giấy phép BSD-3-Clause theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Overview và trang giải thích phần nào mở nguồn mà README dẫn tới.</li><li>Đọc hướng dẫn bắt đầu trong tài liệu chính thức của Tailscale.</li><li>Thử nối hai thiết bị của bạn và chỉ cấp truy cập cho dịch vụ cần thiết.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn truy cập máy chủ nhà từ xa mà không mở cổng. Hãy đọc README của Tailscale (https://github.com/tailscale/tailscale) và giải thích bằng tiếng Việt: mạng riêng ảo là gì, WireGuard là gì, phần nào của Tailscale là mã nguồn mở theo README, và khi nào dịch vụ của hãng có điều khoản riêng. Chưa cài hay đăng ký gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu giá hay giới hạn dịch vụ. Phần mã mở và dịch vụ của hãng khác nhau nên 'mã nguồn mở' chưa đồng nghĩa tự vận hành hoàn toàn; bài chưa đọc trang giải thích. Cấu hình quyền sai có thể mở truy cập rộng hơn dự định.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đưa dịch vụ ra internet, hãy đóng mọi cổng không cần, dùng mật khẩu mạnh và xác thực hai bước cho trang quản trị, cập nhật thường xuyên và sao lưu trước khi thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tailscale</strong> có <strong>38.547 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause cho repo; dịch vụ của hãng có điều khoản riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tailscale/tailscale/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tailscale/tailscale\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 186. Chưa cài/chạy thử; không tạo validation. Snapshot sao 38547; repo_id 237523442; README SHA256 962187747e61973ef5743bfe64831ebf730ab6f79f5b2a9ee5ac1c00a1642a6d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tailscale/tailscale",
+          "repo_id": "237523442",
+          "source_path": "",
+          "source_revision": "README-SHA256:962187747e61973ef5743bfe64831ebf730ab6f79f5b2a9ee5ac1c00a1642a6d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "BSD-3-Clause",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tailscale/tailscale",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê phần mã mở và các repo liên quan (Android, Synology, QNAP, Chocolatey); mục Using và hướng dẫn cài nằm trong tài liệu chính thức, bài chưa đọc. Dịch vụ của hãng có điều khoản và giá riêng; bài chưa kiểm tra. Mã theo giấy phép BSD-3-Clause theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tailscale/tailscale/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tailscale/tailscale/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tailscale/tailscale",
+        "stars": 38547,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tailscale/tailscale/main/README.md",
+        "readmeSha256": "962187747e61973ef5743bfe64831ebf730ab6f79f5b2a9ee5ac1c00a1642a6d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 187,
+      "batch": 31,
+      "slug": "cloudflared",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "cloudflared: đưa dịch vụ trên máy bạn ra internet qua Cloudflare Tunnel mà không mở cổng",
+        "excerpt": "Hiểu Cloudflare Tunnel cho phép website chạy ở nhà hoặc máy riêng được truy cập từ internet mà không phải mở cổng tường lửa. Cần tài khoản Cloudflare.",
+        "content": "<p>cloudflared là client dòng lệnh của Cloudflare Tunnel. README nói đây là daemon đứng giữa mạng Cloudflare và nơi chạy dịch vụ của bạn (origin): Cloudflare nhận yêu cầu từ người dùng rồi gửi qua daemon tới dịch vụ mà bạn không phải đục lỗ trên tường lửa, nên origin có thể đóng tối đa. cloudflared cũng có thể dùng để truy cập các origin được bảo vệ qua Tunnel cho lưu lượng TCP như SSH hay RDP. Trước khi dùng, README yêu cầu thêm một website vào tài khoản Cloudflare và đổi nameserver (README nói do lý do lịch sử vẫn cần bước này).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì mở cửa nhà cho khách vào thẳng (mở cổng), bạn nhờ một lễ tân ở ngoài phố (Cloudflare): khách đến lễ tân, lễ tân gọi qua một đường dây kín (đường hầm) vào nhà bạn. Cửa nhà vẫn khóa; đường dây do nhà bạn chủ động gọi ra.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bạn chạy thử một trang web trên máy cá nhân và muốn cho đồng nghiệp xem qua một địa chỉ công khai mà không mở cổng router. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tự host dịch vụ tại nhà hoặc VPS muốn công khai một cách an toàn hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần tài khoản Cloudflare, tên miền chuyển nameserver về Cloudflare và hiểu DNS cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không muốn phụ thuộc Cloudflare hoặc không muốn đổi nameserver của tên miền, hãy xem lựa chọn khác. Cloudflare nhìn thấy lưu lượng đi qua; cân nhắc nếu dữ liệu nhạy cảm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>VPS</strong>: máy chủ ảo thuê theo tháng, bạn tự quản lý bên trong.</li><li><strong>SSH</strong>: cách đăng nhập từ xa vào máy chủ bằng dòng lệnh, có mã hóa.</li><li><strong>tunnel (đường hầm)</strong>: kết nối do máy bạn chủ động mở ra ngoài để nhận lưu lượng vào, thay vì mở cổng đón khách.</li><li><strong>origin</strong>: nơi chạy dịch vụ thật của bạn (máy chủ web).</li><li><strong>nameserver / DNS</strong>: hệ thống chuyển tên miền thành địa chỉ; README nói cần đổi nameserver sang Cloudflare.</li><li><strong>RDP</strong>: giao thức điều khiển màn hình từ xa của Windows.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần tài khoản Cloudflare với một website đã thêm và nameserver đổi sang Cloudflare. cloudflared tải dưới dạng bản nhị phân, ảnh Docker hoặc gói Debian, RPM, Homebrew. Dịch vụ Cloudflare có điều khoản và có thể có giá; bài chưa kiểm tra. Mã theo giấy phép Apache-2.0 theo GitHub. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'Before you get started'.</li><li>Đọc tài liệu Cloudflare Tunnel mà README dẫn tới.</li><li>Thử với một dịch vụ không chứa dữ liệu quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cho người khác xem một trang chạy trên máy nhà mà không mở cổng. Hãy đọc README của cloudflared (https://github.com/cloudflare/cloudflared) và giải thích bằng tiếng Việt: tunnel là gì, vì sao không cần mở cổng, mình cần chuẩn bị gì ở Cloudflare, và Cloudflare có thấy dữ liệu của mình không. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Dịch vụ phụ thuộc vào Cloudflare, và yêu cầu đổi nameserver về Cloudflare có thể ảnh hưởng cả tên miền. Lưu lượng đi qua hạ tầng của Cloudflare nên cần cân nhắc quyền riêng tư. README tập trung vào client; điều khoản dịch vụ ở nơi khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đưa dịch vụ ra internet, hãy đóng mọi cổng không cần, dùng mật khẩu mạnh và xác thực hai bước cho trang quản trị, cập nhật thường xuyên và sao lưu trước khi thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cloudflare</strong> có <strong>16.412 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0 cho client; dịch vụ Cloudflare có điều khoản riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cloudflare/cloudflared/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cloudflare/cloudflared\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 187. Chưa cài/chạy thử; không tạo validation. Snapshot sao 16412; repo_id 106867604; README SHA256 91c3fa30e5637ce4b79a469bfe3783b8bb91b9582b94cb731a07f03b72935669.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cloudflare/cloudflared",
+          "repo_id": "106867604",
+          "source_path": "",
+          "source_revision": "README-SHA256:91c3fa30e5637ce4b79a469bfe3783b8bb91b9582b94cb731a07f03b72935669",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cloudflare/cloudflared",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần tài khoản Cloudflare với một website đã thêm và nameserver đổi sang Cloudflare. cloudflared tải dưới dạng bản nhị phân, ảnh Docker hoặc gói Debian, RPM, Homebrew. Dịch vụ Cloudflare có điều khoản và có thể có giá; bài chưa kiểm tra. Mã theo giấy phép Apache-2.0 theo GitHub. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cloudflare/cloudflared/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cloudflare/cloudflared/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cloudflare/cloudflared",
+        "stars": 16412,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cloudflare/cloudflared/master/README.md",
+        "readmeSha256": "91c3fa30e5637ce4b79a469bfe3783b8bb91b9582b94cb731a07f03b72935669",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 188,
+      "batch": 31,
+      "slug": "traefik",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Traefik: reverse proxy tự tìm các dịch vụ chạy trong Docker và tạo đường dẫn cho chúng",
+        "excerpt": "Hiểu Traefik tự cập nhật đường dẫn khi bạn thêm bớt container, thay vì sửa tay từng đường. Hợp hệ thống nhiều dịch vụ nhỏ.",
+        "content": "<p>Traefik là reverse proxy và bộ cân bằng tải hiện đại cho vi dịch vụ. README mô tả vấn đề: khi bạn thêm, bớt, nâng cấp dịch vụ nhiều lần mỗi ngày, cấu hình đường dẫn thủ công rất mệt. Traefik đọc API của bộ điều phối hoặc sổ đăng ký dịch vụ (Docker, Swarm, Kubernetes, Consul, Etcd…) và tự tạo tuyến, bạn chỉ cần trỏ nó tới bộ điều phối; vẫn có thể cấu hình tuyến thủ công. README cảnh báo khi chuyển lên phiên bản lớn mới, đọc hướng dẫn di chuyển.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì người gác cổng phải cầm danh sách phòng và sửa tay mỗi lần có người dọn vào, Traefik giống người gác cổng tự nghe thông báo từ tòa nhà: có phòng mới là tự thêm bảng chỉ đường, phòng đóng cửa là tự gỡ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nếu bạn chạy nhiều ứng dụng nhỏ bằng Docker trên một máy chủ và muốn mỗi ứng dụng có một tên miền phụ riêng mà không sửa tay cấu hình, hãy tìm hiểu Traefik. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người chạy nhiều container trên một máy chủ; người học kiến trúc nhiều dịch vụ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Khái niệm bộ điều phối, nhãn container và tuyến cần thời gian; cấu hình sai có thể mở lộ dịch vụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có một hai ứng dụng, Caddy (cùng nhóm) với cấu hình ngắn có thể đủ. Nếu bạn dùng nền tảng quản lý như Coolify đã có proxy, chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>load balancer (cân bằng tải)</strong>: chia yêu cầu đến nhiều bản sao của dịch vụ để không bản nào quá tải.</li><li><strong>microservice (vi dịch vụ)</strong>: ứng dụng chia thành nhiều dịch vụ nhỏ chạy riêng.</li><li><strong>orchestrator (bộ điều phối)</strong>: hệ thống quản lý nhiều container như Docker Swarm hay Kubernetes.</li><li><strong>service discovery (tự tìm dịch vụ)</strong>: khả năng nhận biết dịch vụ nào đang chạy ở đâu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có các mục Quickstart, Web UI, Documentation; bài chưa đọc chi tiết nên chưa nêu yêu cầu và không chép lệnh. Miễn phí theo giấy phép MIT. Logo theo giấy phép Creative Commons riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview để hiểu vấn đề Traefik giải quyết.</li><li>Đọc hướng dẫn di chuyển nếu dùng phiên bản cũ.</li><li>Thử trên máy riêng với hai ứng dụng mẫu trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình chạy nhiều ứng dụng nhỏ bằng Docker. Hãy đọc README của Traefik (https://github.com/traefik/traefik) và giải thích bằng tiếng Việt: reverse proxy tự tìm dịch vụ nghĩa là gì, khác Caddy ở đâu, và rủi ro khi cấu hình sai. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Cấu hình tự động khiến việc 'dịch vụ nào bị công khai' kém hiển nhiên; sai nhãn có thể công khai nhầm. README cảnh báo thay đổi lớn giữa phiên bản; ví dụ cũ có thể không chạy.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi đưa dịch vụ ra internet, hãy đóng mọi cổng không cần, dùng mật khẩu mạnh và xác thực hai bước cho trang quản trị, cập nhật thường xuyên và sao lưu trước khi thay đổi lớn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>traefik</strong> có <strong>65.445 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT, logo theo Creative Commons 3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/traefik/traefik/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/traefik/traefik\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm đưa ứng dụng lên mạng, key 188. Chưa cài/chạy thử; không tạo validation. Snapshot sao 65445; repo_id 42408804; README SHA256 a0d231580233fd3096498e738578e222c2fb524e6aaa84723357f846ed440634.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/traefik/traefik",
+          "repo_id": "42408804",
+          "source_path": "",
+          "source_revision": "README-SHA256:a0d231580233fd3096498e738578e222c2fb524e6aaa84723357f846ed440634",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/traefik/traefik",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có các mục Quickstart, Web UI, Documentation; bài chưa đọc chi tiết nên chưa nêu yêu cầu và không chép lệnh. Miễn phí theo giấy phép MIT. Logo theo giấy phép Creative Commons riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/traefik/traefik/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/traefik/traefik/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "traefik/traefik",
+        "stars": 65445,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/traefik/traefik/master/README.md",
+        "readmeSha256": "a0d231580233fd3096498e738578e222c2fb524e6aaa84723357f846ed440634",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

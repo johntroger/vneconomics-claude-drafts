@@ -1,0 +1,36 @@
+{
+  "key": 183,
+  "repo": "docker/compose",
+  "repoId": "15045751",
+  "url": "https://github.com/docker/compose",
+  "stars": 38582,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T14:43:47Z",
+  "createdAt": "2013-12-09T11:40:58Z",
+  "defaultBranch": "main",
+  "description": "Define and run multi-container applications with Docker",
+  "homepage": "https://docs.docker.com/compose/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/docker/compose/main/README.md",
+    "sha256": "02d853bbccd7d847c65eaea8c07bb14135b3f7904a48abf5898de90d5c75cb8e",
+    "bytes": 3532,
+    "sectionsRead": [
+      "Mô tả Compose",
+      "Where to get Docker Compose",
+      "Quick Start (ý chính)",
+      "Legacy"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc đặc tả Compose.",
+    "Điều khoản Docker Desktop chưa kiểm tra.",
+    "Chưa thử chạy."
+  ],
+  "runtimeValidated": false
+}
