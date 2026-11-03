@@ -2995,5 +2995,111 @@
   "related": [
    "penpot"
   ]
+ },
+ {
+  "key": 269,
+  "slug": "streamlit",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding",
+  "repo": "streamlit/streamlit",
+  "stars": 46220,
+  "license": "Apache-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "gradio"
+  ]
+ },
+ {
+  "key": 270,
+  "slug": "gradio",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "Gradio: dựng giao diện web cho mô hình AI hay hàm Python trong vài dòng, lưu ý tùy chọn chia sẻ công khai",
+  "repo": "gradio-app/gradio",
+  "stars": 43973,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "chart-js",
+   "streamlit"
+  ]
+ },
+ {
+  "key": 271,
+  "slug": "chart-js",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "Chart.js: thư viện JavaScript vẽ biểu đồ đơn giản mà linh hoạt cho trang web",
+  "repo": "chartjs/Chart.js",
+  "stars": 67774,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-23",
+  "related": [
+   "echarts",
+   "gradio"
+  ]
+ },
+ {
+  "key": 272,
+  "slug": "echarts",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "Apache ECharts: thư viện biểu đồ mạnh, tương tác và tùy biến cao viết bằng JavaScript",
+  "repo": "apache/echarts",
+  "stars": 67669,
+  "license": "Apache-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-13",
+  "related": [
+   "chart-js",
+   "observable-plot"
+  ]
+ },
+ {
+  "key": 273,
+  "slug": "observable-plot",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "Observable Plot: thư viện JavaScript khám phá dữ liệu bảng bằng ít dòng, theo triết lý 'ngữ pháp đồ họa'",
+  "repo": "observablehq/plot",
+  "stars": 5417,
+  "license": "ISC",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "echarts",
+   "libretranslate"
+  ]
+ },
+ {
+  "key": 274,
+  "slug": "libretranslate",
+  "group": "2026-11-03-ung-dung-du-lieu-va-bieu-do",
+  "title": "LibreTranslate: API dịch máy mã nguồn mở tự host, không phụ thuộc Google hay Azure",
+  "repo": "LibreTranslate/LibreTranslate",
+  "stars": 17258,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-10-26",
+  "related": [
+   "observable-plot"
+  ]
  }
 ]

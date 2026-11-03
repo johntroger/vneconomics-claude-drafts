@@ -29,3 +29,10 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Đường dẫn README thô của 16 bài mới đều trả mã 200.
 - Mỗi bài mới đã được đối chiếu các ý chính với README bằng grep; không có cụm "đã chạy thử", "đã kiểm thử" hay lệnh cài đặt trong nội dung.
 - Hạn chế như trước: đây là kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa bài nào được cài hay chạy thử.
+
+## Bổ sung rà soát (nhóm 27–29, key 260–274)
+
+- Danh mục 174 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu đã có.
+- Đường dẫn README thô của 15 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
+- Đối chiếu các ý chính với README bằng grep; không có cụm "đã chạy thử", "đã kiểm thử" hay lệnh cài đặt trong nội dung. Các README có lệnh cài kiểu tải script rồi chạy (Ollama, llama.cpp) được bài cảnh báo thay vì chép lệnh.
+- Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.

@@ -1,0 +1,37 @@
+{
+  "key": 269,
+  "repo": "streamlit/streamlit",
+  "repoId": "204086862",
+  "url": "https://github.com/streamlit/streamlit",
+  "stars": 46220,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:32:28Z",
+  "createdAt": "2019-08-24T00:14:52Z",
+  "defaultBranch": "develop",
+  "description": "Streamlit — A faster way to build and share data apps.",
+  "homepage": "https://streamlit.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/streamlit/streamlit/develop/README.md",
+    "sha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e",
+    "bytes": 7008,
+    "sectionsRead": [
+      "What is Streamlit",
+      "Installation",
+      "Quickstart",
+      "Community Cloud",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa thử cài và chạy.",
+    "Điều khoản Community Cloud chưa kiểm tra.",
+    "Chưa so sánh với Gradio (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}

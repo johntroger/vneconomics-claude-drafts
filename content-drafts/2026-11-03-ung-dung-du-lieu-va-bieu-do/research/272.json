@@ -1,0 +1,37 @@
+{
+  "key": 272,
+  "repo": "apache/echarts",
+  "repoId": "9185792",
+  "url": "https://github.com/apache/echarts",
+  "stars": 67669,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-13T09:27:20Z",
+  "createdAt": "2013-04-03T03:18:59Z",
+  "defaultBranch": "master",
+  "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+  "homepage": "https://echarts.apache.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/apache/echarts/master/README.md",
+    "sha256": "8cc8864325843d975f082cba0fd4cf208093feffb03568f48f164725dab8ebf9",
+    "bytes": 4194,
+    "sectionsRead": [
+      "Get Apache ECharts",
+      "Docs",
+      "Build",
+      "Resources",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc Option Manual.",
+    "Chưa thử tạo biểu đồ.",
+    "Chưa kiểm tra hiệu năng với dữ liệu lớn."
+  ],
+  "runtimeValidated": false
+}

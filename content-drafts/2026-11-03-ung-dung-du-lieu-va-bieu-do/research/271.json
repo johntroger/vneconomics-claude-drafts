@@ -1,0 +1,35 @@
+{
+  "key": 271,
+  "repo": "chartjs/Chart.js",
+  "repoId": "8843683",
+  "url": "https://github.com/chartjs/Chart.js",
+  "stars": 67774,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-23T11:47:55Z",
+  "createdAt": "2013-03-17T23:56:36Z",
+  "defaultBranch": "master",
+  "description": "Simple HTML5 Charts using the <canvas> tag",
+  "homepage": "https://www.chartjs.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/chartjs/Chart.js/master/README.md",
+    "sha256": "30418232ad2cc5a51fa0938e12dc97e31cfd1fb3b0bc352132f281c0c10da348",
+    "bytes": 2605,
+    "sectionsRead": [
+      "Documentation",
+      "Contributing",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "README rất ngắn, chưa đọc tài liệu chi tiết.",
+    "Chưa kiểm tra hỗ trợ trình duyệt.",
+    "Chưa so sánh với ECharts hay Observable Plot (cùng nhóm)."
+  ],
+  "runtimeValidated": false
+}

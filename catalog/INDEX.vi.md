@@ -27,13 +27,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 25 — Giao diện, tìm kiếm và dữ liệu cho ứng dụng web](learning-paths/25-giao-dien-va-du-lieu-cho-web.vi.md) — Từ giao diện đến cơ sở dữ liệu và API; càng về cuối càng cần hiểu phân quyền và bảo mật.
 - [Lộ trình 26 — AI chạy trên máy cá nhân](learning-paths/26-ai-chay-tren-may-ca-nhan.vi.md) — Từ công cụ có giao diện đến động cơ bên dưới; luôn cân nhắc dữ liệu đi đâu và cách cài an toàn.
 - [Lộ trình 27 — Sơ đồ, thiết kế giao diện và nền tảng học tập](learning-paths/27-so-do-thiet-ke-va-hoc-tap.vi.md) — Từ phác thảo nhanh đến sơ đồ chuẩn và thiết kế sản phẩm; Moodle là hướng riêng cho giảng viên.
+- [Lộ trình 28 — Ứng dụng dữ liệu và biểu đồ](learning-paths/28-ung-dung-du-lieu-va-bieu-do.vi.md) — Từ ứng dụng Python nhanh đến thư viện biểu đồ JavaScript; luôn cân nhắc dữ liệu có được chia sẻ ra ngoài không.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (34 bài)
+### Bắt đầu (35 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -71,8 +72,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 264 | Mermaid: viết vài dòng chữ để tạo sơ đồ quy trình, tuần tự, Gantt và hơn 20 loại sơ đồ khác | [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid) | MIT | 90987 | so-do-thiet-ke-va-hoc-tap |
 | 265 | Excalidraw: bảng trắng vẽ tay trên web, hợp phác thảo sơ đồ và wireframe, có mã hóa đầu cuối khi cộng tác | [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | MIT | 135069 | so-do-thiet-ke-va-hoc-tap |
 | 266 | draw.io (diagrams.net): vẽ sơ đồ kỹ thuật chính xác, lưu ý README nói đây là bản thử và có điều khoản riêng cho biểu tượng | [jgraph/drawio](https://github.com/jgraph/drawio) | Apache-2.0 | 9147 | so-do-thiet-ke-va-hoc-tap |
+| 269 | Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Apache-2.0 | 46220 | ung-dung-du-lieu-va-bieu-do |
 
-### Cơ bản (83 bài)
+### Cơ bản (86 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -159,6 +161,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 260 | Ollama: chạy mô hình AI mở trên máy của bạn và gọi chúng như một dịch vụ cục bộ | [ollama/ollama](https://github.com/ollama/ollama) | MIT | 185733 | ai-chay-tren-may-ca-nhan |
 | 262 | AnythingLLM: trò chuyện với tài liệu của bạn bằng AI, có agent và chạy cục bộ theo mặc định, kèm thu thập số liệu ẩn danh | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | MIT | 67878 | ai-chay-tren-may-ca-nhan |
 | 267 | Penpot: nền tảng thiết kế giao diện mã nguồn mở thay thế Figma, tự host được và nối với mã bằng API và MCP | [penpot/penpot](https://github.com/penpot/penpot) | MPL-2.0 | 62003 | so-do-thiet-ke-va-hoc-tap |
+| 270 | Gradio: dựng giao diện web cho mô hình AI hay hàm Python trong vài dòng, lưu ý tùy chọn chia sẻ công khai | [gradio-app/gradio](https://github.com/gradio-app/gradio) | Apache-2.0 | 43973 | ung-dung-du-lieu-va-bieu-do |
+| 271 | Chart.js: thư viện JavaScript vẽ biểu đồ đơn giản mà linh hoạt cho trang web | [chartjs/Chart.js](https://github.com/chartjs/Chart.js) | MIT | 67774 | ung-dung-du-lieu-va-bieu-do |
+| 274 | LibreTranslate: API dịch máy mã nguồn mở tự host, không phụ thuộc Google hay Azure | [LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) | AGPL-3.0 | 17258 | ung-dung-du-lieu-va-bieu-do |
 
 ### Khá khó (cần nền kỹ thuật) (24 bài)
 
@@ -189,7 +194,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
 | 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
 
-### Nâng cao (27 bài)
+### Nâng cao (29 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -220,6 +225,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 261 | llama.cpp: động cơ chạy mô hình ngôn ngữ trên nhiều loại phần cứng, nền tảng của nhiều công cụ AI cục bộ | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | 133220 | ai-chay-tren-may-ca-nhan |
 | 263 | faster-whisper: chuyển giọng nói thành văn bản bằng Python, nhanh hơn Whisper gốc theo benchmark của tác giả | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | MIT | 26427 | ai-chay-tren-may-ca-nhan |
 | 268 | Moodle: nền tảng quản lý học tập mã nguồn mở của nhiều trường đại học, tự cài hoặc thuê host | [moodle/moodle](https://github.com/moodle/moodle) | GPL-3.0 | 7575 | so-do-thiet-ke-va-hoc-tap |
+| 272 | Apache ECharts: thư viện biểu đồ mạnh, tương tác và tùy biến cao viết bằng JavaScript | [apache/echarts](https://github.com/apache/echarts) | Apache-2.0 | 67669 | ung-dung-du-lieu-va-bieu-do |
+| 273 | Observable Plot: thư viện JavaScript khám phá dữ liệu bảng bằng ít dòng, theo triết lý 'ngữ pháp đồ họa' | [observablehq/plot](https://github.com/observablehq/plot) | ISC | 5417 | ung-dung-du-lieu-va-bieu-do |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

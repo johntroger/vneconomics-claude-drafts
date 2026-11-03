@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-du-lieu-bieu-do",
+  "batch": 47,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 269,
+      "batch": 47,
+      "slug": "streamlit",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding",
+        "excerpt": "Hiểu Streamlit cho phép viết bảng điều khiển, báo cáo hay ứng dụng chat bằng Python thuần, không cần học HTML. Có nền tảng Community Cloud để chia sẻ.",
+        "content": "<p>README nói Streamlit biến script Python thành ứng dụng web tương tác trong vài phút thay vì vài tuần: dựng bảng điều khiển, tạo báo cáo, ứng dụng chat. Điểm mạnh nêu trong README: đơn giản kiểu Python, tạo nguyên mẫu nhanh, sửa mã thấy kết quả ngay, mã nguồn mở và miễn phí. README có phần cài đặt và ví dụ rất nhỏ: một thanh trượt và phép bình phương, chạy bằng lệnh streamlit (bài không chép lệnh). Có thư viện thành phần mở rộng, thư viện ví dụ (gallery) và nền tảng Community Cloud để triển khai, quản lý và chia sẻ ứng dụng miễn phí theo README. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có đoạn Python xử lý dữ liệu nhưng chỉ chạy được trong terminal. Streamlit giống đặt cho nó cái mặt tiền cửa hàng: thêm vài dòng là có thanh trượt, nút bấm, biểu đồ trên trang web để người khác dùng thử.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên nhờ AI viết một bảng điều khiển nhỏ từ tệp điểm số để cả lớp xem. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người biết hoặc đang học Python; người làm việc với dữ liệu; người dùng AI để dựng công cụ nội bộ nhỏ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python và terminal cơ bản; ví dụ trong README rất ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần giao diện thương mại tinh chỉnh từng điểm ảnh, Streamlit không phải lựa chọn đầu. Nếu bạn chưa biết Python, hãy học cơ bản trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>script</strong>: tệp mã chạy từ trên xuống dưới.</li><li><strong>dashboard (bảng điều khiển)</strong>: trang hiển thị số liệu và biểu đồ.</li><li><strong>widget</strong>: phần tử tương tác như thanh trượt, nút bấm.</li><li><strong>Community Cloud</strong>: nền tảng của Streamlit để chia sẻ ứng dụng; README nêu miễn phí.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng pip (bài không chép lệnh) rồi chạy ứng dụng ví dụ để kiểm tra. Cần Python và terminal. Miễn phí theo giấy phép Apache-2.0; Community Cloud miễn phí theo README, điều khoản bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is Streamlit và Quickstart.</li><li>Cài trong môi trường ảo và chạy ví dụ hello.</li><li>Thử sửa một dòng và xem trang thay đổi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm bảng điều khiển bằng Python. Hãy đọc README của Streamlit (https://github.com/streamlit/streamlit) và giải thích bằng tiếng Việt: Streamlit làm gì, ví dụ quickstart chạy thế nào, và cần lưu ý gì khi chia sẻ ứng dụng ra ngoài. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không bàn tới hiệu năng với dữ liệu lớn hay bảo mật nhiều người dùng; bài không khẳng định. Chia sẻ qua Community Cloud đưa ứng dụng và dữ liệu lên nền tảng bên ngoài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập. Đừng đưa dữ liệu thật, khóa API vào ứng dụng chia sẻ công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>streamlit</strong> có <strong>46.220 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/streamlit/streamlit/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/streamlit/streamlit\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 269. Chưa cài/chạy thử; không tạo validation. Snapshot sao 46220; repo_id 204086862; README SHA256 45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/streamlit/streamlit",
+          "repo_id": "204086862",
+          "source_path": "",
+          "source_revision": "README-SHA256:45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/streamlit/streamlit",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng pip (bài không chép lệnh) rồi chạy ứng dụng ví dụ để kiểm tra. Cần Python và terminal. Miễn phí theo giấy phép Apache-2.0; Community Cloud miễn phí theo README, điều khoản bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/streamlit/streamlit/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/streamlit/streamlit/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "streamlit/streamlit",
+        "stars": 46220,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/streamlit/streamlit/develop/README.md",
+        "readmeSha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 270,
+      "batch": 47,
+      "slug": "gradio",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Gradio: dựng giao diện web cho mô hình AI hay hàm Python trong vài dòng, lưu ý tùy chọn chia sẻ công khai",
+        "excerpt": "Hiểu Gradio là gói Python tạo demo web cho mô hình máy học, API hoặc bất kỳ hàm Python nào. Tùy chọn share tạo liên kết công khai nên cần cẩn thận.",
+        "content": "<p>README tả Gradio là gói Python mã nguồn mở để nhanh chóng xây demo hoặc ứng dụng web cho mô hình máy học, API hay bất kỳ hàm Python nào, rồi chia sẻ liên kết chỉ trong vài giây nhờ tính năng chia sẻ tích hợp. Yêu cầu: Python 3.10 trở lên; README khuyên cài trong môi trường ảo. Ví dụ đầu tiên: bọc một hàm chào hỏi bằng lớp Interface với đầu vào văn bản và thanh trượt; chạy bằng Python rồi mở ở địa chỉ localhost cổng 7860; có chế độ hot reload. README giải thích tham số fn, inputs, outputs. Mục chia sẻ nói đặt share=True trong launch() sẽ tạo một URL truy cập công khai cho demo của bạn. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn có một mô hình AI hay hàm Python và muốn bạn bè thử mà không phải học làm web. Gradio giống bọc cái hàm vào một hộp có ô nhập và nút bấm; chạy lên là có trang web. Nếu bật chia sẻ, bạn đưa chìa khóa cửa cho bất kỳ ai có liên kết.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bọc một hàm xử lý văn bản hay mô hình nhỏ thành trang demo để đồng nghiệp thử. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người học AI và Python; người muốn demo mô hình nhanh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python 3.10+ và hiểu hàm, đầu vào, đầu ra. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dữ liệu nhạy cảm, đừng bật share. Nếu muốn trang web nhiều trang với nhiều logic, cân nhắc khung web đầy đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>demo</strong>: bản trình diễn nhỏ của một mô hình hay chức năng.</li><li><strong>function (hàm)</strong>: đoạn mã nhận đầu vào và trả đầu ra.</li><li><strong>virtual environment (môi trường ảo)</strong>: vùng cài đặt Python tách riêng cho từng dự án; README khuyên dùng.</li><li><strong>hot reload</strong>: tự nạp lại khi sửa mã; README mô tả.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần Python 3.10 trở lên, cài bằng pip (bài không chép lệnh), nên dùng môi trường ảo; chạy tệp Python để mở demo trên máy ở cổng 7860. Miễn phí theo giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Building Your First Demo.</li><li>Chạy ví dụ trong môi trường ảo.</li><li>Chỉ cân nhắc chia sẻ công khai sau khi hiểu ai truy cập được.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm demo cho hàm Python. Hãy đọc README của Gradio (https://github.com/gradio-app/gradio) và giải thích bằng tiếng Việt: lớp Interface hoạt động ra sao, tùy chọn share tạo gì, và rủi ro khi chia sẻ công khai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tùy chọn share tạo liên kết công khai: ai có liên kết có thể dùng demo và gọi hàm của bạn trên máy bạn. Bài chưa kiểm chứng thời hạn hay bảo mật của liên kết. README cũng nhắc nhiều tính năng bài chưa đọc hết.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập. Không bật chia sẻ khi hàm có thể đọc tệp, gọi dịch vụ trả phí hay chứa khóa bí mật.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gradio-app</strong> có <strong>43.973 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gradio-app/gradio/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gradio-app/gradio\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 270. Chưa cài/chạy thử; không tạo validation. Snapshot sao 43973; repo_id 162405963; README SHA256 1c10a6a19ae8736e3ce0a1d7e3e64c3208240c3c27a1d50ec90a2cc00112fa38.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gradio-app/gradio",
+          "repo_id": "162405963",
+          "source_path": "",
+          "source_revision": "README-SHA256:1c10a6a19ae8736e3ce0a1d7e3e64c3208240c3c27a1d50ec90a2cc00112fa38",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gradio-app/gradio",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần Python 3.10 trở lên, cài bằng pip (bài không chép lệnh), nên dùng môi trường ảo; chạy tệp Python để mở demo trên máy ở cổng 7860. Miễn phí theo giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gradio-app/gradio/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gradio-app/gradio/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gradio-app/gradio",
+        "stars": 43973,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gradio-app/gradio/main/README.md",
+        "readmeSha256": "1c10a6a19ae8736e3ce0a1d7e3e64c3208240c3c27a1d50ec90a2cc00112fa38",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 271,
+      "batch": 47,
+      "slug": "chart-js",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Chart.js: thư viện JavaScript vẽ biểu đồ đơn giản mà linh hoạt cho trang web",
+        "excerpt": "Hiểu Chart.js là thư viện biểu đồ JavaScript cho nhà thiết kế và lập trình viên, có tài liệu và nhiều ví dụ mẫu. README rất ngắn, thông tin nằm ở tài liệu.",
+        "content": "<p>README mô tả Chart.js là thư viện vẽ biểu đồ JavaScript 'đơn giản nhưng linh hoạt' cho nhà thiết kế và lập trình viên. README rất ngắn: chủ yếu liệt kê liên kết tài liệu (phiên bản 4): giới thiệu, bắt đầu, cấu trúc dữ liệu, cấu hình, các loại biểu đồ, trục, hướng dẫn cho lập trình viên, tiện ích mở rộng phổ biến và trang mẫu. README nhắc muốn xem tài liệu bản cũ thì ghi rõ phiên bản trong địa chỉ. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn trang web có biểu đồ cột, đường, tròn thì không cần tự vẽ từng nét. Chart.js giống bộ khuôn biểu đồ: bạn đưa số liệu và chọn kiểu, nó vẽ ra sạch đẹp và có thể rê chuột xem số.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI chèn biểu đồ doanh thu vào trang báo cáo bằng Chart.js. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website cần biểu đồ cơ bản; người học JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết HTML và JavaScript căn bản; README không có ví dụ mã nên cần đọc tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần biểu đồ rất phức tạp hay bản đồ, ECharts hoặc thư viện khác có thể hợp hơn. Nếu bạn dùng Python, Streamlit có biểu đồ sẵn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>chart (biểu đồ)</strong>: hình thể hiện số liệu như cột, đường, tròn.</li><li><strong>dataset (tập dữ liệu)</strong>: dãy số liệu đưa vào biểu đồ.</li><li><strong>axis (trục)</strong>: trục ngang, trục dọc của biểu đồ; tài liệu có mục Axes.</li><li><strong>plugin / extension</strong>: phần mở rộng thêm tính năng; README liên kết danh sách phổ biến.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu Getting Started cho phiên bản 4; bài chưa đọc nên không nêu lệnh hay thẻ nhúng. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem trang mẫu để chọn kiểu biểu đồ.</li><li>Đọc Getting Started.</li><li>Thử biểu đồ đường với số liệu nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm biểu đồ vào trang web. Hãy đọc README và trang Getting Started của Chart.js (https://github.com/chartjs/Chart.js) rồi giải thích bằng tiếng Việt: các loại biểu đồ cơ bản, cách đưa dữ liệu vào, và khi nào nên chọn thư viện khác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn, không có ví dụ mã hay mô tả tính năng nên bài không khẳng định hiệu năng hay độ hỗ trợ trình duyệt. README nhắc tài liệu bản cũ khác bản 4. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập. Không nhúng dữ liệu nhạy cảm trực tiếp vào trang công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>chartjs</strong> có <strong>67.774 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-23. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/chartjs/Chart.js/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/chartjs/Chart.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 271. Chưa cài/chạy thử; không tạo validation. Snapshot sao 67774; repo_id 8843683; README SHA256 30418232ad2cc5a51fa0938e12dc97e31cfd1fb3b0bc352132f281c0c10da348.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/chartjs/Chart.js",
+          "repo_id": "8843683",
+          "source_path": "",
+          "source_revision": "README-SHA256:30418232ad2cc5a51fa0938e12dc97e31cfd1fb3b0bc352132f281c0c10da348",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chartjs/Chart.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu Getting Started cho phiên bản 4; bài chưa đọc nên không nêu lệnh hay thẻ nhúng. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/chartjs/Chart.js/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/chartjs/Chart.js/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "chartjs/Chart.js",
+        "stars": 67774,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/chartjs/Chart.js/master/README.md",
+        "readmeSha256": "30418232ad2cc5a51fa0938e12dc97e31cfd1fb3b0bc352132f281c0c10da348",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 272,
+      "batch": 47,
+      "slug": "echarts",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Apache ECharts: thư viện biểu đồ mạnh, tương tác và tùy biến cao viết bằng JavaScript",
+        "excerpt": "Hiểu Apache ECharts là thư viện biểu đồ và trực quan hóa miễn phí, thuộc Apache, có tài liệu tiếng Trung và tiếng Anh và nhiều ví dụ. Có gói mở rộng 3D.",
+        "content": "<p>README mô tả Apache ECharts là thư viện biểu đồ và trực quan hóa miễn phí, mạnh, giúp thêm biểu đồ trực quan, tương tác và tùy biến cao vào sản phẩm thương mại, viết bằng JavaScript thuần (theo README). README cho biết ba cách lấy ECharts: tải từ trang chính thức, qua npm, hoặc qua CDN jsDelivr (bài không chép lệnh). Tài liệu gồm Get Started, API, Option Manual và Examples; có trang chủ tiếng Trung và tiếng Anh. Phần Build hướng dẫn biên dịch từ mã nguồn cần Node.js. README liệt kê tài nguyên: Awesome ECharts và các gói mở rộng như ECharts GL cho đồ họa 3D và WebGL. Giấy phép Apache V2.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chart.js là bộ khuôn biểu đồ gọn nhẹ; ECharts giống xưởng biểu đồ lớn hơn: nhiều kiểu, nhiều tùy chỉnh, nhiều ví dụ; đổi lại phải học nhiều hơn. Nó thuộc quỹ Apache và có tài liệu hai ngôn ngữ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng bảng điều khiển dữ liệu với nhiều loại biểu đồ tương tác trên trang web. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm bảng điều khiển dữ liệu web; người cần nhiều loại biểu đồ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cấu hình bằng option rất nhiều, cần đọc Option Manual; cần biết JavaScript. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần biểu đồ cột đơn giản, Chart.js nhẹ hơn. Nếu bạn dùng Python và chỉ cần xem nhanh, Streamlit đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>option</strong>: đối tượng cấu hình mô tả toàn bộ biểu đồ; README có Option Manual.</li><li><strong>CDN</strong>: mạng phân phối tệp thư viện qua internet; README nêu jsDelivr.</li><li><strong>npm</strong>: kho gói JavaScript; README nêu có thể cài từ đây.</li><li><strong>WebGL / 3D</strong>: đồ họa 3D trên trình duyệt; README nêu qua gói ECharts GL.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải từ trang chính thức, cài qua npm hoặc nhúng từ CDN jsDelivr (bài không chép lệnh); build từ mã nguồn cần Node.js. Miễn phí theo giấy phép Apache V2.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem trang Examples để chọn kiểu biểu đồ.</li><li>Đọc Get Started.</li><li>Thử một biểu đồ cột đơn giản trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần biểu đồ tương tác cho trang web. Hãy đọc README của ECharts (https://github.com/apache/echarts) và giải thích bằng tiếng Việt: ba cách lấy thư viện, option là gì, và khác Chart.js ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tính năng và hiệu năng chỉ nêu ở mức mô tả của README, bài không kiểm chứng. Tài liệu chính ở trang web, README ngắn. Nhúng từ CDN phụ thuộc dịch vụ bên ngoài.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>apache</strong> có <strong>67.669 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-13. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License V2. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/apache/echarts/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/apache/echarts\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 272. Chưa cài/chạy thử; không tạo validation. Snapshot sao 67669; repo_id 9185792; README SHA256 8cc8864325843d975f082cba0fd4cf208093feffb03568f48f164725dab8ebf9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/apache/echarts",
+          "repo_id": "9185792",
+          "source_path": "",
+          "source_revision": "README-SHA256:8cc8864325843d975f082cba0fd4cf208093feffb03568f48f164725dab8ebf9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/echarts",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải từ trang chính thức, cài qua npm hoặc nhúng từ CDN jsDelivr (bài không chép lệnh); build từ mã nguồn cần Node.js. Miễn phí theo giấy phép Apache V2.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/apache/echarts/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/apache/echarts/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "apache/echarts",
+        "stars": 67669,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/apache/echarts/master/README.md",
+        "readmeSha256": "8cc8864325843d975f082cba0fd4cf208093feffb03568f48f164725dab8ebf9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 273,
+      "batch": 47,
+      "slug": "observable-plot",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Observable Plot: thư viện JavaScript khám phá dữ liệu bảng bằng ít dòng, theo triết lý 'ngữ pháp đồ họa'",
+        "excerpt": "Hiểu Observable Plot là thư viện JavaScript để trực quan hóa dữ liệu dạng bảng, tập trung đẩy nhanh phân tích khám phá. README rất ngắn, thông tin ở tài liệu.",
+        "content": "<p>README mô tả Observable Plot là thư viện JavaScript miễn phí, mã nguồn mở để trực quan hóa dữ liệu dạng bảng, tập trung vào việc đẩy nhanh phân tích dữ liệu khám phá; có API ngắn gọn, dễ nhớ nhưng giàu biểu đạt, với thang đo và các lớp 'marks' theo phong cách ngữ pháp đồ họa. README rất ngắn: dẫn tới tài liệu, bộ ví dụ (plot gallery), ghi chú phát hành, hướng dẫn cộng đồng và đóng góp. Giấy phép ISC.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chart.js và ECharts là bộ khuôn biểu đồ có sẵn. Plot giống bộ lego để ghép biểu đồ từ các mảnh nhỏ (điểm, đường, cột) theo cách nhìn dữ liệu: bạn nói 'cột X ứng với Y', nó vẽ ra, hợp lúc muốn khám phá dữ liệu nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khám phá một bảng số liệu bằng vài biểu đồ nhanh trong sổ tay hoặc trang web. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người phân tích dữ liệu quen JavaScript; người muốn khám phá dữ liệu bằng mã gọn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Cần JavaScript và hiểu khái niệm dữ liệu dạng bảng, thang đo; README không có ví dụ mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần biểu đồ dựng sẵn kiểu mẫu để dán ngay, Chart.js dễ hơn. Nếu bạn dùng Python cho phân tích, Altair hoặc Plotly Dash (bài khác) quen hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>tabular data (dữ liệu dạng bảng)</strong>: dữ liệu có hàng và cột.</li><li><strong>grammar of graphics (ngữ pháp đồ họa)</strong>: cách mô tả biểu đồ bằng các thành phần ghép được; README nêu Plot theo phong cách này.</li><li><strong>scale (thang đo)</strong>: cách quy đổi giá trị dữ liệu sang vị trí hay màu sắc.</li><li><strong>marks</strong>: các lớp hình vẽ như điểm, đường, cột; README nhắc layered marks.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu tại observablehq.com/plot; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí, mã nguồn mở theo giấy phép ISC.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem plot gallery để hiểu các kiểu biểu đồ.</li><li>Đọc tài liệu giới thiệu.</li><li>Thử một biểu đồ điểm với bảng nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn khám phá dữ liệu bảng bằng JavaScript. Hãy đọc README và tài liệu của Observable Plot (https://github.com/observablehq/plot) rồi giải thích bằng tiếng Việt: 'marks' và 'scales' là gì, khác Chart.js ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn nên bài không mô tả tính năng chi tiết, hiệu năng hay hỗ trợ trình duyệt. Ví dụ và tài liệu nằm ở trang ngoài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>observablehq</strong> có <strong>5.417 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện ISC. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/observablehq/plot/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/observablehq/plot\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 273. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5417; repo_id 308464842; README SHA256 4654799ebb8ad20cc87e2bf1fb894fbc35073a02e1f1f8f15d3bf3ff3a674dac.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/observablehq/plot",
+          "repo_id": "308464842",
+          "source_path": "",
+          "source_revision": "README-SHA256:4654799ebb8ad20cc87e2bf1fb894fbc35073a02e1f1f8f15d3bf3ff3a674dac",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "ISC",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/observablehq/plot",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu tại observablehq.com/plot; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí, mã nguồn mở theo giấy phép ISC.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/observablehq/plot/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/observablehq/plot/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "observablehq/plot",
+        "stars": 5417,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/observablehq/plot/main/README.md",
+        "readmeSha256": "4654799ebb8ad20cc87e2bf1fb894fbc35073a02e1f1f8f15d3bf3ff3a674dac",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 274,
+      "batch": 47,
+      "slug": "libretranslate",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LibreTranslate: API dịch máy mã nguồn mở tự host, không phụ thuộc Google hay Azure",
+        "excerpt": "Hiểu LibreTranslate là dịch vụ dịch máy chạy trên máy chủ của bạn, dùng thư viện Argos Translate. README ngắn; chất lượng dịch tiếng Việt chưa được kiểm tra.",
+        "content": "<p>README mô tả LibreTranslate là API dịch máy mã nguồn mở, miễn phí, hoàn toàn tự host; khác các API khác, nó không dựa vào phần mềm độc quyền như Google hay Azure mà dùng thư viện mã nguồn mở Argos Translate làm công cụ dịch. README rất ngắn: có bản thử trực tuyến, tài liệu API, diễn đàn cộng đồng, các liên kết Quickstart, hướng dẫn dùng API và tài nguyên cộng đồng, ghi công Argos Translate, hướng dẫn nhãn hiệu. Giấy phép AGPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dịch văn bản bằng dịch vụ lớn là gửi nội dung ra ngoài. LibreTranslate giống tự nuôi một phiên dịch viên trong nhà: bạn cài trên máy chủ riêng và ứng dụng khác gọi nó qua API để dịch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhóm cần dịch nội bộ tài liệu mà không gửi cho dịch vụ bên thứ ba. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự host dịch máy; lập trình viên cần API dịch.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng thử trực tuyến thì dễ; tự host cần máy chủ và tải mô hình ngôn ngữ. README chỉ dẫn sang tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần chất lượng dịch cao nhất cho tiếng Việt, hãy tự kiểm tra thực tế; bài chưa đánh giá. Nếu chỉ dịch một đoạn ngắn, công cụ có sẵn tiện hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>machine translation (dịch máy)</strong>: phần mềm tự dịch văn bản giữa các ngôn ngữ.</li><li><strong>Argos Translate</strong>: thư viện dịch mã nguồn mở mà README nói là động cơ của LibreTranslate.</li><li><strong>AGPL-3.0</strong>: giấy phép có điều khoản khi cung cấp dịch vụ cho người khác qua mạng.</li><li><strong>API</strong>: cách ứng dụng khác gọi dịch vụ dịch.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới Quickstart tại docs.libretranslate.com; bài chưa đọc nên không nêu lệnh. Có bản thử trực tuyến tại libretranslate.com (điều khoản và giới hạn bài chưa kiểm tra). Miễn phí tự host theo giấy phép AGPL-3.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản trực tuyến với đoạn văn không nhạy cảm.</li><li>Đọc Quickstart và tài liệu API.</li><li>Tự kiểm tra chất lượng dịch tiếng Việt với văn bản của bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn có dịch vụ dịch máy tự host. Hãy đọc README của LibreTranslate (https://github.com/LibreTranslate/LibreTranslate) và giải thích bằng tiếng Việt: nó khác Google Translate ở đâu, tự host cần gì, và vì sao cần kiểm tra chất lượng cho tiếng Việt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu danh sách ngôn ngữ hay chất lượng dịch, bài không khẳng định hỗ trợ tiếng Việt hay độ chính xác. AGPL-3.0 có điều khoản khi cung cấp dịch vụ cho người khác. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài từ nguồn chính thức; chưa chia sẻ ứng dụng hay dữ liệu thật ra internet khi chưa hiểu ai có thể truy cập. Đừng dịch tài liệu nhạy cảm bằng bản trực tuyến công cộng khi chưa hiểu dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>LibreTranslate</strong> có <strong>17.258 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-26. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi GNU Affero General Public License v3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/LibreTranslate/LibreTranslate/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/LibreTranslate/LibreTranslate\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 274. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17258; repo_id 322921248; README SHA256 d433462c87a95a56f9cc416fddca91d61c9ca594dfe389e6b7d0766a02b63863.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/LibreTranslate/LibreTranslate",
+          "repo_id": "322921248",
+          "source_path": "",
+          "source_revision": "README-SHA256:d433462c87a95a56f9cc416fddca91d61c9ca594dfe389e6b7d0766a02b63863",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/LibreTranslate/LibreTranslate",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới Quickstart tại docs.libretranslate.com; bài chưa đọc nên không nêu lệnh. Có bản thử trực tuyến tại libretranslate.com (điều khoản và giới hạn bài chưa kiểm tra). Miễn phí tự host theo giấy phép AGPL-3.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/LibreTranslate/LibreTranslate/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/LibreTranslate/LibreTranslate/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "LibreTranslate/LibreTranslate",
+        "stars": 17258,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/LibreTranslate/LibreTranslate/main/README.md",
+        "readmeSha256": "d433462c87a95a56f9cc416fddca91d61c9ca594dfe389e6b7d0766a02b63863",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}
