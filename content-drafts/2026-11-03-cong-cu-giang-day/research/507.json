@@ -1,0 +1,42 @@
+{
+  "key": 507,
+  "repo": "jupyter/nbgrader",
+  "repoId": "23984796",
+  "url": "https://github.com/jupyter/nbgrader",
+  "stars": 1370,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T10:38:59Z",
+  "createdAt": "2014-09-13T03:27:36Z",
+  "defaultBranch": "main",
+  "description": "A system for assigning and grading notebooks",
+  "homepage": "https://nbgrader.readthedocs.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jupyter/nbgrader/main/README.md",
+    "sha256": "2b1751b7f2bd87ecd75b369dd395195058d3a96a5f37ef2ae28c85a07b5e98af",
+    "bytes": 2821,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Highlights of nbgrader",
+      "Installation",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Cách cô lập khi chấm mã chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

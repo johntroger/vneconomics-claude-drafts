@@ -1,0 +1,44 @@
+{
+  "key": 505,
+  "repo": "ManimCommunity/manim",
+  "repoId": "265122478",
+  "url": "https://github.com/ManimCommunity/manim",
+  "stars": 42192,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T02:47:31Z",
+  "createdAt": "2020-05-19T02:37:13Z",
+  "defaultBranch": "main",
+  "description": "A community-maintained Python framework for creating mathematical animations. ",
+  "homepage": "https://www.manim.community",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ManimCommunity/manim/main/README.md",
+    "sha256": "41cac8aeb33a726c1b0a70d10233ee06d9cd73c6df0bace8145637d75c5fc283",
+    "bytes": 8378,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Usage",
+      "Docker",
+      "Contributing",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.manim.community.",
+    "Chưa thử.",
+    "Chưa so sánh với bản 3b1b bằng thực tế."
+  ],
+  "runtimeValidated": false
+}

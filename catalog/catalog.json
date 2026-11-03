@@ -7675,5 +7675,99 @@
    "dolibarr",
    "frappe-crm"
   ]
+ },
+ {
+  "key": 505,
+  "slug": "manim-ce",
+  "group": "2026-11-03-cong-cu-giang-day",
+  "title": "Manim Community Edition: engine tạo hoạt ảnh bằng mã Python cho video giải thích toán học, bản do cộng đồng duy trì tách ra từ kho của 3Blue1Brown",
+  "repo": "ManimCommunity/manim",
+  "stars": 42192,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "manimgl",
+   "nbgrader"
+  ]
+ },
+ {
+  "key": 506,
+  "slug": "manimgl",
+  "group": "2026-11-03-cong-cu-giang-day",
+  "title": "ManimGL (3b1b/manim): bản Manim do tác giả 3Blue1Brown duy trì, cài bằng gói manimgl; README cảnh báo hướng dẫn cài chỉ dành cho bản này",
+  "repo": "3b1b/manim",
+  "stars": 96055,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-09-09",
+  "related": [
+   "manim-ce"
+  ]
+ },
+ {
+  "key": 507,
+  "slug": "nbgrader",
+  "group": "2026-11-03-cong-cu-giang-day",
+  "title": "nbgrader: hệ thống giao và chấm bài bằng Jupyter notebook, có thanh công cụ cho giảng viên, formgrader và danh sách bài cho sinh viên",
+  "repo": "jupyter/nbgrader",
+  "stars": 1370,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-10-28",
+  "related": [
+   "kolibri",
+   "manim-ce"
+  ]
+ },
+ {
+  "key": 508,
+  "slug": "kolibri",
+  "group": "2026-11-03-cong-cu-giang-day",
+  "title": "Kolibri: nền tảng học tập ưu tiên offline của Learning Equality; README cho biết kho này dành cho nhà phát triển, người dùng xem Hướng dẫn sử dụng",
+  "repo": "learningequality/kolibri",
+  "stars": 1167,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "nbgrader"
+  ]
  }
 ]
