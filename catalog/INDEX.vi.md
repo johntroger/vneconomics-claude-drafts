@@ -75,13 +75,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 73 — MCP và công cụ nối AI với thế giới ngoài](learning-paths/73-mcp-cong-cu-agent.vi.md) — Từ giao thức MCP, khung dựng máy chủ, máy chủ GitHub, điều khiển trình duyệt đến chuyển tài liệu, quy trình có cấu trúc và đóng gói kho mã cho AI; cấp quyền tối thiểu, giữ mã truy cập an toàn, dùng tài khoản thử, tắt thống kê khi cần và đừng gửi dữ liệu nhạy cảm cho AI.
 - [Lộ trình 74 — Agent và nền tảng dựng app bằng AI](learning-paths/74-agent-dung-app.vi.md) — Từ ứng dụng mẫu dựng app bằng trò chuyện, coding agent trong trình soạn mã, hệ nhiều agent, agent sửa lỗi nghiên cứu đến cổng mô hình và agent gửi pull request; chú ý khóa API và chi phí, sandbox, quyền GitHub, tình trạng bảo trì và cảnh báo của từng README.
 - [Lộ trình 75 — Ứng dụng di động](learning-paths/75-ung-dung-di-dong.vi.md) — Từ quản lý trạng thái Flutter, giao diện và kiểu dáng React Native, danh sách và hoạt ảnh đến chia sẻ giao diện bằng Kotlin và ứng dụng Android mẫu; chú ý tương thích với kiến trúc mới của React Native, phiên bản Expo, tình trạng Beta và các tuyên bố hiệu năng của tác giả.
+- [Lộ trình 76 — Khoa học dữ liệu và học máy](learning-paths/76-khoa-hoc-du-lieu.vi.md) — Từ vẽ biểu đồ, thống kê và tính toán khoa học đến học máy, tăng cường độ dốc, học sâu, xử lý ngôn ngữ và theo dõi thí nghiệm AI; chú ý giả định thống kê, tuyên bố hiệu năng của tác giả, điều khoản giấy phép riêng của tài liệu và kho ngữ liệu NLTK, và tập lệnh tải từ mạng trong README MLflow.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (44 bài)
+### Bắt đầu (45 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -129,8 +130,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
+| 573 | seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ | [mwaskom/seaborn](https://github.com/mwaskom/seaborn) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 14099 | khoa-hoc-du-lieu |
 
-### Cơ bản (195 bài)
+### Cơ bản (198 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -329,6 +331,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 557 | Kilo Code: coding agent mã nguồn mở chạy trong VS Code, JetBrains và CLI, chọn trong hơn 500 mô hình; README có lệnh cài tải từ mạng và dịch vụ trả phí | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 27844 | agent-dung-app |
 | 565 | NativeWind: thư viện kiểu dáng đưa Tailwind CSS vào React Native, tính kiểu lúc build và dùng runtime nhỏ, không phải thư viện thành phần | [nativewind/nativewind](https://github.com/nativewind/nativewind) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 8117 | ung-dung-di-dong |
 | 569 | FlashList: danh sách nhanh cho React Native thay FlatList, tái chế view để không còn ô trắng; v2 chỉ chạy kiến trúc mới của React Native và không cần ước lượng kích thước | [Shopify/flash-list](https://github.com/Shopify/flash-list) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7245 | ung-dung-di-dong |
+| 570 | scikit-learn: mô-đun Python cho học máy xây trên SciPy, giấy phép BSD 3 điều khoản, dự án cộng đồng bắt đầu từ năm 2007 | [scikit-learn/scikit-learn](https://github.com/scikit-learn/scikit-learn) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 67987 | khoa-hoc-du-lieu |
+| 571 | SciPy: thư viện phần mềm mã nguồn mở cho toán, khoa học và kỹ thuật, có mô-đun thống kê, tối ưu hóa, tích phân, đại số tuyến tính, xử lý tín hiệu | [scipy/scipy](https://github.com/scipy/scipy) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 15179 | khoa-hoc-du-lieu |
+| 576 | NLTK: bộ công cụ ngôn ngữ tự nhiên cho Python, gồm mô-đun mã nguồn mở, bộ dữ liệu và bài hướng dẫn cho nghiên cứu xử lý ngôn ngữ; mã Apache 2.0 nhưng tài liệu và kho ngữ liệu có điều khoản riêng | [nltk/nltk](https://github.com/nltk/nltk) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 14766 | khoa-hoc-du-lieu |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -372,7 +377,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (193 bài)
+### Nâng cao (197 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -569,6 +574,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 566 | Compose Multiplatform: khung khai báo của JetBrains để chia sẻ mã giao diện bằng Kotlin giữa iOS, Android, máy tính để bàn và web (beta), xây trên Jetpack Compose | [JetBrains/compose-multiplatform](https://github.com/JetBrains/compose-multiplatform) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 19468 | ung-dung-di-dong |
 | 567 | Now in Android: ứng dụng Android mẫu của Google viết bằng Kotlin và Jetpack Compose, làm tài liệu tham khảo về kiến trúc, mô-đun hóa, kiểm thử và hiệu năng; README ghi đang là công việc dang dở | [android/nowinandroid](https://github.com/android/nowinandroid) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 22001 | ung-dung-di-dong |
 | 568 | Tamagui: bộ thư viện kiểu dáng và giao diện chia sẻ mã giữa React và React Native, có trình biên dịch tối ưu biến thành phần kiểu thành div và CSS nguyên tử trên web hoặc View trên di động | [tamagui/tamagui](https://github.com/tamagui/tamagui) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 14296 | ung-dung-di-dong |
+| 572 | statsmodels: gói Python bổ sung cho SciPy trong thống kê, ước lượng và suy luận cho mô hình thống kê, từ hồi quy tuyến tính, chuỗi thời gian đến phân tích sống còn | [statsmodels/statsmodels](https://github.com/statsmodels/statsmodels) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 11734 | khoa-hoc-du-lieu |
+| 574 | XGBoost: thư viện tăng cường độ dốc phân tán, tuyên bố hiệu quả, linh hoạt và di động, cài đặt thuật toán trên khung Gradient Boosting, cùng mã chạy trên nhiều môi trường phân tán | [dmlc/xgboost](https://github.com/dmlc/xgboost) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 28939 | khoa-hoc-du-lieu |
+| 575 | Keras 3: khung học sâu đa backend hỗ trợ JAX, TensorFlow, PyTorch và OpenVINO (chỉ suy luận), cho thị giác máy tính, xử lý ngôn ngữ, âm thanh, chuỗi thời gian và hệ gợi ý | [keras-team/keras](https://github.com/keras-team/keras) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 64413 | khoa-hoc-du-lieu |
+| 577 | MLflow: nền tảng kỹ thuật AI mã nguồn mở cho tác tử, mô hình ngôn ngữ lớn và mô hình học máy, gồm theo dõi, đánh giá, quản lý prompt và cổng AI; bản chạy vận hành cần tự cân nhắc dữ liệu và chi phí | [mlflow/mlflow](https://github.com/mlflow/mlflow) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 28641 | khoa-hoc-du-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

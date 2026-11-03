@@ -1,0 +1,40 @@
+{
+  "key": 571,
+  "repo": "scipy/scipy",
+  "repoId": "1460385",
+  "url": "https://github.com/scipy/scipy",
+  "stars": 15179,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T11:28:11Z",
+  "createdAt": "2011-03-09T18:52:03Z",
+  "defaultBranch": "main",
+  "description": "SciPy library main repository",
+  "homepage": "https://scipy.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/scipy/scipy/main/README.rst",
+    "sha256": "6a4d55e53007e0d509dc30f5a8d460c280f0f5bcf2567c910948e7eb23047b10",
+    "bytes": 3913,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Call for Contributions"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.scipy.org.",
+    "Chưa đọc chính sách AI của dự án.",
+    "Chưa thử."
+  ],
+  "runtimeValidated": false
+}

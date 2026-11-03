@@ -9217,5 +9217,195 @@
    "nativewind",
    "reanimated"
   ]
+ },
+ {
+  "key": 570,
+  "slug": "scikit-learn",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "scikit-learn: mô-đun Python cho học máy xây trên SciPy, giấy phép BSD 3 điều khoản, dự án cộng đồng bắt đầu từ năm 2007",
+  "repo": "scikit-learn/scikit-learn",
+  "stars": 67987,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "statsmodels",
+   "xgboost"
+  ]
+ },
+ {
+  "key": 571,
+  "slug": "scipy",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "SciPy: thư viện phần mềm mã nguồn mở cho toán, khoa học và kỹ thuật, có mô-đun thống kê, tối ưu hóa, tích phân, đại số tuyến tính, xử lý tín hiệu",
+  "repo": "scipy/scipy",
+  "stars": 15179,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "seaborn",
+   "statsmodels"
+  ]
+ },
+ {
+  "key": 572,
+  "slug": "statsmodels",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "statsmodels: gói Python bổ sung cho SciPy trong thống kê, ước lượng và suy luận cho mô hình thống kê, từ hồi quy tuyến tính, chuỗi thời gian đến phân tích sống còn",
+  "repo": "statsmodels/statsmodels",
+  "stars": 11734,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "scikit-learn",
+   "scipy"
+  ]
+ },
+ {
+  "key": 573,
+  "slug": "seaborn",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ",
+  "repo": "mwaskom/seaborn",
+  "stars": 14099,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-08",
+  "related": [
+   "scipy"
+  ]
+ },
+ {
+  "key": 574,
+  "slug": "xgboost",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "XGBoost: thư viện tăng cường độ dốc phân tán, tuyên bố hiệu quả, linh hoạt và di động, cài đặt thuật toán trên khung Gradient Boosting, cùng mã chạy trên nhiều môi trường phân tán",
+  "repo": "dmlc/xgboost",
+  "stars": 28939,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "keras",
+   "scikit-learn"
+  ]
+ },
+ {
+  "key": 575,
+  "slug": "keras",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "Keras 3: khung học sâu đa backend hỗ trợ JAX, TensorFlow, PyTorch và OpenVINO (chỉ suy luận), cho thị giác máy tính, xử lý ngôn ngữ, âm thanh, chuỗi thời gian và hệ gợi ý",
+  "repo": "keras-team/keras",
+  "stars": 64413,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "nltk",
+   "xgboost"
+  ]
+ },
+ {
+  "key": 576,
+  "slug": "nltk",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "NLTK: bộ công cụ ngôn ngữ tự nhiên cho Python, gồm mô-đun mã nguồn mở, bộ dữ liệu và bài hướng dẫn cho nghiên cứu xử lý ngôn ngữ; mã Apache 2.0 nhưng tài liệu và kho ngữ liệu có điều khoản riêng",
+  "repo": "nltk/nltk",
+  "stars": 14766,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "keras",
+   "mlflow"
+  ]
+ },
+ {
+  "key": 577,
+  "slug": "mlflow",
+  "group": "2026-11-03-khoa-hoc-du-lieu",
+  "title": "MLflow: nền tảng kỹ thuật AI mã nguồn mở cho tác tử, mô hình ngôn ngữ lớn và mô hình học máy, gồm theo dõi, đánh giá, quản lý prompt và cổng AI; bản chạy vận hành cần tự cân nhắc dữ liệu và chi phí",
+  "repo": "mlflow/mlflow",
+  "stars": 28641,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "nltk"
+  ]
  }
 ]

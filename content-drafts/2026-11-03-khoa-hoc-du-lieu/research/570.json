@@ -1,0 +1,41 @@
+{
+  "key": 570,
+  "repo": "scikit-learn/scikit-learn",
+  "repoId": "843222",
+  "url": "https://github.com/scikit-learn/scikit-learn",
+  "stars": 67987,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:50:32Z",
+  "createdAt": "2010-08-17T09:43:38Z",
+  "defaultBranch": "main",
+  "description": "scikit-learn: machine learning in Python",
+  "homepage": "https://scikit-learn.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/README.rst",
+    "sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221",
+    "bytes": 7676,
+    "sectionsRead": [
+      "Installation",
+      "Changelog",
+      "Development"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu scikit-learn.org.",
+    "Chưa thử.",
+    "Chưa so sánh với XGBoost hay Keras."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-khoa-hoc-du-lieu",
+  "batch": 95,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 570,
+      "batch": 95,
+      "slug": "scikit-learn",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "scikit-learn: mô-đun Python cho học máy xây trên SciPy, giấy phép BSD 3 điều khoản, dự án cộng đồng bắt đầu từ năm 2007",
+        "excerpt": "Hiểu scikit-learn là mô-đun Python cho học máy được xây trên SciPy, do cộng đồng tình nguyện viên duy trì với sự hỗ trợ của một số tổ chức, phân phối theo giấy phép BSD 3 điều khoản; README nêu phụ thuộc, tài liệu, nhật ký thay đổi và hướng dẫn đóng góp.",
+        "content": "<p>README tả scikit-learn là mô-đun Python cho học máy xây trên SciPy, phân phối theo giấy phép BSD 3 điều khoản. Dự án bắt đầu năm 2007 do David Cournapeau khởi xướng trong chương trình Google Summer of Code, sau đó nhiều tình nguyện viên đóng góp, hiện do cộng đồng duy trì với hỗ trợ của một số tổ chức. README liệt kê các thư viện cần có (Python, NumPy, SciPy, Narwhals, joblib, threadpoolctl), nói phần vẽ biểu đồ cần Matplotlib, một số ví dụ cần scikit-image, pandas, seaborn hoặc Plotly, rồi trỏ tới trang scikit-learn.org, nhật ký thay đổi và hướng dẫn phát triển. README không có ví dụ mã học máy nào.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Học máy là dạy máy tìm quy luật từ dữ liệu cũ để đoán dữ liệu mới. scikit-learn là một hộp đồ nghề Python cho việc đó: bạn đưa dữ liệu bảng vào, chọn một mô hình, và thư viện lo phần tính toán.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm tập huấn luyện và tập kiểm tra bằng một bảng dữ liệu công khai nhỏ, rồi đọc tài liệu scikit-learn.org để biết mô hình nào hợp với bài toán. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản, quen bảng dữ liệu và hiểu sơ về huấn luyện và kiểm tra mô hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có dữ liệu hoặc chưa biết câu hỏi muốn trả lời thì chưa cần chọn thư viện; học máy tốt bắt đầu từ dữ liệu sạch và câu hỏi rõ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>machine learning (học máy)</strong>: cách cho máy học quy luật từ dữ liệu; README nêu đây là mô-đun học máy.</li><li><strong>NumPy</strong>: thư viện tính toán số mảng trong Python; README liệt kê là phụ thuộc.</li><li><strong>joblib</strong>: thư viện hỗ trợ chạy song song và lưu kết quả; README liệt kê là phụ thuộc.</li><li><strong>Matplotlib</strong>: thư viện vẽ biểu đồ Python; README nói phần vẽ của scikit-learn cần có.</li><li><strong>changelog (nhật ký thay đổi)</strong>: danh sách thay đổi giữa các phiên bản; README trỏ tới trang này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python và các thư viện kể trên, phiên bản tối thiểu ghi theo biến thể mẫu trong README nên bài không nêu số. Có cách cài qua trình quản lý gói Python và conda, bài không chép lệnh. Miễn phí theo giấy phép BSD 3 điều khoản (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và phụ thuộc trong README.</li><li>Mở tài liệu scikit-learn.org để xem hướng dẫn cho người mới.</li><li>Thử một ví dụ trong tài liệu với dữ liệu công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học học máy bằng Python. Hãy đọc README của scikit-learn (https://github.com/scikit-learn/scikit-learn) và giải thích bằng tiếng Việt: scikit-learn dùng để làm gì, cần những thư viện nào đi kèm, và vì sao nên bắt đầu bằng dữ liệu công khai nhỏ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 7,6 KB), không có ví dụ mã, bài chưa đọc tài liệu scikit-learn.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>scikit-learn</strong> có <strong>67.987 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu giấy phép BSD 3 điều khoản; GitHub nhận diện BSD-3-Clause. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/scikit-learn/scikit-learn/blob/main/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/scikit-learn/scikit-learn\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 570. Chưa cài/chạy thử; không tạo validation. Snapshot sao 67987; repo_id 843222; README SHA256 3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/scikit-learn/scikit-learn",
+          "repo_id": "843222",
+          "source_path": "",
+          "source_revision": "README-SHA256:3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scikit-learn/scikit-learn",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python và các thư viện kể trên, phiên bản tối thiểu ghi theo biến thể mẫu trong README nên bài không nêu số. Có cách cài qua trình quản lý gói Python và conda, bài không chép lệnh. Miễn phí theo giấy phép BSD 3 điều khoản (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scikit-learn/scikit-learn/blob/main/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/scikit-learn/scikit-learn/blob/main/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "scikit-learn/scikit-learn",
+        "stars": 67987,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/README.rst",
+        "readmeSha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 571,
+      "batch": 95,
+      "slug": "scipy",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SciPy: thư viện phần mềm mã nguồn mở cho toán, khoa học và kỹ thuật, có mô-đun thống kê, tối ưu hóa, tích phân, đại số tuyến tính, xử lý tín hiệu",
+        "excerpt": "Hiểu SciPy là phần mềm mã nguồn mở cho toán học, khoa học và kỹ thuật, gồm các mô-đun về thống kê, tối ưu hóa, tích phân, đại số tuyến tính, biến đổi Fourier, xử lý tín hiệu và ảnh, bộ giải phương trình vi phân; README cũng nhắc chính sách AI khi đóng góp.",
+        "content": "<p>README tả SciPy (đọc là Sigh Pie) là phần mềm mã nguồn mở cho toán học, khoa học và kỹ thuật, có mô-đun thống kê, tối ưu hóa, tích phân, đại số tuyến tính, biến đổi Fourier, xử lý tín hiệu và ảnh, bộ giải phương trình vi phân thường và nhiều thứ khác. SciPy làm việc với mảng NumPy, chạy trên các hệ điều hành phổ biến, cài nhanh và miễn phí theo lời README. README liệt kê trang web, tài liệu, diễn đàn, Stack Overflow, cách báo lỗi bảo mật qua Tidelift và cách trích dẫn. README mời đóng góp và nhắc đọc chính sách AI của dự án; README không nêu giấy phép bằng văn bản, bài lấy giấy phép từ GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu NumPy là bảng tính số thô, SciPy là bộ công thức dựng sẵn: tìm giá trị nhỏ nhất của một hàm, tính tích phân, giải phương trình, xử lý tín hiệu mà bạn không phải tự viết thuật toán.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích SciPy khác NumPy ở đâu và gợi ý mô-đun nào hợp với một bài toán nhỏ, rồi đối chiếu với tài liệu docs.scipy.org. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản và chút kiến thức toán hoặc thống kê tùy mô-đun. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ làm bảng tính hoặc báo cáo đơn giản thì chưa cần SciPy; nếu chỉ cần học máy theo kiểu bảng thì scikit-learn trực tiếp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>optimization (tối ưu hóa)</strong>: tìm giá trị tốt nhất của một hàm; README nêu là một mô-đun.</li><li><strong>integration (tích phân)</strong>: tính tổng liên tục của một hàm; README nêu là một mô-đun.</li><li><strong>linear algebra (đại số tuyến tính)</strong>: phép tính với ma trận và vector; README nêu là một mô-đun.</li><li><strong>Fourier transform (biến đổi Fourier)</strong>: phân tích tín hiệu thành các tần số; README nêu.</li><li><strong>NumPy</strong>: thư viện mảng số; README nói SciPy làm việc với mảng NumPy.</li><li><strong>NumFOCUS</strong>: tổ chức phi lợi nhuận bảo trợ dự án khoa học mở; README có huy hiệu này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn cài tại scipy.org nên bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và danh sách liên kết trong README.</li><li>Mở tài liệu docs.scipy.org để xem hướng dẫn.</li><li>Chọn một mô-đun phù hợp bài toán và thử bằng dữ liệu nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút Python và muốn tìm hiểu SciPy. Hãy đọc README của SciPy (https://github.com/scipy/scipy) và giải thích bằng tiếng Việt: SciPy gồm những mô-đun nào, khác NumPy ở đâu, và README nói gì về việc đóng góp có dùng AI. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,9 KB), chủ yếu là liên kết; bài chưa đọc tài liệu docs.scipy.org và chưa đọc chính sách AI. README không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>scipy</strong> có <strong>15.179 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README không nêu giấy phép bằng văn bản. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/scipy/scipy/blob/main/README.rst\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/scipy/scipy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 571. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15179; repo_id 1460385; README SHA256 6a4d55e53007e0d509dc30f5a8d460c280f0f5bcf2567c910948e7eb23047b10.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/scipy/scipy",
+          "repo_id": "1460385",
+          "source_path": "",
+          "source_revision": "README-SHA256:6a4d55e53007e0d509dc30f5a8d460c280f0f5bcf2567c910948e7eb23047b10",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scipy/scipy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn cài tại scipy.org nên bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scipy/scipy/blob/main/README.rst",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/scipy/scipy/blob/main/README.rst",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "scipy/scipy",
+        "stars": 15179,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/scipy/scipy/main/README.rst",
+        "readmeSha256": "6a4d55e53007e0d509dc30f5a8d460c280f0f5bcf2567c910948e7eb23047b10",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 572,
+      "batch": 95,
+      "slug": "statsmodels",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "statsmodels: gói Python bổ sung cho SciPy trong thống kê, ước lượng và suy luận cho mô hình thống kê, từ hồi quy tuyến tính, chuỗi thời gian đến phân tích sống còn",
+        "excerpt": "Hiểu statsmodels là gói Python bổ sung cho SciPy trong tính toán thống kê, gồm thống kê mô tả, ước lượng và suy luận cho nhiều mô hình: hồi quy tuyến tính, mô hình tuyến tính tổng quát, mô hình rời rạc, chuỗi thời gian và phân tích sống còn.",
+        "content": "<p>README tả statsmodels là gói Python bổ sung cho SciPy trong tính toán thống kê, gồm thống kê mô tả cùng ước lượng và suy luận cho mô hình thống kê. Tài liệu bản ổn định và bản phát triển ở statsmodels.org, có ghi chú phát hành. Mục Main Features liệt kê hồi quy tuyến tính (bình phương tối thiểu thường, tổng quát, có trọng số, hồi quy phân vị), mô hình hỗn hợp, GLM, GEE, mô hình rời rạc (Logit, Probit, Poisson, nhị thức âm), hồi quy bền vững, chuỗi thời gian (ARIMA, VAR, làm mượt mũ, kiểm định nghiệm đơn vị và đồng liên kết), phân tích sống còn (Cox, Kaplan-Meier) và đa biến. README cũng nêu cách cài từ PyPI hoặc Anaconda, cách lấy bản đêm mới nhất và hướng dẫn đóng góp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn trả lời câu hỏi kiểu 'quảng cáo có làm doanh số tăng thật không, hay chỉ ngẫu nhiên?', statsmodels cho bạn công cụ hồi quy và kiểm định, kèm bảng kết quả giống phần mềm thống kê kinh tế lượng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích một bảng kết quả hồi quy (hệ số, giá trị p, R bình phương) bằng ví dụ dữ liệu công khai nhỏ và so với phần giải thích trong tài liệu statsmodels.org. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, thống kê cơ bản và hiểu giả định của mô hình hồi quy; đọc kết quả sai dễ dẫn đến kết luận sai. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần dự đoán thuần túy mà không cần diễn giải thống kê thì scikit-learn thường đủ; chưa nên dùng statsmodels khi chưa nắm giả định của mô hình.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>regression (hồi quy)</strong>: phương pháp ước lượng quan hệ giữa các biến; README liệt kê nhiều loại.</li><li><strong>time series (chuỗi thời gian)</strong>: dữ liệu theo thứ tự thời gian; README liệt kê nhiều mô hình.</li><li><strong>survival analysis (phân tích sống còn)</strong>: phân tích thời gian đến khi một sự kiện xảy ra; README nêu.</li><li><strong>p-value (giá trị p)</strong>: con số trong kiểm định thống kê dễ bị hiểu sai; README không giải thích, đây là chú thích biên tập.</li><li><strong>econometrics (kinh tế lượng)</strong>: áp dụng thống kê vào dữ liệu kinh tế; mô tả GitHub của repo nêu từ này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài từ PyPI hoặc Anaconda, bài không chép lệnh; có thể lấy bản đêm hoặc cài từ mã nguồn, bài không khuyến nghị cho người mới. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Main Features.</li><li>Mở tài liệu statsmodels.org, chọn đúng loại mô hình cho câu hỏi.</li><li>Thử với dữ liệu công khai nhỏ và kiểm tra giả định mô hình.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học kinh tế lượng và nghe nói statsmodels. Hãy đọc README của statsmodels (https://github.com/statsmodels/statsmodels) và giải thích bằng tiếng Việt: gói này làm được những loại mô hình nào, khác scikit-learn ở đâu, và vì sao phải cẩn thận khi đọc kết quả hồi quy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6 KB, bài chưa đọc tài liệu statsmodels.org, chưa đánh giá chất lượng ước lượng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>statsmodels</strong> có <strong>11.734 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/statsmodels/statsmodels/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/statsmodels/statsmodels\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 572. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11734; repo_id 1885237; README SHA256 d430fa04083d240c9f0e75aa90bc73c13cb1a874f4c7b4ce29bddbb6366c4a42.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/statsmodels/statsmodels",
+          "repo_id": "1885237",
+          "source_path": "",
+          "source_revision": "README-SHA256:d430fa04083d240c9f0e75aa90bc73c13cb1a874f4c7b4ce29bddbb6366c4a42",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/statsmodels/statsmodels",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài từ PyPI hoặc Anaconda, bài không chép lệnh; có thể lấy bản đêm hoặc cài từ mã nguồn, bài không khuyến nghị cho người mới. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/statsmodels/statsmodels/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/statsmodels/statsmodels/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "statsmodels/statsmodels",
+        "stars": 11734,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/statsmodels/statsmodels/main/README.md",
+        "readmeSha256": "d430fa04083d240c9f0e75aa90bc73c13cb1a874f4c7b4ce29bddbb6366c4a42",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 573,
+      "batch": 95,
+      "slug": "seaborn",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ",
+        "excerpt": "Hiểu seaborn là thư viện trực quan hóa Python xây trên matplotlib, cho giao diện cấp cao để vẽ đồ thống kê hấp dẫn, có hướng dẫn, thư viện ví dụ, tham chiếu API và FAQ tại seaborn.pydata.org.",
+        "content": "<p>README tả seaborn là thư viện trực quan hóa Python dựa trên matplotlib, cung cấp giao diện cấp cao để vẽ đồ thị thống kê hấp dẫn. Tài liệu trực tuyến ở seaborn.pydata.org có hướng dẫn, thư viện ví dụ, tham chiếu API và FAQ. README nêu seaborn hỗ trợ Python 3.10 trở lên, cần numpy, pandas và matplotlib, một số chức năng thống kê nâng cao cần thêm scipy hoặc statsmodels, và có tùy chọn cài thêm phụ thuộc thống kê. README nói bản conda chính có thể chậm hơn conda-forge, hướng dẫn trích dẫn bài báo JOSS, cách chạy kiểm thử và gửi lỗi. README không nêu giấy phép bằng văn bản trong phần đã đọc, bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Có bảng dữ liệu rồi, bạn muốn nhìn ngay phân bố, so sánh giữa nhóm hay mối quan hệ giữa hai biến. seaborn cho bạn vẽ những biểu đồ đó bằng vài dòng mã thay vì chỉnh từng chi tiết matplotlib.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khi nào dùng biểu đồ hộp, biểu đồ cột hay biểu đồ phân tán với một bảng dữ liệu công khai nhỏ, rồi đối chiếu với thư viện ví dụ trên seaborn.pydata.org. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python cơ bản và quen bảng dữ liệu pandas. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn cần biểu đồ tương tác trên web hay bảng điều khiển thì seaborn (biểu đồ tĩnh) không phải điểm bắt đầu tự nhiên; bài chưa so sánh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>matplotlib</strong>: thư viện vẽ biểu đồ nền tảng của Python; README nêu seaborn xây trên nó.</li><li><strong>pandas</strong>: thư viện bảng dữ liệu Python; README liệt kê là phụ thuộc.</li><li><strong>statistical graphics (đồ thị thống kê)</strong>: biểu đồ thể hiện phân bố hoặc quan hệ giữa các biến; README nêu.</li><li><strong>gallery (thư viện ví dụ)</strong>: trang có nhiều biểu đồ mẫu kèm mã; README nêu.</li><li><strong>JOSS</strong>: tạp chí phần mềm mã nguồn mở; README trỏ tới bài báo mô tả seaborn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python 3.10 trở lên, numpy, pandas, matplotlib; cách cài nằm trong README, bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Documentation và Dependencies.</li><li>Mở thư viện ví dụ tại seaborn.pydata.org.</li><li>Vẽ một biểu đồ từ dữ liệu công khai nhỏ và đọc kết quả cẩn thận.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học phân tích dữ liệu bằng Python. Hãy đọc README của seaborn (https://github.com/mwaskom/seaborn) và giải thích bằng tiếng Việt: seaborn khác matplotlib thế nào, cần những thư viện nào đi kèm, và vì sao phải đọc biểu đồ cẩn thận. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,5 KB), bài chưa đọc tài liệu seaborn.pydata.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mwaskom</strong> có <strong>14.099 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-08. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README phần đã đọc không nêu giấy phép bằng văn bản. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mwaskom/seaborn/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mwaskom/seaborn\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 573. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14099; repo_id 4704710; README SHA256 fd0cb370a7d851a56995954604dc5cb386b90e119872a4e8067a9f2d58afefd6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mwaskom/seaborn",
+          "repo_id": "4704710",
+          "source_path": "",
+          "source_revision": "README-SHA256:fd0cb370a7d851a56995954604dc5cb386b90e119872a4e8067a9f2d58afefd6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mwaskom/seaborn",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python 3.10 trở lên, numpy, pandas, matplotlib; cách cài nằm trong README, bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mwaskom/seaborn/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mwaskom/seaborn/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mwaskom/seaborn",
+        "stars": 14099,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mwaskom/seaborn/master/README.md",
+        "readmeSha256": "fd0cb370a7d851a56995954604dc5cb386b90e119872a4e8067a9f2d58afefd6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 574,
+      "batch": 95,
+      "slug": "xgboost",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "XGBoost: thư viện tăng cường độ dốc phân tán, tuyên bố hiệu quả, linh hoạt và di động, cài đặt thuật toán trên khung Gradient Boosting, cùng mã chạy trên nhiều môi trường phân tán",
+        "excerpt": "Hiểu XGBoost là thư viện tăng cường độ dốc (gradient boosting) được tối ưu và phân tán, README tuyên bố hiệu quả, linh hoạt và di động; cùng mã chạy được trên Kubernetes, Hadoop, SGE, Dask, Spark và PySpark theo tuyên bố của tác giả.",
+        "content": "<p>README tả XGBoost là thư viện tăng cường độ dốc phân tán được tối ưu để hiệu quả, linh hoạt và di động. Thư viện cài đặt các thuật toán học máy trên khung Gradient Boosting, cung cấp tăng cường cây song song (GBDT, GBM) để giải nhiều bài toán khoa học dữ liệu nhanh và chính xác. README tuyên bố cùng mã chạy được trên các môi trường phân tán lớn (Kubernetes, Hadoop, SGE, Dask, Spark, PySpark) và giải được bài toán vượt hàng tỷ mẫu; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README nêu giấy phép Apache-2, trỏ tới tài liệu, tài nguyên ví dụ, bài báo gốc của Tianqi Chen và Carlos Guestrin, và có phần nhà tài trợ.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Gradient boosting là cách ghép nhiều cây quyết định nhỏ, mỗi cây sửa sai cho cây trước. XGBoost là một cách cài đặt phổ biến của ý tưởng đó, thường dùng cho dữ liệu dạng bảng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích gradient boosting bằng ví dụ bảng dữ liệu nhỏ và đối chiếu với tài liệu xgboost.readthedocs.io. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python hoặc ngôn ngữ khác được hỗ trợ, học máy cơ bản và hiểu quá khớp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa từng huấn luyện mô hình đơn giản thì chưa cần XGBoost; bắt đầu từ mô hình cơ bản trong scikit-learn dễ hơn. Phần nhà tài trợ trong README là quảng cáo, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>gradient boosting</strong>: kỹ thuật ghép nhiều mô hình yếu thành mô hình mạnh theo từng bước; README nêu.</li><li><strong>GBDT/GBM</strong>: tên gọi khác của tăng cường cây độ dốc; README nêu.</li><li><strong>distributed (phân tán)</strong>: chạy trên nhiều máy; README nêu các môi trường như Spark, Dask.</li><li><strong>overfitting (quá khớp)</strong>: mô hình nhớ dữ liệu cũ nhưng đoán mới kém; README không nhắc, đây là chú thích biên tập.</li><li><strong>sponsor (nhà tài trợ)</strong>: đơn vị tài trợ dự án; README có phần này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu xgboost.readthedocs.io nên bài không chép lệnh cài. Cần ngôn ngữ được hỗ trợ (mô tả GitHub của repo nêu Python, R, Java, Scala; README phần đã đọc không liệt kê). Miễn phí theo giấy phép Apache-2 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Mở tài liệu xgboost.readthedocs.io và thư mục ví dụ.</li><li>Thử với dữ liệu công khai nhỏ, so sánh với mô hình đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đã biết chút học máy và nghe nói XGBoost. Hãy đọc README của XGBoost (https://github.com/dmlc/xgboost) và giải thích bằng tiếng Việt: gradient boosting là gì, README tuyên bố những gì về hiệu năng và môi trường phân tán, và tuyên bố nào chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,6 KB), bài chưa đọc tài liệu xgboost.readthedocs.io. Các tuyên bố hiệu năng chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dmlc</strong> có <strong>28.939 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu giấy phép Apache-2; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dmlc/xgboost/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dmlc/xgboost\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 574. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28939; repo_id 16587283; README SHA256 e59e190ef0d17e289c86a2b8b76c623f86128d724300fecaec2a4c46075e2367.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dmlc/xgboost",
+          "repo_id": "16587283",
+          "source_path": "",
+          "source_revision": "README-SHA256:e59e190ef0d17e289c86a2b8b76c623f86128d724300fecaec2a4c46075e2367",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dmlc/xgboost",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu xgboost.readthedocs.io nên bài không chép lệnh cài. Cần ngôn ngữ được hỗ trợ (mô tả GitHub của repo nêu Python, R, Java, Scala; README phần đã đọc không liệt kê). Miễn phí theo giấy phép Apache-2 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dmlc/xgboost/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dmlc/xgboost/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dmlc/xgboost",
+        "stars": 28939,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dmlc/xgboost/master/README.md",
+        "readmeSha256": "e59e190ef0d17e289c86a2b8b76c623f86128d724300fecaec2a4c46075e2367",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 575,
+      "batch": 95,
+      "slug": "keras",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Keras 3: khung học sâu đa backend hỗ trợ JAX, TensorFlow, PyTorch và OpenVINO (chỉ suy luận), cho thị giác máy tính, xử lý ngôn ngữ, âm thanh, chuỗi thời gian và hệ gợi ý",
+        "excerpt": "Hiểu Keras 3 là khung học sâu đa backend hỗ trợ JAX, TensorFlow, PyTorch và OpenVINO (chỉ suy luận); README tuyên bố tăng tốc phát triển, hiệu năng và mở rộng quy mô, ghi chú Keras 2 vẫn có dưới tên gói khác và khuyên người dùng Windows dùng WSL2.",
+        "content": "<p>README tả Keras 3 là khung học sâu đa backend hỗ trợ JAX, TensorFlow, PyTorch và OpenVINO (chỉ suy luận), dùng để xây và huấn luyện mô hình cho thị giác máy tính, xử lý ngôn ngữ tự nhiên, âm thanh, chuỗi thời gian, hệ gợi ý và nhiều thứ khác. README tuyên bố ba lợi ích (phát triển mô hình nhanh, hiệu năng hàng đầu với mức tăng 20% đến 350% so với khung khác, huấn luyện quy mô trung tâm dữ liệu) và nói có gần ba triệu lập trình viên; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README nêu Keras 2 vẫn có dưới tên gói khác, Keras 3 có thể thay thế trực tiếp tf.keras trong nhiều trường hợp, mô hình dùng được dữ liệu từ tf.data hoặc DataLoader của PyTorch. README nói Keras tương thích Linux và macOS, người dùng Windows nên dùng WSL2.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Học sâu là cách dạy máy bằng mạng nơ-ron nhiều tầng. Keras là lớp giao diện dễ dùng bên trên: bạn mô tả các tầng, còn việc tính toán nặng giao cho một trong các backend như JAX, TensorFlow hay PyTorch.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích mạng nơ-ron và backend bằng ví dụ phân loại ảnh số viết tay công khai, rồi đối chiếu với tài liệu keras.io. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, học máy cơ bản và hiểu GPU hoặc môi trường tính toán; chọn backend cần thêm kiến thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn có dữ liệu dạng bảng nhỏ thì scikit-learn hoặc XGBoost thường đủ; chưa cần học sâu nếu bài toán không đòi hỏi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deep learning (học sâu)</strong>: học máy bằng mạng nơ-ron nhiều tầng; README nêu.</li><li><strong>backend</strong>: khung tính toán chạy bên dưới Keras; README nêu JAX, TensorFlow, PyTorch, OpenVINO.</li><li><strong>inference (suy luận)</strong>: dùng mô hình đã huấn luyện để đoán; README nêu OpenVINO chỉ hỗ trợ suy luận.</li><li><strong>GPU/TPU</strong>: chip tăng tốc tính toán; README nêu mở rộng từ máy cá nhân đến cụm GPU hoặc TPU.</li><li><strong>WSL2</strong>: lớp Linux chạy trên Windows; README khuyên người dùng Windows dùng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu cài gói chính và ít nhất một backend; có tùy chọn truy cập tệp từ xa. Bài không chép lệnh. Tương thích Linux và macOS, Windows nên dùng WSL2. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và lý do dùng Keras 3.</li><li>Chọn backend theo tài liệu keras.io.</li><li>Thử một ví dụ phân loại với dữ liệu công khai nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới học học sâu. Hãy đọc README của Keras (https://github.com/keras-team/keras) và giải thích bằng tiếng Việt: Keras 3 khác Keras 2 thế nào, backend là gì và README tuyên bố những lợi ích nào chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5,5 KB), bài chưa đọc tài liệu keras.io. Tuyên bố hiệu năng chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>keras-team</strong> có <strong>64.413 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/keras-team/keras/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/keras-team/keras\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 575. Chưa cài/chạy thử; không tạo validation. Snapshot sao 64413; repo_id 33015583; README SHA256 6b91780eb3d4ae0a0e0e1407b2498816a002ddeec7082f6f750dad92b47822c8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/keras-team/keras",
+          "repo_id": "33015583",
+          "source_path": "",
+          "source_revision": "README-SHA256:6b91780eb3d4ae0a0e0e1407b2498816a002ddeec7082f6f750dad92b47822c8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keras-team/keras",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu cài gói chính và ít nhất một backend; có tùy chọn truy cập tệp từ xa. Bài không chép lệnh. Tương thích Linux và macOS, Windows nên dùng WSL2. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/keras-team/keras/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/keras-team/keras/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "keras-team/keras",
+        "stars": 64413,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/keras-team/keras/master/README.md",
+        "readmeSha256": "6b91780eb3d4ae0a0e0e1407b2498816a002ddeec7082f6f750dad92b47822c8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 576,
+      "batch": 95,
+      "slug": "nltk",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NLTK: bộ công cụ ngôn ngữ tự nhiên cho Python, gồm mô-đun mã nguồn mở, bộ dữ liệu và bài hướng dẫn cho nghiên cứu xử lý ngôn ngữ; mã Apache 2.0 nhưng tài liệu và kho ngữ liệu có điều khoản riêng",
+        "excerpt": "Hiểu NLTK là bộ mô-đun Python mã nguồn mở, bộ dữ liệu và bài hướng dẫn hỗ trợ nghiên cứu và phát triển xử lý ngôn ngữ tự nhiên; mã nguồn theo Apache 2.0 nhưng tài liệu theo CC BY-NC-ND 3.0 Hoa Kỳ và kho ngữ liệu theo điều khoản riêng, chỉ dùng phi thương mại.",
+        "content": "<p>README tả NLTK là bộ mô-đun Python mã nguồn mở, bộ dữ liệu và hướng dẫn hỗ trợ nghiên cứu và phát triển xử lý ngôn ngữ tự nhiên, yêu cầu Python từ 3.11 đến bản mới nhất 3.14. README trỏ tới nltk.org, hướng dẫn đóng góp, kêu gọi quyên góp và yêu cầu trích dẫn sách NLTK của Bird, Klein và Loper (2009) nếu công bố nghiên cứu. Phần Copyright rất quan trọng: mã nguồn theo Apache 2.0, tài liệu theo Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Hoa Kỳ, kho ngữ liệu theo điều khoản trong README từng kho, README nói đều phân phối lại được và dùng được cho mục đích phi thương mại.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Máy không hiểu câu chữ như người. NLTK cung cấp các bước cơ bản như tách từ, gán nhãn từ loại và các kho văn bản mẫu để bạn làm quen với xử lý ngôn ngữ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích tách từ và gán nhãn từ loại bằng một đoạn văn tiếng Anh ngắn, rồi đọc phần Copyright để biết phần nào dùng được cho sản phẩm thương mại. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản và khái niệm ngôn ngữ như từ, câu, từ loại; README nghiêng về tiếng Anh, bài chưa kiểm tra tiếng Việt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn cần mô hình ngôn ngữ lớn hiện đại thì NLTK chủ yếu là công cụ cổ điển và giáo dục; bài chưa so sánh. Muốn dùng kho ngữ liệu hoặc tài liệu trong sản phẩm thương mại cần đọc kỹ điều khoản từng phần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>NLP (xử lý ngôn ngữ tự nhiên)</strong>: ngành làm cho máy xử lý văn bản và lời nói; README nêu.</li><li><strong>corpus (kho ngữ liệu)</strong>: tập văn bản mẫu dùng để học hoặc nghiên cứu; README nêu có điều khoản riêng cho từng kho.</li><li><strong>tokenization (tách từ)</strong>: chia văn bản thành từ hoặc câu; README không nêu, đây là chú thích biên tập.</li><li><strong>Creative Commons BY-NC-ND</strong>: giấy phép nội dung cho phép chia sẻ có ghi công, cấm dùng thương mại và cấm sửa đổi; README nêu cho tài liệu NLTK.</li><li><strong>Apache 2.0</strong>: giấy phép mã nguồn mở cho phép dùng thương mại kèm điều kiện; README nêu cho mã nguồn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python 3.11 đến 3.14, trỏ tới nltk.org cho tài liệu; bài không chép lệnh. Mã miễn phí theo Apache 2.0; tài liệu CC BY-NC-ND; kho ngữ liệu theo điều khoản riêng, phi thương mại.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Copyright.</li><li>Mở nltk.org để xem sách và hướng dẫn.</li><li>Thử tách từ với một đoạn văn tiếng Anh ngắn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học xử lý ngôn ngữ tự nhiên. Hãy đọc README của NLTK (https://github.com/nltk/nltk) và giải thích bằng tiếng Việt: NLTK dùng để làm gì, phần Copyright chia mã, tài liệu và kho ngữ liệu theo giấy phép nào, và điều đó ảnh hưởng thế nào nếu mình làm sản phẩm thương mại. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn (khoảng 1,9 KB), bài chưa đọc nltk.org và chưa đọc LICENSE.txt hay README từng kho ngữ liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nltk</strong> có <strong>14.766 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache 2.0 cho mã, CC BY-NC-ND 3.0 Hoa Kỳ cho tài liệu, kho ngữ liệu theo README từng kho; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nltk/nltk/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nltk/nltk\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 576. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14766; repo_id 299862; README SHA256 a3409074cad5f7362036a4a7e15cc952623629f81d8d95eaf90aeda3cb005421.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nltk/nltk",
+          "repo_id": "299862",
+          "source_path": "",
+          "source_revision": "README-SHA256:a3409074cad5f7362036a4a7e15cc952623629f81d8d95eaf90aeda3cb005421",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nltk/nltk",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python 3.11 đến 3.14, trỏ tới nltk.org cho tài liệu; bài không chép lệnh. Mã miễn phí theo Apache 2.0; tài liệu CC BY-NC-ND; kho ngữ liệu theo điều khoản riêng, phi thương mại.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nltk/nltk/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nltk/nltk/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nltk/nltk",
+        "stars": 14766,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nltk/nltk/develop/README.md",
+        "readmeSha256": "a3409074cad5f7362036a4a7e15cc952623629f81d8d95eaf90aeda3cb005421",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 577,
+      "batch": 95,
+      "slug": "mlflow",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "MLflow: nền tảng kỹ thuật AI mã nguồn mở cho tác tử, mô hình ngôn ngữ lớn và mô hình học máy, gồm theo dõi, đánh giá, quản lý prompt và cổng AI; bản chạy vận hành cần tự cân nhắc dữ liệu và chi phí",
+        "excerpt": "Hiểu MLflow là nền tảng kỹ thuật AI mã nguồn mở cho tác tử, mô hình ngôn ngữ lớn và mô hình học máy, giúp gỡ lỗi, đánh giá, giám sát và tối ưu ứng dụng AI, với tính năng như quan sát, quản lý prompt và cổng AI; README có bước khởi đầu gọi là trình hướng dẫn, bài không chép.",
+        "content": "<p>README tả MLflow là nền tảng kỹ thuật AI mã nguồn mở lớn nhất cho tác tử, mô hình ngôn ngữ lớn và mô hình học máy, giúp nhóm gỡ lỗi, đánh giá, giám sát và tối ưu ứng dụng AI cấp sản xuất trong khi kiểm soát chi phí và quyền truy cập. README tuyên bố hơn 60 triệu lượt tải mỗi tháng và hàng nghìn tổ chức dùng hằng ngày; đây là tuyên bố của tác giả, bài chưa kiểm chứng. Tính năng cho tác tử và ứng dụng LLM gồm quan sát (tracing), đánh giá, quản lý prompt, tối ưu prompt và cổng AI. README có phần bắt đầu trong ba bước, trong đó một khung gợi ý trình hướng dẫn thiết lập có lệnh tải và chạy tập lệnh từ mạng; bài không chép lệnh đó và khuyên đọc kỹ tập lệnh trước khi chạy. README cũng có phần Hosting MLflow nói MLflow chạy được ở máy cá nhân, cụm tại chỗ, đám mây và dịch vụ quản lý, kèm logo nhiều nhà cung cấp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi làm ứng dụng AI, bạn thử nhiều prompt, nhiều mô hình, nhiều tham số và rất dễ quên cái nào cho kết quả tốt. MLflow là cuốn sổ ghi thí nghiệm có tổ chức cho việc đó, kèm công cụ theo dõi từng lượt gọi mô hình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chỉ đọc README và tài liệu mlflow.org để hiểu quan sát và đánh giá nghĩa là gì, chưa kết nối tới dịch vụ hay khóa API thật. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người học phân tích dữ liệu hoặc học máy bằng Python, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, hiểu LLM và khái niệm thí nghiệm học máy; bản chạy vận hành còn cần kiến thức hạ tầng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa có ứng dụng AI hay mô hình nào để theo dõi thì chưa cần MLflow. Ghi lại cả prompt và dữ liệu có thể làm lộ thông tin nhạy cảm, cần cân nhắc trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>tracing (quan sát)</strong>: ghi lại từng bước một ứng dụng AI gọi mô hình; README nêu là tính năng.</li><li><strong>evaluation (đánh giá)</strong>: đo chất lượng đầu ra của mô hình hoặc ứng dụng; README nêu.</li><li><strong>prompt registry (quản lý prompt)</strong>: nơi lưu và quản lý các phiên bản prompt; README nêu.</li><li><strong>AI Gateway (cổng AI)</strong>: lớp trung gian quản lý quyền truy cập và chi phí gọi mô hình; README nêu.</li><li><strong>LLMOps</strong>: vận hành ứng dụng dùng mô hình ngôn ngữ lớn; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn nhanh tại mlflow.org; bài không chép lệnh. README có bước thiết lập bằng tập lệnh tải từ mạng: không chạy khi chưa đọc nội dung. Có thể cần khóa API tùy nhà cung cấp mô hình, chi phí do nhà cung cấp tính. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Get Started và Hosting MLflow.</li><li>Đọc tài liệu mlflow.org, chưa chạy trình hướng dẫn.</li><li>Thử với ứng dụng và dữ liệu giả, không có khóa thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang làm ứng dụng dùng LLM và muốn theo dõi các lần thử. Hãy đọc README của MLflow (https://github.com/mlflow/mlflow) và giải thích bằng tiếng Việt: MLflow giải quyết vấn đề gì, các tính năng quan sát, đánh giá, quản lý prompt và cổng AI nghĩa là gì, và vì sao không nên chạy tập lệnh tải từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 33 KB), bài đọc phần đầu và các phần chính chứ chưa đọc kỹ toàn bộ, chưa đọc tài liệu mlflow.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Kết quả phân tích dữ liệu và mô hình học máy phụ thuộc vào chất lượng dữ liệu, cách chia dữ liệu huấn luyện và kiểm tra, và cách đọc kết quả: đừng ra quyết định tài chính, y tế hay nhân sự chỉ dựa vào một mô hình AI viết giúp, dùng dữ liệu giả hoặc công khai khi thử, và không đưa dữ liệu cá nhân thật vào công cụ hay khung chat.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mlflow</strong> có <strong>28.641 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mlflow/mlflow/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mlflow/mlflow\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 577. Chưa cài/chạy thử; không tạo validation. Snapshot sao 28641; repo_id 136202695; README SHA256 5dc3beb3c6e9acf515b4898a24fbd1bf3d0dc7d6bfa5439df7f9164bc42d0193.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mlflow/mlflow",
+          "repo_id": "136202695",
+          "source_path": "",
+          "source_revision": "README-SHA256:5dc3beb3c6e9acf515b4898a24fbd1bf3d0dc7d6bfa5439df7f9164bc42d0193",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mlflow/mlflow",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn nhanh tại mlflow.org; bài không chép lệnh. README có bước thiết lập bằng tập lệnh tải từ mạng: không chạy khi chưa đọc nội dung. Có thể cần khóa API tùy nhà cung cấp mô hình, chi phí do nhà cung cấp tính. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mlflow/mlflow/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mlflow/mlflow/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mlflow/mlflow",
+        "stars": 28641,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mlflow/mlflow/master/README.md",
+        "readmeSha256": "5dc3beb3c6e9acf515b4898a24fbd1bf3d0dc7d6bfa5439df7f9164bc42d0193",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

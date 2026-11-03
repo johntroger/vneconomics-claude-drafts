@@ -1,0 +1,42 @@
+{
+  "key": 576,
+  "repo": "nltk/nltk",
+  "repoId": "299862",
+  "url": "https://github.com/nltk/nltk",
+  "stars": 14766,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T11:57:04Z",
+  "createdAt": "2009-09-07T10:53:58Z",
+  "defaultBranch": "develop",
+  "description": "NLTK Source",
+  "homepage": "https://www.nltk.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nltk/nltk/develop/README.md",
+    "sha256": "a3409074cad5f7362036a4a7e15cc952623629f81d8d95eaf90aeda3cb005421",
+    "bytes": 1868,
+    "sectionsRead": [
+      "Contributing",
+      "Citing",
+      "Copyright",
+      "Redistributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc nltk.org hay LICENSE.txt.",
+    "Chưa thử.",
+    "Chưa kiểm tra tiếng Việt."
+  ],
+  "runtimeValidated": false
+}

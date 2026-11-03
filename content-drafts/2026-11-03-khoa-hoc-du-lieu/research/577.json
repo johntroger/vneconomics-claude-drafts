@@ -1,0 +1,41 @@
+{
+  "key": 577,
+  "repo": "mlflow/mlflow",
+  "repoId": "136202695",
+  "url": "https://github.com/mlflow/mlflow",
+  "stars": 28641,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T09:29:25Z",
+  "createdAt": "2018-06-05T16:05:58Z",
+  "defaultBranch": "master",
+  "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+  "homepage": "https://mlflow.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mlflow/mlflow/master/README.md",
+    "sha256": "5dc3beb3c6e9acf515b4898a24fbd1bf3d0dc7d6bfa5439df7f9164bc42d0193",
+    "bytes": 33387,
+    "sectionsRead": [
+      "Get Started in 3 Simple Steps",
+      "Hosting MLflow"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc kỹ toàn bộ README dài.",
+    "Chưa đọc tài liệu mlflow.org.",
+    "Chưa thử.",
+    "Tuyên bố 60 triệu lượt tải chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

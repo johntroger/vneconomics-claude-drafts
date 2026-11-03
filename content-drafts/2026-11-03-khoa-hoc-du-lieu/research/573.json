@@ -1,0 +1,42 @@
+{
+  "key": 573,
+  "repo": "mwaskom/seaborn",
+  "repoId": "4704710",
+  "url": "https://github.com/mwaskom/seaborn",
+  "stars": 14099,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-08T01:29:20Z",
+  "createdAt": "2012-06-18T18:41:19Z",
+  "defaultBranch": "master",
+  "description": "Statistical data visualization in Python",
+  "homepage": "https://seaborn.pydata.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mwaskom/seaborn/master/README.md",
+    "sha256": "fd0cb370a7d851a56995954604dc5cb386b90e119872a4e8067a9f2d58afefd6",
+    "bytes": 3531,
+    "sectionsRead": [
+      "Documentation",
+      "Dependencies",
+      "Installation",
+      "Citing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu seaborn.pydata.org.",
+    "Chưa thử.",
+    "Chưa so sánh với thư viện vẽ tương tác."
+  ],
+  "runtimeValidated": false
+}

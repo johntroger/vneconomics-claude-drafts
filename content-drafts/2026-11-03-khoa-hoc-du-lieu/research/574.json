@@ -1,0 +1,41 @@
+{
+  "key": 574,
+  "repo": "dmlc/xgboost",
+  "repoId": "16587283",
+  "url": "https://github.com/dmlc/xgboost",
+  "stars": 28939,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T18:59:10Z",
+  "createdAt": "2014-02-06T17:28:03Z",
+  "defaultBranch": "master",
+  "description": "Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow",
+  "homepage": "https://xgboost.readthedocs.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dmlc/xgboost/master/README.md",
+    "sha256": "e59e190ef0d17e289c86a2b8b76c623f86128d724300fecaec2a4c46075e2367",
+    "bytes": 4608,
+    "sectionsRead": [
+      "License",
+      "Contribute to XGBoost",
+      "Reference"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu xgboost.readthedocs.io.",
+    "Chưa thử.",
+    "Tuyên bố hiệu năng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

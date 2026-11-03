@@ -1,0 +1,40 @@
+{
+  "key": 575,
+  "repo": "keras-team/keras",
+  "repoId": "33015583",
+  "url": "https://github.com/keras-team/keras",
+  "stars": 64413,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T11:13:07Z",
+  "createdAt": "2015-03-28T00:35:42Z",
+  "defaultBranch": "master",
+  "description": "Deep Learning for humans",
+  "homepage": "http://keras.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/keras-team/keras/master/README.md",
+    "sha256": "6b91780eb3d4ae0a0e0e1407b2498816a002ddeec7082f6f750dad92b47822c8",
+    "bytes": 5547,
+    "sectionsRead": [
+      "Installation",
+      "Why use Keras 3?"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu keras.io.",
+    "Chưa thử.",
+    "Tuyên bố hiệu năng 20% đến 350% chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}
