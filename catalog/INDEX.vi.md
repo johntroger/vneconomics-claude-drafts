@@ -28,6 +28,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 26 — AI chạy trên máy cá nhân](learning-paths/26-ai-chay-tren-may-ca-nhan.vi.md) — Từ công cụ có giao diện đến động cơ bên dưới; luôn cân nhắc dữ liệu đi đâu và cách cài an toàn.
 - [Lộ trình 27 — Sơ đồ, thiết kế giao diện và nền tảng học tập](learning-paths/27-so-do-thiet-ke-va-hoc-tap.vi.md) — Từ phác thảo nhanh đến sơ đồ chuẩn và thiết kế sản phẩm; Moodle là hướng riêng cho giảng viên.
 - [Lộ trình 28 — Ứng dụng dữ liệu và biểu đồ](learning-paths/28-ung-dung-du-lieu-va-bieu-do.vi.md) — Từ ứng dụng Python nhanh đến thư viện biểu đồ JavaScript; luôn cân nhắc dữ liệu có được chia sẻ ra ngoài không.
+- [Lộ trình 29 — Ghi chú liên kết, lưu trữ tự chủ và đồ họa dữ liệu](learning-paths/29-tri-thuc-luu-tru-va-do-hoa.vi.md) — Ghi chú theo khối, kho tệp và ảnh tự host, cuối cùng là đồ họa dữ liệu cấp thấp; luôn có kế hoạch sao lưu.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -74,7 +75,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 266 | draw.io (diagrams.net): vẽ sơ đồ kỹ thuật chính xác, lưu ý README nói đây là bản thử và có điều khoản riêng cho biểu tượng | [jgraph/drawio](https://github.com/jgraph/drawio) | Apache-2.0 | 9147 | so-do-thiet-ke-va-hoc-tap |
 | 269 | Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Apache-2.0 | 46220 | ung-dung-du-lieu-va-bieu-do |
 
-### Cơ bản (86 bài)
+### Cơ bản (88 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -164,8 +165,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 270 | Gradio: dựng giao diện web cho mô hình AI hay hàm Python trong vài dòng, lưu ý tùy chọn chia sẻ công khai | [gradio-app/gradio](https://github.com/gradio-app/gradio) | Apache-2.0 | 43973 | ung-dung-du-lieu-va-bieu-do |
 | 271 | Chart.js: thư viện JavaScript vẽ biểu đồ đơn giản mà linh hoạt cho trang web | [chartjs/Chart.js](https://github.com/chartjs/Chart.js) | MIT | 67774 | ung-dung-du-lieu-va-bieu-do |
 | 274 | LibreTranslate: API dịch máy mã nguồn mở tự host, không phụ thuộc Google hay Azure | [LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) | AGPL-3.0 | 17258 | ung-dung-du-lieu-va-bieu-do |
+| 275 | Logseq: ghi chú dạng đại cương liên kết hai chiều, lưu ý phiên bản cơ sở dữ liệu đang beta và có thể mất dữ liệu | [logseq/logseq](https://github.com/logseq/logseq) | AGPL-3.0 | 45464 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
+| 276 | AppFlowy: không gian làm việc kiểu Notion mã nguồn mở, có AI và tự host được | [AppFlowy-IO/AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | AGPL-3.0 | 78131 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 
-### Khá khó (cần nền kỹ thuật) (24 bài)
+### Khá khó (cần nền kỹ thuật) (25 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -193,8 +196,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 232 | zizmor: soát lỗi bảo mật trong quy trình GitHub Actions trước khi bị khai thác | [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) | MIT | 6861 | ci-cd-va-tu-dong-hoa-git |
 | 239 | Diffusers: thư viện của Hugging Face để chạy các mô hình tạo ảnh và âm thanh bằng Python | [huggingface/diffusers](https://github.com/huggingface/diffusers) | Apache-2.0 | 34854 | video-am-thanh-va-anh-ai |
 | 244 | Paperless-ngx: biến giấy tờ quét thành kho lưu trữ có thể tìm kiếm, nhưng README cảnh báo về an toàn | [paperless-ngx/paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | GPL-3.0 | 47606 | nghien-cuu-va-luu-tru-tai-lieu |
+| 277 | SiYuan: ghi chú theo khối có tham chiếu hai chiều, lưu ý không đồng bộ qua ổ đĩa đồng bộ của bên thứ ba | [siyuan-note/siyuan](https://github.com/siyuan-note/siyuan) | AGPL-3.0 | 47045 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 
-### Nâng cao (29 bài)
+### Nâng cao (32 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -227,6 +231,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 268 | Moodle: nền tảng quản lý học tập mã nguồn mở của nhiều trường đại học, tự cài hoặc thuê host | [moodle/moodle](https://github.com/moodle/moodle) | GPL-3.0 | 7575 | so-do-thiet-ke-va-hoc-tap |
 | 272 | Apache ECharts: thư viện biểu đồ mạnh, tương tác và tùy biến cao viết bằng JavaScript | [apache/echarts](https://github.com/apache/echarts) | Apache-2.0 | 67669 | ung-dung-du-lieu-va-bieu-do |
 | 273 | Observable Plot: thư viện JavaScript khám phá dữ liệu bảng bằng ít dòng, theo triết lý 'ngữ pháp đồ họa' | [observablehq/plot](https://github.com/observablehq/plot) | ISC | 5417 | ung-dung-du-lieu-va-bieu-do |
+| 278 | Nextcloud: tự lưu tệp, lịch và danh bạ trên máy chủ riêng như một 'Google Drive tại nhà' | [nextcloud/server](https://github.com/nextcloud/server) | AGPL-3.0 | 37398 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
+| 279 | Immich: tự lưu ảnh và video gia đình trên máy chủ riêng, lưu ý README nhắc quy tắc sao lưu 3-2-1 | [immich-app/immich](https://github.com/immich-app/immich) | AGPL-3.0 | 118039 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
+| 280 | D3: thư viện JavaScript cấp thấp để dựng đồ họa dữ liệu tùy biến hoàn toàn, rất mạnh nhưng không dành cho người mới | [d3/d3](https://github.com/d3/d3) | ISC | 113861 | tri-thuc-luu-tru-va-do-hoa-du-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

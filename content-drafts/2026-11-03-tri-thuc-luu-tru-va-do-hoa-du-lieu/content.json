@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-tri-thuc-luu-tru",
+  "batch": 48,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 275,
+      "batch": 48,
+      "slug": "logseq",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Logseq: ghi chú dạng đại cương liên kết hai chiều, lưu ý phiên bản cơ sở dữ liệu đang beta và có thể mất dữ liệu",
+        "excerpt": "Hiểu Logseq là nền tảng quản lý tri thức ưu tiên riêng tư. README cảnh báo bản Database đang beta, ứng dụng di động và đồng bộ thời gian thực đang alpha, có thể mất dữ liệu.",
+        "content": "<p>README tả Logseq là nền tảng quản lý tri thức và cộng tác mã nguồn mở, ưu tiên quyền riêng tư (theo tuyên bố của dự án), có hệ sinh thái plugin và giao diện, có ứng dụng di động. Mục đầu của README nói về phiên bản Database (DB version) với đồ thị DB: bản này đang beta, ứng dụng di động mới và đồng bộ thời gian thực (RTC) đang alpha; README nhấn mạnh có thể mất dữ liệu nên khuyến nghị sao lưu tự động hoặc sao lưu định kỳ cơ sở dữ liệu SQLite. Cách bắt đầu theo README: tải bản mới nhất, cài và viết. Người dùng Linux có thể dùng script cài tự động bằng lệnh tải script rồi chạy ngay (bài không chép lệnh). Giấy phép AGPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống cuốn sổ mà mỗi ý là một dòng, các dòng nối với nhau bằng liên kết; từ ghi chú này nhảy sang ghi chú kia. Nhưng chính README dặn: bản mới nhất đang thử nghiệm, nên hãy sao lưu thường xuyên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên ghi chú nghiên cứu theo ý nhỏ liên kết nhau. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người thích ghi chú dạng đại cương và liên kết; người chịu được phần mềm còn thay đổi nhiều.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng ứng dụng không khó nhưng khái niệm đồ thị tri thức cần làm quen; README nói cần để ý bản DB. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần độ ổn định tuyệt đối cho dữ liệu quan trọng, đừng đưa vào bản beta khi chưa có sao lưu. Nếu chỉ cần ghi chú đơn giản, Zettlr hay trình soạn Markdown là đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>graph (đồ thị)</strong>: tập hợp ghi chú nối với nhau bằng liên kết.</li><li><strong>DB version</strong>: phiên bản Logseq dùng cơ sở dữ liệu thay cho tệp thường; README nói đang beta.</li><li><strong>RTC (đồng bộ thời gian thực)</strong>: cộng tác sửa cùng lúc; README nói đang alpha.</li><li><strong>SQLite</strong>: loại cơ sở dữ liệu nhỏ lưu trong một tệp; README nhắc sao lưu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản mới nhất ở trang releases, cài và mở ứng dụng; có bản web thử; có bản nightly; Linux có script cài tự động (lệnh tải script rồi chạy ngay: nên đọc script trước hoặc tải thủ công). Miễn phí theo giấy phép AGPL-3.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Database Version và cảnh báo mất dữ liệu.</li><li>Tạo sao lưu trước khi đưa ghi chú thật vào.</li><li>Thử với vài ghi chú thử rồi mới chuyển dần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng Logseq cho ghi chú nghiên cứu. Hãy đọc README của Logseq (https://github.com/logseq/logseq) và giải thích bằng tiếng Việt: bản DB khác bản thường thế nào, vì sao README cảnh báo mất dữ liệu, và cách sao lưu an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói bản DB đang beta, di động và RTC đang alpha, có thể mất dữ liệu. Bài chưa kiểm tra bản thường (không DB) nằm ở đâu hay đặc điểm riêng. 'Ưu tiên riêng tư' là tuyên bố của dự án.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh. Cẩn thận với lệnh tải script rồi chạy ngay trong README.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>logseq</strong> có <strong>45.464 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/logseq/logseq/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/logseq/logseq\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 275. Chưa cài/chạy thử; không tạo validation. Snapshot sao 45464; repo_id 266231149; README SHA256 597bcf7218c37fdf053524467029e22db5c29faffd8fb21007512bbbd3affe56.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/logseq/logseq",
+          "repo_id": "266231149",
+          "source_path": "",
+          "source_revision": "README-SHA256:597bcf7218c37fdf053524467029e22db5c29faffd8fb21007512bbbd3affe56",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/logseq/logseq",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản mới nhất ở trang releases, cài và mở ứng dụng; có bản web thử; có bản nightly; Linux có script cài tự động (lệnh tải script rồi chạy ngay: nên đọc script trước hoặc tải thủ công). Miễn phí theo giấy phép AGPL-3.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/logseq/logseq/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/logseq/logseq/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "logseq/logseq",
+        "stars": 45464,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/logseq/logseq/master/README.md",
+        "readmeSha256": "597bcf7218c37fdf053524467029e22db5c29faffd8fb21007512bbbd3affe56",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 276,
+      "batch": 48,
+      "slug": "appflowy",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "AppFlowy: không gian làm việc kiểu Notion mã nguồn mở, có AI và tự host được",
+        "excerpt": "Hiểu AppFlowy là lựa chọn mã nguồn mở thay thế Notion để ghi chú, quản lý dự án; viết bằng Flutter và Rust, có ứng dụng desktop và di động và hướng dẫn tự host.",
+        "content": "<p>README tự giới thiệu AppFlowy là lựa chọn mã nguồn mở thay cho Notion và là 'không gian làm việc AI giúp bạn làm được nhiều hơn mà không mất quyền kiểm soát dữ liệu' (tuyên bố của dự án). Cài đặt theo README: tải bản desktop cho macOS, Windows, Linux ở trang releases hoặc qua Flathub, Snapcraft, Sourceforge; có ứng dụng iPhone và Android 10 trở lên (ARMv7 không hỗ trợ); có hướng dẫn tự host từng bước và hướng dẫn build từ mã nguồn. Công nghệ: Flutter và Rust. README có lộ trình công khai, giải thích lý do xây dựng (cho rằng Notion có hạn chế về bảo mật dữ liệu và tương thích di động theo quan điểm của nhóm). Giấy phép AGPLv3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Notion cho bạn gom ghi chú, bảng, trang dự án vào một chỗ. AppFlowy là bản tương tự mã nguồn mở: bạn có thể dùng ứng dụng sẵn hoặc tự dựng máy chủ riêng để giữ dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhóm nhỏ gom ghi chú họp, bảng việc và tài liệu vào một không gian chung. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn công cụ giống Notion nhưng mã nguồn mở; nhóm muốn tự host.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng ứng dụng thì dễ; tự host cần máy chủ và theo hướng dẫn riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn bản ổn định, kiểm tra roadmap vì dự án có nhiều tính năng đang phát triển. Nếu chỉ cần ghi chú đơn giản, trình soạn Markdown nhẹ hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Notion</strong>: phần mềm không gian làm việc thương mại mà AppFlowy lấy làm tham chiếu.</li><li><strong>Flutter / Rust</strong>: công nghệ dựng AppFlowy theo README.</li><li><strong>self-host</strong>: tự chạy máy chủ của mình.</li><li><strong>roadmap (lộ trình)</strong>: kế hoạch phát triển; README có liên kết lộ trình công khai.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản desktop ở trang releases hoặc các kênh Flathub, Snapcraft, Sourceforge; ứng dụng iPhone trên App Store, Android 10+ trên Play Store; tự host theo hướng dẫn riêng (bài không chép lệnh). Miễn phí theo giấy phép AGPL-3.0; gói trả phí của dịch vụ đám mây bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Tải ứng dụng từ nguồn chính thức và thử một trang ghi chú.</li><li>Đọc roadmap để biết tính năng nào còn đang làm.</li><li>Chỉ tự host khi bạn cần kiểm soát dữ liệu và quen máy chủ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thay Notion bằng công cụ mã nguồn mở. Hãy đọc README của AppFlowy (https://github.com/AppFlowy-IO/AppFlowy) và giải thích bằng tiếng Việt: AppFlowy làm được gì, cách cài, và khi nào nên tự host. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tuyên bố về bảo mật, tương thích di động và 'không mất quyền kiểm soát dữ liệu' là của dự án, bài không kiểm chứng. README chỉ liệt kê cách cài, ít mô tả tính năng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>AppFlowy-IO</strong> có <strong>78.131 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi AGPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/AppFlowy-IO/AppFlowy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 276. Chưa cài/chạy thử; không tạo validation. Snapshot sao 78131; repo_id 377496562; README SHA256 10eb6aceebe3dba3912464e5bfaa72195c7e3697cb3f7670409880e697a12ec5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/AppFlowy-IO/AppFlowy",
+          "repo_id": "377496562",
+          "source_path": "",
+          "source_revision": "README-SHA256:10eb6aceebe3dba3912464e5bfaa72195c7e3697cb3f7670409880e697a12ec5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/AppFlowy-IO/AppFlowy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản desktop ở trang releases hoặc các kênh Flathub, Snapcraft, Sourceforge; ứng dụng iPhone trên App Store, Android 10+ trên Play Store; tự host theo hướng dẫn riêng (bài không chép lệnh). Miễn phí theo giấy phép AGPL-3.0; gói trả phí của dịch vụ đám mây bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "AppFlowy-IO/AppFlowy",
+        "stars": 78131,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/AppFlowy-IO/AppFlowy/main/README.md",
+        "readmeSha256": "10eb6aceebe3dba3912464e5bfaa72195c7e3697cb3f7670409880e697a12ec5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 277,
+      "batch": 48,
+      "slug": "siyuan",
+      "category": "Ghi chú và tri thức cá nhân",
+      "need": "Tổ chức ghi chú",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "SiYuan: ghi chú theo khối có tham chiếu hai chiều, lưu ý không đồng bộ qua ổ đĩa đồng bộ của bên thứ ba",
+        "excerpt": "Hiểu SiYuan là hệ ghi chú riêng tư theo khối, hỗ trợ Markdown WYSIWYG. README nêu rõ: không hỗ trợ đồng bộ bằng ổ đồng bộ của bên thứ ba vì có thể hỏng dữ liệu; một số tính năng chỉ cho thành viên trả phí.",
+        "content": "<p>README tả SiYuan là hệ quản lý tri thức cá nhân ưu tiên riêng tư, hỗ trợ tham chiếu mức khối chi tiết và soạn Markdown WYSIWYG. Tính năng: khối nội dung với tham chiếu và liên kết hai chiều, thuộc tính tùy chỉnh, nhúng truy vấn SQL, trình soạn khối, soạn tài liệu rất lớn; README nói hầu hết tính năng miễn phí, kể cả dùng thương mại, nhưng một số tính năng chỉ dành cho thành viên trả phí (xem trang giá). Cài bằng bộ cài, trình quản lý gói, Docker, Kubernetes, Unraid, TrueNAS; có giao diện dòng lệnh. Phần FAQ cho biết dữ liệu lưu trong thư mục workspace (tài liệu dạng JSON .sy; sổ tay mã hóa lưu dạng bản mã). FAQ cảnh báo: không hỗ trợ đồng bộ qua ổ đồng bộ của bên thứ ba vì dữ liệu có thể hỏng; có thể kết nối lưu trữ đám mây bên thứ ba (đặc quyền thành viên). FAQ nói đã mất khóa kho dữ liệu thì cần xem hướng dẫn riêng. Giấy phép AGPLv3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ghi chú không chỉ là trang mà là các khối; mỗi khối có thể được trích dẫn ở nơi khác. Lưu ý: đừng cố đồng bộ thư mục dữ liệu bằng ổ đồng bộ như Dropbox: README nói dễ làm hỏng dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: ghi chú nghiên cứu theo khối, nối ý qua tham chiếu hai chiều. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người thích ghi chú theo khối và có khả năng quản lý sao lưu; người muốn tự host bằng Docker.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Dùng ứng dụng thì dễ nhưng khái niệm khối, tham chiếu và cách đồng bộ cần học; README rất dài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn dùng ổ đồng bộ phổ biến để đồng bộ, README nói không hỗ trợ. Nếu không muốn trả phí cho tính năng thành viên, hãy xem kỹ trang giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>block (khối)</strong>: đơn vị nhỏ nhất của nội dung trong SiYuan, mỗi khối có thể được tham chiếu.</li><li><strong>WYSIWYG</strong>: soạn thấy ngay kết quả cuối khi viết.</li><li><strong>workspace</strong>: thư mục chứa toàn bộ dữ liệu SiYuan; README nói lưu ở đây.</li><li><strong>encrypted notebook (sổ tay mã hóa)</strong>: sổ tay lưu tài liệu dạng bản mã; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng bộ cài, trình quản lý gói hoặc Docker (cùng Kubernetes, Unraid, TrueNAS); có chợ ứng dụng và giao diện dòng lệnh (bài không chép lệnh). Hầu hết miễn phí; một số tính năng cần thành viên trả phí (trang giá bài chưa kiểm tra). Mã nguồn theo AGPLv3.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần FAQ về lưu trữ và đồng bộ.</li><li>Thử với vài ghi chú thử.</li><li>Lên kế hoạch sao lưu thư mục workspace và giữ khóa kho dữ liệu an toàn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử SiYuan để ghi chú. Hãy đọc README của SiYuan (https://github.com/siyuan-note/siyuan) và giải thích bằng tiếng Việt: dữ liệu được lưu thế nào, vì sao không nên đồng bộ bằng ổ đồng bộ của bên thứ ba, và tính năng nào cần trả phí. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài; bài chỉ lấy các phần chính. Danh sách tính năng thành viên trả phí và giá bài chưa kiểm tra. Đồng bộ qua ổ của bên thứ ba có thể hỏng dữ liệu theo chính README.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh. Giữ khóa kho dữ liệu ở nơi an toàn: README có mục riêng về mất khóa.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>siyuan-note</strong> có <strong>47.045 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu AGPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/siyuan-note/siyuan/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/siyuan-note/siyuan\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 277. Chưa cài/chạy thử; không tạo validation. Snapshot sao 47045; repo_id 291438522; README SHA256 48e4316db80452ca4c60824009217bafe100e5c4bc53de00594e4069a2bbe51f.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/siyuan-note/siyuan",
+          "repo_id": "291438522",
+          "source_path": "",
+          "source_revision": "README-SHA256:48e4316db80452ca4c60824009217bafe100e5c4bc53de00594e4069a2bbe51f",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/siyuan-note/siyuan",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng bộ cài, trình quản lý gói hoặc Docker (cùng Kubernetes, Unraid, TrueNAS); có chợ ứng dụng và giao diện dòng lệnh (bài không chép lệnh). Hầu hết miễn phí; một số tính năng cần thành viên trả phí (trang giá bài chưa kiểm tra). Mã nguồn theo AGPLv3.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/siyuan-note/siyuan/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "siyuan-note/siyuan",
+        "stars": 47045,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/siyuan-note/siyuan/master/README.md",
+        "readmeSha256": "48e4316db80452ca4c60824009217bafe100e5c4bc53de00594e4069a2bbe51f",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 278,
+      "batch": 48,
+      "slug": "nextcloud",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Nextcloud: tự lưu tệp, lịch và danh bạ trên máy chủ riêng như một 'Google Drive tại nhà'",
+        "excerpt": "Hiểu Nextcloud là máy chủ lưu và đồng bộ tệp, lịch, danh bạ, mở rộng bằng hàng trăm ứng dụng. Có thể đăng ký nhà cung cấp, tự cài hoặc mua thiết bị cài sẵn.",
+        "content": "<p>README tả Nextcloud Server là 'ngôi nhà an toàn cho mọi dữ liệu': lưu tệp, danh bạ, lịch... trên máy chủ bạn chọn; đồng bộ giữa các thiết bị; chia sẻ cho người khác; mở rộng bằng hàng trăm ứng dụng như Calendar, Contacts, Mail, Video Chat; bảo mật bằng cơ chế mã hóa, chương trình thưởng lỗi HackerOne và xác thực hai yếu tố (đây là tuyên bố của dự án). Cách có Nextcloud theo README: đăng ký ở một nhà cung cấp, tự cài trên phần cứng của bạn hoặc dùng thiết bị cài sẵn, thuê nhà cung cấp dịch vụ; có bản Enterprise cho doanh nghiệp và tổ chức giáo dục. README phần lớn dành cho nhà phát triển. Giấy phép AGPL-3.0 hoặc mới hơn (theo ghi chú SPDX trong README).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dịch vụ lưu tệp trên mạng giống thuê kho của người khác. Nextcloud là kho bạn tự dựng hoặc thuê một người quản kho đáng tin; bên trong có thể có cả lịch, danh bạ, trò chuyện video.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên hay nhóm nhỏ tự chia sẻ tệp tài liệu và lịch trên máy chủ riêng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự chủ dữ liệu tệp; quản trị viên nhóm nhỏ; đơn vị đào tạo cần kho chung.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Tự cài cần máy chủ, bảo mật và cập nhật thường xuyên; dùng qua nhà cung cấp thì dễ hơn. README không mô tả bước cài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa quản lý máy chủ, chưa nên tự cài và mở ra internet. README nói các nhánh stable* khi lấy từ git không bao giờ được dùng cho hệ thống thật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>sync (đồng bộ)</strong>: giữ cùng một nội dung giữa nhiều thiết bị.</li><li><strong>app store</strong>: kho ứng dụng mở rộng của Nextcloud; README nêu.</li><li><strong>appliance / thiết bị cài sẵn</strong>: phần cứng có sẵn Nextcloud; README nêu.</li><li><strong>Nextcloud Enterprise</strong>: gói thương mại do Nextcloud GmbH; README giới thiệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang đăng ký nhà cung cấp, hướng dẫn cài server và thiết bị cài sẵn; bài chưa đọc yêu cầu hệ thống nên không nêu lệnh. README nói các nhánh stable* lấy từ git không bao giờ được dùng cho hệ thống thật, và nhánh master thiếu một số ứng dụng mặc định phải cài tay. Mã nguồn miễn phí (AGPL-3.0); phí nhà cung cấp và Enterprise bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Cân nhắc đăng ký nhà cung cấp trước khi tự cài.</li><li>Đọc hướng dẫn cài server nếu tự host.</li><li>Lên kế hoạch sao lưu và cập nhật bảo mật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự chủ lưu tệp và lịch. Hãy đọc README của Nextcloud (https://github.com/nextcloud/server) và giải thích bằng tiếng Việt: Nextcloud làm gì, các cách có Nextcloud, và rủi ro khi tự cài. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các tuyên bố về an toàn là của dự án, bài không kiểm chứng. README phần lớn dành cho lập trình viên. Tự vận hành cần cập nhật bảo mật liên tục. Phí dịch vụ bài chưa kiểm tra.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh. Máy chủ mở ra internet cần cập nhật bảo mật thường xuyên và xác thực hai yếu tố.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nextcloud</strong> có <strong>37.398 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README ghi AGPL-3.0-or-later trong SPDX. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nextcloud/server/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nextcloud/server\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 278. Chưa cài/chạy thử; không tạo validation. Snapshot sao 37398; repo_id 60243197; README SHA256 694e8653a25b8f50d3bc772bd84b088e72ac56b2477f38134996189f8ab26a2c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nextcloud/server",
+          "repo_id": "60243197",
+          "source_path": "",
+          "source_revision": "README-SHA256:694e8653a25b8f50d3bc772bd84b088e72ac56b2477f38134996189f8ab26a2c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nextcloud/server",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang đăng ký nhà cung cấp, hướng dẫn cài server và thiết bị cài sẵn; bài chưa đọc yêu cầu hệ thống nên không nêu lệnh. README nói các nhánh stable* lấy từ git không bao giờ được dùng cho hệ thống thật, và nhánh master thiếu một số ứng dụng mặc định phải cài tay. Mã nguồn miễn phí (AGPL-3.0); phí nhà cung cấp và Enterprise bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nextcloud/server/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nextcloud/server/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nextcloud/server",
+        "stars": 37398,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nextcloud/server/master/README.md",
+        "readmeSha256": "694e8653a25b8f50d3bc772bd84b088e72ac56b2477f38134996189f8ab26a2c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 279,
+      "batch": 48,
+      "slug": "immich",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Immich: tự lưu ảnh và video gia đình trên máy chủ riêng, lưu ý README nhắc quy tắc sao lưu 3-2-1",
+        "excerpt": "Hiểu Immich là ứng dụng tự host để sao lưu và xem ảnh, video từ điện thoại, có tìm kiếm theo khuôn mặt, đối tượng và CLIP. README cảnh báo: luôn theo kế hoạch sao lưu 3-2-1.",
+        "content": "<p>README mở đầu bằng cảnh báo: luôn theo kế hoạch sao lưu 3-2-1 cho ảnh và video quý (3 bản, 2 loại phương tiện, 1 bản ở nơi khác). Tài liệu chính, hướng dẫn cài đặt ở docs.immich.app. Bảng tính năng nêu cho ứng dụng di động và web: tải lên và xem ảnh video, tự sao lưu khi mở ứng dụng, chống trùng lặp, chọn album để sao lưu, tải về máy, nhiều người dùng, album và album chia sẻ, hỗ trợ ảnh RAW, xem metadata (EXIF, bản đồ), tìm theo metadata, đối tượng, khuôn mặt và CLIP, quản trị người dùng (web), sao lưu nền, OAuth, API key. Có bản demo công khai kèm tài khoản thử. Giấy phép AGPLv3.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì để ảnh gia đình trên dịch vụ của công ty lớn, Immich giống một album ảnh trong nhà: điện thoại tự gửi ảnh về máy chủ riêng của bạn, nơi bạn tìm theo khuôn mặt hay đồ vật. Nhưng nếu máy chủ hỏng mà chưa sao lưu, ảnh mất, nên README dặn 3-2-1.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gia đình sao lưu ảnh điện thoại về máy chủ riêng và chia sẻ album. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn tự chủ ảnh và video; người đã quản lý được máy chủ tại nhà.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Tự cài cần máy chủ, ổ lưu trữ và quản trị lâu dài; README chỉ dẫn sang tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa có kế hoạch sao lưu 3-2-1 thì chưa nên coi Immich là nơi duy nhất giữ ảnh. Nếu không muốn quản trị máy chủ, hãy cân nhắc dịch vụ trả phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>3-2-1 backup</strong>: theo cách hiểu phổ biến: 3 bản sao, 2 loại phương tiện lưu, 1 bản ở nơi khác; README nhắc tuân theo và dẫn tới bài giải thích.</li><li><strong>RAW</strong>: định dạng ảnh thô từ máy ảnh; README nêu hỗ trợ.</li><li><strong>EXIF</strong>: thông tin kèm ảnh như thời gian và vị trí; README nêu xem metadata.</li><li><strong>CLIP</strong>: mô hình hiểu ảnh theo mô tả chữ; README nêu tìm kiếm theo CLIP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt và yêu cầu tại docs.immich.app (bài chưa đọc nên không nêu lệnh). Có bản demo công khai ở demo.immich.app kèm tài khoản thử công khai trong README; chỉ dùng demo với ảnh thử. Mã nguồn miễn phí theo AGPLv3.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo sao lưu 3-2-1.</li><li>Thử demo với ảnh mẫu, không tải ảnh thật.</li><li>Đọc yêu cầu cài đặt trước khi tự host.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự lưu ảnh gia đình. Hãy đọc README của Immich (https://github.com/immich-app/immich) và giải thích bằng tiếng Việt: Immich làm gì, quy tắc sao lưu 3-2-1 là gì, và vì sao không nên coi nó là nơi lưu duy nhất. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, chủ yếu bảng tính năng; bài chưa đọc tài liệu cài đặt, yêu cầu phần cứng hay tình trạng ổn định. Tìm kiếm khuôn mặt chứa dữ liệu sinh trắc, cần cân nhắc quyền riêng tư của người khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh. Ảnh có khuôn mặt người khác là dữ liệu nhạy cảm; đừng đưa ảnh thật lên bản demo công khai.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>immich-app</strong> có <strong>118.039 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu AGPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/immich-app/immich/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/immich-app/immich\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 279. Chưa cài/chạy thử; không tạo validation. Snapshot sao 118039; repo_id 455229168; README SHA256 b37199a0b7b52d1a6a62c97d6ad1a4eea18f367b8f8dad378ac9a0926f351a34.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/immich-app/immich",
+          "repo_id": "455229168",
+          "source_path": "",
+          "source_revision": "README-SHA256:b37199a0b7b52d1a6a62c97d6ad1a4eea18f367b8f8dad378ac9a0926f351a34",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/immich-app/immich",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt và yêu cầu tại docs.immich.app (bài chưa đọc nên không nêu lệnh). Có bản demo công khai ở demo.immich.app kèm tài khoản thử công khai trong README; chỉ dùng demo với ảnh thử. Mã nguồn miễn phí theo AGPLv3.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/immich-app/immich/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/immich-app/immich/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "immich-app/immich",
+        "stars": 118039,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/immich-app/immich/main/README.md",
+        "readmeSha256": "b37199a0b7b52d1a6a62c97d6ad1a4eea18f367b8f8dad378ac9a0926f351a34",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 280,
+      "batch": 48,
+      "slug": "d3",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "D3: thư viện JavaScript cấp thấp để dựng đồ họa dữ liệu tùy biến hoàn toàn, rất mạnh nhưng không dành cho người mới",
+        "excerpt": "Hiểu D3 (Data-Driven Documents) là thư viện trực quan hóa dữ liệu cấp thấp dựa trên chuẩn web. README rất ngắn; D3 linh hoạt nhưng đòi hỏi biết JavaScript và web.",
+        "content": "<p>README tả D3 (hay D3.js) là thư viện JavaScript miễn phí, mã nguồn mở để trực quan hóa dữ liệu; cách tiếp cận cấp thấp dựa trên chuẩn web cho sự linh hoạt cao khi tạo đồ họa động theo dữ liệu, và theo tuyên bố của dự án đã được dùng trong nhiều trực quan hóa đoạt giải hơn một thập kỷ. README rất ngắn: dẫn tới tài liệu, bộ ví dụ, ghi chú phát hành và trang nhờ giúp đỡ, kèm biểu đồ lượt tải hằng ngày. Giấy phép ISC.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chart.js và ECharts giống bộ khuôn biểu đồ dựng sẵn. D3 giống bộ dụng cụ của thợ: bút, thước, kéo; bạn tự vẽ mọi thứ từ dữ liệu, mạnh nhưng phải biết tay nghề.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bản đồ hoặc đồ họa dữ liệu tùy biến mà thư viện biểu đồ dựng sẵn không có. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm đồ họa dữ liệu, lập trình viên web giàu kinh nghiệm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cấp thấp, cần HTML, CSS, SVG, JavaScript và tư duy dữ liệu. README không có ví dụ mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Người mới vibe code chỉ cần biểu đồ cơ bản thì nên bắt đầu với Chart.js hoặc Observable Plot (cùng đợt).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>low-level (cấp thấp)</strong>: gần với chuẩn web, ít khuôn dựng sẵn; README nêu.</li><li><strong>SVG</strong>: định dạng hình vector dùng trong web.</li><li><strong>web standards (chuẩn web)</strong>: HTML, SVG, CSS mà D3 dựa vào.</li><li><strong>gallery (bộ ví dụ)</strong>: trang ví dụ để học; README liên kết.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu và ví dụ; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí theo giấy phép ISC.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bộ ví dụ để hiểu D3 làm được gì.</li><li>Học HTML, SVG và JavaScript cơ bản trước.</li><li>Thử một ví dụ nhỏ rồi mới tùy biến.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy D3 trong nhiều đồ họa dữ liệu. Hãy đọc README và tài liệu D3 (https://github.com/d3/d3) rồi giải thích bằng tiếng Việt: D3 khác Chart.js ở đâu, cần biết gì trước, và khi nào không nên dùng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn nên bài không mô tả tính năng chi tiết. 'Đoạt giải' và 'linh hoạt vô song' là tuyên bố của dự án. Đường học dốc với người mới. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Ghi chú, ảnh và tệp cá nhân là dữ liệu riêng tư: sao lưu theo quy tắc nhiều bản ở nhiều nơi, chỉ cài từ nguồn chính thức và đặt mật khẩu mạnh.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>d3</strong> có <strong>113.861 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-21. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện ISC. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/d3/d3/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/d3/d3\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 280. Chưa cài/chạy thử; không tạo validation. Snapshot sao 113861; repo_id 943149; README SHA256 1a0ae703426b282df2102bb5944ed3dd56940759dadc416cf45dad83b1cd6f40.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/d3/d3",
+          "repo_id": "943149",
+          "source_path": "",
+          "source_revision": "README-SHA256:1a0ae703426b282df2102bb5944ed3dd56940759dadc416cf45dad83b1cd6f40",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "ISC",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/d3/d3",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu và ví dụ; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí theo giấy phép ISC.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/d3/d3/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/d3/d3/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "d3/d3",
+        "stars": 113861,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/d3/d3/main/README.md",
+        "readmeSha256": "1a0ae703426b282df2102bb5944ed3dd56940759dadc416cf45dad83b1cd6f40",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

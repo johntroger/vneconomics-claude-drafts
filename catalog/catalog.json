@@ -3101,5 +3101,111 @@
   "related": [
    "observable-plot"
   ]
+ },
+ {
+  "key": 275,
+  "slug": "logseq",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "Logseq: ghi chú dạng đại cương liên kết hai chiều, lưu ý phiên bản cơ sở dữ liệu đang beta và có thể mất dữ liệu",
+  "repo": "logseq/logseq",
+  "stars": 45464,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-01",
+  "related": [
+   "appflowy",
+   "siyuan"
+  ]
+ },
+ {
+  "key": 276,
+  "slug": "appflowy",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "AppFlowy: không gian làm việc kiểu Notion mã nguồn mở, có AI và tự host được",
+  "repo": "AppFlowy-IO/AppFlowy",
+  "stars": 78131,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-02",
+  "related": [
+   "logseq"
+  ]
+ },
+ {
+  "key": 277,
+  "slug": "siyuan",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "SiYuan: ghi chú theo khối có tham chiếu hai chiều, lưu ý không đồng bộ qua ổ đĩa đồng bộ của bên thứ ba",
+  "repo": "siyuan-note/siyuan",
+  "stars": 47045,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Ghi chú và tri thức cá nhân",
+  "need": "Tổ chức ghi chú",
+  "pushed": "2026-11-03",
+  "related": [
+   "logseq",
+   "nextcloud"
+  ]
+ },
+ {
+  "key": 278,
+  "slug": "nextcloud",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "Nextcloud: tự lưu tệp, lịch và danh bạ trên máy chủ riêng như một 'Google Drive tại nhà'",
+  "repo": "nextcloud/server",
+  "stars": 37398,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "immich",
+   "siyuan"
+  ]
+ },
+ {
+  "key": 279,
+  "slug": "immich",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "Immich: tự lưu ảnh và video gia đình trên máy chủ riêng, lưu ý README nhắc quy tắc sao lưu 3-2-1",
+  "repo": "immich-app/immich",
+  "stars": 118039,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "d3",
+   "nextcloud"
+  ]
+ },
+ {
+  "key": 280,
+  "slug": "d3",
+  "group": "2026-11-03-tri-thuc-luu-tru-va-do-hoa-du-lieu",
+  "title": "D3: thư viện JavaScript cấp thấp để dựng đồ họa dữ liệu tùy biến hoàn toàn, rất mạnh nhưng không dành cho người mới",
+  "repo": "d3/d3",
+  "stars": 113861,
+  "license": "ISC",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-21",
+  "related": [
+   "immich"
+  ]
  }
 ]
