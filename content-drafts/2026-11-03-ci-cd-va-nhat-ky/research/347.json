@@ -1,0 +1,35 @@
+{
+  "key": 347,
+  "repo": "woodpecker-ci/woodpecker",
+  "repoId": "179344069",
+  "url": "https://github.com/woodpecker-ci/woodpecker",
+  "stars": 8099,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:35:49Z",
+  "createdAt": "2019-04-03T18:06:38Z",
+  "defaultBranch": "main",
+  "description": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.",
+  "homepage": "https://woodpecker-ci.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/woodpecker-ci/woodpecker/main/README.md",
+    "sha256": "5c50f5fa19d21adcb62311e6f990974e5fbc84b8e9c6b77585c7c9d95dd35964",
+    "bytes": 4086,
+    "sectionsRead": [
+      "Installation & Resources",
+      "Plugins",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử.",
+    "Chưa so sánh với Jenkins hay Gitea Actions."
+  ],
+  "runtimeValidated": false
+}

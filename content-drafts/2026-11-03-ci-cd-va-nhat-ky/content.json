@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-ci-nhat-ky",
+  "batch": 61,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 346,
+      "batch": 61,
+      "slug": "gitea",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Gitea: dịch vụ lưu mã Git tự host trọn gói, có kanban, wiki, kho gói và CI/CD dùng lại được GitHub Actions",
+        "excerpt": "Hiểu Gitea là dịch vụ phát triển phần mềm tự host trọn gói viết bằng Go: lưu Git, review mã, issue, kanban, wiki, kho gói và CI/CD. README có bản demo và dịch vụ Gitea Cloud dùng thử.",
+        "content": "<p>README nêu mục tiêu của Gitea là cách dễ nhất, nhanh nhất và ít vất vả nhất để dựng một dịch vụ phát triển phần mềm trọn gói tự host, gồm lưu Git, quản lý mã, review mã, theo dõi issue, kanban dự án, wiki, cộng tác nhóm, kho gói và CI/CD có thể dùng lại GitHub Actions. Vì viết bằng Go nên chạy trên mọi nền tảng và kiến trúc Go hỗ trợ (Linux, macOS, FreeBSD, OpenBSD, Windows; x86, amd64, ARM, RISC-V 64, PowerPC). README có bản demo tại demo.gitea.com, dịch vụ miễn phí giới hạn số kho tại gitea.com, và Gitea Cloud dùng thử miễn phí; hoặc tự triển khai bằng container với ảnh chính thức. Có tài liệu cài đặt, quản trị, dùng và phát triển; hướng dẫn dựng từ mã nguồn và chạy máy chủ. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mã nguồn dự án cần một nơi lưu và cộng tác. Gitea giống một GitHub thu nhỏ đặt trong nhà: bạn tự chạy trên máy của mình, nhóm cùng đẩy mã, góp ý, theo dõi lỗi và chạy kiểm thử tự động.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhóm nhỏ tự lưu mã của dự án trên máy chủ riêng thay vì dịch vụ ngoài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Tự host cần máy chủ, cơ sở dữ liệu (theo tài liệu), sao lưu và bảo mật; README chỉ dẫn tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần lưu mã cá nhân, dịch vụ có sẵn đơn giản hơn. Mã nguồn chứa tài sản của bạn nên cần sao lưu và bảo mật nghiêm ngặt.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Git hosting (lưu mã Git)</strong>: dịch vụ giữ kho mã Git để nhiều người cùng làm; README nêu là chức năng đầu tiên.</li><li><strong>CI/CD</strong>: tự động kiểm thử và triển khai khi có thay đổi mã; README nói Gitea có CI/CD dùng lại được GitHub Actions.</li><li><strong>package registry (kho gói)</strong>: nơi lưu gói phần mềm; README nêu.</li><li><strong>kanban</strong>: bảng việc chia cột theo tiến độ; README nêu cho dự án.</li><li><strong>Gitea Cloud</strong>: dịch vụ Gitea do hãng lưu trữ; README nêu bản dùng thử miễn phí.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng demo, gitea.com, Gitea Cloud, hoặc triển khai bằng container với ảnh chính thức; dựng từ mã nguồn theo tài liệu build (bài không chép lệnh). Miễn phí theo giấy phép MIT; giá Gitea Cloud sau bản dùng thử bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo.</li><li>Đọc tài liệu cài đặt chính thức.</li><li>Thử trên máy thử với kho mã không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Nhóm mình muốn tự lưu mã nguồn. Hãy đọc README của Gitea (https://github.com/go-gitea/gitea) và giải thích bằng tiếng Việt: Gitea gồm những chức năng gì, tự host cần gì, và rủi ro khi tự lưu mã. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Dễ nhất, nhanh nhất' là tuyên bố của dự án. README không nêu yêu cầu cấu hình. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>go-gitea</strong> có <strong>58.841 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/go-gitea/gitea/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/go-gitea/gitea\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 346. Chưa cài/chạy thử; không tạo validation. Snapshot sao 58841; repo_id 72495579; README SHA256 596511a44a8451c5ee3e38547ff19d8d23b8f7f80843ccebee15405b8c898497.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/go-gitea/gitea",
+          "repo_id": "72495579",
+          "source_path": "",
+          "source_revision": "README-SHA256:596511a44a8451c5ee3e38547ff19d8d23b8f7f80843ccebee15405b8c898497",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/go-gitea/gitea",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng demo, gitea.com, Gitea Cloud, hoặc triển khai bằng container với ảnh chính thức; dựng từ mã nguồn theo tài liệu build (bài không chép lệnh). Miễn phí theo giấy phép MIT; giá Gitea Cloud sau bản dùng thử bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/go-gitea/gitea/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/go-gitea/gitea/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "go-gitea/gitea",
+        "stars": 58841,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/go-gitea/gitea/main/README.md",
+        "readmeSha256": "596511a44a8451c5ee3e38547ff19d8d23b8f7f80843ccebee15405b8c898497",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 347,
+      "batch": 61,
+      "slug": "woodpecker",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Woodpecker CI: công cụ CI/CD gọn nhẹ chạy được với SQLite, mở rộng bằng plugin, được Codeberg dùng",
+        "excerpt": "Hiểu Woodpecker là công cụ CI/CD đơn giản mà mạnh, mở rộng được; README nói dùng SQLite mặc định, tốn khoảng 100 MB RAM cho máy chủ và 30 MB cho agent ở trạng thái rảnh.",
+        "content": "<p>README tả Woodpecker là công cụ CI/CD 'đơn giản mà mạnh' có khả năng mở rộng tốt. Cài đặt theo nhiều cách (xem hướng dẫn quản trị) và mặc định dùng SQLite làm cơ sở dữ liệu; README nói cần khoảng 100 MB RAM cho máy chủ và 30 MB cho agent khi chạy ở chế độ rảnh. Có tài liệu, bản dịch qua Weblate tự host, và README nói Woodpecker là công cụ CI/CD chính của Codeberg, nền tảng lưu mã thay thế hướng tới quyền riêng tư và phần mềm tự do. Mở rộng bằng plugin: có trang tổng quan plugin gồm cả plugin của nhóm lõi và do cộng đồng duy trì. Giấy phép Apache 2.0; mọi thứ trong thư mục docs theo Creative Commons Attribution-ShareAlike 4.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi lần đẩy mã lên, ai đó phải chạy kiểm thử và dựng bản mới. Woodpecker giống robot thực tập: thấy mã đổi là tự chạy danh sách việc bạn khai báo, nhẹ nên chạy được trên máy nhỏ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tự động kiểm thử mã mỗi lần đẩy lên một kho Git tự host. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần một dịch vụ Git để nối, hiểu cách khai báo quy trình và Docker; README chỉ giới thiệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng GitHub Actions và hài lòng thì chưa cần. Số RAM trong README là mức ở chế độ rảnh, không phải khi chạy tải nặng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CI/CD</strong>: tự động kiểm thử và triển khai; README gọi Woodpecker là công cụ CI/CD.</li><li><strong>agent</strong>: phần chạy các bước việc; README nêu mức RAM của agent.</li><li><strong>plugin</strong>: mảnh mở rộng chức năng; README có trang tổng quan plugin.</li><li><strong>Codeberg</strong>: nền tảng lưu mã thay thế dùng Woodpecker làm CI/CD chính theo README.</li><li><strong>SQLite</strong>: cơ sở dữ liệu nhỏ trong một tệp; README nói là mặc định.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn cài đặt tại woodpecker-ci.org/docs/administration/general; bài chưa đọc nên không nêu lệnh. Cần một dịch vụ Git để kết nối. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation & Resources.</li><li>Đọc tài liệu cài đặt.</li><li>Thử với một kho mã thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn CI/CD nhẹ cho kho mã tự host. Hãy đọc README của Woodpecker (https://github.com/woodpecker-ci/woodpecker) và giải thích bằng tiếng Việt: CI/CD là gì, Woodpecker cần bao nhiêu tài nguyên theo README, và plugin dùng để làm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Mức RAM trong README là khi chạy rảnh. README không nêu so sánh hiệu năng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>woodpecker-ci</strong> có <strong>8.099 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0 (docs theo CC BY-SA 4.0). Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/woodpecker-ci/woodpecker/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/woodpecker-ci/woodpecker\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 347. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8099; repo_id 179344069; README SHA256 5c50f5fa19d21adcb62311e6f990974e5fbc84b8e9c6b77585c7c9d95dd35964.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/woodpecker-ci/woodpecker",
+          "repo_id": "179344069",
+          "source_path": "",
+          "source_revision": "README-SHA256:5c50f5fa19d21adcb62311e6f990974e5fbc84b8e9c6b77585c7c9d95dd35964",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/woodpecker-ci/woodpecker",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn cài đặt tại woodpecker-ci.org/docs/administration/general; bài chưa đọc nên không nêu lệnh. Cần một dịch vụ Git để kết nối. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/woodpecker-ci/woodpecker/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/woodpecker-ci/woodpecker/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "woodpecker-ci/woodpecker",
+        "stars": 8099,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/woodpecker-ci/woodpecker/main/README.md",
+        "readmeSha256": "5c50f5fa19d21adcb62311e6f990974e5fbc84b8e9c6b77585c7c9d95dd35964",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 348,
+      "batch": 61,
+      "slug": "jenkins",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Jenkins: máy chủ tự động hóa mã nguồn mở viết bằng Java với hơn 2.000 plugin, dùng để dựng, kiểm thử và triển khai",
+        "excerpt": "Hiểu Jenkins là máy chủ tự động hóa mã nguồn mở viết bằng Java, hơn 2.000 plugin, dùng cho dựng dự án, chạy kiểm thử, phân tích mã tĩnh và triển khai. Giấy phép MIT.",
+        "content": "<p>README tả Jenkins là máy chủ tự động hóa mã nguồn mở hàng đầu (theo cách nói của dự án), viết bằng Java, với hơn 2.000 plugin để tự động hóa 'hầu như mọi thứ' để con người dành thời gian cho việc máy không làm được. README nêu các việc thường dùng Jenkins: dựng dự án, chạy kiểm thử để phát hiện lỗi sớm, phân tích mã tĩnh, triển khai; thực hiện tác vụ lặp lại để tiết kiệm thời gian. README có mục tải về, bắt đầu cho người phát triển, nguồn, đóng góp, tin tức và trang web, quản trị, người dùng và giấy phép MIT. Có huy hiệu Reproducible Builds.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Jenkins là người quản đốc lâu đời của thế giới CI/CD: bạn khai báo việc cần làm khi mã đổi, nó chạy kiểm thử, dựng bản mới, triển khai; thêm gì thì cài plugin. Nó linh hoạt nhưng có nhiều thứ để tự chăm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thiết lập quy trình dựng và kiểm thử tự động cho một dự án Java nhỏ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần máy chủ, Java, quản lý plugin và bảo mật; README ngắn về cách dùng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần CI/CD nhẹ trên kho mã tự host, Woodpecker (cùng nhóm) có thể gọn hơn (bài không so sánh sâu). Plugin của bên thứ ba cần kiểm tra trước khi cài.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>automation server (máy chủ tự động hóa)</strong>: chương trình chạy các tác vụ tự động như dựng và kiểm thử; README mô tả Jenkins như vậy.</li><li><strong>plugin</strong>: mảnh mở rộng; README nói có hơn 2.000.</li><li><strong>static code analysis (phân tích mã tĩnh)</strong>: kiểm tra mã mà không chạy nó; README nêu là việc thường làm.</li><li><strong>Java</strong>: ngôn ngữ lập trình mà Jenkins viết bằng; README nêu.</li><li><strong>Reproducible Builds</strong>: dựng lại ra tệp giống hệt để kiểm chứng; README có huy hiệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang tải về và hướng dẫn riêng; bài chưa đọc nên không nêu lệnh. Cần Java và máy chủ. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What to Use Jenkins for.</li><li>Đọc hướng dẫn cài đặt chính thức.</li><li>Thử một tác vụ đơn giản trên máy thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần CI/CD cho dự án. Hãy đọc README của Jenkins (https://github.com/jenkinsci/jenkins) và giải thích bằng tiếng Việt: Jenkins dùng để làm gì, plugin là gì, và rủi ro bảo mật khi cài nhiều plugin. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hàng đầu' và 'hơn 2.000 plugin' là tuyên bố của dự án. README không mô tả cách cài hay bảo mật. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jenkinsci</strong> có <strong>26.721 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jenkinsci/jenkins/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jenkinsci/jenkins\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 348. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26721; repo_id 1103607; README SHA256 99fd91d9f185bf2989ac2cabdddbb14047321d3ded5d5fb9038697ca4224bd4c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jenkinsci/jenkins",
+          "repo_id": "1103607",
+          "source_path": "",
+          "source_revision": "README-SHA256:99fd91d9f185bf2989ac2cabdddbb14047321d3ded5d5fb9038697ca4224bd4c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jenkinsci/jenkins",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang tải về và hướng dẫn riêng; bài chưa đọc nên không nêu lệnh. Cần Java và máy chủ. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jenkinsci/jenkins/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jenkinsci/jenkins/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jenkinsci/jenkins",
+        "stars": 26721,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jenkinsci/jenkins/master/README.md",
+        "readmeSha256": "99fd91d9f185bf2989ac2cabdddbb14047321d3ded5d5fb9038697ca4224bd4c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 349,
+      "batch": 61,
+      "slug": "loki",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grafana Loki: hệ thống gom nhật ký lấy cảm hứng từ Prometheus, chỉ lập chỉ mục nhãn chứ không lập chỉ mục toàn văn",
+        "excerpt": "Hiểu Loki là hệ thống gom nhật ký mở rộng ngang, sẵn sàng cao, nhiều người thuê, không lập chỉ mục toàn văn mà chỉ nhãn. README nêu chuyển Helm chart sang kho cộng đồng từ ngày 16/3/2026.",
+        "content": "<p>README tả Loki là hệ thống gom nhật ký mở rộng ngang, sẵn sàng cao, nhiều người thuê, lấy cảm hứng từ Prometheus, thiết kế để tiết kiệm chi phí và dễ vận hành. Điểm khác: không lập chỉ mục nội dung nhật ký mà chỉ lập chỉ mục tập nhãn của mỗi luồng nhật ký; nhờ lưu nhật ký nén không cấu trúc và chỉ lập chỉ mục siêu dữ liệu nên dễ vận hành và rẻ hơn; dùng cùng nhãn với Prometheus để chuyển giữa số liệu và nhật ký; hợp với nhật ký pod Kubernetes; hỗ trợ sẵn trong Grafana. Một ngăn xếp nhật ký dựa trên Loki gồm ba thành phần: Alloy (agent thu thập và gửi nhật ký), Loki (lưu và truy vấn), Grafana (truy vấn và hiển thị). README ghi chú Alloy đã thay Promtail vì Promtail được coi là hoàn thiện tính năng. README cảnh báo di chuyển Helm chart: từ 16/3/2026 chart của Loki được tách sang kho grafana-community/helm-charts; chart trong kho Loki chỉ tiếp tục duy trì cho người dùng GEL. Giấy phép AGPL-3.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ứng dụng liên tục ghi nhật ký, thường là hàng triệu dòng. Loki giống kho lưu trữ có nhãn: không đọc từng chữ để đánh chỉ mục (nên rẻ), mà dán nhãn từng cuộn nhật ký để tìm lại theo nhãn rồi mới lọc chữ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gom nhật ký ứng dụng chạy trong Kubernetes về một nơi và xem trong Grafana. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu nhật ký, nhãn kiểu Prometheus, và thường dùng cùng Grafana và Kubernetes. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần tìm kiếm toàn văn nhanh trên mọi nội dung nhật ký, README nói Loki không lập chỉ mục nội dung. Nếu bạn dùng Helm chart của Loki, chú ý thông báo chuyển kho.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>log aggregation (gom nhật ký)</strong>: thu thập nhật ký từ nhiều nơi về một chỗ; README mô tả Loki như vậy.</li><li><strong>label (nhãn)</strong>: cặp tên và giá trị gắn vào luồng nhật ký; README nói Loki chỉ lập chỉ mục nhãn.</li><li><strong>multi-tenant (nhiều người thuê)</strong>: một hệ thống phục vụ nhiều nhóm tách biệt; README nêu.</li><li><strong>Alloy / Promtail</strong>: agent thu thập nhật ký; README nói Alloy thay Promtail.</li><li><strong>GEL</strong>: viết tắt trong README (Grafana Enterprise Logs), bài chưa kiểm tra ý nghĩa.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn cài Loki và Alloy trên grafana.com/docs/loki; bài chưa đọc nên không nêu lệnh. Thường dùng cùng Grafana. Miễn phí theo giấy phép AGPL-3.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ngăn xếp ba thành phần.</li><li>Đọc Getting Started trên grafana.com.</li><li>Thử với nhật ký của một ứng dụng thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gom nhật ký ứng dụng. Hãy đọc README của Loki (https://github.com/grafana/loki) và giải thích bằng tiếng Việt: Loki khác Elasticsearch ở đâu, Alloy và Grafana đóng vai trò gì, và thông báo chuyển Helm chart nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Rẻ hơn, dễ vận hành hơn' là tuyên bố của dự án. Bài chưa kiểm tra ý nghĩa 'GEL' ngoài tên viết tắt trong README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>grafana</strong> có <strong>29.112 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/grafana/loki/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/grafana/loki\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 349. Chưa cài/chạy thử; không tạo validation. Snapshot sao 29112; repo_id 129717717; README SHA256 af9e356ba4d99300f4e145be9c0b5885587b2ba8dbba89e2a5f149cd3572c04a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/grafana/loki",
+          "repo_id": "129717717",
+          "source_path": "",
+          "source_revision": "README-SHA256:af9e356ba4d99300f4e145be9c0b5885587b2ba8dbba89e2a5f149cd3572c04a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "AGPL-3.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/loki",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn cài Loki và Alloy trên grafana.com/docs/loki; bài chưa đọc nên không nêu lệnh. Thường dùng cùng Grafana. Miễn phí theo giấy phép AGPL-3.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/grafana/loki/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/grafana/loki/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "grafana/loki",
+        "stars": 29112,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/grafana/loki/main/README.md",
+        "readmeSha256": "af9e356ba4d99300f4e145be9c0b5885587b2ba8dbba89e2a5f149cd3572c04a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 350,
+      "batch": 61,
+      "slug": "vector",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vector: ống dẫn dữ liệu quan sát viết bằng Rust, thu thập, biến đổi và định tuyến nhật ký và số liệu tới nhiều đích",
+        "excerpt": "Hiểu Vector là ống dẫn dữ liệu quan sát đầu-cuối (agent và aggregator) giúp thu thập, biến đổi, định tuyến nhật ký và số liệu. README nói do nhóm của Datadog duy trì và tuyên bố nhanh hơn tới 10 lần; bài không kiểm chứng.",
+        "content": "<p>README tả Vector là ống dẫn dữ liệu quan sát hiệu năng cao, đầu-cuối (vừa là agent vừa là aggregator), đặt bạn kiểm soát dữ liệu quan sát của mình: thu thập, biến đổi và định tuyến mọi nhật ký và số liệu tới bất kỳ nhà cung cấp nào bạn muốn, hôm nay và sau này. README nói Vector cho phép giảm chi phí đáng kể, làm giàu dữ liệu và bảo mật dữ liệu ở nơi bạn cần, và 'mã nguồn mở, nhanh hơn tới 10 lần mọi lựa chọn khác' (đây là tuyên bố của README, bài không kiểm chứng). Nguyên tắc: tin cậy (viết bằng Rust, mục tiêu thiết kế chính là độ tin cậy), đầu-cuối (triển khai như agent hay aggregator), thống nhất (nhật ký, số liệu ở mức beta, vết sắp có). Trường hợp dùng: giảm tổng chi phí quan sát, đổi nhà cung cấp mà không gián đoạn, nâng chất lượng dữ liệu. README nói Vector do nhóm Community Open Source Engineering của Datadog duy trì. Có hướng dẫn quickstart và cài đặt. Giấy phép MPL-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhật ký và số liệu sinh ra khắp hệ thống, rồi phải gửi tới nhiều nơi lưu. Vector giống trạm trung chuyển: nhận từ nhiều nguồn, lọc, sửa và gửi tới đúng đích, nên đổi nơi lưu không phải sửa từng ứng dụng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gom nhật ký từ nhiều máy, bỏ bớt dòng thừa rồi gửi tới một nơi lưu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu nhật ký, số liệu và cấu hình nguồn, biến đổi, đích; README chỉ giới thiệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Nhanh hơn 10 lần' và 'giảm chi phí đáng kể' là tuyên bố của README, bài không kiểm chứng. README nói phần số liệu mới ở mức beta và vết 'sắp có'.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>observability pipeline (ống dẫn dữ liệu quan sát)</strong>: đường chuyển nhật ký và số liệu từ nguồn tới đích; README mô tả Vector như vậy.</li><li><strong>agent / aggregator</strong>: thu thập tại từng máy và tổng hợp ở nơi tập trung; README nêu Vector làm được cả hai.</li><li><strong>sources / transforms / sinks</strong>: nguồn, bước biến đổi và đích trong cấu hình Vector (README liên kết tài liệu tương ứng).</li><li><strong>Rust</strong>: ngôn ngữ lập trình mà Vector viết bằng; README nêu.</li><li><strong>vendor (nhà cung cấp)</strong>: dịch vụ nhận dữ liệu quan sát; README nói chuyển đổi không gián đoạn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới quickstart và hướng dẫn cài đặt; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MPL-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is Vector? và Principles.</li><li>Làm theo quickstart.</li><li>Thử một nguồn và một đích đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn gom nhật ký từ nhiều máy. Hãy đọc README của Vector (https://github.com/vectordotdev/vector) và giải thích bằng tiếng Việt: ống dẫn dữ liệu quan sát là gì, khác Fluentd thế nào, và vì sao cần kiểm chứng tuyên bố hiệu năng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói số liệu ở mức beta và vết 'sắp có'. Mọi tuyên bố hiệu năng và chi phí là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vectordotdev</strong> có <strong>22.786 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MPL-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vectordotdev/vector/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vectordotdev/vector\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 350. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22786; repo_id 146327667; README SHA256 a3db4b62355c49e5c7cb163e02fa1d3e6b931f60198576e5a2f251a61662ee74.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vectordotdev/vector",
+          "repo_id": "146327667",
+          "source_path": "",
+          "source_revision": "README-SHA256:a3db4b62355c49e5c7cb163e02fa1d3e6b931f60198576e5a2f251a61662ee74",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vectordotdev/vector",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới quickstart và hướng dẫn cài đặt; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MPL-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vectordotdev/vector/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vectordotdev/vector/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vectordotdev/vector",
+        "stars": 22786,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vectordotdev/vector/master/README.md",
+        "readmeSha256": "a3db4b62355c49e5c7cb163e02fa1d3e6b931f60198576e5a2f251a61662ee74",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 351,
+      "batch": 61,
+      "slug": "fluentd",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Fluentd: bộ thu thập nhật ký mã nguồn mở thuộc CNCF, README nêu nhánh master cho v1 và v0.12 đã ngừng hỗ trợ",
+        "excerpt": "Hiểu Fluentd là lớp nhật ký thống nhất thuộc CNCF, thu sự kiện từ nhiều nguồn và ghi tới tệp, cơ sở dữ liệu, đám mây. README nêu nhánh master dành cho v1 và nhánh v0.12 đã bị ngừng hỗ trợ.",
+        "content": "<p>README tả Fluentd là bộ thu thập nhật ký mã nguồn mở: thu sự kiện từ nhiều nguồn dữ liệu và ghi vào tệp, RDBMS, NoSQL, IaaS, SaaS, Hadoop và nhiều nơi khác, giúp thống nhất hạ tầng nhật ký. Mô tả kho trên GitHub ghi dự án thuộc CNCF (README phần đọc không nêu). README có phần Quick Start dùng lệnh cài bằng Ruby gem và chạy với tệp cấu hình mẫu (bài không chép lệnh). Mục Development nêu nhánh: master dành cho phát triển v1; v0.12 là phiên bản đã bị loại bỏ và nhóm đã ngừng hỗ trợ. Yêu cầu để phát triển: Ruby 3.3 trở lên và git; cài phụ thuộc bằng bundler. Giấy phép: README ghi Apache License, Version 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nhật ký ở mỗi ứng dụng một kiểu, mỗi nơi lưu một khác. Fluentd giống trạm tiếp nhận đa năng: nhận nhật ký từ nhiều nơi, chuẩn hóa rồi chuyển tới nơi cất, với hàng loạt plugin cho từng đích.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thu nhật ký từ vài ứng dụng và ghi vào một nơi lưu tập trung. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu nhật ký, cấu hình nguồn và đích; cài bằng Ruby gem theo README. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn gặp tài liệu hay hướng dẫn nhắc v0.12, README nói phiên bản này đã ngừng hỗ trợ. Nếu cần ống dẫn dữ liệu mới nhất, so sánh thêm với Vector (cùng nhóm).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>log collector (bộ thu thập nhật ký)</strong>: chương trình thu nhật ký từ nhiều nguồn; README mô tả Fluentd như vậy.</li><li><strong>CNCF</strong>: quỹ chủ quản; theo mô tả kho trên GitHub, Fluentd thuộc CNCF (README không nêu).</li><li><strong>Ruby gem</strong>: cách đóng gói thư viện Ruby; README dùng để cài Fluentd.</li><li><strong>bundler</strong>: công cụ quản lý phụ thuộc Ruby; README dùng khi phát triển.</li><li><strong>deprecated (đã loại bỏ)</strong>: không còn được hỗ trợ; README nói v0.12 ở trạng thái này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: phần Quick Start dùng Ruby gem (bài không chép lệnh); yêu cầu Ruby 3.3 trở lên khi phát triển. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Development và nhánh.</li><li>Cài theo Quick Start trong môi trường thử.</li><li>Thử một nguồn và một đích đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thu thập nhật ký từ nhiều ứng dụng. Hãy đọc README của Fluentd (https://github.com/fluent/fluentd) và giải thích bằng tiếng Việt: Fluentd làm gì, nhánh master và v0.12 khác nhau thế nào, và khi nào nên xem xét công cụ khác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn về tính năng; bài không khẳng định hiệu năng hay danh sách plugin. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>fluent</strong> có <strong>13.611 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/fluent/fluentd/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/fluent/fluentd\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 351. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13611; repo_id 1918677; README SHA256 8f43318bbdb605efea78cea9c9e276ceb79d478e7acdb938af1df55f5e1fe899.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/fluent/fluentd",
+          "repo_id": "1918677",
+          "source_path": "",
+          "source_revision": "README-SHA256:8f43318bbdb605efea78cea9c9e276ceb79d478e7acdb938af1df55f5e1fe899",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/fluent/fluentd",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: phần Quick Start dùng Ruby gem (bài không chép lệnh); yêu cầu Ruby 3.3 trở lên khi phát triển. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/fluent/fluentd/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/fluent/fluentd/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "fluent/fluentd",
+        "stars": 13611,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/fluent/fluentd/master/README.md",
+        "readmeSha256": "8f43318bbdb605efea78cea9c9e276ceb79d478e7acdb938af1df55f5e1fe899",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 352,
+      "batch": 61,
+      "slug": "alertmanager",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Alertmanager: nhận cảnh báo từ Prometheus, loại trùng, gom nhóm và gửi tới đúng người nhận",
+        "excerpt": "Hiểu Alertmanager xử lý cảnh báo từ ứng dụng khách như máy chủ Prometheus: loại trùng, gom nhóm và định tuyến tới các kênh nhận. README có cách cài bằng nhị phân, Docker hoặc dựng từ mã nguồn.",
+        "content": "<p>README tả Alertmanager xử lý cảnh báo do các ứng dụng khách như máy chủ Prometheus gửi tới: loại bỏ trùng lặp, gom nhóm và định tuyến tới đúng các tích hợp nhận (receiver). README liên kết tài liệu và hướng dẫn cài: nhị phân dựng sẵn từ trang tải của prometheus.io (cách được khuyến nghị là dùng bản phát hành sản xuất mới nhất), ảnh Docker trên Quay.io hoặc Docker Hub (README có ví dụ chạy thử một container, bài không chép lệnh), hoặc tự dựng bằng Go và Node.js (kèm npm). README có ví dụ tệp cấu hình (tuyến gốc, quy tắc ức chế), mô tả API và công cụ dòng lệnh amtool với cách cài và ví dụ, và mục High Availability: README nói chế độ sẵn sàng cao đang được nhiều công ty dùng trong sản xuất và bật theo mặc định; từ bản 0.15 trở lên cụm cần cả UDP và TCP, nên nếu có tường lửa hay container thì phải mở cổng cụm cho cả hai giao thức. Giấy phép Apache-2.0 theo GitHub; README phần đã đọc không nêu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hệ giám sát có thể 'la' hàng trăm lần cho cùng một sự cố. Alertmanager giống tổng đài viên: gom các tiếng la trùng lại thành một cuộc gọi, rồi báo đúng người, đúng kênh như email hay chat.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gom cảnh báo từ Prometheus thành một thông báo thay vì hàng chục tin nhắn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc với hạ tầng và phát triển phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu Prometheus và cảnh báo; README dẫn tới tài liệu cấu hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa dùng Prometheus thì chưa cần. README nêu cách chạy thử bằng Docker; không phơi cổng 9093 ra ngoài khi chưa bảo vệ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>alert (cảnh báo)</strong>: thông báo khi số liệu vượt điều kiện; README nói Alertmanager xử lý cảnh báo từ Prometheus.</li><li><strong>deduplication (loại trùng)</strong>: gộp các cảnh báo giống nhau; README nêu.</li><li><strong>grouping (gom nhóm)</strong>: gộp các cảnh báo liên quan thành một thông báo; README nêu.</li><li><strong>routing (định tuyến)</strong>: gửi cảnh báo tới đúng người nhận; README nêu.</li><li><strong>receiver (người nhận)</strong>: kênh nhận cảnh báo như email, chat; README gọi là receiver integration.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng nhị phân dựng sẵn từ prometheus.io (được khuyến nghị), ảnh Docker trên Quay.io hoặc Docker Hub, hoặc tự dựng bằng Go và Node.js (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Cài nhị phân dựng sẵn trong môi trường thử.</li><li>Gắn với một Prometheus thử và tạo một cảnh báo mẫu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Prometheus và muốn nhận cảnh báo gọn. Hãy đọc README của Alertmanager (https://github.com/prometheus/alertmanager) và giải thích bằng tiếng Việt: loại trùng, gom nhóm và định tuyến nghĩa là gì, và nên cài thế nào cho an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không mô tả chi tiết cấu hình; bài không khẳng định. Phơi cổng cảnh báo ra mạng là rủi ro. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ CI/CD và nhật ký thường có quyền đọc mã, khóa và nhật ký của hệ thống: giữ bí mật ngoài kho mã, đặt quyền tối thiểu, đừng mở thẳng ra internet khi chưa hiểu cách bảo vệ và thử trên môi trường thử trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>prometheus</strong> có <strong>8.677 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/prometheus/alertmanager/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/prometheus/alertmanager\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 352. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8677; repo_id 11452538; README SHA256 c8a1c9e7a1b15e5b48f193ae9a94fab151e5ab39476b916ea3cdf70debef24c7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/prometheus/alertmanager",
+          "repo_id": "11452538",
+          "source_path": "",
+          "source_revision": "README-SHA256:c8a1c9e7a1b15e5b48f193ae9a94fab151e5ab39476b916ea3cdf70debef24c7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prometheus/alertmanager",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng nhị phân dựng sẵn từ prometheus.io (được khuyến nghị), ảnh Docker trên Quay.io hoặc Docker Hub, hoặc tự dựng bằng Go và Node.js (bài không chép lệnh). Miễn phí theo giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prometheus/alertmanager/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/prometheus/alertmanager/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "prometheus/alertmanager",
+        "stars": 8677,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/prometheus/alertmanager/main/README.md",
+        "readmeSha256": "c8a1c9e7a1b15e5b48f193ae9a94fab151e5ab39476b916ea3cdf70debef24c7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

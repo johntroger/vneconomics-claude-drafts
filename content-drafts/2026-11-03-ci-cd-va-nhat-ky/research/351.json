@@ -1,0 +1,35 @@
+{
+  "key": 351,
+  "repo": "fluent/fluentd",
+  "repoId": "1918677",
+  "url": "https://github.com/fluent/fluentd",
+  "stars": 13611,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T02:30:12Z",
+  "createdAt": "2011-06-19T08:41:40Z",
+  "defaultBranch": "master",
+  "description": "Fluentd: Unified Logging Layer (project under CNCF)",
+  "homepage": "https://www.fluentd.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/fluent/fluentd/master/README.md",
+    "sha256": "8f43318bbdb605efea78cea9c9e276ceb79d478e7acdb938af1df55f5e1fe899",
+    "bytes": 2864,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quick Start",
+      "Development: Branch"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu fluentd.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Vector."
+  ],
+  "runtimeValidated": false
+}

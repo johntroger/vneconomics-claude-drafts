@@ -4353,5 +4353,129 @@
   "related": [
    "k9s"
   ]
+ },
+ {
+  "key": 346,
+  "slug": "gitea",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Gitea: dịch vụ lưu mã Git tự host trọn gói, có kanban, wiki, kho gói và CI/CD dùng lại được GitHub Actions",
+  "repo": "go-gitea/gitea",
+  "stars": 58841,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "woodpecker"
+  ]
+ },
+ {
+  "key": 347,
+  "slug": "woodpecker",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Woodpecker CI: công cụ CI/CD gọn nhẹ chạy được với SQLite, mở rộng bằng plugin, được Codeberg dùng",
+  "repo": "woodpecker-ci/woodpecker",
+  "stars": 8099,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "gitea",
+   "jenkins"
+  ]
+ },
+ {
+  "key": 348,
+  "slug": "jenkins",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Jenkins: máy chủ tự động hóa mã nguồn mở viết bằng Java với hơn 2.000 plugin, dùng để dựng, kiểm thử và triển khai",
+  "repo": "jenkinsci/jenkins",
+  "stars": 26721,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "fluentd",
+   "woodpecker"
+  ]
+ },
+ {
+  "key": 349,
+  "slug": "loki",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Grafana Loki: hệ thống gom nhật ký lấy cảm hứng từ Prometheus, chỉ lập chỉ mục nhãn chứ không lập chỉ mục toàn văn",
+  "repo": "grafana/loki",
+  "stars": 29112,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "alertmanager",
+   "vector"
+  ]
+ },
+ {
+  "key": 350,
+  "slug": "vector",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Vector: ống dẫn dữ liệu quan sát viết bằng Rust, thu thập, biến đổi và định tuyến nhật ký và số liệu tới nhiều đích",
+  "repo": "vectordotdev/vector",
+  "stars": 22786,
+  "license": "MPL-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "fluentd",
+   "loki"
+  ]
+ },
+ {
+  "key": 351,
+  "slug": "fluentd",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Fluentd: bộ thu thập nhật ký mã nguồn mở thuộc CNCF, README nêu nhánh master cho v1 và v0.12 đã ngừng hỗ trợ",
+  "repo": "fluent/fluentd",
+  "stars": 13611,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "jenkins",
+   "vector"
+  ]
+ },
+ {
+  "key": 352,
+  "slug": "alertmanager",
+  "group": "2026-11-03-ci-cd-va-nhat-ky",
+  "title": "Alertmanager: nhận cảnh báo từ Prometheus, loại trùng, gom nhóm và gửi tới đúng người nhận",
+  "repo": "prometheus/alertmanager",
+  "stars": 8677,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-01",
+  "related": [
+   "loki"
+  ]
  }
 ]

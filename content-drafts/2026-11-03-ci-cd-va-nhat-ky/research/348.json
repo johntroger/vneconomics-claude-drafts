@@ -1,0 +1,35 @@
+{
+  "key": 348,
+  "repo": "jenkinsci/jenkins",
+  "repoId": "1103607",
+  "url": "https://github.com/jenkinsci/jenkins",
+  "stars": 26721,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:08:44Z",
+  "createdAt": "2010-11-22T21:21:23Z",
+  "defaultBranch": "master",
+  "description": "Jenkins automation server",
+  "homepage": "https://www.jenkins.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jenkinsci/jenkins/master/README.md",
+    "sha256": "99fd91d9f185bf2989ac2cabdddbb14047321d3ded5d5fb9038697ca4224bd4c",
+    "bytes": 5689,
+    "sectionsRead": [
+      "About",
+      "What to Use Jenkins for and When to Use It",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn cài.",
+    "Chưa thử.",
+    "Chưa đánh giá bảo mật plugin."
+  ],
+  "runtimeValidated": false
+}

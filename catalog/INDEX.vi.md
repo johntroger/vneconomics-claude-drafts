@@ -41,6 +41,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 39 — Quản lý dự án và wiki tự host cho nhóm](learning-paths/39-quan-ly-du-an-va-wiki-tu-host.vi.md) — Công cụ theo dõi việc và wiki chung; chú ý giấy phép và phần tính năng trả phí của từng dự án.
 - [Lộ trình 40 — Dữ liệu, hạ tầng và giám sát](learning-paths/40-du-lieu-ha-tang-va-giam-sat.vi.md) — Phân tích dữ liệu, bảng điều khiển, hạ tầng như mã và giám sát; luôn thử ở môi trường thử và dùng tài khoản quyền tối thiểu.
 - [Lộ trình 41 — Làm quen Kubernetes từ cụm cục bộ](learning-paths/41-kubernetes-cho-nguoi-moi.vi.md) — Học Kubernetes từ cụm nhỏ trên máy trước khi chạm môi trường thật; đây là chủ đề khó, đừng vội dùng cho sản xuất.
+- [Lộ trình 42 — CI/CD, lưu mã tự host và nhật ký](learning-paths/42-ci-cd-va-nhat-ky.vi.md) — Tự động hóa kiểm thử và triển khai, lưu mã tự host, thu thập nhật ký và cảnh báo; luôn giữ bí mật ngoài kho mã.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -246,7 +247,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 336 | Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu | [getredash/redash](https://github.com/getredash/redash) | BSD-2-Clause | 28862 | du-lieu-ha-tang-va-giam-sat |
 | 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
 
-### Nâng cao (61 bài)
+### Nâng cao (68 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -311,6 +312,13 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 343 | Helm: trình quản lý gói cho Kubernetes, đóng cấu hình ứng dụng thành chart; README nêu thời hạn hỗ trợ Helm v3 | [helm/helm](https://github.com/helm/helm) | Apache-2.0 | 30388 | kubernetes-cho-nguoi-moi |
 | 344 | K9s: giao diện terminal để duyệt, theo dõi và quản lý cụm Kubernetes, README rất dài với nhiều phím tắt | [derailed/k9s](https://github.com/derailed/k9s) | Apache-2.0 | 34914 | kubernetes-cho-nguoi-moi |
 | 345 | Argo CD: công cụ triển khai liên tục theo kiểu GitOps cho Kubernetes, mô tả ứng dụng bằng cấu hình trong Git | [argoproj/argo-cd](https://github.com/argoproj/argo-cd) | Apache-2.0 | 24517 | kubernetes-cho-nguoi-moi |
+| 346 | Gitea: dịch vụ lưu mã Git tự host trọn gói, có kanban, wiki, kho gói và CI/CD dùng lại được GitHub Actions | [go-gitea/gitea](https://github.com/go-gitea/gitea) | MIT | 58841 | ci-cd-va-nhat-ky |
+| 347 | Woodpecker CI: công cụ CI/CD gọn nhẹ chạy được với SQLite, mở rộng bằng plugin, được Codeberg dùng | [woodpecker-ci/woodpecker](https://github.com/woodpecker-ci/woodpecker) | Apache-2.0 | 8099 | ci-cd-va-nhat-ky |
+| 348 | Jenkins: máy chủ tự động hóa mã nguồn mở viết bằng Java với hơn 2.000 plugin, dùng để dựng, kiểm thử và triển khai | [jenkinsci/jenkins](https://github.com/jenkinsci/jenkins) | MIT | 26721 | ci-cd-va-nhat-ky |
+| 349 | Grafana Loki: hệ thống gom nhật ký lấy cảm hứng từ Prometheus, chỉ lập chỉ mục nhãn chứ không lập chỉ mục toàn văn | [grafana/loki](https://github.com/grafana/loki) | AGPL-3.0 | 29112 | ci-cd-va-nhat-ky |
+| 350 | Vector: ống dẫn dữ liệu quan sát viết bằng Rust, thu thập, biến đổi và định tuyến nhật ký và số liệu tới nhiều đích | [vectordotdev/vector](https://github.com/vectordotdev/vector) | MPL-2.0 | 22786 | ci-cd-va-nhat-ky |
+| 351 | Fluentd: bộ thu thập nhật ký mã nguồn mở thuộc CNCF, README nêu nhánh master cho v1 và v0.12 đã ngừng hỗ trợ | [fluent/fluentd](https://github.com/fluent/fluentd) | Apache-2.0 | 13611 | ci-cd-va-nhat-ky |
+| 352 | Alertmanager: nhận cảnh báo từ Prometheus, loại trùng, gom nhóm và gửi tới đúng người nhận | [prometheus/alertmanager](https://github.com/prometheus/alertmanager) | Apache-2.0 | 8677 | ci-cd-va-nhat-ky |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

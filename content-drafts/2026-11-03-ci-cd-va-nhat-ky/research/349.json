@@ -1,0 +1,35 @@
+{
+  "key": 349,
+  "repo": "grafana/loki",
+  "repoId": "129717717",
+  "url": "https://github.com/grafana/loki",
+  "stars": 29112,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "AGPL-3.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:31:58Z",
+  "createdAt": "2018-04-16T09:22:48Z",
+  "defaultBranch": "main",
+  "description": "Like Prometheus, but for logs.",
+  "homepage": "https://grafana.com/oss/loki",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/grafana/loki/main/README.md",
+    "sha256": "af9e356ba4d99300f4e145be9c0b5885587b2ba8dbba89e2a5f149cd3572c04a",
+    "bytes": 8787,
+    "sectionsRead": [
+      "Loki: like Prometheus, but for logs",
+      "Getting started",
+      "Helm Chart Migration"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt.",
+    "Chưa thử.",
+    "Chưa so sánh với các hệ nhật ký khác."
+  ],
+  "runtimeValidated": false
+}

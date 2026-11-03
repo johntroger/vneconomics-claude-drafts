@@ -1,0 +1,38 @@
+{
+  "key": 352,
+  "repo": "prometheus/alertmanager",
+  "repoId": "11452538",
+  "url": "https://github.com/prometheus/alertmanager",
+  "stars": 8677,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T15:10:34Z",
+  "createdAt": "2013-07-16T15:06:31Z",
+  "defaultBranch": "main",
+  "description": "Prometheus Alertmanager",
+  "homepage": "https://prometheus.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/prometheus/alertmanager/main/README.md",
+    "sha256": "c8a1c9e7a1b15e5b48f193ae9a94fab151e5ab39476b916ea3cdf70debef24c7",
+    "bytes": 18025,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Install",
+      "Example",
+      "API",
+      "amtool",
+      "High Availability"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình đầy đủ.",
+    "Chưa thử.",
+    "Chưa kiểm tra chế độ cụm sẵn sàng cao."
+  ],
+  "runtimeValidated": false
+}
