@@ -491,6 +491,7 @@
   "pushed": "2026-10-31",
   "related": [
    "coolify",
+   "nextjs",
    "playwright"
   ]
  },
@@ -771,6 +772,8 @@
   "pushed": "2026-11-03",
   "related": [
    "astro",
+   "front-end-checklist",
+   "payload-cms",
    "vite"
   ]
  },
@@ -859,6 +862,8 @@
   "need": "Làm việc với coding agent",
   "pushed": "2026-11-02",
   "related": [
+   "decap-cms",
+   "hugo",
    "nextjs",
    "tailwindcss"
   ]
@@ -1252,6 +1257,95 @@
   "related": [
    "ml-for-beginners",
    "openai-cookbook"
+  ]
+ },
+ {
+  "key": 172,
+  "slug": "hugo",
+  "group": "2026-11-03-cms-va-website-noi-dung",
+  "title": "Hugo: tạo website tĩnh nhanh từ các tệp nội dung, không cần cơ sở dữ liệu",
+  "repo": "gohugoio/hugo",
+  "stars": 90327,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "astro"
+  ]
+ },
+ {
+  "key": 173,
+  "slug": "ghost",
+  "group": "2026-11-03-cms-va-website-noi-dung",
+  "title": "Ghost: nền tảng xuất bản và bản tin có thành viên, mã nguồn mở và có dịch vụ host sẵn",
+  "repo": "TryGhost/Ghost",
+  "stars": 55658,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "decap-cms",
+   "strapi"
+  ]
+ },
+ {
+  "key": 174,
+  "slug": "strapi",
+  "group": "2026-11-03-cms-va-website-noi-dung",
+  "title": "Strapi: CMS không đầu (headless) để tạo API nội dung cho website hoặc ứng dụng của bạn",
+  "repo": "strapi/strapi",
+  "stars": 73423,
+  "license": "NOASSERTION",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "ghost",
+   "payload-cms"
+  ]
+ },
+ {
+  "key": 175,
+  "slug": "payload-cms",
+  "group": "2026-11-03-cms-va-website-noi-dung",
+  "title": "Payload: CMS và framework full-stack chạy ngay trong ứng dụng Next.js của bạn",
+  "repo": "payloadcms/payload",
+  "stars": 45634,
+  "license": "MIT",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "nextjs",
+   "strapi"
+  ]
+ },
+ {
+  "key": 176,
+  "slug": "decap-cms",
+  "group": "2026-11-03-cms-va-website-noi-dung",
+  "title": "Decap CMS: trang soạn nội dung cho website tĩnh, lưu thẳng vào Git",
+  "repo": "decaporg/decap-cms",
+  "stars": 19460,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-01",
+  "related": [
+   "astro",
+   "ghost"
   ]
  }
 ]

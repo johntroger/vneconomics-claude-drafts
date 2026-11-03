@@ -1,0 +1,523 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-cms-website",
+  "batch": 29,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 172,
+      "batch": 29,
+      "slug": "hugo",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hugo: tạo website tĩnh nhanh từ các tệp nội dung, không cần cơ sở dữ liệu",
+        "excerpt": "Hiểu website tĩnh là gì và Hugo biến thư mục chữ và ảnh thành trang web hoàn chỉnh trong vài giây ra sao. Hợp blog, tài liệu, trang giới thiệu.",
+        "content": "<p>Hugo là trình tạo website tĩnh viết bằng Go, tối ưu cho tốc độ và linh hoạt. README nói Hugo dựng cả site thường trong vài giây hoặc ít hơn, hỗ trợ đa ngôn ngữ, có hệ thống phân loại (taxonomy) và hệ thống mẫu mạnh, được dùng cho site doanh nghiệp, tài liệu, blog, thư viện ảnh, trang đích, CV. Có máy chủ nhúng để xem thay đổi tức thì khi phát triển, quy trình xử lý CSS, ảnh, JavaScript, Sass và Tailwind CSS, và Hugo Modules để chia sẻ nội dung, giao diện và cấu hình giữa các dự án qua Git.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một trang WordPress giống nhà bếp mở cửa 24 giờ: mỗi lần có khách vào, bếp mới nấu trang đó. Website tĩnh giống chuẩn bị sẵn mọi món rồi dọn lên quầy: khách đến chỉ lấy món đã làm, nên rất nhanh và ít lỗi. Hugo là cái máy 'nấu sẵn' đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết vài bài bằng tệp Markdown và xem Hugo dựng thành một blog nhỏ chạy trên máy bạn trước khi nghĩ tới đăng lên mạng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người viết blog, tài liệu, trang giới thiệu nội dung ít thay đổi; người muốn web nhanh và ít tốn chi phí lưu trữ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần làm quen dòng lệnh, Markdown và khái niệm mẫu giao diện (theme, template). Người quen WordPress sẽ thấy cách làm khác hẳn: không có trang quản trị kéo thả theo mặc định. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần đăng nhập, bình luận, bán hàng, hay nhiều người không rành kỹ thuật cùng sửa nội dung qua giao diện, một hệ quản trị nội dung (CMS) sẽ hợp hơn; xem các bài Ghost, Strapi và Decap CMS trong cùng nhóm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>static site (website tĩnh)</strong>: website gồm các tệp đã dựng sẵn, không cần chạy mã và cơ sở dữ liệu mỗi lần có người truy cập.</li><li><strong>Markdown</strong>: định dạng chữ đơn giản dùng dấu # cho tiêu đề; Hugo đọc nội dung bạn viết bằng Markdown.</li><li><strong>taxonomy (phân loại)</strong>: cách gắn nhãn và danh mục cho nội dung, README nêu Hugo có hệ thống này.</li><li><strong>theme (giao diện)</strong>: bộ mẫu quyết định trang trông thế nào.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài qua bản nhị phân dựng sẵn, trình quản lý gói hoặc kho gói, có hướng dẫn riêng cho macOS, Linux, Windows và các hệ BSD. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0; README liệt kê các thành phần bên thứ ba với giấy phép riêng (như libwebp, Katex).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview để biết Hugo làm được gì.</li><li>Đọc hướng dẫn cài cho hệ điều hành của bạn trong tài liệu.</li><li>Dựng một site thử với vài bài mẫu, chưa đưa lên mạng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang dùng WordPress và muốn hiểu website tĩnh. Hãy đọc README của Hugo (https://github.com/gohugoio/hugo) và giải thích bằng tiếng Việt: website tĩnh khác WordPress thế nào, khi nào hợp, khi nào không, và mình cần biết gì để thử. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Hugo là công cụ dòng lệnh, không có trang quản trị mặc định cho người không kỹ thuật. Tính năng động (đăng nhập, bình luận) phải thêm bằng dịch vụ ngoài. README là của hệ thống lớn nhiều tính năng nên dễ choáng với người mới.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với website công khai, hãy cập nhật phần mềm đều đặn, dùng mật khẩu mạnh cho trang quản trị, sao lưu trước mỗi thay đổi lớn và không để lộ khóa hay token trong mã nguồn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gohugoio</strong> có <strong>90.327 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README liệt kê các thành phần bên thứ ba có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gohugoio/hugo/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gohugoio/hugo\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm CMS và website nội dung, key 172. Chưa cài/chạy thử; không tạo validation. Snapshot sao 90327; repo_id 11180687; README SHA256 996bd8ce6847f66a45646b4f40c3f331ac392b6d41366db2ec11c4e911599be3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gohugoio/hugo",
+          "repo_id": "11180687",
+          "source_path": "",
+          "source_revision": "README-SHA256:996bd8ce6847f66a45646b4f40c3f331ac392b6d41366db2ec11c4e911599be3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gohugoio/hugo",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài qua bản nhị phân dựng sẵn, trình quản lý gói hoặc kho gói, có hướng dẫn riêng cho macOS, Linux, Windows và các hệ BSD. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0; README liệt kê các thành phần bên thứ ba với giấy phép riêng (như libwebp, Katex).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gohugoio/hugo/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gohugoio/hugo/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gohugoio/hugo",
+        "stars": 90327,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gohugoio/hugo/master/README.md",
+        "readmeSha256": "996bd8ce6847f66a45646b4f40c3f331ac392b6d41366db2ec11c4e911599be3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 173,
+      "batch": 29,
+      "slug": "ghost",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Ghost: nền tảng xuất bản và bản tin có thành viên, mã nguồn mở và có dịch vụ host sẵn",
+        "excerpt": "Hiểu Ghost dành cho người viết và nhà xuất bản độc lập, khác WordPress ở đâu, có dịch vụ Ghost(Pro) trả phí và đường tự cài. Cần phân biệt phần mã mở với dịch vụ thương mại.",
+        "content": "<p>Ghost là công nghệ xuất bản độc lập cho website, bản tin và thành viên. README nói cách dễ nhất để có bản chạy thật là dịch vụ quản lý chính thức Ghost(Pro) (host sẵn, CDN, sao lưu, bảo mật, bảo trì) và rằng 100% doanh thu dịch vụ này đi vào Ghost Foundation để duy trì dự án. Nếu muốn tự chạy, README hướng dẫn dùng công cụ dòng lệnh ghost-cli: có bản cài cục bộ và bản cài lên máy chủ kèm cấu hình SSL tự động. Mã theo giấy phép MIT; tên và logo Ghost là nhãn hiệu có chính sách sử dụng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu WordPress giống bộ đồ nghề đa năng (viết, bán hàng, làm gì cũng được), Ghost giống bàn viết chuyên dụng dành cho người xuất bản: tập trung viết bài, bản tin email và thu phí thành viên. Bạn có thể thuê chỗ đặt bàn sẵn (Ghost(Pro)) hoặc tự dựng bàn trong nhà.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người muốn mở một bản tin có đăng ký thành viên cân nhắc Ghost và so sánh giữa dịch vụ host sẵn và tự cài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người viết blog chuyên nghiệp, nhà xuất bản độc lập, người muốn bản tin và thành viên trên cùng nền tảng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng Ghost(Pro) thì dễ hơn nhiều (README nói khoảng 2 phút để khởi tạo). Tự cài cần Node.js, dòng lệnh và quản trị máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần nhiều plugin và giao diện của hệ sinh thái WordPress, hay làm web bán hàng phức tạp, Ghost có thể không đủ. Nếu chỉ cần trang tĩnh nhỏ, Hugo gọn hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>cloud (bản đám mây)</strong>: dùng dịch vụ do nhà cung cấp vận hành sẵn, thường tính phí theo mức dùng hoặc gói.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CLI</strong>: công cụ dùng bằng lệnh gõ trong terminal; ghost-cli là công cụ cài và quản lý Ghost.</li><li><strong>SSL / Let's Encrypt</strong>: chứng chỉ giúp trang dùng HTTPS; README nói bản cài trên máy chủ có thiết lập SSL tự động bằng Let's Encrypt.</li><li><strong>membership (thành viên)</strong>: người đăng ký đọc nội dung, có thể trả phí.</li><li><strong>trademark (nhãn hiệu)</strong>: tên và logo Ghost là nhãn hiệu; README dẫn tới chính sách sử dụng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nêu hai đường: dịch vụ Ghost(Pro) trả phí (xem trang giá, bài chưa kiểm tra) hoặc tự cài bằng ghost-cli (cài cục bộ bằng một cờ local, cài lên máy chủ theo hướng dẫn Ubuntu). Yêu cầu phiên bản Node.js và máy chủ xem tài liệu. Mã MIT. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu về Ghost(Pro) và về đường tự cài.</li><li>Xem tài liệu cài cục bộ để hiểu quy trình trước khi thuê máy chủ.</li><li>Thử bản cục bộ hoặc bản dùng thử, chưa đưa nội dung thật lên.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang cân nhắc Ghost cho bản tin và blog. Hãy đọc README của Ghost (https://github.com/TryGhost/Ghost) và giải thích bằng tiếng Việt: Ghost khác WordPress ở đâu, Ghost(Pro) khác tự cài thế nào, và các điều cần chuẩn bị. Chưa cài hay đăng ký gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README quảng bá dịch vụ trả phí Ghost(Pro) và tuyển dụng của hãng. Tự host đồng nghĩa bạn lo bảo mật, cập nhật, sao lưu. Hệ sinh thái giao diện và tiện ích nhỏ hơn WordPress (nhận định biên tập, chưa kiểm chứng).</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với website công khai, hãy cập nhật phần mềm đều đặn, dùng mật khẩu mạnh cho trang quản trị, sao lưu trước mỗi thay đổi lớn và không để lộ khóa hay token trong mã nguồn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>TryGhost</strong> có <strong>55.658 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT, nhãn hiệu Ghost có chính sách riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/TryGhost/Ghost/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/TryGhost/Ghost\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm CMS và website nội dung, key 173. Chưa cài/chạy thử; không tạo validation. Snapshot sao 55658; repo_id 9852918; README SHA256 8c8ab5173564bf5c397711bff1219d047790a560bac537332c07da12b345a411.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/TryGhost/Ghost",
+          "repo_id": "9852918",
+          "source_path": "",
+          "source_revision": "README-SHA256:8c8ab5173564bf5c397711bff1219d047790a560bac537332c07da12b345a411",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TryGhost/Ghost",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nêu hai đường: dịch vụ Ghost(Pro) trả phí (xem trang giá, bài chưa kiểm tra) hoặc tự cài bằng ghost-cli (cài cục bộ bằng một cờ local, cài lên máy chủ theo hướng dẫn Ubuntu). Yêu cầu phiên bản Node.js và máy chủ xem tài liệu. Mã MIT. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/TryGhost/Ghost/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/TryGhost/Ghost/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "TryGhost/Ghost",
+        "stars": 55658,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/TryGhost/Ghost/main/README.md",
+        "readmeSha256": "8c8ab5173564bf5c397711bff1219d047790a560bac537332c07da12b345a411",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 174,
+      "batch": 29,
+      "slug": "strapi",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Strapi: CMS không đầu (headless) để tạo API nội dung cho website hoặc ứng dụng của bạn",
+        "excerpt": "Hiểu headless CMS là gì: nơi quản lý nội dung có giao diện cho người biên tập và API cho website lấy dữ liệu. Cần chú ý giấy phép chưa rõ trong README.",
+        "content": "<p>Strapi là CMS không đầu (headless) mã nguồn mở, tự host. README nói nhà phát triển định nghĩa mô hình nội dung và Strapi sinh ra API đầy đủ để lấy dữ liệu từ bất kỳ giao diện nào, còn người biên tập có giao diện soạn thân thiện. Tính năng: Content-Type Builder trực quan, API REST và GraphQL tự sinh, vai trò và quyền, thư viện media, đa ngôn ngữ, nháp và xuất bản, hỗ trợ TypeScript, cơ sở dữ liệu SQLite, PostgreSQL, MySQL, MariaDB, hệ thống plugin. README nhắc lớp AI mới của Strapi.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>WordPress vừa là nơi viết bài vừa là cái khung hiển thị trang. Headless CMS tách đôi: Strapi chỉ lo kho nội dung và 'cửa phát dữ liệu', còn phần hiển thị bạn tự làm bằng bất cứ công cụ nào, ví dụ một trang Next.js hay một ứng dụng di động.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nếu bạn có ứng dụng cần lấy danh sách bài viết từ một nơi có giao diện soạn cho biên tập viên, hãy tìm hiểu Strapi như kho nội dung. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng web hoặc di động cần kho nội dung có giao diện biên tập; đội có người lập trình giao diện.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> README hướng dẫn tạo dự án bằng một lệnh và dẫn tới yêu cầu phần cứng, Node.js, cơ sở dữ liệu trong tài liệu. Cần hiểu khái niệm API và tách giao diện khỏi kho nội dung. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần một website hoàn chỉnh có giao diện sẵn, một CMS truyền thống (WordPress, Ghost) sẽ nhanh hơn. Nếu chỉ vài trang tĩnh, không cần headless CMS.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>headless CMS</strong>: hệ quản lý nội dung không kèm giao diện hiển thị; nó chỉ lưu nội dung và cung cấp API.</li><li><strong>content type (kiểu nội dung)</strong>: khuôn mẫu cho một loại nội dung, như bài viết gồm tiêu đề, thân bài, ảnh.</li><li><strong>REST / GraphQL</strong>: hai kiểu API để lấy dữ liệu; README nói Strapi tự sinh cả hai.</li><li><strong>plugin</strong>: phần mở rộng thêm tính năng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tạo dự án mới bằng một lệnh create-strapi; yêu cầu phần cứng và phần mềm (hệ điều hành, Node.js, cơ sở dữ liệu) nằm ở trang Requirements trong tài liệu, bài chưa đọc. README hỗ trợ SQLite, PostgreSQL, MySQL, MariaDB. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng và phần 'How Strapi handles requests'.</li><li>Đọc trang Requirements trong tài liệu.</li><li>Thử tạo một kiểu nội dung đơn giản bằng Content-Type Builder trên dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu headless CMS. Hãy đọc README của Strapi (https://github.com/strapi/strapi) và giải thích bằng tiếng Việt: headless khác CMS truyền thống thế nào, Content-Type Builder làm gì, và mình cần biết gì về API và cơ sở dữ liệu để dùng. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README không nêu rõ giấy phép (chỉ dẫn tới tệp LICENSE) và GitHub trả NOASSERTION, nên bài chưa kết luận giấy phép và phạm vi bản mã nguồn mở so với tính năng thương mại. README nhắc Strapi AI; chúng tôi chưa tìm hiểu chi phí hay điều kiện.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với website công khai, hãy cập nhật phần mềm đều đặn, dùng mật khẩu mạnh cho trang quản trị, sao lưu trước mỗi thay đổi lớn và không để lộ khóa hay token trong mã nguồn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>strapi</strong> có <strong>73.423 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub trả NOASSERTION; README chỉ dẫn tới tệp LICENSE nên bài chưa kết luận giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/strapi/strapi/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/strapi/strapi\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm CMS và website nội dung, key 174. Chưa cài/chạy thử; không tạo validation. Snapshot sao 73423; repo_id 43441403; README SHA256 cbc029a16a9d8cb0df0857f8a59001d70792f432cf40c1c5c9c2fa6d653829ea.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/strapi/strapi",
+          "repo_id": "43441403",
+          "source_path": "",
+          "source_revision": "README-SHA256:cbc029a16a9d8cb0df0857f8a59001d70792f432cf40c1c5c9c2fa6d653829ea",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/strapi/strapi",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tạo dự án mới bằng một lệnh create-strapi; yêu cầu phần cứng và phần mềm (hệ điều hành, Node.js, cơ sở dữ liệu) nằm ở trang Requirements trong tài liệu, bài chưa đọc. README hỗ trợ SQLite, PostgreSQL, MySQL, MariaDB. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/strapi/strapi/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/strapi/strapi/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "strapi/strapi",
+        "stars": 73423,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/strapi/strapi/develop/README.md",
+        "readmeSha256": "cbc029a16a9d8cb0df0857f8a59001d70792f432cf40c1c5c9c2fa6d653829ea",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 175,
+      "batch": 29,
+      "slug": "payload-cms",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Payload: CMS và framework full-stack chạy ngay trong ứng dụng Next.js của bạn",
+        "excerpt": "Hiểu Payload là CMS 'bản địa Next.js' cài thẳng vào thư mục ứng dụng, có mẫu website và cửa hàng. Hợp người đã dùng Next.js.",
+        "content": "<p>Payload tự giới thiệu là CMS bản địa Next.js đầu tiên có thể cài thẳng vào thư mục /app của ứng dụng bạn. README hướng dẫn tạo dự án bằng create-payload-app (khuyên người mới bắt đầu với mẫu website) và nhắc cần xem phần mềm yêu cầu trong tài liệu. Có tùy chọn triển khai một cú bấm trên Cloudflare (Workers, R2, D1) và Vercel (Next.js, Neon, Vercel Blob), cùng các mẫu sẵn dùng cho website, cửa hàng, blog và portfolio. README nói bạn có thể truy vấn cơ sở dữ liệu trực tiếp trong Server Components mà không cần REST hay GraphQL.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Strapi là kho nội dung đứng riêng, Payload giống đặt luôn kho nội dung vào cùng ngôi nhà với giao diện: một dự án Next.js duy nhất vừa có trang người dùng, vừa có trang quản trị nội dung.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: người đã có site Next.js do AI dựng và cần trang quản trị cho biên tập viên cân nhắc Payload với mẫu website. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng Next.js muốn thêm quản trị nội dung; đội lập trình web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần biết Next.js, TypeScript và cơ sở dữ liệu ở mức cơ bản. Một cú bấm triển khai thuận tiện nhưng liên quan tài khoản đám mây có chi phí. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng Next.js hoặc chỉ cần blog đơn giản, chưa cần. Nếu bạn muốn hệ thống có giao diện sẵn không cần lập trình, CMS truyền thống dễ hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>Next.js</strong>: framework web full-stack dựa trên React; xem bài riêng.</li><li><strong>Server Components</strong>: thành phần React chạy trên máy chủ; README nói có thể truy vấn dữ liệu trực tiếp trong đó.</li><li><strong>serverless</strong>: chạy mã mà không tự quản lý máy chủ; README nêu triển khai serverless một cú bấm.</li><li><strong>R2 / D1 / Neon</strong>: dịch vụ lưu file, cơ sở dữ liệu của Cloudflare và Neon được README nhắc trong các mẫu triển khai.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nhắc xem yêu cầu phần mềm trong tài liệu cài đặt và tạo dự án bằng một lệnh create-payload-app. Triển khai một cú bấm cần tài khoản Cloudflare hoặc Vercel và dịch vụ đi kèm có thể tính phí; bài chưa kiểm tra. Giấy phép MIT. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quickstart và lời khuyên bắt đầu bằng mẫu website.</li><li>Đọc trang Installation trong tài liệu để biết phần mềm yêu cầu.</li><li>Thử mẫu trên máy trước khi dùng nút triển khai một cú bấm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có site Next.js và cần quản trị nội dung. Hãy đọc README của Payload (https://github.com/payloadcms/payload) và giải thích bằng tiếng Việt: 'CMS bản địa Next.js' nghĩa là gì, khác Strapi ở đâu, và các dịch vụ đám mây trong mẫu triển khai tính phí thế nào. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Payload gắn chặt với Next.js nên khó dùng nếu dự án khác công nghệ. Mẫu triển khai một cú bấm kéo theo nhiều dịch vụ ngoài nên chi phí và quyền cần được hiểu trước. README ngắn; chi tiết ở tài liệu.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với website công khai, hãy cập nhật phần mềm đều đặn, dùng mật khẩu mạnh cho trang quản trị, sao lưu trước mỗi thay đổi lớn và không để lộ khóa hay token trong mã nguồn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>payloadcms</strong> có <strong>45.634 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/payloadcms/payload/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/payloadcms/payload\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm CMS và website nội dung, key 175. Chưa cài/chạy thử; không tạo validation. Snapshot sao 45634; repo_id 327089870; README SHA256 54bcaba223f7894a070d982e4bd92f6e9978d9acbe4b3e81db7d6e3278f7491a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/payloadcms/payload",
+          "repo_id": "327089870",
+          "source_path": "",
+          "source_revision": "README-SHA256:54bcaba223f7894a070d982e4bd92f6e9978d9acbe4b3e81db7d6e3278f7491a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/payloadcms/payload",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nhắc xem yêu cầu phần mềm trong tài liệu cài đặt và tạo dự án bằng một lệnh create-payload-app. Triển khai một cú bấm cần tài khoản Cloudflare hoặc Vercel và dịch vụ đi kèm có thể tính phí; bài chưa kiểm tra. Giấy phép MIT. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/payloadcms/payload/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/payloadcms/payload/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "payloadcms/payload",
+        "stars": 45634,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/payloadcms/payload/main/README.md",
+        "readmeSha256": "54bcaba223f7894a070d982e4bd92f6e9978d9acbe4b3e81db7d6e3278f7491a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 176,
+      "batch": 29,
+      "slug": "decap-cms",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Decap CMS: trang soạn nội dung cho website tĩnh, lưu thẳng vào Git",
+        "excerpt": "Hiểu cách thêm trang quản trị đơn giản cho website tĩnh để người không kỹ thuật vẫn sửa được bài, và nội dung được lưu trong kho Git.",
+        "content": "<p>Decap CMS (trước là Netlify CMS, đổi tên từ tháng 2/2023 theo README) là CMS dành cho trình tạo website tĩnh. README nói đây là ứng dụng một trang được kéo vào phần /admin của site, hiện giao diện sạch để sửa nội dung lưu trong kho Git, bạn mô tả mô hình nội dung bằng tệp cấu hình YAML. Có hai cách dùng: cài nhanh với một tệp HTML và một tệp cấu hình (mã tải từ CDN), hoặc cài đầy đủ nếu site có hệ thống build hỗ trợ gói npm. README cũng nhắc Decap Turbo, dịch vụ backend host sẵn của dự án.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Website tĩnh như Hugo rất nhanh nhưng muốn sửa bài phải gõ tệp. Decap giống thêm cho site một 'cửa sổ soạn bài' quen thuộc: người biên tập bấm sửa, gõ chữ, lưu; phía sau Decap ghi thay đổi vào Git để site dựng lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: một site tĩnh do bạn dựng bằng Hugo cần để đồng nghiệp không rành kỹ thuật tự đăng bài; bạn tìm hiểu Decap như lớp quản trị. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người có website tĩnh và nhóm biên tập không rành kỹ thuật.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần hiểu Git và tệp cấu hình YAML cơ bản, và cần một cách đăng nhập/ủy quyền cho người biên tập. README chưa nêu chi tiết đăng nhập; xem tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn hệ quản lý đầy đủ có cơ sở dữ liệu và tài khoản người dùng, một CMS truyền thống hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>Git-based (dựa trên Git)</strong>: nội dung được lưu và theo dõi lịch sử trong kho Git.</li><li><strong>YAML</strong>: định dạng tệp cấu hình bằng chữ, thụt lề để chia cấp.</li><li><strong>CDN</strong>: mạng phân phối tệp; README nói cách cài nhanh tải mã CMS từ CDN.</li><li><strong>Netlify CMS</strong>: tên cũ của dự án trước tháng 2/2023.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài nhanh cần một tệp HTML và một tệp cấu hình; cài đầy đủ cần trình tạo site có hệ thống build hỗ trợ npm. Đăng nhập và quyền ghi vào Git cần thiết lập riêng (xem tài liệu, bài chưa đọc). Giấy phép MIT. Decap Turbo là dịch vụ host sẵn, điều kiện chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần How It Works.</li><li>Đọc Quick Start trong tài liệu và xem cách đăng nhập hoạt động.</li><li>Thử trên site thử với một loại nội dung đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có website tĩnh và muốn đồng nghiệp tự đăng bài. Hãy đọc README của Decap CMS (https://github.com/decaporg/decap-cms) và giải thích bằng tiếng Việt: Decap hoạt động ra sao, nội dung lưu ở đâu, và mình cần thiết lập gì về đăng nhập. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn và chưa mô tả chi tiết cách đăng nhập và phân quyền cho người biên tập. Quyền ghi vào Git cần được quản lý cẩn thận. Decap Turbo là dịch vụ thương mại đi kèm (README giới thiệu).</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với website công khai, hãy cập nhật phần mềm đều đặn, dùng mật khẩu mạnh cho trang quản trị, sao lưu trước mỗi thay đổi lớn và không để lộ khóa hay token trong mã nguồn.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>decaporg</strong> có <strong>19.460 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/decaporg/decap-cms/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/decaporg/decap-cms\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm CMS và website nội dung, key 176. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19460; repo_id 29514104; README SHA256 09f397bd11392800745b70ed9a2e79a128cef7a782c1992d248814b3ad4ffe10.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/decaporg/decap-cms",
+          "repo_id": "29514104",
+          "source_path": "",
+          "source_revision": "README-SHA256:09f397bd11392800745b70ed9a2e79a128cef7a782c1992d248814b3ad4ffe10",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/decaporg/decap-cms",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài nhanh cần một tệp HTML và một tệp cấu hình; cài đầy đủ cần trình tạo site có hệ thống build hỗ trợ npm. Đăng nhập và quyền ghi vào Git cần thiết lập riêng (xem tài liệu, bài chưa đọc). Giấy phép MIT. Decap Turbo là dịch vụ host sẵn, điều kiện chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/decaporg/decap-cms/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/decaporg/decap-cms/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "decaporg/decap-cms",
+        "stars": 19460,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/decaporg/decap-cms/main/README.md",
+        "readmeSha256": "09f397bd11392800745b70ed9a2e79a128cef7a782c1992d248814b3ad4ffe10",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

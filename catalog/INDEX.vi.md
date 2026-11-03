@@ -10,6 +10,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 8 — Làm quen terminal và môi trường làm việc](learning-paths/08-lam-quen-terminal-va-moi-truong.vi.md) — Cho người dùng coding agent cần thoải mái hơn với dòng lệnh, git và công cụ phát triển.
 - [Lộ trình 9 — Làm việc với dữ liệu khi có AI hỗ trợ](learning-paths/09-du-lieu-cho-nguoi-moi.vi.md) — Từ bảng dữ liệu đến biểu đồ và trang tương tác; luôn kiểm tra kết quả AI tính.
 - [Lộ trình 10 — Hiểu AI và mô hình ngôn ngữ](learning-paths/10-hieu-ai-va-llm.vi.md) — Từ cách viết prompt đến hiểu bên trong mô hình và hệ sinh thái; chọn mức sâu phù hợp với bạn.
+- [Lộ trình 11 — Tạo website nội dung (blog, bản tin, tài liệu)](learning-paths/11-tao-website-noi-dung.vi.md) — Cho người đang dùng hoặc cân nhắc rời WordPress: các hướng tiếp cận khác nhau để tạo và quản lý nội dung web.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -40,7 +41,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 159 | Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows | [microsoft/terminal](https://github.com/microsoft/terminal) | MIT | 105315 | cong-cu-dong-lenh |
 | 167 | Prompt Engineering Guide: tổng hợp kỹ thuật viết câu lệnh cho AI, kèm bài báo và công cụ | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | MIT | 79763 | hieu-ai-llm |
 
-### Cơ bản (33 bài)
+### Cơ bản (36 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -77,8 +78,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 165 | Vega-Altair: vẽ biểu đồ bằng cách mô tả bạn muốn thấy gì thay vì chỉ cách vẽ | [vega/altair](https://github.com/vega/altair) | BSD-3-Clause | 10510 | du-lieu-cho-nguoi-moi |
 | 166 | OpenAI Cookbook: ví dụ và hướng dẫn dùng API của OpenAI cho các việc thường gặp | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | MIT | 76926 | hieu-ai-llm |
 | 171 | Awesome LLM Apps: kho hơn 100 ứng dụng AI mẫu để học cách ghép agent và RAG | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | Apache-2.0 | 143769 | hieu-ai-llm |
+| 172 | Hugo: tạo website tĩnh nhanh từ các tệp nội dung, không cần cơ sở dữ liệu | [gohugoio/hugo](https://github.com/gohugoio/hugo) | Apache-2.0 | 90327 | cms-va-website-noi-dung |
+| 173 | Ghost: nền tảng xuất bản và bản tin có thành viên, mã nguồn mở và có dịch vụ host sẵn | [TryGhost/Ghost](https://github.com/TryGhost/Ghost) | MIT | 55658 | cms-va-website-noi-dung |
+| 176 | Decap CMS: trang soạn nội dung cho website tĩnh, lưu thẳng vào Git | [decaporg/decap-cms](https://github.com/decaporg/decap-cms) | MIT | 19460 | cms-va-website-noi-dung |
 
-### Khá khó (cần nền kỹ thuật) (13 bài)
+### Khá khó (cần nền kỹ thuật) (15 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -95,6 +99,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 151 | Drizzle ORM: nói chuyện với cơ sở dữ liệu bằng TypeScript theo kiểu gần với SQL | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | Apache-2.0 | 36207 | cong-nghe-web-ai-hay-dung |
 | 161 | Polars: công cụ xử lý bảng dữ liệu nhanh, kể cả dữ liệu lớn hơn bộ nhớ | [pola-rs/polars](https://github.com/pola-rs/polars) | MIT | 40254 | du-lieu-cho-nguoi-moi |
 | 170 | Hugging Face Transformers: thư viện định nghĩa mô hình AI mà cả hệ sinh thái dùng chung | [huggingface/transformers](https://github.com/huggingface/transformers) | Apache-2.0 | 168460 | hieu-ai-llm |
+| 174 | Strapi: CMS không đầu (headless) để tạo API nội dung cho website hoặc ứng dụng của bạn | [strapi/strapi](https://github.com/strapi/strapi) | NOASSERTION | 73423 | cms-va-website-noi-dung |
+| 175 | Payload: CMS và framework full-stack chạy ngay trong ứng dụng Next.js của bạn | [payloadcms/payload](https://github.com/payloadcms/payload) | MIT | 45634 | cms-va-website-noi-dung |
 
 ### Nâng cao (6 bài)
 

@@ -1,0 +1,35 @@
+{
+  "key": 172,
+  "repo": "gohugoio/hugo",
+  "repoId": "11180687",
+  "url": "https://github.com/gohugoio/hugo",
+  "stars": 90327,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:37:14Z",
+  "createdAt": "2013-07-04T15:26:26Z",
+  "defaultBranch": "master",
+  "description": "The world’s fastest framework for building websites.",
+  "homepage": "https://gohugo.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/gohugoio/hugo/master/README.md",
+    "sha256": "996bd8ce6847f66a45646b4f40c3f331ac392b6d41366db2ec11c4e911599be3",
+    "bytes": 7652,
+    "sectionsRead": [
+      "Overview",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu mẫu và giao diện.",
+    "Chưa so sánh với công cụ khác (Jekyll, Astro).",
+    "Chưa kiểm tra việc triển khai lên các nơi lưu trữ."
+  ],
+  "runtimeValidated": false
+}
