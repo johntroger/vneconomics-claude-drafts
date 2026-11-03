@@ -1,0 +1,41 @@
+{
+  "key": 542,
+  "repo": "lima-vm/lima",
+  "repoId": "367284699",
+  "url": "https://github.com/lima-vm/lima",
+  "stars": 22234,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:48:14Z",
+  "createdAt": "2021-05-14T07:30:56Z",
+  "defaultBranch": "master",
+  "description": "Linux virtual machines, with a focus on running containers",
+  "homepage": "https://lima-vm.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/lima-vm/lima/master/README.md",
+    "sha256": "6fe739cb9e00ef211a1014a3b4f8b522d8a7a44551bf0da67caee32b774cc83d",
+    "bytes": 5041,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting started",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu lima-vm.io.",
+    "Chưa thử.",
+    "Yêu cầu phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

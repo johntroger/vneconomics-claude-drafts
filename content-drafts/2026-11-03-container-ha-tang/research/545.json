@@ -1,0 +1,43 @@
+{
+  "key": 545,
+  "repo": "pulumi/pulumi",
+  "repoId": "72477752",
+  "url": "https://github.com/pulumi/pulumi",
+  "stars": 25839,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:53:21Z",
+  "createdAt": "2016-10-31T21:02:47Z",
+  "defaultBranch": "master",
+  "description": "Pulumi - Infrastructure as Code in any programming language 🚀",
+  "homepage": "https://www.pulumi.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pulumi/pulumi/master/README.md",
+    "sha256": "3561156e8678a0af1f9289b80d128d64be1a9dfc7fb5f367a75d7dc2608f59d2",
+    "bytes": 10210,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Welcome",
+      "Getting Started",
+      "Platform",
+      "Contributing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu pulumi.com.",
+    "Chưa thử.",
+    "Chi phí đám mây chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,44 @@
+{
+  "key": 540,
+  "repo": "moby/moby",
+  "repoId": "7691631",
+  "url": "https://github.com/moby/moby",
+  "stars": 72240,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:23:47Z",
+  "createdAt": "2013-01-18T18:10:57Z",
+  "defaultBranch": "master",
+  "description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+  "homepage": "https://mobyproject.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/moby/moby/master/README.md",
+    "sha256": "97dff8df1c816b0c115f7fcd976bbaaf9106edc0f5d8c8559c74a6bcac285b04",
+    "bytes": 5487,
+    "sectionsRead": [
+      "The Moby Project",
+      "Principles",
+      "Audience",
+      "Relationship with Docker",
+      "Go modules",
+      "Licensing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu Docker.",
+    "Chưa thử.",
+    "Yêu cầu hệ thống chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

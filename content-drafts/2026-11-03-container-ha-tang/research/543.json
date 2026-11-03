@@ -1,0 +1,42 @@
+{
+  "key": 543,
+  "repo": "wagoodman/dive",
+  "repoId": "133251103",
+  "url": "https://github.com/wagoodman/dive",
+  "stars": 54695,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T17:54:03Z",
+  "createdAt": "2018-05-13T15:44:01Z",
+  "defaultBranch": "main",
+  "description": "A tool for exploring each layer in a docker image",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wagoodman/dive/main/README.md",
+    "sha256": "205564c9addee84bcb491585864464ac36b5a8bf13d9314c1f99b645fb2eeed7",
+    "bytes": 14327,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Cách dùng",
+      "Chế độ CI",
+      "Beta quality"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cấu hình chi tiết.",
+    "Chưa thử.",
+    "Yêu cầu hệ thống chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

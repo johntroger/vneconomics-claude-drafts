@@ -1,0 +1,43 @@
+{
+  "key": 541,
+  "repo": "nginx/nginx",
+  "repoId": "37912398",
+  "url": "https://github.com/nginx/nginx",
+  "stars": 32041,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-2-clause",
+    "name": "BSD 2-Clause \"Simplified\" License",
+    "spdx_id": "BSD-2-Clause",
+    "url": "https://api.github.com/licenses/bsd-2-clause",
+    "node_id": "MDc6TGljZW5zZTQ="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-29T18:53:16Z",
+  "createdAt": "2015-06-23T10:26:27Z",
+  "defaultBranch": "master",
+  "description": "The official NGINX Open Source repository.",
+  "homepage": "https://nginx.org/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nginx/nginx/master/README.md",
+    "sha256": "c20b11d05d64038c63fe78ed177b692ac48d686344be464f326bb48e7d2c224b",
+    "bytes": 14571,
+    "sectionsRead": [
+      "Giới thiệu",
+      "How it works",
+      "Downloading and installing",
+      "Getting started with NGINX",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu nginx.org.",
+    "Chưa thử.",
+    "Giá bản F5 chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

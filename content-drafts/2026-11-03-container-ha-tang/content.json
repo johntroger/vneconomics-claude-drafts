@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-container",
+  "batch": 91,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 540,
+      "batch": 91,
+      "slug": "moby",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Moby: dự án mã nguồn mở do Docker tạo ra, bộ khối dựng container (công cụ dựng, đăng ký, điều phối, runtime); README nói không phải nơi hỗ trợ sản phẩm Docker và mô-đun Go github.com/docker/docker đã lỗi thời từ Docker v29",
+        "excerpt": "Hiểu Moby là dự án mã nguồn mở do Docker tạo ra để thúc đẩy container hóa phần mềm, cung cấp bộ khối dựng ('bộ Lego') để lắp hệ thống dựa trên container, và là thượng nguồn của sản phẩm Docker. README nói Moby nhắm tới kỹ sư và người thích thử nghiệm, không dành cho người cần hệ thống có hỗ trợ thương mại; và nêu mô-đun Go github.com/docker/docker đã bị coi là lỗi thời từ Docker v29.",
+        "content": "<p>README tả Moby là dự án mã nguồn mở do Docker tạo ra để cho phép và tăng tốc container hóa phần mềm: một bộ khối 'Lego' gồm thành phần, khung để lắp hệ thống dựa trên container và nơi để những người yêu container thử nghiệm và trao đổi. Thành phần gồm công cụ dựng container, kho đăng ký, công cụ điều phối, runtime và nhiều thứ khác, dùng như khối dựng cùng công cụ và dự án khác. Nguyên tắc: theo mô-đun, 'pin kèm theo nhưng thay được', bảo mật dùng được, hướng nhà phát triển; API và tài liệu nhắm tới nhà phát triển, không phải người dùng cuối. Đối tượng: kỹ sư, người tích hợp và người thích sửa, thử nghiệm, sáng tạo, xây hệ thống dựa trên container; không dành cho người tìm hệ thống có hỗ trợ thương mại. Quan hệ với Docker: thành phần ban đầu là thành phần mã nguồn mở Docker và cộng đồng xây cho dự án Docker; Docker cam kết dùng Moby làm thượng nguồn cho sản phẩm Docker; kho này không phải nơi hỗ trợ hay yêu cầu tính năng cho sản phẩm Docker; bản phát hành được hỗ trợ theo nỗ lực tốt nhất; ai cần hỗ trợ thương mại dùng Docker Desktop hoặc Mirantis Container Runtime. Mục mô-đun Go: README nói từ Docker v29 (phát hành 11/2025) mô-đun github.com/docker/docker bị lỗi thời và không cập nhật nữa; các mô-đun công khai được hỗ trợ là github.com/moby/moby/client và api; mô-đun gốc là mã để dựng công cụ container, chỉ ra tệp thực thi, không dùng như thư viện Go. Giấy phép Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Docker mà bạn dùng hằng ngày được dựng từ các thành phần của dự án Moby. Moby là phần nguồn mở cho kỹ sư; người dùng thường chỉ cần cài Docker bình thường.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục Relationship with Docker để hiểu khác biệt giữa Moby và Docker trước khi quyết định đọc mã. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Dành cho kỹ sư container; README nói không hướng tới người dùng cuối. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói hỗ trợ theo nỗ lực tốt nhất, không hỗ trợ thương mại, không phải nơi yêu cầu cho sản phẩm Docker. Mô-đun github.com/docker/docker đã lỗi thời từ Docker v29: nếu có mã Go cũ cần chuyển sang mô-đun được hỗ trợ. Mô-đun gốc không có bảo đảm ổn định API. Chưa kiểm tra yêu cầu hệ thống.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>container (vùng chứa)</strong>: gói chạy ứng dụng cô lập cùng thư viện của nó; README nêu container hóa phần mềm.</li><li><strong>runtime</strong>: phần chạy container; README nêu.</li><li><strong>registry (kho đăng ký)</strong>: nơi lưu và chia sẻ ảnh container; README nêu.</li><li><strong>upstream (thượng nguồn)</strong>: dự án gốc mà sản phẩm khác lấy mã từ đó; README nêu Moby là thượng nguồn của Docker.</li><li><strong>Go module</strong>: đơn vị thư viện của ngôn ngữ Go; README nêu mô-đun được hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không có hướng dẫn cài; người dùng thường dùng Docker chính thức. Cần Go và công cụ dựng cho người đóng góp. Miễn phí theo giấy phép Apache-2.0; Docker Desktop và Mirantis có hỗ trợ thương mại riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Principles và Audience.</li><li>Đọc mục Relationship with Docker.</li><li>Dùng Docker chính thức nếu chỉ cần chạy container.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Docker và nghe nói Moby. Hãy đọc README của Moby (https://github.com/moby/moby) và giải thích bằng tiếng Việt: Moby khác Docker thế nào, ai nên dùng, và thay đổi về mô-đun Go từ Docker v29 nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn (khoảng 5,5 KB), bài chưa đọc tài liệu docs.docker.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>moby</strong> có <strong>72.240 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục Licensing ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/moby/moby/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/moby/moby\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 540. Chưa cài/chạy thử; không tạo validation. Snapshot sao 72240; repo_id 7691631; README SHA256 97dff8df1c816b0c115f7fcd976bbaaf9106edc0f5d8c8559c74a6bcac285b04.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/moby/moby",
+          "repo_id": "7691631",
+          "source_path": "",
+          "source_revision": "README-SHA256:97dff8df1c816b0c115f7fcd976bbaaf9106edc0f5d8c8559c74a6bcac285b04",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/moby/moby",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không có hướng dẫn cài; người dùng thường dùng Docker chính thức. Cần Go và công cụ dựng cho người đóng góp. Miễn phí theo giấy phép Apache-2.0; Docker Desktop và Mirantis có hỗ trợ thương mại riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/moby/moby/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/moby/moby/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "moby/moby",
+        "stars": 72240,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/moby/moby/master/README.md",
+        "readmeSha256": "97dff8df1c816b0c115f7fcd976bbaaf9106edc0f5d8c8559c74a6bcac285b04",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 541,
+      "batch": 91,
+      "slug": "nginx",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NGINX: máy chủ web, cân bằng tải, reverse proxy, API gateway và bộ nhớ đệm nội dung; README có phần giới thiệu cho người mới về mô-đun, cấu hình, tiến trình, SSL, cân bằng tải, giới hạn tốc độ, giấy phép BSD 2 điều khoản",
+        "excerpt": "Hiểu NGINX là máy chủ web phổ biến nhất thế giới theo cách nói của README, đồng thời là cân bằng tải, reverse proxy, API gateway và bộ nhớ đệm nội dung, phần mềm miễn phí mã nguồn mở theo giấy phép kiểu BSD 2 điều khoản. README được viết làm phần giới thiệu có cấu trúc cho người mới, kèm cảnh báo nên cài từ gói và nguồn chính thức thay vì bản cộng đồng trong bản phân phối Linux.",
+        "content": "<p>README tả NGINX (đọc là 'engine x') là máy chủ web phổ biến nhất thế giới (cách nói của README), cân bằng tải hiệu năng cao, reverse proxy, API gateway và bộ nhớ đệm nội dung; miễn phí mã nguồn mở theo giấy phép kiểu BSD 2 điều khoản. Có bản phân phối doanh nghiệp, hỗ trợ và đào tạo thương mại từ F5. README nói mục tiêu của tài liệu này là giới thiệu cơ bản, có cấu trúc cho người mới. Mục How it works: NGINX gồm các mô-đun mở rộng chức năng (tĩnh hoặc động, có lệnh xem mô-đun tĩnh đã dựng cùng bản), cấu hình bằng tệp văn bản gồm các chỉ thị (tập chỉ thị phụ thuộc vào mô-đun có sẵn), và chạy theo nhiều tiến trình: một tiến trình chủ đọc cấu hình và duy trì các tiến trình công nhân xử lý yêu cầu HTTP, số công nhân đặt trong cấu hình hoặc tự điều chỉnh theo số lõi; các tiến trình đồng bộ qua bộ nhớ chia sẻ nên nhiều chỉ thị cần vùng bộ nhớ chia sẻ. Cảnh báo: dù phần lớn bản phân phối Linux có phiên bản cộng đồng của nginx, README khuyên cài gói chính thức hoặc mã nguồn từ nginx.org. Mục cài đặt: bản Stable và Mainline, cài nhị phân trên Linux, FreeBSD, tệp thực thi Windows, mô-đun động. Mục bắt đầu: cài chứng chỉ SSL và bật mã hóa TLS, cân bằng tải, giới hạn tốc độ, bộ nhớ đệm nội dung. Mục dựng từ mã nguồn: phụ thuộc, clone kho, cấu hình, biên dịch, vị trí tệp, chạy và kiểm thử (bài không chép lệnh). Mục hỏi đáp, đóng góp, tài nguyên, nhật ký thay đổi. Giấy phép BSD 2 điều khoản theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>NGINX đứng trước website của bạn nhận mọi yêu cầu từ người dùng, đưa file tĩnh, chuyển yêu cầu tới ứng dụng phía sau, gắn HTTPS. Rất nhiều hosting và hướng dẫn triển khai dùng nó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục How it works rồi dựng một máy chủ thử phục vụ một trang tĩnh trên máy cá nhân. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cấu hình bằng chỉ thị cần học; sai cấu hình có thể làm site không truy cập được hoặc lộ nội dung. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Phổ biến nhất thế giới' là cách nói của README. README cảnh báo nên dùng gói chính thức hơn bản cộng đồng trong bản phân phối. Cấu hình reverse proxy và TLS sai có thể lộ dữ liệu hoặc mở cổng ngoài ý muốn: kiểm tra trên môi trường thử. Bản doanh nghiệp và hỗ trợ của F5 trả phí, bài chưa kiểm tra giá. README dài, bài chưa đọc phần dựng từ mã nguồn chi tiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>web server (máy chủ web)</strong>: phần mềm phục vụ trang web cho trình duyệt; README nêu.</li><li><strong>reverse proxy</strong>: máy chủ đứng trước ứng dụng chuyển tiếp yêu cầu; README nêu.</li><li><strong>load balancer (cân bằng tải)</strong>: chia yêu cầu cho nhiều máy; README nêu.</li><li><strong>directive (chỉ thị)</strong>: dòng cấu hình trong tệp nginx; README nêu.</li><li><strong>TLS / SSL</strong>: mã hóa kết nối HTTPS; README có mục cài chứng chỉ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói chính thức từ nginx.org (Linux, FreeBSD, Windows) hoặc dựng từ mã nguồn; có cả mô-đun động (bài không chép lệnh). Miễn phí theo giấy phép kiểu BSD 2 điều khoản; bản F5 trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục How it works.</li><li>Cài gói chính thức trên máy thử.</li><li>Thử cấu hình HTTPS và cân bằng tải trên môi trường thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình triển khai website và hay thấy NGINX. Hãy đọc README của NGINX (https://github.com/nginx/nginx) và giải thích bằng tiếng Việt: tiến trình chủ và công nhân là gì, vì sao nên cài từ gói chính thức, và các nguy cơ khi cấu hình sai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 14,6 KB), bài chưa đọc phần dựng từ mã nguồn chi tiết và tài liệu nginx.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nginx</strong> có <strong>32.041 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-2-Clause; README ghi giấy phép kiểu BSD 2 điều khoản. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nginx/nginx/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nginx/nginx\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 541. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32041; repo_id 37912398; README SHA256 c20b11d05d64038c63fe78ed177b692ac48d686344be464f326bb48e7d2c224b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nginx/nginx",
+          "repo_id": "37912398",
+          "source_path": "",
+          "source_revision": "README-SHA256:c20b11d05d64038c63fe78ed177b692ac48d686344be464f326bb48e7d2c224b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-2-clause",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "spdx_id": "BSD-2-Clause",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "node_id": "MDc6TGljZW5zZTQ="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nginx/nginx",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói chính thức từ nginx.org (Linux, FreeBSD, Windows) hoặc dựng từ mã nguồn; có cả mô-đun động (bài không chép lệnh). Miễn phí theo giấy phép kiểu BSD 2 điều khoản; bản F5 trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nginx/nginx/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nginx/nginx/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nginx/nginx",
+        "stars": 32041,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nginx/nginx/master/README.md",
+        "readmeSha256": "c20b11d05d64038c63fe78ed177b692ac48d686344be464f326bb48e7d2c224b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 542,
+      "batch": 91,
+      "slug": "lima",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Lima (Linux Machines): chạy máy ảo Linux có chia sẻ tệp và chuyển tiếp cổng tự động, kiểu WSL2, để dùng container (containerd/nerdctl, Docker, Podman, Kubernetes) trên macOS và các hệ khác",
+        "excerpt": "Hiểu Lima là công cụ khởi chạy máy ảo Linux có chia sẻ tệp và chuyển tiếp cổng tự động (giống WSL2), ban đầu để đưa containerd và nerdctl tới người dùng Mac, nay hỗ trợ cả Docker, Podman, Kubernetes và các hệ như Linux, NetBSD. README có ví dụ chạy container qua containerd, Docker, Kubernetes bằng mẫu dựng sẵn.",
+        "content": "<p>README tả Lima khởi chạy máy ảo Linux với chia sẻ tệp và chuyển tiếp cổng tự động (giống WSL2). Mục tiêu ban đầu là quảng bá containerd cùng nerdctl cho người dùng Mac; Lima cũng dùng được cho ứng dụng không phải container. Lima còn hỗ trợ các engine container khác (Docker, Podman, Kubernetes...) và máy chủ không phải macOS (Linux, NetBSD...). Mục Getting started: cài bằng Homebrew rồi khởi động (bài không chép lệnh); chạy lệnh Linux bằng lệnh lima; chạy container bằng containerd qua nerdctl; chạy container bằng Docker qua mẫu template:docker và đặt biến môi trường DOCKER_HOST trỏ tới socket; chạy Kubernetes qua mẫu template:k8s và đặt KUBECONFIG. Có mục đóng góp (cần ký DCO cho mọi commit). README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trên Mac, container Linux cần một máy ảo Linux chạy ngầm. Lima tạo và quản lý máy ảo đó, chia sẻ thư mục và cổng với Mac, để lệnh container chạy như trên Linux thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo một máy ảo Lima mặc định, chạy một lệnh Linux và thử container hello-world. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần terminal và hiểu máy ảo; ví dụ trong README ngắn gọn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Máy ảo chiếm RAM và đĩa; chia sẻ tệp giữa Mac và máy ảo có thể làm lộ thư mục: kiểm tra thư mục nào được chia sẻ (nhận định chung, README chỉ nêu tính năng). Hướng dẫn Docker và Kubernetes dùng mẫu dựng sẵn từ mạng. README phần đã đọc không nêu giấy phép và không nêu yêu cầu phần cứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>virtual machine (máy ảo)</strong>: máy tính giả lập chạy trong máy thật; README nêu.</li><li><strong>WSL2</strong>: lớp Linux của Windows mà README so sánh; README nêu.</li><li><strong>containerd / nerdctl</strong>: runtime container và công cụ dòng lệnh tương tự Docker; README nêu.</li><li><strong>port forwarding (chuyển tiếp cổng)</strong>: đưa cổng của máy ảo ra máy chủ; README nêu tự động.</li><li><strong>DCO</strong>: cam kết nguồn gốc mã đóng góp bằng ký commit; README nêu bắt buộc.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng Homebrew rồi khởi động máy ảo, dùng mẫu template cho Docker hoặc Kubernetes (bài không chép lệnh). Cần Mac hoặc Linux. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Cài và chạy một lệnh Linux.</li><li>Thử mẫu Docker hoặc Kubernetes khi cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Mac và muốn chạy container mà không cài Docker Desktop. Hãy đọc README của Lima (https://github.com/lima-vm/lima) và giải thích bằng tiếng Việt: Lima làm gì, khác WSL2 thế nào, và lưu ý khi chia sẻ thư mục với máy ảo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), bài chưa đọc tài liệu lima-vm.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>lima-vm</strong> có <strong>22.234 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/lima-vm/lima/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/lima-vm/lima\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 542. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22234; repo_id 367284699; README SHA256 6fe739cb9e00ef211a1014a3b4f8b522d8a7a44551bf0da67caee32b774cc83d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/lima-vm/lima",
+          "repo_id": "367284699",
+          "source_path": "",
+          "source_revision": "README-SHA256:6fe739cb9e00ef211a1014a3b4f8b522d8a7a44551bf0da67caee32b774cc83d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lima-vm/lima",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng Homebrew rồi khởi động máy ảo, dùng mẫu template cho Docker hoặc Kubernetes (bài không chép lệnh). Cần Mac hoặc Linux. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lima-vm/lima/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/lima-vm/lima/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "lima-vm/lima",
+        "stars": 22234,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/lima-vm/lima/master/README.md",
+        "readmeSha256": "6fe739cb9e00ef211a1014a3b4f8b522d8a7a44551bf0da67caee32b774cc83d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 543,
+      "batch": 91,
+      "slug": "dive",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "dive: công cụ khám phá ảnh Docker/OCI theo từng lớp, tìm cách giảm dung lượng; README ghi chất lượng beta và có chế độ CI",
+        "excerpt": "Hiểu dive là công cụ khám phá ảnh Docker hoặc OCI, xem nội dung từng lớp và tìm cách giảm dung lượng ảnh. README ghi rõ chất lượng beta, có cách chạy bằng ảnh Docker, dựng ảnh rồi phân tích ngay, và chế độ CI để kiểm tra không lãng phí dung lượng.",
+        "content": "<p>README tả dive là công cụ khám phá ảnh Docker, nội dung các lớp và tìm cách thu nhỏ ảnh Docker hoặc OCI. Cách dùng: chạy dive với thẻ, mã hoặc digest ảnh; hoặc chạy dive qua Docker bằng một bí danh gắn socket Docker (README đưa lệnh, bài không chép lệnh); có ví dụ với ảnh nginx:latest; hoặc dựng ảnh rồi phân tích ngay bằng lệnh con build; cách dựng trên macOS chỉ hỗ trợ engine Docker. Có thể chạy trong CI để giữ lượng dung lượng lãng phí ở mức tối thiểu (bỏ qua giao diện). README ghi rõ 'chất lượng beta' và mời mở issue khi cần tính năng hoặc gặp lỗi. Giấy phép: huy hiệu MIT (README ghi nhãn MIT 2.0, bài lấy theo GitHub là MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ảnh Docker càng lớn thì triển khai càng chậm. dive cho bạn xem từng lớp của ảnh chứa gì và phần nào lãng phí, để bạn dọn bớt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: phân tích một ảnh công khai nhỏ như nginx để xem các lớp và dung lượng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Docker và hiểu khái niệm lớp của ảnh; giao diện dòng lệnh dễ đọc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi chất lượng beta. Cách chạy qua ảnh Docker gắn socket Docker của máy: socket này cho quyền điều khiển Docker, chỉ dùng ảnh bạn tin và hiểu quyền (nhận định chung). Dung lượng ảnh giảm có thể phải đánh đổi tính năng. README phần đã đọc chưa nêu yêu cầu hệ thống chi tiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Docker image (ảnh Docker)</strong>: gói đóng sẵn chứa ứng dụng và thư viện để chạy container; README nêu.</li><li><strong>layer (lớp)</strong>: mỗi bước dựng ảnh tạo một lớp; README nêu xem nội dung từng lớp.</li><li><strong>OCI</strong>: chuẩn mở cho ảnh container; README nêu.</li><li><strong>CI</strong>: quy trình tự động kiểm tra khi có thay đổi; README nêu chế độ CI.</li><li><strong>Docker socket</strong>: cổng điều khiển Docker; README nêu gắn vào khi chạy dive qua Docker.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài dive hoặc chạy qua ảnh Docker gắn socket, hoặc dive build để dựng rồi phân tích (bài không chép lệnh). Cần Docker. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Phân tích một ảnh công khai nhỏ.</li><li>Đọc các lớp và phần lãng phí.</li><li>Thử chế độ CI khi đã quen.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thu nhỏ ảnh Docker. Hãy đọc README của dive (https://github.com/wagoodman/dive) và giải thích bằng tiếng Việt: dive làm gì, lớp ảnh là gì, và rủi ro khi gắn socket Docker vào container. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 14 KB), bài chưa đọc phần cấu hình chi tiết. README ghi nhãn MIT 2.0 (bài lấy theo GitHub là MIT). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wagoodman</strong> có <strong>54.695 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wagoodman/dive/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wagoodman/dive\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 543. Chưa cài/chạy thử; không tạo validation. Snapshot sao 54695; repo_id 133251103; README SHA256 205564c9addee84bcb491585864464ac36b5a8bf13d9314c1f99b645fb2eeed7.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wagoodman/dive",
+          "repo_id": "133251103",
+          "source_path": "",
+          "source_revision": "README-SHA256:205564c9addee84bcb491585864464ac36b5a8bf13d9314c1f99b645fb2eeed7",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wagoodman/dive",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài dive hoặc chạy qua ảnh Docker gắn socket, hoặc dive build để dựng rồi phân tích (bài không chép lệnh). Cần Docker. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wagoodman/dive/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wagoodman/dive/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wagoodman/dive",
+        "stars": 54695,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wagoodman/dive/main/README.md",
+        "readmeSha256": "205564c9addee84bcb491585864464ac36b5a8bf13d9314c1f99b645fb2eeed7",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 544,
+      "batch": 91,
+      "slug": "dagger",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dagger: nền tảng tự động hóa giao phần mềm lập trình được, chạy cục bộ, trên CI hoặc đám mây, SDK cho 8 ngôn ngữ, mọi thao tác chạy trong container và phát dấu vết OpenTelemetry",
+        "excerpt": "Hiểu Dagger là nền tảng tự động hóa giao phần mềm: dựng, kiểm thử và phát hành mã nguồn, chạy cục bộ, trên máy chủ CI hoặc trực tiếp trên đám mây. README nói thay shell script và YAML riêng bằng mã (SDK cho 8 ngôn ngữ), thao tác chạy trong container và lặp lại được, thực thi gia tăng theo bộ nhớ đệm, dấu vết OpenTelemetry; chỉ cần runtime container như Docker.",
+        "content": "<p>README tả Dagger là nền tảng tự động hóa giao phần mềm, có thể dựng, kiểm thử và phát hành mọi mã nguồn một cách đáng tin cậy ở quy mô lớn, chạy cục bộ, trên CI hoặc trên đám mây. Cài bằng Homebrew (bài không chép lệnh). Mục Why Dagger? (tuyên bố của README): lập trình được (shell script và YAML độc quyền không còn chấp nhận được; có engine thực thi và API hệ thống đầy đủ, SDK cho 8 ngôn ngữ, REPL, hệ sinh thái mô-đun dùng lại), ưu tiên cục bộ (tự động hóa một lần chạy ổn định trên laptop, hộp cát AI, máy chủ CI hay đám mây; phụ thuộc duy nhất là runtime container như Docker), lặp lại được (công cụ chạy trong container, phụ thuộc máy chủ khai báo rõ, mỗi thao tác chạy gia tăng theo mặc định có kiểm soát bộ nhớ đệm), quan sát được (mỗi thao tác phát dấu vết OpenTelemetry cùng nhật ký và số liệu, xem trong terminal hoặc web). Tính năng: API hệ thống đa ngôn ngữ cho container, hệ tệp, bí mật, kho git, đường hầm mạng; SDK cho Go, Python, TypeScript, PHP, Java, .NET, Elixir, Rust sinh từ lược đồ API; kiểu dữ liệu tùy biến; thực thi gia tăng; chạy mọi nơi có runtime container Linux; theo dõi dấu vết tích hợp có giao diện terminal. Mục bắt đầu, cộng đồng và đóng góp. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Quy trình CI thường là tệp YAML khó chạy thử trên máy bạn. Dagger cho viết quy trình đó bằng ngôn ngữ lập trình quen thuộc và chạy giống nhau ở máy bạn và ở CI.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc Quickstart và chạy một quy trình đơn giản trên máy có Docker. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Docker, một trong các ngôn ngữ SDK và hiểu CI. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Các tuyên bố 'lập trình được, lặp lại được, quan sát được' là của README. Mọi thao tác chạy trong container nên cần Docker và tài nguyên. Quy trình Dagger có thể truy cập bí mật và mạng: cấp quyền tối thiểu. README ngắn, bài chưa đọc tài liệu docs.dagger.io. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>CI/CD</strong>: quy trình tự động dựng, kiểm tra và phát hành; README nêu.</li><li><strong>SDK</strong>: bộ thư viện để viết quy trình bằng ngôn ngữ lập trình; README nêu 8 ngôn ngữ.</li><li><strong>OpenTelemetry</strong>: chuẩn thu thập dấu vết và số liệu; README nêu.</li><li><strong>incremental execution (thực thi gia tăng)</strong>: chỉ chạy lại phần bị ảnh hưởng khi mã đổi; README nêu.</li><li><strong>container runtime</strong>: phần chạy container như Docker; README nêu là yêu cầu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng Homebrew; cần runtime container như Docker (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why Dagger?.</li><li>Làm Quickstart trên máy có Docker.</li><li>Thử đưa một bước CI nhỏ sang Dagger.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn viết quy trình CI bằng mã thay vì YAML. Hãy đọc README của Dagger (https://github.com/dagger/dagger) và giải thích bằng tiếng Việt: Dagger làm gì, vì sao cần Docker, và các tuyên bố nào là của README. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3 KB), bài chưa đọc tài liệu docs.dagger.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dagger</strong> có <strong>16.575 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dagger/dagger/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dagger/dagger\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 544. Chưa cài/chạy thử; không tạo validation. Snapshot sao 16575; repo_id 222824662; README SHA256 88958ec1c1e8ad619b6bddad97c3ac090b7218e4a0bdf0700fa8ed1e0f8deddc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dagger/dagger",
+          "repo_id": "222824662",
+          "source_path": "",
+          "source_revision": "README-SHA256:88958ec1c1e8ad619b6bddad97c3ac090b7218e4a0bdf0700fa8ed1e0f8deddc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dagger/dagger",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng Homebrew; cần runtime container như Docker (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dagger/dagger/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dagger/dagger/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dagger/dagger",
+        "stars": 16575,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dagger/dagger/main/README.md",
+        "readmeSha256": "88958ec1c1e8ad619b6bddad97c3ac090b7218e4a0bdf0700fa8ed1e0f8deddc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 545,
+      "batch": 91,
+      "slug": "pulumi",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Pulumi: hạ tầng dưới dạng mã bằng ngôn ngữ lập trình bạn quen, triển khai lên AWS, Azure, Google Cloud, Kubernetes và hơn 300 nhà cung cấp; tạo tài nguyên đám mây thật có thể tốn tiền",
+        "excerpt": "Hiểu Pulumi là công cụ hạ tầng dưới dạng mã (infrastructure as code): bạn viết mã bằng ngôn ngữ quen thuộc và Pulumi tự cấp phát và quản lý tài nguyên trên AWS, Azure, Google Cloud, Kubernetes và hơn 300 nhà cung cấp. README có ví dụ tạo ba máy chủ web bằng vòng lặp. Tài nguyên đám mây tạo ra là thật và có thể tốn tiền.",
+        "content": "<p>README tả Pulumi Infrastructure as Code là cách dễ nhất để dựng và triển khai hạ tầng, mọi kiến trúc, mọi đám mây, bằng ngôn ngữ lập trình bạn đã biết (cách nói của README). Chỉ cần viết mã bằng ngôn ngữ ưa thích và Pulumi tự cấp phát, quản lý tài nguyên trên AWS, Azure, Google Cloud, Kubernetes và trên 300 nhà cung cấp theo cách hạ tầng dưới dạng mã. Thay vì YAML, dùng các tính năng ngôn ngữ như vòng lặp, hàm, lớp, quản lý gói. Ví dụ README tạo ba máy chủ web trên AWS bằng một vòng lặp TypeScript kèm nhóm bảo mật mở cổng 80 cho mọi địa chỉ (bài không chép mã). Mục Getting Started: xem hướng dẫn bắt đầu, hoặc làm theo các bước triển khai chương trình Pulumi đầu tiên dùng AWS Lambda không máy chủ; README đưa lệnh cài (bài không chép lệnh). Mục Platform liệt kê ngôn ngữ và đám mây được hỗ trợ. Có mục đóng góp. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì bấm trong bảng điều khiển đám mây, bạn mô tả hạ tầng bằng mã (ví dụ 'ba máy chủ web') rồi Pulumi tạo hộ. Dễ lặp lại, nhưng mọi tài nguyên tạo ra đều tính phí đám mây.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo một tài nguyên rất nhỏ trên tài khoản đám mây có giới hạn chi tiêu, rồi xóa ngay. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần tài khoản đám mây, ngôn ngữ lập trình và hiểu hạ tầng; sai có thể tốn tiền. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tài nguyên tạo bằng Pulumi là thật và tính phí đám mây: đặt giới hạn chi tiêu và xóa sau khi thử. Ví dụ trong README mở cổng 80 cho mọi địa chỉ, chỉ để minh họa: đừng sao chép cấu hình mở ra mọi nơi cho sản xuất. Khóa truy cập đám mây là bí mật: không đưa vào kho mã. README phần đã đọc không nêu giấy phép và không bàn dịch vụ Pulumi Cloud trả phí (nếu có), bài chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>infrastructure as code (hạ tầng dưới dạng mã)</strong>: mô tả hạ tầng bằng mã thay vì bấm tay; README nêu.</li><li><strong>provider (nhà cung cấp)</strong>: đám mây hay dịch vụ mà Pulumi điều khiển; README nêu hơn 300.</li><li><strong>resource (tài nguyên)</strong>: một thành phần hạ tầng như máy chủ, nhóm bảo mật; README nêu.</li><li><strong>security group (nhóm bảo mật)</strong>: quy tắc cho phép hay chặn kết nối mạng; README nêu trong ví dụ.</li><li><strong>serverless (không máy chủ)</strong>: chạy mã không tự quản máy chủ như AWS Lambda; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng lệnh theo hướng dẫn, viết chương trình, rồi triển khai lên đám mây (bài không chép lệnh). Cần tài khoản đám mây và ngôn ngữ lập trình được hỗ trợ. Miễn phí phần công cụ; giấy phép lấy theo GitHub (Apache-2.0); tài nguyên đám mây tính phí riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đặt giới hạn chi tiêu trên tài khoản đám mây.</li><li>Thử một tài nguyên nhỏ rồi xóa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý hạ tầng bằng mã. Hãy đọc README của Pulumi (https://github.com/pulumi/pulumi) và giải thích bằng tiếng Việt: Pulumi làm gì, vì sao tài nguyên tạo ra có thể tốn tiền, và vì sao không sao chép cấu hình mở cổng ra mọi nơi. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 10 KB), bài chưa đọc tài liệu pulumi.com. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pulumi</strong> có <strong>25.839 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pulumi/pulumi/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pulumi/pulumi\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 545. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25839; repo_id 72477752; README SHA256 3561156e8678a0af1f9289b80d128d64be1a9dfc7fb5f367a75d7dc2608f59d2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pulumi/pulumi",
+          "repo_id": "72477752",
+          "source_path": "",
+          "source_revision": "README-SHA256:3561156e8678a0af1f9289b80d128d64be1a9dfc7fb5f367a75d7dc2608f59d2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pulumi/pulumi",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng lệnh theo hướng dẫn, viết chương trình, rồi triển khai lên đám mây (bài không chép lệnh). Cần tài khoản đám mây và ngôn ngữ lập trình được hỗ trợ. Miễn phí phần công cụ; giấy phép lấy theo GitHub (Apache-2.0); tài nguyên đám mây tính phí riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pulumi/pulumi/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pulumi/pulumi/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pulumi/pulumi",
+        "stars": 25839,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pulumi/pulumi/master/README.md",
+        "readmeSha256": "3561156e8678a0af1f9289b80d128d64be1a9dfc7fb5f367a75d7dc2608f59d2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 546,
+      "batch": 91,
+      "slug": "kong",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Kong Gateway: cổng API, LLM và MCP cloud-native mở rộng bằng plugin, định tuyến, cân bằng tải, xác thực; README có bản đám mây Kong Konnect trả phí",
+        "excerpt": "Hiểu Kong (Kong Gateway) là cổng API, LLM và MCP cloud-native, đa nền tảng, mở rộng bằng plugin, đứng làm lớp trung tâm điều phối lưu lượng vi dịch vụ và lưu lượng AI. README liệt kê định tuyến, cân bằng tải, kiểm tra sức khỏe, xác thực, API LLM thống nhất tới nhiều nhà cung cấp và hơn 60 tính năng AI (tuyên bố của README); có Kong Konnect trả phí và giấy phép Apache 2.0.",
+        "content": "<p>README tả Kong hay Kong Gateway là cổng API, LLM và MCP cloud-native, đa nền tảng, mở rộng được, hiệu năng cao và mở rộng qua plugin, còn cung cấp năng lực lưu lượng AI nâng cao với hỗ trợ nhiều LLM. Nhờ chức năng proxy, định tuyến, cân bằng tải, kiểm tra sức khỏe, xác thực và nhiều thứ khác, Kong là lớp trung tâm điều phối vi dịch vụ hay lưu lượng API truyền thống, cũng như lưu lượng agent LLM và MCP. Chạy bản địa trên Kubernetes nhờ bộ điều khiển ingress chính thức. Mục Getting Started: dùng bản đám mây Kong Konnect (có dùng thử miễn phí) hoặc tự cài; README hướng dẫn thử trong khoảng 5 phút bằng bản docker-compose (clone kho Docker rồi chạy, bài không chép lệnh), cổng 8000 gửi lưu lượng, 8001 cấu hình bằng Admin API hoặc decK, 8002 giao diện quản lý Kong Manager. Mục tính năng: định tuyến, cân bằng tải, kiểm tra sức khỏe cấu hình qua API quản trị RESTful hoặc khai báo; xác thực và phân quyền cho API (JWT, basic auth, OAuth, ACL...); API LLM thống nhất để định tuyến tới nhiều nhà cung cấp (OpenAI, Anthropic, Gemini, Bedrock, Azure AI, Mistral...); quản trị, bảo mật và quan sát lưu lượng MCP; hơn 60 tính năng AI; proxy và kết thúc TLS cho lưu lượng L4 hoặc L7; plugin kiểm soát lưu lượng, giới hạn tốc độ, biến đổi yêu cầu, ghi nhật ký; mô hình triển khai không cơ sở dữ liệu hoặc lai (tách control plane và data plane) không khóa nhà cung cấp; hỗ trợ ingress cho Kubernetes. Mục Konnect Cloud: gói thương mại của Kong Inc. bổ sung thêm chức năng. Giấy phép Apache 2.0, bản quyền 2016–2026 Kong Inc.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi có nhiều dịch vụ và API, Kong là cổng trung tâm kiểm tra danh tính, giới hạn tốc độ, định tuyến và ghi nhật ký trước khi chuyển tới từng dịch vụ. Gần đây nó cũng định tuyến lưu lượng tới các mô hình AI.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy bản docker-compose trên máy thử và thêm xác thực cho một API mẫu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người triển khai ứng dụng với container, máy chủ web và hạ tầng, thường có AI hỗ trợ viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Docker, hiểu API gateway, mạng và bảo mật; cổng quản trị rất nhạy cảm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cổng quản trị 8001 và Kong Manager 8002 có quyền cao: không mở ra Internet khi chưa bật xác thực và TLS (nhận định chung, README nêu các cổng). Tuyên bố 'hơn 60 tính năng AI', 'hiệu năng cao' là của README. Kong Konnect và các tính năng thương mại trả phí, bài chưa kiểm tra giá. Định tuyến LLM gửi dữ liệu tới nhà cung cấp bên ngoài: cân nhắc dữ liệu nhạy cảm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API gateway (cổng API)</strong>: điểm trung gian điều phối mọi yêu cầu tới các dịch vụ; README nêu.</li><li><strong>plugin</strong>: phần mở rộng thêm tính năng cho cổng; README nêu.</li><li><strong>ingress controller</strong>: thành phần đưa lưu lượng vào Kubernetes; README nêu bộ điều khiển chính thức.</li><li><strong>declarative (khai báo)</strong>: mô tả cấu hình bằng tệp thay vì lệnh từng bước; README nêu triển khai không cơ sở dữ liệu.</li><li><strong>control plane / data plane</strong>: phần điều khiển / phần xử lý lưu lượng; README nêu triển khai lai.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng Kong Konnect hoặc chạy bản docker-compose, hay cài các bản phân phối khác (bài không chép lệnh). Cần Docker. Miễn phí bản cộng đồng theo giấy phép Apache 2.0; Kong Konnect trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Features.</li><li>Chạy bản docker-compose trên máy thử.</li><li>Bảo vệ cổng quản trị trước khi mở ra mạng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang tìm hiểu API gateway. Hãy đọc README của Kong (https://github.com/Kong/kong) và giải thích bằng tiếng Việt: Kong làm gì, ba cổng 8000 8001 8002 khác nhau thế nào, và vì sao không mở cổng quản trị ra Internet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 9 KB), bài chưa đọc tài liệu docs.konghq.com. Tuyên bố tính năng AI là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ container và hạ tầng có thể tạo tài nguyên đám mây tốn tiền hoặc mở cổng ra Internet: thử trên máy cục bộ hoặc tài khoản đám mây có giới hạn chi tiêu, giữ khóa và bí mật ngoài kho mã, không mở cổng quản trị ra Internet, và kiểm tra giấy phép và gói trả phí.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Kong</strong> có <strong>44.345 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-19. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục License ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Kong/kong/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Kong/kong\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 546. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44345; repo_id 26783295; README SHA256 376442dbbec623bc2edaf4473baa768c5bd4e56c391e480719692ea3e84d2d0b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Kong/kong",
+          "repo_id": "26783295",
+          "source_path": "",
+          "source_revision": "README-SHA256:376442dbbec623bc2edaf4473baa768c5bd4e56c391e480719692ea3e84d2d0b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kong/kong",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng Kong Konnect hoặc chạy bản docker-compose, hay cài các bản phân phối khác (bài không chép lệnh). Cần Docker. Miễn phí bản cộng đồng theo giấy phép Apache 2.0; Kong Konnect trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Kong/kong/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Kong/kong/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Kong/kong",
+        "stars": 44345,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Kong/kong/master/README.md",
+        "readmeSha256": "376442dbbec623bc2edaf4473baa768c5bd4e56c391e480719692ea3e84d2d0b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

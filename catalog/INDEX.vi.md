@@ -71,6 +71,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 69 — Blockchain và tiền mã hóa (kỹ thuật)](learning-paths/69-blockchain-tien-ma-hoa.vi.md) — Từ nút Bitcoin, Lightning, thanh toán và nút Ethereum đến hợp đồng thông minh, ứng dụng phi tập trung và dựng chuỗi riêng; chỉ là giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý; chú ý khóa riêng, mạng thử, kiểm toán hợp đồng và luật địa phương.
 - [Lộ trình 70 — WordPress và hệ sinh thái](learning-paths/70-wordpress-he-sinh-thai.vi.md) — Từ dòng lệnh, Composer, khung Bedrock và theme Sage đến API GraphQL, gỡ lỗi, tăng tốc và trình dựng trang; thử trên bản sao, sao lưu trước khi đổi dữ liệu, chú ý plugin trả phí (WP Rocket, Elementor Pro) và tính thử nghiệm của Playground.
 - [Lộ trình 71 — Marketing tự host](learning-paths/71-marketing-tu-host.vi.md) — Từ rút gọn liên kết, lên lịch mạng xã hội, cờ tính năng và A/B testing đến trang trạng thái và mạng chia sẻ ảnh; chú ý tài khoản và khóa mặc định, cảnh báo tên miền giả mạo, phê duyệt ứng dụng nền tảng, bản trả phí và dữ liệu người dùng.
+- [Lộ trình 72 — Container và hạ tầng](learning-paths/72-container-ha-tang.vi.md) — Từ máy chủ web, ảnh container, máy ảo cho container và tự động hóa giao phần mềm đến hạ tầng dưới dạng mã và cổng API; chú ý tài nguyên đám mây tốn tiền, cổng quản trị, socket Docker và bản trả phí.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -126,7 +127,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (187 bài)
+### Cơ bản (189 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -317,6 +318,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 534 | YOURLS: bộ script PHP chạy trình rút gọn liên kết riêng trên máy chủ của bạn, có thống kê chi tiết; README nói 'làm gì tùy thích' với phần mềm tự do giấy phép MIT | [YOURLS/YOURLS](https://github.com/YOURLS/YOURLS) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12298 | marketing-tu-host |
 | 535 | Kutt: trình rút gọn liên kết hiện đại hỗ trợ tên miền riêng, thống kê, quản lý người dùng và API; README cảnh báo kutt.it không thuộc dự án và có thể là trang lừa đảo | [thedevs-network/kutt](https://github.com/thedevs-network/kutt) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 11188 | marketing-tu-host |
 | 538 | openstatus: nền tảng trang trạng thái, ứng phó sự cố và giám sát uptime mã nguồn mở, khai báo bằng YAML hoặc Terraform, có máy chủ MCP; README nêu 28 vùng kiểm tra, giá phẳng, AGPL-3.0 | [openstatushq/openstatus](https://github.com/openstatushq/openstatus) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 9243 | marketing-tu-host |
+| 542 | Lima (Linux Machines): chạy máy ảo Linux có chia sẻ tệp và chuyển tiếp cổng tự động, kiểu WSL2, để dùng container (containerd/nerdctl, Docker, Podman, Kubernetes) trên macOS và các hệ khác | [lima-vm/lima](https://github.com/lima-vm/lima) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 22234 | container-ha-tang |
+| 543 | dive: công cụ khám phá ảnh Docker/OCI theo từng lớp, tìm cách giảm dung lượng; README ghi chất lượng beta và có chế độ CI | [wagoodman/dive](https://github.com/wagoodman/dive) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 54695 | container-ha-tang |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -360,7 +363,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (171 bài)
+### Nâng cao (176 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -535,6 +538,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 536 | Flagsmith: nền tảng quản lý tính năng (feature flag), cấu hình từ xa và A/B testing mã nguồn mở, tự host miễn phí hoặc bản Enterprise trả phí, tích hợp OpenFeature | [Flagsmith/flagsmith](https://github.com/Flagsmith/flagsmith) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 6640 | marketing-tu-host |
 | 537 | Unleash: nền tảng quản lý tính năng (feature flag) mã nguồn mở, 15 SDK chính thức; README cho tài khoản mặc định admin/unleash4all khi chạy cục bộ và mời thử Enterprise | [Unleash/unleash](https://github.com/Unleash/unleash) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 13926 | marketing-tu-host |
 | 539 | Pixelfed: nền tảng chia sẻ ảnh thuộc Fediverse, tự host bằng PHP; README ghi từ chối đóng góp do AI tạo ra và nêu hỗ trợ PHP 8.5 và 8.4, MySQL 8+, MariaDB 11+ | [pixelfed/pixelfed](https://github.com/pixelfed/pixelfed) | {'key': 'agpl-3.0', 'name': 'GNU Affero General Public License v3.0', 'spdx_id': 'AGPL-3.0', 'url': 'https://api.github.com/licenses/agpl-3.0', 'node_id': 'MDc6TGljZW5zZTE='} | 7135 | marketing-tu-host |
+| 540 | Moby: dự án mã nguồn mở do Docker tạo ra, bộ khối dựng container (công cụ dựng, đăng ký, điều phối, runtime); README nói không phải nơi hỗ trợ sản phẩm Docker và mô-đun Go github.com/docker/docker đã lỗi thời từ Docker v29 | [moby/moby](https://github.com/moby/moby) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 72240 | container-ha-tang |
+| 541 | NGINX: máy chủ web, cân bằng tải, reverse proxy, API gateway và bộ nhớ đệm nội dung; README có phần giới thiệu cho người mới về mô-đun, cấu hình, tiến trình, SSL, cân bằng tải, giới hạn tốc độ, giấy phép BSD 2 điều khoản | [nginx/nginx](https://github.com/nginx/nginx) | {'key': 'bsd-2-clause', 'name': 'BSD 2-Clause "Simplified" License', 'spdx_id': 'BSD-2-Clause', 'url': 'https://api.github.com/licenses/bsd-2-clause', 'node_id': 'MDc6TGljZW5zZTQ='} | 32041 | container-ha-tang |
+| 544 | Dagger: nền tảng tự động hóa giao phần mềm lập trình được, chạy cục bộ, trên CI hoặc đám mây, SDK cho 8 ngôn ngữ, mọi thao tác chạy trong container và phát dấu vết OpenTelemetry | [dagger/dagger](https://github.com/dagger/dagger) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 16575 | container-ha-tang |
+| 545 | Pulumi: hạ tầng dưới dạng mã bằng ngôn ngữ lập trình bạn quen, triển khai lên AWS, Azure, Google Cloud, Kubernetes và hơn 300 nhà cung cấp; tạo tài nguyên đám mây thật có thể tốn tiền | [pulumi/pulumi](https://github.com/pulumi/pulumi) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 25839 | container-ha-tang |
+| 546 | Kong Gateway: cổng API, LLM và MCP cloud-native mở rộng bằng plugin, định tuyến, cân bằng tải, xác thực; README có bản đám mây Kong Konnect trả phí | [Kong/kong](https://github.com/Kong/kong) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 44345 | container-ha-tang |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

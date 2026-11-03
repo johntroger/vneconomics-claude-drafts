@@ -1,0 +1,43 @@
+{
+  "key": 546,
+  "repo": "Kong/kong",
+  "repoId": "26783295",
+  "url": "https://github.com/Kong/kong",
+  "stars": 44345,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-19T02:45:09Z",
+  "createdAt": "2014-11-17T23:56:08Z",
+  "defaultBranch": "master",
+  "description": "🦍 The API and AI Gateway",
+  "homepage": "https://konghq.com/install/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Kong/kong/master/README.md",
+    "sha256": "376442dbbec623bc2edaf4473baa768c5bd4e56c391e480719692ea3e84d2d0b",
+    "bytes": 9332,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Getting Started",
+      "Features",
+      "Konnect Cloud",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.konghq.com.",
+    "Chưa thử.",
+    "Giá Kong Konnect chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
