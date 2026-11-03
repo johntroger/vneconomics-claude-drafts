@@ -5,7 +5,12 @@ Kho lưu bản nháp nội dung do Claude Code chuẩn bị cho store.vneconomic
 - Claude Code chỉ thêm file vào `content-drafts/`.
 - Mỗi thư mục con có `content.json`, `research/` và `README.vi.md` ghi repo, license, điểm chưa chắc chắn.
 
-## Mục lục
+## Bắt đầu từ đâu
+- `catalog/INDEX.vi.md`: mục lục tổng theo độ khó và theo lộ trình học.
+- `catalog/learning-paths/`: 6 lộ trình học (bắt đầu, vibe code có kỷ luật, đưa website chạy thật, bảo mật tối thiểu, cho AI đọc web, tự động hóa).
+- `catalog/catalog.json`: dữ liệu máy đọc được (độ khó, bài liên quan).
+
+## Các nhóm bài nháp
 
 | Thư mục | Nội dung |
 |---|---|
