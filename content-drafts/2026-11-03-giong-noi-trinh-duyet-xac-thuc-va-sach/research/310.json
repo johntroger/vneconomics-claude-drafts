@@ -1,0 +1,36 @@
+{
+  "key": 310,
+  "repo": "pyodide/pyodide",
+  "repoId": "122663163",
+  "url": "https://github.com/pyodide/pyodide",
+  "stars": 14922,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MPL-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:19:15Z",
+  "createdAt": "2018-02-23T19:21:29Z",
+  "defaultBranch": "main",
+  "description": "Pyodide is a Python distribution for the browser and Node.js based on WebAssembly",
+  "homepage": "https://pyodide.org/en/stable/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pyodide/pyodide/main/README.md",
+    "sha256": "efa2e07217f2b8d4b7aeec9d63b028f9faba22b200a4889db35656820588c208",
+    "bytes": 5955,
+    "sectionsRead": [
+      "What is Pyodide?",
+      "Try Pyodide",
+      "Getting Started",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu quickstart.",
+    "Chưa thử nhúng vào trang.",
+    "Hiệu năng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

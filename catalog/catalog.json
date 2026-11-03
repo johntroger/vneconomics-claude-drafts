@@ -3683,5 +3683,75 @@
    "spacy",
    "vscodium"
   ]
+ },
+ {
+  "key": 308,
+  "slug": "authelia",
+  "group": "2026-11-03-giong-noi-trinh-duyet-xac-thuc-va-sach",
+  "title": "Authelia: cổng đăng nhập một lần và xác thực hai yếu tố cho các dịch vụ tự host, đứng sau reverse proxy",
+  "repo": "authelia/authelia",
+  "stars": 29489,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "jupyter-book"
+  ]
+ },
+ {
+  "key": 309,
+  "slug": "whisper",
+  "group": "2026-11-03-giong-noi-trinh-duyet-xac-thuc-va-sach",
+  "title": "Whisper: mô hình nhận dạng giọng nói của OpenAI, chép lời nhiều ngôn ngữ, mã và trọng số theo giấy phép MIT",
+  "repo": "openai/whisper",
+  "stars": 111833,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-08-31",
+  "related": [
+   "pyodide"
+  ]
+ },
+ {
+  "key": 310,
+  "slug": "pyodide",
+  "group": "2026-11-03-giong-noi-trinh-duyet-xac-thuc-va-sach",
+  "title": "Pyodide: chạy Python ngay trong trình duyệt nhờ WebAssembly, không cần cài gì cho người dùng",
+  "repo": "pyodide/pyodide",
+  "stars": 14922,
+  "license": "MPL-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "jupyter-book",
+   "whisper"
+  ]
+ },
+ {
+  "key": 311,
+  "slug": "jupyter-book",
+  "group": "2026-11-03-giong-noi-trinh-duyet-xac-thuc-va-sach",
+  "title": "Jupyter Book: dựng sách và tài liệu có mã chạy được từ Markdown và notebook, xuất web và PDF",
+  "repo": "jupyter-book/jupyter-book",
+  "stars": 4289,
+  "license": "BSD-3-Clause",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "authelia",
+   "pyodide"
+  ]
  }
 ]

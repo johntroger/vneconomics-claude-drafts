@@ -1,0 +1,36 @@
+{
+  "key": 308,
+  "repo": "authelia/authelia",
+  "repoId": "75785240",
+  "url": "https://github.com/authelia/authelia",
+  "stars": 29489,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:27:31Z",
+  "createdAt": "2016-12-07T00:56:57Z",
+  "defaultBranch": "master",
+  "description": "The Single Sign-On Multi-Factor portal for web apps. OpenID Certified™ and Post-Quantum Cryptography Ready.",
+  "homepage": "https://www.authelia.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/authelia/authelia/master/README.md",
+    "sha256": "1e94142f20341233de9a594afb63519919c93189c52a0b6041966d003703dc51",
+    "bytes": 83557,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features summary",
+      "OpenID Connect",
+      "Security"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu tích hợp từng reverse proxy.",
+    "Chưa thử cài hay cấu hình.",
+    "Chưa so sánh với giải pháp xác thực khác."
+  ],
+  "runtimeValidated": false
+}

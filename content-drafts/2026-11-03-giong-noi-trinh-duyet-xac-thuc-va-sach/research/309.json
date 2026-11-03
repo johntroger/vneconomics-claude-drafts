@@ -1,0 +1,36 @@
+{
+  "key": 309,
+  "repo": "openai/whisper",
+  "repoId": "537603333",
+  "url": "https://github.com/openai/whisper",
+  "stars": 111833,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-08-31T17:19:19Z",
+  "createdAt": "2022-09-16T20:02:54Z",
+  "defaultBranch": "main",
+  "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/openai/whisper/main/README.md",
+    "sha256": "38c180c2a8d8ba628a3e131ad42bf06c8a51bb681efb30fbe28d5a0f4b65f288",
+    "bytes": 8246,
+    "sectionsRead": [
+      "Approach",
+      "Setup",
+      "Available models and languages",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chất lượng tiếng Việt chưa kiểm tra.",
+    "Chưa thử cài hay chép lời.",
+    "Chưa so sánh với faster-whisper hay sherpa-onnx."
+  ],
+  "runtimeValidated": false
+}

@@ -34,6 +34,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 32 — Công cụ terminal và viết tài liệu](learning-paths/32-cong-cu-terminal-va-tai-lieu.vi.md) — Làm đọc, tìm và chuyển đổi tài liệu dễ hơn trong terminal; cuối lộ trình là dựng website tài liệu.
 - [Lộ trình 33 — Thư viện Python thường gặp khi AI viết mã](learning-paths/33-thu-vien-python-cho-nguoi-moi.vi.md) — Gọi API, kiểm tra dữ liệu, viết công cụ dòng lệnh và kiểm thử: những thư viện hay xuất hiện trong mã do AI sinh.
 - [Lộ trình 34 — Công cụ lập trình, xử lý văn bản và email thử nghiệm](learning-paths/34-cong-cu-lap-trinh-va-email-thu-nghiem.vi.md) — Trình soạn mã, thư viện xử lý văn bản và công cụ thử email; đọc kỹ cảnh báo của từng README.
+- [Lộ trình 35 — Chép lời, Python trong trình duyệt, đăng nhập chung và sách tính toán](learning-paths/35-giong-noi-trinh-duyet-xac-thuc-va-sach.vi.md) — Bốn công cụ cho giảng viên và người tự host: chép lời giọng nói, bài giảng chạy mã, cổng đăng nhập chung và giáo trình có mã.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -223,7 +224,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (39 bài)
+### Nâng cao (43 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -266,6 +267,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 303 | spaCy: thư viện Python xử lý ngôn ngữ tự nhiên cho sản phẩm thật, nhận diện thực thể và phân loại văn bản | [explosion/spaCy](https://github.com/explosion/spaCy) | MIT | 34015 | cong-cu-lap-trinh-va-email-thu-nghiem |
 | 305 | Helix: trình soạn văn bản trong terminal theo mô hình soạn kiểu modal, có hỗ trợ language server sẵn | [helix-editor/helix](https://github.com/helix-editor/helix) | MPL-2.0 | 46775 | cong-cu-lap-trinh-va-email-thu-nghiem |
 | 306 | Roundcube Webmail: ứng dụng thư điện tử trên trình duyệt, lưu ý README cảnh báo bản trong kho Git không phải bản ổn định | [roundcube/roundcubemail](https://github.com/roundcube/roundcubemail) | GPL-3.0 | 7256 | cong-cu-lap-trinh-va-email-thu-nghiem |
+| 308 | Authelia: cổng đăng nhập một lần và xác thực hai yếu tố cho các dịch vụ tự host, đứng sau reverse proxy | [authelia/authelia](https://github.com/authelia/authelia) | Apache-2.0 | 29489 | giong-noi-trinh-duyet-xac-thuc-va-sach |
+| 309 | Whisper: mô hình nhận dạng giọng nói của OpenAI, chép lời nhiều ngôn ngữ, mã và trọng số theo giấy phép MIT | [openai/whisper](https://github.com/openai/whisper) | MIT | 111833 | giong-noi-trinh-duyet-xac-thuc-va-sach |
+| 310 | Pyodide: chạy Python ngay trong trình duyệt nhờ WebAssembly, không cần cài gì cho người dùng | [pyodide/pyodide](https://github.com/pyodide/pyodide) | MPL-2.0 | 14922 | giong-noi-trinh-duyet-xac-thuc-va-sach |
+| 311 | Jupyter Book: dựng sách và tài liệu có mã chạy được từ Markdown và notebook, xuất web và PDF | [jupyter-book/jupyter-book](https://github.com/jupyter-book/jupyter-book) | BSD-3-Clause | 4289 | giong-noi-trinh-duyet-xac-thuc-va-sach |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
