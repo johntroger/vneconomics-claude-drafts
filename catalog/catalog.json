@@ -12515,5 +12515,123 @@
    "tokenizers",
    "underthesea"
   ]
+ },
+ {
+  "key": 709,
+  "slug": "plantuml",
+  "group": "2026-11-03-so-do-va-bieu-do-bang-ma",
+  "title": "PlantUML: thành phần tạo nhiều loại sơ đồ UML từ mô tả bằng văn bản đơn giản (trình tự, ca sử dụng, lớp, đối tượng và nhiều loại khác); README có tiện ích trình duyệt vẽ sơ đồ ngay trong GitHub, công cụ MCP cho trợ lý AI và nhiều giấy phép để chọn",
+  "repo": "plantuml/plantuml",
+  "stars": 13400,
+  "license": {
+   "key": "lgpl-3.0",
+   "name": "GNU Lesser General Public License v3.0",
+   "spdx_id": "LGPL-3.0",
+   "url": "https://api.github.com/licenses/lgpl-3.0",
+   "node_id": "MDc6TGljZW5zZTEy"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "bokeh",
+   "likec4"
+  ]
+ },
+ {
+  "key": 710,
+  "slug": "diagrams",
+  "group": "2026-11-03-so-do-va-bieu-do-bang-ma",
+  "title": "Diagrams: vẽ sơ đồ kiến trúc hệ thống đám mây bằng mã Python, sinh ra để phác thảo kiến trúc mới mà không cần công cụ thiết kế, theo dõi thay đổi bằng kiểm soát phiên bản; README nêu không điều khiển tài nguyên đám mây thật; giấy phép MIT",
+  "repo": "mingrammer/diagrams",
+  "stars": 42778,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "bokeh",
+   "plotly-py"
+  ]
+ },
+ {
+  "key": 711,
+  "slug": "likec4",
+  "group": "2026-11-03-so-do-va-bieu-do-bang-ma",
+  "title": "LikeC4: ngôn ngữ mô hình hóa mô tả kiến trúc phần mềm và công cụ sinh sơ đồ từ mô hình, lấy cảm hứng từ C4 Model và Structurizr DSL, cho tùy biến ký hiệu và số cấp lồng; có sân thử, mẫu và tài liệu; giấy phép MIT",
+  "repo": "likec4/likec4",
+  "stars": 6011,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "plantuml"
+  ]
+ },
+ {
+  "key": 712,
+  "slug": "plotly-py",
+  "group": "2026-11-03-so-do-va-bieu-do-bang-ma",
+  "title": "plotly.py: thư viện vẽ đồ thị tương tác mã nguồn mở chạy trên trình duyệt cho Python, xây trên plotly.js, có Graph Objects và Plotly Express, hơn 30 loại biểu đồ gồm khoa học và 3D; mã MIT, tài liệu Creative Commons",
+  "repo": "plotly/plotly.py",
+  "stars": 18873,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-01",
+  "related": [
+   "diagrams"
+  ]
+ },
+ {
+  "key": 713,
+  "slug": "bokeh",
+  "group": "2026-11-03-so-do-va-bieu-do-bang-ma",
+  "title": "Bokeh: thư viện trực quan hóa tương tác cho trình duyệt hiện đại, dựng đồ họa linh hoạt và gọn, tương tác hiệu năng cao với dữ liệu lớn hoặc luồng; huy hiệu giấy phép BSD 3 điều khoản, tài trợ qua NumFOCUS",
+  "repo": "bokeh/bokeh",
+  "stars": 20470,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "diagrams",
+   "plantuml"
+  ]
  }
 ]

@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-so-do",
+  "batch": 114,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 709,
+      "batch": 114,
+      "slug": "plantuml",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PlantUML: thành phần tạo nhiều loại sơ đồ UML từ mô tả bằng văn bản đơn giản (trình tự, ca sử dụng, lớp, đối tượng và nhiều loại khác); README có tiện ích trình duyệt vẽ sơ đồ ngay trong GitHub, công cụ MCP cho trợ lý AI và nhiều giấy phép để chọn",
+        "excerpt": "Hiểu PlantUML là thành phần cho phép tạo nhiều loại sơ đồ UML từ mô tả bằng văn bản đơn giản: sơ đồ trình tự, ca sử dụng, lớp, đối tượng, triển khai và nhiều loại khác; README giới thiệu tiện ích trình duyệt vẽ sơ đồ trong GitHub, công cụ MCP cho trợ lý AI, phần bảo mật và giấy phép chọn một trong nhiều giấy phép (GPL, LGPL, Apache, Eclipse Public, MIT).",
+        "content": "<p>README tả PlantUML là thành phần cho phép tạo nhiều loại sơ đồ UML qua mô tả bằng văn bản đơn giản, từ sơ đồ trình tự đến sơ đồ triển khai và hơn thế. Đầu README có hai khung giới thiệu: tiện ích trình duyệt chính thức vẽ sơ đồ PlantUML ngay trong GitHub (README nói không cần máy chủ, không cần mã thông báo, không theo dõi; tuyên bố của dự án, bài chưa kiểm chứng) và gói công cụ MCP bằng Node.js cho trợ lý AI dựng và kiểm tra sơ đồ (bài không cài). README liệt kê các loại sơ đồ được hỗ trợ (UML và các loại khác), tính năng bổ sung (liên kết và chú giải, văn bản giàu định dạng Creole, biểu tượng OpenIconic, biểu tượng sprite), mục tìm hiểu thêm, bảo mật (chính sách bảo mật và ghi chú PlantUML không bị ảnh hưởng bởi lỗ hổng log4j), bắt đầu, xây từ mã nguồn (kể cả xây cho trình duyệt bằng TeaVM), đóng góp, hỗ trợ cộng đồng. Mục License nói PlantUML được cấp phép theo nhiều giấy phép để bạn chọn cái phù hợp: GPL, LGPL, Apache, Eclipse Public License hoặc MIT, kèm trang hỏi đáp về giấy phép. Bài lấy giấy phép LGPL-3.0 theo GitHub nhưng README cho phép chọn một trong các giấy phép trên. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì kéo thả hình, bạn gõ vài dòng chữ như 'A gọi B' và PlantUML tự vẽ sơ đồ trình tự. Sơ đồ là văn bản nên theo dõi thay đổi bằng Git rất dễ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích sơ đồ trình tự là gì và mô tả một quy trình đăng nhập bằng vài dòng chữ; chưa dựng hình. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm tài liệu kỹ thuật, bài giảng hoặc báo cáo cần sơ đồ và biểu đồ, thường nhờ AI viết mã vẽ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần học cú pháp mô tả sơ đồ và thường cần Java hoặc dịch vụ dựng hình. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dựng sơ đồ qua máy chủ công cộng có thể làm lộ nội dung sơ đồ (kiến trúc nội bộ, quy trình kinh doanh): dùng bản tự chạy cho nội dung bí mật. Tiện ích trình duyệt và công cụ MCP là phần thêm của bên khác: đọc kỹ quyền trước khi cài. Giấy phép nhiều lựa chọn: cần đọc FAQ giấy phép; bài không phải tư vấn pháp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>UML</strong>: ngôn ngữ mô hình hóa thống nhất để vẽ sơ đồ phần mềm; README nêu.</li><li><strong>sequence diagram (sơ đồ trình tự)</strong>: sơ đồ thể hiện thứ tự các bên gọi nhau; README nêu.</li><li><strong>diagram as code (sơ đồ bằng mã)</strong>: mô tả sơ đồ bằng văn bản; bài chú thích biên tập.</li><li><strong>MCP</strong>: giao thức cho AI dùng công cụ; README nêu công cụ MCP.</li><li><strong>multi-license (nhiều giấy phép)</strong>: cho chọn một trong nhiều giấy phép; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Getting Started và Building from Source; bài không chép lệnh. Thường cần Java hoặc dịch vụ dựng hình. Miễn phí; README cho chọn GPL, LGPL, Apache, EPL hoặc MIT; GitHub nhận diện LGPL-3.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Supported Diagram Types.</li><li>Đọc mục License và FAQ giấy phép.</li><li>Thử với sơ đồ giả không chứa thông tin nội bộ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết tài liệu kỹ thuật và muốn vẽ sơ đồ bằng chữ. Hãy đọc README của PlantUML (https://github.com/plantuml/plantuml) và giải thích bằng tiếng Việt: các loại sơ đồ hỗ trợ, vì sao dựng sơ đồ qua máy chủ công cộng có rủi ro, và README cho chọn những giấy phép nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 10,7 KB, bài chưa đọc trang plantuml.com và FAQ giấy phép. Tuyên bố của tiện ích trình duyệt chưa kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ vẽ sơ đồ và biểu đồ có thể gửi nội dung sơ đồ tới máy chủ dựng hình hoặc dùng tiện ích trình duyệt: không đưa kiến trúc nội bộ, dữ liệu khách hàng hay thông tin bí mật lên máy chủ công cộng, kiểm tra giấy phép của biểu tượng và dữ liệu dùng trong sơ đồ, chọn phiên bản được duy trì, và kiểm tra lại biểu đồ do AI sinh trước khi dùng công khai vì có thể sai số liệu hoặc quan hệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>plantuml</strong> có <strong>13.400 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README cho chọn GPL, LGPL, Apache, Eclipse Public License hoặc MIT; GitHub nhận diện LGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/plantuml/plantuml/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/plantuml/plantuml\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 709. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13400; repo_id 1051476; README SHA256 05f4e378f356a2fd8e140e7ff97fdb041837e51b47bda1e4f5a48745d87cc9b6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/plantuml/plantuml",
+          "repo_id": "1051476",
+          "source_path": "",
+          "source_revision": "README-SHA256:05f4e378f356a2fd8e140e7ff97fdb041837e51b47bda1e4f5a48745d87cc9b6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "lgpl-3.0",
+                "name": "GNU Lesser General Public License v3.0",
+                "spdx_id": "LGPL-3.0",
+                "url": "https://api.github.com/licenses/lgpl-3.0",
+                "node_id": "MDc6TGljZW5zZTEy"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/plantuml/plantuml",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Getting Started và Building from Source; bài không chép lệnh. Thường cần Java hoặc dịch vụ dựng hình. Miễn phí; README cho chọn GPL, LGPL, Apache, EPL hoặc MIT; GitHub nhận diện LGPL-3.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/plantuml/plantuml/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/plantuml/plantuml/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "plantuml/plantuml",
+        "stars": 13400,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/plantuml/plantuml/master/README.md",
+        "readmeSha256": "05f4e378f356a2fd8e140e7ff97fdb041837e51b47bda1e4f5a48745d87cc9b6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 710,
+      "batch": 114,
+      "slug": "diagrams",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Diagrams: vẽ sơ đồ kiến trúc hệ thống đám mây bằng mã Python, sinh ra để phác thảo kiến trúc mới mà không cần công cụ thiết kế, theo dõi thay đổi bằng kiểm soát phiên bản; README nêu không điều khiển tài nguyên đám mây thật; giấy phép MIT",
+        "excerpt": "Hiểu Diagrams là công cụ vẽ sơ đồ kiến trúc hệ thống đám mây bằng mã Python (Diagram as Code), dùng để phác thảo thiết kế kiến trúc mới mà không cần công cụ thiết kế và theo dõi thay đổi sơ đồ bằng kiểm soát phiên bản; README nhấn mạnh nó chỉ vẽ, không điều khiển tài nguyên đám mây thật hay sinh mã Terraform, CloudFormation; cần Python 3.9 trở lên và Graphviz.",
+        "content": "<p>README tả Diagrams cho bạn vẽ sơ đồ kiến trúc hệ thống đám mây bằng mã Python, sinh ra để phác thảo thiết kế kiến trúc mới mà không cần công cụ thiết kế; cũng dùng để mô tả hoặc trực quan hóa kiến trúc có sẵn. 'Sơ đồ bằng mã' cũng cho phép theo dõi thay đổi bằng kiểm soát phiên bản. Ghi chú quan trọng: công cụ không điều khiển tài nguyên đám mây thật và không sinh mã CloudFormation hay Terraform, chỉ vẽ sơ đồ. Mục Providers liệt kê các nhà cung cấp biểu tượng. Mục Getting Started nói yêu cầu Python 3.9 trở lên và Graphviz để dựng hình, có sân thử trực tuyến chạy ngay trong trình duyệt, cài bằng pip, pipenv hoặc poetry (bài không chép lệnh). README có ví dụ, đóng góp, danh sách nơi dùng, các ngôn ngữ khác. Mục License nêu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn vẽ sơ đồ 'người dùng vào cân bằng tải rồi tới ba máy chủ và cơ sở dữ liệu' mà không muốn kéo thả từng biểu tượng? Viết vài dòng Python, Diagrams vẽ giúp với biểu tượng của AWS, Azure, Google Cloud.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử sân thử trực tuyến với sơ đồ giả không chứa thông tin nội bộ; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm tài liệu kỹ thuật, bài giảng hoặc báo cáo cần sơ đồ và biểu đồ, thường nhờ AI viết mã vẽ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python cơ bản và cài Graphviz. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Sơ đồ chỉ là hình vẽ, không phản ánh hay triển khai hạ tầng thật: README nói rõ. Sân thử trực tuyến chạy mã của bạn trong trình duyệt: không đưa thông tin nội bộ. Biểu tượng của nhà cung cấp đám mây có điều khoản sử dụng riêng: kiểm tra khi dùng công khai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Diagram as Code (sơ đồ bằng mã)</strong>: mô tả sơ đồ bằng mã; README nêu.</li><li><strong>Graphviz</strong>: phần mềm dựng hình từ mô tả đồ thị; README nêu là yêu cầu.</li><li><strong>provider (nhà cung cấp biểu tượng)</strong>: bộ biểu tượng của AWS, Azure...; README nêu mục Providers.</li><li><strong>playground (sân thử)</strong>: trang chạy thử trực tuyến; README nêu.</li><li><strong>version control (kiểm soát phiên bản)</strong>: công cụ như Git để theo dõi thay đổi; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Getting Started với Graphviz và cài gói; bài không chép lệnh. Cần Python 3.9 trở lên và Graphviz. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ghi chú không điều khiển tài nguyên thật.</li><li>Thử sân thử trực tuyến.</li><li>Đọc mục Examples.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần vẽ sơ đồ kiến trúc hệ thống. Hãy đọc README của Diagrams (https://github.com/mingrammer/diagrams) và giải thích bằng tiếng Việt: Diagram as Code nghĩa là gì, vì sao README nói công cụ chỉ vẽ chứ không điều khiển hạ tầng, và cần cài thêm gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,3 KB, bài chưa đọc tài liệu diagrams.mingrammer.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ vẽ sơ đồ và biểu đồ có thể gửi nội dung sơ đồ tới máy chủ dựng hình hoặc dùng tiện ích trình duyệt: không đưa kiến trúc nội bộ, dữ liệu khách hàng hay thông tin bí mật lên máy chủ công cộng, kiểm tra giấy phép của biểu tượng và dữ liệu dùng trong sơ đồ, chọn phiên bản được duy trì, và kiểm tra lại biểu đồ do AI sinh trước khi dùng công khai vì có thể sai số liệu hoặc quan hệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mingrammer</strong> có <strong>42.778 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mingrammer/diagrams/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mingrammer/diagrams\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 710. Chưa cài/chạy thử; không tạo validation. Snapshot sao 42778; repo_id 237791077; README SHA256 fafb9552f356fafa2bc3aedd08e7e519aeb550150329c324ccb5096e1ed730d2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mingrammer/diagrams",
+          "repo_id": "237791077",
+          "source_path": "",
+          "source_revision": "README-SHA256:fafb9552f356fafa2bc3aedd08e7e519aeb550150329c324ccb5096e1ed730d2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mingrammer/diagrams",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Getting Started với Graphviz và cài gói; bài không chép lệnh. Cần Python 3.9 trở lên và Graphviz. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mingrammer/diagrams/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mingrammer/diagrams/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mingrammer/diagrams",
+        "stars": 42778,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mingrammer/diagrams/master/README.md",
+        "readmeSha256": "fafb9552f356fafa2bc3aedd08e7e519aeb550150329c324ccb5096e1ed730d2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 711,
+      "batch": 114,
+      "slug": "likec4",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LikeC4: ngôn ngữ mô hình hóa mô tả kiến trúc phần mềm và công cụ sinh sơ đồ từ mô hình, lấy cảm hứng từ C4 Model và Structurizr DSL, cho tùy biến ký hiệu và số cấp lồng; có sân thử, mẫu và tài liệu; giấy phép MIT",
+        "excerpt": "Hiểu LikeC4 là ngôn ngữ mô hình hóa mô tả kiến trúc phần mềm cùng công cụ sinh sơ đồ từ mô hình: lấy cảm hứng từ C4 Model và Structurizr DSL nhưng linh hoạt hơn, cho bạn tự đặt ký hiệu, loại phần tử và số cấp lồng; README có sân thử, kho mẫu, hướng dẫn nhanh và giấy phép MIT.",
+        "content": "<p>README tả LikeC4 giúp trực quan hóa, cộng tác và phát triển kiến trúc phần mềm bằng sơ đồ sống luôn cập nhật sinh từ mã. LikeC4 là ngôn ngữ mô hình hóa để mô tả kiến trúc phần mềm và công cụ sinh sơ đồ từ mô hình, lấy cảm hứng từ C4 Model và Structurizr DSL nhưng linh hoạt hơn: bạn tùy biến hoặc tự định nghĩa ký hiệu, loại phần tử và số cấp lồng nhau trong mô hình kiến trúc. README có ví dụ nguồn LikeC4, lệnh xem trước bằng dòng lệnh (bài không chép lệnh), kho mẫu, bản triển khai demo, hướng dẫn, mục nhận trợ giúp, người đóng góp và phần kêu gọi ủng hộ phát triển (bài không đánh giá). Mục License nêu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kiến trúc phần mềm thường vẽ một lần rồi lỗi thời. LikeC4 cho bạn mô tả kiến trúc bằng chữ trong kho mã, từ đó sinh sơ đồ nên luôn đồng bộ với mô hình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử sân thử trực tuyến với mô hình giả; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm tài liệu kỹ thuật, bài giảng hoặc báo cáo cần sơ đồ và biểu đồ, thường nhờ AI viết mã vẽ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm kiến trúc phần mềm, mô hình C4 và dòng lệnh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Mô hình kiến trúc chứa thông tin nội bộ: không đưa lên sân thử công khai khi chưa hiểu dữ liệu đi đâu. Bài chưa so sánh với PlantUML hay Structurizr.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>C4 Model</strong>: cách mô tả kiến trúc theo bốn cấp: ngữ cảnh, container, thành phần, mã; README nêu LikeC4 lấy cảm hứng.</li><li><strong>Structurizr DSL</strong>: ngôn ngữ mô tả kiến trúc theo C4; README nêu LikeC4 lấy cảm hứng.</li><li><strong>architecture as code (kiến trúc bằng mã)</strong>: mô tả kiến trúc bằng văn bản trong kho; README nêu.</li><li><strong>playground (sân thử)</strong>: trang chạy thử trực tuyến; README nêu.</li><li><strong>modeling language (ngôn ngữ mô hình hóa)</strong>: ngôn ngữ mô tả cấu trúc hệ thống; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có lệnh xem trước bằng dòng lệnh và kho mẫu; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is LikeC4?</li><li>Thử sân thử với mô hình giả.</li><li>Đọc Tutorial.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn vẽ kiến trúc phần mềm theo C4. Hãy đọc README của LikeC4 (https://github.com/likec4/likec4) và giải thích bằng tiếng Việt: C4 Model là gì, LikeC4 khác Structurizr ở đâu, và vì sao nên cẩn thận khi dùng sân thử công khai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,5 KB), bài chưa đọc tài liệu likec4.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ vẽ sơ đồ và biểu đồ có thể gửi nội dung sơ đồ tới máy chủ dựng hình hoặc dùng tiện ích trình duyệt: không đưa kiến trúc nội bộ, dữ liệu khách hàng hay thông tin bí mật lên máy chủ công cộng, kiểm tra giấy phép của biểu tượng và dữ liệu dùng trong sơ đồ, chọn phiên bản được duy trì, và kiểm tra lại biểu đồ do AI sinh trước khi dùng công khai vì có thể sai số liệu hoặc quan hệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>likec4</strong> có <strong>6.011 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/likec4/likec4/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/likec4/likec4\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 711. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6011; repo_id 618351200; README SHA256 df7a1ff8f2c034e429e412449039a716383a5aae0c538bc49c59b1ab4f840c89.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/likec4/likec4",
+          "repo_id": "618351200",
+          "source_path": "",
+          "source_revision": "README-SHA256:df7a1ff8f2c034e429e412449039a716383a5aae0c538bc49c59b1ab4f840c89",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/likec4/likec4",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có lệnh xem trước bằng dòng lệnh và kho mẫu; bài không chép lệnh. Cần Node.js. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/likec4/likec4/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/likec4/likec4/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "likec4/likec4",
+        "stars": 6011,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/likec4/likec4/main/README.md",
+        "readmeSha256": "df7a1ff8f2c034e429e412449039a716383a5aae0c538bc49c59b1ab4f840c89",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 712,
+      "batch": 114,
+      "slug": "plotly-py",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "plotly.py: thư viện vẽ đồ thị tương tác mã nguồn mở chạy trên trình duyệt cho Python, xây trên plotly.js, có Graph Objects và Plotly Express, hơn 30 loại biểu đồ gồm khoa học và 3D; mã MIT, tài liệu Creative Commons",
+        "excerpt": "Hiểu plotly.py là thư viện vẽ đồ thị tương tác mã nguồn mở chạy trên trình duyệt cho Python, xây trên plotly.js, ở mức cao và khai báo: README nêu hai cách dùng (Graph Objects và Plotly Express), hơn 30 loại biểu đồ gồm biểu đồ khoa học và 3D, xem được trong Jupyter và nhiều môi trường khác, xuất ảnh tĩnh; mã MIT, tài liệu theo Creative Commons.",
+        "content": "<p>README có mục Quickstart với hai cách: Graph Objects (khởi tạo hình, thêm vệt biểu đồ cột, hiển thị) và Plotly Express (một dòng vẽ cột), kèm lệnh cài tương ứng (bài không chép lệnh hay mã). Mục Overview tả plotly.py là thư viện vẽ đồ thị tương tác, mã nguồn mở, chạy trên trình duyệt cho Python, xây trên plotly.js, ở mức cao và khai báo; plotly.js có hơn 30 loại biểu đồ gồm biểu đồ khoa học, 3D, biểu đồ thống kê, bản đồ và nhiều thứ khác. README nói đồ thị xem được trong Jupyter notebook, phần mềm sổ tay Python khác, hoặc lưu thành tệp HTML độc lập, nhúng vào ứng dụng web; nhắc có thể liên hệ dịch vụ tư vấn và phát triển bảng điều khiển của công ty (quảng bá, bài không đánh giá). Có mục cài đặt, hỗ trợ widget Jupyter, xuất ảnh tĩnh (cần công cụ phụ) và bản quyền: mã theo MIT, tài liệu theo Creative Commons 4.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Với bảng dữ liệu, một dòng Plotly Express cho bạn biểu đồ cột tương tác: rê chuột xem số liệu, phóng to, tắt bớt dãy, rất hợp cho bài giảng và báo cáo.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích sự khác nhau giữa Plotly Express và Graph Objects bằng ví dụ biểu đồ cột; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm tài liệu kỹ thuật, bài giảng hoặc báo cáo cần sơ đồ và biểu đồ, thường nhờ AI viết mã vẽ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Python cơ bản và chút pandas. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Biểu đồ tương tác nhúng vào trang công khai có thể chứa dữ liệu thô trong tệp HTML: kiểm tra trước khi chia sẻ. Xuất ảnh tĩnh cần thêm công cụ. Biểu đồ do AI vẽ có thể sai trục hay đơn vị: kiểm tra lại.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>graph objects</strong>: cách vẽ chi tiết bằng đối tượng; README nêu.</li><li><strong>Plotly Express</strong>: cách vẽ nhanh ở mức cao; README nêu.</li><li><strong>plotly.js</strong>: thư viện JavaScript nền; README nêu plotly.py xây trên đó.</li><li><strong>declarative (khai báo)</strong>: mô tả biểu đồ muốn có; README nêu.</li><li><strong>Jupyter</strong>: môi trường sổ tay chạy mã; README nêu xem được trong đó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation và Quickstart; bài không chép lệnh hay mã. Cần Python. Miễn phí theo MIT (README nêu); tài liệu theo Creative Commons 4.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Quickstart.</li><li>Đọc mục Overview.</li><li>Vẽ thử một biểu đồ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dạy phân tích dữ liệu và muốn biểu đồ tương tác. Hãy đọc README của plotly.py (https://github.com/plotly/plotly.py) và giải thích bằng tiếng Việt: Graph Objects khác Plotly Express thế nào, biểu đồ tương tác xem ở những đâu, và lưu ý khi chia sẻ tệp HTML. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 4,3 KB, bài chưa đọc tài liệu plotly.com/python. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ vẽ sơ đồ và biểu đồ có thể gửi nội dung sơ đồ tới máy chủ dựng hình hoặc dùng tiện ích trình duyệt: không đưa kiến trúc nội bộ, dữ liệu khách hàng hay thông tin bí mật lên máy chủ công cộng, kiểm tra giấy phép của biểu tượng và dữ liệu dùng trong sơ đồ, chọn phiên bản được duy trì, và kiểm tra lại biểu đồ do AI sinh trước khi dùng công khai vì có thể sai số liệu hoặc quan hệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>plotly</strong> có <strong>18.873 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu mã MIT và tài liệu Creative Commons; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/plotly/plotly.py/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/plotly/plotly.py\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 712. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18873; repo_id 14579099; README SHA256 a8e38d3c57002a0a31164d078c4f1750cca7a0ca87e30a4676b158156dc19c87.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/plotly/plotly.py",
+          "repo_id": "14579099",
+          "source_path": "",
+          "source_revision": "README-SHA256:a8e38d3c57002a0a31164d078c4f1750cca7a0ca87e30a4676b158156dc19c87",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/plotly/plotly.py",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation và Quickstart; bài không chép lệnh hay mã. Cần Python. Miễn phí theo MIT (README nêu); tài liệu theo Creative Commons 4.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/plotly/plotly.py/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/plotly/plotly.py/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "plotly/plotly.py",
+        "stars": 18873,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/plotly/plotly.py/main/README.md",
+        "readmeSha256": "a8e38d3c57002a0a31164d078c4f1750cca7a0ca87e30a4676b158156dc19c87",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 713,
+      "batch": 114,
+      "slug": "bokeh",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bokeh: thư viện trực quan hóa tương tác cho trình duyệt hiện đại, dựng đồ họa linh hoạt và gọn, tương tác hiệu năng cao với dữ liệu lớn hoặc luồng; huy hiệu giấy phép BSD 3 điều khoản, tài trợ qua NumFOCUS",
+        "excerpt": "Hiểu Bokeh là thư viện trực quan hóa tương tác cho trình duyệt hiện đại: dựng đồ họa linh hoạt và gọn, cho tương tác hiệu năng cao trên bộ dữ liệu lớn hoặc dữ liệu luồng; README có mục cài đặt, tài nguyên, hỗ trợ tài chính và hiện vật, huy hiệu giấy phép BSD 3 điều khoản, do NumFOCUS bảo trợ tài chính.",
+        "content": "<p>README tả Bokeh là thư viện trực quan hóa tương tác cho trình duyệt hiện đại, cung cấp cách dựng đồ họa linh hoạt gọn gàng và cho phép tương tác hiệu năng cao trên bộ dữ liệu lớn hoặc dữ liệu luồng; đây là cách tự mô tả của dự án. README có hàng huy hiệu (phiên bản, phiên bản Python, giấy phép BSD 3 điều khoản, người đóng góp, NumFOCUS, tài liệu, lượt tải, kiểm thử, diễn đàn), lời kêu gọi quyên góp, mục cài đặt qua pip hoặc conda (bài không chép lệnh), tài nguyên, và mục hỗ trợ dài gồm hỗ trợ tài chính và hỗ trợ hiện vật của nhiều tổ chức; bài chỉ nêu mục này, không đánh giá. README phần đã đọc không nêu giấy phép bằng văn bản ngoài huy hiệu; bài lấy theo GitHub (BSD-3-Clause).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bokeh cho bạn vẽ biểu đồ có thể rê chuột, phóng to, lọc ngay trong trình duyệt và dựng cả bảng điều khiển nhỏ cho dữ liệu của mình bằng Python.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích 'tương tác trên dữ liệu luồng' bằng ví dụ biểu đồ cập nhật liên tục; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm tài liệu kỹ thuật, bài giảng hoặc báo cáo cần sơ đồ và biểu đồ, thường nhờ AI viết mã vẽ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và hiểu khái niệm trực quan hóa; bảng điều khiển phức tạp cần thêm kiến thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Biểu đồ nhúng trang công khai có thể chứa dữ liệu thô: kiểm tra trước khi chia sẻ. Chạy máy chủ Bokeh để tương tác cần bảo vệ bằng xác thực nếu mở ra mạng. Bài chưa so sánh với Plotly hay Matplotlib.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>interactive visualization (trực quan hóa tương tác)</strong>: biểu đồ phản hồi thao tác người dùng; README nêu.</li><li><strong>streaming data (dữ liệu luồng)</strong>: dữ liệu đến liên tục; README nêu.</li><li><strong>NumFOCUS</strong>: tổ chức phi lợi nhuận bảo trợ dự án khoa học mở; README nêu.</li><li><strong>BSD 3-clause</strong>: giấy phép mã nguồn mở khá rộng; README có huy hiệu.</li><li><strong>browser (trình duyệt)</strong>: nơi hiển thị biểu đồ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation bằng pip hoặc conda; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README có huy hiệu giấy phép.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc mục Installation và Resources.</li><li>Thử một biểu đồ với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn biểu đồ tương tác bằng Python. Hãy đọc README của Bokeh (https://github.com/bokeh/bokeh) và giải thích bằng tiếng Việt: Bokeh làm gì, khác Plotly ở đâu theo README (nếu có), và lưu ý khi mở máy chủ Bokeh ra mạng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 8,5 KB, phần lớn là huy hiệu và hỗ trợ, bài chưa đọc tài liệu docs.bokeh.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ vẽ sơ đồ và biểu đồ có thể gửi nội dung sơ đồ tới máy chủ dựng hình hoặc dùng tiện ích trình duyệt: không đưa kiến trúc nội bộ, dữ liệu khách hàng hay thông tin bí mật lên máy chủ công cộng, kiểm tra giấy phép của biểu tượng và dữ liệu dùng trong sơ đồ, chọn phiên bản được duy trì, và kiểm tra lại biểu đồ do AI sinh trước khi dùng công khai vì có thể sai số liệu hoặc quan hệ.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>bokeh</strong> có <strong>20.470 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện BSD-3-Clause; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/bokeh/bokeh/blob/branch-4.0/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/bokeh/bokeh\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 713. Chưa cài/chạy thử; không tạo validation. Snapshot sao 20470; repo_id 3834332; README SHA256 d498d6d03e80d959e05919f1ff79afc3c32ba3f6fabf4dc7f6c759501e8d2756.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/bokeh/bokeh",
+          "repo_id": "3834332",
+          "source_path": "",
+          "source_revision": "README-SHA256:d498d6d03e80d959e05919f1ff79afc3c32ba3f6fabf4dc7f6c759501e8d2756",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bokeh/bokeh",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation bằng pip hoặc conda; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (BSD-3-Clause), README có huy hiệu giấy phép.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bokeh/bokeh/blob/branch-4.0/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/bokeh/bokeh/blob/branch-4.0/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "bokeh/bokeh",
+        "stars": 20470,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/bokeh/bokeh/branch-4.0/README.md",
+        "readmeSha256": "d498d6d03e80d959e05919f1ff79afc3c32ba3f6fabf4dc7f6c759501e8d2756",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

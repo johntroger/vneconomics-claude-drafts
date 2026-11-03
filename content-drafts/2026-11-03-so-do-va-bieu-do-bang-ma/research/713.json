@@ -1,0 +1,41 @@
+{
+  "key": 713,
+  "repo": "bokeh/bokeh",
+  "repoId": "3834332",
+  "url": "https://github.com/bokeh/bokeh",
+  "stars": 20470,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:43:53Z",
+  "createdAt": "2012-03-26T15:40:01Z",
+  "defaultBranch": "branch-4.0",
+  "description": "Interactive Data Visualization in the browser, from  Python",
+  "homepage": "https://bokeh.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/bokeh/bokeh/branch-4.0/README.md",
+    "sha256": "d498d6d03e80d959e05919f1ff79afc3c32ba3f6fabf4dc7f6c759501e8d2756",
+    "bytes": 8490,
+    "sectionsRead": [
+      "Installation",
+      "Resources",
+      "Support"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.bokeh.org.",
+    "Chưa thử.",
+    "Chưa so sánh với Plotly và Matplotlib."
+  ],
+  "runtimeValidated": false
+}
