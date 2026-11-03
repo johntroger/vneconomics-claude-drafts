@@ -1276,7 +1276,9 @@
   "need": "Thiết kế nội dung trực quan",
   "pushed": "2026-11-02",
   "related": [
-   "astro"
+   "astro",
+   "languagetool",
+   "mkdocs-material"
   ]
  },
  {
@@ -1612,6 +1614,130 @@
   "related": [
    "prometheus",
    "tailscale"
+  ]
+ },
+ {
+  "key": 192,
+  "slug": "marp",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "Marp: viết bài trình chiếu bằng Markdown thuần rồi xuất ra HTML, PDF hoặc PowerPoint",
+  "repo": "marp-team/marp",
+  "stars": 12711,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "slidev"
+  ]
+ },
+ {
+  "key": 193,
+  "slug": "slidev",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "Slidev: slide dành cho lập trình viên, có mã sống, sơ đồ và chế độ người thuyết trình",
+  "repo": "slidevjs/slidev",
+  "stars": 49335,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-23",
+  "related": [
+   "marp",
+   "revealjs"
+  ]
+ },
+ {
+  "key": 194,
+  "slug": "revealjs",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "reveal.js: khung trình chiếu HTML chạy trên trình duyệt, nền của nhiều công cụ slide",
+  "repo": "hakimel/reveal.js",
+  "stars": 72509,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-09-30",
+  "related": [
+   "slidev",
+   "typst"
+  ]
+ },
+ {
+  "key": 195,
+  "slug": "typst",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "Typst: hệ soạn thảo tài liệu kiểu mới mạnh như LaTeX nhưng dễ học hơn",
+  "repo": "typst/typst",
+  "stars": 56956,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "languagetool",
+   "revealjs"
+  ]
+ },
+ {
+  "key": 196,
+  "slug": "languagetool",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "LanguageTool: kiểm tra chính tả và ngữ pháp mã nguồn mở cho hơn 25 ngôn ngữ",
+  "repo": "languagetool-org/languagetool",
+  "stars": 15229,
+  "license": "LGPL-2.1",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "hugo",
+   "typst"
+  ]
+ },
+ {
+  "key": 197,
+  "slug": "mkdocs-material",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "Material for MkDocs: tạo website tài liệu từ Markdown, và thông báo ngừng hỗ trợ cần biết",
+  "repo": "squidfunk/mkdocs-material",
+  "stars": 27594,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-10-30",
+  "related": [
+   "hugo",
+   "pdfjs"
+  ]
+ },
+ {
+  "key": 198,
+  "slug": "pdfjs",
+  "group": "2026-11-03-cong-cu-viet-va-giang-day",
+  "title": "PDF.js: thư viện đọc và hiển thị PDF ngay trong trình duyệt do Mozilla phát triển",
+  "repo": "mozilla/pdf.js",
+  "stars": 54085,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "mkdocs-material"
   ]
  }
 ]

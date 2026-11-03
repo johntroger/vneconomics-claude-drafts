@@ -13,13 +13,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 11 — Tạo website nội dung (blog, bản tin, tài liệu)](learning-paths/11-tao-website-noi-dung.vi.md) — Cho người đang dùng hoặc cân nhắc rời WordPress: các hướng tiếp cận khác nhau để tạo và quản lý nội dung web.
 - [Lộ trình 12 — Đưa ứng dụng lên mạng và quản lý máy chủ](learning-paths/12-dua-ung-dung-len-mang.vi.md) — Từ khái niệm container đến nơi triển khai, proxy HTTPS và truy cập từ xa an toàn.
 - [Lộ trình 13 — Giám sát và bảo vệ máy chủ](learning-paths/13-giam-sat-va-bao-ve-may-chu.vi.md) — Biết máy chủ đang khỏe hay yếu, và ai đang cố xâm nhập; chọn công cụ phù hợp mức kinh nghiệm.
+- [Lộ trình 14 — Công cụ cho giảng viên và người viết](learning-paths/14-cong-cu-cho-giang-vien-va-nguoi-viet.vi.md) — Soạn bài giảng, tài liệu có công thức, soát lỗi văn bản và dựng site tài liệu.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (22 bài)
+### Bắt đầu (23 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -45,8 +46,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 177 | Project Based Learning: danh sách hướng dẫn học lập trình bằng cách xây ứng dụng từ đầu | [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning) | MIT | 288829 | tai-lieu-hoc-lap-trinh |
 | 180 | First Contributions: tập đóng góp đầu tiên cho dự án mã nguồn mở bằng Git và GitHub | [firstcontributions/first-contributions](https://github.com/firstcontributions/first-contributions) | MIT | 56677 | tai-lieu-hoc-lap-trinh |
 | 181 | github/gitignore: mẫu tệp .gitignore để không đưa tệp bí mật và tệp rác lên Git | [github/gitignore](https://github.com/github/gitignore) | CC0-1.0 | 176134 | tai-lieu-hoc-lap-trinh |
+| 192 | Marp: viết bài trình chiếu bằng Markdown thuần rồi xuất ra HTML, PDF hoặc PowerPoint | [marp-team/marp](https://github.com/marp-team/marp) | MIT | 12711 | cong-cu-viet-va-giang-day |
 
-### Cơ bản (44 bài)
+### Cơ bản (49 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -94,8 +96,13 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 186 | Tailscale: nối các thiết bị của bạn thành một mạng riêng an toàn dựa trên WireGuard | [tailscale/tailscale](https://github.com/tailscale/tailscale) | BSD-3-Clause | 38547 | dua-ung-dung-len-mang |
 | 187 | cloudflared: đưa dịch vụ trên máy bạn ra internet qua Cloudflare Tunnel mà không mở cổng | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | Apache-2.0 | 16412 | dua-ung-dung-len-mang |
 | 189 | Netdata: xem sức khỏe máy chủ theo thời gian thực, và lưu ý các thành phần có giấy phép khác nhau | [netdata/netdata](https://github.com/netdata/netdata) | GPL-3.0 | 81256 | giam-sat-may-chu |
+| 193 | Slidev: slide dành cho lập trình viên, có mã sống, sơ đồ và chế độ người thuyết trình | [slidevjs/slidev](https://github.com/slidevjs/slidev) | MIT | 49335 | cong-cu-viet-va-giang-day |
+| 194 | reveal.js: khung trình chiếu HTML chạy trên trình duyệt, nền của nhiều công cụ slide | [hakimel/reveal.js](https://github.com/hakimel/reveal.js) | MIT | 72509 | cong-cu-viet-va-giang-day |
+| 195 | Typst: hệ soạn thảo tài liệu kiểu mới mạnh như LaTeX nhưng dễ học hơn | [typst/typst](https://github.com/typst/typst) | Apache-2.0 | 56956 | cong-cu-viet-va-giang-day |
+| 196 | LanguageTool: kiểm tra chính tả và ngữ pháp mã nguồn mở cho hơn 25 ngôn ngữ | [languagetool-org/languagetool](https://github.com/languagetool-org/languagetool) | LGPL-2.1 | 15229 | cong-cu-viet-va-giang-day |
+| 197 | Material for MkDocs: tạo website tài liệu từ Markdown, và thông báo ngừng hỗ trợ cần biết | [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material) | MIT | 27594 | cong-cu-viet-va-giang-day |
 
-### Khá khó (cần nền kỹ thuật) (18 bài)
+### Khá khó (cần nền kỹ thuật) (19 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -117,6 +124,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 185 | Dokku: PaaS nhỏ tự dựng trên một máy chủ, đưa ứng dụng lên bằng Git như Heroku | [dokku/dokku](https://github.com/dokku/dokku) | MIT | 32220 | dua-ung-dung-len-mang |
 | 188 | Traefik: reverse proxy tự tìm các dịch vụ chạy trong Docker và tạo đường dẫn cho chúng | [traefik/traefik](https://github.com/traefik/traefik) | MIT | 65445 | dua-ung-dung-len-mang |
 | 191 | CrowdSec: phát hiện và chặn IP độc hại dựa trên nhật ký và danh sách chia sẻ của cộng đồng | [crowdsecurity/crowdsec](https://github.com/crowdsecurity/crowdsec) | MIT | 15437 | giam-sat-may-chu |
+| 198 | PDF.js: thư viện đọc và hiển thị PDF ngay trong trình duyệt do Mozilla phát triển | [mozilla/pdf.js](https://github.com/mozilla/pdf.js) | Apache-2.0 | 54085 | cong-cu-viet-va-giang-day |
 
 ### Nâng cao (7 bài)
 

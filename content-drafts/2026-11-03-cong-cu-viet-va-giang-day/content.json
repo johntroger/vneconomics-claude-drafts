@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-viet-va-giang-day",
+  "batch": 33,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 192,
+      "batch": 33,
+      "slug": "marp",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Marp: viết bài trình chiếu bằng Markdown thuần rồi xuất ra HTML, PDF hoặc PowerPoint",
+        "excerpt": "Hiểu hệ sinh thái Marp cho phép soạn slide bằng chữ đơn giản, xem trước trong VS Code và xuất ra nhiều định dạng. Hợp giảng viên muốn slide gọn, dễ chỉnh sửa và lưu bằng Git.",
+        "content": "<p>Marp là hệ sinh thái để viết bài trình chiếu bằng Markdown thuần. README mô tả repo này là cửa vào của họ Marp và chứa trang web của dự án; các phần chia ở nhiều repo: Marpit (khung tạo slide từ Markdown), Marp Core (bộ chuyển đổi với giao diện dựng sẵn), Marp CLI (chuyển ra HTML, PDF, PPTX và ảnh), tiện ích Marp for VS Code để xem trước, Marp Web (giao diện web dạng PWA) và Marp React. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Soạn slide bằng PowerPoint giống vẽ từng trang bằng chuột. Marp giống viết một bài văn bản chỉ cần ngắt trang bằng dấu gạch, rồi máy tự dàn thành slide đẹp. Văn bản thuần nên dễ sửa, dễ so sánh phiên bản, và để AI giúp viết nội dung rất thuận.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên soạn bài giảng thành một tệp Markdown, xem trước ngay trong VS Code và xuất ra PDF để phát cho sinh viên. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Giảng viên, người thuyết trình hay thay đổi nội dung; người thích lưu tài liệu bằng Git.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Viết Markdown khá dễ; việc cài Marp CLI hay tiện ích VS Code cần thêm bước nhưng có Marp Web để thử. Chưa thử nên mức dễ thật chưa kiểm chứng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần hiệu ứng, ảnh động phức tạp hoặc nhiều người cùng chỉnh qua giao diện kéo thả, PowerPoint hoặc Google Slides phù hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Markdown</strong>: cách viết chữ đơn giản với dấu # cho tiêu đề; Marp biến nó thành slide.</li><li><strong>CLI</strong>: công cụ dùng bằng dòng lệnh; Marp CLI chuyển slide sang HTML, PDF, PPTX.</li><li><strong>PWA</strong>: ứng dụng web có thể cài như ứng dụng thường; README nói Marp Web xây theo kiểu này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê từng thành phần và liên kết tới trang web chính thức; bài chưa đọc hướng dẫn cài nên không nêu lệnh. Có thể xem thử bằng Marp Web trên trình duyệt. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách thành phần để chọn cách dùng (VS Code, CLI hay web).</li><li>Thử viết vài slide Markdown trong Marp Web hoặc tiện ích VS Code.</li><li>Xuất ra PDF và kiểm tra bố cục trước khi dùng thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình là giảng viên và muốn soạn slide bằng Markdown. Hãy đọc README của Marp (https://github.com/marp-team/marp) và giải thích bằng tiếng Việt: Marpit, Marp Core, Marp CLI khác nhau thế nào, cách xuất ra PDF hoặc PowerPoint, và hạn chế so với PowerPoint. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README là trang chỉ đường; chi tiết dùng nằm ở các repo và tài liệu riêng. Xuất ra PPTX có thể không giữ được mọi hiệu ứng như bản thiết kế bằng PowerPoint (nhận định biên tập, chưa kiểm chứng). Phải tự thiết kế giao diện nếu không dùng giao diện có sẵn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>marp-team</strong> có <strong>12.711 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/marp-team/marp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/marp-team/marp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 192. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12711; repo_id 126696700; README SHA256 fe83553b94ddfaa0a17d7fb0860987bf356db4087eac6a33762cb270fc5b42d3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/marp-team/marp",
+          "repo_id": "126696700",
+          "source_path": "",
+          "source_revision": "README-SHA256:fe83553b94ddfaa0a17d7fb0860987bf356db4087eac6a33762cb270fc5b42d3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/marp-team/marp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê từng thành phần và liên kết tới trang web chính thức; bài chưa đọc hướng dẫn cài nên không nêu lệnh. Có thể xem thử bằng Marp Web trên trình duyệt. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/marp-team/marp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/marp-team/marp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "marp-team/marp",
+        "stars": 12711,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/marp-team/marp/main/README.md",
+        "readmeSha256": "fe83553b94ddfaa0a17d7fb0860987bf356db4087eac6a33762cb270fc5b42d3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 193,
+      "batch": 33,
+      "slug": "slidev",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Slidev: slide dành cho lập trình viên, có mã sống, sơ đồ và chế độ người thuyết trình",
+        "excerpt": "Hiểu Slidev tạo bài trình chiếu từ Markdown với tô sáng mã, công thức, sơ đồ và xuất PDF hoặc PPTX. Hợp bài giảng về lập trình, cần Node.js.",
+        "content": "<p>Slidev là công cụ làm slide cho lập trình viên. README liệt kê tính năng: viết bằng Markdown, tô sáng mã và chạy mã sống, giao diện theme dùng chung qua npm, kiểu dáng bằng UnoCSS, nhúng thành phần Vue, chế độ người thuyết trình (điều khiển bằng cửa sổ khác hoặc điện thoại), vẽ chú thích trên slide, công thức LaTeX, sơ đồ bằng Mermaid, biểu tượng, trình soạn tích hợp, ghi hình và xuất PDF, PNG hoặc PPTX. README hướng dẫn thử trực tuyến hoặc khởi tạo dự án cục bộ với Node.js từ phiên bản 22.12.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Marp giống soạn slide bằng văn bản thuần; Slidev giống soạn slide bằng văn bản có thêm 'đồ chơi của lập trình viên': đoạn mã đổi màu, sơ đồ vẽ bằng chữ, công thức toán, thậm chí gắn thành phần tương tác. Hợp khi bài giảng có nhiều mã nguồn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên dạy lập trình soạn bài giảng với các đoạn mã được tô sáng từng dòng khi chuyển slide. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Giảng viên và diễn giả công nghệ; người trình bày có nhiều mã và sơ đồ.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Node.js (README nêu từ 22.12.0) và chút kiến thức web nếu muốn tùy biến sâu; có bản thử trực tuyến. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bài giảng không có mã và bạn không quen công cụ dòng lệnh, Marp hoặc PowerPoint đơn giản hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>component (thành phần giao diện)</strong>: một khối giao diện dùng lại được, như nút bấm, hộp thoại, bảng.</li><li><strong>Vue</strong>: framework giao diện; Slidev cho nhúng thành phần Vue vào slide.</li><li><strong>LaTeX</strong>: cách gõ công thức toán bằng chữ.</li><li><strong>Mermaid</strong>: cách vẽ sơ đồ bằng văn bản; xem bài Mermaid trong đợt cũ.</li><li><strong>presenter mode</strong>: chế độ người thuyết trình xem ghi chú và điều khiển slide từ cửa sổ riêng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: thử trực tuyến tại sli.dev/new hoặc khởi tạo cục bộ sau khi cài Node.js 22.12.0 trở lên. Bài không chép lệnh. Miễn phí theo giấy phép MIT. Tài liệu có bản tiếng Anh, Trung, Pháp, Tây Ban Nha, Nga và Bồ Đào Nha (Brazil) theo README; chưa thấy tiếng Việt.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản trực tuyến trước.</li><li>Đọc danh sách tính năng và chọn cái bạn thật sự cần.</li><li>Xuất ra PDF và kiểm tra trước buổi giảng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dạy lập trình và muốn slide có mã đẹp. Hãy đọc README của Slidev (https://github.com/slidevjs/slidev) và giải thích bằng tiếng Việt: Slidev làm được gì hơn PowerPoint, cần chuẩn bị gì (Node.js), và khi nào dùng Marp đơn giản hơn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Cần Node.js và quen dòng lệnh; công cụ thiên về lập trình viên. README liệt kê tài liệu bằng sáu ngôn ngữ, trong đó không có tiếng Việt. Commit gần nhất vào 2026-10-23.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>slidevjs</strong> có <strong>49.335 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-23. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/slidevjs/slidev/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/slidevjs/slidev\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 193. Chưa cài/chạy thử; không tạo validation. Snapshot sao 49335; repo_id 361044034; README SHA256 77ecf5c459f086b84db30ae36065470c9bf018524f19b8b1f3c1ec915b517e0e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/slidevjs/slidev",
+          "repo_id": "361044034",
+          "source_path": "",
+          "source_revision": "README-SHA256:77ecf5c459f086b84db30ae36065470c9bf018524f19b8b1f3c1ec915b517e0e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/slidevjs/slidev",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: thử trực tuyến tại sli.dev/new hoặc khởi tạo cục bộ sau khi cài Node.js 22.12.0 trở lên. Bài không chép lệnh. Miễn phí theo giấy phép MIT. Tài liệu có bản tiếng Anh, Trung, Pháp, Tây Ban Nha, Nga và Bồ Đào Nha (Brazil) theo README; chưa thấy tiếng Việt.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/slidevjs/slidev/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/slidevjs/slidev/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "slidevjs/slidev",
+        "stars": 49335,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/slidevjs/slidev/main/README.md",
+        "readmeSha256": "77ecf5c459f086b84db30ae36065470c9bf018524f19b8b1f3c1ec915b517e0e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 194,
+      "batch": 33,
+      "slug": "revealjs",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "reveal.js: khung trình chiếu HTML chạy trên trình duyệt, nền của nhiều công cụ slide",
+        "excerpt": "Hiểu reveal.js cho phép làm bài trình chiếu đẹp chạy trực tiếp trong trình duyệt, có slide lồng nhau, hoạt ảnh tự động và xuất PDF. Nền của nhiều công cụ khác.",
+        "content": "<p>reveal.js là khung trình chiếu HTML mã nguồn mở, cho phép bất kỳ ai có trình duyệt tạo bài trình chiếu đẹp miễn phí. README nêu bộ tính năng gồm slide lồng nhau (dọc), hỗ trợ Markdown, Auto-Animate, xuất PDF và nhiều tính năng khác; có bản demo, hướng dẫn cài và tài liệu. README giới thiệu slides.com là trình soạn đồ họa do cùng nhóm làm (dịch vụ riêng) và có khóa học video trả phí. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống rạp chiếu bóng chạy ngay trong trình duyệt: slide của bạn là một trang web, chiếu trên bất kỳ máy nào có trình duyệt, không phụ thuộc phần mềm trình chiếu cài sẵn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên đưa bài giảng lên web để sinh viên mở trực tiếp bằng đường dẫn mà không phải tải tệp. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người quen làm web hoặc muốn slide chạy trên trình duyệt; giảng viên chia sẻ bài giảng qua đường dẫn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Soạn bằng HTML hoặc Markdown nên cần quen HTML cơ bản; trình soạn đồ họa là dịch vụ riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không muốn đụng HTML và chỉ cần slide kéo thả, dùng công cụ trình chiếu thông thường. Nếu muốn soạn bằng Markdown tối giản, Marp hoặc Slidev có thể nhanh hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>HTML</strong>: ngôn ngữ dựng cấu trúc trang web.</li><li><strong>Auto-Animate</strong>: tính năng tự tạo chuyển động giữa các slide, theo README.</li><li><strong>slides.com</strong>: trình soạn đồ họa của cùng nhóm tác giả, README nói là dịch vụ riêng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới trang cài đặt, demo và tài liệu; bài chưa đọc chi tiết nên không nêu lệnh. Khung miễn phí theo giấy phép MIT; slides.com và khóa học video là dịch vụ trả phí riêng (README nêu khóa học trả phí). Bài chưa kiểm tra giá slides.com.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản demo trên trang chính thức.</li><li>Đọc phần markup và Markdown trong tài liệu.</li><li>Thử soạn vài slide rồi xuất PDF.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm bài giảng chạy trên trình duyệt. Hãy đọc README của reveal.js (https://github.com/hakimel/reveal.js) và giải thích bằng tiếng Việt: reveal.js khác PowerPoint ra sao, mình cần biết gì về HTML, và slides.com là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; thông tin chính ở tài liệu riêng. Có quảng bá dịch vụ slides.com và khóa học video trả phí. Cần kiểm tra bố cục trên máy chiếu thật vì trình duyệt khác nhau có thể hiển thị khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>hakimel</strong> có <strong>72.509 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-09-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT licensed. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/hakimel/reveal.js/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/hakimel/reveal.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 194. Chưa cài/chạy thử; không tạo validation. Snapshot sao 72509; repo_id 1861458; README SHA256 897be0ad580674e1394760a1f15e85fafd699779fec41f2b05e46ca2ebf20eb5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/hakimel/reveal.js",
+          "repo_id": "1861458",
+          "source_path": "",
+          "source_revision": "README-SHA256:897be0ad580674e1394760a1f15e85fafd699779fec41f2b05e46ca2ebf20eb5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hakimel/reveal.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới trang cài đặt, demo và tài liệu; bài chưa đọc chi tiết nên không nêu lệnh. Khung miễn phí theo giấy phép MIT; slides.com và khóa học video là dịch vụ trả phí riêng (README nêu khóa học trả phí). Bài chưa kiểm tra giá slides.com.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hakimel/reveal.js/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/hakimel/reveal.js/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "hakimel/reveal.js",
+        "stars": 72509,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/hakimel/reveal.js/master/README.md",
+        "readmeSha256": "897be0ad580674e1394760a1f15e85fafd699779fec41f2b05e46ca2ebf20eb5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 195,
+      "batch": 33,
+      "slug": "typst",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Typst: hệ soạn thảo tài liệu kiểu mới mạnh như LaTeX nhưng dễ học hơn",
+        "excerpt": "Hiểu Typst dành cho luận văn, báo cáo và tài liệu khoa học với công thức, trích dẫn và biên dịch nhanh. Thay thế đáng cân nhắc cho người ngại LaTeX.",
+        "content": "<p>Typst là hệ thống dàn trang dựa trên markup mới, thiết kế mạnh như LaTeX nhưng dễ học và dễ dùng hơn. README liệt kê: markup dựng sẵn cho các việc định dạng thông dụng, hàm linh hoạt cho mọi thứ khác, hệ thống script tích hợp, gõ công thức và quản lý trích dẫn, biên dịch nhanh nhờ biên dịch tăng dần và thông báo lỗi thân thiện. Repo chứa trình biên dịch và công cụ dòng lệnh để biên dịch cục bộ; README gợi ý dùng trình soạn trực tuyến cộng tác (miễn phí đăng ký) cho trải nghiệm viết tốt nhất.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Làm luận văn bằng Word dễ nhưng dễ lệch định dạng; bằng LaTeX đẹp nhưng khó học. Typst giống chiếc máy xếp chữ hiện đại: bạn gõ nội dung và vài quy tắc rõ ràng, máy dàn trang đẹp, báo lỗi dễ hiểu, và dựng lại tài liệu gần như tức thì.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên soạn đề cương hoặc giáo trình có nhiều công thức và tài liệu tham khảo, và thử Typst thay cho LaTeX. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Giảng viên, nghiên cứu sinh, người viết tài liệu kỹ thuật cần công thức và trích dẫn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dễ hơn LaTeX theo mục tiêu tác giả, nhưng vẫn là một ngôn ngữ markup mới; có trình soạn trực tuyến để thử. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu cần tương thích với quy chuẩn nộp bài chỉ nhận LaTeX hoặc Word của tạp chí/trường, hãy kiểm tra trước. Typst còn mới nên hệ sinh thái mẫu nhỏ hơn LaTeX (nhận định biên tập, chưa kiểm chứng).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>typesetting (dàn trang)</strong>: sắp xếp chữ, hình, công thức thành trang tài liệu hoàn chỉnh.</li><li><strong>LaTeX</strong>: hệ dàn trang lâu đời cho tài liệu khoa học, mạnh nhưng khó học.</li><li><strong>compile (biên dịch)</strong>: biến tệp nguồn Typst thành PDF.</li><li><strong>incremental compilation</strong>: chỉ dựng lại phần thay đổi nên nhanh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: có bản dòng lệnh cài qua trình quản lý gói (macOS, Windows…) hoặc biên dịch bằng Rust; hoặc dùng trình soạn trực tuyến của họ. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0; trình soạn trực tuyến là dịch vụ riêng, điều khoản chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ví dụ trong README.</li><li>Thử trình soạn trực tuyến hoặc bản dòng lệnh với tài liệu ngắn.</li><li>So sánh bản xuất với mẫu định dạng nơi bạn cần nộp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay phải soạn tài liệu có công thức và trích dẫn. Hãy đọc README của Typst (https://github.com/typst/typst) và giải thích bằng tiếng Việt: Typst khác LaTeX và Word thế nào, cách dùng cục bộ so với trình soạn trực tuyến, và hạn chế. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Hệ sinh thái mẫu và gói còn nhỏ hơn LaTeX (nhận định biên tập). README ghi tính năng và cách tiếp cận của tác giả; chúng tôi chưa thử độ dễ học. Tài liệu nhạy cảm không nên đưa lên trình soạn trực tuyến nếu chưa đọc điều khoản.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>typst</strong> có <strong>56.956 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu Apache 2. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/typst/typst/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/typst/typst\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 195. Chưa cài/chạy thử; không tạo validation. Snapshot sao 56956; repo_id 210702427; README SHA256 ddaf0de156f6a442c7f831202cd55583614df4cc3cfb4b16e95162c7eb11e653.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/typst/typst",
+          "repo_id": "210702427",
+          "source_path": "",
+          "source_revision": "README-SHA256:ddaf0de156f6a442c7f831202cd55583614df4cc3cfb4b16e95162c7eb11e653",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/typst/typst",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: có bản dòng lệnh cài qua trình quản lý gói (macOS, Windows…) hoặc biên dịch bằng Rust; hoặc dùng trình soạn trực tuyến của họ. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0; trình soạn trực tuyến là dịch vụ riêng, điều khoản chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/typst/typst/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/typst/typst/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "typst/typst",
+        "stars": 56956,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/typst/typst/main/README.md",
+        "readmeSha256": "ddaf0de156f6a442c7f831202cd55583614df4cc3cfb4b16e95162c7eb11e653",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 196,
+      "batch": 33,
+      "slug": "languagetool",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LanguageTool: kiểm tra chính tả và ngữ pháp mã nguồn mở cho hơn 25 ngôn ngữ",
+        "excerpt": "Hiểu LanguageTool là phần mềm soát lỗi văn bản, có thể tự chạy máy chủ riêng. Cần kiểm tra ngôn ngữ bạn cần có được hỗ trợ không, và quyền riêng tư khi dùng máy chủ công cộng.",
+        "content": "<p>LanguageTool là phần mềm soát lỗi mã nguồn mở cho tiếng Anh, Tây Ban Nha, Pháp, Đức, Bồ Đào Nha, Ba Lan, Hà Lan và hơn 20 ngôn ngữ khác, tìm được nhiều lỗi mà trình kiểm tra chính tả đơn giản bỏ sót. README liên kết tới hướng dẫn chạy máy chủ riêng, tài liệu HTTP API, cách dùng máy chủ công cộng qua HTTP và dùng từ Java. Phần lõi theo giấy phép LGPL 2.1 trở lên. Có các Dockerfile do cộng đồng đóng góp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống người biên tập chữ nghĩa ngồi cạnh bạn, gạch chân chỗ sai ngữ pháp và dùng từ. Điểm khác là bạn có thể mời người đó về làm việc trong nhà (tự chạy máy chủ riêng) để văn bản không phải gửi ra ngoài.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên soát bài viết tiếng Anh trước khi gửi tạp chí, và tìm hiểu cách chạy máy chủ riêng để không gửi bản thảo ra dịch vụ ngoài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người viết học thuật, biên tập viên, giảng viên; người quan tâm tới riêng tư của bản thảo.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng qua tiện ích sẵn có thì dễ; tự chạy máy chủ cần Java hoặc Docker và hiểu cơ bản về API. README không nêu rõ tiếng Việt có được hỗ trợ hay không; cần kiểm tra danh sách ngôn ngữ trên trang chính thức. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần soát lỗi tiếng Việt, hãy kiểm tra kỹ danh sách ngôn ngữ trước vì README không liệt kê đủ trong phần đã đọc. Nếu tài liệu rất nhạy cảm, đừng dùng máy chủ công cộng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>LGPL</strong>: giấy phép mã nguồn mở cho phép dùng trong phần mềm khác với điều kiện nhất định khi sửa thư viện.</li><li><strong>HTTP API</strong>: cách chương trình khác gửi văn bản tới LanguageTool qua mạng để soát lỗi.</li><li><strong>public server (máy chủ công cộng)</strong>: máy chủ do hãng vận hành mà bạn gửi văn bản tới; README có hướng dẫn dùng qua HTTP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: có hướng dẫn tự chạy máy chủ, dùng qua HTTP API và Java; Docker do cộng đồng đóng góp. Bài chưa đọc chi tiết nên không chép lệnh. Phần lõi miễn phí theo LGPL; dịch vụ cao cấp của hãng (nếu có) bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách ngôn ngữ hỗ trợ trên trang chính thức xem có ngôn ngữ bạn cần.</li><li>Đọc hướng dẫn chạy máy chủ riêng nếu cần giữ bản thảo nội bộ.</li><li>Thử với một đoạn văn không nhạy cảm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn soát lỗi văn bản mà không gửi ra ngoài. Hãy đọc README của LanguageTool (https://github.com/languagetool-org/languagetool) và giải thích bằng tiếng Việt: nó làm gì, khác gì trình kiểm tra chính tả, cách tự chạy máy chủ riêng, và vấn đề riêng tư khi dùng máy chủ công cộng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Chất lượng thay đổi theo ngôn ngữ; README không nói về tiếng Việt trong phần đã đọc. Gửi văn bản tới máy chủ công cộng nghĩa là nội dung rời khỏi máy bạn. Công cụ soát lỗi có thể báo nhầm hoặc bỏ sót.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>languagetool-org</strong> có <strong>15.229 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện LGPL-2.1; README ghi lõi LGPL 2.1 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/languagetool-org/languagetool/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/languagetool-org/languagetool\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 196. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15229; repo_id 11981144; README SHA256 999c7c74959a7bef9b355b09f23146c144988eae5cfb6a23acc5e5674d5f4d7b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/languagetool-org/languagetool",
+          "repo_id": "11981144",
+          "source_path": "",
+          "source_revision": "README-SHA256:999c7c74959a7bef9b355b09f23146c144988eae5cfb6a23acc5e5674d5f4d7b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "LGPL-2.1",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/languagetool-org/languagetool",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: có hướng dẫn tự chạy máy chủ, dùng qua HTTP API và Java; Docker do cộng đồng đóng góp. Bài chưa đọc chi tiết nên không chép lệnh. Phần lõi miễn phí theo LGPL; dịch vụ cao cấp của hãng (nếu có) bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/languagetool-org/languagetool/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/languagetool-org/languagetool/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "languagetool-org/languagetool",
+        "stars": 15229,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/languagetool-org/languagetool/master/README.md",
+        "readmeSha256": "999c7c74959a7bef9b355b09f23146c144988eae5cfb6a23acc5e5674d5f4d7b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 197,
+      "batch": 33,
+      "slug": "mkdocs-material",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Material for MkDocs: tạo website tài liệu từ Markdown, và thông báo ngừng hỗ trợ cần biết",
+        "excerpt": "Hiểu Material for MkDocs tạo site tài liệu đẹp, có tìm kiếm từ các tệp Markdown. README ghi sẽ ngừng hỗ trợ ngày 5/5/2027 và nêu bản kế nhiệm.",
+        "content": "<p>Material for MkDocs là khung tài liệu giúp viết tài liệu bằng Markdown và tạo site tĩnh chuyên nghiệp, có tìm kiếm, tùy biến và hơn 60 ngôn ngữ. README mở đầu bằng cảnh báo: Material for MkDocs sẽ ngừng hỗ trợ vào ngày 5/5/2027; các bản vá quan trọng và bảo mật tiếp tục tới ngày đó. Nhóm tác giả tiếp tục làm Zensical, bản kế nhiệm mã nguồn mở giấy phép MIT, và README nói bạn có thể đánh giá Zensical cùng MkDocs bằng tệp mkdocs.yml hiện có, kèm hướng dẫn di chuyển. README ghi cài bằng pip, cần Python 3.11 trở lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bộ khung để biến cả một tủ ghi chú Markdown thành một cuốn sách tra cứu trên web có mục lục và ô tìm kiếm. Điều cần biết là nhà sản xuất đã báo trước ngày ngừng bán dòng này và giới thiệu dòng mới thay thế.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên muốn dựng site tài liệu cho một môn học từ các tệp Markdown; đọc phần cảnh báo ngừng hỗ trợ trước khi chọn công cụ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người viết tài liệu kỹ thuật hoặc giáo trình dạng web; đội dự án cần site tài liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python (README nêu 3.11 trở lên) và quen tệp cấu hình YAML. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Vì README nói sẽ ngừng hỗ trợ ngày 5/5/2027, với dự án mới hãy xem kỹ bản kế nhiệm Zensical (bài chưa đánh giá) thay vì chọn ngay Material for MkDocs.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>end of life (ngừng hỗ trợ)</strong>: mốc sau đó dự án không còn được vá lỗi, theo README là 5/5/2027.</li><li><strong>Zensical</strong>: bản kế nhiệm do cùng nhóm tác giả làm, theo README là mã nguồn mở MIT.</li><li><strong>mkdocs.yml</strong>: tệp cấu hình của site tài liệu.</li><li><strong>static site generator</strong>: công cụ dựng site tĩnh từ nội dung, xem bài Hugo.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng pip, cần Python 3.11 trở lên, thêm vài dòng vào mkdocs.yml (bài không chép lệnh). Miễn phí theo giấy phép MIT. Zensical là dự án riêng, bài chưa đọc.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo ngừng hỗ trợ và mục di chuyển sang Zensical.</li><li>Quyết định dự án mới nên dùng công cụ nào sau khi đọc tài liệu của cả hai.</li><li>Thử dựng một site nhỏ từ vài tệp Markdown.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dựng site tài liệu từ Markdown. Hãy đọc README của Material for MkDocs (https://github.com/squidfunk/mkdocs-material) và giải thích bằng tiếng Việt: công cụ làm gì, thông báo ngừng hỗ trợ ngày 5/5/2027 có ý nghĩa gì với dự án mới, và Zensical là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Dự án sẽ ngừng hỗ trợ theo chính README (chỉ vá lỗi quan trọng và bảo mật đến 5/5/2027), nên không phù hợp để chọn làm nền dài hạn cho dự án mới nếu chưa cân nhắc bản kế nhiệm. Bài chưa đánh giá Zensical.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi dùng công cụ trực tuyến hoặc máy chủ công cộng cho tài liệu, hãy cân nhắc nội dung có nhạy cảm không; ưu tiên chạy cục bộ với tài liệu riêng tư và kiểm tra bản xuất ra trước khi gửi hay in.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>squidfunk</strong> có <strong>27.594 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/squidfunk/mkdocs-material/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/squidfunk/mkdocs-material\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 197. Chưa cài/chạy thử; không tạo validation. Snapshot sao 27594; repo_id 50617428; README SHA256 548271ab139289e024accca33614118fcd88eaf7fd49f6f5b153eb1e7c4f1dd5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/squidfunk/mkdocs-material",
+          "repo_id": "50617428",
+          "source_path": "",
+          "source_revision": "README-SHA256:548271ab139289e024accca33614118fcd88eaf7fd49f6f5b153eb1e7c4f1dd5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/squidfunk/mkdocs-material",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng pip, cần Python 3.11 trở lên, thêm vài dòng vào mkdocs.yml (bài không chép lệnh). Miễn phí theo giấy phép MIT. Zensical là dự án riêng, bài chưa đọc.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/squidfunk/mkdocs-material/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/squidfunk/mkdocs-material/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "squidfunk/mkdocs-material",
+        "stars": 27594,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/README.md",
+        "readmeSha256": "548271ab139289e024accca33614118fcd88eaf7fd49f6f5b153eb1e7c4f1dd5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 198,
+      "batch": 33,
+      "slug": "pdfjs",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PDF.js: thư viện đọc và hiển thị PDF ngay trong trình duyệt do Mozilla phát triển",
+        "excerpt": "Hiểu PDF.js là trình xem PDF bằng web, nằm sau việc mở PDF trong nhiều trình duyệt và là thành phần để nhúng trình xem PDF vào website của bạn.",
+        "content": "<p>PDF.js là trình xem PDF (Portable Document Format) xây bằng HTML5, do cộng đồng phát triển với sự hỗ trợ của Mozilla. README nêu mục tiêu: tạo nền tảng đọc và dựng PDF dựa trên chuẩn web, có bản demo trực tuyến cho trình duyệt hiện đại và bản cũ, hướng dẫn xây từ mã nguồn bằng Node.js và gulp, và các mục đóng góp, hỏi đáp. README lưu ý bản 'Modern browsers' giả định hỗ trợ tính năng JavaScript mới nhất.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>PDF là tệp để in ấn đẹp, nhưng để xem trên web cần một 'máy chiếu'. PDF.js giống máy chiếu viết bằng chính công nghệ web, nên trình duyệt có thể mở PDF mà không cần phần mềm riêng, và bạn cũng có thể gắn máy chiếu đó vào trang của mình.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: website muốn cho người đọc xem tài liệu PDF ngay trên trang thay vì tải về; tìm hiểu PDF.js như thành phần để nhúng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website cần hiển thị PDF; người tò mò vì sao trình duyệt mở được PDF.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Dùng làm trình xem sẵn có thì dễ (bản demo); nhúng vào dự án hoặc xây từ mã nguồn cần Node.js và hiểu web. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần mở PDF để đọc, trình duyệt hay phần mềm đọc PDF đã đủ. Nếu muốn chỉnh sửa PDF, PDF.js tập trung vào hiển thị.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>PDF</strong>: định dạng tài liệu giữ nguyên bố cục khi in hoặc xem.</li><li><strong>viewer (trình xem)</strong>: giao diện hiển thị và cuộn tài liệu.</li><li><strong>gulp</strong>: công cụ tự động hóa các bước build mà README dùng để chạy máy chủ và dựng bản phát hành.</li><li><strong>HTML5</strong>: phiên bản hiện đại của chuẩn web nền tảng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: để xây từ mã nguồn cần Node.js và các bước cài phụ thuộc rồi chạy máy chủ cục bộ; bản demo trực tuyến dùng được ngay. README nhắc giả định trình duyệt mới nhất cho một số thử nghiệm. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0 theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở bản demo trực tuyến để xem trình xem hoạt động.</li><li>Đọc phần Getting Started nếu muốn nhúng vào website.</li><li>Thử với PDF không nhạy cảm.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn website hiển thị PDF ngay trên trang. Hãy đọc README của PDF.js (https://github.com/mozilla/pdf.js) và giải thích bằng tiếng Việt: PDF.js làm gì, khác một thẻ nhúng PDF thông thường thế nào, và mình cần biết gì để nhúng. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README tập trung vào xây và đóng góp, không phải hướng dẫn nhúng chi tiết cho người mới. PDF lớn hoặc phức tạp có thể hiển thị chậm hoặc lỗi trong một số trình duyệt. Chúng tôi chưa thử hiệu năng.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ hiển thị PDF từ nguồn tin cậy; tệp PDF độc hại là một cách tấn công phổ biến. Cập nhật thư viện thường xuyên nếu bạn nhúng vào website.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mozilla</strong> có <strong>54.085 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mozilla/pdf.js/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mozilla/pdf.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ cho người viết và giảng viên, key 198. Chưa cài/chạy thử; không tạo validation. Snapshot sao 54085; repo_id 1663468; README SHA256 cf672f85411575de7e6996f11bf300f0c747749f0c6a288b0c931af0c324655c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mozilla/pdf.js",
+          "repo_id": "1663468",
+          "source_path": "",
+          "source_revision": "README-SHA256:cf672f85411575de7e6996f11bf300f0c747749f0c6a288b0c931af0c324655c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mozilla/pdf.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: để xây từ mã nguồn cần Node.js và các bước cài phụ thuộc rồi chạy máy chủ cục bộ; bản demo trực tuyến dùng được ngay. README nhắc giả định trình duyệt mới nhất cho một số thử nghiệm. Bài không chép lệnh. Miễn phí theo giấy phép Apache-2.0 theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mozilla/pdf.js/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mozilla/pdf.js/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mozilla/pdf.js",
+        "stars": 54085,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mozilla/pdf.js/master/README.md",
+        "readmeSha256": "cf672f85411575de7e6996f11bf300f0c747749f0c6a288b0c931af0c324655c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

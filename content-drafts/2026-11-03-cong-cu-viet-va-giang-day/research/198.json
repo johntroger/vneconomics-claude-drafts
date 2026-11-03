@@ -1,0 +1,36 @@
+{
+  "key": 198,
+  "repo": "mozilla/pdf.js",
+  "repoId": "1663468",
+  "url": "https://github.com/mozilla/pdf.js",
+  "stars": 54085,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:33:30Z",
+  "createdAt": "2011-04-26T06:32:03Z",
+  "defaultBranch": "master",
+  "description": "PDF Reader in JavaScript",
+  "homepage": "https://mozilla.github.io/pdf.js/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/mozilla/pdf.js/master/README.md",
+    "sha256": "cf672f85411575de7e6996f11bf300f0c747749f0c6a288b0c931af0c324655c",
+    "bytes": 9834,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Contributing",
+      "Getting Started",
+      "Building PDF.js"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn nhúng chi tiết.",
+    "Chưa kiểm tra hiệu năng với PDF lớn.",
+    "Chưa so sánh với thư viện khác."
+  ],
+  "runtimeValidated": false
+}

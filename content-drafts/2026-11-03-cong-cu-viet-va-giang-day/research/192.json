@@ -1,0 +1,34 @@
+{
+  "key": 192,
+  "repo": "marp-team/marp",
+  "repoId": "126696700",
+  "url": "https://github.com/marp-team/marp",
+  "stars": 12711,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T19:56:30Z",
+  "createdAt": "2018-03-25T12:47:38Z",
+  "defaultBranch": "main",
+  "description": "The entrance repository of Markdown presentation ecosystem",
+  "homepage": "https://marp.app/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/marp-team/marp/main/README.md",
+    "sha256": "fe83553b94ddfaa0a17d7fb0860987bf356db4087eac6a33762cb270fc5b42d3",
+    "bytes": 7866,
+    "sectionsRead": [
+      "Marp family (Framework, Apps, Integrations)",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn từng thành phần.",
+    "Chưa thử chất lượng xuất PPTX.",
+    "Chưa so sánh với Slidev và reveal.js."
+  ],
+  "runtimeValidated": false
+}
