@@ -1,0 +1,44 @@
+{
+  "key": 700,
+  "repo": "dependabot/dependabot-core",
+  "repoId": "93163073",
+  "url": "https://github.com/dependabot/dependabot-core",
+  "stars": 5832,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T12:17:20Z",
+  "createdAt": "2017-06-02T12:23:31Z",
+  "defaultBranch": "main",
+  "description": "🤖 Dependabot's core logic for creating update PRs.",
+  "homepage": "https://docs.github.com/en/code-security/dependabot",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dependabot/dependabot-core/main/README.md",
+    "sha256": "1a6bc301fe8095e9b8acfdaed5b7f5f455c47571ad78d40ab5640f5b0e7a65b1",
+    "bytes": 29348,
+    "sectionsRead": [
+      "What is Dependabot-Core?",
+      "How to run Dependabot",
+      "Dependabot CLI",
+      "Contributing to Dependabot",
+      "Development Guide",
+      "Architecture and Code Layout"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần kiến trúc chi tiết.",
+    "Chưa thử.",
+    "Chưa so sánh với Renovate."
+  ],
+  "runtimeValidated": false
+}

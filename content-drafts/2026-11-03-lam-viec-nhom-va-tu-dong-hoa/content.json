@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-lam-viec-nhom",
+  "batch": 112,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 698,
+      "batch": 112,
+      "slug": "wekan",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "WeKan: ứng dụng bảng kanban cộng tác mã nguồn mở theo giấy phép MIT, tự host, dịch ra 234 gói ngôn ngữ theo README, hỗ trợ nhiều cách đăng nhập; README nhắc cập nhật rất thường xuyên, sao lưu hằng ngày vì chưa có hoàn tác",
+        "excerpt": "Hiểu WeKan là ứng dụng bảng kanban cộng tác mã nguồn mở theo giấy phép MIT: dùng cho danh sách việc cá nhân, lên kế hoạch kỳ nghỉ với bạn bè hay nhóm làm việc; có thể tự cài trên máy hoặc máy chủ của bạn; README nhắc yêu cầu bộ nhớ, cập nhật phiên bản rất thường xuyên vì lý do bảo mật, sao lưu hằng ngày và cảnh báo hiện chưa có hoàn tác, cơ sở dữ liệu hỏng nếu hết ổ đĩa.",
+        "content": "<p>README tả WeKan là ứng dụng bảng kanban cộng tác mã nguồn mở (FLOSS) theo giấy phép MIT. Bảng kanban giúp bạn thấy tổng quan trạng thái dự án và tập trung vào vài việc quan trọng nhất. Vì là phần mềm tự do nên bạn không phải tin giao dữ liệu cho tác giả mà có thể tự cài; README khuyến khích và có cài đặt một cú nhấp trên nhiều nền tảng. README nêu WeKan dùng ở hầu hết các quốc gia, người dùng lớn nhất có 30 nghìn người trong một công ty, được dịch ra 234 gói ngôn ngữ (README nói đo độ phủ văn bản chứ không phải chất lượng bản dịch; các con số là tuyên bố của dự án, bài chưa kiểm chứng), hỗ trợ nhiều cơ sở dữ liệu (FerretDB với SQLite là mặc định), nhiều cách đăng nhập (SAML, LDAP, OAuth2, đăng nhập không mật khẩu), mục bảo mật liệt kê các cuộc tấn công thử. Mục Requirements: tối thiểu 1 GB RAM trống cho WeKan, máy chủ sản xuất nên có tổng tối thiểu 4 GB; hết ổ đĩa sẽ làm cơ sở dữ liệu MongoDB hỏng; bảo mật: cập nhật bản mới nhất rất thường xuyên vì bản cũ có lỗ hổng, chỉ bản mới nhất được hỗ trợ; sao lưu cơ sở dữ liệu ít nhất mỗi ngày vì lỗi, cập nhật, người dùng xóa danh sách hay thẻ, ổ cứng đầy hoặc hỏng đều có thể làm mất dữ liệu, chưa có hoàn tác; có lỗi có thể làm bảng không tải được và phải sửa tay cơ sở dữ liệu. README có mục tải xuống, Docker, tiêu chuẩn, dịch thuật, yêu cầu tính năng và lỗi, hỏi đáp, lộ trình và demo, phát triển. Bài không chép lệnh.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kanban là bảng các cột như 'Cần làm', 'Đang làm', 'Xong' với các thẻ việc kéo qua lại. WeKan là một bảng như vậy bạn tự đặt trên máy chủ của mình, thay cho dịch vụ trực tuyến của bên khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản demo trong README bằng công việc giả; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng bảng thì dễ; tự host cần quản trị máy chủ, cập nhật và sao lưu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo nhiều điều: phải cập nhật rất thường xuyên vì bảo mật, sao lưu mỗi ngày, hết ổ đĩa làm hỏng cơ sở dữ liệu, chưa có hoàn tác. Bài khuyên cân nhắc kỹ trước khi tự host nếu chưa quen quản trị. Con số người dùng và gói ngôn ngữ là tuyên bố của dự án.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>kanban</strong>: bảng việc chia cột theo trạng thái; README nêu.</li><li><strong>FLOSS</strong>: phần mềm tự do mã nguồn mở; README nêu.</li><li><strong>SAML/LDAP/OAuth2</strong>: các cách đăng nhập tập trung; README nêu.</li><li><strong>FerretDB/MongoDB</strong>: cơ sở dữ liệu WeKan dùng; README nêu.</li><li><strong>backup (sao lưu)</strong>: bản sao dữ liệu để khôi phục; README yêu cầu ít nhất mỗi ngày.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Downloads (wekan.fi/install), Docker Containers và Requirements; bài không chép lệnh. Cần máy chủ có tối thiểu 1 GB RAM trống. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Requirements.</li><li>Thử bản demo.</li><li>Lập kế hoạch sao lưu trước khi dùng thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn bảng kanban tự host cho nhóm nhỏ. Hãy đọc README của WeKan (https://github.com/wekan/wekan) và giải thích bằng tiếng Việt: kanban là gì, mục Requirements cảnh báo những gì, và vì sao phải sao lưu mỗi ngày. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 15,6 KB, bài đọc phần đầu, tính năng, yêu cầu, chưa đọc wiki của dự án. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>wekan</strong> có <strong>21.150 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/wekan/wekan/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/wekan/wekan\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 698. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21150; repo_id 16089035; README SHA256 3f869a3eb7b53f1c6577d515507b017e1b5d435d2cbe902262aed7bf98c890d9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/wekan/wekan",
+          "repo_id": "16089035",
+          "source_path": "",
+          "source_revision": "README-SHA256:3f869a3eb7b53f1c6577d515507b017e1b5d435d2cbe902262aed7bf98c890d9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wekan/wekan",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Downloads (wekan.fi/install), Docker Containers và Requirements; bài không chép lệnh. Cần máy chủ có tối thiểu 1 GB RAM trống. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/wekan/wekan/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/wekan/wekan/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "wekan/wekan",
+        "stars": 21150,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/wekan/wekan/main/README.md",
+        "readmeSha256": "3f869a3eb7b53f1c6577d515507b017e1b5d435d2cbe902262aed7bf98c890d9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 699,
+      "batch": 112,
+      "slug": "monica",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Monica: hệ quản lý quan hệ cá nhân mã nguồn mở giúp ghi lại cuộc sống, quản lý liên hệ, nhắc sinh nhật, ghi chú, nhật ký, hoạt động; không phải mạng xã hội và không có AI tích hợp; README ghi nhánh này là bản beta đang phát triển",
+        "excerpt": "Hiểu Monica là hệ quản lý quan hệ cá nhân mã nguồn mở giúp ghi lại cuộc sống: quản lý liên hệ, quan hệ giữa các liên hệ, nhắc nhở, nhắc sinh nhật, ghi chú, ghi cách gặp nhau, hoạt động, nhiệm vụ, nhật ký; README cảnh báo nhánh này là bản beta đang phát triển (bản ổn định ở nhánh 4.x), nêu Monica không phải mạng xã hội, không có AI tích hợp, giấy phép AGPL.",
+        "content": "<p>README mở đầu bằng cảnh báo: nhánh này đang phát triển, là bản beta; muốn xem bản ổn định hiện hành thì xem nhánh 4.x. Monica là hệ quản lý quan hệ cá nhân mã nguồn mở cho phép ghi lại cuộc sống. Tính năng: thêm và quản lý liên hệ, xác định quan hệ giữa các liên hệ, nhắc nhở và nhắc sinh nhật tự động, ghi chú, ghi cách bạn gặp ai đó, quản lý hoạt động cùng một liên hệ, quản lý nhiệm vụ, địa chỉ và các cách liên lạc, loại trường liên hệ, thú cưng của liên hệ, nhật ký, ghi ngày hôm nay thế nào, tải tài liệu và ảnh, giới tính tùy chỉnh. Mục 'What Monica isn't': không phải mạng xã hội và sẽ không bao giờ là (thiết kế để chỉ riêng bạn xem), không phải trợ lý thông minh (chỉ gửi email nhắc những gì bạn yêu cầu), không có AI tích hợp như ChatGPT, không quét dữ liệu của bạn (dữ liệu của bạn, máy chủ của bạn). README có mục đóng góp, nguyên tắc, tầm nhìn, mục tiêu, vì sao mã nguồn mở (cho phép fork và làm dự án cạnh tranh), Patreon (quảng bá, bài không đánh giá). Phần License nêu giấy phép AGPL.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn nhớ sinh nhật bạn bè, tên con của đồng nghiệp, lần gặp cuối? Monica là cuốn sổ cá nhân riêng tư giúp bạn nhớ những chi tiết đó để quan tâm người khác chu đáo hơn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục Features và What Monica isn't để hiểu mục đích; chưa dùng thông tin thật của ai. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần quản trị máy chủ web hoặc Docker; dùng giao diện đơn giản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Monica lưu thông tin cá nhân của người khác (sinh nhật, địa chỉ, cách liên lạc, ghi chú): chỉ ghi thông tin phù hợp, tôn trọng quyền riêng tư của họ và quy định bảo vệ dữ liệu cá nhân; bài không phải tư vấn pháp lý. Nhánh mặc định là beta đang phát triển: cân nhắc dùng nhánh ổn định 4.x. Bảo vệ bằng xác thực, HTTPS và sao lưu. Giấy phép AGPL có điều khoản riêng khi cung cấp dịch vụ qua mạng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>personal relationship management (quản lý quan hệ cá nhân)</strong>: ghi nhớ thông tin và chăm sóc quan hệ cá nhân; README nêu.</li><li><strong>CRM</strong>: quản lý quan hệ khách hàng; bài chú thích biên tập: Monica là phiên bản cá nhân.</li><li><strong>beta</strong>: giai đoạn thử, đang phát triển; README ghi nhánh này là beta.</li><li><strong>self-hosted (tự host)</strong>: chạy trên máy chủ của bạn; README nhấn mạnh dữ liệu của bạn.</li><li><strong>AGPL</strong>: giấy phép tự do copyleft có điều khoản cho dịch vụ qua mạng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt; bài không chép lệnh. Cần máy chủ web hoặc Docker. Miễn phí theo AGPL (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo ở đầu README.</li><li>Đọc Features và What Monica isn't.</li><li>Quyết định dùng nhánh beta hay 4.x ổn định.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một cuốn sổ riêng tư để nhớ chuyện về bạn bè. Hãy đọc README của Monica (https://github.com/monicahq/monica) và giải thích bằng tiếng Việt: Monica làm gì, vì sao README cảnh báo nhánh này là beta, và vì sao cần cẩn thận khi lưu thông tin cá nhân của người khác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 10 KB, bài chưa đọc tài liệu trên monicahq.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>monicahq</strong> có <strong>25.658 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu giấy phép AGPL; GitHub nhận diện AGPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/monicahq/monica/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/monicahq/monica\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 699. Chưa cài/chạy thử; không tạo validation. Snapshot sao 25658; repo_id 82238168; README SHA256 273fcf88c3aa66f582dd4e8b0ca2b90456fa92adb9945fdb7eea920155ba1b72.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/monicahq/monica",
+          "repo_id": "82238168",
+          "source_path": "",
+          "source_revision": "README-SHA256:273fcf88c3aa66f582dd4e8b0ca2b90456fa92adb9945fdb7eea920155ba1b72",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/monicahq/monica",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt; bài không chép lệnh. Cần máy chủ web hoặc Docker. Miễn phí theo AGPL (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/monicahq/monica/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/monicahq/monica/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "monicahq/monica",
+        "stars": 25658,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/monicahq/monica/main/README.md",
+        "readmeSha256": "273fcf88c3aa66f582dd4e8b0ca2b90456fa92adb9945fdb7eea920155ba1b72",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 700,
+      "batch": 112,
+      "slug": "dependabot-core",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dependabot-Core: thư viện Ruby ở lõi Dependabot để tạo yêu cầu gộp tự động cập nhật phụ thuộc cho dự án Ruby, JavaScript, Python và nhiều ngôn ngữ khác; README chủ yếu hướng dẫn chạy riêng, đóng góp và phát triển",
+        "excerpt": "Hiểu Dependabot-Core là thư viện nằm ở lõi các cập nhật bảo mật và phiên bản của Dependabot, dùng để tạo yêu cầu gộp tự động cập nhật phụ thuộc cho nhiều ngôn ngữ; README nêu cách chạy Dependabot riêng (Dependabot CLI được khuyến nghị, viết công cụ Ruby riêng, chạy trên CI) và phần lớn là hướng dẫn đóng góp, phát triển, kiến trúc mã.",
+        "content": "<p>README mở đầu 'Chào mừng đến nhà công khai của Dependabot'. Mục What is Dependabot-Core? nói đây là thư viện ở lõi các cập nhật bảo mật và phiên bản của Dependabot, dùng để tạo yêu cầu gộp tự động cập nhật phụ thuộc cho dự án viết bằng Ruby, JavaScript, Python và nhiều ngôn ngữ khác. Mục How to run Dependabot: dịch vụ trên GitHub.com bật bằng cách thêm tệp cấu hình dependabot.yml vào thư mục .github; nếu muốn chạy bản tùy biến hoặc trên nền tảng khác thì repo cung cấp logic để tự host Dependabot độc lập, hiện hỗ trợ mở yêu cầu gộp trên GitHub, GitHub Enterprise, Azure DevOps và một số nền tảng khác. Dependabot-Core là thư viện nên cần tập lệnh điểm vào; Dependabot CLI mã nguồn mở được khuyến nghị cho trường hợp độc lập, hoặc viết công cụ Ruby riêng, hoặc chạy trên CI. Phần còn lại là đóng góp (báo vấn đề có ví dụ tái hiện, không bình luận +1, không đăng vấn đề về cảnh báo bảo mật hay đồ thị phụ thuộc vì trình theo dõi chỉ dành cho logic cập nhật, công bố vấn đề bảo mật riêng, gửi PR, hệ sinh thái mới), hướng dẫn phát triển (môi trường, gỡ lỗi, kiểm thử, đo hiệu năng), kiến trúc và bố cục mã, nhãn hiệu và ghi chú cho người duy trì. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Renovate và Dependabot trên GitHub là dịch vụ có sẵn, Dependabot-Core là phần động cơ bên trong, dành cho người muốn tự dựng hoặc đóng góp cho Dependabot.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục How to run Dependabot để hiểu ba cách chạy; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Ruby, Docker và hiểu hệ sinh thái gói của nhiều ngôn ngữ nếu tự chạy hay đóng góp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Người dùng phổ thông chỉ cần bật Dependabot bằng tệp cấu hình trên GitHub, không cần repo này. Bot tạo yêu cầu gộp: xem kỹ trước khi gộp, cấp quyền tối thiểu. README yêu cầu không đăng vấn đề về cảnh báo bảo mật vào đây.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dependency (phụ thuộc)</strong>: thư viện bên ngoài dự án dùng; README nêu.</li><li><strong>pull request (yêu cầu gộp)</strong>: đề nghị thêm thay đổi vào kho; README nêu.</li><li><strong>dependabot.yml</strong>: tệp cấu hình bật Dependabot trên GitHub; README nêu.</li><li><strong>ecosystem (hệ sinh thái gói)</strong>: một nhóm như npm hay pip; README có mục hệ sinh thái mới.</li><li><strong>CLI</strong>: công cụ dòng lệnh; README khuyến nghị Dependabot CLI.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục How to run Dependabot và Development Guide; bài không chép lệnh. Cần tệp cấu hình trên GitHub (cách thường dùng) hoặc Ruby và Docker. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc What is Dependabot-Core? và How to run Dependabot.</li><li>Đọc mục Contributing nếu muốn đóng góp.</li><li>Dùng dịch vụ có sẵn trên GitHub trước khi tự dựng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cập nhật thư viện tự động. Hãy đọc README của Dependabot-Core (https://github.com/dependabot/dependabot-core) và giải thích bằng tiếng Việt: repo này khác dịch vụ Dependabot trên GitHub ở đâu, có những cách chạy nào, và vì sao không đăng vấn đề cảnh báo bảo mật ở đây. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 29 KB, bài đọc phần đầu, cách chạy và đóng góp, chưa đọc phần kiến trúc chi tiết. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dependabot</strong> có <strong>5.832 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dependabot/dependabot-core/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dependabot/dependabot-core\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 700. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5832; repo_id 93163073; README SHA256 1a6bc301fe8095e9b8acfdaed5b7f5f455c47571ad78d40ab5640f5b0e7a65b1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dependabot/dependabot-core",
+          "repo_id": "93163073",
+          "source_path": "",
+          "source_revision": "README-SHA256:1a6bc301fe8095e9b8acfdaed5b7f5f455c47571ad78d40ab5640f5b0e7a65b1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dependabot/dependabot-core",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục How to run Dependabot và Development Guide; bài không chép lệnh. Cần tệp cấu hình trên GitHub (cách thường dùng) hoặc Ruby và Docker. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dependabot/dependabot-core/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dependabot/dependabot-core/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dependabot/dependabot-core",
+        "stars": 5832,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dependabot/dependabot-core/main/README.md",
+        "readmeSha256": "1a6bc301fe8095e9b8acfdaed5b7f5f455c47571ad78d40ab5640f5b0e7a65b1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 701,
+      "batch": 112,
+      "slug": "dashy",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dashy: bảng điều khiển tự host cho ứng dụng và dịch vụ của bạn, nhiều chủ đề, biểu tượng, chỉ báo trạng thái, tiện ích, chế độ xem, trình soạn cấu hình, sao lưu đám mây; xác thực bằng Keycloak hoặc OIDC và xác thực cơ bản",
+        "excerpt": "Hiểu Dashy là bảng điều khiển tự host gom lối tắt tới ứng dụng và dịch vụ của bạn về một trang: nhiều chủ đề và biểu tượng, chỉ báo trạng thái, tiện ích, nhiều chế độ xem, trình soạn cấu hình, sao lưu và đồng bộ đám mây; README nêu hai cách xác thực (Keycloak hoặc OIDC, và xác thực cơ bản bằng băm SHA-256 trong tệp cấu hình) và cách triển khai bằng Docker, từ mã nguồn hoặc lên đám mây.",
+        "content": "<p>README là bản dài (khoảng 36 KB) với mục lục: bắt đầu (tính năng, demo, bắt đầu, cấu hình), tổng quan tính năng (chủ đề, biểu tượng, chỉ báo trạng thái, tiện ích, xác thực, chế độ xem khác, cách mở liên kết, tìm kiếm và phím tắt, trình soạn cấu hình, sao lưu và đồng bộ đám mây) và các mục còn lại. Mục Getting Started nói cách triển khai: từ Docker Hub, từ mã nguồn, lên đám mây; bài không chép lệnh. Mục Authentication nói Dashy hỗ trợ đăng nhập một lần an toàn bằng Keycloak hoặc nhà cung cấp OIDC; ngoài ra có xác thực cơ bản không cần thiết lập thêm: thêm thuộc tính auth dưới appConfig chứa mảng người dùng với tên đăng nhập và mật khẩu băm SHA-256. Bài lưu ý xác thực cơ bản chỉ ở phía trình duyệt: không thay cho bảo vệ ở tầng mạng. Mục tài nguyên liệt kê giấy phép MIT và nêu các dự án tương tự (Homer Apache 2.0, Organizr GPL-3.0). Phần Cloud Backup & Sync dùng dịch vụ đám mây tùy chọn; bài chưa đọc chi tiết.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dịch vụ tự host trên máy bạn có một địa chỉ khác nhau, khó nhớ. Dashy gom chúng lên một trang chủ riêng với biểu tượng đẹp và đèn báo còn sống hay không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích tệp cấu hình mẫu trong tài liệu và các chỉ báo trạng thái; chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần Docker cơ bản và sửa tệp cấu hình dạng văn bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Trang tổng hợp có thể lộ danh sách dịch vụ nội bộ: đặt xác thực ở tầng mạng hoặc dùng OIDC, không chỉ dựa vào xác thực cơ bản trong tệp cấu hình; không mở ra Internet khi chưa bảo vệ. Sao lưu đám mây gửi cấu hình ra ngoài: bài chưa đọc kỹ. Bài chưa so sánh với Glance hay Homer.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dashboard (bảng điều khiển)</strong>: trang gom lối tắt và thông tin; README nêu.</li><li><strong>status indicator (chỉ báo trạng thái)</strong>: đèn báo dịch vụ còn chạy hay không; README có mục.</li><li><strong>OIDC/Keycloak</strong>: cách đăng nhập tập trung; README nêu hỗ trợ.</li><li><strong>basic auth (xác thực cơ bản)</strong>: đăng nhập đơn giản bằng tên và mật khẩu băm; README nêu.</li><li><strong>widget (tiện ích)</strong>: khối thông tin nhỏ trên bảng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Deploying from Docker Hub, từ mã nguồn, lên đám mây; bài không chép lệnh. Cần Docker hoặc Node. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và Demo.</li><li>Đọc mục Authentication.</li><li>Đặt xác thực trước khi mở ra mạng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình tự host vài dịch vụ và muốn một trang chủ chung. Hãy đọc README của Dashy (https://github.com/Lissy93/dashy) và giải thích bằng tiếng Việt: Dashy làm gì, hai cách xác thực khác nhau thế nào, và vì sao xác thực cơ bản chưa đủ để mở ra Internet. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 36 KB), bài đọc phần đầu, triển khai, xác thực và giấy phép, chưa đọc toàn bộ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Lissy93</strong> có <strong>26.903 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Lissy93/dashy/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Lissy93/dashy\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 701. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26903; repo_id 343078060; README SHA256 4ca539aa6d0d09bf2f4916f86412488f92797ce554470585aabf4e09b667da43.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Lissy93/dashy",
+          "repo_id": "343078060",
+          "source_path": "",
+          "source_revision": "README-SHA256:4ca539aa6d0d09bf2f4916f86412488f92797ce554470585aabf4e09b667da43",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Lissy93/dashy",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Deploying from Docker Hub, từ mã nguồn, lên đám mây; bài không chép lệnh. Cần Docker hoặc Node. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Lissy93/dashy/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Lissy93/dashy/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Lissy93/dashy",
+        "stars": 26903,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Lissy93/dashy/master/README.md",
+        "readmeSha256": "4ca539aa6d0d09bf2f4916f86412488f92797ce554470585aabf4e09b667da43",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 702,
+      "batch": 112,
+      "slug": "grist-core",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Grist: bảng tính quan hệ hiện đại kết hợp sự linh hoạt của bảng tính với độ vững của cơ sở dữ liệu; grist-core là bản cộng đồng chạy máy chủ lưu bảng tính, giấy phép Apache 2.0, công ty bán bản có thêm tính năng; README rất dài",
+        "excerpt": "Hiểu Grist là bảng tính quan hệ hiện đại: kết hợp sự linh hoạt của bảng tính với độ vững của cơ sở dữ liệu; kho grist-core (bản cộng đồng) có đủ để chạy máy chủ mạnh lưu bảng tính, mã theo Apache License 2.0, Grist Labs bán bản có thêm tính năng và dịch vụ đám mây; README liệt kê tính năng có và không có trong grist-core, cách dùng với OpenRouter, ảnh Docker, bảng quản trị, đăng nhập.",
+        "content": "<p>README tả Grist là bảng tính quan hệ hiện đại kết hợp sự linh hoạt của bảng tính với độ vững của cơ sở dữ liệu. Kho grist-core (bản cộng đồng) có đủ để chạy máy chủ lưu bảng tính; grist-desktop là ứng dụng máy tính xem và sửa bảng tính cục bộ; grist-static là bản chạy hoàn toàn trong trình duyệt để hiển thị bảng tính trên trang web. Grist do Grist Labs phát triển, có sự tham gia của các tổ chức chính phủ Pháp; ba kho đều mã nguồn mở theo Apache License 2.0, Grist Labs bán một phiên bản có thêm tính năng và gói đám mây. Mục tính năng cho thấy Grist là lai giữa cơ sở dữ liệu và bảng tính: cột hoạt động như trong cơ sở dữ liệu (có tên, chứa một loại dữ liệu). Mục 'Features not in grist-core' liệt kê tính năng chỉ có ở bản đầy đủ (ví dụ GristConnect, lưu trữ tài liệu trên Azure); README nêu một số phần mở rộng không thuộc giấy phép tự do và chỉ kích hoạt khi dùng bản của Grist Labs. Mục Using Grist hướng dẫn chạy bằng Docker (bài không chép lệnh), mục dùng với OpenRouter để chọn mô hình AI trung lập với khóa API riêng và điểm cuối của OpenRouter, ảnh Docker sẵn có, bảng quản trị, xây từ mã nguồn, đăng nhập, dịch thuật và mục vì sao tự do và mã nguồn mở. README nói Grist Labs là công ty open-core, bán dịch vụ host với gói miễn phí và trả phí; bài không đánh giá phần bán.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bảng tính như Excel dễ dùng nhưng khó làm việc nhóm và dễ sai. Cơ sở dữ liệu chặt chẽ nhưng khó dùng. Grist ghép hai thứ: bạn thao tác như bảng tính nhưng dữ liệu có cấu trúc như cơ sở dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao 'cột chứa một loại dữ liệu' khiến bảng tính bớt lỗi; thử bản dùng thử trực tuyến nếu muốn, chưa tự host. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng giao diện khá dễ; tự host cần Docker và quản trị. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Một số tính năng chỉ có ở bản trả phí của Grist Labs: README nêu rõ danh sách; cần xem kỹ nếu bạn đánh giá bản tự host. Tính năng AI qua OpenRouter dùng khóa API riêng: dữ liệu bảng tính có thể gửi ra ngoài, và tốn phí. Dữ liệu bảng tính có thể nhạy cảm: bảo vệ bằng xác thực và sao lưu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>relational spreadsheet (bảng tính quan hệ)</strong>: bảng tính có các bảng liên kết kiểu cơ sở dữ liệu; README nêu.</li><li><strong>open-core</strong>: mô hình lõi mã mở và phần bán thêm; README nêu Grist Labs dùng.</li><li><strong>OpenRouter</strong>: dịch vụ gom nhiều mô hình AI; README nêu có hướng dẫn dùng.</li><li><strong>Docker image (ảnh Docker)</strong>: gói đóng sẵn ứng dụng; README nêu các ảnh sẵn có.</li><li><strong>admin panel (bảng quản trị)</strong>: trang quản lý cài đặt máy chủ; README có mục.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Using Grist với Docker và xây từ mã nguồn; bài không chép lệnh. Cần Docker nếu tự host. Miễn phí theo Apache License 2.0 (README nêu cho grist-core); phần mở rộng của bản đầy đủ không thuộc giấy phép tự do.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Grist và Features in grist-core.</li><li>Đọc mục Features not in grist-core.</li><li>Đọc mục The Admin Panel và Logins.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thích bảng tính nhưng cần dữ liệu có cấu trúc. Hãy đọc README của Grist (https://github.com/gristlabs/grist-core) và giải thích bằng tiếng Việt: bảng tính quan hệ là gì, bản cộng đồng khác bản đầy đủ ở đâu, và tính năng AI qua OpenRouter gửi dữ liệu thế nào. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 56 KB), bài đọc phần đầu, tính năng có và không có, giấy phép, chưa đọc toàn bộ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gristlabs</strong> có <strong>12.043 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu Apache License 2.0 cho grist-core; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gristlabs/grist-core/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gristlabs/grist-core\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 702. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12043; repo_id 266033395; README SHA256 c5fb7b1b385d179fc99bba809e6786d80c64dcd011aa625d29e633b07d0a810a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gristlabs/grist-core",
+          "repo_id": "266033395",
+          "source_path": "",
+          "source_revision": "README-SHA256:c5fb7b1b385d179fc99bba809e6786d80c64dcd011aa625d29e633b07d0a810a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gristlabs/grist-core",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Using Grist với Docker và xây từ mã nguồn; bài không chép lệnh. Cần Docker nếu tự host. Miễn phí theo Apache License 2.0 (README nêu cho grist-core); phần mở rộng của bản đầy đủ không thuộc giấy phép tự do.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gristlabs/grist-core/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gristlabs/grist-core/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gristlabs/grist-core",
+        "stars": 12043,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md",
+        "readmeSha256": "c5fb7b1b385d179fc99bba809e6786d80c64dcd011aa625d29e633b07d0a810a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 703,
+      "batch": 112,
+      "slug": "just",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "just: cách tiện lợi để lưu và chạy các lệnh riêng của dự án, công thức viết trong tệp justfile với cú pháp lấy cảm hứng từ make; README cực dài (khoảng 166 KB) và nêu giấy phép CC0, hiện không nhận PR",
+        "excerpt": "Hiểu just là cách tiện lợi để lưu và chạy các lệnh riêng của dự án: các công thức (recipe) lưu trong tệp justfile với cú pháp lấy cảm hứng từ make và chạy bằng lệnh just kèm tên công thức; README rất dài (cũng có dạng sách), nêu giấy phép CC0 (tuyên bố miễn bản quyền) và ghi chú hiện không nhận pull request.",
+        "content": "<p>README tả just là cách tiện lợi để lưu và chạy các lệnh riêng của dự án; README cũng có dạng sách tại just.systems và nói bản sách phản ánh bản phát hành mới nhất còn README trên GitHub phản ánh nhánh master. Lệnh gọi là công thức, lưu trong tệp justfile với cú pháp lấy cảm hứng từ make, chạy bằng cách gõ just rồi tên công thức. README cực dài (khoảng 166 KB) gồm các mục điều kiện tiên quyết, các gói cài đặt cho nhiều hệ điều hành (BSD, Linux, Windows, macOS), tệp nhị phân dựng sẵn (có chỉ dẫn tải về và thêm vào đường dẫn), và rất nhiều chương về cú pháp. Bài chỉ đọc phần đầu và mục cài đặt, chưa đọc toàn bộ, và không chép lệnh. Phần đóng góp ghi chú just hiện không nhận pull request (giữ mục đóng góp để tham khảo), và nói just phát hành theo CC0 miễn bản quyền cùng giấy phép dự phòng nên thay đổi của bạn cũng phải phát hành theo giấy phép này. Bài lấy giấy phép CC0-1.0 theo GitHub và README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án có vài lệnh hay dùng như kiểm thử, dựng gói, triển khai. just cho bạn ghi chúng vào một tệp có tên và chạy bằng một từ, đỡ phải nhớ lệnh dài.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khái niệm công thức và tệp justfile bằng ví dụ kiểm thử và dựng; chưa tạo tệp. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhóm nhỏ hoặc tự host công cụ cho mình và cộng sự, thường nhờ AI viết cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cần dòng lệnh cơ bản; cú pháp tệp justfile học nhanh nhưng README rất dài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Công thức chạy lệnh thật trên máy bạn: đọc kỹ justfile của người khác trước khi chạy, nhất là những tệp do AI tạo. README rất dài, bài chưa đọc toàn bộ. Bài chưa so sánh với make hay Task.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>recipe (công thức)</strong>: một lệnh có tên lưu trong tệp; README nêu.</li><li><strong>justfile</strong>: tệp lưu các công thức; README nêu.</li><li><strong>make</strong>: công cụ dựng lâu đời; README nêu cú pháp lấy cảm hứng.</li><li><strong>CC0</strong>: tuyên bố đưa tác phẩm vào phạm vi công cộng; README nêu.</li><li><strong>command runner (trình chạy lệnh)</strong>: công cụ lưu và chạy lệnh; bài chú thích biên tập.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Packages và Pre-Built Binaries cho nhiều hệ điều hành; bài không chép lệnh. Cần dòng lệnh. Miễn phí theo CC0 (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và ví dụ.</li><li>Đọc mục cài đặt.</li><li>Thử với một tệp justfile nhỏ đọc hiểu từng dòng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay phải nhớ lệnh dài trong dự án. Hãy đọc README của just (https://github.com/casey/just) và giải thích bằng tiếng Việt: công thức và justfile là gì, khác make ở đâu, và vì sao phải đọc kỹ justfile của người khác trước khi chạy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README cực dài (khoảng 166 KB), bài chỉ đọc phần đầu, cài đặt và phần giấy phép, chưa đọc toàn bộ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ làm việc nhóm và tự động hóa tự host chứa thông tin của người khác (liên hệ, công việc, bảng tính, danh sách dịch vụ) hoặc chạy lệnh thay bạn: đặt xác thực và HTTPS trước khi mở ra Internet, sao lưu định kỳ vì nhiều công cụ không có hoàn tác, cập nhật bản vá, cấp quyền tối thiểu cho bot, và đừng nhập thông tin cá nhân của người khác khi chưa được phép hoặc chưa hiểu dữ liệu lưu ở đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>casey</strong> có <strong>36.536 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu CC0 và giấy phép dự phòng; GitHub nhận diện CC0-1.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/casey/just/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/casey/just\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 703. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36536; repo_id 61349723; README SHA256 0e6a95ea51f98bce63b3c3928d322b2e8af32a02e3d5a95cbf6e676ffc04e1ab.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/casey/just",
+          "repo_id": "61349723",
+          "source_path": "",
+          "source_revision": "README-SHA256:0e6a95ea51f98bce63b3c3928d322b2e8af32a02e3d5a95cbf6e676ffc04e1ab",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "cc0-1.0",
+                "name": "Creative Commons Zero v1.0 Universal",
+                "spdx_id": "CC0-1.0",
+                "url": "https://api.github.com/licenses/cc0-1.0",
+                "node_id": "MDc6TGljZW5zZTY="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/casey/just",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Packages và Pre-Built Binaries cho nhiều hệ điều hành; bài không chép lệnh. Cần dòng lệnh. Miễn phí theo CC0 (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/casey/just/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/casey/just/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "casey/just",
+        "stars": 36536,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/casey/just/master/README.md",
+        "readmeSha256": "0e6a95ea51f98bce63b3c3928d322b2e8af32a02e3d5a95cbf6e676ffc04e1ab",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

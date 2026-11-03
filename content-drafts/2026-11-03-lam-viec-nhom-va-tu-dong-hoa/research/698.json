@@ -1,0 +1,43 @@
+{
+  "key": 698,
+  "repo": "wekan/wekan",
+  "repoId": "16089035",
+  "url": "https://github.com/wekan/wekan",
+  "stars": 21150,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:34:32Z",
+  "createdAt": "2014-01-21T01:26:28Z",
+  "defaultBranch": "main",
+  "description": "FLOSS kanban, built with Meteor. Official Public Support at GitHub issues only. Official Private Pre-Paid Support at https://wekan.fi/commercial-support/ only. Translation PRs to imports/i18n/data/en.i18n.json, other translations at https://app.transifex.com/wekan/wekan . No telemetry.",
+  "homepage": "https://wekan.fi",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/wekan/wekan/main/README.md",
+    "sha256": "3f869a3eb7b53f1c6577d515507b017e1b5d435d2cbe902262aed7bf98c890d9",
+    "bytes": 15612,
+    "sectionsRead": [
+      "Downloads",
+      "About WeKan",
+      "Docker Containers",
+      "Requirements",
+      "Roadmap and Demo"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc wiki của dự án.",
+    "Chưa thử.",
+    "Chưa kiểm chứng con số người dùng và gói ngôn ngữ."
+  ],
+  "runtimeValidated": false
+}

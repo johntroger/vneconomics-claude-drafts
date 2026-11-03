@@ -1,0 +1,41 @@
+{
+  "key": 703,
+  "repo": "casey/just",
+  "repoId": "61349723",
+  "url": "https://github.com/casey/just",
+  "stars": 36536,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "cc0-1.0",
+    "name": "Creative Commons Zero v1.0 Universal",
+    "spdx_id": "CC0-1.0",
+    "url": "https://api.github.com/licenses/cc0-1.0",
+    "node_id": "MDc6TGljZW5zZTY="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T05:24:09Z",
+  "createdAt": "2016-06-17T06:08:08Z",
+  "defaultBranch": "master",
+  "description": "🤖 Just a command runner",
+  "homepage": "https://just.systems",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/casey/just/master/README.md",
+    "sha256": "0e6a95ea51f98bce63b3c3928d322b2e8af32a02e3d5a95cbf6e676ffc04e1ab",
+    "bytes": 165990,
+    "sectionsRead": [
+      "Prerequisites",
+      "Packages",
+      "Pre-Built Binaries"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README cực dài.",
+    "Chưa thử.",
+    "Chưa so sánh với make và Task."
+  ],
+  "runtimeValidated": false
+}

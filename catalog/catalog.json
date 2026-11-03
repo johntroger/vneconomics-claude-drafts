@@ -12255,5 +12255,147 @@
    "kavita",
    "wger"
   ]
+ },
+ {
+  "key": 698,
+  "slug": "wekan",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "WeKan: ứng dụng bảng kanban cộng tác mã nguồn mở theo giấy phép MIT, tự host, dịch ra 234 gói ngôn ngữ theo README, hỗ trợ nhiều cách đăng nhập; README nhắc cập nhật rất thường xuyên, sao lưu hằng ngày vì chưa có hoàn tác",
+  "repo": "wekan/wekan",
+  "stars": 21150,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "dashy",
+   "monica"
+  ]
+ },
+ {
+  "key": 699,
+  "slug": "monica",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "Monica: hệ quản lý quan hệ cá nhân mã nguồn mở giúp ghi lại cuộc sống, quản lý liên hệ, nhắc sinh nhật, ghi chú, nhật ký, hoạt động; không phải mạng xã hội và không có AI tích hợp; README ghi nhánh này là bản beta đang phát triển",
+  "repo": "monicahq/monica",
+  "stars": 25658,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-28",
+  "related": [
+   "grist-core",
+   "wekan"
+  ]
+ },
+ {
+  "key": 700,
+  "slug": "dependabot-core",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "Dependabot-Core: thư viện Ruby ở lõi Dependabot để tạo yêu cầu gộp tự động cập nhật phụ thuộc cho dự án Ruby, JavaScript, Python và nhiều ngôn ngữ khác; README chủ yếu hướng dẫn chạy riêng, đóng góp và phát triển",
+  "repo": "dependabot/dependabot-core",
+  "stars": 5832,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "grist-core"
+  ]
+ },
+ {
+  "key": 701,
+  "slug": "dashy",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "Dashy: bảng điều khiển tự host cho ứng dụng và dịch vụ của bạn, nhiều chủ đề, biểu tượng, chỉ báo trạng thái, tiện ích, chế độ xem, trình soạn cấu hình, sao lưu đám mây; xác thực bằng Keycloak hoặc OIDC và xác thực cơ bản",
+  "repo": "Lissy93/dashy",
+  "stars": 26903,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "just",
+   "wekan"
+  ]
+ },
+ {
+  "key": 702,
+  "slug": "grist-core",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "Grist: bảng tính quan hệ hiện đại kết hợp sự linh hoạt của bảng tính với độ vững của cơ sở dữ liệu; grist-core là bản cộng đồng chạy máy chủ lưu bảng tính, giấy phép Apache 2.0, công ty bán bản có thêm tính năng; README rất dài",
+  "repo": "gristlabs/grist-core",
+  "stars": 12043,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "dependabot-core",
+   "monica"
+  ]
+ },
+ {
+  "key": 703,
+  "slug": "just",
+  "group": "2026-11-03-lam-viec-nhom-va-tu-dong-hoa",
+  "title": "just: cách tiện lợi để lưu và chạy các lệnh riêng của dự án, công thức viết trong tệp justfile với cú pháp lấy cảm hứng từ make; README cực dài (khoảng 166 KB) và nêu giấy phép CC0, hiện không nhận PR",
+  "repo": "casey/just",
+  "stars": 36536,
+  "license": {
+   "key": "cc0-1.0",
+   "name": "Creative Commons Zero v1.0 Universal",
+   "spdx_id": "CC0-1.0",
+   "url": "https://api.github.com/licenses/cc0-1.0",
+   "node_id": "MDc6TGljZW5zZTY="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "dashy"
+  ]
  }
 ]

@@ -1,0 +1,43 @@
+{
+  "key": 702,
+  "repo": "gristlabs/grist-core",
+  "repoId": "266033395",
+  "url": "https://github.com/gristlabs/grist-core",
+  "stars": 12043,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:04:52Z",
+  "createdAt": "2020-05-22T06:16:02Z",
+  "defaultBranch": "main",
+  "description": "Grist is the evolution of spreadsheets.",
+  "homepage": "https://www.getgrist.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/gristlabs/grist-core/main/README.md",
+    "sha256": "c5fb7b1b385d179fc99bba809e6786d80c64dcd011aa625d29e633b07d0a810a",
+    "bytes": 56349,
+    "sectionsRead": [
+      "Features in",
+      "Features not in",
+      "Using Grist",
+      "The Admin Panel",
+      "Logins"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README dài.",
+    "Chưa thử.",
+    "Chưa kiểm tra danh sách tính năng bản đầy đủ."
+  ],
+  "runtimeValidated": false
+}
