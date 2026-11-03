@@ -1,0 +1,44 @@
+{
+  "key": 502,
+  "repo": "espocrm/espocrm",
+  "repoId": "24459441",
+  "url": "https://github.com/espocrm/espocrm",
+  "stars": 3543,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T11:45:55Z",
+  "createdAt": "2014-09-25T13:38:46Z",
+  "defaultBranch": "master",
+  "description": "EspoCRM – Open Source CRM Application",
+  "homepage": "https://www.espocrm.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/espocrm/espocrm/master/README.md",
+    "sha256": "7e3594c47d68d8410dd68441df06cd897877b0da21ac479a237ea1a61f9ac6ed",
+    "bytes": 5303,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Architecture",
+      "Requirements",
+      "Why EspoCRM?",
+      "Installing stable version",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá tiện ích trả phí chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

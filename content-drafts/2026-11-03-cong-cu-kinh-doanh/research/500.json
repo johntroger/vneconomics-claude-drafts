@@ -1,0 +1,44 @@
+{
+  "key": 500,
+  "repo": "frappe/crm",
+  "repoId": "668199241",
+  "url": "https://github.com/frappe/crm",
+  "stars": 3905,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:11:44Z",
+  "createdAt": "2023-07-19T08:53:35Z",
+  "defaultBranch": "develop",
+  "description": "Fully featured, open source CRM",
+  "homepage": "https://frappe.io/crm",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/frappe/crm/develop/README.md",
+    "sha256": "93af6b9746f3c4ccf045cac003cb612740e13b7c3f8328c66b5e9b6764864528",
+    "bytes": 9092,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Motivation",
+      "Key Features",
+      "Integrations",
+      "Compatibility",
+      "Getting Started (Production)"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.frappe.io.",
+    "Chưa thử.",
+    "Chi phí tích hợp gọi điện và WhatsApp chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

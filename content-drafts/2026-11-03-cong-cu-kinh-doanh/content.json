@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-kinh-doanh",
+  "batch": 85,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 498,
+      "batch": 85,
+      "slug": "zulip",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Zulip: ứng dụng chat nhóm mã nguồn mở với luồng hội thoại theo chủ đề (topic) kết hợp ưu điểm của email và chat, tự host hoặc dùng bản đám mây",
+        "excerpt": "Hiểu Zulip là ứng dụng chat nhóm mã nguồn mở có luồng hội thoại theo chủ đề, nhằm kết hợp ưu điểm của email và chat, hợp cả trò chuyện trực tiếp lẫn không đồng bộ. README nêu cách tự host (Ubuntu, Debian, Docker, ảnh dựng sẵn) và bản Zulip Cloud; tuyên bố quy mô cộng đồng là của README.",
+        "content": "<p>README tả Zulip là ứng dụng chat nhóm có tổ chức, mã nguồn mở, với luồng hội thoại theo chủ đề độc đáo giúp làm việc từ xa hiệu quả. README nói các công ty Fortune 500, dự án mã nguồn mở hàng đầu và hàng nghìn tổ chức dùng Zulip mỗi ngày (tuyên bố của README), và là ứng dụng chat nhóm hiện đại duy nhất thiết kế cho cả hội thoại trực tiếp và không đồng bộ (cách nói của README). Cộng đồng phát triển: README nói có trên 99 người mỗi người đóng góp trên 100 commit, trên 1.500 người đóng góp, trên 500 commit mỗi tháng, 'dự án chat nhóm mã nguồn mở lớn nhất và tăng nhanh nhất' (tuyên bố của README). Mục Getting started: đóng góp mã (README ghi 185 nghìn từ tài liệu cho người đóng góp), đóng góp ngoài mã (báo lỗi, dịch, phản hồi), dùng thử trên cộng đồng phát triển chat.zulip.org không cần tài khoản, tự chạy máy chủ Zulip trên Ubuntu hoặc Debian, trong Docker hoặc ảnh dựng sẵn cho Digital Ocean và Render, dùng không cần máy chủ qua Zulip Cloud (README nói Zulip tài trợ gói Cloud Standard miễn phí cho hàng trăm tổ chức đáng giá gồm các dự án mã nguồn mở), chương trình hỗ trợ như Google Summer of Code, cách ủng hộ dự án. Giấy phép Apache 2.0 theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Chat nhóm thông thường dễ bị tin nhắn trôi mất. Zulip bắt mỗi cuộc trao đổi nằm trong một chủ đề, nên người đọc sau vẫn theo dõi được như đọc email.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng cộng đồng phát triển công khai của Zulip để cảm nhận luồng chủ đề trước khi cân nhắc tự host. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Dùng thì dễ; tự host cần quản trị máy chủ Linux. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Các số liệu 'Fortune 500', quy mô người đóng góp và 'lớn nhất, tăng nhanh nhất' là của README. Tự host chat nhóm nghĩa là bạn chịu trách nhiệm bảo mật, sao lưu và dữ liệu hội thoại của người dùng. Gói Zulip Cloud có phần miễn phí và trả phí, bài chưa kiểm tra giá. README không bàn chi tiết yêu cầu máy chủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>topic-based threading (luồng theo chủ đề)</strong>: mỗi cuộc trao đổi gắn một chủ đề riêng để dễ theo dõi; README nêu là điểm riêng của Zulip.</li><li><strong>asynchronous (không đồng bộ)</strong>: trao đổi không cần mọi người cùng trực tuyến lúc đó; README nêu.</li><li><strong>self-host (tự host)</strong>: tự chạy trên máy chủ của bạn.</li><li><strong>Zulip Cloud</strong>: dịch vụ do hãng chạy hộ, có gói trả phí; README nêu.</li><li><strong>Google Summer of Code</strong>: chương trình cho sinh viên đóng góp mã nguồn mở; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tự host trên Ubuntu hoặc Debian, Docker hoặc ảnh dựng sẵn; hoặc dùng Zulip Cloud (bài không chép lệnh). Cần máy chủ Linux nếu tự host. Miễn phí phần mềm theo giấy phép Apache 2.0; Zulip Cloud có gói trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Dùng thử trên cộng đồng chat.zulip.org.</li><li>Đọc cách tự host hoặc xem gói Zulip Cloud.</li><li>Thử với một nhóm nhỏ trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn chat nhóm có tổ chức theo chủ đề. Hãy đọc README của Zulip (https://github.com/zulip/zulip) và giải thích bằng tiếng Việt: luồng theo chủ đề khác chat thường thế nào, các cách chạy Zulip, và những tuyên bố nào trong README là của hãng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README tập trung vào đóng góp, không có hướng dẫn cài chi tiết; bài chưa đọc tài liệu zulip.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>zulip</strong> có <strong>26.161 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/zulip/zulip/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/zulip/zulip\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 498. Chưa cài/chạy thử; không tạo validation. Snapshot sao 26161; repo_id 43160685; README SHA256 797053375431ea51df3c156d114ab7fbfdbe8398a0bb8a2d2dc076612b70f34b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/zulip/zulip",
+          "repo_id": "43160685",
+          "source_path": "",
+          "source_revision": "README-SHA256:797053375431ea51df3c156d114ab7fbfdbe8398a0bb8a2d2dc076612b70f34b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zulip/zulip",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tự host trên Ubuntu hoặc Debian, Docker hoặc ảnh dựng sẵn; hoặc dùng Zulip Cloud (bài không chép lệnh). Cần máy chủ Linux nếu tự host. Miễn phí phần mềm theo giấy phép Apache 2.0; Zulip Cloud có gói trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/zulip/zulip/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/zulip/zulip/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "zulip/zulip",
+        "stars": 26161,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/zulip/zulip/main/README.md",
+        "readmeSha256": "797053375431ea51df3c156d114ab7fbfdbe8398a0bb8a2d2dc076612b70f34b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 499,
+      "batch": 85,
+      "slug": "erpnext",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ERPNext: hệ thống ERP mã nguồn mở 100% quản lý kế toán, đơn hàng, sản xuất, tài sản, dự án; README chỉ dẫn demo dùng một lần và dịch vụ Frappe Cloud",
+        "excerpt": "Hiểu ERPNext là hệ thống ERP mã nguồn mở quản lý kế toán, kho và đơn hàng, sản xuất, tài sản, dự án trong một phần mềm, xây trên Frappe Framework (Python và JavaScript). README có hướng dẫn Docker nhưng ghi rõ cấu hình đó chỉ để demo dùng một lần, và gợi ý dùng Frappe Cloud để vận hành sản xuất.",
+        "content": "<p>README tả ERPNext là hệ thống ERP 'mã nguồn mở 100%' giúp vận hành doanh nghiệp. Động lực (cách nói của README): kinh doanh phức tạp với hóa đơn, tồn kho, nhân sự, trong thị trường mỗi việc một phần mềm, ERPNext làm tất cả và hơn nữa, miễn phí. Tính năng chính: kế toán (dòng tiền, báo cáo tài chính), quản lý đơn hàng (tồn kho, bổ sung, đơn bán, khách hàng, nhà cung cấp, giao hàng), sản xuất (chu kỳ sản xuất, vật tư, năng lực, gia công), quản lý tài sản, dự án (nhiệm vụ, bảng chấm công, vấn đề). Bên trong: Frappe Framework (khung ứng dụng web Python và JavaScript) và Frappe UI (thư viện giao diện Vue). Mục Production Setup: dùng Frappe Cloud, dịch vụ quản lý lưu trữ ứng dụng Frappe lo cài đặt, nâng cấp, giám sát, bảo trì và hỗ trợ; hoặc tự host bằng Docker (yêu cầu Docker, Docker Compose v2, git; README trỏ tài liệu frappe_docker đầy đủ). Cảnh báo quan trọng trong README: cấu hình thử trên môi trường của bạn chỉ để đánh giá nhanh, 'sẽ phải bỏ đi', không cài được ứng dụng tùy chỉnh; triển khai sản xuất cần làm theo tài liệu đầy đủ. README có lệnh clone kho frappe_docker (bài không chép). README phần đã đọc không nêu giấy phép; GitHub nhận diện GPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>ERP gom nhiều việc quản lý (tiền, kho, sản xuất, dự án) vào một phần mềm. ERPNext là lựa chọn mã nguồn mở, nhưng chuyển một doanh nghiệp sang ERP là việc lớn, không chỉ là cài phần mềm.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem bản demo công khai để biết ERP gồm những phân hệ nào trước khi cân nhắc dùng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> ERP phức tạp: cấu hình kế toán, kho, quy trình riêng, và vận hành máy chủ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README cảnh báo cấu hình Docker thử là 'dùng một lần', không dùng cho sản xuất. Dữ liệu kế toán và hóa đơn nhạy cảm và chịu luật thuế, kế toán địa phương: bài không đánh giá phù hợp luật Việt Nam. 'Miễn phí' không gồm chi phí triển khai, đào tạo và vận hành. Frappe Cloud tính phí, bài chưa kiểm tra giá. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ERP</strong>: phần mềm quản lý tài nguyên doanh nghiệp (kế toán, kho, sản xuất...); README nêu.</li><li><strong>Frappe Framework</strong>: khung ứng dụng web mà ERPNext xây trên; README nêu.</li><li><strong>Frappe Cloud</strong>: dịch vụ lưu trữ và vận hành ứng dụng Frappe, trả phí; README nêu.</li><li><strong>Docker Compose</strong>: công cụ chạy nhiều container cùng lúc; README nêu là yêu cầu.</li><li><strong>asset management (quản lý tài sản)</strong>: theo dõi tài sản từ mua đến thanh lý; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng Frappe Cloud hoặc tự host bằng Docker theo tài liệu frappe_docker; cấu hình thử chỉ để đánh giá (bài không chép lệnh). Cần Docker, Docker Compose v2 và git. Miễn phí phần mềm; giấy phép lấy theo GitHub (GPL-3.0); Frappe Cloud trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản demo.</li><li>Thử cấu hình demo dùng một lần.</li><li>Đọc tài liệu sản xuất đầy đủ trước khi dùng thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang cân nhắc phần mềm ERP cho doanh nghiệp nhỏ. Hãy đọc README của ERPNext (https://github.com/frappe/erpnext) và giải thích bằng tiếng Việt: các phân hệ chính, vì sao README cảnh báo cấu hình Docker thử, và những chi phí ngoài phần mềm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa đọc tài liệu và chưa đánh giá phù hợp luật địa phương. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>frappe</strong> có <strong>40.883 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/frappe/erpnext/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/frappe/erpnext\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 499. Chưa cài/chạy thử; không tạo validation. Snapshot sao 40883; repo_id 1864233; README SHA256 c7d12496fddc6771a44d9c84dcaa6868eea52ef32aca5a6a68d5b59d88a7022b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/frappe/erpnext",
+          "repo_id": "1864233",
+          "source_path": "",
+          "source_revision": "README-SHA256:c7d12496fddc6771a44d9c84dcaa6868eea52ef32aca5a6a68d5b59d88a7022b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/erpnext",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng Frappe Cloud hoặc tự host bằng Docker theo tài liệu frappe_docker; cấu hình thử chỉ để đánh giá (bài không chép lệnh). Cần Docker, Docker Compose v2 và git. Miễn phí phần mềm; giấy phép lấy theo GitHub (GPL-3.0); Frappe Cloud trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/erpnext/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/frappe/erpnext/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "frappe/erpnext",
+        "stars": 40883,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md",
+        "readmeSha256": "c7d12496fddc6771a44d9c84dcaa6868eea52ef32aca5a6a68d5b59d88a7022b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 500,
+      "batch": 85,
+      "slug": "frappe-crm",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Frappe CRM: công cụ CRM mã nguồn mở đơn giản cho đội bán hàng, không giới hạn người dùng, có Kanban và tích hợp Twilio, WhatsApp, ERPNext; README nêu nhánh develop không ổn định",
+        "excerpt": "Hiểu Frappe CRM là công cụ CRM mã nguồn mở đơn giản, không giới hạn người dùng, với trang lead hoặc deal gộp mọi thông tin, bảng Kanban, góc nhìn tùy chỉnh và tích hợp gọi điện (Twilio, Exotel), WhatsApp, ERPNext. README có bảng tương thích và nêu nhánh develop là không ổn định (v2.x tương lai).",
+        "content": "<p>README mở đầu bằng khẩu hiệu 'Đơn giản hóa bán hàng, khuếch đại quan hệ'. Frappe CRM là công cụ CRM đơn giản, giá phải chăng, mã nguồn mở cho đội bán hàng hiện đại với số người dùng không giới hạn, xây để có trải nghiệm tốt. Động lực: nhu cầu giải pháp đơn giản, tùy biến, mã nguồn mở phù hợp doanh nghiệp, vì nhiều CRM hiện có quá phức tạp, quá chung chung hoặc gắn với bảng giá cao (theo README). Tính năng: giao diện dễ dùng và linh hoạt, trang lead hoặc deal gộp hoạt động, bình luận, ghi chú, nhiệm vụ, bảng Kanban kéo thả, góc nhìn tùy chỉnh với bộ lọc, sắp xếp, cột. Tích hợp: Twilio và Exotel để gọi và ghi âm cuộc gọi, WhatsApp qua gói Frappe WhatsApp, ERPNext cho hóa đơn và kế toán. Bên trong: Frappe Framework và Frappe UI. Bảng tương thích: nhánh main v1.x ổn định với Frappe và ERPNext v15 và v16; nhánh develop (v2.x tương lai) không ổn định. Mục sản xuất: dùng Frappe Cloud hoặc tự host bằng script easy-install (README đưa các lệnh tải script và chạy triển khai; bài không chép). Giấy phép lấy theo GitHub (AGPL-3.0); README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>CRM là sổ ghi chép khách hàng và cơ hội bán hàng. Frappe CRM cho đội nhỏ một bảng Kanban theo dõi từng khách hàng tiềm năng, kèm gọi điện và WhatsApp ngay trong ứng dụng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem bản demo trực tiếp và thử kéo thả một deal qua các giai đoạn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần tự host hoặc dùng Frappe Cloud, và cấu hình tích hợp gọi điện hay WhatsApp. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nêu nhánh develop không ổn định: dùng nhánh main cho sản xuất. Tích hợp Twilio, Exotel, WhatsApp có chi phí riêng và quy định riêng về liên hệ khách hàng. Dữ liệu khách hàng là dữ liệu cá nhân: cần tuân thủ luật. README phần đã đọc không nêu giấy phép; AGPL có điều kiện riêng. Frappe Cloud trả phí.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CRM</strong>: phần mềm quản lý quan hệ khách hàng và quy trình bán hàng; README nêu.</li><li><strong>lead / deal</strong>: khách hàng tiềm năng / cơ hội bán hàng đang theo đuổi; README nêu.</li><li><strong>Kanban</strong>: bảng các cột theo giai đoạn, kéo thả thẻ; README nêu.</li><li><strong>Twilio / Exotel</strong>: dịch vụ gọi điện qua phần mềm; README nêu tích hợp sẵn.</li><li><strong>AGPL</strong>: giấy phép mã nguồn mở có điều kiện chia sẻ lại; lấy theo GitHub.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng Frappe Cloud hoặc tự host bằng script easy-install (bài không chép lệnh). Cần máy chủ và phiên bản Frappe tương thích. Miễn phí phần mềm; giấy phép lấy theo GitHub (AGPL-3.0); tích hợp và Frappe Cloud có phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Thử bản demo trực tiếp.</li><li>Kiểm tra bảng tương thích phiên bản.</li><li>Dùng nhánh main cho môi trường thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần CRM đơn giản cho đội bán hàng nhỏ. Hãy đọc README của Frappe CRM (https://github.com/frappe/crm) và giải thích bằng tiếng Việt: các tính năng chính, bảng tương thích nghĩa là gì, và vì sao không dùng nhánh develop cho sản xuất. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>frappe</strong> có <strong>3.905 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/frappe/crm/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/frappe/crm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 500. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3905; repo_id 668199241; README SHA256 93af6b9746f3c4ccf045cac003cb612740e13b7c3f8328c66b5e9b6764864528.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/frappe/crm",
+          "repo_id": "668199241",
+          "source_path": "",
+          "source_revision": "README-SHA256:93af6b9746f3c4ccf045cac003cb612740e13b7c3f8328c66b5e9b6764864528",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/crm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng Frappe Cloud hoặc tự host bằng script easy-install (bài không chép lệnh). Cần máy chủ và phiên bản Frappe tương thích. Miễn phí phần mềm; giấy phép lấy theo GitHub (AGPL-3.0); tích hợp và Frappe Cloud có phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/crm/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/frappe/crm/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "frappe/crm",
+        "stars": 3905,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/frappe/crm/develop/README.md",
+        "readmeSha256": "93af6b9746f3c4ccf045cac003cb612740e13b7c3f8328c66b5e9b6764864528",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 501,
+      "batch": 85,
+      "slug": "dolibarr",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dolibarr ERP & CRM: bộ phần mềm mã nguồn mở viết bằng PHP quản lý liên hệ, báo giá, hóa đơn, đơn hàng, kho, nhân sự; có gói cài một cú nhấp cho Windows, Debian và Docker",
+        "excerpt": "Hiểu Dolibarr là bộ phần mềm ERP và CRM mã nguồn mở viết bằng PHP và JavaScript, dành cho doanh nghiệp nhỏ đến lớn, tổ chức và freelancer. README nêu nhiều cách cài (gói cho Windows DoliWamp, Debian, Docker, Easypanel, SaaS trả phí) và nói hỗ trợ nâng cấp từ mọi bản sau 2.8 (tuyên bố của README).",
+        "content": "<p>README tả Dolibarr ERP & CRM là bộ phần mềm hiện đại giúp quản lý hoạt động của tổ chức: liên hệ, báo giá, hóa đơn, đơn hàng, kho, lịch, nhân sự, quản lý nội dung, sản xuất. Là phần mềm mã nguồn mở viết bằng PHP kèm JavaScript, cho công ty nhỏ, vừa, lớn, tổ chức và freelancer; dùng độc lập hoặc như ứng dụng web qua Internet hay mạng nội bộ. Cộng đồng lớn, diễn đàn miễn phí và đối tác thương mại hỗ trợ. Giấy phép GPL phiên bản 3 trở lên theo README; có thư viện đi kèm theo giấy phép riêng. Mục cài đặt: gói dựng sẵn cho người ít kỹ thuật (DoliWamp cho Windows, DoliDeb cho Debian và Ubuntu, DoliRpm, Docker), cài từng bước chung cho người rành kỹ thuật (máy chủ web hỗ trợ PHP và cơ sở dữ liệu MariaDB, MySQL hoặc PostgreSQL; README hướng dẫn tải mã, đặt thư mục gốc, tạo tệp cấu hình rỗng cấp quyền ghi tạm thời rồi vào trang cài đặt trong trình duyệt; bài không chép lệnh), ảnh Docker, mẫu triển khai Easypanel một cú nhấp, và dịch vụ SaaS thương mại có phí. Mục nâng cấp: README nói hỗ trợ nâng cấp từ mọi bản sau 2.8 không hỏng, 'duy nhất trong hệ sinh thái ERP' (tuyên bố của README).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dolibarr là ERP và CRM 'nhẹ' hơn nhiều giải pháp khác, dùng PHP như WordPress nên nhiều hosting chạy được. Có gói cài sẵn cho Windows nếu bạn ít kỹ thuật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử bản gói DoliWamp trên máy cá nhân để xem các phân hệ với dữ liệu giả. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cài đặt có gói dựng sẵn nhưng cấu hình ERP và quy trình kế toán là việc lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'nâng cấp từ mọi bản sau 2.8 không hỏng, duy nhất trong hệ sinh thái' là của README. Cài đặt thủ công yêu cầu cấp quyền ghi cho máy chủ web lên tệp cấu hình (README nói sẽ gỡ sau khi cài xong): nhớ gỡ quyền đó. Dữ liệu kế toán và khách hàng nhạy cảm: bài không đánh giá phù hợp luật địa phương. Dịch vụ SaaS trả phí, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ERP / CRM</strong>: phần mềm quản lý doanh nghiệp / quan hệ khách hàng; README nêu.</li><li><strong>PHP</strong>: ngôn ngữ phía máy chủ quen thuộc của WordPress; README nêu Dolibarr viết bằng PHP.</li><li><strong>MariaDB / MySQL / PostgreSQL</strong>: các hệ cơ sở dữ liệu được hỗ trợ; README nêu.</li><li><strong>DoliWamp</strong>: gói cài Dolibarr cho Windows; README nêu.</li><li><strong>Easypanel</strong>: nền tảng triển khai Docker tự host; README nêu có mẫu một cú nhấp.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng gói (DoliWamp, DoliDeb, DoliRpm, Docker), cài từng bước trên máy chủ web hỗ trợ PHP với MariaDB, MySQL hoặc PostgreSQL, hoặc Easypanel, hoặc SaaS có phí (bài không chép lệnh). Miễn phí phần mềm theo giấy phép GPL-3+; SaaS trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục giới thiệu và cách cài bằng gói.</li><li>Thử trên máy cá nhân với dữ liệu giả.</li><li>Gỡ quyền ghi vào tệp cấu hình sau khi cài.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần ERP và CRM nhẹ cho doanh nghiệp nhỏ. Hãy đọc README của Dolibarr (https://github.com/Dolibarr/dolibarr) và giải thích bằng tiếng Việt: các cách cài, quyền ghi tệp cấu hình khi cài thủ công cần lưu ý gì, và tuyên bố về nâng cấp là của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 12 KB), bài chưa đọc tài liệu wiki.dolibarr.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Dolibarr</strong> có <strong>7.824 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-3.0; README mục LICENSE ghi GPL phiên bản 3 trở lên. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Dolibarr/dolibarr/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Dolibarr/dolibarr\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 501. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7824; repo_id 1957456; README SHA256 48b8c3ec01b01cca3dd9b8393a3bb92437af08fbdd2563aa80a796abae0b20e2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Dolibarr/dolibarr",
+          "repo_id": "1957456",
+          "source_path": "",
+          "source_revision": "README-SHA256:48b8c3ec01b01cca3dd9b8393a3bb92437af08fbdd2563aa80a796abae0b20e2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "gpl-3.0",
+                "name": "GNU General Public License v3.0",
+                "spdx_id": "GPL-3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "node_id": "MDc6TGljZW5zZTk="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Dolibarr/dolibarr",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng gói (DoliWamp, DoliDeb, DoliRpm, Docker), cài từng bước trên máy chủ web hỗ trợ PHP với MariaDB, MySQL hoặc PostgreSQL, hoặc Easypanel, hoặc SaaS có phí (bài không chép lệnh). Miễn phí phần mềm theo giấy phép GPL-3+; SaaS trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Dolibarr/dolibarr/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Dolibarr/dolibarr/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Dolibarr/dolibarr",
+        "stars": 7824,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Dolibarr/dolibarr/develop/README.md",
+        "readmeSha256": "48b8c3ec01b01cca3dd9b8393a3bb92437af08fbdd2563aa80a796abae0b20e2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 502,
+      "batch": 85,
+      "slug": "espocrm",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "EspoCRM: nền tảng CRM mã nguồn mở viết bằng PHP với giao diện một trang và REST API, tùy biến thực thể, trường, quan hệ; README nêu yêu cầu PHP 8.3–8.5",
+        "excerpt": "Hiểu EspoCRM là nền tảng CRM mã nguồn mở quản lý lead, liên hệ, cơ hội bán hàng, chiến dịch marketing, ticket hỗ trợ, với frontend một trang và backend REST API viết bằng PHP. README nêu yêu cầu PHP 8.3 đến 8.5, MySQL 8.0 trở lên, MariaDB 10.6 trở lên hoặc PostgreSQL 15 trở lên, và nhiều cách cài.",
+        "content": "<p>README tả EspoCRM là nền tảng CRM miễn phí mã nguồn mở giúp tổ chức xây dựng và duy trì quan hệ khách hàng, cung cấp công cụ lưu, tổ chức, quản lý lead, liên hệ, cơ hội bán hàng, chiến dịch marketing, vụ hỗ trợ. Kiến trúc: ứng dụng web với frontend dạng ứng dụng một trang và backend REST API viết bằng PHP. Có bản demo trực tuyến. Yêu cầu: PHP 8.3 đến 8.5; MySQL 8.0 trở lên hoặc MariaDB 10.6 trở lên; PostgreSQL 15 trở lên. Tải bản mới nhất từ trang chủ hoặc GitHub releases; có ghi chú phát hành và tài liệu cho quản trị viên, người dùng, nhà phát triển. Mục Why EspoCRM? (quan điểm của README): minh bạch mã nguồn, tự do tùy biến (tạo thực thể, trường, quan hệ, nút riêng), giao diện gọn nhanh, REST API đơn giản. Mục Who is it for? nêu từ startup, doanh nghiệp vừa và nhỏ đến tổ chức lớn, nhà phát triển, và ai cần CRM miễn phí hoặc tại chỗ. Cài đặt bản ổn định: thủ công, bằng script, Docker, Docker với Traefik (bài không chép lệnh). Giấy phép GNU AGPLv3 theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>EspoCRM giống CRM dạng PHP như nhiều WordPress plugin: chạy trên hosting có PHP và MySQL, giao diện nhanh và dễ tùy biến.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem bản demo trực tuyến rồi thử tạo một trường tùy chỉnh trong dữ liệu mẫu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần hosting hỗ trợ PHP và cơ sở dữ liệu; cấu hình quy trình bán hàng cần thời gian. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'giao diện gọn nhanh' và 'dễ học' là của README. Giấy phép AGPLv3 có điều kiện riêng khi cung cấp dịch vụ qua mạng. Dữ liệu khách hàng là dữ liệu cá nhân: cần tuân thủ luật và bảo mật. README không nêu giá các tiện ích mở rộng hay dịch vụ trả phí (nếu có), bài chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>CRM</strong>: phần mềm quản lý quan hệ khách hàng; README nêu.</li><li><strong>REST API</strong>: giao diện để kết nối ứng dụng khác; README nêu.</li><li><strong>single-page application (ứng dụng một trang)</strong>: giao diện không tải lại cả trang khi thao tác; README nêu.</li><li><strong>custom entity (thực thể tùy chỉnh)</strong>: loại dữ liệu bạn tự định nghĩa; README nêu.</li><li><strong>Traefik</strong>: công cụ điều hướng và HTTPS cho Docker; README nêu có hướng dẫn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản phát hành rồi cài thủ công, bằng script, Docker hoặc Docker với Traefik (bài không chép lệnh). Cần PHP 8.3–8.5 và MySQL, MariaDB hoặc PostgreSQL. Miễn phí theo giấy phép AGPLv3.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem bản demo trực tuyến.</li><li>Kiểm tra yêu cầu PHP và cơ sở dữ liệu.</li><li>Cài thử trên môi trường dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quen WordPress và PHP, muốn thử CRM tự host. Hãy đọc README của EspoCRM (https://github.com/espocrm/espocrm) và giải thích bằng tiếng Việt: yêu cầu hệ thống, các cách cài, và điều kiện của giấy phép AGPLv3. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn; bài chưa đọc tài liệu docs.espocrm.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>espocrm</strong> có <strong>3.543 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README mục License ghi GNU AGPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/espocrm/espocrm/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/espocrm/espocrm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 502. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3543; repo_id 24459441; README SHA256 7e3594c47d68d8410dd68441df06cd897877b0da21ac479a237ea1a61f9ac6ed.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/espocrm/espocrm",
+          "repo_id": "24459441",
+          "source_path": "",
+          "source_revision": "README-SHA256:7e3594c47d68d8410dd68441df06cd897877b0da21ac479a237ea1a61f9ac6ed",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/espocrm/espocrm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản phát hành rồi cài thủ công, bằng script, Docker hoặc Docker với Traefik (bài không chép lệnh). Cần PHP 8.3–8.5 và MySQL, MariaDB hoặc PostgreSQL. Miễn phí theo giấy phép AGPLv3.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/espocrm/espocrm/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/espocrm/espocrm/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "espocrm/espocrm",
+        "stars": 3543,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/espocrm/espocrm/master/README.md",
+        "readmeSha256": "7e3594c47d68d8410dd68441df06cd897877b0da21ac479a237ea1a61f9ac6ed",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 503,
+      "batch": 85,
+      "slug": "documenso",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Documenso: công cụ ký tài liệu mã nguồn mở thay thế DocuSign, tự host hoặc dùng dịch vụ; README nói không còn nhận pull request từ bên ngoài và nêu gói Enterprise",
+        "excerpt": "Hiểu Documenso là công cụ ký tài liệu số mã nguồn mở, nhắm làm lựa chọn thay thế DocuSign, có thể tự host để xem xét cách hoạt động. README nói không còn nhận pull request bên ngoài (trừ nhóm đóng góp tin cậy), nêu gói Enterprise và ngăn xếp công nghệ. Chữ ký điện tử có tính pháp lý phụ thuộc quốc gia, bài không đánh giá.",
+        "content": "<p>README tả Documenso là 'lựa chọn mã nguồn mở thay thế DocuSign' (cách nói của README). Mục About: ký tài liệu số nên nhanh và dễ; việc này dễ về kỹ thuật nhưng thêm một bên mới vào mọi chữ ký là nhà cung cấp công cụ ký; Documenso nhằm trở thành công cụ ký tài liệu đáng tin nhất thế giới, bằng cách cho bạn tự host và xem xét cách nó hoạt động bên trong (cách nói của README). Cộng đồng: thử bằng tự host hoặc đăng ký trên documenso.com, thảo luận, Discord. Mục đóng góp: README ghi không còn nhận pull request từ bên ngoài ngoại trừ nhóm đóng góp tin cậy được liên hệ trực tiếp; cách tốt nhất là mở issue chi tiết; vẫn giữ mã nguồn mở để đọc, kiểm tra, chạy và fork. Có liên hệ về gói Enterprise cho tổ chức lớn. Ngăn xếp: TypeScript, React Router v7, Hono, Prisma, Tailwind, shadcn/ui, react-email, tRPC, thư viện chữ ký PDF, pdf.js, Stripe cho thanh toán, Biome, Playwright; phát triển cục bộ cần Node.js 24 trở lên. Giấy phép AGPLv3 theo huy hiệu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ký hợp đồng bằng chữ ký điện tử thường qua một dịch vụ như DocuSign. Documenso cho phép bạn tự chạy dịch vụ ký, nhưng chữ ký điện tử có giá trị pháp lý hay không còn tùy luật từng nước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử dịch vụ đám mây với tài liệu mẫu, không phải hợp đồng thật, để xem luồng ký. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Tự host cần Node, cơ sở dữ liệu và kiến thức bảo mật; dùng thử trên đám mây dễ hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Giá trị pháp lý của chữ ký điện tử và yêu cầu chứng thực khác nhau theo quốc gia; bài không đánh giá. Tài liệu ký chứa thông tin nhạy cảm: bảo mật và sao lưu là trách nhiệm của bạn nếu tự host. 'Đáng tin nhất thế giới' là mục tiêu do README tuyên bố. README nói không nhận pull request bên ngoài. Dịch vụ đám mây và gói Enterprise có phí, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>e-signature (chữ ký điện tử)</strong>: ký tài liệu bằng phương tiện số; README nêu là chủ đề của sản phẩm.</li><li><strong>self-host (tự host)</strong>: tự chạy trên máy chủ của bạn; README nêu.</li><li><strong>DocuSign</strong>: dịch vụ ký tài liệu thương mại; README nêu là sản phẩm Documenso thay thế.</li><li><strong>AGPLv3</strong>: giấy phép mã nguồn mở có điều kiện chia sẻ lại; README có huy hiệu.</li><li><strong>Enterprise plan (gói doanh nghiệp)</strong>: gói trả phí cho tổ chức lớn; README nêu liên hệ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng dịch vụ trên documenso.com hoặc tự host (bài chưa đọc tài liệu nên không nêu lệnh). Phát triển cục bộ cần Node.js 24 trở lên. Miễn phí phần mềm theo giấy phép AGPLv3; dịch vụ và gói Enterprise có phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục About Documenso.</li><li>Thử dịch vụ với tài liệu mẫu.</li><li>Tìm hiểu quy định chữ ký điện tử tại nơi bạn kinh doanh.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dùng chữ ký điện tử. Hãy đọc README của Documenso (https://github.com/documenso/documenso) và giải thích bằng tiếng Việt: Documenso làm gì, vì sao README nói không nhận pull request bên ngoài, và vì sao cần kiểm tra quy định pháp lý về chữ ký điện tử. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 12,5 KB), phần lớn là ngăn xếp và hướng dẫn phát triển; bài chưa đọc tài liệu docs.documenso.com. Bài chưa thử và không đánh giá pháp lý.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>documenso</strong> có <strong>15.636 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README có huy hiệu AGPLv3. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/documenso/documenso/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/documenso/documenso\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 503. Chưa cài/chạy thử; không tạo validation. Snapshot sao 15636; repo_id 613010835; README SHA256 e4c101ce290f8819a4414964da83caad5be887e70be9d45a4b288b848adb41f2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/documenso/documenso",
+          "repo_id": "613010835",
+          "source_path": "",
+          "source_revision": "README-SHA256:e4c101ce290f8819a4414964da83caad5be887e70be9d45a4b288b848adb41f2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/documenso/documenso",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng dịch vụ trên documenso.com hoặc tự host (bài chưa đọc tài liệu nên không nêu lệnh). Phát triển cục bộ cần Node.js 24 trở lên. Miễn phí phần mềm theo giấy phép AGPLv3; dịch vụ và gói Enterprise có phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/documenso/documenso/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/documenso/documenso/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "documenso/documenso",
+        "stars": 15636,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/documenso/documenso/main/README.md",
+        "readmeSha256": "e4c101ce290f8819a4414964da83caad5be887e70be9d45a4b288b848adb41f2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 504,
+      "batch": 85,
+      "slug": "frappe-helpdesk",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Frappe Helpdesk: công cụ quản lý ticket hỗ trợ khách hàng mã nguồn mở 100%, có cổng cho nhân viên và khách, SLA, quy tắc phân công, cơ sở tri thức",
+        "excerpt": "Hiểu Frappe Helpdesk là công cụ quản lý ticket hỗ trợ khách hàng mã nguồn mở, có cổng riêng cho nhân viên và khách hàng, SLA tùy chỉnh, quy tắc tự phân công, cơ sở tri thức và câu trả lời lưu sẵn. README hướng dẫn tự host bằng script easy-install và dùng Frappe Cloud.",
+        "content": "<p>README tả Frappe Helpdesk là công cụ quản lý ticket mã nguồn mở 100% giúp tinh gọn hỗ trợ của công ty, dễ cài, giao diện sạch và công cụ tự động hóa để giải quyết thắc mắc khách hàng. Động lực: trước đây dùng mô-đun hỗ trợ của ERPNext nhưng giao diện và trải nghiệm không tốt, nên muốn một công cụ dễ tích hợp. Tính năng chính: cổng cho nhân viên và khách hàng, SLA tùy chỉnh, quy tắc phân công tự động theo mức ưu tiên, loại vấn đề hoặc khối lượng việc, cơ sở tri thức để khách tự giải quyết, câu trả lời lưu sẵn, phân tích thời gian phản hồi. Bên trong: Frappe Framework và Frappe UI. Mục Production Setup: dùng Frappe Cloud hoặc tự host bằng script easy-install (README đưa lệnh tải script và triển khai với các tham số email, ảnh, phiên bản, tên site; bài không chép). Giấy phép lấy theo GitHub (AGPL-3.0); README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi khách hàng gửi câu hỏi qua email hay form, Helpdesk biến mỗi câu hỏi thành một ticket có người phụ trách, hạn trả lời và bài hướng dẫn gợi ý. Dùng cho đội hỗ trợ khách hàng nhỏ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng bản demo hoặc Frappe Cloud để thử tạo ticket và quy tắc phân công. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Chủ doanh nghiệp nhỏ, freelancer hoặc người làm marketing muốn tự host công cụ quản lý khách hàng, hóa đơn và cộng tác.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần tự host hoặc Frappe Cloud và cấu hình email, SLA, quy tắc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tự host cần email hợp lệ và tên miền; cấu hình sai có thể làm mất thư của khách. Dữ liệu ticket chứa thông tin cá nhân khách hàng: cần bảo mật và tuân thủ luật. Frappe Cloud trả phí, bài chưa kiểm tra giá. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>ticket</strong>: một yêu cầu hỗ trợ được theo dõi từ lúc nhận đến khi xử lý xong.</li><li><strong>SLA</strong>: cam kết thời gian phản hồi và xử lý; README nêu SLA tùy chỉnh.</li><li><strong>assignment rule (quy tắc phân công)</strong>: tự giao ticket cho người phù hợp; README nêu.</li><li><strong>knowledge base (cơ sở tri thức)</strong>: bài hướng dẫn để khách tự giải quyết; README nêu.</li><li><strong>saved reply (câu trả lời lưu sẵn)</strong>: mẫu trả lời cho câu hỏi thường gặp; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng Frappe Cloud hoặc tự host bằng script easy-install (bài không chép lệnh). Cần máy chủ, tên miền và email. Miễn phí phần mềm; giấy phép lấy theo GitHub (AGPL-3.0); Frappe Cloud trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Motivation và Key Features.</li><li>Thử trên Frappe Cloud hoặc môi trường thử.</li><li>Cấu hình SLA và quy tắc phân công với dữ liệu mẫu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn quản lý yêu cầu hỗ trợ khách hàng. Hãy đọc README của Frappe Helpdesk (https://github.com/frappe/helpdesk) và giải thích bằng tiếng Việt: ticket và SLA là gì, các tính năng chính, và lưu ý khi tự host liên quan email. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa đọc tài liệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Phần mềm kinh doanh tự host chứa dữ liệu khách hàng, hóa đơn, nhân sự và chữ ký: chỉ chạy trên máy chủ bạn bảo mật được, đổi mật khẩu mặc định, sao lưu đều, tuân thủ luật về dữ liệu cá nhân và chữ ký điện tử ở nơi bạn kinh doanh, và thử bằng dữ liệu giả trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>frappe</strong> có <strong>3.475 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện AGPL-3.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/frappe/helpdesk/blob/develop/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/frappe/helpdesk\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 504. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3475; repo_id 419635982; README SHA256 242abb8c5945bd7fb4e6ead1d03e78eb19eb859f0987ef442dbf46e89d50fa7d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/frappe/helpdesk",
+          "repo_id": "419635982",
+          "source_path": "",
+          "source_revision": "README-SHA256:242abb8c5945bd7fb4e6ead1d03e78eb19eb859f0987ef442dbf46e89d50fa7d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "agpl-3.0",
+                "name": "GNU Affero General Public License v3.0",
+                "spdx_id": "AGPL-3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "node_id": "MDc6TGljZW5zZTE="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/helpdesk",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng Frappe Cloud hoặc tự host bằng script easy-install (bài không chép lệnh). Cần máy chủ, tên miền và email. Miễn phí phần mềm; giấy phép lấy theo GitHub (AGPL-3.0); Frappe Cloud trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/frappe/helpdesk/blob/develop/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/frappe/helpdesk/blob/develop/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "frappe/helpdesk",
+        "stars": 3475,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/frappe/helpdesk/develop/README.md",
+        "readmeSha256": "242abb8c5945bd7fb4e6ead1d03e78eb19eb859f0987ef442dbf46e89d50fa7d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

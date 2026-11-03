@@ -1,0 +1,43 @@
+{
+  "key": 499,
+  "repo": "frappe/erpnext",
+  "repoId": "1864233",
+  "url": "https://github.com/frappe/erpnext",
+  "stars": 40883,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:36:57Z",
+  "createdAt": "2011-06-08T08:20:56Z",
+  "defaultBranch": "develop",
+  "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+  "homepage": "https://frappe.io/erpnext",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/frappe/erpnext/develop/README.md",
+    "sha256": "c7d12496fddc6771a44d9c84dcaa6868eea52ef32aca5a6a68d5b59d88a7022b",
+    "bytes": 7442,
+    "sectionsRead": [
+      "Motivation",
+      "Key Features",
+      "Under the Hood",
+      "Production Setup",
+      "Try on your environment"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Phù hợp luật kế toán Việt Nam chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

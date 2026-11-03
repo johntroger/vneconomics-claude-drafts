@@ -1,0 +1,42 @@
+{
+  "key": 501,
+  "repo": "Dolibarr/dolibarr",
+  "repoId": "1957456",
+  "url": "https://github.com/Dolibarr/dolibarr",
+  "stars": 7824,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "gpl-3.0",
+    "name": "GNU General Public License v3.0",
+    "spdx_id": "GPL-3.0",
+    "url": "https://api.github.com/licenses/gpl-3.0",
+    "node_id": "MDc6TGljZW5zZTk="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:21:28Z",
+  "createdAt": "2011-06-26T21:55:03Z",
+  "defaultBranch": "develop",
+  "description": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
+  "homepage": "https://www.dolibarr.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Dolibarr/dolibarr/develop/README.md",
+    "sha256": "48b8c3ec01b01cca3dd9b8393a3bb92437af08fbdd2563aa80a796abae0b20e2",
+    "bytes": 11681,
+    "sectionsRead": [
+      "Giới thiệu",
+      "LICENSE",
+      "INSTALLING",
+      "UPGRADING"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu wiki.dolibarr.org.",
+    "Chưa thử.",
+    "Phù hợp luật kế toán Việt Nam chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

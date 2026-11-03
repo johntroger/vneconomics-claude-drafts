@@ -1,0 +1,43 @@
+{
+  "key": 504,
+  "repo": "frappe/helpdesk",
+  "repoId": "419635982",
+  "url": "https://github.com/frappe/helpdesk",
+  "stars": 3475,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "agpl-3.0",
+    "name": "GNU Affero General Public License v3.0",
+    "spdx_id": "AGPL-3.0",
+    "url": "https://api.github.com/licenses/agpl-3.0",
+    "node_id": "MDc6TGljZW5zZTE="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:08:21Z",
+  "createdAt": "2021-10-21T08:09:51Z",
+  "defaultBranch": "develop",
+  "description": "Modern, Streamlined, Free and Open Source Customer Service Software",
+  "homepage": "https://frappe.io/helpdesk",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/frappe/helpdesk/develop/README.md",
+    "sha256": "242abb8c5945bd7fb4e6ead1d03e78eb19eb859f0987ef442dbf46e89d50fa7d",
+    "bytes": 9723,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Motivation",
+      "Key Features",
+      "Under the Hood",
+      "Production Setup"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Giá Frappe Cloud chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

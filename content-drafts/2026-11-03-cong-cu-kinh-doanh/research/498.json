@@ -1,0 +1,42 @@
+{
+  "key": 498,
+  "repo": "zulip/zulip",
+  "repoId": "43160685",
+  "url": "https://github.com/zulip/zulip",
+  "stars": 26161,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:18:19Z",
+  "createdAt": "2015-09-25T16:37:25Z",
+  "defaultBranch": "main",
+  "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused.",
+  "homepage": "https://zulip.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/zulip/zulip/main/README.md",
+    "sha256": "797053375431ea51df3c156d114ab7fbfdbe8398a0bb8a2d2dc076612b70f34b",
+    "bytes": 4869,
+    "sectionsRead": [
+      "Zulip overview",
+      "Getting started",
+      "Running a Zulip server",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu zulip.com.",
+    "Chưa thử.",
+    "Giá Zulip Cloud chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

@@ -7509,5 +7509,171 @@
   "related": [
    "motion"
   ]
+ },
+ {
+  "key": 498,
+  "slug": "zulip",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "Zulip: ứng dụng chat nhóm mã nguồn mở với luồng hội thoại theo chủ đề (topic) kết hợp ưu điểm của email và chat, tự host hoặc dùng bản đám mây",
+  "repo": "zulip/zulip",
+  "stars": 26161,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "espocrm"
+  ]
+ },
+ {
+  "key": 499,
+  "slug": "erpnext",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "ERPNext: hệ thống ERP mã nguồn mở 100% quản lý kế toán, đơn hàng, sản xuất, tài sản, dự án; README chỉ dẫn demo dùng một lần và dịch vụ Frappe Cloud",
+  "repo": "frappe/erpnext",
+  "stars": 40883,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "documenso"
+  ]
+ },
+ {
+  "key": 500,
+  "slug": "frappe-crm",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "Frappe CRM: công cụ CRM mã nguồn mở đơn giản cho đội bán hàng, không giới hạn người dùng, có Kanban và tích hợp Twilio, WhatsApp, ERPNext; README nêu nhánh develop không ổn định",
+  "repo": "frappe/crm",
+  "stars": 3905,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "espocrm",
+   "frappe-helpdesk"
+  ]
+ },
+ {
+  "key": 501,
+  "slug": "dolibarr",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "Dolibarr ERP & CRM: bộ phần mềm mã nguồn mở viết bằng PHP quản lý liên hệ, báo giá, hóa đơn, đơn hàng, kho, nhân sự; có gói cài một cú nhấp cho Windows, Debian và Docker",
+  "repo": "Dolibarr/dolibarr",
+  "stars": 7824,
+  "license": {
+   "key": "gpl-3.0",
+   "name": "GNU General Public License v3.0",
+   "spdx_id": "GPL-3.0",
+   "url": "https://api.github.com/licenses/gpl-3.0",
+   "node_id": "MDc6TGljZW5zZTk="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "documenso",
+   "frappe-helpdesk"
+  ]
+ },
+ {
+  "key": 502,
+  "slug": "espocrm",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "EspoCRM: nền tảng CRM mã nguồn mở viết bằng PHP với giao diện một trang và REST API, tùy biến thực thể, trường, quan hệ; README nêu yêu cầu PHP 8.3–8.5",
+  "repo": "espocrm/espocrm",
+  "stars": 3543,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "frappe-crm",
+   "zulip"
+  ]
+ },
+ {
+  "key": 503,
+  "slug": "documenso",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "Documenso: công cụ ký tài liệu mã nguồn mở thay thế DocuSign, tự host hoặc dùng dịch vụ; README nói không còn nhận pull request từ bên ngoài và nêu gói Enterprise",
+  "repo": "documenso/documenso",
+  "stars": 15636,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "dolibarr",
+   "erpnext"
+  ]
+ },
+ {
+  "key": 504,
+  "slug": "frappe-helpdesk",
+  "group": "2026-11-03-cong-cu-kinh-doanh",
+  "title": "Frappe Helpdesk: công cụ quản lý ticket hỗ trợ khách hàng mã nguồn mở 100%, có cổng cho nhân viên và khách, SLA, quy tắc phân công, cơ sở tri thức",
+  "repo": "frappe/helpdesk",
+  "stars": 3475,
+  "license": {
+   "key": "agpl-3.0",
+   "name": "GNU Affero General Public License v3.0",
+   "spdx_id": "AGPL-3.0",
+   "url": "https://api.github.com/licenses/agpl-3.0",
+   "node_id": "MDc6TGljZW5zZTE="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "dolibarr",
+   "frappe-crm"
+  ]
  }
 ]
