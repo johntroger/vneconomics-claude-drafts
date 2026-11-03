@@ -5415,5 +5415,129 @@
    "helmet",
    "zaproxy"
   ]
+ },
+ {
+  "key": 406,
+  "slug": "react-router",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "React Router: bộ định tuyến đa chiến lược cho React, dùng như framework đầy đủ hay thư viện tối giản",
+  "repo": "remix-run/react-router",
+  "stars": 56631,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "sveltekit"
+  ]
+ },
+ {
+  "key": 407,
+  "slug": "sveltekit",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "SvelteKit: framework dựng ứng dụng web trên Svelte, có các bộ điều hợp (adapter) cho nhiều nền tảng triển khai",
+  "repo": "sveltejs/kit",
+  "stars": 20895,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "nuxt",
+   "react-router"
+  ]
+ },
+ {
+  "key": 408,
+  "slug": "nuxt",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "Nuxt: framework mã nguồn mở dựng ứng dụng toàn diện với Vue.js, có kết xuất phía máy chủ, định tuyến tự động và hơn 300 mô-đun",
+  "repo": "nuxt/nuxt",
+  "stars": 61033,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "angular",
+   "sveltekit"
+  ]
+ },
+ {
+  "key": 409,
+  "slug": "angular",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "Angular: nền tảng phát triển ứng dụng web và di động bằng TypeScript hay JavaScript, README là tổng quan tài liệu",
+  "repo": "angular/angular",
+  "stars": 101099,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "nuxt",
+   "qwik"
+  ]
+ },
+ {
+  "key": 410,
+  "slug": "qwik",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "Qwik: framework tải trang gần như không cần JavaScript và 'tiếp tục' từ máy chủ; README ghi nhánh main là Qwik v2 đang beta",
+  "repo": "QwikDev/qwik",
+  "stars": 22070,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "angular",
+   "echo"
+  ]
+ },
+ {
+  "key": 411,
+  "slug": "fiber",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "Fiber: framework web Go lấy cảm hứng từ Express, README nêu yêu cầu Go 1.26 và hạn chế do dùng unsafe",
+  "repo": "gofiber/fiber",
+  "stars": 40240,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "echo"
+  ]
+ },
+ {
+  "key": 412,
+  "slug": "echo",
+  "group": "2026-11-03-meta-framework-web",
+  "title": "Echo: framework web Go xây trên net/http với bộ định tuyến cây radix, nhóm route và middleware; có thư viện Echo Pro thương mại riêng",
+  "repo": "labstack/echo",
+  "stars": 32786,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-30",
+  "related": [
+   "fiber",
+   "qwik"
+  ]
  }
 ]

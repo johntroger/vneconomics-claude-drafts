@@ -50,6 +50,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 48 — Framework web phía máy chủ](learning-paths/48-framework-web-may-chu.vi.md) — Từ framework trọn gói đến framework nhẹ cho API; README nhiều dự án rất ngắn nên cần đọc tài liệu chính thức.
 - [Lộ trình 49 — ORM, thư viện giao diện React và công cụ thử giao diện](learning-paths/49-orm-va-thu-vien-giao-dien.vi.md) — Lưu dữ liệu bằng ORM, dựng giao diện bằng thư viện thành phần, thử thành phần và giả lập API; chú ý phiên bản và tình trạng bảo trì.
 - [Lộ trình 50 — Bảo mật web và đăng nhập](learning-paths/50-bao-mat-web-va-dang-nhap.vi.md) — Tăng bảo mật bằng tiêu đề HTTP, kiểm tra bằng công cụ quét và hướng dẫn chuẩn, xử lý token và đăng nhập; chỉ thử trên hệ thống của bạn.
+- [Lộ trình 51 — Meta-framework web và framework Go](learning-paths/51-meta-framework-web.vi.md) — Từ bộ định tuyến đến framework dựng ứng dụng toàn diện trên React, Svelte, Vue, Angular, Qwik, và hai framework API Go; chú ý phiên bản và nhánh beta.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -105,7 +106,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (129 bài)
+### Cơ bản (134 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -238,6 +239,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 396 | Material UI (MUI): thư viện thành phần React theo Material Design, được mở rộng bởi gói MUI X cho thành phần phức tạp | [mui/material-ui](https://github.com/mui/material-ui) | MIT | 99297 | orm-va-thu-vien-giao-dien |
 | 397 | Ant Design: ngôn ngữ thiết kế cấp doanh nghiệp và thư viện thành phần React, viết bằng TypeScript, hỗ trợ nhiều ngôn ngữ | [ant-design/ant-design](https://github.com/ant-design/ant-design) | MIT | 100052 | orm-va-thu-vien-giao-dien |
 | 400 | Helmet: middleware giúp bảo mật ứng dụng Node/Express bằng cách đặt các tiêu đề phản hồi HTTP như CSP và HSTS | [helmetjs/helmet](https://github.com/helmetjs/helmet) | MIT | 10744 | bao-mat-web-va-dang-nhap |
+| 406 | React Router: bộ định tuyến đa chiến lược cho React, dùng như framework đầy đủ hay thư viện tối giản | [remix-run/react-router](https://github.com/remix-run/react-router) | MIT | 56631 | meta-framework-web |
+| 407 | SvelteKit: framework dựng ứng dụng web trên Svelte, có các bộ điều hợp (adapter) cho nhiều nền tảng triển khai | [sveltejs/kit](https://github.com/sveltejs/kit) | MIT | 20895 | meta-framework-web |
+| 408 | Nuxt: framework mã nguồn mở dựng ứng dụng toàn diện với Vue.js, có kết xuất phía máy chủ, định tuyến tự động và hơn 300 mô-đun | [nuxt/nuxt](https://github.com/nuxt/nuxt) | MIT | 61033 | meta-framework-web |
+| 411 | Fiber: framework web Go lấy cảm hứng từ Express, README nêu yêu cầu Go 1.26 và hạn chế do dùng unsafe | [gofiber/fiber](https://github.com/gofiber/fiber) | MIT | 40240 | meta-framework-web |
+| 412 | Echo: framework web Go xây trên net/http với bộ định tuyến cây radix, nhóm route và middleware; có thư viện Echo Pro thương mại riêng | [labstack/echo](https://github.com/labstack/echo) | MIT | 32786 | meta-framework-web |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -281,7 +287,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (95 bài)
+### Nâng cao (97 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -380,6 +386,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 402 | jose: mô-đun JavaScript cho JWT, JWS, JWE và JWK, không phụ thuộc gói khác, chạy trên nhiều môi trường | [panva/jose](https://github.com/panva/jose) | MIT | 7863 | bao-mat-web-va-dang-nhap |
 | 403 | Better Auth: khung xác thực và phân quyền cho TypeScript, không gắn với một framework, có hệ plugin | [better-auth/better-auth](https://github.com/better-auth/better-auth) | MIT | 30558 | bao-mat-web-va-dang-nhap |
 | 404 | Keycloak: hệ thống quản lý danh tính và truy cập mã nguồn mở, thêm đăng nhập cho ứng dụng mà không tự lưu người dùng | [keycloak/keycloak](https://github.com/keycloak/keycloak) | Apache-2.0 | 37666 | bao-mat-web-va-dang-nhap |
+| 409 | Angular: nền tảng phát triển ứng dụng web và di động bằng TypeScript hay JavaScript, README là tổng quan tài liệu | [angular/angular](https://github.com/angular/angular) | MIT | 101099 | meta-framework-web |
+| 410 | Qwik: framework tải trang gần như không cần JavaScript và 'tiếp tục' từ máy chủ; README ghi nhánh main là Qwik v2 đang beta | [QwikDev/qwik](https://github.com/QwikDev/qwik) | MIT | 22070 | meta-framework-web |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
