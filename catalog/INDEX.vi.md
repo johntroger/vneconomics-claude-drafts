@@ -6,13 +6,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 1 — Bắt đầu từ con số 0](learning-paths/01-bat-dau-tu-con-so-0.vi.md) — Dành cho người chưa biết lập trình nhưng muốn hiểu mã AI viết và tự dựng ứng dụng đầu tiên.
 - [Lộ trình 2 — Vibe code có kỷ luật](learning-paths/02-vibe-code-co-ky-luat.vi.md) — Cho người đã dùng coding agent và muốn giảm tình trạng AI làm sai ý, làm rối mã.
 - [Lộ trình 3 — Từ ý tưởng đến website chạy thật](learning-paths/03-tu-y-tuong-den-website-chay-that.vi.md) — Cho người đã có bản mẫu và muốn thêm đăng nhập, dữ liệu và đưa lên mạng.
+- [Lộ trình 7 — Đọc hiểu mã web do AI dựng](learning-paths/07-doc-hieu-ma-web-do-ai-dung.vi.md) — Giải mã các tên công nghệ thường xuất hiện trong dự án web do AI tạo: để biết mình đang nhìn thấy gì.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (13 bài)
+### Bắt đầu (15 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -29,8 +30,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 128 | Front-End Checklist: danh sách kiểm tra chất lượng giao diện web cho người và AI | [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) | MIT | 74638 | hoc-nen-tang |
 | 132 | Awesome DESIGN.md: tệp mô tả phong cách giao diện để AI dựng trang nhất quán | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | MIT | 125300 | vibe-coding-thuc-hanh |
 | 141 | OWASP Cheat Sheet Series: bảng tóm tắt bảo mật ứng dụng ngắn gọn cho người xây dựng | [OWASP/CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) | CC-BY-SA-4.0 | 33853 | bao-mat-co-ban |
+| 145 | Tailwind CSS: cách tạo kiểu giao diện bằng các lớp ngắn mà mã AI hay dùng | [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | MIT | 98054 | cong-nghe-web-ai-hay-dung |
+| 146 | Vite: công cụ chạy thử và đóng gói dự án web nhanh, nền của nhiều dự án AI dựng | [vitejs/vite](https://github.com/vitejs/vite) | MIT | 83681 | cong-nghe-web-ai-hay-dung |
 
-### Cơ bản (16 bài)
+### Cơ bản (22 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -50,8 +53,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 139 | Trivy: một công cụ quét lỗ hổng, cấu hình sai và bí mật cho ứng dụng và container | [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | Apache-2.0 | 38919 | bao-mat-co-ban |
 | 140 | OSV-Scanner: kiểm tra thư viện bạn dùng có lỗ hổng đã được công bố không | [google/osv-scanner](https://github.com/google/osv-scanner) | Apache-2.0 | 11370 | bao-mat-co-ban |
 | 142 | dotenvx: mã hóa tệp .env để quản lý biến môi trường an toàn hơn | [dotenvx/dotenvx](https://github.com/dotenvx/dotenvx) | BSD-3-Clause | 5871 | bao-mat-co-ban |
+| 144 | Next.js: framework web full-stack mà AI hay chọn khi dựng ứng dụng bằng React | [vercel/next.js](https://github.com/vercel/next.js) | MIT | 143238 | cong-nghe-web-ai-hay-dung |
+| 147 | TypeScript: lớp kiểm tra kiểu giúp bắt lỗi trong mã JavaScript do AI viết | [microsoft/TypeScript](https://github.com/microsoft/TypeScript) | Apache-2.0 | 111723 | cong-nghe-web-ai-hay-dung |
+| 148 | Playwright: tự động kiểm thử và điều khiển trình duyệt, cả cho coding agent | [microsoft/playwright](https://github.com/microsoft/playwright) | Apache-2.0 | 99145 | cong-nghe-web-ai-hay-dung |
+| 149 | Astro: framework cho website nội dung (blog, giới thiệu, tài liệu) tải nhanh | [withastro/astro](https://github.com/withastro/astro) | NOASSERTION | 63680 | cong-nghe-web-ai-hay-dung |
+| 150 | Zod: kiểm tra dữ liệu từ bên ngoài có đúng dạng mong đợi, thường gặp trong mã TypeScript | [colinhacks/zod](https://github.com/colinhacks/zod) | MIT | 44246 | cong-nghe-web-ai-hay-dung |
+| 152 | Vitest: viết bài kiểm thử nhỏ để biết mã AI viết có chạy đúng không | [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | MIT | 17322 | cong-nghe-web-ai-hay-dung |
 
-### Khá khó (cần nền kỹ thuật) (10 bài)
+### Khá khó (cần nền kỹ thuật) (11 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -65,6 +74,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 135 | OpenDesign: không gian cộng tác để AI tạo bản mẫu thiết kế theo hệ thống của bạn | [nexu-io/open-design](https://github.com/nexu-io/open-design) | Apache-2.0 | 105573 | vibe-coding-thuc-hanh |
 | 137 | TruffleHog: tìm khóa rò rỉ và kiểm tra khóa nào còn dùng được | [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | AGPL-3.0 | 28822 | bao-mat-co-ban |
 | 143 | Infisical: nền tảng mã nguồn mở để quản lý bí mật, chứng chỉ và quyền truy cập | [Infisical/infisical](https://github.com/Infisical/infisical) | NOASSERTION | 30227 | bao-mat-co-ban |
+| 151 | Drizzle ORM: nói chuyện với cơ sở dữ liệu bằng TypeScript theo kiểu gần với SQL | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | Apache-2.0 | 36207 | cong-nghe-web-ai-hay-dung |
 
 ### Nâng cao (4 bài)
 

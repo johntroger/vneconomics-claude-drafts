@@ -1,0 +1,38 @@
+{
+  "key": 146,
+  "repo": "vitejs/vite",
+  "repoId": "257485422",
+  "url": "https://github.com/vitejs/vite",
+  "stars": 83681,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T09:23:48Z",
+  "createdAt": "2020-04-21T05:03:57Z",
+  "defaultBranch": "main",
+  "description": "Next generation frontend tooling. It's fast!",
+  "homepage": "http://vite.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vitejs/vite/main/README.md",
+    "sha256": "588718673f32a3691b8e75b93fb4c2f8e8bc9a6dc0bf61794ba7b6c006594111",
+    "bytes": 3416,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Packages",
+      "License",
+      "Hướng dẫn (tài liệu)"
+    ]
+  },
+  "docsRead": [
+    "https://vite.dev/guide/"
+  ],
+  "unknowns": [
+    "Chưa đọc tài liệu cấu hình chi tiết.",
+    "Chưa so sánh với công cụ build khác.",
+    "Yêu cầu Node.js sẽ đổi theo thời gian."
+  ],
+  "runtimeValidated": false
+}

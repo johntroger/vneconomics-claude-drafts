@@ -1,0 +1,36 @@
+{
+  "key": 147,
+  "repo": "microsoft/TypeScript",
+  "repoId": "20929025",
+  "url": "https://github.com/microsoft/TypeScript",
+  "stars": 111723,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:18:30Z",
+  "createdAt": "2014-06-17T15:28:39Z",
+  "defaultBranch": "main",
+  "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+  "homepage": "https://www.typescriptlang.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/TypeScript/main/README.md",
+    "sha256": "b43867a1a978a0a3d881b91e50e9807f1f56e3f1dd54d65cad43f471c84e0036",
+    "bytes": 2741,
+    "sectionsRead": [
+      "README (Installing, Documentation)",
+      "TypeScript in 5 minutes (tài liệu)"
+    ]
+  },
+  "docsRead": [
+    "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+  ],
+  "unknowns": [
+    "Chưa đọc Handbook đầy đủ.",
+    "Bước biên dịch chưa được đọc.",
+    "Chưa so sánh các chế độ nghiêm ngặt."
+  ],
+  "runtimeValidated": false
+}

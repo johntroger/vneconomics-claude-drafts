@@ -14,5 +14,9 @@ Cho người đã dùng coding agent và muốn giảm tình trạng AI làm sai
    Repo: [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) · Bản nháp: `content-drafts/2026-11-03-vibe-coding-thuc-hanh/content.json`
 5. **Understand Anything: biến một dự án code thành sơ đồ tri thức để hiểu nhanh** (key 133, độ khó: Trung bình) — Hiểu cấu trúc dự án qua sơ đồ trước khi sửa.  
    Repo: [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) · Bản nháp: `content-drafts/2026-11-03-vibe-coding-thuc-hanh/content.json`
-6. **Front-End Checklist: danh sách kiểm tra chất lượng giao diện web cho người và AI** (key 128, độ khó: Dễ để đọc, trung bình để áp dụng) — Danh sách kiểm tra giao diện trước khi đưa lên mạng.  
+6. **Vitest: viết bài kiểm thử nhỏ để biết mã AI viết có chạy đúng không** (key 152, độ khó: Trung bình) — Viết kiểm thử nhỏ để biết mã AI sửa có làm hỏng thứ đã đúng không.  
+   Repo: [vitest-dev/vitest](https://github.com/vitest-dev/vitest) · Bản nháp: `content-drafts/2026-11-03-cong-nghe-web-ai-hay-dung/content.json`
+7. **Playwright: tự động kiểm thử và điều khiển trình duyệt, cả cho coding agent** (key 148, độ khó: Trung bình) — Kiểm thử cả luồng người dùng trên trình duyệt thật.  
+   Repo: [microsoft/playwright](https://github.com/microsoft/playwright) · Bản nháp: `content-drafts/2026-11-03-cong-nghe-web-ai-hay-dung/content.json`
+8. **Front-End Checklist: danh sách kiểm tra chất lượng giao diện web cho người và AI** (key 128, độ khó: Dễ để đọc, trung bình để áp dụng) — Danh sách kiểm tra giao diện trước khi đưa lên mạng.  
    Repo: [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) · Bản nháp: `content-drafts/2026-11-03-hoc-nen-tang/content.json`

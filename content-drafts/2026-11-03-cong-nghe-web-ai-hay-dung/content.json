@@ -1,0 +1,935 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-cong-nghe-web",
+  "batch": 25,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 144,
+      "batch": 25,
+      "slug": "nextjs",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Next.js: framework web full-stack mà AI hay chọn khi dựng ứng dụng bằng React",
+        "excerpt": "Hiểu Next.js là gì, nó thêm gì lên trên React và vì sao mã do AI sinh ra thường dùng nó. Cần biết HTML, CSS, JavaScript và React ở mức cơ bản.",
+        "content": "<p>Next.js là framework React để xây ứng dụng web full-stack. Theo trang tài liệu, bạn dựng giao diện bằng các thành phần React còn Next.js lo thêm các tính năng và tối ưu, tự cấu hình các công cụ bên dưới như trình đóng gói và trình biên dịch. README gói của Next.js nói nó mở rộng các tính năng React mới nhất và tích hợp công cụ JavaScript viết bằng Rust để build nhanh. Tài liệu có hai bộ định tuyến: App Router (mới hơn, hỗ trợ React Server Components) và Pages Router (bản gốc, vẫn được hỗ trợ).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>React giống bộ gạch xây giao diện; Next.js giống cả công trường có sẵn móng, đường dẫn nước và điện: bạn xây ngôi nhà (ứng dụng) mà không phải tự lo từng thứ hạ tầng. Vì vậy khi nhờ AI 'làm website', nó hay chọn Next.js làm công trường.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi mở một dự án do AI tạo và thấy thư mục app hay pages cùng tệp next.config, bạn biết đó là dự án Next.js và biết cần đọc tài liệu về App Router. Đây là gợi ý để nhận biết, chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code web; người muốn hiểu cấu trúc dự án mà AI hay dựng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Tài liệu nói rõ kiến thức cần có trước: HTML, CSS, JavaScript và React; có khóa React Foundations và Next.js Foundations để học. Người chưa biết React sẽ thấy khó khi sửa mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần một trang tĩnh nội dung (blog, giới thiệu), một công cụ nhẹ hơn như Astro trong cùng nhóm bài có thể đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>React</strong>: thư viện dựng giao diện bằng các thành phần; Next.js xây trên React.</li><li><strong>router (bộ định tuyến)</strong>: phần quyết định địa chỉ nào hiện trang nào; Next.js có hai loại App Router và Pages Router.</li><li><strong>Server Components</strong>: tính năng React cho phép một số thành phần chạy trên máy chủ, theo tài liệu thuộc App Router.</li><li><strong>bundler</strong>: công cụ gom nhiều tệp mã thành vài tệp tối ưu để trình duyệt tải.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu nói cần quen với HTML, CSS, JavaScript và React. Trang giới thiệu tài liệu chưa nêu phiên bản Node.js tối thiểu (xem trang Getting Started). Next.js miễn phí theo giấy phép MIT; nơi triển khai (hosting) có thể tính phí tùy bạn chọn, bài chưa kiểm tra.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang 'What is Next.js?' và phần phân biệt App Router với Pages Router.</li><li>Nếu chưa biết React, học khóa React Foundations mà tài liệu giới thiệu trước.</li><li>Mở một dự án Next.js thử, chỉ đọc cấu trúc thư mục trước khi sửa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có một dự án web do AI tạo ra dùng Next.js nhưng chưa biết nó là gì. Hãy đọc trang tài liệu https://nextjs.org/docs và giải thích bằng tiếng Việt: Next.js thêm gì lên trên React, App Router khác Pages Router thế nào, và mình nên xem thư mục nào trước. Chưa sửa hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Next.js là framework lớn nhiều khái niệm, nên mã AI sinh ra có thể dùng cả hai bộ định tuyến lẫn nhau. Tài liệu ghi App Router dùng bản React canary tích hợp sẵn, nên cách xử lý phiên bản khác Pages Router. Tính năng đổi theo thời gian; hãy đối chiếu tài liệu chính thức.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vercel</strong> có <strong>143.238 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vercel/next.js/blob/canary/packages/next/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vercel/next.js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 144. Chưa cài/chạy thử; không tạo validation. Snapshot sao 143238; repo_id 70107786; README SHA256 0ce9d8564a8d151caccc4ee6d3df746010d06a1e38c27a5fe340441a025aa751.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vercel/next.js",
+          "repo_id": "70107786",
+          "source_path": "",
+          "source_revision": "README-SHA256:0ce9d8564a8d151caccc4ee6d3df746010d06a1e38c27a5fe340441a025aa751",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vercel/next.js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu nói cần quen với HTML, CSS, JavaScript và React. Trang giới thiệu tài liệu chưa nêu phiên bản Node.js tối thiểu (xem trang Getting Started). Next.js miễn phí theo giấy phép MIT; nơi triển khai (hosting) có thể tính phí tùy bạn chọn, bài chưa kiểm tra.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vercel/next.js/blob/canary/packages/next/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vercel/next.js/blob/canary/packages/next/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vercel/next.js",
+        "stars": 143238,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vercel/next.js/canary/packages/next/README.md",
+        "readmeSha256": "0ce9d8564a8d151caccc4ee6d3df746010d06a1e38c27a5fe340441a025aa751",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 145,
+      "batch": 25,
+      "slug": "tailwindcss",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Tailwind CSS: cách tạo kiểu giao diện bằng các lớp ngắn mà mã AI hay dùng",
+        "excerpt": "Hiểu vì sao đoạn HTML do AI viết đầy các tên lớp như text-3xl hay font-bold: đó là Tailwind CSS. Biết cách đọc và sửa mà không bị rối.",
+        "content": "<p>Tailwind CSS được README mô tả là framework CSS ưu tiên tiện ích (utility-first) để dựng giao diện tùy biến nhanh. Trang tài liệu cài đặt mô tả cách hoạt động: Tailwind quét các tệp HTML, thành phần JavaScript và các mẫu khác để tìm tên lớp, sinh ra kiểu tương ứng rồi ghi vào một tệp CSS tĩnh, không có mã chạy thêm khi dùng. Cách cài gồm plugin Vite, PostCSS, công cụ dòng lệnh, hướng dẫn theo framework và bản CDN để thử.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cách cũ giống viết một bản mô tả dài cho thợ sơn: 'tường phòng khách màu be, trần màu trắng…'. Tailwind giống dán nhãn trực tiếp lên từng bức tường: 'be', 'trắng', 'bo góc'. Bạn đọc nhãn là biết nó trông thế nào mà không phải tìm trong một tệp khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gặp thẻ có lớp như text-3xl font-bold underline, bạn tra tài liệu để biết đó là chữ lớn, in đậm, gạch chân, rồi nhờ AI đổi thành cỡ nhỏ hơn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code giao diện web; người muốn đọc hiểu và chỉnh sửa giao diện do AI sinh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cách đọc tên lớp khá trực quan, nhưng có rất nhiều tên lớp và cần quen với cấu trúc dự án để biết nó nằm ở đâu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không viết giao diện web hoặc dùng công cụ kéo thả không cần CSS, chưa cần. Nếu bạn muốn học CSS thuần trước, hãy học nền tảng web trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>component (thành phần giao diện)</strong>: một khối giao diện dùng lại được, như nút bấm, hộp thoại, bảng.</li><li><strong>CSS</strong>: ngôn ngữ mô tả giao diện (màu, cỡ chữ, bố cục) của trang web.</li><li><strong>utility class (lớp tiện ích)</strong>: một tên lớp ngắn làm đúng một việc, như text-3xl là cỡ chữ lớn.</li><li><strong>zero-runtime</strong>: không thêm mã chạy trên trang khi dùng; tài liệu nói thư viện 'zero-runtime'.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu chưa nêu phiên bản Node.js hay hỗ trợ trình duyệt trên trang cài đặt (liên kết sang trang tương thích riêng). Có nhiều đường cài; với Vite tài liệu dùng một plugin riêng. Miễn phí theo giấy phép MIT. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn mô tả cách Tailwind quét tên lớp và sinh CSS.</li><li>Chọn đường cài đặt đúng framework của bạn trong trang Installation.</li><li>Chỉnh vài tên lớp trong dự án thử và xem trang thay đổi thế nào.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án web do AI viết cho mình đầy tên lớp kiểu text-3xl font-bold. Hãy đọc https://tailwindcss.com/docs/installation và giải thích bằng tiếng Việt: Tailwind CSS là gì, đọc các tên lớp thế nào, và những lỗi hay gặp khi sửa. Chưa chạy hay sửa gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README của repo rất ngắn nên thông tin chính nằm ở tài liệu. Cách cài thay đổi giữa các phiên bản và công cụ; hãy dùng hướng dẫn đúng phiên bản. Mã dùng Tailwind có thể dài và khó đọc với người mới.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tailwindlabs</strong> có <strong>98.054 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tailwindlabs/tailwindcss/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tailwindlabs/tailwindcss\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 145. Chưa cài/chạy thử; không tạo validation. Snapshot sao 98054; repo_id 106017343; README SHA256 a7db79d5cd483c6f6d1a51f4042e32598ec39e2391a5dd5be62a71d59299cda8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tailwindlabs/tailwindcss",
+          "repo_id": "106017343",
+          "source_path": "",
+          "source_revision": "README-SHA256:a7db79d5cd483c6f6d1a51f4042e32598ec39e2391a5dd5be62a71d59299cda8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tailwindlabs/tailwindcss",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu chưa nêu phiên bản Node.js hay hỗ trợ trình duyệt trên trang cài đặt (liên kết sang trang tương thích riêng). Có nhiều đường cài; với Vite tài liệu dùng một plugin riêng. Miễn phí theo giấy phép MIT. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tailwindlabs/tailwindcss/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tailwindlabs/tailwindcss/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tailwindlabs/tailwindcss",
+        "stars": 98054,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/main/README.md",
+        "readmeSha256": "a7db79d5cd483c6f6d1a51f4042e32598ec39e2391a5dd5be62a71d59299cda8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 146,
+      "batch": 25,
+      "slug": "vite",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vite: công cụ chạy thử và đóng gói dự án web nhanh, nền của nhiều dự án AI dựng",
+        "excerpt": "Hiểu Vite làm gì khi bạn chạy lệnh dev và build, và vì sao nhiều mẫu dự án (React, Vue, Svelte) dùng nó.",
+        "content": "<p>Vite là công cụ build cho dự án web hiện đại, hướng tới trải nghiệm phát triển nhanh và gọn. README nói nó gồm hai phần: máy chủ phát triển với cập nhật nóng (HMR) rất nhanh, và lệnh build gom mã bằng Rolldown để xuất ra tài nguyên tối ưu cho môi trường thật. Tài liệu hướng dẫn nêu cách tạo dự án từ các mẫu như vanilla, React, Vue, Svelte, Solid, Preact, Lit và Qwik, bản thường lẫn TypeScript, và yêu cầu phiên bản Node.js.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi xây nhà, bạn cần một nơi xem thử ngay từng thay đổi (xưởng thử) và một quy trình đóng gói để giao nhà thật. Vite lo cả hai: lệnh dev để xem thay đổi gần như tức thì, lệnh build để đóng gói bản chạy thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gặp tệp vite.config trong dự án AI tạo, bạn biết dự án dùng Vite và biết lệnh nào để chạy thử và đóng gói. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code dự án React, Vue hoặc Svelte; người muốn hiểu vì sao có thư mục dist hay node_modules.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Khái niệm đơn giản, nhưng cần dùng dòng lệnh và đúng phiên bản Node.js. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu dự án của bạn dùng framework đã có công cụ build riêng (Next.js tự lo), bạn ít khi chạm tới Vite trực tiếp.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>build</strong>: bước đóng gói mã nguồn thành bản chạy được và tối ưu cho người dùng cuối.</li><li><strong>HMR (cập nhật nóng)</strong>: khi bạn sửa mã, trình duyệt cập nhật phần thay đổi mà không phải tải lại cả trang.</li><li><strong>Node.js</strong>: nền tảng chạy JavaScript ngoài trình duyệt; Vite chạy trên đó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu nêu Vite cần Node.js 20.19 trở lên hoặc 22.12 trở lên, và một số mẫu cần phiên bản cao hơn. Tạo dự án bằng một lệnh create-vite với nhiều mẫu. Miễn phí theo giấy phép MIT. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu về máy chủ phát triển và lệnh build.</li><li>Kiểm tra phiên bản Node.js của bạn theo tài liệu.</li><li>Tạo một dự án mẫu thử và đọc tệp cấu hình trước khi sửa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án AI tạo cho mình có tệp vite.config. Hãy đọc https://vite.dev/guide/ và giải thích bằng tiếng Việt: Vite làm gì, khác nhau thế nào giữa lệnh dev và build, và cần Node.js phiên bản nào. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Vite chỉ lo phần build; nó không quyết định kiến trúc ứng dụng. Yêu cầu Node.js và các mẫu thay đổi theo phiên bản. README chủ yếu giới thiệu chung; chi tiết nằm ở tài liệu.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vitejs</strong> có <strong>83.681 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vitejs/vite/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vitejs/vite\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 146. Chưa cài/chạy thử; không tạo validation. Snapshot sao 83681; repo_id 257485422; README SHA256 588718673f32a3691b8e75b93fb4c2f8e8bc9a6dc0bf61794ba7b6c006594111.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vitejs/vite",
+          "repo_id": "257485422",
+          "source_path": "",
+          "source_revision": "README-SHA256:588718673f32a3691b8e75b93fb4c2f8e8bc9a6dc0bf61794ba7b6c006594111",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitejs/vite",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu nêu Vite cần Node.js 20.19 trở lên hoặc 22.12 trở lên, và một số mẫu cần phiên bản cao hơn. Tạo dự án bằng một lệnh create-vite với nhiều mẫu. Miễn phí theo giấy phép MIT. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitejs/vite/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vitejs/vite/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vitejs/vite",
+        "stars": 83681,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vitejs/vite/main/README.md",
+        "readmeSha256": "588718673f32a3691b8e75b93fb4c2f8e8bc9a6dc0bf61794ba7b6c006594111",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 147,
+      "batch": 25,
+      "slug": "typescript",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "TypeScript: lớp kiểm tra kiểu giúp bắt lỗi trong mã JavaScript do AI viết",
+        "excerpt": "Hiểu TypeScript thêm gì lên JavaScript và vì sao các dự án do AI dựng thường dùng nó. Biết đọc thông báo lỗi kiểu cơ bản.",
+        "content": "<p>TypeScript là ngôn ngữ thêm kiểu tùy chọn lên JavaScript để hỗ trợ ứng dụng cỡ lớn. Trang 'TypeScript in 5 minutes' nói TypeScript có mọi tính năng của JavaScript và thêm hệ thống kiểu bên trên; kiểu thường được tự suy ra, bạn có thể ghi rõ khi cần (ví dụ interface), mã JavaScript hiện có cũng đã là TypeScript hợp lệ, và hệ thống kiểu kiểm tra theo hình dạng (structural) để báo lỗi như 'thuộc tính này không tồn tại trong kiểu User'. README nêu cài bằng npm và có phiên bản nightly.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>JavaScript giống viết thư tay không ai kiểm tra chính tả. TypeScript giống thêm một người đọc soát: nó chưa chạy thư, chỉ nhìn vào và nhắc 'chỗ này bạn ghi tên người nhận là số'. Nhờ vậy nhiều lỗi lộ ra trước khi mã chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi AI báo xong mà trình soạn mã gạch đỏ một dòng có chữ 'does not exist in type', bạn biết đó là TypeScript nhắc sai kiểu và có thể nhờ AI giải thích lỗi cụ thể. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code dự án có đuôi .ts hoặc .tsx; người muốn đọc hiểu thông báo lỗi kiểu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm kiểu dễ nắm qua ví dụ, nhưng thông báo lỗi của TypeScript đôi khi dài và khó đọc với người mới. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ làm trang tĩnh nhỏ, TypeScript có thể chưa cần. Bắt đầu với JavaScript cơ bản trước cũng hợp lý.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>type (kiểu)</strong>: nhãn cho biết một giá trị là chữ, số hay đối tượng có những trường nào.</li><li><strong>type inference (suy ra kiểu)</strong>: TypeScript tự đoán kiểu mà bạn không phải ghi.</li><li><strong>interface</strong>: cách mô tả hình dạng của một đối tượng, ví dụ người dùng có name là chữ và id là số.</li><li><strong>compile (biên dịch)</strong>: chuyển TypeScript thành JavaScript để trình duyệt chạy được; trang 5 phút đã đọc không giải thích bước này.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài bằng npm dạng thư viện phát triển; để học dùng trang 'TypeScript in 5 minutes' và Handbook. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang TypeScript in 5 minutes.</li><li>Thử ghi một interface đơn giản và để trình soạn mã chỉ ra lỗi.</li><li>Dán một thông báo lỗi kiểu cho AI và nhờ giải thích, rồi đối chiếu tài liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy dự án có tệp .ts và .tsx và hay gặp lỗi kiểu. Hãy đọc https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html và giải thích bằng tiếng Việt: TypeScript thêm gì lên JavaScript, đọc một thông báo lỗi kiểu thế nào, và khi nào nên ghi kiểu rõ ràng. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Kiểu chỉ kiểm tra lúc viết mã, không bảo đảm dữ liệu thật từ bên ngoài đúng kiểu (để kiểm tra dữ liệu thật cần công cụ kiểm tra khi chạy, ví dụ Zod ở bài kế). Trang 5 phút chưa giải thích bước biên dịch.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>111.723 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/TypeScript/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/TypeScript\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 147. Chưa cài/chạy thử; không tạo validation. Snapshot sao 111723; repo_id 20929025; README SHA256 b43867a1a978a0a3d881b91e50e9807f1f56e3f1dd54d65cad43f471c84e0036.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/TypeScript",
+          "repo_id": "20929025",
+          "source_path": "",
+          "source_revision": "README-SHA256:b43867a1a978a0a3d881b91e50e9807f1f56e3f1dd54d65cad43f471c84e0036",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/TypeScript",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài bằng npm dạng thư viện phát triển; để học dùng trang 'TypeScript in 5 minutes' và Handbook. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/TypeScript/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/TypeScript/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/TypeScript",
+        "stars": 111723,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/TypeScript/main/README.md",
+        "readmeSha256": "b43867a1a978a0a3d881b91e50e9807f1f56e3f1dd54d65cad43f471c84e0036",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 148,
+      "batch": 25,
+      "slug": "playwright",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Playwright: tự động kiểm thử và điều khiển trình duyệt, cả cho coding agent",
+        "excerpt": "Hiểu Playwright dùng để kiểm thử trang web tự động, điều khiển trình duyệt và làm công cụ cho AI agent. Nên có trước khi tin lời 'đã xong' của AI.",
+        "content": "<p>Playwright là framework tự động hóa và kiểm thử web. README nói nó điều khiển Chromium, Firefox và WebKit qua một API duy nhất, dùng được trong bài kiểm thử, trong script và làm công cụ cho agent AI. README liệt kê các cách dùng: Playwright Test (kiểm thử end-to-end), Playwright CLI (cho coding agent như Claude Code, Copilot), Playwright MCP (cho agent AI và tự động hóa do LLM điều khiển), thư viện cho script duyệt web và tiện ích VS Code. Tài liệu nói khi cài nó tải các trình duyệt cần thiết và tạo cấu trúc dự án mẫu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi AI nói 'trang đã chạy tốt', bạn cần một người kiểm tra thật. Playwright giống một người kiểm thử máy: mở trình duyệt thật, bấm nút, điền biểu mẫu và báo cái nào hỏng, lần nào cũng làm đúng như vậy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: sau khi AI dựng chức năng đăng nhập, viết một kịch bản kiểm thử mở trang, nhập thông tin mẫu và kiểm tra thông báo đúng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code muốn kiểm tra ứng dụng một cách lặp lại; người làm việc với agent cần agent có công cụ duyệt web.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Tài liệu nêu yêu cầu Node.js (các bản 22.x, 24.x hoặc 26.x mới nhất) và danh sách hệ điều hành hỗ trợ. Viết kịch bản kiểm thử cần quen JavaScript hoặc TypeScript (cũng có Python, Java, .NET theo tài liệu). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần thử tay một lần, chưa cần. Nếu bạn muốn kiểm thử đơn vị cho hàm nhỏ, công cụ như Vitest hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>MCP</strong>: Model Context Protocol, một chuẩn mở để ứng dụng AI kết nối với dữ liệu và công cụ bên ngoài. Trang giới thiệu chính thức ví von nó như một 'cổng USB-C cho ứng dụng AI'.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>end-to-end test</strong>: kiểm thử toàn bộ luồng như người dùng thật: mở trang, bấm, nhập, xem kết quả.</li><li><strong>browser automation</strong>: cho chương trình điều khiển trình duyệt thay người.</li><li><strong>auto-waiting</strong>: tự chờ phần tử xuất hiện trước khi thao tác; README nêu Playwright Test có tính năng này.</li><li><strong>trace</strong>: bản ghi từng bước một lần kiểm thử để xem lại khi lỗi.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu: Node.js 22.x, 24.x hoặc 26.x mới nhất; hệ điều hành gồm Windows 11 trở lên, macOS 14 trở lên, Debian 12 hoặc 13 và Ubuntu 22.04, 24.04 hoặc 26.04 (theo trang đọc ngày 2026-11-03, có thể đổi). Cài đặt tải các trình duyệt. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc bảng 'Get Started' để chọn cách dùng: Test, CLI, MCP, thư viện hoặc VS Code.</li><li>Đọc trang cài đặt và yêu cầu hệ thống trong tài liệu.</li><li>Viết một kiểm thử cho một chức năng đơn giản của trang thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình nhờ AI làm website và muốn tự kiểm tra nó chạy đúng. Hãy đọc README của Playwright (https://github.com/microsoft/playwright) và tài liệu https://playwright.dev/docs/intro rồi giải thích bằng tiếng Việt: Playwright Test khác Playwright MCP thế nào, mình cần chuẩn bị gì, và rủi ro khi để agent AI điều khiển trình duyệt. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Kiểm thử end-to-end chậm và dễ hỏng khi giao diện đổi. Cài đặt tải trình duyệt nên tốn dung lượng. README nhắc dùng cho agent AI; để agent AI điều khiển trình duyệt có đăng nhập sẵn có thể rủi ro nên cần dùng hồ sơ thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Dùng hồ sơ trình duyệt thử, không đăng nhập sẵn tài khoản quan trọng khi để agent điều khiển, và đừng đặt mật khẩu thật trong kịch bản kiểm thử.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>99.145 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/playwright/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/playwright\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 148. Chưa cài/chạy thử; không tạo validation. Snapshot sao 99145; repo_id 221981891; README SHA256 223a20c60327e670117058a8c7f444dde975d35f28fd0a9853a8b996f5a44cec.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/playwright",
+          "repo_id": "221981891",
+          "source_path": "",
+          "source_revision": "README-SHA256:223a20c60327e670117058a8c7f444dde975d35f28fd0a9853a8b996f5a44cec",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/playwright",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu: Node.js 22.x, 24.x hoặc 26.x mới nhất; hệ điều hành gồm Windows 11 trở lên, macOS 14 trở lên, Debian 12 hoặc 13 và Ubuntu 22.04, 24.04 hoặc 26.04 (theo trang đọc ngày 2026-11-03, có thể đổi). Cài đặt tải các trình duyệt. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/playwright/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/playwright/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/playwright",
+        "stars": 99145,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/playwright/main/README.md",
+        "readmeSha256": "223a20c60327e670117058a8c7f444dde975d35f28fd0a9853a8b996f5a44cec",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 149,
+      "batch": 25,
+      "slug": "astro",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Astro: framework cho website nội dung (blog, giới thiệu, tài liệu) tải nhanh",
+        "excerpt": "Hiểu Astro dành cho website nội dung và vì sao nó ít mã chạy trên trình duyệt. Một lựa chọn gọn cho blog và trang giới thiệu thay vì dùng framework ứng dụng nặng.",
+        "content": "<p>Astro được trang tài liệu mô tả là framework web để xây website định hướng nội dung như blog, trang marketing và thương mại điện tử. Ý tưởng chính: thiết kế để làm nổi bật nội dung, kiến trúc 'islands' tối ưu cho trang nội dung, mặc định gửi ít JavaScript xuống trình duyệt, không phụ thuộc framework giao diện (hỗ trợ React, Preact, Svelte, Vue, Solid, HTMX và web component), ưu tiên render trên máy chủ và chỉ bật render phía trình duyệt khi cần. README nêu cài bằng một lệnh tạo dự án và giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Một trang blog chủ yếu là chữ và ảnh; không cần nhét cả một ứng dụng nặng vào mỗi trang. Astro giống chỉ chở xuống trình duyệt phần thật sự cần, chỗ nào cần tương tác (như ô tìm kiếm) mới thêm phần động, nên trang thường nhẹ và nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nếu cần một trang giới thiệu hoặc blog, hỏi AI về lựa chọn Astro so với Next.js và cân nhắc nội dung cố định hay nhiều tương tác. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm blog, trang giới thiệu, tài liệu, trang bán hàng đơn giản; người quan tâm tốc độ tải và SEO.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Tài liệu mô tả khá rõ, nhưng cần biết HTML cơ bản và dùng dòng lệnh để tạo dự án. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn xây ứng dụng nhiều tương tác như bảng điều khiển hoặc mạng xã hội, trang tài liệu ngụ ý đó là nhóm khác dù Astro có thể mở rộng; hãy cân nhắc framework ứng dụng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>component (thành phần giao diện)</strong>: một khối giao diện dùng lại được, như nút bấm, hộp thoại, bảng.</li><li><strong>islands (đảo)</strong>: mô hình trong đó trang phần lớn là nội dung tĩnh và chỉ một số 'đảo' nhỏ có tương tác.</li><li><strong>SEO</strong>: tối ưu để công cụ tìm kiếm hiểu và xếp hạng trang.</li><li><strong>server-first</strong>: ưu tiên dựng trang trên máy chủ trước khi gửi xuống trình duyệt.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn tạo dự án bằng một lệnh; yêu cầu Node.js chưa được bài kiểm tra. Miễn phí theo giấy phép MIT theo README (GitHub không gán SPDX duy nhất cho repo, có thể do cấu trúc nhiều gói). Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang 'Why Astro?' để xem kiểu site phù hợp.</li><li>Mở starter project qua trình duyệt mà README gợi ý (astro.new) để xem thử.</li><li>Chỉ thêm tương tác ở chỗ thật cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần làm một blog và trang giới thiệu. Hãy đọc https://docs.astro.build/en/concepts/why-astro/ và giải thích bằng tiếng Việt: Astro hợp với loại website nào, 'islands' nghĩa là gì, và so với Next.js thì khi nào mình nên chọn cái nào. Chưa tạo dự án gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Trang tài liệu chưa nêu rõ khi nào không nên dùng Astro. README gốc ngắn; thông tin lấy chủ yếu từ tài liệu. Yêu cầu và cách cài thay đổi theo phiên bản.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>withastro</strong> có <strong>63.680 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub trả NOASSERTION; README ghi giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/withastro/astro/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/withastro/astro\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 149. Chưa cài/chạy thử; không tạo validation. Snapshot sao 63680; repo_id 348060227; README SHA256 52efb8696eccd76499b6524c939e313c7128dd537d790e5e9cf2a7d424e5b3c2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/withastro/astro",
+          "repo_id": "348060227",
+          "source_path": "",
+          "source_revision": "README-SHA256:52efb8696eccd76499b6524c939e313c7128dd537d790e5e9cf2a7d424e5b3c2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/withastro/astro",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn tạo dự án bằng một lệnh; yêu cầu Node.js chưa được bài kiểm tra. Miễn phí theo giấy phép MIT theo README (GitHub không gán SPDX duy nhất cho repo, có thể do cấu trúc nhiều gói). Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/withastro/astro/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/withastro/astro/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "withastro/astro",
+        "stars": 63680,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/withastro/astro/main/README.md",
+        "readmeSha256": "52efb8696eccd76499b6524c939e313c7128dd537d790e5e9cf2a7d424e5b3c2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 150,
+      "batch": 25,
+      "slug": "zod",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Zod: kiểm tra dữ liệu từ bên ngoài có đúng dạng mong đợi, thường gặp trong mã TypeScript",
+        "excerpt": "Hiểu Zod giúp ứng dụng kiểm tra dữ liệu từ biểu mẫu hoặc API có đúng như mô tả trước khi dùng, và vì sao AI hay thêm nó vào mã TypeScript.",
+        "content": "<p>Zod là thư viện kiểm tra dữ liệu ưu tiên TypeScript. README mô tả: bạn định nghĩa một schema rồi 'parse' dữ liệu qua nó, nhận về kết quả đã được kiểm tra và có kiểu chặt. Trang chủ nêu các điểm: không phụ thuộc thư viện ngoài, lõi nhỏ khoảng 2 KB (nén), API bất biến, dùng được với TypeScript lẫn JavaScript thường và có chuyển đổi sang JSON Schema. Yêu cầu: kiểm thử với TypeScript 5.5 trở lên và phải bật chế độ strict.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống bảo vệ ở cổng kiểm tra giấy tờ: ai vào cũng phải đưa thẻ, thẻ sai dạng thì không cho vào. Dữ liệu từ người dùng hay từ API ngoài không thể tin ngay; Zod là người gác cổng kiểm tra dạng trước khi cho dữ liệu đi sâu vào ứng dụng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: với một biểu mẫu đăng ký, mô tả 'tên là chữ, tuổi là số' bằng một schema và xem điều gì xảy ra khi dữ liệu sai dạng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code ứng dụng TypeScript nhận dữ liệu từ biểu mẫu, API hay tệp cấu hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Ý tưởng dễ hiểu, nhưng cần biết TypeScript và bật chế độ strict theo tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng TypeScript hoặc không nhận dữ liệu bên ngoài, chưa cần. Zod cũng dùng được với JavaScript thường theo trang chủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>schema</strong>: bản mô tả dạng dữ liệu mong đợi, ví dụ 'có tên là chữ'.</li><li><strong>parse / validate</strong>: đưa dữ liệu qua schema để kiểm tra và nhận kết quả đúng dạng hoặc báo lỗi.</li><li><strong>untrusted data (dữ liệu không đáng tin)</strong>: dữ liệu từ người dùng hay hệ thống khác, chưa được kiểm tra.</li><li><strong>strict mode</strong>: chế độ nghiêm ngặt của TypeScript; Zod yêu cầu bật.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu: kiểm thử với TypeScript 5.5 trở lên và phải bật strict trong tsconfig. Miễn phí theo giấy phép MIT. README ở gốc repo chỉ là file trỏ nên bài dùng README gói và trang zod.dev. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn 'What is Zod?' và ví dụ parse.</li><li>Kiểm tra dự án đã bật strict chưa.</li><li>Thử một schema nhỏ với dữ liệu mẫu đúng và sai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Ứng dụng TypeScript của mình nhận dữ liệu từ biểu mẫu. Hãy đọc https://zod.dev/ và giải thích bằng tiếng Việt: Zod làm gì, 'parse' nghĩa là gì, và vì sao kiểm tra dữ liệu lúc chạy khác với kiểm tra kiểu lúc viết mã. Chưa chạy hay sửa gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Kiểm tra dữ liệu chỉ an toàn nếu bạn áp dụng đúng chỗ (ở biên của ứng dụng); schema sai vẫn cho dữ liệu sai đi qua. Không thay cho kiểm tra phân quyền và bảo mật khác.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI cài thư viện cho bạn, hãy xem tên gói có đúng với dự án chính thức không (tránh gói giả mạo tên) và đọc các thay đổi trước khi chấp nhận.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>colinhacks</strong> có <strong>44.246 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/colinhacks/zod/blob/main/packages/zod/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/colinhacks/zod\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 150. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44246; repo_id 245704608; README SHA256 b5651740a66d68e8c55c4fdea2df8b00448f99a0433008fef99a54f859024039.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/colinhacks/zod",
+          "repo_id": "245704608",
+          "source_path": "",
+          "source_revision": "README-SHA256:b5651740a66d68e8c55c4fdea2df8b00448f99a0433008fef99a54f859024039",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/colinhacks/zod",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu: kiểm thử với TypeScript 5.5 trở lên và phải bật strict trong tsconfig. Miễn phí theo giấy phép MIT. README ở gốc repo chỉ là file trỏ nên bài dùng README gói và trang zod.dev. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/colinhacks/zod/blob/main/packages/zod/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/colinhacks/zod/blob/main/packages/zod/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "colinhacks/zod",
+        "stars": 44246,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/colinhacks/zod/main/packages/zod/README.md",
+        "readmeSha256": "b5651740a66d68e8c55c4fdea2df8b00448f99a0433008fef99a54f859024039",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 151,
+      "batch": 25,
+      "slug": "drizzle-orm",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Drizzle ORM: nói chuyện với cơ sở dữ liệu bằng TypeScript theo kiểu gần với SQL",
+        "excerpt": "Hiểu ORM là gì và Drizzle khác gì các ORM khác khi dùng với Postgres, MySQL hay SQLite. Hay xuất hiện trong dự án AI dựng có cơ sở dữ liệu.",
+        "content": "<p>Drizzle là ORM TypeScript hiện đại. README nói nó nhẹ (khoảng 7,4 KB nén), không phụ thuộc thư viện ngoài, hỗ trợ PostgreSQL, MySQL và SQLite kể cả các dịch vụ serverless, chạy ở nhiều môi trường như Node.js, Bun, Deno và Cloudflare Workers. Trang tài liệu nhấn mạnh phong cách gần SQL ('nếu bạn biết SQL, bạn biết Drizzle'), có cả kiểu truy vấn giống SQL và kiểu quan hệ, và nhắc Drizzle Kit (công cụ migration) cùng Drizzle Studio (xem và sửa dữ liệu).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cơ sở dữ liệu nói tiếng SQL, còn mã của bạn nói TypeScript. ORM giống thông dịch viên giữa hai bên. Drizzle là thông dịch viên cố gắng không 'dịch thoát ý': câu bạn viết gần với SQL thật nên bạn vẫn thấy rõ điều gì được gửi tới cơ sở dữ liệu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi mở dự án AI tạo có thư mục schema, bạn tìm hiểu bảng nào được khai báo, rồi nhờ AI giải thích một truy vấn bằng lời. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code ứng dụng có cơ sở dữ liệu; người cần hiểu mã truy cập dữ liệu trong dự án.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần hiểu bảng, cột và SQL cơ bản cùng TypeScript. Migration và thay đổi cấu trúc dữ liệu có thể làm mất dữ liệu nếu làm sai. Trang tổng quan không nêu điều kiện cài đặt. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng nền tảng cho sẵn cơ sở dữ liệu kèm giao diện (như Supabase hay Appwrite trong cùng nhóm) và chưa cần mã truy cập trực tiếp, chưa cần học ORM.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>database (cơ sở dữ liệu)</strong>: nơi lưu dữ liệu có cấu trúc như bảng khách hàng, đơn hàng, bài viết.</li><li><strong>backend</strong>: phần chạy phía sau của ứng dụng: lưu dữ liệu, đăng nhập người dùng, xử lý logic mà người dùng không nhìn thấy.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>ORM</strong>: công cụ ánh xạ giữa bảng cơ sở dữ liệu và đối tượng trong mã, để bạn truy cập dữ liệu bằng ngôn ngữ lập trình.</li><li><strong>SQL</strong>: ngôn ngữ truy vấn cơ sở dữ liệu quan hệ.</li><li><strong>migration</strong>: thay đổi cấu trúc cơ sở dữ liệu (thêm bảng, cột) được ghi lại để áp dụng có kiểm soát.</li><li><strong>serverless</strong>: chạy mã mà không phải tự quản lý máy chủ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói hỗ trợ PostgreSQL, MySQL, SQLite (kể cả Turso, Neon); tài liệu liệt kê thêm SingleStore, MSSQL và CockroachDB. Trang tổng quan không nêu phiên bản Node.js. Miễn phí theo giấy phép Apache-2.0. Bài chưa kiểm tra cách kết nối cơ sở dữ liệu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần 'What's Drizzle?' và triết lý 'gần SQL'.</li><li>Tìm hiểu migration (Drizzle Kit) trước khi thay đổi cấu trúc dữ liệu thật.</li><li>Thử với cơ sở dữ liệu thử có dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án AI dựng cho mình dùng Drizzle ORM. Hãy đọc https://orm.drizzle.team/docs/overview và README (https://github.com/drizzle-team/drizzle-orm) rồi giải thích bằng tiếng Việt: ORM là gì, schema và migration nghĩa là gì, và những thao tác nào có thể làm mất dữ liệu. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Thay đổi cấu trúc cơ sở dữ liệu có thể làm mất dữ liệu; luôn sao lưu trước. Các tuyên bố như 'serverless-ready' hay 'hiệu năng nhanh' là của tác giả. README liên kết tới bài so sánh hiệu năng; chúng tôi chưa kiểm chứng.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng cho AI chạy migration lên cơ sở dữ liệu thật khi chưa có bản sao lưu và chưa đọc kết quả sẽ đổi gì.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>drizzle-team</strong> có <strong>36.207 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/drizzle-team/drizzle-orm/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/drizzle-team/drizzle-orm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 151. Chưa cài/chạy thử; không tạo validation. Snapshot sao 36207; repo_id 379865325; README SHA256 95713908300b712f1016419a73fa63cd908b2226fc9635e484736e2a6b6d227c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/drizzle-team/drizzle-orm",
+          "repo_id": "379865325",
+          "source_path": "",
+          "source_revision": "README-SHA256:95713908300b712f1016419a73fa63cd908b2226fc9635e484736e2a6b6d227c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/drizzle-team/drizzle-orm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói hỗ trợ PostgreSQL, MySQL, SQLite (kể cả Turso, Neon); tài liệu liệt kê thêm SingleStore, MSSQL và CockroachDB. Trang tổng quan không nêu phiên bản Node.js. Miễn phí theo giấy phép Apache-2.0. Bài chưa kiểm tra cách kết nối cơ sở dữ liệu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/drizzle-team/drizzle-orm/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/drizzle-team/drizzle-orm/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "drizzle-team/drizzle-orm",
+        "stars": 36207,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/drizzle-team/drizzle-orm/main/README.md",
+        "readmeSha256": "95713908300b712f1016419a73fa63cd908b2226fc9635e484736e2a6b6d227c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 152,
+      "batch": 25,
+      "slug": "vitest",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vitest: viết bài kiểm thử nhỏ để biết mã AI viết có chạy đúng không",
+        "excerpt": "Hiểu kiểm thử đơn vị là gì và cách Vitest giúp kiểm tra từng hàm, từng thành phần. Cách rẻ nhất để bớt tin lời 'đã xong' của AI.",
+        "content": "<p>Vitest là framework kiểm thử thế hệ mới chạy trên Vite. README liệt kê tính năng: dùng chung cấu hình Vite của ứng dụng, snapshot kiểu Jest, bộ kiểm tra Chai kèm API tương thích Jest expect, chế độ theo dõi tức thì, độ phủ mã, mock và spy tương thích Jest, DOM giả bằng JSDOM hoặc happy-dom, và chế độ Browser Mode để chạy kiểm thử thành phần trong trình duyệt. Tài liệu nói tệp kiểm thử mặc định cần có .test. hoặc .spec. trong tên và Vitest cần Vite phiên bản 6.4.0 trở lên và Node 22.12.0 trở lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kiểm thử giống thử từng món một trước khi dọn lên bàn: bạn viết 'món này khi cho 1 cộng 2 phải ra 3', máy tự chạy và báo đúng hay sai. Mỗi lần AI sửa mã, bạn chạy lại tất cả các thử nghiệm để biết có làm hỏng thứ gì đã đúng không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI viết một hàm tính giá và một bài kiểm thử đi kèm, sau đó bạn tự thêm một trường hợp bất thường để xem hàm có xử lý đúng không. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code muốn có lưới an toàn khi AI sửa mã; người học kiểm thử phần mềm.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Ý tưởng dễ, nhưng cần dự án có Node.js và hiểu cơ bản về hàm và kiểm tra. Yêu cầu phiên bản khá mới theo tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn kiểm thử toàn bộ luồng người dùng trên trình duyệt thật, Playwright (cùng nhóm bài) hợp hơn; Vitest chủ yếu cho đơn vị nhỏ và thành phần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>unit test (kiểm thử đơn vị)</strong>: kiểm thử từng phần nhỏ, như một hàm, độc lập với phần còn lại.</li><li><strong>assertion (khẳng định)</strong>: điều bạn khẳng định phải đúng, ví dụ kết quả bằng 3.</li><li><strong>mock</strong>: bản giả của một phần phụ thuộc để kiểm thử mà không gọi thật, ví dụ không gửi email thật.</li><li><strong>coverage (độ phủ)</strong>: tỷ lệ mã được các bài kiểm thử chạm tới.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Tài liệu: cần Vite từ 6.4.0 và Node từ 22.12.0. Miễn phí theo giấy phép MIT. Bài không chép lệnh và chưa kiểm tra việc dùng ngoài dự án Vite.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách tính năng trong README và ví dụ sum.test trong hướng dẫn.</li><li>Kiểm tra phiên bản Node và Vite.</li><li>Viết một bài kiểm thử cho một hàm nhỏ và chạy sau mỗi lần AI sửa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay tin lời AI nói 'đã xong' mà không có cách kiểm tra. Hãy đọc https://vitest.dev/guide/ và giải thích bằng tiếng Việt: kiểm thử đơn vị là gì, một bài kiểm thử Vitest trông thế nào, và làm sao dùng nó để kiểm tra mã AI viết. Chưa chạy hay sửa gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Kiểm thử chỉ bắt được lỗi mà bạn (hoặc AI) đã nghĩ tới; bài kiểm thử do AI viết có thể kiểm tra sai thứ. Yêu cầu phiên bản có thể đổi. Trang tài liệu đã đọc không bàn việc chuyển từ Jest.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng để AI sửa bài kiểm thử cho 'qua' khi mã sai; hãy đọc xem bài kiểm thử có thật sự kiểm tra điều quan trọng không.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vitest-dev</strong> có <strong>17.322 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vitest-dev/vitest/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vitest-dev/vitest\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công nghệ web AI hay dùng, key 152. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17322; repo_id 434708679; README SHA256 e8ebb122af88ef7d54982ada599ffbc3321db6d57f3902b800031d7745b7bdde.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vitest-dev/vitest",
+          "repo_id": "434708679",
+          "source_path": "",
+          "source_revision": "README-SHA256:e8ebb122af88ef7d54982ada599ffbc3321db6d57f3902b800031d7745b7bdde",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitest-dev/vitest",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Tài liệu: cần Vite từ 6.4.0 và Node từ 22.12.0. Miễn phí theo giấy phép MIT. Bài không chép lệnh và chưa kiểm tra việc dùng ngoài dự án Vite.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitest-dev/vitest/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vitest-dev/vitest/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vitest-dev/vitest",
+        "stars": 17322,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vitest-dev/vitest/main/README.md",
+        "readmeSha256": "e8ebb122af88ef7d54982ada599ffbc3321db6d57f3902b800031d7745b7bdde",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

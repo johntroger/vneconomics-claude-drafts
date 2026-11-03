@@ -1,0 +1,36 @@
+{
+  "key": 152,
+  "repo": "vitest-dev/vitest",
+  "repoId": "434708679",
+  "url": "https://github.com/vitest-dev/vitest",
+  "stars": 17322,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:39:04Z",
+  "createdAt": "2021-12-03T19:19:49Z",
+  "defaultBranch": "main",
+  "description": "Next generation testing framework powered by Vite.",
+  "homepage": "https://vitest.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vitest-dev/vitest/main/README.md",
+    "sha256": "e8ebb122af88ef7d54982ada599ffbc3321db6d57f3902b800031d7745b7bdde",
+    "bytes": 4179,
+    "sectionsRead": [
+      "Features",
+      "Hướng dẫn (yêu cầu, ví dụ kiểm thử)"
+    ]
+  },
+  "docsRead": [
+    "https://vitest.dev/guide/"
+  ],
+  "unknowns": [
+    "Chưa đọc hướng dẫn migrate từ Jest.",
+    "Chưa tìm hiểu Browser Mode chi tiết.",
+    "Yêu cầu phiên bản sẽ đổi."
+  ],
+  "runtimeValidated": false
+}

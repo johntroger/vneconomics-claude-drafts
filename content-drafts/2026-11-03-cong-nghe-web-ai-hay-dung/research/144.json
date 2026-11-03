@@ -1,0 +1,36 @@
+{
+  "key": 144,
+  "repo": "vercel/next.js",
+  "repoId": "70107786",
+  "url": "https://github.com/vercel/next.js",
+  "stars": 143238,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:02:25Z",
+  "createdAt": "2016-10-05T23:32:51Z",
+  "defaultBranch": "canary",
+  "description": "The React Framework",
+  "homepage": "https://nextjs.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vercel/next.js/canary/packages/next/README.md",
+    "sha256": "0ce9d8564a8d151caccc4ee6d3df746010d06a1e38c27a5fe340441a025aa751",
+    "bytes": 3105,
+    "sectionsRead": [
+      "README gói packages/next (Getting Started, Documentation)",
+      "Tài liệu chính thức: giới thiệu"
+    ]
+  },
+  "docsRead": [
+    "https://nextjs.org/docs"
+  ],
+  "unknowns": [
+    "README ở gốc repo chỉ là file trỏ nên bài dùng README của gói và trang tài liệu.",
+    "Chưa đọc hướng dẫn cài đặt chi tiết và yêu cầu Node.js.",
+    "Chi phí hosting chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

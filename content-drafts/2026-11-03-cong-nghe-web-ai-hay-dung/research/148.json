@@ -1,0 +1,37 @@
+{
+  "key": 148,
+  "repo": "microsoft/playwright",
+  "repoId": "221981891",
+  "url": "https://github.com/microsoft/playwright",
+  "stars": 99145,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:13:37Z",
+  "createdAt": "2019-11-15T18:32:42Z",
+  "defaultBranch": "main",
+  "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
+  "homepage": "https://playwright.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/playwright/main/README.md",
+    "sha256": "223a20c60327e670117058a8c7f444dde975d35f28fd0a9853a8b996f5a44cec",
+    "bytes": 11280,
+    "sectionsRead": [
+      "Get Started",
+      "Playwright Test",
+      "Tài liệu: Installation và yêu cầu hệ thống"
+    ]
+  },
+  "docsRead": [
+    "https://playwright.dev/docs/intro"
+  ],
+  "unknowns": [
+    "Chưa đọc Playwright CLI và MCP chi tiết.",
+    "Yêu cầu hệ thống sẽ đổi theo bản phát hành.",
+    "Chưa so sánh với công cụ kiểm thử khác."
+  ],
+  "runtimeValidated": false
+}

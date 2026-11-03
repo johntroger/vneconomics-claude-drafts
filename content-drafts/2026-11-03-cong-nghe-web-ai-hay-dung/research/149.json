@@ -1,0 +1,36 @@
+{
+  "key": 149,
+  "repo": "withastro/astro",
+  "repoId": "348060227",
+  "url": "https://github.com/withastro/astro",
+  "stars": 63680,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "NOASSERTION",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:00:53Z",
+  "createdAt": "2021-03-15T17:19:47Z",
+  "defaultBranch": "main",
+  "description": "The web framework for content-driven websites.",
+  "homepage": "https://astro.build",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/withastro/astro/main/README.md",
+    "sha256": "52efb8696eccd76499b6524c939e313c7128dd537d790e5e9cf2a7d424e5b3c2",
+    "bytes": 8349,
+    "sectionsRead": [
+      "README (Install, Documentation)",
+      "Why Astro? (tài liệu)"
+    ]
+  },
+  "docsRead": [
+    "https://docs.astro.build/en/concepts/why-astro/"
+  ],
+  "unknowns": [
+    "Chưa đọc yêu cầu Node.js.",
+    "Chưa tìm hiểu nhiều nhà cung cấp hosting.",
+    "Giấy phép từng gói trong monorepo chưa đối chiếu."
+  ],
+  "runtimeValidated": false
+}
