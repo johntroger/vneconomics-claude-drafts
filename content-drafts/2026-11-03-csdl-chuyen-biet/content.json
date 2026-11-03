@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-csdl-chuyen-biet",
+  "batch": 78,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 457,
+      "batch": 78,
+      "slug": "dolt",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Dolt: cơ sở dữ liệu SQL có thể fork, clone, branch, merge như Git, kết nối như MySQL",
+        "excerpt": "Hiểu Dolt là cơ sở dữ liệu SQL có quản lý phiên bản kiểu Git: fork, clone, branch, merge, push, pull trên các bảng. Kết nối như MySQL, hoặc dùng giao diện dòng lệnh kiểu Git để nhập CSV, commit và đẩy lên remote. README nêu có DoltHub, DoltLab, Hosted Dolt và Doltgres cho Postgres.",
+        "content": "<p>README mở đầu: Dolt là Git cho dữ liệu. Dolt là cơ sở dữ liệu SQL có thể fork, clone, branch, merge, push và pull như kho Git; kết nối như bất kỳ MySQL nào để đọc hay sửa lược đồ và dữ liệu; chức năng quản lý phiên bản có qua bảng hệ thống, hàm và thủ tục SQL, hoặc qua giao diện dòng lệnh kiểu Git để nhập CSV, commit, đẩy lên remote và gộp thay đổi của đồng đội. README tóm: Git quản lý phiên bản tệp, Dolt quản lý phiên bản bảng. Có DoltHub (nơi chia sẻ cơ sở dữ liệu Dolt, README nói lưu dữ liệu công khai miễn phí), DoltLab (tự host), Hosted Dolt (dịch vụ chạy hộ, trả phí) và Doltgres cho người thích Postgres (README ghi đang ở bản Beta). README nói Dolt là cơ sở dữ liệu tốt nhất cho bộ nhớ của agent, nhất là nhiều agent và nhiều máy (tuyên bố của README). Mục cài đặt gồm bản phát hành, các trình quản lý gói theo hệ điều hành, Docker và biên dịch từ mã nguồn; bài không chép lệnh. Mục Getting started hướng dẫn tạo thư mục dữ liệu, khởi động máy chủ tương thích MySQL, kết nối bằng ứng dụng MySQL (đến phiên bản 8.4), tạo lược đồ và tạo commit. Giấy phép Apache 2.0 theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi bảng dữ liệu của bạn bị sửa sai, thường khó biết ai sửa gì và quay lại thế nào. Dolt cho bạn lịch sử thay đổi và nhánh như Git cho mã.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhập một CSV nhỏ vào Dolt, sửa vài dòng trên một nhánh rồi gộp lại. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần biết SQL và Git cơ bản; khái niệm nhánh và gộp dữ liệu cần làm quen. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tuyên bố 'tốt nhất cho bộ nhớ agent' là của README, bài không kiểm chứng. Doltgres (bản Postgres) đang Beta theo README. Gộp nhánh dữ liệu có thể sinh xung đột khó giải quyết (nhận định chung). Hosted Dolt và DoltLab là dịch vụ riêng, bài chưa kiểm tra giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>version control (quản lý phiên bản)</strong>: ghi lại lịch sử thay đổi và cho quay về bản cũ; README nêu Dolt làm với bảng.</li><li><strong>branch / merge (nhánh / gộp)</strong>: làm việc song song rồi gộp kết quả; README nêu Dolt hỗ trợ.</li><li><strong>MySQL-compatible</strong>: kết nối như MySQL; README nêu.</li><li><strong>DoltHub</strong>: nơi chia sẻ cơ sở dữ liệu Dolt, như GitHub cho dữ liệu; README nêu.</li><li><strong>remote</strong>: bản lưu ở máy chủ khác để đẩy lên hoặc kéo về; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bản phát hành theo hệ điều hành, Docker hoặc biên dịch từ mã nguồn (bài không chép lệnh); kết nối bằng ứng dụng MySQL. Miễn phí theo giấy phép Apache 2.0; Hosted Dolt trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và What's it for.</li><li>Cài theo hướng dẫn và làm theo Getting started.</li><li>Thử nhánh và gộp với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn lưu dữ liệu có lịch sử thay đổi như Git. Hãy đọc README của Dolt (https://github.com/dolthub/dolt) và giải thích bằng tiếng Việt: Dolt khác MySQL thế nào, nhánh và gộp dữ liệu nghĩa là gì, và khi nào không cần Dolt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 40 KB), bài chỉ lấy giới thiệu, cài đặt và Getting started. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dolthub</strong> có <strong>24.806 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục Credits and License ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dolthub/dolt/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dolthub/dolt\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 457. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24806; repo_id 198683574; README SHA256 501b33a4c6251f1801f01e21898ed0c5471405aa933cf14f7a010d8043fe79b3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dolthub/dolt",
+          "repo_id": "198683574",
+          "source_path": "",
+          "source_revision": "README-SHA256:501b33a4c6251f1801f01e21898ed0c5471405aa933cf14f7a010d8043fe79b3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dolthub/dolt",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bản phát hành theo hệ điều hành, Docker hoặc biên dịch từ mã nguồn (bài không chép lệnh); kết nối bằng ứng dụng MySQL. Miễn phí theo giấy phép Apache 2.0; Hosted Dolt trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dolthub/dolt/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dolthub/dolt/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dolthub/dolt",
+        "stars": 24806,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dolthub/dolt/main/README.md",
+        "readmeSha256": "501b33a4c6251f1801f01e21898ed0c5471405aa933cf14f7a010d8043fe79b3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 458,
+      "batch": 78,
+      "slug": "libsql",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "libSQL: bản fork mã nguồn mở của SQLite có bản sao nhúng và truy cập từ xa; README khuyên dự án mới xem Turso viết lại bằng Rust",
+        "excerpt": "Hiểu libSQL là bản fork mã nguồn mở của SQLite thêm bản sao nhúng và truy cập từ xa. README có ghi chú quan trọng: libSQL và Turso Database là hai dự án khác nhau của cùng nhóm; nếu bắt đầu dự án mới có thể nên xem Turso (viết lại từ đầu bằng Rust); libSQL vẫn được bảo trì nhưng tính năng mới phát triển ở Turso.",
+        "content": "<p>README mở đầu bằng ghi chú quan trọng: Turso Database và libSQL là hai dự án khác nhau từ cùng nhóm. libSQL (kho này) là bản fork mã nguồn mở của SQLite, mở rộng thêm bản sao nhúng và truy cập từ xa, nhưng thừa hưởng giới hạn nền tảng của SQLite như mô hình một người ghi. Turso Database là cơ sở dữ liệu tương thích SQLite viết lại từ đầu bằng Rust, không phải fork, với các khả năng vượt SQLite như ghi đồng thời. README khuyên: nếu bắt đầu dự án mới, bạn có thể muốn xem Turso; libSQL vẫn được bảo trì tích cực nhưng tính năng mới phát triển ở Turso. Tính năng libSQL: bản sao nhúng để có bản sao dữ liệu ngay trong ứng dụng, máy chủ libSQL cho truy cập SQLite từ xa giống PostgreSQL hay MySQL, hỗ trợ Rust, JavaScript, Python, Go và các ngôn ngữ khác. Cải tiến so với SQLite: ALTER TABLE mở rộng, ROWID ngẫu nhiên, hàm người dùng bằng WebAssembly và các thay đổi khác. Có trình điều khiển chính thức (TypeScript và JavaScript, Rust, Go), thử nghiệm (Python, C) và cộng đồng; có danh sách công cụ giao diện (một số trả phí). Giấy phép: huy hiệu MIT; mục License chỉ nói theo giấy phép mã nguồn mở trong tệp LICENSE.md.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>SQLite quen thuộc nhưng chỉ chạy trong một ứng dụng. libSQL thêm khả năng truy cập từ xa và sao chép. Nhưng README tự khuyên dự án mới nên xem Turso trước.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc kỹ ghi chú về Turso trước khi quyết định dùng libSQL cho dự án mới. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu SQLite và các khái niệm sao chép; build bằng Rust. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói tính năng mới phát triển ở Turso, không phải libSQL; dự án mới nên cân nhắc. libSQL thừa hưởng giới hạn một người ghi của SQLite. Công cụ giao diện trong danh sách có công cụ trả phí. Tuyên bố bảo trì tích cực là của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>fork</strong>: bản sao dự án để phát triển theo hướng riêng; README nói libSQL fork SQLite.</li><li><strong>embedded replica (bản sao nhúng)</strong>: bản sao dữ liệu nằm ngay trong ứng dụng; README nêu.</li><li><strong>single-writer (một người ghi)</strong>: mỗi lúc chỉ một thao tác ghi; README nói libSQL thừa hưởng từ SQLite.</li><li><strong>driver (trình điều khiển)</strong>: thư viện nối ngôn ngữ lập trình với cơ sở dữ liệu; README liệt kê.</li><li><strong>WebAssembly</strong>: định dạng mã chạy an toàn trong sandbox; README nêu hàm người dùng bằng WebAssembly.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: build bằng công cụ Rust và dùng trình điều khiển chính thức (bài không chép lệnh). Cần Rust cho bản tự build. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ghi chú về libSQL và Turso.</li><li>Quyết định dự án mới dùng cái nào.</li><li>Chọn trình điều khiển phù hợp ngôn ngữ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang chọn cơ sở dữ liệu kiểu SQLite có truy cập từ xa. Hãy đọc README của libSQL (https://github.com/tursodatabase/libsql) và giải thích bằng tiếng Việt: libSQL khác Turso thế nào, README khuyên gì cho dự án mới, và giới hạn một người ghi nghĩa là gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần License chỉ nêu giấy phép mã nguồn mở không rõ tên (huy hiệu MIT; lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tursodatabase</strong> có <strong>17.308 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-17. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT nhưng mục License chỉ dẫn tới tệp. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tursodatabase/libsql/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tursodatabase/libsql\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 458. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17308; repo_id 543276238; README SHA256 5a7d05bd5b34238524dd15170445f67d130f70147dfc2bd2dfd656e0666067d1.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tursodatabase/libsql",
+          "repo_id": "543276238",
+          "source_path": "",
+          "source_revision": "README-SHA256:5a7d05bd5b34238524dd15170445f67d130f70147dfc2bd2dfd656e0666067d1",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tursodatabase/libsql",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: build bằng công cụ Rust và dùng trình điều khiển chính thức (bài không chép lệnh). Cần Rust cho bản tự build. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tursodatabase/libsql/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tursodatabase/libsql/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tursodatabase/libsql",
+        "stars": 17308,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tursodatabase/libsql/main/README.md",
+        "readmeSha256": "5a7d05bd5b34238524dd15170445f67d130f70147dfc2bd2dfd656e0666067d1",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 459,
+      "batch": 78,
+      "slug": "rqlite",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "rqlite: cơ sở dữ liệu quan hệ phân tán chịu lỗi xây trên SQLite, một tệp nhị phân, API HTTP",
+        "excerpt": "Hiểu rqlite là cơ sở dữ liệu quan hệ phân tán, chịu lỗi, xây trên SQLite, dùng một tệp nhị phân không phụ thuộc ngoài và API HTTP. README tả như etcd nhưng có mô hình quan hệ, có hướng dẫn Docker và gọi API HTTP.",
+        "content": "<p>README tả rqlite là cơ sở dữ liệu quan hệ phân tán chịu lỗi xây trên SQLite, giàu tính năng, vững chắc (cách nói của README), dùng để lưu dữ liệu quan trọng luôn sẵn sàng cho ứng dụng; so sánh với etcd nhưng có mô hình quan hệ, cho dịch vụ đám mây chịu lỗi hoặc ứng dụng ở biên. Quick Start gồm ba bước: chạy một nút bằng Docker, tạo bảng và chèn dòng qua yêu cầu HTTP, rồi truy vấn (bài không chép lệnh). Tính năng cốt lõi: SQL đầy đủ qua SQLite (tìm toàn văn, JSON), mở rộng bằng tiện ích SQLite (tìm vector, mật mã), yêu cầu nguyên tử nhiều câu lệnh, thu thập thay đổi dữ liệu (CDC). Vận hành dễ: một tệp nhị phân không phụ thuộc, sẵn sàng cao nhờ sao chép đầy đủ, gom cụm động qua Kubernetes, Docker Compose, Consul, etcd hoặc DNS, sao lưu nóng gồm tự động lên AWS S3, MinIO và Google Cloud. Trải nghiệm nhà phát triển: API HTTP đơn giản, bảng điều khiển, CLI, thư viện khách, bảo mật với TLS và xác thực, điều chỉnh mức nhất quán đọc và độ bền. README nêu cách đọc tên (R Q lite). README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>SQLite rất tiện nhưng chỉ một máy. rqlite gom nhiều nút SQLite thành cụm có sao chép, nên một máy hỏng thì dữ liệu vẫn còn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy một nút trên máy cá nhân, tạo bảng nhỏ qua API HTTP, rồi đọc README phần gom cụm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu SQL, API HTTP và khái niệm cụm, nhất quán. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cụm chịu lỗi cần nhiều nút và cấu hình mạng; README không bàn chi phí vận hành. Cổng API không nên mở ra Internet khi chưa bật xác thực và TLS (nguyên tắc chung, README nêu có hỗ trợ bảo mật). Các mô tả 'vững chắc' là của README. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>distributed (phân tán)</strong>: chạy trên nhiều máy phối hợp; README nêu.</li><li><strong>fault-tolerant (chịu lỗi)</strong>: một nút hỏng không làm mất dịch vụ; README nêu.</li><li><strong>cluster (cụm)</strong>: nhiều nút làm việc cùng nhau; README nêu gom cụm động.</li><li><strong>consistency (nhất quán)</strong>: mức đảm bảo các nút thấy cùng dữ liệu; README nêu điều chỉnh được.</li><li><strong>CDC</strong>: thu thập thay đổi dữ liệu để gửi hệ thống khác; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: chạy bằng Docker hoặc tệp nhị phân, gọi API HTTP (bài không chép lệnh). Cần Docker để thử nhanh. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc Key features.</li><li>Chạy một nút thử với dữ liệu giả.</li><li>Đọc hướng dẫn gom cụm khi hiểu cơ bản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn cơ sở dữ liệu SQLite có chịu lỗi. Hãy đọc README của rqlite (https://github.com/rqlite/rqlite) và giải thích bằng tiếng Việt: rqlite khác SQLite thế nào, gom cụm nghĩa là gì, và rủi ro khi để cổng API mở. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Các từ 'vững chắc' là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>rqlite</strong> có <strong>17.909 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/rqlite/rqlite/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/rqlite/rqlite\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 459. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17909; repo_id 23247808; README SHA256 c217a4ffc7e96c4eb0a2333d8cdb269184207ac9c22d886f8128fdc9e57ff268.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/rqlite/rqlite",
+          "repo_id": "23247808",
+          "source_path": "",
+          "source_revision": "README-SHA256:c217a4ffc7e96c4eb0a2333d8cdb269184207ac9c22d886f8128fdc9e57ff268",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rqlite/rqlite",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: chạy bằng Docker hoặc tệp nhị phân, gọi API HTTP (bài không chép lệnh). Cần Docker để thử nhanh. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rqlite/rqlite/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/rqlite/rqlite/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "rqlite/rqlite",
+        "stars": 17909,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/rqlite/rqlite/master/README.md",
+        "readmeSha256": "c217a4ffc7e96c4eb0a2333d8cdb269184207ac9c22d886f8128fdc9e57ff268",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 460,
+      "batch": 78,
+      "slug": "questdb",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "QuestDB: cơ sở dữ liệu chuỗi thời gian mã nguồn mở độ trễ thấp, SQL mở rộng cho chuỗi thời gian; README có số liệu benchmark của hãng và bản Enterprise trả phí",
+        "excerpt": "Hiểu QuestDB là cơ sở dữ liệu chuỗi thời gian mã nguồn mở, độ trễ thấp, nhập hàng triệu sự kiện mỗi giây, truy vấn bằng SQL mở rộng (SAMPLE BY, LATEST ON, ASOF JOIN). README kèm bảng benchmark do hãng đo và bản Enterprise trả phí cho sẵn sàng cao và bảo mật.",
+        "content": "<p>README tả QuestDB là cơ sở dữ liệu chuỗi thời gian mã nguồn mở, độ trễ thấp, định dạng mở: nhập hàng triệu sự kiện mỗi giây, tính toán trên dữ liệu trực tiếp trong mili giây, giữ nhiều năm lịch sử. Động cơ viết bằng Java không GC kèm C++ và Rust; dữ liệu theo cột chia theo thời gian; lưu trữ nhiều tầng gồm nhật ký ghi, phân vùng cột và Apache Parquet. README đưa các số đo đạt được của hãng (ví dụ nhập 19 triệu dòng mỗi giây mỗi máy) và bảng so sánh nhập liệu trên cùng một máy AWS với ClickHouse, TimescaleDB, InfluxDB do hãng đo vào tháng 8 năm 2026; README khuyến khích bạn tự chạy benchmark. Mục What QuestDB does: thu thập, tính toán (view vật chất hóa, view trực tiếp), truy vấn và lưu giữ; SQL chuẩn mở rộng cho chuỗi thời gian. Mục Get started có Docker hoặc Homebrew (bài không chép lệnh). Mục AI coding agents: QuestDB dùng được với Claude Code, Codex, Cursor và máy khách MCP, qua kỹ năng chạy SQL hoặc cách khác. Mục QuestDB Enterprise: bản dành cho sản xuất thêm sẵn sàng cao, sao chép, tầng lưu trữ petabyte, RBAC, TLS, SSO, nhật ký kiểm toán, hỗ trợ 24/7 với cam kết 99,9% (tuyên bố của README), chạy tại chỗ hoặc dịch vụ. Giấy phép Apache 2.0 theo huy hiệu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dữ liệu chuỗi thời gian là dữ liệu theo từng thời điểm: giá cổ phiếu, cảm biến, nhật ký. QuestDB tối ưu để nhập rất nhiều và truy vấn theo thời gian rất nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nạp một tệp dữ liệu giả theo thời gian và thử SAMPLE BY để gom theo giờ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần biết SQL và khái niệm chuỗi thời gian; vận hành thật cần nhiều hiểu biết. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Toàn bộ số liệu hiệu năng và bảng so sánh (19 triệu dòng, 8,59 triệu dòng mỗi giây) là của hãng, đo trên cấu hình lớn; bài không kiểm chứng và kết quả của bạn sẽ khác. Các tính năng sẵn sàng cao, RBAC, SSO thuộc bản Enterprise trả phí (README), bài chưa kiểm tra giá. README rất dài.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>time-series database (cơ sở dữ liệu chuỗi thời gian)</strong>: chuyên lưu dữ liệu theo thời gian; README nêu.</li><li><strong>ingestion (nhập liệu)</strong>: đưa dữ liệu vào cơ sở dữ liệu; README nêu tốc độ.</li><li><strong>SAMPLE BY / ASOF JOIN</strong>: lệnh SQL mở rộng cho chuỗi thời gian; README nêu.</li><li><strong>Parquet</strong>: định dạng lưu cột mở; README nêu hỗ trợ.</li><li><strong>benchmark</strong>: bài đo hiệu năng so sánh; README nêu của hãng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: chạy bằng Docker hoặc Homebrew trên Apple Silicon (bài không chép lệnh). Cần Docker để thử nhanh. Miễn phí theo giấy phép Apache 2.0; bản Enterprise trả phí.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và What QuestDB does.</li><li>Thử trên máy cá nhân với dữ liệu giả.</li><li>Tự đo hiệu năng trước khi tin số liệu của hãng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có dữ liệu theo thời gian (cảm biến, lượt xem). Hãy đọc README của QuestDB (https://github.com/questdb/questdb) và giải thích bằng tiếng Việt: cơ sở dữ liệu chuỗi thời gian là gì, SAMPLE BY làm gì, và vì sao không nên tin số benchmark của hãng khi chưa tự đo. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 57 KB), bài chỉ lấy giới thiệu, What QuestDB does, benchmark, AI agents và Enterprise. Số liệu hiệu năng là của hãng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>questdb</strong> có <strong>17.496 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu Apache 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/questdb/questdb/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/questdb/questdb\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 460. Chưa cài/chạy thử; không tạo validation. Snapshot sao 17496; repo_id 19257422; README SHA256 d85c508fd47434729c07af97928d01b1cd54bf14af90b0c6c982c36a3c302c5d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/questdb/questdb",
+          "repo_id": "19257422",
+          "source_path": "",
+          "source_revision": "README-SHA256:d85c508fd47434729c07af97928d01b1cd54bf14af90b0c6c982c36a3c302c5d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/questdb/questdb",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: chạy bằng Docker hoặc Homebrew trên Apple Silicon (bài không chép lệnh). Cần Docker để thử nhanh. Miễn phí theo giấy phép Apache 2.0; bản Enterprise trả phí.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/questdb/questdb/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/questdb/questdb/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "questdb/questdb",
+        "stars": 17496,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/questdb/questdb/master/README.md",
+        "readmeSha256": "d85c508fd47434729c07af97928d01b1cd54bf14af90b0c6c982c36a3c302c5d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 461,
+      "batch": 78,
+      "slug": "hasura",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hasura GraphQL Engine: một điểm cuối API GraphQL an toàn tới nhiều nguồn dữ liệu; kho có hai phiên bản V2 ổn định và V3 (DDN)",
+        "excerpt": "Hiểu Hasura là engine tạo một API GraphQL đơn, kết hợp được và an toàn tới dữ liệu của bạn. README nói kho gồm V3 (cung cấp sức mạnh cho Hasura DDN, hỗ trợ PostgreSQL, MongoDB, ClickHouse, MS SQL Server) và V2 là bản ổn định hiện tại. README cảnh báo kho rất lớn khi clone.",
+        "content": "<p>README tả Hasura engine là dự án mã nguồn mở giúp xây ứng dụng hiện đại bằng cách cung cấp truy cập dữ liệu qua một điểm cuối API đơn, kết hợp được và an toàn. Mục Hasura V3: README nói tương lai của phân phối dữ liệu đã GA, hỗ trợ PostgreSQL (và các biến thể), MongoDB, ClickHouse, MS SQL Server, viết logic riêng bằng SDK kết nối TypeScript, Python, Go; mã engine V3 nằm ở thư mục v3, cấp sức mạnh cho Hasura DDN; kiến trúc DDN có bộ kết nối dữ liệu, tất cả bộ kết nối đều mã nguồn mở. Mục Hasura V2: là phiên bản ổn định hiện tại, thông tin ở thư mục v2. Mục Cloning: kho là monorepo lớn, lịch sử git dài, clone lần đầu chậm và tốn đĩa; README gợi ý clone nông hoặc chỉ lấy thư mục v3 (bài không chép lệnh). Hỗ trợ qua tài liệu DDN, tài liệu V2, Discord, GitHub issues. Giấy phép (mục Licenses): bộ kết nối dữ liệu Apache 2.0; engine V3 'dự định' theo Apache 2.0; engine lõi V2 Apache 2.0; phần còn lại trong thư mục v2 (trừ server, cli, console) theo MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì tự viết API cho từng bảng dữ liệu, Hasura sinh sẵn API GraphQL từ cơ sở dữ liệu. Tiện cho ứng dụng cần truy vấn linh hoạt, nhưng cần hiểu GraphQL và quyền truy cập.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README để hiểu V2 và V3 khác nhau, rồi chọn theo tài liệu tương ứng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu GraphQL, cơ sở dữ liệu và phân quyền; hai phiên bản V2 và V3 có tài liệu riêng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói engine V3 'dự định' theo Apache 2.0 (chưa chắc chắn hoàn toàn); các phần khác nhau theo giấy phép khác nhau (Apache 2.0, MIT). Hasura DDN là dịch vụ riêng của hãng, bài chưa kiểm tra giá. Một API sinh tự động nếu phân quyền sai có thể lộ dữ liệu. Kho rất lớn: làm theo gợi ý clone nông của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>GraphQL</strong>: kiểu API cho phép hỏi đúng dữ liệu cần; README nêu là điểm cuối API.</li><li><strong>connector (bộ kết nối dữ liệu)</strong>: phần nối Hasura với nguồn dữ liệu; README nêu.</li><li><strong>monorepo</strong>: một kho chứa nhiều dự án; README nêu.</li><li><strong>DDN</strong>: nền tảng phân phối dữ liệu của Hasura, dùng engine V3; README nêu.</li><li><strong>sparse checkout (clone một phần)</strong>: chỉ lấy một thư mục của kho lớn; README gợi ý.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng V3 theo hướng dẫn Getting Started của DDN hoặc V2 theo README riêng; kho rất lớn nên clone nông hoặc một phần (bài không chép lệnh). Cần cơ sở dữ liệu nguồn. Miễn phí theo giấy phép Apache 2.0 (và MIT cho một số phần); DDN là dịch vụ riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục V3 và V2 để chọn phiên bản.</li><li>Làm theo tài liệu của phiên bản bạn chọn.</li><li>Cấu hình phân quyền trước khi mở API.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn có API GraphQL cho cơ sở dữ liệu có sẵn. Hãy đọc README của Hasura graphql-engine (https://github.com/hasura/graphql-engine) và giải thích bằng tiếng Việt: V2 và V3 khác nhau thế nào, giấy phép từng phần ra sao, và rủi ro khi phân quyền sai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, trỏ phần lớn tới tài liệu; bài chưa đọc README thư mục v2 và v3. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>hasura</strong> có <strong>32.125 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục Licenses nêu Apache 2.0 cho engine và bộ kết nối, MIT cho một phần của v2. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/hasura/graphql-engine/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/hasura/graphql-engine\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 461. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32125; repo_id 137724480; README SHA256 1d399d8325cb5cca64eeb64abbc073dbf9852d8679e039c87c6b1552acb4640d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/hasura/graphql-engine",
+          "repo_id": "137724480",
+          "source_path": "",
+          "source_revision": "README-SHA256:1d399d8325cb5cca64eeb64abbc073dbf9852d8679e039c87c6b1552acb4640d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hasura/graphql-engine",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng V3 theo hướng dẫn Getting Started của DDN hoặc V2 theo README riêng; kho rất lớn nên clone nông hoặc một phần (bài không chép lệnh). Cần cơ sở dữ liệu nguồn. Miễn phí theo giấy phép Apache 2.0 (và MIT cho một số phần); DDN là dịch vụ riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hasura/graphql-engine/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/hasura/graphql-engine/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "hasura/graphql-engine",
+        "stars": 32125,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/hasura/graphql-engine/master/README.md",
+        "readmeSha256": "1d399d8325cb5cca64eeb64abbc073dbf9852d8679e039c87c6b1552acb4640d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 462,
+      "batch": 78,
+      "slug": "vitess",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Vitess: hệ cơ sở dữ liệu phân tán mở rộng ngang xây trên MySQL, từng là thành phần cốt lõi hạ tầng dữ liệu của YouTube",
+        "excerpt": "Hiểu Vitess là hệ cơ sở dữ liệu phân tán, cloud-native, mở rộng ngang, xây quanh MySQL bằng phân mảnh tổng quát. README nói từng là cốt lõi hạ tầng dữ liệu của YouTube từ 2011 và được nhiều công ty lớn dùng; đây là công cụ cho quy mô rất lớn, hiếm khi cần cho người mới.",
+        "content": "<p>README tả Vitess là hệ cơ sở dữ liệu phân tán, cloud-native, mở rộng ngang xây quanh MySQL. README nói Vitess có thể đạt mở rộng không giới hạn nhờ phân mảnh tổng quát (tuyên bố của README) và cho phép mã ứng dụng và truy vấn không phụ thuộc vào việc dữ liệu được chia ra nhiều máy; có thể tách và gộp phân mảnh, với bước chuyển nguyên tử chỉ mất vài giây. README nêu Vitess là thành phần cốt lõi của hạ tầng cơ sở dữ liệu YouTube từ năm 2011, phát triển tới hàng chục nghìn nút MySQL, và từ 2015 được nhiều công ty lớn khác dùng, như Slack, Square (nay là Block) và JD.com. README ngắn: trỏ tới trang chủ, cộng đồng và lộ trình, cách báo lỗi, báo lỗ hổng bảo mật qua email nhóm bảo trì, và báo cáo kiểm toán bảo mật của bên thứ ba (ADA Logics). Giấy phép Apache 2.0, trừ khi ghi khác.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi một cơ sở dữ liệu MySQL không còn chứa nổi dữ liệu hay lượt truy cập, Vitess chia dữ liệu ra nhiều máy mà ứng dụng vẫn thấy như một cơ sở dữ liệu. Đa số dự án nhỏ không cần đến.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc README để hiểu phân mảnh là gì, rồi quyết định bạn có thật sự cần quy mô đó. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng cần lưu dữ liệu và muốn hiểu các lựa chọn ngoài SQLite hoặc PostgreSQL thông thường.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu MySQL, phân mảnh và vận hành cụm; README không có hướng dẫn cài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README không có hướng dẫn cài đặt và không nêu yêu cầu vận hành; đây là công cụ cho tổ chức có đội vận hành. 'Mở rộng không giới hạn' là tuyên bố của README. Phần lớn dự án nhỏ không cần phân mảnh; dùng MySQL hoặc dịch vụ quản lý đơn giản hơn nhiều.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>sharding (phân mảnh)</strong>: chia dữ liệu ra nhiều máy theo quy tắc; README nêu.</li><li><strong>horizontal scaling (mở rộng ngang)</strong>: thêm máy thay vì làm máy mạnh hơn; README nêu.</li><li><strong>cloud-native</strong>: thiết kế để chạy trên hạ tầng đám mây như Kubernetes; README nêu.</li><li><strong>cutover (chuyển đổi)</strong>: bước chuyển sang cấu hình mới; README nói nguyên tử trong vài giây.</li><li><strong>CNCF</strong>: quỹ phần mềm đám mây mã nguồn mở; README có email nhóm bảo trì trên danh sách CNCF.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README không có hướng dẫn cài; trỏ tới trang chủ vitess.io. Cần MySQL và đội vận hành. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu để hiểu phân mảnh.</li><li>Đánh giá xem có cần quy mô đó không.</li><li>Đọc tài liệu trên vitess.io nếu thật sự cần.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình nghe nói Vitess dùng cho cơ sở dữ liệu lớn. Hãy đọc README của Vitess (https://github.com/vitessio/vitess) và giải thích bằng tiếng Việt: phân mảnh là gì, khi nào cần Vitess, và vì sao đa số dự án nhỏ không cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn, không có hướng dẫn kỹ thuật; bài chưa đọc tài liệu vitess.io. Tuyên bố 'không giới hạn' là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Cơ sở dữ liệu giữ dữ liệu quan trọng: thử với dữ liệu giả, sao lưu trước khi thay đổi, không để cổng cơ sở dữ liệu mở ra Internet, bật xác thực và mã hóa khi triển khai thật, và đừng tin số liệu so sánh hiệu năng của hãng khi chưa tự đo.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vitessio</strong> có <strong>21.399 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục License ghi Apache 2.0 trừ khi ghi khác. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vitessio/vitess/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vitessio/vitess\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 462. Chưa cài/chạy thử; không tạo validation. Snapshot sao 21399; repo_id 11008207; README SHA256 85d77705aeb31ba28fb441af706f3bcc10847d49daa2a247999f36ed8970bdc8.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vitessio/vitess",
+          "repo_id": "11008207",
+          "source_path": "",
+          "source_revision": "README-SHA256:85d77705aeb31ba28fb441af706f3bcc10847d49daa2a247999f36ed8970bdc8",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitessio/vitess",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README không có hướng dẫn cài; trỏ tới trang chủ vitess.io. Cần MySQL và đội vận hành. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vitessio/vitess/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vitessio/vitess/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vitessio/vitess",
+        "stars": 21399,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vitessio/vitess/main/README.md",
+        "readmeSha256": "85d77705aeb31ba28fb441af706f3bcc10847d49daa2a247999f36ed8970bdc8",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

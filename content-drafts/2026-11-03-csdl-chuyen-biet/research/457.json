@@ -1,0 +1,44 @@
+{
+  "key": 457,
+  "repo": "dolthub/dolt",
+  "repoId": "198683574",
+  "url": "https://github.com/dolthub/dolt",
+  "stars": 24806,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:02:28Z",
+  "createdAt": "2019-07-24T17:46:25Z",
+  "defaultBranch": "main",
+  "description": "Dolt – Git for Data",
+  "homepage": "https://www.dolthub.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dolthub/dolt/main/README.md",
+    "sha256": "501b33a4c6251f1801f01e21898ed0c5471405aa933cf14f7a010d8043fe79b3",
+    "bytes": 39961,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What's it for?",
+      "Dolt CLI",
+      "Installation",
+      "Getting started",
+      "Credits and License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu dolthub.com.",
+    "Chưa thử.",
+    "Giá Hosted Dolt chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

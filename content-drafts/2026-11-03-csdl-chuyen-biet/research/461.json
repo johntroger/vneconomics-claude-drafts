@@ -1,0 +1,43 @@
+{
+  "key": 461,
+  "repo": "hasura/graphql-engine",
+  "repoId": "137724480",
+  "url": "https://github.com/hasura/graphql-engine",
+  "stars": 32125,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:04:54Z",
+  "createdAt": "2018-06-18T07:57:36Z",
+  "defaultBranch": "master",
+  "description": "Blazing fast, instant realtime GraphQL APIs on all your data with fine grained access control, also trigger webhooks on database events.",
+  "homepage": "https://hasura.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/hasura/graphql-engine/master/README.md",
+    "sha256": "1d399d8325cb5cca64eeb64abbc073dbf9852d8679e039c87c6b1552acb4640d",
+    "bytes": 4934,
+    "sectionsRead": [
+      "Hasura V3",
+      "Hasura V2",
+      "Cloning repository",
+      "Support & Troubleshooting",
+      "Licenses"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu hasura.io.",
+    "Chưa thử.",
+    "Giá Hasura DDN chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

@@ -6539,5 +6539,147 @@
   "related": [
    "karakeep"
   ]
+ },
+ {
+  "key": 457,
+  "slug": "dolt",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "Dolt: cơ sở dữ liệu SQL có thể fork, clone, branch, merge như Git, kết nối như MySQL",
+  "repo": "dolthub/dolt",
+  "stars": 24806,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "libsql",
+   "rqlite"
+  ]
+ },
+ {
+  "key": 458,
+  "slug": "libsql",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "libSQL: bản fork mã nguồn mở của SQLite có bản sao nhúng và truy cập từ xa; README khuyên dự án mới xem Turso viết lại bằng Rust",
+  "repo": "tursodatabase/libsql",
+  "stars": 17308,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-17",
+  "related": [
+   "dolt"
+  ]
+ },
+ {
+  "key": 459,
+  "slug": "rqlite",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "rqlite: cơ sở dữ liệu quan hệ phân tán chịu lỗi xây trên SQLite, một tệp nhị phân, API HTTP",
+  "repo": "rqlite/rqlite",
+  "stars": 17909,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "dolt",
+   "questdb"
+  ]
+ },
+ {
+  "key": 460,
+  "slug": "questdb",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "QuestDB: cơ sở dữ liệu chuỗi thời gian mã nguồn mở độ trễ thấp, SQL mở rộng cho chuỗi thời gian; README có số liệu benchmark của hãng và bản Enterprise trả phí",
+  "repo": "questdb/questdb",
+  "stars": 17496,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "hasura",
+   "rqlite"
+  ]
+ },
+ {
+  "key": 461,
+  "slug": "hasura",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "Hasura GraphQL Engine: một điểm cuối API GraphQL an toàn tới nhiều nguồn dữ liệu; kho có hai phiên bản V2 ổn định và V3 (DDN)",
+  "repo": "hasura/graphql-engine",
+  "stars": 32125,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "questdb",
+   "vitess"
+  ]
+ },
+ {
+  "key": 462,
+  "slug": "vitess",
+  "group": "2026-11-03-csdl-chuyen-biet",
+  "title": "Vitess: hệ cơ sở dữ liệu phân tán mở rộng ngang xây trên MySQL, từng là thành phần cốt lõi hạ tầng dữ liệu của YouTube",
+  "repo": "vitessio/vitess",
+  "stars": 21399,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "hasura"
+  ]
  }
 ]

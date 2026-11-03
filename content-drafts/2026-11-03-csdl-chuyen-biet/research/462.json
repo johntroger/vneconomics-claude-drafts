@@ -1,0 +1,42 @@
+{
+  "key": 462,
+  "repo": "vitessio/vitess",
+  "repoId": "11008207",
+  "url": "https://github.com/vitessio/vitess",
+  "stars": 21399,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:53:02Z",
+  "createdAt": "2013-06-27T21:20:28Z",
+  "defaultBranch": "main",
+  "description": "Vitess is a database clustering system for horizontal scaling of MySQL.",
+  "homepage": "http://vitess.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/vitessio/vitess/main/README.md",
+    "sha256": "85d77705aeb31ba28fb441af706f3bcc10847d49daa2a247999f36ed8970bdc8",
+    "bytes": 3212,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Community",
+      "Security",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu vitess.io.",
+    "Chưa thử.",
+    "Yêu cầu vận hành chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

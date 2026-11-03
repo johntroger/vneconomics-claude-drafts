@@ -1,0 +1,44 @@
+{
+  "key": 460,
+  "repo": "questdb/questdb",
+  "repoId": "19257422",
+  "url": "https://github.com/questdb/questdb",
+  "stars": 17496,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:38:40Z",
+  "createdAt": "2014-04-28T23:29:15Z",
+  "defaultBranch": "master",
+  "description": "QuestDB is a high performance, open-source, time-series database",
+  "homepage": "https://questdb.com",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/questdb/questdb/master/README.md",
+    "sha256": "d85c508fd47434729c07af97928d01b1cd54bf14af90b0c6c982c36a3c302c5d",
+    "bytes": 57096,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Get started",
+      "What QuestDB does",
+      "QuestDB performance vs. other databases",
+      "AI coding agents",
+      "QuestDB Enterprise"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu questdb.com.",
+    "Chưa thử.",
+    "Số liệu hiệu năng chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}
