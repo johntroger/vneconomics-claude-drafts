@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-hieu-ai-llm",
+  "batch": 28,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 166,
+      "batch": 28,
+      "slug": "openai-cookbook",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenAI Cookbook: ví dụ và hướng dẫn dùng API của OpenAI cho các việc thường gặp",
+        "excerpt": "Kho ví dụ mã (chủ yếu Python) về cách dùng API OpenAI, hữu ích để hiểu một ứng dụng AI gọi model thế nào. Cần tài khoản và khóa API, có chi phí.",
+        "content": "<p>OpenAI Cookbook là kho mã ví dụ và hướng dẫn để làm các việc thường gặp với API của OpenAI. README nói để chạy các ví dụ bạn cần một tài khoản OpenAI và khóa API, hầu hết mã bằng Python nhưng khái niệm áp dụng cho ngôn ngữ nào cũng được, và có trang web cookbook.openai.com để đọc dễ hơn cùng danh sách tài nguyên liên quan. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một cuốn sách công thức nấu ăn viết cho một loại bếp cụ thể: mỗi trang là một món (phân loại văn bản, tìm kiếm tài liệu, gọi công cụ…) với mã mẫu, để bạn hiểu một ứng dụng AI thực chất gọi model ra sao.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc một ví dụ trên cookbook.openai.com để hiểu đoạn mã gọi model do AI viết cho bạn đang làm gì ở từng dòng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người vibe code muốn hiểu cách ứng dụng gọi model AI; người học làm ứng dụng AI.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và hiểu khái niệm API; chạy mã cần khóa API trả phí theo mức dùng. Đọc trên web thì dễ hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng nhà cung cấp model khác, ví dụ cụ thể sẽ khác (khái niệm vẫn tham khảo được). Nếu chưa muốn trả phí API, chỉ đọc thôi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>cookbook</strong>: tập công thức mẫu cho một việc cụ thể.</li><li><strong>prompt</strong>: câu lệnh hoặc yêu cầu bạn đưa cho model.</li><li><strong>token</strong>: đơn vị mà model tính khi đọc và viết, ảnh hưởng chi phí.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói cần tài khoản OpenAI và khóa API (liên kết để tạo tài khoản). Chi phí tính theo mức dùng, bài chưa kiểm tra bảng giá. Miễn phí khi chỉ đọc. Giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở cookbook.openai.com và chọn một ví dụ đơn giản.</li><li>Đọc mã và lời giải thích trước khi chạy.</li><li>Nếu chạy thử, đặt hạn mức chi tiêu thấp cho khóa API.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu ứng dụng AI gọi model thế nào. Hãy đọc README của OpenAI Cookbook (https://github.com/openai/openai-cookbook) và đề xuất bằng tiếng Việt 5 ví dụ đơn giản nhất cho người mới, giải thích khái niệm API, khóa API và chi phí. Chưa chạy gì và không yêu cầu mình đưa khóa.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Ví dụ gắn với API của OpenAI; tên model và cách dùng đổi nhanh nên ví dụ có thể lỗi thời. Chạy ví dụ tốn tiền API. README rất ngắn nên thông tin chính nằm ở website.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi chạy mã mẫu có dùng khóa API, hãy đặt hạn mức chi tiêu, lưu khóa trong biến môi trường và không đưa vào mã đưa lên GitHub; kiểm tra chi phí trước khi chạy lặp lại.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>openai</strong> có <strong>76.926 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/openai/openai-cookbook/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/openai/openai-cookbook\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 166. Chưa cài/chạy thử; không tạo validation. Snapshot sao 76926; repo_id 468576060; README SHA256 ed596b962642ea131470fef9aa699606881f218621bae563f4b12c418ef33476.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/openai/openai-cookbook",
+          "repo_id": "468576060",
+          "source_path": "",
+          "source_revision": "README-SHA256:ed596b962642ea131470fef9aa699606881f218621bae563f4b12c418ef33476",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-cookbook",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói cần tài khoản OpenAI và khóa API (liên kết để tạo tài khoản). Chi phí tính theo mức dùng, bài chưa kiểm tra bảng giá. Miễn phí khi chỉ đọc. Giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/openai/openai-cookbook/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/openai/openai-cookbook/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "openai/openai-cookbook",
+        "stars": 76926,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/openai/openai-cookbook/main/README.md",
+        "readmeSha256": "ed596b962642ea131470fef9aa699606881f218621bae563f4b12c418ef33476",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 167,
+      "batch": 28,
+      "slug": "prompt-engineering-guide",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Prompt Engineering Guide: tổng hợp kỹ thuật viết câu lệnh cho AI, kèm bài báo và công cụ",
+        "excerpt": "Bộ hướng dẫn mở về cách viết câu lệnh (prompt) hiệu quả cho mô hình ngôn ngữ, có nhiều ngôn ngữ. Cần lưu ý README quảng bá khóa học trả phí và repo ít cập nhật gần đây.",
+        "content": "<p>Prompt Engineering Guide là bộ hướng dẫn, bài báo, bài giảng, tham khảo và công cụ về kỹ thuật prompt cho mô hình ngôn ngữ. README mô tả kỹ thuật prompt là lĩnh vực mới để phát triển và tối ưu prompt, có phiên bản web tại promptingguide.ai, bài giảng trên video và hỗ trợ nhiều ngôn ngữ (README nêu 13). README cũng quảng bá khóa học trả phí DAIR.AI Academy, dịch vụ đào tạo và tư vấn.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống cuốn sổ tay giao tiếp với một nhân viên rất giỏi nhưng hay hiểu sai: cách nói rõ ràng, cho ví dụ, chia nhỏ việc sẽ cho kết quả khác hẳn. Sách này gom các cách nói đã được thử.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần cơ bản trên promptingguide.ai rồi viết lại một yêu cầu mơ hồ gửi cho AI thành yêu cầu có bối cảnh, ví dụ và định dạng đầu ra mong muốn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng AI hằng ngày muốn kết quả tốt hơn; người dạy học và hướng dẫn người khác dùng AI.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Phần cơ bản dễ đọc; các phần liên quan bài báo nghiên cứu khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn thực hành có hướng dẫn tương tác, bài Prompt Engineering Interactive Tutorial trong đợt cũ phù hợp hơn. Nếu bạn cần kỹ thuật cho agent và công cụ, xem các bài về agent AI.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>prompt engineering</strong>: cách thiết kế câu lệnh gửi cho AI để được kết quả tốt và ổn định.</li><li><strong>few-shot</strong>: đưa vài ví dụ mẫu trong prompt để AI bắt chước cách làm.</li><li><strong>RAG</strong>: cho AI tra tài liệu của bạn trước khi trả lời.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Đọc miễn phí trên web và trên GitHub. Khóa học và dịch vụ của DAIR.AI Academy là trả phí; bài chưa kiểm tra điều kiện. Repo theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở bản web promptingguide.ai và đọc phần cơ bản.</li><li>Thử viết lại một prompt hay dùng theo ví dụ trong hướng dẫn.</li><li>Ghi lại prompt nào cho kết quả tốt để dùng lại.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn viết prompt tốt hơn cho AI. Hãy đọc README của Prompt Engineering Guide (https://github.com/dair-ai/Prompt-Engineering-Guide) và tóm tắt bằng tiếng Việt 6 nguyên tắc cơ bản nhất, kèm ví dụ trước và sau khi sửa một prompt mơ hồ. Chưa cần đăng ký khóa học nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README quảng bá khóa học trả phí và dịch vụ tư vấn của nhóm tác giả. Commit gần nhất của repo là 2026-03-11, ít cập nhật so với tốc độ đổi của mô hình, nên một số kỹ thuật có thể đã lỗi thời. Các tuyên bố như 'hơn 3 triệu người học' là của tác giả.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng đưa thông tin mật hay dữ liệu cá nhân vào prompt khi dùng dịch vụ AI bên ngoài; kết quả AI vẫn cần kiểm tra lại.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dair-ai</strong> có <strong>79.763 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-03-11. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dair-ai/Prompt-Engineering-Guide\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 167. Chưa cài/chạy thử; không tạo validation. Snapshot sao 79763; repo_id 579082810; README SHA256 5c1f0fcf7bdd37761249708969b17923a0995e4734ca5ab3713e1acb4d6f6ad9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+          "repo_id": "579082810",
+          "source_path": "",
+          "source_revision": "README-SHA256:5c1f0fcf7bdd37761249708969b17923a0995e4734ca5ab3713e1acb4d6f6ad9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Đọc miễn phí trên web và trên GitHub. Khóa học và dịch vụ của DAIR.AI Academy là trả phí; bài chưa kiểm tra điều kiện. Repo theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dair-ai/Prompt-Engineering-Guide",
+        "stars": 79763,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dair-ai/Prompt-Engineering-Guide/main/README.md",
+        "readmeSha256": "5c1f0fcf7bdd37761249708969b17923a0995e4734ca5ab3713e1acb4d6f6ad9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 168,
+      "batch": 28,
+      "slug": "llms-from-scratch",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LLMs from Scratch: tự viết một mô hình ngôn ngữ nhỏ để hiểu bên trong chatbot",
+        "excerpt": "Mã đi kèm một cuốn sách hướng dẫn xây mô hình kiểu GPT từ đầu bằng PyTorch. Hợp để hiểu bản chất, không phải để dùng ngay; cần Python và thời gian.",
+        "content": "<p>LLMs from Scratch là kho mã chính thức của cuốn sách 'Build a Large Language Model (From Scratch)'. README nói bạn sẽ hiểu cách mô hình ngôn ngữ lớn hoạt động từ bên trong bằng cách lập trình từng bước một mô hình kiểu GPT nhỏ để học tập, theo cách tương tự mô hình lớn. Bảng mục lục theo chương (xử lý văn bản, cơ chế attention, mô hình GPT, huấn luyện trước, tinh chỉnh…), mã bằng PyTorch và không dùng thư viện LLM bên ngoài. README ghi mã các chương chính chạy được trên laptop thường.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn lái xe hằng ngày nhưng chưa biết động cơ hoạt động thế nào. Sách này giống tháo từng bộ phận một động cơ nhỏ ra rồi lắp lại để hiểu vì sao xe chạy. Bạn không đi xa bằng chiếc động cơ nhỏ đó, nhưng sau đó hiểu chiếc xe thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc các chương đầu về xử lý văn bản và token để hiểu vì sao AI 'đọc' chữ thành các mảnh nhỏ và vì sao có giới hạn độ dài. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người muốn hiểu bản chất AI sinh chữ; sinh viên, giảng viên ngành công nghệ và dữ liệu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Python, làm quen PyTorch ở mức cơ bản và kiên nhẫn đọc; README nói không bắt buộc thành thạo PyTorch nhưng cần quen các điều cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ cần dùng AI để làm việc, chưa cần. Cuốn sách là sản phẩm có bản quyền trả phí của nhà xuất bản; repo chỉ chứa mã đi kèm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>attention (cơ chế chú ý)</strong>: cách mô hình cân nhắc từ nào quan trọng với từ nào khi đọc một câu.</li><li><strong>GPT</strong>: họ mô hình ngôn ngữ dựa trên kiến trúc transformer sinh chữ từng bước.</li><li><strong>pretraining (huấn luyện trước)</strong>: giai đoạn mô hình học từ lượng lớn văn bản trước khi tinh chỉnh.</li><li><strong>PyTorch</strong>: thư viện Python để xây và huấn luyện mô hình học máy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê tải repo bằng git hoặc ZIP, hướng dẫn thiết lập môi trường Python trong thư mục setup, và mục Hardware Requirements nói mã chương chính chạy được trên laptop thông thường. Cuốn sách là sản phẩm trả phí. GitHub trả NOASSERTION cho giấy phép; bài chưa đọc file LICENSE.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mô tả và mục Hardware Requirements.</li><li>Đọc setup/README.md để chuẩn bị môi trường.</li><li>Đọc chương 1 và 2 để hiểu token và dữ liệu văn bản trước khi viết mã.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu mô hình ngôn ngữ hoạt động ra sao nhưng chưa biết PyTorch. Hãy đọc README của LLMs-from-scratch (https://github.com/rasbt/LLMs-from-scratch) và giải thích bằng tiếng Việt: token, attention là gì, mình cần biết gì trước, và chương nào dành cho người chỉ muốn hiểu khái niệm. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Là mã đi kèm sách; không có sách thì khó theo kịp phần giải thích. Mô hình xây trong sách chỉ là bản học tập, không thay mô hình thương mại. Giấy phép chưa được GitHub xác định tự động.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi chạy mã tải dữ liệu hoặc mô hình từ mạng, hãy kiểm tra nguồn và dung lượng trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>rasbt</strong> có <strong>107.720 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub trả NOASSERTION; bài chưa đọc file LICENSE nên chưa kết luận giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/rasbt/LLMs-from-scratch\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 168. Chưa cài/chạy thử; không tạo validation. Snapshot sao 107720; repo_id 669879380; README SHA256 7fe7c2073510b1e9a37e5b684d0cbd81389047404ee40da5f261e9f831c38acf.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/rasbt/LLMs-from-scratch",
+          "repo_id": "669879380",
+          "source_path": "",
+          "source_revision": "README-SHA256:7fe7c2073510b1e9a37e5b684d0cbd81389047404ee40da5f261e9f831c38acf",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rasbt/LLMs-from-scratch",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê tải repo bằng git hoặc ZIP, hướng dẫn thiết lập môi trường Python trong thư mục setup, và mục Hardware Requirements nói mã chương chính chạy được trên laptop thông thường. Cuốn sách là sản phẩm trả phí. GitHub trả NOASSERTION cho giấy phép; bài chưa đọc file LICENSE.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "rasbt/LLMs-from-scratch",
+        "stars": 107720,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/rasbt/LLMs-from-scratch/main/README.md",
+        "readmeSha256": "7fe7c2073510b1e9a37e5b684d0cbd81389047404ee40da5f261e9f831c38acf",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 169,
+      "batch": 28,
+      "slug": "llm-course",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "LLM Course: lộ trình ba phần để đi từ nền tảng đến xây và triển khai ứng dụng LLM",
+        "excerpt": "Khóa học miễn phí dạng lộ trình và notebook về mô hình ngôn ngữ: nền tảng, nhà khoa học LLM, kỹ sư LLM. Hợp người muốn có bản đồ học tập.",
+        "content": "<p>LLM Course là khóa học miễn phí của Maxime Labonne chia ba phần theo README: LLM Fundamentals (tùy chọn, toán, Python, mạng nơ-ron), The LLM Scientist (xây mô hình tốt nhất bằng kỹ thuật mới) và The LLM Engineer (xây ứng dụng và triển khai). Repo còn có danh sách notebook (nhiều notebook chạy trên Colab) cho các việc như đánh giá, hợp nhất, tinh chỉnh và lượng tử hóa mô hình. README nói khóa học luôn miễn phí và giới thiệu một cuốn sách đồng tác giả.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống tấm bản đồ ba chặng cho người muốn đi sâu vào AI ngôn ngữ: chặng nền (toán, Python), chặng làm ra mô hình, chặng đưa mô hình vào ứng dụng. Bạn có thể chỉ đi chặng cuối nếu chỉ muốn xây ứng dụng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần The LLM Engineer để biết các khái niệm như RAG và triển khai trước khi chọn công cụ trong các bài về agent. Chưa phải kết quả đã học thử.</p><p><strong>Ai nên xem:</strong> Người đã có nền kỹ thuật muốn học sâu về LLM; giảng viên cần lộ trình tham khảo.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Nội dung kỹ thuật cao (tinh chỉnh, lượng tử hóa, huấn luyện); phần nền có thể giúp người mới nhưng cần Python. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ dùng AI như công cụ, không cần. Người chưa lập trình nên bắt đầu từ các khóa nhập môn khác trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>fine-tuning (tinh chỉnh)</strong>: huấn luyện thêm một mô hình có sẵn trên dữ liệu riêng.</li><li><strong>quantization (lượng tử hóa)</strong>: nén mô hình để chạy trên phần cứng yếu hơn.</li><li><strong>Colab</strong>: môi trường notebook trên đám mây của Google dùng để chạy mã mẫu.</li><li><strong>RAG</strong>: cho AI tra tài liệu trước khi trả lời.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>Khóa học miễn phí đọc trên GitHub; notebook chạy trên Colab (điều kiện và giới hạn của Colab chưa kiểm tra). README có liên kết bản mở rộng trên DeepWiki. Giấy phép Apache-2.0 theo GitHub.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc ba phần của lộ trình và chọn phần phù hợp.</li><li>Với người mới, đọc LLM Fundamentals nếu cần.</li><li>Chạy thử notebook trên Colab chỉ sau khi đọc nội dung và hiểu chi phí tài nguyên.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học sâu về LLM nhưng chưa biết bắt đầu từ đâu. Hãy đọc README của mlabonne/llm-course (https://github.com/mlabonne/llm-course) và đề xuất bằng tiếng Việt lộ trình cho người đã biết Python, giải thích ngắn LLM Scientist và LLM Engineer khác nhau thế nào. Chưa chạy notebook nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Commit gần nhất vào 2026-02-05, tức đã khá lâu so với tốc độ thay đổi của lĩnh vực; một số công cụ trong notebook có thể đã đổi. README quảng bá một cuốn sách của tác giả. Notebook trên Colab có thể cần GPU trả phí.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi chạy notebook từ nguồn ngoài trên Colab, đọc mã trước và không cấp quyền truy cập Google Drive hay khóa API nếu không cần.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>mlabonne</strong> có <strong>84.863 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-02-05. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/mlabonne/llm-course/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/mlabonne/llm-course\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 169. Chưa cài/chạy thử; không tạo validation. Snapshot sao 84863; repo_id 655099582; README SHA256 1614a13cb3645b1feddd93dbb496b9df6c054a338a3ca5e8d4ceb4326bd7278c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/mlabonne/llm-course",
+          "repo_id": "655099582",
+          "source_path": "",
+          "source_revision": "README-SHA256:1614a13cb3645b1feddd93dbb496b9df6c054a338a3ca5e8d4ceb4326bd7278c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mlabonne/llm-course",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "Khóa học miễn phí đọc trên GitHub; notebook chạy trên Colab (điều kiện và giới hạn của Colab chưa kiểm tra). README có liên kết bản mở rộng trên DeepWiki. Giấy phép Apache-2.0 theo GitHub.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/mlabonne/llm-course/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/mlabonne/llm-course/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "mlabonne/llm-course",
+        "stars": 84863,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/mlabonne/llm-course/main/README.md",
+        "readmeSha256": "1614a13cb3645b1feddd93dbb496b9df6c054a338a3ca5e8d4ceb4326bd7278c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 170,
+      "batch": 28,
+      "slug": "hf-transformers",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hugging Face Transformers: thư viện định nghĩa mô hình AI mà cả hệ sinh thái dùng chung",
+        "excerpt": "Hiểu Transformers là gì, kho mô hình Hugging Face Hub và vì sao rất nhiều công cụ AI xây trên nó. Cần Python và PyTorch.",
+        "content": "<p>Transformers là khung định nghĩa mô hình cho học máy hiện đại với văn bản, hình ảnh, âm thanh, video và đa phương thức, dùng cho cả suy luận lẫn huấn luyện. README nói nó tập trung định nghĩa mô hình để nhiều bên thống nhất; nếu một mô hình được hỗ trợ thì thường tương thích với các khung huấn luyện (như Axolotl, Unsloth), công cụ suy luận (vLLM, SGLang, TGI) và các thư viện lân cận (llama.cpp, mlx). Hugging Face Hub có hơn một triệu điểm kiểm tra (checkpoint) của mô hình dùng với Transformers. README có ví dụ dùng Pipeline để sinh văn bản.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy nghĩ Transformers như bản vẽ chuẩn của nhiều loại động cơ AI: ai muốn chế tạo, chạy hay tinh chỉnh đều dựa chung một bản vẽ nên các công cụ khác nhau hiểu được nhau. Hugging Face Hub giống kho chứa những động cơ đã chế sẵn để bạn tải về.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: gặp đoạn mã có 'from transformers import pipeline', bạn biết nó đang tải một mô hình từ Hub về và chạy; dùng prompt để nhờ AI giải thích dung lượng và yêu cầu phần cứng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng AI bằng Python muốn dùng hoặc thử mô hình mở; người học hệ sinh thái mô hình.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> README nêu yêu cầu Python 3.11 trở lên và PyTorch 2.6 trở lên, khuyên dùng môi trường ảo. Mô hình lớn đòi hỏi phần cứng mạnh. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ dùng dịch vụ AI qua API hoặc ứng dụng có sẵn, không cần Transformers. Nếu muốn chạy mô hình trên máy bằng công cụ dễ hơn, các bài về Ollama hay Jan phù hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>checkpoint</strong>: bản mô hình đã huấn luyện được lưu lại để tải về dùng.</li><li><strong>Hugging Face Hub</strong>: kho chung chứa mô hình và dữ liệu mở.</li><li><strong>inference (suy luận)</strong>: dùng mô hình đã huấn luyện để tạo kết quả.</li><li><strong>Pipeline</strong>: cách dùng mức cao trong Transformers: chọn tác vụ và mô hình, đưa dữ liệu vào.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: Python 3.11+, PyTorch 2.6+, nên dùng môi trường ảo (venv hoặc uv) rồi cài bằng pip; có cách cài từ nguồn. Mô hình được tải về và lưu đệm, dung lượng có thể lớn. Một số mô hình có điều khoản riêng (ví dụ README nêu mô hình Llama). Giấy phép của thư viện: Apache-2.0. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu để hiểu vai trò 'định nghĩa mô hình'.</li><li>Đọc phần Installation và Quickstart (Pipeline) rồi kiểm tra phiên bản Python và PyTorch.</li><li>Dùng mô hình nhỏ để thử trước và kiểm tra giấy phép của mô hình trên Hub.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy mã dùng 'from transformers import pipeline' nhưng chưa hiểu. Hãy đọc README của Hugging Face Transformers (https://github.com/huggingface/transformers) và giải thích bằng tiếng Việt: Transformers và Hub là gì, mô hình được tải về đâu, cần phần cứng gì, và giấy phép mô hình khác giấy phép thư viện thế nào. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giấy phép của thư viện không đồng nghĩa giấy phép của từng mô hình trên Hub; mỗi mô hình có điều khoản riêng. Mô hình lớn đòi phần cứng mạnh và dung lượng đĩa. README nói bản mới nhất từ nguồn có thể không ổn định.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Mô hình và mã tải từ Hub có thể kèm mã chạy; chỉ tải từ nguồn đáng tin và đọc phần mô tả trước khi chạy.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>huggingface</strong> có <strong>168.460 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0 cho thư viện; mô hình trên Hub có giấy phép riêng. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/huggingface/transformers/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/huggingface/transformers\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 170. Chưa cài/chạy thử; không tạo validation. Snapshot sao 168460; repo_id 155220641; README SHA256 b9f1f01787738eab63e57aea1081b560e90b2880e1555395b3a683198dd474c6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/huggingface/transformers",
+          "repo_id": "155220641",
+          "source_path": "",
+          "source_revision": "README-SHA256:b9f1f01787738eab63e57aea1081b560e90b2880e1555395b3a683198dd474c6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/transformers",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: Python 3.11+, PyTorch 2.6+, nên dùng môi trường ảo (venv hoặc uv) rồi cài bằng pip; có cách cài từ nguồn. Mô hình được tải về và lưu đệm, dung lượng có thể lớn. Một số mô hình có điều khoản riêng (ví dụ README nêu mô hình Llama). Giấy phép của thư viện: Apache-2.0. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/huggingface/transformers/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/huggingface/transformers/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "huggingface/transformers",
+        "stars": 168460,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/huggingface/transformers/main/README.md",
+        "readmeSha256": "b9f1f01787738eab63e57aea1081b560e90b2880e1555395b3a683198dd474c6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 171,
+      "batch": 28,
+      "slug": "awesome-llm-apps",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Awesome LLM Apps: kho hơn 100 ứng dụng AI mẫu để học cách ghép agent và RAG",
+        "excerpt": "Kho mẫu ứng dụng agent và RAG bằng Python, hợp để học và lấy ý tưởng. Cần thận trọng với các mẫu nhạy cảm như y tế và với việc chạy mã chưa đọc.",
+        "content": "<p>Awesome LLM Apps là bộ hơn 100 mẫu ứng dụng AI mã nguồn mở theo README: agent, agent skills và ứng dụng RAG, được tác giả mô tả là xây tay và kiểm tra đầu cuối, giấy phép Apache-2.0. Các mẫu chia nhóm (agent skills, starter AI agents…), nhiều mẫu cần khóa API; README có đường chạy nhanh bằng cách tải repo, cài phụ thuộc và chạy ứng dụng bằng Streamlit. Một số mẫu thuộc lĩnh vực nhạy cảm như phân tích hình ảnh y tế.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống một khu chợ mẫu: mỗi quầy là một ứng dụng AI nhỏ làm sẵn (trợ lý du lịch, phân tích dữ liệu CSV, chuyển blog thành podcast). Bạn đi xem cách người khác ghép chúng, lấy ý tưởng, nhưng không đem nguyên quầy về dùng cho việc quan trọng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chọn một mẫu đơn giản như 'phân tích dữ liệu CSV bằng ngôn ngữ tự nhiên' để đọc mã và hiểu một ứng dụng agent nhỏ gồm những phần nào. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người muốn học cách ghép các thành phần AI qua ví dụ cụ thể; người tìm ý tưởng ứng dụng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Nhiều mẫu cần Python, cài phụ thuộc và khóa API; README nói có mẫu 'một tệp chỉ cần khóa API' phù hợp để bắt đầu. Chất lượng giữa các mẫu có thể khác nhau. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng dùng các mẫu y tế, tâm lý hay tài chính để ra quyết định thật. Đừng chạy mã trong kho mà chưa đọc.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>template (mẫu)</strong>: ứng dụng làm sẵn để học hoặc sửa lại, chưa phải sản phẩm hoàn chỉnh.</li><li><strong>RAG</strong>: cho AI tra tài liệu trước khi trả lời.</li><li><strong>Streamlit</strong>: công cụ dựng giao diện web nhanh cho ứng dụng dữ liệu bằng Python.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn tải repo, cài phụ thuộc theo từng mẫu và chạy; nhiều mẫu cần khóa API của nhà cung cấp model (chi phí theo mức dùng). Bài không chép lệnh. Giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc nhóm 'Starter AI Agents' trước, bỏ qua các mẫu phức tạp.</li><li>Chọn một mẫu, đọc README và mã của nó trước khi chạy.</li><li>Dùng khóa API có hạn mức chi tiêu thấp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học ghép ứng dụng AI qua ví dụ. Hãy đọc README của awesome-llm-apps (https://github.com/Shubhamsaboo/awesome-llm-apps) và đề xuất bằng tiếng Việt 3 mẫu đơn giản nhất cho người mới, giải thích rủi ro khi chạy mã trong kho và khi dùng mẫu y tế hay tư vấn. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Với hơn 100 mẫu, README chưa cho thấy mức duy trì từng mẫu; việc tác giả nói các mẫu được kiểm tra đầu cuối là tuyên bố của họ, chúng tôi chưa kiểm chứng. README có quảng bá bản tin và hướng dẫn của một dịch vụ khác. Mẫu liên quan y tế hay sức khỏe tinh thần chỉ để học, không để chẩn đoán hay tư vấn thật.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Với các mẫu xử lý ảnh y tế hay thông tin cá nhân, đừng đưa dữ liệu thật vào. Chạy mẫu trong môi trường riêng và đọc phụ thuộc trước khi cài.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Shubhamsaboo</strong> có <strong>143.769 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-22. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Shubhamsaboo/awesome-llm-apps\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm hiểu AI và LLM, key 171. Chưa cài/chạy thử; không tạo validation. Snapshot sao 143769; repo_id 793375104; README SHA256 91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "repo_id": "793375104",
+          "source_path": "",
+          "source_revision": "README-SHA256:91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn tải repo, cài phụ thuộc theo từng mẫu và chạy; nhiều mẫu cần khóa API của nhà cung cấp model (chi phí theo mức dùng). Bài không chép lệnh. Giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Shubhamsaboo/awesome-llm-apps",
+        "stars": 143769,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Shubhamsaboo/awesome-llm-apps/main/README.md",
+        "readmeSha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "key": 170,
+  "repo": "huggingface/transformers",
+  "repoId": "155220641",
+  "url": "https://github.com/huggingface/transformers",
+  "stars": 168460,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:02:50Z",
+  "createdAt": "2018-10-29T13:56:00Z",
+  "defaultBranch": "main",
+  "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+  "homepage": "https://huggingface.co/transformers",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/main/README.md",
+    "sha256": "b9f1f01787738eab63e57aea1081b560e90b2880e1555395b3a683198dd474c6",
+    "bytes": 17010,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Quickstart (Pipeline)"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần còn lại của README.",
+    "Yêu cầu phần cứng cụ thể từng mô hình chưa kiểm tra.",
+    "Chưa đối chiếu giấy phép từng mô hình."
+  ],
+  "runtimeValidated": false
+}

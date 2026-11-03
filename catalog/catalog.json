@@ -507,7 +507,10 @@
   "category": "Skills và phương pháp làm việc",
   "need": "Chọn skills và quy trình",
   "pushed": "2026-10-31",
-  "related": []
+  "related": [
+   "awesome-llm-apps",
+   "llm-course"
+  ]
  },
  {
   "key": 130,
@@ -1143,6 +1146,112 @@
   "related": [
    "marimo",
    "polars"
+  ]
+ },
+ {
+  "key": 166,
+  "slug": "openai-cookbook",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "OpenAI Cookbook: ví dụ và hướng dẫn dùng API của OpenAI cho các việc thường gặp",
+  "repo": "openai/openai-cookbook",
+  "stars": 76926,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "awesome-llm-apps",
+   "prompt-engineering-guide"
+  ]
+ },
+ {
+  "key": 167,
+  "slug": "prompt-engineering-guide",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "Prompt Engineering Guide: tổng hợp kỹ thuật viết câu lệnh cho AI, kèm bài báo và công cụ",
+  "repo": "dair-ai/Prompt-Engineering-Guide",
+  "stars": 79763,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-03-11",
+  "related": [
+   "openai-cookbook"
+  ]
+ },
+ {
+  "key": 168,
+  "slug": "llms-from-scratch",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "LLMs from Scratch: tự viết một mô hình ngôn ngữ nhỏ để hiểu bên trong chatbot",
+  "repo": "rasbt/LLMs-from-scratch",
+  "stars": 107720,
+  "license": "NOASSERTION",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-10-30",
+  "related": [
+   "hf-transformers",
+   "llm-course"
+  ]
+ },
+ {
+  "key": 169,
+  "slug": "llm-course",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "LLM Course: lộ trình ba phần để đi từ nền tảng đến xây và triển khai ứng dụng LLM",
+  "repo": "mlabonne/llm-course",
+  "stars": 84863,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-02-05",
+  "related": [
+   "llms-from-scratch",
+   "ml-for-beginners"
+  ]
+ },
+ {
+  "key": 170,
+  "slug": "hf-transformers",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "Hugging Face Transformers: thư viện định nghĩa mô hình AI mà cả hệ sinh thái dùng chung",
+  "repo": "huggingface/transformers",
+  "stars": 168460,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "llms-from-scratch"
+  ]
+ },
+ {
+  "key": 171,
+  "slug": "awesome-llm-apps",
+  "group": "2026-11-03-hieu-ai-llm",
+  "title": "Awesome LLM Apps: kho hơn 100 ứng dụng AI mẫu để học cách ghép agent và RAG",
+  "repo": "Shubhamsaboo/awesome-llm-apps",
+  "stars": 143769,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-22",
+  "related": [
+   "ml-for-beginners",
+   "openai-cookbook"
   ]
  }
 ]

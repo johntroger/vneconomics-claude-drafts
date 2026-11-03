@@ -9,13 +9,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 7 — Đọc hiểu mã web do AI dựng](learning-paths/07-doc-hieu-ma-web-do-ai-dung.vi.md) — Giải mã các tên công nghệ thường xuất hiện trong dự án web do AI tạo: để biết mình đang nhìn thấy gì.
 - [Lộ trình 8 — Làm quen terminal và môi trường làm việc](learning-paths/08-lam-quen-terminal-va-moi-truong.vi.md) — Cho người dùng coding agent cần thoải mái hơn với dòng lệnh, git và công cụ phát triển.
 - [Lộ trình 9 — Làm việc với dữ liệu khi có AI hỗ trợ](learning-paths/09-du-lieu-cho-nguoi-moi.vi.md) — Từ bảng dữ liệu đến biểu đồ và trang tương tác; luôn kiểm tra kết quả AI tính.
+- [Lộ trình 10 — Hiểu AI và mô hình ngôn ngữ](learning-paths/10-hieu-ai-va-llm.vi.md) — Từ cách viết prompt đến hiểu bên trong mô hình và hệ sinh thái; chọn mức sâu phù hợp với bạn.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (18 bài)
+### Bắt đầu (19 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -37,8 +38,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 153 | tldr pages: hướng dẫn lệnh dòng lệnh bằng ví dụ ngắn thay cho trang man dài | [tldr-pages/tldr](https://github.com/tldr-pages/tldr) | NOASSERTION | 64109 | cong-cu-dong-lenh |
 | 154 | Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft | [microsoft/vscode](https://github.com/microsoft/vscode) | MIT | 194514 | cong-cu-dong-lenh |
 | 159 | Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows | [microsoft/terminal](https://github.com/microsoft/terminal) | MIT | 105315 | cong-cu-dong-lenh |
+| 167 | Prompt Engineering Guide: tổng hợp kỹ thuật viết câu lệnh cho AI, kèm bài báo và công cụ | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | MIT | 79763 | hieu-ai-llm |
 
-### Cơ bản (31 bài)
+### Cơ bản (33 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -73,8 +75,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 163 | marimo: notebook Python 'phản ứng' tự cập nhật kết quả và triển khai thành ứng dụng | [marimo-team/marimo](https://github.com/marimo-team/marimo) | Apache-2.0 | 23411 | du-lieu-cho-nguoi-moi |
 | 164 | Dash: dựng bảng điều khiển dữ liệu bằng Python, không cần viết JavaScript | [plotly/dash](https://github.com/plotly/dash) | MIT | 24478 | du-lieu-cho-nguoi-moi |
 | 165 | Vega-Altair: vẽ biểu đồ bằng cách mô tả bạn muốn thấy gì thay vì chỉ cách vẽ | [vega/altair](https://github.com/vega/altair) | BSD-3-Clause | 10510 | du-lieu-cho-nguoi-moi |
+| 166 | OpenAI Cookbook: ví dụ và hướng dẫn dùng API của OpenAI cho các việc thường gặp | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | MIT | 76926 | hieu-ai-llm |
+| 171 | Awesome LLM Apps: kho hơn 100 ứng dụng AI mẫu để học cách ghép agent và RAG | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | Apache-2.0 | 143769 | hieu-ai-llm |
 
-### Khá khó (cần nền kỹ thuật) (12 bài)
+### Khá khó (cần nền kỹ thuật) (13 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -90,8 +94,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 143 | Infisical: nền tảng mã nguồn mở để quản lý bí mật, chứng chỉ và quyền truy cập | [Infisical/infisical](https://github.com/Infisical/infisical) | NOASSERTION | 30227 | bao-mat-co-ban |
 | 151 | Drizzle ORM: nói chuyện với cơ sở dữ liệu bằng TypeScript theo kiểu gần với SQL | [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | Apache-2.0 | 36207 | cong-nghe-web-ai-hay-dung |
 | 161 | Polars: công cụ xử lý bảng dữ liệu nhanh, kể cả dữ liệu lớn hơn bộ nhớ | [pola-rs/polars](https://github.com/pola-rs/polars) | MIT | 40254 | du-lieu-cho-nguoi-moi |
+| 170 | Hugging Face Transformers: thư viện định nghĩa mô hình AI mà cả hệ sinh thái dùng chung | [huggingface/transformers](https://github.com/huggingface/transformers) | Apache-2.0 | 168460 | hieu-ai-llm |
 
-### Nâng cao (4 bài)
+### Nâng cao (6 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -99,6 +104,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 106 | Trigger.dev: khám phá tác vụ nền bền bỉ viết bằng TypeScript cho ứng dụng và agent | [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) | Apache-2.0 | 16700 | tu-dong-hoa |
 | 108 | Temporal: hiểu ý tưởng thực thi bền bỉ để workflow không mất trạng thái khi lỗi | [temporalio/temporal](https://github.com/temporalio/temporal) | MIT | 24143 | tu-dong-hoa |
 | 110 | Apache NiFi: tìm hiểu cách thiết kế luồng chuyển và xử lý dữ liệu trên giao diện trình duyệt | [apache/nifi](https://github.com/apache/nifi) | Apache-2.0 | 6289 | tu-dong-hoa |
+| 168 | LLMs from Scratch: tự viết một mô hình ngôn ngữ nhỏ để hiểu bên trong chatbot | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | NOASSERTION | 107720 | hieu-ai-llm |
+| 169 | LLM Course: lộ trình ba phần để đi từ nền tảng đến xây và triển khai ứng dụng LLM | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Apache-2.0 | 84863 | hieu-ai-llm |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
