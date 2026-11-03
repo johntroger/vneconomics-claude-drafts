@@ -1,0 +1,832 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-api-anh-pdf-ocr",
+  "batch": 62,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 353,
+      "batch": 62,
+      "slug": "bruno",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bruno: ứng dụng khách API mã nguồn mở lưu bộ sưu tập ngay trong thư mục, làm việc ngoại tuyến và cộng tác bằng Git",
+        "excerpt": "Hiểu Bruno là IDE mã nguồn mở để khám phá và kiểm thử API, lưu mọi yêu cầu thành tệp chữ trong thư mục của bạn. README nói chỉ làm việc ngoại tuyến, không có kế hoạch đồng bộ đám mây; có phiên bản thương mại trả phí.",
+        "content": "<p>README tả Bruno là ứng dụng khách API 'mới và sáng tạo' nhằm đổi vị thế của Postman và các công cụ tương tự. Bruno lưu bộ sưu tập trực tiếp trong thư mục trên hệ tệp, dùng ngôn ngữ đánh dấu dạng chữ tên Bru để ghi thông tin các yêu cầu API; bạn dùng Git hay hệ quản lý phiên bản khác để cộng tác trên bộ sưu tập. README nhấn mạnh Bruno chỉ chạy ngoại tuyến, không có kế hoạch thêm đồng bộ đám mây 'bao giờ hết', vì coi trọng quyền riêng tư dữ liệu. README nói đa số tính năng miễn phí và mã nguồn mở, có phiên bản thương mại với tính năng thêm (xem bảng giá, bài chưa kiểm tra). README có mục cài đặt, Bruno CLI, chạy bằng Docker (ảnh Docker chính thức cho CLI để chạy bộ sưu tập trong CI/CD mà không cần Node.js), tính năng, liên kết quan trọng, nhãn hiệu, đóng góp và giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Kiểm thử API thường cần một ứng dụng để gõ yêu cầu và xem phản hồi. Bruno giống cuốn sổ ghi các yêu cầu đó, nhưng mỗi yêu cầu là một tệp chữ trong thư mục của bạn nên dùng Git để chia sẻ, và dữ liệu không rời máy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: lưu bộ sưu tập yêu cầu thử API của dự án trong kho Git và chạy trong CI. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Ứng dụng có giao diện; dùng CLI và CI cần kiến thức thêm. README dài nhiều ngôn ngữ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần đồng bộ đám mây có sẵn, README nói Bruno cố ý không có. Một số tính năng thuộc bản thương mại.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API client (ứng dụng khách API)</strong>: công cụ để gửi yêu cầu tới API và xem phản hồi.</li><li><strong>Bru</strong>: ngôn ngữ đánh dấu dạng chữ mà Bruno dùng để lưu yêu cầu; README nêu.</li><li><strong>collection (bộ sưu tập)</strong>: nhóm các yêu cầu API; README nói lưu trong thư mục.</li><li><strong>offline-only (chỉ ngoại tuyến)</strong>: không đồng bộ lên đám mây; README nhấn mạnh.</li><li><strong>CLI</strong>: công cụ dòng lệnh; README có Bruno CLI và ảnh Docker.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải ứng dụng ở trang downloads, có Bruno CLI và ảnh Docker chính thức để chạy trong CI (bài không chép lệnh). Miễn phí cho đa số tính năng theo giấy phép MIT; phiên bản thương mại có phí (bài chưa kiểm tra giá).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và quyền riêng tư.</li><li>Tải ứng dụng và tạo bộ sưu tập thử.</li><li>Thử lưu bộ sưu tập trong một kho Git thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần công cụ kiểm thử API. Hãy đọc README của Bruno (https://github.com/usebruno/bruno) và giải thích bằng tiếng Việt: Bruno khác Postman ở đâu, vì sao README nói chỉ ngoại tuyến, và những gì thuộc bản thương mại. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Mới và sáng tạo', 'cách mạng hóa' là cách nói của dự án. Giá bản thương mại bài chưa kiểm tra. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>usebruno</strong> có <strong>47.999 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/usebruno/bruno/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/usebruno/bruno\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 353. Chưa cài/chạy thử; không tạo validation. Snapshot sao 47999; repo_id 542284380; README SHA256 fec8af393e65aae5f85c89a2e4cc787bc7ed014b94336ab8179762386c0930b2.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/usebruno/bruno",
+          "repo_id": "542284380",
+          "source_path": "",
+          "source_revision": "README-SHA256:fec8af393e65aae5f85c89a2e4cc787bc7ed014b94336ab8179762386c0930b2",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/usebruno/bruno",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải ứng dụng ở trang downloads, có Bruno CLI và ảnh Docker chính thức để chạy trong CI (bài không chép lệnh). Miễn phí cho đa số tính năng theo giấy phép MIT; phiên bản thương mại có phí (bài chưa kiểm tra giá).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/usebruno/bruno/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/usebruno/bruno/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "usebruno/bruno",
+        "stars": 47999,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/usebruno/bruno/main/README.md",
+        "readmeSha256": "fec8af393e65aae5f85c89a2e4cc787bc7ed014b94336ab8179762386c0930b2",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 354,
+      "batch": 62,
+      "slug": "hoppscotch",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host",
+        "excerpt": "Hiểu Hoppscotch là ứng dụng khách API mã nguồn mở gọn nhẹ với nhiều phương thức HTTP, bộ sưu tập, lịch sử và tự host. README nói có đồng bộ đám mây hay phiên cục bộ và liệt kê tính năng.",
+        "content": "<p>README tả Hoppscotch là hệ sinh thái phát triển API mã nguồn mở và khuyên đọc tài liệu chính thức. Tính năng nêu: gọn nhẹ (giao diện tối giản), nhanh (gửi yêu cầu và nhận phản hồi thời gian thực), nhiều phương thức HTTP (GET, POST, PUT, PATCH, DELETE, HEAD... README giải thích từng loại), chủ đề tùy biến đồng bộ với phiên đám mây hoặc cục bộ, lịch sử yêu cầu đồng bộ với phiên đám mây hoặc bộ nhớ cục bộ, bộ sưu tập, và các tính năng nhóm (README liệt kê như tạo nhóm, bộ sưu tập chia sẻ, thành viên nhóm, đồng bộ đám mây, không gian làm việc, biến môi trường). README có hướng dẫn dịch, quy tắc ứng xử và mục tự host dẫn tới tài liệu để dựng môi trường phát triển. Giấy phép MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn thử một API thì cần chỗ gõ địa chỉ và xem trả lời. Hoppscotch giống bảng điều khiển gọn trên web: chọn kiểu yêu cầu, gõ địa chỉ, bấm gửi và đọc kết quả. Có thể dùng trên đám mây hoặc tự dựng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thử một API công khai và lưu thành bộ sưu tập chia sẻ trong nhóm. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Dùng như ứng dụng web thì đơn giản; tự host cần kỹ thuật theo tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn muốn dữ liệu không rời máy tuyệt đối, hãy đọc kỹ phần đồng bộ đám mây vì README nói nhiều dữ liệu đồng bộ với phiên đám mây hoặc cục bộ. Chưa so sánh với Bruno ở mức kỹ thuật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>self-host</strong>: tự cài và chạy phần mềm trên máy hoặc máy chủ của mình thay vì dùng bản do nhà cung cấp chạy sẵn.</li><li><strong>HTTP method (phương thức HTTP)</strong>: loại hành động của yêu cầu như GET, POST; README giải thích từng loại.</li><li><strong>collection (bộ sưu tập)</strong>: nhóm các yêu cầu đã lưu.</li><li><strong>workspace</strong>: không gian làm việc chia sẻ; README nêu trong tính năng nhóm.</li><li><strong>environment (môi trường)</strong>: nhóm biến như địa chỉ gốc; README nêu.</li><li><strong>self-host</strong>: tự chạy máy chủ của mình; README có mục riêng.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu tại docs.hoppscotch.io và hướng dẫn tự host; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MIT; một số tính năng nhóm có thể thuộc gói trả phí (bài chưa kiểm tra).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Thử trên bản web với API công khai.</li><li>Đọc tài liệu tự host nếu cần dữ liệu riêng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn công cụ thử API gọn. Hãy đọc README của Hoppscotch (https://github.com/hoppscotch/hoppscotch) và giải thích bằng tiếng Việt: các phương thức HTTP nghĩa là gì, dữ liệu được đồng bộ ra sao, và khi nào nên tự host. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README liệt kê tính năng nhóm nhưng không nói rõ tính năng nào thuộc gói trả phí; bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>hoppscotch</strong> có <strong>80.726 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/hoppscotch/hoppscotch/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/hoppscotch/hoppscotch\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 354. Chưa cài/chạy thử; không tạo validation. Snapshot sao 80726; repo_id 203587744; README SHA256 f943825e526b79841882127fbf6a3c043359efd1ca6f47794c851f827a6373b4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/hoppscotch/hoppscotch",
+          "repo_id": "203587744",
+          "source_path": "",
+          "source_revision": "README-SHA256:f943825e526b79841882127fbf6a3c043359efd1ca6f47794c851f827a6373b4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hoppscotch/hoppscotch",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu tại docs.hoppscotch.io và hướng dẫn tự host; bài chưa đọc nên không nêu lệnh. Miễn phí theo giấy phép MIT; một số tính năng nhóm có thể thuộc gói trả phí (bài chưa kiểm tra).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/hoppscotch/hoppscotch/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/hoppscotch/hoppscotch/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "hoppscotch/hoppscotch",
+        "stars": 80726,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/hoppscotch/hoppscotch/main/README.md",
+        "readmeSha256": "f943825e526b79841882127fbf6a3c043359efd1ca6f47794c851f827a6373b4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 355,
+      "batch": 62,
+      "slug": "sharp",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "sharp: thư viện Node.js xử lý ảnh tốc độ cao, co ảnh lớn thành JPEG, PNG, WebP, GIF, AVIF thân thiện web",
+        "excerpt": "Hiểu sharp là mô-đun Node-API xử lý ảnh nhanh, chuyên chuyển ảnh lớn thành ảnh nhỏ cho web. README nói nhanh hơn 4 đến 5 lần ImageMagick (tuyên bố của tác giả) và chạy được với Node.js, Deno và Bun.",
+        "content": "<p>README nêu trường hợp dùng điển hình của sharp là chuyển ảnh lớn ở các định dạng phổ biến thành ảnh nhỏ thân thiện web (JPEG, PNG, WebP, GIF, AVIF) với nhiều kích thước. Dùng được với mọi môi trường chạy JavaScript hỗ trợ Node-API phiên bản 9, gồm Node.js từ 20.9.0, Deno và Bun. README nói co ảnh thường nhanh hơn 4 đến 5 lần so với cài đặt nhanh nhất của ImageMagick và GraphicsMagick nhờ dùng libvips (đây là tuyên bố của README). Không gian màu, hồ sơ ICC nhúng và kênh trong suốt alpha được xử lý đúng; lấy mẫu Lanczos giữ chất lượng. Ngoài co ảnh còn xoay, cắt, ghép lớp, hiệu chỉnh gamma. Phần lớn hệ macOS, Windows và Linux hiện đại không cần cài thêm hay phụ thuộc lúc chạy. README dẫn tới tài liệu cài đặt và API tại sharp.pixelplumbing.com. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ảnh chụp 10 MB không nên đưa nguyên lên trang web. sharp giống máy ép ảnh tự động: bạn đưa ảnh lớn, nó cho ra bản nhỏ nhẹ, nhiều kích cỡ và định dạng, nhanh và đúng màu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo bản thu nhỏ WebP cho cả thư mục ảnh của website. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết JavaScript và Node.js; README dẫn tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ co vài ảnh, công cụ có giao diện đơn giản hơn. Số '4 đến 5 lần nhanh hơn' là của tác giả, bài không kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Node-API</strong>: giao diện để mô-đun gốc chạy trên Node.js; README nêu.</li><li><strong>libvips</strong>: thư viện xử lý ảnh nền của sharp; README nêu.</li><li><strong>ICC profile</strong>: hồ sơ màu nhúng trong ảnh; README nói được xử lý đúng.</li><li><strong>alpha channel (kênh trong suốt)</strong>: phần quy định độ trong suốt của ảnh; README nêu.</li><li><strong>AVIF / WebP</strong>: định dạng ảnh hiện đại cho web; README nêu là đầu ra.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới hướng dẫn cài đặt tại sharp.pixelplumbing.com/install; bài chưa đọc nên không nêu lệnh. Cần Node.js 20.9.0 trở lên hoặc Deno, Bun. README nói hầu hết hệ hiện đại không cần cài thêm. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu cài đặt.</li><li>Thử co một ảnh mẫu rồi so dung lượng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần thu nhỏ nhiều ảnh cho website. Hãy đọc README của sharp (https://github.com/lovell/sharp) và giải thích bằng tiếng Việt: sharp làm gì, nhanh nhờ đâu, và định dạng nào hợp cho web. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Tuyên bố nhanh hơn 4 đến 5 lần là của README, bài không kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>lovell</strong> có <strong>32.816 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/lovell/sharp/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/lovell/sharp\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 355. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32816; repo_id 12226786; README SHA256 89772961fcf195b976573874555f2902bfe04a3e57be61af261ac65ce9348735.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/lovell/sharp",
+          "repo_id": "12226786",
+          "source_path": "",
+          "source_revision": "README-SHA256:89772961fcf195b976573874555f2902bfe04a3e57be61af261ac65ce9348735",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lovell/sharp",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới hướng dẫn cài đặt tại sharp.pixelplumbing.com/install; bài chưa đọc nên không nêu lệnh. Cần Node.js 20.9.0 trở lên hoặc Deno, Bun. README nói hầu hết hệ hiện đại không cần cài thêm. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lovell/sharp/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/lovell/sharp/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "lovell/sharp",
+        "stars": 32816,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/lovell/sharp/main/README.md",
+        "readmeSha256": "89772961fcf195b976573874555f2902bfe04a3e57be61af261ac65ce9348735",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 356,
+      "batch": 62,
+      "slug": "libvips",
+      "category": "Âm thanh và video",
+      "need": "Xử lý nội dung đa phương tiện",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "libvips: thư viện xử lý ảnh chạy nhanh và tốn ít bộ nhớ, nền của nhiều công cụ như sharp",
+        "excerpt": "Hiểu libvips là thư viện xử lý ảnh theo nhu cầu, đa luồng ngang, với khoảng 300 thao tác và nhiều định dạng ảnh. README nói chạy nhanh và dùng ít bộ nhớ; giấy phép LGPL-2.1 trở lên.",
+        "content": "<p>README tả libvips là thư viện xử lý ảnh 'theo nhu cầu, đa luồng ngang'; so với thư viện tương tự, README nói libvips chạy nhanh và tốn ít bộ nhớ (tuyên bố của dự án, dẫn tới trang đo). Giấy phép LGPL-2.1 trở lên. Có khoảng 300 thao tác (số học, biểu đồ histogram, tích chập, hình thái, lọc tần số, màu sắc, lấy mẫu lại, thống kê...), hỗ trợ nhiều kiểu số (từ số nguyên 8 bit đến số phức 128 bit) và ảnh có số kênh tùy ý. Hỗ trợ nhiều định dạng ảnh (JPEG, JPEG 2000, JPEG XL, TIFF, PNG, WebP, HEIC, AVIF, FITS, PDF, SVG, GIF...), và có thể nạp ảnh qua ImageMagick hay GraphicsMagick cho thêm định dạng. README dẫn tới tài liệu API và wiki.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>sharp là chiếc máy ép ảnh dùng cho Node.js; libvips là động cơ bên trong. Nếu bạn dùng ngôn ngữ khác, hay muốn điều khiển sâu, có thể dùng libvips trực tiếp. Hầu hết người mới chỉ gặp nó gián tiếp.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: hiểu vì sao các công cụ xử lý ảnh nhanh dựa trên libvips. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Thư viện C có nhiều thao tác và cách gọi từ nhiều ngôn ngữ; README chỉ giới thiệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần thu nhỏ ảnh trong Node.js, dùng sharp (cùng nhóm) dễ hơn. Giấy phép LGPL có điều khoản riêng khi phân phối.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>demand-driven (theo nhu cầu)</strong>: chỉ tính phần cần thiết khi cần; README nêu cách tiếp cận này.</li><li><strong>LGPL</strong>: giấy phép tự do với điều khoản khi liên kết thư viện; README ghi LGPL-2.1 trở lên.</li><li><strong>operation (thao tác)</strong>: một bước xử lý ảnh; README nói khoảng 300.</li><li><strong>band (kênh)</strong>: một lớp dữ liệu của ảnh như đỏ, lục, lam; README nói ảnh có số kênh tùy ý.</li><li><strong>HEIC / AVIF / JPEG XL</strong>: các định dạng ảnh hiện đại; README nêu hỗ trợ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu API và hướng dẫn cài; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép LGPL-2.1 trở lên.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Introduction.</li><li>Xem trang đo tốc độ và bộ nhớ của dự án.</li><li>Dùng qua sharp trước khi dùng trực tiếp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình thấy libvips được nhắc nhiều. Hãy đọc README của libvips (https://github.com/libvips/libvips) và giải thích bằng tiếng Việt: xử lý ảnh theo nhu cầu nghĩa là gì, LGPL có ý nghĩa gì, và quan hệ với sharp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Nhanh và ít bộ nhớ' là tuyên bố của dự án; bài không kiểm chứng. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>libvips</strong> có <strong>11.781 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện LGPL-2.1; README ghi LGPL-2.1-or-later. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/libvips/libvips/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/libvips/libvips\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 356. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11781; repo_id 1291410; README SHA256 89dae59383e63ae50ef769ab7ab68c01222a23812743efb52e0c3b1c108550ae.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/libvips/libvips",
+          "repo_id": "1291410",
+          "source_path": "",
+          "source_revision": "README-SHA256:89dae59383e63ae50ef769ab7ab68c01222a23812743efb52e0c3b1c108550ae",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "LGPL-2.1",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/libvips/libvips",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu API và hướng dẫn cài; bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép LGPL-2.1 trở lên.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/libvips/libvips/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/libvips/libvips/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "libvips/libvips",
+        "stars": 11781,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/libvips/libvips/master/README.md",
+        "readmeSha256": "89dae59383e63ae50ef769ab7ab68c01222a23812743efb52e0c3b1c108550ae",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 357,
+      "batch": 62,
+      "slug": "gotenberg",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Gotenberg: API chạy bằng Docker chuyển HTML, URL và tệp Office sang PDF, gộp, tách và đóng dấu PDF",
+        "excerpt": "Hiểu Gotenberg là API dựa trên Docker để chuyển tài liệu sang PDF qua Chromium và LibreOffice, kèm gộp, tách, đóng dấu, mã hóa PDF. Ví dụ README dùng lệnh Docker và curl cần chạy cẩn thận.",
+        "content": "<p>README tả Gotenberg là API dựa trên Docker để chuyển tài liệu sang PDF, 'được hàng nghìn công ty tin dùng trong sản xuất' (tuyên bố của README). Bạn gửi tệp bằng multipart/form-data và nhận lại PDF, không phải tự quản Chromium, LibreOffice hay phông chữ. README có mục Quick Start với lệnh chạy ảnh Docker và ví dụ chuyển URL sang PDF (bài không chép lệnh). Tính năng nêu: chuyển HTML, URL, Markdown sang PDF bằng Chromium không giao diện; chuyển tài liệu Office (hơn 100 định dạng) sang PDF bằng LibreOffice; gộp, tách, xoay, làm phẳng PDF; đóng dấu, đóng dấu mờ, mã hóa PDF; tuân thủ PDF/A và PDF/UA. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ứng dụng của bạn cần xuất hóa đơn hay báo cáo thành PDF. Gotenberg giống nhà in PDF đặt trong hộp: bạn gửi trang web hay tệp Word, hộp trả lại PDF mà bạn không phải cài trình duyệt hay Office.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: ứng dụng web tạo hóa đơn PDF từ một mẫu HTML. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Docker và gọi API bằng mã; README có ví dụ ngắn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Đừng mở cổng dịch vụ ra internet công khai khi chưa bảo vệ; một API chuyển đổi chạy Chromium có thể bị lạm dụng (bài nêu theo nguyên tắc an toàn chung, README không nói). Nếu chỉ chuyển vài tệp, công cụ có giao diện đơn giản hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>Docker</strong>: cách chạy ứng dụng đóng gói sẵn; README nói Gotenberg dựa trên Docker.</li><li><strong>multipart/form-data</strong>: cách gửi tệp lên máy chủ qua HTTP; README nêu.</li><li><strong>headless Chromium</strong>: trình duyệt chạy không giao diện; README nêu dùng để chuyển HTML sang PDF.</li><li><strong>PDF/A / PDF/UA</strong>: chuẩn PDF lưu trữ lâu dài và dễ truy cập; README nêu tuân thủ.</li><li><strong>LibreOffice</strong>: bộ ứng dụng văn phòng mã nguồn mở; README nói dùng để chuyển tài liệu Office.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có Quick Start dùng ảnh Docker (bài không chép lệnh). Cần Docker. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features.</li><li>Chạy ảnh Docker trong máy thử, không mở ra mạng.</li><li>Thử chuyển một trang HTML mẫu sang PDF.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình cần tạo PDF từ HTML trong ứng dụng. Hãy đọc README của Gotenberg (https://github.com/gotenberg/gotenberg) và giải thích bằng tiếng Việt: Gotenberg làm gì, cần chuẩn bị gì, và rủi ro khi mở dịch vụ ra mạng. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Được hàng nghìn công ty tin dùng' là tuyên bố của README. Lưu ý về mở cổng ra mạng là nguyên tắc an toàn chung, README không nói. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gotenberg</strong> có <strong>13.507 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gotenberg/gotenberg/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gotenberg/gotenberg\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 357. Chưa cài/chạy thử; không tạo validation. Snapshot sao 13507; repo_id 126493684; README SHA256 fd549a82f4453fa1376f2246cade3f40d99e5588cb1536985853c51c8b97a1df.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gotenberg/gotenberg",
+          "repo_id": "126493684",
+          "source_path": "",
+          "source_revision": "README-SHA256:fd549a82f4453fa1376f2246cade3f40d99e5588cb1536985853c51c8b97a1df",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gotenberg/gotenberg",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có Quick Start dùng ảnh Docker (bài không chép lệnh). Cần Docker. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gotenberg/gotenberg/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gotenberg/gotenberg/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gotenberg/gotenberg",
+        "stars": 13507,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gotenberg/gotenberg/main/README.md",
+        "readmeSha256": "fd549a82f4453fa1376f2246cade3f40d99e5588cb1536985853c51c8b97a1df",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 358,
+      "batch": 62,
+      "slug": "ocrmypdf",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OCRmyPDF: thêm lớp chữ tìm kiếm được vào PDF quét, giữ nguyên ảnh gốc, dùng Tesseract nhận dạng hơn 100 ngôn ngữ",
+        "excerpt": "Hiểu OCRmyPDF là công cụ dòng lệnh thêm lớp văn bản OCR vào PDF quét để tìm kiếm và sao chép chữ. README nói dùng Tesseract, tạo PDF/A mặc định, giữ dữ liệu riêng tư; số liệu 'đã thử trên hàng triệu PDF' là của tác giả.",
+        "content": "<p>README tả OCRmyPDF thêm lớp văn bản OCR vào các tệp PDF quét, để tìm kiếm hoặc sao chép chữ được. Ví dụ trong README là một lệnh với các tùy chọn: nhiều ngôn ngữ (-l), sửa trang bị xoay, chỉnh nghiêng (deskew), đổi siêu dữ liệu, dùng nhiều lõi CPU, xuất PDF/A mặc định (bài không chép lệnh). Tính năng chính theo README: tạo PDF/A tìm kiếm được từ PDF thường, đặt chữ OCR chính xác dưới ảnh để dễ sao chép, giữ nguyên độ phân giải ảnh nhúng, chèn thông tin OCR theo cách 'không mất mát' khi có thể, tối ưu ảnh PDF (thường cho tệp nhỏ hơn đầu vào), chỉnh nghiêng hay làm sạch ảnh trước khi OCR, kiểm tra tệp vào và ra, chia việc trên mọi lõi CPU, dùng Tesseract nhận dạng hơn 100 ngôn ngữ, giữ dữ liệu riêng tư, xử lý tệp hàng nghìn trang, 'đã thử trên hàng triệu PDF' (tuyên bố của README). README có mục động cơ nêu các công cụ khác chưa làm hài lòng tác giả. Giấy phép MPL-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Tài liệu quét chỉ là ảnh: không tìm chữ được, không sao chép được. OCRmyPDF giống người đọc lướt từng trang rồi nhẹ nhàng ghi chữ lên dưới lớp ảnh bằng mực vô hình: nhìn vẫn như cũ nhưng giờ tìm kiếm và sao chép được.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: biến một chồng giáo trình quét thành PDF tìm kiếm được. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Dòng lệnh và cần cài Tesseract cùng phụ thuộc; chất lượng phụ thuộc ảnh quét và ngôn ngữ. README dẫn tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài không khẳng định chất lượng cho tiếng Việt: README chỉ nói hơn 100 ngôn ngữ qua Tesseract. Hãy thử trên bản sao tệp, không ghi đè bản gốc.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>OCR</strong>: nhận dạng chữ trong ảnh để thành văn bản; README nêu.</li><li><strong>PDF/A</strong>: chuẩn PDF lưu trữ lâu dài; README nói mặc định tạo.</li><li><strong>deskew (chỉnh nghiêng)</strong>: làm thẳng trang quét bị nghiêng; README nêu.</li><li><strong>Tesseract</strong>: động cơ OCR mã nguồn mở mà README nói OCRmyPDF dùng.</li><li><strong>lossless (không mất mát)</strong>: không làm giảm chất lượng ảnh; README nói chèn OCR theo cách này khi có thể.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu cài đặt tại ocrmypdf.readthedocs.io; bài chưa đọc nên không nêu lệnh. Cần Tesseract và dữ liệu ngôn ngữ cài kèm. Miễn phí theo giấy phép MPL-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Main features.</li><li>Cài theo tài liệu trong môi trường thử.</li><li>Thử OCR một PDF quét ngắn bằng bản sao.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình có PDF quét cần tìm chữ. Hãy đọc README của OCRmyPDF (https://github.com/ocrmypdf/OCRmyPDF) và giải thích bằng tiếng Việt: OCR là gì, các tùy chọn deskew và PDF/A nghĩa là gì, và vì sao phải tự thử chất lượng với tiếng Việt. Chưa chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Đã thử trên hàng triệu PDF' là tuyên bố của README. README không nói chất lượng từng ngôn ngữ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ocrmypdf</strong> có <strong>35.220 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-25. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MPL-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ocrmypdf/OCRmyPDF\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 358. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35220; repo_id 15333471; README SHA256 b10f4270559ee2963754c1593dc25eabee971c7c1aedb597e23425cd17c9aca0.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ocrmypdf/OCRmyPDF",
+          "repo_id": "15333471",
+          "source_path": "",
+          "source_revision": "README-SHA256:b10f4270559ee2963754c1593dc25eabee971c7c1aedb597e23425cd17c9aca0",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ocrmypdf/OCRmyPDF",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu cài đặt tại ocrmypdf.readthedocs.io; bài chưa đọc nên không nêu lệnh. Cần Tesseract và dữ liệu ngôn ngữ cài kèm. Miễn phí theo giấy phép MPL-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ocrmypdf/OCRmyPDF",
+        "stars": 35220,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/README.md",
+        "readmeSha256": "b10f4270559ee2963754c1593dc25eabee971c7c1aedb597e23425cd17c9aca0",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 359,
+      "batch": 62,
+      "slug": "tesseract",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Tesseract: động cơ nhận dạng chữ OCR mã nguồn mở hỗ trợ hơn 100 ngôn ngữ, không có giao diện đồ họa",
+        "excerpt": "Hiểu Tesseract là động cơ OCR và chương trình dòng lệnh nhận dạng chữ từ ảnh PNG, JPEG, TIFF và xuất văn bản, PDF, hOCR. README nói không có giao diện đồ họa và cần cải thiện chất lượng ảnh để có kết quả tốt.",
+        "content": "<p>README tả gói Tesseract chứa động cơ OCR libtesseract và chương trình dòng lệnh tesseract. Tesseract 4 thêm động cơ OCR dựa trên mạng nơ-ron (LSTM) tập trung vào nhận dạng theo dòng, vẫn hỗ trợ động cơ cũ khi có tệp traineddata phù hợp. Hỗ trợ Unicode (UTF-8) và có thể nhận dạng hơn 100 ngôn ngữ 'ngay khi cài'; hỗ trợ nhiều định dạng ảnh (PNG, JPEG, TIFF) và nhiều định dạng đầu ra (văn bản thuần, hOCR, PDF, PDF chỉ có chữ ẩn, TSV, ALTO, PAGE). README nhấn mạnh: nhiều trường hợp cần cải thiện chất lượng ảnh đầu vào để OCR tốt hơn; dự án không có ứng dụng đồ họa (có danh sách ứng dụng bên thứ ba); có thể huấn luyện để nhận dạng ngôn ngữ khác. README có mục lịch sử, cài đặt, chạy, dành cho nhà phát triển, hỗ trợ, giấy phép và phụ thuộc. Giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Tesseract là bộ não đọc chữ trong ảnh. OCRmyPDF dùng nó, còn nhiều ứng dụng đồ họa khác cũng dùng nó. Bản thân Tesseract không có giao diện bấm chuột; bạn gọi nó bằng dòng lệnh hoặc thư viện.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tách chữ từ ảnh chụp tài liệu thành tệp văn bản. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Dòng lệnh, cần dữ liệu ngôn ngữ và làm sạch ảnh để có kết quả tốt; README dẫn tới tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần giao diện bấm chuột, README nói Tesseract không có; hãy dùng ứng dụng bên thứ ba hoặc OCRmyPDF cho PDF. Bài không khẳng định chất lượng cho tiếng Việt.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>OCR engine (động cơ OCR)</strong>: phần lõi nhận dạng chữ; README nói libtesseract là động cơ.</li><li><strong>LSTM</strong>: loại mạng nơ-ron dùng nhận dạng dòng chữ; README nêu Tesseract 4 dùng.</li><li><strong>traineddata</strong>: tệp dữ liệu ngôn ngữ cho động cơ; README nêu cần cho động cơ cũ.</li><li><strong>hOCR / ALTO / PAGE / TSV</strong>: các định dạng đầu ra giàu thông tin vị trí chữ; README liệt kê.</li><li><strong>Unicode (UTF-8)</strong>: bộ ký tự hỗ trợ nhiều ngôn ngữ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installing Tesseract và Running Tesseract; bài chưa đọc chi tiết nên không nêu lệnh. Cần tệp traineddata cho ngôn ngữ cần dùng. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần About và Installing Tesseract.</li><li>Cải thiện chất lượng ảnh theo hướng dẫn của dự án.</li><li>Thử một ảnh có chữ rõ rồi kiểm tra tiếng Việt.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn đọc chữ từ ảnh chụp. Hãy đọc README của Tesseract (https://github.com/tesseract-ocr/tesseract) và giải thích bằng tiếng Việt: động cơ OCR làm gì, vì sao chất lượng ảnh quan trọng, và vì sao phải tự thử với tiếng Việt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>'Hơn 100 ngôn ngữ ngay khi cài' là mô tả của README; chất lượng từng ngôn ngữ bài không khẳng định. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tesseract-ocr</strong> có <strong>77.308 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tesseract-ocr/tesseract/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tesseract-ocr/tesseract\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 359. Chưa cài/chạy thử; không tạo validation. Snapshot sao 77308; repo_id 22887094; README SHA256 1a14c7cd54039ffb79e05aff12841f48d4d4da50f231ee98e7e9bb6138d03e7a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tesseract-ocr/tesseract",
+          "repo_id": "22887094",
+          "source_path": "",
+          "source_revision": "README-SHA256:1a14c7cd54039ffb79e05aff12841f48d4d4da50f231ee98e7e9bb6138d03e7a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tesseract-ocr/tesseract",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installing Tesseract và Running Tesseract; bài chưa đọc chi tiết nên không nêu lệnh. Cần tệp traineddata cho ngôn ngữ cần dùng. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tesseract-ocr/tesseract/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tesseract-ocr/tesseract/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tesseract-ocr/tesseract",
+        "stars": 77308,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tesseract-ocr/tesseract/main/README.md",
+        "readmeSha256": "1a14c7cd54039ffb79e05aff12841f48d4d4da50f231ee98e7e9bb6138d03e7a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 360,
+      "batch": 62,
+      "slug": "puppeteer",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi",
+        "excerpt": "Hiểu Puppeteer là thư viện JavaScript điều khiển trình duyệt bằng mã, mặc định chạy không giao diện. README lưu ý nhiều trình quản lý gói chặn script cài đặt nên Chrome có thể không được tải về, cần làm thêm bước.",
+        "content": "<p>README tả Puppeteer là thư viện JavaScript cung cấp API cấp cao để điều khiển Chrome hoặc Firefox qua DevTools Protocol hoặc WebDriver BiDi; mặc định chạy không giao diện. README hướng dẫn cài hai kiểu: gói đầy đủ tải Chrome tương thích khi cài, hoặc gói chỉ làm thư viện không tải Chrome (bài không chép lệnh). Có ghi chú quan trọng: các trình quản lý gói hiện đại (npm, pnpm, Yarn, Bun, Deno) chặn script cài mặc định, nên nếu script bị chặn thì Puppeteer sẽ không tải trình duyệt; có thể tải thủ công trình duyệt sau khi cài hoặc cấu hình trình quản lý gói cho phép script. README có mục MCP giới thiệu chrome-devtools-mcp, một máy chủ MCP dựa trên Puppeteer để tự động hóa và gỡ lỗi trình duyệt, và nói Puppeteer hỗ trợ API WebMCP thử nghiệm. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn máy tính tự mở trang web, bấm nút, chụp ảnh màn hình hay xuất PDF thì cần điều khiển trình duyệt bằng mã. Puppeteer giống người điều khiển từ xa: bạn viết các bước, nó lái Chrome làm theo mà không hiện cửa sổ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chụp ảnh màn hình một trang web hay kiểm thử giao diện bằng mã. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm website và công cụ cho tài liệu, ảnh; người nhờ AI viết mã xử lý tệp.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình đến khó.</strong> Cần JavaScript và Node.js; README lưu ý bước tải trình duyệt có thể bị chặn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Điều khiển trình duyệt trên trang không phải của bạn có thể vi phạm điều khoản; bài không khuyến khích thu thập dữ liệu trái phép. Trình duyệt chạy bằng mã có quyền như người dùng nên đừng đưa tài khoản quan trọng vào.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>headless (không giao diện)</strong>: chạy trình duyệt không hiện cửa sổ; README nói mặc định như vậy.</li><li><strong>DevTools Protocol / WebDriver BiDi</strong>: giao thức điều khiển trình duyệt; README nêu.</li><li><strong>install script (script cài đặt)</strong>: đoạn mã chạy khi cài gói; README nói nhiều trình quản lý gói chặn mặc định.</li><li><strong>puppeteer-core</strong>: gói dùng như thư viện không tải Chrome; README nêu.</li><li><strong>MCP</strong>: giao thức nối công cụ AI với công cụ ngoài; README có mục MCP.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói đầy đủ (tải Chrome) hoặc gói thư viện không tải Chrome, rồi tải trình duyệt thủ công nếu script bị chặn (bài không chép lệnh). Cần Node.js. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation và ghi chú về script bị chặn.</li><li>Cài trong dự án thử.</li><li>Thử chụp ảnh màn hình một trang của bạn.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tự động hóa trình duyệt. Hãy đọc README của Puppeteer (https://github.com/puppeteer/puppeteer) và giải thích bằng tiếng Việt: Puppeteer làm gì, vì sao script cài đặt bị chặn và cách xử lý, và rủi ro khi tự động hóa. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn, không nêu giới hạn từng tính năng; phần MCP và WebMCP là thử nghiệm theo README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ chạy với quyền của bạn và xử lý tệp của bạn: chỉ cài từ nguồn chính thức, thử trên tệp sao chép, và không đưa khóa API hay tài liệu nhạy cảm vào dịch vụ chưa hiểu rõ dữ liệu đi đâu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>puppeteer</strong> có <strong>95.791 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README không nêu giấy phép trong phần đọc. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/puppeteer/puppeteer/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/puppeteer/puppeteer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 360. Chưa cài/chạy thử; không tạo validation. Snapshot sao 95791; repo_id 90796663; README SHA256 b2564c37c112336cc191da0890bdc4a8a3e5e039830b17613c69ac7914a7b4bc.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/puppeteer/puppeteer",
+          "repo_id": "90796663",
+          "source_path": "",
+          "source_revision": "README-SHA256:b2564c37c112336cc191da0890bdc4a8a3e5e039830b17613c69ac7914a7b4bc",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/puppeteer/puppeteer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói đầy đủ (tải Chrome) hoặc gói thư viện không tải Chrome, rồi tải trình duyệt thủ công nếu script bị chặn (bài không chép lệnh). Cần Node.js. Miễn phí theo giấy phép Apache-2.0 (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/puppeteer/puppeteer/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/puppeteer/puppeteer/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "puppeteer/puppeteer",
+        "stars": 95791,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/puppeteer/puppeteer/main/README.md",
+        "readmeSha256": "b2564c37c112336cc191da0890bdc4a8a3e5e039830b17613c69ac7914a7b4bc",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

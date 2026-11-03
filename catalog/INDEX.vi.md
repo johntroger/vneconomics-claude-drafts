@@ -42,13 +42,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 40 — Dữ liệu, hạ tầng và giám sát](learning-paths/40-du-lieu-ha-tang-va-giam-sat.vi.md) — Phân tích dữ liệu, bảng điều khiển, hạ tầng như mã và giám sát; luôn thử ở môi trường thử và dùng tài khoản quyền tối thiểu.
 - [Lộ trình 41 — Làm quen Kubernetes từ cụm cục bộ](learning-paths/41-kubernetes-cho-nguoi-moi.vi.md) — Học Kubernetes từ cụm nhỏ trên máy trước khi chạm môi trường thật; đây là chủ đề khó, đừng vội dùng cho sản xuất.
 - [Lộ trình 42 — CI/CD, lưu mã tự host và nhật ký](learning-paths/42-ci-cd-va-nhat-ky.vi.md) — Tự động hóa kiểm thử và triển khai, lưu mã tự host, thu thập nhật ký và cảnh báo; luôn giữ bí mật ngoài kho mã.
+- [Lộ trình 43 — Công cụ API, ảnh, PDF và OCR cho người làm web](learning-paths/43-api-anh-pdf-va-ocr.vi.md) — Thử API, xử lý ảnh, tạo PDF, nhận dạng chữ và điều khiển trình duyệt; thử trên bản sao tệp và không mở dịch vụ ra mạng khi chưa bảo vệ.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (42 bài)
+### Bắt đầu (43 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -94,8 +95,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 304 | VSCodium: bản dựng cộng đồng của VS Code theo giấy phép tự do, tắt telemetry, nhưng không dùng được mọi tiện ích | [VSCodium/vscodium](https://github.com/VSCodium/vscodium) | MIT | 33926 | cong-cu-lap-trinh-va-email-thu-nghiem |
 | 316 | Alpine.js: thêm tương tác cho trang HTML bằng vài thuộc tính, README dành cho người đóng góp | [alpinejs/alpine](https://github.com/alpinejs/alpine) | MIT | 32002 | javascript-giao-dien-cho-nguoi-moi |
 | 326 | KAPLAY: thư viện làm game 2D vui vẻ cho JavaScript và TypeScript, có sân chơi trực tuyến kèm hơn 90 ví dụ | [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay) | MIT | 1823 | game-va-do-hoa-web |
+| 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 
-### Cơ bản (113 bài)
+### Cơ bản (115 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -212,8 +214,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 330 | Wiki.js: phần mềm wiki mã nguồn mở thế hệ mới, README chủ yếu là liên kết và danh sách nhà tài trợ | [requarks/wiki](https://github.com/requarks/wiki) | AGPL-3.0 | 29136 | quan-ly-du-an-va-wiki-tu-host |
 | 331 | Docmost: wiki và tài liệu cộng tác mã nguồn mở, lưu ý một số thư mục theo giấy phép Enterprise riêng | [docmost/docmost](https://github.com/docmost/docmost) | AGPL-3.0 | 22207 | quan-ly-du-an-va-wiki-tu-host |
 | 332 | DuckDB: cơ sở dữ liệu phân tích chạy ngay trong ứng dụng, đọc thẳng tệp CSV và Parquet bằng SQL | [duckdb/duckdb](https://github.com/duckdb/duckdb) | MIT | 42761 | du-lieu-ha-tang-va-giam-sat |
+| 353 | Bruno: ứng dụng khách API mã nguồn mở lưu bộ sưu tập ngay trong thư mục, làm việc ngoại tuyến và cộng tác bằng Git | [usebruno/bruno](https://github.com/usebruno/bruno) | MIT | 47999 | api-anh-pdf-va-ocr |
+| 355 | sharp: thư viện Node.js xử lý ảnh tốc độ cao, co ảnh lớn thành JPEG, PNG, WebP, GIF, AVIF thân thiện web | [lovell/sharp](https://github.com/lovell/sharp) | Apache-2.0 | 32816 | api-anh-pdf-va-ocr |
 
-### Khá khó (cần nền kỹ thuật) (29 bài)
+### Khá khó (cần nền kỹ thuật) (30 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -246,8 +250,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 | 336 | Redash: viết truy vấn, tạo biểu đồ và chia sẻ bảng điều khiển trên trình duyệt từ hơn 35 nguồn dữ liệu | [getredash/redash](https://github.com/getredash/redash) | BSD-2-Clause | 28862 | du-lieu-ha-tang-va-giam-sat |
 | 337 | Grafana: nền tảng giám sát và quan sát mã nguồn mở để truy vấn, vẽ biểu đồ, cảnh báo từ nhiều nguồn số liệu và nhật ký | [grafana/grafana](https://github.com/grafana/grafana) | AGPL-3.0 | 77653 | du-lieu-ha-tang-va-giam-sat |
+| 360 | Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | Apache-2.0 | 95791 | api-anh-pdf-va-ocr |
 
-### Nâng cao (68 bài)
+### Nâng cao (72 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -319,6 +324,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 350 | Vector: ống dẫn dữ liệu quan sát viết bằng Rust, thu thập, biến đổi và định tuyến nhật ký và số liệu tới nhiều đích | [vectordotdev/vector](https://github.com/vectordotdev/vector) | MPL-2.0 | 22786 | ci-cd-va-nhat-ky |
 | 351 | Fluentd: bộ thu thập nhật ký mã nguồn mở thuộc CNCF, README nêu nhánh master cho v1 và v0.12 đã ngừng hỗ trợ | [fluent/fluentd](https://github.com/fluent/fluentd) | Apache-2.0 | 13611 | ci-cd-va-nhat-ky |
 | 352 | Alertmanager: nhận cảnh báo từ Prometheus, loại trùng, gom nhóm và gửi tới đúng người nhận | [prometheus/alertmanager](https://github.com/prometheus/alertmanager) | Apache-2.0 | 8677 | ci-cd-va-nhat-ky |
+| 356 | libvips: thư viện xử lý ảnh chạy nhanh và tốn ít bộ nhớ, nền của nhiều công cụ như sharp | [libvips/libvips](https://github.com/libvips/libvips) | LGPL-2.1 | 11781 | api-anh-pdf-va-ocr |
+| 357 | Gotenberg: API chạy bằng Docker chuyển HTML, URL và tệp Office sang PDF, gộp, tách và đóng dấu PDF | [gotenberg/gotenberg](https://github.com/gotenberg/gotenberg) | MIT | 13507 | api-anh-pdf-va-ocr |
+| 358 | OCRmyPDF: thêm lớp chữ tìm kiếm được vào PDF quét, giữ nguyên ảnh gốc, dùng Tesseract nhận dạng hơn 100 ngôn ngữ | [ocrmypdf/OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | MPL-2.0 | 35220 | api-anh-pdf-va-ocr |
+| 359 | Tesseract: động cơ nhận dạng chữ OCR mã nguồn mở hỗ trợ hơn 100 ngôn ngữ, không có giao diện đồ họa | [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | Apache-2.0 | 77308 | api-anh-pdf-va-ocr |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

@@ -4477,5 +4477,147 @@
   "related": [
    "loki"
   ]
+ },
+ {
+  "key": 353,
+  "slug": "bruno",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "Bruno: ứng dụng khách API mã nguồn mở lưu bộ sưu tập ngay trong thư mục, làm việc ngoại tuyến và cộng tác bằng Git",
+  "repo": "usebruno/bruno",
+  "stars": 47999,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "hoppscotch",
+   "sharp"
+  ]
+ },
+ {
+  "key": 354,
+  "slug": "hoppscotch",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host",
+  "repo": "hoppscotch/hoppscotch",
+  "stars": 80726,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-31",
+  "related": [
+   "bruno"
+  ]
+ },
+ {
+  "key": 355,
+  "slug": "sharp",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "sharp: thư viện Node.js xử lý ảnh tốc độ cao, co ảnh lớn thành JPEG, PNG, WebP, GIF, AVIF thân thiện web",
+  "repo": "lovell/sharp",
+  "stars": 32816,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-10-29",
+  "related": [
+   "bruno",
+   "libvips"
+  ]
+ },
+ {
+  "key": 356,
+  "slug": "libvips",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "libvips: thư viện xử lý ảnh chạy nhanh và tốn ít bộ nhớ, nền của nhiều công cụ như sharp",
+  "repo": "libvips/libvips",
+  "stars": 11781,
+  "license": "LGPL-2.1",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Âm thanh và video",
+  "need": "Xử lý nội dung đa phương tiện",
+  "pushed": "2026-11-02",
+  "related": [
+   "sharp",
+   "tesseract"
+  ]
+ },
+ {
+  "key": 357,
+  "slug": "gotenberg",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "Gotenberg: API chạy bằng Docker chuyển HTML, URL và tệp Office sang PDF, gộp, tách và đóng dấu PDF",
+  "repo": "gotenberg/gotenberg",
+  "stars": 13507,
+  "license": "MIT",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "ocrmypdf",
+   "puppeteer"
+  ]
+ },
+ {
+  "key": 358,
+  "slug": "ocrmypdf",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "OCRmyPDF: thêm lớp chữ tìm kiếm được vào PDF quét, giữ nguyên ảnh gốc, dùng Tesseract nhận dạng hơn 100 ngôn ngữ",
+  "repo": "ocrmypdf/OCRmyPDF",
+  "stars": 35220,
+  "license": "MPL-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-10-25",
+  "related": [
+   "gotenberg",
+   "tesseract"
+  ]
+ },
+ {
+  "key": 359,
+  "slug": "tesseract",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "Tesseract: động cơ nhận dạng chữ OCR mã nguồn mở hỗ trợ hơn 100 ngôn ngữ, không có giao diện đồ họa",
+  "repo": "tesseract-ocr/tesseract",
+  "stars": 77308,
+  "license": "Apache-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "libvips",
+   "ocrmypdf"
+  ]
+ },
+ {
+  "key": 360,
+  "slug": "puppeteer",
+  "group": "2026-11-03-api-anh-pdf-va-ocr",
+  "title": "Puppeteer: thư viện JavaScript điều khiển Chrome hoặc Firefox không giao diện qua DevTools Protocol hoặc WebDriver BiDi",
+  "repo": "puppeteer/puppeteer",
+  "stars": 95791,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "gotenberg"
+  ]
  }
 ]
