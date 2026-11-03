@@ -5757,5 +5757,147 @@
    "chroma",
    "qdrant"
   ]
+ },
+ {
+  "key": 424,
+  "slug": "zoxide",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "zoxide: lệnh cd thông minh, nhớ thư mục bạn hay vào để nhảy tới chỉ với vài phím",
+  "repo": "ajeetdsouza/zoxide",
+  "stars": 40429,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "starship"
+  ]
+ },
+ {
+  "key": 425,
+  "slug": "starship",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "Starship: dấu nhắc lệnh (prompt) tối giản, nhanh, tùy biến, dùng được trên mọi shell; README yêu cầu cài Nerd Font",
+  "repo": "starship/starship",
+  "stars": 60578,
+  "license": {
+   "key": "isc",
+   "name": "ISC License",
+   "spdx_id": "ISC",
+   "url": "https://api.github.com/licenses/isc",
+   "node_id": "MDc6TGljZW5zZTEw"
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "btop",
+   "zoxide"
+  ]
+ },
+ {
+  "key": 426,
+  "slug": "btop",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "btop++: trình theo dõi tài nguyên máy trong terminal (CPU, bộ nhớ, ổ đĩa, mạng, tiến trình), giao diện có hỗ trợ chuột",
+  "repo": "aristocratos/btop",
+  "stars": 35233,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Cơ bản",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "delta",
+   "starship"
+  ]
+ },
+ {
+  "key": 427,
+  "slug": "yazi",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "Yazi: trình quản lý tệp trong terminal viết bằng Rust, bất đồng bộ, có xem trước ảnh, plugin Lua; README nói đang public beta",
+  "repo": "sxyazi/yazi",
+  "stars": 43201,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "atuin"
+  ]
+ },
+ {
+  "key": 428,
+  "slug": "atuin",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "Atuin: thay lịch sử lệnh của shell bằng cơ sở dữ liệu SQLite, tìm kiếm toàn màn hình, đồng bộ mã hóa tùy chọn",
+  "repo": "atuinsh/atuin",
+  "stars": 32185,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "delta",
+   "yazi"
+  ]
+ },
+ {
+  "key": 429,
+  "slug": "delta",
+  "group": "2026-11-03-terminal-hien-dai",
+  "title": "delta: trình xem khác biệt (diff) có tô màu cú pháp cho git, diff và grep, có chế độ song song và đánh số dòng",
+  "repo": "dandavison/delta",
+  "stars": 32640,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-28",
+  "related": [
+   "atuin",
+   "btop"
+  ]
  }
 ]

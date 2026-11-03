@@ -1,0 +1,662 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-terminal",
+  "batch": 73,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 424,
+      "batch": 73,
+      "slug": "zoxide",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "zoxide: lệnh cd thông minh, nhớ thư mục bạn hay vào để nhảy tới chỉ với vài phím",
+        "excerpt": "Hiểu zoxide là công cụ dòng lệnh thay cho cd: nó ghi nhớ thư mục bạn dùng nhiều nhất và cho nhảy tới đó bằng vài ký tự, chạy trên các shell chính. README có ví dụ lệnh z và zi (chọn tương tác qua fzf).",
+        "content": "<p>README tả zoxide là lệnh cd thông minh hơn, lấy cảm hứng từ z và autojump, nhớ thư mục dùng thường xuyên để bạn nhảy tới chỉ với vài phím và chạy trên mọi shell chính. Mục Getting started có ví dụ: z kèm một hay nhiều từ để vào thư mục xếp hạng cao nhất khớp từ đó, z cũng hoạt động như cd thường với đường dẫn, z .. và z - để lên một cấp hoặc về thư mục trước, zi để chọn tương tác bằng fzf, và gợi ý hoàn thành bằng phím Tab ở một số shell. Mục Installation nói cài đặt gồm 4 bước, gồm cài tệp chạy và cấu hình shell; bài không chép lệnh, có phần Configuration với cờ và biến môi trường, và mục tích hợp bên thứ ba. README có tài trợ từ các bên thương mại ở đầu trang. README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì gõ cd qua nhiều cấp thư mục dài, bạn gõ z kèm vài chữ của tên thư mục. zoxide học từ thói quen của bạn: thư mục nào vào nhiều thì được ưu tiên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: vào vài thư mục dự án quen thuộc, rồi dùng z kèm một phần tên để nhảy lại. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Cần biết dùng terminal và cd; phần cấu hình shell cần làm đúng theo tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> zoxide chỉ ghi nhớ thư mục sau khi bạn đã dùng nên lúc đầu chưa có gợi ý; README phần đã đọc không nêu chi tiết dữ liệu được lưu ở đâu, bài chưa kiểm tra. Cấu hình shell sai có thể ảnh hưởng cách mở terminal.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>shell</strong>: chương trình nhận lệnh bạn gõ trong terminal như bash, zsh, fish.</li><li><strong>cd</strong>: lệnh đổi thư mục hiện tại.</li><li><strong>fzf</strong>: công cụ chọn mục bằng cách gõ chữ để lọc; README nêu zi dùng fzf.</li><li><strong>autojump / z</strong>: công cụ trước đó cùng ý tưởng; README nói zoxide lấy cảm hứng từ chúng.</li><li><strong>ranking (xếp hạng)</strong>: thứ tự ưu tiên thư mục theo mức dùng; README nêu cờ cấu hình thuật toán lão hóa.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài tệp chạy theo hệ điều hành rồi thêm cấu hình vào shell (bài không chép lệnh). Cần terminal và một shell được hỗ trợ; zi cần thêm fzf. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Getting started.</li><li>Cài theo hướng dẫn cho đúng shell.</li><li>Dùng vài ngày rồi thử z và zi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay phải gõ đường dẫn dài trong terminal. Hãy đọc README của zoxide (https://github.com/ajeetdsouza/zoxide) và giải thích bằng tiếng Việt: z và zi làm gì, cần cấu hình shell ra sao, và có rủi ro gì khi sửa cấu hình shell. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 23 KB), bài chỉ lấy giới thiệu, Getting started và Installation. README phần đã đọc không nêu giấy phép. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ajeetdsouza</strong> có <strong>40.429 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ajeetdsouza/zoxide/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ajeetdsouza/zoxide\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 424. Chưa cài/chạy thử; không tạo validation. Snapshot sao 40429; repo_id 245166720; README SHA256 396400a355f3c6f102fc41a0b84e2cab0689ee6a875c9181869ff6dbcc061c86.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ajeetdsouza/zoxide",
+          "repo_id": "245166720",
+          "source_path": "",
+          "source_revision": "README-SHA256:396400a355f3c6f102fc41a0b84e2cab0689ee6a875c9181869ff6dbcc061c86",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ajeetdsouza/zoxide",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài tệp chạy theo hệ điều hành rồi thêm cấu hình vào shell (bài không chép lệnh). Cần terminal và một shell được hỗ trợ; zi cần thêm fzf. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ajeetdsouza/zoxide/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ajeetdsouza/zoxide/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ajeetdsouza/zoxide",
+        "stars": 40429,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/README.md",
+        "readmeSha256": "396400a355f3c6f102fc41a0b84e2cab0689ee6a875c9181869ff6dbcc061c86",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 425,
+      "batch": 73,
+      "slug": "starship",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Starship: dấu nhắc lệnh (prompt) tối giản, nhanh, tùy biến, dùng được trên mọi shell; README yêu cầu cài Nerd Font",
+        "excerpt": "Hiểu Starship là dấu nhắc lệnh cho mọi shell viết bằng Rust, hiển thị thông tin liên quan như nhánh git hay phiên bản ngôn ngữ ngay trên dòng lệnh. README yêu cầu cài Nerd Font và nói cài đặt gồm 3 bước.",
+        "content": "<p>README mô tả Starship là dấu nhắc lệnh tối giản, nhanh và tùy biến vô hạn cho mọi shell (cách nói của README). Điểm nổi bật theo README: nhanh, tùy biến mọi khía cạnh, chạy trên mọi shell và hệ điều hành, thông minh khi chỉ hiện thông tin liên quan, hỗ trợ nhiều công cụ, dễ cài. Tiền đề: cài và bật Nerd Font trong terminal. Cài đặt 3 bước: cài Starship (nhiều trình quản lý gói tùy hệ điều hành), thiết lập shell để dùng Starship (mỗi shell một cách), rồi mở shell mới và cấu hình thêm nếu muốn qua trang Configuration và Presets. README có bản dịch tiếng Việt và nhiều ngôn ngữ khác, và mục Code Signing Policy. Giấy phép ISC theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dấu nhắc lệnh là phần chữ hiện trước chỗ bạn gõ. Starship làm nó đẹp và thông tin hơn: thấy ngay bạn đang ở thư mục nào, nhánh git nào, dự án dùng phiên bản gì.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: cài Starship trên một terminal thử và xem dấu nhắc thay đổi khi vào thư mục có kho git. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Cần terminal, cài font và sửa cấu hình shell; chỉnh cấu hình chi tiết thì khó hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> 'Nhanh thật sự' là cách nói của README. Nếu không bật Nerd Font, biểu tượng có thể hiển thị lỗi (README yêu cầu Nerd Font). Sửa tệp cấu hình shell sai có thể làm terminal khởi động lỗi: sao lưu trước khi sửa.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>LLM</strong>: mô hình ngôn ngữ lớn, loại AI đứng sau các chatbot như Claude hay ChatGPT.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>prompt (dấu nhắc lệnh)</strong>: dòng chữ hiện trước chỗ gõ lệnh.</li><li><strong>Nerd Font</strong>: phông có thêm biểu tượng; README yêu cầu để hiển thị đúng.</li><li><strong>shell</strong>: chương trình nhận lệnh như bash, zsh, fish, PowerShell.</li><li><strong>preset</strong>: cấu hình dựng sẵn để tham khảo; README trỏ tới trang Presets.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài phần mềm theo hệ điều hành; README liệt kê nhiều loại.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài Nerd Font, cài Starship bằng trình quản lý gói của hệ điều hành, thêm một dòng cấu hình vào shell (bài không chép lệnh). Miễn phí theo giấy phép ISC.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Cài Nerd Font và bật trong terminal.</li><li>Cài Starship và cấu hình shell theo tài liệu.</li><li>Thử một preset.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn dấu nhắc lệnh dễ nhìn hơn. Hãy đọc README của Starship (https://github.com/starship/starship) và giải thích bằng tiếng Việt: Nerd Font là gì và vì sao cần, ba bước cài đặt, và cách sao lưu cấu hình shell trước khi sửa. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài do có danh sách cài đặt theo hệ điều hành; bài chỉ lấy ý chính. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>starship</strong> có <strong>60.578 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện ISC; README mục License ghi ISC. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/starship/starship/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/starship/starship\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 425. Chưa cài/chạy thử; không tạo validation. Snapshot sao 60578; repo_id 178991158; README SHA256 3a1c69539c6b04c737a9dfbba9b74f7973231c58d336fef2aac7284dd2da17c5.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/starship/starship",
+          "repo_id": "178991158",
+          "source_path": "",
+          "source_revision": "README-SHA256:3a1c69539c6b04c737a9dfbba9b74f7973231c58d336fef2aac7284dd2da17c5",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "isc",
+                "name": "ISC License",
+                "spdx_id": "ISC",
+                "url": "https://api.github.com/licenses/isc",
+                "node_id": "MDc6TGljZW5zZTEw"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/starship/starship",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài Nerd Font, cài Starship bằng trình quản lý gói của hệ điều hành, thêm một dòng cấu hình vào shell (bài không chép lệnh). Miễn phí theo giấy phép ISC.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/starship/starship/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/starship/starship/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "starship/starship",
+        "stars": 60578,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/starship/starship/main/README.md",
+        "readmeSha256": "3a1c69539c6b04c737a9dfbba9b74f7973231c58d336fef2aac7284dd2da17c5",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 426,
+      "batch": 73,
+      "slug": "btop",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "btop++: trình theo dõi tài nguyên máy trong terminal (CPU, bộ nhớ, ổ đĩa, mạng, tiến trình), giao diện có hỗ trợ chuột",
+        "excerpt": "Hiểu btop++ là trình theo dõi tài nguyên bằng giao diện terminal, hiện CPU, bộ nhớ, ổ đĩa, mạng và tiến trình, chạy trên Linux, macOS và vài hệ BSD. README rất dài với nhiều hướng dẫn biên dịch; bài chỉ lấy phần giới thiệu.",
+        "content": "<p>README mô tả btop++ là công cụ theo dõi tài nguyên cho thấy mức dùng và thống kê của bộ xử lý, bộ nhớ, ổ đĩa, mạng và tiến trình; là bản C++ tiếp nối bashtop và bpytop. Tính năng nêu: menu dễ dùng, hỗ trợ chuột đầy đủ, chọn tiến trình bằng phím lên xuống, xem chi tiết một tiến trình, lọc tiến trình, đổi cách sắp xếp, dạng cây, gửi tín hiệu tới tiến trình, tạm dừng danh sách, đổi mọi tùy chọn trong menu, biểu đồ mạng tự co giãn, hoạt động đọc ghi ổ đĩa, đồng hồ pin, bộ cấu hình có sẵn. Cần terminal hỗ trợ màu 24-bit, UTF-8 và phông có các khối ký tự Braille, hình học, kẻ khung; có chế độ TTY 16 màu và màu thấp. README có phần Support and funding. Huy hiệu nền tảng: Linux, macOS, FreeBSD, NetBSD, OpenBSD. Phần cài đặt và biên dịch dài nhưng bài không chép. Giấy phép Apache License 2.0 ở cuối README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Trình quản lý tác vụ của Windows nhưng chạy trong terminal: xem máy đang dùng bao nhiêu CPU, RAM, mạng và tiến trình nào ngốn tài nguyên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở btop, tìm tiến trình chiếm nhiều bộ nhớ nhất và xem chi tiết. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Cơ bản.</strong> Giao diện có menu và chuột nên dễ làm quen; cài đặt theo hệ điều hành. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> btop có thể gửi tín hiệu tới tiến trình (README nêu): kết thúc nhầm tiến trình hệ thống có thể gây mất dữ liệu hoặc làm máy lỗi. README nói hiển thị lỗi nếu phông thiếu ký tự cần thiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>process (tiến trình)</strong>: chương trình đang chạy trên máy.</li><li><strong>signal (tín hiệu)</strong>: lệnh gửi tới tiến trình như yêu cầu dừng; README nêu có thể gửi.</li><li><strong>TTY</strong>: màn hình thuần văn bản của hệ thống; README nêu chế độ 16 màu.</li><li><strong>truecolor (24-bit)</strong>: hỗ trợ đầy đủ màu; README khuyến nghị.</li><li><strong>UTF-8</strong>: bảng mã ký tự cần cho hiển thị đúng; README yêu cầu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt và biên dịch cho Linux, macOS, FreeBSD; bài chưa đọc chi tiết nên không nêu lệnh. Cần terminal hỗ trợ UTF-8 và màu. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Description và Features.</li><li>Kiểm tra terminal và phông theo mục Prerequisites.</li><li>Cài theo hướng dẫn cho hệ điều hành rồi thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn theo dõi máy đang dùng tài nguyên thế nào. Hãy đọc README của btop (https://github.com/aristocratos/btop) và giải thích bằng tiếng Việt: các khối giao diện, yêu cầu về phông và màu, và rủi ro khi gửi tín hiệu tới tiến trình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 52 KB, nhiều hướng dẫn biên dịch); bài chỉ lấy giới thiệu, tính năng và yêu cầu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>aristocratos</strong> có <strong>35.233 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có mục LICENSE ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/aristocratos/btop/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/aristocratos/btop\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 426. Chưa cài/chạy thử; không tạo validation. Snapshot sao 35233; repo_id 365005377; README SHA256 c31459dd4c5bd9d7c3adbb36d6e792ccefbbec72ffa388002ce0452b48240e3c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/aristocratos/btop",
+          "repo_id": "365005377",
+          "source_path": "",
+          "source_revision": "README-SHA256:c31459dd4c5bd9d7c3adbb36d6e792ccefbbec72ffa388002ce0452b48240e3c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aristocratos/btop",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt và biên dịch cho Linux, macOS, FreeBSD; bài chưa đọc chi tiết nên không nêu lệnh. Cần terminal hỗ trợ UTF-8 và màu. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/aristocratos/btop/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/aristocratos/btop/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "aristocratos/btop",
+        "stars": 35233,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/aristocratos/btop/main/README.md",
+        "readmeSha256": "c31459dd4c5bd9d7c3adbb36d6e792ccefbbec72ffa388002ce0452b48240e3c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 427,
+      "batch": 73,
+      "slug": "yazi",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Yazi: trình quản lý tệp trong terminal viết bằng Rust, bất đồng bộ, có xem trước ảnh, plugin Lua; README nói đang public beta",
+        "excerpt": "Hiểu Yazi là trình quản lý tệp trong terminal viết bằng Rust, nền I/O bất đồng bộ, có xem trước ảnh, tab, đổi tên hàng loạt và hệ plugin Lua. README nói dự án ở trạng thái public beta, dùng được hằng ngày nhưng sẽ có thay đổi phá vỡ.",
+        "content": "<p>README tả Yazi (nghĩa là con vịt) là trình quản lý tệp trong terminal viết bằng Rust, dựa trên I/O bất đồng bộ không chặn, nhằm tới trải nghiệm quản lý tệp hiệu quả, thân thiện và tùy biến được. Tính năng nêu: toàn bộ I/O bất đồng bộ, quản lý tác vụ với tiến độ và hủy, xem trước ảnh qua nhiều giao thức (bảng hỗ trợ theo từng terminal như kitty, iTerm2, WezTerm, Windows Terminal, VSCode), tô sáng mã, hệ plugin đồng thời viết bằng Lua, hệ thống tệp ảo (quản lý tệp từ xa), trình quản lý gói để cài plugin và chủ đề, tích hợp ripgrep, fd, fzf, zoxide, nhiều tab, đổi tên hàng loạt, giải nén, thùng rác, kéo thả, chủ đề, hỗ trợ chuột. Mục Project status ghi: public beta, dùng làm công cụ hằng ngày được, đang phát triển mạnh, mong đợi thay đổi phá vỡ. Giấy phép MIT theo README. Đầu README có phần tài trợ thương mại (Warp).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Giống Windows Explorer hoặc Finder nhưng nằm trong terminal, điều khiển bằng bàn phím kiểu Vim, xem trước ảnh và tệp ngay trong cửa sổ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở một thư mục dự án thử, xem trước vài ảnh và tệp mã. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần quen terminal và thao tác kiểu Vim; xem ảnh phụ thuộc terminal. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nói dự án đang phát triển mạnh và sẽ có thay đổi phá vỡ: cấu hình hay plugin có thể hỏng sau khi cập nhật. Xem trước ảnh chỉ hoạt động trên các terminal README liệt kê; plugin bên thứ ba cần xem xét độ tin cậy. Tính năng xóa, đổi tên hàng loạt có thể làm mất dữ liệu nếu thao tác nhầm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>terminal file manager</strong>: chương trình quản lý tệp chạy trong terminal; README định nghĩa Yazi như vậy.</li><li><strong>async I/O (bất đồng bộ)</strong>: xử lý tệp không chờ nhau nên giao diện không bị đơ; README nêu.</li><li><strong>plugin</strong>: phần mở rộng thêm tính năng; README nói viết bằng Lua.</li><li><strong>Lua</strong>: ngôn ngữ lập trình nhẹ dùng cho plugin; README nêu.</li><li><strong>public beta</strong>: bản thử công khai, README nói dùng hằng ngày được nhưng có thể thay đổi phá vỡ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần terminal; xem ảnh cần terminal hỗ trợ giao thức hoặc Überzug++/Chafa. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Project status.</li><li>Kiểm tra terminal của bạn trong bảng Image Preview.</li><li>Cài theo tài liệu và thử với thư mục không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử quản lý tệp ngay trong terminal. Hãy đọc README của Yazi (https://github.com/sxyazi/yazi) và giải thích bằng tiếng Việt: tính năng chính, trạng thái public beta nghĩa là gì, và rủi ro khi xóa hay đổi tên hàng loạt. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn; cách cài ở trang tài liệu riêng, bài chưa đọc. Các từ 'nhanh vượt trội' là của README. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sxyazi</strong> có <strong>43.201 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi Yazi theo giấy phép MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sxyazi/yazi/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sxyazi/yazi\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 427. Chưa cài/chạy thử; không tạo validation. Snapshot sao 43201; repo_id 663900193; README SHA256 cbde22b28281fc9316aa190cb38f0a5e1d589ee76010ab4a7ba8892763445431.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sxyazi/yazi",
+          "repo_id": "663900193",
+          "source_path": "",
+          "source_revision": "README-SHA256:cbde22b28281fc9316aa190cb38f0a5e1d589ee76010ab4a7ba8892763445431",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sxyazi/yazi",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng; bài chưa đọc nên không nêu lệnh. Cần terminal; xem ảnh cần terminal hỗ trợ giao thức hoặc Überzug++/Chafa. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sxyazi/yazi/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sxyazi/yazi/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sxyazi/yazi",
+        "stars": 43201,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sxyazi/yazi/main/README.md",
+        "readmeSha256": "cbde22b28281fc9316aa190cb38f0a5e1d589ee76010ab4a7ba8892763445431",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 428,
+      "batch": 73,
+      "slug": "atuin",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Atuin: thay lịch sử lệnh của shell bằng cơ sở dữ liệu SQLite, tìm kiếm toàn màn hình, đồng bộ mã hóa tùy chọn",
+        "excerpt": "Hiểu Atuin là công cụ thay lịch sử lệnh shell bằng SQLite kèm ngữ cảnh (mã thoát, thư mục, thời lượng) và tìm kiếm toàn màn hình. Đồng bộ giữa các máy là tùy chọn và README nói được mã hóa. Cần đọc kỹ phần Quickstart vì nó đăng ký dịch vụ đám mây của hãng.",
+        "content": "<p>README tả Atuin thay lịch sử shell hiện có bằng cơ sở dữ liệu SQLite, ghi thêm ngữ cảnh cho lệnh, và tùy chọn đồng bộ lịch sử giữa các máy, được mã hóa hoàn toàn, qua máy chủ Atuin. README nói bạn có thể dùng máy chủ do tác giả vận hành, tự dựng máy chủ riêng hoặc không đồng bộ; vì mã hóa nên tác giả không đọc được dữ liệu (tuyên bố của README). Tính năng: gán lại ctrl-r và phím lên thành giao diện tìm lịch sử toàn màn hình, lưu lịch sử vào SQLite, sao lưu và đồng bộ mã hóa, cùng lịch sử qua các terminal và máy, ghi mã thoát, thư mục, tên máy, phiên, thời lượng, thống kê lệnh dùng nhiều, giữ tệp lịch sử cũ, nhảy nhanh bằng Alt cộng số, lọc theo phiên, thư mục hoặc toàn cục. Hỗ trợ zsh, bash, fish, nushell, xonsh và PowerShell. Mục Quickstart: README ghi cách này đăng ký bạn vào máy chủ đồng bộ Atuin Cloud; đầu tiên là chạy một đoạn lệnh cài tải từ mạng rồi đăng ký, nhập và đồng bộ (bài không chép lệnh). Có ghi chú riêng cho người dùng Bash về bash-preexec. Giấy phép MIT theo GitHub; README có huy hiệu giấy phép từ crates.io.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lịch sử lệnh thường chỉ là danh sách chữ. Atuin ghi thêm lệnh chạy ở đâu, mất bao lâu, thành công hay lỗi, nên tìm lại 'lệnh make thành công chiều qua' rất dễ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng Atuin chỉ cục bộ, không đồng bộ, để tìm lại lệnh theo thư mục. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần terminal và sửa cấu hình shell; có thể dùng cục bộ không cần tài khoản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lịch sử lệnh có thể chứa khóa hay mật khẩu bạn từng gõ: nếu đồng bộ, hãy hiểu dữ liệu nào được gửi đi dù README nói được mã hóa (bài chưa kiểm chứng). Quickstart của README chạy đoạn lệnh cài tải từ mạng và đăng ký tài khoản đám mây: đọc nội dung trước khi chạy, hoặc dùng cách cài trong tài liệu và chế độ cục bộ. Tuyên bố 'tác giả không đọc được dữ liệu' là của README.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>shell history (lịch sử lệnh)</strong>: danh sách lệnh bạn đã gõ.</li><li><strong>SQLite</strong>: cơ sở dữ liệu nhỏ lưu trong một tệp; README nêu.</li><li><strong>sync (đồng bộ)</strong>: giữ cùng dữ liệu trên nhiều máy; README nói tùy chọn và mã hóa.</li><li><strong>self-host (tự dựng máy chủ)</strong>: tự chạy máy chủ đồng bộ riêng; README nêu.</li><li><strong>exit code (mã thoát)</strong>: số cho biết lệnh thành công hay lỗi; README nêu Atuin ghi lại.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: Quickstart cài bằng đoạn lệnh tải từ mạng và đăng ký Atuin Cloud; tài liệu có hướng dẫn cài đặt, ngoại tuyến và tự host (bài không chép lệnh). Hỗ trợ zsh, bash, fish, nushell, xonsh, PowerShell. Miễn phí theo giấy phép MIT (theo GitHub); bài chưa kiểm tra điều khoản dịch vụ đồng bộ.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Features và Supported platforms.</li><li>Dùng chế độ cục bộ trước, không đăng ký.</li><li>Chỉ bật đồng bộ khi đã hiểu dữ liệu gửi đi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn tìm lại lệnh cũ dễ hơn. Hãy đọc README của Atuin (https://github.com/atuinsh/atuin) và giải thích bằng tiếng Việt: Atuin lưu gì, đồng bộ hoạt động ra sao, và vì sao nên đọc kỹ Quickstart trước khi chạy. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói đồng bộ được mã hóa nhưng bài không kiểm chứng. README phần đã đọc không nêu giấy phép bằng văn bản ngoài huy hiệu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>atuinsh</strong> có <strong>32.185 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép từ crates.io. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/atuinsh/atuin/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/atuinsh/atuin\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 428. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32185; repo_id 301244405; README SHA256 5b9734c4b234756d3fbbc8ef202cb6c5f0f0e965c61ab6534a372ffde0a76f3a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/atuinsh/atuin",
+          "repo_id": "301244405",
+          "source_path": "",
+          "source_revision": "README-SHA256:5b9734c4b234756d3fbbc8ef202cb6c5f0f0e965c61ab6534a372ffde0a76f3a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/atuinsh/atuin",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: Quickstart cài bằng đoạn lệnh tải từ mạng và đăng ký Atuin Cloud; tài liệu có hướng dẫn cài đặt, ngoại tuyến và tự host (bài không chép lệnh). Hỗ trợ zsh, bash, fish, nushell, xonsh, PowerShell. Miễn phí theo giấy phép MIT (theo GitHub); bài chưa kiểm tra điều khoản dịch vụ đồng bộ.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/atuinsh/atuin/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/atuinsh/atuin/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "atuinsh/atuin",
+        "stars": 32185,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/atuinsh/atuin/main/README.md",
+        "readmeSha256": "5b9734c4b234756d3fbbc8ef202cb6c5f0f0e965c61ab6534a372ffde0a76f3a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 429,
+      "batch": 73,
+      "slug": "delta",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "delta: trình xem khác biệt (diff) có tô màu cú pháp cho git, diff và grep, có chế độ song song và đánh số dòng",
+        "excerpt": "Hiểu delta là trình phân trang (pager) tô màu cú pháp cho đầu ra git diff, log, blame và grep, có tô khác biệt cấp từ, xem song song và nhảy giữa các tệp. Tên gói trong nhiều trình quản lý là git-delta nhưng lệnh chạy là delta.",
+        "content": "<p>README tả delta là pager tô màu cú pháp cho đầu ra git, diff và grep. Phần Get Started nói cài (gói tên git-delta ở hầu hết trình quản lý gói nhưng lệnh là delta) và thêm cấu hình vào tệp .gitconfig: đặt pager là delta, bộ lọc diff tương tác, bật điều hướng bằng n và N, chế độ tối hay sáng hoặc tự nhận diện, và kiểu xung đột merge zdiff3; bài không chép cấu hình. Tính năng nêu: tô cú pháp cùng chủ đề với bat, tô khác biệt cấp từ bằng thuật toán Levenshtein, xem song song có cuộn dòng, đánh số dòng, n và N để nhảy giữa tệp, hiển thị xung đột merge và git blame tốt hơn, tô đầu ra rg và git grep, hỗ trợ color-moved, sao chép mã không dính dấu + và -, chế độ giả lập diff-highlight và diff-so-fancy, siêu liên kết tới trang lưu trữ (GitHub, GitLab, SourceHut, Codeberg), kiểu hộp quanh tiêu đề, và tự nhận diện nền sáng tối. README phần đã đọc không nêu giấy phép; lấy theo GitHub là MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi AI sửa mã, bạn cần xem nó đổi gì. delta làm bảng so sánh thay đổi dễ đọc hơn: tô màu theo ngôn ngữ, chỉ rõ từ nào đổi trong dòng, có chế độ hai cột.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: bật delta cho git diff và so sánh với bản mặc định trên một thay đổi nhỏ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm việc nhiều với terminal hoặc để AI viết mã, muốn dòng lệnh dễ dùng hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần biết git và sửa tệp cấu hình; có nhiều tùy chọn tùy biến. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Cấu hình thay đổi cách git hiển thị diff (core.pager); nếu lỗi có thể khó đọc kết quả, hãy sao lưu .gitconfig trước khi sửa. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>diff (khác biệt)</strong>: bản so sánh hai phiên bản của tệp.</li><li><strong>pager</strong>: chương trình hiển thị đầu ra dài từng trang; README nêu delta là pager.</li><li><strong>git blame</strong>: xem ai sửa dòng nào; README nêu delta hiển thị tốt hơn.</li><li><strong>merge conflict (xung đột)</strong>: khi hai thay đổi trùng chỗ; README nêu delta hiển thị tốt hơn.</li><li><strong>syntax highlighting (tô màu cú pháp)</strong>: tô màu mã theo ngôn ngữ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài gói git-delta rồi thêm cấu hình vào .gitconfig (bài không chép lệnh). Cần git và terminal. Miễn phí theo giấy phép MIT (theo GitHub).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Get Started và Features.</li><li>Sao lưu .gitconfig rồi thêm cấu hình.</li><li>So sánh với diff mặc định.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn xem thay đổi mã dễ đọc hơn. Hãy đọc README của delta (https://github.com/dandavison/delta) và giải thích bằng tiếng Việt: delta thay đổi gì trong git, các tính năng chính, và cách sao lưu cấu hình git trước khi sửa. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ tài liệu, không chạy lệnh cài tải từ mạng khi chưa hiểu nó làm gì, và thử trên máy hoặc thư mục không chứa dữ liệu quan trọng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dandavison</strong> có <strong>32.640 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dandavison/delta/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dandavison/delta\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 429. Chưa cài/chạy thử; không tạo validation. Snapshot sao 32640; repo_id 193526915; README SHA256 192dcae133af9f942a909681c607de8aa808119e403d9968ae72ac6f37112396.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dandavison/delta",
+          "repo_id": "193526915",
+          "source_path": "",
+          "source_revision": "README-SHA256:192dcae133af9f942a909681c607de8aa808119e403d9968ae72ac6f37112396",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dandavison/delta",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài gói git-delta rồi thêm cấu hình vào .gitconfig (bài không chép lệnh). Cần git và terminal. Miễn phí theo giấy phép MIT (theo GitHub).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dandavison/delta/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dandavison/delta/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dandavison/delta",
+        "stars": 32640,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dandavison/delta/main/README.md",
+        "readmeSha256": "192dcae133af9f942a909681c607de8aa808119e403d9968ae72ac6f37112396",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

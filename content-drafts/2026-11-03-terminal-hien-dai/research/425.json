@@ -1,0 +1,42 @@
+{
+  "key": 425,
+  "repo": "starship/starship",
+  "repoId": "178991158",
+  "url": "https://github.com/starship/starship",
+  "stars": 60578,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "isc",
+    "name": "ISC License",
+    "spdx_id": "ISC",
+    "url": "https://api.github.com/licenses/isc",
+    "node_id": "MDc6TGljZW5zZTEw"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T12:50:14Z",
+  "createdAt": "2019-04-02T03:23:12Z",
+  "defaultBranch": "main",
+  "description": "☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+  "homepage": "https://starship.rs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/starship/starship/main/README.md",
+    "sha256": "3a1c69539c6b04c737a9dfbba9b74f7973231c58d336fef2aac7284dd2da17c5",
+    "bytes": 15918,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Configure Starship",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc trang Configuration.",
+    "Chưa thử.",
+    "Chưa kiểm tra từng cách cài theo hệ điều hành."
+  ],
+  "runtimeValidated": false
+}

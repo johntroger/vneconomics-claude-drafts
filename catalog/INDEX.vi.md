@@ -53,6 +53,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 51 — Meta-framework web và framework Go](learning-paths/51-meta-framework-web.vi.md) — Từ bộ định tuyến đến framework dựng ứng dụng toàn diện trên React, Svelte, Vue, Angular, Qwik, và hai framework API Go; chú ý phiên bản và nhánh beta.
 - [Lộ trình 52 — Framework agent AI](learning-paths/52-framework-agent-ai.vi.md) — Từ công cụ kéo thả đến các framework Python dựng agent, nhóm agent, đồ thị trạng thái và bộ nhớ; chú ý chi phí gọi mô hình, quyền riêng tư và rủi ro chạy mã do AI sinh.
 - [Lộ trình 53 — Cơ sở dữ liệu vector và đánh giá LLM](learning-paths/53-vector-db-danh-gia-llm.vi.md) — Từ kho vector nhỏ để thử đến máy chủ và hệ phân tán, kèm công cụ kiểm thử câu trả lời AI; chú ý cảnh báo bảo mật của Qdrant và chi phí đám mây.
+- [Lộ trình 54 — Công cụ terminal hiện đại](learning-paths/54-terminal-hien-dai.vi.md) — Từ lệnh nhảy thư mục và dấu nhắc đẹp đến theo dõi tài nguyên, xem diff, quản lý tệp và lịch sử lệnh; chú ý sao lưu cấu hình shell và các cảnh báo về đồng bộ và beta.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -108,7 +109,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (137 bài)
+### Cơ bản (142 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -249,6 +250,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 413 | Langflow: nền tảng kéo thả dựng agent và quy trình AI, có thể xuất thành API hoặc máy chủ MCP, có bản Desktop cho Windows và macOS | [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | MIT | 156280 | framework-agent-ai |
 | 420 | Chroma: cơ sở dữ liệu vector mã nguồn mở cho ứng dụng AI, API cốt lõi chỉ 4 hàm, có dịch vụ đám mây trả phí | [chroma-core/chroma](https://github.com/chroma-core/chroma) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 29624 | vector-db-llm-eval |
 | 423 | promptfoo: công cụ dòng lệnh đánh giá và kiểm thử đối kháng (red teaming) ứng dụng LLM, chạy cục bộ; README nói dự án nay thuộc OpenAI | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 26770 | vector-db-llm-eval |
+| 424 | zoxide: lệnh cd thông minh, nhớ thư mục bạn hay vào để nhảy tới chỉ với vài phím | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 40429 | terminal-hien-dai |
+| 425 | Starship: dấu nhắc lệnh (prompt) tối giản, nhanh, tùy biến, dùng được trên mọi shell; README yêu cầu cài Nerd Font | [starship/starship](https://github.com/starship/starship) | {'key': 'isc', 'name': 'ISC License', 'spdx_id': 'ISC', 'url': 'https://api.github.com/licenses/isc', 'node_id': 'MDc6TGljZW5zZTEw'} | 60578 | terminal-hien-dai |
+| 426 | btop++: trình theo dõi tài nguyên máy trong terminal (CPU, bộ nhớ, ổ đĩa, mạng, tiến trình), giao diện có hỗ trợ chuột | [aristocratos/btop](https://github.com/aristocratos/btop) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 35233 | terminal-hien-dai |
+| 428 | Atuin: thay lịch sử lệnh của shell bằng cơ sở dữ liệu SQLite, tìm kiếm toàn màn hình, đồng bộ mã hóa tùy chọn | [atuinsh/atuin](https://github.com/atuinsh/atuin) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 32185 | terminal-hien-dai |
+| 429 | delta: trình xem khác biệt (diff) có tô màu cú pháp cho git, diff và grep, có chế độ song song và đánh số dòng | [dandavison/delta](https://github.com/dandavison/delta) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 32640 | terminal-hien-dai |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -292,7 +298,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (105 bài)
+### Nâng cao (106 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -401,6 +407,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 419 | Mem0: lớp bộ nhớ cho agent AI, lưu và truy xuất ký ức của người dùng; README có số liệu đánh giá của hãng cần đọc thận trọng | [mem0ai/mem0](https://github.com/mem0ai/mem0) | Apache-2.0 | 68310 | framework-agent-ai |
 | 421 | Qdrant: công cụ tìm kiếm vector viết bằng Rust, có bản Edge chạy trong ứng dụng; README cảnh báo lệnh Docker mẫu không có xác thực | [qdrant/qdrant](https://github.com/qdrant/qdrant) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 35399 | vector-db-llm-eval |
 | 422 | Milvus: cơ sở dữ liệu vector phân tán dưới LF AI & Data, có chế độ Standalone và Milvus Lite cho người mới | [milvus-io/milvus](https://github.com/milvus-io/milvus) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 46570 | vector-db-llm-eval |
+| 427 | Yazi: trình quản lý tệp trong terminal viết bằng Rust, bất đồng bộ, có xem trước ảnh, plugin Lua; README nói đang public beta | [sxyazi/yazi](https://github.com/sxyazi/yazi) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 43201 | terminal-hien-dai |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

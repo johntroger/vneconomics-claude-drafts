@@ -1,0 +1,41 @@
+{
+  "key": 429,
+  "repo": "dandavison/delta",
+  "repoId": "193526915",
+  "url": "https://github.com/dandavison/delta",
+  "stars": 32640,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-28T02:45:33Z",
+  "createdAt": "2019-06-24T15:00:13Z",
+  "defaultBranch": "main",
+  "description": "A syntax-highlighting pager for git, diff, grep, rg --json, and blame output",
+  "homepage": "https://dandavison.github.io/delta/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dandavison/delta/main/README.md",
+    "sha256": "192dcae133af9f942a909681c607de8aa808119e403d9968ae72ac6f37112396",
+    "bytes": 7783,
+    "sectionsRead": [
+      "Get Started",
+      "Features",
+      "A syntax-highlighting pager"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc user manual.",
+    "Chưa thử.",
+    "Chưa kiểm tra ảnh hưởng tới các công cụ khác dùng git diff."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,42 @@
+{
+  "key": 427,
+  "repo": "sxyazi/yazi",
+  "repoId": "663900193",
+  "url": "https://github.com/sxyazi/yazi",
+  "stars": 43201,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T13:36:41Z",
+  "createdAt": "2023-07-08T11:45:55Z",
+  "defaultBranch": "main",
+  "description": "💥 Blazing fast terminal file manager written in Rust, based on async I/O.",
+  "homepage": "https://yazi-rs.github.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/sxyazi/yazi/main/README.md",
+    "sha256": "cbde22b28281fc9316aa190cb38f0a5e1d589ee76010ab4a7ba8892763445431",
+    "bytes": 7400,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Project status",
+      "Image Preview",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu yazi-rs.github.io.",
+    "Chưa thử.",
+    "Chưa kiểm tra độ ổn định của plugin."
+  ],
+  "runtimeValidated": false
+}

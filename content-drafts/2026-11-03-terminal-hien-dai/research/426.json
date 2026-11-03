@@ -1,0 +1,43 @@
+{
+  "key": 426,
+  "repo": "aristocratos/btop",
+  "repoId": "365005377",
+  "url": "https://github.com/aristocratos/btop",
+  "stars": 35233,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T02:24:02Z",
+  "createdAt": "2021-05-06T18:40:21Z",
+  "defaultBranch": "main",
+  "description": "A monitor of resources",
+  "homepage": null,
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/aristocratos/btop/main/README.md",
+    "sha256": "c31459dd4c5bd9d7c3adbb36d6e792ccefbbec72ffa388002ce0452b48240e3c",
+    "bytes": 51658,
+    "sectionsRead": [
+      "Description",
+      "Features",
+      "Prerequisites",
+      "Installation",
+      "LICENSE"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần biên dịch.",
+    "Chưa thử.",
+    "Chưa kiểm tra hỗ trợ GPU."
+  ],
+  "runtimeValidated": false
+}

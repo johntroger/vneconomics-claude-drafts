@@ -142,3 +142,4 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Quét toàn kho: không còn cụm "đợt cũ" và "đã kiểm thử"; cụm "đã chạy thử" chỉ xuất hiện trong câu phủ định.
 - Nhóm "Framework agent AI" (key 413–419): đã đối chiếu các cụm chính với README thô, cả 7 đường dẫn trả mã 200; quét cụm bị cấm không có kết quả.
 - Nhóm "Vector database và đánh giá LLM" (key 420–423): đã đối chiếu các cụm chính với README thô, cả 4 đường dẫn trả mã 200; quét cụm bị cấm không có kết quả; loại 4 repo do giấy phép NOASSERTION.
+- Nhóm "Công cụ terminal hiện đại" (key 424–429): đã đối chiếu các cụm chính với README thô, cả 6 đường dẫn trả mã 200; quét cụm bị cấm (gồm curl, brew install, cargo install) không có kết quả; loại repo có giấy phép NOASSERTION, quá 60 ngày hoặc README không đọc được.
