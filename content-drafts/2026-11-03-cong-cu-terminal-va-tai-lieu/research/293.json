@@ -1,0 +1,36 @@
+{
+  "key": 293,
+  "repo": "junegunn/fzf",
+  "repoId": "13807606",
+  "url": "https://github.com/junegunn/fzf",
+  "stars": 83962,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:27:49Z",
+  "createdAt": "2013-10-23T16:04:23Z",
+  "defaultBranch": "master",
+  "description": ":cherry_blossom: A command-line fuzzy finder",
+  "homepage": "https://junegunn.github.io/fzf/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/junegunn/fzf/master/README.md",
+    "sha256": "92f9ae224752ca3ff286fd53be56d258d4a7b49b6dadaa49d69209068de7b56e",
+    "bytes": 42726,
+    "sectionsRead": [
+      "Highlights",
+      "Installation",
+      "Setting up shell integration",
+      "Usage"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần ví dụ nâng cao.",
+    "Chưa thử cài hay tích hợp shell.",
+    "Chưa kiểm tra tương thích với shell cụ thể của người đọc."
+  ],
+  "runtimeValidated": false
+}

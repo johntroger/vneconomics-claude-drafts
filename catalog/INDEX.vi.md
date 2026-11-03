@@ -31,13 +31,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 29 — Ghi chú liên kết, lưu trữ tự chủ và đồ họa dữ liệu](learning-paths/29-tri-thuc-luu-tru-va-do-hoa.vi.md) — Ghi chú theo khối, kho tệp và ảnh tự host, cuối cùng là đồ họa dữ liệu cấp thấp; luôn có kế hoạch sao lưu.
 - [Lộ trình 30 — Tự host cho gia đình và nhóm nhỏ](learning-paths/30-tu-host-cho-gia-dinh-va-nhom-nho.vi.md) — Từ dịch vụ ít rủi ro đến dịch vụ chứa dữ liệu nhạy cảm; càng về cuối càng cần bảo mật và sao lưu.
 - [Lộ trình 31 — Sao lưu và đồng bộ dữ liệu](learning-paths/31-sao-luu-va-dong-bo-du-lieu.vi.md) — Hiểu khác biệt giữa sao lưu và đồng bộ, rồi chọn công cụ; luôn thử khôi phục trước khi tin tưởng.
+- [Lộ trình 32 — Công cụ terminal và viết tài liệu](learning-paths/32-cong-cu-terminal-va-tai-lieu.vi.md) — Làm đọc, tìm và chuyển đổi tài liệu dễ hơn trong terminal; cuối lộ trình là dựng website tài liệu.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (36 bài)
+### Bắt đầu (38 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -77,8 +78,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 266 | draw.io (diagrams.net): vẽ sơ đồ kỹ thuật chính xác, lưu ý README nói đây là bản thử và có điều khoản riêng cho biểu tượng | [jgraph/drawio](https://github.com/jgraph/drawio) | Apache-2.0 | 9147 | so-do-thiet-ke-va-hoc-tap |
 | 269 | Streamlit: biến một tệp Python thành ứng dụng web dữ liệu tương tác, hợp người mới và vibe coding | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Apache-2.0 | 46220 | ung-dung-du-lieu-va-bieu-do |
 | 283 | Actual Budget: quản lý chi tiêu cá nhân kiểu phong bì, dữ liệu lưu cục bộ trước, có đồng bộ giữa thiết bị | [actualbudget/actual](https://github.com/actualbudget/actual) | MIT | 29930 | tu-host-cho-gia-dinh-va-nhom-nho |
+| 291 | bat: xem nội dung tệp trong terminal có tô màu cú pháp và hiện thay đổi Git, như lệnh cat nâng cấp | [sharkdp/bat](https://github.com/sharkdp/bat) | Apache-2.0 | 61036 | cong-cu-terminal-va-tai-lieu |
+| 294 | fd: tìm tên tệp trong terminal bằng cú pháp đơn giản, thay lệnh find khó nhớ | [sharkdp/fd](https://github.com/sharkdp/fd) | Apache-2.0 | 44933 | cong-cu-terminal-va-tai-lieu |
 
-### Cơ bản (92 bài)
+### Cơ bản (95 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -174,6 +177,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 285 | Mealie: sổ công thức nấu ăn, lập thực đơn tuần và danh sách đi chợ tự host cho cả gia đình | [mealie-recipes/mealie](https://github.com/mealie-recipes/mealie) | AGPL-3.0 | 13784 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 289 | Syncthing: đồng bộ tệp liên tục giữa các máy của bạn, đặt an toàn dữ liệu lên hàng đầu; đồng bộ không phải sao lưu | [syncthing/syncthing](https://github.com/syncthing/syncthing) | MPL-2.0 | 90025 | sao-luu-va-dong-bo-du-lieu |
 | 290 | Kopia: công cụ sao lưu mã hóa có cả dòng lệnh lẫn giao diện đồ họa, lưu lên đám mây hoặc máy của bạn | [kopia/kopia](https://github.com/kopia/kopia) | Apache-2.0 | 14564 | sao-luu-va-dong-bo-du-lieu |
+| 292 | ripgrep (rg): tìm văn bản trong cả thư mục dự án rất nhanh, tự bỏ qua tệp ẩn và tệp trong .gitignore | [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) | Unlicense | 69666 | cong-cu-terminal-va-tai-lieu |
+| 293 | fzf: bộ chọn mờ trong terminal, gõ vài chữ là tìm ra tệp, lệnh cũ hay nhánh Git cần dùng | [junegunn/fzf](https://github.com/junegunn/fzf) | MIT | 83962 | cong-cu-terminal-va-tai-lieu |
+| 296 | VitePress: công cụ tạo website tài liệu tĩnh từ Markdown dựa trên Vue và Vite | [vuejs/vitepress](https://github.com/vuejs/vitepress) | MIT | 18454 | cong-cu-terminal-va-tai-lieu |
 
 ### Khá khó (cần nền kỹ thuật) (27 bài)
 
@@ -207,7 +213,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 286 | Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo | [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin) | GPL-2.0 | 58953 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 287 | restic: chương trình sao lưu nhanh, mã hóa sẵn, lưu được lên nhiều loại kho; mất mật khẩu là mất dữ liệu | [restic/restic](https://github.com/restic/restic) | BSD-2-Clause | 36964 | sao-luu-va-dong-bo-du-lieu |
 
-### Nâng cao (35 bài)
+### Nâng cao (36 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -246,6 +252,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 282 | Homepage: trang chủ tùy biến cho mọi dịch vụ tự host của bạn, kèm cảnh báo bảo mật quan trọng | [gethomepage/homepage](https://github.com/gethomepage/homepage) | GPL-3.0 | 33491 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 284 | Firefly III: sổ cái tài chính cá nhân tự host, không AI, không đám mây theo tuyên bố của tác giả | [firefly-iii/firefly-iii](https://github.com/firefly-iii/firefly-iii) | AGPL-3.0 | 25064 | tu-host-cho-gia-dinh-va-nhom-nho |
 | 288 | rclone: 'rsync cho đám mây', đồng bộ và sao chép tệp giữa máy bạn và hàng chục dịch vụ lưu trữ | [rclone/rclone](https://github.com/rclone/rclone) | MIT | 60756 | sao-luu-va-dong-bo-du-lieu |
+| 295 | Pandoc: công cụ chuyển đổi định dạng tài liệu đa năng, từ Markdown sang Word, PDF, EPUB và hơn thế | [jgm/pandoc](https://github.com/jgm/pandoc) | GPL-2.0 | 46790 | cong-cu-terminal-va-tai-lieu |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

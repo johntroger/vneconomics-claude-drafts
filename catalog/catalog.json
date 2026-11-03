@@ -3383,5 +3383,111 @@
    "restic",
    "syncthing"
   ]
+ },
+ {
+  "key": 291,
+  "slug": "bat",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "bat: xem nội dung tệp trong terminal có tô màu cú pháp và hiện thay đổi Git, như lệnh cat nâng cấp",
+  "repo": "sharkdp/bat",
+  "stars": 61036,
+  "license": "Apache-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "fd"
+  ]
+ },
+ {
+  "key": 292,
+  "slug": "ripgrep",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "ripgrep (rg): tìm văn bản trong cả thư mục dự án rất nhanh, tự bỏ qua tệp ẩn và tệp trong .gitignore",
+  "repo": "BurntSushi/ripgrep",
+  "stars": 69666,
+  "license": "Unlicense",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-27",
+  "related": [
+   "fd",
+   "fzf"
+  ]
+ },
+ {
+  "key": 293,
+  "slug": "fzf",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "fzf: bộ chọn mờ trong terminal, gõ vài chữ là tìm ra tệp, lệnh cũ hay nhánh Git cần dùng",
+  "repo": "junegunn/fzf",
+  "stars": 83962,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "pandoc",
+   "ripgrep"
+  ]
+ },
+ {
+  "key": 294,
+  "slug": "fd",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "fd: tìm tên tệp trong terminal bằng cú pháp đơn giản, thay lệnh find khó nhớ",
+  "repo": "sharkdp/fd",
+  "stars": 44933,
+  "license": "Apache-2.0",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "bat",
+   "ripgrep"
+  ]
+ },
+ {
+  "key": 295,
+  "slug": "pandoc",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "Pandoc: công cụ chuyển đổi định dạng tài liệu đa năng, từ Markdown sang Word, PDF, EPUB và hơn thế",
+  "repo": "jgm/pandoc",
+  "stars": 46790,
+  "license": "GPL-2.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Tài liệu và công việc văn phòng",
+  "need": "Chuyển đổi tài liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "fzf",
+   "vitepress"
+  ]
+ },
+ {
+  "key": 296,
+  "slug": "vitepress",
+  "group": "2026-11-03-cong-cu-terminal-va-tai-lieu",
+  "title": "VitePress: công cụ tạo website tài liệu tĩnh từ Markdown dựa trên Vue và Vite",
+  "repo": "vuejs/vitepress",
+  "stars": 18454,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-29",
+  "related": [
+   "pandoc"
+  ]
  }
 ]

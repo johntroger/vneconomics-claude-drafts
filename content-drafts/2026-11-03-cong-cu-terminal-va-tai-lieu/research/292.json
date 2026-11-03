@@ -1,0 +1,36 @@
+{
+  "key": 292,
+  "repo": "BurntSushi/ripgrep",
+  "repoId": "53631945",
+  "url": "https://github.com/BurntSushi/ripgrep",
+  "stars": 69666,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Unlicense",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-27T18:31:31Z",
+  "createdAt": "2016-03-11T02:02:33Z",
+  "defaultBranch": "master",
+  "description": "ripgrep recursively searches directories for a regex pattern while respecting your gitignore",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/BurntSushi/ripgrep/master/README.md",
+    "sha256": "945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e",
+    "bytes": 21599,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quick examples",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc User Guide.",
+    "Chưa thử cài hay tìm kiếm.",
+    "Chưa so sánh với grep trên dữ liệu thật."
+  ],
+  "runtimeValidated": false
+}

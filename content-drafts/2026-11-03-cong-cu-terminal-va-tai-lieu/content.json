@@ -1,0 +1,626 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-terminal-tai-lieu",
+  "batch": 51,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 291,
+      "batch": 51,
+      "slug": "bat",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "bat: xem nội dung tệp trong terminal có tô màu cú pháp và hiện thay đổi Git, như lệnh cat nâng cấp",
+        "excerpt": "Hiểu bat là bản thay thế cho lệnh cat, tô màu cú pháp, hiện thay đổi so với Git, tự phân trang. Trên một số bản Debian và Ubuntu cũ, tên lệnh là batcat chứ không phải bat.",
+        "content": "<p>README tả bat là bản sao của lệnh cat với tô màu cú pháp và tích hợp Git. Tính năng: tô màu cho nhiều ngôn ngữ lập trình và đánh dấu, hiện sửa đổi so với Git ở thanh bên, hiện ký tự không in được, tự phân trang (dùng less) khi nội dung dài; nếu đầu ra không phải terminal tương tác (ví dụ chuyển cho chương trình khác hoặc ghi vào tệp), bat in nội dung thuần như cat. README hướng dẫn xem một hoặc nhiều tệp, đọc từ đầu vào chuẩn, chỉ định ngôn ngữ, cấu hình tùy chọn và đặt bí danh. Mục cài đặt nói với Ubuntu hoặc Debian đủ mới thì cài bằng trình quản lý gói; README lưu ý trên một số bản Ubuntu và Debian cũ, tệp thực thi được cài tên batcat thay vì bat do trùng tên với gói khác, cần đặt bí danh hoặc liên kết. Giấy phép: MIT hoặc Apache 2.0, tùy bạn chọn.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lệnh cat xem tệp trong terminal nhưng chỉ ra chữ đen trắng. bat giống kính đọc mã có màu: tô sáng cú pháp, cho thấy dòng nào đã sửa so với bản Git, và tự chia trang khi dài.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem nhanh một tệp mã hay cấu hình do AI tạo trong terminal với màu dễ đọc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đã dùng terminal cơ bản; người dùng AI để sinh mã và muốn đọc nhanh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Thay một lệnh quen thuộc; cài bằng trình quản lý gói. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa mở terminal bao giờ thì chưa cần. Đừng đổi bí danh cat sang bat trong script quan trọng khi chưa hiểu khác biệt: README nói bat tự quay về hành vi như cat khi đầu ra không tương tác, nhưng có tùy chọn phân trang.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>cat</strong>: lệnh in nội dung tệp ra màn hình.</li><li><strong>syntax highlighting (tô màu cú pháp)</strong>: mỗi loại thành phần của mã có màu riêng; README nêu là tính năng chính.</li><li><strong>pager (trình phân trang)</strong>: chương trình chia nội dung dài thành từng trang, ví dụ less; README nêu bat tự dùng.</li><li><strong>alias (bí danh)</strong>: tên gọi tắt cho một lệnh; README nêu cách đặt cho cat và cho batcat.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng trình quản lý gói của hệ điều hành; trên Ubuntu hoặc Debian cũ có thể cần dùng tên batcat và đặt bí danh; hoặc tải bản dựng sẵn ở trang release (bài không chép lệnh). Miễn phí theo giấy phép MIT hoặc Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Installation về tên batcat.</li><li>Cài bằng trình quản lý gói.</li><li>Thử xem một tệp mã và xem thay đổi Git.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng terminal để xem tệp mã. Hãy đọc README của bat (https://github.com/sharkdp/bat) và giải thích bằng tiếng Việt: bat khác cat thế nào, vì sao trên Ubuntu cũ có thể tên batcat, và nên đặt bí danh thế nào cho an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài và nhiều tùy chọn; bài chỉ lấy phần chính. Tên lệnh có thể khác theo bản Debian hoặc Ubuntu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sharkdp</strong> có <strong>61.036 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README nói MIT hoặc Apache 2.0, tùy chọn. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sharkdp/bat/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sharkdp/bat\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 291. Chưa cài/chạy thử; không tạo validation. Snapshot sao 61036; repo_id 130464961; README SHA256 6ce2a931bf4c7da9486c7e6c8a5df8f9bbb82288184f49b6b2d8701eec03cb0a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sharkdp/bat",
+          "repo_id": "130464961",
+          "source_path": "",
+          "source_revision": "README-SHA256:6ce2a931bf4c7da9486c7e6c8a5df8f9bbb82288184f49b6b2d8701eec03cb0a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sharkdp/bat",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng trình quản lý gói của hệ điều hành; trên Ubuntu hoặc Debian cũ có thể cần dùng tên batcat và đặt bí danh; hoặc tải bản dựng sẵn ở trang release (bài không chép lệnh). Miễn phí theo giấy phép MIT hoặc Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sharkdp/bat/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sharkdp/bat/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sharkdp/bat",
+        "stars": 61036,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sharkdp/bat/master/README.md",
+        "readmeSha256": "6ce2a931bf4c7da9486c7e6c8a5df8f9bbb82288184f49b6b2d8701eec03cb0a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 292,
+      "batch": 51,
+      "slug": "ripgrep",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "ripgrep (rg): tìm văn bản trong cả thư mục dự án rất nhanh, tự bỏ qua tệp ẩn và tệp trong .gitignore",
+        "excerpt": "Hiểu ripgrep là công cụ tìm kiếm theo dòng, đệ quy trong thư mục theo biểu thức chính quy, mặc định tôn trọng .gitignore. Số liệu tốc độ trong README là của tác giả.",
+        "content": "<p>README tả ripgrep (lệnh rg) là công cụ tìm kiếm theo dòng, tìm đệ quy trong thư mục hiện tại theo mẫu biểu thức chính quy. Mặc định nó tôn trọng quy tắc gitignore và tự bỏ qua tệp và thư mục ẩn, tệp nhị phân; muốn tắt toàn bộ lọc tự động thì dùng tùy chọn -uuu (README ghi vậy). Hỗ trợ hạng nhất cho Windows, macOS và Linux, có bản tải sẵn cho mọi phiên bản. README so sánh với The Silver Searcher, ack, grep và nhiều công cụ khác, kèm bảng thời gian đo trên cây mã nguồn Linux kernel bằng một máy cụ thể của tác giả, và lưu ý một phép đo không bao giờ đủ. README có hướng dẫn người dùng, câu hỏi thường gặp, cú pháp regex, tệp cấu hình, hoàn thành lệnh cho shell và cách cài qua Homebrew, MacPorts, Chocolatey và các cách khác. Giấy phép: MIT hoặc UNLICENSE (song song).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn tìm một đoạn chữ trong hàng nghìn tệp của dự án? Cách thủ công là mở từng tệp. ripgrep giống bộ sục tìm tự động: gõ một từ, nó quét cả thư mục trong tích tắc, bỏ qua rác và tệp ẩn, và chỉ ra dòng nào chứa từ đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tìm nơi một biến hay hàm được dùng trong dự án do AI sinh mã. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người xem hoặc sửa dự án có nhiều tệp; người dùng AI để dựng dự án.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài đơn giản, nhưng muốn tìm hiệu quả cần hiểu biểu thức chính quy ở mức cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ có vài tệp, hộp tìm kiếm của trình soạn thảo là đủ. Lưu ý mặc định bỏ qua tệp ẩn và tệp trong gitignore nên có thể không tìm thấy trong đó (README nêu tùy chọn tắt lọc).</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>regex (biểu thức chính quy)</strong>: mẫu mô tả chuỗi chữ cần tìm; README dẫn tới tài liệu cú pháp.</li><li><strong>gitignore</strong>: tệp liệt kê những thứ Git bỏ qua; README nói rg mặc định tôn trọng.</li><li><strong>recursive (đệ quy)</strong>: tìm cả trong thư mục con.</li><li><strong>benchmark</strong>: phép đo tốc độ; README tự nhắc một phép đo không bao giờ đủ.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: có bản tải sẵn cho mỗi phiên bản, cài qua Homebrew, MacPorts, Chocolatey và các trình quản lý gói khác (bài không chép lệnh). Miễn phí theo giấy phép MIT hoặc UNLICENSE.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và User Guide.</li><li>Cài bằng trình quản lý gói hoặc bản tải sẵn.</li><li>Thử tìm một từ trong thư mục dự án thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay phải tìm đoạn chữ trong dự án nhiều tệp. Hãy đọc README của ripgrep (https://github.com/BurntSushi/ripgrep) và giải thích bằng tiếng Việt: rg làm gì, vì sao mặc định bỏ qua một số tệp, và cách tắt lọc khi cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Các số liệu tốc độ trong README là của tác giả, đo trên một máy cụ thể và chính README nhắc không nên chỉ dựa vào một phép đo. Mặc định bỏ qua tệp ẩn, nhị phân và tệp trong gitignore. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>BurntSushi</strong> có <strong>69.666 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-27. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Unlicense; README ghi song song MIT hoặc UNLICENSE. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/BurntSushi/ripgrep/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/BurntSushi/ripgrep\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 292. Chưa cài/chạy thử; không tạo validation. Snapshot sao 69666; repo_id 53631945; README SHA256 945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/BurntSushi/ripgrep",
+          "repo_id": "53631945",
+          "source_path": "",
+          "source_revision": "README-SHA256:945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Unlicense",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BurntSushi/ripgrep",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: có bản tải sẵn cho mỗi phiên bản, cài qua Homebrew, MacPorts, Chocolatey và các trình quản lý gói khác (bài không chép lệnh). Miễn phí theo giấy phép MIT hoặc UNLICENSE.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/BurntSushi/ripgrep/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/BurntSushi/ripgrep/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "BurntSushi/ripgrep",
+        "stars": 69666,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/BurntSushi/ripgrep/master/README.md",
+        "readmeSha256": "945622d974f65e4e141ef9726c948c2640eebd222c5b101afb6445728283921e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 293,
+      "batch": 51,
+      "slug": "fzf",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "fzf: bộ chọn mờ trong terminal, gõ vài chữ là tìm ra tệp, lệnh cũ hay nhánh Git cần dùng",
+        "excerpt": "Hiểu fzf là công cụ lọc mờ (fuzzy finder) đa dụng cho dòng lệnh, tích hợp với Bash, Zsh, Fish, Vim. Cần bước thiết lập tích hợp shell để có phím tắt và hoàn thành lệnh.",
+        "content": "<p>README tả fzf là bộ tìm kiếm mờ đa dụng cho dòng lệnh và bộ công cụ terminal tương tác: chọn tệp, duyệt lịch sử lệnh, xem trước dữ liệu, điều hướng tập dữ liệu phức tạp bằng khớp mờ, tạo menu và quy trình tùy biến. Điểm nổi bật theo README: gọn (một tệp nhị phân), nhanh (xử lý hàng triệu mục trong mili giây), lập trình được (kiến trúc theo sự kiện), tích hợp sẵn với Bash, Zsh, Fish, Nushell, Vim và Neovim. README hướng dẫn cài bằng Homebrew, Mise, gói Linux (APT...), gói Windows (Winget...), qua git hoặc bản dựng sẵn; có phần thiết lập tích hợp shell (phím tắt, hoàn thành mờ), cú pháp tìm, chế độ hiển thị, biến môi trường, tùy chỉnh giao diện, ví dụ. Giấy phép MIT theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Ngăn kéo lộn xộn, bạn không cần nhớ tên đầy đủ: chỉ cần nhớ vài chữ. fzf giống ô tìm kiếm thông minh trong terminal: gõ vài chữ rời rạc là danh sách thu hẹp lại, chọn bằng phím mũi tên.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tìm lại một lệnh dài đã gõ tuần trước, hoặc mở nhanh một tệp sâu trong dự án. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng terminal thường xuyên; người đã biết cơ bản và muốn nhanh hơn.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cài dễ nhưng phát huy nhờ thiết lập tích hợp shell và học phím tắt; README rất dài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa quen terminal thì chưa cần. Nếu không sửa cấu hình shell, bạn sẽ không có phím tắt tích hợp như README mô tả.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>fuzzy finder</strong>: công cụ tìm theo khớp mờ, gõ không cần đúng thứ tự hay đủ chữ.</li><li><strong>shell integration</strong>: thiết lập để fzf thêm phím tắt và hoàn thành lệnh vào shell; README có phần riêng.</li><li><strong>key bindings (phím tắt)</strong>: tổ hợp phím gọi chức năng của fzf; README nêu có sẵn.</li><li><strong>single binary (một tệp nhị phân)</strong>: cả chương trình nằm trong một tệp; README nêu là điểm nổi bật.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài qua Homebrew, Mise, APT và các gói Linux, Winget và gói Windows, qua git hoặc bản dựng sẵn; cần làm thêm bước thiết lập tích hợp shell để có phím tắt (bài không chép lệnh). Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Highlights và Installation.</li><li>Cài bằng trình quản lý gói.</li><li>Làm bước thiết lập tích hợp shell rồi thử tìm lịch sử lệnh.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng terminal và muốn tìm tệp, lịch sử lệnh nhanh hơn. Hãy đọc README của fzf (https://github.com/junegunn/fzf) và giải thích bằng tiếng Việt: fzf làm gì, tích hợp shell là gì và nên thiết lập thế nào cho an toàn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (hơn 40 KB); bài chỉ lấy các phần chính. 'Nhanh, xử lý hàng triệu mục trong mili giây' là tuyên bố của tác giả. Tích hợp shell có thể thay đổi tệp cấu hình của bạn, nên sao lưu. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen. Tích hợp shell chỉnh tệp cấu hình của bạn: sao lưu trước.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>junegunn</strong> có <strong>83.962 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/junegunn/fzf/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/junegunn/fzf\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 293. Chưa cài/chạy thử; không tạo validation. Snapshot sao 83962; repo_id 13807606; README SHA256 92f9ae224752ca3ff286fd53be56d258d4a7b49b6dadaa49d69209068de7b56e.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/junegunn/fzf",
+          "repo_id": "13807606",
+          "source_path": "",
+          "source_revision": "README-SHA256:92f9ae224752ca3ff286fd53be56d258d4a7b49b6dadaa49d69209068de7b56e",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/junegunn/fzf",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài qua Homebrew, Mise, APT và các gói Linux, Winget và gói Windows, qua git hoặc bản dựng sẵn; cần làm thêm bước thiết lập tích hợp shell để có phím tắt (bài không chép lệnh). Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/junegunn/fzf/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/junegunn/fzf/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "junegunn/fzf",
+        "stars": 83962,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/junegunn/fzf/master/README.md",
+        "readmeSha256": "92f9ae224752ca3ff286fd53be56d258d4a7b49b6dadaa49d69209068de7b56e",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 294,
+      "batch": 51,
+      "slug": "fd",
+      "category": "Lưu trữ và công cụ cá nhân",
+      "need": "Quản lý tệp và ứng dụng",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "fd: tìm tên tệp trong terminal bằng cú pháp đơn giản, thay lệnh find khó nhớ",
+        "excerpt": "Hiểu fd là chương trình tìm mục trong hệ tệp, đơn giản, nhanh và thân thiện hơn find. Mặc định bỏ qua tệp ẩn và tệp trong .gitignore.",
+        "content": "<p>README tả fd là chương trình tìm mục trong hệ tệp; tác giả gọi là lựa chọn đơn giản, nhanh và thân thiện thay cho find, không hướng tới hỗ trợ mọi chức năng mạnh của find mà đưa ra mặc định hợp lý, có quan điểm cho phần lớn trường hợp. Tính năng: cú pháp trực quan (fd MẪU thay cho cách ghi dài của find), hỗ trợ biểu thức chính quy (mặc định) và glob, tốc độ cao nhờ duyệt thư mục song song, tô màu theo loại tệp, chạy lệnh song song trên kết quả, tìm không phân biệt hoa thường trừ khi mẫu có chữ hoa, mặc định bỏ qua thư mục và tệp ẩn, mặc định bỏ qua mẫu trong .gitignore. README có mục How to use, Installation, Troubleshooting, Benchmark. Giấy phép Apache-2.0 theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Lệnh find của Unix mạnh nhưng khó nhớ. fd là phiên bản dễ nói: bạn gõ fd rồi tên tệp, nó lục khắp thư mục và cho kết quả có màu, bỏ qua tệp rác theo mặc định.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tìm tệp cấu hình theo tên trong một dự án lớn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng terminal cơ bản; người muốn tìm tệp theo tên nhanh.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Cú pháp rất ngắn; cần biết cấu trúc thư mục và terminal cơ bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần mọi chức năng của find (README nói fd không hướng tới điều đó), thì vẫn cần find. Mặc định bỏ qua tệp ẩn và tệp trong gitignore nên có thể không thấy tệp bạn tìm.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>find</strong>: lệnh tìm tệp truyền thống của Unix; README lấy làm đối chiếu.</li><li><strong>glob</strong>: mẫu có dấu sao kiểu *.txt; README nêu hỗ trợ.</li><li><strong>smart case</strong>: không phân biệt hoa thường trừ khi mẫu có chữ hoa; README nêu.</li><li><strong>parallel (song song)</strong>: chạy nhiều việc cùng lúc; README nêu cho duyệt thư mục và chạy lệnh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation (qua trình quản lý gói và bản dựng sẵn); bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và How to use.</li><li>Cài bằng trình quản lý gói.</li><li>Thử tìm một tệp theo tên trong thư mục thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay phải tìm tệp theo tên trong terminal. Hãy đọc README của fd (https://github.com/sharkdp/fd) và giải thích bằng tiếng Việt: fd khác find thế nào, vì sao mặc định bỏ qua một số tệp, và cách tìm cả tệp ẩn. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README nói fd không hỗ trợ mọi chức năng của find. Mặc định bỏ qua tệp ẩn và tệp trong gitignore. 'Rất nhanh' và 'ngắn hơn 50%' là cách nói của tác giả. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen. Khi dùng tính năng chạy lệnh trên kết quả tìm kiếm, kiểm tra kỹ trước khi chạy hàng loạt.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>sharkdp</strong> có <strong>44.933 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/sharkdp/fd/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/sharkdp/fd\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 294. Chưa cài/chạy thử; không tạo validation. Snapshot sao 44933; repo_id 90793418; README SHA256 35a5d3ebdbd5506a473552e56a30c355717f5843da49120144582c67f4b0199c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/sharkdp/fd",
+          "repo_id": "90793418",
+          "source_path": "",
+          "source_revision": "README-SHA256:35a5d3ebdbd5506a473552e56a30c355717f5843da49120144582c67f4b0199c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sharkdp/fd",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation (qua trình quản lý gói và bản dựng sẵn); bài chưa đọc chi tiết nên không nêu lệnh. Miễn phí theo giấy phép Apache-2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/sharkdp/fd/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/sharkdp/fd/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "sharkdp/fd",
+        "stars": 44933,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/sharkdp/fd/master/README.md",
+        "readmeSha256": "35a5d3ebdbd5506a473552e56a30c355717f5843da49120144582c67f4b0199c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 295,
+      "batch": 51,
+      "slug": "pandoc",
+      "category": "Tài liệu và công việc văn phòng",
+      "need": "Chuyển đổi tài liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Pandoc: công cụ chuyển đổi định dạng tài liệu đa năng, từ Markdown sang Word, PDF, EPUB và hơn thế",
+        "excerpt": "Hiểu Pandoc là thư viện Haskell và công cụ dòng lệnh chuyển giữa rất nhiều định dạng đánh dấu. README nói xuất PDF thông qua LaTeX, Groff hoặc HTML nên cần chuẩn bị thêm.",
+        "content": "<p>README tả Pandoc là thư viện Haskell để chuyển từ định dạng đánh dấu này sang định dạng khác, và là công cụ dòng lệnh dùng thư viện đó; slogan 'bộ chuyển đổi định dạng đánh dấu vạn năng'. README liệt kê rất nhiều định dạng đầu vào (AsciiDoc, BibTeX, BibLaTeX, CommonMark, CSV, DocBook, Word docx, EPUB, LaTeX, Markdown, Org và nhiều định dạng khác) và định dạng đầu ra (docx, EPUB, HTML, LaTeX, slide Beamer, ODT, PDF, PowerPoint và nhiều định dạng khác). README nói Pandoc có thể xuất PDF qua LaTeX, Groff ms hoặc HTML. README dẫn tới INSTALL.md để cài. Giấy phép GPL phiên bản 2 trở lên.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn viết ghi chú bằng Markdown nhưng cần nộp bài bằng Word hay PDF. Pandoc giống phiên dịch viên giữa các định dạng tài liệu: đưa vào một loại, lấy ra loại khác, giữ cấu trúc tiêu đề, danh sách, trích dẫn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: giảng viên soạn bài bằng Markdown rồi xuất ra Word hoặc slide. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Giảng viên, nghiên cứu sinh, người viết tài liệu kỹ thuật; người dùng Markdown.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khá khó.</strong> Dòng lệnh, nhiều tùy chọn; xuất PDF đòi cài thêm LaTeX hoặc công cụ khác theo README. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu chỉ cần chuyển một tệp đơn giản và đã quen Word, chưa cần. Chuyển đổi định dạng phức tạp có thể mất một phần bố cục, bài chưa kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>markup (định dạng đánh dấu)</strong>: cách ghi cấu trúc văn bản như tiêu đề, danh sách; Markdown và LaTeX là ví dụ.</li><li><strong>LaTeX</strong>: hệ dàn trang khoa học, README nói dùng để xuất PDF.</li><li><strong>Haskell</strong>: ngôn ngữ lập trình mà Pandoc viết bằng; README nêu.</li><li><strong>filter</strong>: đoạn mã chỉnh sửa tài liệu giữa chừng khi chuyển đổi; README nhắc trong ghi chú sinh tài liệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới INSTALL.md để cài; bài chưa đọc nên không nêu lệnh. Xuất PDF theo README cần LaTeX, Groff hoặc HTML. Miễn phí theo giấy phép GPL phiên bản 2 trở lên.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách định dạng hỗ trợ.</li><li>Đọc INSTALL.md.</li><li>Thử chuyển một tệp Markdown ngắn sang Word.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình soạn bài bằng Markdown và cần nộp dạng Word hoặc PDF. Hãy đọc README của Pandoc (https://github.com/jgm/pandoc) và giải thích bằng tiếng Việt: Pandoc làm gì, vì sao xuất PDF cần thêm công cụ, và những định dạng nào chuyển được. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README liệt kê rất nhiều định dạng nhưng không nói chất lượng chuyển đổi từng cặp. Xuất PDF cần công cụ phụ. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jgm</strong> có <strong>46.790 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện GPL-2.0; README có huy hiệu GPLv2+. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jgm/pandoc/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jgm/pandoc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 295. Chưa cài/chạy thử; không tạo validation. Snapshot sao 46790; repo_id 571770; README SHA256 4375d3060e00abfa1ec0013bfef122f1e678ad40013a7a18e4e4214d4f0c427d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jgm/pandoc",
+          "repo_id": "571770",
+          "source_path": "",
+          "source_revision": "README-SHA256:4375d3060e00abfa1ec0013bfef122f1e678ad40013a7a18e4e4214d4f0c427d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "GPL-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jgm/pandoc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới INSTALL.md để cài; bài chưa đọc nên không nêu lệnh. Xuất PDF theo README cần LaTeX, Groff hoặc HTML. Miễn phí theo giấy phép GPL phiên bản 2 trở lên.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jgm/pandoc/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jgm/pandoc/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jgm/pandoc",
+        "stars": 46790,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jgm/pandoc/main/README.md",
+        "readmeSha256": "4375d3060e00abfa1ec0013bfef122f1e678ad40013a7a18e4e4214d4f0c427d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 296,
+      "batch": 51,
+      "slug": "vitepress",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "VitePress: công cụ tạo website tài liệu tĩnh từ Markdown dựa trên Vue và Vite",
+        "excerpt": "Hiểu VitePress là trình tạo trang tĩnh chạy bằng Vue, kế nhiệm tinh thần của VuePress, xây trên Vite. README rất ngắn, chi tiết nằm ở vitepress.dev.",
+        "content": "<p>README tả VitePress là trình tạo trang web tĩnh chạy bằng Vue, là người kế nhiệm tinh thần của VuePress và xây trên nền Vite. README rất ngắn: dẫn tới tài liệu tại vitepress.dev, nhật ký thay đổi, hướng dẫn đóng góp và lời cảm ơn các nhà tài trợ. Giấy phép MIT, bản quyền Yuxi (Evan) You.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Có nhiều trang tài liệu viết bằng Markdown và muốn thành một website có menu, tìm kiếm. VitePress giống nhà in tự động: bạn bỏ tệp Markdown vào, nó dựng thành website tĩnh để đưa lên mạng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng website tài liệu môn học từ các tệp Markdown. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người viết tài liệu kỹ thuật; giảng viên muốn website bài giảng; người biết Markdown và Node.js.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Node.js và quen terminal; README không nêu cách cài nên cần đọc tài liệu. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa có tệp Markdown hay chưa quen Node.js thì chưa cần. Nếu cần trang web có nhiều chức năng động, trình tạo trang tĩnh chưa đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>deploy (triển khai)</strong>: đưa ứng dụng lên máy chủ để người khác truy cập được qua internet.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>static site generator (trình tạo trang tĩnh)</strong>: công cụ biến tệp nguồn thành các trang HTML dựng sẵn; README mô tả VitePress là loại này.</li><li><strong>Vue / Vite</strong>: khung giao diện và công cụ dựng mà VitePress xây trên; README nêu.</li><li><strong>Markdown</strong>: cách viết chữ với ký hiệu đơn giản.</li><li><strong>VuePress</strong>: công cụ tiền nhiệm; README nói VitePress là kế nhiệm tinh thần.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README dẫn tới tài liệu tại vitepress.dev; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc trang tài liệu chính thức.</li><li>Thử dựng một site nhỏ với vài tệp Markdown.</li><li>Xem cách đưa lên mạng ở phần triển khai của tài liệu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm website tài liệu từ Markdown. Hãy đọc README và trang tài liệu của VitePress (https://github.com/vuejs/vitepress, https://vitepress.dev) và giải thích bằng tiếng Việt: VitePress làm gì, cần chuẩn bị gì, và khác MkDocs ở đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn nên bài không mô tả tính năng chi tiết hay cách cài. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ dòng lệnh chạy với quyền của bạn: đọc kỹ lệnh trước khi chạy, đừng dán lệnh lạ từ internet, và thử trên thư mục thử khi chưa quen.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>vuejs</strong> có <strong>18.454 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-29. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/vuejs/vitepress/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/vuejs/vitepress\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 296. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18454; repo_id 260338399; README SHA256 dc3dc2c3e4e0acf576dbb415d3587f95c04a4738814c2bb75e359350fb6b1206.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/vuejs/vitepress",
+          "repo_id": "260338399",
+          "source_path": "",
+          "source_revision": "README-SHA256:dc3dc2c3e4e0acf576dbb415d3587f95c04a4738814c2bb75e359350fb6b1206",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/vitepress",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README dẫn tới tài liệu tại vitepress.dev; bài chưa đọc nên không nêu cách cài hay lệnh. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/vuejs/vitepress/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/vuejs/vitepress/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "vuejs/vitepress",
+        "stars": 18454,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/vuejs/vitepress/main/README.md",
+        "readmeSha256": "dc3dc2c3e4e0acf576dbb415d3587f95c04a4738814c2bb75e359350fb6b1206",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

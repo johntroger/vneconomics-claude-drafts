@@ -1,0 +1,35 @@
+{
+  "key": 295,
+  "repo": "jgm/pandoc",
+  "repoId": "571770",
+  "url": "https://github.com/jgm/pandoc",
+  "stars": 46790,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:12:51Z",
+  "createdAt": "2010-03-20T20:34:23Z",
+  "defaultBranch": "main",
+  "description": "Universal markup converter",
+  "homepage": "https://pandoc.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jgm/pandoc/main/README.md",
+    "sha256": "4375d3060e00abfa1ec0013bfef122f1e678ad40013a7a18e4e4214d4f0c427d",
+    "bytes": 13806,
+    "sectionsRead": [
+      "The universal markup converter",
+      "Installing",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc INSTALL.md.",
+    "Chưa thử chuyển đổi.",
+    "Chất lượng chuyển Word với bố cục phức tạp chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
