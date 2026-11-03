@@ -3207,5 +3207,111 @@
   "related": [
    "immich"
   ]
+ },
+ {
+  "key": 281,
+  "slug": "uptime-kuma",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Uptime Kuma: tự theo dõi website và dịch vụ còn sống hay không, báo qua Telegram, Discord, email",
+  "repo": "louislam/uptime-kuma",
+  "stars": 93200,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "homepage",
+   "mealie"
+  ]
+ },
+ {
+  "key": 282,
+  "slug": "homepage",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Homepage: trang chủ tùy biến cho mọi dịch vụ tự host của bạn, kèm cảnh báo bảo mật quan trọng",
+  "repo": "gethomepage/homepage",
+  "stars": 33491,
+  "license": "GPL-3.0",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "actual-budget",
+   "uptime-kuma"
+  ]
+ },
+ {
+  "key": 283,
+  "slug": "actual-budget",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Actual Budget: quản lý chi tiêu cá nhân kiểu phong bì, dữ liệu lưu cục bộ trước, có đồng bộ giữa thiết bị",
+  "repo": "actualbudget/actual",
+  "stars": 29930,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "firefly-iii",
+   "homepage"
+  ]
+ },
+ {
+  "key": 284,
+  "slug": "firefly-iii",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Firefly III: sổ cái tài chính cá nhân tự host, không AI, không đám mây theo tuyên bố của tác giả",
+  "repo": "firefly-iii/firefly-iii",
+  "stars": 25064,
+  "license": "AGPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-02",
+  "related": [
+   "actual-budget",
+   "jellyfin"
+  ]
+ },
+ {
+  "key": 285,
+  "slug": "mealie",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Mealie: sổ công thức nấu ăn, lập thực đơn tuần và danh sách đi chợ tự host cho cả gia đình",
+  "repo": "mealie-recipes/mealie",
+  "stars": 13784,
+  "license": "AGPL-3.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-03",
+  "related": [
+   "uptime-kuma"
+  ]
+ },
+ {
+  "key": 286,
+  "slug": "jellyfin",
+  "group": "2026-11-03-tu-host-cho-gia-dinh-va-nhom-nho",
+  "title": "Jellyfin: máy chủ media tự host để quản lý và phát phim, nhạc, ảnh của chính bạn, không phí và không cài đặt quảng cáo",
+  "repo": "jellyfin/jellyfin",
+  "stars": 58953,
+  "license": "GPL-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-11-01",
+  "related": [
+   "firefly-iii"
+  ]
  }
 ]

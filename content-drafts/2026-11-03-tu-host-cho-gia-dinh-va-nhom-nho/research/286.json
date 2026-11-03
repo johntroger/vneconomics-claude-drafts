@@ -1,0 +1,35 @@
+{
+  "key": 286,
+  "repo": "jellyfin/jellyfin",
+  "repoId": "161012019",
+  "url": "https://github.com/jellyfin/jellyfin",
+  "stars": 58953,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "GPL-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T05:32:43Z",
+  "createdAt": "2018-12-09T06:36:45Z",
+  "defaultBranch": "master",
+  "description": "The Free Software Media System - Server Backend & API",
+  "homepage": "https://jellyfin.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/jellyfin/jellyfin/master/README.md",
+    "sha256": "e0dd3c334d03239315300b2bbc45610b16cb9ce841cd603dadb84571b281c5d8",
+    "bytes": 13336,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Jellyfin Server",
+      "Server Development"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu cài đặt cho người dùng cuối.",
+    "Chưa thử cài hay phát media.",
+    "Chưa so sánh với Plex, Emby."
+  ],
+  "runtimeValidated": false
+}

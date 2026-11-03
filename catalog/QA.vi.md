@@ -36,3 +36,10 @@ Ngày rà soát: 2026-11-03. Phạm vi: toàn bộ `content-drafts/*/content.jso
 - Đường dẫn README thô của 15 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
 - Đối chiếu các ý chính với README bằng grep; không có cụm "đã chạy thử", "đã kiểm thử" hay lệnh cài đặt trong nội dung. Các README có lệnh cài kiểu tải script rồi chạy (Ollama, llama.cpp) được bài cảnh báo thay vì chép lệnh.
 - Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.
+
+## Bổ sung rà soát (nhóm 30–31, key 275–286)
+
+- Danh mục 186 bài: không trùng key, slug hay repo; vẫn đúng 9 nhãn danh mục và 9 nhãn nhu cầu.
+- Đường dẫn README thô của 12 bài mới đều trả mã 200; số sao khớp tệp nghiên cứu.
+- Đã sửa một lỗi phát hiện khi đối chiếu: bài Nextcloud ban đầu gán cảnh báo "không dùng cho hệ thống thật" cho nhánh master, trong khi README nói về các nhánh stable*; đã sửa theo README.
+- Hạn chế như trước: kiểm tra bằng máy, chưa có người đọc duyệt; độ khó là nhận định biên tập; chưa cài hay chạy thử công cụ nào.
