@@ -26,3 +26,15 @@ README đọc qua raw.githubusercontent.com; số sao, license, ngày commit l�
 - Dagster: README gốc chỉ là file trỏ; bài dùng `python_modules/dagster/README.md`.
 - Không có `contentHash`; importer cần tự tính. `review.needed = true` cho mọi bài.
 - Chưa có lịch sử sao nên bài không nhận xét tốc độ tăng.
+
+## Bản viết lại cho người mới (03/11/2026)
+Mỗi bài có thêm: ví dụ đời thường, độ khó (đánh giá biên tập, chưa kiểm chứng bằng cách dùng thật), mục "khi nào chưa cần", thuật ngữ giải nghĩa, câu lệnh mẫu để nhờ trợ lý AI giải thích (chỉ đọc, chưa cài chạy gì) và mục an toàn khi tự động hóa. Các phần này là giải thích khái niệm và nhận định của biên tập, không phải thông tin trích từ README.
+
+| Độ khó (đánh giá biên tập) | Công cụ |
+|---|---|
+| Dễ đến trung bình | changedetection.io (dễ về khái niệm), Node-RED |
+| Trung bình | Kestra |
+| Trung bình đến khó (cần Python) | Prefect, Dagster, Huginn |
+| Khó (cần lập trình hoặc người vận hành) | Apache Airflow, Temporal, Trigger.dev, Apache NiFi |
+
+Điểm cần rà thêm: nhận định độ khó chưa được kiểm chứng; các câu lệnh mẫu cho AI chưa thử với trợ lý cụ thể; một số bài (Airflow, Temporal, NiFi, Trigger.dev) thực chất dành cho lập trình viên và có thể không đúng nhóm khán giả "người mới vibe code", cần chủ site cân nhắc có đăng hay không.
