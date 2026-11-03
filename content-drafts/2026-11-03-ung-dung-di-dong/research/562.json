@@ -1,0 +1,41 @@
+{
+  "key": 562,
+  "repo": "rrousselGit/riverpod",
+  "repoId": "256184861",
+  "url": "https://github.com/rrousselGit/riverpod",
+  "stars": 7414,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T01:25:12Z",
+  "createdAt": "2020-04-16T10:40:29Z",
+  "defaultBranch": "master",
+  "description": "A reactive caching and data-binding framework.   Riverpod makes working with asynchronous code a breeze.",
+  "homepage": "https://riverpod.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/rrousselGit/riverpod/master/README.md",
+    "sha256": "9940ee906492fcfe26fc12265c2665904a371debbbb59ea88350264865dcb96c",
+    "bytes": 4456,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Các gói",
+      "Long story short"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu riverpod.dev.",
+    "Chưa thử.",
+    "Chưa so sánh với Bloc hay Provider."
+  ],
+  "runtimeValidated": false
+}

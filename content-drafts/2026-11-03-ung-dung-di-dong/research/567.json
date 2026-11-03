@@ -1,0 +1,44 @@
+{
+  "key": 567,
+  "repo": "android/nowinandroid",
+  "repoId": "483402734",
+  "url": "https://github.com/android/nowinandroid",
+  "stars": 22001,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T06:02:47Z",
+  "createdAt": "2022-04-19T20:40:24Z",
+  "defaultBranch": "main",
+  "description": "A fully functional Android app built entirely with Kotlin and Jetpack Compose",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/android/nowinandroid/main/README.md",
+    "sha256": "d6eeade4c74e4cb521987ac2fe88b43bf90dd16610c27019b337ff6e04bd5536",
+    "bytes": 10998,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Features",
+      "Development Environment",
+      "Architecture",
+      "Modularization",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc các tài liệu kiến trúc chi tiết.",
+    "Chưa thử.",
+    "Yêu cầu phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

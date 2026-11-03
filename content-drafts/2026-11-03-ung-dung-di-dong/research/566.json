@@ -1,0 +1,43 @@
+{
+  "key": 566,
+  "repo": "JetBrains/compose-multiplatform",
+  "repoId": "293498508",
+  "url": "https://github.com/JetBrains/compose-multiplatform",
+  "stars": 19468,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:03:09Z",
+  "createdAt": "2020-09-07T10:40:49Z",
+  "defaultBranch": "master",
+  "description": "Compose Multiplatform, a modern UI framework for Kotlin that makes building performant and beautiful user interfaces easy and enjoyable.",
+  "homepage": "https://jetbrains.com/lp/compose-multiplatform",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/JetBrains/compose-multiplatform/master/README.md",
+    "sha256": "82a132a64235aae22f28b8ddb163b8e16e8e168ba67e47b77b0849dd5172010b",
+    "bytes": 5136,
+    "sectionsRead": [
+      "Giới thiệu",
+      "iOS",
+      "Android",
+      "Desktop",
+      "Web"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn bắt đầu của JetBrains.",
+    "Chưa thử.",
+    "Chưa so sánh với Flutter."
+  ],
+  "runtimeValidated": false
+}

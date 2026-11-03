@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-di-dong",
+  "batch": 94,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 562,
+      "batch": 94,
+      "slug": "riverpod",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Riverpod: khung bộ nhớ đệm phản ứng và liên kết dữ liệu cho Dart và Flutter, xử lý trạng thái tải và lỗi mặc định, tách logic khỏi giao diện, dễ kiểm thử",
+        "excerpt": "Hiểu Riverpod (đảo chữ của Provider) là khung quản lý trạng thái và bộ nhớ đệm phản ứng cho Dart và Flutter, giúp làm việc với mã bất đồng bộ dễ dàng: xử lý trạng thái tải và lỗi mặc định, hỗ trợ sẵn các tình huống như kéo để làm mới, tách logic khỏi giao diện, dễ kiểm thử và tái sử dụng.",
+        "content": "<p>README tả Riverpod là khung bộ nhớ đệm phản ứng và liên kết dữ liệu, trang riverpod.dev. Riverpod giúp làm việc với mã bất đồng bộ nhẹ nhàng: xử lý trạng thái lỗi và tải mặc định (không cần tự bắt lỗi), hỗ trợ tự nhiên các tình huống nâng cao như kéo để làm mới, tách logic khỏi giao diện, đảm bảo mã dễ kiểm thử, mở rộng và tái sử dụng. Có ba gói: riverpod, flutter_riverpod và hooks_riverpod. README là lời chào: Riverpod là đảo chữ của Provider, dẫn tới tài liệu riverpod.dev, 'nói ngắn gọn': định nghĩa yêu cầu mạng bằng một hàm chú thích @riverpod (ví dụ lấy ngẫu nhiên tên một nhà máy bia từ một API công khai qua http, giải mã JSON) rồi dùng trong giao diện. Giấy phép MIT (huy hiệu).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trong ứng dụng Flutter, dữ liệu từ mạng cần trạng thái 'đang tải', 'lỗi', 'có dữ liệu'. Riverpod gói những thứ đó giúp bạn để giao diện chỉ việc hiển thị.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: viết một provider lấy dữ liệu từ API công khai và hiển thị ba trạng thái. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Dart và Flutter, khái niệm provider, bất đồng bộ và sinh mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ví dụ README dùng API công khai của bên thứ ba: đừng đưa khóa vào mã ứng dụng. Có ba gói khác nhau: chọn đúng gói theo Flutter và hooks. Riverpod dùng sinh mã (@riverpod): cần bước build. README ngắn, bài chưa đọc tài liệu riverpod.dev.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>state management (quản lý trạng thái)</strong>: cách ứng dụng lưu và chia sẻ dữ liệu giữa các phần giao diện; README nêu.</li><li><strong>provider</strong>: đơn vị cung cấp dữ liệu hoặc logic trong Riverpod; README nêu.</li><li><strong>asynchronous (bất đồng bộ)</strong>: mã chờ kết quả như từ mạng; README nêu.</li><li><strong>pull-to-refresh (kéo để làm mới)</strong>: thao tác kéo xuống để tải lại; README nêu.</li><li><strong>annotation (chú thích)</strong>: nhãn gắn vào hàm để sinh mã như @riverpod; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu riverpod.dev; bài chưa đọc nên không nêu lệnh. Cần Dart hoặc Flutter. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Đọc tài liệu riverpod.dev.</li><li>Viết một provider lấy dữ liệu công khai.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học Flutter và nghe nói Riverpod. Hãy đọc README của Riverpod (https://github.com/rrousselGit/riverpod) và giải thích bằng tiếng Việt: Riverpod giải quyết vấn đề gì, ba gói khác nhau thế nào, và vì sao ví dụ README cần cẩn thận với API công khai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,5 KB), bài chưa đọc tài liệu riverpod.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>rrousselGit</strong> có <strong>7.414 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/rrousselGit/riverpod/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/rrousselGit/riverpod\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 562. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7414; repo_id 256184861; README SHA256 9940ee906492fcfe26fc12265c2665904a371debbbb59ea88350264865dcb96c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/rrousselGit/riverpod",
+          "repo_id": "256184861",
+          "source_path": "",
+          "source_revision": "README-SHA256:9940ee906492fcfe26fc12265c2665904a371debbbb59ea88350264865dcb96c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rrousselGit/riverpod",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu riverpod.dev; bài chưa đọc nên không nêu lệnh. Cần Dart hoặc Flutter. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/rrousselGit/riverpod/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/rrousselGit/riverpod/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "rrousselGit/riverpod",
+        "stars": 7414,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/rrousselGit/riverpod/master/README.md",
+        "readmeSha256": "9940ee906492fcfe26fc12265c2665904a371debbbb59ea88350264865dcb96c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 563,
+      "batch": 94,
+      "slug": "bloc",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bloc: thư viện quản lý trạng thái dễ đoán cho Dart và Flutter theo mẫu BLoC, tách phần trình bày khỏi logic nghiệp vụ; kho có nhiều gói (bloc, flutter_bloc, hydrated_bloc, bloc_test...)",
+        "excerpt": "Hiểu Bloc là thư viện quản lý trạng thái dễ đoán giúp triển khai mẫu thiết kế BLoC trong Dart và Flutter, nhằm tách phần trình bày khỏi logic nghiệp vụ, dễ kiểm thử và tái sử dụng. Kho gồm nhiều gói (bloc, flutter_bloc, hydrated_bloc, replay_bloc, bloc_concurrency, bloc_test, bloc_lint, bloc_tools, angular_bloc) và nhiều ví dụ.",
+        "content": "<p>README tả Bloc là thư viện quản lý trạng thái dễ đoán, giúp triển khai mẫu thiết kế BLoC. Có phần tài trợ. Overview: mục tiêu là làm dễ việc tách phần trình bày khỏi logic nghiệp vụ, tăng khả năng kiểm thử và tái sử dụng; có sơ đồ kiến trúc. Documentation: tài liệu chính thức bloclibrary.dev và danh sách gói (Angular Bloc, Bloc, Bloc Concurrency, Bloc Lint, Bloc Test, Bloc Tools, Flutter Bloc, Hydrated Bloc, Replay Bloc). Mục Migration trỏ hướng dẫn chuyển phiên bản. Mục Examples nhiều ví dụ cho Dart, Flutter, web, Flutter và web. Có mục bài viết, sách, tiện ích mở rộng và cộng đồng (gói do cộng đồng viết). Giấy phép MIT (huy hiệu). README dài (khoảng 20 KB, nhiều liên kết).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bloc là một cách tổ chức mã Flutter: 'sự kiện' vào, 'trạng thái' ra, giao diện chỉ hiển thị trạng thái. Cùng mục tiêu với Riverpod nhưng theo cách khác.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc ví dụ bộ đếm đơn giản trong kho và so sánh với cách dùng Riverpod. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Dart, Flutter và hiểu mẫu sự kiện và trạng thái. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Kho có nhiều gói, README liệt kê khá dài: chọn đúng gói cho dự án. Gói cộng đồng ở mục Community có chất lượng khác nhau. Có hướng dẫn chuyển phiên bản (Migration): kiểm tra khi nâng cấp. Phần tài trợ trong README là quảng cáo, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>BLoC (Business Logic Component)</strong>: mẫu tách logic nghiệp vụ khỏi giao diện; README nêu.</li><li><strong>state (trạng thái)</strong>: dữ liệu quyết định giao diện hiện gì; README nêu.</li><li><strong>event (sự kiện)</strong>: điều xảy ra như bấm nút, kích hoạt thay đổi trạng thái.</li><li><strong>package (gói)</strong>: đơn vị thư viện Dart; README liệt kê nhiều gói.</li><li><strong>hydrated (lưu trạng thái)</strong>: lưu trạng thái để khôi phục sau khi mở lại ứng dụng; README nêu gói hydrated_bloc.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu bloclibrary.dev; bài chưa đọc nên không nêu lệnh. Cần Dart hoặc Flutter. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview.</li><li>Xem ví dụ bộ đếm.</li><li>Chọn Bloc hay Riverpod theo nhu cầu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học Flutter và phân vân giữa Bloc và Riverpod. Hãy đọc README của Bloc (https://github.com/felangel/bloc) và giải thích bằng tiếng Việt: mẫu BLoC là gì, các gói trong kho dùng làm gì, và lưu ý khi nâng cấp phiên bản. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 20 KB), bài chưa đọc tài liệu bloclibrary.dev. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>felangel</strong> có <strong>12.488 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/felangel/bloc/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/felangel/bloc\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 563. Chưa cài/chạy thử; không tạo validation. Snapshot sao 12488; repo_id 151977818; README SHA256 dba85ba93c100b7912abcc3fcea9c07eab0676d4df216d465687cdf2633e5e15.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/felangel/bloc",
+          "repo_id": "151977818",
+          "source_path": "",
+          "source_revision": "README-SHA256:dba85ba93c100b7912abcc3fcea9c07eab0676d4df216d465687cdf2633e5e15",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/felangel/bloc",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu bloclibrary.dev; bài chưa đọc nên không nêu lệnh. Cần Dart hoặc Flutter. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/felangel/bloc/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/felangel/bloc/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "felangel/bloc",
+        "stars": 12488,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/felangel/bloc/master/README.md",
+        "readmeSha256": "dba85ba93c100b7912abcc3fcea9c07eab0676d4df216d465687cdf2633e5e15",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 564,
+      "batch": 94,
+      "slug": "reanimated",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "React Native Reanimated và Worklets: thư viện hoạt ảnh mượt và tương tác cho React Native, cùng thư viện chạy JavaScript đa luồng; bản 4 chỉ hỗ trợ kiến trúc mới",
+        "excerpt": "Hiểu kho này chứa hai gói: React Native Reanimated (tạo hoạt ảnh và tương tác mượt trong React Native) và React Native Worklets (chạy JavaScript đa luồng). README nêu Reanimated 4 chỉ hỗ trợ kiến trúc mới của React Native và ba phiên bản React Native mới nhất; nếu ứng dụng còn dùng kiến trúc cũ thì dùng bản 3.x. Giấy phép MIT.",
+        "content": "<p>README tả kho gồm hai gói chính: React Native Reanimated, thư viện tạo hoạt ảnh và tương tác mượt trong React Native, và React Native Worklets, thư viện cho phép chạy JavaScript đa luồng trong ứng dụng React Native. Thông báo: Reanimated 4 đã ra, xem trang tài liệu. Có phần trạng thái CI hằng đêm. Cài đặt: xem hướng dẫn chi tiết cho từng gói trên trang tài liệu. Tương thích: Reanimated 4.x và Worklets chỉ hỗ trợ kiến trúc mới của React Native và ba phiên bản React Native mới nhất; nếu ứng dụng còn dùng kiến trúc cũ, README khuyên chuyển sang kiến trúc mới hoặc ở lại bản 3.x mới nhất. Tài liệu, ví dụ (ứng dụng trình diễn trong thư mục apps), cộng đồng Discord. Giấy phép MIT; README giới thiệu Software Mansion, công ty phần mềm lập từ năm 2012, cộng tác viên lõi của React Native.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hoạt ảnh mượt trong ứng dụng di động (kéo, vuốt, chuyển cảnh) khó làm bằng JavaScript thường. Reanimated chạy hoạt ảnh gần phần gốc của thiết bị để giữ mượt.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: chạy ứng dụng ví dụ trong kho để xem các hoạt ảnh mẫu. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần React Native, hiểu hoạt ảnh và có thể gặp lỗi cài đặt phụ thuộc phiên bản. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Reanimated 4 chỉ chạy với kiến trúc mới của React Native và ba phiên bản React Native mới nhất: ứng dụng cũ có thể không dùng được (README nêu). Cài đặt cần khớp phiên bản Expo hoặc React Native: AI có thể gợi ý phiên bản không tương thích. README ngắn, bài chưa đọc tài liệu.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>animation (hoạt ảnh)</strong>: chuyển động trong giao diện; README nêu.</li><li><strong>worklet</strong>: hàm JavaScript chạy trên luồng khác để giữ giao diện mượt; README nêu Worklets đa luồng.</li><li><strong>New Architecture (kiến trúc mới)</strong>: kiến trúc mới của React Native; README nêu Reanimated 4 chỉ hỗ trợ.</li><li><strong>React Native</strong>: khung dựng ứng dụng di động bằng React; README nêu.</li><li><strong>CI</strong>: quy trình tự động kiểm tra; README nêu trạng thái hằng đêm.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cài đặt riêng cho từng gói; bài chưa đọc nên không nêu lệnh. Cần React Native với kiến trúc mới (cho bản 4.x). Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Compatibility.</li><li>Chạy ứng dụng ví dụ.</li><li>Chọn bản 3.x hay 4.x theo kiến trúc dự án.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng React Native và muốn hoạt ảnh mượt. Hãy đọc README của React Native Reanimated (https://github.com/software-mansion/react-native-reanimated) và giải thích bằng tiếng Việt: Reanimated và Worklets khác nhau thế nào, và yêu cầu về kiến trúc mới của bản 4. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 7 KB), bài chưa đọc tài liệu docs.swmansion.com. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>software-mansion</strong> có <strong>11.046 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/software-mansion/react-native-reanimated/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/software-mansion/react-native-reanimated\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 564. Chưa cài/chạy thử; không tạo validation. Snapshot sao 11046; repo_id 130961487; README SHA256 f69b5125861f90a7f0f275ee013ae97f83a1923eeaebcded6eee06a8022ae678.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/software-mansion/react-native-reanimated",
+          "repo_id": "130961487",
+          "source_path": "",
+          "source_revision": "README-SHA256:f69b5125861f90a7f0f275ee013ae97f83a1923eeaebcded6eee06a8022ae678",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/software-mansion/react-native-reanimated",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cài đặt riêng cho từng gói; bài chưa đọc nên không nêu lệnh. Cần React Native với kiến trúc mới (cho bản 4.x). Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/software-mansion/react-native-reanimated/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/software-mansion/react-native-reanimated/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "software-mansion/react-native-reanimated",
+        "stars": 11046,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/software-mansion/react-native-reanimated/main/README.md",
+        "readmeSha256": "f69b5125861f90a7f0f275ee013ae97f83a1923eeaebcded6eee06a8022ae678",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 565,
+      "batch": 94,
+      "slug": "nativewind",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "NativeWind: thư viện kiểu dáng đưa Tailwind CSS vào React Native, tính kiểu lúc build và dùng runtime nhỏ, không phải thư viện thành phần",
+        "excerpt": "Hiểu NativeWind là thư viện kiểu dáng cho React Native cho phép dùng Tailwind CSS, README nhấn mạnh đây không phải thư viện thành phần mà là thư viện kiểu dáng. Kiểu được tính lúc build, runtime nhỏ chỉ áp dụng kiểu phản ứng (đổi hướng thiết bị, chế độ sáng tối). README có Quickstart bằng rn-new và danh sách tính năng hỗ trợ (biến CSS, chế độ tối, hoạt ảnh, truy vấn container, lớp giả hover và focus).",
+        "content": "<p>README hỏi: bạn thích dùng Tailwind CSS để tạo kiểu cho ứng dụng? NativeWind giúp làm vậy trong React Native, nói rõ đây không phải thư viện thành phần mà là thư viện kiểu dáng. NativeWind chọn engine kiểu tốt nhất cho từng nền tảng (StyleSheet CSS hay StyleSheet.create), mục tiêu là trải nghiệm kiểu nhất quán trên mọi nền tảng, cải thiện trải nghiệm nhà phát triển và hiệu năng thành phần. Cách làm: xử lý kiểu trong bước build và dùng runtime tối thiểu để áp dụng có chọn lọc các kiểu phản ứng. Do đội Ronin Software xây và duy trì. Cài đặt: hướng dẫn cho dự án có sẵn; hoặc tạo dự án cấu hình sẵn bằng Quickstart qua rn-new (README nêu hai lệnh cho Expo SDK 54 với NativeWind v4.1 hoặc v5; bài không chép). Tính năng: chạy trên mọi nền tảng RN, dùng trình biên dịch Tailwind CSS, tính kiểu lúc build, runtime nhỏ; hỗ trợ biến CSS, chế độ tối, lớp tùy ý, truy vấn media, hoạt ảnh và chuyển tiếp, truy vấn container (README nêu có phần không hỗ trợ), lớp giả hover, focus, active trên thành phần phù hợp, đơn vị rem, hàm chủ đề. Giấy phép lấy theo GitHub (MIT); README chỉ có huy hiệu giấy phép.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn quen viết giao diện web bằng Tailwind, NativeWind cho phép dùng cùng cách đặt tên lớp trong ứng dụng di động React Native.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo dự án mẫu bằng Quickstart và đổi vài lớp Tailwind trên một nút. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Quen Tailwind và React Native sẽ dễ; cài đặt cần khớp phiên bản Expo. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README nêu hai bản (v4.1 và v5) cho Expo SDK 54: chọn đúng phiên bản, AI có thể gợi ý sai. Một số tính năng Tailwind không hỗ trợ đầy đủ (ví dụ truy vấn container có giới hạn theo README). NativeWind không phải thư viện thành phần: vẫn cần chọn thư viện thành phần riêng. README phần đã đọc không nêu giấy phép bằng văn bản.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Tailwind CSS</strong>: khung CSS dùng lớp tiện ích; README nêu.</li><li><strong>StyleSheet</strong>: cách tạo kiểu của React Native; README nêu.</li><li><strong>build time (lúc build)</strong>: tính toán sẵn trước khi chạy ứng dụng; README nêu.</li><li><strong>CSS variables (biến CSS)</strong>: giá trị kiểu tái sử dụng; README nêu hỗ trợ.</li><li><strong>Expo</strong>: bộ công cụ dựng ứng dụng React Native; README nêu Quickstart với Expo.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng hướng dẫn cài đặt cho dự án có sẵn hoặc Quickstart rn-new tạo dự án Expo có sẵn NativeWind (bài không chép lệnh). Cần Node và React Native hoặc Expo. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục About và Features.</li><li>Tạo dự án mẫu bằng Quickstart.</li><li>Đổi kiểu bằng lớp Tailwind.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình quen Tailwind và muốn làm ứng dụng di động. Hãy đọc README của NativeWind (https://github.com/nativewind/nativewind) và giải thích bằng tiếng Việt: NativeWind làm gì và không làm gì, kiểu được tính khi nào, và khác biệt giữa v4.1 và v5. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), bài chưa đọc tài liệu nativewind.dev. README chỉ có huy hiệu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nativewind</strong> có <strong>8.117 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README chỉ có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nativewind/nativewind/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nativewind/nativewind\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 565. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8117; repo_id 477048503; README SHA256 22faa80c79ed67386936f75d16589b7262b996a88810e40501350532875620b9.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nativewind/nativewind",
+          "repo_id": "477048503",
+          "source_path": "",
+          "source_revision": "README-SHA256:22faa80c79ed67386936f75d16589b7262b996a88810e40501350532875620b9",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nativewind/nativewind",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng hướng dẫn cài đặt cho dự án có sẵn hoặc Quickstart rn-new tạo dự án Expo có sẵn NativeWind (bài không chép lệnh). Cần Node và React Native hoặc Expo. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nativewind/nativewind/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nativewind/nativewind/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nativewind/nativewind",
+        "stars": 8117,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nativewind/nativewind/main/README.md",
+        "readmeSha256": "22faa80c79ed67386936f75d16589b7262b996a88810e40501350532875620b9",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 566,
+      "batch": 94,
+      "slug": "compose-multiplatform",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Compose Multiplatform: khung khai báo của JetBrains để chia sẻ mã giao diện bằng Kotlin giữa iOS, Android, máy tính để bàn và web (beta), xây trên Jetpack Compose",
+        "excerpt": "Hiểu Compose Multiplatform là khung khai báo để chia sẻ mã giao diện bằng Kotlin trên nhiều nền tảng, dựa trên Jetpack Compose, do JetBrains và cộng đồng phát triển. Nền tảng: iOS, Android, máy tính để bàn (Windows, macOS, Linux) và web (README ghi là Beta). Dùng chung phần lớn API với Jetpack Compose và truy cập API gốc qua Kotlin Multiplatform.",
+        "content": "<p>README tả Compose Multiplatform là khung khai báo để chia sẻ mã giao diện giữa nhiều nền tảng bằng Kotlin, dựa trên Jetpack Compose, do JetBrains và những người đóng góp mã nguồn mở phát triển. Có thể chọn chia sẻ giao diện giữa iOS, Android, máy tính để bàn (Windows, macOS, Linux), web (Beta); ví dụ chia sẻ giao diện giữa iOS và Android hoặc Windows và macOS. Mục iOS: chia sẻ phần lớn API với Jetpack Compose, dùng cùng API để dựng giao diện iOS và Android; vì dựa trên Kotlin Multiplatform nên truy cập dễ API gốc như API camera và nhúng các giao diện gốc phức tạp như MKMapView. Mục Android: trải nghiệm giống phát triển ứng dụng Jetpack Compose. Mục Desktop: nhắm JVM với kết xuất tăng tốc phần cứng trên macOS, Windows, Linux, có phần mở rộng riêng cho desktop (menu, phím tắt, cửa sổ, thông báo). Mục Web: README ghi hỗ trợ web đang Beta, có bài blog về tiến độ. Liên kết 'Get started' dẫn tới hướng dẫn bắt đầu của JetBrains. README phần đã đọc không nêu giấy phép; GitHub nhận diện Apache-2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn một mã giao diện chạy cả iPhone, Android và máy tính bằng Kotlin, đây là lựa chọn của JetBrains, cạnh Flutter và React Native.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: làm theo hướng dẫn bắt đầu của JetBrains để chạy một ứng dụng mẫu trên Android và iOS. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Kotlin, Android Studio hoặc IntelliJ, và máy Mac cho iOS. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi hỗ trợ web mới ở mức Beta. Phát triển iOS cần máy Mac và Xcode (nhận định chung, README không nêu chi tiết yêu cầu). README ngắn, chủ yếu trỏ ra ngoài: bài chưa đọc hướng dẫn jb.gg/start-cmp. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Kotlin Multiplatform</strong>: công nghệ chia sẻ mã Kotlin giữa nền tảng; README nêu.</li><li><strong>Jetpack Compose</strong>: khung giao diện khai báo của Android; README nêu.</li><li><strong>declarative UI (giao diện khai báo)</strong>: mô tả giao diện cần có thay vì từng bước vẽ; README nêu.</li><li><strong>beta</strong>: bản thử nghiệm chưa ổn định; README nêu cho web.</li><li><strong>JVM</strong>: máy ảo Java chạy ứng dụng desktop; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn bắt đầu của JetBrains; bài chưa đọc nên không nêu lệnh. Cần Kotlin và công cụ IDE. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc từng mục nền tảng.</li><li>Làm theo hướng dẫn bắt đầu chính thức.</li><li>Thử trên Android trước khi sang iOS.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một mã giao diện chạy cả Android và iOS bằng Kotlin. Hãy đọc README của Compose Multiplatform (https://github.com/JetBrains/compose-multiplatform) và giải thích bằng tiếng Việt: các nền tảng hỗ trợ, nền tảng nào còn Beta, và khác Flutter ra sao. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5 KB), bài chưa đọc hướng dẫn của JetBrains. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>JetBrains</strong> có <strong>19.468 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/JetBrains/compose-multiplatform/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/JetBrains/compose-multiplatform\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 566. Chưa cài/chạy thử; không tạo validation. Snapshot sao 19468; repo_id 293498508; README SHA256 82a132a64235aae22f28b8ddb163b8e16e8e168ba67e47b77b0849dd5172010b.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/JetBrains/compose-multiplatform",
+          "repo_id": "293498508",
+          "source_path": "",
+          "source_revision": "README-SHA256:82a132a64235aae22f28b8ddb163b8e16e8e168ba67e47b77b0849dd5172010b",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/JetBrains/compose-multiplatform",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn bắt đầu của JetBrains; bài chưa đọc nên không nêu lệnh. Cần Kotlin và công cụ IDE. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/JetBrains/compose-multiplatform/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/JetBrains/compose-multiplatform/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "JetBrains/compose-multiplatform",
+        "stars": 19468,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/JetBrains/compose-multiplatform/master/README.md",
+        "readmeSha256": "82a132a64235aae22f28b8ddb163b8e16e8e168ba67e47b77b0849dd5172010b",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 567,
+      "batch": 94,
+      "slug": "now-in-android",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Now in Android: ứng dụng Android mẫu của Google viết bằng Kotlin và Jetpack Compose, làm tài liệu tham khảo về kiến trúc, mô-đun hóa, kiểm thử và hiệu năng; README ghi đang là công việc dang dở",
+        "excerpt": "Hiểu Now in Android là ứng dụng Android hoàn chỉnh viết hoàn toàn bằng Kotlin và Jetpack Compose, theo thực hành tốt nhất về thiết kế và phát triển Android, dùng làm tài liệu tham khảo cho nhà phát triển. README ghi đang là công việc dang dở và các biến thể prod dùng máy chủ chưa công khai nên chỉ chạy được biến thể demo; giấy phép Apache 2.0.",
+        "content": "<p>README tả đây là kho ứng dụng Now in Android, có nghiên cứu thiết kế, hành trình học kiến trúc và mô-đun hóa; ghi rõ ứng dụng đang là công việc dang dở. Now in Android là ứng dụng Android đầy đủ chức năng viết hoàn toàn bằng Kotlin và Jetpack Compose, theo thực hành tốt nhất về thiết kế và phát triển Android, nhằm làm tài liệu tham khảo hữu ích cho nhà phát triển; là ứng dụng chạy thật giúp họ theo kịp thế giới Android bằng tin tức định kỳ. Biến thể prodRelease có trên Play Store. Tính năng: hiển thị nội dung của loạt Now in Android (video, bài viết...), cho theo dõi chủ đề và nhận thông báo. Môi trường phát triển: dùng Gradle, nhập thẳng vào Android Studio bản ổn định mới nhất; cấu hình chạy chọn app; chỉ dựng và chạy được biến thể demoDebug và demoRelease vì biến thể prod dùng máy chủ chưa công khai. Mục kiến trúc, mô-đun hóa, dựng, kiểm thử (gồm kiểm thử ảnh chụp màn hình), giao diện, hiệu năng (benchmark, baseline profile, số liệu trình biên dịch Compose). Giấy phép Apache 2.0 theo README.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn học cách tổ chức một ứng dụng Android chuẩn của Google? Now in Android là bản mẫu đầy đủ để đọc mã. Nó là ví dụ học tập, không phải khung để dùng thẳng.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bằng Android Studio, chạy biến thể demo và đọc phần kiến trúc. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Android Studio, Kotlin và hiểu kiến trúc nhiều mô-đun; mã lớn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README ghi ứng dụng đang là công việc dang dở. Biến thể prod cần máy chủ chưa công khai nên chỉ chạy được bản demo. Đây là mẫu tham khảo của Google, không phải thư viện: đừng sao chép cả cấu trúc cho ứng dụng nhỏ không cần. README ngắn gọn, bài chưa đọc tài liệu kiến trúc chi tiết.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Jetpack Compose</strong>: khung giao diện khai báo của Android; README nêu.</li><li><strong>modularization (mô-đun hóa)</strong>: chia ứng dụng thành nhiều mô-đun độc lập; README nêu.</li><li><strong>build variant (biến thể dựng)</strong>: phiên bản dựng khác nhau như demo và prod; README nêu.</li><li><strong>baseline profile</strong>: hồ sơ giúp ứng dụng khởi động nhanh hơn; README nêu.</li><li><strong>Gradle</strong>: công cụ dựng ứng dụng Android; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: nhập vào Android Studio và chọn cấu hình app; chỉ chạy được biến thể demo (bài không chép lệnh). Cần Android Studio bản ổn định mới nhất. Miễn phí theo giấy phép Apache 2.0.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Features và Architecture.</li><li>Mở bằng Android Studio và chạy biến thể demo.</li><li>Đọc các hành trình học kiến trúc và mô-đun hóa.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn học kiến trúc ứng dụng Android hiện đại. Hãy đọc README của Now in Android (https://github.com/android/nowinandroid) và giải thích bằng tiếng Việt: ứng dụng này dùng để làm gì, vì sao chỉ chạy được biến thể demo, và nên dùng thế nào cho việc học. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 11 KB), bài chưa đọc các tài liệu hành trình học. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>android</strong> có <strong>22.001 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục License ghi Apache License 2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/android/nowinandroid/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/android/nowinandroid\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 567. Chưa cài/chạy thử; không tạo validation. Snapshot sao 22001; repo_id 483402734; README SHA256 d6eeade4c74e4cb521987ac2fe88b43bf90dd16610c27019b337ff6e04bd5536.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/android/nowinandroid",
+          "repo_id": "483402734",
+          "source_path": "",
+          "source_revision": "README-SHA256:d6eeade4c74e4cb521987ac2fe88b43bf90dd16610c27019b337ff6e04bd5536",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/android/nowinandroid",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: nhập vào Android Studio và chọn cấu hình app; chỉ chạy được biến thể demo (bài không chép lệnh). Cần Android Studio bản ổn định mới nhất. Miễn phí theo giấy phép Apache 2.0.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/android/nowinandroid/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/android/nowinandroid/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "android/nowinandroid",
+        "stars": 22001,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/android/nowinandroid/main/README.md",
+        "readmeSha256": "d6eeade4c74e4cb521987ac2fe88b43bf90dd16610c27019b337ff6e04bd5536",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 568,
+      "batch": 94,
+      "slug": "tamagui",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Tamagui: bộ thư viện kiểu dáng và giao diện chia sẻ mã giữa React và React Native, có trình biên dịch tối ưu biến thành phần kiểu thành div và CSS nguyên tử trên web hoặc View trên di động",
+        "excerpt": "Hiểu Tamagui là bộ thư viện dựng giao diện chia sẻ mã giữa React (web) và React Native (di động): @tamagui/core (thư viện kiểu chung), @tamagui/static (trình biên dịch tối ưu) và tamagui (bộ giao diện tự thích ứng từng nền tảng). README nói trình biên dịch biến thành phần kiểu thành div kèm CSS nguyên tử trên web hoặc View trên di động, và có thể thiết lập dần dần.",
+        "content": "<p>README tả Tamagui là nhóm thư viện dựng giao diện chia sẻ mã giữa React và React Native: @tamagui/core là thư viện kiểu dáng đa dụng cho React; @tamagui/static là trình biên dịch tối ưu làm việc cùng core và tamagui; tamagui là bộ giao diện thích ứng từng nền tảng. Tamagui cho chia sẻ nhiều mã hơn giữa web và di động mà không hy sinh hai điều thường bị ảnh hưởng: hiệu năng và chất lượng mã. Trình biên dịch tối ưu cho ra tối ưu theo nền tảng: biến thành phần kiểu, kể cả logic phức tạp hoặc nhập chéo mô-đun, thành một div cùng CSS nguyên tử trên web, hoặc View với đối tượng kiểu trên di động. Toàn bộ hoạt động lúc biên dịch và lúc chạy, có thể thiết lập dần: bắt đầu chỉ cần nhập và dùng các view cơ sở và hàm styled. Khuyên xem các bộ khởi đầu qua lệnh tạo từ gói create tamagui (từ đơn giản đến monorepo sẵn sàng sản xuất; bài không chép lệnh). README nêu một số liệu trên trang web của dự án (49 trong khoảng 55 thành phần kiểu được làm phẳng; số liệu của tác giả, bài không kiểm chứng). Mục đóng góp. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn muốn một codebase cho cả website và ứng dụng di động, Tamagui giúp dùng chung thành phần giao diện. Phần nặng được xử lý sẵn khi build để chạy nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo bộ khởi đầu đơn giản của Tamagui và xem cách thành phần chạy trên web và di động. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần React, React Native, trình biên dịch và cấu hình monorepo; nhiều khái niệm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Số liệu 'hầu hết thành phần được làm phẳng' là của tác giả trên trang của họ. Chia sẻ mã web và di động có thể vẫn cần xử lý riêng từng nền tảng (nhận định chung). Cấu hình trình biên dịch sai có thể gây lỗi build khó hiểu. README ngắn, bài chưa đọc tài liệu tamagui.dev.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>universal UI (giao diện chung)</strong>: một mã giao diện dùng cho nhiều nền tảng; README nêu.</li><li><strong>compiler (trình biên dịch)</strong>: công cụ biến mã thành dạng tối ưu lúc build; README nêu @tamagui/static.</li><li><strong>atomic CSS</strong>: CSS chia thành lớp nhỏ tái sử dụng; README nêu trên web.</li><li><strong>monorepo</strong>: một kho chứa nhiều dự án; README nêu bộ khởi đầu.</li><li><strong>styled</strong>: hàm tạo thành phần có kiểu; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: dùng bộ khởi đầu tạo bằng gói create tamagui, hoặc nhập dần vào dự án (bài không chép lệnh). Cần React hoặc React Native. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu.</li><li>Tạo bộ khởi đầu đơn giản.</li><li>Dùng dần trình biên dịch khi đã hiểu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn một codebase cho cả web và di động. Hãy đọc README của Tamagui (https://github.com/tamagui/tamagui) và giải thích bằng tiếng Việt: ba thư viện core, static, tamagui làm gì, trình biên dịch tối ưu ra sao, và số liệu nào là của tác giả. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3 KB), bài chưa đọc tài liệu tamagui.dev. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tamagui</strong> có <strong>14.296 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tamagui/tamagui/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tamagui/tamagui\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 568. Chưa cài/chạy thử; không tạo validation. Snapshot sao 14296; repo_id 304740870; README SHA256 24f29782f5f25b1c67d69fd2a8ce391d01e0ffd99860bfc66a883068274c2fe3.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tamagui/tamagui",
+          "repo_id": "304740870",
+          "source_path": "",
+          "source_revision": "README-SHA256:24f29782f5f25b1c67d69fd2a8ce391d01e0ffd99860bfc66a883068274c2fe3",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tamagui/tamagui",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: dùng bộ khởi đầu tạo bằng gói create tamagui, hoặc nhập dần vào dự án (bài không chép lệnh). Cần React hoặc React Native. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tamagui/tamagui/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tamagui/tamagui/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tamagui/tamagui",
+        "stars": 14296,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tamagui/tamagui/main/README.md",
+        "readmeSha256": "24f29782f5f25b1c67d69fd2a8ce391d01e0ffd99860bfc66a883068274c2fe3",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 569,
+      "batch": 94,
+      "slug": "flash-list",
+      "category": "Dữ liệu và giao diện ứng dụng",
+      "need": "Trình bày dữ liệu",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "FlashList: danh sách nhanh cho React Native thay FlatList, tái chế view để không còn ô trắng; v2 chỉ chạy kiến trúc mới của React Native và không cần ước lượng kích thước",
+        "excerpt": "Hiểu FlashList là danh sách nhanh cho React Native, thay được FlatList bằng cách đổi tên thành phần, dùng tái chế view để cuộn mượt không còn ô trắng. README nêu v2 được xây lại cho kiến trúc mới của React Native, chỉ JavaScript (không phụ thuộc mã gốc), không cần ước lượng kích thước, hỗ trợ bố cục masonry; v2 không chạy trên kiến trúc cũ.",
+        "content": "<p>README mở đầu: danh sách nhanh và hiệu quả cho React Native, 'không còn ô trắng', đổi từ FlatList trong vài giây để có hiệu năng tức thì. FlashList v2 được xây lại từ đầu cho kiến trúc mới của React Native, nhanh hơn, chính xác hơn, dễ dùng hơn so với v1, và chuyển sang giải pháp chỉ JavaScript. Cảnh báo quan trọng: v2.x chỉ dành cho kiến trúc mới, không chạy trên kiến trúc cũ; nếu dùng kiến trúc cũ hoặc v1.x thì xem tài liệu riêng cho v1. Vì sao dùng: hiệu năng vượt trội (tái chế view để cuộn mượt không ô trắng, hiển thị đầu nhanh, bộ nhớ hiệu quả, hỗ trợ nhiều loại view, kích thước động không cần ước lượng), trải nghiệm lập trình (thay thế trực tiếp FlatList, v2 không cần ước lượng kích thước, kiểu TypeScript đầy đủ), tính năng nâng cao (bố cục masonry kiểu Pinterest, giữ vị trí nội dung hiển thị khi thêm mục, bật mặc định ở v2, nhiều nhóm tái chế theo getItemType), lợi ích thực tế (README nói giảm rớt khung hình, giữ 60 FPS, ít dùng CPU, cuộn mượt với hàng nghìn mục; tuyên bố của README, bài không kiểm chứng), v2 chỉ JavaScript nên không có phụ thuộc mã gốc. README phần đã đọc không nêu giấy phép; GitHub nhận diện MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Danh sách dài (tin nhắn, sản phẩm) trong ứng dụng di động dễ giật. FlashList cuộn mượt hơn danh sách mặc định của React Native bằng cách tái sử dụng các ô đã vẽ.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: thay FlatList bằng FlashList trong một ứng dụng mẫu và đo cuộn với danh sách dài. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm ứng dụng di động bằng Flutter, React Native, Kotlin hoặc Swift, thường nhờ AI viết mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Quen FlatList sẽ dễ chuyển; cần ứng dụng dùng kiến trúc mới cho v2. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> v2.x chỉ chạy kiến trúc mới của React Native, ứng dụng cũ phải dùng v1 (README cảnh báo). Các số liệu '60 FPS', 'giảm rớt khung hình' là tuyên bố của README, bài chưa kiểm chứng; hiệu năng thực tế tùy thiết bị và mục danh sách. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>FlatList</strong>: thành phần danh sách mặc định của React Native; README nêu FlashList thay thế trực tiếp.</li><li><strong>view recycling (tái chế view)</strong>: dùng lại ô đã vẽ cho mục mới khi cuộn; README nêu.</li><li><strong>masonry layout</strong>: bố cục nhiều cột chiều cao khác nhau kiểu Pinterest; README nêu.</li><li><strong>New Architecture (kiến trúc mới)</strong>: kiến trúc mới của React Native; README nêu v2 chỉ hỗ trợ.</li><li><strong>getItemType</strong>: hàm chia mục thành nhóm tái chế; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài như thư viện React Native, thay FlatList bằng FlashList theo tài liệu (bài chưa đọc chi tiết nên không nêu lệnh). Cần kiến trúc mới cho v2. Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc cảnh báo v2 chỉ kiến trúc mới.</li><li>Thử thay FlatList bằng FlashList trong ứng dụng mẫu.</li><li>Đo hiệu năng với danh sách dài thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm ứng dụng React Native có danh sách dài. Hãy đọc README của FlashList (https://github.com/Shopify/flash-list) và giải thích bằng tiếng Việt: FlashList khác FlatList thế nào, yêu cầu về kiến trúc mới của v2, và các tuyên bố hiệu năng nào là của README. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4 KB), bài chưa đọc tài liệu shopify.github.io/flash-list. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Thư viện ứng dụng di động ảnh hưởng đến hiệu năng, bảo mật và việc được duyệt lên cửa hàng ứng dụng: chọn phiên bản được duy trì và tương thích, thử trên thiết bị thật, kiểm tra giấy phép, và đừng lưu khóa hay dữ liệu nhạy cảm trong mã ứng dụng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Shopify</strong> có <strong>7.245 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Shopify/flash-list/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Shopify/flash-list\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 569. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7245; repo_id 440224087; README SHA256 820263ac5961d0d7b48add08df07872168b28181cd67a0f3955897479d1fc5db.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Shopify/flash-list",
+          "repo_id": "440224087",
+          "source_path": "",
+          "source_revision": "README-SHA256:820263ac5961d0d7b48add08df07872168b28181cd67a0f3955897479d1fc5db",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Shopify/flash-list",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài như thư viện React Native, thay FlatList bằng FlashList theo tài liệu (bài chưa đọc chi tiết nên không nêu lệnh). Cần kiến trúc mới cho v2. Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Shopify/flash-list/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Shopify/flash-list/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Shopify/flash-list",
+        "stars": 7245,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Shopify/flash-list/main/README.md",
+        "readmeSha256": "820263ac5961d0d7b48add08df07872168b28181cd67a0f3955897479d1fc5db",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

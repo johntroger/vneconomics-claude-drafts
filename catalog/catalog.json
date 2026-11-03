@@ -9027,5 +9027,195 @@
   "related": [
    "chatdev"
   ]
+ },
+ {
+  "key": 562,
+  "slug": "riverpod",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "Riverpod: khung bộ nhớ đệm phản ứng và liên kết dữ liệu cho Dart và Flutter, xử lý trạng thái tải và lỗi mặc định, tách logic khỏi giao diện, dễ kiểm thử",
+  "repo": "rrousselGit/riverpod",
+  "stars": 7414,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "bloc"
+  ]
+ },
+ {
+  "key": 563,
+  "slug": "bloc",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "Bloc: thư viện quản lý trạng thái dễ đoán cho Dart và Flutter theo mẫu BLoC, tách phần trình bày khỏi logic nghiệp vụ; kho có nhiều gói (bloc, flutter_bloc, hydrated_bloc, bloc_test...)",
+  "repo": "felangel/bloc",
+  "stars": 12488,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "nativewind",
+   "riverpod"
+  ]
+ },
+ {
+  "key": 564,
+  "slug": "reanimated",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "React Native Reanimated và Worklets: thư viện hoạt ảnh mượt và tương tác cho React Native, cùng thư viện chạy JavaScript đa luồng; bản 4 chỉ hỗ trợ kiến trúc mới",
+  "repo": "software-mansion/react-native-reanimated",
+  "stars": 11046,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "flash-list",
+   "tamagui"
+  ]
+ },
+ {
+  "key": 565,
+  "slug": "nativewind",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "NativeWind: thư viện kiểu dáng đưa Tailwind CSS vào React Native, tính kiểu lúc build và dùng runtime nhỏ, không phải thư viện thành phần",
+  "repo": "nativewind/nativewind",
+  "stars": 8117,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "bloc",
+   "flash-list"
+  ]
+ },
+ {
+  "key": 566,
+  "slug": "compose-multiplatform",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "Compose Multiplatform: khung khai báo của JetBrains để chia sẻ mã giao diện bằng Kotlin giữa iOS, Android, máy tính để bàn và web (beta), xây trên Jetpack Compose",
+  "repo": "JetBrains/compose-multiplatform",
+  "stars": 19468,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "now-in-android",
+   "tamagui"
+  ]
+ },
+ {
+  "key": 567,
+  "slug": "now-in-android",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "Now in Android: ứng dụng Android mẫu của Google viết bằng Kotlin và Jetpack Compose, làm tài liệu tham khảo về kiến trúc, mô-đun hóa, kiểm thử và hiệu năng; README ghi đang là công việc dang dở",
+  "repo": "android/nowinandroid",
+  "stars": 22001,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "compose-multiplatform"
+  ]
+ },
+ {
+  "key": 568,
+  "slug": "tamagui",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "Tamagui: bộ thư viện kiểu dáng và giao diện chia sẻ mã giữa React và React Native, có trình biên dịch tối ưu biến thành phần kiểu thành div và CSS nguyên tử trên web hoặc View trên di động",
+  "repo": "tamagui/tamagui",
+  "stars": 14296,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-01",
+  "related": [
+   "compose-multiplatform",
+   "reanimated"
+  ]
+ },
+ {
+  "key": 569,
+  "slug": "flash-list",
+  "group": "2026-11-03-ung-dung-di-dong",
+  "title": "FlashList: danh sách nhanh cho React Native thay FlatList, tái chế view để không còn ô trắng; v2 chỉ chạy kiến trúc mới của React Native và không cần ước lượng kích thước",
+  "repo": "Shopify/flash-list",
+  "stars": 7245,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-10-01",
+  "related": [
+   "nativewind",
+   "reanimated"
+  ]
  }
 ]

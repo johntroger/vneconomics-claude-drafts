@@ -74,6 +74,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 72 — Container và hạ tầng](learning-paths/72-container-ha-tang.vi.md) — Từ máy chủ web, ảnh container, máy ảo cho container và tự động hóa giao phần mềm đến hạ tầng dưới dạng mã và cổng API; chú ý tài nguyên đám mây tốn tiền, cổng quản trị, socket Docker và bản trả phí.
 - [Lộ trình 73 — MCP và công cụ nối AI với thế giới ngoài](learning-paths/73-mcp-cong-cu-agent.vi.md) — Từ giao thức MCP, khung dựng máy chủ, máy chủ GitHub, điều khiển trình duyệt đến chuyển tài liệu, quy trình có cấu trúc và đóng gói kho mã cho AI; cấp quyền tối thiểu, giữ mã truy cập an toàn, dùng tài khoản thử, tắt thống kê khi cần và đừng gửi dữ liệu nhạy cảm cho AI.
 - [Lộ trình 74 — Agent và nền tảng dựng app bằng AI](learning-paths/74-agent-dung-app.vi.md) — Từ ứng dụng mẫu dựng app bằng trò chuyện, coding agent trong trình soạn mã, hệ nhiều agent, agent sửa lỗi nghiên cứu đến cổng mô hình và agent gửi pull request; chú ý khóa API và chi phí, sandbox, quyền GitHub, tình trạng bảo trì và cảnh báo của từng README.
+- [Lộ trình 75 — Ứng dụng di động](learning-paths/75-ung-dung-di-dong.vi.md) — Từ quản lý trạng thái Flutter, giao diện và kiểu dáng React Native, danh sách và hoạt ảnh đến chia sẻ giao diện bằng Kotlin và ứng dụng Android mẫu; chú ý tương thích với kiến trúc mới của React Native, phiên bản Expo, tình trạng Beta và các tuyên bố hiệu năng của tác giả.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -129,7 +130,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 354 | Hoppscotch: hệ sinh thái phát triển API mã nguồn mở nhẹ, gửi yêu cầu và xem phản hồi ngay, có tự host | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch) | MIT | 80726 | api-anh-pdf-va-ocr |
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 
-### Cơ bản (193 bài)
+### Cơ bản (195 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -326,6 +327,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 554 | Spec Kit: bộ công cụ mã nguồn mở của GitHub cho coding agent có quy trình có cấu trúc (phát triển dựa trên đặc tả, sửa lỗi, đánh giá ý tưởng), mẫu và kết quả được ghi lại | [github/spec-kit](https://github.com/github/spec-kit) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 145997 | mcp-cong-cu-agent |
 | 555 | Repomix: đóng gói cả kho mã thành một tệp thân thiện với AI để đưa cho LLM, có đếm token, tôn trọng .gitignore và dùng Secretlint để loại tệp có khóa; README có cảnh báo về cấu hình từ kho từ xa | [yamadashy/repomix](https://github.com/yamadashy/repomix) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 29129 | mcp-cong-cu-agent |
 | 557 | Kilo Code: coding agent mã nguồn mở chạy trong VS Code, JetBrains và CLI, chọn trong hơn 500 mô hình; README có lệnh cài tải từ mạng và dịch vụ trả phí | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 27844 | agent-dung-app |
+| 565 | NativeWind: thư viện kiểu dáng đưa Tailwind CSS vào React Native, tính kiểu lúc build và dùng runtime nhỏ, không phải thư viện thành phần | [nativewind/nativewind](https://github.com/nativewind/nativewind) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 8117 | ung-dung-di-dong |
+| 569 | FlashList: danh sách nhanh cho React Native thay FlatList, tái chế view để không còn ô trắng; v2 chỉ chạy kiến trúc mới của React Native và không cần ước lượng kích thước | [Shopify/flash-list](https://github.com/Shopify/flash-list) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7245 | ung-dung-di-dong |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -369,7 +372,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (187 bài)
+### Nâng cao (193 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -560,6 +563,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 559 | SWE-agent: agent do nhà nghiên cứu Princeton và Stanford làm để mô hình ngôn ngữ tự dùng công cụ sửa lỗi trong kho GitHub thật; README nói mini-swe-agent đã thay thế và khuyến nghị dùng thay | [SWE-agent/SWE-agent](https://github.com/SWE-agent/SWE-agent) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 20712 | agent-dung-app |
 | 560 | Claude Code Router: cổng mô hình cục bộ và bảng điều khiển cho coding agent, nối Claude Code, Codex, OpenCode và nhiều agent khác với nhà cung cấp bạn chọn, có định tuyến, dự phòng và quan sát | [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 37972 | agent-dung-app |
 | 561 | Open SWE: agent kỹ sư phần mềm mã nguồn mở của LangChain, điều tra kho mã, triển khai thay đổi trong sandbox và gửi pull request; README nói đang phát triển mạnh, không nhận issue hay đóng góp ngoài | [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 11165 | agent-dung-app |
+| 562 | Riverpod: khung bộ nhớ đệm phản ứng và liên kết dữ liệu cho Dart và Flutter, xử lý trạng thái tải và lỗi mặc định, tách logic khỏi giao diện, dễ kiểm thử | [rrousselGit/riverpod](https://github.com/rrousselGit/riverpod) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 7414 | ung-dung-di-dong |
+| 563 | Bloc: thư viện quản lý trạng thái dễ đoán cho Dart và Flutter theo mẫu BLoC, tách phần trình bày khỏi logic nghiệp vụ; kho có nhiều gói (bloc, flutter_bloc, hydrated_bloc, bloc_test...) | [felangel/bloc](https://github.com/felangel/bloc) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 12488 | ung-dung-di-dong |
+| 564 | React Native Reanimated và Worklets: thư viện hoạt ảnh mượt và tương tác cho React Native, cùng thư viện chạy JavaScript đa luồng; bản 4 chỉ hỗ trợ kiến trúc mới | [software-mansion/react-native-reanimated](https://github.com/software-mansion/react-native-reanimated) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 11046 | ung-dung-di-dong |
+| 566 | Compose Multiplatform: khung khai báo của JetBrains để chia sẻ mã giao diện bằng Kotlin giữa iOS, Android, máy tính để bàn và web (beta), xây trên Jetpack Compose | [JetBrains/compose-multiplatform](https://github.com/JetBrains/compose-multiplatform) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 19468 | ung-dung-di-dong |
+| 567 | Now in Android: ứng dụng Android mẫu của Google viết bằng Kotlin và Jetpack Compose, làm tài liệu tham khảo về kiến trúc, mô-đun hóa, kiểm thử và hiệu năng; README ghi đang là công việc dang dở | [android/nowinandroid](https://github.com/android/nowinandroid) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 22001 | ung-dung-di-dong |
+| 568 | Tamagui: bộ thư viện kiểu dáng và giao diện chia sẻ mã giữa React và React Native, có trình biên dịch tối ưu biến thành phần kiểu thành div và CSS nguyên tử trên web hoặc View trên di động | [tamagui/tamagui](https://github.com/tamagui/tamagui) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 14296 | ung-dung-di-dong |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.
