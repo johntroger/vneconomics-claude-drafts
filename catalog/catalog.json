@@ -3595,5 +3595,93 @@
    "pydantic",
    "requests"
   ]
+ },
+ {
+  "key": 303,
+  "slug": "spacy",
+  "group": "2026-11-03-cong-cu-lap-trinh-va-email-thu-nghiem",
+  "title": "spaCy: thư viện Python xử lý ngôn ngữ tự nhiên cho sản phẩm thật, nhận diện thực thể và phân loại văn bản",
+  "repo": "explosion/spaCy",
+  "stars": 34015,
+  "license": "MIT",
+  "level_text": "Khá khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-27",
+  "related": [
+   "helix",
+   "mailpit"
+  ]
+ },
+ {
+  "key": 304,
+  "slug": "vscodium",
+  "group": "2026-11-03-cong-cu-lap-trinh-va-email-thu-nghiem",
+  "title": "VSCodium: bản dựng cộng đồng của VS Code theo giấy phép tự do, tắt telemetry, nhưng không dùng được mọi tiện ích",
+  "repo": "VSCodium/vscodium",
+  "stars": 33926,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-31",
+  "related": [
+   "mailpit"
+  ]
+ },
+ {
+  "key": 305,
+  "slug": "helix",
+  "group": "2026-11-03-cong-cu-lap-trinh-va-email-thu-nghiem",
+  "title": "Helix: trình soạn văn bản trong terminal theo mô hình soạn kiểu modal, có hỗ trợ language server sẵn",
+  "repo": "helix-editor/helix",
+  "stars": 46775,
+  "license": "MPL-2.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-09-29",
+  "related": [
+   "roundcube",
+   "spacy"
+  ]
+ },
+ {
+  "key": 306,
+  "slug": "roundcube",
+  "group": "2026-11-03-cong-cu-lap-trinh-va-email-thu-nghiem",
+  "title": "Roundcube Webmail: ứng dụng thư điện tử trên trình duyệt, lưu ý README cảnh báo bản trong kho Git không phải bản ổn định",
+  "repo": "roundcube/roundcubemail",
+  "stars": 7256,
+  "license": "GPL-3.0",
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Lưu trữ và công cụ cá nhân",
+  "need": "Quản lý tệp và ứng dụng",
+  "pushed": "2026-10-25",
+  "related": [
+   "helix"
+  ]
+ },
+ {
+  "key": 307,
+  "slug": "mailpit",
+  "group": "2026-11-03-cong-cu-lap-trinh-va-email-thu-nghiem",
+  "title": "Mailpit: bắt và xem thư điện tử thử nghiệm khi lập trình, nhờ vậy ứng dụng của bạn không gửi nhầm thư thật",
+  "repo": "axllent/mailpit",
+  "stars": 10816,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "spacy",
+   "vscodium"
+  ]
  }
 ]
