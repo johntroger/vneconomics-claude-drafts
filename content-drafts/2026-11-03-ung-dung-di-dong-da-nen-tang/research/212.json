@@ -1,0 +1,37 @@
+{
+  "key": 212,
+  "repo": "tauri-apps/tauri",
+  "repoId": "196701619",
+  "url": "https://github.com/tauri-apps/tauri",
+  "stars": 112448,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "Apache-2.0",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:56:22Z",
+  "createdAt": "2019-07-13T09:09:37Z",
+  "defaultBranch": "dev",
+  "description": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
+  "homepage": "https://tauri.app",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/README.md",
+    "sha256": "3aaaf7be9a2f740b105e86a6c569a76968eb982a28a228fbc1f014627c7a10ec",
+    "bytes": 6055,
+    "sectionsRead": [
+      "Introduction",
+      "Getting Started",
+      "Features",
+      "Platforms",
+      "Licenses"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đo kích thước và hiệu năng.",
+    "Chưa đọc tài liệu prerequisites.",
+    "Chưa so sánh với Electron bằng thử nghiệm."
+  ],
+  "runtimeValidated": false
+}

@@ -16,6 +16,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 14 — Công cụ cho giảng viên và người viết](learning-paths/14-cong-cu-cho-giang-vien-va-nguoi-viet.vi.md) — Soạn bài giảng, tài liệu có công thức, soát lỗi văn bản và dựng site tài liệu.
 - [Lộ trình 15 — Quyền riêng tư và an toàn cá nhân](learning-paths/15-quyen-rieng-tu-ca-nhan.vi.md) — Ba việc nền tảng: giữ mật khẩu và mã 2FA, mã hóa dữ liệu nhạy cảm, bớt bị theo dõi khi duyệt web.
 - [Lộ trình 16 — Kiểm thử và giữ chất lượng mã khi có AI viết](learning-paths/16-kiem-thu-va-chat-luong-ma.vi.md) — Lưới an toàn khi AI sửa mã: định dạng, soát lỗi, kiểm thử từng hàm và kiểm thử luồng người dùng.
+- [Lộ trình 17 — Biến ý tưởng thành ứng dụng di động và máy tính](learning-paths/17-ung-dung-di-dong-va-may-tinh.vi.md) — Chọn đường theo ngôn ngữ bạn biết: JavaScript, Python, Dart hay web sẵn có.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
@@ -53,7 +54,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 203 | Aegis Authenticator: ứng dụng mã xác thực hai bước cho Android, có mã hóa và sao lưu | [beemdevelopment/Aegis](https://github.com/beemdevelopment/Aegis) | GPL-3.0 | 13450 | rieng-tu-ca-nhan |
 | 206 | Prettier: tự động dàn mã cho đồng nhất để khỏi tranh cãi về cách trình bày | [prettier/prettier](https://github.com/prettier/prettier) | MIT | 52404 | kiem-thu-va-chat-luong-ma |
 
-### Cơ bản (56 bài)
+### Cơ bản (60 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -113,8 +114,12 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 207 | Ruff: công cụ soát lỗi và định dạng mã Python rất nhanh, gom nhiều công cụ vào một | [astral-sh/ruff](https://github.com/astral-sh/ruff) | MIT | 50403 | kiem-thu-va-chat-luong-ma |
 | 208 | Jest: framework kiểm thử JavaScript phổ biến, có chế độ theo dõi và kiểm thử snapshot | [jestjs/jest](https://github.com/jestjs/jest) | MIT | 45471 | kiem-thu-va-chat-luong-ma |
 | 209 | Cypress: kiểm thử website như người dùng thật trên trình duyệt, có dịch vụ đám mây trả phí | [cypress-io/cypress](https://github.com/cypress-io/cypress) | MIT | 51018 | kiem-thu-va-chat-luong-ma |
+| 211 | Expo: làm ứng dụng Android, iOS và web bằng React và JavaScript | [expo/expo](https://github.com/expo/expo) | MIT | 53306 | ung-dung-di-dong-da-nen-tang |
+| 213 | Electron: viết ứng dụng máy tính bằng JavaScript, HTML và CSS, nền của VS Code | [electron/electron](https://github.com/electron/electron) | MIT | 123730 | ung-dung-di-dong-da-nen-tang |
+| 214 | Capacitor: đưa ứng dụng web có sẵn lên iOS và Android như ứng dụng native | [ionic-team/capacitor](https://github.com/ionic-team/capacitor) | MIT | 17023 | ung-dung-di-dong-da-nen-tang |
+| 215 | Flet: dựng ứng dụng web, máy tính và di động hoàn toàn bằng Python | [flet-dev/flet](https://github.com/flet-dev/flet) | Apache-2.0 | 17496 | ung-dung-di-dong-da-nen-tang |
 
-### Khá khó (cần nền kỹ thuật) (19 bài)
+### Khá khó (cần nền kỹ thuật) (21 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -137,6 +142,8 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 188 | Traefik: reverse proxy tự tìm các dịch vụ chạy trong Docker và tạo đường dẫn cho chúng | [traefik/traefik](https://github.com/traefik/traefik) | MIT | 65445 | dua-ung-dung-len-mang |
 | 191 | CrowdSec: phát hiện và chặn IP độc hại dựa trên nhật ký và danh sách chia sẻ của cộng đồng | [crowdsecurity/crowdsec](https://github.com/crowdsecurity/crowdsec) | MIT | 15437 | giam-sat-may-chu |
 | 198 | PDF.js: thư viện đọc và hiển thị PDF ngay trong trình duyệt do Mozilla phát triển | [mozilla/pdf.js](https://github.com/mozilla/pdf.js) | Apache-2.0 | 54085 | cong-cu-viet-va-giang-day |
+| 210 | Flutter: SDK của Google để làm ứng dụng di động, web và máy tính từ một mã nguồn | [flutter/flutter](https://github.com/flutter/flutter) | BSD-3-Clause | 181015 | ung-dung-di-dong-da-nen-tang |
+| 212 | Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust | [tauri-apps/tauri](https://github.com/tauri-apps/tauri) | Apache-2.0 | 112448 | ung-dung-di-dong-da-nen-tang |
 
 ### Nâng cao (8 bài)
 

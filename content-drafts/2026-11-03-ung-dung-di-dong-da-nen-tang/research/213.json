@@ -1,0 +1,36 @@
+{
+  "key": 213,
+  "repo": "electron/electron",
+  "repoId": "9384267",
+  "url": "https://github.com/electron/electron",
+  "stars": 123730,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T01:10:22Z",
+  "createdAt": "2013-04-12T01:47:36Z",
+  "defaultBranch": "main",
+  "description": ":electron: Build cross-platform desktop apps with JavaScript, HTML, and CSS",
+  "homepage": "https://electronjs.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/electron/electron/main/README.md",
+    "sha256": "cb788749d3f0d3991e9c17b0cbcd9fd15a8c9bd73e45874d0a936fdbd9d3745b",
+    "bytes": 4450,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Platform support",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đo kích thước và bộ nhớ.",
+    "Chưa đọc hướng dẫn bảo mật.",
+    "Chưa so sánh với Tauri bằng thử nghiệm."
+  ],
+  "runtimeValidated": false
+}

@@ -852,6 +852,7 @@
    "cypress",
    "front-end-checklist",
    "jest",
+   "tauri",
    "vitest"
   ]
  },
@@ -1940,6 +1941,113 @@
   "related": [
    "gitleaks",
    "playwright"
+  ]
+ },
+ {
+  "key": 210,
+  "slug": "flutter",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Flutter: SDK của Google để làm ứng dụng di động, web và máy tính từ một mã nguồn",
+  "repo": "flutter/flutter",
+  "stars": 181015,
+  "license": "BSD-3-Clause",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "electron",
+   "flet"
+  ]
+ },
+ {
+  "key": 211,
+  "slug": "expo",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Expo: làm ứng dụng Android, iOS và web bằng React và JavaScript",
+  "repo": "expo/expo",
+  "stars": 53306,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "capacitor",
+   "flet"
+  ]
+ },
+ {
+  "key": 212,
+  "slug": "tauri",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Tauri: dựng ứng dụng máy tính và di động gọn nhẹ với giao diện web và nhân Rust",
+  "repo": "tauri-apps/tauri",
+  "stars": 112448,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "electron",
+   "playwright"
+  ]
+ },
+ {
+  "key": 213,
+  "slug": "electron",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Electron: viết ứng dụng máy tính bằng JavaScript, HTML và CSS, nền của VS Code",
+  "repo": "electron/electron",
+  "stars": 123730,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "flutter",
+   "tauri"
+  ]
+ },
+ {
+  "key": 214,
+  "slug": "capacitor",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Capacitor: đưa ứng dụng web có sẵn lên iOS và Android như ứng dụng native",
+  "repo": "ionic-team/capacitor",
+  "stars": 17023,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "expo"
+  ]
+ },
+ {
+  "key": 215,
+  "slug": "flet",
+  "group": "2026-11-03-ung-dung-di-dong-da-nen-tang",
+  "title": "Flet: dựng ứng dụng web, máy tính và di động hoàn toàn bằng Python",
+  "repo": "flet-dev/flet",
+  "stars": 17496,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "expo",
+   "flutter"
   ]
  }
 ]
