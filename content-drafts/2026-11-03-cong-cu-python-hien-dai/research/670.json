@@ -1,0 +1,43 @@
+{
+  "key": 670,
+  "repo": "Textualize/textual",
+  "repoId": "355959597",
+  "url": "https://github.com/Textualize/textual",
+  "stars": 37568,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-09T17:24:10Z",
+  "createdAt": "2021-04-08T15:24:47Z",
+  "defaultBranch": "main",
+  "description": "The lean application framework for Python.  Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser.",
+  "homepage": "https://textual.textualize.io/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Textualize/textual/main/README.md",
+    "sha256": "44580f1b4d6707cec4c2f563a378be1e73ec2a6489f7d9f28a2238cfa61ee113",
+    "bytes": 5979,
+    "sectionsRead": [
+      "Widgets",
+      "Installing",
+      "Demo",
+      "Dev Console",
+      "Command Palette"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu textual.textualize.io.",
+    "Chưa thử.",
+    "Chưa đánh giá chạy trên web."
+  ],
+  "runtimeValidated": false
+}

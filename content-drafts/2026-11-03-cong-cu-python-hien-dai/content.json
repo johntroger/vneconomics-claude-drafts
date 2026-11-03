@@ -1,0 +1,771 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-python-hien-dai",
+  "batch": 108,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 668,
+      "batch": 108,
+      "slug": "poetry",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Poetry: công cụ đóng gói và quản lý phụ thuộc cho Python, thay setup.py, requirements.txt, setup.cfg, MANIFEST.in và Pipfile bằng một tệp pyproject.toml, có nhóm phụ thuộc, tập lệnh và khóa phiên bản",
+        "excerpt": "Hiểu Poetry là công cụ đóng gói và quản lý phụ thuộc cho Python, giúp khai báo, quản lý và cài phụ thuộc của dự án sao cho đúng bộ gói ở mọi nơi; README nêu Poetry thay nhiều tệp cũ (setup.py, requirements.txt, setup.cfg, MANIFEST.in, Pipfile) bằng một tệp pyproject.toml, có nhóm phụ thuộc và tập lệnh.",
+        "content": "<p>README tả Poetry giúp khai báo, quản lý và cài phụ thuộc của dự án Python để có đúng bộ gói ở mọi nơi; Poetry thay setup.py, requirements.txt, setup.cfg, MANIFEST.in và Pipfile bằng một định dạng dự án đơn giản dựa trên pyproject.toml. README có ví dụ tệp cấu hình (hệ dựng, thông tin dự án, tên, phiên bản, giấy phép, yêu cầu phiên bản Python, tác giả, từ khóa, tập lệnh, phụ thuộc tùy chọn, giới hạn phiên bản Python khi khóa, phụ thuộc theo phiên bản, nhóm phụ thuộc chỉ cài khi yêu cầu); bài không chép tệp mẫu hay lệnh. README còn có phần cảm ơn JetBrains hỗ trợ giấy phép công cụ. README phần đã đọc không nêu giấy phép dự án; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dự án Python nào cũng dùng thư viện của người khác. Poetry ghi lại chính xác thư viện nào, phiên bản nào, để người khác hoặc máy khác dựng lại đúng môi trường.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích tệp pyproject.toml mẫu trong README từng phần; chưa tạo dự án. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python cơ bản, khái niệm môi trường ảo và phụ thuộc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Dự án nhỏ vài tệp có thể chỉ cần pip và môi trường ảo; bài chưa so sánh Poetry với uv, PDM hay Hatch. Nhóm phụ thuộc và khóa phiên bản cần hiểu trước khi dùng cho dự án chung.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dependency (phụ thuộc)</strong>: thư viện bên ngoài dự án cần dùng; README nêu.</li><li><strong>pyproject.toml</strong>: tệp cấu hình chuẩn của dự án Python; README nêu Poetry dựa trên đó.</li><li><strong>lock (khóa phiên bản)</strong>: ghi cố định phiên bản đã dùng; README nhắc giới hạn phiên bản khi khóa.</li><li><strong>dependency group (nhóm phụ thuộc)</strong>: nhóm gói dùng cho mục đích riêng như tài liệu; README nêu.</li><li><strong>packaging (đóng gói)</strong>: chuẩn bị dự án để chia sẻ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu python-poetry.org; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và tệp cấu hình mẫu.</li><li>Đọc tài liệu python-poetry.org.</li><li>Thử với dự án nhỏ không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình học Python và muốn quản lý thư viện cho dự án. Hãy đọc README của Poetry (https://github.com/python-poetry/poetry) và giải thích bằng tiếng Việt: Poetry thay thế những tệp nào, pyproject.toml là gì, và khi nào pip là đủ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 5,5 KB, bài chưa đọc tài liệu python-poetry.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>python-poetry</strong> có <strong>34.322 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/python-poetry/poetry/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/python-poetry/poetry\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 668. Chưa cài/chạy thử; không tạo validation. Snapshot sao 34322; repo_id 123303402; README SHA256 e073b37572ac444b70fc5481d8bfacf6ac0b7aaa90e3bbc68099fd3233b59230.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/python-poetry/poetry",
+          "repo_id": "123303402",
+          "source_path": "",
+          "source_revision": "README-SHA256:e073b37572ac444b70fc5481d8bfacf6ac0b7aaa90e3bbc68099fd3233b59230",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/python-poetry/poetry",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu python-poetry.org; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/python-poetry/poetry/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/python-poetry/poetry/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "python-poetry/poetry",
+        "stars": 34322,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/python-poetry/poetry/main/README.md",
+        "readmeSha256": "e073b37572ac444b70fc5481d8bfacf6ac0b7aaa90e3bbc68099fd3233b59230",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 669,
+      "batch": 108,
+      "slug": "black",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Black: trình định dạng mã Python 'không khoan nhượng', bạn từ bỏ việc chỉnh định dạng bằng tay để đổi lấy tốc độ, tính xác định và thoát khỏi lời nhắc của pycodestyle; tạo bản khác biệt nhỏ nhất, giấy phép MIT",
+        "excerpt": "Hiểu Black là trình định dạng mã Python không khoan nhượng: dùng nó nghĩa là bạn nhường quyền chỉnh định dạng nhỏ nhặt, đổi lại tốc độ, tính xác định và không còn bị nhắc về định dạng; mã đã qua Black trông giống nhau ở mọi dự án và các bản khác biệt khi xem lại mã nhỏ nhất có thể.",
+        "content": "<p>README tả Black là trình định dạng mã Python không khoan nhượng: dùng nó là đồng ý nhường quyền chỉnh định dạng nhỏ nhặt bằng tay, đổi lại tốc độ, tính xác định và thoát khỏi lời nhắc định dạng của pycodestyle, tiết kiệm thời gian và công sức cho việc quan trọng hơn. Mã đã qua Black trông như nhau ở mọi dự án, việc xem lại mã nhanh hơn nhờ khác biệt nhỏ nhất. README trỏ tới tài liệu ReadTheDocs, bài nói chuyện PyCon 2019, mục cài đặt và cách dùng (yêu cầu Python 3.11 trở lên, có thể cài thêm để định dạng sổ tay Jupyter hoặc dùng tệp thực thi đóng sẵn), phong cách mã Black, tính thực dụng, cấu hình, nơi được dùng, lời chứng thực, huy hiệu 'kiểu Black' và nhật ký thay đổi. Bài không chép lệnh. Phần License nêu MIT. Các lời chứng thực và danh sách nơi dùng là của chính dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi người viết mã có sở thích riêng về dấu cách và xuống dòng, gây tranh cãi vô ích. Black quyết định thay, cả nhóm cùng một kiểu, việc xem lại mã chỉ còn bàn nội dung.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích vì sao 'không khoan nhượng' lại giúp nhóm làm việc nhanh hơn; chưa chạy trên mã nào. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Chỉ cần Python cơ bản; khó ở chỗ chấp nhận phong cách cố định. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Black tự sửa tệp: dùng kiểm soát phiên bản và xem lại thay đổi trước khi lưu. Bạn có phong cách riêng bắt buộc theo quy định của nhóm thì Black có thể không hợp; bài chưa so sánh với Ruff format.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>code formatter (trình định dạng mã)</strong>: công cụ sắp xếp mã theo quy tắc cố định; README nêu.</li><li><strong>deterministic (xác định)</strong>: cùng đầu vào luôn cho cùng kết quả; README nêu.</li><li><strong>diff (khác biệt)</strong>: phần thay đổi giữa hai bản mã; README nêu Black giữ nhỏ nhất.</li><li><strong>pycodestyle</strong>: công cụ kiểm tra phong cách mã; README nhắc.</li><li><strong>Jupyter Notebook</strong>: sổ tay chạy mã; README nêu có thể định dạng khi cài thêm.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có hướng dẫn cài bằng pip hoặc tải tệp thực thi; bài không chép lệnh. Cần Python 3.11 trở lên để chạy. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Usage.</li><li>Đọc The Black code style.</li><li>Thử trên tệp mẫu nhỏ có sao lưu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết Python và hay tranh cãi về định dạng mã. Hãy đọc README của Black (https://github.com/psf/black) và giải thích bằng tiếng Việt: vì sao nói không khoan nhượng, Black sửa những gì, và vì sao phải xem lại thay đổi trước khi lưu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9,9 KB, bài chưa đọc tài liệu black.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>psf</strong> có <strong>42.103 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/psf/black/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/psf/black\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 669. Chưa cài/chạy thử; không tạo validation. Snapshot sao 42103; repo_id 125266328; README SHA256 c927c6843f8a93345f3ac6fe137b9163c4e4d4a8d544d2da0919d86ca420b567.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/psf/black",
+          "repo_id": "125266328",
+          "source_path": "",
+          "source_revision": "README-SHA256:c927c6843f8a93345f3ac6fe137b9163c4e4d4a8d544d2da0919d86ca420b567",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/psf/black",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có hướng dẫn cài bằng pip hoặc tải tệp thực thi; bài không chép lệnh. Cần Python 3.11 trở lên để chạy. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/psf/black/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/psf/black/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "psf/black",
+        "stars": 42103,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/psf/black/main/README.md",
+        "readmeSha256": "c927c6843f8a93345f3ac6fe137b9163c4e4d4a8d544d2da0919d86ca420b567",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 670,
+      "batch": 108,
+      "slug": "textual",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Textual: framework xây giao diện đa nền tảng bằng API Python đơn giản, chạy ứng dụng trong terminal hoặc trình duyệt web, kết hợp Python hiện đại với tinh hoa của web, có bộ thành phần, bảng lệnh và bảng điều khiển dev",
+        "excerpt": "Hiểu Textual là framework xây giao diện đa nền tảng bằng API Python đơn giản, chạy ứng dụng trong terminal hoặc trình duyệt web; README nêu API kết hợp Python hiện đại với điều tốt nhất của web, thành phần tách rời, bộ kiểm thử, bộ thành phần dựng sẵn, bảng lệnh và bảng điều khiển dev.",
+        "content": "<p>README tả Textual cho phép xây giao diện đa nền tảng bằng API Python đơn giản và chạy ứng dụng trong terminal hoặc trình duyệt web. API kết hợp Python hiện đại với điều tốt nhất của giới web để trải nghiệm phát triển gọn nhẹ; thành phần tách rời và khung kiểm thử nâng cao giúp bảo trì lâu dài. README có ví dụ ứng dụng đồng hồ hiển thị giờ hiện tại (bài không chép mã), mục Widgets, cài đặt, demo, bảng điều khiển dev (Dev Console), bảng lệnh (Command Palette) và phần Textual cho web. Các nhận định 'gọn nhẹ' là cách tự mô tả của dự án, bài chưa kiểm chứng. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bạn từng thấy ứng dụng chạy trong cửa sổ dòng lệnh với menu, nút bấm và bảng đẹp như giao diện đồ họa? Textual cho bạn dựng giao diện như vậy chỉ bằng Python.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem phần demo và Widgets để hình dung ứng dụng terminal có thể làm gì; chưa viết ứng dụng. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python vững, khái niệm giao diện và CSS cơ bản (Textual dùng kiểu CSS). Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Ứng dụng terminal không thay cho giao diện đồ họa với người dùng không quen dòng lệnh. Chạy ứng dụng trên trình duyệt web mở một dịch vụ ra mạng: cần xác thực.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>TUI (giao diện terminal)</strong>: giao diện dựng trong cửa sổ dòng lệnh; README nêu Textual chạy trong terminal.</li><li><strong>widget (thành phần giao diện)</strong>: nút, bảng, ô nhập dựng sẵn; README có mục Widgets.</li><li><strong>command palette (bảng lệnh)</strong>: hộp tìm và chạy lệnh nhanh; README nêu.</li><li><strong>dev console (bảng điều khiển dev)</strong>: công cụ gỡ lỗi khi phát triển; README nêu.</li><li><strong>async</strong>: mã chờ việc mà không chặn; bài chú thích biên tập vì Textual dùng nhiều.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installing; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Widgets.</li><li>Thử demo của Textual.</li><li>Đọc hướng dẫn trên textual.textualize.io.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết Python và muốn làm ứng dụng chạy trong terminal. Hãy đọc README của Textual (https://github.com/Textualize/textual) và giải thích bằng tiếng Việt: Textual làm gì, bảng lệnh và Dev Console là gì, và chạy ứng dụng trên web có rủi ro gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6 KB, bài chưa đọc tài liệu textual.textualize.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Textualize</strong> có <strong>37.568 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-09. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Textualize/textual/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Textualize/textual\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 670. Chưa cài/chạy thử; không tạo validation. Snapshot sao 37568; repo_id 355959597; README SHA256 44580f1b4d6707cec4c2f563a378be1e73ec2a6489f7d9f28a2238cfa61ee113.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Textualize/textual",
+          "repo_id": "355959597",
+          "source_path": "",
+          "source_revision": "README-SHA256:44580f1b4d6707cec4c2f563a378be1e73ec2a6489f7d9f28a2238cfa61ee113",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Textualize/textual",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installing; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Textualize/textual/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Textualize/textual/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Textualize/textual",
+        "stars": 37568,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Textualize/textual/main/README.md",
+        "readmeSha256": "44580f1b4d6707cec4c2f563a378be1e73ec2a6489f7d9f28a2238cfa61ee113",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 671,
+      "batch": 108,
+      "slug": "loguru",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Loguru: thư viện ghi log dễ chịu cho Python, dùng ngay không cần cấu hình dài, một hàm thay cho handler, formatter, filter; xoay vòng, lưu giữ, nén tệp log; README cảnh báo diagnose=True mặc định có thể làm lộ dữ liệu nhạy cảm",
+        "excerpt": "Hiểu Loguru là thư viện ghi log dễ chịu cho Python: dùng ngay không cần cấu hình dài, một hàm thay handler, formatter, filter, xoay vòng và nén tệp log, bắt ngoại lệ trong luồng, ghi log nhiều luồng và nhiều tiến trình an toàn; README cảnh báo diagnose=True là mặc định và có thể làm lộ dữ liệu nhạy cảm ở môi trường thật.",
+        "content": "<p>README tả Loguru nhằm đem lại trải nghiệm ghi log dễ chịu cho Python: ai cũng từng lười cấu hình logger rồi dùng print, mà log rất quan trọng để gỡ lỗi; Loguru thêm nhiều chức năng giải quyết điểm yếu của logger chuẩn. Tính năng nêu: dùng ngay không cần cấu hình thừa; không handler, formatter, filter, một hàm làm tất cả; ghi log vào tệp dễ với xoay vòng, lưu giữ, nén; định dạng chuỗi kiểu ngoặc nhọn; bắt ngoại lệ trong luồng hoặc luồng chính; log có màu; bất đồng bộ, an toàn đa luồng và đa tiến trình; ngoại lệ mô tả đầy đủ; log có cấu trúc khi cần; đánh giá lười hàm tốn kém; mức tùy chỉnh; xử lý ngày giờ; phù hợp cho cả tập lệnh và thư viện. Cảnh báo quan trọng của README: tùy chọn diagnose mặc định bật và có thể làm lộ dữ liệu nhạy cảm ở môi trường thật; bài khuyên tắt nó. README có lệnh cài bằng pip, bài không chép lệnh. README có huy hiệu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi chương trình lỗi, bạn cần biết nó đã làm gì trước đó. Log ghi lại quá trình đó. Loguru làm cho việc ghi log đủ dễ để bạn không phải dùng print rồi xóa đi.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích khác biệt giữa log và print, và vì sao tùy chọn diagnose có thể làm lộ dữ liệu; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> Chỉ cần Python cơ bản; học mức dùng nhanh rất dễ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Log có thể chứa dữ liệu nhạy cảm như mật khẩu, mã thông báo hay thông tin cá nhân: README cảnh báo diagnose mặc định bật có thể làm lộ dữ liệu ở môi trường thật, hãy tắt nó và lọc dữ liệu nhạy cảm; không đưa tệp log lên kho mã công khai.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>logging (ghi log)</strong>: ghi lại diễn biến của chương trình; README nêu.</li><li><strong>rotation/retention (xoay vòng/lưu giữ)</strong>: cắt tệp log theo kích thước hoặc thời gian và giữ bao lâu; README nêu.</li><li><strong>handler/formatter/filter</strong>: ba khái niệm của logger chuẩn; README nêu Loguru gom thành một hàm.</li><li><strong>structured logging (log có cấu trúc)</strong>: log mang thêm dữ liệu dạng khóa và giá trị; README nêu.</li><li><strong>diagnose</strong>: tùy chọn hiển thị giá trị biến trong lỗi; README cảnh báo có thể lộ dữ liệu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Installation bằng pip; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README có huy hiệu giấy phép.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Features.</li><li>Đọc đoạn cảnh báo diagnose.</li><li>Thử ghi log vào tệp với dữ liệu giả.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết Python và hay dùng print để gỡ lỗi. Hãy đọc README của Loguru (https://github.com/Delgan/loguru) và giải thích bằng tiếng Việt: Loguru khác logger chuẩn ở đâu, xoay vòng log là gì, và vì sao README cảnh báo tùy chọn diagnose mặc định có thể làm lộ dữ liệu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 19,8 KB, bài đọc phần đầu, tính năng và cảnh báo, chưa đọc tài liệu loguru.readthedocs.io. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>Delgan</strong> có <strong>24.156 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-25. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/Delgan/loguru/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/Delgan/loguru\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 671. Chưa cài/chạy thử; không tạo validation. Snapshot sao 24156; repo_id 100401612; README SHA256 284609d9e5cb8c08293abb14b15358c831ecd11d7effff6118c08fc6286eee9a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/Delgan/loguru",
+          "repo_id": "100401612",
+          "source_path": "",
+          "source_revision": "README-SHA256:284609d9e5cb8c08293abb14b15358c831ecd11d7effff6118c08fc6286eee9a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Delgan/loguru",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Installation bằng pip; bài không chép lệnh. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README có huy hiệu giấy phép.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/Delgan/loguru/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/Delgan/loguru/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "Delgan/loguru",
+        "stars": 24156,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/Delgan/loguru/master/README.md",
+        "readmeSha256": "284609d9e5cb8c08293abb14b15358c831ecd11d7effff6118c08fc6286eee9a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 672,
+      "batch": 108,
+      "slug": "attrs",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "attrs: gói Python mang lại niềm vui viết lớp bằng cách làm thay các phương thức đặc biệt, giúp viết phần mềm ngắn gọn và đúng mà không làm chậm mã; README có ví dụ bộ trang trí define và phần dành cho doanh nghiệp",
+        "excerpt": "Hiểu attrs là gói Python giúp viết lớp dễ hơn bằng cách làm thay phần cài đặt các phương thức đặc biệt (dunder); mục tiêu chính theo README là viết phần mềm ngắn gọn và đúng mà không làm chậm mã, có ví dụ bộ trang trí define, phần so sánh với dataclass và mục dành cho doanh nghiệp.",
+        "content": "<p>README tả attrs là gói Python đem lại niềm vui viết lớp, bằng cách thay bạn cài đặt các giao thức đối tượng (phương thức dunder). Mục tiêu chính: giúp viết phần mềm ngắn gọn và đúng mà không làm chậm mã. README nói NASA tin dùng cho sứ mệnh sao Hỏa từ năm 2020 (tuyên bố của dự án, bài chưa kiểm chứng), có phần nhà tài trợ, ví dụ dùng bộ trang trí define để khai báo thuộc tính một cách khai báo (bài không chép mã), mục dành cho người ghét chú thích kiểu, mục so sánh với data classes, thông tin dự án và mục attrs cho doanh nghiệp (dịch vụ trả phí qua Tidelift; bài không đánh giá). README phần đã đọc không nêu giấy phép; bài lấy theo GitHub (MIT).</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Viết lớp chứa dữ liệu trong Python thường phải viết lặp đi lặp lại phương thức khởi tạo, so sánh, in ra. attrs cho bạn khai báo thuộc tính một lần và tự sinh các phương thức đó.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI so sánh một lớp viết tay với lớp dùng attrs hoặc dataclass; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python và khái niệm lớp; dùng cơ bản khá dễ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Python đã có dataclass sẵn: bạn chỉ cần lớp dữ liệu đơn giản thì dataclass có thể đủ; README có mục so sánh nhưng bài chưa đánh giá. Tuyên bố 'tin dùng bởi NASA' bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dunder method (phương thức đặc biệt)</strong>: phương thức có hai gạch dưới như __init__; README nêu.</li><li><strong>class decorator (bộ trang trí lớp)</strong>: cú pháp bọc quanh lớp; README nêu define.</li><li><strong>declarative (khai báo)</strong>: mô tả cái muốn có thay vì cách làm; README nêu.</li><li><strong>dataclass</strong>: lớp dữ liệu có sẵn của Python; README có mục so sánh.</li><li><strong>type annotation (chú thích kiểu)</strong>: ghi kiểu dữ liệu trong mã; README có mục cho người ghét chú thích kiểu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu attrs.org; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Example.</li><li>Đọc mục Data Classes.</li><li>Thử viết một lớp nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình viết Python và hay viết lặp phương thức cho lớp. Hãy đọc README của attrs (https://github.com/python-attrs/attrs) và giải thích bằng tiếng Việt: attrs giải quyết vấn đề gì, khác dataclass ở đâu theo README, và vì sao tuyên bố về NASA chưa được kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,4 KB, bài chưa đọc tài liệu attrs.org. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>python-attrs</strong> có <strong>5.862 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/python-attrs/attrs/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/python-attrs/attrs\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 672. Chưa cài/chạy thử; không tạo validation. Snapshot sao 5862; repo_id 29918975; README SHA256 0cf0b6a17186588d0dfabb1fd6cc3544b1934a378788017315d53af6d55d824a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/python-attrs/attrs",
+          "repo_id": "29918975",
+          "source_path": "",
+          "source_revision": "README-SHA256:0cf0b6a17186588d0dfabb1fd6cc3544b1934a378788017315d53af6d55d824a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/python-attrs/attrs",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu attrs.org; bài không chép lệnh hay mã. Cần Python. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/python-attrs/attrs/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/python-attrs/attrs/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "python-attrs/attrs",
+        "stars": 5862,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/python-attrs/attrs/main/README.md",
+        "readmeSha256": "0cf0b6a17186588d0dfabb1fd6cc3544b1934a378788017315d53af6d55d824a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 673,
+      "batch": 108,
+      "slug": "pdm",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "PDM: trình quản lý gói và phụ thuộc Python hiện đại hỗ trợ các chuẩn PEP mới nhất, bộ giải phụ thuộc nhanh, hệ plugin, tập lệnh người dùng, cài Python bằng python-build-standalone; README có so sánh với Pipenv, Poetry và Hatch",
+        "excerpt": "Hiểu PDM là trình quản lý gói và phụ thuộc Python hiện đại hỗ trợ các chuẩn PEP mới nhất, có bộ giải phụ thuộc nhanh, hệ plugin, tập lệnh người dùng và cài đặt bản Python; README nói PDM ban đầu viết cho nhu cầu cá nhân và khuyên nếu đã hợp Pipenv hoặc Poetry thì cứ giữ; có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README tả PDM là trình quản lý gói và phụ thuộc Python hiện đại hỗ trợ các chuẩn PEP mới nhất. PDM muốn là thế hệ kế tiếp của trình quản lý gói, ban đầu viết cho nhu cầu cá nhân; README nói nếu bạn đang hợp Pipenv hoặc Poetry và không muốn thêm công cụ khác thì cứ giữ, còn nếu thiếu điều gì thì có thể tìm thấy ở PDM. Điểm nổi bật: bộ giải phụ thuộc đơn giản và nhanh cho phân phối nhị phân lớn, hệ dựng PEP 517, siêu dữ liệu dự án PEP 621, hệ plugin mạnh, tập lệnh người dùng đa năng, cài Python bằng python-build-standalone của astral-sh, bộ nhớ đệm cài đặt tập trung tùy chọn giống pnpm. README có mục so sánh với Pipenv, Poetry, Hatch và phần cài đặt trong đó cách khuyến nghị là tải tập lệnh cài từ mạng rồi chạy; bài không chép lệnh và khuyên đọc tập lệnh trước. Phần License nêu MIT.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu Poetry là một cách quản lý thư viện cho dự án Python, PDM là một cách khác với bộ giải phiên bản và nhiều tính năng theo chuẩn mới. README tự so sánh với các công cụ khác để bạn chọn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần so sánh với Poetry và Hatch để hiểu khác biệt (lưu ý đây là so sánh của chính dự án); chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần Python, môi trường ảo và phụ thuộc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Phần so sánh với các công cụ khác là của chính dự án nên có thể thiên lệch; bài chưa kiểm chứng. Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài và quản lý thư viện; README nêu.</li><li><strong>PEP</strong>: đề xuất cải tiến Python, chuẩn kỹ thuật; README nêu PEP 517, PEP 621.</li><li><strong>resolver (bộ giải phụ thuộc)</strong>: phần tìm bộ phiên bản gói tương thích; README nêu.</li><li><strong>plugin</strong>: phần mở rộng; README nêu hệ plugin.</li><li><strong>python-build-standalone</strong>: bản Python dựng sẵn độc lập; README nêu PDM dùng để cài Python.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu Python 3.10 trở lên hoặc tải tệp nhị phân; cách khuyến nghị dùng tập lệnh tải từ mạng, bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is PDM? và Highlights.</li><li>Đọc mục so sánh với công cụ khác.</li><li>Chỉ thử với dự án nhỏ không quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình đang chọn công cụ quản lý gói Python. Hãy đọc README của PDM (https://github.com/pdm-project/pdm) và giải thích bằng tiếng Việt: PDM khác Poetry ở đâu theo README, vì sao phần so sánh là của chính dự án nên cần dè chừng, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 7,3 KB, bài chưa đọc tài liệu pdm-project.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pdm-project</strong> có <strong>8.659 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pdm-project/pdm/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pdm-project/pdm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 673. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8659; repo_id 230369286; README SHA256 c1dba09fbd9ab8219e43374e72d2caa0d90a7316fd18127a98a7968c28b56a49.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pdm-project/pdm",
+          "repo_id": "230369286",
+          "source_path": "",
+          "source_revision": "README-SHA256:c1dba09fbd9ab8219e43374e72d2caa0d90a7316fd18127a98a7968c28b56a49",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pdm-project/pdm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu Python 3.10 trở lên hoặc tải tệp nhị phân; cách khuyến nghị dùng tập lệnh tải từ mạng, bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pdm-project/pdm/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pdm-project/pdm/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pdm-project/pdm",
+        "stars": 8659,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pdm-project/pdm/main/README.md",
+        "readmeSha256": "c1dba09fbd9ab8219e43374e72d2caa0d90a7316fd18127a98a7968c28b56a49",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 674,
+      "batch": 108,
+      "slug": "pixi",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Pixi: trình quản lý gói và công cụ quy trình đa nền tảng đa ngôn ngữ xây trên hệ sinh thái conda, có tệp khóa luôn cập nhật, giao diện dòng lệnh kiểu Cargo, viết bằng Rust; README có lệnh cài tải tập lệnh từ mạng",
+        "excerpt": "Hiểu Pixi là trình quản lý gói và công cụ quy trình làm việc đa nền tảng, đa ngôn ngữ xây trên hệ sinh thái conda, hỗ trợ Python, C++, R, luôn có tệp khóa cập nhật, giao diện dòng lệnh kiểu Cargo, cài công cụ theo từng dự án hoặc toàn hệ thống, viết bằng Rust; README có lệnh cài tải tập lệnh từ mạng, bài không chép.",
+        "content": "<p>README tả Pixi là trình quản lý gói và công cụ quy trình làm việc đa nền tảng, đa ngôn ngữ xây trên nền hệ sinh thái conda, đem lại trải nghiệm tốt cho nhà phát triển. Điểm nổi bật: hỗ trợ nhiều ngôn ngữ (Python, C++, R) bằng gói conda, tương thích Linux, Windows, macOS (cả Apple Silicon), luôn có tệp khóa cập nhật, giao diện dòng lệnh gọn kiểu Cargo, cài công cụ theo từng dự án hoặc toàn hệ thống, viết hoàn toàn bằng Rust trên thư viện rattler. README có mục bắt đầu (cài đặt, ví dụ, tài liệu, đóng góp, các dự án dùng Pixi, GitHub Action), mục Status, và phần cài đặt trong đó script cài tải từ mạng tự động tải, giải nén và đặt Pixi vào chỗ; bài không chép lệnh và khuyên đọc tập lệnh trước. README có huy hiệu giấy phép BSD-3-Clause.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Dự án khoa học dữ liệu thường cần Python, vài thư viện C và công cụ khác cùng lúc. Pixi dựng toàn bộ môi trường đó cho từng dự án và ghi lại chính xác phiên bản để người khác dựng lại.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc phần Highlights và tài liệu pixi.sh để hiểu khác biệt giữa conda và pip; chưa cài. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án Python nhờ AI viết mã, muốn hiểu công cụ giữ dự án gọn và dễ bảo trì.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần khái niệm môi trường, phụ thuộc và dòng lệnh; quen conda sẽ dễ hơn. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Lệnh cài tải tập lệnh từ mạng chạy trên máy bạn: chỉ chạy sau khi đã đọc tập lệnh hoặc chọn cách cài khác trong tài liệu. Gói conda từ kênh bên thứ ba cần kiểm tra nguồn. Bài chưa so sánh Pixi với conda, mamba hay uv.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài thư viện và phần mềm; README nêu.</li><li><strong>conda</strong>: hệ sinh thái gói đa ngôn ngữ; README nêu Pixi xây trên đó.</li><li><strong>lock file (tệp khóa)</strong>: ghi cố định phiên bản đã dùng; README nêu luôn cập nhật.</li><li><strong>Rust</strong>: ngôn ngữ lập trình hệ thống; README nêu Pixi viết bằng Rust.</li><li><strong>rattler</strong>: thư viện conda viết bằng Rust; README nêu Pixi xây trên đó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần Installation cho macOS, Linux, Windows dùng tập lệnh tải từ mạng và cách khác như brew; bài không chép lệnh. Miễn phí theo BSD-3-Clause (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Overview và Highlights.</li><li>Đọc tài liệu pixi.sh.</li><li>Chọn cách cài sau khi đọc tập lệnh hoặc dùng tùy chọn khác.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm khoa học dữ liệu và cần môi trường nhiều ngôn ngữ. Hãy đọc README của Pixi (https://github.com/prefix-dev/pixi) và giải thích bằng tiếng Việt: Pixi khác pip ở đâu, tệp khóa là gì, và vì sao không nên chạy lệnh cài tải tập lệnh từ mạng khi chưa đọc. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13,7 KB, bài chưa đọc tài liệu pixi.sh. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Công cụ quản lý gói, môi trường và định dạng mã chạy lệnh trên máy bạn và tải gói từ Internet: chỉ cài gói từ nguồn tin cậy, đọc kỹ tập lệnh cài đặt tải từ mạng trước khi chạy, dùng môi trường ảo cho từng dự án, không dán khóa hay mật khẩu vào tệp cấu hình đưa lên kho mã, và kiểm tra thay đổi do công cụ tự sửa mã trước khi lưu.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>prefix-dev</strong> có <strong>7.942 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu BSD-3-Clause; GitHub nhận diện BSD-3-Clause. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/prefix-dev/pixi/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/prefix-dev/pixi\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 674. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7942; repo_id 633817517; README SHA256 6041af483cedd39f9ad98614bf03bc9a87ee441494845425937a98478e01663c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/prefix-dev/pixi",
+          "repo_id": "633817517",
+          "source_path": "",
+          "source_revision": "README-SHA256:6041af483cedd39f9ad98614bf03bc9a87ee441494845425937a98478e01663c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "bsd-3-clause",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "spdx_id": "BSD-3-Clause",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "node_id": "MDc6TGljZW5zZTU="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prefix-dev/pixi",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần Installation cho macOS, Linux, Windows dùng tập lệnh tải từ mạng và cách khác như brew; bài không chép lệnh. Miễn phí theo BSD-3-Clause (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/prefix-dev/pixi/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/prefix-dev/pixi/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "prefix-dev/pixi",
+        "stars": 7942,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/prefix-dev/pixi/main/README.md",
+        "readmeSha256": "6041af483cedd39f9ad98614bf03bc9a87ee441494845425937a98478e01663c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

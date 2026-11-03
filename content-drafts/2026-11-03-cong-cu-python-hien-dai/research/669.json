@@ -1,0 +1,42 @@
+{
+  "key": 669,
+  "repo": "psf/black",
+  "repoId": "125266328",
+  "url": "https://github.com/psf/black",
+  "stars": 42103,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:45:41Z",
+  "createdAt": "2018-03-14T19:54:45Z",
+  "defaultBranch": "main",
+  "description": "The uncompromising Python code formatter",
+  "homepage": "https://black.readthedocs.io/en/stable/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/psf/black/main/README.md",
+    "sha256": "c927c6843f8a93345f3ac6fe137b9163c4e4d4a8d544d2da0919d86ca420b567",
+    "bytes": 9879,
+    "sectionsRead": [
+      "Installation and usage",
+      "The Black code style",
+      "Configuration",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu black.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa so sánh với Ruff format."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,39 @@
+{
+  "key": 668,
+  "repo": "python-poetry/poetry",
+  "repoId": "123303402",
+  "url": "https://github.com/python-poetry/poetry",
+  "stars": 34322,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T23:01:17Z",
+  "createdAt": "2018-02-28T15:23:47Z",
+  "defaultBranch": "main",
+  "description": "Python packaging and dependency management made easy",
+  "homepage": "https://python-poetry.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/python-poetry/poetry/main/README.md",
+    "sha256": "e073b37572ac444b70fc5481d8bfacf6ac0b7aaa90e3bbc68099fd3233b59230",
+    "bytes": 5464,
+    "sectionsRead": [
+      "Poetry: Python packaging and dependency management made easy"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu python-poetry.org.",
+    "Chưa thử.",
+    "Chưa so sánh với uv, PDM, Hatch."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,41 @@
+{
+  "key": 671,
+  "repo": "Delgan/loguru",
+  "repoId": "100401612",
+  "url": "https://github.com/Delgan/loguru",
+  "stars": 24156,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-25T19:46:38Z",
+  "createdAt": "2017-08-15T17:22:32Z",
+  "defaultBranch": "master",
+  "description": "Python logging made (stupidly) simple",
+  "homepage": "https://loguru.readthedocs.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/Delgan/loguru/master/README.md",
+    "sha256": "284609d9e5cb8c08293abb14b15358c831ecd11d7effff6118c08fc6286eee9a",
+    "bytes": 19825,
+    "sectionsRead": [
+      "Installation",
+      "Features",
+      "Take the tour"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu loguru.readthedocs.io.",
+    "Chưa thử.",
+    "Chưa so sánh với thư viện logging chuẩn và structlog."
+  ],
+  "runtimeValidated": false
+}

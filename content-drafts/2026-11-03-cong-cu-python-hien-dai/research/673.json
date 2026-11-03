@@ -1,0 +1,43 @@
+{
+  "key": 673,
+  "repo": "pdm-project/pdm",
+  "repoId": "230369286",
+  "url": "https://github.com/pdm-project/pdm",
+  "stars": 8659,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T07:12:32Z",
+  "createdAt": "2019-12-27T03:50:57Z",
+  "defaultBranch": "main",
+  "description": "A modern Python package and dependency manager supporting the latest PEP standards",
+  "homepage": "https://pdm-project.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/pdm-project/pdm/main/README.md",
+    "sha256": "c1dba09fbd9ab8219e43374e72d2caa0d90a7316fd18127a98a7968c28b56a49",
+    "bytes": 7332,
+    "sectionsRead": [
+      "What is PDM?",
+      "Highlights of features",
+      "Comparisons to other alternatives",
+      "Installation",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu pdm-project.org.",
+    "Chưa thử.",
+    "Phần so sánh là của dự án, chưa kiểm chứng."
+  ],
+  "runtimeValidated": false
+}

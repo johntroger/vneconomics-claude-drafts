@@ -11543,5 +11543,171 @@
   "related": [
    "delta-lake"
   ]
+ },
+ {
+  "key": 668,
+  "slug": "poetry",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "Poetry: công cụ đóng gói và quản lý phụ thuộc cho Python, thay setup.py, requirements.txt, setup.cfg, MANIFEST.in và Pipfile bằng một tệp pyproject.toml, có nhóm phụ thuộc, tập lệnh và khóa phiên bản",
+  "repo": "python-poetry/poetry",
+  "stars": 34322,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "attrs",
+   "pdm"
+  ]
+ },
+ {
+  "key": 669,
+  "slug": "black",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "Black: trình định dạng mã Python 'không khoan nhượng', bạn từ bỏ việc chỉnh định dạng bằng tay để đổi lấy tốc độ, tính xác định và thoát khỏi lời nhắc của pycodestyle; tạo bản khác biệt nhỏ nhất, giấy phép MIT",
+  "repo": "psf/black",
+  "stars": 42103,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "loguru"
+  ]
+ },
+ {
+  "key": 670,
+  "slug": "textual",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "Textual: framework xây giao diện đa nền tảng bằng API Python đơn giản, chạy ứng dụng trong terminal hoặc trình duyệt web, kết hợp Python hiện đại với tinh hoa của web, có bộ thành phần, bảng lệnh và bảng điều khiển dev",
+  "repo": "Textualize/textual",
+  "stars": 37568,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-09",
+  "related": [
+   "pixi"
+  ]
+ },
+ {
+  "key": 671,
+  "slug": "loguru",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "Loguru: thư viện ghi log dễ chịu cho Python, dùng ngay không cần cấu hình dài, một hàm thay cho handler, formatter, filter; xoay vòng, lưu giữ, nén tệp log; README cảnh báo diagnose=True mặc định có thể làm lộ dữ liệu nhạy cảm",
+  "repo": "Delgan/loguru",
+  "stars": 24156,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-25",
+  "related": [
+   "attrs",
+   "black"
+  ]
+ },
+ {
+  "key": 672,
+  "slug": "attrs",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "attrs: gói Python mang lại niềm vui viết lớp bằng cách làm thay các phương thức đặc biệt, giúp viết phần mềm ngắn gọn và đúng mà không làm chậm mã; README có ví dụ bộ trang trí define và phần dành cho doanh nghiệp",
+  "repo": "python-attrs/attrs",
+  "stars": 5862,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "loguru",
+   "poetry"
+  ]
+ },
+ {
+  "key": 673,
+  "slug": "pdm",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "PDM: trình quản lý gói và phụ thuộc Python hiện đại hỗ trợ các chuẩn PEP mới nhất, bộ giải phụ thuộc nhanh, hệ plugin, tập lệnh người dùng, cài Python bằng python-build-standalone; README có so sánh với Pipenv, Poetry và Hatch",
+  "repo": "pdm-project/pdm",
+  "stars": 8659,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "pixi",
+   "poetry"
+  ]
+ },
+ {
+  "key": 674,
+  "slug": "pixi",
+  "group": "2026-11-03-cong-cu-python-hien-dai",
+  "title": "Pixi: trình quản lý gói và công cụ quy trình đa nền tảng đa ngôn ngữ xây trên hệ sinh thái conda, có tệp khóa luôn cập nhật, giao diện dòng lệnh kiểu Cargo, viết bằng Rust; README có lệnh cài tải tập lệnh từ mạng",
+  "repo": "prefix-dev/pixi",
+  "stars": 7942,
+  "license": {
+   "key": "bsd-3-clause",
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "spdx_id": "BSD-3-Clause",
+   "url": "https://api.github.com/licenses/bsd-3-clause",
+   "node_id": "MDc6TGljZW5zZTU="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "pdm",
+   "textual"
+  ]
  }
 ]
