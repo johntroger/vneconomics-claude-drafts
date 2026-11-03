@@ -1,0 +1,43 @@
+{
+  "key": 619,
+  "repo": "dimforge/rapier",
+  "repoId": "290312103",
+  "url": "https://github.com/dimforge/rapier",
+  "stars": 6020,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-01T21:48:29Z",
+  "createdAt": "2020-08-25T20:05:14Z",
+  "defaultBranch": "master",
+  "description": "2D and 3D physics engines focused on performance.",
+  "homepage": "https://rapier.rs",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/dimforge/rapier/master/README.md",
+    "sha256": "12bf0a2d20fdf7c43a0f999d9f6aaa569f616c1bcba624fd289cd29792291e81",
+    "bytes": 6545,
+    "sectionsRead": [
+      "What is Rapier?",
+      "Getting started",
+      "Examples",
+      "Performance",
+      "AI coding disclaimer and policy"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc hướng dẫn rapier.rs.",
+    "Chưa thử.",
+    "Chưa so sánh với Matter.js."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,27 @@
+# Nhóm "Đồ họa 3D và vật lý trên web" — bản nháp 03/11/2026
+
+8 bài, key 616–623, `batch: 101`. Không trùng repo với các đợt trước. **Bản nháp, chưa import, chưa xuất bản.**
+
+| Key | Bài | Repo | License (GitHub) | Sao (2026-11-03) | Commit gần nhất |
+|---|---|---|---|---:|---|
+| 616 | react-three-fiber: bộ kết xuất React cho three.js, dựng cảnh 3D theo kiểu khai báo bằng các thành phần tái sử dụng phản ứng theo trạng thái; README nêu phải ghép đúng phiên bản React | [pmndrs/react-three-fiber](https://github.com/pmndrs/react-three-fiber) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 33455 | 2026-10-21 |
+| 617 | drei: bộ sưu tập ngày càng lớn các tiện ích và thành phần dựng sẵn cho react-three-fiber (camera, điều khiển, gizmo...), dùng three-stdlib; tài liệu đã chuyển sang trang riêng | [pmndrs/drei](https://github.com/pmndrs/drei) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 10116 | 2026-10-21 |
+| 618 | Matter.js: công cụ vật lý vật rắn 2D bằng JavaScript cho web, có vật thể ghép, đa giác lồi và lõm, va chạm đàn hồi, ví dụ, bộ phụ trợ và giấy phép MIT | [liabru/matter-js](https://github.com/liabru/matter-js) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18592 | 2026-09-30 |
+| 619 | Rapier: bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và người máy, có liên kết cho C, Python, JavaScript và plugin Bevy; README có mục chính sách dùng AI viết mã | [dimforge/rapier](https://github.com/dimforge/rapier) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6020 | 2026-11-01 |
+| 620 | model-viewer: kho chính của thành phần web <model-viewer> để hiển thị mô hình 3D và các dự án liên quan (hiệu ứng, trang tài liệu, công cụ đo độ trung thực kết xuất, tài sản dùng chung, trình soạn thảo) | [google/model-viewer](https://github.com/google/model-viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 8304 | 2026-11-02 |
+| 621 | melonJS: động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, kết xuất WebGPU, WebGL 2 hoặc Canvas2D, có vật lý, bản đồ ô, âm thanh, giấy phép MIT | [melonjs/melonJS](https://github.com/melonjs/melonJS) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 6435 | 2026-11-02 |
+| 622 | three-mesh-bvh: cài đặt cấu trúc cây bao thể tích (BVH) để tăng tốc bắn tia và truy vấn không gian trên lưới three.js, tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung mỗi giây | [gkjohnson/three-mesh-bvh](https://github.com/gkjohnson/three-mesh-bvh) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3550 | 2026-11-03 |
+| 623 | glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường | [KhronosGroup/glTF-Sample-Viewer](https://github.com/KhronosGroup/glTF-Sample-Viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 1484 | 2026-10-28 |
+
+## Repo đã xem nhưng không đưa vào nhóm này
+
+- **pmndrs/react-three-rapier**: README chỉ khoảng 37 byte (con trỏ); loại. **ocornut/imgui**: không tìm thấy README ở tên tệp chuẩn; chưa đưa vào. **google/model-viewer** được đưa vào nhưng README gốc chủ yếu hướng dẫn phát triển (đã ghi trong bài).
+- **love2d/love**, **defold/defold**, **o3de/o3de**, **cocos/cocos-engine**, **KhronosGroup/KTX-Software**, **mozilla/mozjpeg**: GitHub không trả giấy phép SPDX rõ (NOASSERTION); loại. **needle-tools/needle-engine-support**, **GodotSteam/GodotSteam**: giấy phép None, hoặc đã lưu trữ; loại. **aframevr/aframe**: commit gần nhất 2026-07-13, quá 60 ngày; loại. **phaserjs/phaser**: commit gần nhất 2026-08-21, quá 60 ngày; loại.
+- **godotengine/godot**, **bevyengine/bevy**, **mrdoob/three.js**, **pixijs/pixijs**, **raysan5/raylib**, **babylonjs/Babylon.js**, **excaliburjs/Excalibur**, **libgdx/libgdx**, **playcanvas/engine**, **kaplayjs/kaplay**, **pmndrs/zustand**: đã có trong catalog.
+
+## Điều chưa biết
+
+- Chưa cài hay chạy công cụ nào; độ khó là đánh giá biên tập. Nhóm dùng nhãn 'Thiết kế và hình ảnh', nhãn gần nhất trong 9 nhãn có sẵn.
+- Matter.js (MIT), melonJS (MIT), Rapier (huy hiệu Apache 2.0) nêu giấy phép trong README. react-three-fiber, drei, model-viewer, three-mesh-bvh, glTF Sample Viewer: README phần đã đọc không nêu giấy phép, lấy theo GitHub (MIT, MIT, Apache-2.0, MIT, Apache-2.0).
+- Tuyên bố của tác giả, bài không kiểm chứng: react-three-fiber (không giới hạn, không chậm hơn three.js), three-mesh-bvh (500 tia ở 60 khung hình), melonJS (trọn gói, không phụ thuộc). README Rapier có chính sách dùng AI viết mã; bài chỉ nêu lại, không đánh giá. README drei phần lớn là liên kết neo cũ, nội dung thật ở trang tài liệu; README gốc model-viewer chủ yếu hướng dẫn phát triển. README dài (melonJS khoảng 34 KB, drei khoảng 28 KB), bài đọc phần đầu và các mục chính.
+

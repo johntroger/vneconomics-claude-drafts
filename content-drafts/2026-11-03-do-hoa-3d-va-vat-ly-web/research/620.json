@@ -1,0 +1,41 @@
+{
+  "key": 620,
+  "repo": "google/model-viewer",
+  "repoId": "153651476",
+  "url": "https://github.com/google/model-viewer",
+  "stars": 8304,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T21:18:51Z",
+  "createdAt": "2018-10-18T16:05:16Z",
+  "defaultBranch": "master",
+  "description": "Easily display interactive 3D models on the web and in AR! ",
+  "homepage": "https://modelviewer.dev",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/google/model-viewer/master/README.md",
+    "sha256": "a2f5bfbad143316da5eeb5946105c8e0b17ccb7b0980e5149b499f65935e2276",
+    "bytes": 6009,
+    "sectionsRead": [
+      "Development",
+      "Windows 10/11 Setup",
+      "Running Tests"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc README thư mục model-viewer.",
+    "Chưa thử.",
+    "Chưa đo hiệu năng nhúng mô hình."
+  ],
+  "runtimeValidated": false
+}

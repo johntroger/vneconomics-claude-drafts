@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-do-hoa-3d",
+  "batch": 101,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 616,
+      "batch": 101,
+      "slug": "react-three-fiber",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "react-three-fiber: bộ kết xuất React cho three.js, dựng cảnh 3D theo kiểu khai báo bằng các thành phần tái sử dụng phản ứng theo trạng thái; README nêu phải ghép đúng phiên bản React",
+        "excerpt": "Hiểu react-three-fiber là bộ kết xuất (renderer) React cho three.js, cho phép dựng cảnh 3D theo kiểu khai báo bằng thành phần React; README tuyên bố không có giới hạn và không chậm hơn three.js thuần, nhưng cảnh báo phải ghép đúng phiên bản React, và yêu cầu bạn biết cả React lẫn three.js trước.",
+        "content": "<p>README tả react-three-fiber là bộ kết xuất React cho three.js: dựng cảnh theo kiểu khai báo bằng các thành phần tái sử dụng, khép kín, phản ứng theo trạng thái, dễ tương tác và dùng được hệ sinh thái React. README có cảnh báo: đây là bộ kết xuất React nên phải ghép với đúng phiên bản chính của React (phiên bản 8 ghép với React 18, phiên bản 9 ghép với React 19). Phần hỏi đáp tuyên bố không có giới hạn (mọi thứ chạy được trong three.js đều chạy ở đây), không chậm hơn three.js thuần vì thành phần kết xuất ngoài React, và theo kịp cập nhật của three.js vì chỉ biểu diễn three.js bằng JSX; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README có ví dụ hộp quay đổi màu khi trỏ chuột, hướng dẫn dùng với React Native và Expo, tài liệu tại docs.pmnd.rs, các bước đầu tiên (cần biết cả React lẫn three.js), hệ sinh thái các gói liên quan và danh sách nơi dùng. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>three.js vẽ 3D trên web nhưng viết bằng lệnh rất dài. react-three-fiber cho bạn mô tả cảnh bằng thẻ giống HTML, như một hộp, một ánh sáng, một camera, và React lo cập nhật khi dữ liệu đổi.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: nhờ AI giải thích ví dụ hộp quay trong README từng dòng và vì sao phải khớp phiên bản React; chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> README nói cần biết cả React và three.js trước; người mới học cả hai cùng lúc dễ rối. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa biết React hoặc three.js thì chưa nên bắt đầu ở đây, README khuyên làm quen three.js trước. Ghép sai phiên bản React sẽ lỗi. Các tuyên bố 'không giới hạn' và 'không chậm hơn' bài chưa kiểm chứng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>renderer (bộ kết xuất)</strong>: phần vẽ giao diện ra màn hình; README nêu đây là bộ kết xuất React cho three.js.</li><li><strong>declarative (khai báo)</strong>: mô tả điều muốn có thay vì từng bước làm; README nêu.</li><li><strong>JSX</strong>: cú pháp viết thẻ trong mã JavaScript; README nêu mesh biến thành đối tượng three.js.</li><li><strong>three.js</strong>: thư viện 3D phổ biến trên web; README nêu.</li><li><strong>Expo/React Native</strong>: công cụ làm ứng dụng di động bằng React; README có hướng dẫn.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu cài three và gói liên quan qua trình quản lý gói JavaScript và ghép đúng phiên bản React; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và cảnh báo phiên bản React.</li><li>Đọc First steps và làm quen three.js.</li><li>Thử ví dụ hộp quay.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình biết chút React và muốn làm 3D trên web. Hãy đọc README của react-three-fiber (https://github.com/pmndrs/react-three-fiber) và giải thích bằng tiếng Việt: bộ kết xuất React nghĩa là gì, vì sao phải khớp phiên bản React, và các tuyên bố 'không giới hạn' hay 'không chậm hơn' là của ai. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 14 KB, bài chưa đọc tài liệu docs.pmnd.rs. Tuyên bố hiệu năng chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pmndrs</strong> có <strong>33.455 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-21. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pmndrs/react-three-fiber/blob/master/readme.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pmndrs/react-three-fiber\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 616. Chưa cài/chạy thử; không tạo validation. Snapshot sao 33455; repo_id 172521926; README SHA256 29c7319a41a30b95319e68d540672efaa31a2c3bd44bad6ef2e48b93d00d4ab6.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pmndrs/react-three-fiber",
+          "repo_id": "172521926",
+          "source_path": "",
+          "source_revision": "README-SHA256:29c7319a41a30b95319e68d540672efaa31a2c3bd44bad6ef2e48b93d00d4ab6",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/react-three-fiber",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu cài three và gói liên quan qua trình quản lý gói JavaScript và ghép đúng phiên bản React; bài không chép lệnh. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/react-three-fiber/blob/master/readme.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pmndrs/react-three-fiber/blob/master/readme.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pmndrs/react-three-fiber",
+        "stars": 33455,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pmndrs/react-three-fiber/master/readme.md",
+        "readmeSha256": "29c7319a41a30b95319e68d540672efaa31a2c3bd44bad6ef2e48b93d00d4ab6",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 617,
+      "batch": 101,
+      "slug": "drei",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "drei: bộ sưu tập ngày càng lớn các tiện ích và thành phần dựng sẵn cho react-three-fiber (camera, điều khiển, gizmo...), dùng three-stdlib; tài liệu đã chuyển sang trang riêng",
+        "excerpt": "Hiểu drei là bộ sưu tập các tiện ích và thành phần dựng sẵn hữu ích cho react-three-fiber như camera, điều khiển, gizmo; README ghi dùng three-stdlib thay cho thư mục ví dụ của three.js, có bản cho React Native, và nói phần liệt kê dài trong README chỉ còn là kho lưu liên kết vì tài liệu đã chuyển trang.",
+        "content": "<p>README tả drei là bộ sưu tập ngày càng lớn các tiện ích hữu ích và thành phần trừu tượng dùng được ngay cho react-three-fiber, mời đóng góp thành phần đủ tổng quát. README ghi gói này dùng thư viện three-stdlib độc lập thay vì thư mục ví dụ của three.js. Cách dùng cơ bản là nhập các thành phần như camera hoặc âm thanh định vị. Có đường dẫn riêng cho React Native, bản này không xuất thành phần Html và Loader còn bản web thì có. README nói tài liệu nằm ở pmndrs.github.io/drei và phần liệt kê bên dưới chỉ là kho lưu các liên kết neo cũ trỏ tới vị trí mới, không nên cập nhật. README liệt kê nhiều nhóm như camera, điều khiển, gizmo. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu react-three-fiber là bộ lắp ráp 3D, drei là hộp phụ kiện dựng sẵn: camera quay quanh vật thể, bảng điều khiển, trục tọa độ, tải mô hình, để bạn khỏi viết lại từ đầu.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem tài liệu drei để biết một thành phần điều khiển camera làm gì, chưa chạy. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần đã biết react-three-fiber; danh sách thành phần dài nên dễ rối. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa dùng react-three-fiber thì chưa cần drei. README dài chủ yếu là liên kết neo cũ, nội dung thật ở trang tài liệu: bài chưa đọc trang đó.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>helper (tiện ích)</strong>: thành phần dựng sẵn giúp việc thường gặp; README nêu.</li><li><strong>three-stdlib</strong>: thư viện bổ trợ three.js độc lập; README nêu gói này dùng.</li><li><strong>gizmo</strong>: công cụ điều khiển trực quan trong cảnh 3D; README nêu có nhóm này.</li><li><strong>React Native</strong>: công cụ làm ứng dụng di động bằng React; README nêu có đường dẫn riêng.</li><li><strong>abstraction (thành phần trừu tượng)</strong>: lớp bọc làm việc phức tạp thành đơn giản; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu pmndrs.github.io/drei; cài qua trình quản lý gói JavaScript, bài không chép lệnh. Cần react-three-fiber. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Basic usage.</li><li>Mở tài liệu pmndrs.github.io/drei.</li><li>Chọn một thành phần như điều khiển camera để thử.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng react-three-fiber và muốn biết drei có gì. Hãy đọc README của drei (https://github.com/pmndrs/drei) và giải thích bằng tiếng Việt: drei là gì, bản React Native khác bản web ở đâu, và vì sao phần liệt kê dài trong README chỉ còn là liên kết cũ. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 28 KB, phần lớn là liên kết neo cũ, bài chưa đọc trang tài liệu pmndrs.github.io/drei. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>pmndrs</strong> có <strong>10.116 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-21. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/pmndrs/drei/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/pmndrs/drei\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 617. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10116; repo_id 259117468; README SHA256 26718342352d21f3d2011829bb58bc515f06d25d51b19025df5a9eb3ab66299a.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/pmndrs/drei",
+          "repo_id": "259117468",
+          "source_path": "",
+          "source_revision": "README-SHA256:26718342352d21f3d2011829bb58bc515f06d25d51b19025df5a9eb3ab66299a",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/drei",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu pmndrs.github.io/drei; cài qua trình quản lý gói JavaScript, bài không chép lệnh. Cần react-three-fiber. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/pmndrs/drei/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/pmndrs/drei/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "pmndrs/drei",
+        "stars": 10116,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/pmndrs/drei/master/README.md",
+        "readmeSha256": "26718342352d21f3d2011829bb58bc515f06d25d51b19025df5a9eb3ab66299a",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 618,
+      "batch": 101,
+      "slug": "matter-js",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Matter.js: công cụ vật lý vật rắn 2D bằng JavaScript cho web, có vật thể ghép, đa giác lồi và lõm, va chạm đàn hồi, ví dụ, bộ phụ trợ và giấy phép MIT",
+        "excerpt": "Hiểu Matter.js là công cụ vật lý vật rắn 2D bằng JavaScript cho web, README liệt kê vật thể rắn, ghép, tổ hợp, đa giác lồi lõm, khối lượng, mật độ, hệ số đàn hồi; có bản demo, thư viện ví dụ, hướng dẫn, plugin và danh sách sản phẩm đã dùng, giấy phép MIT.",
+        "content": "<p>README tả Matter.js là công cụ vật lý vật rắn 2D bằng JavaScript cho web, trang brm.io/matter-js. README có các phần demo, thư viện sản phẩm dùng (nhiều trang web và trò chơi), tính năng (vật rắn, vật ghép, tổ hợp, đa giác lồi và lõm, đặc tính vật lý như khối lượng, diện tích, mật độ, hệ số đàn hồi cho va chạm đàn hồi và không đàn hồi, và nhiều thứ khác), cài đặt, lưu ý khi dùng với công cụ đóng gói như Webpack hay Vue, cách dùng, hướng dẫn, ví dụ, plugin, tài liệu, cách xây và đóng góp, nhật ký thay đổi, tài liệu tham khảo. README nêu giấy phép MIT. Danh sách sản phẩm trong README là lời giới thiệu của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn quả bóng nảy, hộp đổ và các vật va vào nhau trên trang web như thật? Matter.js tính chuyển động và va chạm của các hình 2D theo vật lý.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở các bản demo trong README để xem va chạm, rồi đọc phần ví dụ; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript cơ bản và khái niệm vật lý như khối lượng, va chạm. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần hoạt ảnh đơn giản thì CSS đủ. Mô phỏng vật lý có thể tốn CPU khi có nhiều vật thể. Bài chưa đo hiệu năng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>rigid body (vật rắn)</strong>: vật không biến dạng khi va chạm; README nêu.</li><li><strong>restitution (hệ số đàn hồi)</strong>: mức nảy lại sau va chạm; README nêu.</li><li><strong>composite (tổ hợp)</strong>: nhóm nhiều vật thể; README nêu.</li><li><strong>concave/convex hull</strong>: hình lõm và hình lồi; README nêu hỗ trợ cả hai.</li><li><strong>plugin</strong>: phần mở rộng tính năng; README có mục Plugins.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Install và hướng dẫn dùng với công cụ đóng gói; bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem các bản demo.</li><li>Đọc phần Features và Usage.</li><li>Thử một ví dụ đơn giản.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm vật lý 2D cho trang web. Hãy đọc README của Matter.js (https://github.com/liabru/matter-js) và giải thích bằng tiếng Việt: Matter.js làm được gì, vật rắn và hệ số đàn hồi là gì, và khi nào chưa cần. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9 KB, bài chưa đọc tài liệu brm.io/matter-js. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>liabru</strong> có <strong>18.592 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-09-30. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/liabru/matter-js/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/liabru/matter-js\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 618. Chưa cài/chạy thử; không tạo validation. Snapshot sao 18592; repo_id 16986405; README SHA256 bc3c3a4e0de72d0400c22bc4175a382446c928d9e725495e6508556363a2ba19.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/liabru/matter-js",
+          "repo_id": "16986405",
+          "source_path": "",
+          "source_revision": "README-SHA256:bc3c3a4e0de72d0400c22bc4175a382446c928d9e725495e6508556363a2ba19",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/liabru/matter-js",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Install và hướng dẫn dùng với công cụ đóng gói; bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/liabru/matter-js/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/liabru/matter-js/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "liabru/matter-js",
+        "stars": 18592,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/liabru/matter-js/master/README.md",
+        "readmeSha256": "bc3c3a4e0de72d0400c22bc4175a382446c928d9e725495e6508556363a2ba19",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 619,
+      "batch": 101,
+      "slug": "rapier",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Rapier: bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và người máy, có liên kết cho C, Python, JavaScript và plugin Bevy; README có mục chính sách dùng AI viết mã",
+        "excerpt": "Hiểu Rapier là bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và robot, do Dimforge phát hành mã nguồn mở; README nêu giải tính toán dùng SIMD, tùy chọn chạy song song và có mục chính sách rõ ràng về việc dùng AI viết mã và đóng góp có AI.",
+        "content": "<p>README tả Rapier là bộ động cơ vật lý 2D và 3D cho trò chơi, hoạt ảnh và người máy, gồm các crate rapier2d, rapier3d, rapier2d-f64, rapier3d-f64, viết bằng Rust bởi Dimforge, nói luôn miễn phí và mã nguồn mở. Cách bắt đầu: đọc hướng dẫn người dùng tại rapier.rs, chạy các ví dụ, hỏi trên Discord. Bảng ví dụ nêu các biến thể Rust, C, JavaScript, Python và plugin Bevy. Phần hiệu năng nói giải ràng buộc và xử lý tiếp xúc luôn dùng SIMD, và khuyên bật tính năng chạy song song (qua rayon) cho ứng dụng cần hiệu năng; README còn nêu mẹo cho CPU có nhân không đồng nhất. Mục AI coding disclaimer and policy nói README dùng AI nhiều cho một số crate và liên kết Python, và dùng AI có người rà soát cho tài liệu, nhật ký thay đổi, kiểm thử, cấu hình CI; chấp nhận đóng góp có AI nếu người xác nhận chạy đúng, chất lượng ngang mã người viết và có kiểm thử hồi quy. README có huy hiệu giấy phép Apache 2.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Rapier là bộ tính vật lý cho trò chơi và mô phỏng: vật nào rơi, đụng nhau, nảy ra sao. Bạn có thể dùng từ Rust, JavaScript hay Python.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc hướng dẫn tại rapier.rs để hiểu khái niệm vật thể, va chạm; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Rust hoặc ngôn ngữ có liên kết, khái niệm vật lý trò chơi. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần vật lý 2D đơn giản cho trang web thì Matter.js nhẹ hơn; bài chưa so sánh. README nói một số phần do AI viết có người rà soát: bài không đánh giá chất lượng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>physics engine (động cơ vật lý)</strong>: phần mềm mô phỏng chuyển động và va chạm; README nêu.</li><li><strong>crate</strong>: gói thư viện Rust; README nêu các crate.</li><li><strong>SIMD</strong>: xử lý nhiều dữ liệu cùng một lệnh để nhanh hơn; README nêu giải dùng SIMD.</li><li><strong>bindings (liên kết)</strong>: gói cho ngôn ngữ khác gọi thư viện; README nêu C, Python, JavaScript.</li><li><strong>Bevy</strong>: động cơ trò chơi Rust; README nêu có plugin.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới hướng dẫn rapier.rs và nhiều ví dụ; bài không chép lệnh. Cần Rust hoặc liên kết ngôn ngữ khác. Miễn phí theo Apache 2.0 (README có huy hiệu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is Rapier?</li><li>Đọc hướng dẫn tại rapier.rs.</li><li>Xem ví dụ cho ngôn ngữ bạn dùng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thêm vật lý cho trò chơi. Hãy đọc README của Rapier (https://github.com/dimforge/rapier) và giải thích bằng tiếng Việt: Rapier làm gì, có những liên kết nào, và chính sách dùng AI viết mã của dự án nói gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6,5 KB, bài chưa đọc hướng dẫn rapier.rs. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>dimforge</strong> có <strong>6.020 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-01. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README có huy hiệu Apache 2.0; GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/dimforge/rapier/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/dimforge/rapier\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 619. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6020; repo_id 290312103; README SHA256 12bf0a2d20fdf7c43a0f999d9f6aaa569f616c1bcba624fd289cd29792291e81.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/dimforge/rapier",
+          "repo_id": "290312103",
+          "source_path": "",
+          "source_revision": "README-SHA256:12bf0a2d20fdf7c43a0f999d9f6aaa569f616c1bcba624fd289cd29792291e81",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dimforge/rapier",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới hướng dẫn rapier.rs và nhiều ví dụ; bài không chép lệnh. Cần Rust hoặc liên kết ngôn ngữ khác. Miễn phí theo Apache 2.0 (README có huy hiệu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/dimforge/rapier/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/dimforge/rapier/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "dimforge/rapier",
+        "stars": 6020,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/dimforge/rapier/master/README.md",
+        "readmeSha256": "12bf0a2d20fdf7c43a0f999d9f6aaa569f616c1bcba624fd289cd29792291e81",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 620,
+      "batch": 101,
+      "slug": "model-viewer",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "model-viewer: kho chính của thành phần web <model-viewer> để hiển thị mô hình 3D và các dự án liên quan (hiệu ứng, trang tài liệu, công cụ đo độ trung thực kết xuất, tài sản dùng chung, trình soạn thảo)",
+        "excerpt": "Hiểu model-viewer là kho chính của thành phần web <model-viewer> để nhúng mô hình 3D vào trang web, cùng các dự án liên quan như bộ hiệu ứng hậu kỳ, trang tài liệu modelviewer.dev, công cụ đo độ trung thực kết xuất, tài sản dùng chung và trình soạn thảo; README chủ yếu hướng dẫn phát triển.",
+        "content": "<p>README tả đây là kho GitHub chính của thành phần web model-viewer và mọi dự án liên quan, tổ chức thành các thư mục con: model-viewer (thành phần web, thứ bạn thường cần), model-viewer-effects (plugin hậu kỳ), modelviewer.dev (mã nguồn trang tài liệu), render-fidelity-tools (công cụ thử độ trung thực kết xuất), shared-assets (mô hình 3D, bản đồ môi trường dùng chung), space-opera (trình soạn thảo). Phần lớn README là hướng dẫn phát triển: cài git, Node.js, npm, lấy mã (kèm lưu ý lịch sử dung lượng khoảng 3 GB nên nên lấy nông), cài đặt trên Windows 10 hoặc 11, chạy kiểm thử và xử lý các lỗi thường gặp. README có ví dụ Hello World cơ bản và phần hỗ trợ trình duyệt cũ. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub. Bài chưa đọc README của thư mục model-viewer nên chưa mô tả đầy đủ cách dùng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn cho khách xem sản phẩm 3D hoặc xem thử trong không gian thật? Chỉ cần một thẻ HTML <model-viewer> trỏ tới tệp mô hình, trình duyệt lo hiển thị.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc ví dụ Hello World và trang modelviewer.dev, chỉ dùng mô hình có giấy phép cho phép; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Dùng thành phần dễ vì giống thẻ HTML; phát triển trong kho cần Node.js. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> README gốc chủ yếu dành cho người phát triển kho, không phải người chỉ muốn nhúng mô hình; cần đọc README thư mục model-viewer và trang modelviewer.dev. Mô hình 3D nặng làm trang chậm; kiểm tra giấy phép mô hình.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>web component (thành phần web)</strong>: thẻ HTML tự định nghĩa dùng như thẻ thường; README nêu.</li><li><strong>3D model (mô hình 3D)</strong>: tệp chứa hình khối 3D; README nêu tài sản dùng chung.</li><li><strong>post-processing (hậu kỳ)</strong>: hiệu ứng áp lên ảnh sau khi vẽ; README nêu plugin hậu kỳ.</li><li><strong>render fidelity (độ trung thực kết xuất)</strong>: mức giống nhau của ảnh vẽ với mẫu chuẩn; README nêu có công cụ thử.</li><li><strong>monorepo (kho đơn)</strong>: một kho chứa nhiều dự án; README nêu cấu trúc như vậy.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README yêu cầu git, Node.js và npm khi phát triển, nêu cài đặt riêng cho Windows 10 hoặc 11; bài không chép lệnh. Dùng thành phần chỉ cần trình duyệt. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc danh sách các dự án trong README.</li><li>Mở modelviewer.dev và README thư mục model-viewer.</li><li>Thử hiển thị một mô hình có giấy phép cho phép.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn nhúng mô hình 3D vào trang web. Hãy đọc README của model-viewer (https://github.com/google/model-viewer) và giải thích bằng tiếng Việt: kho này gồm những dự án nào, vì sao README gốc chủ yếu hướng dẫn phát triển, và mình cần đọc thêm gì để chỉ nhúng mô hình. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 6 KB, chủ yếu hướng dẫn phát triển; bài chưa đọc README thư mục model-viewer và trang modelviewer.dev. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>google</strong> có <strong>8.304 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/google/model-viewer/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/google/model-viewer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 620. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8304; repo_id 153651476; README SHA256 a2f5bfbad143316da5eeb5946105c8e0b17ccb7b0980e5149b499f65935e2276.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/google/model-viewer",
+          "repo_id": "153651476",
+          "source_path": "",
+          "source_revision": "README-SHA256:a2f5bfbad143316da5eeb5946105c8e0b17ccb7b0980e5149b499f65935e2276",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/model-viewer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README yêu cầu git, Node.js và npm khi phát triển, nêu cài đặt riêng cho Windows 10 hoặc 11; bài không chép lệnh. Dùng thành phần chỉ cần trình duyệt. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/google/model-viewer/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/google/model-viewer/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "google/model-viewer",
+        "stars": 8304,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/google/model-viewer/master/README.md",
+        "readmeSha256": "a2f5bfbad143316da5eeb5946105c8e0b17ccb7b0980e5149b499f65935e2276",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 621,
+      "batch": 101,
+      "slug": "melonjs",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "melonJS: động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, kết xuất WebGPU, WebGL 2 hoặc Canvas2D, có vật lý, bản đồ ô, âm thanh, giấy phép MIT",
+        "excerpt": "Hiểu melonJS là động cơ trò chơi HTML5 mã nguồn mở cho 2D và 3D dành cho nhà phát triển độc lập, kết xuất bằng WebGPU, WebGL 2 hoặc Canvas2D, có sẵn vật lý, bản đồ ô, âm thanh, đầu vào, camera, hiệu ứng chuyển động, hạt, giao diện; README nêu giấy phép MIT và nhóm duy trì ở Singapore.",
+        "content": "<p>README tả melonJS 2 là động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, thiết kế cho nhà phát triển độc lập, có camera phối cảnh và trực giao, kết xuất bản đồ ô bằng GPU, hiệu ứng hậu kỳ. README nêu giấy phép MIT, do nhóm AltByte ở Singapore duy trì. Lý do chọn theo README: API kết xuất giống Canvas2D, trừu tượng hóa bộ kết xuất (viết một lần chạy trên WebGPU, WebGL 2 hoặc Canvas2D), động cơ trọn gói trong một mô-đun ES, nạp cảnh một lần với Tiled là công cụ hàng đầu cho 2D, kiến trúc lớp hiện đại và hệ plugin. Mục About liệt kê tương thích (thư viện độc lập, chạy các trình duyệt lớn và thiết bị di động), đồ họa (bộ kết xuất GPU nhanh với dự phòng Canvas), âm thanh Web Audio có định vị 3D và nhiều thứ khác. Các lời quảng bá như 'trọn gói, không phụ thuộc' là mô tả của dự án, bài chưa kiểm chứng.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Muốn làm trò chơi chạy ngay trong trình duyệt? Động cơ trò chơi gom sẵn vẽ hình, va chạm, âm thanh, bản đồ để bạn tập trung vào lối chơi.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem các trò chơi mẫu trên melonjs.org và đọc phần giới thiệu để hiểu một động cơ trò chơi gồm những gì. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần JavaScript cơ bản và khái niệm trò chơi như vòng lặp, sprite, bản đồ ô. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chỉ cần hoạt ảnh trang web thì không cần động cơ trò chơi. Bài chưa so sánh melonJS với Phaser hay PixiJS. Tài sản đồ họa và âm thanh cho trò chơi có giấy phép riêng cần kiểm tra.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>game engine (động cơ trò chơi)</strong>: bộ khung gom các phần chung của trò chơi; README nêu.</li><li><strong>WebGPU/WebGL</strong>: công nghệ vẽ đồ họa bằng GPU trong trình duyệt; README nêu hỗ trợ.</li><li><strong>tilemap (bản đồ ô)</strong>: bản đồ dựng bằng các ô nhỏ; README nêu kết xuất GPU.</li><li><strong>Tiled</strong>: trình soạn bản đồ ô; README nêu là công cụ hàng đầu cho 2D.</li><li><strong>ES module</strong>: cách đóng gói mã JavaScript hiện đại; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới melonjs.org và wiki, cài qua trình quản lý gói JavaScript; bài không chép lệnh. Miễn phí theo MIT (README nêu).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Why melonJS.</li><li>Mở melonjs.org và wiki.</li><li>Chạy thử một ví dụ nhỏ.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn làm trò chơi HTML5 nhỏ. Hãy đọc README của melonJS (https://github.com/melonjs/melonJS) và giải thích bằng tiếng Việt: melonJS gồm những phần nào, bộ kết xuất WebGPU, WebGL 2, Canvas2D khác nhau ra sao, và vì sao tài sản trò chơi cần kiểm tra giấy phép riêng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất dài (khoảng 34 KB), bài đọc phần đầu, lý do chọn và tính năng chính, chưa đọc tài liệu melonjs.org. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>melonjs</strong> có <strong>6.435 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>README nêu MIT; GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/melonjs/melonJS/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/melonjs/melonJS\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 621. Chưa cài/chạy thử; không tạo validation. Snapshot sao 6435; repo_id 1597789; README SHA256 4f3b8b25b261e28afddf5cb817c43114a3f958e863cf83e64486e59bcd19652c.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/melonjs/melonJS",
+          "repo_id": "1597789",
+          "source_path": "",
+          "source_revision": "README-SHA256:4f3b8b25b261e28afddf5cb817c43114a3f958e863cf83e64486e59bcd19652c",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/melonjs/melonJS",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới melonjs.org và wiki, cài qua trình quản lý gói JavaScript; bài không chép lệnh. Miễn phí theo MIT (README nêu).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/melonjs/melonJS/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/melonjs/melonJS/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "melonjs/melonJS",
+        "stars": 6435,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/melonjs/melonJS/master/README.md",
+        "readmeSha256": "4f3b8b25b261e28afddf5cb817c43114a3f958e863cf83e64486e59bcd19652c",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 622,
+      "batch": 101,
+      "slug": "three-mesh-bvh",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "three-mesh-bvh: cài đặt cấu trúc cây bao thể tích (BVH) để tăng tốc bắn tia và truy vấn không gian trên lưới three.js, tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung mỗi giây",
+        "excerpt": "Hiểu three-mesh-bvh là cài đặt cây bao thể tích (BVH) giúp tăng tốc bắn tia và truy vấn không gian trên lưới three.js; README tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung hình mỗi giây, có nhiều ví dụ trực tiếp (bắn tia, giao điểm, tạo SDF, điêu khắc, lựa chọn) và mục lưu ý.",
+        "content": "<p>README tả three-mesh-bvh là cài đặt cây bao thể tích (Bounding Volume Hierarchy) để tăng tốc bắn tia và hỗ trợ các truy vấn không gian trên lưới three.js. README tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung hình mỗi giây; đây là tuyên bố của tác giả, bài chưa kiểm chứng. README liệt kê nhiều ví dụ trực tiếp (bắn tia, hình học có xương, giao điểm điểm, đường, hình, tạo SDF, tạo bằng WebWorker, bộ kiểm tra tùy chọn BVH, bắn tia lô mesh), công cụ (điêu khắc, so sánh khoảng cách, tô tam giác, chọn bằng thòng lọng, cạnh bị cắt, voxel hóa), trò chơi, dò đường tia, BVH phân cấp đối tượng, tính toán shader WebGPU và dự án bên ngoài. Phần Use hướng dẫn dùng hàm dựng sẵn bằng cách thêm các hàm mở rộng vào BufferGeometry của three.js, kèm các mục BVH bổ sung, truy vấn trực tiếp, tuần tự hóa, tạo bất đồng bộ, truy vấn BVH trong shader, API và mục Gotchas. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Khi trong cảnh 3D có mô hình hàng chục nghìn tam giác và bạn muốn hỏi 'tia này trúng chỗ nào', việc kiểm tra từng tam giác rất chậm. BVH là cách sắp xếp thông minh để tìm nhanh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở các ví dụ trực tiếp trong README để xem bắn tia; chưa viết mã. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần three.js, khái niệm hình học 3D và BVH; mục Gotchas cho thấy có nhiều lỗi dễ mắc. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bạn chưa gặp vấn đề bắn tia chậm thì chưa cần. Tuyên bố hiệu năng bài chưa kiểm chứng. Đọc mục Gotchas trước khi dùng cho dự án thật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>BVH (cây bao thể tích)</strong>: cấu trúc sắp xếp hình để truy vấn nhanh; README nêu.</li><li><strong>raycasting (bắn tia)</strong>: kiểm tra tia đi qua vật nào; README nêu.</li><li><strong>SDF</strong>: hàm khoảng cách có dấu; README có ví dụ tạo SDF.</li><li><strong>skinned mesh (lưới có xương)</strong>: mô hình nhân vật biến dạng theo xương; README có ví dụ.</li><li><strong>shapecast</strong>: truy vấn bằng một hình thay vì một tia; README có ví dụ hình giao nhau.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới nhiều ví dụ và phần Use; bài không chép lệnh. Cần three.js. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Xem các ví dụ trực tiếp.</li><li>Đọc phần Use và Gotchas.</li><li>Thử trên mô hình nhỏ trước.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm cảnh 3D bằng three.js và bắn tia bị chậm. Hãy đọc README của three-mesh-bvh (https://github.com/gkjohnson/three-mesh-bvh) và giải thích bằng tiếng Việt: BVH là gì, vì sao nhanh hơn, và tuyên bố 500 tia ở 60 khung hình là của ai và chưa kiểm chứng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 13,6 KB, bài đọc phần ví dụ, cách dùng và mục lưu ý, chưa đọc phần API đầy đủ. Tuyên bố hiệu năng chưa kiểm chứng. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>gkjohnson</strong> có <strong>3.550 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/gkjohnson/three-mesh-bvh/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/gkjohnson/three-mesh-bvh\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 622. Chưa cài/chạy thử; không tạo validation. Snapshot sao 3550; repo_id 118064695; README SHA256 dc489089d577763680995827abdd5ca3d26c8185cb3ce49c74abd143ffc12246.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/gkjohnson/three-mesh-bvh",
+          "repo_id": "118064695",
+          "source_path": "",
+          "source_revision": "README-SHA256:dc489089d577763680995827abdd5ca3d26c8185cb3ce49c74abd143ffc12246",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gkjohnson/three-mesh-bvh",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới nhiều ví dụ và phần Use; bài không chép lệnh. Cần three.js. Miễn phí; giấy phép lấy theo GitHub (MIT), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/gkjohnson/three-mesh-bvh/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/gkjohnson/three-mesh-bvh/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "gkjohnson/three-mesh-bvh",
+        "stars": 3550,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/gkjohnson/three-mesh-bvh/master/README.md",
+        "readmeSha256": "dc489089d577763680995827abdd5ca3d26c8185cb3ce49c74abd143ffc12246",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 623,
+      "batch": 101,
+      "slug": "gltf-sample-viewer",
+      "category": "Thiết kế và hình ảnh",
+      "need": "Thiết kế nội dung trực quan",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường",
+        "excerpt": "Hiểu glTF Sample Viewer là ứng dụng web chính thức của Khronos để xem tệp glTF 2.0 bằng WebGL 2.0, có bản chạy trực tiếp, nhiều tiện ích mở rộng KHR được hỗ trợ (và một số chưa hỗ trợ vì giới hạn 32 bit của WebGL2), cách đổi mô hình và bản đồ môi trường, tham số URL và cách xây để phát triển.",
+        "content": "<p>README tả đây là trình xem mẫu chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản chạy trực tiếp tại github.khronos.org; mỗi lần đẩy vào nhánh chính được triển khai lên bản trực tiếp, nhánh khác được triển khai lên đường dẫn xem trước riêng. Mục Features liệt kê glTF 2.0 và nhiều tiện ích mở rộng KHR được hỗ trợ (như nén mạng lưới Draco, vật liệu IOR, iridescence...), ghi rõ một số tính năng không hỗ trợ vì WebGL2 chỉ có 32 bit (ví dụ thuộc tính lưới và da của KHR_accessor_float64). Phần Usage nói về điều khiển, đổi mô hình glTF, đổi bản đồ môi trường, tham số URL, cách thiết lập và gỡ lỗi, định dạng mã. README phần đã đọc không nêu giấy phép; bài lấy theo GitHub.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>glTF là định dạng tệp 3D phổ biến trên web, như JPEG cho ảnh. Trình xem này của chính nhóm đặt chuẩn, giúp bạn kiểm tra mô hình hiển thị đúng chuẩn hay không.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở bản trực tiếp với mô hình mẫu công khai và so sánh với mô hình của bạn; không tải mô hình có bản quyền của người khác. Chưa phải kết quả đã chạy thử.</p><p><strong>Ai nên xem:</strong> Người làm website hoặc trò chơi nhỏ có đồ họa 3D hoặc vật lý, thường nhờ AI viết mã JavaScript.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Chỉ xem mô hình thì dễ; tự xây cần Node.js và hiểu WebGL. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Tệp mô hình tải lên trình xem có thể do bên thứ ba lưu trữ tạm: bài chưa kiểm tra; không tải mô hình bí mật. Trình xem mẫu không thay cho kiểm thử trên đúng nền tảng bạn dùng.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>glTF</strong>: định dạng tệp 3D cho web; README nêu glTF 2.0.</li><li><strong>WebGL 2.0</strong>: công nghệ vẽ 3D trong trình duyệt; README nêu.</li><li><strong>KHR extension (tiện ích mở rộng KHR)</strong>: thành phần mở rộng chuẩn glTF do Khronos duyệt; README liệt kê.</li><li><strong>environment map (bản đồ môi trường)</strong>: ảnh dùng để chiếu sáng và phản chiếu; README nêu có thể đổi.</li><li><strong>Draco</strong>: cách nén mạng lưới 3D; README liệt kê KHR_draco_mesh_compression.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có mục Setup cho phát triển cục bộ; bài không chép lệnh. Dùng bản trực tiếp chỉ cần trình duyệt. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở bản trực tiếp.</li><li>Đọc phần Features và Usage.</li><li>Thử đổi mô hình mẫu và bản đồ môi trường.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình làm mô hình 3D glTF và muốn kiểm tra hiển thị. Hãy đọc README của glTF Sample Viewer (https://github.com/KhronosGroup/glTF-Sample-Viewer) và giải thích bằng tiếng Việt: glTF là gì, trình xem này hỗ trợ và chưa hỗ trợ tiện ích nào, và vì sao không nên tải mô hình bí mật lên bản trực tiếp. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khoảng 9 KB, bài chưa đọc kỹ danh sách tiện ích mở rộng đầy đủ. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đồ họa 3D và vật lý trên web tiêu tốn bộ nhớ, GPU và pin, có thể làm trang web chậm hoặc treo trên máy yếu: thử trên thiết bị thật, giới hạn kích thước mô hình, kiểm tra giấy phép của mô hình, hình ảnh và âm thanh bạn dùng, và chọn phiên bản thư viện tương thích với nhau trước khi nhờ AI viết mã.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>KhronosGroup</strong> có <strong>1.484 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-28. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/KhronosGroup/glTF-Sample-Viewer/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/KhronosGroup/glTF-Sample-Viewer\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 623. Chưa cài/chạy thử; không tạo validation. Snapshot sao 1484; repo_id 92976265; README SHA256 ef9e0f53cd1ae21201dca0122483ac5b853be0fecbf464a9b393298c96ab9783.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/KhronosGroup/glTF-Sample-Viewer",
+          "repo_id": "92976265",
+          "source_path": "",
+          "source_revision": "README-SHA256:ef9e0f53cd1ae21201dca0122483ac5b853be0fecbf464a9b393298c96ab9783",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KhronosGroup/glTF-Sample-Viewer",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có mục Setup cho phát triển cục bộ; bài không chép lệnh. Dùng bản trực tiếp chỉ cần trình duyệt. Miễn phí; giấy phép lấy theo GitHub (Apache-2.0), README phần đã đọc không nêu.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/KhronosGroup/glTF-Sample-Viewer/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/KhronosGroup/glTF-Sample-Viewer/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "KhronosGroup/glTF-Sample-Viewer",
+        "stars": 1484,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Viewer/main/README.md",
+        "readmeSha256": "ef9e0f53cd1ae21201dca0122483ac5b853be0fecbf464a9b393298c96ab9783",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

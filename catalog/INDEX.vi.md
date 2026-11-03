@@ -81,13 +81,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 79 — Liên lạc và cộng đồng tự host](learning-paths/79-lien-lac-va-cong-dong-tu-host.vi.md) — Từ họp video, nhắn tin, email, phát trực tiếp đến diễn đàn cộng đồng; chú ý giấy phép AGPL và GPL, nhiều giấy phép của Element, tuyên bố của tác giả, độ khó và trách nhiệm khi tự host email, nội dung người dùng và lệnh cài tải tập lệnh từ mạng.
 - [Lộ trình 80 — Bảo mật chuỗi cung ứng và định danh](learning-paths/80-bao-mat-chuoi-cung-ung-va-dinh-danh.vi.md) — Từ đánh giá thực hành bảo mật của thư viện, tạo SBOM, quét lỗ hổng, ký ảnh container, quét hạ tầng dưới dạng mã đến phát hiện hành vi bất thường và quản lý đăng nhập; chú ý tài khoản mặc định, lệnh cài tải tập lệnh từ mạng, bảng so sánh của tác giả và giới hạn của mọi công cụ quét.
 - [Lộ trình 81 — Bản đồ và dữ liệu địa lý](learning-paths/81-ban-do-va-du-lieu-dia-ly.vi.md) — Từ vẽ bản đồ nhanh, hình học và dữ liệu địa lý bằng Python, phần mềm GIS đến chỉ mục lục giác và tìm đường; chú ý hệ tọa độ, quyền riêng tư của dữ liệu vị trí và điều khoản dữ liệu OpenStreetMap.
+- [Lộ trình 82 — Đồ họa 3D và vật lý trên web](learning-paths/82-do-hoa-3d-va-vat-ly-web.vi.md) — Từ vật lý 2D và động cơ trò chơi HTML5, hiển thị mô hình 3D, kết hợp React với three.js đến truy vấn không gian và động cơ vật lý Rust; chú ý ghép đúng phiên bản React, tuyên bố hiệu năng của tác giả, giấy phép mô hình và tài sản, và hiệu năng trên máy yếu.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (46 bài)
+### Bắt đầu (47 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -137,8 +138,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 369 | Mockoon: thiết kế và chạy API giả ngay trên máy, không cần tài khoản, có ứng dụng desktop và dòng lệnh | [mockoon/mockoon](https://github.com/mockoon/mockoon) | MIT | 8468 | kiem-thu-api-va-hieu-nang |
 | 573 | seaborn: thư viện Python vẽ biểu đồ thống kê xây trên matplotlib, giao diện cấp cao để vẽ đồ thị thống kê đẹp mắt, có tài liệu, hướng dẫn và thư viện ví dụ | [mwaskom/seaborn](https://github.com/mwaskom/seaborn) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 14099 | khoa-hoc-du-lieu |
 | 613 | leafmap: gói Python phân tích địa không gian và vẽ bản đồ tương tác trong Jupyter với ít mã, chuyển đổi giữa nhiều backend (ipyleaflet, folium, kepler.gl, pydeck, bokeh), giấy phép MIT | [opengeos/leafmap](https://github.com/opengeos/leafmap) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3796 | ban-do-va-du-lieu-dia-ly |
+| 623 | glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường | [KhronosGroup/glTF-Sample-Viewer](https://github.com/KhronosGroup/glTF-Sample-Viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 1484 | do-hoa-3d-va-vat-ly-web |
 
-### Cơ bản (211 bài)
+### Cơ bản (214 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -353,6 +355,9 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 611 | Shapely: gói Python thao tác và phân tích đối tượng hình học phẳng, dùng thư viện GEOS (công cụ của PostGIS), có giao diện Geometry và hàm ufunc NumPy hiệu năng cao, giấy phép BSD 3 điều khoản | [shapely/shapely](https://github.com/shapely/shapely) | {'key': 'bsd-3-clause', 'name': 'BSD 3-Clause "New" or "Revised" License', 'spdx_id': 'BSD-3-Clause', 'url': 'https://api.github.com/licenses/bsd-3-clause', 'node_id': 'MDc6TGljZW5zZTU='} | 4536 | ban-do-va-du-lieu-dia-ly |
 | 614 | QGIS: hệ thống thông tin địa lý (GIS) đầy đủ tính năng, thân thiện, miễn phí và mã nguồn mở chạy trên Unix, Windows và macOS, có QGIS Server và API Python; giấy phép GPL phiên bản 2 trở lên | [qgis/QGIS](https://github.com/qgis/QGIS) | {'key': 'gpl-2.0', 'name': 'GNU General Public License v2.0', 'spdx_id': 'GPL-2.0', 'url': 'https://api.github.com/licenses/gpl-2.0', 'node_id': 'MDc6TGljZW5zZTg='} | 14767 | ban-do-va-du-lieu-dia-ly |
 | 615 | H3: hệ lập chỉ mục địa không gian theo lưới lục giác phân cấp của Uber, chia nhỏ dần thành lưới lục giác mịn hơn, có thư viện C và nhiều liên kết ngôn ngữ, giấy phép Apache 2.0 | [uber/h3](https://github.com/uber/h3) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6684 | ban-do-va-du-lieu-dia-ly |
+| 618 | Matter.js: công cụ vật lý vật rắn 2D bằng JavaScript cho web, có vật thể ghép, đa giác lồi và lõm, va chạm đàn hồi, ví dụ, bộ phụ trợ và giấy phép MIT | [liabru/matter-js](https://github.com/liabru/matter-js) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 18592 | do-hoa-3d-va-vat-ly-web |
+| 620 | model-viewer: kho chính của thành phần web <model-viewer> để hiển thị mô hình 3D và các dự án liên quan (hiệu ứng, trang tài liệu, công cụ đo độ trung thực kết xuất, tài sản dùng chung, trình soạn thảo) | [google/model-viewer](https://github.com/google/model-viewer) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 8304 | do-hoa-3d-va-vat-ly-web |
+| 621 | melonJS: động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, kết xuất WebGPU, WebGL 2 hoặc Canvas2D, có vật lý, bản đồ ô, âm thanh, giấy phép MIT | [melonjs/melonJS](https://github.com/melonjs/melonJS) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 6435 | do-hoa-3d-va-vat-ly-web |
 
 ### Khá khó (cần nền kỹ thuật) (37 bài)
 
@@ -396,7 +401,7 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 399 | MSW (Mock Service Worker): chặn yêu cầu mạng ở tầng riêng để giả lập API mà mã ứng dụng và kiểm thử không biết đang bị giả lập | [mswjs/msw](https://github.com/mswjs/msw) | MIT | 18330 | orm-va-thu-vien-giao-dien |
 | 405 | OWASP Web Security Testing Guide: bộ hướng dẫn kiểm thử bảo mật ứng dụng web với mã kịch bản WSTG chuẩn, tài liệu theo CC BY-SA 4.0 | [OWASP/wstg](https://github.com/OWASP/wstg) | CC-BY-SA-4.0 | 10179 | bao-mat-web-va-dang-nhap |
 
-### Nâng cao (221 bài)
+### Nâng cao (225 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -621,6 +626,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 606 | Cosign: ký, xác minh và lưu chữ ký cho ảnh container và các tệp khác theo Sigstore, ký không khóa với Fulcio và Rekor, hỗ trợ khóa phần cứng, KMS và PKI riêng; README rất dài | [sigstore/cosign](https://github.com/sigstore/cosign) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6406 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 607 | Checkov: công cụ phân tích mã tĩnh cho hạ tầng dưới dạng mã (Terraform, CloudFormation, Kubernetes, Dockerfile, GitHub Actions...) và phân tích thành phần phần mềm, hơn 1000 chính sách dựng sẵn, cung cấp sức mạnh cho Prisma Cloud | [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 9130 | bao-mat-chuoi-cung-ung-va-dinh-danh |
 | 612 | OSRM (Open Source Routing Machine): công cụ tìm đường hiệu năng cao viết bằng C++ chạy trên dữ liệu OpenStreetMap, dịch vụ gần nhất, tuyến đường, bảng thời gian, khớp vết GPS, chuyến đi; dùng qua HTTP, thư viện C++ hoặc NodeJs | [Project-OSRM/osrm-backend](https://github.com/Project-OSRM/osrm-backend) | {'key': 'bsd-2-clause', 'name': 'BSD 2-Clause "Simplified" License', 'spdx_id': 'BSD-2-Clause', 'url': 'https://api.github.com/licenses/bsd-2-clause', 'node_id': 'MDc6TGljZW5zZTQ='} | 8189 | ban-do-va-du-lieu-dia-ly |
+| 616 | react-three-fiber: bộ kết xuất React cho three.js, dựng cảnh 3D theo kiểu khai báo bằng các thành phần tái sử dụng phản ứng theo trạng thái; README nêu phải ghép đúng phiên bản React | [pmndrs/react-three-fiber](https://github.com/pmndrs/react-three-fiber) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 33455 | do-hoa-3d-va-vat-ly-web |
+| 617 | drei: bộ sưu tập ngày càng lớn các tiện ích và thành phần dựng sẵn cho react-three-fiber (camera, điều khiển, gizmo...), dùng three-stdlib; tài liệu đã chuyển sang trang riêng | [pmndrs/drei](https://github.com/pmndrs/drei) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 10116 | do-hoa-3d-va-vat-ly-web |
+| 619 | Rapier: bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và người máy, có liên kết cho C, Python, JavaScript và plugin Bevy; README có mục chính sách dùng AI viết mã | [dimforge/rapier](https://github.com/dimforge/rapier) | {'key': 'apache-2.0', 'name': 'Apache License 2.0', 'spdx_id': 'Apache-2.0', 'url': 'https://api.github.com/licenses/apache-2.0', 'node_id': 'MDc6TGljZW5zZTI='} | 6020 | do-hoa-3d-va-vat-ly-web |
+| 622 | three-mesh-bvh: cài đặt cấu trúc cây bao thể tích (BVH) để tăng tốc bắn tia và truy vấn không gian trên lưới three.js, tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung mỗi giây | [gkjohnson/three-mesh-bvh](https://github.com/gkjohnson/three-mesh-bvh) | {'key': 'mit', 'name': 'MIT License', 'spdx_id': 'MIT', 'url': 'https://api.github.com/licenses/mit', 'node_id': 'MDc6TGljZW5zZTEz'} | 3550 | do-hoa-3d-va-vat-ly-web |
 
 ## Gợi ý cho chủ site
 - Bốn bài mức "Nâng cao" và các bài "Khá khó" dành cho người có nền kỹ thuật; có thể xếp vào mục riêng thay vì đặt chung với bài cho người mới.

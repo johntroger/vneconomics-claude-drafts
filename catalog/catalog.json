@@ -10309,5 +10309,195 @@
    "geopandas",
    "qgis"
   ]
+ },
+ {
+  "key": 616,
+  "slug": "react-three-fiber",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "react-three-fiber: bộ kết xuất React cho three.js, dựng cảnh 3D theo kiểu khai báo bằng các thành phần tái sử dụng phản ứng theo trạng thái; README nêu phải ghép đúng phiên bản React",
+  "repo": "pmndrs/react-three-fiber",
+  "stars": 33455,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-21",
+  "related": [
+   "drei",
+   "model-viewer"
+  ]
+ },
+ {
+  "key": 617,
+  "slug": "drei",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "drei: bộ sưu tập ngày càng lớn các tiện ích và thành phần dựng sẵn cho react-three-fiber (camera, điều khiển, gizmo...), dùng three-stdlib; tài liệu đã chuyển sang trang riêng",
+  "repo": "pmndrs/drei",
+  "stars": 10116,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-21",
+  "related": [
+   "rapier",
+   "react-three-fiber"
+  ]
+ },
+ {
+  "key": 618,
+  "slug": "matter-js",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "Matter.js: công cụ vật lý vật rắn 2D bằng JavaScript cho web, có vật thể ghép, đa giác lồi và lõm, va chạm đàn hồi, ví dụ, bộ phụ trợ và giấy phép MIT",
+  "repo": "liabru/matter-js",
+  "stars": 18592,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-09-30",
+  "related": [
+   "melonjs"
+  ]
+ },
+ {
+  "key": 619,
+  "slug": "rapier",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "Rapier: bộ động cơ vật lý 2D và 3D viết bằng Rust cho trò chơi, hoạt ảnh và người máy, có liên kết cho C, Python, JavaScript và plugin Bevy; README có mục chính sách dùng AI viết mã",
+  "repo": "dimforge/rapier",
+  "stars": 6020,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-01",
+  "related": [
+   "drei",
+   "three-mesh-bvh"
+  ]
+ },
+ {
+  "key": 620,
+  "slug": "model-viewer",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "model-viewer: kho chính của thành phần web <model-viewer> để hiển thị mô hình 3D và các dự án liên quan (hiệu ứng, trang tài liệu, công cụ đo độ trung thực kết xuất, tài sản dùng chung, trình soạn thảo)",
+  "repo": "google/model-viewer",
+  "stars": 8304,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "gltf-sample-viewer",
+   "react-three-fiber"
+  ]
+ },
+ {
+  "key": 621,
+  "slug": "melonjs",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "melonJS: động cơ trò chơi HTML5 hiện đại đầy đủ tính năng, mã nguồn mở cho 2D và 3D, kết xuất WebGPU, WebGL 2 hoặc Canvas2D, có vật lý, bản đồ ô, âm thanh, giấy phép MIT",
+  "repo": "melonjs/melonJS",
+  "stars": 6435,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-02",
+  "related": [
+   "gltf-sample-viewer",
+   "matter-js"
+  ]
+ },
+ {
+  "key": 622,
+  "slug": "three-mesh-bvh",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "three-mesh-bvh: cài đặt cấu trúc cây bao thể tích (BVH) để tăng tốc bắn tia và truy vấn không gian trên lưới three.js, tuyên bố bắn 500 tia vào mô hình 80.000 đa giác ở 60 khung mỗi giây",
+  "repo": "gkjohnson/three-mesh-bvh",
+  "stars": 3550,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-11-03",
+  "related": [
+   "rapier"
+  ]
+ },
+ {
+  "key": 623,
+  "slug": "gltf-sample-viewer",
+  "group": "2026-11-03-do-hoa-3d-va-vat-ly-web",
+  "title": "glTF Sample Viewer: trình xem chính thức của Khronos cho glTF 2.0 dùng WebGL 2.0, có bản xem trực tiếp, danh sách tiện ích mở rộng được hỗ trợ và các cách thay mô hình, bản đồ môi trường",
+  "repo": "KhronosGroup/glTF-Sample-Viewer",
+  "stars": 1484,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Thiết kế và hình ảnh",
+  "need": "Thiết kế nội dung trực quan",
+  "pushed": "2026-10-28",
+  "related": [
+   "melonjs",
+   "model-viewer"
+  ]
  }
 ]
