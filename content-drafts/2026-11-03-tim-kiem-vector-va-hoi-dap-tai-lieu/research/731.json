@@ -1,0 +1,42 @@
+{
+  "key": 731,
+  "repo": "quickwit-oss/quickwit",
+  "repoId": "357707809",
+  "url": "https://github.com/quickwit-oss/quickwit",
+  "stars": 11763,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T11:09:01Z",
+  "createdAt": "2021-04-13T22:45:40Z",
+  "defaultBranch": "main",
+  "description": "Cloud-native OSS search engine for observability",
+  "homepage": "https://quickwit.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/quickwit-oss/quickwit/main/README.md",
+    "sha256": "76b0c8960cf94c21c9b653cf8305242367eed561a76e26c8ac904e46a75ff75c",
+    "bytes": 8434,
+    "sectionsRead": [
+      "Features",
+      "Enterprise ready",
+      "Architecture overview",
+      "What license does Quickwit use?"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu quickwit.io.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố nhanh nhất và chi phí."
+  ],
+  "runtimeValidated": false
+}

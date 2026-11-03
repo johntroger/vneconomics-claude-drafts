@@ -1,0 +1,43 @@
+{
+  "key": 733,
+  "repo": "infiniflow/ragflow",
+  "repoId": "730534580",
+  "url": "https://github.com/infiniflow/ragflow",
+  "stars": 93425,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T12:12:31Z",
+  "createdAt": "2023-12-12T06:13:13Z",
+  "defaultBranch": "main",
+  "description": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.",
+  "homepage": "https://ragflow.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/infiniflow/ragflow/main/README.md",
+    "sha256": "4b363ddbd3311fe0cd0ecc8a346c4966756567f1841de23e179f07decfd80155",
+    "bytes": 16833,
+    "sectionsRead": [
+      "What is RAGFlow?",
+      "Get Started",
+      "Key Features",
+      "System Architecture",
+      "Local Deployment"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu ragflow.io.",
+    "Chưa thử.",
+    "Chưa kiểm chứng tuyên bố giảm ảo giác."
+  ],
+  "runtimeValidated": false
+}

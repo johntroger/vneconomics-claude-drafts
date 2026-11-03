@@ -1,0 +1,43 @@
+{
+  "key": 727,
+  "repo": "quickwit-oss/tantivy",
+  "repoId": "49412556",
+  "url": "https://github.com/quickwit-oss/tantivy",
+  "stars": 16388,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:19:15Z",
+  "createdAt": "2016-01-11T08:32:16Z",
+  "defaultBranch": "main",
+  "description": "Tantivy is a full-text search engine library inspired by Apache Lucene and written in Rust",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/quickwit-oss/tantivy/main/README.md",
+    "sha256": "dcdc08ce8e41040d0b1eddcc2627c0128ec8527e9a990a7ff343836e03099dd3",
+    "bytes": 7954,
+    "sectionsRead": [
+      "Benchmark",
+      "Features",
+      "Non-features",
+      "Getting started",
+      "FAQ"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.rs/tantivy.",
+    "Chưa thử.",
+    "Chưa kiểm tra hỗ trợ tiếng Việt."
+  ],
+  "runtimeValidated": false
+}

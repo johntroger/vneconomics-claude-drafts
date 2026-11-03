@@ -1,0 +1,42 @@
+{
+  "key": 732,
+  "repo": "nmslib/hnswlib",
+  "repoId": "96431386",
+  "url": "https://github.com/nmslib/hnswlib",
+  "stars": 5365,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-09-15T11:56:10Z",
+  "createdAt": "2017-07-06T13:08:46Z",
+  "defaultBranch": "master",
+  "description": "Header-only C++/python library for fast approximate nearest neighbors",
+  "homepage": "https://github.com/nmslib/hnswlib",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nmslib/hnswlib/master/README.md",
+    "sha256": "37d379b66a094d23396b9769457c72e31c45776cb047004c0cd6a9581baff30d",
+    "bytes": 17899,
+    "sectionsRead": [
+      "Highlights",
+      "Python bindings",
+      "Supported distances",
+      "API description"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc toàn bộ README.",
+    "Chưa thử.",
+    "Chưa đo độ nhớ lại."
+  ],
+  "runtimeValidated": false
+}

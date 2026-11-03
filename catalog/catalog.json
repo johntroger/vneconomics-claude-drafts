@@ -12941,5 +12941,171 @@
    "roc",
    "wasmtime"
   ]
+ },
+ {
+  "key": 727,
+  "slug": "tantivy",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "Tantivy: thư viện tìm kiếm toàn văn nhanh viết bằng Rust, gần Apache Lucene hơn Elasticsearch, là thư viện (crate) để dựng công cụ tìm kiếm chứ không phải máy chủ có sẵn; có BM25, bộ tách từ cấu hình được, thời gian khởi động dưới 10 ms; giấy phép MIT",
+  "repo": "quickwit-oss/tantivy",
+  "stars": 16388,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-02",
+  "related": [
+   "faiss"
+  ]
+ },
+ {
+  "key": 728,
+  "slug": "faiss",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "Faiss: thư viện tìm kiếm tương tự và phân cụm hiệu quả cho vector dày, có thuật toán cho tập vector mọi kích thước kể cả không vừa bộ nhớ, có bản cài GPU; README nêu giấy phép MIT",
+  "repo": "facebookresearch/faiss",
+  "stars": 41253,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "hnswlib",
+   "tantivy"
+  ]
+ },
+ {
+  "key": 729,
+  "slug": "lancedb",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "LanceDB: nền tảng dữ liệu đa phương thức cho AI xây trên định dạng cột Lance, tìm kiếm vector nhanh trên hàng tỷ vector, tìm toàn văn và SQL, có bản nhúng mã nguồn mở và bản Enterprise; giấy phép Apache 2.0 theo GitHub",
+  "repo": "lancedb/lancedb",
+  "stars": 11838,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Trung bình đến khó",
+  "tier": "nang-cao-nhe",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "hnswlib",
+   "quickwit"
+  ]
+ },
+ {
+  "key": 730,
+  "slug": "vespa",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "Vespa: tìm kiếm, suy luận và tổ chức vector, tensor, văn bản và dữ liệu có cấu trúc lúc phục vụ ở mọi quy mô; kho chứa toàn bộ mã dựng và chạy Vespa, phát hành mỗi sáng Thứ Hai đến Thứ Năm; giấy phép Apache 2.0",
+  "repo": "vespa-engine/vespa",
+  "stars": 7158,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "quickwit",
+   "ragflow"
+  ]
+ },
+ {
+  "key": 731,
+  "slug": "quickwit",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "Quickwit: công cụ tìm kiếm mã nguồn mở cho quan sát hệ thống (log, vết, sắp có số liệu), tuyên bố nhanh nhất trên kho đám mây, API tương thích Elasticsearch, gốc Jaeger và OpenTelemetry; giấy phép Apache 2.0",
+  "repo": "quickwit-oss/quickwit",
+  "stars": 11763,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "lancedb",
+   "vespa"
+  ]
+ },
+ {
+  "key": 732,
+  "slug": "hnswlib",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "Hnswlib: thư viện C++ chỉ gồm tiêu đề cài đặt HNSW để tìm láng giềng gần đúng nhanh, có liên kết Python, chèn và cập nhật; README ghi bản 0.10.0rc2 là bản thử, chưa phải bản ổn định; giấy phép Apache 2.0 theo GitHub",
+  "repo": "nmslib/hnswlib",
+  "stars": 5365,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-09-15",
+  "related": [
+   "faiss",
+   "lancedb"
+  ]
+ },
+ {
+  "key": 733,
+  "slug": "ragflow",
+  "group": "2026-11-03-tim-kiem-vector-va-hoi-dap-tai-lieu",
+  "title": "RAGFlow: công cụ RAG (sinh có truy xuất) mã nguồn mở hàng đầu theo tự mô tả, kết hợp RAG với khả năng tác tử, chia đoạn theo mẫu, trích dẫn có căn cứ, nhiều nguồn dữ liệu; README có yêu cầu cấu hình, triển khai bằng Docker và đám mây của chính họ; giấy phép Apache 2.0",
+  "repo": "infiniflow/ragflow",
+  "stars": 93425,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Dữ liệu và giao diện ứng dụng",
+  "need": "Trình bày dữ liệu",
+  "pushed": "2026-11-03",
+  "related": [
+   "vespa"
+  ]
  }
 ]

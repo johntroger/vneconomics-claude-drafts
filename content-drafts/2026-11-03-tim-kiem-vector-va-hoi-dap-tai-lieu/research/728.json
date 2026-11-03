@@ -1,0 +1,42 @@
+{
+  "key": 728,
+  "repo": "facebookresearch/faiss",
+  "repoId": "81227005",
+  "url": "https://github.com/facebookresearch/faiss",
+  "stars": 41253,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T04:48:09Z",
+  "createdAt": "2017-02-07T16:07:05Z",
+  "defaultBranch": "main",
+  "description": "A library for efficient similarity search and clustering of dense vectors.",
+  "homepage": "https://faiss.ai",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/facebookresearch/faiss/main/README.md",
+    "sha256": "24679e12982711be6b122268569b7865a14feccc8a0dd9688e15b58e95c35a75",
+    "bytes": 6370,
+    "sectionsRead": [
+      "Introduction",
+      "Installing",
+      "How Faiss works",
+      "Legal"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc wiki của Faiss.",
+    "Chưa thử.",
+    "Chưa so sánh với cơ sở dữ liệu vector."
+  ],
+  "runtimeValidated": false
+}
