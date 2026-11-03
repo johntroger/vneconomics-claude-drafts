@@ -914,5 +914,129 @@
    "playwright",
    "understand-anything"
   ]
+ },
+ {
+  "key": 153,
+  "slug": "tldr-pages",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "tldr pages: hướng dẫn lệnh dòng lệnh bằng ví dụ ngắn thay cho trang man dài",
+  "repo": "tldr-pages/tldr",
+  "stars": 64109,
+  "license": "NOASSERTION",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Skills và phương pháp làm việc",
+  "need": "Chọn skills và quy trình",
+  "pushed": "2026-11-03",
+  "related": [
+   "vscode",
+   "windows-terminal"
+  ]
+ },
+ {
+  "key": 154,
+  "slug": "vscode",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft",
+  "repo": "microsoft/vscode",
+  "stars": 194514,
+  "license": "MIT",
+  "level_text": "Dễ đến trung bình",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "lazygit",
+   "tldr-pages"
+  ]
+ },
+ {
+  "key": 155,
+  "slug": "github-cli",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "GitHub CLI (gh): dùng GitHub bằng dòng lệnh, kể cả cho coding agent",
+  "repo": "cli/cli",
+  "stars": 46848,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "lazygit",
+   "nvm"
+  ]
+ },
+ {
+  "key": 156,
+  "slug": "lazygit",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "lazygit: giao diện trong terminal giúp thao tác git bằng phím thay vì nhớ lệnh",
+  "repo": "jesseduffield/lazygit",
+  "stars": 83617,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-31",
+  "related": [
+   "github-cli",
+   "vscode"
+  ]
+ },
+ {
+  "key": 157,
+  "slug": "uv",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "uv: công cụ quản lý Python và thư viện Python nhanh, thay cho nhiều công cụ rời rạc",
+  "repo": "astral-sh/uv",
+  "stars": 91485,
+  "license": "Apache-2.0",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "nvm"
+  ]
+ },
+ {
+  "key": 158,
+  "slug": "nvm",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "nvm: chuyển đổi giữa các phiên bản Node.js, và điều người dùng Windows cần biết",
+  "repo": "nvm-sh/nvm",
+  "stars": 95740,
+  "license": "MIT",
+  "level_text": "Trung bình",
+  "tier": "co-ban",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "github-cli",
+   "uv"
+  ]
+ },
+ {
+  "key": 159,
+  "slug": "windows-terminal",
+  "group": "2026-11-03-cong-cu-dong-lenh",
+  "title": "Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows",
+  "repo": "microsoft/terminal",
+  "stars": 105315,
+  "license": "MIT",
+  "level_text": "Dễ",
+  "tier": "bat-dau",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "tldr-pages"
+  ]
  }
 ]

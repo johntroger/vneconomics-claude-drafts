@@ -1,0 +1,36 @@
+{
+  "key": 158,
+  "repo": "nvm-sh/nvm",
+  "repoId": "612230",
+  "url": "https://github.com/nvm-sh/nvm",
+  "stars": 95740,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T00:11:41Z",
+  "createdAt": "2010-04-15T17:47:47Z",
+  "defaultBranch": "master",
+  "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/nvm-sh/nvm/master/README.md",
+    "sha256": "e7d1c20a11d891ea6ee7a2c9f90b1c7f45c15bcb9f6111d0fc4ed456b6e65caa",
+    "bytes": 61790,
+    "sectionsRead": [
+      "Intro",
+      "Installing and Updating",
+      "Windows (ghi chú hỗ trợ)",
+      "Usage"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc phần cài đặt chi tiết và khắc phục sự cố.",
+    "Chưa đánh giá nvm-windows.",
+    "Chưa kiểm tra hành vi trên WSL."
+  ],
+  "runtimeValidated": false
+}

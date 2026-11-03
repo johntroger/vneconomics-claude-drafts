@@ -1,0 +1,34 @@
+{
+  "key": 159,
+  "repo": "microsoft/terminal",
+  "repoId": "100060912",
+  "url": "https://github.com/microsoft/terminal",
+  "stars": 105315,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": "MIT",
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T22:14:34Z",
+  "createdAt": "2017-08-11T18:38:22Z",
+  "defaultBranch": "main",
+  "description": "The new Windows Terminal and the original Windows console host, all in the same place!",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/microsoft/terminal/main/README.md",
+    "sha256": "2502797b5b8fc4bb985bbeef3c32431e0555610c85a8a9bad4a113b8f5d65437",
+    "bytes": 18794,
+    "sectionsRead": [
+      "Installing and running Windows Terminal",
+      "Terminal & Console Overview"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Yêu cầu phiên bản Windows chưa đọc.",
+    "Chưa đọc mục FAQ.",
+    "Chưa so sánh với terminal khác."
+  ],
+  "runtimeValidated": false
+}

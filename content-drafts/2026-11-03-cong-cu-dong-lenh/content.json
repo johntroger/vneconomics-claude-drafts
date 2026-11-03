@@ -1,0 +1,729 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-cong-cu-dong-lenh",
+  "batch": 26,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 153,
+      "batch": 26,
+      "slug": "tldr-pages",
+      "category": "Skills và phương pháp làm việc",
+      "need": "Chọn skills và quy trình",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "tldr pages: hướng dẫn lệnh dòng lệnh bằng ví dụ ngắn thay cho trang man dài",
+        "excerpt": "Giới thiệu bộ trang trợ giúp cộng đồng giải thích lệnh terminal bằng ví dụ thực tế. Rất hợp để hiểu lệnh AI đưa cho bạn trước khi chạy.",
+        "content": "<p>tldr-pages là bộ trang trợ giúp do cộng đồng duy trì cho các công cụ dòng lệnh, nhằm đơn giản và dễ tiếp cận hơn so với trang man truyền thống. README chỉ ra vấn đề: trang man tar mở đầu bằng một tùy chọn về ổ băng từ, trong khi người dùng cần ví dụ thực tế. Repo là bộ ví dụ cho các công cụ phổ biến trên UNIX, Linux, macOS, FreeBSD, Windows, Android, Cisco IOS và DOS. Có nhiều client chính thức (như client Python) và một client web chạy không cần cài đặt.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Trang man giống cuốn từ điển đầy đủ: chính xác nhưng dày. tldr giống tờ giấy nhớ dán cạnh màn hình: 'muốn nén thư mục thì gõ thế này, muốn giải nén thì gõ thế kia', kèm ví dụ ngay.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi AI đưa một lệnh tar hay curl mà bạn không hiểu, tra tên lệnh trên client web của tldr để xem ví dụ thông dụng rồi đối chiếu với lệnh AI đưa. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người mới làm quen terminal; người vibe code thường chạy lệnh do AI đề xuất và muốn hiểu chúng.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> README nói có client web dùng trực tiếp trên trình duyệt (kèm hỗ trợ ngoại tuyến) nên không cần cài gì để xem. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn cần giải thích chi tiết mọi tùy chọn của một lệnh, trang man hoặc tài liệu chính thức của công cụ sẽ đầy đủ hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>terminal / dòng lệnh</strong>: cửa sổ gõ lệnh bằng chữ để điều khiển máy tính.</li><li><strong>man page</strong>: trang hướng dẫn đầy đủ có sẵn trên hệ điều hành kiểu UNIX cho từng lệnh.</li><li><strong>client</strong>: chương trình bạn dùng để xem trang tldr, như client Python hay client web.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói có client web tại tldr.inbrowser.app (không cần cài, có hỗ trợ ngoại tuyến), client Python chính thức cài qua pipx hoặc trình quản lý gói khác, và nhiều client khác. Nội dung theo giấy phép CC BY 4.0 theo huy hiệu trong README. Bài không chép lệnh cài.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Mở client web và tra một lệnh bạn hay gặp (ví dụ lệnh nén hoặc tải).</li><li>So sánh ví dụ trong tldr với lệnh AI đưa cho bạn.</li><li>Nếu cần chi tiết hơn, mở tài liệu chính thức của lệnh đó.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay chạy lệnh terminal do AI đề xuất mà không hiểu. Hãy đọc README của tldr-pages (https://github.com/tldr-pages/tldr) và hướng dẫn bằng tiếng Việt cách dùng nó để hiểu một lệnh trước khi chạy, và 5 câu hỏi mình nên hỏi AI về một lệnh lạ. Chưa chạy lệnh nào.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Là ví dụ cộng đồng nên có thể chưa đầy đủ hoặc chưa cập nhật. Phần lớn nội dung bằng tiếng Anh; chưa kiểm tra bản dịch tiếng Việt. Ví dụ trong trang là dạng chung, bạn vẫn cần hiểu lệnh sẽ tác động gì lên máy của mình trước khi chạy.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI đưa lệnh cho bạn chạy, hãy hỏi nó giải thích từng phần và lệnh đó sẽ thay đổi gì trước khi chạy; đừng dán những lệnh bạn không hiểu, nhất là lệnh tải script từ mạng rồi chạy ngay.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>tldr-pages</strong> có <strong>64.109 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub trả NOASSERTION; README có huy hiệu giấy phép CC BY 4.0 cho nội dung. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/tldr-pages/tldr/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/tldr-pages/tldr\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 153. Chưa cài/chạy thử; không tạo validation. Snapshot sao 64109; repo_id 15019962; README SHA256 7f9afc38219a12ebeae7bf4e5cdd556df532a6bd6fd3378e6b05d0db7d92e701.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/tldr-pages/tldr",
+          "repo_id": "15019962",
+          "source_path": "",
+          "source_revision": "README-SHA256:7f9afc38219a12ebeae7bf4e5cdd556df532a6bd6fd3378e6b05d0db7d92e701",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "NOASSERTION",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tldr-pages/tldr",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói có client web tại tldr.inbrowser.app (không cần cài, có hỗ trợ ngoại tuyến), client Python chính thức cài qua pipx hoặc trình quản lý gói khác, và nhiều client khác. Nội dung theo giấy phép CC BY 4.0 theo huy hiệu trong README. Bài không chép lệnh cài.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/tldr-pages/tldr/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/tldr-pages/tldr/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "tldr-pages/tldr",
+        "stars": 64109,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/tldr-pages/tldr/main/README.md",
+        "readmeSha256": "7f9afc38219a12ebeae7bf4e5cdd556df532a6bd6fd3378e6b05d0db7d92e701",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 154,
+      "batch": 26,
+      "slug": "vscode",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft",
+        "excerpt": "Hiểu trình soạn mã được dùng nhiều nhất trong vibe coding và sự khác nhau giữa repo mã nguồn mở Code - OSS với sản phẩm Visual Studio Code phát hành bởi Microsoft.",
+        "content": "<p>Repo microsoft/vscode có tên 'Code - OSS', nơi Microsoft cùng cộng đồng phát triển Visual Studio Code. README nói rõ có sự khác biệt: sản phẩm Visual Studio Code là bản phân phối của Code - OSS kèm các tùy biến riêng của Microsoft và được phát hành theo giấy phép sản phẩm truyền thống của Microsoft, trong khi mã trong repo theo giấy phép mã nguồn mở. VS Code kết hợp sự đơn giản của trình soạn mã với những gì lập trình viên cần cho vòng soạn, build, gỡ lỗi; cập nhật hằng tháng; tải cho Windows, macOS và Linux từ trang chính thức.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Hãy nghĩ tới một công thức nấu ăn mở (Code - OSS) và một món ăn đóng gói bán trong cửa hàng (Visual Studio Code của Microsoft). Hai thứ liên quan, nhưng món đóng gói có thêm phần riêng và có điều khoản sử dụng riêng. Hầu hết người dùng chỉ cần tải món đóng gói.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở thư mục dự án do AI tạo bằng VS Code để xem cấu trúc tệp, và dùng tính năng tìm kiếm để tìm nơi một tên hàm được dùng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người bắt đầu đọc và sửa mã; người dùng coding agent trong trình soạn mã.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ đến trung bình.</strong> Tải về và dùng như một ứng dụng bình thường; nhiều tính năng (tiện ích, terminal tích hợp, gỡ lỗi) cần thời gian làm quen. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chỉ chỉnh vài dòng chữ trong tệp văn bản, một trình soạn nhẹ hơn là đủ.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Code - OSS</strong>: bản mã nguồn mở nằm trong repo này, nền của Visual Studio Code.</li><li><strong>extension (tiện ích mở rộng)</strong>: phần bổ sung cài vào trình soạn để thêm tính năng; chất lượng và độ an toàn khác nhau tùy tác giả.</li><li><strong>debug (gỡ lỗi)</strong>: chạy mã từng bước để tìm chỗ sai.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README nói có thể tải VS Code cho Windows, macOS và Linux ở trang chính thức. Repo này cho người muốn đóng góp hoặc xem mã nguồn. Giá: bài chưa nêu; xem điều khoản sản phẩm Visual Studio Code của Microsoft.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc đoạn mở đầu của README để hiểu Code - OSS khác Visual Studio Code.</li><li>Tải bản chính thức từ trang code.visualstudio.com (không từ nguồn lạ).</li><li>Mở một dự án thử và làm quen khung tệp, tìm kiếm và terminal tích hợp.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình mới dùng VS Code để xem dự án AI tạo. Hãy đọc README của microsoft/vscode (https://github.com/microsoft/vscode) và giải thích bằng tiếng Việt: Code - OSS khác Visual Studio Code ở điểm nào, và tiện ích mở rộng có rủi ro gì. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giấy phép của repo khác giấy phép của sản phẩm Visual Studio Code phát hành; README không đi sâu điều khoản, nên bạn cần đọc điều khoản sản phẩm. Tiện ích do bên thứ ba viết có thể truy cập tệp của bạn. Bài chưa đọc về thu thập dữ liệu sử dụng (telemetry) của sản phẩm.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Chỉ cài tiện ích từ nhà phát hành bạn tin cậy, xem số lượt cài và đánh giá, và tắt hoặc gỡ những thứ bạn không dùng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>194.514 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT cho repo Code - OSS; sản phẩm Visual Studio Code do Microsoft phát hành theo giấy phép sản phẩm riêng, theo README. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/vscode/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/vscode\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 154. Chưa cài/chạy thử; không tạo validation. Snapshot sao 194514; repo_id 41881900; README SHA256 45a411a3b8d49556fbaa73601befc458ab10ad873fca9088136888c89abb8935.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/vscode",
+          "repo_id": "41881900",
+          "source_path": "",
+          "source_revision": "README-SHA256:45a411a3b8d49556fbaa73601befc458ab10ad873fca9088136888c89abb8935",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/vscode",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README nói có thể tải VS Code cho Windows, macOS và Linux ở trang chính thức. Repo này cho người muốn đóng góp hoặc xem mã nguồn. Giá: bài chưa nêu; xem điều khoản sản phẩm Visual Studio Code của Microsoft.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/vscode/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/vscode/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/vscode",
+        "stars": 194514,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/vscode/main/README.md",
+        "readmeSha256": "45a411a3b8d49556fbaa73601befc458ab10ad873fca9088136888c89abb8935",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 155,
+      "batch": 26,
+      "slug": "github-cli",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "GitHub CLI (gh): dùng GitHub bằng dòng lệnh, kể cả cho coding agent",
+        "excerpt": "Hiểu công cụ chính thức của GitHub để làm việc với pull request và issue từ terminal, và vì sao agent AI hay dùng nó. Cần thận trọng về quyền đăng nhập.",
+        "content": "<p>GitHub CLI (gh) là GitHub trên dòng lệnh, đưa pull request, issue và các khái niệm khác của GitHub tới terminal cạnh nơi bạn làm việc với git và mã. README nói hỗ trợ GitHub.com, GitHub Enterprise Cloud và các phiên bản Enterprise Server được hỗ trợ, trên macOS, Windows và Linux. README còn có mục 'Agent skills': một skill để điều khiển gh từ coding agent, cài bằng lệnh gh skill. Cài đặt có hướng dẫn riêng cho macOS, Linux và Windows.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thông thường làm việc với GitHub phải mở trình duyệt, bấm nhiều nút. gh giống một bảng điều khiển bằng lệnh: tạo pull request, xem issue, ngay từ cửa sổ bạn đang làm. Coding agent cũng dùng được nên mới có phần skill trong README.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi agent AI nói 'đã tạo pull request', bạn hiểu có thể nó đã dùng gh và biết cần xem lại tài khoản nào đã đăng nhập cho gh. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người đã dùng GitHub và muốn làm việc nhanh từ terminal; người cho agent quyền thao tác trên repo.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần có tài khoản GitHub và quen khái niệm repo, pull request, issue. Cần đăng nhập (xác thực) cho công cụ. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa dùng GitHub, hãy làm quen trên trang web trước.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>API key (khóa API)</strong>: chuỗi ký tự giống mật khẩu để dịch vụ biết ai đang gọi và tính phí cho ai. Không được đưa vào chat hay mã nguồn công khai.</li><li><strong>agent AI</strong>: chương trình dùng AI để tự thực hiện một chuỗi việc (đọc, tìm, bấm, viết) thay vì chỉ trả lời một câu hỏi.</li><li><strong>pull request</strong>: đề nghị đưa một nhóm thay đổi mã vào nhánh chính để người khác xem xét.</li><li><strong>issue</strong>: một mục ghi lỗi hoặc yêu cầu trên GitHub.</li><li><strong>xác thực (authentication)</strong>: đăng nhập để công cụ làm việc nhân danh tài khoản của bạn; quyền cấp càng rộng càng rủi ro.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài theo từng hệ điều hành (macOS với Homebrew hoặc bản nhị phân, Linux, Windows). Cần tài khoản GitHub. README nêu việc xoay khóa ký PGP cho kho gói Linux có hiệu lực ngày 5/9/2026 và dẫn tới thông báo công khai nếu gặp lỗi cài hoặc cập nhật. Miễn phí theo giấy phép MIT. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và đường cài cho hệ điều hành của bạn.</li><li>Đọc kỹ quyền bạn cấp khi đăng nhập cho gh.</li><li>Thử các lệnh chỉ đọc (xem issue, xem pull request) trước khi cho phép lệnh ghi.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng coding agent trên máy và nó hay dùng gh. Hãy đọc README của GitHub CLI (https://github.com/cli/cli) và giải thích bằng tiếng Việt: gh làm gì, đăng nhập cho gh cấp những quyền gì, và rủi ro khi để agent dùng gh với tài khoản của mình. Chưa cài hay đăng nhập gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Công cụ hành động nhân danh tài khoản của bạn nên một lệnh sai có thể ảnh hưởng tới repo thật (đóng issue, tạo hoặc gộp pull request). README có phần skill cho agent; chúng tôi chưa đọc nội dung skill đó.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Đừng cho agent quyền đẩy trực tiếp vào nhánh chính hay xóa repo; dùng token có quyền tối thiểu và theo dõi các thao tác.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cli</strong> có <strong>46.848 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cli/cli/blob/trunk/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cli/cli\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 155. Chưa cài/chạy thử; không tạo validation. Snapshot sao 46848; repo_id 212613049; README SHA256 5816da6f27253e6e5544e9c8d7b0f652e03200a0345fae1693e50d72fabb8cc4.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cli/cli",
+          "repo_id": "212613049",
+          "source_path": "",
+          "source_revision": "README-SHA256:5816da6f27253e6e5544e9c8d7b0f652e03200a0345fae1693e50d72fabb8cc4",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cli/cli",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài theo từng hệ điều hành (macOS với Homebrew hoặc bản nhị phân, Linux, Windows). Cần tài khoản GitHub. README nêu việc xoay khóa ký PGP cho kho gói Linux có hiệu lực ngày 5/9/2026 và dẫn tới thông báo công khai nếu gặp lỗi cài hoặc cập nhật. Miễn phí theo giấy phép MIT. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cli/cli/blob/trunk/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cli/cli/blob/trunk/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cli/cli",
+        "stars": 46848,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cli/cli/trunk/README.md",
+        "readmeSha256": "5816da6f27253e6e5544e9c8d7b0f652e03200a0345fae1693e50d72fabb8cc4",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 156,
+      "batch": 26,
+      "slug": "lazygit",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "lazygit: giao diện trong terminal giúp thao tác git bằng phím thay vì nhớ lệnh",
+        "excerpt": "Hiểu công cụ làm git bớt đáng sợ bằng giao diện văn bản: xem thay đổi, chọn dòng cần commit, hoàn tác. Hữu ích khi AI sửa nhiều tệp và bạn cần kiểm soát.",
+        "content": "<p>lazygit là giao diện terminal đơn giản cho các lệnh git. README mở đầu bằng lời kêu ca rằng git mạnh nhưng khó dùng và giới thiệu lazygit như một cách làm việc dễ hơn. Danh sách tính năng gồm chọn từng khối hoặc từng dòng để đưa vào commit, rebase tương tác, cherry-pick, bisect, xóa sạch thay đổi, sửa commit cũ, lọc, lệnh tùy chỉnh, worktree, hoàn tác, đồ thị commit và so sánh hai commit.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Git giống chiếc máy ảnh có hàng trăm nút. lazygit giống màn hình hiển thị các nút quan trọng cùng lúc với phím tắt ghi sẵn, nên bạn thấy các thay đổi, chọn đúng thứ cần lưu và quay lại nếu lỡ tay mà không phải nhớ lệnh.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: sau khi AI sửa nhiều tệp, mở lazygit để xem từng thay đổi, chỉ chọn phần bạn đồng ý để commit, và hoàn tác phần không muốn. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng git nhưng thấy lệnh khó nhớ; người cần duyệt kỹ thay đổi do AI tạo trước khi lưu.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Cần hiểu khái niệm git (commit, nhánh) trước; lazygit giúp thao tác nhưng không thay phần hiểu. README có hướng dẫn và liên kết tutorial. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn chưa dùng git, hãy học khái niệm trước. Nếu bạn thích giao diện đồ họa, các ứng dụng git có cửa sổ có thể hợp hơn.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>git</strong>: hệ thống lưu lịch sử thay đổi của mã.</li><li><strong>commit</strong>: một lần lưu thay đổi có ghi chú.</li><li><strong>rebase</strong>: sắp xếp lại lịch sử thay đổi; thao tác nâng cao, dễ gây rối nếu không hiểu.</li><li><strong>TUI</strong>: giao diện người dùng dạng chữ trong terminal.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README có phần cài đặt và tutorial; bài chưa đọc chi tiết nên chưa nêu lệnh hay yêu cầu. Miễn phí theo giấy phép MIT. README nhận tài trợ từ người đóng góp.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần 'Elevator Pitch' và 'Features' để thấy các thao tác chính.</li><li>Học khái niệm git cơ bản nếu chưa có.</li><li>Thử trên một kho thử, tập hoàn tác (Undo) trước khi dùng thao tác nâng cao.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình hay để AI sửa nhiều tệp rồi không biết thay đổi gì. Hãy đọc README của lazygit (https://github.com/jesseduffield/lazygit) và giải thích bằng tiếng Việt: nó giúp xem và chọn thay đổi thế nào, thao tác nào nguy hiểm (rebase, xóa thay đổi), và cách hoàn tác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Giao diện dễ hơn nhưng thao tác nguy hiểm vẫn nguy hiểm (xóa thay đổi, viết lại lịch sử). README viết với giọng khá thân mật và có phần than phiền về git; hãy đọc kỹ phần hướng dẫn. Cần hiểu git để dùng an toàn.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Trước khi dùng thao tác viết lại lịch sử hay xóa thay đổi, hãy sao lưu hoặc tạo nhánh dự phòng.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>jesseduffield</strong> có <strong>83.617 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-31. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/jesseduffield/lazygit/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/jesseduffield/lazygit\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 156. Chưa cài/chạy thử; không tạo validation. Snapshot sao 83617; repo_id 134017286; README SHA256 e89fa4d374019219153c4e3743cfd49fcc0853df2e3b3fffbe5408d4d9f9ac60.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/jesseduffield/lazygit",
+          "repo_id": "134017286",
+          "source_path": "",
+          "source_revision": "README-SHA256:e89fa4d374019219153c4e3743cfd49fcc0853df2e3b3fffbe5408d4d9f9ac60",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jesseduffield/lazygit",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README có phần cài đặt và tutorial; bài chưa đọc chi tiết nên chưa nêu lệnh hay yêu cầu. Miễn phí theo giấy phép MIT. README nhận tài trợ từ người đóng góp.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/jesseduffield/lazygit/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/jesseduffield/lazygit/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "jesseduffield/lazygit",
+        "stars": 83617,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/jesseduffield/lazygit/master/README.md",
+        "readmeSha256": "e89fa4d374019219153c4e3743cfd49fcc0853df2e3b3fffbe5408d4d9f9ac60",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 157,
+      "batch": 26,
+      "slug": "uv",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "uv: công cụ quản lý Python và thư viện Python nhanh, thay cho nhiều công cụ rời rạc",
+        "excerpt": "Hiểu uv gom pip, virtualenv, pipx, pyenv và nhiều thứ vào một công cụ nhanh. Hay gặp trong hướng dẫn cài công cụ AI viết bằng Python.",
+        "content": "<p>uv là công cụ quản lý gói và dự án Python cực nhanh, viết bằng Rust. README nói nó thay thế pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv và nhiều công cụ khác trong một công cụ duy nhất; nhanh gấp 10 đến 100 lần pip (theo tác giả); quản lý dự án với tệp khóa phổ quát; chạy script có khai báo phụ thuộc ngay trong script; cài và quản lý phiên bản Python; chạy và cài công cụ viết bằng Python; có giao diện tương thích pip; hỗ trợ macOS, Linux và Windows. uv do Astral, tác giả của Ruff, phát triển.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Python thường cần nhiều công cụ riêng cho từng việc: một cái chọn phiên bản Python, một cái tạo 'phòng riêng' cho dự án, một cái cài thư viện. uv giống con dao đa năng gom các việc đó vào một công cụ, nên các hướng dẫn cài công cụ AI hay bảo 'dùng uv'.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi README của một công cụ AI (như Browser Use) bảo cài bằng uv, bạn hiểu uv là công cụ nào và nó đang giúp việc gì. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người cài các công cụ AI viết bằng Python; người học Python.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm đơn giản nhưng cần quen terminal và hiểu thế nào là môi trường Python. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn không dùng Python, chưa cần. Nếu đang dùng công cụ quản lý khác ổn định, không bắt buộc chuyển.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>framework</strong>: bộ khung code dựng sẵn, bạn viết ứng dụng của mình bên trong khung đó.</li><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>virtualenv (môi trường ảo)</strong>: một 'phòng riêng' cho thư viện của từng dự án để các dự án không đè lên nhau.</li><li><strong>package manager (trình quản lý gói)</strong>: công cụ cài và cập nhật thư viện.</li><li><strong>lockfile</strong>: tệp ghi chính xác phiên bản thư viện đã dùng để dựng lại giống hệt.</li><li><strong>Rust</strong>: ngôn ngữ lập trình; uv viết bằng Rust nên không cần Python để chạy bản thân nó.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README liệt kê trình cài độc lập cho các hệ điều hành và nói cũng có thể cài qua pip; một số trình cài tải script từ mạng rồi chạy, nên hãy đọc script trước khi chạy. Hỗ trợ macOS, Linux, Windows. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần Highlights để biết uv thay những công cụ nào.</li><li>Đọc mục Installation cho hệ điều hành của bạn và xem script trước khi chạy.</li><li>Thử với một dự án Python nhỏ, chưa động vào dự án quan trọng.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>README của một công cụ AI bảo cài bằng uv nhưng mình chưa biết uv. Hãy đọc README của uv (https://github.com/astral-sh/uv) và giải thích bằng tiếng Việt: uv làm gì, khác gì pip, và những thay đổi nó thực hiện trên máy mình khi cài. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Con số 'nhanh gấp 10 đến 100 lần pip' là tuyên bố của tác giả, chúng tôi chưa kiểm chứng. Công cụ còn khá mới và đang thay đổi nhanh. Thay đổi môi trường Python của máy có thể ảnh hưởng tới công cụ khác nếu làm sai.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI đưa lệnh cho bạn chạy, hãy hỏi nó giải thích từng phần và lệnh đó sẽ thay đổi gì trước khi chạy; đừng dán những lệnh bạn không hiểu, nhất là lệnh tải script từ mạng rồi chạy ngay.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>astral-sh</strong> có <strong>91.485 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/astral-sh/uv/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/astral-sh/uv\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 157. Chưa cài/chạy thử; không tạo validation. Snapshot sao 91485; repo_id 699532645; README SHA256 57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/astral-sh/uv",
+          "repo_id": "699532645",
+          "source_path": "",
+          "source_revision": "README-SHA256:57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "Apache-2.0",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/astral-sh/uv",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README liệt kê trình cài độc lập cho các hệ điều hành và nói cũng có thể cài qua pip; một số trình cài tải script từ mạng rồi chạy, nên hãy đọc script trước khi chạy. Hỗ trợ macOS, Linux, Windows. Miễn phí theo giấy phép Apache-2.0. Bài không chép lệnh.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/astral-sh/uv/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/astral-sh/uv/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "astral-sh/uv",
+        "stars": 91485,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/astral-sh/uv/main/README.md",
+        "readmeSha256": "57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 158,
+      "batch": 26,
+      "slug": "nvm",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "nvm: chuyển đổi giữa các phiên bản Node.js, và điều người dùng Windows cần biết",
+        "excerpt": "Hiểu vì sao nhiều dự án web yêu cầu đúng phiên bản Node.js và nvm giúp đổi phiên bản thế nào. Lưu ý quan trọng: nvm chính thức dành cho shell kiểu POSIX, Windows cần cách khác.",
+        "content": "<p>nvm là trình quản lý phiên bản Node.js, thiết kế để cài theo từng người dùng và gọi theo từng shell. README nói nvm chạy trên mọi shell tương thích POSIX (sh, dash, ksh, zsh, bash). README ghi 'nvm cũng hỗ trợ Windows trong một số trường hợp': nó nên chạy qua WSL tùy phiên bản WSL, cũng nên chạy với Git Bash, và có dự án riêng nvm-windows cho cmd. README có phần cài, cập nhật, khắc phục sự cố, cách dùng, bản LTS, và tệp .nvmrc để ghi phiên bản cho dự án.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Mỗi dự án web đôi khi cần một 'đời' Node.js khác nhau, giống mỗi loại máy cần một loại pin. nvm giống ngăn kéo đựng nhiều loại pin: bạn chọn loại hợp với dự án đang làm bằng một lệnh, thay vì cài đè lên nhau.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: khi một dự án báo cần Node.js phiên bản cao hơn bản bạn đang có, tìm hiểu cách nvm đổi phiên bản và tệp .nvmrc ghi phiên bản cho dự án. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người làm dự án web gặp lỗi 'phiên bản Node không phù hợp'; người dùng macOS, Linux hoặc WSL.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Trung bình.</strong> Khái niệm dễ, nhưng cài đặt qua script trong shell và cấu hình hồ sơ shell có thể khó với người mới, nhất là trên Windows. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Người dùng Windows thuần (không WSL, không Git Bash) không nên làm theo README chính thức mà xem nvm-windows, một dự án khác mà README có liên kết. Bài này chưa đánh giá dự án đó.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>Node.js</strong>: nền tảng chạy JavaScript ngoài trình duyệt, nhiều công cụ web dựa trên nó.</li><li><strong>LTS</strong>: bản hỗ trợ dài hạn, thường ổn định hơn cho dùng thật; README có mục Long-term Support.</li><li><strong>POSIX shell</strong>: loại cửa sổ lệnh chuẩn trên macOS và Linux (bash, zsh…); Windows cmd không thuộc loại này.</li><li><strong>WSL</strong>: hệ thống con Linux chạy trong Windows.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README hướng dẫn cài qua script cài đặt, qua git hoặc thủ công; hỗ trợ Windows có điều kiện như nêu. Bài không chép lệnh. Script cài đặt tải mã từ mạng và sửa tệp cấu hình shell; hãy đọc trước khi chạy. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Kiểm tra hệ điều hành và loại shell của bạn trước, đọc mục về Windows.</li><li>Đọc phần Install & Update Script và Important Notes.</li><li>Dùng .nvmrc để ghi phiên bản cho từng dự án.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Dự án web báo cần phiên bản Node.js khác. Mình dùng Windows. Hãy đọc README của nvm (https://github.com/nvm-sh/nvm) và giải thích bằng tiếng Việt: nvm làm gì, vì sao Windows thuần cần cách khác, và những thay đổi script cài thực hiện lên máy. Chưa cài hay chạy gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Script cài đặt sửa tệp cấu hình shell; làm sai có thể khiến các lệnh khác không chạy. Hỗ trợ Windows không phải mặc định. README rất dài (hơn 60 KB) và nhiều mục xử lý sự cố, nên dễ rối.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI đưa lệnh cho bạn chạy, hãy hỏi nó giải thích từng phần và lệnh đó sẽ thay đổi gì trước khi chạy; đừng dán những lệnh bạn không hiểu, nhất là lệnh tải script từ mạng rồi chạy ngay.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>nvm-sh</strong> có <strong>95.740 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/nvm-sh/nvm/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/nvm-sh/nvm\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 158. Chưa cài/chạy thử; không tạo validation. Snapshot sao 95740; repo_id 612230; README SHA256 e7d1c20a11d891ea6ee7a2c9f90b1c7f45c15bcb9f6111d0fc4ed456b6e65caa.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/nvm-sh/nvm",
+          "repo_id": "612230",
+          "source_path": "",
+          "source_revision": "README-SHA256:e7d1c20a11d891ea6ee7a2c9f90b1c7f45c15bcb9f6111d0fc4ed456b6e65caa",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nvm-sh/nvm",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README hướng dẫn cài qua script cài đặt, qua git hoặc thủ công; hỗ trợ Windows có điều kiện như nêu. Bài không chép lệnh. Script cài đặt tải mã từ mạng và sửa tệp cấu hình shell; hãy đọc trước khi chạy. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/nvm-sh/nvm/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/nvm-sh/nvm/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "nvm-sh/nvm",
+        "stars": 95740,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/nvm-sh/nvm/master/README.md",
+        "readmeSha256": "e7d1c20a11d891ea6ee7a2c9f90b1c7f45c15bcb9f6111d0fc4ed456b6e65caa",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 159,
+      "batch": 26,
+      "slug": "windows-terminal",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows",
+        "excerpt": "Giới thiệu ứng dụng terminal của Microsoft cho Windows, nơi bạn chạy lệnh do AI hay hướng dẫn đưa. Cài qua Microsoft Store hoặc winget.",
+        "content": "<p>Repo microsoft/terminal chứa mã nguồn của Windows Terminal và console host gốc của Windows. README hướng dẫn cài Windows Terminal qua Microsoft Store (khuyến nghị), hoặc qua GitHub, Windows Package Manager (winget), và các cách không chính thức như Chocolatey hay Scoop; cũng có bản Canary. README mô tả tổng quan Terminal và Console, các thành phần dùng chung, câu hỏi thường gặp và hướng dẫn cho người đóng góp.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Terminal là cửa sổ để bạn nói chuyện với máy bằng chữ. Windows Terminal giống một khung cửa sổ đẹp và tiện hơn: nhiều thẻ cùng lúc, mỗi thẻ có thể là một loại shell khác nhau (như PowerShell hay Linux qua WSL).</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: mở Windows Terminal để chạy những lệnh an toàn như xem phiên bản Node.js, rồi dùng tldr để hiểu các lệnh lạ trước khi chạy. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người dùng Windows làm việc với công cụ dòng lệnh và coding agent.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Dễ.</strong> README khuyến nghị cài từ Microsoft Store, rất giống cài một ứng dụng thường. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Nếu bạn dùng macOS hoặc Linux, đây không phải công cụ của bạn. Nếu bạn chưa cần dòng lệnh, chưa cần.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>shell</strong>: chương trình nhận và chạy lệnh bạn gõ, như PowerShell hoặc bash.</li><li><strong>console host</strong>: thành phần gốc của Windows chạy cửa sổ dòng lệnh; repo này chứa cả phần đó.</li><li><strong>winget</strong>: trình quản lý gói chính thức của Windows để cài ứng dụng bằng lệnh.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: Microsoft Store là cách cài được khuyến nghị; còn cách qua GitHub, winget và cách không chính thức. Yêu cầu phiên bản Windows chưa đọc kỹ. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục 'Installing and running Windows Terminal'.</li><li>Cài từ Microsoft Store (nguồn được khuyến nghị).</li><li>Mở và làm quen các thẻ, rồi chỉ chạy lệnh bạn hiểu.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình dùng Windows và cần chạy lệnh terminal do AI hướng dẫn. Hãy đọc README của Windows Terminal (https://github.com/microsoft/terminal) và giải thích bằng tiếng Việt: nó là gì, nên cài từ đâu cho an toàn, và PowerShell khác bash thế nào ở mức người mới. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>Terminal chỉ là cửa sổ; lệnh bạn chạy mới gây tác động. Các cách cài không chính thức (Chocolatey, Scoop) README ghi là không chính thức. Yêu cầu hệ điều hành chưa kiểm tra.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Khi AI đưa lệnh cho bạn chạy, hãy hỏi nó giải thích từng phần và lệnh đó sẽ thay đổi gì trước khi chạy; đừng dán những lệnh bạn không hiểu, nhất là lệnh tải script từ mạng rồi chạy ngay.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>microsoft</strong> có <strong>105.315 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/microsoft/terminal/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/microsoft/terminal\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm công cụ dòng lệnh, key 159. Chưa cài/chạy thử; không tạo validation. Snapshot sao 105315; repo_id 100060912; README SHA256 2502797b5b8fc4bb985bbeef3c32431e0555610c85a8a9bad4a113b8f5d65437.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/microsoft/terminal",
+          "repo_id": "100060912",
+          "source_path": "",
+          "source_revision": "README-SHA256:2502797b5b8fc4bb985bbeef3c32431e0555610c85a8a9bad4a113b8f5d65437",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": "MIT",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/terminal",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: Microsoft Store là cách cài được khuyến nghị; còn cách qua GitHub, winget và cách không chính thức. Yêu cầu phiên bản Windows chưa đọc kỹ. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/microsoft/terminal/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/microsoft/terminal/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "microsoft/terminal",
+        "stars": 105315,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/microsoft/terminal/main/README.md",
+        "readmeSha256": "2502797b5b8fc4bb985bbeef3c32431e0555610c85a8a9bad4a113b8f5d65437",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

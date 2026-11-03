@@ -7,13 +7,14 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 - [Lộ trình 2 — Vibe code có kỷ luật](learning-paths/02-vibe-code-co-ky-luat.vi.md) — Cho người đã dùng coding agent và muốn giảm tình trạng AI làm sai ý, làm rối mã.
 - [Lộ trình 3 — Từ ý tưởng đến website chạy thật](learning-paths/03-tu-y-tuong-den-website-chay-that.vi.md) — Cho người đã có bản mẫu và muốn thêm đăng nhập, dữ liệu và đưa lên mạng.
 - [Lộ trình 7 — Đọc hiểu mã web do AI dựng](learning-paths/07-doc-hieu-ma-web-do-ai-dung.vi.md) — Giải mã các tên công nghệ thường xuất hiện trong dự án web do AI tạo: để biết mình đang nhìn thấy gì.
+- [Lộ trình 8 — Làm quen terminal và môi trường làm việc](learning-paths/08-lam-quen-terminal-va-moi-truong.vi.md) — Cho người dùng coding agent cần thoải mái hơn với dòng lệnh, git và công cụ phát triển.
 - [Lộ trình 4 — Bảo mật tối thiểu cho người vibe code](learning-paths/04-bao-mat-toi-thieu.vi.md) — Ba việc đáng làm đầu tiên: không lộ khóa, không dùng thư viện lỗi, biết nguyên tắc cơ bản.
 - [Lộ trình 5 — Cho AI đọc web và dùng công cụ ngoài](learning-paths/05-cho-ai-doc-web-va-dung-cong-cu.vi.md) — Cho người muốn AI lấy dữ liệu web, thao tác trình duyệt hoặc kết nối công cụ qua MCP.
 - [Lộ trình 6 — Tự động hóa công việc](learning-paths/06-tu-dong-hoa-khong-can-gioi-code.vi.md) — Từ việc dễ nhất (theo dõi thay đổi, kéo thả) đến công cụ dành cho kỹ sư dữ liệu.
 
 ## Theo độ khó (đánh giá biên tập)
 
-### Bắt đầu (15 bài)
+### Bắt đầu (18 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -32,8 +33,11 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 141 | OWASP Cheat Sheet Series: bảng tóm tắt bảo mật ứng dụng ngắn gọn cho người xây dựng | [OWASP/CheatSheetSeries](https://github.com/OWASP/CheatSheetSeries) | CC-BY-SA-4.0 | 33853 | bao-mat-co-ban |
 | 145 | Tailwind CSS: cách tạo kiểu giao diện bằng các lớp ngắn mà mã AI hay dùng | [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | MIT | 98054 | cong-nghe-web-ai-hay-dung |
 | 146 | Vite: công cụ chạy thử và đóng gói dự án web nhanh, nền của nhiều dự án AI dựng | [vitejs/vite](https://github.com/vitejs/vite) | MIT | 83681 | cong-nghe-web-ai-hay-dung |
+| 153 | tldr pages: hướng dẫn lệnh dòng lệnh bằng ví dụ ngắn thay cho trang man dài | [tldr-pages/tldr](https://github.com/tldr-pages/tldr) | NOASSERTION | 64109 | cong-cu-dong-lenh |
+| 154 | Visual Studio Code: trình soạn mã phổ biến và điều cần biết về 'Code - OSS' so với bản của Microsoft | [microsoft/vscode](https://github.com/microsoft/vscode) | MIT | 194514 | cong-cu-dong-lenh |
+| 159 | Windows Terminal: cửa sổ dòng lệnh hiện đại cho người dùng Windows | [microsoft/terminal](https://github.com/microsoft/terminal) | MIT | 105315 | cong-cu-dong-lenh |
 
-### Cơ bản (22 bài)
+### Cơ bản (26 bài)
 
 | Key | Bài | Repo | License | Sao | Nhóm |
 |---|---|---|---|---:|---|
@@ -59,6 +63,10 @@ Cập nhật: 2026-11-03. Tất cả là bản nháp, chưa import, chưa xuất
 | 149 | Astro: framework cho website nội dung (blog, giới thiệu, tài liệu) tải nhanh | [withastro/astro](https://github.com/withastro/astro) | NOASSERTION | 63680 | cong-nghe-web-ai-hay-dung |
 | 150 | Zod: kiểm tra dữ liệu từ bên ngoài có đúng dạng mong đợi, thường gặp trong mã TypeScript | [colinhacks/zod](https://github.com/colinhacks/zod) | MIT | 44246 | cong-nghe-web-ai-hay-dung |
 | 152 | Vitest: viết bài kiểm thử nhỏ để biết mã AI viết có chạy đúng không | [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | MIT | 17322 | cong-nghe-web-ai-hay-dung |
+| 155 | GitHub CLI (gh): dùng GitHub bằng dòng lệnh, kể cả cho coding agent | [cli/cli](https://github.com/cli/cli) | MIT | 46848 | cong-cu-dong-lenh |
+| 156 | lazygit: giao diện trong terminal giúp thao tác git bằng phím thay vì nhớ lệnh | [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) | MIT | 83617 | cong-cu-dong-lenh |
+| 157 | uv: công cụ quản lý Python và thư viện Python nhanh, thay cho nhiều công cụ rời rạc | [astral-sh/uv](https://github.com/astral-sh/uv) | Apache-2.0 | 91485 | cong-cu-dong-lenh |
+| 158 | nvm: chuyển đổi giữa các phiên bản Node.js, và điều người dùng Windows cần biết | [nvm-sh/nvm](https://github.com/nvm-sh/nvm) | MIT | 95740 | cong-cu-dong-lenh |
 
 ### Khá khó (cần nền kỹ thuật) (11 bài)
 
