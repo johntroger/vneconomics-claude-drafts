@@ -7911,5 +7911,195 @@
   "related": [
    "cheerio"
   ]
+ },
+ {
+  "key": 515,
+  "slug": "bitcoin-core",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "Bitcoin Core: phần mềm nút đầy đủ của mạng Bitcoin, tải và xác thực mọi khối và giao dịch, có ví và giao diện tùy chọn; README nhắc dự án bảo mật nhạy cảm, một sai sót có thể làm mất nhiều tiền",
+  "repo": "bitcoin/bitcoin",
+  "stars": 90594,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "btcpayserver"
+  ]
+ },
+ {
+  "key": 516,
+  "slug": "go-ethereum",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "go-ethereum (geth): bản cài đặt tầng thực thi của giao thức Ethereum bằng Go; README nêu yêu cầu phần cứng tối thiểu (4+ nhân, 8GB RAM, SSD 2TB) và giấy phép LGPL cho thư viện, GPL cho tệp thực thi",
+  "repo": "ethereum/go-ethereum",
+  "stars": 51460,
+  "license": {
+   "key": "lgpl-3.0",
+   "name": "GNU Lesser General Public License v3.0",
+   "spdx_id": "LGPL-3.0",
+   "url": "https://api.github.com/licenses/lgpl-3.0",
+   "node_id": "MDc6TGljZW5zZTEy"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "foundry",
+   "lnd"
+  ]
+ },
+ {
+  "key": 517,
+  "slug": "foundry",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "Foundry: bộ công cụ viết bằng Rust để phát triển ứng dụng Ethereum gồm Forge (dựng, kiểm thử, fuzz hợp đồng Solidity), Cast, Anvil (nút cục bộ), Chisel (REPL Solidity)",
+  "repo": "foundry-rs/foundry",
+  "stars": 10751,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "go-ethereum",
+   "openzeppelin-contracts"
+  ]
+ },
+ {
+  "key": 518,
+  "slug": "openzeppelin-contracts",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "OpenZeppelin Contracts: thư viện hợp đồng thông minh Solidity đã được cộng đồng thẩm định (ERC20, ERC721, phân quyền); README nói dùng không thay thế kiểm toán bảo mật",
+  "repo": "OpenZeppelin/openzeppelin-contracts",
+  "stars": 27340,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "foundry",
+   "scaffold-eth-2"
+  ]
+ },
+ {
+  "key": 519,
+  "slug": "cosmos-sdk",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "Cosmos SDK: bộ công cụ blockchain theo mô-đun bằng Go để dựng chuỗi lớp 1 tùy biến; README nói được dùng bởi hơn 200 chuỗi và có mô-đun doanh nghiệp theo giấy phép khác",
+  "repo": "cosmos/cosmos-sdk",
+  "stars": 7082,
+  "license": {
+   "key": "apache-2.0",
+   "name": "Apache License 2.0",
+   "spdx_id": "Apache-2.0",
+   "url": "https://api.github.com/licenses/apache-2.0",
+   "node_id": "MDc6TGljZW5zZTI="
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-02",
+  "related": [
+   "scaffold-eth-2"
+  ]
+ },
+ {
+  "key": 520,
+  "slug": "scaffold-eth-2",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "Scaffold-ETH 2: bộ khởi tạo mã nguồn mở dựng ứng dụng phi tập trung (dapp) trên Ethereum với NextJS, RainbowKit, Foundry hoặc Hardhat, Wagmi, Viem; README nói sẵn sàng cho AI agent",
+  "repo": "scaffold-eth/scaffold-eth-2",
+  "stars": 2064,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-10-13",
+  "related": [
+   "cosmos-sdk",
+   "openzeppelin-contracts"
+  ]
+ },
+ {
+  "key": 521,
+  "slug": "btcpayserver",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "BTCPay Server: bộ xử lý thanh toán Bitcoin miễn phí mã nguồn mở, tự host, cho người bán nhận Bitcoin trực tiếp không phí hay trung gian (theo README)",
+  "repo": "btcpayserver/btcpayserver",
+  "stars": 7887,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "bitcoin-core",
+   "lnd"
+  ]
+ },
+ {
+  "key": 522,
+  "slug": "lnd",
+  "group": "2026-11-03-blockchain-tien-ma-hoa",
+  "title": "lnd: bản cài đặt đầy đủ của nút Lightning Network (mạng thanh toán lớp 2 của Bitcoin), quản lý kênh, định tuyến và thanh toán; README nêu mức tuân thủ đặc tả BOLT",
+  "repo": "lightningnetwork/lnd",
+  "stars": 8209,
+  "license": {
+   "key": "mit",
+   "name": "MIT License",
+   "spdx_id": "MIT",
+   "url": "https://api.github.com/licenses/mit",
+   "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "level_text": "Rất khó",
+  "tier": "nang-cao",
+  "category": "Coding agent và cách làm dự án",
+  "need": "Làm việc với coding agent",
+  "pushed": "2026-11-03",
+  "related": [
+   "btcpayserver",
+   "go-ethereum"
+  ]
  }
 ]

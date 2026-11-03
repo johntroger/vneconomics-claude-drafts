@@ -1,0 +1,44 @@
+{
+  "key": 516,
+  "repo": "ethereum/go-ethereum",
+  "repoId": "15452919",
+  "url": "https://github.com/ethereum/go-ethereum",
+  "stars": 51460,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "lgpl-3.0",
+    "name": "GNU Lesser General Public License v3.0",
+    "spdx_id": "LGPL-3.0",
+    "url": "https://api.github.com/licenses/lgpl-3.0",
+    "node_id": "MDc6TGljZW5zZTEy"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T05:22:19Z",
+  "createdAt": "2013-12-26T13:05:46Z",
+  "defaultBranch": "master",
+  "description": "Go implementation of the Ethereum protocol",
+  "homepage": "https://geth.ethereum.org",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/ethereum/go-ethereum/master/README.md",
+    "sha256": "f78f3bd17b128c895b9f9b03256670b7903babb38e99592a6a7893f905579b69",
+    "bytes": 15709,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Building the source",
+      "Executables",
+      "Hardware Requirements",
+      "Programmatically interfacing geth nodes",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu geth.ethereum.org.",
+    "Chưa thử.",
+    "Cấu hình bảo mật RPC chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

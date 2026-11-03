@@ -1,0 +1,880 @@
+{
+  "format": 1,
+  "campaign": "github-cloud-20261103-blockchain",
+  "batch": 88,
+  "scope": "Draft only from cloud session; not approved for import; no runtime validation claims",
+  "items": [
+    {
+      "key": 515,
+      "batch": 88,
+      "slug": "bitcoin-core",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Bitcoin Core: phần mềm nút đầy đủ của mạng Bitcoin, tải và xác thực mọi khối và giao dịch, có ví và giao diện tùy chọn; README nhắc dự án bảo mật nhạy cảm, một sai sót có thể làm mất nhiều tiền",
+        "excerpt": "Hiểu Bitcoin Core là phần mềm kết nối mạng ngang hàng Bitcoin để tải và xác thực đầy đủ khối và giao dịch, kèm ví và giao diện đồ họa tùy chọn. README là nhánh tích hợp (staging tree), nói nhánh master chưa chắc ổn định, bản phát hành là các thẻ, và nhấn mạnh đây là dự án quan trọng về bảo mật nơi một lỗi có thể làm mất rất nhiều tiền. Giấy phép MIT.",
+        "content": "<p>README mở đầu: Bitcoin Core integration/staging tree, kèm trang bitcoincore.org; muốn bản nhị phân dùng ngay thì tải từ trang chính thức. Bitcoin Core là gì: phần mềm kết nối mạng ngang hàng Bitcoin để tải và xác thực đầy đủ khối và giao dịch, gồm ví và giao diện đồ họa có thể dựng tùy chọn; thông tin thêm ở thư mục doc. Giấy phép MIT theo README. Quy trình phát triển: nhánh master được dựng và kiểm thử thường xuyên nhưng không đảm bảo hoàn toàn ổn định; thẻ được tạo định kỳ từ các nhánh phát hành để đánh dấu bản chính thức ổn định; giao diện đồ họa phát triển ở kho bitcoin-core/gui riêng; quy trình đóng góp ở CONTRIBUTING.md. Mục Testing: kiểm thử và đánh giá mã là điểm nghẽn, nhiều pull request hơn khả năng xem xét; README nhấn mạnh đây là dự án quan trọng về bảo mật nơi mọi sai sót có thể làm mất rất nhiều tiền. README không có hướng dẫn cài chi tiết cho người dùng và không bàn về đầu tư.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bitcoin Core là phần mềm gốc để tự chạy một nút Bitcoin, tự kiểm tra mọi giao dịch thay vì tin vào bên thứ ba. Người dùng thông thường không cần chạy nút và không cần đọc mã nguồn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tải bản chính thức từ trang bitcoincore.org và đọc tài liệu trước khi nghĩ đến chạy nút. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu mạng ngang hàng, dung lượng đĩa lớn và bảo mật ví; README không nêu yêu cầu phần cứng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. README cảnh báo dự án nhạy cảm về bảo mật. Nhánh master không đảm bảo ổn định: chỉ dùng bản phát hành chính thức từ trang bitcoincore.org. Ví chứa tiền thật: sao lưu, bảo vệ khóa và cụm từ khôi phục, tải phần mềm chỉ từ nguồn chính thức. Luật về tiền mã hóa khác nhau theo quốc gia, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>full node (nút đầy đủ)</strong>: máy tự tải và kiểm tra mọi khối và giao dịch; README nêu.</li><li><strong>peer-to-peer (ngang hàng)</strong>: các máy kết nối trực tiếp với nhau không qua trung tâm; README nêu.</li><li><strong>wallet (ví)</strong>: phần giữ khóa để gửi và nhận; README nêu có kèm.</li><li><strong>staging tree (nhánh tích hợp)</strong>: nhánh gom thay đổi trước khi phát hành; README nêu.</li><li><strong>release tag (thẻ phát hành)</strong>: đánh dấu bản chính thức ổn định; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản nhị phân từ bitcoincore.org hoặc tự dựng theo doc/build-*.md (bài không chép lệnh). Chưa nêu yêu cầu phần cứng trong README. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần What is Bitcoin Core?.</li><li>Tải bản chính thức từ bitcoincore.org.</li><li>Không dùng nhánh master cho tiền thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu Bitcoin Core về mặt kỹ thuật, không phải đầu tư. Hãy đọc README của Bitcoin Core (https://github.com/bitcoin/bitcoin) và giải thích bằng tiếng Việt: nút đầy đủ làm gì, vì sao README cảnh báo về bảo mật, và nên tải phần mềm từ đâu. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 3,5 KB), không có hướng dẫn cài hay yêu cầu phần cứng; bài chưa đọc tài liệu doc/. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>bitcoin</strong> có <strong>90.594 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/bitcoin/bitcoin/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/bitcoin/bitcoin\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 515. Chưa cài/chạy thử; không tạo validation. Snapshot sao 90594; repo_id 1181927; README SHA256 45916e6961540c536e8b17b3a4d3305393afce5b407d1ea3da82c246cba8aa5d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/bitcoin/bitcoin",
+          "repo_id": "1181927",
+          "source_path": "",
+          "source_revision": "README-SHA256:45916e6961540c536e8b17b3a4d3305393afce5b407d1ea3da82c246cba8aa5d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bitcoin/bitcoin",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản nhị phân từ bitcoincore.org hoặc tự dựng theo doc/build-*.md (bài không chép lệnh). Chưa nêu yêu cầu phần cứng trong README. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/bitcoin/bitcoin/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/bitcoin/bitcoin/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "bitcoin/bitcoin",
+        "stars": 90594,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/bitcoin/bitcoin/master/README.md",
+        "readmeSha256": "45916e6961540c536e8b17b3a4d3305393afce5b407d1ea3da82c246cba8aa5d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 516,
+      "batch": 88,
+      "slug": "go-ethereum",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "go-ethereum (geth): bản cài đặt tầng thực thi của giao thức Ethereum bằng Go; README nêu yêu cầu phần cứng tối thiểu (4+ nhân, 8GB RAM, SSD 2TB) và giấy phép LGPL cho thư viện, GPL cho tệp thực thi",
+        "excerpt": "Hiểu go-ethereum (geth) là bản cài đặt tầng thực thi của giao thức Ethereum viết bằng Go, chạy nút đầy đủ hoặc nút lưu trữ, có công cụ phụ (devp2p, abigen, evm, rlpdump). README nêu yêu cầu phần cứng tối thiểu và khuyến nghị, cách chạy trên mạng chính hay mạng thử Sepolia, Docker, và giấy phép hai lớp (thư viện LGPL-3.0, tệp thực thi GPL-3.0).",
+        "content": "<p>README tả Go Ethereum là bản cài đặt tầng thực thi của giao thức Ethereum bằng Go; có bản dựng tự động cho bản ổn định và nhánh master không ổn định tại geth.ethereum.org. Dựng từ mã nguồn cần Go (phiên bản 1.25 trở lên) và trình biên dịch C (bài không chép lệnh). Các tệp thực thi trong thư mục cmd: geth (máy khách dòng lệnh chính, vào mạng chính, thử hoặc riêng, chạy nút đầy đủ hoặc nút lưu trữ), devp2p, abigen (sinh mã Go từ định nghĩa hợp đồng), evm (công cụ gỡ lỗi EVM), rlpdump. Yêu cầu phần cứng tối thiểu theo README: CPU từ 4 nhân, RAM 8GB, SSD hiệu năng cao còn trống ít nhất 2TB, mạng tải xuống 8 Mbit mỗi giây; khuyến nghị CPU 8 nhân trở lên, RAM 16GB trở lên, NVMe 2–4TB. Hướng dẫn chạy nút đầy đủ trên mạng chính, trên mạng thử Sepolia, cấu hình, Docker, giao tiếp lập trình với nút (JSON-RPC), mạng riêng. Giấy phép: thư viện (mã ngoài thư mục cmd) theo LGPL-3.0, các tệp thực thi (mã trong cmd) theo GPL-3.0.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>geth là một trong những phần mềm để tự chạy nút Ethereum. Chạy nút giúp bạn kiểm tra dữ liệu mạng trực tiếp, nhưng cần máy mạnh và ổ đĩa lớn; người dùng thường dùng dịch vụ nút của bên khác thay vì tự chạy.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục yêu cầu phần cứng trước khi nghĩ đến chạy nút, và thử trên mạng thử Sepolia thay vì mạng chính. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần Go hoặc bản dựng sẵn, ổ đĩa lớn, hiểu mạng blockchain và bảo mật. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Yêu cầu phần cứng rất lớn (SSD 2TB trở lên). Mở cổng JSON-RPC ra Internet có thể nguy hiểm, đặc biệt khi bật ví hay mở rộng API: chỉ mở cục bộ nếu không hiểu bảo mật (nguyên tắc chung, README có mục giao tiếp lập trình). Nhánh master không ổn định. Giấy phép hai lớp LGPL và GPL có điều kiện riêng. Ví chứa tiền thật: bảo vệ khóa.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>execution layer (tầng thực thi)</strong>: phần Ethereum thực thi giao dịch và hợp đồng; README nêu geth là bản cài đặt.</li><li><strong>full node / archive node (nút đầy đủ / lưu trữ)</strong>: nút kiểm tra toàn bộ hoặc giữ cả lịch sử trạng thái; README nêu.</li><li><strong>EVM</strong>: máy ảo chạy hợp đồng thông minh của Ethereum; README nêu công cụ evm.</li><li><strong>testnet (mạng thử)</strong>: mạng dùng tiền không có giá trị để thử nghiệm, như Sepolia; README nêu.</li><li><strong>ABI</strong>: mô tả cách gọi hợp đồng thông minh; README nêu abigen.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: tải bản dựng sẵn từ geth.ethereum.org hoặc dựng từ mã nguồn với Go 1.25+ và trình biên dịch C; có hướng dẫn Docker (bài không chép lệnh). Cần phần cứng như README nêu. Miễn phí; giấy phép lấy theo README (LGPL-3.0 thư viện, GPL-3.0 tệp thực thi).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc yêu cầu phần cứng.</li><li>Thử trên mạng Sepolia.</li><li>Không mở cổng RPC ra Internet.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu việc chạy nút Ethereum về mặt kỹ thuật. Hãy đọc README của go-ethereum (https://github.com/ethereum/go-ethereum) và giải thích bằng tiếng Việt: geth là gì, yêu cầu phần cứng, mạng thử khác mạng chính thế nào, và rủi ro khi mở cổng RPC. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá dài (khoảng 16 KB), bài chưa đọc tài liệu geth.ethereum.org. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>ethereum</strong> có <strong>51.460 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện LGPL-3.0; README mục License ghi thư viện LGPL-3.0 và tệp thực thi trong cmd GPL-3.0. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/ethereum/go-ethereum/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/ethereum/go-ethereum\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 516. Chưa cài/chạy thử; không tạo validation. Snapshot sao 51460; repo_id 15452919; README SHA256 f78f3bd17b128c895b9f9b03256670b7903babb38e99592a6a7893f905579b69.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/ethereum/go-ethereum",
+          "repo_id": "15452919",
+          "source_path": "",
+          "source_revision": "README-SHA256:f78f3bd17b128c895b9f9b03256670b7903babb38e99592a6a7893f905579b69",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "lgpl-3.0",
+                "name": "GNU Lesser General Public License v3.0",
+                "spdx_id": "LGPL-3.0",
+                "url": "https://api.github.com/licenses/lgpl-3.0",
+                "node_id": "MDc6TGljZW5zZTEy"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ethereum/go-ethereum",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: tải bản dựng sẵn từ geth.ethereum.org hoặc dựng từ mã nguồn với Go 1.25+ và trình biên dịch C; có hướng dẫn Docker (bài không chép lệnh). Cần phần cứng như README nêu. Miễn phí; giấy phép lấy theo README (LGPL-3.0 thư viện, GPL-3.0 tệp thực thi).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/ethereum/go-ethereum/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/ethereum/go-ethereum/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "ethereum/go-ethereum",
+        "stars": 51460,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/ethereum/go-ethereum/master/README.md",
+        "readmeSha256": "f78f3bd17b128c895b9f9b03256670b7903babb38e99592a6a7893f905579b69",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 517,
+      "batch": 88,
+      "slug": "foundry",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Foundry: bộ công cụ viết bằng Rust để phát triển ứng dụng Ethereum gồm Forge (dựng, kiểm thử, fuzz hợp đồng Solidity), Cast, Anvil (nút cục bộ), Chisel (REPL Solidity)",
+        "excerpt": "Hiểu Foundry là bộ công cụ nhanh, theo mô-đun, viết bằng Rust để phát triển ứng dụng Ethereum: Forge để dựng, kiểm thử, fuzz, gỡ lỗi và triển khai hợp đồng Solidity; Cast để tương tác với hợp đồng EVM và đọc dữ liệu chuỗi; Anvil là nút Ethereum cục bộ; Chisel là REPL Solidity. README có ví dụ fork mạng chính ngay trên máy và nói dùng cho cả giấy phép Apache hoặc MIT.",
+        "content": "<p>README tả Foundry là bộ công cụ nhanh, di động, theo mô-đun (cách nói của README) để phát triển ứng dụng Ethereum viết bằng Rust. Gồm: Forge (dựng, kiểm thử, fuzz, gỡ lỗi và triển khai hợp đồng Solidity), Cast (công cụ đa năng để tương tác hợp đồng EVM, gửi giao dịch và lấy dữ liệu chuỗi), Anvil (nút Ethereum cục bộ nhanh), Chisel (REPL Solidity nhanh, đầy đủ). Cài đặt bằng một đoạn lệnh tải từ mạng rồi chạy lệnh cập nhật foundryup (bài không chép lệnh). Getting Started: tạo dự án mới, dựng và kiểm thử; tương tác với mạng thật qua cast (ví dụ đọc số khối hiện tại và số dư của một tên miền ENS qua nút RPC công khai); fork mạng chính ngay trên máy. Trợ giúp: tài liệu, Telegram hỗ trợ, issue. Giấy phép: một trong hai, Apache 2.0 hoặc MIT tùy bạn chọn; đóng góp mặc nhiên theo cả hai.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn viết hợp đồng thông minh bằng Solidity, Foundry cho phép kiểm thử rất nhanh và thử trên bản sao cục bộ của mạng thật, trước khi triển khai lên mạng thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: tạo dự án mẫu, chạy kiểm thử và dùng Anvil để thử trên mạng cục bộ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu Solidity, hợp đồng thông minh và dòng lệnh; lỗi hợp đồng có thể gây mất tiền. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Hợp đồng thông minh không sửa được sau khi triển khai: cần kiểm toán và kiểm thử kỹ. Lệnh cài tải từ mạng: đọc trước khi chạy. Ví dụ README dùng nút RPC công khai của bên thứ ba; không gửi khóa riêng tới dịch vụ ngoài. 'Nhanh, di động' là cách nói của README. Nên thử trên mạng thử hoặc Anvil, không dùng tiền thật.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>smart contract (hợp đồng thông minh)</strong>: chương trình chạy trên blockchain; README nêu hợp đồng Solidity.</li><li><strong>Solidity</strong>: ngôn ngữ viết hợp đồng thông minh Ethereum; README nêu.</li><li><strong>fuzzing</strong>: kiểm thử bằng đầu vào ngẫu nhiên để tìm lỗi; README nêu Forge fuzz.</li><li><strong>fork (mạng chính cục bộ)</strong>: bản sao trạng thái mạng thật chạy trên máy bạn để thử; README nêu.</li><li><strong>RPC</strong>: cách chương trình trò chuyện với nút blockchain; README nêu --rpc-url.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng lệnh tải từ mạng rồi foundryup; tạo dự án bằng lệnh khởi tạo của Forge (bài không chép lệnh). Cần terminal. Miễn phí theo giấy phép Apache 2.0 hoặc MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và bốn công cụ.</li><li>Dựng dự án mẫu và chạy kiểm thử.</li><li>Thử bằng Anvil, không dùng tiền thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử viết hợp đồng thông minh. Hãy đọc README của Foundry (https://github.com/foundry-rs/foundry) và giải thích bằng tiếng Việt: bốn công cụ Forge, Cast, Anvil, Chisel làm gì, vì sao nên thử trên mạng cục bộ, và rủi ro khi triển khai hợp đồng. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4,2 KB), bài chưa đọc tài liệu getfoundry.sh. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>foundry-rs</strong> có <strong>10.751 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README mục License ghi giấy phép kép Apache 2.0 hoặc MIT tùy chọn. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/foundry-rs/foundry/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/foundry-rs/foundry\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 517. Chưa cài/chạy thử; không tạo validation. Snapshot sao 10751; repo_id 404320053; README SHA256 36ea15742e689cb16676fd9b10646947ecf9e358f7c6453148d888d3d9298c2d.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/foundry-rs/foundry",
+          "repo_id": "404320053",
+          "source_path": "",
+          "source_revision": "README-SHA256:36ea15742e689cb16676fd9b10646947ecf9e358f7c6453148d888d3d9298c2d",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/foundry-rs/foundry",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng lệnh tải từ mạng rồi foundryup; tạo dự án bằng lệnh khởi tạo của Forge (bài không chép lệnh). Cần terminal. Miễn phí theo giấy phép Apache 2.0 hoặc MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/foundry-rs/foundry/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/foundry-rs/foundry/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "foundry-rs/foundry",
+        "stars": 10751,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/foundry-rs/foundry/master/README.md",
+        "readmeSha256": "36ea15742e689cb16676fd9b10646947ecf9e358f7c6453148d888d3d9298c2d",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 518,
+      "batch": 88,
+      "slug": "openzeppelin-contracts",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "OpenZeppelin Contracts: thư viện hợp đồng thông minh Solidity đã được cộng đồng thẩm định (ERC20, ERC721, phân quyền); README nói dùng không thay thế kiểm toán bảo mật",
+        "excerpt": "Hiểu OpenZeppelin Contracts là thư viện hợp đồng thông minh Solidity đã được cộng đồng thẩm định gồm các chuẩn như ERC20, ERC721, phân quyền theo vai trò và các thành phần tái sử dụng. README nêu thẻ npm phân biệt bản đã kiểm toán (latest), bản hoàn thiện chưa kiểm toán (dev) và bản ứng viên (next); cảnh báo dùng nhánh master khi cài qua git; và nói rõ dùng thư viện không thay thế kiểm toán bảo mật.",
+        "content": "<p>README tả OpenZeppelin Contracts là thư viện để phát triển hợp đồng thông minh an toàn, xây trên nền mã đã được cộng đồng thẩm định. Gồm các triển khai chuẩn như ERC20, ERC721, cơ chế phân quyền theo vai trò linh hoạt, và các thành phần Solidity tái sử dụng được. Có Contracts Wizard là công cụ sinh hợp đồng tương tác. Ghi chú quan trọng: dùng phiên bản ngữ nghĩa để báo hiệu tương thích; với hợp đồng nâng cấp được, bố cục lưu trữ giữa các phiên bản chính được coi là không tương thích nên nâng cấp qua phiên bản chính là không an toàn. Thẻ phát hành npm: latest là bản đã kiểm toán (mặc định), dev là bản hoàn thiện chưa kiểm toán (vẫn được chương trình thưởng lỗi bao phủ), next là bản ứng viên. Cài đặt qua Hardhat (npm) hoặc Foundry (git): README cảnh báo khi cài qua git, lỗi thường gặp là dùng nhánh master (nhánh phát triển) thay vì bản phát hành gắn thẻ vì quy trình phát hành có biện pháp bảo mật mà master không đảm bảo (bài không chép lệnh). Có ví dụ hợp đồng ERC721 tùy biến. Mục Security: dự án có trung tâm bảo mật, chính sách, chương trình thưởng lỗi trên Immunefi, các báo cáo kiểm toán trước đây; README nói hợp đồng thông minh là công nghệ mới với rủi ro kỹ thuật cao, dùng OpenZeppelin Contracts không thay thế kiểm toán bảo mật. Giấy phép MIT, từ chối bảo hành.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Thay vì tự viết hợp đồng token từ đầu (dễ có lỗi), bạn dùng các khối đã được nhiều người xem xét. Nhưng README nói rõ: dùng thư viện này không thay thế kiểm toán hợp đồng của bạn.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dùng Contracts Wizard để xem một hợp đồng ERC721 mẫu và đọc từng dòng trước khi dùng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần hiểu Solidity, chuẩn token và nâng cấp hợp đồng; lỗi có thể gây mất tiền không thể khôi phục. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. README cảnh báo: dùng thư viện không thay thế kiểm toán; đừng dùng nhánh master khi cài qua git; chọn thẻ phù hợp (latest đã kiểm toán, dev chưa kiểm toán); nâng cấp hợp đồng qua phiên bản chính có thể phá bố cục lưu trữ. Việc phát hành token có thể chịu luật chứng khoán, thuế và chống rửa tiền ở nhiều nơi, bài không đánh giá.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>ERC20 / ERC721</strong>: chuẩn cho token thay thế được và token không thay thế được (NFT); README nêu.</li><li><strong>upgradeable contract (hợp đồng nâng cấp được)</strong>: hợp đồng có thể thay mã sau khi triển khai; README cảnh báo bố cục lưu trữ.</li><li><strong>audit (kiểm toán)</strong>: chuyên gia rà soát bảo mật mã hợp đồng; README nêu.</li><li><strong>bug bounty (thưởng lỗi)</strong>: thưởng cho người báo lỗ hổng; README nêu chương trình trên Immunefi.</li><li><strong>semantic versioning (phiên bản ngữ nghĩa)</strong>: cách đánh số phiên bản theo mức tương thích; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cài bằng npm (Hardhat) hoặc git (Foundry) theo thẻ phát hành, không dùng master (bài không chép lệnh). Cần dự án Solidity. Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Release tags và cảnh báo Security.</li><li>Dùng Contracts Wizard để xem hợp đồng mẫu.</li><li>Kiểm toán hợp đồng trước khi triển khai thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu hợp đồng token an toàn. Hãy đọc README của OpenZeppelin Contracts (https://github.com/OpenZeppelin/openzeppelin-contracts) và giải thích bằng tiếng Việt: các thẻ phát hành latest, dev, next khác nhau thế nào, vì sao không dùng nhánh master, và vì sao dùng thư viện không thay thế kiểm toán. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README dài (khoảng 9 KB), bài chưa đọc tài liệu docs.openzeppelin.com. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>OpenZeppelin</strong> có <strong>27.340 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README mục License ghi MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/OpenZeppelin/openzeppelin-contracts\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 518. Chưa cài/chạy thử; không tạo validation. Snapshot sao 27340; repo_id 64700934; README SHA256 4c7bb702a0a318fd6bb92438017c0c166242b3a20d3c4502ced71983e1d0b282.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+          "repo_id": "64700934",
+          "source_path": "",
+          "source_revision": "README-SHA256:4c7bb702a0a318fd6bb92438017c0c166242b3a20d3c4502ced71983e1d0b282",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cài bằng npm (Hardhat) hoặc git (Foundry) theo thẻ phát hành, không dùng master (bài không chép lệnh). Cần dự án Solidity. Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "OpenZeppelin/openzeppelin-contracts",
+        "stars": 27340,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/master/README.md",
+        "readmeSha256": "4c7bb702a0a318fd6bb92438017c0c166242b3a20d3c4502ced71983e1d0b282",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 519,
+      "batch": 88,
+      "slug": "cosmos-sdk",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Cosmos SDK: bộ công cụ blockchain theo mô-đun bằng Go để dựng chuỗi lớp 1 tùy biến; README nói được dùng bởi hơn 200 chuỗi và có mô-đun doanh nghiệp theo giấy phép khác",
+        "excerpt": "Hiểu Cosmos SDK là bộ công cụ blockchain mã nguồn mở theo mô-đun để dựng chuỗi lớp 1 an toàn, hiệu năng cao, tùy biến hoàn toàn; README nói hơn 200 chuỗi dùng trong sản xuất (tuyên bố của README). Liên thông qua IBC, khuyến nghị đồng thuận CometBFT. README ghi rõ các mô-đun doanh nghiệp trong thư mục enterprise có điều khoản cấp phép khác lõi.",
+        "content": "<p>README tả Cosmos SDK là SDK blockchain mã nguồn mở theo mô-đun để dựng chuỗi lớp 1 an toàn, hiệu năng cao, tùy biến tối đa, được hơn 200 chuỗi dùng trong sản xuất (tuyên bố của README). Phù hợp dựng chuỗi chuyên cho ứng dụng có chủ quyền: dùng mô-đun dựng sẵn cho chức năng blockchain chuẩn hoặc tạo mô-đun riêng. Liên thông có sẵn qua giao thức IBC (ibc-go), tương thích với mọi động cơ đồng thuận nhưng khuyến nghị CometBFT (README nêu 10 nghìn TPS trở lên, tuyên bố của README). Quick Start: tài liệu giới thiệu cấp cao và hướng dẫn xây dựng; README khuyên luôn dùng phiên bản Go còn được duy trì mới nhất. Mô-đun lõi liệt kê ở x/README.md. Mục Enterprise Modules: các mô-đun cấp doanh nghiệp cho mạng cấp phép và chuỗi liên minh nằm trong thư mục enterprise và có điều khoản cấp phép khác lõi SDK. Duy trì bởi Cosmos Labs, công ty con của Interchain Foundation (tổ chức phi lợi nhuận Thụy Sĩ). Lịch sử: phát hành lần đầu 2019, chuỗi đầu tiên dùng trong sản xuất là Cosmos Hub. Thư viện hệ sinh thái: CometBFT, IBC, Cosmos EVM. README có mục phân biệt với dự án React-Cosmos không liên quan. Giấy phép Apache-2.0 (huy hiệu), riêng mô-đun enterprise khác.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Cosmos SDK dành cho ai muốn dựng một blockchain riêng cho ứng dụng của mình, thay vì viết hợp đồng trên blockchain có sẵn. Nó là công cụ cho nhà phát triển blockchain, không phải cho người dùng tiền mã hóa thông thường.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc tài liệu giới thiệu kiến trúc ứng dụng SDK để hiểu mô-đun, đồng thuận và IBC. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Dựng chuỗi riêng cần Go, hiểu đồng thuận, bảo mật và vận hành mạng. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Các số liệu '200+ chuỗi', '10k+ TPS' là tuyên bố của README. Mô-đun trong thư mục enterprise có điều khoản cấp phép khác lõi Apache-2.0: kiểm tra trước khi dùng. Vận hành một chuỗi đòi hỏi bảo mật và trách nhiệm pháp lý lớn. Phát hành token trên chuỗi riêng chịu luật địa phương.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Layer 1 (lớp 1)</strong>: blockchain nền tảng độc lập; README nêu.</li><li><strong>modular (theo mô-đun)</strong>: ghép các phần chức năng theo nhu cầu; README nêu.</li><li><strong>IBC</strong>: giao thức truyền dữ liệu giữa các blockchain; README nêu.</li><li><strong>CometBFT</strong>: động cơ đồng thuận BFT được khuyến nghị; README nêu.</li><li><strong>consensus engine (động cơ đồng thuận)</strong>: cách các nút thống nhất khối hợp lệ; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.cosmos.network; bài chưa đọc nên không nêu lệnh. Cần Go mới nhất còn được duy trì. Miễn phí theo giấy phép Apache-2.0 cho lõi; mô-đun enterprise điều khoản khác.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc phần giới thiệu và Modules.</li><li>Đọc tài liệu kiến trúc ứng dụng SDK.</li><li>Kiểm tra điều khoản giấy phép nếu dùng mô-đun enterprise.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu cách dựng blockchain riêng. Hãy đọc README của Cosmos SDK (https://github.com/cosmos/cosmos-sdk) và giải thích bằng tiếng Việt: SDK làm gì, IBC và CometBFT là gì, và vì sao mô-đun enterprise có giấy phép khác. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README khá ngắn (khoảng 5,8 KB), bài chưa đọc tài liệu docs.cosmos.network. Các số liệu quy mô và hiệu năng là tuyên bố của README. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>cosmos</strong> có <strong>7.082 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-02. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện Apache-2.0; README có huy hiệu Apache-2.0 và nêu mô-đun enterprise có điều khoản khác. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/cosmos/cosmos-sdk/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/cosmos/cosmos-sdk\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 519. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7082; repo_id 51193526; README SHA256 afd550a0fb8b22c9311d7677c61c6d5b999695400753acc99e70afcb22b3f628.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/cosmos/cosmos-sdk",
+          "repo_id": "51193526",
+          "source_path": "",
+          "source_revision": "README-SHA256:afd550a0fb8b22c9311d7677c61c6d5b999695400753acc99e70afcb22b3f628",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "apache-2.0",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "node_id": "MDc6TGljZW5zZTI="
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cosmos/cosmos-sdk",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.cosmos.network; bài chưa đọc nên không nêu lệnh. Cần Go mới nhất còn được duy trì. Miễn phí theo giấy phép Apache-2.0 cho lõi; mô-đun enterprise điều khoản khác.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/cosmos/cosmos-sdk/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/cosmos/cosmos-sdk/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "cosmos/cosmos-sdk",
+        "stars": 7082,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/cosmos/cosmos-sdk/main/README.md",
+        "readmeSha256": "afd550a0fb8b22c9311d7677c61c6d5b999695400753acc99e70afcb22b3f628",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 520,
+      "batch": 88,
+      "slug": "scaffold-eth-2",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "Scaffold-ETH 2: bộ khởi tạo mã nguồn mở dựng ứng dụng phi tập trung (dapp) trên Ethereum với NextJS, RainbowKit, Foundry hoặc Hardhat, Wagmi, Viem; README nói sẵn sàng cho AI agent",
+        "excerpt": "Hiểu Scaffold-ETH 2 là bộ công cụ mã nguồn mở, cập nhật, để dựng ứng dụng phi tập trung (dapp) trên Ethereum, gồm hợp đồng thông minh và giao diện tương tác, dùng NextJS, RainbowKit, Foundry hoặc Hardhat, Wagmi, Viem và TypeScript. README có ví dụ ví 'burner' và vòi thử trên mạng cục bộ, yêu cầu Node 22.13 trở lên, và nói có sẵn tệp hướng dẫn cho agent AI.",
+        "content": "<p>README tả Scaffold-ETH 2 là bộ công cụ mã nguồn mở, cập nhật để dựng ứng dụng phi tập trung (dapp) trên blockchain Ethereum, giúp tạo và triển khai hợp đồng thông minh và dựng giao diện tương tác với chúng. Ghi chú: 'sẵn sàng cho AI', có đủ thứ agent cần để dựng trên Ethereum (thư mục .agents, .claude, .opencode, .cursor). Xây bằng NextJS, RainbowKit, Foundry hoặc Hardhat, Wagmi, Viem và TypeScript. Tính năng: tải lại nóng hợp đồng (giao diện tự theo hợp đồng khi bạn sửa), các hook React tùy chỉnh bọc quanh wagmi có gợi ý TypeScript, bộ thành phần web3 dùng chung, ví 'burner' và vòi thử cục bộ để thử nhanh, tích hợp nhiều nhà cung cấp ví. Yêu cầu: Node từ 22.13, Yarn (v1 hoặc v2+), Git. Quickstart gồm ba bước: tạo dự án bằng một lệnh, chạy mạng cục bộ ở terminal đầu, và triển khai hợp đồng thử ở terminal thứ hai (bài không chép lệnh). Giấy phép lấy theo GitHub (MIT); README phần đã đọc không nêu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Scaffold-ETH 2 là bộ khung để học và thử làm ứng dụng Ethereum nhanh: có sẵn mạng cục bộ, ví thử và giao diện, nên bạn tập trung vào hợp đồng thông minh mà không dính tiền thật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: dựng dự án mẫu, chạy mạng cục bộ và dùng ví burner thử gọi hợp đồng ví dụ. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Khó.</strong> Cần Node, Yarn, TypeScript và khái niệm blockchain; có AI hỗ trợ viết mã. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Ví burner và vòi thử chỉ dùng cho mạng cục bộ: không dùng khóa burner cho tiền thật. Triển khai lên mạng thật cần kiểm toán hợp đồng. Tệp agent AI trong dự án cho phép AI chạy lệnh: kiểm tra trước khi cho chạy. README phần đã đọc không nêu giấy phép.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>dapp (ứng dụng phi tập trung)</strong>: ứng dụng dùng hợp đồng thông minh trên blockchain; README nêu.</li><li><strong>burner wallet (ví dùng thử)</strong>: ví tạm dùng cho thử nghiệm; README nêu.</li><li><strong>faucet (vòi thử)</strong>: nơi lấy tiền thử không giá trị trên mạng thử; README nêu.</li><li><strong>wagmi / viem</strong>: thư viện React và TypeScript để nói chuyện với Ethereum; README nêu.</li><li><strong>hot reload (tải lại nóng)</strong>: giao diện tự cập nhật khi bạn sửa hợp đồng; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README: cần Node từ 22.13, Yarn và Git; tạo dự án bằng một lệnh, chạy mạng cục bộ rồi triển khai hợp đồng thử (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (MIT).</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Requirements và Quickstart.</li><li>Chạy mạng cục bộ và triển khai hợp đồng thử.</li><li>Dùng ví burner, không dùng khóa thật.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn thử làm dapp Ethereum đầu tiên với AI hỗ trợ. Hãy đọc README của Scaffold-ETH 2 (https://github.com/scaffold-eth/scaffold-eth-2) và giải thích bằng tiếng Việt: dapp là gì, ví burner và vòi thử làm gì, và những rủi ro khi để AI chạy lệnh. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 4 KB), bài chưa đọc tài liệu docs.scaffoldeth.io. README phần đã đọc không nêu giấy phép (lấy theo GitHub). Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>scaffold-eth</strong> có <strong>2.064 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-10-13. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README phần đã đọc không nêu giấy phép. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/scaffold-eth/scaffold-eth-2/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/scaffold-eth/scaffold-eth-2\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 520. Chưa cài/chạy thử; không tạo validation. Snapshot sao 2064; repo_id 538538681; README SHA256 e4ef0e874f6d192eb2a284a584bcb232f3dd5d6924888d36959e7d8d6dfc6dce.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/scaffold-eth/scaffold-eth-2",
+          "repo_id": "538538681",
+          "source_path": "",
+          "source_revision": "README-SHA256:e4ef0e874f6d192eb2a284a584bcb232f3dd5d6924888d36959e7d8d6dfc6dce",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scaffold-eth/scaffold-eth-2",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README: cần Node từ 22.13, Yarn và Git; tạo dự án bằng một lệnh, chạy mạng cục bộ rồi triển khai hợp đồng thử (bài không chép lệnh). Miễn phí; giấy phép lấy theo GitHub (MIT).",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/scaffold-eth/scaffold-eth-2/blob/main/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/scaffold-eth/scaffold-eth-2/blob/main/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "scaffold-eth/scaffold-eth-2",
+        "stars": 2064,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/scaffold-eth/scaffold-eth-2/main/README.md",
+        "readmeSha256": "e4ef0e874f6d192eb2a284a584bcb232f3dd5d6924888d36959e7d8d6dfc6dce",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 521,
+      "batch": 88,
+      "slug": "btcpayserver",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "BTCPay Server: bộ xử lý thanh toán Bitcoin miễn phí mã nguồn mở, tự host, cho người bán nhận Bitcoin trực tiếp không phí hay trung gian (theo README)",
+        "excerpt": "Hiểu BTCPay Server là bộ xử lý thanh toán Bitcoin mã nguồn mở, tự host, cho người bán nhận Bitcoin trực tiếp mà không qua trung gian hay phí (cách nói của README). README chỉ dẫn tài liệu cho người dùng, người vận hành, nhà phát triển, người bảo trì; có API Greenfield và bản demo. Bài chỉ giới thiệu kỹ thuật, không khuyên kinh doanh tiền mã hóa.",
+        "content": "<p>README tả BTCPay Server là bộ xử lý thanh toán Bitcoin tự host, miễn phí, mã nguồn mở, cho phép người bán nhận Bitcoin trực tiếp, không phí hay trung gian (cách nói của README). Mục Start Here chia tài liệu theo đối tượng: người dùng, người vận hành (triển khai và vận hành), nhà phát triển (tích hợp và plugin), người bảo trì kho. Có cổng tài liệu tổng hợp. Liên kết dự án: trang web, tài liệu, API Greenfield (bản v1), bản demo trên mạng chính; báo lỗ hổng bảo mật theo SECURITY.md, không đăng công khai. Giấy phép MIT theo README. README không nêu yêu cầu phần cứng, chi phí vận hành hay quy định pháp lý.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Nếu bạn bán hàng trực tuyến và muốn nhận Bitcoin mà không qua công ty xử lý thanh toán, BTCPay Server là phần mềm bạn tự chạy để làm việc đó. Nhưng bạn tự chịu trách nhiệm bảo mật, thuế và pháp lý.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: xem bản demo và đọc tài liệu cho người dùng để hiểu luồng thanh toán trước khi cân nhắc dùng. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Tự host cần máy chủ, hiểu Bitcoin, ví và bảo mật; tài liệu nằm ở nơi khác. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư, kinh doanh hay pháp lý. Nhận tiền mã hóa liên quan thuế, kế toán và quy định chống rửa tiền khác nhau theo quốc gia: bài không đánh giá, tại Việt Nam quy định về tiền mã hóa cần được kiểm tra riêng. 'Không phí hay trung gian' là cách nói của README (vẫn có phí mạng Bitcoin và chi phí vận hành). Giá trị Bitcoin biến động mạnh. Mất khóa ví có thể mất tiền không khôi phục.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>API</strong>: cách để hai phần mềm gửi yêu cầu và nhận dữ liệu từ nhau.</li><li><strong>payment processor (bộ xử lý thanh toán)</strong>: phần mềm tạo hóa đơn và xác nhận thanh toán; README nêu.</li><li><strong>self-hosted (tự host)</strong>: tự chạy trên máy chủ của bạn; README nêu.</li><li><strong>Greenfield API</strong>: giao diện lập trình của BTCPay Server; README nêu.</li><li><strong>plugin</strong>: phần mở rộng thêm tính năng; README nêu cho nhà phát triển.</li><li><strong>merchant (người bán)</strong>: người nhận thanh toán cho hàng hóa; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu docs.btcpayserver.org và thư mục docs; bài chưa đọc nên không nêu lệnh. Cần máy chủ. Miễn phí theo giấy phép MIT; chi phí vận hành và phí mạng tính riêng.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục Start Here.</li><li>Xem bản demo.</li><li>Tìm hiểu thuế và pháp lý về tiền mã hóa tại nơi bạn kinh doanh.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình bán hàng online và tò mò nhận Bitcoin. Hãy đọc README của BTCPay Server (https://github.com/btcpayserver/btcpayserver) và giải thích bằng tiếng Việt: BTCPay làm gì, tự host nghĩa là gì, và những điều cần kiểm tra về thuế và pháp lý trước khi nhận tiền mã hóa. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README rất ngắn (khoảng 2 KB), bài chưa đọc tài liệu docs.btcpayserver.org. Bài không phải lời khuyên đầu tư, kinh doanh hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>btcpayserver</strong> có <strong>7.887 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README ghi MIT License. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/btcpayserver/btcpayserver/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/btcpayserver/btcpayserver\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 521. Chưa cài/chạy thử; không tạo validation. Snapshot sao 7887; repo_id 100711978; README SHA256 fa1eff2ca6667be2fd9341be940f26bab6ce03cd1412be97cb8680b9af5c3722.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/btcpayserver/btcpayserver",
+          "repo_id": "100711978",
+          "source_path": "",
+          "source_revision": "README-SHA256:fa1eff2ca6667be2fd9341be940f26bab6ce03cd1412be97cb8680b9af5c3722",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/btcpayserver/btcpayserver",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu docs.btcpayserver.org và thư mục docs; bài chưa đọc nên không nêu lệnh. Cần máy chủ. Miễn phí theo giấy phép MIT; chi phí vận hành và phí mạng tính riêng.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/btcpayserver/btcpayserver/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/btcpayserver/btcpayserver/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "btcpayserver/btcpayserver",
+        "stars": 7887,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/btcpayserver/btcpayserver/master/README.md",
+        "readmeSha256": "fa1eff2ca6667be2fd9341be940f26bab6ce03cd1412be97cb8680b9af5c3722",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    },
+    {
+      "key": 522,
+      "batch": 88,
+      "slug": "lnd",
+      "category": "Coding agent và cách làm dự án",
+      "need": "Làm việc với coding agent",
+      "payload": {
+        "post_type": "vne_resource",
+        "title": "lnd: bản cài đặt đầy đủ của nút Lightning Network (mạng thanh toán lớp 2 của Bitcoin), quản lý kênh, định tuyến và thanh toán; README nêu mức tuân thủ đặc tả BOLT",
+        "excerpt": "Hiểu lnd (Lightning Network Daemon) là bản cài đặt hoàn chỉnh của một nút Lightning Network, mạng thanh toán xây trên Bitcoin. README nêu các việc lnd làm được (tạo và đóng kênh, quản lý trạng thái kênh, tìm đường, gửi thanh toán mã hóa kiểu onion, cập nhật biểu phí, tự quản lý kênh), danh sách tuân thủ BOLT và tài nguyên cho nhà phát triển. Bài chỉ giới thiệu kỹ thuật.",
+        "content": "<p>README tả lnd là bản cài đặt hoàn chỉnh của một nút Lightning Network, có nhiều backend chuỗi cắm vào được: btcd (nút đầy đủ), bitcoind và neutrino (ứng dụng nhẹ thử nghiệm). Mã dùng thư viện btcsuite và xuất ra nhiều thư viện Lightning dùng lại được. Hiện lnd có thể: tạo kênh, đóng kênh, quản lý toàn bộ trạng thái kênh kể cả ngoại lệ, duy trì đồ thị kênh đã xác thực, tìm đường và chuyển tiếp thụ động các thanh toán đến, gửi thanh toán đi mã hóa kiểu onion qua mạng, cập nhật biểu phí quảng bá, tự quản lý kênh (autopilot). README nói lnd 'tuân thủ đầy đủ' đặc tả Lightning (BOLTs), với danh sách trạng thái từng BOLT đã đánh dấu (giao thức cơ bản, quản lý kênh giữa các bên, định dạng giao dịch, định tuyến onion, xử lý giao dịch trên chuỗi, khám phá nút và kênh, truyền tải mã hóa, cờ tính năng, bootstrap DNS, hóa đơn); đặc tả vẫn đang soạn thảo. Có mục tài nguyên cho nhà phát triển. Giấy phép MIT theo huy hiệu.</p><h2>Hiểu nhanh bằng ví dụ đời thường</h2><p>Bitcoin xử lý chậm và phí biến động; Lightning là lớp thanh toán nhanh xây trên Bitcoin với các kênh thanh toán. lnd là phần mềm nút Lightning phổ biến; chạy nút nghĩa là bạn giữ tiền trong các kênh và chịu trách nhiệm bảo mật.</p><h2>Việc nào đáng dùng để tìm hiểu?</h2><p>Ví dụ biên tập đề xuất: đọc mục các việc lnd làm được để hiểu kênh thanh toán trước khi nghĩ đến chạy nút. Chưa phải kết quả đã thử.</p><p><strong>Ai nên xem:</strong> Người tìm hiểu kỹ thuật blockchain, hợp đồng thông minh và thanh toán tiền mã hóa; không dành cho đầu tư.</p><h2>Mức độ phù hợp với người mới</h2><p><strong>Độ khó (đánh giá biên tập): Rất khó.</strong> Cần hiểu Bitcoin, kênh thanh toán, quản lý thanh khoản và bảo mật; README không có hướng dẫn cài. Đây là nhận định biên tập.</p><p><strong>Khi nào chưa cần:</strong> Bài chỉ giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Chạy nút Lightning giữ tiền thật trong kênh: sao lưu trạng thái kênh sai có thể mất tiền (nhận định chung, README phần đã đọc không bàn). README nói đặc tả BOLT vẫn đang soạn thảo và neutrino là thử nghiệm. 'Tuân thủ đầy đủ' là tuyên bố của README. Luật tiền mã hóa khác nhau theo nơi.</p><h2>Thuật ngữ nên biết</h2><ul><li><strong>Lightning Network</strong>: mạng thanh toán lớp 2 xây trên Bitcoin; README nêu lnd là nút của mạng.</li><li><strong>channel (kênh thanh toán)</strong>: đường thanh toán giữa hai nút; README nêu tạo và đóng kênh.</li><li><strong>BOLT</strong>: bộ đặc tả của Lightning (Basis of Lightning Technology); README nêu.</li><li><strong>onion routing (định tuyến onion)</strong>: thanh toán đi qua nhiều nút mà mỗi nút chỉ biết hai bên cạnh; README nêu.</li><li><strong>autopilot</strong>: tính năng tự quản lý kênh; README nêu.</li></ul><h2>Điều kiện trước khi bắt đầu</h2><p>README trỏ tới tài liệu cho nhà phát triển; bài chưa đọc nên không nêu lệnh. Cần backend chuỗi Bitcoin (btcd, bitcoind hoặc neutrino). Miễn phí theo giấy phép MIT.</p><h2>Lối bắt đầu cho người mới</h2><ol><li>Đọc mục các việc lnd làm được.</li><li>Hiểu kênh thanh toán và BOLT.</li><li>Chỉ chạy nút với số tiền nhỏ khi đã hiểu rủi ro.</li></ol><h2>Gợi ý câu lệnh để nhờ trợ lý AI giải thích</h2><p>Nếu bạn đang dùng trợ lý AI khi vibe code, có thể bắt đầu bằng một yêu cầu chỉ đọc và giải thích, chưa cho nó cài hay chạy gì. Thay phần trong ngoặc vuông bằng việc của bạn:</p><blockquote><p>Mình muốn hiểu Lightning Network về mặt kỹ thuật. Hãy đọc README của lnd (https://github.com/lightningnetwork/lnd) và giải thích bằng tiếng Việt: lnd làm gì, kênh thanh toán và BOLT là gì, và những rủi ro khi chạy nút giữ tiền thật. Chưa cài gì.</p></blockquote><p>Đây là mẫu câu gợi ý do biên tập viết, chưa được thử với một trợ lý AI cụ thể. Hãy đọc kỹ câu trả lời và đối chiếu với README gốc, vì AI có thể diễn đạt sai.</p><h2>Giới hạn cần biết</h2><p>README ngắn (khoảng 5,4 KB), bài chưa đọc tài liệu docs.lightning.engineering. Bài không phải lời khuyên đầu tư hay pháp lý. Bài chưa thử.</p><h2>An toàn khi dùng</h2><ul><li>Dùng dữ liệu giả hoặc dữ liệu công khai trong lần thử đầu, không nối tài khoản email, khách hàng hay thanh toán thật.</li><li>Không dán mật khẩu, khóa API hay token vào khung chat với AI hoặc vào mã nguồn đưa lên GitHub.</li><li>Đặt hạn mức chi tiêu cho mọi khóa API và dịch vụ trả phí trước khi cho AI hay công cụ chạy lặp lại.</li><li>Đọc kỹ công cụ sẽ gửi dữ liệu đi đâu và được phép làm gì trên máy hoặc tài khoản của bạn.</li><li>Blockchain và tiền mã hóa liên quan tiền thật và không đảo ngược được giao dịch: đây chỉ là bản nháp giới thiệu kỹ thuật, không phải lời khuyên đầu tư hay pháp lý. Dùng mạng thử và số tiền nhỏ, không bao giờ để lộ khóa riêng hay cụm từ khôi phục, kiểm toán hợp đồng thông minh trước khi triển khai, và kiểm tra luật tiền mã hóa nơi bạn sống.</li></ul><h2>Sao GitHub và tình trạng nguồn</h2><p>Repo của <strong>lightningnetwork</strong> có <strong>8.209 sao GitHub</strong> tại lần quan sát 2026-11-03; commit gần nhất theo GitHub vào 2026-11-03. Số sao là tín hiệu được quan tâm, không phải điểm đánh giá chất lượng hoặc bằng chứng đã dùng thử. Chưa có lịch sử để kết luận tốc độ tăng sao.</p><h2>Giấy phép và chi phí</h2><p>GitHub nhận diện MIT; README có huy hiệu MIT. Bài chưa kiểm tra toàn bộ phạm vi giấy phép; hãy đọc mục License của repo trước khi dùng hoặc phân phối lại. Phí dịch vụ, model/API hoặc hạ tầng nếu có cần xem riêng; website không cấp tài khoản hay hạn mức dùng công cụ.</p><h2>Nguồn và phạm vi biên tập</h2><p>Đối chiếu <a href=\"https://github.com/lightningnetwork/lnd/blob/master/README.md\" target=\"_blank\" rel=\"noopener noreferrer\">README của tác giả</a> và <a href=\"https://github.com/lightningnetwork/lnd\" target=\"_blank\" rel=\"noopener noreferrer\">repo gốc</a> ngày 2026-11-03. Bài giới thiệu do AI viết từ README, kèm giải thích khái niệm và nhận định độ khó do biên tập bổ sung; chưa cài/chạy repo, chưa xác minh tương thích trên máy người đọc.</p>",
+        "status": "publish",
+        "primary_category": 0,
+        "categories": [],
+        "needs": [],
+        "tools": [],
+        "editorial_note": "Bản nháp AI từ README ngày 2026-11-03. Đợt cloud, nhóm nghiên cứu và lưu trữ tài liệu, key 522. Chưa cài/chạy thử; không tạo validation. Snapshot sao 8209; repo_id 49765480; README SHA256 e6eb0c2d08cd53203b8cb4e22ebf06a268af959dda0ae6d9533833dc2dacc086.",
+        "data": {
+          "resource_type": "tool",
+          "source_url": "https://github.com/lightningnetwork/lnd",
+          "repo_id": "49765480",
+          "source_path": "",
+          "source_revision": "README-SHA256:e6eb0c2d08cd53203b8cb4e22ebf06a268af959dda0ae6d9533833dc2dacc086",
+          "source_verified": true,
+          "observed_at": "2026-11-03",
+          "claims": {
+            "cost": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa xác minh tổng chi phí theo cách triển khai; xem phí phần mềm/dịch vụ/model/hạ tầng riêng.",
+              "conflict_sources": []
+            },
+            "license": {
+              "value": {
+                "key": "mit",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://api.github.com/licenses/mit",
+                "node_id": "MDc6TGljZW5zZTEz"
+              },
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lightningnetwork/lnd",
+              "observed_at": "2026-11-03",
+              "note": "SPDX theo GitHub; chưa đối chiếu đầy đủ file LICENSE và phụ thuộc.",
+              "conflict_sources": []
+            },
+            "requirements": {
+              "value": "README trỏ tới tài liệu cho nhà phát triển; bài chưa đọc nên không nêu lệnh. Cần backend chuỗi Bitcoin (btcd, bitcoind hoặc neutrino). Miễn phí theo giấy phép MIT.",
+              "verification_status": "upstream_claimed",
+              "source_url": "https://github.com/lightningnetwork/lnd/blob/master/README.md",
+              "observed_at": "2026-11-03",
+              "note": "Theo README (và tài liệu chính thức nếu ghi) đã đọc; chưa chứng nhận cài/chạy trong môi trường người đọc.",
+              "conflict_sources": []
+            },
+            "permissions": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Workflow có thể gửi dữ liệu hoặc kích hoạt hành động ở dịch vụ ngoài; chỉ bật sau khi biết từng bước làm gì.",
+              "conflict_sources": []
+            },
+            "compatibility": {
+              "value": null,
+              "verification_status": "unknown",
+              "source_url": null,
+              "observed_at": null,
+              "note": "Chưa kiểm chứng tương thích; đọc đúng phiên bản và môi trường trong README.",
+              "conflict_sources": []
+            }
+          }
+        }
+      },
+      "state": {
+        "source_access": {
+          "status": "available",
+          "source_url": "https://github.com/lightningnetwork/lnd/blob/master/README.md",
+          "observed_at": "2026-11-03",
+          "note": "README đọc qua raw.githubusercontent.com ngày 2026-11-03; số sao, license, ngày commit từ GitHub Search API; một số trang tài liệu chính thức đọc qua WebFetch (ghi trong research). Chưa chạy hay cài repo."
+        },
+        "maintenance": {
+          "status": "unknown",
+          "source_url": "",
+          "observed_at": "",
+          "note": "Không suy tình trạng duy trì chỉ từ số sao hoặc một lần truy cập."
+        },
+        "recommendation": {
+          "status": "normal",
+          "reason": ""
+        },
+        "review": {
+          "needed": true,
+          "reason": "Bản nháp AI từ phiên cloud; cần chủ site rà soát trước khi nhập.",
+          "reviewed_at": "",
+          "review_due_at": ""
+        }
+      },
+      "evidence": {
+        "repo": "lightningnetwork/lnd",
+        "stars": 8209,
+        "observedAt": "2026-11-03T00:00:00Z",
+        "readmeUrl": "https://raw.githubusercontent.com/lightningnetwork/lnd/master/README.md",
+        "readmeSha256": "e6eb0c2d08cd53203b8cb4e22ebf06a268af959dda0ae6d9533833dc2dacc086",
+        "reviewer": "AI draft in cloud session, not independent human review",
+        "runtimeValidated": false
+      }
+    }
+  ]
+}

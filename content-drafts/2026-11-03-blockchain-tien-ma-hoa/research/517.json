@@ -1,0 +1,43 @@
+{
+  "key": 517,
+  "repo": "foundry-rs/foundry",
+  "repoId": "404320053",
+  "url": "https://github.com/foundry-rs/foundry",
+  "stars": 10751,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T08:04:52Z",
+  "createdAt": "2021-09-08T11:23:11Z",
+  "defaultBranch": "master",
+  "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.",
+  "homepage": "https://getfoundry.sh/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/foundry-rs/foundry/master/README.md",
+    "sha256": "36ea15742e689cb16676fd9b10646947ecf9e358f7c6453148d888d3d9298c2d",
+    "bytes": 4210,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Installation",
+      "Getting Started",
+      "Support",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Chưa kiểm tra cách dùng ví và khóa an toàn."
+  ],
+  "runtimeValidated": false
+}

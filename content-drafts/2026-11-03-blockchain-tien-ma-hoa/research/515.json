@@ -1,0 +1,43 @@
+{
+  "key": 515,
+  "repo": "bitcoin/bitcoin",
+  "repoId": "1181927",
+  "url": "https://github.com/bitcoin/bitcoin",
+  "stars": 90594,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T15:49:55Z",
+  "createdAt": "2010-12-19T15:16:43Z",
+  "defaultBranch": "master",
+  "description": "Bitcoin Core integration/staging tree",
+  "homepage": "https://bitcoincore.org/en/download",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/bitcoin/bitcoin/master/README.md",
+    "sha256": "45916e6961540c536e8b17b3a4d3305393afce5b407d1ea3da82c246cba8aa5d",
+    "bytes": 3489,
+    "sectionsRead": [
+      "Giới thiệu",
+      "What is Bitcoin Core?",
+      "License",
+      "Development Process",
+      "Testing"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu doc/.",
+    "Chưa thử.",
+    "Yêu cầu phần cứng chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

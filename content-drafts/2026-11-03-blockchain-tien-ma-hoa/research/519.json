@@ -1,0 +1,44 @@
+{
+  "key": 519,
+  "repo": "cosmos/cosmos-sdk",
+  "repoId": "51193526",
+  "url": "https://github.com/cosmos/cosmos-sdk",
+  "stars": 7082,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T01:42:48Z",
+  "createdAt": "2016-02-06T07:15:53Z",
+  "defaultBranch": "main",
+  "description": "Framework for building performant, customizable blockchains with native interoperability",
+  "homepage": "https://cosmos.network/",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/cosmos/cosmos-sdk/main/README.md",
+    "sha256": "afd550a0fb8b22c9311d7677c61c6d5b999695400753acc99e70afcb22b3f628",
+    "bytes": 5792,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Quick Start",
+      "Modules",
+      "Enterprise Modules",
+      "Maintainers",
+      "History"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.cosmos.network.",
+    "Chưa thử.",
+    "Điều khoản giấy phép mô-đun enterprise chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

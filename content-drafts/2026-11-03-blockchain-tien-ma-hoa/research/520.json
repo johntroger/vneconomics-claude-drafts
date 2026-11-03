@@ -1,0 +1,42 @@
+{
+  "key": 520,
+  "repo": "scaffold-eth/scaffold-eth-2",
+  "repoId": "538538681",
+  "url": "https://github.com/scaffold-eth/scaffold-eth-2",
+  "stars": 2064,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-10-13T16:31:59Z",
+  "createdAt": "2022-09-19T14:19:48Z",
+  "defaultBranch": "main",
+  "description": "Open source forkable Ethereum dev stack",
+  "homepage": "https://scaffoldeth.io",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/scaffold-eth/scaffold-eth-2/main/README.md",
+    "sha256": "e4ef0e874f6d192eb2a284a584bcb232f3dd5d6924888d36959e7d8d6dfc6dce",
+    "bytes": 4063,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Requirements",
+      "Quickstart",
+      "Documentation"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.scaffoldeth.io.",
+    "Chưa thử.",
+    "Cách dùng tệp agent AI an toàn chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}

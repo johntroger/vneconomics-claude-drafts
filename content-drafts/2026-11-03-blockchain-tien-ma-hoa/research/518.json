@@ -1,0 +1,44 @@
+{
+  "key": 518,
+  "repo": "OpenZeppelin/openzeppelin-contracts",
+  "repoId": "64700934",
+  "url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+  "stars": 27340,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-02T08:34:14Z",
+  "createdAt": "2016-08-01T20:54:54Z",
+  "defaultBranch": "master",
+  "description": "OpenZeppelin Contracts is a library for secure smart contract development.",
+  "homepage": "https://openzeppelin.com/contracts",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/master/README.md",
+    "sha256": "4c7bb702a0a318fd6bb92438017c0c166242b3a20d3c4502ced71983e1d0b282",
+    "bytes": 8979,
+    "sectionsRead": [
+      "Giới thiệu",
+      "Overview",
+      "Installation",
+      "Usage",
+      "Security",
+      "License"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu docs.openzeppelin.com.",
+    "Chưa thử.",
+    "Pháp lý phát hành token chưa đánh giá."
+  ],
+  "runtimeValidated": false
+}

@@ -1,0 +1,41 @@
+{
+  "key": 522,
+  "repo": "lightningnetwork/lnd",
+  "repoId": "49765480",
+  "url": "https://github.com/lightningnetwork/lnd",
+  "stars": 8209,
+  "starsObservedAt": "2026-11-03",
+  "archived": false,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "licenseSource": "GitHub Search API spdx_id",
+  "pushedAt": "2026-11-03T03:58:19Z",
+  "createdAt": "2016-01-16T08:19:33Z",
+  "defaultBranch": "master",
+  "description": "Lightning Network Daemon ⚡️",
+  "homepage": "",
+  "observedAt": "2026-11-03",
+  "method": "README via raw.githubusercontent.com; metadata via GitHub Search API",
+  "readme": {
+    "url": "https://raw.githubusercontent.com/lightningnetwork/lnd/master/README.md",
+    "sha256": "e6eb0c2d08cd53203b8cb4e22ebf06a268af959dda0ae6d9533833dc2dacc086",
+    "bytes": 5440,
+    "sectionsRead": [
+      "Lightning Network Daemon",
+      "Specification Compliance",
+      "Developer Resources"
+    ]
+  },
+  "docsRead": [],
+  "unknowns": [
+    "Chưa đọc tài liệu.",
+    "Chưa thử.",
+    "Quy trình sao lưu kênh chưa kiểm tra."
+  ],
+  "runtimeValidated": false
+}
